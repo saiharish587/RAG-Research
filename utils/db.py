@@ -123,12 +123,16 @@ class VectorDBManager:
         for c in chunks:
             t = c.get("text")
             if isinstance(t, str) and len(t.strip()) > 0:
-                valid_chunks.append(c)
-                texts.append(t)
+                # Strip Unicode surrogate characters that crash Rust tokenizers (U+D800 to U+DFFF)
+                t_clean = "".join(char for char in t if not (0xD800 <= ord(char) <= 0xDFFF))
+                if len(t_clean.strip()) > 0:
+                    c["text"] = t_clean
+                    valid_chunks.append(c)
+                    texts.append(t_clean)
                 
         self.doc_chunks = valid_chunks
         print(f"Generating embeddings for {len(texts)} chunks...")
-        embeddings = self.model.encode(texts, show_progress_bar=True, convert_to_numpy=True)
+        embeddings = self.model.encode(texts, show_progress_bar=True, convert_to_numpy=True, batch_size=256)
         
         # Build IndexFlatIP (Inner Product/Cosine Similarity after normalization) or IndexFlatL2
         # We will use IndexFlatIP for Cosine/Dot Product similarity
