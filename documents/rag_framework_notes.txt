@@ -1,0 +1,7 @@
+Retrieval-Augmented Generation (RAG) is a framework that improves language model outputs by retrieving relevant content from external sources.
+Naive RAG is the simplest pipeline. It chunks documents, indexes them, performs a vector search on user queries, and appends the top-K chunks to the prompt.
+Advanced RAG improves upon Naive RAG by adding sophisticated processing steps:
+First, it uses query rewriting to optimize user search terms.
+Second, it uses hybrid search (combining sparse keyword search like BM25/TF-IDF with dense vector search) to fetch diverse results.
+Third, it applies a reranker model (such as a Cross-Encoder) to order retrieved chunks based on semantic relevance, filtering out noise.
+Modular RAG introduces even more complexity. It features query routing to decide whether to search documents or answer directly, and context fusion to merge results from multiple search queries using Reciprocal Rank Fusion (RRF).
