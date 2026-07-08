@@ -91,6 +91,24 @@ def main():
     models = config.get("models", [])
     results_list = []
     
+    csv_dir = "results/csv"
+    os.makedirs(csv_dir, exist_ok=True)
+    csv_path = os.path.join(csv_dir, "benchmark_results.csv")
+    
+    # Load existing runs to support resumption
+    existing_runs = set()
+    if os.path.exists(csv_path) and not args.test_only:
+        try:
+            existing_df = pd.read_csv(csv_path)
+            if not existing_df.empty and "model_tag" in existing_df.columns and "rag_type" in existing_df.columns and "query" in existing_df.columns and "run_id" in existing_df.columns:
+                for _, row in existing_df.iterrows():
+                    key = (str(row["model_tag"]), str(row["rag_type"]), str(row["query"]), int(row["run_id"]))
+                    existing_runs.add(key)
+                print(f"Loaded {len(existing_runs)} existing benchmark runs from {csv_path}. Resuming mode active.")
+                results_list = existing_df.to_dict(orient="records")
+        except Exception as e:
+            print(f"Warning: Could not read existing results CSV ({e}). Starting fresh.")
+
     # 6. Execute Benchmark Runs
     for model_info in models:
         model_name = model_info["name"]
@@ -137,6 +155,10 @@ def main():
                 print(f"    Q{q_idx+1}: '{query[:40]}...'")
                 
                 for run_idx in range(1, runs_per_config + 1):
+                    key = (str(model_name), str(rag_type), str(query), int(run_idx))
+                    if key in existing_runs:
+                        continue
+                        
                     print(f"      Run {run_idx}/{runs_per_config}...")
                     
                     # Execute pipeline
@@ -159,10 +181,11 @@ def main():
                     
                     results_list.append(metrics)
                     
+                    # Save results progressively to prevent data loss on interruption
+                    pd.DataFrame(results_list).to_csv(csv_path, index=False)
+                    
     # 7. Compile Results and Export
     results_df = pd.DataFrame(results_list)
-    os.makedirs("results/csv", exist_ok=True)
-    csv_path = "results/csv/benchmark_results.csv"
     results_df.to_csv(csv_path, index=False)
     print(f"\n[SUCCESS] Benchmark results saved to {csv_path}")
 
