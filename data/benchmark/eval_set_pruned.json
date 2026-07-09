@@ -1,0 +1,54 @@
+[
+    {
+        "query": "Explain what the 'Enjoy Sport' concept learning task is and how it represents learning from positive and negative examples.",
+        "ground_truth": "The 'Enjoy Sport' concept learning task is a machine learning problem defined by a set of days described by six attributes (e.g. Sky, Temp, Humidity, Wind, Water, Forecast). The task is to learn to predict whether someone will enjoy playing sport on a given day by generalization, treating positive examples as satisfying the concept description and everything else as negative examples."
+    },
+    {
+        "query": "What is the purpose of Regression Trees and how do they handle continuous dependent variables?",
+        "ground_truth": "A regression tree is a type of decision tree algorithm used to predict a continuous dependent target variable (such as the selling prices of residential houses). It splits the data based on attributes to predict a continuous value at the leaf nodes, differing from classification trees which predict discrete categorical classes."
+    },
+    {
+        "query": "How does the selection of the number of neighbors and distance functions affect the performance of a K-Nearest Neighbors (k-NN) classifier?",
+        "ground_truth": "The performance of a K-Nearest Neighbors (k-NN) classifier relies heavily on the cautious selection of an appropriate distance or similarity function based on the application and nature of the data. Selecting the optimal number of neighbors (k) is also crucial and is highly dependent on the problem, as it determines how sensitive the classification is to noise and local data distribution."
+    },
+    {
+        "query": "Explain the Saltzer and Schroeder security principle of 'Least Privilege' and how it minimizes threat impact.",
+        "ground_truth": "The principle of Least Privilege states that every user and every program should operate by using the fewest privileges possible to perform their jobs. By limiting permissions to only what is necessary, the potential damage from an inadvertent error or a malicious security attack is minimized."
+    },
+    {
+        "query": "What is the 'Complete Mediation' principle in computer security according to Saltzer and Schroeder?",
+        "ground_truth": "The principle of Complete Mediation requires that every access attempt to every object must be checked and authenticated. Both direct access attempts (requests) and attempts to circumvent the access checking mechanism must be considered, and the protection mechanism should be positioned so that it cannot be bypassed."
+    },
+    {
+        "query": "Explain the Saltzer and Schroeder security principle of 'Open Design' and why it opposes security through obscurity.",
+        "ground_truth": "The principle of Open Design states that security mechanisms must not depend on the ignorance of potential attackers. Instead, the design of the mechanism should be public, depending only on the secrecy of relatively few key items (like cryptographic keys or passwords). This allows the design to be subjected to extensive public scrutiny, providing independent confirmation of its security."
+    },
+    {
+        "query": "What is the role of an IT Service Continuity Manager in ITIL Service Continuity Management?",
+        "ground_truth": "In ITIL Service Continuity Management, the IT Service Continuity Manager is specified as the process owner. The continuity manager is responsible for identifying, managing, and maintaining the risks that could impact the availability and continuity of IT services, ensuring the business can recover from disasters."
+    },
+    {
+        "query": "What are some common examples of shared authentication and identity provider systems used in DevOps workflows?",
+        "ground_truth": "Common examples of shared authentication systems used in DevOps workflows to centralize user management and control repository access include Active Directory, LDAP, and SAML-based identity providers."
+    },
+    {
+        "query": "How does Apache Maven define project configurations and manage dependencies compared to earlier tools like Apache Ant?",
+        "ground_truth": "Unlike Apache Ant which requires developers to write out all build steps manually, Apache Maven uses predefined build conventions where only exceptions need to be written down. It uses an XML file (pom.xml) to describe the software project, its build order, directory layouts, plugins, and external module dependencies."
+    },
+    {
+        "query": "How do web clients and browsers use transmission headers to select appropriate players for different content types?",
+        "ground_truth": "Web clients use transmission headers sent at the beginning of a Web transmission to identify the type of data being sent. The browser uses this header to select an appropriate built-in player (like players for GIF, JPEG, or HTML files) or helper application to handle and display that specific data type."
+    },
+    {
+        "query": "Which Java Servlet interface is used to retrieve cookies from a client's browser, and how are servlet parameters handled?",
+        "ground_truth": "The HttpServletRequest interface is used in Java Servlets to return all cookies from the client browser. It also includes methods to read the names and values of request parameters sent by the client or user to the HTTP server."
+    },
+    {
+        "query": "Explain how Dynamic DNS (DDNS) allows a service's network location to change without disrupting the end user experience.",
+        "ground_truth": "Dynamic DNS dynamically updates name server records, allowing a service's IP or location on the network to change without affecting end users. Users continue to use the same host name or URL, and the DNS system handles the resolution of the changing network location behind the scenes."
+    },
+    {
+        "query": "How does Modular RAG handle context fusion and query routing using RRF?",
+        "ground_truth": "Modular RAG uses query routing to decide if document retrieval is necessary, and context fusion to merge retrieval results from multiple queries using Reciprocal Rank Fusion (RRF)."
+    }
+]
