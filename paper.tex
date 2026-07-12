@@ -119,6 +119,39 @@ This configuration introduces query routing and multi-query search fusion:
     where $r_{q'}(c_j)$ is the rank of chunk $c_j$ under sub-query $q'$.
 \end{enumerate}
 
+The algorithmic execution flow of the Modular RAG routing and fusion logic is formalised in Algorithm 1.
+
+\begin{figure}[htbp]
+\hrule
+\vspace{4pt}
+\textbf{Algorithm 1: Modular RAG Routing and Fusion Search}
+\vspace{2pt}
+\hrule
+\begin{algorithmic}[1]
+\REQUIRE User Query $q$, FAISS Index $I$, Model $\mathcal{M}$, Fusion Limit $M=3$, Constant $k=60$
+\ENSURE Response String $y$
+\STATE $r \leftarrow \text{RouterDecision}(q, \mathcal{M})$
+\IF{$r = \text{direct\_completion}$}
+    \STATE $y \leftarrow \text{LLM\_Generate}(q, \mathcal{M})$
+    \RETURN $y$
+\ENDIF
+\STATE $Q_{\text{sub}} \leftarrow \text{GenerateSubQueries}(q, \mathcal{M}, M)$
+\STATE $C_{\text{merged}} \leftarrow \emptyset$
+\FOR{each $q' \in Q_{\text{sub}}$}
+    \STATE $R \leftarrow \text{VectorSearch}(q', I, K=5)$
+    \FOR{each $(c, \text{rank}) \in R$}
+        \STATE $S_{\text{RRF}}(c) \leftarrow S_{\text{RRF}}(c) + \frac{1}{k + \text{rank}}$
+        \STATE $C_{\text{merged}} \leftarrow C_{\text{merged}} \cup \{c\}$
+    \ENDFOR
+\ENDFOR
+\STATE $c_{\text{top}} \leftarrow \arg\max_{c \in C_{\text{merged}}} S_{\text{RRF}}(c)$
+\STATE $P \leftarrow \text{SynthesizePrompt}(q, c_{\text{top}})$
+\STATE $y \leftarrow \text{LLM\_Generate}(P, \mathcal{M})$
+\RETURN $y$
+\end{algorithmic}
+\hrule
+\end{figure}
+
 \section{Experimental Evaluation}
 
 \subsection{Hardware and Software Infrastructure}
@@ -208,6 +241,13 @@ Granite 350M (~222MB size) was extremely fast, responding in under $0.8$ seconds
 
 This indicates that models under 400M parameters suffer from **Context Insensitivity**—they lack the semantic capacity to copy, summarize, or extract facts from retrieved context blocks. They rely almost entirely on their pre-trained weights, making them poor candidates for retrieval-heavy setups.
 
+\subsection{Hardware Memory Bandwidth Bottlenecks at the Edge}
+A key factor limiting performance during our evaluations is the hardware's memory bandwidth constraint. The RTX 3050 Laptop GPU possesses a 128-bit memory bus interface. When executing local SLM inference, the GPU core must repeatedly read the model weights from the local GDDR6 VRAM. 
+
+For the 350M parameter model, loading the weights takes minimal time, allowing Granite to run at maximum speeds. However, as the parameter scale climbs to 0.8B (Qwen3.5), the memory bus bandwidth becomes a severe throughput bottleneck. 
+
+Under Naive RAG, the large prompt context sizes exhaust the GPU cache, forcing the memory controller to make repeated page requests. This explains why prompt size reduction under Advanced RAG yields such a massive speedup on consumer cards compared to high-bandwidth enterprise GPUs.
+
 \subsection{Mapping the Pareto Frontier}
 To visualize the optimal configurations, we map the accuracy-latency tradeoff in Fig.~\ref{fig:pareto}.
 
@@ -229,19 +269,19 @@ Crucially, post-retrieval reranking is not just an accuracy optimizer; it is a l
 \begin{thebibliography}{1}
 
 \bibitem{gao2023retrieval}
-Y.~Gao, Y.~Xiong, X.~Gao, et al., ``Retrieval-Augmented Generation for Large Language Models: A Survey,'' \emph{arXiv preprint arXiv:2312.10997}, 2023.
+Y.~Gao, Y.~Xiong, X.~Gao, et al., ``Retrieval-Augmented Generation for Large Language Models: A Survey,'' \text{arXiv preprint arXiv:2312.10997}, 2023.
 
 \bibitem{jeong2024adaptive}
-S.~Jeong, J.~Baek, S.~Cho, et al., ``Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity,'' \emph{Proceedings of the Association for Computational Linguistics (ACL)}, 2024.
+S.~Jeong, J.~Baek, S.~Cho, et al., ``Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity,'' \text{Proceedings of the Association for Computational Linguistics (ACL)}, 2024.
 
 \bibitem{zhang2024kbm}
-Z.~Zhang, X.~Wang, Y.~Jiang, et al., ``KBM: Delineating Knowledge Boundary for Adaptive Retrieval in Large Language Models,'' \emph{arXiv preprint arXiv:2402.13253}, 2024.
+Z.~Zhang, X.~Wang, Y.~Jiang, et al., ``KBM: Delineating Knowledge Boundary for Adaptive Retrieval in Large Language Models,'' \text{arXiv preprint arXiv:2402.13253}, 2024.
 
 \bibitem{yao2024seakr}
-Z.~Yao, W.~Qi, L.~Pan, et al., ``SEAKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation,'' \emph{arXiv preprint arXiv:2403.04562}, 2024.
+Z.~Yao, W.~Qi, L.~Pan, et al., ``SEAKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation,'' \text{arXiv preprint arXiv:2403.04562}, 2024.
 
 \bibitem{pandey2026empirical}
-S.~Pandey, ``Can Small Language Models Use What They Retrieve? An Empirical Study of Retrieval Utilization Across Model Scale,'' \emph{Empirical Methods in Natural Language Processing (EMNLP)}, 2026.
+S.~Pandey, ``Can Small Language Models Use What They Retrieve? An Empirical Study of Retrieval Utilization Across Model Scale,'' \text{Empirical Methods in Natural Language Processing (EMNLP)}, 2026.
 
 \end{thebibliography}
 
