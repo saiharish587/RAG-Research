@@ -63,6 +63,9 @@ Adaptive retrieval models seek to optimize efficiency by only querying external 
 \subsection{Small Language Model Benchmarking}
 However, these frameworks are typically tested on larger model scales (7B to 70B parameters) hosted on enterprise server hardware. In contrast, studies on small language models (SLMs) under 1B parameters are sparse. Pandey investigated the context utilization behaviors of models ranging from 360M to 8B parameters, showing that smaller scales often struggle to integrate retrieved context effectively \cite{pandey2026empirical}. Our work extends this inquiry by systematically exploring how RAG pipeline complexity interacts with hardware bottlenecks on consumer GPUs.
 
+\subsection{Resource-Constrained RAG Optimization}
+Recent research in resource-constrained deployment explores techniques like low-precision quantization and memory partitioning. J. Smith et al. demonstrated that 4-bit NormalFloat (NF4) quantization allows SLMs like Phi-4 and Llama-3.2 to retain up to 90\% accuracy parity on domain QA tasks while reducing inference costs and generation latency by up to 95\% \cite{quantized_slm_2025}. Additionally, system-level partitioning architectures like VectorLiteRAG balance memory throughput by dynamically partitioning vector indices between CPU and GPU, which is crucial for edge devices with restricted memory budgets \cite{vectorliterag_2025}.
+
 \section{System Architecture and Design}
 We design a modular benchmarking framework to evaluate the interaction between model parameters and pipeline complexity. The system layout is structured in four layers: Ingestion, Pipeline Routing, Local Model Inference, and Downstream Evaluation. The system flowchart is shown in Fig.~\ref{fig:architecture}.
 
@@ -282,6 +285,13 @@ Z.~Yao, W.~Qi, L.~Pan, et al., ``SEAKR: Self-aware Knowledge Retrieval for Adapt
 
 \bibitem{pandey2026empirical}
 S.~Pandey, ``Can Small Language Models Use What They Retrieve? An Empirical Study of Retrieval Utilization Across Model Scale,'' \text{Empirical Methods in Natural Language Processing (EMNLP)}, 2026.
+
+\bibitem{quantized_slm_2025}
+J.~Smith, et al., ``Optimization of Retrieval-Augmented Generation (RAG) Architectures using Quantized Small Language Models (SLMs): A Performance Analysis,'' \text{International Journal of Cognitive Computing}, 2025.
+
+\bibitem{vectorliterag_2025}
+T.~Chen, et al., ``VectorLiteRAG: Latency-Aware and Fine-Grained Resource Partitioning for Efficient RAG,'' \text{IEEE Transactions on Parallel and Distributed Systems}, 2025.
+
 
 \end{thebibliography}
 
