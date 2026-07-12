@@ -1,0 +1,21 @@
+Methodology/Algorithm for Telugu Handwriting Recognition Model
+
+Data Ingestion & Preprocessing:
+- Load images and labels.
+- Apply Unicode Normalization (NFC) to ensure consistent character representation.
+- Apply image transformations (grayscale conversion, elastic distortion for augmentation, aspect-ratio-preserving resize to 64x512).
+
+Feature Extraction:
+- The ResNet-18 encoder processes the image and compresses the height dimension, outputting a sequence of feature vectors (e.g., 64 timesteps of size 256).
+
+Joint Training Phase:
+- The encoder output goes to an auxiliary CTC (Connectionist Temporal Classification) head to compute CTC Loss.
+- The encoder output and the target text sequence go into the Transformer Decoder using "Teacher Forcing".
+- The decoder outputs logits, and Cross-Entropy (CE) loss is computed.
+- Total Loss = (0.7 * CE) + (0.3 * CTC).
+
+Constrained Decoding (Inference):
+- The model predicts character by character.
+- At step t, the model outputs probabilities for the next character.
+- The Telugu Masking Algorithm checks the prediction at t-1. It applies a massive penalty (-10.0) to any character at step t that is linguistically invalid to follow t-1.
+- Beam Search (k=5) is used to find the most likely overall sequence.
