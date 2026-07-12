@@ -45,32 +45,61 @@ On consumer GPUs with constrained video random-access memory (VRAM), prompt eval
 
 To address this, we evaluate three local models (Granite 350M, Qwen2.5 0.5B, and Qwen3.5 0.8B) across four pipelines: No RAG, Naive RAG, Advanced RAG (with query rewriting and reranking), and Modular RAG (incorporating routing and query fusion). We measure semantic accuracy, end-to-end latency, and hallucination rates over 4,680 test runs. Our results map the parameter count versus retrieval sophistication frontier, uncovering key optimizations for edge-deployed RAG systems.
 
+The contributions of this paper are summarized as follows:
+\begin{itemize}
+    \item We construct a complete benchmarking framework evaluating edge-deployed SLMs (350M to 800M parameters) across four distinct RAG archetypes.
+    \item We empirically identify the \textit{Reranking Efficiency Paradox}, demonstrating that introducing post-retrieval reranking reduces GPU prompt processing overhead, resulting in faster execution than naive retrieval.
+    \item We document the \textit{RAG Loop Stabilization Effect}, demonstrating how external context anchors small models and prevents infinite generation loops.
+    \item We define design guidelines for hardware-constrained deployments based on the accuracy-latency Pareto frontier.
+\end{itemize}
+
 \section{Related Work}
+\subsection{RAG Architectures and Paradigms}
 The evolution of RAG architectures is typically categorized into Naive, Advanced, and Modular paradigms, as surveyed by Gao et al. \cite{gao2023retrieval}. Naive RAG systems use a single-step retrieve-and-read process, which often suffers from low precision due to irrelevant text chunks. Advanced RAG mitigates this by introducing pre-retrieval strategies (such as query rewriting) and post-retrieval optimization (such as cross-encoder reranking) to filter context. Modular RAG introduces adaptive query routing and query fusion to handle complex, multi-step queries \cite{jeong2024adaptive}.
 
+\subsection{Adaptive Retrieval Methods}
 Adaptive retrieval models seek to optimize efficiency by only querying external databases when necessary. For instance, Zhang et al. proposed the Knowledge Boundary Model (KBM) to delineate what an LLM knows versus what it does not, adapting retrieval calls dynamically \cite{zhang2024kbm}. Similarly, Self-aware Knowledge Retrieval (SEAKR) extracts internal model uncertainty to determine whether to trigger retrieval, matching search intensity to model confidence \cite{yao2024seakr}.
 
+\subsection{Small Language Model Benchmarking}
 However, these frameworks are typically tested on larger model scales (7B to 70B parameters) hosted on enterprise server hardware. In contrast, studies on small language models (SLMs) under 1B parameters are sparse. Pandey investigated the context utilization behaviors of models ranging from 360M to 8B parameters, showing that smaller scales often struggle to integrate retrieved context effectively \cite{pandey2026empirical}. Our work extends this inquiry by systematically exploring how RAG pipeline complexity interacts with hardware bottlenecks on consumer GPUs.
 
-\section{System Methodology}
-We design a modular benchmarking framework to evaluate the interaction between model parameters and pipeline complexity. The ingestion engine parses raw PDF slide documents, processes them via a recursive text splitter (1,500 characters with 150 characters overlap), and embeds them using the dense bi-encoder \texttt{BAAI/bge-small-en-v1.5}. The resulting vectors are indexed in a local FAISS (Facebook AI Similarity Search) database.
+\section{System Architecture and Design}
+We design a modular benchmarking framework to evaluate the interaction between model parameters and pipeline complexity. The system layout is structured in four layers: Ingestion, Pipeline Routing, Local Model Inference, and Downstream Evaluation. The system flowchart is shown in Fig.~\ref{fig:architecture}.
 
-When a query is received, it is processed through one of four pipeline configurations:
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.48\textwidth]{results/graphs/architecture_diagram.png}
+\caption{System architecture diagram showing the document ingestion, vector indexing, retrieval pipeline routing, local SLM execution, and the evaluation layer.}
+\label{fig:architecture}
+\end{figure}
 
-\subsection{No RAG (Direct Query)}
+\subsection{Document Ingestion and Vector Indexing}
+The document ingestion engine parses technical slide notes recursively using \texttt{pdfplumber}. Let $D = \{d_1, d_2, \dots, d_N\}$ be the document corpus. Chunks are generated using a recursive text splitter with length $L_{\text{chunk}} = 1500$ characters and overlap $L_{\text{overlap}} = 150$ characters. Each chunk $c_i$ is embedded using the bi-encoder $E(\cdot) = \text{bge-small-en-v1.5}$ to generate a vector representation:
+\begin{equation}
+v_i = E(c_i) \in \mathbb{R}^{384}
+\end{equation}
+The embeddings are indexed in a local FAISS database. Similarity search is performed using Cosine Similarity between the embedded query $q$ and chunk vector $v_i$:
+\begin{equation}
+\text{Similarity}(E(q), v_i) = \frac{E(q) \cdot v_i}{\|E(q)\| \|v_i\|}
+\end{equation}
+
+\subsection{Pipeline Architectures}
+We evaluate four distinct pipeline configurations:
+
+\subsubsection{No RAG (Direct Query)}
 The query is fed directly to the local model without any external context:
 \begin{equation}
 y = \text{LLM}(q)
 \end{equation}
 This acts as our control baseline, measuring the model's pre-trained parametric knowledge.
 
-\subsection{Naive RAG}
+\subsubsection{Naive RAG}
 The query is embedded, and the top-$K$ ($K=3$) most similar chunks are retrieved from the FAISS database. The chunks are concatenated and prepended directly to the query inside a static prompt template:
 \begin{equation}
-y = \text{LLM}([\text{Retrieve}(q, \text{FAISS}), q])
+y = \text{LLM}([\text{Retrieve}(q, \text{FAISS}, K=3), q])
 \end{equation}
 
-\subsection{Advanced RAG}
+\subsubsection{Advanced RAG}
 This pipeline introduces two additional optimization stages:
 \begin{enumerate}
     \item \textbf{Query Rewriting}: The model first rewrites the user query to optimize it for vector search.
@@ -78,12 +107,16 @@ This pipeline introduces two additional optimization stages:
 \end{enumerate}
 This drastically minimizes the prompt context size sent to the final generator.
 
-\subsection{Modular RAG}
+\subsubsection{Modular RAG}
 This configuration introduces query routing and multi-query search fusion:
 \begin{enumerate}
     \item \textbf{Query Router}: A routing step determines if the query requires external documentation. If not, it routes directly to No RAG.
     \item \textbf{Query Fusion}: If retrieval is needed, the system generates three sub-queries to capture different semantic facets of the request.
-    \item \textbf{Reciprocal Rank Fusion (RRF)}: Chunks retrieved for all sub-queries are merged and re-ordered using RRF before the top chunk is passed to the model.
+    \item \textbf{Reciprocal Rank Fusion (RRF)}: Chunks retrieved for all sub-queries are merged and re-ordered using RRF before the top chunk is passed to the model. The RRF score for a chunk $c_j$ is calculated as:
+    \begin{equation}
+    \text{RRF}(c_j) = \sum_{q' \in Q_{\text{sub}}} \frac{1}{60 + r_{q'}(c_j)}
+    \end{equation}
+    where $r_{q'}(c_j)$ is the rank of chunk $c_j$ under sub-query $q'$.
 \end{enumerate}
 
 \section{Experimental Evaluation}
@@ -91,7 +124,7 @@ This configuration introduces query routing and multi-query search fusion:
 \subsection{Hardware and Software Infrastructure}
 All experiments were conducted locally on an budget-constrained workstation:
 \begin{itemize}
-    \item \textbf{GPU}: NVIDIA GeForce RTX 3050 Laptop GPU (4GB VRAM).
+    \item \textbf{GPU}: NVIDIA GeForce RTX 3050 Laptop GPU (4GB VRAM, 128-bit memory bus).
     \item \textbf{CPU}: Intel Core i5-11400H @ 2.70GHz.
     \item \textbf{Memory}: 16GB DDR4 RAM.
     \item \textbf{OS}: Windows 11.
@@ -145,25 +178,49 @@ Qwen3.5 0.8B & No RAG & 6.97\% & 41.34 & 93.03\% \\
 \end{table}
 
 \subsection{The Reranking Efficiency Paradox}
-Our results show a surprising finding on low-VRAM hardware: for Qwen2.5 0.5B, Advanced RAG (1.71s) is **$25\%$ faster** than Naive RAG (2.28s). 
+Our results show a surprising finding on low-VRAM hardware: for Qwen2.5 0.5B, Advanced RAG (1.71s) is **$25\%$ faster** than Naive RAG (2.28s). The visual bar chart of average latency across configurations is shown in Fig.~\ref{fig:latency}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.48\textwidth]{results/graphs/latency_vs_rag.png}
+\caption{Average latency comparison across different RAG pipelines and model sizes, demonstrating the speedup of Advanced RAG over Naive RAG for larger models.}
+\label{fig:latency}
+\end{figure}
 
 This is counterintuitive because Advanced RAG introduces two extra steps: query rewriting and cross-encoder reranking. However, because the reranker filters out irrelevant chunks, the final prompt sent to the LLM contains only the top-1 chunk ($500$ tokens) instead of the top-3 chunks ($1,500$ tokens). 
 
 On a 4GB VRAM GPU, processing $1,000$ extra input tokens in a prompt is slow. The time saved by not evaluating these extra tokens far outweighs the millisecond overhead of running a local cross-encoder, resolving this paradox.
 
 \subsection{The RAG Loop Stabilization Effect}
-Qwen3.5 0.8B under No RAG achieved a dismal accuracy of 6.97\% and a massive latency of 41.34s. 
-
-Analysis of the raw logs revealed that under temperature $0.0$ without context, the model gets stuck in an infinite generation loop, continuously repeating whitespace and newline characters. 
+Qwen3.5 0.8B under No RAG achieved a dismal accuracy of 6.97\% and a massive latency of 41.34s. Analysis of the raw logs revealed that under temperature $0.0$ without context, the model gets stuck in an infinite generation loop, continuously repeating whitespace and newline characters. 
 
 Injecting context via RAG acts as an anchor, breaking the infinite generation cycle. **Advanced RAG** provides the most robust stabilization, boosting accuracy to **57.02%** and cutting latency in half to **22.55s**.
 
 \subsection{Model Scale vs. Context Sensitivity}
-Granite 350M (~222MB size) was extremely fast, responding in under $0.8$ seconds across all configurations. However, its accuracy remained flat regardless of the RAG pipeline used. 
+Granite 350M (~222MB size) was extremely fast, responding in under $0.8$ seconds across all configurations. However, its accuracy remained flat regardless of the RAG pipeline used. The visual bar chart comparing accuracies is shown in Fig.~\ref{fig:accuracy}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.48\textwidth]{results/graphs/accuracy_vs_rag.png}
+\caption{Average semantic accuracy across configurations. Granite 350M displays context insensitivity, while Qwen2.5 0.5B reaches optimal performance.}
+\label{fig:accuracy}
+\end{figure}
 
 This indicates that models under 400M parameters suffer from **Context Insensitivity**—they lack the semantic capacity to copy, summarize, or extract facts from retrieved context blocks. They rely almost entirely on their pre-trained weights, making them poor candidates for retrieval-heavy setups.
 
-\section{Conclusion}
+\subsection{Mapping the Pareto Frontier}
+To visualize the optimal configurations, we map the accuracy-latency tradeoff in Fig.~\ref{fig:pareto}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.48\textwidth]{results/graphs/accuracy_vs_latency_tradeoff.png}
+\caption{Accuracy vs. Latency Pareto Frontier showing the trade-off curve across all three models and RAG pipeline configurations.}
+\label{fig:pareto}
+\end{figure}
+
+Qwen2.5 0.5B under Modular RAG sits at the optimal vertex of the Pareto frontier, delivering the highest overall accuracy (88.02\%) with a low latency overhead (1.87s). For latency-critical deployments, Naive RAG on Granite 350M provides sub-second responses (0.62s) at the expense of context-grounding accuracy.
+
+\section{Conclusion and Future Work}
 This paper investigated the trade-offs between model parameter count and RAG pipeline sophistication. We showed that on local consumer GPUs, Qwen2.5 0.5B paired with Modular or Advanced RAG represents the optimal "sweet spot," delivering the highest accuracy (88.02%) and lowest hallucination rate (11.98%) in under 1.9 seconds. 
 
 Crucially, post-retrieval reranking is not just an accuracy optimizer; it is a latency-reduction tool that minimizes prompt size and prevents GPU memory bottlenecks. Future work will investigate the impact of model quantization ($4$-bit and $8$-bit GGUF files) on this trade-off frontier.
