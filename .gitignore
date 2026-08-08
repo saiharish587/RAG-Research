@@ -1,0 +1,44 @@
+# Python ---------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Project artefacts ----------------------------------------------------------
+# The FAISS index and embedding cache are rebuilt from documents/ by
+# rebuild_index.py. They are large, machine-specific, and must not be
+# committed -- a stale index silently invalidates a benchmark run.
+vector_db/
+embeddings/
+models/
+
+# LaTeX build products -------------------------------------------------------
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# OS / editor ----------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~

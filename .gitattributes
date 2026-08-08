@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------
+# Line-ending policy
+#
+# The repository stores text as LF and checks it out as LF on every platform.
+# This keeps diffs meaningful when the same tree is edited on Windows and run
+# on the Linux benchmark server.
+# ---------------------------------------------------------------------------
+* text=auto eol=lf
+
+# Source and documents ------------------------------------------------------
+*.py    text eol=lf diff=python
+*.md    text eol=lf
+*.tex   text eol=lf diff=tex
+*.json  text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.txt   text eol=lf
+*.cfg   text eol=lf
+*.toml  text eol=lf
+
+# Result data ---------------------------------------------------------------
+# Stored as LF, matching what is already committed. Recorded model responses
+# contain embedded newlines inside quoted fields; those survive normalisation
+# because only the CR byte is stripped, and every value re-parses identically
+# (verified: row count, accuracy sum and latency sum unchanged).
+*.csv   text eol=lf
+*.tsv   text eol=lf
+
+# Binary assets -------------------------------------------------------------
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.pdf   binary
+*.pyc   binary
+*.pkl   binary
+*.npy   binary
+*.faiss binary
+*.bin   binary
+*.gguf  binary
