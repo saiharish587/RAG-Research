@@ -4,6 +4,8 @@ The embedding model is injected as a stub, so these run with no GPU, no model
 weights and no sentence-transformers installation.
 """
 
+import contextlib
+import io
 import sys
 import unittest
 from pathlib import Path
@@ -125,7 +127,12 @@ class TestNoRagArm(unittest.TestCase):
 class TestEncoderRobustness(unittest.TestCase):
     def test_encoder_failure_gives_none_not_zero(self):
         ev = Evaluator(embedding_model=ExplodingEncoder())
-        row = ev.evaluate("An answer.", GROUND_TRUTH, CONTEXT)
+        # The evaluator logs the failure; silence it so a deliberately
+        # triggered error does not look like a real one in test output.
+        with contextlib.redirect_stdout(io.StringIO()) as captured:
+            row = ev.evaluate("An answer.", GROUND_TRUTH, CONTEXT)
+        self.assertIn("CUDA out of memory", captured.getvalue(),
+                      "the failure must still be logged, not swallowed silently")
         self.assertIsNone(row["cosine"], "an infrastructure error must not look like a wrong answer")
         self.assertIsNotNone(row["token_f1"], "other metrics must survive an encoder failure")
 
