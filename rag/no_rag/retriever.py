@@ -10,8 +10,10 @@ could not be attributed to retrieval alone.
 
 from __future__ import annotations
 
+import time
 from typing import Any
 
+from rag.base import RunRecorder
 from rag.prompts import build_answer_prompt
 
 
@@ -20,11 +22,13 @@ class NoRAGPipeline:
 
     name = "no_rag"
 
-    def __init__(self, db_manager=None, generator=None):
+    def __init__(self, db_manager=None, generator=None, clock=time.perf_counter):
         # db_manager is accepted but unused, so every arm shares one
         # construction signature.
         self.db_manager = db_manager
         self.generator = generator
+        # Injectable so latency accounting can be asserted exactly in tests.
+        self.clock = clock
 
     def run(self, query: str) -> dict[str, Any]:
         """Answer without retrieval.
@@ -33,7 +37,7 @@ class NoRAGPipeline:
         "retrieval did not run" and reports as ``None`` for context-dependent
         metrics rather than as a zero.
         """
+        recorder = RunRecorder(clock=self.clock)
         prompt = build_answer_prompt(query, retrieved_context=None)
-        result = self.generator.generate(prompt)
-        result["retrieved_context"] = []
-        return result
+        final = recorder.generate(self.generator, prompt, stage="generate")
+        return recorder.finish(final, retrieved_context=[])

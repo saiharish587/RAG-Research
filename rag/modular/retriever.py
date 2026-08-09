@@ -20,8 +20,10 @@ rather than inferred.
 from __future__ import annotations
 
 import re
+import time
 from typing import Any
 
+from rag.base import RunRecorder
 from rag.fusion import RRF_K, reciprocal_rank_fusion
 from rag.prompts import build_answer_prompt, build_routing_prompt, build_subquery_prompt
 
@@ -49,6 +51,7 @@ class ModularRAGPipeline:
         n_sub_queries: int = 2,
         candidate_multiplier: int = 2,
         rrf_k: int = RRF_K,
+        clock=time.perf_counter,
     ):
         self.db_manager = db_manager
         self.generator = generator
@@ -60,12 +63,13 @@ class ModularRAGPipeline:
         self.n_sub_queries = n_sub_queries
         self.candidate_multiplier = candidate_multiplier
         self.rrf_k = rrf_k
+        self.clock = clock
 
     # ------------------------------------------------------------------
     # Routing
     # ------------------------------------------------------------------
 
-    def route_query(self, query: str) -> tuple[str, str]:
+    def route_query(self, query: str, recorder=None) -> tuple[str, str]:
         """Decide whether the query needs retrieval.
 
         Returns ``(route, raw_decision)`` where route is ``"rag"`` or
@@ -76,7 +80,11 @@ class ModularRAGPipeline:
         under study, so an unparseable router response must not silently
         convert a modular run into a baseline run.
         """
-        response = self.generator.generate(build_routing_prompt(query))
+        prompt = build_routing_prompt(query)
+        if recorder is None:
+            response = self.generator.generate(prompt)
+        else:
+            response = recorder.generate(self.generator, prompt, stage="route")
         raw = (response.get("response") or "").strip()
 
         # Take the first word-ish token, ignoring markdown or quoting.
@@ -92,16 +100,18 @@ class ModularRAGPipeline:
     # Sub-queries
     # ------------------------------------------------------------------
 
-    def generate_sub_queries(self, query: str) -> list[str]:
+    def generate_sub_queries(self, query: str, recorder=None) -> list[str]:
         """Ask the model for ``n_sub_queries`` alternative phrasings.
 
         Enumeration markers are stripped. Blank lines, duplicates and repeats
         of the original query are dropped, so a model that simply echoes the
         question does not inflate the fusion input with identical lists.
         """
-        response = self.generator.generate(
-            build_subquery_prompt(query, n=self.n_sub_queries)
-        )
+        prompt = build_subquery_prompt(query, n=self.n_sub_queries)
+        if recorder is None:
+            response = self.generator.generate(prompt)
+        else:
+            response = recorder.generate(self.generator, prompt, stage="subquery")
         text = (response.get("response") or "").strip()
 
         seen = {query.strip().lower()}
@@ -142,28 +152,78 @@ class ModularRAGPipeline:
     # ------------------------------------------------------------------
 
     def run(self, query: str) -> dict[str, Any]:
-        route, raw_decision = self.route_query(query)
-        if route == "no_rag":
-            result = self.no_rag_pipeline.run(query)
-            result["route"] = "no_rag"
-            result["router_raw"] = raw_decision
-            return result
+        recorder = RunRecorder(clock=self.clock)
 
-        sub_queries = self.generate_sub_queries(query)
+        route, raw_decision = self.route_query(query, recorder=recorder)
+        if route == "no_rag":
+            # Delegate for the answer, but keep this run's cost accounting:
+            # the routing call was paid by the modular arm and must be charged
+            # to it. v1 returned the delegate's record wholesale, so a routed
+            # run reported the baseline arm's cost and the router call was
+            # free -- which flattered exactly the arm that made the extra call.
+            with recorder.stage("delegate_no_rag"):
+                delegated = self.no_rag_pipeline.run(query)
+            return self._finish_delegated(recorder, delegated, route, raw_decision)
+
+        sub_queries = self.generate_sub_queries(query, recorder=recorder)
         all_queries = [query] + sub_queries
 
-        retrieval_lists = [
-            self.db_manager.search(q, top_k=self.top_k * self.candidate_multiplier)
-            for q in all_queries
-        ]
+        with recorder.stage("retrieve"):
+            retrieval_lists = [
+                self.db_manager.search(q, top_k=self.top_k * self.candidate_multiplier)
+                for q in all_queries
+            ]
 
-        fused_chunks = self.reciprocal_rank_fusion(retrieval_lists)
-        retrieved_contexts = [c["text"] for c in fused_chunks]
+        with recorder.stage("fuse"):
+            fused_chunks = self.reciprocal_rank_fusion(retrieval_lists)
+            retrieved_contexts = [c["text"] for c in fused_chunks]
 
         prompt = build_answer_prompt(query, retrieved_contexts)
-        result = self.generator.generate(prompt)
-        result["retrieved_context"] = retrieved_contexts
-        result["route"] = "rag"
-        result["router_raw"] = raw_decision
-        result["sub_queries"] = sub_queries
-        return result
+        final = recorder.generate(self.generator, prompt, stage="generate")
+        return recorder.finish(
+            final,
+            retrieved_contexts,
+            route="rag",
+            router_raw=raw_decision,
+            sub_queries=sub_queries,
+            n_sub_queries_used=len(sub_queries),
+        )
+
+    def _finish_delegated(self, recorder, delegated: dict[str, Any],
+                          route: str, raw_decision: str) -> dict[str, Any]:
+        """Merge a delegate's answer with this arm's own cost accounting."""
+        record = recorder.finish(
+            {
+                "response": delegated.get("response"),
+                "error": delegated.get("error"),
+                "error_message": delegated.get("error_message"),
+                "prompt_tokens": delegated.get("prompt_tokens"),
+                "generation_tokens": delegated.get("generation_tokens"),
+                "generation_speed": delegated.get("generation_speed"),
+                "prompt_eval_speed": delegated.get("prompt_eval_speed"),
+                "latency": delegated.get("generation_latency_s"),
+            },
+            retrieved_context=delegated.get("retrieved_context", []),
+            route=route,
+            router_raw=raw_decision,
+            sub_queries=[],
+            n_sub_queries_used=0,
+        )
+        # Add the delegate's own token cost to this run's totals; the recorder
+        # only saw the routing call.
+        for field in ("total_prompt_tokens", "total_generation_tokens"):
+            record[field] = _add(record.get(field), delegated.get(field))
+        record["n_llm_calls"] = record["n_llm_calls"] + delegated.get("n_llm_calls", 0)
+        record["failed_llm_calls"] = (
+            record["failed_llm_calls"] + delegated.get("failed_llm_calls", 0)
+        )
+        return record
+
+
+def _add(a, b):
+    """Sum two optional counters, preserving 'never measured' as ``None``."""
+    if a is None:
+        return b
+    if b is None:
+        return a
+    return a + b

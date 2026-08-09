@@ -24,8 +24,10 @@ the number of candidates entering the cross-encoder is a stated parameter.
 
 from __future__ import annotations
 
+import time
 from typing import Any
 
+from rag.base import RunRecorder
 from rag.fusion import min_max_normalise, weighted_score_fusion
 from rag.prompts import build_answer_prompt, build_rewrite_prompt
 from rag.sparse import TfidfIndex, corpus_signature
@@ -62,11 +64,13 @@ class AdvancedRAGPipeline:
         rerank_top_n: int = 12,
         dense_weight: float = 0.7,
         sparse_index_factory=TfidfIndex,
+        clock=time.perf_counter,
     ):
         self.db_manager = db_manager
         self.generator = generator
         self.top_k = top_k
         self.rerank = rerank
+        self.clock = clock
         # Number of hybrid candidates scored by the cross-encoder. Stated
         # explicitly: in v1 this was an emergent product of two separate
         # doublings and was never reported.
@@ -101,19 +105,23 @@ class AdvancedRAGPipeline:
     # Query rewriting
     # ------------------------------------------------------------------
 
-    def rewrite_query(self, query: str) -> str:
+    def rewrite_query(self, query: str, recorder=None) -> str:
         """Rephrase the query for retrieval, falling back to the original.
 
         The fallback matters for interpretation: when rewriting fails the arm
         degrades to searching the original query, not to searching nothing.
         """
-        response = self.generator.generate(build_rewrite_prompt(query))
+        prompt = build_rewrite_prompt(query)
+        if recorder is None:
+            response = self.generator.generate(prompt)
+        else:
+            response = recorder.generate(self.generator, prompt, stage="rewrite")
         rewritten = (response.get("response") or "").strip()
 
         # Reject a failed generation *before* any cleanup. v1 stripped the
         # leading "ERROR:" label first, after which the "ERROR" test could no
         # longer match and the error text was used as a search query.
-        if not rewritten or "ERROR" in rewritten.upper():
+        if response.get("error") or not rewritten or "ERROR" in rewritten.upper():
             return query
 
         # Strip a leading label such as "Optimized Query:". v1 used
@@ -239,20 +247,32 @@ class AdvancedRAGPipeline:
     # ------------------------------------------------------------------
 
     def run(self, query: str) -> dict[str, Any]:
-        optimized_query = self.rewrite_query(query)
-        candidates = self.hybrid_search(optimized_query, top_k=self.rerank_top_n)
+        recorder = RunRecorder(clock=self.clock)
+
+        # Every stage below is timed. In v1 only the final generate() call was,
+        # so this arm's two extra costs -- the rewrite call and the
+        # cross-encoder pass -- were invisible in the reported latency.
+        optimized_query = self.rewrite_query(query, recorder=recorder)
+
+        with recorder.stage("retrieve"):
+            candidates = self.hybrid_search(optimized_query, top_k=self.rerank_top_n)
 
         if self.rerank and self.reranker and candidates:
-            pairs = [[optimized_query, c["chunk"]["text"]] for c in candidates]
-            scores = self.reranker.predict(pairs)
-            for score, candidate in zip(scores, candidates):
-                candidate["rerank_score"] = float(score)
-            candidates = sorted(candidates, key=lambda c: c["rerank_score"], reverse=True)
+            with recorder.stage("rerank"):
+                pairs = [[optimized_query, c["chunk"]["text"]] for c in candidates]
+                scores = self.reranker.predict(pairs)
+                for score, candidate in zip(scores, candidates):
+                    candidate["rerank_score"] = float(score)
+                candidates = sorted(candidates, key=lambda c: c["rerank_score"],
+                                    reverse=True)
 
         retrieved_contexts = [c["chunk"]["text"] for c in candidates[: self.top_k]]
 
         prompt = build_answer_prompt(query, retrieved_contexts)
-        result = self.generator.generate(prompt)
-        result["retrieved_context"] = retrieved_contexts
-        result["rewritten_query"] = optimized_query
-        return result
+        final = recorder.generate(self.generator, prompt, stage="generate")
+        return recorder.finish(
+            final,
+            retrieved_contexts,
+            rewritten_query=optimized_query,
+            query_was_rewritten=optimized_query != query,
+        )

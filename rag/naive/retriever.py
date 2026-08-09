@@ -6,8 +6,10 @@ generation call. No query rewriting, no reranking, no routing.
 
 from __future__ import annotations
 
+import time
 from typing import Any
 
+from rag.base import RunRecorder
 from rag.prompts import build_answer_prompt
 
 
@@ -16,16 +18,19 @@ class NaiveRAGPipeline:
 
     name = "naive"
 
-    def __init__(self, db_manager, generator, top_k: int = 3):
+    def __init__(self, db_manager, generator, top_k: int = 3, clock=time.perf_counter):
         self.db_manager = db_manager
         self.generator = generator
         self.top_k = top_k
+        self.clock = clock
 
     def run(self, query: str) -> dict[str, Any]:
-        search_results = self.db_manager.search(query, top_k=self.top_k)
-        retrieved_contexts = [r["chunk"]["text"] for r in search_results]
+        recorder = RunRecorder(clock=self.clock)
+
+        with recorder.stage("retrieve"):
+            search_results = self.db_manager.search(query, top_k=self.top_k)
+            retrieved_contexts = [r["chunk"]["text"] for r in search_results]
 
         prompt = build_answer_prompt(query, retrieved_contexts)
-        result = self.generator.generate(prompt)
-        result["retrieved_context"] = retrieved_contexts
-        return result
+        final = recorder.generate(self.generator, prompt, stage="generate")
+        return recorder.finish(final, retrieved_contexts)

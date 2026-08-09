@@ -114,10 +114,16 @@ def main():
         model_name = model_info["name"]
         display_name = model_info["display_name"]
         print(f"\nEvaluating Model: {display_name} ({model_name})")
-        
+
         # Initialize generator for this model
         generator = Generator(model_name=model_name)
-        
+
+        # Warm up before any measured call. The first request to a cold model
+        # pays the weight-loading cost; leaving it inside the first measured run
+        # charges a per-model cost to whichever arm happened to run first.
+        warmup_s = generator.warmup()
+        print(f"  Warmup (weights into memory): {warmup_s:.2f}s -- excluded from results")
+
         # Initialize pipelines
         no_rag = NoRAGPipeline(generator=generator)
         naive_rag = NaiveRAGPipeline(db_manager=db_manager, generator=generator, top_k=config.get("retrieval", {}).get("top_k", 3))
@@ -163,7 +169,7 @@ def main():
                     
                     # Execute pipeline
                     pipeline_result = pipeline.run(query)
-                    
+
                     # Evaluate result
                     metrics = evaluator.evaluate_run(
                         query=query,
@@ -172,7 +178,24 @@ def main():
                         ground_truth=ground_truth,
                         stats=pipeline_result
                     )
-                    
+
+                    # Carry the run's own cost accounting through to the CSV.
+                    # The evaluator scores quality; it does not measure cost,
+                    # and these fields must not be silently dropped.
+                    for field in (
+                        "latency", "generation_latency_s", "load_duration",
+                        "total_prompt_tokens", "total_generation_tokens",
+                        "n_llm_calls", "failed_llm_calls",
+                        "pipeline_latency_s", "unaccounted_latency_s",
+                        "route", "router_raw", "rewritten_query",
+                        "query_was_rewritten", "n_sub_queries_used",
+                    ):
+                        if field in pipeline_result:
+                            metrics[field] = pipeline_result[field]
+                    for field, value in pipeline_result.items():
+                        if field.startswith("stage_"):
+                            metrics[field] = value
+
                     # Log metadata
                     metrics["model"] = display_name
                     metrics["model_tag"] = model_name

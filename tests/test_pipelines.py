@@ -17,20 +17,38 @@ from rag.modular.retriever import ModularRAGPipeline  # noqa: E402
 from rag.naive.retriever import NaiveRAGPipeline  # noqa: E402
 from rag.no_rag.retriever import NoRAGPipeline  # noqa: E402
 from rag.prompts import ABSTENTION_INSTRUCTION, SYSTEM_PERSONA  # noqa: E402
+from tests.test_timing import FakeClock  # noqa: E402
 
 
 class StubGenerator:
-    """Returns queued responses and records every prompt it received."""
+    """Returns queued responses and records every prompt it received.
 
-    def __init__(self, responses=None, default="A generated answer."):
+    ``call_seconds`` makes each call cost a fixed amount of a fake clock, so
+    latency assertions are exact rather than timing-dependent. Passing a clock
+    is what lets the tests prove the pipeline totals *all* of its calls.
+    """
+
+    def __init__(self, responses=None, default="A generated answer.",
+                 clock=None, call_seconds=0.0, tokens=(50, 5)):
         self.responses = list(responses or [])
         self.default = default
         self.prompts = []
+        self.clock = clock
+        self.call_seconds = call_seconds
+        self.prompt_tokens, self.generation_tokens = tokens
 
     def generate(self, prompt, system_prompt=None):
         self.prompts.append(prompt)
+        if self.clock is not None:
+            self.clock.advance(self.call_seconds)
         text = self.responses.pop(0) if self.responses else self.default
-        return {"response": text, "latency": 0.1, "generation_tokens": 5, "prompt_tokens": 50}
+        return {
+            "response": text,
+            "error": False,
+            "latency": self.call_seconds or 0.1,
+            "generation_tokens": self.generation_tokens,
+            "prompt_tokens": self.prompt_tokens,
+        }
 
 
 class StubDB:
@@ -383,8 +401,158 @@ class TestAdvancedPipeline(unittest.TestCase):
         self.assertAlmostEqual(by_text["alpha three"], 1 / 3)
 
 
+class TestCostAccounting(unittest.TestCase):
+    """Guards the v1 defect that made the cost/benefit comparison invalid.
+
+    v1 reported ``latency`` as the elapsed time of the final ``generate()``
+    call. Everything before it -- rewriting, routing, sub-query generation,
+    retrieval, reranking -- was untimed, and the untimed portion grows with
+    pipeline sophistication. On the v1 data this inverted the ordering: no-RAG
+    (one LLM call, no retrieval) reported a 20.8s mean, advanced (two LLM calls
+    plus hybrid retrieval and reranking) reported 8.4s.
+
+    Each LLM call costs the fake clock exactly 1.0s here, so the totals below
+    are arithmetic rather than timing-dependent.
+    """
+
+    def _arms(self, clock):
+        gen = lambda responses=None: StubGenerator(  # noqa: E731
+            responses=responses, clock=clock, call_seconds=1.0, default="answer")
+        return gen
+
+    def test_single_call_arm_reports_that_one_call(self):
+        clock = FakeClock()
+        gen = StubGenerator(clock=clock, call_seconds=1.0)
+        result = NoRAGPipeline(generator=gen, clock=clock).run("q")
+        self.assertAlmostEqual(result["latency"], 1.0)
+        self.assertEqual(result["n_llm_calls"], 1)
+
+    def test_advanced_arm_totals_both_of_its_llm_calls(self):
+        clock = FakeClock()
+        gen = StubGenerator(responses=["rewritten", "answer"], clock=clock, call_seconds=1.0)
+        pipe = AdvancedRAGPipeline(StubDB(), gen, rerank=False, clock=clock,
+                                   sparse_index_factory=StubSparseIndex)
+        result = pipe.run("q")
+        # v1 would have reported 1.0 -- the answer call alone.
+        self.assertAlmostEqual(result["generation_latency_s"], 1.0)
+        self.assertAlmostEqual(result["latency"], 2.0)
+        self.assertEqual(result["n_llm_calls"], 2)
+
+    def test_modular_arm_totals_all_three_of_its_llm_calls(self):
+        clock = FakeClock()
+        gen = StubGenerator(responses=["yes", "sub one\nsub two", "answer"],
+                            clock=clock, call_seconds=1.0)
+        db = StubDB()
+        pipe = ModularRAGPipeline(db, gen, NoRAGPipeline(generator=gen, clock=clock),
+                                  NaiveRAGPipeline(db, gen, clock=clock), clock=clock)
+        result = pipe.run("q")
+        self.assertAlmostEqual(result["generation_latency_s"], 1.0)
+        self.assertAlmostEqual(result["latency"], 3.0)
+        self.assertEqual(result["n_llm_calls"], 3)
+
+    def test_sophistication_ordering_is_no_longer_inverted(self):
+        # The central regression: with equal per-call cost, latency must be
+        # non-decreasing in the number of calls an arm makes.
+        latencies = {}
+
+        clock = FakeClock()
+        gen = StubGenerator(clock=clock, call_seconds=1.0)
+        latencies["no_rag"] = NoRAGPipeline(generator=gen, clock=clock).run("q")["latency"]
+
+        clock = FakeClock()
+        gen = StubGenerator(clock=clock, call_seconds=1.0)
+        latencies["naive"] = NaiveRAGPipeline(StubDB(), gen, clock=clock).run("q")["latency"]
+
+        clock = FakeClock()
+        gen = StubGenerator(responses=["rewritten", "answer"], clock=clock, call_seconds=1.0)
+        latencies["advanced"] = AdvancedRAGPipeline(
+            StubDB(), gen, rerank=False, clock=clock,
+            sparse_index_factory=StubSparseIndex).run("q")["latency"]
+
+        clock = FakeClock()
+        gen = StubGenerator(responses=["yes", "a\nb", "answer"], clock=clock, call_seconds=1.0)
+        db = StubDB()
+        latencies["modular"] = ModularRAGPipeline(
+            db, gen, NoRAGPipeline(generator=gen, clock=clock),
+            NaiveRAGPipeline(db, gen, clock=clock), clock=clock).run("q")["latency"]
+
+        self.assertLessEqual(latencies["no_rag"], latencies["naive"])
+        self.assertLess(latencies["naive"], latencies["advanced"])
+        self.assertLess(latencies["advanced"], latencies["modular"])
+
+    def test_reranking_cost_is_charged_to_the_arm_that_pays_it(self):
+        clock = FakeClock()
+
+        class SlowReranker:
+            def predict(self, pairs):
+                clock.advance(5.0)
+                return [float(i) for i in range(len(pairs))]
+
+        gen = StubGenerator(responses=["rewritten", "answer"], clock=clock, call_seconds=1.0)
+        pipe = AdvancedRAGPipeline(StubDB(), gen, rerank=True, reranker=SlowReranker(),
+                                   clock=clock, sparse_index_factory=StubSparseIndex)
+        result = pipe.run("q")
+        self.assertAlmostEqual(result["stage_rerank_s"], 5.0)
+        self.assertAlmostEqual(result["latency"], 7.0)  # 2 calls + rerank
+
+    def test_token_cost_counts_every_call_not_just_the_last(self):
+        clock = FakeClock()
+        gen = StubGenerator(responses=["rewritten", "answer"], clock=clock,
+                            call_seconds=1.0, tokens=(50, 5))
+        pipe = AdvancedRAGPipeline(StubDB(), gen, rerank=False, clock=clock,
+                                   sparse_index_factory=StubSparseIndex)
+        result = pipe.run("q")
+        # v1 recorded only the final call, so the rewrite prompt was free.
+        self.assertEqual(result["prompt_tokens"], 50)
+        self.assertEqual(result["total_prompt_tokens"], 100)
+        self.assertEqual(result["total_generation_tokens"], 10)
+
+    def test_routed_modular_run_still_charges_its_router_call(self):
+        # A modular run that routes to no_rag has still paid for the routing
+        # call. v1 returned the delegate's record wholesale, so that call was
+        # free -- flattering precisely the arm that made the extra request.
+        clock = FakeClock()
+        gen = StubGenerator(responses=["no", "direct answer"], clock=clock, call_seconds=1.0)
+        db = StubDB()
+        pipe = ModularRAGPipeline(db, gen, NoRAGPipeline(generator=gen, clock=clock),
+                                  NaiveRAGPipeline(db, gen, clock=clock), clock=clock)
+        result = pipe.run("q")
+        self.assertEqual(result["route"], "no_rag")
+        self.assertAlmostEqual(result["latency"], 2.0)  # router + delegated answer
+        self.assertEqual(result["n_llm_calls"], 2)
+        self.assertEqual(result["total_prompt_tokens"], 100)
+
+    def test_failed_call_still_reports_its_wall_clock_cost(self):
+        clock = FakeClock()
+
+        class FailingGenerator:
+            def generate(self, prompt, system_prompt=None):
+                clock.advance(2.0)
+                return {"response": None, "error": True,
+                        "error_message": "ConnectionError: refused",
+                        "latency": 2.0, "prompt_tokens": None, "generation_tokens": None}
+
+        result = NoRAGPipeline(generator=FailingGenerator(), clock=clock).run("q")
+        self.assertTrue(result["error"])
+        self.assertAlmostEqual(result["latency"], 2.0)
+        self.assertEqual(result["failed_llm_calls"], 1)
+        # An unmeasured token count is None, not zero: zeros were averaged into
+        # v1's throughput means and dragged them toward zero.
+        self.assertIsNone(result["total_prompt_tokens"])
+
+    def test_stage_breakdown_accounts_for_the_whole_run(self):
+        clock = FakeClock()
+        gen = StubGenerator(responses=["rewritten", "answer"], clock=clock, call_seconds=1.0)
+        pipe = AdvancedRAGPipeline(StubDB(), gen, rerank=False, clock=clock,
+                                   sparse_index_factory=StubSparseIndex)
+        result = pipe.run("q")
+        self.assertAlmostEqual(result["unaccounted_latency_s"], 0.0, places=9)
+        self.assertAlmostEqual(
+            result["stage_rewrite_s"] + result["stage_retrieve_s"] + result["stage_generate_s"],
+            result["latency"], places=9)
+
+
 class TestAllArmsShareOnePromptShape(unittest.TestCase):
-    """The systematic difference between arms must be retrieval alone."""
 
     def test_every_arm_uses_the_shared_persona_and_instruction(self):
         db = StubDB()
