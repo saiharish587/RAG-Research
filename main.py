@@ -11,6 +11,7 @@ from rag.naive.retriever import NaiveRAGPipeline
 from rag.advanced.retriever import AdvancedRAGPipeline
 from rag.modular.retriever import ModularRAGPipeline
 from evaluation.evaluator import Evaluator
+from evaluation.ragchecker_eval import evaluate_with_ragchecker
 from visualization.visualize import Visualizer
 
 def load_config(config_path="configs/config.yaml"):
@@ -234,7 +235,11 @@ def main():
     results_df.to_csv(csv_path, index=False)
     print(f"\n[SUCCESS] Benchmark results saved to {csv_path}")
 
-    # 8. Generate Visualizations
+    # 8. Run RAGChecker Diagnostic Evaluation
+    print("\n[INFO] Running RAGChecker diagnostic evaluation...")
+    evaluate_with_ragchecker(results_list, output_path="results/reports/ragchecker_report.json")
+
+    # 9. Generate Visualizations
     visualizer = Visualizer()
     visualizer.generate_all_plots(csv_path)
 

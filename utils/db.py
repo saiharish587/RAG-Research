@@ -45,15 +45,36 @@ class RecursiveCharacterTextSplitter:
 
 class VectorDBManager:
     def __init__(self, embedding_model_name="BAAI/bge-small-en-v1.5", device="cpu"):
-        print(f"Loading embedding model: {embedding_model_name} on {device}...")
-        self.model = SentenceTransformer(embedding_model_name, device=device)
+        import torch
+        actual_device = device if (device == "cuda" and torch.cuda.is_available()) else "cpu"
+        print(f"Loading embedding model: {embedding_model_name} on {actual_device}...")
+        self.model = SentenceTransformer(embedding_model_name, device=actual_device)
         self.embedding_dim = self.model.get_sentence_embedding_dimension()
         self.index = None
         self.doc_chunks = []  # Stores the actual text chunks corresponding to vector IDs
 
     def load_documents(self, documents_dir):
-        """Loads and extracts text recursively from TXT and PDF documents in a directory."""
+        """Loads and extracts text recursively from JSON, TXT and PDF documents in a directory."""
         documents = []
+        raw_json_path = "data/raw/hotpot_dev_distractor_v1.json"
+        if os.path.exists(raw_json_path):
+            print(f"Fast-loading corpus directly from raw HotpotQA JSON ({raw_json_path})...")
+            try:
+                import json
+                with open(raw_json_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                seen_titles = set()
+                for item in data:
+                    for title, sentences in item.get("context", []):
+                        if title not in seen_titles:
+                            seen_titles.add(title)
+                            text = f"{title}: " + " ".join(sentences)
+                            documents.append({"text": text, "source": title})
+                print(f"Fast-loaded {len(documents)} document passages from HotpotQA JSON!")
+                return documents
+            except Exception as e:
+                print(f"Fast-load failed ({e}), falling back to disk walk...")
+
         if not os.path.exists(documents_dir):
             print(f"Documents directory '{documents_dir}' does not exist.")
             return documents
@@ -70,28 +91,6 @@ class VectorDBManager:
                             documents.append({"text": f.read(), "source": rel_source})
                     except Exception as e:
                         print(f"Error reading TXT {file_path}: {e}")
-                elif file.endswith(".pdf"):
-                    try:
-                        import pypdf
-                        text_content = []
-                        reader = pypdf.PdfReader(file_path)
-                        for page in reader.pages:
-                            text = page.extract_text()
-                            if text:
-                                text_content.append(text)
-                        documents.append({"text": "\n".join(text_content), "source": rel_source})
-                    except Exception as e:
-                        print(f"Error reading PDF {file_path} with pypdf: {e}. Falling back to pdfplumber...")
-                        try:
-                            text_content = []
-                            with pdfplumber.open(file_path) as pdf:
-                                for page in pdf.pages:
-                                    text = page.extract_text()
-                                    if text:
-                                        text_content.append(text)
-                            documents.append({"text": "\n".join(text_content), "source": rel_source})
-                        except Exception as e2:
-                            print(f"Error reading PDF {file_path} with pdfplumber fallback: {e2}")
         print(f"Successfully loaded {len(documents)} documents from '{documents_dir}'.")
         return documents
 

@@ -3,9 +3,8 @@ import sys
 
 def verify_models():
     models_to_test = [
-        "hf.co/ibm-granite/granite-4.0-h-350m-GGUF:Q4_K_M",
-        "qwen2.5:0.5b",
-        "qwen3.5:0.8b"
+        "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+        "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M"
     ]
     
     print("Testing Ollama API connection...")

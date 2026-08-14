@@ -94,8 +94,9 @@ class Evaluator:
         embedding_model: EmbeddingModel | None = None,
         token_limit: int | None = None,
     ):
+        import torch
         self.embedding_model_name = embedding_model_name
-        self.device = device
+        self.device = device if (device == "cuda" and torch.cuda.is_available()) else "cpu"
         self.token_limit = token_limit
         self._model = embedding_model
 

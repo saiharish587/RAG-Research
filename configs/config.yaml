@@ -21,13 +21,13 @@ chunking:
 # Embedding Configuration
 embedding:
   model_name: "BAAI/bge-small-en-v1.5"
-  device: "cuda"  # or "cuda"
+  device: "cuda"  # NVIDIA GPU acceleration enabled
 
 # Vector Database
 vector_db:
   provider: "faiss"
   path: "vector_db/faiss_index"
-  documents_dir: "notebooks_pruned"
+  documents_dir: "documents/hotpotqa_corpus"
 
 
 models:

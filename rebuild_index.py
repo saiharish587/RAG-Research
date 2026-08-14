@@ -12,7 +12,7 @@ def rebuild():
         
     db_config = config.get("embedding", {})
     db_path = config.get("vector_db", {}).get("path", "vector_db/faiss_index")
-    documents_dir = config.get("vector_db", {}).get("documents_dir", "notebooks")
+    documents_dir = config.get("vector_db", {}).get("documents_dir", "documents/hotpotqa_corpus")
     
     print("=" * 60)
     print(f"Rebuilding FAISS index from documents directory: '{documents_dir}'")

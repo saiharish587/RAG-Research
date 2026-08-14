@@ -42,7 +42,9 @@ SLM-RAG-Benchmark/
 
 ## Experimental Setup
 The project runs a matrix evaluation:
-- **Models**: IBM Granite 3B (instruct), Qwen2.5 0.5B, Qwen2.5 1.5B (and other sub-1B models).
+- **Models**: LFM2-350M, LFM2-700M (identical architecture, 32K context).
+- **Pipelines**: No RAG, Naive RAG, Advanced RAG, Modular RAG, Oracle RAG (gold‑ground‑truth injection).
+- **Run Matrix**: 2 Models × 5 RAG Pipelines × 10 Runs = 100 experimental runs.
 - **Pipelines**: No RAG, Naive RAG, Advanced RAG, Modular RAG.
 - **Run Matrix**: 3 Models × 4 RAG Pipelines × 10 Runs = 120 experimental runs.
 
