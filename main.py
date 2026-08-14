@@ -6,6 +6,7 @@ import yaml
 from utils.db import VectorDBManager
 from rag.generator import Generator
 from rag.no_rag.retriever import NoRAGPipeline
+from rag.oracle.retriever import OracleRAGPipeline
 from rag.naive.retriever import NaiveRAGPipeline
 from rag.advanced.retriever import AdvancedRAGPipeline
 from rag.modular.retriever import ModularRAGPipeline
@@ -126,6 +127,7 @@ def main():
 
         # Initialize pipelines
         no_rag = NoRAGPipeline(generator=generator)
+        oracle_rag = OracleRAGPipeline(generator=generator)
         naive_rag = NaiveRAGPipeline(db_manager=db_manager, generator=generator, top_k=config.get("retrieval", {}).get("top_k", 3))
         
         advanced_rag = AdvancedRAGPipeline(
@@ -146,11 +148,15 @@ def main():
         
         pipelines = {
             "no_rag": no_rag,
+            "oracle": oracle_rag,
             "naive": naive_rag,
             "advanced": advanced_rag,
             "modular": modular_rag
         }
         
+        raw_dir = os.path.join("results", "raw")
+        os.makedirs(raw_dir, exist_ok=True)
+
         for rag_type, pipeline in pipelines.items():
             print(f"  Running Pipeline: {rag_type}")
             
@@ -168,7 +174,23 @@ def main():
                     print(f"      Run {run_idx}/{runs_per_config}...")
                     
                     # Execute pipeline
-                    pipeline_result = pipeline.run(query)
+                    if rag_type == "oracle":
+                        pipeline_result = pipeline.run(query, ground_truth_context=ground_truth)
+                    else:
+                        pipeline_result = pipeline.run(query)
+
+                    # Save raw evidence log for total auditability
+                    raw_run_file = os.path.join(raw_dir, f"{model_name.replace('/', '_')}_{rag_type}_q{q_idx+1}_run{run_idx}.json")
+                    with open(raw_run_file, "w", encoding="utf-8") as rf:
+                        json.dump({
+                            "question_id": f"Q{q_idx+1}",
+                            "query": query,
+                            "ground_truth": ground_truth,
+                            "model_name": model_name,
+                            "rag_type": rag_type,
+                            "run_id": run_idx,
+                            "pipeline_result": pipeline_result
+                        }, rf, indent=2)
 
                     # Evaluate result
                     metrics = evaluator.evaluate_run(

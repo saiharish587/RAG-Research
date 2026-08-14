@@ -31,15 +31,14 @@ vector_db:
 
 
 models:
-  - name: "hf.co/ibm-granite/granite-4.0-h-350m-GGUF:Q4_K_M"
-    display_name: "Granite 350M"
-  - name: "qwen2.5:0.5b"
-    display_name: "Qwen2.5 0.5B"
-  - name: "qwen3.5:0.8b"
-    display_name: "Qwen3.5 0.8B"
+  - name: "lfm2:350m"
+    display_name: "LFM2 350M"
+  - name: "lfm2:700m"
+    display_name: "LFM2 700M"
 
 # Retrieval Configurations
 retrieval:
   top_k: 3
   rerank: true
   rerank_model: "BAAI/bge-reranker-base"
+
