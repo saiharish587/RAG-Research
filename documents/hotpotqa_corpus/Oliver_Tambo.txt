@@ -1,0 +1,1 @@
+Oliver Tambo: Oliver Reginald Kaizana Tambo (27 October 191724 April 1993) was a South African anti-apartheid politician and revolutionary who served as President of the African National Congress (ANC) from 1967 to 1991.

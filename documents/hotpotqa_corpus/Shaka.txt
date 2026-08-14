@@ -1,0 +1,1 @@
+Shaka: Shaka kaSenzangakhona (c. 1787 – 22 September 1828), also known as Shaka Zulu (] ), was one of the most influential monarchs of the Zulu Kingdom.

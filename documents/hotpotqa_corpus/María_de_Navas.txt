@@ -1,0 +1,1 @@
+María de Navas: María de Navas Bocos (18 March 1678 – 5 March 1721), was a Spanish stage actress born in Milan, known as La Milanesa.

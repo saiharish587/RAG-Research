@@ -1,0 +1,1 @@
+The Blue Castle: The Blue Castle is a 1926 novel by Canadian author Lucy Maud Montgomery, best known for her novel "Anne of Green Gables" (1908).

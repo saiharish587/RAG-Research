@@ -1,0 +1,1 @@
+MS Kronprins Harald: Several motor ships have borne the name Kronprins Harald, after Harald V of Norway:

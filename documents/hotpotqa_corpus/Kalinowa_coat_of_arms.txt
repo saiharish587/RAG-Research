@@ -1,0 +1,1 @@
+Kalinowa coat of arms: Kalinowa - is a Polish coat of arms that was used by many noble families in medieval Poland and later under the Polish-Lithuanian Commonwealth.

@@ -1,0 +1,1 @@
+United Schutzhund Clubs of America: The United Schutzhund Clubs of America (USA) is a US German Shepherd Dog breed club that sponsors all-breed Schutzhund trials and German Shepherd Dog conformation shows.

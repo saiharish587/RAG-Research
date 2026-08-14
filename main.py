@@ -1,8 +1,15 @@
 import os
+import sys
 import json
 import argparse
 import pandas as pd
 import yaml
+
+# Force UTF-8 output on Windows consoles (cp1252 cannot encode many HotpotQA characters)
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 from utils.db import VectorDBManager
 from rag.generator import Generator
 from rag.no_rag.retriever import NoRAGPipeline
@@ -181,7 +188,8 @@ def main():
                         pipeline_result = pipeline.run(query)
 
                     # Save raw evidence log for total auditability
-                    raw_run_file = os.path.join(raw_dir, f"{model_name.replace('/', '_')}_{rag_type}_q{q_idx+1}_run{run_idx}.json")
+                    safe_model_name = model_name.replace('/', '_').replace(':', '_')
+                    raw_run_file = os.path.join(raw_dir, f"{safe_model_name}_{rag_type}_q{q_idx+1}_run{run_idx}.json")
                     with open(raw_run_file, "w", encoding="utf-8") as rf:
                         json.dump({
                             "question_id": f"Q{q_idx+1}",

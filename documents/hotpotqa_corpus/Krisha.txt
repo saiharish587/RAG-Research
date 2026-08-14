@@ -1,0 +1,1 @@
+Krisha: Krisha is a 2015 American drama film written and directed by Trey Edward Shults in his feature-length directorial debut, starring his real-life aunt Krisha Fairchild, and produced by J.P. Castel and Jonathan R. Chan, and is the feature-length adaption of the 2014 short film "Krisha" also directed by Shults.

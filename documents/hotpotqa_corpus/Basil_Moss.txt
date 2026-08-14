@@ -1,0 +1,1 @@
+Basil Moss: Basil Moss (born 25 May 1935) is a British character actor, who featured regularly on television in the 1960s and on radio in the 1970s.

@@ -1,0 +1,1 @@
+Jan Hoffman: Jan Hoffman (11 June 1906 – 25 October 1995) was a Polish pianist and music educator.

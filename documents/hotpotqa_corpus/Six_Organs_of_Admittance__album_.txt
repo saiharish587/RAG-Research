@@ -1,0 +1,1 @@
+Six Organs of Admittance (album): Six Organs of Admittance is the first album release by experimental indie rock band, Six Organs of Admittance, released in 1998.

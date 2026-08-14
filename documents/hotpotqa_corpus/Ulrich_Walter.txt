@@ -1,0 +1,1 @@
+Ulrich Walter: Prof. Dr. Ulrich Hans Walter (born February 9, 1954) is a German physicist/engineer and a former DFVLR astronaut.

@@ -1,0 +1,1 @@
+Florence Aylward: Florence Aylward (10 March 1862 – 14 October 1950) was an English composer known for ballads.

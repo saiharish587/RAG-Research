@@ -1,0 +1,1 @@
+Evangelical Presbyterian University College: The Evangelical Presbyterian University College was established in 2008 by the Evangelical Presbyterian Church, Ghana.

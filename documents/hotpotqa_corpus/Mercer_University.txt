@@ -1,0 +1,1 @@
+Mercer University: Mercer University is the oldest private university in Georgia with its main campus in Macon, Georgia, United States.

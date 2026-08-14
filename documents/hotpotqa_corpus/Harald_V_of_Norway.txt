@@ -1,0 +1,1 @@
+Harald V of Norway: Harald V (] ; born 21 February 1937) is the King of Norway, having ascended the throne following the death of his father on 17 January 1991.

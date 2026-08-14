@@ -1,0 +1,1 @@
+Jacques Hardel: Jacques Hardel (died March 1678) was a French composer and harpsichordist.

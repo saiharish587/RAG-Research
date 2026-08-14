@@ -1,0 +1,1 @@
+Alan Crosland: Alan Crosland (August 10, 1894 – July 16, 1936) was an American stage actor and film director.

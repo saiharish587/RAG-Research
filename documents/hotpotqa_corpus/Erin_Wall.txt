@@ -1,0 +1,1 @@
+Erin Wall: Erin Wall (born 4 November 1975 Calgary, Alberta to American parents) is a Canadian operatic soprano.

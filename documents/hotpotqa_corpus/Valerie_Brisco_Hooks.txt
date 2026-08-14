@@ -1,0 +1,1 @@
+Valerie Brisco-Hooks: Valerie Ann Brisco-Hooks (born July 6, 1960 in Greenwood, Mississippi) won three gold medals as an Olympic track and field athlete at the 1984 Olympics at Los Angeles, California, making her the first Olympian to win gold medals in both the 200- and 400-meter races at a single Olympics.

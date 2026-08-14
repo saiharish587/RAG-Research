@@ -1,0 +1,1 @@
+Asamoah Gyan: Asamoah Gyan ( , , born 22 November 1985 in Accra) is a Ghanaian professional footballer who plays as a striker for Kayserispor and captains the Ghanaian national team.

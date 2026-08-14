@@ -1,0 +1,1 @@
+Paramount Vantage: Paramount Vantage (originally known as Paramount Classics) was the specialty film division of Paramount Pictures (which, in turn, has Viacom as its parent company), charged with producing, purchasing, distributing and marketing films, generally those with a more "art house" feel than films made and distributed by its parent company.

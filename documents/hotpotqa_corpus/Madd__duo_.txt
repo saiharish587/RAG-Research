@@ -1,0 +1,1 @@
+Madd (duo): Susan "Sue" Evans (born 16 September 1968) and Imani "Ginny" Evans (born 24 January 1992) are Reality television personalities and Television producers known as MADD, which is an acronym for Mother and Daughter Duo.

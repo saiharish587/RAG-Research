@@ -1,0 +1,1 @@
+Point Heathcote: Point Heathcote (Goolugatup in  Noongar ) is a geographic feature located on the south east part of Melville Water on Swan River.

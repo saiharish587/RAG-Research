@@ -1,0 +1,1 @@
+Turner: American media mogul Ted Turner created several channels featuring his name:

@@ -1,0 +1,1 @@
+Black Mouth Cur: The Black Mouth Cur is a hunting and cattle dog that has its origins in Southern United States.

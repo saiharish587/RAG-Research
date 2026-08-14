@@ -1,0 +1,1 @@
+21st Guldbagge Awards: The 21st Guldbagge Awards ceremony, presented by the Swedish Film Institute, honored the best Swedish films of 1985, and took place on 27 January 1986. " My Life as a Dog" directed by Lasse Hallström was presented with the award for Best Film.

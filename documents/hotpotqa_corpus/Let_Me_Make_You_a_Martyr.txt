@@ -1,0 +1,1 @@
+Let Me Make You a Martyr: Let Me Make You a Martyr is a 2017 American action crime drama film written, directed and co-produced by Corey Asraf and John Swab, and starring Marilyn Manson, Mark Boone Junior, Niko Nicotera, Michael Potts, Sam Quartin, Slaine & Danny Boy.
