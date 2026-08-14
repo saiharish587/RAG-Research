@@ -44,10 +44,10 @@ class RecursiveCharacterTextSplitter:
         return chunks
 
 class VectorDBManager:
-    def __init__(self, embedding_model_name="BAAI/bge-small-en-v1.5", device="cpu"):
+    def __init__(self, embedding_model_name="BAAI/bge-small-en-v1.5", device="cuda"):
         import torch
-        actual_device = device if (device == "cuda" and torch.cuda.is_available()) else "cpu"
-        print(f"Loading embedding model: {embedding_model_name} on {actual_device}...")
+        actual_device = "cuda:0" if (device in ("cuda", "cuda:0") and torch.cuda.is_available()) else "cpu"
+        print(f"Loading embedding model: {embedding_model_name} on {actual_device} ({torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'})...")
         self.model = SentenceTransformer(embedding_model_name, device=actual_device)
         self.embedding_dim = self.model.get_sentence_embedding_dimension()
         self.index = None
