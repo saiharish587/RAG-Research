@@ -100,9 +100,9 @@ def main():
     models = config.get("models", [])
     results_list = []
     
-    csv_dir = "results/csv"
+    csv_dir = os.path.join("results", "csv")
     os.makedirs(csv_dir, exist_ok=True)
-    csv_path = os.path.join(csv_dir, "benchmark_results.csv")
+    csv_path = os.path.normpath(os.path.join(csv_dir, "benchmark_results.csv"))
     
     # Load existing runs to support resumption
     existing_runs = set()
@@ -235,8 +235,10 @@ def main():
                     
                     results_list.append(metrics)
                     
-                    # Save results progressively to prevent data loss on interruption
-                    pd.DataFrame(results_list).to_csv(csv_path, index=False)
+                    # Save results progressively using append mode with explicit UTF-8 encoding
+                    df_row = pd.DataFrame([metrics])
+                    file_exists = os.path.exists(csv_path) and os.path.getsize(csv_path) > 0
+                    df_row.to_csv(csv_path, mode='a', header=not file_exists, index=False, encoding='utf-8')
                     
     # 7. Compile Results and Export
     results_df = pd.DataFrame(results_list)
