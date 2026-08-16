@@ -183,7 +183,8 @@ def main():
                     
                     # Execute pipeline
                     if rag_type == "oracle":
-                        pipeline_result = pipeline.run(query, ground_truth_context=ground_truth)
+                        gold_ctx = item.get("gold_context") or ground_truth
+                        pipeline_result = pipeline.run(query, ground_truth_context=gold_ctx)
                     else:
                         pipeline_result = pipeline.run(query)
 
