@@ -36,21 +36,21 @@ class Visualizer:
         print(f"All plots saved to {self.output_dir}")
 
     def plot_accuracy_vs_rag(self, df):
-        """Plots average answer accuracy across configurations."""
+        """Plots average answer quality (Token F1) across configurations."""
         plt.figure(figsize=(10, 6))
-        # Group by Model and RAG configuration
-        grouped = df.groupby(["model", "rag_type"])["answer_accuracy"].mean().reset_index()
+        acc_col = "token_f1" if "token_f1" in df.columns else ("answer_accuracy" if "answer_accuracy" in df.columns else "cosine")
+        grouped = df.groupby(["model", "rag_type"])[acc_col].mean().reset_index()
         
         sns.barplot(
             data=grouped,
             x="rag_type",
-            y="answer_accuracy",
+            y=acc_col,
             hue="model",
             palette="viridis"
         )
-        plt.title("Answer Accuracy vs. RAG Pipeline Sophistication")
+        plt.title("Answer Token F1 Quality vs. RAG Pipeline Sophistication")
         plt.xlabel("RAG Pipeline Sophistication")
-        plt.ylabel("Average Answer Accuracy (Semantic Similarity)")
+        plt.ylabel(f"Average {acc_col}")
         plt.ylim(0, 1.0)
         plt.legend(title="Model", loc="upper left")
         plt.tight_layout()
@@ -78,58 +78,59 @@ class Visualizer:
         plt.close()
 
     def plot_hallucination_rate(self, df):
-        """Plots average hallucination rate across configurations."""
+        """Plots average groundedness/hallucination rate across configurations."""
         plt.figure(figsize=(10, 6))
-        grouped = df.groupby(["model", "rag_type"])["hallucination_rate"].mean().reset_index()
+        h_col = "groundedness" if "groundedness" in df.columns else ("hallucination_rate" if "hallucination_rate" in df.columns else None)
+        if not h_col or h_col not in df.columns:
+            print("Skipping hallucination plot: column not present.")
+            return
+            
+        grouped = df.groupby(["model", "rag_type"])[h_col].mean().reset_index()
         
         sns.barplot(
             data=grouped,
             x="rag_type",
-            y="hallucination_rate",
+            y=h_col,
             hue="model",
             palette="magma"
         )
-        plt.title("Hallucination Rate vs. RAG Pipeline Sophistication")
+        plt.title(f"{h_col.capitalize()} vs. RAG Pipeline Sophistication")
         plt.xlabel("RAG Pipeline Sophistication")
-        plt.ylabel("Average Hallucination Rate")
+        plt.ylabel(f"Average {h_col.capitalize()}")
         plt.ylim(0, 1.0)
         plt.legend(title="Model", loc="upper right")
         plt.tight_layout()
-        plt.savefig(os.path.join(self.output_dir, "hallucination_vs_rag.png"), dpi=300)
+        plt.savefig(os.path.join(self.output_dir, f"{h_col}_vs_rag.png"), dpi=300)
         plt.close()
 
     def plot_accuracy_vs_latency_scatter(self, df):
-        """Plots a scatter plot showing accuracy vs latency trade-off."""
+        """Plots a scatter plot showing quality vs latency trade-off."""
         plt.figure(figsize=(10, 6))
-        grouped = df.groupby(["model", "rag_type"])[["answer_accuracy", "latency"]].mean().reset_index()
-        
-        # Define marker style per RAG type
-        markers = {"no_rag": "o", "naive": "s", "advanced": "D", "modular": "^"}
+        acc_col = "token_f1" if "token_f1" in df.columns else ("answer_accuracy" if "answer_accuracy" in df.columns else "cosine")
+        grouped = df.groupby(["model", "rag_type"])[[acc_col, "latency"]].mean().reset_index()
         
         sns.scatterplot(
             data=grouped,
             x="latency",
-            y="answer_accuracy",
+            y=acc_col,
             hue="model",
             style="rag_type",
-            markers=markers,
             s=120,
             palette="Set1"
         )
         
-        # Label points
         for idx, row in grouped.iterrows():
             plt.text(
-                row["latency"] + 0.1,
-                row["answer_accuracy"] - 0.01,
+                row["latency"] + 0.02,
+                row[acc_col],
                 f"{row['rag_type']}",
                 fontsize=8,
                 alpha=0.8
             )
             
-        plt.title("RAG Cost-Benefit: Accuracy vs. Latency Trade-Off")
-        plt.xlabel("Average Latency (seconds) -> lower is better")
-        plt.ylabel("Average Answer Accuracy -> higher is better")
+        plt.title("RAG Cost-Benefit: Quality (Token F1) vs. Latency Trade-Off")
+        plt.xlabel("Average Latency (seconds)")
+        plt.ylabel(f"Average {acc_col}")
         plt.grid(True, linestyle="--", alpha=0.6)
         plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
         plt.tight_layout()

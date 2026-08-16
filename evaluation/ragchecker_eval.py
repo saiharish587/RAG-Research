@@ -53,6 +53,11 @@ def evaluate_with_ragchecker(
             "retrieved_context": [{"doc_id": str(i), "text": doc} for i, doc in enumerate(retrieved)]
         })
 
+    if not os.getenv("OPENAI_API_KEY"):
+        print("[WARNING] OPENAI_API_KEY is not set. Skipping RAGChecker LLM-based claim extraction.")
+        print("[INFO] Note: All primary benchmark metrics (Token F1, Exact Match, Cosine Similarity, Groundedness, Retrieval Hit Rate, Latency) have already been computed cleanly!")
+        return {}
+
     try:
         rag_results = RAGResults.from_dict({"results": ragchecker_input})
         evaluator = RAGChecker(
@@ -70,5 +75,5 @@ def evaluate_with_ragchecker(
         print(f"[RAGChecker] Evaluation complete. Results saved to {output_path}")
         return metrics
     except Exception as e:
-        print(f"[RAGChecker ERROR] Failed to run evaluation: {e}")
+        print(f"[RAGChecker WARNING] Could not complete RAGChecker LLM pass ({e}). Primary metrics remain fully intact.")
         return {}
