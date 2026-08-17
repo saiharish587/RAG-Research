@@ -22,28 +22,15 @@
 
 \title{Evaluating the Impact of RAG Pipeline Sophistication and Model Scale on Sub-1B Language Models: A Comparative Study}
 
-\author{\name P Sai Harish \email saiharish0088@gmail.com \\
-      \addr Department of Computer Science and Engineering and Data Science\\
-      BVRIT, Narsapur, India
-      \AND
-      \name Thanniru Sai Teja \email iamsaitejathanniru@gmail.com \\
-      \addr Department of Computer Science and Engineering and Data Science\\
-      BVRIT, Narsapur, India
-      \AND
-      \name Kruthibash Nayak \email kruthibashnayak@bvrit.ac.in \\
-      \addr Department of Computer Science and Engineering and Data Science\\
-      BVRIT, Narsapur, India
-      \AND
-      \name Srihita \email 23211a6799@bvrit.ac.in \\
-      \addr Department of Computer Science and Engineering and Data Science\\
-      BVRIT, Narsapur, India}
+\author{Anonymous authors\\
+Paper under double-blind review}
 
 \newcommand{\fix}{\marginpar{FIX}}
 \newcommand{\new}{\marginpar{NEW}}
 
 \def\month{08}
 \def\year{2026}
-\def\openreview{\url{https://github.com/saiharish587/RAG-Research}}
+\def\openreview{\url{https://anonymous.4open.science/r/RAG-Research}}
 
 \begin{document}
 
@@ -67,7 +54,7 @@ To address this gap, we present a full factorial controlled empirical study comp
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.82\linewidth]{accuracy_vs_rag.png}
-    \caption{Token F1 quality score across RAG architectural arms and model scales (LFM2-350M vs LFM2-700M) on the HotpotQA Distractor benchmark \cite{yang2018hotpotqa}. Single-stage Naive RAG achieves peak quality on LFM2-350M ($0.1107$ Token F1), outperforming Advanced RAG ($0.1017$) and Modular RAG ($0.0218$).}
+    \caption{Token F1 quality score across RAG architectural arms and model scales (LFM2-350M vs LFM2-700M) on the HotpotQA Distractor benchmark \cite{yang2018hotpotqa}. Among retrieval-based arms, single-stage Naive RAG achieves peak quality on LFM2-350M ($0.1107$ Token F1), outperforming Advanced RAG ($0.1017$) and Modular RAG ($0.0218$). Oracle RAG ($0.1384$ Token F1) establishes the performance upper bound under 100\% gold passage recall.}
     \label{fig:accuracy_vs_rag}
 \end{figure}
 
@@ -77,7 +64,7 @@ Our key empirical findings and contributions are structured as follows:
     \item \textbf{Naive RAG Optimality in Sub-1B Models}: Single-stage vector retrieval (Naive RAG \cite{lewis2020retrieval}) achieves the highest accuracy ($0.1107 \pm 0.2130$ Token F1, $0.0367 \pm 0.1880$ Exact Match \cite{rajaraman2023f1}) while requiring the lowest latency ($0.581 \pm 0.209$s) on LFM2-350M \cite{liquid2024lfm}. Multi-stage Advanced RAG adds 2.5 times latency overhead ($1.460 \pm 0.301$s) without quality improvement, while Modular RAG degrades to near-zero accuracy ($0.0218 \pm 0.0628$ Token F1) due to sub-query generation failures.
     \item \textbf{Sub-1B Scale Inversion}: Doubling model parameters from 350M to 700M reduces Naive RAG Token F1 accuracy from $0.1107 \pm 0.2130$ to $0.0727 \pm 0.1055$. Empirical analysis of generation logs confirms that 700M models suffer higher sensitivity to distractor passage noise and generate longer, less focused responses.
     \item \textbf{Oracle RAG as Performance Upper Bound}: Under 100\% ground-truth gold evidence context (Oracle RAG), LFM2-350M achieves $0.1384 \pm 0.1935$ Token F1, its highest score across all five arms, confirming that retrieval recall quality directly determines the performance ceiling. LFM2-700M achieves $0.1165 \pm 0.1403$ Token F1 under Oracle RAG but with extreme output-length instability ($355.9 \pm 6680.7$ tokens), indicating runaway generation loops on dense multi-hop passages.
-    \item \textbf{Complete Open Source Benchmark Dataset}: We release the entire 60,000-run master dataset, raw JSON evidence logs, FAISS vector database indices \cite{johnson2019billion}, and implementation code at \url{https://github.com/saiharish587/RAG-Research}.
+    \item \textbf{Complete Open Source Benchmark Dataset}: We release the entire 60,000-run master dataset, raw JSON evidence logs, FAISS vector database indices \cite{johnson2019billion}, and implementation code at \url{https://anonymous.4open.science/r/RAG-Research}.
 \end{enumerate}
 
 \section{Related Work}
@@ -152,7 +139,7 @@ The Modular RAG arm (\texttt{rag/modular/retriever.py}) implements dynamic pipel
 \label{sec:setup}
 
 \subsection{Dataset and Corpus Ingestion}
-We ingested 600 multi-hop question-answer pairs from the HotpotQA Distractor development set \cite{yang2018hotpotqa} (\texttt{data/benchmark/eval\_set.json}) and extracted 66,581 Wikipedia passages (\texttt{documents/hotpotqa\_corpus/}). The FAISS index \cite{johnson2019billion} (\texttt{vector\_db/faiss\_index/index.faiss} and \texttt{chunks.npy}) was constructed using 1500-character chunks with 150-character overlap.
+We ingested 600 multi-hop question-answer pairs from the HotpotQA Distractor development set \cite{yang2018hotpotqa} (\texttt{data/benchmark/eval\_set.json}). The 600-question subset was selected to represent the full distribution of question types and difficulty levels within the HotpotQA development split, covering bridge and comparison reasoning categories. We extracted 66,581 Wikipedia passages (\texttt{documents/hotpotqa\_corpus/}). The FAISS index \cite{johnson2019billion} (\texttt{vector\_db/faiss\_index/index.faiss} and \texttt{chunks.npy}) was constructed using 1500-character chunks with 150-character overlap.
 
 \subsection{Evaluation Matrix and Metric Definitions}
 The experiment evaluates a full factorial matrix: 2 Models (LFM2-350M, LFM2-700M) $\times$ 5 RAG Arms $\times$ 600 Questions $\times$ 10 Repetitions = 60,000 total runs. For each generation, we measure:
@@ -173,7 +160,7 @@ Table \ref{tab:main_results} presents the complete empirical metrics computed ac
 
 \begin{table}[t]
 \centering
-\caption{Empirical benchmark evaluation results across 60,000 total runs on HotpotQA Distractor \cite{yang2018hotpotqa} (600 queries $\times$ 10 repetitions per configuration). All data extracted from \texttt{results/csv/benchmark\_results.csv} on repository \url{https://github.com/saiharish587/RAG-Research}.}
+\caption{Empirical benchmark evaluation results across 60,000 total runs on HotpotQA Distractor \cite{yang2018hotpotqa} (600 queries $\times$ 10 repetitions per configuration). All data extracted from \texttt{results/csv/benchmark\_results.csv}. $\dagger$: Groundedness for No-RAG is undefined (no retrieved context). $\ddagger$: Modular RAG groundedness computed over successful routing completions only (LFM2-350M: $n=340/6000$; LFM2-700M: $n=170/6000$). $\S$: LFM2-700M Oracle F1/EM/Cosine/Groundedness computed over $n=5990/6000$ valid runs; 10 runs exhausted the 32K context-window ceiling and produced no parseable output (these rows are retained in the dataset with \texttt{generation\_tokens=163840}).}
 \label{tab:main_results}
 \tiny
 \setlength{\tabcolsep}{2.5pt}
@@ -181,17 +168,17 @@ Table \ref{tab:main_results} presents the complete empirical metrics computed ac
 \toprule
 \textbf{Model} & \textbf{RAG Arm} & \textbf{Token F1 ($\mu \pm \sigma$)} & \textbf{EM ($\mu$)} & \textbf{Cosine ($\mu$)} & \textbf{Groundedness ($\mu$)} & \textbf{Latency (s)} & \textbf{Gen Tokens} \\
 \midrule
-LFM2-350M & No-RAG & $0.0147 \pm 0.0290$ & $0.0000$ & $0.5426$ & N/A & $0.730 \pm 0.305$ & $160.5 \pm 97.5$ \\
+LFM2-350M & No-RAG & $0.0147 \pm 0.0290$ & $0.0000$ & $0.5426$ & N/A$^{\dagger}$ & $0.730 \pm 0.305$ & $160.5 \pm 97.5$ \\
 LFM2-350M & Oracle RAG & $\mathbf{0.1384 \pm 0.1935}$ & $0.0233$ & $0.6230$ & $0.7160$ & $0.447 \pm 0.147$ & $61.8 \pm 49.1$ \\
 LFM2-350M & Naive RAG & $0.1107 \pm 0.2130$ & $\mathbf{0.0367}$ & $0.5909$ & $0.7277$ & $\mathbf{0.581 \pm 0.209}$ & $67.2 \pm 58.6$ \\
 LFM2-350M & Advanced RAG & $0.1017 \pm 0.1948$ & $0.0283$ & $0.5924$ & $0.6851$ & $1.460 \pm 0.301$ & $72.6 \pm 63.2$ \\
-LFM2-350M & Modular RAG & $0.0218 \pm 0.0628$ & $0.0017$ & $0.5469$ & $\mathbf{0.8067}$ & $1.173 \pm 0.311$ & $156.2 \pm 98.4$ \\
+LFM2-350M & Modular RAG & $0.0218 \pm 0.0628$ & $0.0017$ & $0.5469$ & $\mathbf{0.8067}^{\ddagger}$ & $1.173 \pm 0.311$ & $156.2 \pm 98.4$ \\
 \midrule
-LFM2-700M & No-RAG & $0.0149 \pm 0.0292$ & $0.0000$ & $0.5462$ & N/A & $1.033 \pm 0.367$ & $161.2 \pm 76.1$ \\
-LFM2-700M & Oracle RAG & $0.1165 \pm 0.1403$ & $0.0067$ & $\mathbf{0.6297}$ & $0.7338$ & $2.918 \pm 56.772$ & $355.9 \pm 6680.7$ \\
+LFM2-700M & No-RAG & $0.0149 \pm 0.0292$ & $0.0000$ & $0.5462$ & N/A$^{\dagger}$ & $1.033 \pm 0.367$ & $161.2 \pm 76.1$ \\
+LFM2-700M & Oracle RAG$^{\S}$ & $0.1165 \pm 0.1403$ & $0.0067$ & $\mathbf{0.6297}$ & $0.7338$ & $2.918 \pm 56.772$ & $355.9 \pm 6680.7$ \\
 LFM2-700M & Naive RAG & $0.0727 \pm 0.1055$ & $0.0033$ & $0.5905$ & $0.6791$ & $0.779 \pm 0.347$ & $98.5 \pm 75.4$ \\
 LFM2-700M & Advanced RAG & $0.0755 \pm 0.1110$ & $0.0017$ & $0.5914$ & $0.6778$ & $1.679 \pm 0.449$ & $92.2 \pm 71.9$ \\
-LFM2-700M & Modular RAG & $0.0157 \pm 0.0304$ & $0.0000$ & $0.5467$ & $0.6785$ & $4.567 \pm 76.593$ & $159.6 \pm 76.7$ \\
+LFM2-700M & Modular RAG & $0.0157 \pm 0.0304$ & $0.0000$ & $0.5467$ & $0.6785^{\ddagger}$ & $4.567 \pm 76.593$ & $159.6 \pm 76.7$ \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -233,13 +220,13 @@ A central empirical contribution of this paper is the discovery and detailed iso
 To provide concrete empirical proof for why the smaller 350M model outperforms the larger 700M model, we analyze three primary mechanisms extracted from our 60,000 generation logs:
 
 \subsection{Empirical Proof 1: Refusal Rate Disparity}
-Under Oracle RAG (where 100\% gold context is provided), LFM2-350M exhibits an explicit refusal rate of $17.83\%$ (\texttt{is\_refusal = 0.1783}), calibrated abstention when context is insufficient. In contrast, LFM2-700M refused in only $6.33\%$ of runs (\texttt{is\_refusal = 0.0633}), attempting to generate answers more aggressively. However, LFM2-700M's Oracle run showed extreme latency variance ($2.918 \pm 56.772$s) and massive output length instability ($355.9 \pm 6680.7$ tokens), indicating that the 700M model occasionally enters repetition or runaway generation loops when processing dense gold evidence passages.
+Across all arms, LFM2-350M maintains a consistent refusal rate between $16.50\%$ (Naive RAG) and $22.00\%$ (Advanced RAG), indicating a model-level abstention threshold rather than arm-specific calibration. LFM2-700M exhibits lower refusal rates under Oracle RAG ($6.33\%$) but higher rates under No-RAG ($29.33\%$) and Modular RAG ($29.00\%$), reflecting greater sensitivity to prompt structure complexity. Critically, LFM2-700M Oracle runs exhibit extreme output-length instability ($355.9 \pm 6680.7$ tokens mean and standard deviation): 10 of 6,000 runs ($0.17\%$) exhausted the 32K context-window ceiling (producing exactly 163,840 tokens and no parseable output), while the remaining 5,990 runs completed normally. This context-packing failure on dense multi-hop gold evidence passages is a contributing factor to the 700M model's lower mean Oracle F1 relative to the 350M model.
 
 \subsection{Empirical Proof 2: Extraction Precision vs Generation Verbosity}
 When generating correct answers, LFM2-350M produces short, highly focused entity extractions (mean $67.2 \pm 58.6$ tokens in Naive RAG). LFM2-700M generates longer, verbose paraphrases (mean $98.5 \pm 75.4$ tokens in Naive RAG). In multi-hop QA benchmarks such as HotpotQA \cite{yang2018hotpotqa}, concise entity extractions achieve higher token F1 overlap, whereas verbose paraphrasing dilutes F1 precision \cite{rajaraman2023f1}.
 
-\subsection{Empirical Proof 3: Distractor Sensitivity and Attention Mass Dispersion}
-In HotpotQA Distractor queries \cite{yang2018hotpotqa}, 8 of the 10 retrieved context paragraphs are intentionally selected distractor passages. As demonstrated by \cite{gao2023retrieval}, larger parameter models possess higher context capacity but suffer from attention probability dispersion across irrelevant distractor sentences. Compact 350M models maintain tighter attention concentration over local entity spans, rendering them less vulnerable to distractor passage noise.
+\subsection{Empirical Observation 3: Distractor Sensitivity}
+In HotpotQA Distractor queries \cite{yang2018hotpotqa}, the majority of retrieved context paragraphs are intentionally selected distractor passages. Our results show that LFM2-350M consistently achieves higher Token F1 than LFM2-700M under identical retrieval conditions, suggesting differential sensitivity to distractor passage noise. A plausible mechanism, consistent with observations in \cite{gao2023retrieval}, is that larger sub-1B models may distribute attention probability more broadly across irrelevant distractor sentences, whereas the compact 350M model maintains tighter focus over local entity spans. We note that this remains a hypothesis grounded in empirical output patterns; direct attention weight analysis was not conducted in this study and represents a direction for future work.
 
 \begin{figure}[t]
     \centering
