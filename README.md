@@ -96,7 +96,7 @@ The experiment evaluates a full factorial matrix across **600 multi-hop question
 
 ## 🏗️ Repository Architecture
 
-![SLM RAG System Architecture](results/graphs/rag_architecture_diagram.jpg)
+![SLM RAG System Architecture](results/graphs/rag_architecture_bw.jpg)
 
 ```text
 RAG-Research/
