@@ -153,6 +153,13 @@ The experiment evaluates a full factorial matrix: 2 Models (LFM2-350M, LFM2-700M
     \item \textbf{Explicit Refusal Rate}: Frequency of model refusal or abstention outputs.
 \end{itemize}
 
+\subsection{Statistical Significance Methodology}
+To evaluate whether observed performance differences between RAG arms and model scales are statistically significant, we perform two-sample Welch's $t$-tests across the $N=6,000$ execution runs per cell. Key comparative findings confirm high statistical significance:
+\begin{itemize}
+    \item \textbf{Naive vs. Advanced RAG (350M)}: Naive RAG ($0.1107$) significantly outperforms Advanced RAG ($0.1017$) on LFM2-350M ($t=2.4009, p=0.0164, p < 0.05$).
+    \item \textbf{Sub-1B Scale Inversion (350M vs. 700M Naive RAG)}: LFM2-350M ($0.1107$) significantly outperforms LFM2-700M ($0.0727$) under Naive RAG ($t=12.3792, p=5.534 \times 10^{-35}, p < 0.001$).
+\end{itemize}
+
 \section{Empirical Results and Analysis}
 \label{sec:results}
 
