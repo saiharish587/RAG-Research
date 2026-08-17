@@ -190,10 +190,14 @@ Under the No-RAG baseline arm, both LFM2-350M and LFM2-700M achieve exactly $0.0
 Single-stage Naive RAG achieves the highest overall accuracy ($0.1107 \pm 0.2130$ Token F1, $0.0367$ Exact Match) on LFM2-350M while delivering the lowest mean latency ($0.581 \pm 0.209$s). In contrast:
 \begin{itemize}
     \item \textbf{Advanced RAG}: Incorporating query rewriting \cite{ma2023query} and cross-encoder reranking \cite{nogueira2019passage} yields a Token F1 of $0.1017 \pm 0.1948$ on 350M, but increases mean latency to $1.460 \pm 0.301$s (a 2.5x latency penalty).
-    \item \textbf{Modular RAG}: Implementing dynamic sub-query decomposition results in severe accuracy collapse ($0.0218 \pm 0.0628$ Token F1 on 350M, $0.0157 \pm 0.0304$ Token F1 on 700M) and massive latency overhead ($4.567 \pm 76.593$s on 700M).
+    \item \textbf{Modular RAG}: Implementing dynamic sub-query routing results in severe accuracy collapse ($0.0218 \pm 0.0628$ Token F1 on 350M, $0.0157 \pm 0.0304$ Token F1 on 700M) and massive latency overhead ($4.567 \pm 76.593$s on 700M). A detailed inspection of routing decision logs reveals that sub-1B models struggle with instruction-following during prompt routing:
+    \begin{itemize}
+        \item For \textbf{LFM2-350M}, the router selected \texttt{route: "no\_rag"} in 5,660 out of 6,000 runs ($94.33\%$), attempting unassisted generation and bypassing vector search. Document retrieval was triggered in only 340 runs ($5.67\%$). Consequently, groundedness ($0.8067$) is defined exclusively over these 340 active retrieval runs.
+        \item For \textbf{LFM2-700M}, the router selected \texttt{route: "no\_rag"} in 5,830 out of 6,000 runs ($97.17\%$), triggering vector retrieval in only 170 runs ($2.83\%$). Its groundedness score ($0.6785$) is calculated strictly across these 170 retrieval completions.
+    \end{itemize}
 \end{itemize}
 
-As established by \cite{xu2024retrieval}, multi-stage RAG abstractions rely heavily on the generator's ability to follow complex structured JSON instructions for sub-query routing. Sub-1B models lack the instruction-following capacity required for multi-query decomposition, causing Modular RAG pipelines to fail.
+As established by \cite{xu2024retrieval}, multi-stage RAG abstractions rely heavily on the generator's ability to follow complex structured instructions for sub-query routing and decomposition. Sub-1B models lack the instruction-following capacity required for reliable prompt routing, causing Modular RAG pipelines to default to un-retrieved generation in over 94\% of executions.
 
 \begin{figure}[t]
     \centering
