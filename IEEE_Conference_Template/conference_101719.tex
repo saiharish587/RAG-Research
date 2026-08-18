@@ -95,8 +95,8 @@ In this benchmark, we specifically select Liquid AI's LFM2 (Liquid Foundation Mo
 
 We evaluate two specific scale configurations:
 \begin{itemize}
-    \item \textbf{LFM2-350M} (\texttt{hf.co/LiquidAI/LFM2-350M-GGUF:Q4\_K\_M}): 350 Million parameters, 4-bit GGUF quantization \cite{liquid2024lfm}.
-    \item \textbf{LFM2-700M} (\texttt{hf.co/LiquidAI/LFM2-700M-GGUF:Q4\_K\_M}): 700 Million parameters, 4-bit GGUF quantization \cite{liquid2024lfm}.
+    \item \textbf{LFM2-350M} (\url{hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M}): 350 Million parameters, 4-bit GGUF quantization \cite{liquid2024lfm}.
+    \item \textbf{LFM2-700M} (\url{hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M}): 700 Million parameters, 4-bit GGUF quantization \cite{liquid2024lfm}.
 \end{itemize}
 
 \subsection{Target Hardware Execution Environment}
@@ -263,42 +263,24 @@ This confirms that perfect retrieval recall does improve sub-1B model performanc
 \label{sec:conclusion}
 In this 60,000-run empirical study, we evaluated the impact of RAG pipeline sophistication and model scale on sub-billion parameter language models. The Oracle RAG arm, with correct gold passage injection, achieves the highest Token F1 of $0.1384$ on LFM2-350M, confirming that retrieval quality directly determines performance ceiling. Among retrieval-based arms, single-stage Naive RAG provides the best practical architecture achieving $0.1107$ Token F1 at the lowest latency ($0.581$s). Complex multi-stage RAG pipelines (Advanced and Modular RAG) introduce severe latency penalties without quality improvement due to instruction-following bottlenecks in sub-1B models. Furthermore, we identified a sub-1B scale inversion where LFM2-350M consistently outperforms LFM2-700M under all RAG arms due to tighter attention focus, calibrated refusal behavior, and lower distractor context sensitivity.
 
-\begin{thebibliography}{10}
+\begin{thebibliography}{14}
 \providecommand{\url}[1]{#1}
 \csname url@samestyle\endcsname
 \providecommand{\newblock}{\relax}
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\openaccess}[1]{#1}
 
-\bibitem{yang2018hotpotqa}
-Z.~Yang, P.~Qi, S.~Zhang, Y.~Bengio, W.~W. Cohen, R.~Salakhutdinov, and C.~D. Manning, ``{HotpotQA}: A dataset for diverse, explainable multi-hop question answering,'' in \emph{EMNLP}, 2018.
-
-\bibitem{lewis2020retrieval}
-P.~Lewis, E.~Perez, A.~Piktus, F.~Petroni, V.~Karpukhin, N.~Goyal, H.~Kuttler, M.~Lewis, W.-t. Yih, T.~Rockt{\"a}schel, S.~Riedel, and D.~Kiela, ``Retrieval-augmented generation for knowledge-intensive {NLP} tasks,'' in \emph{NeurIPS}, vol.~33, 2020, pp. 9459--9474.
+\bibitem{mallen2023when}
+A.~Mallen, A.~Asai, V.~Goyal, R.~Power, H.~Hajishirzi, and I.~Beltagy, ``When not to trust your model: Evaluating parametric vs. non-parametric knowledge in language models,'' in \emph{ACL}, 2023.
 
 \bibitem{gao2023retrieval}
 Y.~Gao, Y.~Xiong, X.~Gao, K.~Jia, J.~Pan, Y.~Bi, Y.~Dai, J.~Sun, M.~Wang, and H.~Wang, ``Retrieval-augmented generation for large language models: A survey,'' \emph{arXiv preprint arXiv:2312.10997}, 2023.
 
-\bibitem{asai2023self}
-A.~Asai, M.~Sewon, L.~Zettlemoyer, and H.~Hajishirzi, ``{Self-RAG}: Learning to retrieve, generate, and critique via self-reflection,'' in \emph{ICLR}, 2024.
+\bibitem{lewis2020retrieval}
+P.~Lewis, E.~Perez, A.~Piktus, F.~Petroni, V.~Karpukhin, N.~Goyal, H.~Kuttler, M.~Lewis, W.-t. Yih, T.~Rockt{\"a}schel, S.~Riedel, and D.~Kiela, ``Retrieval-augmented generation for knowledge-intensive {NLP} tasks,'' in \emph{NeurIPS}, vol.~33, 2020, pp. 9459--9474.
 
-\bibitem{xu2024retrieval}
-F.~F. Xu, U.~Alon, and G.~Neubig, ``Retrieval-augmented generation or in-context learning? {An} empirical study on frontier llms,'' \emph{arXiv preprint arXiv:2407.16833}, 2024.
-
-\bibitem{johnson2019billion}
-J.~Johnson, M.~Douze, and H.~J{\'e}gou, ``Billion-scale similarity search with {GPUs},'' \emph{IEEE Transactions on Big Data}, vol.~7, no.~3, pp. 535--547, 2019.
-
-\bibitem{liquid2024lfm}
-R.~Hasani, M.~Lechner, A.~Amini, D.~Rus, and R.~Grosu, ``Liquid foundation models: Non-transformer architectures for efficient long-context processing,'' \emph{arXiv preprint arXiv:2410.00001}, 2024.
-
-\bibitem{rajaraman2023f1}
-A.~Rajaraman and J.~D. Ullman, ``On the evaluation metrics for question answering and contextual retrieval systems,'' \emph{JMLR}, vol.~24, pp. 1--32, 2023.
-
-\bibitem{reimers2019sentence}
-N.~Reimers and I.~Gurevych, ``{Sentence-BERT}: Sentence embeddings using siamese {BERT}-networks,'' in \emph{EMNLP}, 2019, pp. 3982--3992.
-
-\bibitem{bge2023embedding}
-S.~Xiao, Z.~Liu, P.~Zhang, and N.~Muennighoff, ``C-pack: Packaged resources for general chinese and english natural language understanding and embeddings,'' \emph{arXiv preprint arXiv:2309.07597}, 2023.
+\bibitem{ma2023query}
+X.~Ma, Y.~Gong, P.~He, H.~Zhao, and N.~Duan, ``Query rewriting for retrieval-augmented large language models,'' \emph{arXiv preprint arXiv:1901.04085}, 2023.
 
 \bibitem{nogueira2019passage}
 R.~Nogueira and K.~Cho, ``Passage re-ranking with {BERT},'' \emph{arXiv preprint arXiv:1901.04085}, 2019.
@@ -306,13 +288,30 @@ R.~Nogueira and K.~Cho, ``Passage re-ranking with {BERT},'' \emph{arXiv preprint
 \bibitem{cormack2009reciprocal}
 G.~V. Cormack, C.~L. Clarke, and S.~Buettcher, ``Reciprocal rank fusion outperforms data fusion for information retrieval,'' in \emph{SIGIR}, 2009, pp. 758--759.
 
-\bibitem{ma2023query}
-X.~Ma, Y.~Gong, P.~He, H.~Zhao, and N.~Duan, ``Query rewriting for retrieval-augmented large language models,'' \emph{arXiv preprint arXiv:1901.04085}, 2023.
+\bibitem{xu2024retrieval}
+F.~F. Xu, U.~Alon, and G.~Neubig, ``Retrieval-augmented generation or in-context learning? {An} empirical study on frontier llms,'' \emph{arXiv preprint arXiv:2407.16833}, 2024.
 
-\bibitem{mallen2023when}
-A.~Mallen, A.~Asai, V.~Goyal, R.~Power, H.~Hajishirzi, and I.~Beltagy, ``When not to trust your model: Evaluating parametric vs. non-parametric knowledge in language models,'' in \emph{ACL}, 2023.
+\bibitem{asai2023self}
+A.~Asai, M.~Sewon, L.~Zettlemoyer, and H.~Hajishirzi, ``{Self-RAG}: Learning to retrieve, generate, and critique via self-reflection,'' in \emph{ICLR}, 2024.
+
+\bibitem{liquid2024lfm}
+R.~Hasani, M.~Lechner, A.~Amini, D.~Rus, and R.~Grosu, ``Liquid foundation models: Non-transformer architectures for efficient long-context processing,'' \emph{arXiv preprint arXiv:2410.00001}, 2024.
+
+\bibitem{yang2018hotpotqa}
+Z.~Yang, P.~Qi, S.~Zhang, Y.~Bengio, W.~W. Cohen, R.~Salakhutdinov, and C.~D. Manning, ``{HotpotQA}: A dataset for diverse, explainable multi-hop question answering,'' in \emph{EMNLP}, 2018.
+
+\bibitem{rajaraman2023f1}
+A.~Rajaraman and J.~D. Ullman, ``On the evaluation metrics for question answering and contextual retrieval systems,'' \emph{JMLR}, vol.~24, pp. 1--32, 2023.
+
+\bibitem{johnson2019billion}
+J.~Johnson, M.~Douze, and H.~J{\'e}gou, ``Billion-scale similarity search with {GPUs},'' \emph{IEEE Transactions on Big Data}, vol.~7, no.~3, pp. 535--547, 2019.
+
+\bibitem{reimers2019sentence}
+N.~Reimers and I.~Gurevych, ``{Sentence-BERT}: Sentence embeddings using siamese {BERT}-networks,'' in \emph{EMNLP}, 2019, pp. 3982--3992.
+
+\bibitem{bge2023embedding}
+S.~Xiao, Z.~Liu, P.~Zhang, and N.~Muennighoff, ``C-pack: Packaged resources for general chinese and english natural language understanding and embeddings,'' \emph{arXiv preprint arXiv:2309.07597}, 2023.
 
 \end{thebibliography}
 
 \end{document}
-
