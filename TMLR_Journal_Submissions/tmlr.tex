@@ -154,10 +154,10 @@ The experiment evaluates a full factorial matrix: 2 Models (LFM2-350M, LFM2-700M
 \end{itemize}
 
 \subsection{Statistical Significance Methodology}
-To evaluate whether observed performance differences between RAG arms and model scales are statistically significant, we perform two-sample Welch's $t$-tests across the $N=6,000$ execution runs per cell. Key comparative findings confirm high statistical significance:
+To evaluate whether observed performance differences between RAG arms and parameter scales are statistically significant, we aggregate repeated executions for each query into question-level estimates $\bar{x}_q$ across the $N=600$ benchmark questions ($d_q = \bar{x}_{q,A} - \bar{x}_{q,B}$). We report paired $t$-tests along with 95\% confidence intervals (CIs) on the mean paired difference $\bar{d}$:
 \begin{itemize}
-    \item \textbf{Naive vs. Advanced RAG (350M)}: Naive RAG ($0.1107$) significantly outperforms Advanced RAG ($0.1017$) on LFM2-350M ($t=2.4009, p=0.0164, p < 0.05$).
-    \item \textbf{Sub-1B Scale Inversion (350M vs. 700M Naive RAG)}: LFM2-350M ($0.1107$) significantly outperforms LFM2-700M ($0.0727$) under Naive RAG ($t=12.3792, p=5.534 \times 10^{-35}, p < 0.001$).
+    \item \textbf{Scale Inversion (LFM2-350M vs. LFM2-700M Naive RAG)}: LFM2-350M ($0.1107$) significantly outperforms LFM2-700M ($0.0727$) under Naive RAG at the question level ($\bar{d} = 0.0380$, 95\% CI $[0.0222, 0.0538]$, $t=4.7145, p=3.017 \times 10^{-6}, p < 0.001$).
+    \item \textbf{Naive vs. Advanced RAG (LFM2-350M)}: While Naive RAG ($0.1107$) achieves a slightly higher numerical mean than Advanced RAG ($0.1017$), the question-level paired difference ($\bar{d} = 0.0089$, 95\% CI $[-0.0085, 0.0263]$, $t=1.0077, p=0.314$) is not statistically significant. This confirms that adding multi-stage query rewriting and cross-encoder reranking provides no statistically measurable quality gain for sub-1B models while introducing a 2.5$\times$ latency overhead.
 \end{itemize}
 
 \section{Empirical Results and Analysis}
@@ -190,8 +190,8 @@ LFM2-700M & Modular RAG & $0.0157 \pm 0.0304$ & $0.0000$ & $0.5467$ & $0.6785^{\
 \end{tabular}
 \end{table}
 
-\subsection{Proof of Zero Parametric Memory in Un-memorized Domains}
-Under the No-RAG baseline arm, both LFM2-350M and LFM2-700M achieve exactly $0.0000$ Exact Match and low Token F1 scores ($0.0147 \pm 0.0290$ and $0.0149 \pm 0.0292$ respectively). Because the HotpotQA multi-hop questions and Wikipedia passages were not memorized in the pre-training weights of these sub-1B models, unassisted generation fails completely \cite{mallen2023when}. This empirically proves that sub-1B language models cannot rely on parametric memory for un-memorized factual domains \cite{gao2023retrieval}.
+\subsection{Empirical Baseline: Unassisted Parametric Performance}
+Under the No-RAG baseline arm, both LFM2-350M and LFM2-700M achieve exactly $0.0000$ Exact Match and low Token F1 scores ($0.0147 \pm 0.0290$ and $0.0149 \pm 0.0292$ respectively). This demonstrates that unassisted generation performs poorly on this benchmark under the evaluated inference setup, confirming that external document evidence is necessary to achieve non-trivial factual answer quality on multi-hop queries \cite{gao2023retrieval}.
 
 \subsection{Naive RAG Optimality vs Architectural Complexity}
 Single-stage Naive RAG achieves the highest overall accuracy ($0.1107 \pm 0.2130$ Token F1, $0.0367$ Exact Match) on LFM2-350M while delivering the lowest mean latency ($0.581 \pm 0.209$s). In contrast:
@@ -223,33 +223,26 @@ As established by \cite{xu2024retrieval}, multi-stage RAG abstractions rely heav
     \label{fig:latency_groundedness}
 \end{figure}
 
-\section{Detailed Discussion: Sub-1B Scale Inversion and Attention Dynamics}
+\section{Detailed Discussion: Scale Inversion and Dynamics Within the LFM2 Family}
 \label{sec:scale_inversion}
 
-A central empirical contribution of this paper is the discovery and detailed isolation of sub-1B scale inversion: LFM2-350M consistently outperforms LFM2-700M under Naive RAG ($0.1107$ vs $0.0727$ Token F1) and Advanced RAG ($0.1017$ vs $0.0755$ Token F1). Notably, under Oracle RAG with correctly injected gold passages, LFM2-350M achieves its peak score of $0.1384 \pm 0.1935$ Token F1, confirming that when given exact supporting evidence, the 350M model extracts answers more precisely than the 700M model ($0.1165 \pm 0.1403$ Token F1).
+A key empirical finding of this paper is the observation of scale inversion within the evaluated Liquid AI LFM2 model family: holding tokenizer, pre-training alignment, and inference configuration constant, LFM2-350M consistently outperforms LFM2-700M under Naive RAG ($0.1107$ vs $0.0727$ Token F1) and Advanced RAG ($0.1017$ vs $0.0755$ Token F1). Holding the model family constant allows parameter-scale effects to be isolated while minimizing architectural confounding; generalization across other sub-1B families remains an open question for future work.
 
-To provide concrete empirical proof for why the smaller 350M model outperforms the larger 700M model, we analyze three primary mechanisms extracted from our 60,000 generation logs:
+Under Oracle RAG (where 100\% ground-truth gold evidence passages are directly injected into the prompt context), LFM2-350M achieves its highest score across all arms: $0.1384 \pm 0.1935$ Token F1. This gold-context reference baseline demonstrates that when provided with perfect gold evidence, LFM2-350M extracts supporting answers more accurately than LFM2-700M ($0.1165 \pm 0.1403$ Token F1).
 
-\subsection{Empirical Proof 1: Refusal Rate Disparity}
-Across all arms, LFM2-350M maintains a consistent refusal rate between $16.50\%$ (Naive RAG) and $22.00\%$ (Advanced RAG), indicating a model-level abstention threshold rather than arm-specific calibration. LFM2-700M exhibits lower refusal rates under Oracle RAG ($6.33\%$) but higher rates under No-RAG ($29.33\%$) and Modular RAG ($29.00\%$), reflecting greater sensitivity to prompt structure complexity. Critically, LFM2-700M Oracle runs exhibit extreme output-length instability ($355.9 \pm 6680.7$ tokens mean and standard deviation): 10 of 6,000 runs ($0.17\%$) exhausted the 32K context-window ceiling (producing exactly 163,840 tokens and no parseable output), while the remaining 5,990 runs completed normally. This context-packing failure on dense multi-hop gold evidence passages is a contributing factor to the 700M model's lower mean Oracle F1 relative to the 350M model.
+To understand why the 350M variant outperforms the 700M variant under these RAG configurations, we examine three empirical observations extracted from our generation logs:
 
-\subsection{Empirical Proof 2: Extraction Precision vs Generation Verbosity}
-When generating correct answers, LFM2-350M produces short, highly focused entity extractions (mean $67.2 \pm 58.6$ tokens in Naive RAG). LFM2-700M generates longer, verbose paraphrases (mean $98.5 \pm 75.4$ tokens in Naive RAG). In multi-hop QA benchmarks such as HotpotQA \cite{yang2018hotpotqa}, concise entity extractions achieve higher token F1 overlap, whereas verbose paraphrasing dilutes F1 precision \cite{rajaraman2023f1}.
+\subsection{Empirical Observation 1: Refusal Rate Disparity and Latency Distribution}
+Across all arms, LFM2-350M maintains a consistent refusal rate between $16.50\%$ (Naive RAG) and $22.00\%$ (Advanced RAG), indicating a baseline model-level abstention behavior rather than arm-specific calibration. LFM2-700M exhibits lower refusal rates under Oracle RAG ($6.33\%$) but higher rates under No-RAG ($29.33\%$) and Modular RAG ($29.00\%$). Critically, LFM2-700M Oracle runs exhibit extreme output-length instability: while the median latency is $0.520$s (IQR $[0.410\text{s}, 0.673\text{s}]$), 10 of 6,000 runs ($0.17\%$) exhausted the 32K context-window ceiling (producing 163,840 tokens and no parseable output), inflating the overall mean latency to $2.918 \pm 56.772$s. This context-packing failure on dense multi-hop gold evidence passages contributes to the 700M model's lower mean Oracle F1.
+
+\subsection{Empirical Observation 2: Extraction Precision vs Generation Verbosity}
+When generating correct answers, LFM2-350M produces concise, highly focused entity extractions (mean $67.2 \pm 58.6$ tokens in Naive RAG). LFM2-700M generates longer, verbose paraphrases (mean $98.5 \pm 75.4$ tokens in Naive RAG). In multi-hop QA benchmarks such as HotpotQA \cite{yang2018hotpotqa}, concise entity extractions achieve higher token F1 overlap, whereas verbose paraphrasing dilutes F1 precision \cite{rajaraman2023f1}.
 
 \subsection{Empirical Observation 3: Distractor Sensitivity}
-In HotpotQA Distractor queries \cite{yang2018hotpotqa}, the majority of retrieved context paragraphs are intentionally selected distractor passages. Our results show that LFM2-350M consistently achieves higher Token F1 than LFM2-700M under identical retrieval conditions, suggesting differential sensitivity to distractor passage noise. A plausible mechanism, consistent with observations in \cite{gao2023retrieval}, is that larger sub-1B models may distribute attention probability more broadly across irrelevant distractor sentences, whereas the compact 350M model maintains tighter focus over local entity spans. We note that this remains a hypothesis grounded in empirical output patterns; direct attention weight analysis was not conducted in this study and represents a direction for future work.
+In HotpotQA Distractor queries \cite{yang2018hotpotqa}, the majority of retrieved context paragraphs are intentionally selected distractor passages. Our results show that LFM2-350M consistently achieves higher Token F1 than LFM2-700M under identical retrieval conditions, suggesting differential sensitivity to distractor passage noise. A plausible hypothesis, consistent with observations in \cite{gao2023retrieval}, is that larger sub-1B models may distribute attention probability more broadly across irrelevant distractor sentences, whereas the compact 350M model maintains tighter focus over local entity spans. We emphasize that this remains an empirical hypothesis grounded in output text patterns; direct attention weight extraction was not performed in this study.
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.80\linewidth]{accuracy_vs_latency_tradeoff.png}
-    \caption{Cost-Benefit Trade-off: Token F1 Quality vs Inference Latency. LFM2-350M with single-stage Naive RAG \cite{lewis2020retrieval} defines the optimal Pareto frontier, delivering maximum quality at minimum compute latency.}
-    \label{fig:tradeoff}
-\end{figure}
-
-\subsection{Peak Performance Under Gold Context}
-Under Oracle RAG (where 100\% ground-truth gold evidence passages are correctly injected into the prompt), LFM2-350M achieves its highest score across all arms: $0.1384 \pm 0.1935$ Token F1. LFM2-700M achieves $0.1165 \pm 0.1403$ Token F1 under Oracle RAG, but with extreme instability in output length ($355.9 \pm 6680.7$ tokens mean and standard deviation), indicating runaway generation loops on some queries.
-
-This confirms that perfect retrieval recall does improve sub-1B model performance substantially (Oracle outperforms Naive RAG for 350M: $0.1384$ vs $0.1107$), but the scale inversion persists: LFM2-350M extracts answers more precisely than LFM2-700M even under ideal gold context conditions \cite{asai2023self}. In-context answer extraction precision, not retrieval quality, is the differentiating factor.
+\subsection{Gold-Context Reference Baseline Analysis}
+Under Oracle RAG, LFM2-350M achieves $0.1384 \pm 0.1935$ Token F1 compared to LFM2-700M's $0.1165 \pm 0.1403$ Token F1. This confirms that perfect gold evidence context improves sub-1B model performance over noisy vector retrieval (Oracle $0.1384$ vs Naive $0.1107$ for 350M), but the scale difference persists: LFM2-350M extracts answers more accurately than LFM2-700M even when provided with ideal gold context \cite{asai2023self}. In-context answer extraction precision, rather than retrieval quality alone, represents the key bottleneck.
 
 \section{Conclusion}
 \label{sec:conclusion}
