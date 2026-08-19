@@ -166,10 +166,10 @@ The experiment evaluates a full factorial matrix: 2 Models (LFM2-350M, LFM2-700M
 \end{itemize}
 
 \subsection{Statistical Significance Methodology}
-To evaluate whether observed performance differences between RAG arms and model scales are statistically significant, we perform two-sample Welch's $t$-tests across the $N=6,000$ execution runs per cell. Key comparative findings confirm high statistical significance:
+To evaluate whether observed performance differences between RAG arms and parameter scales are statistically significant, we aggregate repeated executions for each query into question-level estimates $\bar{x}_q$ across the $N=600$ benchmark questions ($d_q = \bar{x}_{q,A} - \bar{x}_{q,B}$). We report paired $t$-tests along with 95\% confidence intervals (CIs) on the mean paired difference $\bar{d}$:
 \begin{itemize}
-    \item \textbf{Naive vs. Advanced RAG (350M)}: Naive RAG ($0.1107$) significantly outperforms Advanced RAG ($0.1017$) on LFM2-350M ($t=2.4009, p=0.0164, p < 0.05$).
-    \item \textbf{Sub-1B Scale Inversion (350M vs. 700M Naive RAG)}: LFM2-350M ($0.1107$) significantly outperforms LFM2-700M ($0.0727$) under Naive RAG ($t=12.3792, p=5.534 \times 10^{-35}, p < 0.001$).
+    \item \textbf{Scale Inversion (LFM2-350M vs. LFM2-700M Naive RAG)}: LFM2-350M ($0.1107$) significantly outperforms LFM2-700M ($0.0727$) under Naive RAG at the question level ($\bar{d} = 0.0380$, 95\% CI $[0.0222, 0.0538]$, $t=4.7145, p=3.017 \times 10^{-6}, p < 0.001$).
+    \item \textbf{Naive vs. Advanced RAG (LFM2-350M)}: While Naive RAG ($0.1107$) achieves a slightly higher numerical mean than Advanced RAG ($0.1017$), the question-level paired difference ($\bar{d} = 0.0089$, 95\% CI $[-0.0085, 0.0263]$, $t=1.0077, p=0.314$) is not statistically significant. This confirms that adding multi-stage query rewriting and cross-encoder reranking provides no statistically measurable quality gain for sub-1B models while introducing a 2.5$\times$ latency overhead.
 \end{itemize}
 
 \section{Empirical Results and Analysis}
