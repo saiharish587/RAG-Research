@@ -80,7 +80,7 @@ Our key empirical findings and contributions are structured as follows:
 \label{sec:models}
 
 \subsection{Liquid AI LFM2 Model Architecture Rationale}
-In this benchmark, we specifically select Liquid AI's LFM2 (Liquid Foundation Model 2) architecture family \cite{liquid2024lfm}. Unlike standard dense Transformer architectures that rely exclusively on multi-head self-attention mechanisms across all layers, LFM2 incorporates hybrid dynamical state-space operators combined with lightweight attention layers. This design allows LFM2 to achieve long context processing (32K context window) with low VRAM memory consumption and high execution speed on resource-constrained hardware.
+In this benchmark, we specifically select Liquid AI's LFM2 (Liquid Foundation Model 2) architecture family \cite{liquid2024lfm}. Originating from foundational work on Liquid Time-Constant (LTC) dynamical systems \cite{hasani2020liquid}, LFM2 combines gated short convolution blocks with lightweight grouped-query attention (GQA) layers \cite{liquid2024lfm}. Unlike standard dense Transformer architectures that rely exclusively on quadratic self-attention across all layers, this hybrid design enables efficient long-context processing (32K context window) with reduced VRAM consumption and high execution throughput on resource-constrained edge hardware.
 
 We evaluate two specific scale configurations:
 \begin{itemize}

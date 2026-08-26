@@ -92,7 +92,7 @@ Our key empirical findings and contributions are structured as follows:
 \label{sec:models}
 
 \subsection{Liquid AI LFM2 Model Architecture Rationale}
-In this benchmark, we specifically select Liquid AI's LFM2 (Liquid Foundation Model 2) architecture family \cite{liquid2024lfm}. Unlike standard dense Transformer architectures that rely exclusively on multi-head self-attention mechanisms across all layers, LFM2 incorporates hybrid dynamical state-space operators combined with lightweight attention layers. This design allows LFM2 to achieve long context processing (32K context window) with low VRAM memory consumption and high execution speed on resource-constrained hardware.
+In this benchmark, we specifically select Liquid AI's LFM2 (Liquid Foundation Model 2) architecture family \cite{liquid2024lfm}. Originating from foundational work on Liquid Time-Constant (LTC) dynamical systems \cite{hasani2020liquid}, LFM2 combines gated short convolution blocks with lightweight grouped-query attention (GQA) layers \cite{liquid2024lfm}. Unlike standard dense Transformer architectures that rely exclusively on quadratic self-attention across all layers, this hybrid design enables efficient long-context processing (32K context window) with reduced VRAM consumption and high execution throughput on resource-constrained edge hardware.
 
 We evaluate two specific scale configurations:
 \begin{itemize}
@@ -266,7 +266,7 @@ This confirms that perfect retrieval recall does improve sub-1B model performanc
 \label{sec:conclusion}
 In this 60,000-run empirical study, we evaluated the impact of RAG pipeline sophistication and model scale on sub-billion parameter language models. The Oracle RAG arm, with correct gold passage injection, achieves the highest Token F1 of $0.1384$ on LFM2-350M, confirming that retrieval quality directly determines performance ceiling. Among retrieval-based arms, single-stage Naive RAG provides the best practical architecture achieving $0.1107$ Token F1 at the lowest latency ($0.581$s). Complex multi-stage RAG pipelines (Advanced and Modular RAG) introduce severe latency penalties without quality improvement due to instruction-following bottlenecks in sub-1B models. Furthermore, we identified a sub-1B scale inversion where LFM2-350M consistently outperforms LFM2-700M under all RAG arms due to tighter attention focus, calibrated refusal behavior, and lower distractor context sensitivity.
 
-\begin{thebibliography}{14}
+\begin{thebibliography}{15}
 \providecommand{\url}[1]{#1}
 \csname url@samestyle\endcsname
 \providecommand{\newblock}{\relax}
@@ -298,7 +298,10 @@ F.~F. Xu, U.~Alon, and G.~Neubig, ``Retrieval-augmented generation or in-context
 A.~Asai, M.~Sewon, L.~Zettlemoyer, and H.~Hajishirzi, ``{Self-RAG}: Learning to retrieve, generate, and critique via self-reflection,'' in \emph{ICLR}, 2024.
 
 \bibitem{liquid2024lfm}
-R.~Hasani, M.~Lechner, A.~Amini, D.~Rus, and R.~Grosu, ``Liquid foundation models: Non-transformer architectures for efficient long-context processing,'' \emph{arXiv preprint arXiv:2410.00001}, 2024.
+{Liquid AI}, ``{LFM2} technical report,'' \emph{arXiv preprint arXiv:2511.23404}, 2025.
+
+\bibitem{hasani2020liquid}
+R.~Hasani, M.~Lechner, A.~Amini, D.~Rus, and R.~Grosu, ``Liquid time-constant networks,'' \emph{arXiv preprint arXiv:2006.04439}, 2020.
 
 \bibitem{yang2018hotpotqa}
 Z.~Yang, P.~Qi, S.~Zhang, Y.~Bengio, W.~W. Cohen, R.~Salakhutdinov, and C.~D. Manning, ``{HotpotQA}: A dataset for diverse, explainable multi-hop question answering,'' in \emph{EMNLP}, 2018.
