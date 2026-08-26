@@ -61,7 +61,7 @@ Large Language Models (LLMs) with tens or hundreds of billions of parameters hav
 
 Due to their compact parameter footprint, sub-billion parameter models possess limited capacity to memorize multi-hop factual knowledge in their static network weights \cite{mallen2023when, gao2023retrieval}. Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval} addresses parametric memory bounds by dynamically fetching relevant external document passages from a corpus and appending them into the model's prompt context.
 
-While sophisticated RAG architectural paradigms incorporating query rewriting \cite{ma2023query}, cross-encoder reranking \cite{nogueira2019passage}, and dynamic sub-query routing with reciprocal rank fusion \cite{cormack2009reciprocal} have been developed for multi-billion parameter LLMs \cite{xu2024retrieval, asai2023self}, it remains fundamentally unclear whether these complex abstractions benefit sub-1B language models. Most existing RAG benchmarks evaluate models such as Llama-3-8B, Mixtral-8x7B, or GPT-4 \cite{gao2023retrieval}, leaving a substantial empirical knowledge gap regarding RAG behavior in the sub-1B parameter regime.
+While sophisticated RAG architectural paradigms incorporating query rewriting \cite{ma2023query}, cross-encoder reranking \cite{nogueira2019passage}, and dynamic sub-query routing with reciprocal rank fusion \cite{cormack2009reciprocal} have been developed for multi-billion parameter LLMs \cite{li2024retrieval, asai2023self}, it remains fundamentally unclear whether these complex abstractions benefit sub-1B language models. Most existing RAG benchmarks evaluate models such as Llama-3-8B, Mixtral-8x7B, or GPT-4 \cite{gao2023retrieval}, leaving a substantial empirical knowledge gap regarding RAG behavior in the sub-1B parameter regime.
 
 To address this gap, we present a full factorial controlled empirical study comprising 60,000 executed benchmark runs across two parameter scales of Liquid AI's LFM2 architecture (LFM2-350M and LFM2-700M) \cite{liquid2024lfm} and five distinct RAG architectural arms on the HotpotQA Distractor benchmark \cite{yang2018hotpotqa}. All evaluations were conducted locally on a standardized hardware environment (AMD Ryzen 7 6800H CPU, NVIDIA GeForce RTX 3050 Laptop GPU with 4GB VRAM) under Windows 11.
 
@@ -84,7 +84,7 @@ Our key empirical findings and contributions are structured as follows:
 \label{sec:related}
 \textbf{Retrieval-Augmented Generation}: RAG was introduced by \cite{lewis2020retrieval} to combine parametric memory with non-parametric dense retrieval over Wikipedia passages. Recent surveys by \cite{gao2023retrieval} categorize RAG development into three architectural paradigms: Naive RAG (top-$k$ similarity lookup), Advanced RAG (incorporating pre-retrieval query rewriting \cite{ma2023query} and post-retrieval reranking \cite{nogueira2019passage}), and Modular RAG (utilizing dynamic routing, query decomposition, and reciprocal rank fusion \cite{cormack2009reciprocal}).
 
-\textbf{RAG Evaluation and Diagnostic Metrics}: Recent benchmarking efforts evaluate RAG pipelines using multi-dimensional diagnostic frameworks such as RAGChecker and Ragas \cite{asai2023self, xu2024retrieval}. Standard metrics evaluate exact match token boundaries \cite{rajpurkar2016squad}, sentence embedding similarity using \texttt{BAAI/bge-small-en-v1.5} \cite{reimers2019sentence, bge2023embedding}, and groundedness. However, existing comparative studies evaluate almost exclusively on models above 7 billion parameters. Our work extends empirical RAG evaluation into the sub-1B parameter domain.
+\textbf{RAG Evaluation and Diagnostic Metrics}: Recent benchmarking efforts evaluate RAG pipelines using multi-dimensional diagnostic frameworks such as RAGChecker and Ragas \cite{asai2023self, li2024retrieval}. Standard metrics evaluate exact match token boundaries \cite{rajpurkar2016squad}, sentence embedding similarity using \texttt{BAAI/bge-small-en-v1.5} \cite{reimers2019sentence, bge2023embedding}, and groundedness. However, existing comparative studies evaluate almost exclusively on models above 7 billion parameters. Our work extends empirical RAG evaluation into the sub-1B parameter domain.
 
 \textbf{Sub-1B Language Models}: Compact architectures such as Liquid AI's LFM2 family \cite{liquid2024lfm} are engineered for high inference throughput on resource-constrained edge hardware. Understanding how RAG architectural choices affect these specific models is crucial for effective edge AI deployment.
 
@@ -291,8 +291,8 @@ R.~Nogueira and K.~Cho, ``Passage re-ranking with {BERT},'' \emph{arXiv preprint
 \bibitem{cormack2009reciprocal}
 G.~V. Cormack, C.~L. Clarke, and S.~Buettcher, ``Reciprocal rank fusion outperforms data fusion for information retrieval,'' in \emph{SIGIR}, 2009, pp. 758--759.
 
-\bibitem{xu2024retrieval}
-F.~F. Xu, U.~Alon, and G.~Neubig, ``Retrieval-augmented generation or in-context learning? {An} empirical study on frontier llms,'' \emph{arXiv preprint arXiv:2407.16833}, 2024.
+\bibitem{li2024retrieval}
+Z.~Li, C.~Li, M.~Zhang, Q.~Mei, and M.~Bendersky, ``Retrieval augmented generation or long-context {LLM}s? {A} comprehensive study and hybrid approach,'' in \emph{EMNLP (Industry Track)}, 2024, pp. 881--893.
 
 \bibitem{asai2023self}
 A.~Asai, M.~Sewon, L.~Zettlemoyer, and H.~Hajishirzi, ``{Self-RAG}: Learning to retrieve, generate, and critique via self-reflection,'' in \emph{ICLR}, 2024.
