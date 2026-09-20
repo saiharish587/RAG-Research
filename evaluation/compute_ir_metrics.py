@@ -1,27 +1,28 @@
 """
 compute_ir_metrics.py - Compute standard Document-Level Information Retrieval (IR) metrics
-(Document-Title MRR@3, Hit@1, Hit@3, Document-Title Recall@3, and Document-Level nDCG@3)
+(Document-Level MRR@3, Hit@1, Hit@3, Document-Level Recall@3, and Document-Level nDCG@3)
 from raw benchmark logs with strict document-title ground-truth matching.
 
 Methodological Design & Rigor:
 ------------------------------
-1. Retrieval Unit: Document Title.
-   Because multiple retrieved chunks can originate from the same document,
-   chunks are deduplicated by document title preserving the earliest rank.
-   This prevents repeated chunks from the same document from artificially inflating nDCG@3.
+1. Retrieval Unit: Unique Document Title.
+   The full retrieved list of chunks is first deduplicated by document title
+   (preserving the earliest rank position of each unique document).
+   The top-k (k=3) unique retrieved documents are then evaluated.
+   This guarantees that "Doc@3" strictly represents the top 3 unique retrieved documents.
 
-2. Document-Title Recall@3:
-   Defined as (Number of unique gold supporting document titles retrieved in Top-3) / (Total unique gold titles for question).
+2. Document-Level Recall@3:
+   (Number of unique gold supporting document titles in Top-3 Unique Retrieved Documents) / (Total unique gold titles for question).
 
 3. Document-Level nDCG@3:
-   Computed with binary document-level relevance after rank-preserving deduplication,
-   benchmarked against ideal DCG (IDCG) based on the unique gold document count.
+   Computed with binary document relevance across the top-3 unique documents,
+   benchmarked against ideal DCG (IDCG) based on the true unique gold document count.
 
 4. Statistical Dispersion:
-   Reports both Mean and Sample Standard Deviation (ddof=1) across the benchmark population.
+   Reports Mean and Sample Standard Deviation (ddof=1) across the benchmark population.
 
 5. Missing Run Policy:
-   Missing/failed logs are explicitly counted and recorded with zero retrieval reward
+   Missing/failed logs are explicitly accounted for and scored as zero retrieval reward
    (rather than silently excluded), ensuring N=600 population completeness.
 
 Evaluates all 4 context-augmented arms across LFM2-350M and LFM2-700M:
@@ -51,48 +52,53 @@ def extract_doc_title(chunk_text: str) -> str:
 
 def compute_document_level_ir_metrics(retrieved_chunks: list, gold_titles: set, k: int = 3):
     """
-    Compute standard document-level IR metrics for a single query with rank-preserving deduplication:
-    - doc_mrr_at_k: Reciprocal rank of the first retrieved gold document title
-    - doc_hit_at_1: 1.0 if Rank 1 chunk is from a gold document, else 0.0
-    - doc_hit_at_k: 1.0 if any chunk in top-k is from a gold document, else 0.0
-    - doc_recall_at_k: Fraction of unique gold document titles retrieved in top-k
-    - doc_ndcg_at_k: nDCG at rank k using deduplicated document-level binary relevance
+    Compute standard document-level IR metrics for a single query:
+    1. Deduplicate all retrieved chunks by document title preserving earliest rank.
+    2. Evaluate the top-k unique documents against gold supporting document titles.
+    
+    Returns:
+    - doc_mrr_at_k: Reciprocal rank of the first retrieved gold document
+    - doc_hit_at_1: 1.0 if Rank 1 unique document is a gold document, else 0.0
+    - doc_hit_at_k: 1.0 if any unique document in top-k is a gold document, else 0.0
+    - doc_recall_at_k: Fraction of unique gold document titles retrieved in top-k unique documents
+    - doc_ndcg_at_k: nDCG at rank k over the top-k unique documents with binary relevance
     """
     if not gold_titles:
         return 0.0, 0.0, 0.0, 0.0, 0.0
 
-    top_chunks = retrieved_chunks[:k]
-    
-    # 1. Chunk-level hits (raw top-k positions)
-    chunk_titles = [extract_doc_title(c) for c in top_chunks]
-    chunk_hits = [1 if t in gold_titles else 0 for t in chunk_titles]
+    # Step 1: Deduplicate entire retrieved list by document title, preserving earliest rank
+    unique_doc_titles = []
+    seen = set()
+    for chunk in retrieved_chunks:
+        title = extract_doc_title(chunk)
+        if title and title not in seen:
+            seen.add(title)
+            unique_doc_titles.append(title)
 
-    # Hit@1 & Hit@k from raw ranks
-    hit1 = float(chunk_hits[0]) if chunk_hits else 0.0
-    hit_k = 1.0 if sum(chunk_hits) > 0 else 0.0
+    # Step 2: Take top-k unique documents
+    top_docs = unique_doc_titles[:k]
+    doc_hits = [1 if t in gold_titles else 0 for t in top_docs]
 
-    # MRR@k (earliest rank containing a gold title)
-    first_rank = next((idx + 1 for idx, h in enumerate(chunk_hits) if h == 1), None)
+    # Pad to length k if fewer than k unique documents retrieved
+    while len(doc_hits) < k:
+        doc_hits.append(0)
+
+    # 1. Doc-MRR@k (earliest rank among unique retrieved documents)
+    first_rank = next((idx + 1 for idx, h in enumerate(doc_hits) if h == 1), None)
     mrr = 1.0 / first_rank if first_rank else 0.0
 
-    # 2. Document-level deduplication (preserving earliest rank position)
-    seen_titles = set()
-    dedup_doc_hits = []
-    for t in chunk_titles:
-        if t and t not in seen_titles:
-            seen_titles.add(t)
-            dedup_doc_hits.append(1 if t in gold_titles else 0)
+    # 2. Doc-Hit@1
+    hit1 = float(doc_hits[0]) if doc_hits else 0.0
 
-    # Pad to length k
-    while len(dedup_doc_hits) < k:
-        dedup_doc_hits.append(0)
+    # 3. Doc-Hit@k
+    hit_k = 1.0 if sum(doc_hits) > 0 else 0.0
 
-    # Unique gold document titles matched
-    matched_gold_titles = seen_titles & gold_titles
+    # 4. Doc-Recall@k (unique gold titles covered in top-k unique docs)
+    matched_gold_titles = set(top_docs) & gold_titles
     recall_k = len(matched_gold_titles) / len(gold_titles)
 
-    # 3. Document-level nDCG@k
-    dcg = sum(dedup_doc_hits[i] / np.log2(i + 2) for i in range(k))
+    # 5. Doc-nDCG@k over unique document ranks
+    dcg = sum(doc_hits[i] / np.log2(i + 2) for i in range(k))
     ideal_hits = [1] * min(len(gold_titles), k)
     idcg = sum(ideal_hits[i] / np.log2(i + 2) for i in range(len(ideal_hits)))
     ndcg = dcg / idcg if idcg > 0 else 0.0
