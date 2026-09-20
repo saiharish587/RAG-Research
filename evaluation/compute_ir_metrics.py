@@ -2,8 +2,13 @@
 compute_ir_metrics.py - Compute standard IR metrics (MRR@3, Hit@1, Hit@3, Recall@3, nDCG@3)
 from raw benchmark logs with strict document-title ground-truth matching.
 
-Evaluates across all N=600 canonical HotpotQA evaluation questions.
-Outputs summary table and exports results to results/csv/ir_benchmark_metrics.csv.
+Evaluates across all N=600 canonical HotpotQA evaluation questions for all 4 context-augmented arms:
+- Oracle RAG (100% gold injected reference)
+- Naive RAG (Single-stage FAISS retrieval)
+- Advanced RAG (Query rewrite + BGE cross-encoder rerank)
+- Modular RAG (Dynamic routing + Sub-queries + RRF fusion)
+
+Exports comprehensive results to results/csv/ir_benchmark_metrics.csv.
 """
 
 import os
@@ -93,7 +98,7 @@ def main():
         ("hf.co_LiquidAI_LFM2-350M-GGUF_Q4_K_M", "LFM2 350M"),
         ("hf.co_LiquidAI_LFM2-700M-GGUF_Q4_K_M", "LFM2 700M"),
     ]
-    arms = ["naive", "advanced"]
+    arms = ["oracle", "naive", "advanced", "modular"]
 
     all_results = []
     summary_rows = []
@@ -101,7 +106,9 @@ def main():
     for model_key, model_display in models:
         for arm in arms:
             mrrs, hit1s, hit3s, recalls, ndcgs = [], [], [], [], []
-            
+            active_mrrs, active_hit1s, active_hit3s, active_recalls, active_ndcgs = [], [], [], [], []
+            active_count = 0
+
             for q_idx in range(1, len(eval_set) + 1):
                 fname = f"{model_key}_{arm}_q{q_idx}_run1.json"
                 fpath = os.path.join(raw_logs_dir, fname)
@@ -115,6 +122,7 @@ def main():
                 query = data.get("query", "").strip()
                 g_titles = gold_titles_map.get(query, set())
                 retrieved = data.get("pipeline_result", {}).get("retrieved_context", [])
+                n_retrieved = len(retrieved)
 
                 mrr, h1, h3, rec, ndcg = compute_query_ir_metrics(retrieved, g_titles, k=3)
 
@@ -124,11 +132,20 @@ def main():
                 recalls.append(rec)
                 ndcgs.append(ndcg)
 
+                if n_retrieved > 0:
+                    active_count += 1
+                    active_mrrs.append(mrr)
+                    active_hit1s.append(h1)
+                    active_hit3s.append(h3)
+                    active_recalls.append(rec)
+                    active_ndcgs.append(ndcg)
+
                 all_results.append({
                     "model": model_display,
                     "rag_type": arm,
                     "question_id": f"q{q_idx}",
                     "query": query,
+                    "n_retrieved": n_retrieved,
                     "mrr_at_3": mrr,
                     "hit_at_1": h1,
                     "hit_at_3": h3,
@@ -140,13 +157,26 @@ def main():
             summary_rows.append({
                 "Model": model_display,
                 "RAG Arm": arm.capitalize() + " RAG",
-                "Evaluated Queries (N)": n_eval,
+                "Evaluated Queries (N)": f"{n_eval} (Active: {active_count})",
                 "MRR@3 (Mean +/- SD)": f"{np.mean(mrrs):.4f} +/- {np.std(mrrs):.4f}",
                 "Hit@1 (Precision@1)": f"{np.mean(hit1s)*100:.2f}%",
                 "Hit@3 (Success@3)": f"{np.mean(hit3s)*100:.2f}%",
                 "Recall@3": f"{np.mean(recalls)*100:.2f}%",
                 "nDCG@3 (Mean +/- SD)": f"{np.mean(ndcgs):.4f} +/- {np.std(ndcgs):.4f}",
             })
+
+            # For modular RAG, also show conditional active stats
+            if arm == "modular" and active_count > 0:
+                summary_rows.append({
+                    "Model": model_display,
+                    "RAG Arm": "Modular RAG (Active Only)",
+                    "Evaluated Queries (N)": f"{active_count} / {n_eval}",
+                    "MRR@3 (Mean +/- SD)": f"{np.mean(active_mrrs):.4f} +/- {np.std(active_mrrs):.4f}",
+                    "Hit@1 (Precision@1)": f"{np.mean(active_hit1s)*100:.2f}%",
+                    "Hit@3 (Success@3)": f"{np.mean(active_hit3s)*100:.2f}%",
+                    "Recall@3": f"{np.mean(active_recalls)*100:.2f}%",
+                    "nDCG@3 (Mean +/- SD)": f"{np.mean(active_ndcgs):.4f} +/- {np.std(active_ndcgs):.4f}",
+                })
 
     # Save per-query detailed CSV
     os.makedirs(os.path.dirname(output_csv), exist_ok=True)
@@ -155,11 +185,11 @@ def main():
 
     # Display clean summary table
     summary_df = pd.DataFrame(summary_rows)
-    print("\n" + "=" * 90)
-    print("STANDARD INFORMATION RETRIEVAL (IR) METRICS SUMMARY (N=600)")
-    print("=" * 90)
+    print("\n" + "=" * 105)
+    print("ALL-ARM STANDARD INFORMATION RETRIEVAL (IR) METRICS SUMMARY (N=600)")
+    print("=" * 105)
     print(summary_df.to_string(index=False))
-    print("=" * 90 + "\n")
+    print("=" * 105 + "\n")
 
 
 if __name__ == "__main__":
