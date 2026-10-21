@@ -1,0 +1,42 @@
+{
+  "question_id": "Q209",
+  "query": "Who has written more than 300 papers, Semyon Aranovich Gershgorin or Pavel Alexandrov?",
+  "ground_truth": "Pavel Sergeyevich Alexandrov",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Pavel Alexandrov has written more than 300 papers compared to Semyon Aranovich Gershgorin. This can be determined from the information provided about each mathematician, where it explicitly states that Pavel Alexandrov wrote about three hundred papers and Semyon Aranovich Gershgorin's contributions include the Gershgorin circle theorem.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pavel Alexandrov: Pavel Sergeyevich Alexandrov (Russian: \u041f\u0430\u0301\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0301\u0435\u0432\u0438\u0447 \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440\u043e\u0432 ), sometimes romanized Paul Alexandroff or Aleksandrov (7 May 1896 \u2013 16 November 1982), was a Soviet mathematician.  He wrote about three hundred papers, making important contributions to set theory and topology.",
+      "Semyon Aranovich Gershgorin: Semyon Aronovich Gershgorin (August 24, 1901 \u2013 May 30, 1933) was a Soviet (born in Pruzhany, Belarus, Russian Empire) mathematician.  He began as a student at the Petrograd Technological Institute in 1923, became a Professor in 1930, and was given an appointment at the Leningrad Mechanical Engineering Institute in the same year.  His contributions include the Gershgorin circle theorem.",
+      "Pavel Urysohn: Pavel Samuilovich Urysohn (\u041f\u0430\u0301\u0432\u0435\u043b \u0421\u0430\u043c\u0443\u0438\u0301\u043b\u043e\u0432\u0438\u0447 \u0423\u0440\u044b\u0441\u043e\u0301\u043d ) (February 3, 1898 \u2013 August 17, 1924) was a Soviet mathematician of Jewish origin who is best known for his contributions in dimension theory, and for developing Urysohn's Metrization Theorem and Urysohn's Lemma, both of which are fundamental results in topology.  His name is also commemorated in the terms Urysohn universal space, Fr\u00e9chet\u2013Urysohn space, Menger\u2013Urysohn dimension and Urysohn integral equation.  He and Pavel Alexandrov formulated the modern definition of compactness in 1923."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 423,
+    "generation_tokens": 71,
+    "generation_speed": 221.7142571635564,
+    "prompt_eval_speed": 38468.53401236813,
+    "generation_latency_s": 0.6371164000011049,
+    "latency": 1.4190751999994973,
+    "total_prompt_tokens": 506,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.514481,
+    "stage_rewrite_s": 0.4717567999905441,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1417342000058852,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1682505999924615,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6372014999942621,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.419098300000769,
+    "unaccounted_latency_s": 0.00015610000991728157,
+    "rewritten_query": "Which author has published more than 300 papers: Semyon Aranovich Gershgorin or Pavel Alexandrov?",
+    "query_was_rewritten": true
+  }
+}

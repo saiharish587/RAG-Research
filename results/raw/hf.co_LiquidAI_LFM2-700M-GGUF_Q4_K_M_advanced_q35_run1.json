@@ -1,0 +1,42 @@
+{
+  "question_id": "Q35",
+  "query": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+  "ground_truth": "Letters to Cleo",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Letters to Cleo had more members than Screaming Trees. Letters to Cleo's original lineup consisted of Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, and Scott Riebling. In contrast, Screaming Trees initially had Mark Pickerel as the drummer but later replaced him with Barrett Martin. The band also included additional members over time, such as Tom Polce, who joined in 1996 after leaving the original lineup. Therefore, considering the initial formation of Letters to Cleo and the subsequent changes in its membership structure, Letters to Cleo had more consistent members compared to Screaming Trees.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Letters to Cleo: Letters to Cleo are an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\".  The band's members are Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later, Tom Polce.",
+      "Screaming Trees: Screaming Trees was an American rock band formed in Ellensburg, Washington in 1985 by vocalist Mark Lanegan, guitarist Gary Lee Conner, bass player Van Conner and drummer Mark Pickerel.  Pickerel had been replaced by Barrett Martin by the time the band reached its most successful period.  Although widely associated with grunge, the band's sound incorporated hard rock and psychedelic elements.  During Screaming Trees' existence the band released seven studio albums, five EPs, and three compilations.",
+      "Van Conner: Van Conner (born March 17, 1967 in Apple Valley, California) is an American rock musician.  In 1984 he co-founded the band Screaming Trees with his brother Gary Lee Conner and close friends Mark Lanegan and Mark Pickerel.  On the 25 June 2000 Screaming Trees announced their official breakup.  Conner would start a low key band under the name Gardener which released its only album in the 1990s under the name \"New Dawning Time\".  Conner has also had brief appearances as a session musician with other known bands such as Queens of the Stone Age and helping Mark Lanegan on his solo album I'll Take Care of You."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 419,
+    "generation_tokens": 131,
+    "generation_speed": 224.67901772391582,
+    "prompt_eval_speed": 6646.889921791964,
+    "generation_latency_s": 1.0643850000051316,
+    "latency": 1.9232965000119293,
+    "total_prompt_tokens": 494,
+    "total_generation_tokens": 147,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5314967,
+    "stage_rewrite_s": 0.41673959999752697,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1860579000058351,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25587069999892265,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0644712000066647,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.923320900008548,
+    "unaccounted_latency_s": 0.00018259999342262745,
+    "rewritten_query": "Which band had more members - Letters to Cleo or Screaming Trees?",
+    "query_was_rewritten": true
+  }
+}

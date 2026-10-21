@@ -1,0 +1,36 @@
+{
+  "question_id": "Q119",
+  "query": "Were the bands Skin Yard and Ostava from the U.S.?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Based on the provided context, neither Skin Yard nor Ostava were American bands. The context specifies that Skin Yard was an American grunge band active in Seattle, Washington, from 1985 to 1993, while Ostava are described as a Bulgarian alternative rock band who formed in 1991 but did not release any music until 2000 and received critical acclaim.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Skin Yard: Skin Yard was an American grunge band from Seattle, Washington, who were active from 1985 to 1993.  The group never gained a mainstream audience, but were an influence on several of their grunge contemporaries, including Soundgarden, Screaming Trees, The Melvins, and Green River.",
+      "Ostava: Ostava are an alternative rock band from Bulgaria.  They formed in 1991, but it was not until 2000 that they released a long-playing record (and subsequently received critical acclaim.",
+      "Skin Yard (album): Skin Yard was the first album released by the band Skin Yard in January, 1987.  1400 vinyl copies were released on translucent skin-tone vinyl."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 224,
+    "generation_tokens": 76,
+    "generation_speed": 297.86400156770526,
+    "prompt_eval_speed": 20000.0,
+    "generation_latency_s": 0.5968417000112822,
+    "latency": 0.6569691000040621,
+    "total_prompt_tokens": 224,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.3165971,
+    "stage_retrieve_s": 0.05995209999673534,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.5969399000023259,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6569860000017798,
+    "unaccounted_latency_s": 9.490000957157463e-05
+  }
+}

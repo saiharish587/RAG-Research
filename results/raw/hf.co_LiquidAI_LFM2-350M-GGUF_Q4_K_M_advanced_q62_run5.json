@@ -1,0 +1,42 @@
+{
+  "question_id": "Q62",
+  "query": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+  "ground_truth": "Ronald Shusett",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The executive producer of the film \"Legend\" (1986) which features Jerry Goldsmith's score, named Lionheart (also known as Lionheart: The Children's Crusade), is Franklin J. Schaffner.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Innerspace: Innerspace is a 1987 American science fiction comedy film directed by Joe Dante and produced by Michael Finnell.  Steven Spielberg served as executive producer.  The film was inspired by the 1966 science fiction film \"Fantastic Voyage\".  It stars Dennis Quaid, Martin Short and Meg Ryan, with Robert Picardo and Kevin McCarthy, with music composed by Jerry Goldsmith.  It earned well over $25 million in its domestic gross revenue and won an Oscar, the only film directed by Dante to do so.",
+      "Lionheart (1987 film): Lionheart, also known as Lionheart: The Children's Crusade, is a 1987 adventure film directed by Franklin J. Schaffner and produced by Talia Shire and Stanley O'Toole.  Shire's brother, Francis Ford Coppola, initially planned to direct the film but instead opted to be executive producer along with Shire's husband, Jack Schwartzman.  The screenplay was written by Menno Meyjes and Richard Outten from a story by Meyjes.  The composer Jerry Goldsmith wrote the score.  The film was released in August 1987.  It was distributed by Orion Pictures.",
+      "Legend (film score): Legend: The Music of Jerry Goldsmith is a musical film score by American composer Jerry Goldsmith, released in 1986 for the worldwide release of the film of the same name, (excluding the US).  The album was released on compact disc in 1992 through Silva Screen records and featured alternate cover art and additional songs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 402,
+    "generation_tokens": 46,
+    "generation_speed": 302.3689953461468,
+    "prompt_eval_speed": 39563.03513433717,
+    "generation_latency_s": 0.4347953999968013,
+    "latency": 1.28852280000865,
+    "total_prompt_tokens": 482,
+    "total_generation_tokens": 110,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.44297600000000004,
+    "stage_rewrite_s": 0.5075592999928631,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1281555000023218,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2178567000082694,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.43484329999773763,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2885359000065364,
+    "unaccounted_latency_s": 0.00012160000915173441,
+    "rewritten_query": "Executive Producer of Film with Jerry Goldsmith Score - [Film Name]\" \n\n\nThis version:\n\n* **Specifies the film's title** for clarity.\n* **Directly mentions the executive producer** to avoid ambiguity.\n* **Includes \"Score\" in a more concise manner.**",
+    "query_was_rewritten": true
+  }
+}

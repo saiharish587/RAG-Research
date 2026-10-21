@@ -1,0 +1,42 @@
+{
+  "question_id": "Q68",
+  "query": "What is the name of the singer who's song was released as the lead single from the album \"Confessions\", and that had popular song stuck behind for eight consecutive weeks?",
+  "ground_truth": "Usher",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The singer whose song was released as the lead single from the album \"Confessions\" is Mario Winans. The song that had a popular song stuck behind for eight consecutive weeks is \"I Don't Wanna Know.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "I Don't Wanna Know: \"I Don't Wanna Know\" is a song by American R&B artist Mario Winans, featuring a rap by P. Diddy, re-recorded background vocals by Enya and sampling the synthesizer riff from Enya's song \"Boadicea\".  It reached number 1 in the United Kingdom and in Netherlands, and number 2 in the United States, stuck for eight consecutive weeks behind the Usher singles \"Yeah\" and \"Burn\", respectively.  It remains Winans' only major success to date.  As a result of its eight weeks at number 2, \"I Don't Wanna Know\" stands in joint fifth place for the most weeks at number 2 by a song which did not go to number 1, behind Foreigner's \"Waiting for a Girl Like You\", Missy Elliott's \"Work It\", Donna Lewis's \"I Love You Always Forever\" and Shania Twain's \"You're Still the One\".",
+      "Confessions of a Teenage Drama Queen (soundtrack): Confessions of a Teenage Drama Queen is the soundtrack album for the 2004 American teen comedy film: \"Confessions of a Teenage Drama Queen\", released on February 17, 2004.  The film's lead actress Lindsay Lohan recorded four songs written for the film, including \"Drama Queen (That Girl)\", that was released as a promotional single in January of that year.",
+      "Get Together (Madonna song): \"Get Together\" is a song by American singer Madonna from her tenth studio album \"Confessions on a Dance Floor\" (2005).  Produced by Madonna and Stuart Price, the song was released as the third single from the album by Warner Bros.  Records on June 6, 2006.  The decision was spurred by the fact that \"Get Together\" was the third most downloaded song from the album.  It was also released to coincide with the start of Madonna's Confessions Tour.  Inspired by Stardust's single \"Music Sounds Better with You\", \"Get Together\" portrays an anthem-like picture with its lyrics, about the different possibilities of finding love on the dance floor."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 546,
+    "generation_tokens": 45,
+    "generation_speed": 181.93873920496813,
+    "prompt_eval_speed": 18398.706025070762,
+    "generation_latency_s": 0.5912624999909895,
+    "latency": 1.7275861000089208,
+    "total_prompt_tokens": 640,
+    "total_generation_tokens": 108,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5368017,
+    "stage_rewrite_s": 0.67001899999741,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1755118000000948,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.29060049999679904,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5913277999934508,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7276034999958938,
+    "unaccounted_latency_s": 0.00014510001346934587,
+    "rewritten_query": "Find the artist whose lead single from \"Confessions\" had a song that remained top 10 for eight weeks after its release.\n\nThis optimized query focuses on identifying the key elements of the original query - singer, album, lead single, and duration of popularity - to create a clear and concise search request.",
+    "query_was_rewritten": true
+  }
+}

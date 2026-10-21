@@ -1,0 +1,42 @@
+{
+  "question_id": "Q81",
+  "query": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+  "ground_truth": "Newport",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The county seat of the county where East Lempster, New Hampshire is located (Sullivan County) is Ossipee.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "East Lempster, New Hampshire: East Lempster is an unincorporated community in the town of Lempster in Sullivan County, New Hampshire, United States.",
+      "Lempster, New Hampshire: Lempster is a town in Sullivan County, New Hampshire, United States.  The population was 1,154 at the 2010 census.  Settlements include the town center (Lempster village) and the village of East Lempster.",
+      "Carroll County, New Hampshire: Carroll County is a county located in the state of New Hampshire, in the United States.  As of the 2010 census, the population was 47,818, making it the third-least populous county in New Hampshire.  Its county seat is Ossipee.  The county was created in 1840 and organized at Ossipee from towns removed from Strafford County.  It was named in honor of Charles Carroll of Carrollton, who had died in 1832, the last surviving signer of the United States Declaration of Independence."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 289,
+    "generation_tokens": 27,
+    "generation_speed": 219.3606044603323,
+    "prompt_eval_speed": 26215.5297532656,
+    "generation_latency_s": 0.47817240000586025,
+    "latency": 1.2554043999989517,
+    "total_prompt_tokens": 367,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5717388000000001,
+    "stage_rewrite_s": 0.47671570000238717,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16343260000576265,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13687400000344496,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4782228000112809,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2554179999860935,
+    "unaccounted_latency_s": 0.00017349996778648347,
+    "rewritten_query": "Find the county seat of the area containing East Lempster, NH.",
+    "query_was_rewritten": true
+  }
+}

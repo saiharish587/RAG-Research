@@ -1,0 +1,42 @@
+{
+  "question_id": "Q476",
+  "query": "Which American cable news and talk radio host was the former GOP representative",
+  "ground_truth": "Charles Joseph",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Sean Hannity was the former GOP representative who hosted \"The Sean Hannity Show\" on Fox News Channel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joe Scarborough: Charles Joseph Scarborough ( ; born April 9, 1963) is an American cable news and talk radio host.  He is currently the co-host of \"Morning Joe\" on MSNBC, and previously hosted \"Scarborough Country\" on the same channel.  Scarborough was previously a lawyer and a politician, and served in the United States House of Representatives from 1995 to 2001 as a Republican from the 1st district of Florida.",
+      "Sean Hannity: Sean Patrick Hannity (born December 30, 1961) is an American talk show host, author, and conservative political commentator.  Hannity is the host of \"The Sean Hannity Show\", a nationally syndicated talk radio show.  He also hosts a cable news show, \"Hannity\", on Fox News Channel.",
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 25,
+    "generation_speed": 216.63027278083948,
+    "prompt_eval_speed": 36023.55386214063,
+    "generation_latency_s": 0.48056359999463893,
+    "latency": 1.3032642000034684,
+    "total_prompt_tokens": 490,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5492171,
+    "stage_rewrite_s": 0.4634896000061417,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15299319999758154,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20598579999932554,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4806486000015866,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3032881999970414,
+    "unaccounted_latency_s": 0.0001720000000204891,
+    "rewritten_query": "Who was the former Republican representative who previously worked as a cable news and talk show host?",
+    "query_was_rewritten": true
+  }
+}

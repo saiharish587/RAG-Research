@@ -1,0 +1,42 @@
+{
+  "question_id": "Q81",
+  "query": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+  "ground_truth": "Newport",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The county seat of Sullivan County, which includes East Lempster, is Newport. However, since the context provided does not explicitly state that East Lempster is the county seat of Carroll County, we cannot definitively answer this question based solely on the given information about Sullivan County and its population. The population data only provides the count for Sullivan County but does not specify the county seat for East Lempster.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sullivan County, New Hampshire: Sullivan County is a county located in the U.S. state of New Hampshire.  As of the 2010 census, the population was 43,742, making it the second-least populous county in New Hampshire.  Its county seat is Newport.",
+      "Lempster, New Hampshire: Lempster is a town in Sullivan County, New Hampshire, United States.  The population was 1,154 at the 2010 census.  Settlements include the town center (Lempster village) and the village of East Lempster.",
+      "Carroll County, New Hampshire: Carroll County is a county located in the state of New Hampshire, in the United States.  As of the 2010 census, the population was 47,818, making it the third-least populous county in New Hampshire.  Its county seat is Ossipee.  The county was created in 1840 and organized at Ossipee from towns removed from Strafford County.  It was named in honor of Charles Carroll of Carrollton, who had died in 1832, the last surviving signer of the United States Declaration of Independence."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 315,
+    "generation_tokens": 84,
+    "generation_speed": 297.76358280486204,
+    "prompt_eval_speed": 8799.128467275623,
+    "generation_latency_s": 0.64181680000911,
+    "latency": 1.5142021000065142,
+    "total_prompt_tokens": 393,
+    "total_generation_tokens": 147,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5070304999999999,
+    "stage_rewrite_s": 0.5033272000000579,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13412719999905676,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23477140000613872,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6418701000075089,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5142154000059236,
+    "unaccounted_latency_s": 0.00012009998317807913,
+    "rewritten_query": "To find the county seat of the eastern part of Montresor County in New Hampshire, consider this rephrased version:\n\n\"East Lempster's County Seat: Montresor County - Where the county center resides.\"\n\nThis query maintains the core information while being more concise and direct.",
+    "query_was_rewritten": true
+  }
+}

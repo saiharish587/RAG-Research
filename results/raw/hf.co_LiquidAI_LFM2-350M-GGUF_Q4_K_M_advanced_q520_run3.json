@@ -1,0 +1,42 @@
+{
+  "question_id": "Q520",
+  "query": "James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?",
+  "ground_truth": "Lord Chancellor of England",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "James Spedding was chiefly known as the editor of the works of Francis Bacon, but also served as the Attorney General for England and Wales.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Spedding: James Spedding (28 June 1808 \u2013 9 March 1881) was an English author, chiefly known as the editor of the works of Francis Bacon.",
+      "Attorney General for England and Wales: Her Majesty's Attorney General for England and Wales, usually known simply as the Attorney General, is one of the Law Officers of the Crown.  Along with the subordinate Solicitor General for England and Wales, the Attorney General serves as the chief legal adviser of the Crown and its government in England and Wales.  The current Attorney General is Jeremy Wright, MP.",
+      "Elliot Richardson: Elliot Lee Richardson (July 20, 1920 December 31, 1999) was an American lawyer and politician who was a member of the cabinet of Presidents Richard Nixon and Gerald Ford.  As U.S. Attorney General, he was a prominent figure in the Watergate Scandal, and resigned rather than obey President Nixon's order to fire special prosecutor Archibald Cox."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 282,
+    "generation_tokens": 29,
+    "generation_speed": 294.7094571248552,
+    "prompt_eval_speed": 22201.228153046766,
+    "generation_latency_s": 0.42938600000343286,
+    "latency": 1.4435891000030097,
+    "total_prompt_tokens": 366,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5163793999999999,
+    "stage_rewrite_s": 0.5976064999995288,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.156202400001348,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2602037000033306,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.42944659999920987,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4436048000061419,
+    "unaccounted_latency_s": 0.00014629999350290745,
+    "rewritten_query": "James Spedding's primary role was as editor for authors who held dual positions as Attorney General. \n\n\nThis version is more concise and directly conveys the key information:\n\n* **Focus:** Emphasizes James Spedding's main profession.\n* **Specificity:** Highlights his dual roles (Attorney General) in a clear manner.\n* **Conciseness:** Reduces word count while maintaining essential meaning.",
+    "query_was_rewritten": true
+  }
+}

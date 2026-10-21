@@ -1,0 +1,42 @@
+{
+  "question_id": "Q246",
+  "query": "Jamie Harris is best known for his role as The Hook-Handed Man in a movie directed by who ?",
+  "ground_truth": "Brad Silberling",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The context provided does not specify who directed the movie where Jamie Harris played The Hook-Handed Man. It only mentions that this role was part of \"Lemony Snicket's A Series of Unfortunate Events\" and credits Kubrick as the director, but it does not provide any further details about the film's production or distribution.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jamie Harris (actor): Jamie Harris (born May 15, 1963) is a British actor.  He is best known for his role as The Hook-Handed Man in \"Lemony Snicket's A Series of Unfortunate Events\", Rodney in \"Rise of the Planet of the Apes\" and Gordon in Marvel's \"Agents of S.H.I.E.L.D.\".",
+      "Stanley Kubrick: Stanley Kubrick ( ; July 26, 1928 \u2013 March 7, 1999) was an American film director, screenwriter, producer, cinematographer, editor, and photographer.  He is frequently cited as one of the greatest and most influential directors in cinematic history.  His films, which are mostly adaptations of novels or short stories, cover a wide range of genres, and are noted for their realism, dark humor, unique cinematography, extensive set designs, and evocative use of music.",
+      "Christopher Nolan: Christopher Edward Nolan ( ; born 30 July 1970) is an English-American film director, producer, and screenwriter.  He is one of the highest-grossing directors in history, and among the most successful and acclaimed filmmakers of the 21st century."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 334,
+    "generation_tokens": 69,
+    "generation_speed": 314.15185827653556,
+    "prompt_eval_speed": 31539.18791312559,
+    "generation_latency_s": 0.48050610000791494,
+    "latency": 1.4652191999921342,
+    "total_prompt_tokens": 414,
+    "total_generation_tokens": 166,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.39572589999999996,
+    "stage_rewrite_s": 0.5516185000014957,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12737889999698382,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3055621999956202,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4805577999941306,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4652324999915436,
+    "unaccounted_latency_s": 0.00011560000712051988,
+    "rewritten_query": "Jamie Harris, known for \"The Hook-Handed Man\", was directed by [specific director's name] . \n\n\nThis version:\n* **Specifies the director:** Provides context about the film.\n* **Uses more precise language:** Replaces \"best known\" with \"known,\" and \"directed by who\" with \"director.\"\n* **Enhances readability:** Breaks down the original query into a clearer, more concise structure.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "question_id": "Q24",
+  "query": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+  "ground_truth": "Badly Drawn Boy",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Badly Drawn Boy has a higher instrument-to-person ratio compared to Wolf Alice. The context states that Badly Drawn Boy's members have played together since 2012 and each member has had a distinct set of instruments (e.g., Ellie Rowsell, Joff Oddie, Theo Ellis, Joel Amey), while Wolf Alice consists of four members with varying instrumentations (two-person band in 2010).\n\nTo calculate the ratio:\n- Badly Drawn Boy: 4 instruments / 2 people = 2:1\n- Wolf Alice: 3 members / 4 people = 0.75:1\n\nTherefore, Badly Drawn Boy has a higher instrument-to-person ratio than Wolf Alice.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wolf Alice: Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010.  Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+      "Badly Drawn Boy: Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 206,
+    "generation_tokens": 153,
+    "generation_speed": 319.48948503724245,
+    "prompt_eval_speed": 18472.022955523673,
+    "generation_latency_s": 0.7546188000123948,
+    "latency": 0.7546924000198487,
+    "total_prompt_tokens": 206,
+    "total_generation_tokens": 153,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2521397,
+    "stage_generate_s": 0.7546679000079166,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7547021000063978,
+    "unaccounted_latency_s": 3.4900003811344504e-05
+  }
+}

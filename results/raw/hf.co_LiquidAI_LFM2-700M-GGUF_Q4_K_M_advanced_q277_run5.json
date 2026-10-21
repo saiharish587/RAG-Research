@@ -1,0 +1,42 @@
+{
+  "question_id": "Q277",
+  "query": "Which Genus has more species Eucryphia or Lepidozamia ?",
+  "ground_truth": "Eucryphia",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Based on the provided context, there is no direct comparison given between the number of species in Eucryphia and Lepidozamia. However, we can infer some information from the details about each genus:\n\n1. **Eucryphia**:\n   - There are seven species mentioned.\n   - One species (\"E. glutinosa\") is usually deciduous.\n\n2. **Lepidozamia**:\n   - Both species are described as having a chromosome number of 18 (n = 18).\n   - No specific information about the number of species in Lepidozamia is provided, but it's mentioned that they have a name derived from Greek and refer to a scaly structure.\n\nGiven this information, we cannot definitively say which genus has more species without additional comparative data. However, since Eucryphia explicitly states there are seven species, it appears to be the larger group in terms of species count compared to Lepidozamia.\n\nTherefore, based on the provided context and focusing solely on the number of species mentioned:\n\n**Answer:** Eucryphia has more species than Lepidozamia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lepidozamia: Lepidozamia is a genus of two species of cycad, both endemic to Australia.  The name, derived from the Greek word lepidos, meaning scaly, refers to the scale-like structure of the stem and leaf bases.  They are native to rainforest climates in eastern Queensland and eastern New South Wales.  They have a chromosome number of 2n = 18.",
+      "Eucryphia: Eucryphia is a small genus of trees and large shrubs native to the south temperate regions of South America and coastal eastern Australia.  Sometimes placed in a family of their own, the Eucryphiaceae, more recent classifications place them in the Cunoniaceae.  There are seven species, two in South America and five in Australia, and several named hybrids.  They are mostly evergreen though one species (\"E. glutinosa\") is usually deciduous.",
+      "Goldenrod: Solidago, commonly called goldenrods, is a genus of about 100 to 120 species of flowering plants in the aster family, Asteraceae.  Most are herbaceous perennial species found in open areas such as meadows, prairies, and savannas.  They are mostly native to North America, including Mexico; a few species are native to South America and Eurasia.  Some American species have also been introduced into Europe and other parts of the world."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 363,
+    "generation_tokens": 243,
+    "generation_speed": 221.21537364915244,
+    "prompt_eval_speed": 27083.488771170632,
+    "generation_latency_s": 1.4565428999922005,
+    "latency": 2.2820169999904465,
+    "total_prompt_tokens": 440,
+    "total_generation_tokens": 262,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4968127,
+    "stage_rewrite_s": 0.40778449999925215,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14906849998806138,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2684064000059152,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.4566298999998253,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.28204160000314,
+    "unaccounted_latency_s": 0.00015350000467151403,
+    "rewritten_query": "How many species does Eucryphia have compared to Lepidozamia?",
+    "query_was_rewritten": true
+  }
+}

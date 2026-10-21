@@ -1,0 +1,42 @@
+{
+  "question_id": "Q547",
+  "query": "What drug is among the list of illegal drugs in the Philippines and can be taken by mouth or by injection?",
+  "ground_truth": "Ephedrine",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Based on the provided context, Ephedrine is one of the illegal drugs mentioned that can be taken by mouth or by injection. It's important to note that while it has various uses such as preventing low blood pressure during spinal anesthesia, its primary use in the Philippines is for these purposes. However, it also has other applications like treating asthma, narcolepsy, and obesity, though not as a preferred treatment for nasal congestion.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Illegal drug trade in the Philippines: The prevalence of drug use in the Philippines is lower than the global average, according to the United Nations Office on Drugs and Crime (UNODC).  Two of the most used and valuable illegal drugs in the country are methamphetamine hydrochloride (shabu) and marijuana.  Ephedrine and methylenedioxy methamphetamine are also among the list of illegal drugs that are of great concern to the authorities.",
+      "Drug addiction in Pakistan: Drug addiction is defined as compulsive and out-of-control drug use, despite negative consequences.  In the last few decades, drug addiction has increased exponentially in Pakistan.  Most of the illegal drugs come from the neighbouring Afghanistan.  According to the UN estimate, 8.9 million people in the country are drug users.  Cannabis is the most used drug.  The rate of injection drug abuse has also increased significantly in Pakistan, sparking fears of an HIV epidemic.",
+      "Ephedrine: Ephedrine is a medication and stimulant.  It is often used to prevent low blood pressure during spinal anesthesia.  It has also been used for asthma, narcolepsy, and obesity but is not the preferred treatment.  It is of unclear benefit in nasal congestion.  It can be taken by mouth or by injection into a muscle, vein, or just under the skin.  Onset with intravenous use is fast, while injection into a muscle can take 20 minutes, and by mouth can take an hour for effect.  When given by injection it lasts about an hour and when taken by mouth it can last up to four hours."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 408,
+    "generation_tokens": 87,
+    "generation_speed": 216.7009153745563,
+    "prompt_eval_speed": 34494.42002029083,
+    "generation_latency_s": 0.775060999993002,
+    "latency": 1.5850036000047112,
+    "total_prompt_tokens": 489,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5274174,
+    "stage_rewrite_s": 0.4093321999971522,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14844830000947695,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2519312000076752,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7751505000051111,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5850270999944769,
+    "unaccounted_latency_s": 0.00016589998267591,
+    "rewritten_query": "Which illegal Philippine drug can be consumed through mouth or injection?",
+    "query_was_rewritten": true
+  }
+}

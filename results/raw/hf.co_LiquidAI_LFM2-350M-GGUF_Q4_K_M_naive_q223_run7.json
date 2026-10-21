@@ -1,0 +1,36 @@
+{
+  "question_id": "Q223",
+  "query": "Are both Dafeng District and Dazhou located in the same province?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "No, they are not located in the same province. The context provided gives us specific details about each district but does not indicate that they are all within the same province. Instead, they are listed under different provinces within China's main administrative divisions.\n\nDafeng District is mentioned as being in Jiangsu province (specifically Yancheng), while Dazhou is described as a prefecture-level city in Sichuan province. This indicates that while both are located in northeastern China, they belong to separate administrative units within the country.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dafeng District: Dafeng () is a coastal district under the administration of Yancheng, Jiangsu province, China.  Located on the Jiangsu North Plain with a coastline of 112 km , Dafeng was historically one of the largest salt-making areas in China and now is famed for its well preserved eco-system and numerous national conservation parks.  The district has the largest national nature reserve for a rare deer species, P\u00e8re David's Deer or Milu (\u9e8b\u9e7f ) in Chinese.  It borders the prefecture-level city of Taizhou to the southwest.",
+      "Dazhou: Dazhou () is a prefecture-level city in the northeast corner of Sichuan province, China, bordering Shaanxi to the north and Chongqing to the east and south.  2002 population was 384,525.",
+      "Dandong: Dandong (), formerly known as Andong, is a prefecture-level city in southeastern Liaoning province, People's Republic of China."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 280,
+    "generation_tokens": 108,
+    "generation_speed": 311.28225230003,
+    "prompt_eval_speed": 28785.8538089853,
+    "generation_latency_s": 0.6362702999904286,
+    "latency": 0.6859150000091176,
+    "total_prompt_tokens": 280,
+    "total_generation_tokens": 108,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2635962,
+    "stage_retrieve_s": 0.0494812999968417,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.6363529999944149,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6859320000075968,
+    "unaccounted_latency_s": 9.85000078799203e-05
+  }
+}

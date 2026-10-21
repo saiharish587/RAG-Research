@@ -1,0 +1,42 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The hotel that is owned by MGM Grand Las Vegas, which is located north of the Alon Las Vegas on the Las Vegas Strip in Paradise, Nevada, is owned by MGM Resorts International.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "MGM Grand Las Vegas: The MGM Grand Las Vegas (formerly Marina and MGM-Marina) is a hotel and casino located on the Las Vegas Strip in Paradise, Nevada.  The MGM Grand is the largest single hotel in the United States with 5,124 rooms.  It is also the third-largest hotel complex in the world by number of rooms and second-largest hotel resort complex in the United States behind the combined The Venetian and The Palazzo.  When it opened in 1993, the MGM Grand was the largest hotel complex in the world.",
+      "Alon Las Vegas: The Alon Las Vegas was an upcoming luxury hotel and casino located on the Las Vegas Strip in Paradise, Nevada.  It was located on the site of the former New Frontier Hotel and Casino, near the Wynn Las Vegas and the Fashion Show Mall."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 299,
+    "generation_tokens": 42,
+    "generation_speed": 222.37164655615146,
+    "prompt_eval_speed": 24544.409784928583,
+    "generation_latency_s": 0.5502119999873685,
+    "latency": 1.239072500000475,
+    "total_prompt_tokens": 375,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5196158,
+    "stage_rewrite_s": 0.40887349999684375,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16243649998796172,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11730310000712052,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5503083999938099,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2391041999944719,
+    "unaccounted_latency_s": 0.0001840000186348334,
+    "rewritten_query": "Where's the hotel located near, and what company owns the Las Vegas Festival Grounds?",
+    "query_was_rewritten": true
+  }
+}

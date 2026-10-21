@@ -1,0 +1,42 @@
+{
+  "question_id": "Q381",
+  "query": "Who was born first, Jos\u00e9 Echegaray y Eizaguirre or P. J. O'Rourke?",
+  "ground_truth": "Jos\u00e9 Echegaray y Eizaguirre",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Jos\u00e9 Echegaray y Eizaguirre was born first, with a date of 19 April 1832.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jos\u00e9 Echegaray: Jos\u00e9 Echegaray y Eizaguirre (19 April 1832 \u2013 4 September 1916) was a Spanish civil engineer, mathematician, statesman, and one of the leading Spanish dramatists of the last quarter of the 19th century.  He was awarded the 1904 Nobel Prize for Literature \"in recognition of the numerous and brilliant compositions which, in an individual and original manner, have revived the great traditions of the Spanish drama\".",
+      "P. J. O'Rourke: Patrick Jake O'Rourke ( ; born November 14, 1947), known as P.J. O'Rourke, is an American political satirist and journalist.  O'Rourke is the H. L. Mencken Research Fellow at the libertarian Cato Institute and is a regular correspondent for \"The Atlantic Monthly\", \"The American Spectator\", and \"The Weekly Standard\", and frequent panelist on National Public Radio's game show \"Wait Wait... Don't Tell Me! \".  Since 2011 he has been a columnist at \"The Daily Beast\".",
+      "Paddy O'Rourke (Meath footballer): Paddy O'Rourke (born 10 May 1989) is an Irish Gaelic footballer who plays as a Goalkeeper for his club Skryne and the Meath senior footballers.  O'Rourke is the nephew of former Skryne and Meath player Colm O'Rourke and first cousin to current Meath player Shane O'Rourke.  He played for the Skryne juvenile team at a young age and eventually became the Skryne senior team's first choice goalkeeper, aged 16.  He has since moved outfield to a forward position.  O'Rourke was top scorer on the 2010 SFC Skryne winning team."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 27,
+    "generation_speed": 227.42779167614282,
+    "prompt_eval_speed": 47690.61216310991,
+    "generation_latency_s": 0.4438172999944072,
+    "latency": 1.233445899997605,
+    "total_prompt_tokens": 562,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4915589,
+    "stage_rewrite_s": 0.4590520999918226,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15574860000924673,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17465509999601636,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.44386640000448097,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2334599000023445,
+    "unaccounted_latency_s": 0.0001382999907946214,
+    "rewritten_query": "Which birth year precedes that of Jos\u00e9 Echegaray y Eizaguirre and P. J. O'Rourke?",
+    "query_was_rewritten": true
+  }
+}

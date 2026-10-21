@@ -1,0 +1,42 @@
+{
+  "question_id": "Q84",
+  "query": "Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",
+  "ground_truth": "Mondelez International, Inc.",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Handi-Snacks are a snack food product line sold by Mondelez International, Inc., which is an American multinational confectionery, food, and beverage company based in Illinois.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Handi-Snacks: Handi-Snacks are a snack food product line sold by Mondelez International.  The common two-compartment Handi-Snack has a small spread compartment and a larger compartment for crackers; a red plastic spreader is included with crackers.",
+      "Mondelez International: Mondelez International, Inc., styled Mondel\u0113z ( ), is an American multinational confectionery, food, and beverage company based in Illinois which employs about 107,000 people around the world.  It consists of the global snack and food brands of the former Kraft Foods Inc after the October 2012 spin-off of its North American grocery operations.  The Mondelez name, adopted in 2012, was suggested by Kraft Foods employees and is derived from the words \"mundus\" (Latin for \u201cworld\u201d) and \"delez\" (a proxy for the word \"delicious\").",
+      "PepsiCo: PepsiCo, Inc. is an American multinational food, snack, and beverage corporation headquartered in Purchase, New York.  PepsiCo has interests in the manufacturing, marketing, and distribution of grain-based snack foods, beverages, and other products.  PepsiCo was formed in 1965 with the merger of the Pepsi-Cola Company and Frito-Lay, Inc.  PepsiCo has since expanded from its namesake product Pepsi to a broader range of food and beverage brands, the largest of which included an acquisition of Tropicana Products in 1998 and the Quaker Oats Company in 2001, which added the Gatorade brand to its portfolio."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 39,
+    "generation_speed": 299.5598774108809,
+    "prompt_eval_speed": 36742.45698971212,
+    "generation_latency_s": 0.4712865000037709,
+    "latency": 1.386293300005491,
+    "total_prompt_tokens": 515,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.561067,
+    "stage_rewrite_s": 0.554877899994608,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14306370000122115,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21690900000976399,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4713348999939626,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3863066000049002,
+    "unaccounted_latency_s": 0.00012169999536126852,
+    "rewritten_query": "Handi Snacks - A snack food segment from the American multinational confectionery giant, Nestle, headquartered in Illinois.\n\nThis optimized version condenses the original query into a more concise and clear format while retaining all essential information about Handi Snacks' origin, brand, and location.",
+    "query_was_rewritten": true
+  }
+}

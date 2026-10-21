@@ -1,0 +1,36 @@
+{
+  "question_id": "Q94",
+  "query": "Do the drinks Gibson and Zurracapote both contain gin?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "No, the context provided does not explicitly state whether the drinks Gibson and Zurracapote contain gin or not. However, we can infer that while both are mixes of gin-based spirits, they do not exclusively use gin in their recipes. The context mentions that the gin used in the Gibson is derived from juniper berries (Juniperus communis), but it does not specify if this juniper is used in every drink or just a subset of them. Therefore, we cannot definitively say that both drinks contain gin based solely on the given information.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gibson (cocktail): The Gibson is a mixed drink made with gin and vermouth, and often garnished with a pickled onion.  The oldest published recipe for the Gibson is found in the 1908 book, \"The World's Drinks And How To Mix Them\" by William Boothby.",
+      "Zurracapote: Zurracapote (sometimes abbreviated as zurra) is a popular Spanish alcoholic mixed drink, similar to sangr\u00eda.  It consists of red wine mixed with fruit such as peaches and lemons, sugar, and cinnamon.  The concoction is then traditionally left to steep for several days, though some recipes call for the addition of other alcoholic beverages, juices, and fruit extracts.  The result is a mild-to-medium alcoholic drink, similar to sangr\u00eda.",
+      "Gin: Gin is a spirit which derives its predominant flavour from juniper berries (\"Juniperus communis\").  From its earliest origins in the Middle Ages, gin has evolved from use in herbal medicine to an object of commerce in the spirits industry.  Gin was developed on the basis of the older jenever, and became popular in Great Britain (particularly in London) when William of Orange, leader of the Dutch Republic, occupied the English, Scottish, and Irish thrones with his wife Mary.  Gin is one of the broadest categories of spirits, represented by products of various origins, styles, and flavour profiles that all revolve around juniper as a common ingredient."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 377,
+    "generation_tokens": 119,
+    "generation_speed": 318.0984661773118,
+    "prompt_eval_speed": 32848.30530626471,
+    "generation_latency_s": 0.6593847000040114,
+    "latency": 0.706604499995592,
+    "total_prompt_tokens": 377,
+    "total_generation_tokens": 119,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2598227,
+    "stage_retrieve_s": 0.04709410000941716,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.6594418000022415,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7066162999981316,
+    "unaccounted_latency_s": 8.109997725114226e-05
+  }
+}

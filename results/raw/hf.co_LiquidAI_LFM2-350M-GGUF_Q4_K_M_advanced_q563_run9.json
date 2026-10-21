@@ -1,0 +1,42 @@
+{
+  "question_id": "Q563",
+  "query": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Bendict of Nursia who is a patron saint of what continent?",
+  "ground_truth": "Europe",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The answer is: Europe. The text explicitly states that Gualdo Tadino Cathedral, originally a Benedictine abbey church, became a cathedral in 1915 and is now a co-cathedral in the diocese of Assisi-Nocera Umbra-Gualdo Tadino. This indicates that Saint Benedict of Nursia's patronage extends across Europe.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gualdo Tadino Cathedral: Gualdo Tadino Cathedral (Italian: \"Duomo di Gualdo Tadino; Basilica Cattedrale di San Benedetto\" ) is a Roman Catholic cathedral in Gualdo Tadino in Umbria, Italy, dedicated to Saint Benedict of Nursia.  Formerly a Benedictine abbey church, it became a cathedral in 1915, and is now a co-cathedral in the diocese of Assisi-Nocera Umbra-Gualdo Tadino.",
+      "San Francesco, Gualdo Tadino: San Francesco is a Gothic-style, Roman Catholic church located in Piazza Martiri della Libert\u00e0 of Gualdo Tadino, region of Umbria, Italy.  It is located opposite to the Cathedral of Gualdo Tadino.",
+      "Benedict of Nursia: Benedict of Nursia (Latin: \"Benedictus de Nursia\" ; Italian: \"Benedetto da Norcia\" ; Vulgar Latin: \"*Benedecto\"; Gothic: \"\ud800\udf31\ud800\udf34\ud800\udf3d\ud800\udf34\ud800\udf33\ud800\udf39\ud800\udf3a\ud800\udf44, Benedikt\" ; 2 March 480 \u2013 543 or 547 AD) is a Christian saint, who is venerated in the <a href=\"Eastern%20Orthodox%20Church\">Eastern Orthodox Church</a>es, the <a href=\"Catholic%20Church\">Catholic Church</a>, the <a href=\"Oriental%20Orthodoxy\">Oriental Orthodox Churchese <a href=\"Anglican%20Communion\">Anglican Communion</a> and <a href=\"Old%20Catholic%20Church\">Old Catholic Church</a>es.  He is a patron saint of Europe."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 75,
+    "generation_speed": 286.8463727320014,
+    "prompt_eval_speed": 57328.67638203059,
+    "generation_latency_s": 0.5559113999916008,
+    "latency": 1.8589158000104362,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 206,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5107836,
+    "stage_rewrite_s": 0.7521496999979718,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1684497999958694,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3821777999983169,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.555988799998886,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.858935800002655,
+    "unaccounted_latency_s": 0.0001705000177025795,
+    "rewritten_query": "Gualdo Tadino Cathedral, a Roman Catholic basilica, honors Saint Bendict of Nursia - a significant patron saint of Central and Eastern Europe - located in the continent of Europe. \n\n\nThis optimized version:\n\n* **Focuses on the specific location:** It explicitly mentions \"Central and Eastern Europe\" to clarify the continent.\n* **Emphasizes the saint's patronage:** The phrase \"patron saint of... Central and Eastern Europe\" directly links the cathedral to Saint Bendict.\n* **Removes unnecessary details:**  Terms like \"dedicated to Saint Bendict of Nursia\" are implied by the context.",
+    "query_was_rewritten": true
+  }
+}

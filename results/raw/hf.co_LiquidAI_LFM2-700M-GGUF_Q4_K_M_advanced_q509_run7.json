@@ -1,0 +1,42 @@
+{
+  "question_id": "Q509",
+  "query": "In what London botanical garden can you find the fungus described by Elise Maud Wakefield as \"Lepiota\"?",
+  "ground_truth": "Kew Gardens",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The fungus described by Elsie Maud Wakefield as \"Lepiota\" can be found in Kew Gardens, a botanical garden located southwest London. This is mentioned in the context where it states that \"First described by English mycologist Elsie Maud Wakefield in 1918 as a species of 'Lepiota', it was named for its nauseating odor.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Saproamanita nauseosa: Saproamanita nauseosa is a species of agaric fungus in the family Amanitaceae.  First described by English mycologist Elsie Maud Wakefield in 1918 as a species of \"Lepiota\", it was named for its nauseating odor.  The type specimen was found growing on soil in the \"Nepenthes\" greenhouse at Kew Gardens.  Derek Reid transferred the species to \"Amanita\" in 1966, and then in 2016 the separate genus \"Saproamanita\" was created by Redhead et al. for saprophytic \"Amanitas\" and it was transferred to this new genus.",
+      "Kew Gardens: Kew Gardens is a botanical garden in southwest London that houses the \"largest and most diverse botanical and mycological collections in the world\".  Founded in 1840, from the exotic garden at Kew Park in the London Borough of Richmond upon Thames, UK, its living collections include more than 30,000 different kinds of plants, while the herbarium, which is one of the largest in the world, has over seven million preserved plant specimens.  The library contains more than 750,000 volumes, and the illustrations collection contains more than 175,000 prints and drawings of plants.  It is one of London's top tourist attractions and is a World Heritage Site.",
+      "Botanical garden: A botanical garden or botanic garden is a garden dedicated to the collection, cultivation and display of a wide range of plants labelled with their botanical names.  It may contain specialist plant collections such as cacti and other succulent plants, herb gardens, plants from particular parts of the world, and so on; there may be greenhouses, shadehouses, again with special collections such as tropical plants, alpine plants, or other exotic plants. Visitor services at a botanical garden might include tours, educational displays, art exhibitions, book rooms, open-air theatrical and musical performances, and other entertainment."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 505,
+    "generation_tokens": 80,
+    "generation_speed": 227.06050310930976,
+    "prompt_eval_speed": 48200.820845661925,
+    "generation_latency_s": 0.7301885000051698,
+    "latency": 1.551805199997034,
+    "total_prompt_tokens": 590,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5200256,
+    "stage_rewrite_s": 0.4356707999977516,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.18102279999584425,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2047251000039978,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7302423999935854,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5518249000015203,
+    "unaccounted_latency_s": 0.0001647000026423484,
+    "rewritten_query": "Where is the Lepiota fungus found in London's botanical gardens, as described by Elise Maud Wakefield?",
+    "query_was_rewritten": true
+  }
+}

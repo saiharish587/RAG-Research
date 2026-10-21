@@ -1,0 +1,42 @@
+{
+  "question_id": "Q237",
+  "query": "Henry Hall is known for fighting in the Revolutionary War, and for being the first to successfully cultivate this food found in what type of bogs?",
+  "ground_truth": "acidic",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Henry Hall is known for fighting in the American Revolutionary War, and for being the first to successfully cultivate cranberries, which are typically grown in peat bogs. However, there's no specific mention in the provided context about cranberries being cultivated in peat bogs. Therefore, based solely on the information given, we cannot definitively answer the question about cranberries being cultivated in peat bogs.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Adlum: John Adlum (April 29, 1759 \u2013 March 14, 1836) was a pioneering American viticulturalist who was the first to cultivate the Catawba grape.  He is known as \"the father of American viticulture\" (grape-growing).  He also served in the American Revolutionary War; was a well-known surveyor; was one of the first associate judges in Lycoming County, Pennsylvania; and served in the United States Army in the War of 1812.",
+      "Henry Hall (American revolution): Captain Henry Hall was an American from Dennis, Massachusetts who fought in the American Revolutionary War, who later was the first to successfully cultivate cranberries.",
+      "Gilbert du Motier, Marquis de Lafayette: Marie-Joseph Paul Yves Roch Gilbert du Motier, Marquis de Lafayette (] ; 6 September 1757 \u2013 20 May 1834), in the United States often known simply as Lafayette, was a French aristocrat and military officer who fought in the American Revolutionary War.  A close friend of George Washington, Alexander Hamilton, and Thomas Jefferson, Lafayette was a key figure in the French Revolution of 1789 and the July Revolution of 1830."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 342,
+    "generation_tokens": 80,
+    "generation_speed": 224.45114680507822,
+    "prompt_eval_speed": 35149.02363823227,
+    "generation_latency_s": 0.7228811999957543,
+    "latency": 1.409308600006625,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5221085,
+    "stage_rewrite_s": 0.39492960000643507,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14904640000895597,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14223330000822898,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7229485999996541,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4093272000027355,
+    "unaccounted_latency_s": 0.00017029997252393514,
+    "rewritten_query": "Who was the first person to cultivate a specific food found in bogs during the Revolutionary War?",
+    "query_was_rewritten": true
+  }
+}

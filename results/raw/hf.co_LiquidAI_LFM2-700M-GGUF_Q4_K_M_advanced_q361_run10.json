@@ -1,0 +1,42 @@
+{
+  "question_id": "Q361",
+  "query": "The Waterloo Vase has been used as a garden ornament at whose residence and administrative headquarters?",
+  "ground_truth": "reigning monarch of the United Kingdom",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Waterloo Vase has been used as a garden ornament in the garden of Buckingham Palace, London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning.",
+      "Waterloo Vase: The Waterloo Vase is a great urn, 15ft (5m) high and weighing 20 tons, fashioned from a single piece of Carrara marble.  Since 1906, it has been used as a garden ornament in the garden of Buckingham Palace, London.",
+      "Louvre Palace: The Louvre Palace (French: \"Palais du Louvre\" , ] ) is a former royal palace located on the Right Bank of the Seine in Paris, between the Tuileries Gardens and the church of Saint-Germain l'Auxerrois.  Originally a fortress built in the medieval period, it became a royal palace in the fourteenth century under Charles V and was used from time to time by the kings of France as their main Paris residence.  Its present structure has evolved in stages since the 16th century.  In 1793 part of the Louvre became a public museum, now the Mus\u00e9e du Louvre, which has expanded to occupy most of the building."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 350,
+    "generation_tokens": 21,
+    "generation_speed": 229.05509320360818,
+    "prompt_eval_speed": 31188.736410621994,
+    "generation_latency_s": 0.44822190000559203,
+    "latency": 1.2773805000033462,
+    "total_prompt_tokens": 427,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5104712,
+    "stage_rewrite_s": 0.470801899995422,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1571292999869911,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20104169999831356,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.44828850000340026,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2773987999971723,
+    "unaccounted_latency_s": 0.0001381000183755532,
+    "rewritten_query": "The Waterloo vase is known for being an ornamental piece found in both the residence and administrative headquarters of the location mentioned in the original query.",
+    "query_was_rewritten": true
+  }
+}

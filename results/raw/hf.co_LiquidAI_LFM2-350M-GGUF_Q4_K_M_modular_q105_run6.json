@@ -1,0 +1,49 @@
+{
+  "question_id": "Q105",
+  "query": "Since 2 June 2017, The Leader of Fine Gael had been held by which Irish Fine Gael politician who has served as Taoiseach and Minister for Defence?",
+  "ground_truth": "Leo Varadkar",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Leo Varadkar",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Leo Varadkar: Leo Eric Varadkar ( ; Irish: \"Leo de Varad\" ;born 18 January 1979) is an Irish Fine Gael politician who has served as Taoiseach, Minister for Defence and Leader of Fine Gael since June 2017.  He has been a Teachta D\u00e1la (TD) since 2007, currently for the Dublin West constituency.  He previously served as Minister for Social Protection from 2016 to 2017, Minister for Health from 2014 to 2016 and Minister for Transport, Tourism and Sport from 2011 to 2014.",
+      "Enda Kenny: Enda Patrick Kenny (born 24 April 1951) is an Irish Fine Gael politician who served as Taoiseach from 2011 to 2017, Leader of Fine Gael from 2002 to 2017, Minister for Defence from May 2014 to July 2014 and 2016 to 2017, Leader of the Opposition from 2002 to 2011, Minister for Tourism and Trade from 1994 to 1997 and Minister of State for Youth Affairs from 1986 to 1987.  He has been a Teachta D\u00e1la (TD) since 1975, currently for the Mayo constituency.",
+      "Leader of Fine Gael: The Leader of Fine Gael is the most senior politician within the Fine Gael political party in Ireland.  Since 2 June 2017, the office had been held by Leo Varadkar following the resignation of Enda Kenny."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 410,
+    "generation_tokens": 6,
+    "generation_speed": 223.48865795060902,
+    "prompt_eval_speed": 41094.517389996996,
+    "generation_latency_s": 0.3504746999969939,
+    "latency": 1.3227023999934318,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7826622000000001,
+    "stage_route_s": 0.3476012000028277,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5055804000003263,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.11872839998977724,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 9.09000082174316e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3505433999962406,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.322722299999441,
+    "unaccounted_latency_s": 0.00017899999511428177,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Who was the leader of Fine Gael since 2 June 2017?",
+      "Who served as Taoiseach and Minister for Defence under this date?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q209",
+  "query": "Who has written more than 300 papers, Semyon Aranovich Gershgorin or Pavel Alexandrov?",
+  "ground_truth": "Pavel Sergeyevich Alexandrov",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Pavel Alexandrov has written more than 300 papers, as stated in the context provided. However, to be absolutely certain, we must look for additional information beyond what is explicitly given about his contributions. The context does not specify any other significant contributions by Gershgorin besides those mentioned for Alexandrov. Therefore, based solely on the details provided, Pavel Alexandrov has indeed written more than 300 papers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pavel Alexandrov: Pavel Sergeyevich Alexandrov (Russian: \u041f\u0430\u0301\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0301\u0435\u0432\u0438\u0447 \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440\u043e\u0432 ), sometimes romanized Paul Alexandroff or Aleksandrov (7 May 1896 \u2013 16 November 1982), was a Soviet mathematician.  He wrote about three hundred papers, making important contributions to set theory and topology.",
+      "Pavel Urysohn: Pavel Samuilovich Urysohn (\u041f\u0430\u0301\u0432\u0435\u043b \u0421\u0430\u043c\u0443\u0438\u0301\u043b\u043e\u0432\u0438\u0447 \u0423\u0440\u044b\u0441\u043e\u0301\u043d ) (February 3, 1898 \u2013 August 17, 1924) was a Soviet mathematician of Jewish origin who is best known for his contributions in dimension theory, and for developing Urysohn's Metrization Theorem and Urysohn's Lemma, both of which are fundamental results in topology.  His name is also commemorated in the terms Urysohn universal space, Fr\u00e9chet\u2013Urysohn space, Menger\u2013Urysohn dimension and Urysohn integral equation.  He and Pavel Alexandrov formulated the modern definition of compactness in 1923.",
+      "Semyon Aranovich Gershgorin: Semyon Aronovich Gershgorin (August 24, 1901 \u2013 May 30, 1933) was a Soviet (born in Pruzhany, Belarus, Russian Empire) mathematician.  He began as a student at the Petrograd Technological Institute in 1923, became a Professor in 1930, and was given an appointment at the Leningrad Mechanical Engineering Institute in the same year.  His contributions include the Gershgorin circle theorem."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 423,
+    "generation_tokens": 85,
+    "generation_speed": 317.1665460190001,
+    "prompt_eval_speed": 39029.34120686473,
+    "generation_latency_s": 0.5523970000067493,
+    "latency": 1.374948900003801,
+    "total_prompt_tokens": 506,
+    "total_generation_tokens": 152,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.41745889999999997,
+    "stage_rewrite_s": 0.47729869998875074,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13863070000661537,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20645310000691097,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5524542999919504,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3749643999908585,
+    "unaccounted_latency_s": 0.00012820000119972974,
+    "rewritten_query": "**Who has published over 300 academic papers?**\n\nSemyon Aranovich Gershgorin (Pavel Alexandrov's predecessor) has authored significantly more than 300 scholarly works compared to Pavel Alexandrov himself. This distinction highlights his substantial impact and prolific writing career in the field of mathematics and related disciplines.",
+    "query_was_rewritten": true
+  }
+}

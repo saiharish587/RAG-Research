@@ -1,0 +1,42 @@
+{
+  "question_id": "Q60",
+  "query": "Are both Cypress and Ajuga genera?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, neither Cypress nor Ajuga are genera. Ajuga is a genus of flowering plants in the mint family Lamiaceae, while Cypress belongs to the family Cupressaceae (conifers). The context provided does not mention any other genera belonging to these families.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ajuga: Ajuga , also known as bugleweed, ground pine, carpet bugle, or just bugle, is a genus of 40 species annual and perennial herbaceous flowering plantsin the mint family Lamiaceae, with most species native to Europe, Asia, and Africa, but also two species in southeastern Australia.  They grow to 5\u201350 cm tall, with opposite leaves.",
+      "Cypress: Cypress is a conifer tree or shrub of northern temperate regions that belongs to the family Cupressaceae.  The word \"cypress\" is derived from Old French \"cipres\", which was imported from Latin \"cypressus\", the latinisation of the Greek \u03ba\u03c5\u03c0\u03ac\u03c1\u03b9\u03c3\u03c3\u03bf\u03c2 (\"kyparissos\").",
+      "Cupressus: The genus Cupressus is one of several genera within the family Cupressaceae that have the common name cypress; for the others, see cypress.  It is considered a polyphyletic group.  Based on genetic and morphological analysis, the \"Cupressus\" genus is found in the Cupressoideae subfamily.  The common name comes from Old French \"cipres\" and that from Latin \"cyparissus\", which is the latinisation of the Greek \u03ba\u03c5\u03c0\u03ac\u03c1\u03b9\u03c3\u03c3\u03bf\u03c2 (\"kyp\u00e1rissos\")."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 336,
+    "generation_tokens": 55,
+    "generation_speed": 209.88681376552208,
+    "prompt_eval_speed": 29887.920298879202,
+    "generation_latency_s": 0.6029449000052409,
+    "latency": 1.3388861999992514,
+    "total_prompt_tokens": 404,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5256236,
+    "stage_rewrite_s": 0.42386399999668356,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14972459999262355,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1621607999986736,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6030226000002585,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3389058000029763,
+    "unaccounted_latency_s": 0.0001345000055152923,
+    "rewritten_query": "Are Cypress and Ajuga both generative frameworks?",
+    "query_was_rewritten": true
+  }
+}

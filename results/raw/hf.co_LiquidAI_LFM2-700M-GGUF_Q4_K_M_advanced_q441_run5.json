@@ -1,0 +1,42 @@
+{
+  "question_id": "Q441",
+  "query": "Ronald Reagan and George H. W. Bush both held which position in office?",
+  "ground_truth": "President of the United States",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Both Ronald Reagan and George H. W. Bush held the positions of President of the United States. Reagan became the 40th President on January 20, 1981, while Bush won the 1988 presidential election with Reagan's support, becoming the 43rd President.\n\nConfidence: 100%",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ronald Reagan: Ronald Wilson Reagan ( ; February 6, 1911 \u2013 June 5, 2004) was an American statesman and actor who served as the 40th President of the United States from 1981 to 1989.  Before his presidency, he was the 33rd Governor of California, from 1967 to 1975, after a career as a Hollywood actor and union leader.",
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States.",
+      "Presidency of Ronald Reagan: The presidency of Ronald Reagan began on January 20, 1981, when Ronald Reagan was inaugurated as President of the United States, and ended on January 20, 1989.  Reagan, a Republican, took office as the 40th United States president following a landslide win over Democratic incumbent President Jimmy Carter in the 1980 presidential election.  Reagan was succeeded by his vice president, George H. W. Bush, who won the 1988 presidential election with Reagan's support."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 437,
+    "generation_tokens": 65,
+    "generation_speed": 221.87859485992632,
+    "prompt_eval_speed": 41378.65732411704,
+    "generation_latency_s": 0.6142503000010038,
+    "latency": 1.4994257999933325,
+    "total_prompt_tokens": 512,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4904347,
+    "stage_rewrite_s": 0.5234748999937437,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1661747999896761,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19530649999796879,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6143358999979682,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4994485000061104,
+    "unaccounted_latency_s": 0.00015760002133902162,
+    "rewritten_query": "Who were the two presidents Ronald Reagan and George H.W. Bush simultaneously serving as? \n\n\nThis rephrased query is more concise while maintaining the essential information from the original question.",
+    "query_was_rewritten": true
+  }
+}

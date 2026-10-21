@@ -1,0 +1,42 @@
+{
+  "question_id": "Q236",
+  "query": "The Kansas City Wizards have had three home venues in Kansas City in their time.  Which was their first?",
+  "ground_truth": "Arrowhead Stadium",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Kansas City Wizards' first home venue in Kansas City was Community America Ballpark, which opened in 2008. This ballpark served as the team's temporary home during the 2008 season before moving to Arrowhead Stadium from 1996 to 2007 and then back to CommunityAmerica Ballpark until 2010.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kauffman Stadium: Kauffman Stadium ( ), often called \"The K\", is a baseball park located in Kansas City, Missouri, that is home to the Kansas City Royals of Major League Baseball (MLB).  It is part of the Truman Sports Complex together with the adjacent Arrowhead Stadium, home of the Kansas City Chiefs of the National Football League.  The ballpark is named for Ewing Kauffman, the founder and first owner of the Royals.  It opened in 1973 as Royals Stadium and was named for Kauffman on July 2, 1993.  The ballpark's listed seating capacity since 2009 is 37,903.",
+      "2008 Kansas City Wizards season: The 2008 Kansas City Wizards season was the first season played at the temporary home Community America Ballpark in Kansas City, Kansas.",
+      "Children's Mercy Park: Children's Mercy Park (formerly Sporting Park and Livestrong Sporting Park) is a soccer-specific stadium in Kansas City, Kansas, United States, and is the home of Sporting Kansas City.  The stadium is located near Kansas Speedway and it opened during the 2011 season of Major League Soccer on June 9, 2011 with a match against the Chicago Fire.  The stadium has a seating capacity of 18,467 seats, which can expand to 25,000 for concerts.  Most SKC games attract around 21,000 because of different stadium modes.  The stadium is Sporting Kansas City's third home venue; then known as the Kansas City Wizards, the team played in Arrowhead Stadium from 1996 to 2007 and CommunityAmerica Ballpark from 2008 to 2010.  In 2013, the stadium hosted the MLS All-Star Game, the United States men's national soccer team, and the MLS Cup, three of the most prestigious matches in the United States, and is the only stadium to host all three in the same year."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 487,
+    "generation_tokens": 69,
+    "generation_speed": 222.09704675303774,
+    "prompt_eval_speed": 48203.503909729785,
+    "generation_latency_s": 0.6557300999993458,
+    "latency": 1.5257161000045016,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5426073,
+    "stage_rewrite_s": 0.5143364000105066,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1637291999941226,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1917128000059165,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6557890999974916,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5257299000077182,
+    "unaccounted_latency_s": 0.00016299998969770968,
+    "rewritten_query": "Which was the first home arena for the Kansas City Wizards? \nThe first home venue for the Wizards was the Kauffman Stadium.",
+    "query_was_rewritten": true
+  }
+}

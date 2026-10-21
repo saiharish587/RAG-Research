@@ -1,0 +1,42 @@
+{
+  "question_id": "Q323",
+  "query": "Rock Springs is a collection of short stories by an author born in what year?",
+  "ground_truth": "1944",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Rock Springs is a collection of short stories by Bobbie Ann Mason, who was born in 1932.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rock Springs (short story collection): Rock Springs is a collection of short stories by author Richard Ford, published in 1987 and largely dealing with dysfunctional mothers and fathers and their effects on young male narrators.",
+      "Novella: A novella is a text of written, fictional, narrative prose normally longer than a short story but shorter than a novel, somewhere between 7,500 and 40,000 words.",
+      "Shiloh and Other Stories: Shiloh and Other Stories is a 1982 collection of short stories written by American author Bobbie Ann Mason.  The collection won the Ernest Hemingway Foundation award for fiction.  The collection brought Mason her first critical acclaim."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 209,
+    "generation_tokens": 23,
+    "generation_speed": 307.2894399315947,
+    "prompt_eval_speed": 18360.713344461037,
+    "generation_latency_s": 0.35673829998995643,
+    "latency": 1.349005700001726,
+    "total_prompt_tokens": 284,
+    "total_generation_tokens": 135,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.435084,
+    "stage_rewrite_s": 0.6265188000106718,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13330979998863768,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23227059999771882,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3567942999943625,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3490194999903906,
+    "unaccounted_latency_s": 0.00012660000356845558,
+    "rewritten_query": "Rock Springs Collection: Short Stories by [Author Name] - Born in [Year], this collection features [number] short stories. \n\n\nThis rephrased version:\n\n* **Focuses on the key information:** It explicitly mentions \"short stories\" and \"author name,\" making it easier to understand.\n* **Removes unnecessary details:** It omits \"collection of\" and \"born in what year,\" which are not crucial for the core query.\n* **Improves readability:** The sentence structure is more concise and natural-sounding.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q455",
+  "query": "Are Agee and To Shoot an Elephant both documentaries about war?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "No, Agee and To Shoot an Elephant are not both documentaries about war. While both films deal with themes related to conflict, they focus on different aspects of war. \n\nAgee is a documentary film directed by Alberto Arce and Mohammad Rujailahk, focusing on the writer James Agee during the 2008-2009 Gaza War. It was nominated for an Academy Award for Best Documentary Feature. The film explores the human impact of war through personal stories and experiences.\n\nTo Shoot an Elephant, directed by Alberto Arce and Mohammad Rujailahk, is a documentary about the same time period (2008-2009 Gaza War) but focuses on the military aspects of the conflict rather than the human experience. It provides insights into the tactics and challenges faced during the war from a military perspective.\n\nTherefore, Agee does not fit the description of a war documentary, while To Shoot an Elephant is a war-related documentary with a different focus.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "To Shoot an Elephant: To Shoot an Elephant is a 2009 documentary film about the 2008-2009 Gaza War directed by Alberto Arce and Mohammad Rujailahk.",
+      "Agee (film): Agee is a 1980 American documentary film directed by Ross Spears, about the writer James Agee.  It was nominated for an Academy Award for Best Documentary Feature.",
+      "World war: A world war, as it is commonly understood, is a large-scale war involving many of the countries of the world or many of the most powerful and populous ones.  World wars span multiple countries on multiple continents, with battles fought in many theaters.  While a variety of global conflicts have been subjectively deemed \"world wars\", such as the Cold War and the War on Terror, the term is widely and generally accepted only as it is retrospectively applied to two major international conflicts that occurred during the 20th century: World War I (1914\u20131918) and World War II (1939\u20131945)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 287,
+    "generation_tokens": 206,
+    "generation_speed": 224.7080704012566,
+    "prompt_eval_speed": 26323.030358616896,
+    "generation_latency_s": 1.230943999995361,
+    "latency": 2.0942600999987917,
+    "total_prompt_tokens": 362,
+    "total_generation_tokens": 255,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4682849,
+    "stage_rewrite_s": 0.541317600000184,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1527672999945935,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1690117999969516,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.2310323999990942,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.094285099999979,
+    "unaccounted_latency_s": 0.00015710001753177494,
+    "rewritten_query": "Are \"Agee\" and \"To Shoot an Elephant\" both war-focused documentaries? \n\n\nThis rephrased query is more specific by mentioning \"war-focused\" and using a question format for clarity.",
+    "query_was_rewritten": true
+  }
+}

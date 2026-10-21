@@ -1,0 +1,42 @@
+{
+  "question_id": "Q538",
+  "query": "Jack Alfred Evans played with a football club team that is based in what city in Australia?",
+  "ground_truth": "Melbourne",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Jack Alfred Evans played with Collingwood Football Club, which is based in Melbourne, Victoria.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jack Evans (footballer, born 1930): Jack Alfred Evans (born 11 October 1930) was an Australian rules footballer who played with St Kilda in the Victorian Football League (VFL).",
+      "Western Derby: The Western Derby is the name given to the Australian rules football match between the Fremantle Dockers and the West Coast Eagles, who both participate in the Australian Football League (AFL).  As both teams are based in Perth, the capital city of Western Australia, the term \"derby\" is used to describe the match.  It has become one of the most important matches for football in Western Australia, with former South Fremantle and West Coast player, and former West Coast coach John Worsfold claiming that in the week before a derby that it is the main topic in Perth.",
+      "Collingwood Football Club: The Collingwood Football Club, nicknamed the Magpies or less formally the Pies, is an Australian rules football club which plays in the Australian Football League (AFL).  Formed in 1892, the club was named after the inner-Melbourne suburb and city of Collingwood, and was originally based at Victoria Park in Abbotsford; the club is now based in the nearby Melbourne Sports and Entertainment Precinct in Melbourne, playing its home games at the Melbourne Cricket Ground and with its training and administrative base at Olympic Park Oval and the Holden Centre."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 366,
+    "generation_tokens": 20,
+    "generation_speed": 226.78565353955707,
+    "prompt_eval_speed": 33707.86516853933,
+    "generation_latency_s": 0.3981733999971766,
+    "latency": 1.3025161000114167,
+    "total_prompt_tokens": 443,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4839083,
+    "stage_rewrite_s": 0.55083160000504,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15789829999266658,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1954187999945134,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3982484000007389,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3025368000089657,
+    "unaccounted_latency_s": 0.00014060000830795616,
+    "rewritten_query": "Where did Jack Alfred Evans play football for, and which Australian city does that team hail from? \n\n\nThis rephrased question maintains the core information while making it more concise and natural-sounding for a search engine.",
+    "query_was_rewritten": true
+  }
+}

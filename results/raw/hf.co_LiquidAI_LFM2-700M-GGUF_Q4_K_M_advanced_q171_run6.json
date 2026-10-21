@@ -1,0 +1,42 @@
+{
+  "question_id": "Q171",
+  "query": "What is the name of the detective novelist parent of the author of '\"Q\" Is for Quarry'?",
+  "ground_truth": "C. W. Grafton",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The detective novelist parent of the author of \"Q\" Is for Quarry is John Dickson Carr. The author of \"Q\" Is for Quarry, Arthur Conan Doyle, was a British writer best known for his detective fiction featuring Sherlock Holmes. Carr considered \"He Who Whispers,\" one of his impossible crime novels, to be among his best.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "&quot;Q&quot; Is for Quarry: \"Q\" Is for Quarry is the 17th novel in Sue Grafton's \"Alphabet\" series of mystery novels and features Kinsey Millhone, a private eye based in Santa Teresa, California.",
+      "Arthur Conan Doyle: Sir Arthur Ignatius Conan Doyle KStJ, DL (22 May 1859 \u2013 7 July 1930) was a British writer best known for his detective fiction featuring the character Sherlock Holmes.  Originally a physician, in 1887 he published \"A Study in Scarlet\", the first of four novels about Holmes and Dr. Watson.  In addition, Doyle wrote over fifty short stories featuring the famous detective.",
+      "He Who Whispers: He Who Whispers is a mystery novel (1946) by detective novelist John Dickson Carr.  Like Many of the works by this author feature so-called impossible crimes (for the most part, falling into the category of the locked room mystery).  In this case, the novel falls into a smaller category of Carr's work in that it is suggested that the crime is the work of a supernatural being (here, a vampire).  The detective is Dr. Gideon Fell, who ultimately uncovers a rational explanation for the novel's events.  Carr considered this one of his best impossible crime novels."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 355,
+    "generation_tokens": 75,
+    "generation_speed": 221.94536592872296,
+    "prompt_eval_speed": 26135.61068983288,
+    "generation_latency_s": 0.7053717000089819,
+    "latency": 1.6121292000025278,
+    "total_prompt_tokens": 436,
+    "total_generation_tokens": 124,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5383099,
+    "stage_rewrite_s": 0.5716354999894975,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17034209999837913,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16451950000191573,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.705454800001462,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6121522000030382,
+    "unaccounted_latency_s": 0.00020140000560786575,
+    "rewritten_query": "Find the detective novelist father of the author of \"Q Is for Quarry\". \n\n\nThis rephrased query is more direct and focuses on the key information needed - the detective novelist's name and his relationship to the author.",
+    "query_was_rewritten": true
+  }
+}

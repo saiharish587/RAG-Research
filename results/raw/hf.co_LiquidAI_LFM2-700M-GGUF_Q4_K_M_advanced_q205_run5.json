@@ -1,0 +1,42 @@
+{
+  "question_id": "Q205",
+  "query": "Which actor does American Beauty and American Beauty have in common?",
+  "ground_truth": "Kevin Spacey",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The actor who appears in both American Beauty (1999 film) and its 1927 silent counterpart is **Billie Dove**. \n\nBoth films feature Billie Dove in the lead role, portraying a woman experiencing a midlife crisis and romantic escapades. While the specific roles and contexts differ due to the different time periods and production methods, their shared presence as central characters establishes them as common actors between these two American beauty dramas.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "American Beauty (1999 film): American Beauty is a 1999 American drama film directed by Sam Mendes and written by Alan Ball.  Kevin Spacey stars as Lester Burnham, a 42-year-old advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, Angela (Mena Suvari).  Annette Bening co-stars as Lester's materialistic wife, Carolyn, and Thora Birch plays their insecure daughter, Jane.  Wes Bentley, Chris Cooper, and Allison Janney also feature.  The film is described by academics as a satire of American middle-class notions of beauty and personal satisfaction; analysis has focused on the film's explorations of romantic, and paternal love, sexuality, beauty, materialism, self-liberation, and redemption.",
+      "American Beauty (1927 film): American Beauty is a lost 1927 American silent film romantic drama produced and distributed by First National Pictures.  This film was directed by Richard Wallace and starred Billie Dove.  It was based on a short story \"American Beauty\" by Wallace Irwin.  She is supported by Walter McGrail and Margaret Livingston.",
+      "Sam Mendes: Samuel Alexander Mendes, {'1': \", '2': \", '3': \", '4': \"} (born 1 August 1965) is an English stage and film director.  He is best known for directing the drama film \"American Beauty\" (1999), which earned him the Academy Award and Golden Globe Award for Best Director, the crime film \"Road to Perdition\" (2002), and the \"James Bond\" films \"Skyfall\" (2012) and \"Spectre\" (2015)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 429,
+    "generation_tokens": 94,
+    "generation_speed": 215.66607549689235,
+    "prompt_eval_speed": 43909.928352098264,
+    "generation_latency_s": 0.755633199994918,
+    "latency": 1.4703907999937655,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 110,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4663139,
+    "stage_rewrite_s": 0.3857544000056805,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15482219999830704,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17395830000168644,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7557180000003427,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4704140999965603,
+    "unaccounted_latency_s": 0.00016209998284466565,
+    "rewritten_query": "What actor appears in both \"American Beauty\" and \"American Beauty\"?",
+    "query_was_rewritten": true
+  }
+}

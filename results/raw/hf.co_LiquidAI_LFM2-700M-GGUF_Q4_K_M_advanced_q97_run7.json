@@ -1,0 +1,42 @@
+{
+  "question_id": "Q97",
+  "query": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+  "ground_truth": "IT products and services",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Based on the provided context, there is no specific information about a company led by Bordan Tkachuk providing certain types of products. The context focuses mainly on Intel Corporation and eBay Inc., and does not mention any other companies or their product offerings. Therefore, I do not know what type of products Bordan Tkachuk's company might provide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Intel: Intel Corporation (also known as Intel, stylized as intel) is an American multinational corporation and technology company headquartered in Santa Clara, California (colloquially referred to as \"Silicon Valley\") that was founded by Gordon Moore (of Moore's law fame) and Robert Noyce.  It is the world's second largest and second highest valued semiconductor chip makers based on revenue after being overtaken by Samsung, and is the inventor of the x86 series of microprocessors, the processors found in most personal computers (PCs).  Intel supplies processors for computer system manufacturers such as Apple, Lenovo, HP, and Dell.  Intel also manufactures motherboard chipsets, network interface controllers and integrated circuits, flash memory, graphics chips, embedded processors and other devices related to communications and computing.",
+      "EBay: eBay Inc. ( , stylized as ebay) is a multinational e-commerce corporation, facilitating online consumer-to-consumer and business-to-consumer sales.  It is headquartered in San Jose, California.  eBay was founded by Pierre Omidyar in 1995, and became a notable success story of the dot-com bubble.  Today it is a multibillion-dollar business with operations in about 30 countries.",
+      "Amway: Amway (short for \"American Way\") is an American company specializing in the use of multi-level marketing to sell health, beauty, and home care products.  The company was founded in 1959 by Jay Van Andel and Richard DeVos and is based in Ada, Michigan."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 398,
+    "generation_tokens": 72,
+    "generation_speed": 221.38587558113792,
+    "prompt_eval_speed": 38640.77669902913,
+    "generation_latency_s": 0.7175368000025628,
+    "latency": 1.5022011999972165,
+    "total_prompt_tokens": 475,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5903381999999999,
+    "stage_rewrite_s": 0.45070940000005066,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16054090000397991,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17318850000447128,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7176244000002043,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5022203999978956,
+    "unaccounted_latency_s": 0.00015789997996762395,
+    "rewritten_query": "Who founded a company offering specific product types?",
+    "query_was_rewritten": true
+  }
+}

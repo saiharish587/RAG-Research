@@ -1,0 +1,42 @@
+{
+  "question_id": "Q558",
+  "query": "Are Ganzhou and Jimo District both located in China?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, the context provided does not specify whether Ganzhou and Jimo District are located in China or not. The information given only describes Ganzhou as a district within the People's Republic of China (China) and Jimo District as a district of Qingdao, Shandong province.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ganzhou District: Ganzhou District, formerly the separate city of Ganzhou or Kanchow, is a district in and the seat of the prefecture-level city of Zhangye in Gansu Province in the People's Republic of China.  Ganzhou was formerly an important outpost in western China and, along with Suzhou (now the central district of Jiuquan), it is the namesake of the province.  As a settlement, it is now known as Zhangye after the prefecture it heads.",
+      "Ganzhou: Ganzhou (), formerly romanized as Kanchow, is a prefecture-level city in southern Jiangxi, China, bordering Fujian to the east, Guangdong to the south, and Hunan to the west.  Its administrative seat is at Zhanggong District.  Its population was 8,361,447 at the 2010 census whom 1,977,253 in the built-up (or \"metro\") area made of Zhanggong and Nankang, and Ganxian largely being urbanized.",
+      "Jimo District: Jimo () is a District of Qingdao, Shandong."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 310,
+    "generation_tokens": 62,
+    "generation_speed": 314.30439874075466,
+    "prompt_eval_speed": 30714.356484692362,
+    "generation_latency_s": 0.5186866000003647,
+    "latency": 1.5138540000043577,
+    "total_prompt_tokens": 382,
+    "total_generation_tokens": 170,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5052288,
+    "stage_rewrite_s": 0.6626278000039747,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16009910000138916,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17222779999428894,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5187717999942834,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5138771000056295,
+    "unaccounted_latency_s": 0.00015160000475589186,
+    "rewritten_query": "Ganzhou & Jimo District are geographically situated within China, but please note they are distinct administrative units with separate boundaries. \n\n\nThis rephrased version:\n\n* **Focuses on the key elements:** It explicitly mentions \"Ganzhou\" and \"Jimo District\" to clarify.\n* **Removes ambiguity:** The original query implied both locations were in China, which is not entirely accurate given their distinct administrative statuses.\n* **Improves readability:**  The sentence structure is more concise and direct.",
+    "query_was_rewritten": true
+  }
+}

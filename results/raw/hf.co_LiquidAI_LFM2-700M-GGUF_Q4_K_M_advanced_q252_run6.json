@@ -1,0 +1,42 @@
+{
+  "question_id": "Q252",
+  "query": "What is Opry Mills in Nashville, Tennessee?",
+  "ground_truth": "super-regional shopping mall",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Opry Mills is a super-regional shopping mall located in Nashville, Tennessee. It opened in 2000 on the former site of the Opryland USA theme park and serves as a retail destination for shoppers from various parts of the region. The mall was formerly owned by Mills Corporation and Gaylord Entertainment before being acquired by Simon Property Group.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Opry Mills: Opry Mills is a super-regional shopping mall owned by Simon Property Group, formerly by its initial owners Mills Corporation and Gaylord Entertainment.  It opened in Nashville, Tennessee in 2000 on the former site of the Opryland USA theme park.",
+      "Tennessee: Tennessee ( ; Cherokee: \u13d4\u13be\u13cf , \"Tanasi \" ) is a state located in the southeastern region of the United States.  Tennessee is the 36th largest and the 16th most populous of the 50 United States.  Tennessee is bordered by Kentucky and Virginia to the north, North Carolina to the east, Georgia, Alabama, and Mississippi to the south, and Arkansas and Missouri to the west.  The Appalachian Mountains dominate the eastern part of the state, and the Mississippi River forms the state's western border.  Nashville is the state's capital and largest city, with a population of 660,388.  Tennessee's second largest city is Memphis, which has a population of 652,717.",
+      "Music City Queen: Music City Queen was a replica showboat formerly operating for entertainment purposes on the Cumberland River in the southern United States.  It was the smaller of two stern-wheel paddle steamers based at Opry Mills in Nashville, Tennessee; the other is the \"General Jackson\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 345,
+    "generation_tokens": 73,
+    "generation_speed": 227.8025170617844,
+    "prompt_eval_speed": 30861.436622238125,
+    "generation_latency_s": 0.6329442999995081,
+    "latency": 1.7258408999914536,
+    "total_prompt_tokens": 415,
+    "total_generation_tokens": 141,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5099262,
+    "stage_rewrite_s": 0.6797418000060134,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15003160000196658,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2629103000072064,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.633023400005186,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7258621999935713,
+    "unaccounted_latency_s": 0.00015589997929055244,
+    "rewritten_query": "Where can I find Opry Mills in Nashville, TN\n\nThis rephrasing makes the query more direct and user-friendly by specifying \"where\" instead of \"what,\" which often leads to a clearer understanding of the search intent. It also removes unnecessary words like \"in\" and \"Tennessee\" for conciseness.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q231",
+  "query": "What building is opposite the ceremonial meeting place of the Accession Council in the United Kingdom?",
+  "ground_truth": "Mark Masons' Hall",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The building opposite the ceremonial meeting place of the Accession Council in the United Kingdom is Buckingham Palace. This can be inferred from the context provided, which states that St James's Palace is the ceremonial meeting place of the Accession Council and also mentions Buckingham Palace as the London residence and administrative headquarters of the reigning monarch.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "St James's Palace: St James's Palace is the most senior royal palace in the United Kingdom.  Located in the City of Westminster, although no longer the principal residence of the monarch, it is the ceremonial meeting place of the Accession Council and the London residence of several members of the royal family.",
+      "Accession Council: In the United Kingdom, the Accession Council is a ceremonial body which assembles in St James's Palace upon the death of a monarch (Demise of the Crown), to formally proclaim the accession of his or her successor to the throne.  Under the terms of the Act of Settlement 1701, a new monarch succeeds automatically.  The proclamation confirms by name the identity of the heir who has succeeded.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 291,
+    "generation_tokens": 65,
+    "generation_speed": 228.1109953009135,
+    "prompt_eval_speed": 22769.95305164319,
+    "generation_latency_s": 0.648395200012601,
+    "latency": 1.5738284000108251,
+    "total_prompt_tokens": 368,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5327747,
+    "stage_rewrite_s": 0.5613363000011304,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17011219999403693,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1937684000004083,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6484582999983104,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5738512000098126,
+    "unaccounted_latency_s": 0.00017690000822767615,
+    "rewritten_query": "Where is the opposite location to the Accession Council's ceremonial meeting spot in the UK? \n\n\nThis rephrased query is more direct and specific, focusing on the relationship between the meeting place and a known landmark.",
+    "query_was_rewritten": true
+  }
+}

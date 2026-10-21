@@ -1,0 +1,42 @@
+{
+  "question_id": "Q568",
+  "query": "Which company owns the hotel on whose premises the Cotal Arena is located ?",
+  "ground_truth": "Las Vegas Sands company.",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Monte Carlo Resort and Casino owns the hotel on whose premises the Cotal Arena is located.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Monte Carlo Resort and Casino: The Monte Carlo Resort and Casino is a megaresort hotel and casino on the Las Vegas Strip in Paradise, Nevada, United States.  The hotel, with a height of 360 ft , has 32 floors, featuring a 102000 sqft casino floor with 1,400 slot machines, 60 table games, and 15 poker tables.  It is owned and operated by MGM Resorts International.  The hotel offers 2,992 guest rooms, including 259 luxury suites.  It is being converted from late 2016 to 2018 into the Park MGM, with the upper floors converted into a boutique hotel, NoMad Las Vegas.",
+      "Owned: Owned is a slang word that originated among 1990s hackers, where it referred to \"rooting\" or gaining administrative control over someone else's computer.  The term eventually spread to gamers, who used the term to mean defeat in gaming.  \"Owned\" has now spread beyond computer and gaming contexts and become part of standard slang, and typically follows severe defeat or humiliation, usually in an amusing way or through the dominance of an opposing party.  Other variations of the word owned include own3d, 0wn3d, pwned, and pooned, terms which incorporate elements of leetspeak.",
+      "New York Biltmore Hotel: The New York Biltmore Hotel was a luxury hotel in New York City that opened in 1913.  It was one of three palatial hotels built as part of the Terminal City development.  The others were the Commodore Hotel (currently Grand Hyatt New York), and the Roosevelt Hotel, which is still in operation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 426,
+    "generation_tokens": 20,
+    "generation_speed": 300.7428393242735,
+    "prompt_eval_speed": 42887.34521292661,
+    "generation_latency_s": 0.36032999999588355,
+    "latency": 1.3759755000064615,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49044319999999997,
+    "stage_rewrite_s": 0.5686700999940513,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1567058999935398,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.29005870000401046,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.36041139998997096,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.375997200011625,
+    "unaccounted_latency_s": 0.0001522000238765031,
+    "rewritten_query": "To optimize the search for \"hotel owned by XYZ Company\", consider this rephrased version:\n\n\"Owns Hotel Located at Cotal Arena Premises - [Company Name]\"\n\nThis version clarifies ownership and provides a concise, direct search phrase. It also includes the hotel name in quotation marks to indicate it's being used as an owner.",
+    "query_was_rewritten": true
+  }
+}

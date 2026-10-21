@@ -1,0 +1,42 @@
+{
+  "question_id": "Q568",
+  "query": "Which company owns the hotel on whose premises the Cotal Arena is located ?",
+  "ground_truth": "Las Vegas Sands company.",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Based on the provided context, Boyd Gaming owns the hotel on whose premises the Cotai Arena is located. The Orleans, which includes the large multipurpose Orleans Arena that can be converted into an ice rink, is a major home for poker in Las Vegas Valley and was one of the biggest poker rooms in Las Vegas prior to the 21st century poker boom. However, Boyd Gaming's ownership of the hotel is not explicitly stated within the given context. Therefore, based solely on the information provided, we cannot definitively state which company owns the hotel that hosts the Cotal Arena.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Cotai Arena: The Cotai Arena is an indoor arena, located on the premises of The Venetian Macao, on the Cotai Strip, in Macau, China.  It opened in 2007 with a seating capacity of 15,000.  The arena was known as Venetian Arena from 2007 to 2010, when it was renamed as \"CotaiArena\".  It hosts sporting events such as basketball, tennis and boxing, as well as concerts and international televised awards shows.",
+      "The Orleans: The Orleans is a hotel and casino located in Paradise, Nevada.  It is owned and operated by Boyd Gaming.  It includes the large multipurpose Orleans Arena that can be converted into an ice rink.  It is a major home for poker in the Las Vegas Valley and was one of the biggest poker rooms in Las Vegas prior to the 21st century poker boom.  .",
+      "City of Dreams (casino): City of Dreams () is a resort and casino in Cotai, Macau, China.  It is built, owned and managed by Melco Crown Entertainment, formerly known as Melco PBL Entertainment.  City of Dreams is Melco's second mega-sized property in Macau.  It is located directly opposite The Venetian Macao, the first property in Cotai, opened by Las Vegas Sands Corp."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 350,
+    "generation_tokens": 118,
+    "generation_speed": 223.46622629932355,
+    "prompt_eval_speed": 32261.037883675916,
+    "generation_latency_s": 0.8705500999931246,
+    "latency": 1.725386799997068,
+    "total_prompt_tokens": 424,
+    "total_generation_tokens": 163,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4990605,
+    "stage_rewrite_s": 0.5504921999963699,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15341159999661613,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1507053000095766,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8706454999919515,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7254842999973334,
+    "unaccounted_latency_s": 0.0002313000150024891,
+    "rewritten_query": "What hotel's facilities are located on the property where Cotal Arena is situated? \n\n\nThis rephrased question is more specific and directly asks about the ownership of a particular hotel in relation to the arena.",
+    "query_was_rewritten": true
+  }
+}

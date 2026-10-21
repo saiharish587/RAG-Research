@@ -1,0 +1,42 @@
+{
+  "question_id": "Q532",
+  "query": "Are Mauritz Stiller and Johannes Grenzfurthner both of the same nationality?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "No, Mauritz Stiller is not Austrian; he is Finnish-Swedish. Johannes Grenzfurthner is Austrian. Therefore, they are not both of the same nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Johannes Grenzfurthner: Johannes Grenzfurthner (] ; born 1975 in Vienna) is an award-winning Austrian artist, filmmaker, writer, actor, curator, theatre director and lecturer.  He is known as the founder, conceptualist and artistic director of monochrom, an international art and theory group.  Most of his artworks are labelled \"monochrom\".",
+      "Mauritz Stiller: Mauritz Stiller (17 July 1883 \u2013 18 November 1928) was a Finnish-Swedish film director, best known for discovering Greta Garbo and bringing her to America.",
+      "Soviet Unterzoegersdorf: Soviet Unterzoegersdorf (German: \"Sowjet-Unterz\u00f6gersdorf\" ) is a fictitious country created by the art/technology/theory group monochrom.  It is the \"last existing appanage republic of the USSR\", located inside the Republic of Austria.  Unterz\u00f6gersdorf is partially based on an existing village well-known to Johannes Grenzfurthner, the creator of the concept.  As a kid and teenager, Grenzfurthner spent a lot of time at his grandparents' farm in the small village of Unterz\u00f6gersdorf (a cadastral municipality of Stockerau).  His grandparents' stories about the Naziism, WWII and the Soviet occupation in allied-occupied Austria (1945-1955) form the inspirational basis of the long-term project \"Soviet Unterzoegersdorf\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 388,
+    "generation_tokens": 38,
+    "generation_speed": 216.87640898324915,
+    "prompt_eval_speed": 35275.93417583417,
+    "generation_latency_s": 0.5325664999982109,
+    "latency": 1.2490857999946456,
+    "total_prompt_tokens": 465,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5065940999999999,
+    "stage_rewrite_s": 0.42614229999890085,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13563560000329744,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15448430000105873,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5326562999980524,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.249116299994057,
+    "unaccounted_latency_s": 0.00019869999960064888,
+    "rewritten_query": "Are Mauritz Stiller and Johannes Grenzfurthner from the same country?",
+    "query_was_rewritten": true
+  }
+}

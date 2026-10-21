@@ -1,0 +1,42 @@
+{
+  "question_id": "Q95",
+  "query": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+  "ground_truth": "March and April",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The annual documentary film festival, which is presented by The London Review of Books (LRB), is held in March every year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "London International Documentary Festival: The London International Documentary Festival (or LIDF) is an annual documentary film festival that takes place in the months of March and April every year.  The event is presented in association with the London Review of Books.",
+      "New Haven Documentary Film Festival: New Haven Documentary Film Festival (also known as NHdocs) is an annual documentary film festival held in New Haven, Connecticut, over a weekend in the month of June.  Screenings take place at Yale University\u2019s Whitney Humanities Center Auditorium and the New Haven Free Public Library.  NHdocs is a regional festival that showcases documentaries by filmmakers from the greater New Haven area and beyond.  NHdocs was launched in 2014 when the film festival\u2019s co-founders Charles Musser, Gorman Bechard, Jacob Bricca, and Lisa Molomot came together at the Big Sky Documentary Film Festival and decided to create a documentary film festival in New Haven that would \u201cbuild a sense of community among documentary filmmakers from the greater New Haven area.\u201d  In 2014, the four filmmakers each showed one of their recently completed documentaries, three of which had just played at the Big Sky.",
+      "London Review of Books: The London Review of Books (LRB) is a British journal of literary essays.  It is published fortnightly."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 360,
+    "generation_tokens": 27,
+    "generation_speed": 220.87334958524892,
+    "prompt_eval_speed": 29905.299883701613,
+    "generation_latency_s": 0.5069707000075141,
+    "latency": 1.6813128000067081,
+    "total_prompt_tokens": 447,
+    "total_generation_tokens": 108,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5434585000000001,
+    "stage_rewrite_s": 0.7278021999954944,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.18402670000796206,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.26225980000162963,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5070485000032932,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6813356000056956,
+    "unaccounted_latency_s": 0.00019919998885598034,
+    "rewritten_query": "When does the British literary essay journal publish its fortnightly literary essays documentaries, and how can we find out when the annual documentary film festival takes place? \n\nHowever, to make it even more search-friendly, a refined version could be:\n\"British Literary Essay Journal Documentary Film Festival Publication Month\"\nThis rephrased query maintains the original intent while making it clearer and more concise.",
+    "query_was_rewritten": true
+  }
+}

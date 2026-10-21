@@ -1,0 +1,42 @@
+{
+  "question_id": "Q580",
+  "query": "The album \"The Best of LeAnn Rimes\" contained a song used as the theme song for a film. What is the name of the film?",
+  "ground_truth": "Coyote Ugly",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The film to which \"Love Is Love Is Love\" features a cameo appearance is \"Lucky Logan.\" This was released in 2017, and it's an American romantic drama film starring LeAnn Rimes as her lead role. The song itself is titled \"How Do I Live,\" although it serves as the theme song for this particular film.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Best of LeAnn Rimes: The Best of LeAnn Rimes is a greatest hits album by American country singer LeAnn Rimes, released in 2004, it tweaks the 2003 U.S. release \"Greatest Hits\", leaving behind some of the purer country hits that didn't translate outside of the U.S.\u2014notably, Al Anderson's \"Big Deal\"\u2014and concentrating on her big pop crossover hits, including \"How Do I Live,\" \"Can't Fight the Moonlight\u201d and her duet with Ronan Keating, \"Last Thing on My Mind.",
+      "LeAnn Rimes (album): LeAnn Rimes is the eponymous fourth studio album by LeAnn Rimes, released in 1999.",
+      "Love Is Love Is Love: \"Love Is Love Is Love\" (stylized as \"LovE Is LovE Is LovE\") is a song recorded by American singer LeAnn Rimes, and the fourth release from her sixteenth studio album, \"Remnants\".  Rimes co-produced the track with Darrell Brown, Mark Batson, and Niko Bolas, and co-wrote the song with Darrell Brown, Lindy Robbins and Toby Gad.  The single will be featured in the 2017 American film \"Lucky Logan\", in which Rimes will have a cameo."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 365,
+    "generation_tokens": 72,
+    "generation_speed": 331.62454574346077,
+    "prompt_eval_speed": 40140.767623446605,
+    "generation_latency_s": 0.5292196999944281,
+    "latency": 1.6151263000065228,
+    "total_prompt_tokens": 455,
+    "total_generation_tokens": 175,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5170627,
+    "stage_rewrite_s": 0.6519217000022763,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16956059999938589,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2641954999999143,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5293069000035757,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6151507000031415,
+    "unaccounted_latency_s": 0.00016700000560376793,
+    "rewritten_query": "To optimize the search query, we focus on clarity and conciseness while retaining the core information:\n\nOriginal Query: The album \"The Best of LeAnn Rimes\" featured a song used as the film's theme.\n\nOptimized Query:\n\"The Best of LeAnn Rimes' album included a track for the film - this is the title of the song.\" \n\nThis version emphasizes the key details and makes it easier to understand the connection between the album, the song, and the film.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, based on the provided context, neither Sorbaria nor Goldenrod is described as having more than 50 flowering plants. The context only gives information about the number of species within each genus for their respective genera, not the total number of species across both genera combined.\n\nHowever, we can infer that if we consider the given data:\n\n- **Sorbaria** has approximately 9 species.\n- **Goldenrod** (Solidago) has about 100 to 120 species.\n\nTo determine if either genus has more than 50 species, we need to look at the total number of species mentioned for each genus:\n\n- For Sorbaria: 9 species\n- For Goldenrod: 100 to 120 species\n\nSince 100 is greater than 50, **Goldenrod** clearly has more than 50 flowering plants.\n\nTherefore, based on the provided information, **Goldenrod** is the correct answer as it is described to have more than 50 flowering plants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Goldenrod: Solidago, commonly called goldenrods, is a genus of about 100 to 120 species of flowering plants in the aster family, Asteraceae.  Most are herbaceous perennial species found in open areas such as meadows, prairies, and savannas.  They are mostly native to North America, including Mexico; a few species are native to South America and Eurasia.  Some American species have also been introduced into Europe and other parts of the world.",
+      "Sorbaria: Sorbaria is a genus of around 9 species of flowering plants belong to family Rosaceae.",
+      "Solidago rugosa: Solidago rugosa, the wrinkleleaf goldenrod or rough-stemmed goldenrod, is a North American species of flowering plants in the sunflower family.  It is widespread across eastern and central Canada (from Newfoundland to Ontario) and the eastern and central United States (Maine west as far as Wisconsin and Iowa, south to Florida and Texas)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 274,
+    "generation_tokens": 205,
+    "generation_speed": 227.07410037118308,
+    "prompt_eval_speed": 6782.010346278557,
+    "generation_latency_s": 1.2685897999908775,
+    "latency": 2.015929999994114,
+    "total_prompt_tokens": 351,
+    "total_generation_tokens": 226,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5297348,
+    "stage_rewrite_s": 0.4644298000057461,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16004309999698307,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12265020000631921,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.268653400009498,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.0159462000010535,
+    "unaccounted_latency_s": 0.00017039997328538448,
+    "rewritten_query": "Are both Sorbaria and Goldenrod part of a group with over 50 flowering plant species?",
+    "query_was_rewritten": true
+  }
+}

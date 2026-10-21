@@ -1,0 +1,42 @@
+{
+  "question_id": "Q8",
+  "query": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+  "ground_truth": "3,677 seated",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Lewiston Maineiacs played their home games at Moda Center, and it has a seating capacity of 19,393 spectators when configured for basketball. Therefore, the arena where the Lewiston Maineiacs played their home games can seat approximately 19,393 people.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lewiston Maineiacs: The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine.  The team played its home games at the Androscoggin Bank Colis\u00e9e.  They were the second QMJHL team in the United States, and the only one to play a full season.  They won the President's Cup in 2007.",
+      "Moda Center: Moda Center, formerly known as the Rose Garden, is the primary indoor sports arena in Portland, Oregon, United States.  It is suitable for large indoor events of all sorts, including basketball, ice hockey, rodeos, circuses, conventions, ice shows, concerts, and dramatic productions.  The arena has a capacity of 19,393 spectators when configured for basketball.  It is equipped with state-of-the-art acoustics and other amenities.",
+      "Dwyer Arena: The Robert and Concetta Dwyer Arena houses two ice surfaces, both 200 x 85 ft., and pro shop on Niagara University's campus in Lewiston, New York, United States.  The main rink can seat up to 1,400 people and is the home to the Niagara Purple Eagles men's ice hockey team, which plays in Atlantic Hockey.  The arena was formerly home to the women's ice hockey team, which played in College Hockey America."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 58,
+    "generation_speed": 217.68503227743582,
+    "prompt_eval_speed": 30346.33490248823,
+    "generation_latency_s": 0.6434291999903508,
+    "latency": 1.5023959999962244,
+    "total_prompt_tokens": 439,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5308902,
+    "stage_rewrite_s": 0.5691731999977492,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1405974000081187,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1490091999876313,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6434803000011016,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5024092000094242,
+    "unaccounted_latency_s": 0.00014970000484026968,
+    "rewritten_query": "How many spectators can fill the arena used for Lewiston Maineiacs' home games? \n\n\nThis rephrased question is more direct and focuses on the key information - seating capacity - while removing unnecessary words.",
+    "query_was_rewritten": true
+  }
+}

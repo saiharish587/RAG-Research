@@ -1,0 +1,42 @@
+{
+  "question_id": "Q191",
+  "query": "Joe Walker played for which team that ends their regular season with the Civil War rivalry game?",
+  "ground_truth": "Oregon Ducks football",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Joe Walker played for the Minnesota Vikings, who ended their regular season with the Civil War rivalry game against the Oregon Ducks at the 1961 NFL season.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joe Walker (American football): Joe Walker (born December 11, 1992) is an American football linebacker for the Philadelphia Eagles of the National Football League (NFL).  He played college football at Oregon.",
+      "Civil War (college football game): The Civil War is the colloquial name for an American college football rivalry game played annually in Oregon, between the Ducks of the University of Oregon in Eugene and the Beavers of Oregon State University in Corvallis.  First played in 1894, it is the fifth most played college football rivalry game in NCAA Division I Football Bowl Subdivision.  Both universities are members of the North Division of the Pac-12 Conference.",
+      "Minnesota Vikings: The Minnesota Vikings are an American football team based in Minneapolis, Minnesota.  The Vikings joined the National Football League (NFL) as an expansion team in 1960, and first took the field for the 1961 season.  The team competes in the National Football Conference (NFC) North division; before that, the Vikings were in the NFC Central, and before that they were in the NFL's Western Conference Central Division.  The team has played in four Super Bowl games, but have not won one.  They were the NFL champions in 1969.  The team plays its home games at U.S. Bank Stadium in the Downtown East section of Minneapolis."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 363,
+    "generation_tokens": 34,
+    "generation_speed": 217.53874109050892,
+    "prompt_eval_speed": 30970.05374968006,
+    "generation_latency_s": 0.5365735000086715,
+    "latency": 1.3854495999985375,
+    "total_prompt_tokens": 441,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5493965,
+    "stage_rewrite_s": 0.463821099998313,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17085039999801666,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21383609999611508,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5367396000074223,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3854690000007395,
+    "unaccounted_latency_s": 0.00022259999241214246,
+    "rewritten_query": "Which team did Joe Walker play for before ending his regular season in a Civil War rivalry game?",
+    "query_was_rewritten": true
+  }
+}

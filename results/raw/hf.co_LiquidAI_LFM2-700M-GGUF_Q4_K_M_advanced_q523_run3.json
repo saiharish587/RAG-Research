@@ -1,0 +1,42 @@
+{
+  "question_id": "Q523",
+  "query": "who had to escape nazis, Sigmund Freud or Evelyn Waugh?",
+  "ground_truth": "Sigmund Freud",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Sigmund Freud had to escape the Nazis. He left Austria in 1938 to avoid persecution under Adolf Hitler's regime. Evelyn Waugh, on the other hand, was not mentioned as having to escape the Nazis; she was an English author and did not face such severe political consequences during World War II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sigmund Freud: Sigmund Freud ( ; ] ; born Sigismund Schlomo Freud; 6 May 1856 \u2013 23 September 1939) was an Austrian neurologist and the founder of psychoanalysis, a clinical method for treating psychopathology through dialogue between a patient and a psychoanalyst.  Freud was born to Galician Jewish parents in the Moravian town of Freiberg, in the Austrian Empire.  He qualified as a doctor of medicine in 1881 at the University of Vienna.  Upon completing his habilitation in 1885, he was appointed a docent in neuropathology and became an affiliated professor in 1902.  Freud lived and worked in Vienna, having set up his clinical practice there in 1886.  In 1938 Freud left Austria to escape the Nazis.  He died in exile in the United Kingdom in 1939.",
+      "Nazi Germany: Nazi Germany is the common English name for the period in German history from 1933 to 1945, when Germany was governed by a dictatorship under the control of Adolf Hitler and the Nazi Party (NSDAP).  Under Hitler's rule, Germany was transformed into a totalitarian state in which the Nazi Party controlled nearly all aspects of life.  The official name of the state was \"Deutsches Reich\" from 1933 to 1943 and \"Gro\u00dfdeutsches Reich\" (\"Greater German Reich\") from 1943 to 1945.  The period is also known under the names the Third Reich (German: \"Drittes Reich\" ) and the National Socialist Period (German: \"Zeit des Nationalsozialismus\" , abbreviated as \"NS-Zeit\").  The Nazi regime came to an end after the Allied Powers defeated Germany in May 1945, ending World War II in Europe.",
+      "Freud: A Life for Our Time: Freud: A Life for Our Time is a 1988 biography of Sigmund Freud, the founder of psychoanalysis, by the historian Peter Gay.  The work is based partly on new material that has become available since the publication of Ernest Jones' \"The Life and Work of Sigmund Freud\" (1953).  The book has been praised, but has also been criticized by several authors skeptical of psychoanalysis."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 540,
+    "generation_tokens": 64,
+    "generation_speed": 226.03738799670836,
+    "prompt_eval_speed": 46000.51111679019,
+    "generation_latency_s": 0.6474404000036884,
+    "latency": 1.6904745000065304,
+    "total_prompt_tokens": 615,
+    "total_generation_tokens": 126,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5415923,
+    "stage_rewrite_s": 0.6614719000062905,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16233160000410862,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2189939000090817,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6475212999939686,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6904963999986649,
+    "unaccounted_latency_s": 0.0001787999935913831,
+    "rewritten_query": "Who escaped Nazism? Sigmund Freud vs Evelyn Waugh\n\nThis rephrased version is more concise and directly asks for a comparison between the two individuals in question. It also uses \"escaped\" instead of \"had to escape,\" which can be slightly less formal but still search-friendly.",
+    "query_was_rewritten": true
+  }
+}

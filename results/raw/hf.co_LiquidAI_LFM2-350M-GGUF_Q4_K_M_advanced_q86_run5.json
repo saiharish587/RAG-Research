@@ -1,0 +1,42 @@
+{
+  "question_id": "Q86",
+  "query": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+  "ground_truth": "April 1, 1949",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Donald John Trump Jr. was born on December 31, 1977.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Donald Trump: Donald John Trump (born June 14, 1946) is the 45th and current President of the United States, in office since January 20, 2017.  Before entering politics, he was a businessman and television personality.",
+      "Donald Trump presidential campaign, 2016: The 2016 presidential campaign of Donald Trump, an American businessman, television personality, and author, was formally launched on June 16, 2015, at Trump Tower in New York City.  Trump was the Republican nominee for President of the United States in the 2016 election, having won the most state primaries, caucuses, and delegates at the 2016 Republican National Convention.  He chose Mike Pence, the sitting Governor of Indiana, as his vice presidential running mate.  On November 8, 2016, Trump and Pence were elected president and vice president of the United States.",
+      "Donald Trump Jr.: Donald John Trump Jr. (born December 31, 1977) is an American businessman and former reality TV personality.  He is the oldest child of the 45th President of the United States, Donald Trump, and his first wife, Ivana."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 325,
+    "generation_tokens": 17,
+    "generation_speed": 276.9767176629682,
+    "prompt_eval_speed": 15233.898940658106,
+    "generation_latency_s": 0.34199569998600055,
+    "latency": 1.4220346999936737,
+    "total_prompt_tokens": 409,
+    "total_generation_tokens": 126,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.48335229999999996,
+    "stage_rewrite_s": 0.6789350999897579,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1489581000059843,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2519475000008242,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.34207809998770244,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4220520999951987,
+    "unaccounted_latency_s": 0.00013410001702141017,
+    "rewritten_query": "American Presidential Campaign Lobbyist & Political Consultant - Donald Trump Senior Member Born On _______ - [Date]\" \n\n\nHere's why this is optimized:\n\n* **Specificity:** It focuses on the key details (campaign, name, birth year) instead of vague information.\n* **Clear Structure:** The format \"[Date] - [Year]\" provides a clear timeline.\n* **Conciseness:** Removes unnecessary words for better readability. \n\n\n\nLet me know if you'd like more variations!",
+    "query_was_rewritten": true
+  }
+}

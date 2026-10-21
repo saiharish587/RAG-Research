@@ -1,0 +1,42 @@
+{
+  "question_id": "Q173",
+  "query": "The Memphis Hustle are based in a suburb of a city with a population of what in 2010?",
+  "ground_truth": "48,982",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Memphis Hustle are based in the suburb of Southaven, Mississippi, where the population was 652,717 in 2010.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Memphis Hustle: The Memphis Hustle are an American professional basketball team of the NBA G League announced to begin play for the 2017\u201318 season as an affiliate of the Memphis Grizzlies of the National Basketball Association (NBA).  Based in the Memphis suburb of Southaven, Mississippi, the team will play their home games at the Landers Center.",
+      "Tennessee: Tennessee ( ; Cherokee: \u13d4\u13be\u13cf , \"Tanasi \" ) is a state located in the southeastern region of the United States.  Tennessee is the 36th largest and the 16th most populous of the 50 United States.  Tennessee is bordered by Kentucky and Virginia to the north, North Carolina to the east, Georgia, Alabama, and Mississippi to the south, and Arkansas and Missouri to the west.  The Appalachian Mountains dominate the eastern part of the state, and the Mississippi River forms the state's western border.  Nashville is the state's capital and largest city, with a population of 660,388.  Tennessee's second largest city is Memphis, which has a population of 652,717.",
+      "West Memphis, Arkansas: West Memphis is the largest city in Crittenden County, Arkansas, United States.  The population was 26,245 at the 2010 census, ranking it as the state's 18th largest city, behind Bella Vista.  It is part of the Memphis metropolitan area, and is located directly across the Mississippi River from Memphis."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 389,
+    "generation_tokens": 30,
+    "generation_speed": 223.64360155655945,
+    "prompt_eval_speed": 35862.450447128234,
+    "generation_latency_s": 0.5384508999995887,
+    "latency": 1.3102358999894932,
+    "total_prompt_tokens": 471,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5629628,
+    "stage_rewrite_s": 0.4430740999960108,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16571240000484977,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.162693100006436,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5385406999994302,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3102601999999024,
+    "unaccounted_latency_s": 0.0002407999854767695,
+    "rewritten_query": "Where is the Memphis Hustle located, and what was its population in 2010?",
+    "query_was_rewritten": true
+  }
+}

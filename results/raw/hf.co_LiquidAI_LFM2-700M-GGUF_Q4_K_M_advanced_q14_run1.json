@@ -1,0 +1,42 @@
+{
+  "question_id": "Q14",
+  "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Yes, both the Random House Tower and 888 7th Avenue are used for real estate. The Random House Tower is a corporate headquarters for book publisher Random House, while 888 7th Avenue houses the Vornado Realty Trust's corporate offices. Both structures serve as significant real estate assets in New York City.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "888 7th Avenue: 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.  Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City.  It currently carries the Vornado Realty Trust corporate headquarters.  Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation.  The Red Eye Grill is located in the building at street level.",
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+      "Pershing Square Capital Management: Pershing Square Capital Management is an American hedge fund management company founded and run by Bill Ackman, located at 888 7th Avenue in New York."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 324,
+    "generation_tokens": 67,
+    "generation_speed": 205.80176682352652,
+    "prompt_eval_speed": 4075.881849745887,
+    "generation_latency_s": 0.7840356999950018,
+    "latency": 1.5468352000025334,
+    "total_prompt_tokens": 400,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5276391,
+    "stage_rewrite_s": 0.46353609999641776,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12095709999266546,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17810959999042097,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7841074000025401,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5468559000000823,
+    "unaccounted_latency_s": 0.00014660002489108592,
+    "rewritten_query": "Are both Random House Tower and 888 7th Avenue occupied as real estate?",
+    "query_was_rewritten": true
+  }
+}

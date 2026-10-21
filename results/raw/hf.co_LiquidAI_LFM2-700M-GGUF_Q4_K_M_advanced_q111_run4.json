@@ -1,0 +1,42 @@
+{
+  "question_id": "Q111",
+  "query": "Based on a True Story... is an album by which country music star, with the single My Eyes?",
+  "ground_truth": "Blake Shelton",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Based on the provided context, \"My Eyes\" is featured as a song from Blake Shelton's album \"Based on a True Story\u2026\". Therefore, the country music star associated with this album and the single \"My Eyes\" is Blake Shelton.\n\nHowever, to directly answer the question based solely on the information given in the context:\n\n- **Album by which country music star:** Blake Shelton\n- **Single featuring \"My Eyes\":** Gwen Sebastian (though not Blake Shelton specifically)\n\nSince Blake Shelton is the primary focus of the provided context, and \"Based on a True Story\u2026\" is his seventh studio album, we can conclude that:\n\n**Blake Shelton is the country music star associated with \"Based on a True Story\u2026\", which features the single \"My Eyes\".**",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "My Eyes (Blake Shelton song): \"My Eyes\" is a song recorded by American country music artist Blake Shelton featuring Gwen Sebastian.  It was released in April 2014 as the fifth single from his seventh studio album, \"Based on a True Story...\".  The song was written by Andrew Dorff, Tommy Lee James and Josh Osborne.",
+      "Based on a True Story...: Based on a True Story\u2026 is the eighth studio album by American country music artist Blake Shelton.  It was released on March 26, 2013 via Warner Bros.  Records and debuted at #3 with a career best for Shelton at nearly 200,000 sold.  The album became the ninth best-selling album of 2013 in the US, earning Shelton a Platinum certification by the RIAA on September 30, 2013.  In 2016, \"Based on a True Story\u2026\" was certified double-platinum by the RIAA.",
+      "Randy Travis: Randy Bruce Traywick (born May 4, 1959), better known by his stage name, Randy Travis, is an American country music singer, songwriter, guitarist, and actor.  Since 1985, he has recorded 20 studio albums and charted more than 50 singles on the \"Billboard\" Hot Country Songs charts, and 16 of these were number-one hits.  Considered a pivotal figure in the history of country music, Travis broke through in the mid-1980s with the release of his album \"Storms of Life\", which sold more than four million copies.  The album established him as a major force in the Neotraditional country movement.  Travis followed up his successful debut with a string of platinum and multi-platinum albums.  He is known for his distinctive baritone vocals, delivered in a traditional style that has made him a country music star since the 1980s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 473,
+    "generation_tokens": 168,
+    "generation_speed": 218.81125575519187,
+    "prompt_eval_speed": 40517.3890697276,
+    "generation_latency_s": 1.1544454999966547,
+    "latency": 2.060637000002316,
+    "total_prompt_tokens": 553,
+    "total_generation_tokens": 187,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5889044999999999,
+    "stage_rewrite_s": 0.48098290000052657,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17564970000239555,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2493296000029659,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1545418000023346,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.0606612999981735,
+    "unaccounted_latency_s": 0.00015839999832678586,
+    "rewritten_query": "True story album featuring country music star \"My Eyes\" by artist \"Country Music Star\".",
+    "query_was_rewritten": true
+  }
+}

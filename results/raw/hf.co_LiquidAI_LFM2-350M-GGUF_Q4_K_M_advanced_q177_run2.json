@@ -1,0 +1,42 @@
+{
+  "question_id": "Q177",
+  "query": "Works by Hanna Leena Kristiina Varis are part of a collection in a museum that houses approximately 65,000 what?",
+  "ground_truth": "drawings",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Hanna Leena Kristiina Varis' works are part of a collection in a museum that houses approximately 65,000 drawings and old master prints. The context provided does not specify the exact number but indicates that these works are part of a large print room within the museum's extensive collection.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hanna Varis: Hanna Leena Kristiina Varis (b. 1959 in Kuusankoski) is a Finnish graphic artist and painter.  She earned a Master of Arts degree from the Aalto University School of Arts, Design and Architecture in 1990.  She participated in the NUROPE, Nomadic University for Art, Philosophy and Enterprise in Europe, in 2006-2010.  She has held over 70 solo exhibitions and participated at over 140 group exhibitions.  Her works are part of major art collections in Finland and abroad, such as the Kiasma, Amos Anderson Art Museum, and Helsinki Art Museum in Helsinki, W\u00e4in\u00f6 Aaltonen Museum of Art in Turku, and Albertina Museum in Vienna.",
+      "Albertina: The Albertina is a museum in the Innere Stadt (First District) of Vienna, Austria.  It houses one of the largest and most important print rooms in the world with approximately 65,000 drawings and approximately 1 million old master prints, as well as more modern graphic works, photographs and architectural drawings.  Apart from the graphics collection the museum has recently acquired on permanent loan two significant collections of Impressionist and early 20th-century art, some of which will be on permanent display.  The museum also houses temporary exhibitions.",
+      "Egyptian Museum: The Museum of Egyptian Antiquities, known commonly as the Egyptian Museum or Museum of Cairo, in Cairo, Egypt, is home to an extensive collection of ancient Egyptian antiquities.  It has 120,000 items, with a representative amount on display, the remainder in storerooms.  The edifice is one of the largest museums in the region.  As of July 2017, the museum is open to the public."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 452,
+    "generation_tokens": 61,
+    "generation_speed": 313.9717425431711,
+    "prompt_eval_speed": 37865.460333417104,
+    "generation_latency_s": 0.45667620000313036,
+    "latency": 1.4244961999938823,
+    "total_prompt_tokens": 539,
+    "total_generation_tokens": 152,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.44373870000000004,
+    "stage_rewrite_s": 0.5736452999990433,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.127073300012853,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.26695599999220576,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4567252999986522,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.424508900003275,
+    "unaccounted_latency_s": 0.00010979999206028879,
+    "rewritten_query": "Works by Hanna Leena Kristiina Varis in a museum's collection containing 65,000 items\"\n\nThis rephrased version maintains the original intent while using more concise and direct language. It clearly conveys that the query pertains to works by a specific artist (Hanna Leena Kristiina Varis) within a particular collection of artworks housed in a museum with a total of 65,000 items.",
+    "query_was_rewritten": true
+  }
+}

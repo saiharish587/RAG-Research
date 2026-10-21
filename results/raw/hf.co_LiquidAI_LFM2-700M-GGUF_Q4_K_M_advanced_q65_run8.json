@@ -1,0 +1,42 @@
+{
+  "question_id": "Q65",
+  "query": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+  "ground_truth": "more than 70 countries",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Scott Parkin has been a vocal critic of ExxonMobil and Shell (another corporation with operations in multiple countries). Based on the information provided, we know that both ExxonMobil and Shell operate in several countries. However, the exact number of countries they have operations in is not specified within the given context. Therefore, it's impossible to determine the precise number of countries based solely on this information.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Parkin: Scott Parkin (born 1969, Garland, Texas is an anti-war, environmental and global justice organizer, former community college history instructor, and a founding member of the Houston Global Awareness Collective.  He has been a vocal critic of the American invasion of Iraq, and of corporations such as Exxonmobil and Halliburton.  Since 2006, he has worked as an campaigner for the Rainforest Action Network, organizing campaigns against Bank of America, Citibank, TXU and the Keystone XL Pipeline.  He also organizes with Rising Tide North America.",
+      "Exxon: Exxon was the brand name of oil and natural resources company Exxon Corporation, prior to 1972 known as Standard Oil Company of New Jersey.  In 1999, Exxon Corporation merged with Mobil to form ExxonMobil.  The \"Exxon\" brand is still used by ExxonMobil's downstream operations as a brand for certain of its gas stations, motor fuel and related products (the highest concentration of which are located in New Jersey, Pennsylvania, Texas and in the Mid-Atlantic and Southeastern states).  Standard Oil Company of New Jersey was one of the Seven Sisters that dominated the global petroleum industry from the mid-1940s to the 1970s.",
+      "Big Oil: Big Oil is a name used to describe the world's seven or eight largest publicly owned oil and gas companies, also known as supermajors.  The supermajors are considered to be BP plc, Chevron Corporation, ExxonMobil Corporation, Royal Dutch Shell plc, Total SA and Eni SpA, with Phillips 66 Company also sometimes described in the past as forming part of the group."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 450,
+    "generation_tokens": 85,
+    "generation_speed": 213.17523254909926,
+    "prompt_eval_speed": 33849.857078381225,
+    "generation_latency_s": 0.7085346999956528,
+    "latency": 1.4839581999985967,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4809631,
+    "stage_rewrite_s": 0.4357839000003878,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16988769998715725,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16953149999608286,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7086313000036171,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4839847999974154,
+    "unaccounted_latency_s": 0.00015140000323299319,
+    "rewritten_query": "How many countries does Scott Parkin criticize Exxonmobil and similar companies operating in?",
+    "query_was_rewritten": true
+  }
+}

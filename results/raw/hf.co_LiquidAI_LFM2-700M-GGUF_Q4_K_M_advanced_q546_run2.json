@@ -1,0 +1,42 @@
+{
+  "question_id": "Q546",
+  "query": "The first book in the Sprawl Trilogy won what three awards?",
+  "ground_truth": "Nebula Award, the Philip K. Dick Award, and the Hugo Award",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Neil Gaiman's first book in the Sprawl Trilogy, \"The Graveyard Book,\" won the Newbery and Carnegie medals for the same work (2008).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Neuromancer: Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson.  It is one of the best-known works in the cyberpunk genre and the first novel to win the Nebula Award, the Philip K. Dick Award, and the Hugo Award.  It was Gibson's debut novel and the beginning of the Sprawl trilogy.  The novel tells the story of a washed-up computer hacker hired by a mysterious employer to pull off the ultimate hack.",
+      "Sprawl trilogy: The Sprawl trilogy (also known as the Neuromancer, Cyberspace, or Matrix trilogy) is William Gibson's first set of novels, composed of \"Neuromancer\" (1984), \"Count Zero\" (1986), and \"Mona Lisa Overdrive\" (1988).",
+      "Neil Gaiman: Neil Richard MacKinnon Gaiman ( ; born Neil Richard Gaiman, 10 November 1960) is an English author of short fiction, novels, comic books, graphic novels, audio theatre, and films.  His notable works include the comic book series \"The Sandman\" and novels \"Stardust\", \"American Gods\", \"Coraline\", and \"The Graveyard Book\".  He has won numerous awards, including the Hugo, Nebula, and Bram Stoker awards, as well as the Newbery and Carnegie medals.  He is the first author to win both the Newbery and the Carnegie medals for the same work, \"The Graveyard Book\" (2008).  In 2013, \"The Ocean at the End of the Lane\" was voted Book of the Year in the British National Book Awards."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 40,
+    "generation_speed": 231.81686467690523,
+    "prompt_eval_speed": 35475.62082336441,
+    "generation_latency_s": 0.5519297999999253,
+    "latency": 1.2997396999999182,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5315354999999999,
+    "stage_rewrite_s": 0.4401114000065718,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15518629999132827,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15228200001001824,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5519967000000179,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2997640000103274,
+    "unaccounted_latency_s": 0.00018849999469239265,
+    "rewritten_query": "What three awards did the inaugural novel in the Sprawl Trilogy receive?",
+    "query_was_rewritten": true
+  }
+}

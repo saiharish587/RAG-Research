@@ -1,0 +1,42 @@
+{
+  "question_id": "Q299",
+  "query": "The mass killing that took place at Oakland, California on April 2, 2012 was less deadly than the one that took place on October 1, 2015 in which state?",
+  "ground_truth": "Oregon",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The mass killing that took place at Oakland, California on April 2, 2012 was less deadly than the one that took place at UCC campus near Roseburg, Oregon, on October 1, 2015. The UCC shooting resulted in seven fatalities and nine injuries, making it the deadliest mass killing in Oregon's modern history overall.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oikos University shooting: The Oikos University shooting occurred on April 2, 2012, when a gunman shot at people inside Oikos University, a Korean Christian college in Oakland, California, United States.  Within a few hours, the number of reported fatalities reached seven.  43-year-old One L. Goh, a former student at the school, was taken into custody and identified as the suspect in the shootings.  Along with the California State University, Fullerton massacre, this was the fourth-deadliest university shooting in United States history, after the Virginia Tech massacre, the University of Texas Clock Tower shooting, and the Umpqua Community College shooting, and the eighth-deadliest U.S. school massacre overall.  It is also considered the deadliest mass killing in the city's history.",
+      "Umpqua Community College shooting: The Umpqua Community College shooting occurred on October 1, 2015, at the UCC campus near Roseburg, Oregon, United States.  Chris Harper-Mercer, a 26-year-old enrolled at the school, fatally shot an assistant professor and eight students in a classroom.  Seven to nine others were injured.  Roseburg police detectives responding to the incident engaged Harper-Mercer in a brief shootout.  After being wounded, he killed himself by shooting himself in the head.  The mass shooting was the deadliest in Oregon's modern history.",
+      "Oakland, California: Oakland is the largest city and the county seat of Alameda County, California, United States.  A major West Coast port city, Oakland is the largest city in the East Bay region of the San Francisco Bay Area, the third largest city overall in the San Francisco Bay Area, the eighth largest city in California, and the 45th largest city in the United States, with a population of 419,267 as of 2015 .  It serves as a trade center for the San Francisco Bay Area; its Port of Oakland is the busiest port in the San Francisco Bay, the entirety of Northern California, and the fifth busiest in the United States of America.  The city was incorporated in 1852."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 541,
+    "generation_tokens": 73,
+    "generation_speed": 227.8643801152432,
+    "prompt_eval_speed": 48402.97038561331,
+    "generation_latency_s": 0.6729941000085091,
+    "latency": 1.8844647000078112,
+    "total_prompt_tokens": 639,
+    "total_generation_tokens": 173,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5267632,
+    "stage_rewrite_s": 0.7939505999966059,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1281377999985125,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.289179499988677,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6730612999963341,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.8844822999963071,
+    "unaccounted_latency_s": 0.00015370002074632794,
+    "rewritten_query": "Compared to the mass shooting in Oakland, CA on April 2, 2012, which was less deadly than a similar incident in October 2015 in another unspecified state, can you rephrase the query as follows?\n\n\"Compare the death toll of two mass shootings: one in Oakland, CA on April 2, 2012, and another in an unspecified state on October 1, 2015. Which state had a higher number of fatalities?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q254",
+  "query": "Which director had the longest career, Alain Resnais or Scott Sidney?",
+  "ground_truth": "Scott Sidney",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Alain Resnais had the longest career compared to Scott Sidney. Alain Resnais directed 117 films between 1913 and 1927, while Scott Sidney directed only 117 films between 1913 and 1928. Therefore, Alain Resnais had the longest career among the two directors mentioned.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alain Resnais: Alain Resnais (] ; 3 June 19221 March 2014) was a French film director and screenwriter whose career extended over more than six decades.  After training as a film editor in the mid-1940s, he went on to direct a number of short films which included \"Night and Fog\" (1955), an influential documentary about the Nazi concentration camps.",
+      "Scott Sidney: Scott Sidney (1872 \u2013 20 July 1928), born Harry Wilbur Siggins, was an American film director.  He directed 117 films between 1913 and 1927.",
+      "Hiroshima mon amour: Hiroshima mon amour (] , \"Hiroshima My Love\"; Japanese: \u4e8c\u5341\u56db\u6642\u9593\u306e\u60c5\u4e8b \"Nij\u016byojikan'noj\u014dji\", \"Twenty-four-hour affair\") is a 1959 drama film directed by French film director Alain Resnais, with a screenplay by Marguerite Duras.  It is the documentation of an intensely personal conversation between a French-Japanese couple about memory and forgetfulness.  It was a major catalyst for the Left Bank Cinema, making highly innovative use of miniature flashbacks to create a uniquely nonlinear storyline."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 332,
+    "generation_tokens": 65,
+    "generation_speed": 230.56758645397693,
+    "prompt_eval_speed": 30800.630856294647,
+    "generation_latency_s": 0.602362899997388,
+    "latency": 1.3781351999932667,
+    "total_prompt_tokens": 406,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5251204,
+    "stage_rewrite_s": 0.45946290000574663,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16634940000949427,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1497250999964308,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6024258999968879,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3781544999947073,
+    "unaccounted_latency_s": 0.0001923999807331711,
+    "rewritten_query": "Who holds the record for the longest directorial career between Alain Resnais and Scott Sidney?",
+    "query_was_rewritten": true
+  }
+}

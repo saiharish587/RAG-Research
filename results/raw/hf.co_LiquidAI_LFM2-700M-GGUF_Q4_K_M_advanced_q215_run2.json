@@ -1,0 +1,42 @@
+{
+  "question_id": "Q215",
+  "query": "Who was born first, Arthur Conan Doyle or Penelope Lively?",
+  "ground_truth": "Arthur Ignatius Conan Doyle",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Arthur Conan Doyle was born first, with Arthur Conan Doyle being born on 22 May 1859.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Penelope Lively: Dame Penelope Margaret Lively DBE FRSL (born 17 March 1933) is a British writer of fiction for both children and adults.  She has won both the Booker Prize (\"Moon Tiger\", 1987) and the Carnegie Medal for British children's books (\"The Ghost of Thomas Kempe\", 1973).",
+      "Arthur Conan Doyle: Sir Arthur Ignatius Conan Doyle KStJ, DL (22 May 1859 \u2013 7 July 1930) was a British writer best known for his detective fiction featuring the character Sherlock Holmes.  Originally a physician, in 1887 he published \"A Study in Scarlet\", the first of four novels about Holmes and Dr. Watson.  In addition, Doyle wrote over fifty short stories featuring the famous detective.",
+      "series.  The show was not promoted to be \"authentic Conan\", but rather a mixture of Arnold Schwarzenegger's and John Milius' interpretation of Conan.  Indeed, the storyline deviated from the essence of the Conan character, as well as that of the Conan earlier depicted in the various Conan comic book series by Marvel Comics, because the adaptation was too peaceful and childish."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 324,
+    "generation_tokens": 24,
+    "generation_speed": 227.58090975468676,
+    "prompt_eval_speed": 30522.845030617053,
+    "generation_latency_s": 0.4439559000020381,
+    "latency": 1.4581698999973014,
+    "total_prompt_tokens": 398,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5170855999999999,
+    "stage_rewrite_s": 0.6848933000001125,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16508489999978337,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1640007000096375,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.44404310001118574,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4581932999863056,
+    "unaccounted_latency_s": 0.00017229997320100665,
+    "rewritten_query": "When comparing the birth dates of Arthur Conan Doyle and Penelope Lively, we find that Arthur Conan Doyle was born first in 1871 while Penelope Lively's birth date is not provided in the original query\n\nOptimized Query: Determine who was born earlier between Arthur Conan Doyle (born 1871) and Penelope Lively.",
+    "query_was_rewritten": true
+  }
+}

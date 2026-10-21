@@ -1,0 +1,42 @@
+{
+  "question_id": "Q119",
+  "query": "Were the bands Skin Yard and Ostava from the U.S.?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "No, I do not know if the bands Skin Yard and Ostava were from the U.S. based on the provided context. The context gives information about Skin Yard being an American grunge band active in Seattle, Washington, but it does not specify their nationality or whether they had a presence in the U.S. Specifically, there is no mention of Ostava's origin or connection to the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Skin Yard: Skin Yard was an American grunge band from Seattle, Washington, who were active from 1985 to 1993.  The group never gained a mainstream audience, but were an influence on several of their grunge contemporaries, including Soundgarden, Screaming Trees, The Melvins, and Green River.",
+      "Ostava: Ostava are an alternative rock band from Bulgaria.  They formed in 1991, but it was not until 2000 that they released a long-playing record (and subsequently received critical acclaim.",
+      "Skin Yard (album): Skin Yard was the first album released by the band Skin Yard in January, 1987.  1400 vinyl copies were released on translucent skin-tone vinyl."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 224,
+    "generation_tokens": 82,
+    "generation_speed": 200.96069012841878,
+    "prompt_eval_speed": 18439.249259137305,
+    "generation_latency_s": 0.7536799999943469,
+    "latency": 1.6673434000113048,
+    "total_prompt_tokens": 297,
+    "total_generation_tokens": 116,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5586804000000001,
+    "stage_rewrite_s": 0.5448734999954468,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16493939999782015,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20361729999422096,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7537656000058632,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.667364599998109,
+    "unaccounted_latency_s": 0.00016960001084953547,
+    "rewritten_query": "Did Skin Yard and Ostava originate from the US? \n\n\nThis rephrased query is more concise while maintaining the core meaning of the original question.",
+    "query_was_rewritten": true
+  }
+}

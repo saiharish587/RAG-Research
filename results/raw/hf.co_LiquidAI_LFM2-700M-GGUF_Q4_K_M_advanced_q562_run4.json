@@ -1,0 +1,42 @@
+{
+  "question_id": "Q562",
+  "query": "Which band formed in England, Of Montreal or Vib Gyor?",
+  "ground_truth": "Vib Gyor was a band that was formed in Leeds, England.",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Vib Gyor is the band that formed in England, not of Montreal. The band consisted of members from Leeds, England, and their name was derived from the first letters of all the colours in the rainbow.\n\nThe band mentioned in the question, Fallen (from Vib Gyor song), formed in Leeds, England. Therefore, the answer to which band formed in England is: Vib Gyor.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vib Gyor: Vib Gyor was a band that was formed in Leeds, England.  The name was derived from the first letters of all the colours in the rainbow, in order from the shortest to longest wavelengths.",
+      "Fallen (Vib Gyor song): \"Fallen\" was the first single from the Leeds band Vib Gyor.  It was first given limited release in July 2006, and has attained critical acclaim and a large amount of radio play on both sides of the atlantic.",
+      "The Secret (Vib Gyor EP): The Secret EP is the EP from the Leeds band Vib Gyor.  It was released on 5 March 2007, and is the follow-up to their well-received debut single, \"Fallen\".  It was recorded in Bath and produced by Paul Corkett.  It also has a hidden fifth instrumental track - which the band recently revealed was called <:. ~. :>"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 262,
+    "generation_tokens": 85,
+    "generation_speed": 224.66980147119074,
+    "prompt_eval_speed": 27308.734625807796,
+    "generation_latency_s": 0.7266495999938343,
+    "latency": 1.461263000004692,
+    "total_prompt_tokens": 335,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5467974,
+    "stage_rewrite_s": 0.4454397999943467,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13706409999576863,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1519006000016816,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7267200000060257,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4612817000015639,
+    "unaccounted_latency_s": 0.00015809999604243785,
+    "rewritten_query": "Which band originated in England and was formed by Vib Gyor?",
+    "query_was_rewritten": true
+  }
+}

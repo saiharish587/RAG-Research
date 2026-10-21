@@ -1,0 +1,49 @@
+{
+  "question_id": "Q188",
+  "query": "Which travel parody series featured American actor, comedian, and radio host best known as the host of \"The Joe Schmo Show\"?",
+  "ground_truth": "Hidden America with Jonah Ray",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The travel parody series that featured Paul Wernick and Rhett Reese's creation of \"The Joe Schmo Show\" is called \"Joe Schmo 2.\" This show aired in 2004.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Joe Schmo Show: The Joe Schmo Show is a reality television hoax show created by Paul Wernick and Rhett Reese.  The series is broadcast in the U.S. on the cable network Spike.  The show's premise is that a target person or persons are led to believe that they are contestants on a reality television show; in reality, all of the other participants in the purported show \u2013 including the host \u2013 are actors, and their actions and the outcome of the purported show are all scripted in an attempt to elicit comedic reactions from the targets.  The show's first season, The Joe Schmo Show, aired in 2003, and its second season, Joe Schmo 2, aired in 2004.  The first season's hoax was conducted as a typical reality competition show while the second hoax was a \"Bachelor\"-like dating series.",
+      "Lance Krall: Lance Krall (born December 9, 1970 in Monterey, California) is an American comedian and actor, television writer, director, and producer of Vietnamese descent.  He became well known after his portrayal as \"Kip\" in the role in faux-reality show \"The Joe Schmo Show\".  He went on to create and star in \"The Lance Krall Show\" and \"Free Radio.\"",
+      "Ralph Garman: Ralph Garman (born November 17, 1964) is an American actor, comedian, and radio host best known as the host of \"The Joe Schmo Show\", for his voice work on the Fox animated series \"Family Guy\", and as the entertainment reporter and impressionist for the \"Kevin and Bean\" morning show on Los Angeles radio station KROQ-FM."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 451,
+    "generation_tokens": 44,
+    "generation_speed": 328.35575853911536,
+    "prompt_eval_speed": 52699.22879177378,
+    "generation_latency_s": 0.4543312000023434,
+    "latency": 1.4339401999895927,
+    "total_prompt_tokens": 608,
+    "total_generation_tokens": 117,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7324322,
+    "stage_route_s": 0.3147863000049256,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5270919000031427,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.1374022999953013,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 8.50000069476664e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.45441520000167657,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4339659999968717,
+    "unaccounted_latency_s": 0.00018659998022485524,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "What travel parody series features comedian, radio host, and actor best known for \"The Joe Schmo Show\"",
+      "Which American comedy show is hosted by comedian, radio host, and actor with \"The Joe Schmo Show\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

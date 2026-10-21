@@ -1,0 +1,42 @@
+{
+  "question_id": "Q80",
+  "query": "In which year was the King who made the 1925 Birthday Honours born?",
+  "ground_truth": "1865",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "To answer this question, we need to identify the birth year of the king who made the 1925 Birthday Honours. From the given context, we know that the 1925 Birthday Honours were appointed by King George V in 1925. However, the specific birth year of King George V is not provided directly.\n\nTo determine this, we can use additional historical information:\n- King George V was born on April 29, 1875.\n- He ascended to the throne on May 6, 1910, after the death of his father, Edward VII.\n\nNow, calculating the difference between these two dates:\n1910 (assumed year of birth) - 1925 = -215 years\n\nSince the result is negative, this indicates that King George V was born in 1925 minus one year from his actual birth date. Therefore, we can conclude:\nKing George V was born in 1924.\n\nSo, the answer to the question \"In which year was the King who made the 1925 Birthday Honours born?\" is 1924.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1925 Birthday Honours: The 1925 Birthday Honours were appointments by King George V to various orders and honours to reward and highlight good works by citizens of the British Empire.  The appointments were made to celebrate the official birthday of The King, and were published in \"The London Gazette\" on 3 June 1925.",
+      "Birthday Honours: King's/Queen's Birthday Honours is, in some Commonwealth realms, the marking of the reigning monarch's official birthday by granting various individuals appointment into national or dynastic orders or the award of decorations and medals.  The honours are presented by the monarch or a viceregal representative.  New Year Honours and Birthday Honours are bestowed each year.  All royal honours are published in the relevant gazette, and the daily newspapers of each realm.",
+      "Year Books: The Year Books are the modern English name that is now typically given to the earliest law reports of England.  Substantial numbers of manuscripts circulated during the later medieval period containing reports of pleas heard before the Common Bench.  In the sixteenth century versions of this material appeared in print form.  These publications constituted the earliest legal precedents of the common law.  They are extant in a continuous series from 1268 to 1535, covering the reigns of King Edward I to Henry VIII.  The language of the original manuscripts and editions was either Latin or Law French."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 370,
+    "generation_tokens": 226,
+    "generation_speed": 216.19470533426957,
+    "prompt_eval_speed": 6627.736180274424,
+    "generation_latency_s": 1.4798844000033569,
+    "latency": 2.4373653000075137,
+    "total_prompt_tokens": 447,
+    "total_generation_tokens": 282,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5734606,
+    "stage_rewrite_s": 0.6303145999991102,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17104830000607762,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15583629999309778,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.4799753999977838,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.43740809999872,
+    "unaccounted_latency_s": 0.00023450001026503742,
+    "rewritten_query": "When was the King who awarded the 1925 Birthday Honours born?\n\nThis rephrased query is more concise and directly asks for the birth year of the specific king in question. It eliminates unnecessary words while maintaining the essential information requested by the original query.",
+    "query_was_rewritten": true
+  }
+}

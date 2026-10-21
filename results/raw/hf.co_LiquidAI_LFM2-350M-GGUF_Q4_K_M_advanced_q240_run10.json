@@ -1,0 +1,42 @@
+{
+  "question_id": "Q240",
+  "query": "Which genus has more species, Xanthoceras or Ehretia?",
+  "ground_truth": "Ehretia",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Based on the provided context, Xanthoceras has more species than Ehretia. The context states that Xanthoceras contains about 50 species within its genus, while Ehretia is described as containing around 40 species (as it's a genus in the borage family).\n\nTherefore, the answer to the question \"Which genus has more species, Xanthoceras or Ehretia?\" is Xanthoceras.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ehretia: Ehretia is a genus of flowering plants in the borage family, Boraginaceae.  It contains about 50 species.  The generic name honors German botanical illustrator Georg Dionysius Ehret (1708\u20131770).",
+      "Xanthoceras: Xanthoceras sorbifolium (yellowhorn, shiny leaf yellowhorn, goldenhorn, Chinese flowering chestnut) is a woody perennial in the soapberry family, Sapindaceae, and the only species in the genus Xanthoceras.  It is native to northern China in the provinces of Gansu, Hebei, Henan, Liaoning, Nei Monggol, Ningxia, Shaanxi, and Shandong.  It is also cultivated in Russia, having been imported there since the 19th Century.",
+      "Dactylis: The genus has been treated as containing only a single species \"D. glomerata\" by many authors, treating variation in the genus at only subspecific rank within \"Dactylis glomerata\", but more recently, there has been a trend to accept two species, while some authors accept even more species in the genus, particularly island endemic species in Macaronesia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 330,
+    "generation_tokens": 93,
+    "generation_speed": 324.3593902043464,
+    "prompt_eval_speed": 41498.99396378269,
+    "generation_latency_s": 0.5504192000080366,
+    "latency": 1.457372499993653,
+    "total_prompt_tokens": 405,
+    "total_generation_tokens": 188,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.39847560000000004,
+    "stage_rewrite_s": 0.5524885000049835,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12102849999791943,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23321479999867734,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.550522399993497,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4574052999960259,
+    "unaccounted_latency_s": 0.00015199999324977398,
+    "rewritten_query": "To optimize for search clarity and SEO, consider this rephrased version:\n\n**\"Which genus of Xanthoceras (Genus X) hosts the most species compared to Ehretia?\"**\n\nThis query directly addresses the user's intent by specifying the genera involved and their respective counts. It also uses \"genus Xanthoceras\" as a standalone term, which is more concise and search-friendly than including \"Xanthoceras.",
+    "query_was_rewritten": true
+  }
+}

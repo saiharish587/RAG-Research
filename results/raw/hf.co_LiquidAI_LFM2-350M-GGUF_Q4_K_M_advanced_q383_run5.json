@@ -1,0 +1,42 @@
+{
+  "question_id": "Q383",
+  "query": "What act for Innocent Records achieved Platinum sales and shares its name with a primary color in the RGB color model?",
+  "ground_truth": "Blue",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The YCoCg color space achieved Platinum sales and shares its name with the primary color red (R) in the RGB color model. This transformation involves applying a simple linear transformation to an associated RGB color space, resulting in a new color space that can produce any chromaticity triangle defined by the three additive primary colors of red, green, and blue light.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "RGB color model: The RGB color model is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors.  The name of the model comes from the initials of the three additive primary colors, red, green, and blue.",
+      "RGB color space: An RGB color space is any additive color space based on the RGB color model.  A particular RGB color space is defined by the three chromaticities of the red, green, and blue additive primaries, and can produce any chromaticity that is the triangle defined by those primary colors.  The complete specification of an RGB color space also requires a white point chromaticity and a gamma correction curve.  As of 2007, sRGB is by far the most commonly used RGB color space.",
+      "YCoCg: The YCoCg color model is the color space formed from a simple transformation of an associated RGB color space into a \"luma\" value (denoted as Y) and two \"chroma\" values called \"chrominance green\" (Cg) and \"chrominance orange\" (Co).  It is supported in video and image compression designs such as H.264/MPEG-4 AVC, HEVC, JPEG XR, and Dirac, since it is simple to compute, has good transform coding gain, and can be losslessly converted to and from RGB with fewer bits than are needed with other color models."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 385,
+    "generation_tokens": 75,
+    "generation_speed": 323.5226875676702,
+    "prompt_eval_speed": 19858.66817970805,
+    "generation_latency_s": 0.5100958999973955,
+    "latency": 1.5749175999953877,
+    "total_prompt_tokens": 468,
+    "total_generation_tokens": 174,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4575717,
+    "stage_rewrite_s": 0.6016736000019591,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16106959999888204,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3018746000016108,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5101764999999432,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5749399000051199,
+    "unaccounted_latency_s": 0.0001466999965487048,
+    "rewritten_query": "Innocent Records' Platinum Sale Achieved Primary Color RGB Status\n\nThis rephrased version maintains the core intent of the original query while making it more concise and visually appealing. It clearly states the act (Platinum Sales), the outcome (achieved primary color in RGB model), and specifies that this color is used as a primary identifier for Innocent Records. The minor adjustments improve readability and flow, making it easier to understand the key points of the original query.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q432",
+  "query": "Were both the Battle of Stones River and the Battle of the Ch'ongch'on River fought in the 19th century?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Yes, both the Battle of Stones River and the Battle of the Ch'ongch'on River were fought in the 19th century. The Battle of Stones River took place from December 31, 1862, to January 2, 1863, which falls within the 19th century (1801-1900). Similarly, the Battle of the Ch'ongch'on River occurred on February 17, 1864, in China during the American Civil War, but since this is outside the 19th century, it's not relevant to answering the question about the specific battles mentioned.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Battle of Stones River: The Battle of Stones River or Second Battle of Murfreesboro, was fought from December 31, 1862, to January 2, 1863, in Middle Tennessee, as the culmination of the Stones River Campaign in the Western Theater of the American Civil War.  Of the major battles of the Civil War, Stones River had the highest percentage of casualties on both sides.  Although the battle itself was inconclusive, the Union Army's repulse of two Confederate attacks and the subsequent Confederate withdrawal were a much-needed boost to Union morale after the defeat at the Battle of Fredericksburg, and it dashed Confederate aspirations for control of Middle Tennessee.",
+      "Stones River Campaign: The Stones River Campaign of the American Civil War lasted from November 1862 to January 1863.  The campaign was tactically a draw but was a strategic Union victory due to the Confederate retreat after the Battle of Stones River.",
+      "Stones River National Battlefield: Stones River National Battlefield, a 570 acre park along the Stones River in Rutherford County, Tennessee, three miles (5\u00a0km) northwest of Murfreesboro and twenty-eight miles southeast of Nashville, memorializes the Battle of Stones River, a key battle of the American Civil War that took place on December 31, 1862 and January 2, 1863, which resulted in a strategic Union victory."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 365,
+    "generation_tokens": 124,
+    "generation_speed": 219.11766265068755,
+    "prompt_eval_speed": 11970.35287944379,
+    "generation_latency_s": 0.9040899999963585,
+    "latency": 1.7852298000070732,
+    "total_prompt_tokens": 516,
+    "total_generation_tokens": 146,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.6973592,
+    "stage_route_s": 0.32578769998508506,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4135674999852199,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.14151630000560544,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 8.019999950192869e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.9041389999911189,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7852447000041138,
+    "unaccounted_latency_s": 0.00015470004291273654,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Battle of Stones River, Battle of Ch'ongch'on River",
+      "19th Century Battles"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q185",
+  "query": "What year did the series on CBS, starring the actor who known for his role in \"Rebel Without a Cause,\" air?",
+  "ground_truth": "1952",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The provided context does not contain information about when the series on CBS aired. It seems that the relevant details might be missing from the given context. Could you please provide the document or confirm if it was accidentally omitted? Once I have access to the correct document, I will be able to determine the year the series aired.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "CBS: CBS (an initialism of the network's former name, the Columbia Broadcasting System) is an American English language commercial broadcast television network that is a flagship property of CBS Corporation.  The company is headquartered at the CBS Building in New York City with major production facilities and operations in New York City (at the CBS Broadcast Center) and Los Angeles (at CBS Television City and the CBS Studio Center).",
+      "Academy Award for Best Supporting Actor: The Academy Award for Best Supporting Actor (often referred to as the Oscar for Best Supporting Actor) is an award presented annually by the Academy of Motion Picture Arts and Sciences (AMPAS).  It is given in honor of an actor who has delivered an outstanding performance in a supporting role while working within the film industry.",
+      "Breakthrough role: A breakthrough role, also known as breakout role, is a term in the film industry to describe the performance of an actor or actress in a film or television show which contributed significantly to the development of their career and beginning of critical recognition.  Such a moment in an actor's career may often occur some time after they begin acting as their roles become more substantial.  Often a breakthrough role is a significant increase in importance in the actor's part in the film moving up from a minor character or extra to one of the leading cast, or a \"high impact\" role in a film which has mainstream success and results in the widespread recognition or popularity of the actor.  Martin Shingler defines a breakthrough performance as one which \"attracts the attention of film critics, or receives rave reviews and is subsequently nominated for a major film award.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 411,
+    "generation_tokens": 65,
+    "generation_speed": 307.37947178020005,
+    "prompt_eval_speed": 26818.923327895594,
+    "generation_latency_s": 0.5679365999967558,
+    "latency": 1.3938792999979341,
+    "total_prompt_tokens": 497,
+    "total_generation_tokens": 118,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5420556,
+    "stage_rewrite_s": 0.4976115000026766,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15873049999936484,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16943819999869447,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5679919999965932,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3938924000103725,
+    "unaccounted_latency_s": 0.00012100000458303839,
+    "rewritten_query": "Year [Actor's Film Release Year] - CBS Series (Starring Known Actor) - What Year?\" \n\nThis version condenses the original query into a more concise and direct search phrase, focusing on the key elements of the user's request.",
+    "query_was_rewritten": true
+  }
+}

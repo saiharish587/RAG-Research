@@ -1,0 +1,42 @@
+{
+  "question_id": "Q132",
+  "query": "Which board game was published most recently, Pirate's Cove or Catan?",
+  "ground_truth": "Pirate's Cove",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "To determine which board game was published most recently, we need to compare the publication dates of both games mentioned.\n\n- **Pirate's Cove** was originally published in 2002.\n- **Catan: Cities & Knights** (the expansion) was first published in 1995.\n\nSince 2002 is later than 1995, **Pirate's Cove** was published most recently.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Catan: Cities &amp; Knights: Catan: Cities & Knights (German: \"St\u00e4dte und Ritter\" ), formerly \"The Cities and Knights of Catan\" is an expansion to the board game \"The Settlers of Catan\" for three to four players (five to six player play is also possible with the \"Settlers\" and \"Cities & Knights\" five to six player extensions; two-player play is possible with the \"\" expansion).  It contains features taken from \"The Settlers of Catan\", with emphasis on city development and the use of knights, which are used as a method of attacking other players as well as helping opponents defend Catan against a common foe.  \"Cities & Knights\" can also be combined with the \"\" expansion or with scenarios (again, five to six player play only possible with the applicable five to six player extension(s)).",
+      "Catan: The Settlers of Catan, sometimes shortened to Catan or Settlers, is a multiplayer board game designed by Klaus Teuber and first published in 1995 in Germany by Franckh-Kosmos Verlag (Kosmos) as Die Siedler von Catan.  Players assume the roles of settlers, each attempting to build and develop holdings while trading and acquiring resources.  Players are awarded points as their settlements grow; the first to reach a set number of points, typically 10, is the winner.  The game and its many expansions are also published by Mayfair Games, Filosofia, Capcom, 999 Games, \u039a\u03ac\u03b9\u03c3\u03c3\u03b1, and Devir.",
+      "Pirate's Cove: Pirate's Cove (in German, Piratenbucht) is a board game designed by Paul Randles and Daniel Stahl, originally published in Germany in 2002 by Amigo Spiele, illustrated by Markus Wagner and Swen Papenbrock.  In 2003, Days of Wonder republished the game with a new graphic design from Julien Delval and Cyrille Daujean.  In the game, players play pirate ship captains seeking treasure from islands and bragging rights from defeating other pirates in naval combat."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 520,
+    "generation_tokens": 87,
+    "generation_speed": 219.14136885270676,
+    "prompt_eval_speed": 40825.94017429536,
+    "generation_latency_s": 0.8165515000000596,
+    "latency": 1.9810126000083983,
+    "total_prompt_tokens": 596,
+    "total_generation_tokens": 182,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5501465,
+    "stage_rewrite_s": 0.7648103999963496,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16821010000421666,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2311924999958137,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.816635099996347,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9810333000059472,
+    "unaccounted_latency_s": 0.00018610000552143902,
+    "rewritten_query": "When comparing the latest releases between \"Pirate's Cove\" and \"Catan\", \"Pirate's Cove\" is the more recent of the two.\n\nRephrased Query: Which modern board game has been released first? Pirate's Cove comes out next after Catan. This rephrasing focuses on the comparison between the two games, making it clearer and more concise for a search engine to understand the question being asked.",
+    "query_was_rewritten": true
+  }
+}

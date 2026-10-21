@@ -1,0 +1,42 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "John Fogerty was not an actor; Serri is a singer and songwriter. There is no information provided in the context about any overlap between Serri's career as a singer and actor. Therefore, based on the given context, we cannot determine if there is someone who was both an actor and a member of the girl group Dal Shabet.\n\nHowever, since the question asks specifically about an actor who was also part of Dal Shabet, and there is no mention of such overlap in the provided context, it's reasonable to conclude that:\n\n**Answer:** There is no information indicating that anyone else besides John Fogerty was also an actor and a member of Dal Shabet.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Serri (singer): Park Mi-yeon (born September 16, 1990), better known by the stage name Serri, is a South Korean singer, songwriter and actress.  She is best known as a member and leader of the South Korean girl group Dal Shabet.",
+      "John Fogerty: John Cameron Fogerty (born May 28, 1945) is an American musician, singer, and songwriter.  He was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.  The group had nine top-ten singles and eight gold albums between 1968 and 1972.  They were inducted into the Rock and Roll Hall of Fame in 1993.",
+      "John Fogerty (engineer): John Fogerty was an Irish millwright, architect, builder, and civil engineer, active in early to mid-19th-century Limerick. He was the brother of Joseph Fogerty, Sr. and the father of engineer and novelist Joseph Fogerty of London, architect William Fogerty of Dublin, and grandfather of architect John Frederick Fogerty.  He retired as an architect sometime between 1870 and 1879."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 322,
+    "generation_tokens": 141,
+    "generation_speed": 223.88415186014387,
+    "prompt_eval_speed": 6564.596032700659,
+    "generation_latency_s": 1.0300512999965576,
+    "latency": 1.8140966999926604,
+    "total_prompt_tokens": 395,
+    "total_generation_tokens": 153,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5471554,
+    "stage_rewrite_s": 0.4265387999912491,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15454220000538044,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2027795000030892,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0301016000012169,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.8141138999926625,
+    "unaccounted_latency_s": 0.00015259999781847,
+    "rewritten_query": "Are both Serri and John Fogerty actors?",
+    "query_was_rewritten": true
+  }
+}

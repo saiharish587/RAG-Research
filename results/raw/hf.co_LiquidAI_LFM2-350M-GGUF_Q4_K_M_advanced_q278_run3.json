@@ -1,0 +1,42 @@
+{
+  "question_id": "Q278",
+  "query": "In what city was the Italian Baroque composer who composed a set of sonatas, titled Op. 5, born?",
+  "ground_truth": "Venice",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The city where Antonio Vivaldi, the Italian Baroque composer known for composing violin concertos and other works, was born is Venice.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Antonio Vivaldi: Antonio Lucio Vivaldi (] ; 4 March 1678 \u2013 28 July 1741) was an Italian Baroque composer, virtuoso violinist, teacher and cleric.  Born in Venice, he is recognized as one of the greatest Baroque composers, and his influence during his lifetime was widespread across Europe.  He composed many instrumental concertos, for the violin and a variety of other instruments, as well as sacred choral works and more than forty operas. His best-known work is a series of violin concertos known as \"The Four Seasons\".",
+      "Six Violin Sonatas, Op. 5 (Vivaldi): Antonio Vivaldi wrote a set of sonatas, Op. 5, in 1716.",
+      "Piano Sonata (Stravinsky): The Piano Sonata, sometimes also referred to as Sonata for Piano or in its original French form, Sonate pour piano, is a 1924 piano sonata by Russian composer Igor Stravinsky."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 292,
+    "generation_tokens": 30,
+    "generation_speed": 305.19130408244234,
+    "prompt_eval_speed": 36116.264687693256,
+    "generation_latency_s": 0.3713056999986293,
+    "latency": 1.2837256000057096,
+    "total_prompt_tokens": 376,
+    "total_generation_tokens": 136,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4105182,
+    "stage_rewrite_s": 0.5920100999937858,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12412140000378713,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19611630000872537,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3713690000004135,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2837430000072345,
+    "unaccounted_latency_s": 0.00012680000509135425,
+    "rewritten_query": "Italian Baroque Composer Born in [specific city], Op. 5 Sonata Set - Key Details Required\n\nExplanation:\n- The original query is asking about the city where Italian Baroque composer Antonio Vivaldi (who composed Op. 5) was born.\n- I've rephrased it to be more concise and direct, focusing on the key information: composer's birthplace and the specific sonata set.\n- This version maintains the essential details while being more streamlined for search engines.",
+    "query_was_rewritten": true
+  }
+}

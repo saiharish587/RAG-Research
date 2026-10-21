@@ -1,0 +1,42 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Yes, both Goldenrod and Monstera are genera of flowering plants belonging to the Rosaceae family. However, Goldenrod is specifically described as a genus of about 100 to 120 species, whereas Monstera is known for having around 50 species. Therefore, Goldenrod is more than 50 times larger in terms of the number of flowering plant species it encompasses compared to Monstera.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Goldenrod: Solidago, commonly called goldenrods, is a genus of about 100 to 120 species of flowering plants in the aster family, Asteraceae.  Most are herbaceous perennial species found in open areas such as meadows, prairies, and savannas.  They are mostly native to North America, including Mexico; a few species are native to South America and Eurasia.  Some American species have also been introduced into Europe and other parts of the world.",
+      "Sorbaria: Sorbaria is a genus of around 9 species of flowering plants belong to family Rosaceae.",
+      "Monstera: Monstera is a genus of about 50 species of flowering plants in the arum family, Araceae, native to tropical regions of the Americas.  The genus is named from the Latin word for \"monstrous\" or \"abnormal\", and refers to the unusual leaves with natural holes that members of the genus have."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 268,
+    "generation_tokens": 82,
+    "generation_speed": 313.47842542080656,
+    "prompt_eval_speed": 25037.369207772794,
+    "generation_latency_s": 0.5132685999997193,
+    "latency": 1.507853300005081,
+    "total_prompt_tokens": 345,
+    "total_generation_tokens": 191,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.3929855,
+    "stage_rewrite_s": 0.6150722000020323,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12423970000236295,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25512310001067817,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5133152000053087,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5078789000108372,
+    "unaccounted_latency_s": 0.00012949998199474066,
+    "rewritten_query": "Sorbaria & Goldenrod - A genus comprising over 50 flowering species (optimized for searchability)\n\nExplanation:\n- \"Both\" is replaced with \"A genus\", which is more specific and directly relevant to the query.\n- \"more than 50 flowering plants\" is rephrased as \"over 50 flowering species\", making it clearer and easier to understand. The word \"floral\" is retained for botanical accuracy, but \"species\" conveys the broader classification aspect better in search contexts.",
+    "query_was_rewritten": true
+  }
+}

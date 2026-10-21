@@ -1,0 +1,42 @@
+{
+  "question_id": "Q104",
+  "query": "Where is the stadium at which 1964 Georgia Tech Yellow Jackets football team played their home game located? ",
+  "ground_truth": "North Avenue at Techwood Drive",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The stadium where the 1964 Georgia Tech Yellow Jackets football team played their home games is located in Atlanta, Georgia. Specifically, it's Bobby Dodd Stadium at Historic Grant Field on the campus of the Georgia Institute of Technology.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1964 Georgia Tech Yellow Jackets football team: The 1964 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology during the 1964 college football season.  The Yellow Jackets were led by 20th-year head coach Bobby Dodd, and played their home games at Grant Field in Atlanta, Georgia.  They competed as independents for the first time since 1920, after dropping from the Southeastern Conference in 1963.",
+      "Georgia Tech Yellow Jackets football: The Georgia Tech Yellow Jackets football team represents the Georgia Institute of Technology in the sport of American football.  The Yellow Jackets team competes in the Football Bowl Subdivision (FBS) of the National Collegiate Athletic Association (NCAA) and the Coastal Division of the Atlantic Coast Conference (ACC).  Georgia Tech has fielded a football team since 1892 and has an all-time record of 700\u2013471\u201343 (a .594 winning percentage).  The Yellow Jackets play in Bobby Dodd Stadium at Historic Grant Field in Atlanta, Georgia, which has a capacity of 55,000.  The Yellow Jackets have won four Division I-A college football national championships and fifteen conference titles.",
+      "Bobby Dodd Stadium: Bobby Dodd Stadium at Historic Grant Field is the football stadium located at the corner of North Avenue at Techwood Drive on the campus of the Georgia Institute of Technology in Atlanta.  It has been home to the Georgia Tech Yellow Jackets football team, often referred to as the \"Ramblin' Wreck\", in rudimentary form since 1905 and as a complete stadium since 1913.  The team participates in the NCAA Division I Football Bowl Subdivision as a member of the Atlantic Coast Conference.  It is the oldest stadium in the FBS and has been the site of more home wins than any other FBS stadium."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 461,
+    "generation_tokens": 48,
+    "generation_speed": 220.17843627439737,
+    "prompt_eval_speed": 41464.2921388739,
+    "generation_latency_s": 0.5867910999950254,
+    "latency": 1.3692216000054032,
+    "total_prompt_tokens": 543,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5602298,
+    "stage_rewrite_s": 0.4853002000018023,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17026060000353027,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12663549999706447,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5868765000050189,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.369244700006675,
+    "unaccounted_latency_s": 0.00017279999156016856,
+    "rewritten_query": "Where is the stadium for the 1964 Georgia Tech Yellow Jackets football team used for home games?",
+    "query_was_rewritten": true
+  }
+}

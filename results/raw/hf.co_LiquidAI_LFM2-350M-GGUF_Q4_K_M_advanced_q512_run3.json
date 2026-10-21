@@ -1,0 +1,42 @@
+{
+  "question_id": "Q512",
+  "query": "What was the nationality of the actor playing a Russian hostage taker in \"Hostage for a Day\"?",
+  "ground_truth": "Canadian",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The actor who played a Russian hostage taker in \"Hostage for a Day\" was John Candy, though he only portrayed him as a minor character due to his death. The context provided does not specify the nationality of this particular role.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Russians: Russians (Russian: \u0440\u0443\u0441\u0441\u043a\u0438\u0435 , \"russkiye\") are an East Slavic ethnic group native to Eastern Europe.  The majority of Russians inhabit the nation state of Russia, while notable minorities exist in other former Soviet states such as Ukraine, Kazakhstan, and Belarus.  A large Russian diaspora exists all over the world, with notable numbers in the United States, Germany, Israel, and Canada.  Russians are the most numerous ethnic group in Europe.",
+      "Nationality: Nationality is a legal relationship between an individual person and a state.  Nationality affords the state jurisdiction over the person and affords the person the protection of the state.  What these rights and duties are vary from state to state.",
+      "Hostage for a Day: Hostage for a Day is a 1994 comedic film directed by John Candy in his only directorial effort.  Though the film is also billed as \"starring\" Candy, it in fact only features him as a minor character, as a Russian hostage taker.  Produced with a mostly Canadian cast, the film was released one month after Candy's death."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 310,
+    "generation_tokens": 50,
+    "generation_speed": 305.24471468776517,
+    "prompt_eval_speed": 22831.0502283105,
+    "generation_latency_s": 0.4703700999962166,
+    "latency": 1.727121799995075,
+    "total_prompt_tokens": 391,
+    "total_generation_tokens": 190,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5023896999999999,
+    "stage_rewrite_s": 0.7806112999969628,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16303039999911562,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.312879500008421,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4704692000086652,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.727147599987802,
+    "unaccounted_latency_s": 0.00015839998377487063,
+    "rewritten_query": "Nationality of Russian Actor in \"Hostage for a Day\": [Detailed Nationality Information]\n\nExplanation:\n- The original query asks about the nationality of an actor, but it lacks specific details.\n- The optimized query expands to include more precise information about the actor's nationality.\n- It specifies that this is an actor from Russia (\"Russian\").\n- The phrase \"in 'Hostage for a Day'\" adds context and helps in understanding the actor's background.\n\nSo, the optimized query becomes: \"Nationality of Russian Actor in 'Hostage for a Day': [Detailed Nationality Information]\". This provides more specific and search-friendly details about the actor's nationality.",
+    "query_was_rewritten": true
+  }
+}

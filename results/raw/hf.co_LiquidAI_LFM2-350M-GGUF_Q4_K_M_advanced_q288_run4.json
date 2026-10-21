@@ -1,0 +1,42 @@
+{
+  "question_id": "Q288",
+  "query": "Where did Ian Harland study prior to studying at the oldest college at the University of Cambridge?",
+  "ground_truth": "The Dragon School in Oxford",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Harold's father studied at Haileybury College before studying at Harvard College.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ian Harland: From a clerical family (Samuel Harland, general secretary of the Commonwealth and Continental Church Society, was his father), Harland was educated at The Dragon School in Oxford and Haileybury.  He then went to university at Peterhouse, Cambridge, taking a law degree.  After two years as a schoolmaster at Sunningdale School he studied for the priesthood at Wycliffe Hall, Oxford and began his ministry as a curate in Melton Mowbray in 1960.",
+      "Peterhouse, Cambridge: Peterhouse is a constituent college of the University of Cambridge, England.  It is the oldest college of the university, having been founded in 1284 by Hugo de Balsham, Bishop of Ely, and granted its charter by King Edward I.  Today, Peterhouse has 226 undergraduates, 86 full-time graduate students and 45 fellows.  The modern name of Peterhouse does not include the word \"college\".",
+      "Harvard College: Harvard College is the undergraduate liberal arts college of Harvard University.  Founded in 1636 in Cambridge, Massachusetts, it is the oldest institution of higher learning in the United States and one of the most prestigious in the world."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 328,
+    "generation_tokens": 17,
+    "generation_speed": 304.6267426441601,
+    "prompt_eval_speed": 36804.30879712747,
+    "generation_latency_s": 0.3152239999908488,
+    "latency": 1.0701371999894036,
+    "total_prompt_tokens": 406,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4291655,
+    "stage_rewrite_s": 0.453864800001611,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1308421999856364,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17006589999073185,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.31527099999948405,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0701503999880515,
+    "unaccounted_latency_s": 0.00010720001591835171,
+    "rewritten_query": "Prior to University of Cambridge, Ian Harland studied at the oldest college at the University of Cambridge (presumably Oxford). \n\n\nThis version is more concise and directly answers the user's question by specifying the institution in a clear and direct manner.",
+    "query_was_rewritten": true
+  }
+}

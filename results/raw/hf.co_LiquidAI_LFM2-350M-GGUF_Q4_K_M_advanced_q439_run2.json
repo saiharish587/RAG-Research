@@ -1,0 +1,42 @@
+{
+  "question_id": "Q439",
+  "query": "Rejuvelac is kind of grain water invented and promoted by a \"holistic health\" practitioner born in which year ?",
+  "ground_truth": "1909",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The context provided does not contain enough information to determine Elizabeth Neilson's birth year or identify her as a holistic health practitioner. The given details only mention that Rejuvelac is an invention and promotion of a brand created by Ann Wigmore, but they do not specify Elizabeth Neilson's personal background or the year she was born.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rejuvelac: Rejuvelac is kind of grain water invented and promoted by Ann Wigmore.",
+      "Original brand manufacturer: An original brand manufacturer, or OBM, is typically a company that sells an entire product made by a second company or including a component from a second company sources as its own branded product.  Selling the product of the second company under its own brand just adds a virtual extrinsic value to the product.",
+      "Elizabeth Neilson: Elizabeth A. \"Betty\" Neilson, EDD (October 13, 1911 \u2013 October 4, 2001) was a prominent figure in the field of health education and a leader in promoting the wellness and holistic health perspectives in public health."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 228,
+    "generation_tokens": 69,
+    "generation_speed": 312.7308656299714,
+    "prompt_eval_speed": 28037.383177570093,
+    "generation_latency_s": 0.5065885000076378,
+    "latency": 1.7451395000098273,
+    "total_prompt_tokens": 312,
+    "total_generation_tokens": 192,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4842737,
+    "stage_rewrite_s": 0.7043734000035329,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15565549999882933,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3783270999992965,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5066489999881014,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7451560000044992,
+    "unaccounted_latency_s": 0.00015180002083070576,
+    "rewritten_query": "Rejuvelac, a grainwater product developed by holistic health practitioner [Name], was launched in [Year] and aims to promote wellness. \n\n\nThis optimized version:\n* **Focuses on the key details:** It explicitly mentions Rejuvelac, its origin (holistic health), and the year of development.\n* **Uses more precise language:** \"Invented\" is replaced with \"developed,\" which better conveys the product's origin.\n* **Adds context:** The phrase \"aims to promote wellness\" provides a clearer understanding of Rejuvelac's purpose.",
+    "query_was_rewritten": true
+  }
+}

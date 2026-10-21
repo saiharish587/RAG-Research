@@ -1,0 +1,42 @@
+{
+  "question_id": "Q543",
+  "query": "The Dogwoman telemovies were created by an actress born in what year?",
+  "ground_truth": "1961",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Dogwoman telemovies were created by Magda Szubanski, who was born on July 3, 1980.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dogwoman: Dogwoman is a series of Australian television telemovies screened on the Nine Network in 2000.  The telemovies were created by and starred Magda Szubanski as Margaret O'Halloran.  Margaret, a professional dog trainer, is drawn into a world of mystery, intrigue, and murder, which lies beneath the surface of dog-owners.  Tara Morice played her sister Pauline O'Halloran and Raj Ryan played her boyfriend Brian Jayasinghe.",
+      "Bill Lawrence (TV producer): William Van Duzer \"Bill\" Lawrence IV (born December 26, 1968) is an American screenwriter, producer, and director.  He is best known as the creator of the series \"Scrubs\", co-creator of \"Cougar Town\" and co-creator of \"Spin City\".  He was also co-creator of the short-lived animated series \"Clone High\", in which he voiced the leader of the shadowy figures, and is the co-creator of \"Ground Floor\", which ran on TBS.  He has written for many other shows including \"Friends\", \"The Nanny\", and \"Boy Meets World\".",
+      "Olivia Munn: Lisa Olivia Munn (born July 3, 1980) is an American actress and model.  She was credited as Lisa Munn in her early career, but since 2006, she has used the name Olivia Munn."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 381,
+    "generation_tokens": 29,
+    "generation_speed": 301.4145697566857,
+    "prompt_eval_speed": 35320.29294521183,
+    "generation_latency_s": 0.36753000000317115,
+    "latency": 1.2289798999991035,
+    "total_prompt_tokens": 457,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4267158,
+    "stage_rewrite_s": 0.43469190000905655,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15627939999103546,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2702727000141749,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.36761319999641273,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2290026000118814,
+    "unaccounted_latency_s": 0.0001463999942643568,
+    "rewritten_query": "Dogwoman Telemovies - Creator: actress born in [year]\" \n\n\nThis rephrased version is more concise and directly answers the user's question about the dogwoman's creator's birth year.",
+    "query_was_rewritten": true
+  }
+}

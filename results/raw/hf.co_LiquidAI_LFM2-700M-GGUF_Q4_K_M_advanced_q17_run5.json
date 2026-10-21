@@ -1,0 +1,42 @@
+{
+  "question_id": "Q17",
+  "query": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+  "ground_truth": "the North Atlantic Conference",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Vermont Catamounts men's soccer team currently competes in the America East Conference, which was formerly known as the North Atlantic Conference from 1988 to 1996.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vermont Catamounts men's soccer: The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions.  The team competes in the America East Conference.",
+      "America East Conference: The America East Conference is a collegiate athletic conference affiliated with the NCAA Division I, whose members are located mainly in the Northeastern United States.  The conference was known as the Eastern College Athletic Conference-North from 1979 to 1988 and the North Atlantic Conference from 1988 to 1996.",
+      "Vermont Catamounts men's basketball: The Vermont Catamounts Basketball team is the basketball team that represents the University of Vermont in Burlington, Vermont.  The school's team currently competes in the America East Conference and plays its home games at Patrick Gym.  The team has reached the NCAA Division I Men's Basketball Tournament six times, in 2003, 2004, 2005, 2010, 2012, and 2017.  UVM famously upset Syracuse University in the first round of the 2005 tournament.  The Catamounts are coached by John Becker."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 37,
+    "generation_speed": 222.50687065134377,
+    "prompt_eval_speed": 31340.966427323892,
+    "generation_latency_s": 0.525223399992683,
+    "latency": 1.5880153000034625,
+    "total_prompt_tokens": 412,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5805066000000001,
+    "stage_rewrite_s": 0.6676910999958636,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12719519999518525,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2677347999997437,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.525275000007241,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5880290000059176,
+    "unaccounted_latency_s": 0.00013339999713934958,
+    "rewritten_query": "What former conference did the Vermont Catamounts men's soccer team play in between 1988 and 1996?\n\nThe former name of the conference is the Eastern Conference. This rephrased query maintains the essence of the original question while making it more concise and search-friendly.",
+    "query_was_rewritten": true
+  }
+}

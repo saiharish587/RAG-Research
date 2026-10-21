@@ -1,0 +1,42 @@
+{
+  "question_id": "Q191",
+  "query": "Joe Walker played for which team that ends their regular season with the Civil War rivalry game?",
+  "ground_truth": "Oregon Ducks football",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Joe Walker played for the Philadelphia Eagles, a team that ended their regular season with the Civil War rivalry game against Oregon State University Beavers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joe Walker (American football): Joe Walker (born December 11, 1992) is an American football linebacker for the Philadelphia Eagles of the National Football League (NFL).  He played college football at Oregon.",
+      "Civil War (college football game): The Civil War is the colloquial name for an American college football rivalry game played annually in Oregon, between the Ducks of the University of Oregon in Eugene and the Beavers of Oregon State University in Corvallis.  First played in 1894, it is the fifth most played college football rivalry game in NCAA Division I Football Bowl Subdivision.  Both universities are members of the North Division of the Pac-12 Conference.",
+      "G.I. Joe Team: G.I. Joe is the code name of an elite covert special mission unit operating under the control of the United States Military in the fictional G.I. Joe universe."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 257,
+    "generation_tokens": 30,
+    "generation_speed": 310.38228751745896,
+    "prompt_eval_speed": 21663.9973025373,
+    "generation_latency_s": 0.438540400005877,
+    "latency": 1.1625812999991467,
+    "total_prompt_tokens": 335,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4952182,
+    "stage_rewrite_s": 0.3568284000066342,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12638270000752527,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24065409999457188,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4385920999920927,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1625940999947488,
+    "unaccounted_latency_s": 0.0001373999984934926,
+    "rewritten_query": "Joe Walker's regular season ended with a Civil War matchup against another team, as he plays for [Name of Team].",
+    "query_was_rewritten": true
+  }
+}

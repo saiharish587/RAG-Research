@@ -1,0 +1,42 @@
+{
+  "question_id": "Q420",
+  "query": "What is the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station?",
+  "ground_truth": "51,271",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Unfortunately, I do not have enough information to determine the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station. The provided context does not include demographic data or population figures for specific locations within a certain distance from the base. To answer this question accurately, additional information regarding local census data or historical population records would be required.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marietta Air Force Station: Marietta Air Force Station (ADC ID: M-111, NORAD ID: Z-111) is a closed United States Air Force General Surveillance Radar station.  It is located 2.1 mi northeast of Smyrna, Georgia.  It was closed in 1968.",
+      "Life University: Life University is a private university in the Atlanta suburb of Marietta, Georgia, United States, that offers undergraduate, masters, and a doctoral degree.  Besides undergraduate and graduate programs in health and wellness-oriented fields, Life University is best known for its Doctor of Chiropractic degree program.  It is the largest single campus chiropractic college in the world.",
+      "302d Air Division: The 302d Air Division is an inactive United States Air Force Division.  Its last assignment was with Fourteenth Air Force at Marietta Air Force Base, Georgia, where it was inactivated on 27 June 1949."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 274,
+    "generation_tokens": 74,
+    "generation_speed": 230.18682460386094,
+    "prompt_eval_speed": 24401.104283551518,
+    "generation_latency_s": 0.6989048999967054,
+    "latency": 1.4613192999968305,
+    "total_prompt_tokens": 356,
+    "total_generation_tokens": 95,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5515606,
+    "stage_rewrite_s": 0.4446311999927275,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15933429999859072,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15820769999118056,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6989961999934167,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4613425999996252,
+    "unaccounted_latency_s": 0.00017420003132428974,
+    "rewritten_query": "Population of Marietta area 2.1 miles southwest of Marietta AF Station in 2010",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q553",
+  "query": "Are both Jim McBride and Neil Jordan American?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, based on the provided context, we do not have enough information to determine whether Jim McBride or Neil Jordan are American. The context only provides biographical details about these two individuals but does not mention their nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jim McBride: Jim McBride (born September 16, 1941) is an American television and film director, film producer and screenwriter.",
+      "Glen and Randa: Glen and Randa is a 1971 X rated post-apocalypse movie directed by Jim McBride.  It was co-written by McBride, Lorenzo Mans and Rudy Wurlitzer.  McBride made the film for $480,000 with an obscure cast including Steven Curry, Shelley Plimpton, Woodrow Chambliss and Gary Goodrow.",
+      "Angel (1982 Irish film): Angel is a 1982 film directed by Neil Jordan and starring Stephen Rea.  The film was Neil Jordan's directorial debut, and the executive producer was John Boorman."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 228,
+    "generation_tokens": 46,
+    "generation_speed": 313.1104803523174,
+    "prompt_eval_speed": 21664.766248574684,
+    "generation_latency_s": 0.4889541000011377,
+    "latency": 1.4887709000031464,
+    "total_prompt_tokens": 298,
+    "total_generation_tokens": 107,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5372166,
+    "stage_rewrite_s": 0.5447185000084573,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17997599999944214,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.27486899998621084,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4890494999999646,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4887951999990037,
+    "unaccounted_latency_s": 0.00018350000027567148,
+    "rewritten_query": "Jim McBride & Neil Jordan - Both American?\" \n\nThis rephrased version is more concise and directly conveys the same information as the original query, while maintaining a professional tone. It also eliminates unnecessary words like \"are both\" which makes it easier to read and understand.",
+    "query_was_rewritten": true
+  }
+}

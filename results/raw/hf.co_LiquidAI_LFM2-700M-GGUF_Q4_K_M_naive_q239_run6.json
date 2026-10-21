@@ -1,0 +1,36 @@
+{
+  "question_id": "Q239",
+  "query": "What airport serviced by American Airlines Shuttle, is also the largest airport in the New England region and 17th busiest in the U.S?",
+  "ground_truth": "Logan International Airport",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Logan International Airport (Boston) serves both American Airlines Shuttle and is the largest airport in the New England region and 17th busiest in the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "American Airlines Shuttle: American Airlines Shuttle is the brand name for American Airlines' hourly air shuttle service operating in the Northeastern United States.  It serves Logan International Airport in Boston, LaGuardia Airport in New York City, and Ronald Reagan Washington National Airport in Washington, D.C.",
+      "Logan International Airport: Logan International Airport (IATA: BOS, ICAO: KBOS, FAA LID: BOS) , officially known as General Edward Lawrence Logan International Airport, is an international airport located in the East Boston neighborhood of Boston, Massachusetts, United States (and partly in the town of Winthrop, Massachusetts).  It covers 2384 acre , has six runways and four passenger terminals, and employs an estimated 16,000 people.  It is the largest airport in the New England region and 17th-busiest airport in the United States, with 33.5 million total passengers in 2015.  It is named after General Edward Lawrence Logan.  In 2016, Massport reported an 8.5% increase in passenger traffic comparing 2015 to 2016, giving the airport a total of about 36.3 million passengers.",
+      "John F. Kennedy International Airport: John F. Kennedy International Airport (IATA: JFK,\u00a0ICAO: KJFK,\u00a0FAA LID: JFK) , often referred to as Kennedy Airport, or simply JFK, is the primary international airport serving New York City.  It is the busiest international air passenger gateway into North America, the fifth busiest airport in the United States and the busiest airport in the New York City airport system, handling just under 59 million passengers in 2016.  Over ninety airlines operate out of the airport, with non-stop or direct flights to destinations in all six inhabited continents."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 464,
+    "generation_tokens": 35,
+    "generation_speed": 218.8197487949284,
+    "prompt_eval_speed": 39113.20913765489,
+    "generation_latency_s": 0.4292257999914,
+    "latency": 0.46504510000522714,
+    "total_prompt_tokens": 464,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2440767,
+    "stage_retrieve_s": 0.0356760000140639,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.4292913000099361,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.46505790000082925,
+    "unaccounted_latency_s": 9.179997141472995e-05
+  }
+}

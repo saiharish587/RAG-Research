@@ -1,0 +1,42 @@
+{
+  "question_id": "Q166",
+  "query": "In 2017, what was 3/4th of the organization that also has a Center for Veterinary Medicine as well as part of the U.S. Department of Health and Human Services, spent on?",
+  "ground_truth": "Prescription Drug User Fee Act",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "In 2017, 3/4th (approximately $700 million) of the organization's budget was funded by pharmaceutical companies due to the Prescription Drug User Fee Act. This funding also supported the Center for Veterinary Medicine as part of the U.S. Department of Health and Human Services (HHS).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Food and Drug Administration: The Food and Drug Administration (FDA or USFDA) is a federal agency of the United States Department of Health and Human Services, one of the United States federal executive departments.  The FDA is responsible for protecting and promoting public health through the control and supervision of food safety, tobacco products, dietary supplements, prescription and over-the-counter pharmaceutical drugs (medications), vaccines, biopharmaceuticals, blood transfusions, medical devices, electromagnetic radiation emitting devices (ERED), cosmetics, animal foods & feed and veterinary products.  As of 2017, 3/4th of the FDA budget (approximately $700 million) is funded by the pharmaceutical companies due to the Prescription Drug User Fee Act.",
+      "United States Public Health Service: The Public Health Service Act of 1944 structured the United States Public Health Service (PHS), founded in 1798, as the primary division of the U.S. Department of Health, Education and Welfare (HEW; which was established in 1953), which later became the United States Department of Health and Human Services in 1979\u20131980 (when the Education agencies were separated into their own U.S. Department of Education).  The Office of the Surgeon General was created in 1871.  The PHS comprises all Agency Divisions of Health and Human Services and the Commissioned Corps.  The Assistant Secretary for Health (ASH) oversees the PHS and the United States Public Health Service Commissioned Corps.",
+      "Centers for Medicare and Medicaid Services: The Centers for Medicare & Medicaid Services (CMS), previously known as the Health Care Financing Administration (HCFA), is a federal agency within the United States Department of Health and Human Services (HHS) that administers the Medicare program and works in partnership with state governments to administer Medicaid, the State Children's Health Insurance Program (SCHIP), and health insurance portability standards.  In addition to these programs, CMS has other responsibilities, including the administrative simplification standards from the Health Insurance Portability and Accountability Act of 1996 (HIPAA), quality standards in long-term care facilities (more commonly referred to as nursing homes) through its survey and certification process, clinical laboratory quality standards under the Clinical Laboratory Improvement Amendments, and oversight of HealthCare.gov."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 573,
+    "generation_tokens": 65,
+    "generation_speed": 219.07946180602366,
+    "prompt_eval_speed": 49830.42003652491,
+    "generation_latency_s": 0.7040615000005346,
+    "latency": 1.6329926999896998,
+    "total_prompt_tokens": 674,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5471014,
+    "stage_rewrite_s": 0.5023531000042567,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1663131999957841,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.26001589999941643,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7041532000002917,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6330185999977402,
+    "unaccounted_latency_s": 0.00018429999181535095,
+    "rewritten_query": "In 2017, how much of an organization with a Center for Veterinary Medicine and part of the U.S. Department of Health and Human Services allocated to a specific purpose?",
+    "query_was_rewritten": true
+  }
+}

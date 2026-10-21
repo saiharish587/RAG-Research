@@ -1,0 +1,42 @@
+{
+  "question_id": "Q207",
+  "query": "Are Hot Rod and The Memory of Our People both magazines?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, they are not both magazines. \n\nHot Rod is explicitly stated to be a monthly American car magazine focused on hot rodding, drag racing, and modified automobiles. It does not have any connection or implication with \"The Memory of Our People,\" which is described as a gunpowder magazine.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hot Rod (magazine): Hot Rod is a monthly American car magazine devoted to hot rodding, drag racing, and muscle cars \u2014 modifying automobiles for performance and appearance.",
+      "Magazine: A magazine is a publication, usually a periodical publication, which is printed or electronically published (sometimes referred to as an online magazine).  Magazines are generally published on a regular schedule and contain a variety of content.  They are generally financed by advertising, by a purchase price, by prepaid subscriptions, or a combination of the three.  At its root, the word \"magazine\" refers to a collection or storage location.  In the case of written publication, it is a collection of written articles.  This explains why magazine publications share the word root with gunpowder magazines, artillery magazines, firearms magazines, and, in French, retail stores such as department stores.",
+      "Rat rod: A rat rod is a style of hot rod or custom car that, in most cases, imitates (or exaggerates) the early hot rods of the 1940s, 1950s, and early-1960s.  The style is not to be confused with the somewhat closely related \"traditional\" hot rod, which is an accurate re-creation or period-correct restoration of a hot rod from the same era."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 339,
+    "generation_tokens": 63,
+    "generation_speed": 319.91550168336494,
+    "prompt_eval_speed": 35669.191919191915,
+    "generation_latency_s": 0.4604554000106873,
+    "latency": 1.3196530999994138,
+    "total_prompt_tokens": 410,
+    "total_generation_tokens": 120,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4696007,
+    "stage_rewrite_s": 0.5190707000001566,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15558329998748377,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18437050000648014,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.46051819999411236,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3196702999994159,
+    "unaccounted_latency_s": 0.00012840000272262841,
+    "rewritten_query": "Hot Rod Magazine & The Memory of Our People - Both Magazines?\n\nThis rephrased version maintains the core inquiry while making it more concise and clear, focusing on the key elements: hot rod magazines and their association with nostalgia. It avoids unnecessary introductory text or formatting.",
+    "query_was_rewritten": true
+  }
+}

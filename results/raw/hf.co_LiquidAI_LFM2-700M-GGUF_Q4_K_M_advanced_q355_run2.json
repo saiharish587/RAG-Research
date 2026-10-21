@@ -1,0 +1,42 @@
+{
+  "question_id": "Q355",
+  "query": "Were Thomas H. Ince and Joseph McGrath of the same nationality?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Yes, Thomas H. Ince and Joseph McGrath were both American nationalities. The context provided does not specify their exact nationalities beyond stating that they are American filmmakers. However, based on the information given about their backgrounds and the biographical details available, we can infer that both were American.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thomas H. Ince: Thomas Harper Ince (November 16, 1880 \u2013 November 19, 1924) was an American silent film producer, director, screenwriter, and actor.",
+      "Joseph McGrath (film director): Joseph McGrath (born 1930, Glasgow) is a Scottish film and television director and screenwriter.  He studied at Glasgow School of Art in the late 1940s/early 1950s where his energy and talent was much admired by his contemporaries.",
+      "Thomas Ince: Hollywood's Independent Pioneer: Thomas Ince: Hollywood's Independent Pioneer is a biography of Thomas H. Ince, written by Brian Taves and published by University Press of Kentucky in 2012.  Upon publication the book was positively reviewed by critics.  Divided in 5 parts, the book provides information about Ince's life and his films, including their financial details.  Taves rejects the idea that William Randolph Hearst was responsible for Ince's death."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 279,
+    "generation_tokens": 63,
+    "generation_speed": 232.98041115495414,
+    "prompt_eval_speed": 26614.51874463417,
+    "generation_latency_s": 0.5915704000071855,
+    "latency": 1.457491699999082,
+    "total_prompt_tokens": 354,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5219876,
+    "stage_rewrite_s": 0.5429007999919122,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15515990000858437,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16761640000913758,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5916568999964511,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4575106999982381,
+    "unaccounted_latency_s": 0.00017759999900590628,
+    "rewritten_query": "Are Thomas H. Ince and Joseph McGrath from the same country? \n\n\nThis rephrased query is more concise while maintaining the core meaning of the original question.",
+    "query_was_rewritten": true
+  }
+}

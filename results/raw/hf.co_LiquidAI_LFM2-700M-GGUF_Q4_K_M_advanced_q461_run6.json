@@ -1,0 +1,42 @@
+{
+  "question_id": "Q461",
+  "query": " William Cammisano was part of which Mafia family?",
+  "ground_truth": "Kansas City crime family",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "William Cammisano was part of Nicholas Civella's Kansas City crime family.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "William Cammisano: William \"Willie Rat\" Dominick Cammisano Sr. (April 26, 1914 \u2013 January 26, 1995) was a Kansas City, Missouri, mobster and enforcer for Nicholas Civella's Kansas City crime family.",
+      "Al Capone: Alphonse Gabriel Capone ( ; ] ; January 17, 1899 \u2013 January 25, 1947), sometimes known by the nickname Scarface, was an American mobster, crime boss and businessman who attained fame during the Prohibition era as the co-founder and boss of the Chicago Outfit.  His seven-year reign as crime boss ended when he was 33 years old.",
+      "Lucky Luciano: Charles \"Lucky\" Luciano ( ; born Salvatore Lucania November 24, 1897 \u2013 January 26, 1962) was an Italian-American mobster and crime boss.  Luciano is considered the father of modern organized crime in the United States for the establishment of the first Commission.  He was also the first official boss of the modern Genovese crime family.  He was, along with his associates, instrumental in the development of the National Crime Syndicate."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 18,
+    "generation_speed": 233.46909128641468,
+    "prompt_eval_speed": 29262.43884427213,
+    "generation_latency_s": 0.4575923999946099,
+    "latency": 1.1732128000003286,
+    "total_prompt_tokens": 390,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5496229,
+    "stage_rewrite_s": 0.41643379999732133,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15053420000185724,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14840549998916686,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.45766420000290964,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1732306999911088,
+    "unaccounted_latency_s": 0.00019410000822972506,
+    "rewritten_query": "Who was William Cammisano associated with within the Mafia?",
+    "query_was_rewritten": true
+  }
+}

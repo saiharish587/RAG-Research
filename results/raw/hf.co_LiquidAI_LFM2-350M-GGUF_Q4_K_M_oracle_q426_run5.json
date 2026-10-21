@@ -1,0 +1,33 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The question cannot be answered with certainty based solely on the provided context, as it does not specify which company owns Circus Circus Las Vegas and therefore does not provide information about its location relative to the MGM Resorts International hotel.\n\nTo answer this specific question, additional details are required:\n1. A clear statement or reference point indicating that Circus Circus Las Vegas is owned by MGM Resorts International.\n2. The context should explicitly mention the ownership structure of both venues (Las Vegas Festival Grounds and Circus Circus Las Vegas).\n\nWithout this information, we can only infer that while the hotel's location is described as being north of Circus Circus Las Vegas, it does not definitively confirm or deny the ownership status.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "Circus Circus Las Vegas: Circus Circus Las Vegas is a hotel, 123928 sqft casino, and RV park located on the Las Vegas Strip in Winchester, Nevada.  It is owned and operated by MGM Resorts International.  Circus Circus features circus acts and carnival type games daily on the Midway."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 194,
+    "generation_tokens": 152,
+    "generation_speed": 326.8163571586758,
+    "prompt_eval_speed": 19860.76986076986,
+    "generation_latency_s": 0.7013350000197534,
+    "latency": 0.7014067000127397,
+    "total_prompt_tokens": 194,
+    "total_generation_tokens": 152,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2160998,
+    "stage_generate_s": 0.7013826000038534,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7014162999985274,
+    "unaccounted_latency_s": 3.429999924264848e-05
+  }
+}

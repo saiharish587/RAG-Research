@@ -1,0 +1,42 @@
+{
+  "question_id": "Q201",
+  "query": "The 2000 British film Snatch was later adapted into a television series for what streaming service?",
+  "ground_truth": "Crackle",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 2000 British film Snatch was adapted into a television series for the **TV Everywhere** streaming service.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Snatch (film): Snatch (stylised as snatch.)  is a 2000 British crime comedy film written and directed by Guy Ritchie, featuring an ensemble cast.  Set in the London criminal underworld, the film contains two intertwined plots: one dealing with the search for a stolen diamond, the other with a small-time boxing promoter (Jason Statham) who finds himself under the thumb of a ruthless gangster (Alan Ford) who is ready and willing to have his subordinates carry out severe and sadistic acts of violence.",
+      "Snatch (TV series): Snatch is a British/American television series based on the film of the same name, which debuted on Crackle on 16 March 2017.  The show has been renewed for a second season.",
+      "TV Everywhere: TV Everywhere (also known as authenticated streaming or authenticated video on-demand) refers to a business model wherein access to streaming video content from a television channel requires users to \"authenticate\" themselves as current subscribers to the channel, via an account provided by their participating pay television provider, in order to access the content."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 312,
+    "generation_tokens": 25,
+    "generation_speed": 302.0016670492021,
+    "prompt_eval_speed": 9775.048561939971,
+    "generation_latency_s": 0.4665469000028679,
+    "latency": 1.356193900006474,
+    "total_prompt_tokens": 391,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5814392,
+    "stage_rewrite_s": 0.48660970000491943,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13512960000662133,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.26770729999407195,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.46661609999137,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3562123000010615,
+    "unaccounted_latency_s": 0.0001503000094089657,
+    "rewritten_query": "2000 British Film 'Snatch' TV Series Streaming Service Adaptation - [Streaming Platform]\" \n\n\nThis version is more concise and directly states the adaptation's destination.",
+    "query_was_rewritten": true
+  }
+}

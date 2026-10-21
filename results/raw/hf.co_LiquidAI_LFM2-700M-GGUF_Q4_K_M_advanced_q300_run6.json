@@ -1,0 +1,42 @@
+{
+  "question_id": "Q300",
+  "query": "When did the rock band that sang \"All Join Hands\" rise to prominence? ",
+  "ground_truth": "early 1970s",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Based on the provided context, the rock band that sang \"All Join Hands\" rose to prominence in 1984. This information is directly stated in the first part of the context regarding the song's release and its chart performance.\n\nTo elaborate:\n- \"All Join Hands\" was released as the lead single from Slade's twelfth studio album, \"Rogues Gallery,\" in 1984.\n- The song reached No. 15 in the UK charts and stayed there for ten weeks.\n\nTherefore, the rock band that sang \"All Join Hands\" rose to prominence in 1984.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "All Join Hands: \"All Join Hands\" is a song by the British rock band Slade, released in 1984 as the lead single from the band's twelfth studio album \"Rogues Gallery\".  The song was written by lead vocalist Noddy Holder and bassist Jim Lea, and produced by John Punter.  It reached No. 15 in the UK, remaining in the chart for ten weeks.",
+      "Styx (band): Styx is an American rock band from Chicago that formed in 1972 and became famous for its albums released in the late 1970s and early 1980s.  They are best known for melding the style of pop rock and hard rock with the power of a hard-rock guitar balanced with acoustic guitar, synthesizers mixed with acoustic piano, upbeat tracks with power ballads, and incorporating elements of international musical theatre.",
+      "Playground Twist: \"Playground Twist\" is a song by English post-punk band Siouxsie and the Banshees.  It was released in 1979 by record Polydor as the sole single from the band's second album, \"Join Hands\" (1979)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 123,
+    "generation_speed": 226.30969838252963,
+    "prompt_eval_speed": 26007.055541882026,
+    "generation_latency_s": 0.9069242999976268,
+    "latency": 1.800264999998035,
+    "total_prompt_tokens": 393,
+    "total_generation_tokens": 167,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5164788,
+    "stage_rewrite_s": 0.512531599990325,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1619293999974616,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21868330000143033,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9069901000038953,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.8002823999995599,
+    "unaccounted_latency_s": 0.00014869999722577631,
+    "rewritten_query": "When did the band known for \"All Join Hands\" become popular? \n\n\nThis rephrased query is more concise and directly asks about the band's rise to fame, making it easier to understand.",
+    "query_was_rewritten": true
+  }
+}

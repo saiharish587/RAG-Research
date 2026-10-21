@@ -1,0 +1,42 @@
+{
+  "question_id": "Q301",
+  "query": "Where is the company that owns thanKing Horse pub restaurant chain based ?",
+  "ground_truth": "Bury St Edmunds,",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The company that owns the Than King Horse pub restaurant chain is Pan Am Railways, Inc., also known as Mitchells &amp; Butlers plc in the context provided. The information explicitly states that Pan Am Railways is \"formerly known as Guilford Rail System (GRS) before March 2006.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chef &amp; Brewer: Chef & Brewer is a chain of around 127 licensed traditional pub restaurants in the United Kingdom, owned by the Greene King subsidiary, the Spirit Pub Company.  The concept is providing more up market pub food and those in the chain have been re-furbished.",
+      "Pan Am Railways: Pan Am Railways, Inc. (PAR), formerly known as Guilford Rail System (GRS) before March 2006, is an American holding company that owns and operates Class II regional railroads covering northern New England from Mattawamkeag, Maine, to Rotterdam Junction, New York.  The primary subsidiaries of Pan Am Railways are Boston and Maine Corporation (reporting mark BM) , Maine Central Railroad Company (reporting mark MEC) , Portland Terminal Company (reporting mark PTM) , and Springfield Terminal Railway Company (reporting mark ST) ; BM and MEC are operated under lease by ST.",
+      "Mitchells &amp; Butlers: Mitchells & Butlers plc () (also referred to as \"M&B\") runs circa 1,784 managed pubs, bars and restaurants throughout the United Kingdom.  The company's headquarters are in Birmingham, England, United Kingdom.  The company is listed on the London Stock Exchange and is a constituent of the FTSE 250 Index."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 342,
+    "generation_tokens": 66,
+    "generation_speed": 329.5913067795933,
+    "prompt_eval_speed": 38509.17689449387,
+    "generation_latency_s": 0.45196150000265334,
+    "latency": 1.2308330000087153,
+    "total_prompt_tokens": 415,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4177531,
+    "stage_rewrite_s": 0.4968745999940438,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12244040000950918,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15940930000215303,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.452009899992845,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2308676000102423,
+    "unaccounted_latency_s": 0.0001340000017080456,
+    "rewritten_query": "Based on King's Horse Pub, which is owned by a specific company, this query can be rephrased as follows:\n\n**\"Where is King's Horse Pub located? - Company Ownership Focus\"**\n\nThis version maintains the core inquiry about the location of the pub chain while emphasizing its ownership aspect.",
+    "query_was_rewritten": true
+  }
+}

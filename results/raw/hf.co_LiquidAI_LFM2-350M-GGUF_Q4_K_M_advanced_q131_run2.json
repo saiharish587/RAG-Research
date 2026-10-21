@@ -1,0 +1,42 @@
+{
+  "question_id": "Q131",
+  "query": "Which film was Oscar nominated, LaLee's Kin: The Legacy of Cotton or Gimme Shelter, the 1970 Rolling Stones documentary?",
+  "ground_truth": "LaLee's Kin: The Legacy of Cotton",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "LaLee's Kin: The Legacy of Cotton was not nominated for the 1970 Rolling Stones documentary. The context provided does not mention any nominations for that film. It only provides details about two other films from the same year and their respective accolades, namely \"The Lancashire Cotton Famine\" and \"Hamlet.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "LaLee's Kin: The Legacy of Cotton: LaLee's Kin: The Legacy of Cotton is a 2001 American documentary film directed by Deborah Dickson, Susan Fr\u00f6mke and Albert Maysles.  It was nominated for Best Documentary Feature at the 74th Academy Awards.",
+      "Lancashire Cotton Famine: The Lancashire Cotton Famine, also known as the Cotton Famine or the Cotton Panic (1861\u201365), was a depression in the textile industry of North West England, brought about by overproduction in a time of contracting world markets.  It coincided with the interruption of baled cotton imports caused by the American Civil War, and speculators buying up new stock, for storage in the shipping warehouses at the ports of entry.",
+      "2nd British Academy Film Awards: The 2nd British Film Awards, known retroactively as the British Academy Film Awards, were given by the British Academy of Film and Television Arts (BAFTA) (known then as the British Film Academy) on 29 May 1949, and honoured the best films of 1948.  Three new awards were handed out for Best Documentary, Special awards for film and the United Nations Award for the \"best Film embodying one or more of the principles of the United Nations Charter\".  British films \"The Fallen Idol\" and \"Hamlet\" received the awards for Best British Film and Best Film from any Source, respectively."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 384,
+    "generation_tokens": 67,
+    "generation_speed": 315.9721567221897,
+    "prompt_eval_speed": 40734.061737562326,
+    "generation_latency_s": 0.4819978000014089,
+    "latency": 1.423746199987363,
+    "total_prompt_tokens": 472,
+    "total_generation_tokens": 159,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.42830389999999996,
+    "stage_rewrite_s": 0.5508841999981087,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13736949999292847,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25332720000005793,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.48205019999295473,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.42375919999904,
+    "unaccounted_latency_s": 0.00012870000500697643,
+    "rewritten_query": "Oscar Nominated Film: LaLee's \"Kin\": The Legacy of Cotton vs. 1970 Rolling Stones Documentary\n\nThis rephrased version maintains the core query while making it more concise and search-friendly. It specifies that Oscar nominations are for \"LaLee's Kin: The Legacy of Cotton\" and clarifies the time period (1970) for both films, enhancing clarity and readability for potential users searching for this information.",
+    "query_was_rewritten": true
+  }
+}

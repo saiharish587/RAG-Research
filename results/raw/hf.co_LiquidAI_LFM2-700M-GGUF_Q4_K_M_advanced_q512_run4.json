@@ -1,0 +1,42 @@
+{
+  "question_id": "Q512",
+  "query": "What was the nationality of the actor playing a Russian hostage taker in \"Hostage for a Day\"?",
+  "ground_truth": "Canadian",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The actor playing a Russian hostage taker in \"Hostage for a Day\" is Russian. The context provided mentions that Mikhail Rostovtsev, who played this role, was a Russian singer and actor.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hostage for a Day: Hostage for a Day is a 1994 comedic film directed by John Candy in his only directorial effort.  Though the film is also billed as \"starring\" Candy, it in fact only features him as a minor character, as a Russian hostage taker.  Produced with a mostly Canadian cast, the film was released one month after Candy's death.",
+      "Prisoners (2013 film): Prisoners is a 2013 American thriller film directed by Denis Villeneuve from a screenplay written by Aaron Guzikowski.  The film has an ensemble cast including Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo and Paul Dano.  It is Villeneuve's first English-language feature film.",
+      "Mikhail Rostovtsev (actor): Mikhail Antonovich Rostovtsev (22 October 1872 \u2013 19 April 1948, Moscow) was a Russian and Soviet bass, opera and operetta singer, stage actor and film actor.  He was made an Honored Artist of the Republic (1927) and an Honored Artist of the RSFSR ( 1936 )."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 334,
+    "generation_tokens": 46,
+    "generation_speed": 225.41726696264934,
+    "prompt_eval_speed": 27982.573726541556,
+    "generation_latency_s": 0.5692995999997947,
+    "latency": 1.6827087999990908,
+    "total_prompt_tokens": 415,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5493081,
+    "stage_rewrite_s": 0.7329595000046538,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17385239999566693,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20638219999091234,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5693600000086008,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6827273000089917,
+    "unaccounted_latency_s": 0.00017460000526625663,
+    "rewritten_query": "Who was the actor's nationality in \"Hostage for a Day\"? \nThe actor playing the Russian hostage taker was likely Russian, given the context and common casting choices for such roles. However, without specific information about the cast, this remains an educated guess rather than a definitive answer.\n\nOptimized Query: Identify the actor's nationality from the film \"Hostage for a Day\".",
+    "query_was_rewritten": true
+  }
+}

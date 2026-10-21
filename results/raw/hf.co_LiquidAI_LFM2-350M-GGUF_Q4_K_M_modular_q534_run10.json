@@ -1,0 +1,49 @@
+{
+  "question_id": "Q534",
+  "query": "With whom did this American singer, songwriter and record producer, who contributed to the single \"Marvin Gaye\" with Julie Frost, co-produced and performed the 2015 song for a movie soundtrack?",
+  "ground_truth": "Wiz Khalifa",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The American singer Marvin Gaye, songwriter Charlie Puth, and music producer Julie Frost contributed to the single \"Marvin Gaye\" with Meghan Trainor. The collaboration took place in 2015 as part of the soundtrack for the film \"W.E.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marvin Gaye: Marvin Gaye ( ; born Marvin Pentz Gay Jr.; April 2, 1939\u00a0\u2013 April 1, 1984) was an American singer, songwriter and record producer.  Gaye helped to shape the sound of Motown in the 1960s, first as an in-house session player and later as a solo artist with a string of hits, including \"Ain't That Peculiar\", \"How Sweet It Is (To Be Loved By You)\" and \"I Heard It Through the Grapevine\", and duet recordings with Mary Wells, Kim Weston, Diana Ross and Tammi Terrell, later earning the titles \"Prince of Motown\" and \"Prince of Soul\".",
+      "Marvin Gaye (song): \"Marvin Gaye\" is the debut single recorded, produced, and co-written by American singer Charlie Puth.  It was released on February 10, 2015 by Atlantic Records as a single from Puth's third EP, \"Some Type of Love\" as well as the lead single from his debut album, \"Nine Track Mind\", it features guest vocals by Meghan Trainor.  Puth co-wrote the song with Julie Frost, Jacob Luttrell and Nick Seeley.",
+      "Julie Frost: Julie Frost is an American songwriter, singer, guitar player and music producer.  She is also the founder of the non-profit \"Songs For Elephants\", with the mission to help mobilize the music and entertainment industry in support of the world's elephants.  She is the second American songwriter to win the Eurovision Song Contest, as co-writer of the song \"Satellite\", which won the contest for Germany.  Frost wrote the hook for Black Eyed Peas' multi-platinum single \"Just Can't Get Enough\", the hook for Pitbull's \"Castle Made of Sand\", and Flo Rida's \"Sweet Spot\".  She also co-wrote Beyonc\u00e9's single \"Countdown\", Ed Sheeran's \"Kiss Me\", Marina and the Diamonds's \"Primadonna\", and Madonna's song \"Masterpiece\", from the soundtrack of her movie \"W.E.\", and won a Golden Globe award for best original song in a soundtrack.  Most recently, Frost wrote the end credit song and lead single for the \"Endless Love\" Soundtrack performed by Tegan and Sara and co-wrote \"Lift Me Up\" featuring Nico and Vinz and Ladysmith Black Mambazo on Guetta's album \"Listen\", and co-wrote Charlie Puth's single \"Marvin Gaye\" with Charlie Puth featuring Meghan Trainor."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 658,
+    "generation_tokens": 56,
+    "generation_speed": 317.4405224164026,
+    "prompt_eval_speed": 49548.19277108434,
+    "generation_latency_s": 0.49756069999421015,
+    "latency": 1.4999693999998271,
+    "total_prompt_tokens": 843,
+    "total_generation_tokens": 128,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7291319,
+    "stage_route_s": 0.32599920000939164,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5477227000083076,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.1283846000005724,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 8.299999171867967e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4976272999920184,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4999911999912001,
+    "unaccounted_latency_s": 0.0001753999968059361,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Who produced and performed \"Marvin Gaye\" with Julie Frost in 2015?",
+      "Who co-produced the single \"Marvin Gaye\" with Julie Frost?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

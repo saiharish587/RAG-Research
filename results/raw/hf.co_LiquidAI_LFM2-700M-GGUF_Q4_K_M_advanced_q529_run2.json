@@ -1,0 +1,42 @@
+{
+  "question_id": "Q529",
+  "query": "Which band was formed first, Wavves or Social Code?",
+  "ground_truth": "Social Code",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Social Code was formed first, as it was formed in 1999 and Wavves was formed in 2008.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Social Code: Social Code (formerly known as Fifth Season) was a Canadian alternative rock group formed in 1999 in St. Albert.",
+      "Wavves: Wavves is an American rock band based in San Diego, California.  Formed in 2008 by singer-songwriter Nathan Williams (born June 12, 1986), the band also features Alex Gates (guitar, backing vocals), Stephen Pope (bass guitar, backing vocals) and Brian Hill (drums and backing vocals).",
+      "Rock 'n' Roll (Social Code album): Rock 'N' Roll is the third album by the Canadian alternative rock band Social Code.  It was released on September 1, 2009, with the first single \"Satisfied\" released on iTunes on July 28, 2009."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 233,
+    "generation_tokens": 26,
+    "generation_speed": 218.88101291397976,
+    "prompt_eval_speed": 22767.246433457105,
+    "generation_latency_s": 0.4307763000106206,
+    "latency": 1.4403387999918777,
+    "total_prompt_tokens": 305,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5165487,
+    "stage_rewrite_s": 0.6238272000045981,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1566309000045294,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22885759999917354,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4308418000000529,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4403562999941641,
+    "unaccounted_latency_s": 0.00019969999266322702,
+    "rewritten_query": "When comparing the formation dates of Wavves and Social Code, we can rephrase the original query as follows:\n\"Determine which band came into existence earlier, Wavves or Social Code.\" This version is more concise while maintaining the essential information.",
+    "query_was_rewritten": true
+  }
+}

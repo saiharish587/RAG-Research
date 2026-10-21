@@ -1,0 +1,49 @@
+{
+  "question_id": "Q332",
+  "query": "The Column of Saint Zanobi  is a monumental marble column located just north of religious building with the status of what?",
+  "ground_truth": "a minor basilica",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Column of Saint Zanobi is a monumental marble column located just north of the Basilica di San Giovanni in Florence, Italy. It is surmounted by a cross above a crown of fire and is situated near the Bapstistery of San Giovanni in Florence.\n\nAs for its status, the Column of Saint Zanobi is described as a \"monumental marble column\" that serves as a memorial to the visit of Russian Emperor Alexander II to the city of Florence in 1875. It was originally part of a structure known as the Column of San Zanobi, which was located just north of the Basilica di San Giovanni in Florence. The column is now part of the Basilica di San Zanobi and stands near the Bapstistery of San Giovanni, where it commemorates the historical event involving Emperor Alexander II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Colonna di San Zanobi, Florence: The Column of Saint Zanobi (it:Colonna di San Zanobi) is a monumental marble column, surmounted by a cross above a crown of fire, located just north of the Bapstistery of San Giovanni in Florence, Italy.",
+      "Alexander II Column in Odessa: Alexander II Column, also known as Alexander's column or Monument to Alexander II of Russia, is a triumphal column located in Shevchenko, Odessa and is commemorated to the visit of Russian Emperor Alexander II the city of Odessa in 1875.",
+      "Column of the Vicariate: The Column of the Vicariate or Colonna della Vicaria was a simple white marble column on a pedestal that formerly stood outside the Castel Capuano along Via dei Tribunali in Naples, Italy.  It was used by the government first as a place for punishment of debtors."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 268,
+    "generation_tokens": 171,
+    "generation_speed": 221.44034643111974,
+    "prompt_eval_speed": 21470.918122095816,
+    "generation_latency_s": 1.1266546999977436,
+    "latency": 2.3066843999840785,
+    "total_prompt_tokens": 415,
+    "total_generation_tokens": 236,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.8253749,
+    "stage_route_s": 0.40214280001237057,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6699504999851342,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.10764110001036897,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.2900002123788e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 1.1267193999956362,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.306702999980189,
+    "unaccounted_latency_s": 0.00017729998216964304,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Column of Saint Zanobi, northern part of St. Mark's Square, religious significance, architectural features",
+      "What is the status of the Column of Saint Zanobi?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

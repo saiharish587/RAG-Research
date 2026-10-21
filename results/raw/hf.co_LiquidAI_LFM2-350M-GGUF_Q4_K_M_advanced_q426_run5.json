@@ -1,0 +1,42 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The question cannot be answered with certainty based on the provided context, as it does not specify which company owns the Las Vegas Festival Grounds and does not mention any hotel directly adjacent to it. The context only provides information about the location of Las Vegas Festival Grounds relative to other properties but does not give details about the ownership structure or neighboring hotels.\n\nTo answer this question accurately, additional information is required:\n1. A clear statement indicating which company owns the Las Vegas Festival Grounds.\n2. Information about any adjacent hotels or their proximity to the venue.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "Las Vegas Sands: Las Vegas Sands Corporation is an American casino and resort operating company based in Paradise, Nevada, United States.  Its resorts feature accommodations, gaming and entertainment, convention and exhibition facilities, restaurants and clubs, as well as an art and science museum in Singapore.",
+      "The Venetian Las Vegas: The Venetian Resort Hotel Casino is a five-diamond luxury hotel and casino resort located on the Las Vegas Strip in Paradise, Nevada, United States, on the site of the old Sands Hotel.  Designed by KlingStubbins, the hotel tower contains 36 stories and rises 475 ft .  The Venetian is owned and operated by Las Vegas Sands.  The Venetian also serves as the seat of the corporate headquarters for its parent company."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 284,
+    "generation_tokens": 112,
+    "generation_speed": 323.8800833991215,
+    "prompt_eval_speed": 29152.124820365425,
+    "generation_latency_s": 0.6373380000004545,
+    "latency": 1.4521857000072487,
+    "total_prompt_tokens": 360,
+    "total_generation_tokens": 173,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.46569780000000005,
+    "stage_rewrite_s": 0.4859911999956239,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17038300000422169,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15824220000649802,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6374303999909898,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4522112999984529,
+    "unaccounted_latency_s": 0.0001655000087339431,
+    "rewritten_query": "Las Vegas Festival Grounds is located near the hotel owned by XYZ Corporation. \n\n\nThis rephrased version directly addresses the user's question while maintaining a concise and clear tone suitable for search engines. It highlights the key information (location) and the company involved (XYZ Corporation).",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q233",
+  "query": "One Raffles Place is one of the tallest skyscrapers in the city of Singapore and tallest in the wolrd outside North America until it was succeeded by a Building in city?",
+  "ground_truth": "Hong Kong",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "One Raffles Place is one of the tallest skyscrapers in the city of Singapore, and it was the tallest in the world outside North America until the construction of Tanjong Pagar Centre in 2016. However, since the question asks about a building succeeding One Raffles Place, we need to identify the next tallest skyscraper in Singapore after One Raffles Place.\n\nCapitaGreen (Market Street Tower), completed in 2014, is one of the tallest skyscrapers in Singapore and surpasses One Raffles Place in height. Therefore, CapitaGreen succeeds One Raffles Place as the tallest building in Singapore outside North America until its construction in 2016.\n\nAnswer: CapitaGreen (Market Street Tower)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "One Raffles Place: One Raffles Place, formerly Overseas Union Bank Centre or OUB Centre is one of the tallest skyscrapers in the city of Singapore.  It was the tallest together with the UOB Plaza and Republic Plaza until the construction of Tanjong Pagar Centre in 2016.  At 280 m , it was also the tallest building in the world outside North America at the time of its completion in 1986, surpassing South Korea's 63 Building completed one year earlier, until it was succeeded by the Bank of China Tower.  The building sits at the city centre of Raffles Place.",
+      "Republic Plaza (Singapore): Republic Plaza (Chinese: \u5171\u548c\u5927\u53a6) is one of the three tallest skyscrapers in Singapore, located at the Southern end of Raffles Place in the Downtown Core, the central business district of Singapore.  It shares the title of \"tallest building\" with the OUB Centre and UOB Plaza One.  Built at 280 metres (919 feet) tall, it was completed in 1995, and incorporates earthquake proof features despite the city being relatively far from earthquake zones.",
+      "CapitaGreen: CapitaGreen, also known as Market Street Tower, is an office tower located in Raffles Place, Singapore.  The building was designed by Toyo Ito and completed in 2014.  With a height of 242 m , it is one of the tallest skyscrapers in Singapore."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 411,
+    "generation_tokens": 164,
+    "generation_speed": 221.62012418835008,
+    "prompt_eval_speed": 7326.7256132344555,
+    "generation_latency_s": 1.1344763999950374,
+    "latency": 2.428561800013995,
+    "total_prompt_tokens": 510,
+    "total_generation_tokens": 264,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5285654,
+    "stage_rewrite_s": 0.8781941000052029,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17154400001163594,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2441164000047138,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.134567800007062,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.4285847999999532,
+    "unaccounted_latency_s": 0.00016359997971449047,
+    "rewritten_query": "Among the tallest buildings in Singapore, one Raffles Place stands out as the world's tallest outside North America until surpassed by another structure. To rephrase this query for better searchability, consider:\n\"Tallest skyscraper in Singapore and world record holder (excluding North American counterpart) before being replaced by a new building\"\nThis version maintains the key information while making it more concise and easier to understand for users searching for skyscrapers in Singapore.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q269",
+  "query": "What is the population according to the 2007 population census of the city in which the National Archives and Library of Ethiopia is located?",
+  "ground_truth": "3,384,569",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "According to the context provided, the population of Addis Ababa, where the National Archives and Library of Ethiopia is located, was approximately 3,384,569 as per the 2007 population census. However, it's important to note that this figure has been reported to be slightly underestimated compared to the originally published figure of 2,738,248.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "National Archives and Library of Ethiopia: The National Archives and Library of Ethiopia, located in Addis Ababa, is the national library and archives of the country.  The library was inaugurated in 1944 by Emperor Haile Selassie and began service with books donated by the emperor.",
+      "Addis Ababa: Addis Ababa (Amharic: \u12a0\u12f2\u1235 \u12a0\u1260\u1263 \"Addis Ab\u00e4ba \" ] , \"new flower\"; Oromo: \"Finfinne\" , ] \"Natural Spring(s)\") or Addis Abeba (the spelling used by the official Ethiopian Mapping Authority), is the capital and largest city of Ethiopia.  It has a population of 3,384,569 according to the 2007 population census, with annual growth rate of 3.8%.  This number has been increased from the originally published 2,738,248 figure and appears to be still largely underestimated.",
+      "Number of urban areas by country: Demographia defines an urban area (urbanized area agglomeration or urban centre) as a continuously built up land mass of urban development that is within a labor market (i.e. metropolitan area or metropolitan region), without regard for administrative boundaries (i.e. municipality, city or commune).  Except in Australia, the authorities use a minimum urban density definition of 400 persons per square kilometer (or the nearly identical 1,000 per square mile in the United States).  Demographia uses maps, satellite photographs to estimate continuous urbanization.  Demographia also uses small area population data, where available, to match population estimates to urban land area.  National census authority data are presented in Australia, Canada, France, Norway, Sweden, the United Kingdom and the United States.  Census of India urban agglomerations are not used in some cases because the geographical size of constituent units (municipalities) often includes large rural (non-urban) areas."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 487,
+    "generation_tokens": 75,
+    "generation_speed": 309.4135993465185,
+    "prompt_eval_speed": 46266.38799163975,
+    "generation_latency_s": 0.5536631000140915,
+    "latency": 1.5225074000045424,
+    "total_prompt_tokens": 573,
+    "total_generation_tokens": 144,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5298712,
+    "stage_rewrite_s": 0.57265620000544,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13450970000121742,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.26150439999764785,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.553725999998278,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5225236999976914,
+    "unaccounted_latency_s": 0.00012849998893216252,
+    "rewritten_query": "Population Estimate for 2007 Census - City, Ethiopia (National Archives & Library)\n\nThis rephrased version maintains the core query while making it more concise and clear. It specifies \"population estimate\" to better convey the intended meaning and uses \"City\" instead of just \"city\" to be more precise in this context.",
+    "query_was_rewritten": true
+  }
+}

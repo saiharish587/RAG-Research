@@ -1,0 +1,42 @@
+{
+  "question_id": "Q40",
+  "query": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+  "ground_truth": "New York City",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The context provided does not specify the exact city where Ralph Hefferline was a psychology professor. It only mentions his affiliation with the University of Kansas, which is described as being in Lawrence, Indiana. The details about other universities mentioned are related to their locations within or near the city of Kansas but do not provide enough specific information to determine the exact city where Hefferline held this position.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ralph Hefferline: Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana \u2013 16 March 1974) was a psychology professor at Columbia University.",
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities.",
+      "University of California, Berkeley: The University of California, Berkeley (also referred to as UC Berkeley, Berkeley, and Cal ) is a public research university located in Berkeley, California.  Founded in 1868, Berkeley is the oldest of the ten research universities affiliated with the University of California system (although UCSF was founded in 1864 and predates the establishment of the UC system) and is ranked as one of the world's leading research universities and the top public university in the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 364,
+    "generation_tokens": 79,
+    "generation_speed": 325.1376690510096,
+    "prompt_eval_speed": 35155.49546069152,
+    "generation_latency_s": 0.49338289999286644,
+    "latency": 1.2624779999896418,
+    "total_prompt_tokens": 441,
+    "total_generation_tokens": 134,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4176589,
+    "stage_rewrite_s": 0.45064140000613406,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12439160000940319,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19389730000693817,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4934339000028558,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2624907999997959,
+    "unaccounted_latency_s": 0.00012709996371995658,
+    "rewritten_query": "Ralph Hefferline, Psychology Professor - University City Location\n\nThis rephrased version maintains the core information while making it more concise and clear for search engines. It specifies \"University City\" to provide context about where Ralph Hefferline's institution is located.",
+    "query_was_rewritten": true
+  }
+}

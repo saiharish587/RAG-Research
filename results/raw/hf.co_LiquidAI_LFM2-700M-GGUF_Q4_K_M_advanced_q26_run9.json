@@ -1,0 +1,42 @@
+{
+  "question_id": "Q26",
+  "query": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+  "ground_truth": "Barton Lee Hazlewood",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The writer of \"These Boots Are Made for Walkin'\" is Lee Hazlewood. Nancy Sinatra, who recorded this song, passed away in 2007.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "These Boots Are Made for Walkin': \"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra.  It charted January 22, 1966 and reached No. 1 in the United States \"Billboard\" Hot 100 and in the UK Singles Chart.",
+      "Nancy Sinatra: Nancy Sandra Sinatra (born June 8, 1940) is an American singer and actress.  She is the elder daughter of Frank Sinatra and Nancy (Barbato) Sinatra, and is widely known for her 1966 signature hit \"These Boots Are Made for Walkin'\".",
+      "The Twenty-fifth Anniversary Anthology: The Twenty-fifth Anniversary Anthology is a compilation album released by The Fixx in 2006 in celebration of their 25th anniversary.  It contains singles, album and live tracks from their previous albums, together with a cover version of Nancy Sinatra's \"These Boots Are Made for Walkin'\" that was originally recorded for the multi-artist album \"When Pigs Fly: Songs You Thought You'd Never Hear\".  The eight page booklet contains an essay by Josh Norek."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 324,
+    "generation_tokens": 36,
+    "generation_speed": 210.99148414926475,
+    "prompt_eval_speed": 29210.241615578798,
+    "generation_latency_s": 0.5107286999991629,
+    "latency": 1.3103383000125177,
+    "total_prompt_tokens": 405,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5397965,
+    "stage_rewrite_s": 0.48584809999738354,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15479590000177268,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15874059998895973,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5108271999924909,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.310356000001775,
+    "unaccounted_latency_s": 0.00014490002649836242,
+    "rewritten_query": "Who wrote \"These Boots Are Made for Walkin'\" and passed away in 2007?",
+    "query_was_rewritten": true
+  }
+}

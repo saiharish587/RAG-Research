@@ -1,0 +1,42 @@
+{
+  "question_id": "Q292",
+  "query": "What is the population of the town at the intersection of Interstate Highways 77 and  the longest Interstate highway within the borders of Virginia?",
+  "ground_truth": "8,211 at the 2010 census",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The population of the town at the intersection of Interstate Highways 77 and I-81, which is Wytheville, Virginia, is not explicitly stated in the provided context. However, we can infer some information from the given details.\n\nWytheville's population was recorded as 8,211 at the 2010 census. The intersection mentioned is between Interstate Highways 77 and I-81, which is a significant location for travelers due to its strategic importance during the Civil War. Given that Wytheville is a town along this major highway, it likely has a higher population than nearby smaller towns or rural areas.\n\nTo provide a more accurate answer, we would need additional data on the surrounding area's population figures. However, based strictly on the provided context, the population of Wytheville at this specific intersection is not specified.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Interstate 81 in Virginia: Interstate 81 (I-81) is an 855 mi highway.  In the U.S. state of Virginia, I-81 runs for 324.92 mi , making the portion in Virginia longer than any other state's portion.  It is also the longest Interstate highway within the borders of Virginia.  It stretches from the Tennessee state line near Bristol to the West Virginia state line near Winchester.",
+      "Wytheville, Virginia: Wytheville ( ) is a town in, and the county seat of, Wythe County, Virginia, United States.  It is named after George Wythe, a signer of the United States Declaration of Independence, and mentor to Thomas Jefferson.  Wytheville's population was 8,211 at the 2010 census.  Located at the intersection of Interstate Highways 77 and 81, the town has long been a crossroads for travelers.  During the American Civil War, Wytheville had a strategic importance, and was attacked in 1863 (Toland's Raid) and 1865 (Stoneman's 1865 Raid).  The town is also the birthplace of Edith Bolling Wilson, wife of President Woodrow Wilson.",
+      "Interstate 85 in Virginia: Interstate 85 (I-85) is a part of the Interstate Highway System that runs from Montgomery, Alabama to Petersburg, Virginia.  In Virginia, the Interstate Highway runs 68.64 mi from the North Carolina state line near Bracey north to I-95 in Petersburg.  I-85 passes through the eastern part of Southside Virginia, where it parallels U.S. Route 1 (US 1) from Petersburg, where the highway runs concurrently with US 460, to south of South Hill, where the highway intersects Southside's major east\u2013west highway, US 58.  The Interstate Highway is the primary connection between the Richmond\u2013Petersburg metropolitan area and the Research Triangle and other major metropolitan areas of North Carolina.  Like all mainline Interstate Highways, I-85 is a part of the National Highway System for its entire length in Virginia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 527,
+    "generation_tokens": 173,
+    "generation_speed": 222.35160600837736,
+    "prompt_eval_speed": 20558.633065459937,
+    "generation_latency_s": 1.146518699999433,
+    "latency": 1.9923640000051819,
+    "total_prompt_tokens": 614,
+    "total_generation_tokens": 197,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5159028,
+    "stage_rewrite_s": 0.439364799996838,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14599879999877885,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2602305000036722,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1466125000006286,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9923905000032391,
+    "unaccounted_latency_s": 0.00018509999790694565,
+    "rewritten_query": "What's the population of a town near Interstate 77, which is part of the longest interstate in Virginia?",
+    "query_was_rewritten": true
+  }
+}

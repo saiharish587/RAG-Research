@@ -1,0 +1,42 @@
+{
+  "question_id": "Q237",
+  "query": "Henry Hall is known for fighting in the Revolutionary War, and for being the first to successfully cultivate this food found in what type of bogs?",
+  "ground_truth": "acidic",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Henry Hall is known for fighting in the American Revolution and was the first to successfully cultivate cranberries. The context specifies that he cultivated cranberries in \"minerotrophic peatlands,\" which are described as a kind of mire, characterized by distinct water chemistry (pH neutral or alkaline with high mineral levels but few other nutrients) and dominated grasses and sedges, including brown mosses like Scorpidium or Drepanocladus.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry Hall (American revolution): Captain Henry Hall was an American from Dennis, Massachusetts who fought in the American Revolutionary War, who later was the first to successfully cultivate cranberries.",
+      "Fen: A fen is one of the main types of wetland, the others being grassy marshes, forested swamps, and peaty bogs. Along with bogs, fens are a kind of mire.  Fens are minerotrophic peatlands, usually fed by mineral-rich surface water or groundwater.  They are characterised by their distinct water chemistry, which is pH neutral or alkaline, with relatively high dissolved mineral levels but few other plant nutrients.  They are usually dominated by grasses and sedges, and typically have brown mosses in general including \"Scorpidium\" or \"Drepanocladus\".  Fens frequently have a high diversity of other plant species including carnivorous plants such as \"Pinguicula\".  They may also occur along large lakes and rivers where seasonal changes in water level maintain wet soils with few woody plants.  The distribution of individual species of fen plants is often closely connected to water regimes and nutrient concentrations.",
+      "Henry V (play): Henry V is a history play by William Shakespeare, believed to have been written around 1599.  It tells the story of King Henry V of England, focusing on events immediately before and after the Battle of Agincourt (1415) during the Hundred Years' War.  In the First Quarto text, it was entitled \"The Cronicle History of Henry the fift\", which became \"The Life of Henry the Fifth\" in the First Folio text."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 418,
+    "generation_tokens": 91,
+    "generation_speed": 322.166089009888,
+    "prompt_eval_speed": 36401.63720282156,
+    "generation_latency_s": 0.5579403000010643,
+    "latency": 1.6716917000012472,
+    "total_prompt_tokens": 506,
+    "total_generation_tokens": 217,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4096796,
+    "stage_rewrite_s": 0.6449577000021236,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1275683999992907,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.34105869999621063,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5579962999909185,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6717048999998951,
+    "unaccounted_latency_s": 0.00012450001668184996,
+    "rewritten_query": "Henry Hall's Revolutionary War exploits are intertwined with his pioneering cultivation of boglanded herbs, specifically focusing on the unique environment of these peatlands. \n\nHere's a breakdown of the changes:\n\n* **Focus shifted:** From \"known for fighting\" to \"pioneering cultivation,\" emphasizing the historical significance.\n* **Specific detail added:** \"revolutionary war exploits\" clarifies Henry Hall's role beyond just fighting.\n* **Boglanded herbs emphasized:**  \"bogs\" replaced \"food found in what type of bogs\" for a more concise and descriptive phrasing.",
+    "query_was_rewritten": true
+  }
+}

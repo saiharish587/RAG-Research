@@ -1,0 +1,42 @@
+{
+  "question_id": "Q356",
+  "query": "Are Phlebodium and Pieris both species of ferns?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, they are not both species of ferns. The text specifies that Phlebodium is a genus of two to four species of ferns, while Pieris belongs to the family Pieridae (butterfly) but is actually a genus of butterflies.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pieris (plant): Pieris ( or ) is a genus of seven species of shrubs in the family Ericaceae, native to mountain regions of eastern and southern Asia, eastern North America and Cuba.  Known commonly in North America as andromedas or fetterbushes, they are broad-leaved evergreen shrubs growing to 1 - tall and 3 - wide.  The leaves are spirally arranged, often appearing to be in whorls at the end of each shoot with bare stretches of shoot below; they are lanceolate-ovate, 2 - long and 1.0 - broad, leathery textured, and with an entire or serrated margin.  The young leaves in spring are typically brightly coloured.  The flowers are bell-shaped, 5 - long, white or pink, and arranged in racemes 5 - long.  The fruit is a woody capsule which splits into five sections to release the numerous small seeds.",
+      "Phlebodium: Phlebodium is a small genus of two to four species of ferns, native to tropical and subtropical regions of the Americas.  The genus is closely related to \"Polypodium\", and the species were formerly included in that genus.",
+      "Pieris (butterfly): Pieris, the whites or garden whites, is a widespread now almost cosmopolitan genus of butterflies of the family Pieridae.  The highest species diversity is in the Palearctic.  Many species of this genus have caterpillars which feed on cabbage and other members of the Brassicaceae.  The chemical basis of this association with a certain plant group has been studied for over 100 years, and is now known to occur via a number of biochemical adaptations to chemicals called glucosinolates in these plants.  In contrast to most other insects, \"Pieris\" caterpillars are able to detoxify these chemicals, and have become so specialised that they will not eat any food without glucosinolates.  The \"Pieris\" females, in turn, check for the presence of glucosinolates before laying eggs on a plant.  The crop-damaging species have spread from Eurasia to most of the rest of the world (most recently to South America and Africa) and are considered pest insects almost everywhere.  There are species of \"Pieris\" that are not pests, such as the North American species \"Pieris oleracea\" and \"Pieris virginiensis\".  These butterflies feed successfully only on specific native vegetation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 581,
+    "generation_tokens": 53,
+    "generation_speed": 308.93162119154346,
+    "prompt_eval_speed": 57411.06719367589,
+    "generation_latency_s": 0.4256517000030726,
+    "latency": 1.1671632999932626,
+    "total_prompt_tokens": 653,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.43237210000000004,
+    "stage_rewrite_s": 0.39945369999622926,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.10653009999077767,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23535040000570007,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.42571650000172667,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1671805999940261,
+    "unaccounted_latency_s": 0.00013050000416114926,
+    "rewritten_query": "Phlebodium and Pieris are both classified as fern species, but they belong to different genera (Phlebodium and Pieris).",
+    "query_was_rewritten": true
+  }
+}

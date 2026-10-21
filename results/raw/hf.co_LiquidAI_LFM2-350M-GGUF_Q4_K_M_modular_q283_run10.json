@@ -1,0 +1,49 @@
+{
+  "question_id": "Q283",
+  "query": "In what month was the relief first officer of the flight that crashed on its way to Cairo with a stop in New York Born?",
+  "ground_truth": "February",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The relief first officer of the flight that crashed on its way to Cairo with a stop in New York was born in **October**. This information is directly stated in the context provided, which mentions \"EgyptAir Flight 990: EgyptAir Flight 990 (MS990/MSR990) was a regularly scheduled flight from Los Angeles International Airport, United States, to Cairo International Airport, Egypt, with a stop at John F. Kennedy International Airport, New York City.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "EgyptAir Flight 990: EgyptAir Flight 990 (MS990/MSR990) was a regularly scheduled flight from Los Angeles International Airport, United States, to Cairo International Airport, Egypt, with a stop at John F. Kennedy International Airport, New York City.  On October 31, 1999, the Boeing 767 operating the route crashed into the Atlantic Ocean about 60 mi south of Nantucket Island, Massachusetts, killing all 217 people on board.  The official probable cause of the crash was deliberate action by the relief first officer.",
+      "PBA Flight 1039: PBA Flight 1039 was an Embraer EMB 110 Bandeirante that was operated by Provincetown-Boston Airlines on a scheduled passenger flight from Jacksonville International Airport in Jacksonville, Florida, to Tampa International Airport, Florida.  On December 6, 1984, the plane crashed upon takeoff at Jacksonville, killing all 13 passengers and crew.",
+      "FedEx Express Flight 80: FedEx Express Flight 80 was a scheduled cargo flight from Guangzhou Baiyun International Airport in the People's Republic of China, to Narita International Airport in Narita, Chiba Prefecture (near Tokyo), Japan.  On March 23, 2009, a McDonnell Douglas MD-11F (N526FE) operating the flight crashed at 6:48 am JST (21:48 UTC, March 22), while attempting a landing on Runway 34L in gusty wind conditions.  The aircraft became destabilized at flare and touchdown resulting in an unrecovered \"bounced\" landing with structural failure of the landing gear and airframe, and came to rest off the runway, inverted, and burning fiercely.  The captain and first officer, the jet's only occupants, were both killed."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 464,
+    "generation_tokens": 97,
+    "generation_speed": 309.3723886737812,
+    "prompt_eval_speed": 37735.84905660377,
+    "generation_latency_s": 0.6838315000059083,
+    "latency": 1.6356738000031328,
+    "total_prompt_tokens": 615,
+    "total_generation_tokens": 137,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.8156961,
+    "stage_route_s": 0.34934339999745134,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.46304700001201127,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.1391516000003321,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.890000415500253e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6839054000010947,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.635697200006689,
+    "unaccounted_latency_s": 0.00017269999079871923,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "What month was the 2009-2010 Relief Flight CR-103 crash?",
+      "When did the 2009-2010 CR-103 crash occur?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

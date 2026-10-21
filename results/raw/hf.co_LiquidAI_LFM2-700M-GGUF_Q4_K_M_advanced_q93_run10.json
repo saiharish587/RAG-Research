@@ -1,0 +1,42 @@
+{
+  "question_id": "Q93",
+  "query": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+  "ground_truth": "Las Vegas Strip in Paradise",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The hotel and casino where Bill Cosby's third comedy album, \"Why Is There Air?\", was recorded is the Flamingo Hotel in Las Vegas, Nevada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Why Is There Air?: Why Is There Air?  (1965) is Bill Cosby's third album.  It was recorded at the Flamingo Hotel in Las Vegas, Nevada.  It won the 1966 Grammy Award for Best Comedy Album.",
+      "It's True! It's True!: It's True!  It's True!  (1969) is the ninth comedy album by Bill Cosby.  It was his last for Warner Bros.  Records.  It was recorded live at Harrah's, Lake Tahoe, Nevada.  Due to a musician's strike, Cosby got extra stage time at Harrah's, much of which was captured on this album.  It features Cosby performing stand-up comedy on topics including women, helicopters, ants, burlesque, gambling, the toxic drug Spanish fly, and pontificating about sovereign states outside the United States.  The album was released in 1969, and reached the 21st spot on the R&B Albums chart, and was 37th on The Billboard 200 the same year.  It was subsequently released in compact disc format in 2005, again in 2008, and in digital format in 2013.",
+      "For Adults Only: For Adults Only (1971) is the 13th comedy album by Bill Cosby.  It was recorded at the Westgate Las Vegas Resort & Casino, then known as the International Hotel.  The title \"For Adults Only\" was also used for a 1959 Pearl Bailey LP (Roulette R-25016)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 396,
+    "generation_tokens": 35,
+    "generation_speed": 219.75124159451502,
+    "prompt_eval_speed": 31516.116195781935,
+    "generation_latency_s": 0.5208031000074698,
+    "latency": 1.6175490000023274,
+    "total_prompt_tokens": 473,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5795702,
+    "stage_rewrite_s": 0.7119345999963116,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.18576399999437854,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19881139999779407,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5208854999946197,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6175724000058835,
+    "unaccounted_latency_s": 0.00017790001584216952,
+    "rewritten_query": "Where is the hotel where Bill Cosby's third album was recorded, situated near the location of the hotel where the music video for \"The House That Built Me\" was filmed? \n\nHowever, a more concise and direct version would be:\nHotel location of Bill Cosby's third album recording site",
+    "query_was_rewritten": true
+  }
+}

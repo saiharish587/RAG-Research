@@ -1,0 +1,42 @@
+{
+  "question_id": "Q150",
+  "query": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+  "ground_truth": "\"We'll Burn That Bridge\"",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Based on the provided context, the song behind the third single on the album \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts is \"Don't Worry 'bout Me Baby\". This information can be deduced from the statement that mentions \"It Ain't Easy\" (1982), her seventh studio record, reached number fifteen on the Top Country Albums list and spawned three number-one hits: \"It Ain't Easy Bein' Easy\", \"He's a Heartache (Looking for a Place to Happen)\", and \"Tell Me a Lie\". Since \"Don't Worry 'bout Me Baby\" was released as the third single from this album, it logically follows that it would be the second single.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Lot About Livin' (And a Little 'bout Love): A Lot About Livin' (And a Little 'bout Love) is the third studio album by American country music artist Alan Jackson.  It was released on October 6, 1992, and produced the singles \"Chattahoochee\", \"She's Got the Rhythm (And I Got the Blues)\", \"Tonight I Climbed the Wall\", \"(Who Says) You Can't Have It All\" and \"Mercury Blues\".  \"Chattahoochee\" and \"She's Got the Rhythm\" were both Number One hits on the Hot Country Songs charts, while the other three songs all reached Top Five.",
+      "Chattahoochee (song): \"Chattahoochee\" is a song co-written and recorded by American country music artist Alan Jackson.  It was released in May 1993 as the third single from his album \"A Lot About Livin' (And a Little 'bout Love)\".  The album is named for a line in the song itself.  Jackson wrote the song with Jim McBride.",
+      "country chart with its second single \"Don't Worry 'bout Me Baby\" (1982).  This would start a series of number-one country singles during this period. \" It Ain't Easy\" (1982), her seventh studio record, reached number fifteen on the Top Country Albums list and spawned three number-one hits: \"It Ain't Easy Bein' Easy\", \"He's a Heartache (Looking for a Place to Happen)\", and \"Tell Me a Lie\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 162,
+    "generation_speed": 219.43488743802996,
+    "prompt_eval_speed": 34552.02892728004,
+    "generation_latency_s": 1.1363890999928117,
+    "latency": 2.0908311999955913,
+    "total_prompt_tokens": 524,
+    "total_generation_tokens": 217,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5711439,
+    "stage_rewrite_s": 0.6083552999916719,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.175384899994242,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17047509999247268,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1364689000038197,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.090849900007015,
+    "unaccounted_latency_s": 0.00016650001634843647,
+    "rewritten_query": "What was the third single from \"A Lot About Livin' (And a Little 'bout Love)\" that stayed on the country charts for two weeks? \n\n\nThis rephrased query is more concise and directly asks about the specific song in question.",
+    "query_was_rewritten": true
+  }
+}

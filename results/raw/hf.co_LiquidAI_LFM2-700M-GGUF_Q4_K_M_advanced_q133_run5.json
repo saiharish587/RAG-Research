@@ -1,0 +1,42 @@
+{
+  "question_id": "Q133",
+  "query": "Alice David is the voice of Lara Croft in a video game developed by which company ?",
+  "ground_truth": "Crystal Dynamics",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Alice David voices Lara Croft in the video game \"Tomb Raider,\" which was developed by Crystal Dynamics and published by Square Enix for Microsoft Windows, PlayStation 4, and Xbox One.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alice David: Alice David (born 22 March 1987) is a French actress, known for the television series \"Bref\" (2011) and the film \"Babysitting\" (2014).  She is the voice of the French dub of Lara Croft in the video game \"Tomb Raider\".",
+      "Tomb Raider: Tomb Raider, also known as Lara Croft: Tomb Raider between 2001 and 2007, is a media franchise that originated with an action-adventure video game series created by British gaming company Core Design.  Formerly owned by Eidos Interactive, then by Square Enix after their acquisition of Eidos in 2009, the franchise focuses on a fictional English archaeologist Lara Croft, who travels around the world searching for lost artifacts and infiltrating dangerous tombs and ruins.  The gameplay generally focuses around action-adventure exploration of environments, solving puzzles, navigating hostile environments filled with traps, and fighting numerous enemies.  Additional media has grown up around the theme in the form of film adaptations, comics and novels.",
+      "Lara Croft and the Temple of Osiris: Lara Croft and the Temple of Osiris is an action-adventure game developed by Crystal Dynamics and published by Square Enix for Microsoft Windows, PlayStation 4 and Xbox One.  It is the sequel to the 2010 video game \"Lara Croft and the Guardian of Light\", and the second instalment in \"Lara Croft\" spin-off series of the \"Tomb Raider\" franchise.  The video game was announced at E3 2014 on 9 June.  \"Temple of Osiris\" stars \"Tomb Raider\" mainstay protagonist Lara Croft, voiced by English actress Keeley Hawes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 450,
+    "generation_tokens": 43,
+    "generation_speed": 217.5122666801558,
+    "prompt_eval_speed": 34921.620363184855,
+    "generation_latency_s": 0.5688502999983029,
+    "latency": 1.6292868999880739,
+    "total_prompt_tokens": 528,
+    "total_generation_tokens": 109,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5530265,
+    "stage_rewrite_s": 0.6623825999995461,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15911929999128915,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23867550000431947,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5689669999992475,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6293176999897696,
+    "unaccounted_latency_s": 0.00017460000526625663,
+    "rewritten_query": "Who voiced Lara Croft in the game \"Alice David\" and was created by which studio? \n\nThe optimized query simplifies the original while maintaining its core information. It asks for the voice actor, the game title, and the developer's name, making it more direct and easier to understand at a glance.",
+    "query_was_rewritten": true
+  }
+}

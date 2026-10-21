@@ -1,0 +1,33 @@
+{
+  "question_id": "Q158",
+  "query": "What retailer in ABQ Uptown is headquarted in Poole, Dorset, United Kingdom?",
+  "ground_truth": "Lush Ltd.",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Lush (company) is the retailer headquartered in Poole, Dorset, United Kingdom. While the provided context does not explicitly state that Lush's headquarters are in Poole, it gives us information about Lush's origins and business model, which can help infer this detail.\n\nFrom the context:\n- Lush Ltd. was founded by Mark Constantine and Liz Weir in a hair and beauty salon in Poole, England.\n- They decided to start their own business selling natural hair and beauty products after meeting in that same salon.\n\nGiven that Lush started its operations in Poole, it is reasonable to conclude that the retailer headquartered in Poole, Dorset, United Kingdom, is likely Lush itself. However, without explicit confirmation from the provided context, we cannot be absolutely certain of this conclusion. \n\nTherefore, based on the information given and common knowledge about Lush's origins, the most accurate answer would be:\n**Lush (company) is headquartered in Poole, Dorset, United Kingdom.**",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lush (company): Lush Ltd. is a cosmetics retailer headquartered in Poole, Dorset, United Kingdom.  The company was founded by Mark Constantine, a trichologist and Liz Weir, a beauty therapist.  They met in a hair and beauty salon in Poole, England.  A few years later, they decided to branch out and start their own business selling natural hair and beauty products.",
+      "ABQ Uptown: ABQ Uptown is an outdoor luxury shopping mall owned by Simon Property Group in Albuquerque, New Mexico.  It is one of four malls located in the Albuquerque area, and houses 46 different stores.  Its anchor tenants include J.Crew, The North Face, and Lush.  The outdoor environment of this mall includes music, lights and seasonal decorations."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 249,
+    "generation_tokens": 215,
+    "generation_speed": 228.24603011149023,
+    "prompt_eval_speed": 6474.764022154614,
+    "generation_latency_s": 1.182801599992672,
+    "latency": 1.182946000015363,
+    "total_prompt_tokens": 249,
+    "total_generation_tokens": 215,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1877609,
+    "stage_generate_s": 1.1828509000188205,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1829556000011507,
+    "unaccounted_latency_s": 0.00010539998766034842
+  }
+}

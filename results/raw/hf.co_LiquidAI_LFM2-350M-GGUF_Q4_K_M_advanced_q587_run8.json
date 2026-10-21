@@ -1,0 +1,42 @@
+{
+  "question_id": "Q587",
+  "query": "Fantasy Records is know for recordings of comedian Lenny Bruce, Creedence Clearwater Revival, and what American jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip?",
+  "ground_truth": "Vincent Anthony Guaraldi",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The fantasy record label Fantasy Records is known for its recordings of Vince Guaraldi, a jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fantasy Records: Fantasy Records is an American record company and label founded by brothers Max and Sol Weiss in 1949.  The early years of the company were dedicated to issuing recordings by jazz pianist Dave Brubeck, who was also one of its investors, but the label is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+      "Creedence Clearwater Revival: Creedence Clearwater Revival, often informally abbreviated to Creedence or CCR, was an American rock band active in the late 1960s and early 1970s.",
+      "Creedence Clearwater Revival (album): Creedence Clearwater Revival is the debut studio album by the American rock band Creedence Clearwater Revival, released in 1968."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 271,
+    "generation_tokens": 41,
+    "generation_speed": 317.42591060532277,
+    "prompt_eval_speed": 19469.789496371865,
+    "generation_latency_s": 0.42259020000346936,
+    "latency": 1.1787386999931186,
+    "total_prompt_tokens": 374,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4567162,
+    "stage_rewrite_s": 0.4295758999942336,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1591033000004245,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16725829998904373,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.422675399997388,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1787629000027664,
+    "unaccounted_latency_s": 0.00015100001473911107,
+    "rewritten_query": "Fantasy Records specializes in comedy albums featuring Lenny Bruce, Creedence Clearwater Revival, and jazz pianist John Coltrane's soundtracks for Peanut Pictures animated series.",
+    "query_was_rewritten": true
+  }
+}

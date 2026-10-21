@@ -1,0 +1,49 @@
+{
+  "question_id": "Q46",
+  "query": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+  "ground_truth": "Yellowcraig",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The southern part of the Firth of Forth coastline borders on the village of Gullane. \n\nHere's a breakdown based on the provided context:\n\n* **Dirleton Castle:** Located in Dirleton, East Lothian.\n* **Coastal Area:** The Firth of Forth coastline extends approximately two miles east of North Berwick (the village).\n* **Gullane Parish:** This parish was formed by an Act of Parliament in 1612 due to the decaying condition of \"Golyn\" (anciently spelled as \"Duighreach\"), suggesting it borders Gullane.\n\nTherefore, the Firth of Forth coastline is the southern part of the area bordering Dirleton Castle and Gullane parish.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dirleton Castle: Dirleton Castle is a medieval fortress in the village of Dirleton, East Lothian, Scotland.  It lies around 2 mi west of North Berwick, and around 19 mi east of Edinburgh.  The oldest parts of the castle date to the 13th century, and it was abandoned by the end of the 17th century.",
+      "Dirleton: Dirleton (Scottish Gaelic 'Duighreach') is a village and parish in East Lothian, Scotland approximately 20 mi east of Edinburgh on the A198.  It contains 7500 acre .  Dirleton lies between North Berwick (east), Gullane (west), Fenton Barns (south) and the Yellowcraigs nature reserve, Archerfield Estate and the Firth of Forth (north).  Gullane parish was joined to Dirleton parish in 1612 by an Act of Parliament because \"Golyn (as it was anciently spelt) is ane decaying toun, and Dirleton is ane thriven place.\"",
+      "Dirleton Kirk: Dirleton Kirk is situated to the north of the village green in Dirleton, in East Lothian, Scotland.  Dirleton village lies on the south shore of the Firth of Forth 21 miles east of Edinburgh and two miles west of North Berwick on the A198 road.  The church is at grid reference [ NT512842] ."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 154,
+    "generation_speed": 320.9510153723032,
+    "prompt_eval_speed": 42415.28314760064,
+    "generation_latency_s": 0.808039399998961,
+    "latency": 1.7035294999950565,
+    "total_prompt_tokens": 516,
+    "total_generation_tokens": 210,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7357326,
+    "stage_route_s": 0.324388099994394,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4471284999890486,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.12360679999983404,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 8.569999772589654e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.8081699000031222,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7035578999930294,
+    "unaccounted_latency_s": 0.00018050000653602183,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Which Scottish coastal area is bordered by a medieval fortress in Dirleton, East Lothian?",
+      "What is the name of the coastal area that includes a medieval fortress in Dirleton, East Lothian, Scotland's southernmost stronghold?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

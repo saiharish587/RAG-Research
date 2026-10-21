@@ -1,0 +1,42 @@
+{
+  "question_id": "Q529",
+  "query": "Which band was formed first, Wavves or Social Code?",
+  "ground_truth": "Social Code",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Based on the provided context, we can deduce that Social Code was formed first. The context states that Wavves is described as an American rock band based in San Diego, California, and it was formed in 1999. Since Social Code's name matches this information, it is clear that Social Code was formed before Wavves.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wavves: Wavves is an American rock band based in San Diego, California.  Formed in 2008 by singer-songwriter Nathan Williams (born June 12, 1986), the band also features Alex Gates (guitar, backing vocals), Stephen Pope (bass guitar, backing vocals) and Brian Hill (drums and backing vocals).",
+      "Social Code: Social Code (formerly known as Fifth Season) was a Canadian alternative rock group formed in 1999 in St. Albert.",
+      "Rock 'n' Roll (Social Code album): Rock 'N' Roll is the third album by the Canadian alternative rock band Social Code.  It was released on September 1, 2009, with the first single \"Satisfied\" released on iTunes on July 28, 2009."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 233,
+    "generation_tokens": 69,
+    "generation_speed": 314.59444672411433,
+    "prompt_eval_speed": 28491.073612130105,
+    "generation_latency_s": 0.5188508999999613,
+    "latency": 1.4310435999941546,
+    "total_prompt_tokens": 305,
+    "total_generation_tokens": 140,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4535469,
+    "stage_rewrite_s": 0.48995230000582524,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1520372000086354,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2699748000013642,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5189453999919351,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4310668999969494,
+    "unaccounted_latency_s": 0.00015819998225197196,
+    "rewritten_query": "To optimize for search clarity and conciseness, consider this rephrased version:\n\n**\"Wavves vs. Social Code: Who's First?\"**\n\nThis query directly addresses the user's inquiry by comparing the two bands in a straightforward manner, eliminating unnecessary words while maintaining the core concept of determining which band was formed earlier.",
+    "query_was_rewritten": true
+  }
+}

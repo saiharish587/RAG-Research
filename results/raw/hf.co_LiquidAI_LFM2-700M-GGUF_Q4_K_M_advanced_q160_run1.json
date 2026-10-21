@@ -1,0 +1,42 @@
+{
+  "question_id": "Q160",
+  "query": "The song \"Chim Chim Cher-ee\" can be heard  in the \"Mary Poppins\" scene of a Disney ride that debuted in what year?",
+  "ground_truth": "1989",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The song \"Chim Chim Cher-ee\" can be heard in the \"Mary Poppins\" scene of a Disney ride that debuted in 1964. This is based on the information provided about the musical and its scenes at various locations, including Disney's Hollywood Studios and Disneyland.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chim Chim Cher-ee: \"Chim Chim Cher-ee\" is a song from \"Mary Poppins\", the 1964 musical motion picture.  It was originally sung by Dick Van Dyke and Julie Andrews, and also is featured in the Cameron Mackintosh/Disney \"Mary Poppins\" musical.  The song can be heard in the \"Mary Poppins\" scene of The Great Movie Ride at Disney's Hollywood Studios and during the \"Mary Poppins\" segment of \"\" at Disneyland.",
+      "Mary Poppins (musical): Mary Poppins is a musical with music and lyrics by the Sherman Brothers, with additional music and lyrics by George Stiles and Anthony Drewe, and a script by Julian Fellowes.  The musical is based on the similarly titled Mary Poppins children's books by P. L. Travers and the 1964 Disney film, and is a fusion of various elements from the two.",
+      "My Kind of Town: \"My Kind of Town\" or \"My Kind of Town (Chicago Is)\" is a popular song composed by Jimmy Van Heusen, with lyrics by Sammy Cahn.  It was originally part of the musical score for \"Robin and the 7 Hoods\", a 1964 musical film starring several members of the Rat Pack.  It was nominated for the 1964 Academy Award for Best Original Song but lost to \"Chim Chim Cher-ee\" from \"Mary Poppins\".  Although the song predated the Grammy Award Best Original Song for a Motion Picture category, the entire score was nominated for the 1964 Grammy Award in the category Best Original Score Written for A Motion Picture, but it lost to the eponymously titled \"Mary Poppins\" score."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 451,
+    "generation_tokens": 60,
+    "generation_speed": 225.9036144578313,
+    "prompt_eval_speed": 8156.99041417978,
+    "generation_latency_s": 0.7011053999885917,
+    "latency": 1.8387164000014309,
+    "total_prompt_tokens": 543,
+    "total_generation_tokens": 142,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5914201,
+    "stage_rewrite_s": 0.7639578999951482,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17048880000947975,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20291750000615139,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7011953000037465,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.8387430000002496,
+    "unaccounted_latency_s": 0.0001843999925768003,
+    "rewritten_query": "Find the Disney ride featuring \"Mary Poppins\" where \"Chim Chim Cher-ee\" is played, and it premiered in what year?\n\nThis rephrased query maintains the essential information while making it more concise and searchable. It specifically targets the musical element (\"Chim Chim Cher-ee\") and its context within a Disney ride, which helps narrow down the search results effectively.",
+    "query_was_rewritten": true
+  }
+}

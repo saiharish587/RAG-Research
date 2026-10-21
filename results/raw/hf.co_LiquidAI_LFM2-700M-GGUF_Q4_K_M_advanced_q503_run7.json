@@ -1,0 +1,42 @@
+{
+  "question_id": "Q503",
+  "query": "What was the largest passenger capacity of the plane type used for BOAC Flight 911 ?",
+  "ground_truth": "219",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Boeing 707-436 used for BOAC Flight 911 had a typical seating capacity ranging from 314 to 396 passengers. This indicates that while it could carry a substantial number of people, it was not as large-capacity as some other aircraft types, such as the Boeing 747 or later models like the 777. However, given its role in a round-the-world flight and being operated by an experienced pilot, it likely had a capacity close to or slightly above the lower end of this range.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "BOAC Flight 911: BOAC Flight 911 (Speedbird 911) was a round-the-world flight operated by British Overseas Airways Corporation that crashed as a result of an encounter with severe clear-air turbulence near Mount Fuji in Japan on 5 March 1966.  The Boeing 707-436 on this flight was commanded by Captain Bernard Dobson, 45, from Dorset, an experienced 707 pilot who had been flying these aircraft since November 1960.",
+      "Boeing 777: The Boeing 777 is a family of long-range wide-body twin-engine jet airliners developed and manufactured by Boeing Commercial Airplanes.  It is the world's largest twinjet and has a typical seating capacity of 314 to 396 passengers, with a range of 5240 to .  Commonly referred to as the \"Triple Seven\", its distinguishing features include the largest-diameter turbofan engines of any aircraft, six wheels on each main landing gear, fully circular fuselage cross-section, and a blade-shaped tail cone.  Developed in consultation with eight major airlines, the 777 was designed to replace older wide-body airliners and bridge the capacity difference between Boeing's 767 and 747.  As Boeing's first fly-by-wire airliner, it has computer-mediated controls.  It was also the first commercial aircraft to be designed entirely with computer-aided design.",
+      "American Airlines Flight 157: American Airlines Flight 157 was a civil aviation accident resulting in 28 fatalities.  The aircraft, a Douglas DC-6, was flying on November 29, 1949, from New York City bound for Mexico City with 46 passengers and crew.  After one engine failed in mid-flight, a series of critical mistakes by the flight crew caused the pilot to lose control of the plane during the final approach to a routine stopover at Love Field in Dallas, Texas.  The airliner slid off the runway and struck a parked airplane, a hangar, and a flight school before crashing into a business across from the airport.  26 passengers and two flight attendants died.  The pilot, co-pilot, flight engineer, and 15 passengers survived."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 532,
+    "generation_tokens": 104,
+    "generation_speed": 227.000386337196,
+    "prompt_eval_speed": 48289.00789688663,
+    "generation_latency_s": 0.7621668000065256,
+    "latency": 1.5830682999949204,
+    "total_prompt_tokens": 609,
+    "total_generation_tokens": 125,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4837416,
+    "stage_rewrite_s": 0.4624037000030512,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1619083999976283,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1963967999909073,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7622221999918111,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5830834999942454,
+    "unaccounted_latency_s": 0.00015300001541618258,
+    "rewritten_query": "What was the maximum number of passengers that the aircraft used for BOAC Flight 911 could carry?",
+    "query_was_rewritten": true
+  }
+}

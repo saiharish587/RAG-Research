@@ -1,0 +1,42 @@
+{
+  "question_id": "Q176",
+  "query": "Are Bamboo Ma\u00f1alac and Danny Jones both musicians?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Yes, both Bamboo Ma\u00f1alac and Danny Jones are musicians. The context provided explicitly states that Bamboo Ma\u00f1alac is a Filipino American musician and singer-songwriter who was part of the band McFly, while Danny Jones is described as a British musician who played lead vocal roles in McFly's band.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Danny Jones: Danny Jones (born 12 March 1986) is a British musician who is one of the lead vocalists and guitarists for pop-rock band McFly.  Jones' fellow band members are Tom Fletcher (guitar and vocals), Dougie Poynter (bass and vocals), and Harry Judd (drums).",
+      "Bamboo Ma\u00f1alac: Francisco Gaudencio Lope Belardo Ma\u00f1alac (born March 21, 1976), popularly known as Bamboo Ma\u00f1alac or simply by the mononym Bamboo, is a Filipino American musician and singer-songwriter.  He began his career as vocalist and original frontman of Rivermaya and later fronted his own band, Bamboo.  Bamboo band disbanded in 2011 and Ma\u00f1alac then pursued a solo career and released his first solo album, \"No Water, No Moon\".",
+      "Bamboo (band): Bamboo was a Filipino rock band formed in 2002 and had been active from 2004 until it disbanded in 2011.  It consisted of Bamboo Ma\u00f1alac, Ira Cruz, Nathan Azarcon and Vic Mercado."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 321,
+    "generation_tokens": 68,
+    "generation_speed": 314.34765926562835,
+    "prompt_eval_speed": 32106.421284256852,
+    "generation_latency_s": 0.46312899999611545,
+    "latency": 1.3675508000014815,
+    "total_prompt_tokens": 393,
+    "total_generation_tokens": 152,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4152603,
+    "stage_rewrite_s": 0.5558655000058934,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1251912000006996,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22318890001042746,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4631826000113506,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3675644999893848,
+    "unaccounted_latency_s": 0.00013689996558241546,
+    "rewritten_query": "Bamboo Ma\u00f1alac & Danny Jones - Musicians? (Focus on key elements)\n\n**Explanation:** The original query asks for a yes/no answer, but the optimized version narrows it down to the specific musical duo mentioned. It highlights Bamboo Ma\u00f1alac and Danny Jones as musicians rather than asking for an overall classification. This makes the search more targeted and user-friendly.",
+    "query_was_rewritten": true
+  }
+}

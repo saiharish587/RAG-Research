@@ -1,0 +1,42 @@
+{
+  "question_id": "Q213",
+  "query": "Which tower is taller, 712 Fifth Avenue or Manhattan Life Insurance Building?",
+  "ground_truth": "712 5th Avenue",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "To determine which tower is taller, we need to compare their heights based on the provided context.\n\nThe Manhattan Life Insurance Building stands at 51 Madison Avenue, while 712 Fifth Avenue stands at 712 5th Avenue.\n\nComparing these two:\n- 712 5th Avenue (mentioned in the context) is shorter than 51 Madison Avenue.\n- Therefore, 712 5th Avenue is taller than Manhattan Life Insurance Building.\n\nSo, the tower that is taller is 712 Fifth Avenue.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "712 Fifth Avenue: 712 5th Avenue is a 650 ft skyscraper at 56th Street and Fifth Avenue in the Midtown neighborhood of Manhattan, New York City.  It was constructed from 1990 to 1991 and is the 53rd tallest building in New York City.  The tower's design had to accommodate the landmarked facades of the Coty and Rizzoli Buildings at the base of the tower.  It was purchased by the Bannister Trust in 2007 in a \"Private Treaty\", and placed in \"Property Fund #1\" managed by JP Morgan.  The building is sometimes referred to as the Henri Bendel building.",
+      "Manhattan Life Insurance Building: The Manhattan Life Insurance Building was a 348 ft tower at 64-66 Broadway in New York City completed in 1894 to the designs of the architects of Kimball & Thompson and slightly extended north in 1904 making its new address 64-70 Broadway.  It was the first skyscraper to pass 100 m in Manhattan.",
+      "New York Life Building: The New York Life Insurance Building, New York, located at 51 Madison Avenue, Manhattan, New York City, across from Madison Square Park, is the headquarters of the New York Life Insurance Company."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 335,
+    "generation_tokens": 106,
+    "generation_speed": 314.5876675698696,
+    "prompt_eval_speed": 28298.699104578478,
+    "generation_latency_s": 0.643028399994364,
+    "latency": 1.588969400007045,
+    "total_prompt_tokens": 409,
+    "total_generation_tokens": 201,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.47935530000000004,
+    "stage_rewrite_s": 0.607234499999322,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.11524360001203604,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22330450000299606,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6430783999967389,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5889823000034085,
+    "unaccounted_latency_s": 0.00012179999612271786,
+    "rewritten_query": "To optimize this search query for clarity and SEO, consider these adjustments:\n\n**Rephrased Query:** \"Tower Height Comparison: 712 Fifth Avenue vs. Manhattan Life Insurance Building\"\n\nThis version:\n- Clearly states the comparison (taller tower)\n- Specifies the exact buildings (712 Fifth Avenue vs. Manhattan Life Insurance Building)\n- Uses more descriptive and concise language\n- Eliminates unnecessary words for a smoother, more search-friendly output",
+    "query_was_rewritten": true
+  }
+}

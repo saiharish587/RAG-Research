@@ -1,0 +1,42 @@
+{
+  "question_id": "Q20",
+  "query": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+  "ground_truth": "Robert Erskine Childers DSC",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Henry Roth was from England, as indicated in the context that he was an American novelist and short story writer born on February 8, 1906, and died on October 13, 1995. On the other hand, Robert Erskine Childers is described as a British writer, with his birth date provided as June 25, 1870, and death date given as November 24, 1922. Therefore, Henry Roth is the writer from England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Robert Erskine Childers: Robert Erskine Childers DSC (25 June 1870 \u2013 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\".  He was executed by the authorities of the nascent Irish Free State during the Irish Civil War.  He was the son of British Orientalist scholar Robert Caesar Childers; the cousin of Hugh Childers and Robert Barton; and the father of the fourth President of Ireland, Erskine Hamilton Childers.",
+      "Henry Roth: Henry Roth (February 8, 1906 \u2013 October 13, 1995) was an American novelist and short story writer.",
+      "Erskine Barton Childers: Erskine Barton Childers (11 March 1929 \u2013 25 August 1996) was an Irish writer, BBC correspondent and United Nations senior civil servant.  He was the eldest son of Erskine Hamilton Childers (Ireland's fourth President) and Ruth Ellen Dow Childers.  His grandparents Mary Alden Childers and Robert Erskine Childers and the latter's double first cousin Robert Barton were all Irish nationalists involved heavily with the negotiation of Irish independence; which ultimately led to his grandfather's execution during the Irish Civil War.  His great aunt was Gretchen Osgood Warren."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 98,
+    "generation_speed": 228.63115262762517,
+    "prompt_eval_speed": 31733.87782882423,
+    "generation_latency_s": 0.8010599999979604,
+    "latency": 1.5674822000000859,
+    "total_prompt_tokens": 448,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5641928,
+    "stage_rewrite_s": 0.43642220000037923,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16451349999988452,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16524289999506436,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8011589999950957,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5675021000060951,
+    "unaccounted_latency_s": 0.00016560000949539244,
+    "rewritten_query": "Which English writer was Henry Roth and Robert Erskine Childers?",
+    "query_was_rewritten": true
+  }
+}

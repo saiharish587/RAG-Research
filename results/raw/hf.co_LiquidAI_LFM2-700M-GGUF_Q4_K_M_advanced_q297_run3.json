@@ -1,0 +1,42 @@
+{
+  "question_id": "Q297",
+  "query": "The Church of the Guanche People was founded in the city that is on the most populated island of what larger area?",
+  "ground_truth": "Macaronesia",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Church of the Guanche People was founded in San Crist\u00f3bal de La Laguna, which is located on the most populated island of Tenerife.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Church of the Guanche People: The Church of the Guanche People (Spanish: \"Iglesia del Pueblo Guanche\" ) is a religious organisation, founded in 2001 in the city of San Crist\u00f3bal de La Laguna (Tenerife, Canary Islands, Spain).  It aims to perpetuate and spread the pagan religion of the ancient Guanche people.",
+      "Capital region: A capital region, also called a national capital region, capital district or capital territory, is a region or district surrounding a capital city.  It is not always the official term for the region, but may sometimes be used as an informal synonym.",
+      "Guanche mummies: Guanche mummies are the intentionally desiccated remains of members of the indigenous Guanche people of the Canary Islands.  The majority of Guanche mummies were made during the eras prior to Spanish settlement of the area in the 15th century.  The methods of embalming are similar to those that were used by the Ancient Egyptians, though fewer mummies remain from the Guanche due to looting and desecration."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 306,
+    "generation_tokens": 33,
+    "generation_speed": 229.34026450577176,
+    "prompt_eval_speed": 31808.73180873181,
+    "generation_latency_s": 0.4912218999961624,
+    "latency": 1.3017900999984704,
+    "total_prompt_tokens": 389,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5015046,
+    "stage_rewrite_s": 0.4408529000065755,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16669939999701455,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20278580000740476,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.49130769999464974,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3018127999966964,
+    "unaccounted_latency_s": 0.00016799999866634607,
+    "rewritten_query": "Find the location of the Church of the Guanche People, which was established in the capital of the largest island within a specific larger region.",
+    "query_was_rewritten": true
+  }
+}

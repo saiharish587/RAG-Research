@@ -1,0 +1,42 @@
+{
+  "question_id": "Q128",
+  "query": "When was the palace founded at which Columba de Dunbar died in 1435?",
+  "ground_truth": "the late 12th Century",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Palace was founded by George I, Earl of March, on December 31, 1386. The question asks when it was founded, but it does not specify a particular year for the founding itself. However, the context provided states that Columba de Dunbar died in 1435 at Spynie Palace near Elgin. Therefore, we can infer that the palace was founded sometime before his death, as he passed away on December 31, 1386.\n\nGiven this information, the answer to when the palace was founded is: The palace was founded by George I, Earl of March, in 1386.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Columba de Dunbar: Columba de Dunbar ( 1386 \u2013 1435) was Bishop of Moray from 1422 until his death at Spynie Palace near Elgin sometime before 7 November 1435.",
+      "George I, Earl of March: George de Dunbar, 10th Earl of Dunbar and March (1338\u20131420), 12th Lord of Annandale and Lord of the Isle of Man, was \"one of the most powerful nobles in Scotland of his time, and the rival of the Douglases.\"",
+      "Mike Dunbar: Mike Dunbar (December 31, 1948 \u2013 September 13, 2013) was an American football and baseball coach.  He served as the head football coach at Central Washington University in 1983 and from 1987 to 1991 and at the University of Northern Iowa from 1997 to 2000, compiling a career college football coaching record of 83\u201324\u20131.  Dunbar was also the head baseball coach at Central Washington for one season, in 1983, tallying mark of 25\u201320\u20131.  He graduated from the University of Washington in 1972 with a B.A. in education and from Pacific Lutheran University in 1979 with an M.A. in education.  Dunbar died of cancer on September 13, 2013, in his hometown of Dupont, Washington, at the age of 64."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 376,
+    "generation_tokens": 128,
+    "generation_speed": 319.8896380748642,
+    "prompt_eval_speed": 43357.9335793358,
+    "generation_latency_s": 0.6373961999925086,
+    "latency": 1.7157794999948237,
+    "total_prompt_tokens": 453,
+    "total_generation_tokens": 243,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4111298,
+    "stage_rewrite_s": 0.6500250000099186,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12559830000100192,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3025982999970438,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6374435999896377,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7157925999927102,
+    "unaccounted_latency_s": 0.00012789999891538173,
+    "rewritten_query": "Founded by Columba de Dunbar in 1435, this historical event is centered around the date of March 24th (Columba's birthday). \n\nHere's why it's optimized for search-friendly:\n\n* **Specificity:**  \"Palace founded at which Columba de Dunbar died\" clarifies the exact year and individual.\n* **Conciseness:**  Focuses on the core information - the founding date.\n* **Relevance:** Connects directly to the user's query about Columba de Dunbar's death.",
+    "query_was_rewritten": true
+  }
+}

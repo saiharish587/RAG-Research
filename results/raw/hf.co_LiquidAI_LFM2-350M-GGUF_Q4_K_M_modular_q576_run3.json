@@ -1,0 +1,49 @@
+{
+  "question_id": "Q576",
+  "query": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+  "ground_truth": "IK Start",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The 2011 La Manga Cup was won by Viking. The text explicitly states that Viking \"beat Start\" on goal differential after both clubs finished with identical records of two wins and one draw. Since Kristiansand is currently playing in Tippeligaen, which has been promoted from Adeccoligaen in 2012, it can be deduced that Viking was the Norwegian team from Kristiansand who won this particular La Manga Cup match.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2011 La Manga Cup: The 2011 La Manga Cup was an exhibition international club football (soccer) competition featuring football club teams from Europe, which was held in February 2011.  All matches were played in La Manga Stadium in La Manga, Spain.  This was the fourteenth La Manga Cup.  The tournament was won by Viking, who beat Start on goal differential after both clubs finished with identical records of two wins and one draw.",
+      "La Manga Cup: La Manga Cup is a winter football tournament played in La Manga Club, La Manga del Mar Menor (Murcia, Spain).  Usual participants are clubs from countries with a summer football season: Sweden, Finland, Denmark, Norway, Russia, Ukraine, and the United States and Canada.  The first cup was played in 1999 and was won by Rosenborg, who are the most successful team to date with three wins.",
+      "2012 La Manga Cup: The 2012 La Manga Cup was an exhibition international club football (soccer) competition featuring football club teams from Europe, which was held in February 2012.  All matches were played in La Manga Stadium in La Manga, Spain.  This was the fifteenth La Manga Cup.  The tournament was won by FC Nordsj\u00e6lland, who beat V\u00e5lerenga on goal differential after both clubs finished with identical records of two wins and one draw."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 406,
+    "generation_tokens": 95,
+    "generation_speed": 323.2205010257998,
+    "prompt_eval_speed": 34077.555816686254,
+    "generation_latency_s": 0.6129159999982221,
+    "latency": 1.503320599993458,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 133,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7347556,
+    "stage_route_s": 0.33748659999400843,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.43813549999322277,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.11441850000119302,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 9.229998977389187e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6130050999927334,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5033413000055589,
+    "unaccounted_latency_s": 0.00020460002997424453,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "What was Viking's opponent in the 2011 La Manga Cup?",
+      "Which Norwegian club won the 2011 La Manga Cup with Viking?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

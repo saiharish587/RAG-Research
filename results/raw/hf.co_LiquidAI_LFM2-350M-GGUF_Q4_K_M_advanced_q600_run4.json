@@ -1,0 +1,42 @@
+{
+  "question_id": "Q600",
+  "query": "When was the American actor, film director which  Dana Brunetti is the president of his company born ",
+  "ground_truth": "July 26, 1959",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The context provided does not contain enough information to determine when Dana Brunetti was born. The text only mentions that Dana Brunetti is the president of Kevin Spacey's Trigger Street Productions and provides details about his professional career, but it does not specify his birth date or when he was born.\n\nTo answer the question accurately:\n\nThe context does not provide enough information to determine the exact year Dana Brunetti was born. The provided information focuses on his professional achievements and leadership roles in film and media, but does not include details about his personal life or birthdate.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dana Brunetti: Dana Brunetti (born June 11, 1973) is an American film producer and social networking entrepreneur.  He is the president of Kevin Spacey's production company, Trigger Street Productions.  In 2016, he became the president of Relativity Media with Kevin Spacey taking on a chairman position.",
+      "William Randolph Hearst: William Randolph Hearst Sr. ( ; April 29, 1863 \u2013 August 14, 1951) was an American businessman, politician, and newspaper publisher who built the nation's largest newspaper chain and media company Hearst Communications and whose flamboyant methods of yellow journalism influenced the nation's popular media by emphasizing sensationalism and human interest stories.  Hearst entered the publishing business in 1887 after being given control of \"The San Francisco Examiner\" by his wealthy father.  Moving to New York City, he acquired \"The New York Journal\" and fought a bitter circulation war with Joseph Pulitzer's \"New York World\" that sold papers by giant headlines over lurid stories featuring crime, corruption, graphics, sex, and innuendo.  Acquiring more newspapers, Hearst created a chain that numbered nearly thirty papers in major American cities at its peak.  He later expanded to magazines, creating the largest newspaper and magazine business in the world.",
+      "Noun phrase: A noun phrase or nominal phrase (abbreviated NP) is a phrase which has generally a noun (or a pronoun) as its head word, or which performs the same grammatical function as such a phrase.  Noun phrases are very common cross-linguistically, and they may be the most frequently occurring phrase type."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 424,
+    "generation_tokens": 115,
+    "generation_speed": 315.22221795834685,
+    "prompt_eval_speed": 36545.423202896054,
+    "generation_latency_s": 0.6565162000042619,
+    "latency": 1.5795298000011826,
+    "total_prompt_tokens": 504,
+    "total_generation_tokens": 181,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4732886,
+    "stage_rewrite_s": 0.5316498000029242,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1774232000025222,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21371279998857062,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6565984000044409,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5795522999978857,
+    "unaccounted_latency_s": 0.0001689000055193901,
+    "rewritten_query": "When was Dana Brunetti's father, an American actor and film director, born?\n\nThis rephrased version directly addresses the core query while maintaining a concise and clear structure. It eliminates unnecessary details (like \"which  the\" and \"the company\") and uses more direct phrasing to make it search-friendly.",
+    "query_was_rewritten": true
+  }
+}

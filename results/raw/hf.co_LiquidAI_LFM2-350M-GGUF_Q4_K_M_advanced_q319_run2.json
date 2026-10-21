@@ -1,0 +1,42 @@
+{
+  "question_id": "Q319",
+  "query": "Are both Duke Energy and Affiliated Managers Group based in Massachusetts?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Based on the provided context, neither Duke Energy nor Affiliated Managers Group is explicitly stated to be based in Massachusetts. The information given only provides details about their respective headquarters locations within the United States. \n\nDuke Energy's headquarters are described as being headquartered in Charlotte, North Carolina, while Affiliated Managers Group Inc. does not specify its location within Massachusetts. Therefore, we cannot definitively state that both companies are based in Massachusetts based solely on this context.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Affiliated Managers Group: Affiliated Managers Group Inc. is an American international investment management company headquartered in Massachusetts that owns stakes in a number of boutique asset management, hedge fund, and specialized private equity firms.",
+      "Duke Energy: Duke Energy, headquartered in Charlotte, North Carolina, is an electric power holding company in the United States, with assets also in Canada and Latin America.",
+      "Greater Boston: Greater Boston is the metropolitan region of New England encompassing the municipality of Boston, the capital of the US state of Massachusetts, and the most populous city in New England, as well as its surrounding areas.  The region forms the northern arc of the US northeast megalopolis and as such, Greater Boston can be described as either a metropolitan statistical area (MSA), or as a broader combined statistical area (CSA).  The MSA consists of most of the eastern third of Massachusetts, excluding the South Coast region and Cape Cod; while the CSA additionally includes the municipalities of Manchester (the largest city in the US state of New Hampshire), Providence (the capital and largest city of the US state of Rhode Island), Worcester, Massachusetts (the second largest city in New England), as well as the South Coast region and Cape Cod in Massachusetts."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 326,
+    "generation_tokens": 97,
+    "generation_speed": 332.1644796318111,
+    "prompt_eval_speed": 39419.588875453446,
+    "generation_latency_s": 0.5362485000077868,
+    "latency": 1.4146655000076862,
+    "total_prompt_tokens": 399,
+    "total_generation_tokens": 160,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.39905749999999995,
+    "stage_rewrite_s": 0.4742781999957515,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.11726710000948515,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2867074999958277,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5362994000024628,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4146785000048112,
+    "unaccounted_latency_s": 0.0001269000058528036,
+    "rewritten_query": "To optimize the search for \"Duke Energy & Affiliated Managers Group Massachusetts\", consider rephrasing to:\n\n\"Duke Energy (Massachusetts-based) & Affiliated Managers Group - Location: Massachusetts\" \n\nThis version is more concise and clearly indicates both entities' location within Massachusetts.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q28",
+  "query": "Are both Dictyosperma, and Huernia described as a genus?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Yes, based on the provided context, both Dictyosperma and Huernia are described as genera within the Apocynaceae family. The context explicitly states that \"Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands.\" This clearly indicates that Dictyosperma belongs to this specific genus, alongside Huernia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Huernia: The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810.  The flowers are five-lobed, usually somewhat more funnel- or bell-shaped than in the closely related genus \"Stapelia\", and often striped vividly in contrasting colours or tones, some glossy, others matt and wrinkled depending on the species concerned.  To pollinate, the flowers attract flies by emitting a scent similar to that of carrion.  The genus is considered close to the genera \"Stapelia\" and \"Hoodia\".  The name is in honour of Justin Heurnius (1587\u20131652) a Dutch missionary who is reputed to have been the first collector of South African Cape plants.  His name was actually mis-spelt by the collector.",
+      "Dictyosperma: Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, R\u00e9union and Rodrigues).  The sole species, Dictyosperma album, is widely cultivated in the tropics but has been farmed to near extinction in its native habitat.  It is commonly called princess palm or hurricane palm, the latter owing to its ability to withstand strong winds by easily shedding leaves.  It is closely related to, and resembles, palms in the \"Archontophoenix\" genus.  The genus is named from two Greek words meaning \"net\" and \"seed\" and the epithet is Latin for \"white\", the common color of the crownshaft at the top of the trunk.",
+      "d World genus \"Syzygium\" in \"Eugenia\", but research by Rudolf Schmid in the early 1970s convinced most botanists that the genera are easily separable.  Research by van Wyk and colleagues in South Africa suggests the genus may comprise at least two major lineages, recognizable by anatomical and other features."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 501,
+    "generation_tokens": 81,
+    "generation_speed": 305.0583188650324,
+    "prompt_eval_speed": 12612.975504141386,
+    "generation_latency_s": 0.6216436000104295,
+    "latency": 1.5962283999979263,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 150,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.482499,
+    "stage_rewrite_s": 0.5416983000031905,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12582680000923574,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.30688579998968635,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6216945000051055,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.59624199999962,
+    "unaccounted_latency_s": 0.00013719999697059393,
+    "rewritten_query": "Dictyosperma & Huernia: Both Genus Described as a searchable taxonomic group\" \n\nThis rephrased version maintains the core query while making it more concise and clear. It specifies that both genera are being referred to in this context, which is helpful for users seeking detailed information on this topic.",
+    "query_was_rewritten": true
+  }
+}

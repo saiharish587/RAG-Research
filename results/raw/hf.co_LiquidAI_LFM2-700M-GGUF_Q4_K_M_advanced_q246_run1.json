@@ -1,0 +1,42 @@
+{
+  "question_id": "Q246",
+  "query": "Jamie Harris is best known for his role as The Hook-Handed Man in a movie directed by who ?",
+  "ground_truth": "Brad Silberling",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Jamie Harris is best known for his role as The Hook-Handed Man in the 1991 American fantasy adventure film \"Hook.\" This film was directed by Steven Spielberg.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jamie Harris (actor): Jamie Harris (born May 15, 1963) is a British actor.  He is best known for his role as The Hook-Handed Man in \"Lemony Snicket's A Series of Unfortunate Events\", Rodney in \"Rise of the Planet of the Apes\" and Gordon in Marvel's \"Agents of S.H.I.E.L.D.\".",
+      "Hook (film): Hook is a 1991 American fantasy adventure film directed by Steven Spielberg and written by James V. Hart and Malia Scotch Marmo.  It stars Robin Williams as Peter Banning / Peter Pan, Dustin Hoffman as Captain Hook, Julia Roberts as Tinker Bell, Bob Hoskins as Smee, Maggie Smith as Wendy, Caroline Goodall as Moira Banning, and Charlie Korsmo as Jack Banning.  It acts as a sequel to J. M. Barrie's 1911 novel \"Peter and Wendy\" focusing on an adult Peter Pan who has forgotten all about his childhood.  In his new life, he is known as Peter Banning, a successful but unimaginative and workaholic corporate lawyer with a wife (Wendy's granddaughter) and two children.  However, when Captain Hook, the enemy of his past, kidnaps his children, he returns to Neverland in order to save them.  Along the journey he reclaims the memories of his past.",
+      "A Single Man: A Single Man is a 2009 American drama film based on the novel of the same name by Christopher Isherwood.  It is directed by Tom Ford in his directorial debut and stars Colin Firth, who was nominated for an Academy Award for Best Actor for his portrayal of George Falconer, a depressed gay British university professor living in Southern California in 1962."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 458,
+    "generation_tokens": 39,
+    "generation_speed": 231.44301754219384,
+    "prompt_eval_speed": 33292.142182161806,
+    "generation_latency_s": 0.5214795000065351,
+    "latency": 1.3414788000081899,
+    "total_prompt_tokens": 538,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5373293,
+    "stage_rewrite_s": 0.47589799998968374,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16515860000799876,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17874740000115708,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5215449999959674,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3414967999997316,
+    "unaccounted_latency_s": 0.00014890001330059022,
+    "rewritten_query": "Who directed the movie where Jamie Harris played The Hook-Handed Man, and what was his name?",
+    "query_was_rewritten": true
+  }
+}

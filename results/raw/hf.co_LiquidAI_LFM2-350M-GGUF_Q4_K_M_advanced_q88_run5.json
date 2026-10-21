@@ -1,0 +1,42 @@
+{
+  "question_id": "Q88",
+  "query": "Where are Teide National Park and Garajonay National Park located?",
+  "ground_truth": "Canary Islands, Spain",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Teide National Park is located in Tenerife (Canary Islands), Spain, while Garajonay National Park is located in the center and north of the island of La Gomera.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Garajonay National Park: Garajonay National Park (Spanish: \"Parque nacional de Garajonay\" , ] ) is located in the center and north of the island of La Gomera, one of the Canary Islands (Spain).  It was declared a national park in 1981 and a World Heritage Site by UNESCO in 1986.  It occupies 40 km (15 sq mi) and it extends into each of the six municipalities on the island.",
+      "Teide National Park: Teide National Park (Spanish: \"Parque nacional del Teide\" , ] ) is a national park located in Tenerife (Canary Islands, Spain).",
+      "National parks of Scotland: National parks of Scotland are managed areas of outstanding landscape where habitation and commercial activities are restricted.  At present, Scotland has two national parks: Loch Lomond and The Trossachs National Park, created in 2002, and the Cairngorms National Park, created in 2003.  These were designated as such under the National Parks (Scotland) Act 2000 which was an early piece of legislation passed by the Scottish Parliament not long after its creation in 1999.  Scottish-born John Muir spearheaded the effort to create Yosemite National Park in the US, as well as the conservation movement at large."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 349,
+    "generation_tokens": 41,
+    "generation_speed": 311.5430499304727,
+    "prompt_eval_speed": 34653.95690596763,
+    "generation_latency_s": 0.37812140000460204,
+    "latency": 1.0807724999904167,
+    "total_prompt_tokens": 423,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.42493159999999996,
+    "stage_rewrite_s": 0.4145977000007406,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1207972999982303,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1670861999882618,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.37818820000393316,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.080789999992703,
+    "unaccounted_latency_s": 0.00012140000762883574,
+    "rewritten_query": "Teide National Park & Garajonay National Park locations\" \n\nThis rephrased version is more concise and directly answers the user's question about where these two parks are situated.",
+    "query_was_rewritten": true
+  }
+}

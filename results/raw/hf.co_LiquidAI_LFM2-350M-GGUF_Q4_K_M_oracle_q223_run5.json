@@ -1,0 +1,33 @@
+{
+  "question_id": "Q223",
+  "query": "Are both Dafeng District and Dazhou located in the same province?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, they are not located in the same province. The context provided gives specific details about each district's location within China's provinces. \n\nDazhou is described as being in Sichuan province, while Dafeng District is mentioned to be under the administration of Yancheng, Jiangsu province. This indicates that Dafeng is not located in Sichuan province but rather in Jiangsu province.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dazhou: Dazhou () is a prefecture-level city in the northeast corner of Sichuan province, China, bordering Shaanxi to the north and Chongqing to the east and south.  2002 population was 384,525.",
+      "Dafeng District: Dafeng () is a coastal district under the administration of Yancheng, Jiangsu province, China.  Located on the Jiangsu North Plain with a coastline of 112 km , Dafeng was historically one of the largest salt-making areas in China and now is famed for its well preserved eco-system and numerous national conservation parks.  The district has the largest national nature reserve for a rare deer species, P\u00e8re David's Deer or Milu (\u9e8b\u9e7f ) in Chinese.  It borders the prefecture-level city of Taizhou to the southwest."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 246,
+    "generation_tokens": 83,
+    "generation_speed": 277.71271790410543,
+    "prompt_eval_speed": 8621.898219542969,
+    "generation_latency_s": 0.5490329999884125,
+    "latency": 0.5491207000159193,
+    "total_prompt_tokens": 246,
+    "total_generation_tokens": 83,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.208918,
+    "stage_generate_s": 0.5490862000151537,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5491302000009455,
+    "unaccounted_latency_s": 4.469999112188816e-05
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q513",
+  "query": "The Argentine National Anthem was adopted 3 years after which event that led to the removal of Viceroy Baltasar Hildalgo de Cisneros?",
+  "ground_truth": "May Revolution",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Argentine National Anthem was adopted three years after the May Revolution on May 11, 1813. This revolution marked the ousting of viceroy Baltasar Hidalgo de Cisneros and replaced him with the Primera Junta, the first national government in Argentina.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Argentine National Anthem: The original Argentine National Anthem (Spanish: \"Himno Nacional Argentino\" ) was named \"Marcha Patri\u00f3tica \" (Patriotic March), later renamed \"Canci\u00f3n Patri\u00f3tica Nacional \" (National Patriotic Song), and then \"Canci\u00f3n Patri\u00f3tica \" (Patriotic Song).  It has been called \"Himno Nacional Argentino\" since it was published with that name in 1847.  Its lyrics were written by the Buenos Aires-born politician Vicente L\u00f3pez y Planes and the music was composed by the Spanish musician Blas Parera.  The work was adopted as the sole official song on May 11, 1813, three years after the May Revolution; May 11 is therefore Anthem Day in Argentina.",
+      "Argentina Centennial: The Argentina Centennial was celebrated on May 25, 1910.  It was the 100th anniversary of the May Revolution, when viceroy Baltasar Hidalgo de Cisneros was ousted from office and replaced with the Primera Junta, the first national government.",
+      "Argentina Bicentennial: The Argentina Bicentennial (Spanish: \"bicentenario argentino\" ) was a series of ceremonies, festivals, and observances celebrated on May 25, 2010 and throughout the year.  They commemorated the 200th anniversary of the May Revolution, a sequence of historical events that led to the Viceroy Baltasar Hidalgo de Cisneros being ousted from office and replaced with the Primera Junta, the first national government."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 414,
+    "generation_tokens": 58,
+    "generation_speed": 313.56097139026446,
+    "prompt_eval_speed": 43062.2009569378,
+    "generation_latency_s": 0.5172717000095872,
+    "latency": 1.5536445000034291,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 133,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.763803,
+    "stage_route_s": 0.3505072999978438,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5631216000037966,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.1223737000109395,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 0.00010449999535921961,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.5173562999989372,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5536681999947177,
+    "unaccounted_latency_s": 0.00020759999461006373,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "\"Argentine National Anthem - 1959\"",
+      "\"Viceroyalty of Buenos Aires - 1976\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

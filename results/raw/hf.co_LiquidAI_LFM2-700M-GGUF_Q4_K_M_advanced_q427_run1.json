@@ -1,0 +1,42 @@
+{
+  "question_id": "Q427",
+  "query": "Which musical fantasy film is older, Bedknobs and Broomsticks or The Muppet Christmas Carol?",
+  "ground_truth": "Bedknobs and Broomsticks",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "To determine which film is older, I'll compare their release dates:\n\n1. **Bedknobs and Broomsticks**:\n   - Released on December 13, 1971.\n\n2. **The Muppet Christmas Carol**:\n   - Released in 1992.\n\nSince 1971 comes before 1992, **Bedknobs and Broomsticks** is the older film among the two.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bedknobs and Broomsticks: Bedknobs and Broomsticks is a 1971 British-American musical fantasy film produced by Walt Disney Productions and released by Buena Vista Distribution Company in North America on December 13, 1971.  It is based upon the books \"The Magic Bedknob; or, How to Become a Witch in Ten Easy Lessons\" (1943) and \"Bonfires and Broomsticks\" (1945) by English children's author Mary Norton.  The film, which combines live action and animation, stars Angela Lansbury and David Tomlinson.",
+      "The Muppet Christmas Carol: The Muppet Christmas Carol is a 1992 American-British musical fantasy comedy-drama film and an adaptation of Charles Dickens's 1843 novel \"A Christmas Carol\".  It is the fourth in a series of live-action musical films featuring The Muppets, with Michael Caine starring as Ebenezer Scrooge.  Although it is a comedic film with contemporary songs, \"The Muppet Christmas Carol\" otherwise follows Dickens's original story closely.  The film was produced and directed by Brian Henson for Jim Henson Productions and released by Walt Disney Pictures.",
+      "Gonzo (Muppet): Developed and performed by Dave Goelz, Gonzo made his first appearance in the 1970 special \"The Great Santa Claus Switch\", as the \"Cigar Box Frackle\".  Originally a minor figure in \"The Muppet Show\", he soon evolved into one of the franchise's primary characters.  Gonzo has appeared in every Muppet film, including \"The Muppet Christmas Carol\", where he portrayed author Charles Dickens and developed a double act with Rizzo the Rat."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 94,
+    "generation_speed": 219.85629818127387,
+    "prompt_eval_speed": 7653.237509501762,
+    "generation_latency_s": 0.863028600011603,
+    "latency": 1.8038670000096317,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 144,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5403743000000001,
+    "stage_rewrite_s": 0.5911206000018865,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15462840000691358,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19489459999022074,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8630949999933364,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.803885100001935,
+    "unaccounted_latency_s": 0.00014730001566931605,
+    "rewritten_query": "Which film is older between \"Bedknobs and Broomsticks\" and \"The Muppet Christmas Carol\"? \n\n\nThis rephrased query focuses on the comparison of two films while maintaining the core information requested.",
+    "query_was_rewritten": true
+  }
+}

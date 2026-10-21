@@ -1,0 +1,42 @@
+{
+  "question_id": "Q576",
+  "query": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+  "ground_truth": "IK Start",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Viking won the 2011 La Manga Cup by beating Start from the Norwegian football club IK Start. Both clubs finished with identical records of two wins and one draw, resulting in a goal differential where both teams had the same number of goals scored and conceded.\n\nTo provide more context:\n- **IK Start**: Founded on 19 September 1905, currently playing in Tippeligaen.\n- **Start** (as mentioned in the context): The club that was defeated by Viking in the La Manga Cup.\n- **Viking**: The Norwegian club that won the tournament.\n\nThe information about the goal differential is crucial here as it explains why Viking emerged victorious, despite both teams having similar records.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2011 La Manga Cup: The 2011 La Manga Cup was an exhibition international club football (soccer) competition featuring football club teams from Europe, which was held in February 2011.  All matches were played in La Manga Stadium in La Manga, Spain.  This was the fourteenth La Manga Cup.  The tournament was won by Viking, who beat Start on goal differential after both clubs finished with identical records of two wins and one draw.",
+      "IK Start: IK Start is a Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012.  The club was founded on 19 September 1905.  The coach is Steinar Pedersen.  The team plays in yellow jerseys, black shorts and yellow socks at home, and blue jerseys, white shorts and blue socks away.",
+      "Sarpsborg 08 FF: Sarpsborg 08 Fotballforening, commonly known as Sarpsborg 08 or simply Sarpsborg, is a Norwegian football club based in Sarpsborg, currently playing in Tippeligaen.  Sarpsborg 08 played in Adeccoligaen from 2005 to 2010.  In 2010, the club was promoted to the Tippeligaen, the top league in Norway, but finished last and was relegated back to Adeccoligaen in 2011.  In 2012, they were promoted again.  They play their home games at Sarpsborg Stadion."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 436,
+    "generation_tokens": 152,
+    "generation_speed": 222.35615604720974,
+    "prompt_eval_speed": 38071.95249738037,
+    "generation_latency_s": 1.0434788999991724,
+    "latency": 1.8363638000009814,
+    "total_prompt_tokens": 544,
+    "total_generation_tokens": 200,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5013433,
+    "stage_rewrite_s": 0.5307474000001093,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14267770000151359,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11923989999922924,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0435664000106044,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.8363881999976002,
+    "unaccounted_latency_s": 0.00015779999375808984,
+    "rewritten_query": "The 2011 La Manga Cup victory for Viking over Kristiansand, a Norwegian team from Tippeligaen (formerly Adeccoligaen), who was promoted from the lower-tier league in 2012.",
+    "query_was_rewritten": true
+  }
+}

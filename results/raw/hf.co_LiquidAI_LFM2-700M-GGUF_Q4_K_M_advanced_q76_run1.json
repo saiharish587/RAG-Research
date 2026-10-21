@@ -1,0 +1,42 @@
+{
+  "question_id": "Q76",
+  "query": "What American professional Hawaiian surfer born 18 October 1992 won the Rip Curl Pro Portugal?",
+  "ground_truth": "John John Florence",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "John John Florence, born on 18 October 1992, is the American professional Hawaiian surfer who won the Rip Curl Pro Portugal event. He is known as \"one of the most dominant Pipe surfers of his era\" and has most recently won the title of 2016 World Surf League Men's Champion, thus naming himself the best surfer in the world for that specific competition.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John John Florence: John \"John\" Alexander Florence (born 18 October 1992) is an American professional surfer.  He is known as \"one of the most dominant Pipe surfers of his era\" and has most recently won the title of 2016 World Surf League Men's Champion, thus naming him the best surfer in the world.  He is the first Hawaiian champion since 3 times world champion Andy Irons.",
+      "MEO Rip Curl Pro Portugal: MEO Rip Curl Pro Portugal formerly known as \"Moche Rip Curl Pro Portugal\" or \"Rip Curl Pro Portugal\" is a professional surfing competition of the ASP World Tour held every year in October at the Supertubos beach in Peniche, Portugal.  The event was first founded in 2009 as \"Rip Curl Search Portugal\".  The defending champion is the 2016 WSL champion, John John Florence who won the event in 2016.",
+      "MEO Rip Curl Pro Portugal 2016: The MEO Rip Curl Pro Portugal 2016 was an event of the World Surf League for 2016 World Surf League Men's Championship Tour."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 320,
+    "generation_tokens": 83,
+    "generation_speed": 223.83189415717854,
+    "prompt_eval_speed": 5984.664297737049,
+    "generation_latency_s": 0.7941946999926586,
+    "latency": 1.7300870000035502,
+    "total_prompt_tokens": 400,
+    "total_generation_tokens": 116,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.6038783,
+    "stage_rewrite_s": 0.568267199996626,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.18859190000512172,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17879510000057053,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7942817000002833,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7301163000083761,
+    "unaccounted_latency_s": 0.00018139999883715063,
+    "rewritten_query": "Find an American professional Hawaiian surfer born on October 18, 1992, who competed in the Rip Curl Pro Portugal and won that specific event.",
+    "query_was_rewritten": true
+  }
+}

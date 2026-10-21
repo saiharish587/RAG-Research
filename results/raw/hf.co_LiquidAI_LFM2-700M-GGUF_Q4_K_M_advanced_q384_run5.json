@@ -1,0 +1,42 @@
+{
+  "question_id": "Q384",
+  "query": "What national historic district is located near a village in the town of Philipstown, New York?",
+  "ground_truth": "Valhalla Highlands Historic District",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Cold Spring Historic District, which is located on the central area of Cold Spring, New York, near the village of Nelsonville and Garrison, is the national historic district mentioned in the context. This district is notable for its well-preserved 19th-century buildings constructed to accommodate workers at the nearby West Point Foundry, which itself is a Registered Historic Place today.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Cold Spring, New York: Cold Spring is a village in the town of Philipstown in Putnam County, New York, United States.  The population was 1,983 at the 2010 census.  It borders the smaller village of Nelsonville and Garrison.  The central area of the village is on the National Register of Historic Places as the Cold Spring Historic District due to its many well-preserved 19th-century buildings, constructed to accommodate workers at the nearby West Point Foundry (itself a Registered Historic Place today).  The town is the birthplace of General Gouverneur K. Warren, who was an important figure in the Union Army during the Civil War.  The village, located in the Hudson Highlands, sits at the deepest point of the Hudson River, directly across from West Point.  Cold Spring serves as a weekend getaway for many residents of New York City.",
+      "New York State Route 56: New York State Route\u00a056 (NY\u00a056) is a north\u2013south state highway in eastern St. Lawrence County, New York, in the United States.  The southern terminus of the route is at an intersection with NY\u00a03 in the town of Colton.  Its northern terminus is at a junction with NY\u00a037 southwest of Massena in the town of Louisville.  NY\u00a056 follows the Raquette River for most of its length and serves the village of Potsdam, where it passes by the campus of Clarkson University.",
+      "New York State Route 308: New York State Route 308 (NY 308) is a short state highway, 6.19 mi in length, located entirely in northern Dutchess County, in the U.S. state of New York.  It is a major collector road through mostly rural areas that serves primarily as a shortcut for traffic from the two main north\u2013south routes in the area, U.S. Route 9 (US 9) and NY 9G, to get to NY 199 and the Taconic State Parkway.  The western end of NY 308 is located within the Rhinebeck Village Historic District, a 2.6 sqmi historic district comprising 272 historical structures.  The highway passes near the Dutchess County Fairgrounds, several historical landmarks, and the Landsman Kill."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 547,
+    "generation_tokens": 77,
+    "generation_speed": 228.43580805458726,
+    "prompt_eval_speed": 55448.55549923973,
+    "generation_latency_s": 0.6950420000066515,
+    "latency": 1.451326499998686,
+    "total_prompt_tokens": 625,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5208259,
+    "stage_rewrite_s": 0.4313875999941956,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15738910000072792,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16727780000655912,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6951342999964254,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4513448999932734,
+    "unaccounted_latency_s": 0.00015690000145696104,
+    "rewritten_query": "Find historic districts near Philipstown, NY, specifically those close to a village within the town.",
+    "query_was_rewritten": true
+  }
+}

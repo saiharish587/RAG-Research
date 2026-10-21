@@ -1,0 +1,42 @@
+{
+  "question_id": "Q407",
+  "query": "Which magazine is older, Gallery or Dime Magazine?",
+  "ground_truth": "arose on the \"Playboy\" magazine pattern in the 1970s.",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The older magazine is Dime Magazine. The context provided states that Dime Magazine began circulation in 2001, while the gallery mentioned is an American monthly business magazine published between November 2001 and June 2007. Since Dime Magazine started its publication cycle earlier than the gallery, it is older by about two years.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dime Magazine: Dime Magazine is an American basketball magazine that began circulation in 2001.  The magazine publishes six issues a year for its worldwide readership, as well as a handful of editions of \"Dime China\", a Chinese-language version consisting of regular \"Dime\" content translated from English and original content from editorial staff in China.  It makes an appearance as an endorsement in \"NBA 2K12\", and \"NBA 2K13\".  It is owned by Uproxx itself a brand of Woven Digital.",
+      "Gallery (magazine): Gallery is a men's magazine published by Magna Publishing Group.  It is one of the more popular \"skin\" magazines that arose on the \"Playboy\" magazine pattern in the 1970s.",
+      "Optimize (magazine): Optimize was an American monthly business magazine published between November 2001 and June 2007."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 252,
+    "generation_tokens": 67,
+    "generation_speed": 308.0346470014896,
+    "prompt_eval_speed": 29996.428996548027,
+    "generation_latency_s": 0.5374564000085229,
+    "latency": 1.541112199993222,
+    "total_prompt_tokens": 322,
+    "total_generation_tokens": 169,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4915294,
+    "stage_rewrite_s": 0.6142382000107318,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14567600000009406,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24356540000007953,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5375064999971073,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5411260999972,
+    "unaccounted_latency_s": 0.00014059999375604093,
+    "rewritten_query": "To optimize for search clarity and readability, consider this rephrased version:\n\n**Query Optimization:**\n\n* Original: \"Which magazine is older, Gallery or Dime Magazine?\"\n    * Optimized: \"Is Dime Magazine older than Gallery?\"\n\nThis revised query:\n  - Uses more direct language (\"older\" vs. \"is older\")\n  - Specifies the magazine type (dime) for clarity\n  - Makes it easier to understand the comparison between the two magazines",
+    "query_was_rewritten": true
+  }
+}

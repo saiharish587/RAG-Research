@@ -1,0 +1,42 @@
+{
+  "question_id": "Q59",
+  "query": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+  "ground_truth": "35,124",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "According to the 2001 census, the population of the city where Kirton End is located was 261 people.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Urbanisation in India: Urbanization in India began to accelerate after independence, due to the country's adoption of a mixed economy, which gave rise to the development of the private sector.  Urbanisation is taking place at a faster rate in India.  Population residing in urban areas in India, according to 1901 census, was 11.4%.  This count increased to 28.53% according to 2001 census, and crossing 30% as per 2011 census, standing at 31.16%.  According to a survey by UN State of the World Population report in 2007, by 2030, 40.76% of country's population is expected to reside in urban areas.  As per World Bank, India, along with China, Indonesia, Nigeria, and the United States, will lead the world's urban population surge by 2050.",
+      "Kirton, Nottinghamshire: Kirton is a village in Nottinghamshire, England.  It is located 3 mi east of Ollerton.  According to the United Kingdom Census 2001 it had a population of 273, reducing to 261 at the 2011 census.",
+      "Boston, Lincolnshire: Boston ( ) is a town and small port in Lincolnshire, on the east coast of England.  It is the largest town of the wider Borough of Boston local government district.  The borough had a total population of 66,900, at the ONS mid 2015 estimates, while the town itself had a population of 35,124 at the 2001 census.  It is due north of Greenwich on the Prime Meridian."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 25,
+    "generation_speed": 204.9852410626435,
+    "prompt_eval_speed": 31382.015691007844,
+    "generation_latency_s": 0.5039804999978514,
+    "latency": 1.2386077999981353,
+    "total_prompt_tokens": 498,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5461517,
+    "stage_rewrite_s": 0.4305875999998534,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16901689999212977,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13477959998999722,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5040780000126688,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2386334000038914,
+    "unaccounted_latency_s": 0.00017240000306628644,
+    "rewritten_query": "What was Kirton End's population according to the 2001 census?",
+    "query_was_rewritten": true
+  }
+}

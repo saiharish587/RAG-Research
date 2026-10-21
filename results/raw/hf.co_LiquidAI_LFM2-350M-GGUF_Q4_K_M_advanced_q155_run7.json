@@ -1,0 +1,42 @@
+{
+  "question_id": "Q155",
+  "query": "Are Broughtonia and Laeliocattleya both orchids?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Based on the provided context, neither Broughtonia nor Laeliocattleya are definitively classified as orchids. The context only specifies their relationships to other genera within the Orchidaceae family.\n\nBroughtonia is described as a genus of orchids native to the Bahamas and the Greater Antilles, but it does not explicitly state that it belongs to the Orchidaceae family or any specific genus within it. Laeliocattleya, on the other hand, is identified as an intergeneric hybrid of two parent genera: \"Laelia\" and \"Cattleya\". This indicates a genetic relationship rather than belonging to the Orchidaceae family directly.\n\nTherefore, without additional information confirming their specific classification within the Orchidaceae family or any other genus, we cannot definitively state whether Broughtonia or Laeliocattleya are orchids.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Broughtonia: Broughtonia is a genus of orchids (family Orchidaceae) native to the Bahamas and the Greater Antilles.  The genus is abbreviated Bro in trade journals.",
+      "Laeliocattleya: Laeliocattleya is a nothogenus of intergeneric orchid hybrids descended from the parental genera \"Laelia\" and \"Cattleya\".  It is abbreviated Lc.  in the horticultural trade.",
+      "Cattleytonia: Cattleytonia (from \"Cattleya\" and \"Broughtonia\", its parental genera) is an intergeneric hybrid of orchids.  It is abbreviated Ctna in horticultural trade."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 223,
+    "generation_tokens": 183,
+    "generation_speed": 314.7412414220112,
+    "prompt_eval_speed": 22291.08356657337,
+    "generation_latency_s": 0.8441204999980982,
+    "latency": 1.9893553000001702,
+    "total_prompt_tokens": 298,
+    "total_generation_tokens": 329,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4548639,
+    "stage_rewrite_s": 0.7725523999979487,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.11494660000607837,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2575703999900725,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.844181699998444,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9893683000118472,
+    "unaccounted_latency_s": 0.00011780000932049006,
+    "rewritten_query": "Broughtonia and Laeliocattleya are distinct orchid genera, each with unique characteristics and classifications.\n\nThis rephrased version maintains the core query while enhancing its readability and search-friendliness by:\n\n* **Removing \"Are\"**: The original sentence starts with a question, but this phrase is unnecessary in a clear, concise query.\n* **Using \"orchids\"**: This term encompasses both Broughtonia and Laeliocattleya, making the query more comprehensive.\n* **Emphasizing specificity**: By specifying that these are orchid genera, the query becomes more targeted to users searching for information about specific types of orchids.",
+    "query_was_rewritten": true
+  }
+}

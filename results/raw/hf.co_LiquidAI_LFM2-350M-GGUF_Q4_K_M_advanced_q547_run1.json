@@ -1,0 +1,42 @@
+{
+  "question_id": "Q547",
+  "query": "What drug is among the list of illegal drugs in the Philippines and can be taken by mouth or by injection?",
+  "ground_truth": "Ephedrine",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Methamphetamine hydrochloride (shabu)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Illegal drug trade in the Philippines: The prevalence of drug use in the Philippines is lower than the global average, according to the United Nations Office on Drugs and Crime (UNODC).  Two of the most used and valuable illegal drugs in the country are methamphetamine hydrochloride (shabu) and marijuana.  Ephedrine and methylenedioxy methamphetamine are also among the list of illegal drugs that are of great concern to the authorities.",
+      "Politics of drug abuse: Most countries have legislation designed to criminalise some drug use.  Usually however the legislative process is self-referential, defining abuse in terms of what is made illegal.  The legislation concerns lists of drugs specified by the legislation.  These drugs are often called \"illegal drugs\" but, generally, what is illegal is their unlicensed production, supply and possession.  The drugs are also called \"controlled drugs\" or \"controlled substances\".",
+      "Drug user: The term drug user is often used to refer to a person who consumes an illegal psychoactive substance.  The term \"user\" is typically employed to refer to someone who is a drug user, abuser, or addict.  Drug users are sometimes referred to as \"heads\", depending on the drug used, i.e., pothead, hophead, crackhead, etc."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 351,
+    "generation_tokens": 13,
+    "generation_speed": 299.64273366370867,
+    "prompt_eval_speed": 10394.456289978678,
+    "generation_latency_s": 0.33202129999699537,
+    "latency": 1.4810233000025619,
+    "total_prompt_tokens": 432,
+    "total_generation_tokens": 121,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4276116,
+    "stage_rewrite_s": 0.6494422999967355,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15845719999924768,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.34089820001099724,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3320995999965817,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4810452999954578,
+    "unaccounted_latency_s": 0.00014899999951012433,
+    "rewritten_query": "Pharmaceuticals Illegal Drugs Philippines - Mention 'drug' for clarity, 'pharmacies' for context, and specify 'oral/sublingual injection method' to better target the user's intent.\" \n\n\nThis optimized version:\n* Uses \"pharmaceuticals illegal drugs\" for precision.\n* Replaces \"in the list of illegal drugs\" with \"Pharmacies illegal drugs,\" which is more direct.\n* Adds context (\"oral/sublingual injection method\") to help the user understand the specific type.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q194",
+  "query": "In which city are the headquarters of the American research and scientific development company where Ravi Sethi worked as computer scientist located?",
+  "ground_truth": "Murray Hill",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The headquarters of the American research and scientific development company where Ravi Sethi worked as a computer scientist is Glendale, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ravi Sethi: Ravi Sethi (born 1947) is an Indian computer scientist retired from Bell Labs and president of Avaya Labs Research.  He also serves as a member of the National Science Foundation's Computer and Information Science and Engineering (CISE) Advisory Committee.  He is best known as one of three authors of the classic computer science textbook \"\", also known as the \"Dragon Book\".",
+      "Los Angeles Clippers: The Los Angeles Clippers, often abbreviated by the team as the LA Clippers, are an American professional basketball team based in Los Angeles, California.  The Clippers compete in the National Basketball Association (NBA) as a member of the league's Western Conference Pacific Division.  The Clippers play their home games at Staples Center in downtown Los Angeles, an arena shared with the Los Angeles Lakers of the NBA, the Los Angeles Sparks of the Women's National Basketball Association (WNBA), and the Los Angeles Kings of the National Hockey League (NHL).",
+      "Glendale, California: Glendale is a city in Los Angeles County, California, United States.  Its estimated 2014 population was 200,167, making it the third largest city in Los Angeles County and the 23rd-largest city in California.  It is located about 8 miles (13 km) north of downtown Los Angeles."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 28,
+    "generation_speed": 313.6130463027262,
+    "prompt_eval_speed": 37229.07808773203,
+    "generation_latency_s": 0.40475280000828207,
+    "latency": 1.3885891000099946,
+    "total_prompt_tokens": 443,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5012258,
+    "stage_rewrite_s": 0.5762519999989308,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14450129999022465,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2629305000009481,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4048025999945821,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3886016000033123,
+    "unaccounted_latency_s": 0.00011580002319533378,
+    "rewritten_query": "City: Los Angeles, California - Headquarters of Ravi Sethi's Computer Science firm is located in LA. \n\n\nThis rephrased version focuses on the key location (Los Angeles) and provides more context about the company's base rather than just stating the name. It also uses \"headquarters\" instead of \"headquarters of the American research and scientific development company\" for a slightly more concise phrasing.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q341",
+  "query": "Who is the current drummer of the band who did the song \"What Lovers Do\"?",
+  "ground_truth": "Matt Flynn",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The context provided does not specify who the current drummer of Maroon 5, as featured on the song \"What Lovers Do\", is. It only mentions that Victor R\u00e5dstr\u00f6m, Dyo, and Elina Stridh are credited with writing the interpolation for the song's title.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "What Lovers Do: \"What Lovers Do\" is a song by American pop rock band Maroon 5 featuring American R&B singer Sza.  It was released on August 30, 2017, as the third single from the band's upcoming sixth studio album (2017).  The song contains an interpolation of the 2016 song \"Sexual\" by Neiked featuring Dyo, therefore Victor R\u00e5dstr\u00f6m, Dyo and Elina Stridh are credited as songwriters.",
+      "Roger Taylor (Queen drummer): Roger Meddows Taylor (born 26 July 1949) is an English musician, singer and songwriter.  He is a multi-instrumentalist, best known as the drummer for the rock band Queen.  As a drummer, Taylor was recognised early in his career for his unique sound.  He has been acclaimed by Foo Fighters drummer Taylor Hawkins as one of the most influential rock drummers of the 1970s and 1980s, as well as being voted by radio listeners as the eighth-greatest drummer in classic rock music history in a poll conducted by Planet Rock in 2005.",
+      "sing material from the Florida-underground music scene.  Kyle Justin joined the band on drums in early 2002 to replace Jason, who was moving to Texas.  Kyle vacated his position as drummer in 2003 to pursue a music career in Los Angeles.  Eric Gebhardt left the band in 2005 to pursue a solo career under the alias Red Mouth."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 61,
+    "generation_speed": 307.15778342858584,
+    "prompt_eval_speed": 38334.30628526951,
+    "generation_latency_s": 0.46507130000100005,
+    "latency": 1.4157082999881823,
+    "total_prompt_tokens": 472,
+    "total_generation_tokens": 136,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.45551699999999995,
+    "stage_rewrite_s": 0.5527365000016289,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1103754000068875,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.28737020000698976,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.46511970000574365,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4157214999868302,
+    "unaccounted_latency_s": 0.00012019996938761324,
+    "rewritten_query": "Current Band Drummer: [Name] - Current Song: \"What Lovers Do\"\n\nExplanation:\n- The original query asks for the drummer's name.\n- It specifies that this is about a band (\"who did the song\").\n- The optimized query narrows it down to the specific drummer by including his name and clarifying the context of the question.",
+    "query_was_rewritten": true
+  }
+}

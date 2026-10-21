@@ -1,0 +1,36 @@
+{
+  "question_id": "Q309",
+  "query": "Which dog is considered a giant dog breed, the  Leonberger or the Basset Hound?",
+  "ground_truth": "The Leonberger is a giant dog breed.",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Leonberger is considered a giant dog breed according to the provided context. The text explicitly states that \"Leonberger is a giant dog breed.\" In contrast, the Basset Hound is described as a short-legged breed of dog, not specifically noted for being giant in size. Therefore, based on the information given, the Leonberger is the breed considered a giant dog breed.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Leonberger: The Leonberger is a giant dog breed.  The breed's name derives from the city of Leonberg in Baden-W\u00fcrttemberg, Germany.  According to legend, the Leonberger was ostensibly bred as a \"symbolic dog\" that would mimic the lion in the town crest.  It is in the Working Group for dog shows such as Crufts, but not at the World Dog Show.",
+      "Basset Hound: The Basset Hound is a short-legged breed of dog of the hound family.  The Basset is a scent hound that was originally bred for the purpose of hunting hare.  Their sense of smell and ability to ground-scent is second only to that of the Bloodhound.  Basset Hounds are one of 6 recognised basset-type breeds in France.",
+      "Basset Bleu de Gascogne: The Basset Bleu de Gascogne (] ), also known as the Blue Gascony Basset, is a long-backed, short legged breed of dog of the hound type.  The breed originated in the Middle Ages, descended from the Grand Bleu de Gascogne.  It nearly became extinct around the early 19th century; its salvation was attributed to one Alain Bourbon.  A French native breed, it is rare outside of its homeland.  It is recognized internationally by the F\u00e9d\u00e9ration Cynologique Internationale, in the UK by The Kennel Club, and by the United Kennel Club in the United States.  The \"bleu\" of its name is a reference to its coat which has a ticked appearance."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 405,
+    "generation_tokens": 78,
+    "generation_speed": 227.64749660717672,
+    "prompt_eval_speed": 34211.860111505324,
+    "generation_latency_s": 0.5908305000048131,
+    "latency": 0.6174926000094274,
+    "total_prompt_tokens": 405,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2247236,
+    "stage_retrieve_s": 0.026554600000963546,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.5908799000026193,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6175026999990223,
+    "unaccounted_latency_s": 6.86999992467463e-05
+  }
+}

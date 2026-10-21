@@ -1,0 +1,42 @@
+{
+  "question_id": "Q235",
+  "query": "What is the nickname of the city where Darling's Waterfront Pavilion is located?",
+  "ground_truth": "\"Queen City\"",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The nickname of the city where Darling's Waterfront Pavilion is located is Bangor.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Darling's Waterfront Pavilion: The Darling's Waterfront Pavilion (originally known as the Bangor Waterfront Pavilion) is an open-air amphitheater located within the Waterfront Park in Bangor, Maine.  The venue is a temporary structure built alongside the Penobscot River.  The venue typically operates from July until October.",
+      "Big Ben: Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower as well.  The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower.",
+      "China Pavilion at Epcot: The China Pavilion is a Chinese-themed pavilion that is part of the World Showcase within Epcot at Walt Disney World in Orlando, Florida, United States.  Its location is between the Norwegian and German pavilions."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 282,
+    "generation_tokens": 20,
+    "generation_speed": 221.70491076377343,
+    "prompt_eval_speed": 25075.582429308197,
+    "generation_latency_s": 0.4454008999891812,
+    "latency": 1.2946032000036212,
+    "total_prompt_tokens": 359,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5250958,
+    "stage_rewrite_s": 0.49894099999801256,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13827880000462756,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21176150000246707,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.44547950000560377,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2946269999956712,
+    "unaccounted_latency_s": 0.00016719999257475138,
+    "rewritten_query": "What's Darling's Waterfront Pavilion's popular nickname? \n\n\nThis rephrased query is more concise and directly asks for the desired information without unnecessary words.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q331",
+  "query": "Where is the singer of \"B Boy\" raised?",
+  "ground_truth": "Philadelphia",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Based on the provided context, Taylor Swift, who wrote \"Come On,\" was raised in a small town near Oulu, Finland. The information specifically mentions that Taylor Swift moved to this area to raise her family and continues music production there. However, it does not explicitly state where she was born or raised. Therefore, while we know she is from Finland, the exact location of her birthplace isn't provided in the given context.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Taylor Swift: Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter.  One of the leading contemporary recording artists, she is known for narrative songs about her personal life, which have received widespread media coverage.",
+      "An original song written by such composer to be cited is yet to be found, however some has claimed an abbreviation of his name in one of the albums.  In late 2008, he has decided to move in a small town near Oulu, Finland to raise his family and is a high school teacher and does accounting for bill paying in the summer to support the family, along with music production projects part-time, but he still continues to produce music today, but not as much as he used to.  He did come back to help write a few new songs, such as In My Head by Jason Derulo.  He has quit his part-time job in accounting to allow more time back in the music production business, to make a revival.",
+      "Come On (Earl King song): \"Come On\" (often called \"Let the Good Times Roll\") is a song written by New Orleans rhythm and blues artist Earl King.  He first recorded the song as \"Darling Honey Angel Child\" in 1960 for the Ace Records subsidiary Rex.  Later that year, he recorded it as a two-part song for Imperial Records using some new lyrics.  Retitled \"Come On\", it was released in 1960 with \"Come On - Part I\u201d as the A-side backed with \u201cCome On - Part II\u201d (Imperial 5713)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 88,
+    "generation_speed": 226.49940029136062,
+    "prompt_eval_speed": 36093.80725540491,
+    "generation_latency_s": 0.767796800006181,
+    "latency": 1.626275499991607,
+    "total_prompt_tokens": 464,
+    "total_generation_tokens": 128,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5094723999999999,
+    "stage_rewrite_s": 0.48306359999696724,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16239919999497943,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.212798800013843,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7678598000056809,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6262895999971079,
+    "unaccounted_latency_s": 0.00016889997641555965,
+    "rewritten_query": "Where did the singer of \"Boy B\" come from? \n\n\nThis rephrased query is more direct and uses a common phrasing for searching about an artist's background.",
+    "query_was_rewritten": true
+  }
+}

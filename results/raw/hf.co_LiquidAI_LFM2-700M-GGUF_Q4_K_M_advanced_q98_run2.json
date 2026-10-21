@@ -1,0 +1,42 @@
+{
+  "question_id": "Q98",
+  "query": "Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?",
+  "ground_truth": "Levni Yilmaz",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Lev Yilmaz was the filmmaker known for his animated comic series \"Tales of Mere Existence.\" Pamela B. Green, on the other hand, is an American film producer and director recognized for her work in feature films and motion graphics, but not specifically for animation. Therefore, Lev Yilmaz is the correct answer to this question based on the provided context.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pamela B. Green: Pamela B. Green is an American film producer and director known for her work in feature film titles and motion graphics.  She is the director and producer of the documentary \"Be Natural: The Untold Story of Alice Guy-Blache\".",
+      "Lev Yilmaz: Levni Yilmaz (born 1973) is a San Francisco based independent film maker, artist and publisher, best known for his \u201cTales of Mere Existence\u201d animated comic series.",
+      "Pamela; or, Virtue Rewarded: Pamela; or, Virtue Rewarded is an epistolary novel by English writer Samuel Richardson, first published in 1740.  It tells the story of a beautiful 15-year-old maidservant named Pamela Andrews, whose country landowner master, Mr. B, makes unwanted advances towards her after the death of his mother.  After Mr. B attempts unsuccessfully to seduce and rape her, he eventually rewards her virtue when he sincerely proposes an equitable marriage to her.  In the novel's second part, Pamela marries Mr. B and tries to acclimatize to upper-class society.  The story, a best-seller of its time, was very widely read but was also criticized for its perceived licentiousness."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 343,
+    "generation_tokens": 78,
+    "generation_speed": 212.0631295624159,
+    "prompt_eval_speed": 26801.06266604157,
+    "generation_latency_s": 0.7942567999998573,
+    "latency": 1.5815426999906776,
+    "total_prompt_tokens": 421,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.603711,
+    "stage_rewrite_s": 0.46244580000347923,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17093420001037885,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15352540000458248,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7944254999893019,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5815714999916963,
+    "unaccounted_latency_s": 0.00024189999385271221,
+    "rewritten_query": "Which animator is known as Lev Yilmaz or Pamela B. Green?",
+    "query_was_rewritten": true
+  }
+}

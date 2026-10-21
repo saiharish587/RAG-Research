@@ -1,0 +1,42 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "No, Yingkou and Fuding are not the same level of city based on the provided context. The context specifies that Fuding is a county-level city in northeastern Ningde prefecture level city, while Yingkou is described as a prefecture-level city of Liaoning province. This indicates they are both within the same prefectural administrative division but at different levels of urban hierarchy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Metropolitan area: A metropolitan area, sometimes referred to as a metro area, greater area, commuter belt or conurbation, is a region consisting of a densely populated urban core and its less-populated surrounding territories, sharing industry, infrastructure, and housing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 202,
+    "generation_tokens": 81,
+    "generation_speed": 318.58532383608195,
+    "prompt_eval_speed": 18417.213712618526,
+    "generation_latency_s": 0.5464135000074748,
+    "latency": 1.266311900006258,
+    "total_prompt_tokens": 274,
+    "total_generation_tokens": 146,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.42415,
+    "stage_rewrite_s": 0.4547070000116946,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12326560000656173,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1417650999937905,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5464752999978373,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2663253000064287,
+    "unaccounted_latency_s": 0.000112900001113303,
+    "rewritten_query": "Yingkou and Fuding are both within the same metropolitan area, but differ in their relative rankings as \"city\" levels - Yingkou is generally considered a higher-level urban center compared to Fuding.\n\nThis rephrased version maintains the core query while making it more concise and clear for search engines.",
+    "query_was_rewritten": true
+  }
+}

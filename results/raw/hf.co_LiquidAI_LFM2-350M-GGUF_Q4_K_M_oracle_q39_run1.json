@@ -1,0 +1,33 @@
+{
+  "question_id": "Q39",
+  "query": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, the provided context does not specify whether either airport is located in Michigan or not. The information given only pertains to their respective locations within Nevada, California (Elko Regional Airport) and Ohio (Gerald R. Ford International Airport). To answer your question accurately, additional geographical data would be required.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Elko Regional Airport: Elko Regional Airport (IATA: EKO, ICAO: KEKO, FAA LID: EKO) , formerly Elko Municipal Airport, is a mile west of downtown Elko, in Elko County, Nevada.",
+      "Gerald R. Ford International Airport: Gerald R. Ford International Airport (IATA: GRR, ICAO: KGRR, FAA LID: GRR) is a commercial airport in Cascade Township approximately 13 mi southeast of Grand Rapids, Michigan.  The facility is owned by the Kent County Board of Commissioners and managed by an independent authority.  The Federal Aviation Administration (FAA) National Plan of Integrated Airport Systems for 2017\u20132021 categorized it as a small hub primary commercial service facility."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 234,
+    "generation_tokens": 63,
+    "generation_speed": 275.55318395143263,
+    "prompt_eval_speed": 8240.597267220735,
+    "generation_latency_s": 0.5372548000013921,
+    "latency": 0.537354600004619,
+    "total_prompt_tokens": 234,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.268037,
+    "stage_generate_s": 0.5373191999970004,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.53736650000792,
+    "unaccounted_latency_s": 4.7900015488266945e-05
+  }
+}

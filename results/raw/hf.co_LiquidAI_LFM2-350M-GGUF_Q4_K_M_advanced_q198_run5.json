@@ -1,0 +1,42 @@
+{
+  "question_id": "Q198",
+  "query": " Robert Smith founded the multinational company headquartered in what city?",
+  "ground_truth": "Golden Valley, Minnesota,",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Robert Smith founded Marks & Spencer plc (also known as M&S) in Westminster, London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "JPMorgan Chase: JPMorgan Chase & Co. is a U.S. multinational banking and financial services holding company headquartered in New York City.  It is the largest bank in the United States, the world's sixth largest bank by total assets, with total assets of US$2.5 trillion, and the world's second most valuable bank by market capitalization, after ICBC.  It is a major provider of financial services, and according to \"Forbes\" magazine is the world's sixth largest public company based upon a composite ranking.  The hedge fund unit of JPMorgan Chase is the second largest hedge fund in the United States.  The company was formed in 2000, when Chase Manhattan Corporation merged with J.P. Morgan & Co.",
+      "Robert Smith (Illinois politician): Robert Smith (June 12, 1802 \u2013 December 21, 1867) was a U.S. Representative from Illinois, nephew of Jeremiah Smith and Samuel Smith of New Hampshire.  Smith founded General Mills in 1856.",
+      "Marks &amp; Spencer: Marks and Spencer plc (also known as M&S) is a major British multinational retailer headquartered in the City of Westminster, London.  It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 342,
+    "generation_tokens": 22,
+    "generation_speed": 309.2971924250306,
+    "prompt_eval_speed": 29273.30308995977,
+    "generation_latency_s": 0.3779107999871485,
+    "latency": 1.0354697000002488,
+    "total_prompt_tokens": 415,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4721738,
+    "stage_rewrite_s": 0.35813609999604523,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15514590000384487,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1441084999969462,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.37796529999468476,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0354828999988968,
+    "unaccounted_latency_s": 0.00012769999739248306,
+    "rewritten_query": "Robert Smith established Multinational Corp., located in [city], as his current headquarters.",
+    "query_was_rewritten": true
+  }
+}

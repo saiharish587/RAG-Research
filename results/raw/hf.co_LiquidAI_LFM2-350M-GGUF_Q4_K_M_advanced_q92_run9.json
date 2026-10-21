@@ -1,0 +1,42 @@
+{
+  "question_id": "Q92",
+  "query": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+  "ground_truth": "John Waters",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "John Waters",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "18th Independent Spirit Awards: The 2002 Independent Spirit Awards, honoring the best in independent filmmaking for 2002, were announced on March 22, 2003.  It was hosted by John Waters.",
+      "Independent Spirit Awards: The Film Independent Spirit Awards (abbreviated \"Spirit Awards\" and originally known as the FINDIE or Friends of Independents Awards), founded in 1984, are awards dedicated to independent filmmakers.  Winners were typically presented with acrylic glass pyramids containing suspended shoestrings representing the paltry budgets of independent films.  Since 2006, winners have received a trophy depicting a bird with its wings spread sitting atop of a pole with the shoestrings from the previous design wrapped around the pole.",
+      "Independent Spirit Award for Best First Feature: The Independent Spirit Award for Best First Feature is one of the annual Independent Spirit Awards.  It is usually given to the director (or directors) and producer (or producers).  The \"first feature\" designation is applied to the director not the producer(s).  Therefore, producers have been nominated multiple times."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 303,
+    "generation_tokens": 3,
+    "generation_speed": 172.9804532087874,
+    "prompt_eval_speed": 24925.962487660414,
+    "generation_latency_s": 0.3505775000085123,
+    "latency": 1.0261615000054007,
+    "total_prompt_tokens": 379,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5110148999999999,
+    "stage_rewrite_s": 0.38038139999844134,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1464851000055205,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14851530001033098,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3506345999921905,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.026176100000157,
+    "unaccounted_latency_s": 0.00016029999824240804,
+    "rewritten_query": "American Film Director 2002 - 18th Independent Spirit Awards Hosted by [Director's Name]",
+    "query_was_rewritten": true
+  }
+}

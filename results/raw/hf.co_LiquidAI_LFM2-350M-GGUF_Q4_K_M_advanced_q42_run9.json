@@ -1,0 +1,42 @@
+{
+  "question_id": "Q42",
+  "query": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+  "ground_truth": "Mumbai",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The company that Sachin Warrier worked for as a software engineer was Kochi, specifically within Cisco Systems, Inc. (Cisco). The context provided does not specify his exact location but indicates he worked in the Kochi area of Kerala, India.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sachin Warrier: Sachin Warrier is a playback singer and composer in the Malayalam cinema industry from Kerala.  He became notable with the song \"Muthuchippi Poloru\" from the film Thattathin Marayathu.  He made his debut with the movie Malarvaadi Arts Club.  He was working as a software engineer in Tata Consultancy Services in Kochi.  Later he resigned from the job to concentrate more on music.  His latest work is as a composer for the movie Aanandam.",
+      "Cisco Systems: Cisco Systems, Inc. (known as Cisco) is an American multinational technology conglomerate headquartered in San Jose, California, in the center of Silicon Valley, that develops, manufactures and sells networking hardware, telecommunications equipment and other high-technology services and products.  Through its numerous acquired subsidiaries, such as OpenDNS, WebEx, Jabber and Jasper, Cisco specializes into specific tech markets, such as Internet of Things (IoT), domain security and energy management.",
+      "Hewlett Packard Enterprise: Hewlett Packard Enterprise Company (commonly referred to as Hewlett Packard Enterprise or HPE) is an American multinational enterprise information technology company based in Palo Alto, California, founded on 1 November 2015 as part of splitting of the Hewlett-Packard company.  HPE is a business-focused organization with four divisions: Enterprise Group, which works in servers, storage, networking, consulting and support; Services; Software; and Financial Services."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 399,
+    "generation_tokens": 53,
+    "generation_speed": 326.4994332462668,
+    "prompt_eval_speed": 46020.76124567474,
+    "generation_latency_s": 0.4319651999976486,
+    "latency": 1.258630299998913,
+    "total_prompt_tokens": 478,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4659911,
+    "stage_rewrite_s": 0.4988470999960555,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14277989999391139,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18487369999638759,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4320129999978235,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2586425999907078,
+    "unaccounted_latency_s": 0.00012940001033712178,
+    "rewritten_query": "Find the company where Sachin Warrier held software engineering position, located in headquarters.\" \n\n\nThis version is more direct and concise while still conveying the same information. It eliminates unnecessary words like \"where\" and focuses on the key details of the location mentioned in the original query.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q481",
+  "query": "Which record label released Van Morrison's \"I've Been Working\" on the album \"His Band and the Street Choir\"?",
+  "ground_truth": "Warner Bros",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The record label that released Van Morrison's \"I've Been Working\" on the album \"His Band and the Street Choir\" was Warner Bros. Records. This information is derived from the context provided, which states that \"His Band and the Street Choir (also referred to as 'Street Choir') is the fourth studio album by Northern Irish singer-songwriter Van Morrison. It was released on 15 November 1970 by Warner Bros. Records.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "I've Been Working: \"I've Been Working\" is a song written by Northern Irish singer-songwriter Van Morrison appearing on the album \"His Band and the Street Choir\", released in 1970.  The song was first an outtake from Morrison's well received album \"Astral Weeks\" of 1968.  Other versions of \"I've Been Working\" were recorded for Morrison's next album \"Moondance\", of which, three were released on the 2013 deluxe edition.",
+      "His Band and the Street Choir: His Band and the Street Choir (also referred to as \"Street Choir\") is the fourth studio album by Northern Irish singer-songwriter Van Morrison.  It was released on 15 November 1970 by Warner Bros.  Records.  Originally titled \"Virgo's Fool\", \"Street Choir\" was renamed by Warner Bros. without Morrison's consent.  Recording began in early 1970 with a demo session in a small church in Woodstock, New York.  Morrison booked the A&R Studios on 46th Street in New York City in the second quarter of 1970 to produce two sessions of songs that were released on \"His Band and the Street Choir\".",
+      "The Best of Van Morrison: The Best of Van Morrison is a compilation album by Northern Irish singer-songwriter Van Morrison.  It compiles songs spanning 25 years of his recording career.  Released in 1990 by Polydor Records, the album was a critical and commercial success, becoming one of the best-selling records of the 1990s and helping revive Morrison's mainstream popularity.  Its success encouraged him to release a second and third greatest hits volume in 1993 and 2007, respectively.  The album remains Morrison's best-seller."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 459,
+    "generation_tokens": 95,
+    "generation_speed": 222.40534896569807,
+    "prompt_eval_speed": 38796.382385259065,
+    "generation_latency_s": 0.7916559000004781,
+    "latency": 2.008650799994939,
+    "total_prompt_tokens": 545,
+    "total_generation_tokens": 214,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4972935,
+    "stage_rewrite_s": 0.8476820000068983,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15410790000169072,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21496720000868663,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7917506000085268,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.008676799989189,
+    "unaccounted_latency_s": 0.00017009997100103647,
+    "rewritten_query": "What record label released Van Morrison's song \"I've Been Working\" from his album \"His Band and the Street Choir\"? \n\nTo further refine this, let's break it down for clarity:\n- Identify key elements: record label, artist (Van Morrison), song title (\"I've Been Working\"), album title (\"His Band and the Street Choir\").\n- Rephrase to focus on the relationship between these elements.\nOptimized Query: Which label released Van Morrison's \"I've Been Working\" from \"His Band and the Street Choir\"?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q397",
+  "query": "\"Kapit\u00e4n zur See\" Ernst Lindemann was the commander of which one of two battleships built for Nazi Germany's \"Kriegsmarine\"?",
+  "ground_truth": "Bismarck",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The battleship named after him is the \"Bismarck\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernst Lindemann: Otto Ernst Lindemann (28 March 1894 \u2013 27 May 1941) was a German \"Kapit\u00e4n zur See\" (naval captain).  He was the only commander of the battleship \"Bismarck\" during its eight months of service in World War II.",
+      "Ernst Heinrich Lindemann: Ernst Heinrich Lindemann (25 January 1833 in Kirchlengern \u2013 8 May 1900 in D\u00fcsseldorf) was German politician and mayor of Essen, Dortmund and D\u00fcsseldorf.  His grandson \"Kapit\u00e4n zur See\" Ernst Lindemann was the commander of the battleship \"Bismarck\".",
+      "German battleship Bismarck: Bismarck was the first of two \"Bismarck\"-class battleship s built for Nazi Germany's \"Kriegsmarine\".  Named after Chancellor Otto von Bismarck, the primary force behind the unification of Germany in 1871, the ship was laid down at the Blohm & Voss shipyard in Hamburg in July 1936 and launched in February 1939.  Work was completed in August 1940, when she was commissioned into the German fleet.  \"Bismarck\" and her sister ship \"Tirpitz\" were the largest battleships ever built by Germany, and two of the largest built by any European power."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 364,
+    "generation_tokens": 14,
+    "generation_speed": 301.13355273063604,
+    "prompt_eval_speed": 34986.54363706267,
+    "generation_latency_s": 0.3630602000048384,
+    "latency": 1.3073311999905854,
+    "total_prompt_tokens": 527,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7445936,
+    "stage_route_s": 0.3443161999894073,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4748544000030961,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.12475119999726303,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 0.000106100007542409,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.36314140001195483,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3073561999917729,
+    "unaccounted_latency_s": 0.0001881999778561294,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "What battleship was Kapit\u00e4n zur See Ernst Lindemann commanded?",
+      "Which two battleships were constructed by the Kriegsmarine under his command?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

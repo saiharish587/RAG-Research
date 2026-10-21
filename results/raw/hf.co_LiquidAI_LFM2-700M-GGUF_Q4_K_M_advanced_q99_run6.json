@@ -1,0 +1,42 @@
+{
+  "question_id": "Q99",
+  "query": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
+  "ground_truth": "Beijing",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Moroccan Ambassador to China, who serves as the official representative of the Government in Rabat to the Government of the People's Republic of China, would be based in Rabat. This is because the context provided states that Rabat is the capital city of Morocco and also the capital city of the Rabat-Sal\u00e9-K\u00e9nitra administrative region, implying that the Moroccan ambassador resides there within this administrative structure.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rabat: Rabat (Berber: , Arabic: \u0627\u0644\u0631\u0650\u0651\u0628\u064e\u0627\u0637\u200e \u200e , Moroccan Arabic: \u0631\u0651\u0628\u0627\u0637\u200e \u200e ) is the capital city of Morocco and its second largest city with an urban population of approximately 580,000 (2014) and a metropolitan population of over 1.2 million.  It is also the capital city of the Rabat-Sal\u00e9-K\u00e9nitra administrative region.",
+      "Yangon Region: Yangon Region (, ] ; formerly Rangoon Division and Yangon Division) is an administrative region of Myanmar.  Located in the heart of Lower Myanmar, the division is bordered by Bago Region to the north and east, the Gulf of Martaban to the south, and Ayeyarwady Region to the west.  Yangon Region is dominated by its capital city of Yangon, the former national capital and the largest city in the country.  Other important cities are Thanlyin and Twante.  The division is the most developed region of the country and the main international gateway.  The division measures 10,170 km2 .",
+      "Moroccan Ambassador to China: The Moroccan ambassador in Beijing is the official representative of the Government in Rabat to the Government of the People's Republic of China."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 343,
+    "generation_tokens": 88,
+    "generation_speed": 194.76567255021303,
+    "prompt_eval_speed": 34354.96794871795,
+    "generation_latency_s": 0.8118433999916306,
+    "latency": 2.282180900001549,
+    "total_prompt_tokens": 425,
+    "total_generation_tokens": 241,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5382577,
+    "stage_rewrite_s": 1.0217522000020836,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17093830001249444,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2773442000034265,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8119412999949418,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.282205099996645,
+    "unaccounted_latency_s": 0.00022999999055173248,
+    "rewritten_query": "Where is the ambassador's office located for the Rabat-Sal\u00e9-K\u00e9nitra region in terms of location? \n\n\nThis rephrased query focuses on the key elements:\n\n* **\"Ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region\"** becomes **\"ambassador's office\"** - This is more concise and directly asks about the physical location.\n* **\"In which city\"** is removed as it's implied by \"administrative region\".\n* **\"Based on\"** is replaced with a more natural phrasing for asking about location.\n\nThe result is a search-friendly query that clearly states the user wants to know the location of the ambassador's office within the specified administrative region.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q56",
+  "query": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+  "ground_truth": "Marion, South Australia",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Westminster, Adelaide, Australia contains a boarding school that was founded in 1838 and opened by a Prime Minister of Australia. This school is Westminster School, which was established as a Methodist day and boarding school for boys by Prime Minister Robert Menzies in 1961. While the provided context does not mention a specific Australian city founded in 1838 with a boarding school named after a London school of the same name, it does provide information about Westminster School in Adelaide, which fits the description given in the question.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Westminster School, Adelaide: Westminster School is an independent, Uniting Church, Early Learning to Year 12, coeducational, day and boarding school located at Marion, South Australia, 12 km south of Adelaide.  Founded as a Methodist day and boarding school for boys, the school was opened by the Prime Minister Robert Menzies in 1961 and is named after Westminster School in London.  The school became co-educational in 1978, and has a current enrolment of around 1150 students.",
+      "Gillard Government: The Gillard Government was the Government of Australia led by the 27th Prime Minister of Australia, Julia Gillard, of the Australian Labor Party.  The Gillard Government succeeded the First Rudd Government by way of the Labor Party leadership spill, and began on 24 June 2010, with Gillard sworn in as Prime Minister by the Governor-General of Australia, Quentin Bryce.  The Gillard Government ended when Kevin Rudd won back the leadership of the Australian Labor Party on 26 June 2013 and commenced the Second Rudd Government.",
+      "Grace Church School: Grace Church School is a private school whose original building is located at 86 Fourth Avenue between East 10th and East 12th Streets in the East Village neighborhood of the borough of Manhattan in New York City.  The school was founded in 1894 by the Grace Church as the first choir boarding school in New York City.  The private day school, which much resembles the school today, began in 1934.  Grace Church School's High School Division opened in 2012 and is located at 46 Cooper Square.  In the 2015-16 school year, the school opened for the first time as a Junior Kindergarten through 12th grade program."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 455,
+    "generation_tokens": 106,
+    "generation_speed": 219.899219772674,
+    "prompt_eval_speed": 38196.77635997313,
+    "generation_latency_s": 0.8503377000015462,
+    "latency": 1.9793074999906821,
+    "total_prompt_tokens": 545,
+    "total_generation_tokens": 195,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5221614,
+    "stage_rewrite_s": 0.7391206999891438,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.18682750000152737,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20277029999124352,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8504386999993585,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9793576999945799,
+    "unaccounted_latency_s": 0.00020160002168267965,
+    "rewritten_query": "Find an Australian city from 1838 that started a boarding school for prime ministers, located next to a school in London named after the same name.\n\nThis optimized query focuses on the key elements of the original question: Australian city founded in 1838, boarding school opened by a Prime Minister of Australia, and named after a school in London. It also simplifies the phrasing for better readability while maintaining all the essential information.",
+    "query_was_rewritten": true
+  }
+}

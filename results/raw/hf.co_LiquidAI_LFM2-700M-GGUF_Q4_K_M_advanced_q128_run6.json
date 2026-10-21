@@ -1,0 +1,42 @@
+{
+  "question_id": "Q128",
+  "query": "When was the palace founded at which Columba de Dunbar died in 1435?",
+  "ground_truth": "the late 12th Century",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Tower of London, where Columba de Dunbar died in 1435, was founded towards the end of 1066. However, the exact founding date is not specified within the provided context. The information given does not explicitly state when the palace was founded or when Columba de Dunbar died. Therefore, based solely on the provided context, it's not possible to give a precise answer for both events.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Columba de Dunbar: Columba de Dunbar ( 1386 \u2013 1435) was Bishop of Moray from 1422 until his death at Spynie Palace near Elgin sometime before 7 November 1435.",
+      "Tower of London: The Tower of London, officially Her Majesty's Royal Palace and Fortress of the Tower of London, is a historic castle located on the north bank of the River Thames in central London.  It lies within the London Borough of Tower Hamlets, separated from the eastern edge of the square mile of the City of London by the open space known as Tower Hill.  It was founded towards the end of 1066 as part of the Norman Conquest of England.  The White Tower, which gives the entire castle its name, was built by William the Conqueror in 1078 and was a resented symbol of oppression, inflicted upon London by the new ruling elite.  The castle was used as a prison from 1100 (Ranulf Flambard) until 1952 (Kray twins), although that was not its primary purpose.  A grand palace early in its history, it served as a royal residence.  As a whole, the Tower is a complex of several buildings set within two concentric rings of defensive walls and a moat.  There were several phases of expansion, mainly under Kings Richard the Lionheart, Henry III, and Edward I in the 12th and 13th centuries.  The general layout established by the late 13th century remains despite later activity on the site.",
+      "Gospatric, Earl of Northumbria: Gospatric or Cospatric (from the Cumbric \"Servant of Saint Patrick\"), (died after 1073), was Earl of Northumbria, or of Bernicia, and later lord of sizable estates around Dunbar.  While his paternal ancestry is uncertain, his descendants held the Earldom of Dunbar, later known as the Earldom of March, in south-east Scotland until 1435."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 496,
+    "generation_tokens": 85,
+    "generation_speed": 213.36144684162306,
+    "prompt_eval_speed": 39343.22201951297,
+    "generation_latency_s": 0.743278800000553,
+    "latency": 1.6349848999961978,
+    "total_prompt_tokens": 573,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5614391999999999,
+    "stage_rewrite_s": 0.49264499999117106,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16995049999968614,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2289024000056088,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7433461000036914,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.635001700007706,
+    "unaccounted_latency_s": 0.00015839999832678586,
+    "rewritten_query": "When was the palace built that Columba de Dunbar passed away in 1435?",
+    "query_was_rewritten": true
+  }
+}

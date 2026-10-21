@@ -1,0 +1,42 @@
+{
+  "question_id": "Q21",
+  "query": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+  "ground_truth": "Pedro Rodr\u00edguez",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Based on the provided context, there is no information about another Mexican Formula One race car driver holding the podium besides Sergio P\u00e9rez (born in 1990). The context only mentions Sergio P\u00e9rez as \"Checo\" P\u00e9rez and does not provide details about other drivers. Therefore, I do not know which other Mexican Formula One race car driver has held the podium besides Sergio P\u00e9rez.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sergio P\u00e9rez: Sergio P\u00e9rez Mendoza (    ; born 26 January 1990) also known as \"Checo\" P\u00e9rez, is a Mexican racing driver, currently driving for Force India.",
+      "Force India VJM04: The Force India VJM04 is a Formula One racing car developed by Force India for the 2011 Formula One season, the fourth car the team has made since entering the sport in 2008.  The car was driven by long-time Force India driver Adrian Sutil and 2010 Deutsche Tourenwagen Masters champion Paul di Resta.  The car was launched online on 8 February 2011.",
+      "Force India VJM05: The Force India VJM05 is a Formula One racing car designed by Sahara Force India F1 Team for use in the 2012 Formula One season.  The car was launched on 3 February at Silverstone.  It was driven by Paul di Resta, and Nico H\u00fclkenberg who returned to the sport after spending one year as Force India's test and reserve driver."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 292,
+    "generation_tokens": 75,
+    "generation_speed": 222.30785191332959,
+    "prompt_eval_speed": 20234.218002910402,
+    "generation_latency_s": 0.7123371999914525,
+    "latency": 1.5737296000006609,
+    "total_prompt_tokens": 374,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5067244,
+    "stage_rewrite_s": 0.4040590999939013,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1640421000047354,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.29304219999175984,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.712430299987318,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5737474000052316,
+    "unaccounted_latency_s": 0.00017450003360863775,
+    "rewritten_query": "Who else than Force India driver Miguel Vargas has finished second after being born in Mexico?",
+    "query_was_rewritten": true
+  }
+}

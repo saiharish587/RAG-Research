@@ -1,0 +1,42 @@
+{
+  "question_id": "Q41",
+  "query": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+  "ground_truth": "Scotch Collie",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Manchester Terrier's ancestors include Gordon and Irish Setters, while the Scotch Collie's ancestors are not explicitly mentioned in the provided context. However, based on the information given about the Manchester Terrier, it can be inferred that its ancestors likely include both Gordon and Irish Setters due to their common characteristics as a smooth-haired terrier type.\n\nTherefore, the answer is: The Manchester Terrier's ancestors include Gordon and Irish Setters.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scotch Collie: The Scotch Collie is a landrace breed of dog which originated from the highland regions of Scotland.  The breed consisted of both the long-haired (now known as Rough) Collie and the short-haired (now known as Smooth) Collie.  It is generally believed to have descended from a variety of ancient herding dogs, some dating back to the Roman occupation, which may have included Roman Cattle Dogs, Native Celtic Dogs and Viking Herding Spitzes.  Other ancestors include the Gordon and Irish Setters.",
+      "Manchester Terrier: The Manchester Terrier is a breed of dog of the smooth-haired terrier type.",
+      "Irish Setter: The Irish Setter (Irish: \"sotar rua\" , literally \"red setter\") is a setter, a breed of gundog, and family dog.  The term \"Irish Setter\" is commonly used to encompass the show-bred dog recognised by the American Kennel Club as well as the field-bred Red Setter recognised by the Field Dog Stud Book."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 303,
+    "generation_tokens": 94,
+    "generation_speed": 226.09088853719194,
+    "prompt_eval_speed": 26502.230385725532,
+    "generation_latency_s": 0.7932734999922104,
+    "latency": 1.6287398999993457,
+    "total_prompt_tokens": 384,
+    "total_generation_tokens": 118,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5820053000000001,
+    "stage_rewrite_s": 0.5078153000067687,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16954790000454523,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15787840000120923,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7933419000037247,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6287562000070466,
+    "unaccounted_latency_s": 0.00017329998081550002,
+    "rewritten_query": "Which dog lineage includes ancestors from both Gordon and Irish Setters, specifically Manchester Terriers or Scotch Collies?",
+    "query_was_rewritten": true
+  }
+}

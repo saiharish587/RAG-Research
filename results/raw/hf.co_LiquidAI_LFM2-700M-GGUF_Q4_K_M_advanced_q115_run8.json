@@ -1,0 +1,42 @@
+{
+  "question_id": "Q115",
+  "query": "Which component of shellite has the formula (ON)CHOH?",
+  "ground_truth": "picric acid",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "To determine which component of shellite has the chemical formula (ON)CHOH, we need to analyze the components of shellite based on the given information:\n\n1. **Citric Acid**: Citric acid is a weak organic tricarboxylic acid with the chemical formula CHO.\n2. **Shellite Components**:\n   - Picric acid (C7H6O5)\n   - Dinitrophenol (C6H5NO2)\n   - Hexanitrodiphenylamine (C6H4(NO)2)\n\nGiven the chemical formula (ON)CHOH, we need to identify which of these components could potentially be part of shellite. The formula suggests a combination where one component is an organic acid and another is an oxygen-containing functional group.\n\n- **Picric Acid**: Contains an -OH group.\n- **Dinitrophenol**: Contains multiple oxygen atoms, but not in the form of an -OH group.\n- **Hexanitrodiphenylamine**: Contains a -NH2 group and an aromatic ring.\n\nSince shellite is described as an explosive mixture containing Picric acid and Dinitrophenol, we can infer that one component must be Picric acid (CHO) and the other must be Hexanitrodiphenylamine (C6H4(NO)). The -OH group from Picric acid would likely be part of the organic acid component.\n\nTherefore, the component with the formula (ON)CHOH is **Picric acid**.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Citric acid: Citric acid is a weak organic tricarboxylic acid having the chemical formula CHO.  It occurs naturally in citrus fruits.  In biochemistry, it is an intermediate in the citric acid cycle, which occurs in the metabolism of all aerobic organisms.",
+      "Shellite (explosive): Shellite (known as Tridite in US service) is an explosive mixture of Picric acid and Dinitrophenol or Picric acid and Hexanitrodiphenylamine in a ratio of 70/30.  It was typically used as a filling in Royal Navy armour-piercing shells during the early part of the 20th century.",
+      "Ionic compound: In chemistry, an ionic compound is a chemical compound composed of ions held together by electrostatic forces termed ionic bonding.  The compound is neutral overall, but consists of positively charged ions called cations and negatively charged ions called anions.  These can be simple ions such as the sodium (Na) and chloride (Cl) in sodium chloride, or polyatomic species such as the ammonium (NH4+ ) and carbonate (CO32\u2212 ) ions in ammonium carbonate.  Individual ions within an ionic compound usually have multiple nearest neighbours, so are not considered to be part of molecules, but instead part of a continuous three-dimensional network, usually in a crystalline structure."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 352,
+    "generation_tokens": 331,
+    "generation_speed": 218.9650165348356,
+    "prompt_eval_speed": 25772.44106018451,
+    "generation_latency_s": 1.8954416000051424,
+    "latency": 2.887767799998983,
+    "total_prompt_tokens": 425,
+    "total_generation_tokens": 377,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5937018000000001,
+    "stage_rewrite_s": 0.6207345000002533,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16440130000410136,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2068689000006998,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.8955382999993162,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.887793199988664,
+    "unaccounted_latency_s": 0.0002511999919079244,
+    "rewritten_query": "What part of shellite contains the chemical formula CHO on its ON side? \n\n\nThis rephrased query is more direct and focuses on the key information - the question about a specific element within shellite.",
+    "query_was_rewritten": true
+  }
+}

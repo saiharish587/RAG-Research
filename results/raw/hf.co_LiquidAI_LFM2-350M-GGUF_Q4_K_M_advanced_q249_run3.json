@@ -1,0 +1,42 @@
+{
+  "question_id": "Q249",
+  "query": "Which author has won more Pulitzer Prizes, Thomas Friedman or Henri Bergson?",
+  "ground_truth": "Thomas Loren Friedman",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Based on the provided context, there is insufficient information to determine which author has won more Pulitzer Prizes. The context only mentions that Thomas Loren Friedman has been awarded three times as a Pulitzer Prize winner and does not provide any specific information about Henri Bergson's Pulitzer Prize wins or his total awards.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henri Bergson: Henri-Louis Bergson (] ; 18 October 1859 \u2013 4 January 1941) was a French philosopher, influential especially in the first half of the 20th century and after WWII in continental philosophy.",
+      "Thomas Friedman: Thomas Loren Friedman (born July 20, 1953) is an American journalist and author.  He is a three time Pulitzer Prize winner.",
+      "Nobel Prize in Literature: Since 1901, the Nobel Prize in Literature (Swedish: \"Nobelpriset i litteratur\" ) has been awarded annually to an author from any country who has, in the words of the will of Alfred Nobel, produced \"in the field of literature the most outstanding work in an ideal direction\" (original Swedish: \"den som inom litteraturen har producerat det mest framst\u00e5ende verket i en idealisk riktning\").  Though individual works are sometimes cited as being particularly noteworthy, here \"work\" refers to an author's work as a whole.  The Swedish Academy decides who, if anyone, will receive the prize in any given year.  The academy announces the name of the chosen laureate in early October.  It is one of the five Nobel Prizes established by the will of Alfred Nobel in 1895; the others are the Nobel Prize in Chemistry, Nobel Prize in Physics, Nobel Peace Prize, and Nobel Prize in Physiology or Medicine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 368,
+    "generation_tokens": 65,
+    "generation_speed": 319.91180277683446,
+    "prompt_eval_speed": 36910.73219658977,
+    "generation_latency_s": 0.48442849999992177,
+    "latency": 1.3275745999999344,
+    "total_prompt_tokens": 445,
+    "total_generation_tokens": 138,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4395928,
+    "stage_rewrite_s": 0.5037217999924906,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12021619999723043,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21901649999199435,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.48450099999899976,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3275925000052666,
+    "unaccounted_latency_s": 0.00013790003140456975,
+    "rewritten_query": "To find the author with the highest Pulitzer Prize wins from Thomas Friedman and Henri Bergson, consider this rephrased version:\n\n\"Which Pulitzer-winning author has secured the most prestigious awards? Compare their achievements in this concise query.\" \n\nThis version maintains the core inquiry while using more direct language and a clear structure to guide the search effectively.",
+    "query_was_rewritten": true
+  }
+}

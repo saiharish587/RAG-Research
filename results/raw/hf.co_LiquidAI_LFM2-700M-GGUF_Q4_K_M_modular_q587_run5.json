@@ -1,0 +1,49 @@
+{
+  "question_id": "Q587",
+  "query": "Fantasy Records is know for recordings of comedian Lenny Bruce, Creedence Clearwater Revival, and what American jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip?",
+  "ground_truth": "Vincent Anthony Guaraldi",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Fantasy Records is known for recordings of comedian Lenny Bruce and the rock band Creedence Clearwater Revival. The American jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip is Dave Brubeck.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fantasy Records: Fantasy Records is an American record company and label founded by brothers Max and Sol Weiss in 1949.  The early years of the company were dedicated to issuing recordings by jazz pianist Dave Brubeck, who was also one of its investors, but the label is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+      "Kenneth Ascher: Kenneth Lee \"Kenny\" Ascher (born October 26, 1944 in Washington, D.C.) is an American jazz pianist, composer, and arranger who is active in jazz, rock, classical, and musical theater genres \u2014 in live venues, recording studios, and cinema production.  He is widely known for co-writing, with Paul Williams, \"Rainbow Connection\" from \"The Muppet Movie\".  Both Williams and Ascher received Oscar nominations for the 1979 Academy Awards for Best Original Song (\"Rainbow Connection\") and Best Original Score (\"The Muppet Movie\" Soundtrack).  The song was also nominated for the Golden Globes for \"Best Original Song\" that same year.",
+      "Creedence Clearwater Revival (album): Creedence Clearwater Revival is the debut studio album by the American rock band Creedence Clearwater Revival, released in 1968."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 53,
+    "generation_speed": 221.02396650444342,
+    "prompt_eval_speed": 36692.80666085778,
+    "generation_latency_s": 0.5619463000039104,
+    "latency": 1.3937242999963928,
+    "total_prompt_tokens": 566,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.698629,
+    "stage_route_s": 0.3098675000073854,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.419760499993572,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.10190489998785779,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.910002022981644e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.561997299984796,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3937393999949563,
+    "unaccounted_latency_s": 0.00013109997962601483,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Fantasy Records and Creedence Clearwater Revival",
+      "Lenny Bruce and American Jazz Pianist"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

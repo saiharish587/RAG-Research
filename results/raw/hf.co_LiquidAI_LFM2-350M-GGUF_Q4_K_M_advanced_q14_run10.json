@@ -1,0 +1,42 @@
+{
+  "question_id": "Q14",
+  "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, they are not both used for real estate. The Random House Tower, also known as the Park Imperial Apartments, is a mixed-use skyscraper primarily serving as a headquarters for Random House and luxury apartment complex, while 888 7th Avenue is a 628 ft tall office skyscraper in Midtown Manhattan that does not have any direct association with real estate.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "888 7th Avenue: 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.  Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City.  It currently carries the Vornado Realty Trust corporate headquarters.  Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation.  The Red Eye Grill is located in the building at street level.",
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+      "Real estate technology: Real Estate Technology or Property Technology, often referred to as (\"RE Tech\") or (\"Proptech\"), is an economic industry composed of companies which use technology to make real estate transactions more efficient.  Real estate technology is a sub-category under financial technology as real estate is an asset class which represents a significant investment.  Besides for own stay, there are investors who generate income and capital gains by investing in different categories of Real Estate properties over time - They are broadly residential, commercial and industrial.  Historically used as a more tactical investment or for providing portfolio alpha, real estate has been used as part of a long-term core strategy due to increased market efficiency and increasing concerns about the future long-term variability of stock and bond returns.  In fact, real estate is known for its ability to serve as a portfolio diversifier and inflation hedge."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 458,
+    "generation_tokens": 80,
+    "generation_speed": 306.4147937062402,
+    "prompt_eval_speed": 42083.98419553432,
+    "generation_latency_s": 0.523434200003976,
+    "latency": 1.3061939000035636,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 128,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4116619,
+    "stage_rewrite_s": 0.41208730000653304,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13371860000188462,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23680300000705756,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5234841000055894,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3062074000044959,
+    "unaccounted_latency_s": 0.0001151999895228073,
+    "rewritten_query": "Random House Tower (888 7th Ave) - Real Estate Use Confirmed\"\n\nThis rephrased version is more concise and directly states the primary use of the location, making it easier to understand and search for.",
+    "query_was_rewritten": true
+  }
+}

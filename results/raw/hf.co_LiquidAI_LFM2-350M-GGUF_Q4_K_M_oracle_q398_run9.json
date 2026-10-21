@@ -1,0 +1,33 @@
+{
+  "question_id": "Q398",
+  "query": "Which football team does Lewis Young's older brother, Ashley Young, play for?",
+  "ground_truth": "Premier League club Manchester United and the England national team",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Lewis Young plays for Crawley Town. The context provided states that Ashley Young is the younger brother of Lewis Jack Young, who plays for Manchester United. Therefore, based on this information alone, we can infer that Lewis Young's older brother, Ashley Young, plays for Crawley Town. However, it does not explicitly state that he plays for a specific team within the context given.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ashley Young: Ashley Simon Young (born 9 July 1985) is an English professional footballer who plays as a winger for Premier League club Manchester United and the England national team.",
+      "Lewis Young: Lewis Jack Young (born 27 September 1989) is an English professional footballer who plays for Crawley Town.  He can play either as a striker, as a right winger or as, most recently, a right back.  He is the younger brother of Manchester United footballer Ashley Young."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 175,
+    "generation_tokens": 79,
+    "generation_speed": 324.6619816709818,
+    "prompt_eval_speed": 19796.380090497736,
+    "generation_latency_s": 0.45596950000617653,
+    "latency": 0.45604760001879185,
+    "total_prompt_tokens": 175,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1928304,
+    "stage_generate_s": 0.456020300014643,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4560576000076253,
+    "unaccounted_latency_s": 3.789999755099416e-05
+  }
+}

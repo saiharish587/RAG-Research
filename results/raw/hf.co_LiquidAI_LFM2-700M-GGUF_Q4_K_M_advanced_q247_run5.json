@@ -1,0 +1,42 @@
+{
+  "question_id": "Q247",
+  "query": "How many laps did Harry Prowell run during the 10,000 metres race at the 1967 Pan American Games?",
+  "ground_truth": "25 laps",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Harry Prowell ran 25 laps during the 10,000 metres race at the 1967 Pan American Games in Winnipeg, Manitoba, Canada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Harry Prowell: Harry Prowell A.A.(10 July 1936 \u2013 27 June 2000) was a Guyanese long distance runner who represented Guyana in the Marathon at the 1968 Summer Olympics in Mexico City, Mexico.  He is known to be one of the greatest Marathon runners Guyana has ever produced, setting the national record in 1968.  To date, he is the only Guyanese ever to compete in the Marathon at the Summer Olympic Games and one of the most prominent Indo-Caribbean long distance runners of his time.  He also participated in the 10,000 metres at the 1967 Pan American Games in Winnipeg, Manitoba, Canada and represented Guyana at the 1970 British Commonwealth Games in Edinburgh, Scotland.",
+      "10,000 metres: The 10,000 metres or 10,000-meter run is a common long-distance track running event.  The event is part of the athletics programme at the Olympic Games and the World Championships in Athletics and is common at championship level events.  The race consists of 25 laps around an Olympic-sized track.  It is less commonly held at track and field meetings, due to its duration.  The 10,000 metres track race is usually distinguished from its road running counterpart, the 10K run, by its reference to the distance in metres rather than kilometres.",
+      "1967 Pan American Games medal table: The 1967 Pan American Games, officially known as the V Pan American Games, were a continental multi-sport event held in Winnipeg, Canada, from July\u00a022 to August\u00a07, 1967.  At the Games, 2,361 athletes selected from 29 National Olympic Committees (NOCs) participated in events in 19 sports.  Twenty-one nations earned medals during the competition, and eleven won at least one gold medal."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 466,
+    "generation_tokens": 32,
+    "generation_speed": 229.85038176711845,
+    "prompt_eval_speed": 43690.230639414964,
+    "generation_latency_s": 0.5162846000021091,
+    "latency": 1.587900599988643,
+    "total_prompt_tokens": 551,
+    "total_generation_tokens": 107,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5136349,
+    "stage_rewrite_s": 0.6392876000027172,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17465049999009352,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25742489998810925,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5163660999969579,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5879239999921992,
+    "unaccounted_latency_s": 0.0001961000234587118,
+    "rewritten_query": "How many laps did Harry Prowell complete in the 10,000 meter race at the 1967 Pan American Games?\n\nHarry Prowell completed 12 laps in the 10,000 meter race during the 1967 Pan American Games. This information can be directly extracted from the original query and rephrased for clarity and conciseness.",
+    "query_was_rewritten": true
+  }
+}

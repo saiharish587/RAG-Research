@@ -1,0 +1,42 @@
+{
+  "question_id": "Q301",
+  "query": "Where is the company that owns thanKing Horse pub restaurant chain based ?",
+  "ground_truth": "Bury St Edmunds,",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The company that owns ThanKing Horse pub restaurant chain is J D Wetherspoon's, which is branded as Wetherspoon's and operates under the umbrella of J D Wetherspoon plc. Based on the provided context, it can be inferred that ThanKing Horse pub restaurant chain is located in the United Kingdom, as Wetherspoons is a well-known pub company based there.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "O'Neill's (pub chain): O'Neill's is an Irish-themed pub chain with 49 outlets in the United Kingdom.  The chain is operated by Mitchells & Butlers, one of the largest pub companies in the UK.  Pubs are located across the whole of the UK, except for Northern Ireland, where there are none.",
+      "Wetherspoons: J D Wetherspoon plc, branded as Wetherspoon's, is a pub company in the United Kingdom and the Republic of Ireland.  Founded in 1979 by Tim Martin, the company owns just under 1,000 outlets, including the chain of Lloyds No.1 bars and the chain of Wetherspoon hotels.  With its headquarters in Watford, Wetherspoons is known for converting unconventional premises into pubs.  The company is listed on the London Stock Exchange and is a constituent of the FTSE 250 Index.",
+      "Spam (food): Spam (stylized SPAM) is a brand of canned cooked meat made by Hormel Foods Corporation.  It was first introduced in 1937 and gained popularity worldwide after its use during World War II.  By 2003, Spam was sold in 41 countries on six continents and trademarked in over 100 countries (except in the Middle East and North Africa).  In 2007, the seven billionth can of Spam was sold."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 366,
+    "generation_tokens": 83,
+    "generation_speed": 232.1016101699655,
+    "prompt_eval_speed": 7083.002728697773,
+    "generation_latency_s": 0.7132039999996778,
+    "latency": 1.641598400005023,
+    "total_prompt_tokens": 439,
+    "total_generation_tokens": 121,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5036029,
+    "stage_rewrite_s": 0.5534590000024764,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1609872999979416,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21371650000219233,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7132885999890277,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6416229000024032,
+    "unaccounted_latency_s": 0.0001723000023048371,
+    "rewritten_query": "Where does ThanKing Horse pub chain originate from? \n\n(Note: This rephrased query maintains the essence of the original question while making it more concise and search-friendly)",
+    "query_was_rewritten": true
+  }
+}

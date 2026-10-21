@@ -1,0 +1,42 @@
+{
+  "question_id": "Q401",
+  "query": "John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews and another university established by what monach?",
+  "ground_truth": "King George IV",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "John MacGregor, Baron MacGregor of Pulham Market, was educated at the University of St Andrews and King's College London. He studied economics and history at King's College London before working for Hill Samuel, a merchant bank. The University of St Andrews was established by the monastic community founded by Avignon Antipope Benedict XIII in 1410-1413.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John MacGregor, Baron MacGregor of Pulham Market: John Roddick Russell MacGregor, Baron MacGregor of Pulham Market, OBE PC FKC (born 14 February 1937), is a politician in the United Kingdom.  He was educated at Merchiston Castle School, then at the University of St Andrews (MA economics and history, 1959) and at King's College London (LLB, 1962).  Prior to the 1979 general election he worked for Hill Samuel, a merchant bank.",
+      "University of St Andrews: The University of St Andrews (informally known as St Andrews University or simply St Andrews; abbreviated as St And, from the Latin \"Sancti Andreae\", in post-nominals) is a British public research university in St Andrews, Fife, Scotland.  It is the oldest of the four ancient universities of Scotland and the third oldest university in the English-speaking world (following Oxford and Cambridge Universities).  St Andrews was founded between 1410 and 1413, when the Avignon Antipope Benedict XIII issued a papal bull to a small founding group of Augustinian clergy.",
+      "John MacGregor: John MacGregor, John Macgregor or John McGregor may refer to:"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 351,
+    "generation_tokens": 78,
+    "generation_speed": 234.68104439082217,
+    "prompt_eval_speed": 34956.67762175082,
+    "generation_latency_s": 0.6517900000035297,
+    "latency": 1.7053224999981467,
+    "total_prompt_tokens": 440,
+    "total_generation_tokens": 136,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5117642,
+    "stage_rewrite_s": 0.675798099997337,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15236360000562854,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22517549998883624,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6518584000004921,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7053388000058476,
+    "unaccounted_latency_s": 0.00014390000433195382,
+    "rewritten_query": "John MacGregor studied at the University of St Andrews and another institution founded by a monastery. The question can be rephrased as: \"Who founded another university for John MacGregor, who studied at St Andrews?\" This version is more concise while maintaining the essential information.",
+    "query_was_rewritten": true
+  }
+}

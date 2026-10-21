@@ -1,0 +1,42 @@
+{
+  "question_id": "Q341",
+  "query": "Who is the current drummer of the band who did the song \"What Lovers Do\"?",
+  "ground_truth": "Matt Flynn",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The current drummer of the band that performed \"What Lovers Do,\" which is Demon Hunter, is Timothy \"Yogi\" Watts. This information can be inferred from the context provided about \"Timothy & 'Yogi' Watts,\" who is described as the drummer for Demon Hunter and has previously worked with various other bands including The Showdown, The Lonely Hearts, Throwdown, and The Becoming.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "What Lovers Do: \"What Lovers Do\" is a song by American pop rock band Maroon 5 featuring American R&B singer Sza.  It was released on August 30, 2017, as the third single from the band's upcoming sixth studio album (2017).  The song contains an interpolation of the 2016 song \"Sexual\" by Neiked featuring Dyo, therefore Victor R\u00e5dstr\u00f6m, Dyo and Elina Stridh are credited as songwriters.",
+      "Timothy &quot;Yogi&quot; Watts: Timothy \"Yogi\" Watts is second and current drummer for the Christian Metal band, Demon Hunter.  He was the fourth drummer for The Showdown, original drummer for The Lonely Hearts (originally named Holland), and fill-in drummer for Throwdown as well as The Becoming.",
+      "Roger Taylor (Queen drummer): Roger Meddows Taylor (born 26 July 1949) is an English musician, singer and songwriter.  He is a multi-instrumentalist, best known as the drummer for the rock band Queen.  As a drummer, Taylor was recognised early in his career for his unique sound.  He has been acclaimed by Foo Fighters drummer Taylor Hawkins as one of the most influential rock drummers of the 1970s and 1980s, as well as being voted by radio listeners as the eighth-greatest drummer in classic rock music history in a poll conducted by Planet Rock in 2005."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 386,
+    "generation_tokens": 84,
+    "generation_speed": 218.2214948172395,
+    "prompt_eval_speed": 32491.582491582492,
+    "generation_latency_s": 0.7286211999889929,
+    "latency": 1.5740192999946885,
+    "total_prompt_tokens": 464,
+    "total_generation_tokens": 126,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49803869999999995,
+    "stage_rewrite_s": 0.5105364000046393,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15497129999857862,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17959919999702834,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7287712000106694,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5740386999968905,
+    "unaccounted_latency_s": 0.00016149999282788485,
+    "rewritten_query": "Who is the current drummer for the band that recorded \"What Lovers Do\"? \n\n\nThis rephrased query is more concise and directly asks about the drummer associated with a specific song.",
+    "query_was_rewritten": true
+  }
+}

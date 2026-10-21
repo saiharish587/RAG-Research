@@ -1,0 +1,42 @@
+{
+  "question_id": "Q11",
+  "query": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+  "ground_truth": "Kansas Song",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The fight song of the University of Kansas whose main campus is located in Lawrence, Kansas, and its branch campuses are situated in the Kansas City metropolitan area is \"Kansas Song.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities.",
+      "Kansas Song: Kansas Song (We\u2019re From Kansas) is a fight song of the University of Kansas.",
+      "Kansas City metropolitan area: The Kansas City metropolitan area is a 15-county metropolitan area anchored by Kansas City, Missouri, that straddles the border between the U.S. states of Missouri and Kansas.  With a population of about 2,340,000, it ranks as the second largest metropolitan area with its core in Missouri (after Greater St. Louis).  Alongside Kansas City, the area includes a number of other cities and suburbs, the largest being Overland Park, Kansas; Kansas City, Kansas; Olathe, Kansas; and Independence, Missouri; each over 100,000 in population.  The Mid-America Regional Council (MARC) serves as the Council of Governments and the Metropolitan Planning Organization for the area."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 413,
+    "generation_tokens": 38,
+    "generation_speed": 319.5371756277224,
+    "prompt_eval_speed": 33961.022942192256,
+    "generation_latency_s": 0.39552150000235997,
+    "latency": 1.3383671000046888,
+    "total_prompt_tokens": 504,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4478964,
+    "stage_rewrite_s": 0.525481899996521,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1294058000057703,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.28778879999299534,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.39557150000473484,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3383789000072284,
+    "unaccounted_latency_s": 0.0001314999972237274,
+    "rewritten_query": "University Fight Song Name & Campus Locations (Lawrence, KS Branch Campuses, Kansakampus)\"\n\nThis rephrased version maintains the core query while making it more concise and clear. It specifies the name of the fight song, its location on the university campus, and mentions the branch campuses in the Kansas City metropolitan area.",
+    "query_was_rewritten": true
+  }
+}

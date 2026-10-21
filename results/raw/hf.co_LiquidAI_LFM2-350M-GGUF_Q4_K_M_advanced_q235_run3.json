@@ -1,0 +1,42 @@
+{
+  "question_id": "Q235",
+  "query": "What is the nickname of the city where Darling's Waterfront Pavilion is located?",
+  "ground_truth": "\"Queen City\"",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The nickname for the city where Darling's Waterfront Pavilion is located is \"Bangor.\" This is explicitly stated in the context provided, which mentions that the venue is situated within the Bangor Waterfront Park and is known as the \"Darling's Waterfront Pavilion\" (originally Bangor Waterfront Pavilion).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Darling's Waterfront Pavilion: The Darling's Waterfront Pavilion (originally known as the Bangor Waterfront Pavilion) is an open-air amphitheater located within the Waterfront Park in Bangor, Maine.  The venue is a temporary structure built alongside the Penobscot River.  The venue typically operates from July until October.",
+      "Big Ben: Big Ben is the nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London and is usually extended to refer to both the clock and the clock tower as well.  The tower is officially known as Elizabeth Tower, renamed to celebrate the Diamond Jubilee of Elizabeth II in 2012; previously, it was known simply as the Clock Tower.",
+      "Dual naming: Dual naming is a policy for the naming of geographical landmarks, in which an official name is adopted that combines two previous names.  Usually, the context is a conflict over which of the two previous names is most appropriate."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 276,
+    "generation_tokens": 69,
+    "generation_speed": 310.9046423920733,
+    "prompt_eval_speed": 27468.15286624204,
+    "generation_latency_s": 0.5016424000059487,
+    "latency": 1.3077363000047626,
+    "total_prompt_tokens": 353,
+    "total_generation_tokens": 125,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4597545,
+    "stage_rewrite_s": 0.4782771000027424,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12849960000312421,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1991536000132328,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.501690500008408,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3077495000034105,
+    "unaccounted_latency_s": 0.00012929996591992676,
+    "rewritten_query": "Nickname: Darling's Waterfront Plaza\n\nThis rephrased version captures the key information (the nickname, the city name) while being more concise and clear. It also maintains the original intent of identifying the location based on Darling's Waterfront Pavilion.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q544",
+  "query": "Southeastern Illinois College offers an undergraduate academic degree considered to be greater level of education than what?",
+  "ground_truth": "high school diploma or GED",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "An associate degree, as mentioned in the context provided, is considered to be a higher level of education than a high school diploma or GED. Therefore, Southeastern Illinois College's Associate degree is considered to be a greater level of education than these other forms of academic credentials.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Southeastern Illinois College: Southeastern Illinois College is a public community college located approximately halfway between Harrisburg and Equality in Saline County, Illinois, United States.  The college was founded in 1960 and offers Associate degrees.  A secondary campus, the David L. Stanley White County Center, is located in Carmi, White County.  Approximately 5,000 students enroll each year.",
+      "UIUC College of Education: The School of Education at the University of Illinois at Urbana-Champaign was founded in 1905.  It was later renamed the College of Education in 1918.  The college offers undergraduate, graduate, and online programs in areas including elementary education, early childhood education, special education, and Educational Organization and Leadership.  It began with six departments; three of them merged and formed the largest department in the college.  All departments offer masters and doctoral degrees.  However, only two departments offer undergraduate degree programs: Special Education and Curriculum & Instruction.  The college also offers 16 online programs.  Students seeking an undergraduate degree in the college must meet the minimum graduation requirement set forth by the university.  To obtain a certification, students must also meet the requirements of the Council on Teacher Education, a professional educational administration at the University of Illinois.  The total enrollment is 1,361 students as of 2015.",
+      "Associate degree: An associate degree (or associate's degree) is an undergraduate academic degree awarded by colleges and universities upon completion of a course of study intended to usually last two years.  It is considered to be greater level of education than a high school diploma or GED."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 406,
+    "generation_tokens": 56,
+    "generation_speed": 219.12405160371418,
+    "prompt_eval_speed": 36672.387318218774,
+    "generation_latency_s": 0.5736812000104692,
+    "latency": 1.3918566000065766,
+    "total_prompt_tokens": 484,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5168685,
+    "stage_rewrite_s": 0.4484702999907313,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1464955999981612,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22294140000303742,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5737851000012597,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3918931999942288,
+    "unaccounted_latency_s": 0.00020200001017656177,
+    "rewritten_query": "What higher-level undergraduate degree does Southeastern Illinois College provide compared to others?",
+    "query_was_rewritten": true
+  }
+}

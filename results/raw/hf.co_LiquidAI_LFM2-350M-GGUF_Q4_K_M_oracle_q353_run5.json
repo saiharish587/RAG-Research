@@ -1,0 +1,33 @@
+{
+  "question_id": "Q353",
+  "query": "Are both Rutgers University and Carnegie Mellon University located in America?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, the provided context does not specify whether Rutgers University and Carnegie Mellon University are located in America. The information given only describes their respective locations within New Jersey but does not mention their location within the United States as a whole. To answer this question accurately, additional details about their specific locations would be required.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rutgers University: Rutgers, The State University of New Jersey ( ), commonly referred to as Rutgers University, Rutgers, or RU, is an American public research university and the largest institution for higher education in New Jersey.",
+      "Carnegie Mellon University: Carnegie Mellon University (Carnegie Mellon or CMU or ) is a private research university in Pittsburgh, Pennsylvania."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 145,
+    "generation_tokens": 64,
+    "generation_speed": 332.86004795265063,
+    "prompt_eval_speed": 9170.830434507621,
+    "generation_latency_s": 0.41492009998182766,
+    "latency": 0.41501270001754165,
+    "total_prompt_tokens": 145,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1973283,
+    "stage_generate_s": 0.414985000010347,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4150233000109438,
+    "unaccounted_latency_s": 3.9000005926936865e-05
+  }
+}

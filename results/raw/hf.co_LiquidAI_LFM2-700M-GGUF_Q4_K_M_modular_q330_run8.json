@@ -1,0 +1,49 @@
+{
+  "question_id": "Q330",
+  "query": "The city that contains the Yunnan Provincial Museum is also known by what nickname?",
+  "ground_truth": "Spring city",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The city that contains the Yunnan Provincial Museum is also known as Kunming City. This can be inferred from the context provided, which mentions \"Kunming City Museum (\u6606\u660e\u5e02\u535a\u7269\u9986)\" and states that it is located in Kunming City, Yunnan, China.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kunming Museum: Kunming City Museum (\u6606\u660e\u5e02\u535a\u7269\u9986) is a history museum in Kunming City, Yunnan, China.  Smaller than the Yunnan Provincial Museum, Its most notable exhibit is about the history of the city.  Other features include a dinosaur exhibit and a rotating exhibition space that holds anything from history to art exhibitions.",
+      "Yunnan Provincial Museum: Yunnan Provincial Museum () is located in Kunming, on Guangfu Road.  It houses an exhibition centered on Yunnan's ethnic minorities, as well as a collection of artifacts from tomb excavations at Jinning on the southern rim of Lake Dian.",
+      "Daguan Park: Daguan Park () is a lakeside park located in the southwestern suburb of Kunming, Yunnan, China.  Today many locals come to sit, drink tea, fly kites, and go boating.  Among shady walks and pools, Daguan's focal point is Daguan Ge, a square, three-storeyed pavilion built to better the Kangxi Emperor's enjoyment of the distant Western Hills and now a storehouse of calligraphy extolling the area's charms.  The most famous poem here is a 118-character verse, carved into the gateposts by the Qing dynasty scholar Sun Ran, reputed to be the longest set of rhyming couplets in China.  The park is set on Daguan Stream, which flows south into Lake Dian, and there are frequent hour-long cruises down the waterway, lined with willows, to points along Lake Dian's northern shore.  Lake Dian, also known as the Kunming Lake, is the largest lake on the Yunnan-Guizhou Plateau.  At Longmen of the Western Hills, there is a panoramic view of the lake."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 452,
+    "generation_tokens": 62,
+    "generation_speed": 211.08610610821907,
+    "prompt_eval_speed": 30007.302662152295,
+    "generation_latency_s": 0.6487552000035066,
+    "latency": 1.5929491999850143,
+    "total_prompt_tokens": 585,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7854393,
+    "stage_route_s": 0.33888110000407323,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.47882469999603927,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.126186699984828,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.810002378188074e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6488425999996252,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5929760999861173,
+    "unaccounted_latency_s": 0.00017439998919144273,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yunnan Provincial Museum nicknames location",
+      "Yunnan City nicknames for its museum location"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

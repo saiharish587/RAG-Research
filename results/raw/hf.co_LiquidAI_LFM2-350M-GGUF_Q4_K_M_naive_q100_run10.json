@@ -1,0 +1,36 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, Yingkou and Fuding are not the same level of city based on the provided context. The context gives us specific details about each location but does not indicate whether they fall under the same administrative or geographical classification as a prefecture-level city in Liaoning province.\n\nYingkou is described as a \"port city of the Bohai Sea,\" which suggests it's likely situated along one of the major waterways in China, possibly contributing to its role as an important maritime hub. However, without further information about Yingkou's administrative status or whether it falls under other prefectures or counties, we cannot definitively say if it is a level of city equivalent to Fuding.\n\nFuding Railway Station, on the other hand, is explicitly stated to be a \"railway station\" located in Fuding City, Ningde, Fujian Province. This clearly indicates that Fuding is a specific administrative division or county-level city within China's broader province system, rather than being a level of Yingkou.\n\nTherefore, based solely on the provided context, we do not have enough information to determine whether Yingkou and Fuding are the same level of city in terms of administrative classification.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "Fuding Railway Station: Fuding Railway Station () is a railway station located in Fuding City, Ningde, Fujian Province, China, on the Wenzhou-Fuzhou Railway operated by the Nanchang Railway Bureau, China Railway Corporation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 201,
+    "generation_tokens": 245,
+    "generation_speed": 319.65680601528874,
+    "prompt_eval_speed": 19416.537867078827,
+    "generation_latency_s": 1.0655333000031533,
+    "latency": 1.1086949000018649,
+    "total_prompt_tokens": 201,
+    "total_generation_tokens": 245,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2486457,
+    "stage_retrieve_s": 0.042991899987100624,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 1.0656289999897126,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.108717199997045,
+    "unaccounted_latency_s": 9.740002860780805e-05
+  }
+}

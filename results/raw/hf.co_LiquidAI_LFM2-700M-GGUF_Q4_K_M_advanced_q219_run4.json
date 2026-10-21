@@ -1,0 +1,42 @@
+{
+  "question_id": "Q219",
+  "query": "Which suburb is a soap opera featuring a character named Beverly Marshall set in?",
+  "ground_truth": "Erinsborough",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The question cannot be answered based solely on the provided context because while Beverly Marshall is a character from \"Neighbours,\" there is no mention of any specific suburb where her story takes place. The context provides information about Beverly's role as Jim Robinson's second wife and her appearances in various episodes, but it does not specify which suburb is set in her soap opera.\n\nTo answer this question accurately, additional information would be required, such as the name of the specific soap opera or series where Beverly Marshall is featured prominently, along with details about its setting.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Beverly Marshall: Beverly Marshall is a fictional character from the Australian soap opera \"Neighbours\".  The character was originally played by Lisa Armytage and she made her first on-screen appearance on 6 July 1987.  Shaunna O'Grady took over from Armytage and began playing the character from 16 March 1989 until her departure on 5 September 1990.  Beverly is a doctor and was Jim Robinson's second wife.  O'Grady reprised her role of Beverly in 2005 to help celebrate \"Neighbours\"<nowiki>'</nowiki> 20th anniversary, she made a cameo in Annalise Hartman's documentary on Ramsay Street.",
+      "Shaunna O'Grady: Shaunna O'Grady (born 1958) is an Australian retired actress who played the second incarnation of Jim Robinson's wife, Dr. Beverly Marshall, on the long-running soap opera \"Neighbours\".  She is the granddaughter of writer John O'Grady (author of \"They're a Weird Mob\"), and is married to the television director Chris Adshead.  They have one daughter, Savannah.",
+      "Katie Landers: Katie Landers is a fictional character from the Australian soap opera \"Neighbours\", played by Sally Jensen.  She made her first on screen appearance on 15 February 1988.  Katie is the niece of Beverly Marshall and sister to Todd Landers.  During her time in the show, she became close friends with Toby Mangel.  Katie departed on 6 September 1989."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 412,
+    "generation_tokens": 113,
+    "generation_speed": 216.54520333211326,
+    "prompt_eval_speed": 33129.62367320682,
+    "generation_latency_s": 0.8849239999981364,
+    "latency": 1.779453100010869,
+    "total_prompt_tokens": 486,
+    "total_generation_tokens": 147,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5276449,
+    "stage_rewrite_s": 0.4953761999931885,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15976609999779612,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23914929998863954,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8850193999969633,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7794821999996202,
+    "unaccounted_latency_s": 0.0001721000298857689,
+    "rewritten_query": "Which soap opera suburb features Beverly Marshall and her character? \n\n\nThis rephrased query is more direct and clearly states the relationship between the characters and setting.",
+    "query_was_rewritten": true
+  }
+}

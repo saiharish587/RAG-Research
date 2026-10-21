@@ -1,0 +1,42 @@
+{
+  "question_id": "Q562",
+  "query": "Which band formed in England, Of Montreal or Vib Gyor?",
+  "ground_truth": "Vib Gyor was a band that was formed in Leeds, England.",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Based on the provided context, we can deduce that Vib Gyor formed in England, not Montreal. The passage states that Vib Gyor was formed in Leeds, England, and mentions that it drew inspiration from the colors of the rainbow starting from the shortest to longest wavelengths. This clearly indicates that Vib Gyor is associated with the band formed in England, rather than Montreal.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vib Gyor: Vib Gyor was a band that was formed in Leeds, England.  The name was derived from the first letters of all the colours in the rainbow, in order from the shortest to longest wavelengths.",
+      "Of Montreal: of Montreal is an American experimental pop band from Athens, Georgia.  It was founded by frontman Kevin Barnes in 1996, named after a failed romance between Barnes and a woman \"of Montreal.\"  The band is identified as part of the Elephant 6 collective.  Throughout its existence, of Montreal's musical style has evolved considerably and drawn inspiration from numerous 1960s psychedelic pop acts.",
+      "Fallen (Vib Gyor song): \"Fallen\" was the first single from the Leeds band Vib Gyor.  It was first given limited release in July 2006, and has attained critical acclaim and a large amount of radio play on both sides of the atlantic."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 260,
+    "generation_tokens": 78,
+    "generation_speed": 314.81062929837594,
+    "prompt_eval_speed": 19661.222020568664,
+    "generation_latency_s": 0.5678329999936977,
+    "latency": 1.5897993999969913,
+    "total_prompt_tokens": 333,
+    "total_generation_tokens": 157,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49626010000000004,
+    "stage_rewrite_s": 0.561693199997535,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15643429999181535,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3036316999932751,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5678986999992048,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5898174999892944,
+    "unaccounted_latency_s": 0.0001604000135557726,
+    "rewritten_query": "To optimize the original query for search clarity and user-friendliness, here is a rephrased version:\n\n**\"Searching for bands from England that are named Of Montreal or Vib Gyor? Let's explore!\"**\n\nThis version maintains the core intent of identifying two distinct bands (Of Montreal and Vib Gyor) while using more concise and direct phrasing.",
+    "query_was_rewritten": true
+  }
+}

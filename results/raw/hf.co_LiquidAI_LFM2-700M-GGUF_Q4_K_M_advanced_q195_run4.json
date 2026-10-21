@@ -1,0 +1,42 @@
+{
+  "question_id": "Q195",
+  "query": "What is the full name of the viral respiratory disease in which Yi Guan's research helped to prevent the outbreak of?",
+  "ground_truth": "severe acute respiratory syndrome",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The full name of the viral respiratory disease in which Yi Guan's research helped to prevent the outbreak is Severe Acute Respiratory Syndrome (SARS).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yi Guan: Yi Guan is a Chinese virologist who, in 2014, was ranked as 11th in the world by Thomson Reuters (now known as Clarivate Analytics) among global researchers in the field of microbiology.  His research on the viral respiratory disease SARS allowed the Chinese government to successfully avert the 2004 outbreak of this disease.  He is the current Director (China affairs) of the State Key Laboratory for Emerging Infectious Diseases University of Hong Kong.  In early 2017, Guan warned that the H7N9 influenza virus \"poses the greatest threat to humanity than any other in the past 100 years.\"",
+      "Severe acute respiratory syndrome: Severe acute respiratory syndrome (SARS) is a viral respiratory disease of zoonotic origin caused by the SARS coronavirus (SARS-CoV).  Between November 2002 and July 2003, an outbreak of SARS in southern China caused an eventual 8,098 cases, resulting in 774 deaths reported in 37 countries, with the majority of cases in Hong Kong (9.6% fatality rate) according to the World Health Organization (WHO).  No cases of SARS have been reported worldwide since 2004.",
+      "Influenza: Influenza, commonly known as \"the flu\", is an infectious disease caused by an influenza virus.  Symptoms can be mild to severe.  The most common symptoms include: a high fever, runny nose, sore throat, muscle pains, headache, coughing, and feeling tired.  These symptoms typically begin two days after exposure to the virus and most last less than a week.  The cough, however, may last for more than two weeks.  In children, there may be nausea and vomiting, but these are not common in adults.  Nausea and vomiting occur more commonly in the unrelated infection gastroenteritis, which is sometimes inaccurately referred to as \"stomach flu\" or \"24-hour flu\".  Complications of influenza may include viral pneumonia, secondary bacterial pneumonia, sinus infections, and worsening of previous health problems such as asthma or heart failure."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 503,
+    "generation_tokens": 30,
+    "generation_speed": 216.20530856100956,
+    "prompt_eval_speed": 45462.76211135214,
+    "generation_latency_s": 0.5004415000003064,
+    "latency": 1.658319099995424,
+    "total_prompt_tokens": 585,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5487322,
+    "stage_rewrite_s": 0.7247462000086671,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15543579999939539,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2774572000053013,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5005178999999771,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6583460999972885,
+    "unaccounted_latency_s": 0.00019029997929465026,
+    "rewritten_query": "What virus does Yi Guan's work on preventing an outbreak help identify? \n\n\nHere's why this works:\n\n* **Specificity:** It directly asks about a specific virus.\n* **Clarity:** It removes ambiguity by focusing on the \"viral respiratory disease\" mentioned in the original query.\n* **Conciseness:** It uses shorter, more direct language.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q353",
+  "query": "Are both Rutgers University and Carnegie Mellon University located in America?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "No, neither Rutgers University nor Carnegie Mellon University are specifically located in America. They are both public research universities affiliated with Rutgers University, which is situated in New Jersey, United States. However, they have different locations within the country.\n\nRutgers University is located in New Jersey, specifically in the city of Newark. It was originally a private liberal arts college but merged with the former University of Newark in 1945 to form Rutgers\u2013Newark.\n\nCarnegie Mellon University, on the other hand, has two campuses: one in Pittsburgh, Pennsylvania (the largest campus), and another in Camden, New Jersey. The latter is part of Carnegie Mellon University\u2019s network of three regional campuses across the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rutgers University: Rutgers, The State University of New Jersey ( ), commonly referred to as Rutgers University, Rutgers, or RU, is an American public research university and the largest institution for higher education in New Jersey.",
+      "Carnegie Mellon University: Carnegie Mellon University (Carnegie Mellon or CMU or ) is a private research university in Pittsburgh, Pennsylvania.",
+      "Rutgers University\u2013Newark: Rutgers\u2013Newark is one of three regional campuses of Rutgers University, the public research university of the U.S. state of New Jersey, located in the city of Newark.  Rutgers, founded in 1766 in New Brunswick, is the eighth oldest college in the United States and a member of the Association of American Universities.  In 1945, the state legislature voted to make Rutgers University, then a private liberal arts college, into the state university and the following year merged the school with the former University of Newark (1936\u20131946), which became the Rutgers\u2013Newark campus.  Rutgers also incorporated the College of South Jersey and South Jersey Law School, in Camden, as a constituent campus of the university and renamed it Rutgers\u2013Camden in 1950."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 155,
+    "generation_speed": 312.4804699706268,
+    "prompt_eval_speed": 29481.562614092734,
+    "generation_latency_s": 0.8124981000000844,
+    "latency": 1.5074861000030069,
+    "total_prompt_tokens": 396,
+    "total_generation_tokens": 193,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4479726,
+    "stage_rewrite_s": 0.3751929999998538,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1257583000115119,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19387940000160597,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8125513999984832,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.507499800005462,
+    "unaccounted_latency_s": 0.00011849998554680496,
+    "rewritten_query": "Are Rutgers University and Carnegie Mellon University US institutions?\" \n\nThis rephrased version is more concise and directly asks for the location of both universities without unnecessary formatting.",
+    "query_was_rewritten": true
+  }
+}

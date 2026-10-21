@@ -1,0 +1,42 @@
+{
+  "question_id": "Q405",
+  "query": "The Jeep Cherokee was originally sold as a variant of a Jeep model produced during what years?",
+  "ground_truth": "1963 to 1991",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Jeep Cherokee was originally sold as a variant of the Jeep Wagoneer from 1974 to 1983.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jeep Cherokee: The Jeep Cherokee is a line of vehicles sold by Jeep under various vehicle classes.  Originally sold as a variant of the popular Jeep Wagoneer, the Cherokee has evolved from a full-size SUV to one of the first compact SUVs and eventually into its current incarnation as a crossover SUV.  The nameplate has been in continuous use in some form since 1974 and also spawned Jeep's most successful vehicle, the Jeep Grand Cherokee, which was originally slated to be part of the Cherokee's lineup.  The vehicle is named after the Cherokee tribe of Native Americans.",
+      "Jeep Cherokee (XJ): The Jeep Cherokee (XJ) is a sport utility vehicle that was manufactured and marketed by Jeep from 1983 to 2001.  Sharing the name of the original full-size SJ model, but without a traditional body-on-frame chassis, the XJ instead featured a light-weight unibody design, The models were originally marketed as Sportwagons and became the precursor to the modern sport utility vehicle (SUV) as that term was not yet in use.",
+      "Jeep Cherokee (KL): The Jeep Cherokee (KL) is a mid-size crossover SUV produced by Jeep.  It was introduced for the 2014 model year at the 2013 New York International Auto Show and the sales started in November 2013.  The Cherokee is the first Jeep vehicle to be built on the Fiat Compact/Compact U.S. Wide platform, co-developed by Chrysler and Fiat.  The Jeep Cherokee is built at Belvidere Assembly Plant in Belvidere, Illinois."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 423,
+    "generation_tokens": 28,
+    "generation_speed": 321.7392303537983,
+    "prompt_eval_speed": 46366.32686616245,
+    "generation_latency_s": 0.40006309999444056,
+    "latency": 1.1365621000004467,
+    "total_prompt_tokens": 502,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4752842,
+    "stage_rewrite_s": 0.41422539998893626,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14864219998707995,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17344349999621045,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.400125999993179,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1365797000034945,
+    "unaccounted_latency_s": 0.00014350003038998693,
+    "rewritten_query": "Jeep Cherokee - Original Jeep Model, 2009-2013\"\n\nThis rephrased version is more concise and directly conveys the key information about the vehicle's origin year.",
+    "query_was_rewritten": true
+  }
+}

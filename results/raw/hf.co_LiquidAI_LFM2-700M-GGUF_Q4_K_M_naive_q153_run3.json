@@ -1,0 +1,36 @@
+{
+  "question_id": "Q153",
+  "query": "The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aim\u00e9 Argand?",
+  "ground_truth": "Argand lamp",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Yes, the lamp used in many lighthouses is similar to the Argand lamp patented in 1780 by Aim\u00e9 Argand. The Argand lamp features a parabolic reflector and a magnifying lens that enhances light output, making it more efficient compared to earlier oil lamps. This design was adopted by the United States for use in American lighthouses, while the Lewis lamp was specifically used in lighthouses in the United Kingdom.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lewis lamp: The Lewis lamp is a type of light fixture used in lighthouses.  It was invented by Winslow Lewis who patented the design in 1810.  The primary marketing point of the Lewis lamp was that it used less than half the oil of the prior oil lamps which they replaced.  The lamp used a similar design to an Argand lamp, adding a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.  A similar variant using a parabolic reflector was created by the inventor of the Argand lamp, Aim\u00e9 Argand.  While the Argand variant became widely used by European lighthouses, the Lewis lamp design was selected by the United States for use in American lighthouses.",
+      "Argand lamp: The Argand lamp, a kind of oil lamp, was invented and patented in 1780 by Aim\u00e9 Argand.  Its output is 6 to 10 candela, brighter than that of earlier lamps.  Its more complete combustion of the candle wick and oil than in other lamps required much less frequent trimming of the wick.",
+      "Herbert Akroyd Stuart: Herbert Akroyd-Stuart (28 January 1864, Halifax, Yorkshire, England \u2013 19 February 1927, Halifax) was an English inventor who is noted for his invention of the hot bulb engine, or heavy oil engine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 381,
+    "generation_tokens": 92,
+    "generation_speed": 231.95421425509923,
+    "prompt_eval_speed": 33307.10726462104,
+    "generation_latency_s": 0.6847226999962004,
+    "latency": 0.7315240999887465,
+    "total_prompt_tokens": 381,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.263997,
+    "stage_retrieve_s": 0.04664790000242647,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.684794900007546,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7315382999950089,
+    "unaccounted_latency_s": 9.629999112803489e-05
+  }
+}

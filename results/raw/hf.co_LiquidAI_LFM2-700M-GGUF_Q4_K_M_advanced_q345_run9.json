@@ -1,0 +1,42 @@
+{
+  "question_id": "Q345",
+  "query": "Garden Island Naval Chapel is the oldest Chistian chapel of a naval branch of what defence force?",
+  "ground_truth": "Australian Defence Force",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Royal Australian Navy (RAN)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Garden Island Naval Chapel: The Naval Chapel at Garden Island dockyard is the oldest Christian chapel of the Royal Australian Navy (RAN).  It was established in 1902 after conversion from the former sail loft, and has stained glass windows and plaques from that era to the present.  The building is the oldest on Garden Island, two storey, built of stuccoed brick with stone sills, arches and columns.  The original loft floor of timber remains, caulked with oakum and bitumen.",
+      "Royal Australian Navy Heritage Centre: The Royal Australian Navy Heritage Centre is the maritime museum of the Royal Australian Navy.  The centre opened on 4 October 2005 and is located within the Public Access Area on the northern end of the Garden Island naval base in Sydney.",
+      "Her Majesty's Naval Service: Her Majesty's Naval Service, also known as the Senior Service, is the United Kingdom's naval warfare and maritime service.  It consists of the Royal Navy, Royal Marines, Royal Naval Reserve, Royal Marines Reserve and Naval Careers Service.  The term Naval Service should be distinguished from the \"UK Naval Services\", which consist of the Naval Service and the Merchant Navy.  The Naval Service as a whole falls under the command of the Navy Board, which is headed by the First Sea Lord.  This position is currently held by Admiral Sir Phillip Jones (appointed April 2016).  The Defence Council delegates administration of the Naval Service to the Admiralty Board, chaired by the Secretary of State for Defence."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 387,
+    "generation_tokens": 9,
+    "generation_speed": 217.71735449223476,
+    "prompt_eval_speed": 37930.02058218171,
+    "generation_latency_s": 0.3721862999955192,
+    "latency": 1.0834175999916624,
+    "total_prompt_tokens": 466,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49775400000000003,
+    "stage_rewrite_s": 0.40867179998895153,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1400318999949377,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1623323999956483,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.37225309999485034,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0834351999947103,
+    "unaccounted_latency_s": 0.0001468000264139846,
+    "rewritten_query": "Is Garden Island Naval Chapel the oldest Christian chapel within the naval branch of which defense organization?",
+    "query_was_rewritten": true
+  }
+}

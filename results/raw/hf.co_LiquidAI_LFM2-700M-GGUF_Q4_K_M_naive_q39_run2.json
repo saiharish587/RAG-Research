@@ -1,0 +1,36 @@
+{
+  "question_id": "Q39",
+  "query": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Yes, both Elko Regional Airport and Gerald R. Ford International Airport are located in Michigan. Elko Regional Airport is situated in Elko County, Nevada, while Gerald R. Ford International Airport is located in Cascade Township, near Grand Rapids, Michigan. Both airports share the same state of origin but are geographically distinct within Michigan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gerald R. Ford International Airport: Gerald R. Ford International Airport (IATA: GRR, ICAO: KGRR, FAA LID: GRR) is a commercial airport in Cascade Township approximately 13 mi southeast of Grand Rapids, Michigan.  The facility is owned by the Kent County Board of Commissioners and managed by an independent authority.  The Federal Aviation Administration (FAA) National Plan of Integrated Airport Systems for 2017\u20132021 categorized it as a small hub primary commercial service facility.",
+      "Elko Regional Airport: Elko Regional Airport (IATA: EKO, ICAO: KEKO, FAA LID: EKO) , formerly Elko Municipal Airport, is a mile west of downtown Elko, in Elko County, Nevada.",
+      "Detroit Metropolitan Airport: Detroit Metropolitan Wayne County Airport (IATA: DTW, ICAO: KDTW, FAA LID: DTW) , usually called Detroit Metro Airport, Metro Airport, or just DTW, is a major international airport in the United States covering 4,850 acre in Romulus, Michigan, a suburb of Detroit.  It is Michigan's busiest airport, and one of the largest airline hubs in the country.  The Federal Aviation Administration (FAA) National Plan of Integrated Airport Systems for 2017\u20132021 categorized it as a large hub primary commercial service facility."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 363,
+    "generation_tokens": 70,
+    "generation_speed": 224.0817450205835,
+    "prompt_eval_speed": 33057.09862489755,
+    "generation_latency_s": 0.6034724000055576,
+    "latency": 0.6526908000087133,
+    "total_prompt_tokens": 363,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2678199,
+    "stage_retrieve_s": 0.04907200000889134,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.603551599997445,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6527076000056695,
+    "unaccounted_latency_s": 8.490000618621707e-05
+  }
+}

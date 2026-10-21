@@ -1,0 +1,42 @@
+{
+  "question_id": "Q540",
+  "query": "Where was the sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne located?",
+  "ground_truth": "Alice Springs, Northern Territory",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The sports complex where Will Brodie made his debut in the thirty-five point loss against Melbourne was the ESPN Wide World of Sports Complex, located in Bay Lake, Florida. This is inferred from the context provided, which mentions that the ESPN Wide World of Sports Complex hosts numerous sporting events throughout the year and includes 9 venues, with TIO Traeger Park being a specific venue where Brodie made his debut.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Will Brodie: Will Brodie (born 23 August 1998) is a professional Australian rules footballer playing for the Gold Coast Football Club in the Australian Football League (AFL).  He was drafted by Gold Coast with their third selection and ninth overall in the 2016 national draft.  He made his debut in the thirty-five point loss against Melbourne at TIO Traeger Park in round ten of the 2017 season.",
+      "ESPN Wide World of Sports Complex: The ESPN Wide World of Sports Complex is a 220 acre athletic complex located in the Walt Disney World Resort, in Bay Lake, Florida, near Orlando, Florida.  The complex includes 9 venues and hosts numerous amateur and professional sporting events throughout the year.",
+      "Truman Sports Complex: The Harry S. Truman Sports Complex is a sports and entertainment facility located in Kansas City, Missouri.  It is home to two major sports venues: Arrowhead Stadium\u2014home of the National Football League's Kansas City Chiefs, and Kauffman Stadium\u2014home of Major League Baseball's Kansas City Royals.  The complex also hosts various other events during the year."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 306,
+    "generation_tokens": 83,
+    "generation_speed": 228.66903600848553,
+    "prompt_eval_speed": 28616.85214626391,
+    "generation_latency_s": 0.7048974000063026,
+    "latency": 1.5125473999942187,
+    "total_prompt_tokens": 388,
+    "total_generation_tokens": 108,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5185313,
+    "stage_rewrite_s": 0.47890110001026187,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15924100000120234,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1693208000069717,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7049602999904891,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5126018000009935,
+    "unaccounted_latency_s": 0.0001793999836081639,
+    "rewritten_query": "Where did Will Brodie's debut occur at the sports complex where he played against Melbourne in a 35-point defeat?",
+    "query_was_rewritten": true
+  }
+}

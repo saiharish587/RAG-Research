@@ -1,0 +1,42 @@
+{
+  "question_id": "Q386",
+  "query": "Curt Menefee is the host of the Fox network's NFL show with co-host Michael Anthony Strahan who spent his entire 15-year career with what team?",
+  "ground_truth": "New York Giants",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Curt Menefee hosts the Fox network's NFL show \"Fox NFL Sunday\" with co-host Michael Anthony Strahan, who spent his entire 15-year career with the New York Giants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Michael Strahan: Michael Anthony Strahan ( ; born November 21, 1971) is a media personality and former American football defensive end who spent his entire 15-year career with the New York Giants of the National Football League (NFL).  Strahan set a record for the most sacks in a season in 2001, and helped the Giants win Super Bowl XLII over the New England Patriots in his final season in 2007.  After retiring from the NFL, Strahan became a media personality.  He is currently a football analyst on \"Fox NFL Sunday\", and has also served as co-host on the syndicated morning talk show \"Live!  with Kelly and Michael\" with co-host Kelly Ripa from 2012 to 2016, where he was a two-time Daytime Emmy Award winner.  In 2014, he became a regular contributor on the ABC morning television show \"Good Morning America\", and in 2016 the network announced that Strahan would be leaving \"Live!\"  to join \"GMA\" on a full-time basis.  He starred in and produced the short-lived Fox sitcom \"Brothers\" and appeared as host for \"Pros vs. Joes\" alongside fellow Fox football analyst Jay Glazer.  On February 1, 2014, he was elected to the Pro Football Hall of Fame.  As of 2016, he is the host of the ABC game show \"The $100,000 Pyramid\".",
+      "Curt Menefee: Curt Menefee (born July 22, 1965) is an American sportscaster who is the host of the Fox network's NFL show \"Fox NFL Sunday\".  His co-hosts are Jimmy Johnson, Terry Bradshaw, Howie Long, and Michael Strahan.",
+      "Howie Long: Howard Matthew Moses \"Howie\" Long (born January 6, 1960) is an American former National Football League (NFL) defensive end, actor and sports analyst.  He played in the NFL for 13 seasons and spent the entirety of his career with the Raiders franchise.  During his tenure as a player, Long was named to eight Pro Bowls and helped the Raiders win a Super Bowl title in XVIII.  He was inducted into the Pro Football Hall of Fame in 2000."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 578,
+    "generation_tokens": 43,
+    "generation_speed": 220.38398064721136,
+    "prompt_eval_speed": 54353.958999435774,
+    "generation_latency_s": 0.55289520000224,
+    "latency": 1.3692027000070084,
+    "total_prompt_tokens": 672,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5100377,
+    "stage_rewrite_s": 0.4341190999984974,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15802989999065176,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2239298000058625,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5529813000030117,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3692244000121718,
+    "unaccounted_latency_s": 0.0001652000064495951,
+    "rewritten_query": "Who hosted the Fox NFL show with Michael Anthony Strahan, and how long did Michael Anthony spend with the team?",
+    "query_was_rewritten": true
+  }
+}

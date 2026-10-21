@@ -1,0 +1,42 @@
+{
+  "question_id": "Q109",
+  "query": "When was the  former Indian cricketer who made his ODI debuts during the 2000 ICC KnockOut Trophy born? ",
+  "ground_truth": "7 October 1978",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Zaheer Khan was born on 7 October 1978 and played all forms of the game for the Indian national cricket team from 2000 till 2014. Therefore, he did not make his ODI debuts during the 2000 ICC KnockOut Trophy as it occurred in 2000, which is before his birth year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2000 ICC KnockOut Trophy: The 2000 ICC KnockOut Trophy was a One Day International cricket tournament held in Kenya (which helped to booster cricket in Kenya).  New Zealand were crowned champions and cashed the winner's cheque of US$250 000.  It was their first win in a major ICC tournament.  Zaheer Khan, Yuvraj Singh and Marlon Samuels made their ODI debuts during the competition.",
+      "2000 ICC KnockOut Trophy squads: These were the eleven squads (all Test nations and two ODI nations) picked to take part in the 2000 ICC KnockOut Trophy, the second installment of the Champions Trophy cricket tournament.  The tournament was held in Kenya from 3 to 15 October 2000.  In the preliminary quarter finals, two ODI full-status teams Kenya and Zimbabwe played with India and Sri Lanka respectively, and India and Sri Lanka won their matches convincingly.  In third preliminary quarter final, England beat Bangladesh to secure his position in Knockout Tournament.  New Zealand won the second edition of the ICC KnockOut Trophy by defeating India in the final by four wickets, which was their first ICC event to be won.",
+      "Zaheer Khan: Zaheer Khan (born 7 October 1978) is a former Indian cricketer who played all forms of the game for Indian national cricket team from 2000 till 2014.  He was the second-most successful Indian pace bowler in Test cricket, behind Kapil Dev."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 72,
+    "generation_speed": 316.863752987101,
+    "prompt_eval_speed": 29913.895486935868,
+    "generation_latency_s": 0.48848679999355227,
+    "latency": 1.3263508999953046,
+    "total_prompt_tokens": 490,
+    "total_generation_tokens": 154,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4008665,
+    "stage_rewrite_s": 0.5066184000024805,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12731280000298284,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20377700000244658,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.48853679999592714,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.326365100001567,
+    "unaccounted_latency_s": 0.00012059998698532581,
+    "rewritten_query": "Former Indian cricketer, 2000 ICC Knott Out Debut Date: [Insert birth year] | [ICC Knott Trophy Year] | [Specific location]\n\nThis rephrased version captures the key information concisely while maintaining searchability and readability. It specifies the cricket player's name, birth year, tournament details (Knott Out), and location for easier retrieval.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q429",
+  "query": "What party does the House of Commons representative for Congleton belong to?",
+  "ground_truth": "British Conservative Party",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The House of Commons representative for Congleton belongs to the Conservative Party. This is explicitly stated in the context provided where it mentions that Fiona Bruce, who represents Congleton since 2010, is a member of the House of Commons of the UK Parliament.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Congleton (UK Parliament constituency): Congleton is a constituency in Cheshire, represented in the House of Commons of the UK Parliament since 2010 by Fiona Bruce of the Conservative Party.",
+      "Fiona Bruce (politician): Fiona Claire Bruce (born 26 March 1957) is a British Conservative Party politician who is the Member of Parliament for Congleton, elected at the 2010 general election, and then again in 2015.",
+      "Diane Abbott: Diane Julie Abbott (born 27 September 1953) is a British Labour Party politician who was appointed Shadow Home Secretary in October 2016.  She was first elected as the Member of Parliament (MP) for Hackney North and Stoke Newington at the 1987 general election, when she became the first black woman to hold a seat in the House of Commons."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 241,
+    "generation_tokens": 53,
+    "generation_speed": 310.7866420382913,
+    "prompt_eval_speed": 28006.97269029634,
+    "generation_latency_s": 0.4632470999931684,
+    "latency": 1.3002568999945652,
+    "total_prompt_tokens": 314,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4994697,
+    "stage_rewrite_s": 0.5185747000068659,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14782940001168754,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17036730000108946,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.463342900009593,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3002848999894923,
+    "unaccounted_latency_s": 0.0001718999701552093,
+    "rewritten_query": "To find out which party's House of Commons representative for Congleton is, try this rephrased version:\n\n\"Find the party affiliation of a House of Commons representative from Congleton's seat.\" \n\nThis version is more direct and concise while still conveying the same information.",
+    "query_was_rewritten": true
+  }
+}

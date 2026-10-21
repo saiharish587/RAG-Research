@@ -1,0 +1,42 @@
+{
+  "question_id": "Q284",
+  "query": "Which film was released first: Sacred Planet or Oz the Great and Powerful?",
+  "ground_truth": "Sacred Planet",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Based on the information provided, Sacred Planet was released first. It was released on April 22, 2004, while Oz the Great and Powerful was released in 2013.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oz the Great and Powerful: Oz the Great and Powerful is a 2013 American fantasy adventure film directed by Sam Raimi and produced by Joe Roth, from a screenplay written by David Lindsay-Abaire and Mitchell Kapner.  The film stars James Franco, Michelle Williams, Rachel Weisz and Mila Kunis, with Zach Braff, Bill Cobbs, Joey King, and Tony Cox in supporting roles.  Based on L. Frank Baum's \"Oz\" novels and set 20 years before the events of the original novel, \"Oz the Great and Powerful\" is a spiritual prequel to the 1939 Metro-Goldwyn-Mayer film, \"The Wizard of Oz\".  The film tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.  Oscar is then enlisted to restore order in Oz, while struggling to resolve conflicts with the witches and himself.",
+      "Sacred Planet: Sacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor.  Robert Redford provided narration for the film.  The film was released by Walt Disney Pictures on April 22, 2004, and grossed $1,108,356.",
+      "James Franco: James Edward Franco (born April 19, 1978) is an American actor, director, screenwriter, and producer.  For his role in \"127 Hours\" (2010), Franco was nominated for an Academy Award for Best Actor.  He is known for his roles in live-action films such as \"Milk\" (2008), \"Pineapple Express\" (2008), \"Rise of the Planet of the Apes\" (2011), \"Spring Breakers\" (2012), \"Oz the Great and Powerful\" (2013), \"This Is the End\" (2013), \" The Disaster Artist\" (2017), and Sam Raimi's \"Spider-Man\" trilogy, while also voicing characters in the animated films \"The Little Prince\" (2015) and \"Sausage Party\" (2016)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 528,
+    "generation_tokens": 39,
+    "generation_speed": 230.12922641175427,
+    "prompt_eval_speed": 43934.09885172242,
+    "generation_latency_s": 0.525926399990567,
+    "latency": 1.7213670999917667,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5771261000000001,
+    "stage_rewrite_s": 0.806745800000499,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16977410000981763,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2186890000011772,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5260087000060594,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7213943999959156,
+    "unaccounted_latency_s": 0.00017769997066352516,
+    "rewritten_query": "When comparing the release dates of \"Sacred Planet\" and \"Oz the Great and Powerful\", we find that \"Sacred Planet\" came out earlier, in 2000, while \"Oz the Great and Powerful\" was released later, in 2011. So a concise rephrased version could be: \"Which film came out first between Sacred Planet and Oz the Great and Powerful?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q553",
+  "query": "Are both Jim McBride and Neil Jordan American?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Yes, both Neil Jordan and Angel (1982 Irish film) are American. Neil Jordan is described as an \"Irish film director\" in the context, while Angel is specifically mentioned as a 1982 film directed by Neil Jordan with Stephen Rea in the lead role.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Neil Jordan: Neil Patrick Jordan (born 25 February 1950) is an Irish film director, screenwriter, novelist and short-story writer.  His first book, \"Night in Tunisia\", won a Somerset Maugham Award and the Guardian Fiction Prize in 1979.  He won an Academy Award (Best Original Screenplay) for \"The Crying Game\" (1992).  He also won the Silver Bear for Best Director at the Berlin International Film Festival for \"The Butcher Boy\" (1997).",
+      "Jim McBride: Jim McBride (born September 16, 1941) is an American television and film director, film producer and screenwriter.",
+      "Angel (1982 Irish film): Angel is a 1982 film directed by Neil Jordan and starring Stephen Rea.  The film was Neil Jordan's directorial debut, and the executive producer was John Boorman."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 253,
+    "generation_tokens": 57,
+    "generation_speed": 192.77271420599627,
+    "prompt_eval_speed": 8190.087727817164,
+    "generation_latency_s": 0.700798499994562,
+    "latency": 1.4784925999992993,
+    "total_prompt_tokens": 323,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4917287,
+    "stage_rewrite_s": 0.36898959999962244,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14035149999835994,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2681455999991158,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7008624000009149,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4785097999993013,
+    "unaccounted_latency_s": 0.00016160000814124942,
+    "rewritten_query": "Are Jim McBride and Neil Jordan from the same country?",
+    "query_was_rewritten": true
+  }
+}

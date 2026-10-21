@@ -1,0 +1,42 @@
+{
+  "question_id": "Q395",
+  "query": "Who wrote The Devils, and was an eninent English theater, opera and film director?",
+  "ground_truth": "Peter Hall",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "John Whiting wrote \"The Devils\" (play), which is a play commissioned by Sir Peter Hall for the Royal Shakespeare Company. He drew inspiration from Aldous Huxley's book \"The Devils of Loudun\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Devils (film): The Devils is a 1971 British historical drama horror film directed by Ken Russell and starring Oliver Reed and Vanessa Redgrave.  Russell's screenplay is based partly on the 1952 book \"The Devils of Loudun\" by Aldous Huxley, and partly on the 1960 play \"The Devils\" by John Whiting, also based on Huxley's book.",
+      "The Devils (play): The Devils is a play, commissioned by Sir Peter Hall for the Royal Shakespeare Company and written by British dramatist John Whiting, based on Aldous Huxley's book, \"The Devils of Loudun\".",
+      "Shakespeare's plays: The plays written by English poet, playwright, and actor William Shakespeare (1564 \u2013 1616) have the reputation of being among the greatest in the English language and in Western literature.  Traditionally, the plays are divided into the genres of tragedy, history, and comedy; they have been translated into every major living language, in addition to being continually performed all around the world."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 298,
+    "generation_tokens": 48,
+    "generation_speed": 282.4542924225751,
+    "prompt_eval_speed": 12338.52268963233,
+    "generation_latency_s": 0.5058397999964654,
+    "latency": 1.4717283999925712,
+    "total_prompt_tokens": 376,
+    "total_generation_tokens": 120,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5134404,
+    "stage_rewrite_s": 0.5611900000076275,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15314500000386033,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2513353999966057,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5059188999875914,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4717553999944357,
+    "unaccounted_latency_s": 0.00016729999333620071,
+    "rewritten_query": "Who is the author of The Devils, a renowned English drama, opera, and film director?\" \n\n\nThis version maintains the core information while making it more concise and direct. It eliminates unnecessary words like \"enigantine,\" \"ninth,\" and \"an,\" focusing on the essential details: author, genre (drama), and key roles.",
+    "query_was_rewritten": true
+  }
+}

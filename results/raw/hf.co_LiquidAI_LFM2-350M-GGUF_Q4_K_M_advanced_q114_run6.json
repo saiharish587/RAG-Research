@@ -1,0 +1,42 @@
+{
+  "question_id": "Q114",
+  "query": "Who died first, George Archainbaud or Ralph Murphy?",
+  "ground_truth": "George Archainbaud",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "To answer this question, we need to compare the birth dates provided for both individuals.\n\nGeorge Archainbaud was born on May 7, 1890, while Ralph Murphy was born on February 10, 1959.\n\nComparing these dates:\n1890 - 1909\n1959 - 1962\n\nThe difference between their birth years is 50 years (1962 - 1890 = 72). Since 50 years is less than 20 years, George Archainbaud died first. Therefore, George Archainbaud died on February 20, 1959, before Ralph Murphy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George Archainbaud: George Archainbaud (May 7, 1890 \u2013 February 20, 1959) was a French-born American film and television director.",
+      "Ralph Murphy: Ralph Murphy (May 1, 1895 \u2013 February 10, 1967) was an American film director.  Born in Rockville, Connecticut, Murphy was active in films from 1931 through 1962, with some work in television.  From 1941\u201344 he was married to Gloria Dickson, whom he directed in \"I Want a Divorce\".",
+      "Charlie Murphy: Charles Quinton Murphy (July 12, 1959 \u2013 April 12, 2017) was an American actor, comedian, and writer.  Murphy was best known as a writer and cast member of the Comedy Central sketch-comedy series \"Chappelle's Show\".  He was the older brother of comedian Eddie Murphy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 263,
+    "generation_tokens": 130,
+    "generation_speed": 325.38639634566044,
+    "prompt_eval_speed": 32949.13555499875,
+    "generation_latency_s": 0.7034719000075711,
+    "latency": 1.3648714000009932,
+    "total_prompt_tokens": 335,
+    "total_generation_tokens": 151,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.516649,
+    "stage_rewrite_s": 0.3878656999877421,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12103889998979867,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15231849999690894,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7035408000083407,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3648852000042098,
+    "unaccounted_latency_s": 0.00012190001143608242,
+    "rewritten_query": "George Archainbaud's death date precedes Ralph Murphy's by a single day.",
+    "query_was_rewritten": true
+  }
+}

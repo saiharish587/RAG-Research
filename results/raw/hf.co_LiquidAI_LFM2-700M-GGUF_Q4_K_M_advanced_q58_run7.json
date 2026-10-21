@@ -1,0 +1,42 @@
+{
+  "question_id": "Q58",
+  "query": "who is younger Keith Bostic or Jerry Glanville ?",
+  "ground_truth": "Keith Bostic",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Keith Bostic is younger than Jerry Glanville. Keith Bostic was born on January 17, 1961, while Jerry Glanville was born on October 14, 1941. Therefore, Keith Bostic is approximately 20 years older than Jerry Glanville.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Keith Bostic (American football): William Keith Bostic (born January 17, 1961) is a former professional American football player who played for seven seasons in the National Football League (NFL).  During his career he played safety for the Houston Oilers and the Cleveland Browns.  Bostic served as the Oiler defensive captain under Jerry Glanville.  He earned one Pro Bowl selection and missed another based on a tiebreaker for the last safety chosen.  In his Pro Bowl season, he led the American Football Conference in interceptions.",
+      "Jerry Glanville: Jerry Michael Glanville (born October 14, 1941) is a former American football player and coach, former NASCAR driver and owner, and sportscaster.  He served as head coach of the Houston Oilers from 1986 to 1990 and the Atlanta Falcons from 1990 to 1994, compiling a career NFL record of 63\u201373.  From 2007 to 2009, he was the Head Football Coach at Portland State University, tallying a mark of 9\u201324.  Glanville has worked as an analyst on HBO's \"Inside the NFL\", CBS's \"The NFL Today\"/\"NFL on CBS\" and Fox's coverage of the NFL.  He has also raced on the Automobile Racing Club of America circuit.  Glanville also briefly served as a consultant and liaison for the United Football League in 2011.",
+      "1987 Pittsburgh Steelers season: The Pittsburgh Steelers are a professional American Football team playing in the National Football League.  Their 1987 season saw the team record an 8-7 record and fail to reach the playoffs.  Noll was renowned as a stoic character, but in complete contrast was his reaction to Jerry Glanville, the head coach of the Oilers.  After the Steelers second meeting, Noll in the post game handshake grabbed Glanville and told him he'd better watch out or he'd get jumped on.  This was in reaction to Glanville's earlier comments on how the Oilers field was the 'house of pain' and his prediction that his players would intentionally hurt the Steelers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 532,
+    "generation_tokens": 60,
+    "generation_speed": 224.43414541088282,
+    "prompt_eval_speed": 46353.5767186547,
+    "generation_latency_s": 0.5865239999984624,
+    "latency": 1.3336765999993077,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5221271000000001,
+    "stage_rewrite_s": 0.44394179999653716,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15305340000486467,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1499482000072021,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5865922000084538,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3336948000069242,
+    "unaccounted_latency_s": 0.0001599999814061448,
+    "rewritten_query": "Which is younger between Keith Bostic and Jerry Glanville?",
+    "query_was_rewritten": true
+  }
+}

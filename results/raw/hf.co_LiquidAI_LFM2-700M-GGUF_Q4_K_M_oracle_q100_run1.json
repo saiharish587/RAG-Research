@@ -1,0 +1,33 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Yingkou and Fuding are not the same level of city. According to the provided context, Yingkou is described as a prefecture-level city in Liaoning province, which places it at a lower level of administrative hierarchy compared to Fuding. Specifically, Yingkou is mentioned as being the location of the mouth of the Liao River and serving as a port city within the Bohai Sea. On the other hand, Fuding is described as a county-level city in Ningde prefecture level city, which indicates it has a higher administrative status than Yingkou.\n\nTo summarize:\n- Yingkou: Prefecture-level city in Liaoning province\n- Fuding: County-level city in Ningde prefecture level city",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 148,
+    "generation_tokens": 156,
+    "generation_speed": 230.63207973956318,
+    "prompt_eval_speed": 4845.151574674262,
+    "generation_latency_s": 0.9294674000120722,
+    "latency": 0.9295459999993909,
+    "total_prompt_tokens": 148,
+    "total_generation_tokens": 156,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2069031,
+    "stage_generate_s": 0.9295170000114013,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9295553999836557,
+    "unaccounted_latency_s": 3.9399979868903756e-05
+  }
+}

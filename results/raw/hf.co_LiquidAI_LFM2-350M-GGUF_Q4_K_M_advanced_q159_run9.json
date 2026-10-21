@@ -1,0 +1,42 @@
+{
+  "question_id": "Q159",
+  "query": "What football club plays in the area between the old tool gates: Brook Bar and Trafford bar?",
+  "ground_truth": "Manchester United",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The football club that plays in the area between the old tool gates (Brooks's Bar) and Trafford Bar is Old Trafford United Football Club. This information can be found in the context provided, specifically mentioning that \"the crossroads sites of two old toll gates roughly delineate the borders of the area: Brooks's Bar to the east and Trafford Bar to the west.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Old Trafford, Greater Manchester: Old Trafford is an area of Stretford, in the Metropolitan Borough of Trafford, Greater Manchester, England, 2 mi southwest of Manchester city centre.  The crossroads sites of two old toll gates roughly delineate the borders of the area: Brooks's Bar to the east and Trafford Bar to the west.",
+      "Trafford Bar tram stop: Trafford Bar is a tram stop on Greater Manchester's light rail system, Metrolink, at the junction of Talbot Road and Seymour Grove in Old Trafford.  It opened on 15 June 1992 as part of Phase 1 of Metrolink's expansion, before which it was a railway station.",
+      "Doorway page: Doorway pages are web pages that are created for spamdexing.  This is for spamming the index of a search engine by inserting results for particular phrases with the purpose of sending visitors to a different page.  They are also known as bridge pages, portal pages, jump pages, gateway pages, entry pages and by other names.  Doorway pages that redirect visitors without their knowledge use some form of cloaking.  This usually falls under Black Hat SEO."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 328,
+    "generation_tokens": 81,
+    "generation_speed": 308.4421766117056,
+    "prompt_eval_speed": 27549.134889971443,
+    "generation_latency_s": 0.5422096999973292,
+    "latency": 1.4255150999961188,
+    "total_prompt_tokens": 408,
+    "total_generation_tokens": 160,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4388499,
+    "stage_rewrite_s": 0.5341073000017786,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12917850000667386,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21985740000673104,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5422634999995353,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4255286999978125,
+    "unaccounted_latency_s": 0.000122499986900948,
+    "rewritten_query": "To optimize the original user query for search engines, we can rephrase it as follows:\n\n**\"Search for football clubs near Brook Bar and Trafford Bar within a 10-minute drive.\"**\n\nThis version is more concise and directly targets the location specified in the query while also providing additional context (a 10-minute drive) to make it more appealing to potential users.",
+    "query_was_rewritten": true
+  }
+}

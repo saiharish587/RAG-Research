@@ -1,0 +1,42 @@
+{
+  "question_id": "Q5",
+  "query": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+  "ground_truth": "Greenwich Village, New York City",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The director of the romantic comedy \"Big Stone Gap\" is based in New York City, specifically in San Francisco during the summer when Erin and Garrett's long-distance relationship takes place.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Big Stone Gap (film): Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.  Based on Trigiani's 2000 best-selling novel of the same name, the story is set in the actual Virginia town of Big Stone Gap circa 1970s.  The film had its world premiere at the Virginia Film Festival on November 6, 2014.",
+      "Going the Distance (2010 film): Going the Distance is a 2010 American romantic comedy film directed by Nanette Burstein and written by Geoff LaTulippe.  It stars Drew Barrymore and Justin Long as a young couple, Erin and Garrett, who fall in love one summer in New York City and try to keep their long-distance relationship alive, when Erin heads home to San Francisco.",
+      "Sex and the City (film): Sex and the City (advertised as Sex and the City: The Movie) is a 2008 American romantic comedy film written and directed by Michael Patrick King in his feature film directorial debut, and a sequel to the 1998-2004 HBO comedy series of the same name (itself based on the book of the same name by Candace Bushnell) about four female friends: Carrie Bradshaw (Sarah Jessica Parker), Samantha Jones (Kim Cattrall), Charlotte York Goldenblatt (Kristin Davis), and Miranda Hobbes (Cynthia Nixon), dealing with their lives as single women in New York City.  The series often portrayed frank discussions about romance and sexuality."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 415,
+    "generation_tokens": 39,
+    "generation_speed": 213.06585373848623,
+    "prompt_eval_speed": 39456.17037459593,
+    "generation_latency_s": 0.513504999995348,
+    "latency": 1.3867847999936203,
+    "total_prompt_tokens": 493,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49118649999999997,
+    "stage_rewrite_s": 0.48975330000394024,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1859559000004083,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19734579999931157,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5135906000068644,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3868089000025066,
+    "unaccounted_latency_s": 0.0001641999842831865,
+    "rewritten_query": "Where's the director of \"Big Stone Gap,\" known for its romantic comedy? Is it in a big city like New York?",
+    "query_was_rewritten": true
+  }
+}

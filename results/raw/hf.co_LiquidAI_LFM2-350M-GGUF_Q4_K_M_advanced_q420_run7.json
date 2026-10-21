@@ -1,0 +1,42 @@
+{
+  "question_id": "Q420",
+  "query": "What is the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station?",
+  "ground_truth": "51,271",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Unfortunately, I do not have enough context to determine the population of the city 2.1 miles southwest of Marietta Air Force Station in 2010. The provided context only gives information about the location and operational history of Marietta Air Force Station, but it does not contain any data regarding its population at that specific time.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marietta Air Force Station: Marietta Air Force Station (ADC ID: M-111, NORAD ID: Z-111) is a closed United States Air Force General Surveillance Radar station.  It is located 2.1 mi northeast of Smyrna, Georgia.  It was closed in 1968.",
+      "George Air Force Base: George Air Force Base is a former United States Air Force base located within the city limits, 8 miles northwest, of central Victorville, California, about 75 miles northeast of Los Angeles, California.",
+      "302d Air Division: The 302d Air Division is an inactive United States Air Force Division.  Its last assignment was with Fourteenth Air Force at Marietta Air Force Base, Georgia, where it was inactivated on 27 June 1949."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 246,
+    "generation_tokens": 67,
+    "generation_speed": 314.33115490896125,
+    "prompt_eval_speed": 21643.498152384305,
+    "generation_latency_s": 0.49857260000135284,
+    "latency": 1.4099690000002738,
+    "total_prompt_tokens": 328,
+    "total_generation_tokens": 147,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.45730360000000003,
+    "stage_rewrite_s": 0.5459242000069935,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1672643999918364,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19797059999837074,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4986549000022933,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4099872999940999,
+    "unaccounted_latency_s": 0.00017410000145900995,
+    "rewritten_query": "To optimize the search for the 2010 population of the city 2.1 miles southwest of Marietta AFS, consider this rephrased version:\n\n\"Find the population estimate for the area 2.1 miles northwest of Marietta Air Force Station in 2010.\"\n\nThis version is more concise and directly addresses the user's query while maintaining clarity and readability.",
+    "query_was_rewritten": true
+  }
+}

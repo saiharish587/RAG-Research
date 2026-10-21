@@ -1,0 +1,36 @@
+{
+  "question_id": "Q423",
+  "query": "How many novels are there in the series of novels of which Shadows in Flight is the tenth novel ?",
+  "ground_truth": "fifteen",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "To answer this question, we need to identify the total number of novels in the series and then subtract the number of novels mentioned as being part of the \"Ender's Game\" series.\n\nFrom the given context:\n- \"Shadows in Flight\" is the tenth novel in the \"Ender's Game\" series.\n- The \"Ender's Game\" series consists of four main books: \"Shadow,\" \"The Shadow,\" \"The Shadow and The Ark,\" and \"The Ark.\"\n\nSo, there are 4 novels in total within the \"Ender's Game\" series. Since \"Shadows in Flight\" is the tenth novel in this series, we subtract it from the total number of novels:\n\nTotal novels in the Ender's Game series - Shadows in Flight = 4 - 1 = 3 novels remaining (excluding \"The Ark\").\n\nTherefore, there are **3 novels** left to consider. However, based on the provided context, we only have information about four main books within the \"Ender's Game\" series. The question specifically asks for Shadows in Flight being part of this series, so we can conclude that:\n\nShadows in Flight is one of the three remaining novels in the Ender's Game series.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shadows in Flight: Shadows in Flight is a science fiction novel by Orson Scott Card.  When released in 2012, it became the tenth novel published in the \"Ender's Game\" series.  The story follows on from where the original four \"Shadow series\" books left off.  It is about Bean and his children discovering an ancient Formic \"ark\" during their journey in space.  A sample chapter was released on November 28, 2011.  The hardcover version was released on January 17, 2012, and the paperback was released on January 29, 2013.  It was nominated for the Goodreads Choice Award for science fiction.",
+      "Merlin Book 10: Shadows on the Stars: \"Shadows on the Stars\" is a work of fiction by T. A. Barron, published by Penguin Young Readers Group.  The book is the tenth novel in the 12-book series known as Merlin Saga.  It was originally published as \"The Great Tree of Avalon: Shadows on the Stars\", the second novel in \"The Great Tree of Avalon\" trilogy, and is set in a world made up of a great tree and its seven roots inhabited by creatures.",
+      "Roald Dahl: Roald Dahl ( , ] ; 13 September 1916 \u2013 23 November 1990) was a British novelist, short story writer, poet, screenwriter, and fighter pilot.  His books have sold more than 250 million copies worldwide."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 261,
+    "generation_speed": 221.33818863949944,
+    "prompt_eval_speed": 34695.31525184924,
+    "generation_latency_s": 1.4663921000028495,
+    "latency": 1.514279399998486,
+    "total_prompt_tokens": 394,
+    "total_generation_tokens": 261,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2637118,
+    "stage_retrieve_s": 0.047663099991041236,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 1.4664856999879703,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5143040000111796,
+    "unaccounted_latency_s": 0.0001564000267535448
+  }
+}

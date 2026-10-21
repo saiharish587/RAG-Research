@@ -1,0 +1,42 @@
+{
+  "question_id": "Q389",
+  "query": "The man, who the award in which \"Summer of the Monkeys\" won, was a spokesman for white sector of America?",
+  "ground_truth": "middle America",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The man who served as the spokesman for the White Sector of America during the \"Summer of the Monkeys\" novel was **not** identified by name within the provided context. The context only mentions that he won the BIFA Award for Best Supporting Actor, but it does not specify his occupation or role in relation to the White Sector of America.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Summer of the Monkeys: Summer of the Monkeys is a 1976 children's novel written by Wilson Rawls.  It was published by Doubleday (later released by Yearling Books) and was the winner of the William Allen White Book Award and the California Young Reader Medal.",
+      "Open information extraction: In natural language processing, open information extraction (OIE) is the task of generating a structured, machine-readable representation of the information in text, usually in the form of triples or n-ary propositions.  A proposition can be understood as truth-bearer, a textual expression of a potential fact (e.g., \"Dante wrote the Divine Comedy\"), represented in an amenable structure for computers [e.g., (\"Dante\", \"wrote\", \"Divine Comedy\")].  An OIE extraction normally consists of a relation and a set of arguments.  For instance, (\"Dante\", \"passed away in\" \"Ravenna\") is a proposition formed by the relation \"passed away in\" and the arguments \"Dante\" and \"Ravenna\".  The first argument is usually referred as the subject while the second is considered to be the object.",
+      "BIFA Award for Best Supporting Actor: The British Independent Film Award for Best Supporting Actor is an annual award given to the Best Supporting Actor in a British film.  The award was introduced at the 2008 ceremony.  Previously, there had been a single award given for Best Supporting Actor/Actress starting in 2003."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 391,
+    "generation_tokens": 70,
+    "generation_speed": 317.0548323685808,
+    "prompt_eval_speed": 36321.41198327915,
+    "generation_latency_s": 0.4864058999955887,
+    "latency": 1.4555288999981713,
+    "total_prompt_tokens": 476,
+    "total_generation_tokens": 149,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4378632,
+    "stage_rewrite_s": 0.5462812000041595,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15908820000186097,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2635688000009395,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.48647190000338014,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4555457000096794,
+    "unaccounted_latency_s": 0.00013639999087899923,
+    "rewritten_query": "A concise and searchable rephrased version of the original query:\n\n**Given: Award-winning actor discussed as White Sector spokesman for 'Monkey State' (Summer of the Monkeys)**\n\nThis optimized query retains the key elements while being more direct and easier to scan. It clearly states who was involved, the award, and the context provided in the user's query.",
+    "query_was_rewritten": true
+  }
+}

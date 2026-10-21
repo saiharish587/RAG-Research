@@ -1,0 +1,42 @@
+{
+  "question_id": "Q430",
+  "query": "Season 2 of Rick and Morty began with the episode directed by whom?",
+  "ground_truth": "Wes Archer",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The context provided does not specify who directed \"Lawnmower Dog\" in season 2 of Rick and Morty. The information given only mentions that \"Lawnmower Dog\" was written by Ryan Ridley and directed by John Rice, but it does not provide the director for this episode.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rick and Morty (season 2): The second season of the animated television series \"Rick and Morty\" originally aired in the United States on Cartoon Network's late night programming block, Adult Swim, which premiered on July 26, 2015 with \"A Rickle in Time\", and concluded on October 4 with \"The Wedding Squanchers\".  This season aired a total of ten episodes.",
+      "A Rickle in Time: \"A Rickle in Time\" is the first episode in the second season of the American animated television sitcom \"Rick and Morty\", and the twelfth overall episode of the series.  Written by Matt Roller and directed by Wes Archer, the episode first aired on Adult Swim in the United States on July 26, 2015.",
+      "Lawnmower Dog: \"Lawnmower Dog\" is the second episode of \"Rick and Morty\".  It premiered on Adult Swim on December 9, 2013, was written by Ryan Ridley, and directed by John Rice.  In the episode, Rick gives Jerry a device to enhance the dog's intelligence, whilst Rick and Morty get lost in the dreams of Morty's math teacher.  The episode was well received, with approximately 1.5 million viewers when airing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 344,
+    "generation_tokens": 62,
+    "generation_speed": 315.74337193550684,
+    "prompt_eval_speed": 29462.144570058237,
+    "generation_latency_s": 0.5069002999953227,
+    "latency": 1.251537100004498,
+    "total_prompt_tokens": 419,
+    "total_generation_tokens": 103,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.48174700000000004,
+    "stage_rewrite_s": 0.4339006999944104,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16016659999149852,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15036469999176916,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5069820999924559,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2515603999927407,
+    "unaccounted_latency_s": 0.00014740003098268062,
+    "rewritten_query": "Season 2 of Rick and Morty - Directed by [Name]\"\n\nThis rephrased version is more concise and directly states the requested information while maintaining a search-friendly tone.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q319",
+  "query": "Are both Duke Energy and Affiliated Managers Group based in Massachusetts?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, neither Duke Energy nor Affiliated Managers Group is explicitly stated to be based in Massachusetts. However, we can infer this information from the context provided. Duke Energy is described as being \"headquartered in Massachusetts,\" which suggests it has a significant presence there. Affiliated Managers Group Inc., while also an American company, does not have its headquarters mentioned in relation to Massachusetts specifically. Therefore, based on the given context, we cannot definitively conclude that both companies are based in Massachusetts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Affiliated Managers Group: Affiliated Managers Group Inc. is an American international investment management company headquartered in Massachusetts that owns stakes in a number of boutique asset management, hedge fund, and specialized private equity firms.",
+      "Duke Energy: Duke Energy, headquartered in Charlotte, North Carolina, is an electric power holding company in the United States, with assets also in Canada and Latin America.",
+      "Crescent Communities: In 1939, Duke Power (now Duke Energy) established a forestry department to manage company land not used for power generation.  In 1963 this department became the company South Carolina Land and Timber.  As the holdings expanded to include land in North Carolina, the organization was renamed Crescent Land and Timber in 1969.  Some of the original land was sold to Crescent Land and Timber by the Singer Corporation.  In the mid-1980s the company was renamed Crescent Resources as it began to actively develop residential communities.  Crescent Resources began work on its first commercial development, Coliseum Centre, in 1990.  As of 1991, Crescent Resources managed 270,000 acres of land.  Holdings included part of what became Lake James State Park, which it later sold to the state of North Carolina. Crescent Resources became a separate entity from Duke Energy in 2006 with Duke Energy selling its 49% stake to Morgan Stanley.  Crescent Resources filed for bankruptcy in 2009 and has emerged from it separated from the utility company.  The company aimed to rebrand itself, renaming itself \"Crescent Communities\" in 2013."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 406,
+    "generation_tokens": 101,
+    "generation_speed": 216.404303231709,
+    "prompt_eval_speed": 37616.97396460669,
+    "generation_latency_s": 0.8337317999976221,
+    "latency": 1.58751559999655,
+    "total_prompt_tokens": 479,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5284513,
+    "stage_rewrite_s": 0.3885675000055926,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15475210000295192,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21021299999847542,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.833830500007025,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.587539400003152,
+    "unaccounted_latency_s": 0.00017729998216964304,
+    "rewritten_query": "Are Duke Energy and Affiliated Managers Group located in Massachusetts?",
+    "query_was_rewritten": true
+  }
+}

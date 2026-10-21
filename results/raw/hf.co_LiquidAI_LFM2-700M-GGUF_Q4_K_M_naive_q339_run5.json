@@ -1,0 +1,36 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, based on the provided context, neither Sorbaria nor Goldenrod are described as having more than 50 flowering plants. The context gives specific numbers for each genus:\n\n- Sorbaria: Around 9 species.\n- Goldenrod (Solidago): About 100 to 120 species.\n\nTherefore, the correct answer is that neither genus has more than 50 flowering plants according to the given information.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sorbaria: Sorbaria is a genus of around 9 species of flowering plants belong to family Rosaceae.",
+      "Goldenrod: Solidago, commonly called goldenrods, is a genus of about 100 to 120 species of flowering plants in the aster family, Asteraceae.  Most are herbaceous perennial species found in open areas such as meadows, prairies, and savannas.  They are mostly native to North America, including Mexico; a few species are native to South America and Eurasia.  Some American species have also been introduced into Europe and other parts of the world.",
+      "Solidago rupestris: Solidago rupestris , the rock goldenrod or riverbank goldenrod, is a North American species of flowering plants in the sunflower family.  It is found in the eastern United States, found today in the States of Maryland, Virginia, Kentucky, and Tennessee.  There are historical records of it formerly growing in Indiana and Pennsylvania as well, but these populations now appear to have been extirpated."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 289,
+    "generation_tokens": 86,
+    "generation_speed": 228.61639232699588,
+    "prompt_eval_speed": 25963.52528973138,
+    "generation_latency_s": 0.6291341000032844,
+    "latency": 0.6627729000028921,
+    "total_prompt_tokens": 289,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2292049,
+    "stage_retrieve_s": 0.03353239998978097,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.6291843999933917,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6627836999978172,
+    "unaccounted_latency_s": 6.750001921318471e-05
+  }
+}

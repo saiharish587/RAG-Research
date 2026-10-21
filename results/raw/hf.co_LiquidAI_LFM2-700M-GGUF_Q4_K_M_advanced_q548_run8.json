@@ -1,0 +1,42 @@
+{
+  "question_id": "Q548",
+  "query": "The telenova \"El Ardiente Secreto\" was based ona novel published under what pen name?",
+  "ground_truth": "\"Currer Bell\"",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The telenovela \"El Ardiente Secreto\" was based on the novel published under the pen name Charlotte Bront\u00eb, which is Jane Eyre.\n\nSo, the answer is Charlotte Bront\u00eb (or Jane Eyre).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "El Ardiente Secreto: El Ardiente Secreto (English The impassioned secret) is a telenovela made by Mexican TV network Televisa.  This telenovela was broadcast in 1978.  This soap opera was televised on weekends only.  It was based on the Charlotte Bront\u00eb's novel \"Jane Eyre\".",
+      "The Expanse (novel series): The Expanse is a series of science fiction novels, novellas and stories by James S. A. Corey, the pen name of authors Daniel Abraham and Ty Franck.  The first novel, \"Leviathan Wakes\", was nominated for the Hugo Award for Best Novel in 2012.  In 2017 the series as a whole was nominated for the 'Best Series' Hugo Award.",
+      "Colin Falconer (writer): Colin Falconer (born 1953) is a pen name of Colin Bowles, who also uses the pen name Mark D'Abranville, an English-born Australian writer.  Works published under the pen name include contemporary and historical thrillers, and children's books.  Under his original name he has also published books of satirical fiction; non-fiction books about language; television and radio scripts; and many magazine articles and columns."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 341,
+    "generation_tokens": 50,
+    "generation_speed": 224.66760427946852,
+    "prompt_eval_speed": 28769.087994600523,
+    "generation_latency_s": 0.5791293999936897,
+    "latency": 1.3734660999907646,
+    "total_prompt_tokens": 423,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4991818,
+    "stage_rewrite_s": 0.4575275000097463,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1629036999947857,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17366749999928288,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5792079000093509,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3734898999973666,
+    "unaccounted_latency_s": 0.0001844999787863344,
+    "rewritten_query": "What pen name was used for the novel \"El Ardiente Secreto\" before its adaptation into a television series?",
+    "query_was_rewritten": true
+  }
+}

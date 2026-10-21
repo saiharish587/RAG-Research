@@ -1,0 +1,42 @@
+{
+  "question_id": "Q290",
+  "query": "Which came to market first, \"Hey Pa! There's a Goat on the Roof\" or \"Poleconomy\"",
+  "ground_truth": "Hey Pa! There's a Goat on the Roof",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "\"Hey Pa! There's a Goat on the Roof\" came to market first. It was issued by Parker Brothers in 1966, while Poleconomy was invented by Bruce E. Hatherley and first published in 1980.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Poleconomy: Poleconomy is a board game invented by New Zealander Bruce E. Hatherley and first published in 1980.  It is similar to \"Monopoly\" but the board is divided into companies rather than properties.  Players compete to acquire properties and investments through stylized economic and political activity.  The playing time is set by agreement from all players, e.g. 2 hours, and the winner is determined by the monetary sum of all player cash, companies, insurance or other assets.  The game can also end when there are no more companies, advertisements in the bank or bonds in the treasury.  Another objective of the game is \"to teach players some of the fundamentals of economics, and the ways in which the economy and the government interact.\"  Different editions were published for several different countries.  The name \"Poleconomy\" is a portmanteau of \"politics\" and \"economy\".",
+      "Hey Pa! There's a Goat on the Roof: Hey Pa!  There's a Goat on the Roof was a children's board game issued by Parker Brothers in 1966.",
+      "Core stability: Core stability refers to a person's ability to stabilize their core.  Stability, in this context, should be considered as an ability to control the position and movement of the core.  Thus, if a person has greater core stability, they have a greater level of control over the position and movement of this area of their body.  The body's core is frequently involved in aiding other movements of the body, such as the limbs, and it is considered that by improving core stability a person's ability to perform these other movements may also be improved i.e. core stability training may help improve someone's running ability.  The bodies core region is sometimes referred to as the torso or the trunk, although there are some differences in the muscles identified as constituting them.  The major muscles involved in core stability include the pelvic floor muscles, transversus abdominis, multifidus, internal and external obliques, rectus abdominis, erector spinae (sacrospinalis) especially the longissimus thoracis, and the diaphragm.  The minor muscles involved include the latissimus dorsi, gluteus maximus, and trapezius.  Notably, breathing, including the action of the diaphragm, can significantly influence the posture and movement of the core; this is especially apparent in regard to extreme ranges of inhalation and exhalation.  On this basis, how a person is breathing may influence their ability to control their core."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 628,
+    "generation_tokens": 52,
+    "generation_speed": 225.78460149017835,
+    "prompt_eval_speed": 59083.639100573906,
+    "generation_latency_s": 0.59812840000086,
+    "latency": 1.5656573999876855,
+    "total_prompt_tokens": 714,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5240830000000001,
+    "stage_rewrite_s": 0.5413604999921517,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15191280000726692,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.27400829999533016,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5982060999958776,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5656780999997864,
+    "unaccounted_latency_s": 0.00019130000146105886,
+    "rewritten_query": "Which product launched earlier, \"Goat on the Roof\" or \"PoleEconomy\"? \n\n\nThis rephrased query is more direct and concise while maintaining the core information of the original question.",
+    "query_was_rewritten": true
+  }
+}

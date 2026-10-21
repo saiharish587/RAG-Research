@@ -1,0 +1,42 @@
+{
+  "question_id": "Q255",
+  "query": "in 1999, Spirit Halloween LLC was purchased by a mall retailer that has how many stores in the United States and Canada ?",
+  "ground_truth": "over 600 stores",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "In 1999, Spirit Halloween LLC was purchased by Spencer Gifts, which specializes in novelty and gag gifts, clothing, band merchandise, sex toys, room decor, collectible figures, fashion and body jewelry, and fantasy and horror items. Spencer Gifts operates over 600 stores in the United States and Canada. Therefore, in 1999, Spirit Halloween LLC was purchased by a mall retailer with approximately 600 stores in both the United States and Canada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Spirit Halloween: Spirit Halloween LLC is a seasonal retailer that supplies Halloween decorations, costumes and accessories.  It was founded in 1983 and is based in Egg Harbor Township, New Jersey.  In 1999, the store had 60 seasonal locations and was purchased by Spencer Gifts.",
+      "Spencer Gifts: Spencer Gifts LLC, doing business as Spencer's, is a North American mall retailer with over 600 stores in the United States and Canada.  Their stores specialize in novelty and gag gifts, and also sell clothing, band merchandise, sex toys, room decor, collectible figures, fashion and body jewelry, and fantasy and horror items.  The company also owns and operates a seasonal retailer, Spirit Halloween.",
+      "Sears Canada: Sears Canada is a Canadian retail chain headquartered in Toronto, Ontario.  The company's roots are in Simpsons-Sears, a joint venture with the Simpsons retail chain and the U.S. Sears chain, which operated a national mail order business, and co-branded Simpsons-Sears stores modelled after the U.S. Sears chain.  Following the purchase of Simpsons by the Hudson's Bay Company in 1978, the joint venture was dismantled, and the Simpsons-Sears stores became solely owned by Sears.  In 1999, Sears Canada acquired the remaining assets and locations of the historic Canadian chain Eaton's.  Sears Holdings now owns a 10% share in the company.  ESL Investments is the largest shareholder of Sears Canada."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 407,
+    "generation_tokens": 96,
+    "generation_speed": 225.53635364100253,
+    "prompt_eval_speed": 32936.79695719026,
+    "generation_latency_s": 0.820414299989352,
+    "latency": 1.6338974999962375,
+    "total_prompt_tokens": 492,
+    "total_generation_tokens": 119,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5992793999999999,
+    "stage_rewrite_s": 0.4900039000058314,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1512778000032995,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1719903999910457,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8204840000107652,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6339164000091841,
+    "unaccounted_latency_s": 0.00016099998902063817,
+    "rewritten_query": "How many U.S. and Canadian retail locations does Spirit Halloween LLC have after its acquisition in 1999?",
+    "query_was_rewritten": true
+  }
+}

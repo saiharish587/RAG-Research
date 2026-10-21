@@ -1,0 +1,42 @@
+{
+  "question_id": "Q116",
+  "query": "The Argentine PGA Championship record holder has won how many tournaments worldwide?",
+  "ground_truth": "230",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Based on the provided context, Roberto De Vicenzo is the record holder for the Argentine PGA Championship. He recorded 16 victories between 1944 and 1985. Therefore, the answer to the question is that he has won 16 tournaments worldwide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Argentine PGA Championship: The Argentine PGA Championship is a golf tournament played in Argentina since 1920.  It was generally supported by the leading Argentine golfers and its list of champions includes Eduardo Romero (8 times), Jos\u00e9 Jurado (7 times), Vicente Fern\u00e1ndez (5 times), Jos\u00e9 C\u00f3ceres (twice) and \u00c1ngel Cabrera.  However, the record holder is former British Open champion Roberto De Vicenzo, who recorded 16 victories between 1944 and 1985.",
+      "Roberto De Vicenzo: Roberto De Vicenzo (14 April 1923 \u2013 1 June 2017) was a professional golfer from Argentina.  He won more than 230 tournaments worldwide in his career including eight on the PGA Tour and most famously the 1967 Open Championship.",
+      "Jordan Spieth: Jordan Alexander Spieth ( ; ; born July 27, 1993) is an American professional golfer on the PGA Tour and former world number one in the Official World Golf Ranking.  He is a three-time major winner and the 2015 FedEx Cup champion.  In April 2016, \"Time\" magazine named Spieth to its list of the \"100 Most Influential People\", noting that he \"exemplifies everything that's great about sports.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 339,
+    "generation_tokens": 53,
+    "generation_speed": 206.69295257641969,
+    "prompt_eval_speed": 25404.676258992808,
+    "generation_latency_s": 0.6574615000135964,
+    "latency": 1.3998179000045639,
+    "total_prompt_tokens": 412,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5529393,
+    "stage_rewrite_s": 0.41391489999659825,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17033199999423232,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15784200000052806,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6575810000067577,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3998368000029586,
+    "unaccounted_latency_s": 0.00016769999638199806,
+    "rewritten_query": "How many PGA championships in Argentina has the top winner claimed across all the world?",
+    "query_was_rewritten": true
+  }
+}

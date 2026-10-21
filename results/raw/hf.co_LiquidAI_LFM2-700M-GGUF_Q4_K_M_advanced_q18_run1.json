@@ -1,0 +1,42 @@
+{
+  "question_id": "Q18",
+  "query": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Yes, both Giuseppe Verdi and Ambroise Thomas were opera composers. Verdi is renowned for his operas \"Mignon\" (1866) and \"Hamlet\" (1868), while Ambroise Thomas composed several operas, including \"Mignon\" (1866).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ambroise Thomas: Charles Louis Ambroise Thomas (5 August 1811 \u2013 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+      "Giuseppe Verdi (film): Giuseppe Verdi is a 1938 Italian biographical film directed by Carmine Gallone and starring Fosco Giachetti, Gaby Morlay and Germana Paolieri.  The film portrays the life of the composer Giuseppe Verdi (1813-1901).  The casting of Giachetti as Verdi was intended to emphasise the composer's patriotism, as he had recently played patriotic roles in films such as \"The White Squadron\".  The film was made at the Cinecitt\u00e0 Studios in Rome.  The film is also known by the alternative title The Life of Giuseppe Verdi.",
+      "Giuseppe Verdi: Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 \u2013 27 January 1901) was an Italian opera composer."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 313,
+    "generation_tokens": 61,
+    "generation_speed": 218.98648745674117,
+    "prompt_eval_speed": 5854.844743733633,
+    "generation_latency_s": 0.7044536000030348,
+    "latency": 1.4229714999964926,
+    "total_prompt_tokens": 385,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5825224,
+    "stage_rewrite_s": 0.46811450000677723,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12412089999997988,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12610449999920093,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7045153999933973,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4229850999981863,
+    "unaccounted_latency_s": 0.00013040000339969993,
+    "rewritten_query": "Are Giuseppe Verdi and Ambroise Thomas both opera composers?",
+    "query_was_rewritten": true
+  }
+}

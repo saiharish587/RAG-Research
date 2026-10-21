@@ -1,0 +1,42 @@
+{
+  "question_id": "Q126",
+  "query": "Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of which river?",
+  "ground_truth": "Richmond",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The question cannot be answered with certainty based solely on the provided context, as it does not specify the exact location of the river where Mummulgum is situated before reaching the town on the Bruxner Highway. The context only mentions that Mummulgum is a stop on the highway and provides details about its location relative to the Bruxner Highway and Summerland Way but does not explicitly state which river it crosses before reaching the town.\n\nTo accurately answer this question, additional information would be required, such as:\n1. A precise coordinate or reference point for the Bruxner Highway.\n2. The exact name of the river that Mummulgum is on before crossing the highway.\n\nWith these details, we could determine the river's name and its position relative to the highway.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bruxner Highway: The Bruxner Highway is a 420 km state highway located in New South Wales, Australia.  The highway forms an east-west link from the Northern Rivers coast, across the Northern Tablelands in northern New South Wales, close to the border with Queensland.",
+      "Wollongbar, New South Wales: Wollongbar is a town (2011 population: 2,396) in the Northern Rivers region of New South Wales, Australia.  The town is located on the Bruxner Highway between the towns of Lismore and Alstonville.",
+      "Casino, New South Wales: Casino is a town in the Northern Rivers area of New South Wales, Australia, with a population of 9,629 people at the 2011 census .  It lies on the banks of the Richmond River and is situated at the junction of the Bruxner Highway and the Summerland Way."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 264,
+    "generation_tokens": 161,
+    "generation_speed": 323.2425443404447,
+    "prompt_eval_speed": 24700.598802395212,
+    "generation_latency_s": 0.78225360000215,
+    "latency": 1.923889000012423,
+    "total_prompt_tokens": 347,
+    "total_generation_tokens": 273,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.44748699999999997,
+    "stage_rewrite_s": 0.6316383000084898,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13888929999666288,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.37092489999486133,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7823321000032593,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9239111000060802,
+    "unaccounted_latency_s": 0.00012710000737570226,
+    "rewritten_query": "Mummy's route on Bruxner Highway crosses the river Brux, before passing through the town along its banks. \n\n\nThis rephrased version:\n\n* **Focuses on the key elements:** It explicitly mentions Mummy (the character), Bruxner Highway, and the river.\n* **Uses more descriptive language:** \"Crosses\" and \"passing through\" paint a clearer picture of the journey.\n* **Removes unnecessary words:**  \"stop on the Bruxner Highway\" is implied by the context.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q9",
+  "query": "Who is older, Annie Morton or Terry Richardson?",
+  "ground_truth": "Terry Richardson",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Terry Richardson is older than Annie Morton. Terry Richardson was born in August 1965 and Annie Morton in October 1970. Therefore, Terry Richardson is approximately 5 years older than Annie Morton.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Annie Morton: Annie Morton (born October 8, 1970) is an American model born in Pennsylvania.  She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines.  She has been photographed by Helmut Newton; Peter Lindbergh; Annie Leibovitz; Richard Avedon; Juergen Teller; Paul Jasmin, Mary Ellen Mark and Terry Richardson, and modeled for Donna Karan, Givenchy, Guerlain, Chanel, \"Harper's Bazaar\", \"Sports Illustrated\" and Victoria's Secret.  A long time vegetarian, an advocate for organic lifestyle choices and natural healthcare.  She co-founded Tsi-La Organics, a \"Green Luxury\" company that creates and sells vegan, organic perfume and skin care products.",
+      "Terry Richardson: Terrence \"Uncle Terry\" Richardson (born August 14, 1965) is an American fashion and portrait photographer who has shot advertising campaigns for Marc Jacobs, Aldo, Supreme, Sisley, Tom Ford, and Yves Saint Laurent among others.  He has also done work for magazines such as \"Rolling Stone\", \"GQ\", \"Vogue\", \"Vanity Fair\", \"Harper's Bazaar\", \"i-D\", and \"Vice\".",
+      "Lady Gaga x Terry Richardson: Lady Gaga x Terry Richardson is a photo-book by American singer Lady Gaga and American photographer Terry Richardson, released on November 22, 2011 by Grand Central Publishing.  The book features more than 350 pictures of Gaga as taken by Richardson during a ten-month period from Gaga's performance at The Monster Ball Tour till the 2011 Grammy Awards.  In addition to photographs, it includes a foreword written by the singer about her relationship with Richardson.  The duo had collaborated on other projects prior to the shooting of the book."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 457,
+    "generation_tokens": 42,
+    "generation_speed": 215.0427525472326,
+    "prompt_eval_speed": 41060.19766397125,
+    "generation_latency_s": 0.5361138000007486,
+    "latency": 1.2762596999964444,
+    "total_prompt_tokens": 526,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5014381,
+    "stage_rewrite_s": 0.3711318999994546,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1341340999933891,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2346485999878496,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5361655000015162,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.276276599994162,
+    "unaccounted_latency_s": 0.00019740001880563796,
+    "rewritten_query": "Which is older between Annie Morton and Terry Richardson?",
+    "query_was_rewritten": true
+  }
+}

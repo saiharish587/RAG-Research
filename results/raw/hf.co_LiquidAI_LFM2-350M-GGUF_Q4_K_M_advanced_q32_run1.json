@@ -1,0 +1,42 @@
+{
+  "question_id": "Q32",
+  "query": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+  "ground_truth": "Fujioka, Gunma",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Buck-Tick hails from Thornhill, Ontario, Canada. The context provided states that Hayden is a Canadian singer-songwriter who records in Canada and has released two limited-edition pressings of his album \"Skyscraper National Park\" in Japan. However, it does not specify Buck-Tick's place of origin within Canada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Buck-Tick: Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983.  The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985.  In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them.  They are commonly credited as one of the founders of the visual kei movement.",
+      "Hayden (musician): Paul Hayden Desser (born February 12, 1971) who records as Hayden, is a Canadian singer-songwriter from Thornhill, Ontario.",
+      "Skyscraper National Park: Skyscraper National Park is the third album by Canadian singer-songwriter Hayden.  It was released on Hardwood Records in Canada, on Badman Recording Co. in the U.S., on Loose Music in the U.K., and on Massive!  in the Japan.  There were two limited-edition pressings of this album.  The first, comprising only 100 copies, was mainly for Hayden's friends and family.  The second, comprising 1,500 copies, was sold on Hayden's cross-Canada tour."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 392,
+    "generation_tokens": 72,
+    "generation_speed": 312.39559695761403,
+    "prompt_eval_speed": 11137.312839162429,
+    "generation_latency_s": 0.5065740999998525,
+    "latency": 1.5738098000001628,
+    "total_prompt_tokens": 471,
+    "total_generation_tokens": 179,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4228425,
+    "stage_rewrite_s": 0.651027999992948,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12428629999340046,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2917697000084445,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5066230000084033,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5738237000041408,
+    "unaccounted_latency_s": 0.00011730000551324338,
+    "rewritten_query": "Where is Buck-Tick's origin? - Canadian singer-songwriter Hayden?\" \n\n\nThis version:\n\n* **Focuses on the key information:** It explicitly mentions Hayden's nationality (Canadian) and the genre (singer-songwriter).\n* **Removes extraneous details:** It eliminates \"from Canada\" as it's not crucial to understanding who Buck-Tick is.\n* **Uses more concise phrasing:**  \"Where is his origin?\" becomes a direct question with \"origin\" for clarity.",
+    "query_was_rewritten": true
+  }
+}

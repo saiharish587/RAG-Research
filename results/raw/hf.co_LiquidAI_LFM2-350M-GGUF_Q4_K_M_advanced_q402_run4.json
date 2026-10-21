@@ -1,0 +1,42 @@
+{
+  "question_id": "Q402",
+  "query": "Which game was released first, Icehouse pieces or Kill Doctor Lucky?",
+  "ground_truth": "Icehouse pieces",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "To answer this question, I'll analyze the given context step-by-step:\n\n1. **Icehouse Pieces**:\n   - The context states that \"We Can Get Together\" is released in October 1980.\n   - It mentions that Icehouse was released as a single in Europe in 1982 by Chrysalis Records from their first album, \"Icehouse\".\n   - Therefore, Icehouse pieces were released before Kill Doctor Lucky.\n\n2. **Kill Doctor Lucky**:\n   - The context does not provide any information about when Kill Doctor Lucky was released.\n   - It only mentions that it won the Origins Award for Abstract Board Game of 1997 in 1998.\n\nBased on this analysis, we can conclude:\n\nIcehouse (the second single) was released first, before Kill Doctor Lucky.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kill Doctor Lucky: Kill Doctor Lucky is a humorous board game designed by James Ernest and released in 1996 by Cheapass Games.  In 1998, \"Kill Doctor Lucky\" won the Origins Award for \"Best Abstract Board Game of 1997\".",
+      "Icehouse (song): \"Icehouse\" is a song by the Australian rock band Flowers.  It was released as a single in Europe in 1982 by Chrysalis Records from the band's first album, \"Icehouse\", after the band changed its name to Icehouse.  In the United States, the song peaked at number 28 on the \"Billboard\" Top Tracks chart in 1981.",
+      "We Can Get Together: \"We Can Get Together\" is the second single released by the Australian rock band Flowers, later known as Icehouse.  It was released in October 1980, on the independent label Regular Records from their first album, \"Icehouse\", two weeks before the album itself was released.  It peaked at #16 on the Australian Kent Music Report Singles Charts."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 290,
+    "generation_tokens": 169,
+    "generation_speed": 326.31971222076976,
+    "prompt_eval_speed": 28193.661287186467,
+    "generation_latency_s": 0.8032513999933144,
+    "latency": 1.5884641999873566,
+    "total_prompt_tokens": 363,
+    "total_generation_tokens": 221,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4656563,
+    "stage_rewrite_s": 0.47561289998702705,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15634659999341238,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15303169999970123,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8033500000019558,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5884839999926044,
+    "unaccounted_latency_s": 0.00014370001736097038,
+    "rewritten_query": "To optimize the original query for searchability and clarity, consider this rephrased version: \"Which game was released first: Icehouse Pieks vs Kill Doctor Lucky?\" This version maintains the core inquiry while enhancing readability and relevance to search engines.",
+    "query_was_rewritten": true
+  }
+}

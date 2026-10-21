@@ -1,0 +1,49 @@
+{
+  "question_id": "Q462",
+  "query": "1956 Night Series Cup games were played at what inner suburb of Melbourne that is 3km south of Melbourne's central business district?",
+  "ground_truth": "Albert Park",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The 1956 Night Series Cup games were played at Lake Oval, which is located in the inner suburb of Carlton, approximately 3 kilometers south of Melbourne's central business district.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1956 Night Series Cup: The 1956 VFL Night Premiership Cup was the Victorian Football League end of season cup competition played in August and September of the Victorian Football League's 1956 Premiership Season.  The competition was the first season of the VFL Night Series.  Run as a three-round knock-out tournament, it was contested by the eight VFL teams who did not make the final four.  Games were played at the Lake Oval, Albert Park, then the home ground of South Melbourne, as it was the only ground equipped to host night games.  Despite the fact that not all VFL teams participated, the first season's average crowd was 20,000 for the seven matches played, while a crowd of 32,450 watched the first night Grand Final.",
+      "1960 Night Series Cup: The 1960 VFL Night Premiership Cup was the Victorian Football League end of season cup competition played in September of the 1960 VFL Premiership Season.  This was the fifth season of the VFL Night Series.  Run as a knock-out tournament, it was contested by the eight VFL teams that failed to make the 1960 VFL finals series.  Games were played at the Lake Oval, Albert Park, then the home ground of South Melbourne, as it was the only ground equipped to host night games.  South Melbourne went on to win the night series cup for the third time, defeating Hawthorn in the final by 13 points.",
+      "1957 Night Series Cup: The 1957 VFL Night Premiership Cup was the Victorian Football League end of season cup competition played in August, September and October of the 1957 VFL Premiership Season.  This was the second year the VFL Night Series had existed.  Run as a four-round knock-out tournament, it was contested by all twelve VFL teams.  Games were played at the Lake Oval, Albert Park, then the home ground of South Melbourne, as it was the only ground equipped to host night games.  South Melbourne went on to win its second night series cup, defeating Geelong in the final by 51 points."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 529,
+    "generation_tokens": 39,
+    "generation_speed": 217.43978590544157,
+    "prompt_eval_speed": 46905.47969498138,
+    "generation_latency_s": 0.5192294000007678,
+    "latency": 1.5192903999995906,
+    "total_prompt_tokens": 684,
+    "total_generation_tokens": 73,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7876208,
+    "stage_route_s": 0.360362699982943,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5394344000087585,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.09999389998847619,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.069998537190259e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.519282099994598,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.519318500009831,
+    "unaccounted_latency_s": 0.00017580005805939436,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Night series cup games 1956 Melbourne suburbs 3km MCD",
+      "1956 night series cup Melbourne inner suburbs 3km south central business district"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

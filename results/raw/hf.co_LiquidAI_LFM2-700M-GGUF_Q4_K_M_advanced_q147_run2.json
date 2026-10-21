@@ -1,0 +1,42 @@
+{
+  "question_id": "Q147",
+  "query": "When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change names?",
+  "ground_truth": "2009",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The English local newspaper, which featured the Maiwand Lion at Forbury Gardens, changed its name from Reading Post to Surrey & Berkshire Media Ltd., a division of Trinity Mirror plc. The exact date of this name change is not provided in the context. However, we know that it happened until 2009 when the current version continued to feature the sculpture and war memorial.\n\nSo, based on the information given, the English local newspaper changed its name sometime before or around 2009.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Maiwand Lion: The Maiwand Lion is a sculpture and war memorial in the Forbury Gardens, a public park in the town of Reading, in the English county of Berkshire.  The statue was named after the Battle of Maiwand and was erected in 1884 to commemorate the deaths of 329 men from the 66th (Berkshire) Regiment of Foot during the campaign in the Second Anglo-Afghan War in Afghanistan between 1878 and 1880.  It is sometimes known locally as the Forbury Lion.",
+      "Forbury Gardens: Forbury Gardens is a public park in the town of Reading in the English county of Berkshire.  The park is on the site of the outer court of Reading Abbey, which was in front of the Abbey Church.  The site was formerly known as the Forbury, and one of the roads flanking the current gardens is still known as The Forbury.  Fairs were held on the site three times a year until the 19th century.",
+      "Reading Post: The Reading Post (until 2009, the Reading Evening Post), was an English local newspaper covering Reading, Berkshire and surrounding areas.  The title page of the paper featured the Maiwand Lion, a famous local landmark at Forbury Gardens.  The paper was most recently published by Surrey & Berkshire Media Ltd., a division of Trinity Mirror plc."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 358,
+    "generation_tokens": 101,
+    "generation_speed": 219.35873406119893,
+    "prompt_eval_speed": 33637.13238748473,
+    "generation_latency_s": 0.8016639999987092,
+    "latency": 2.05629229999613,
+    "total_prompt_tokens": 439,
+    "total_generation_tokens": 197,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5718999,
+    "stage_rewrite_s": 0.8265974999958416,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16789719999360386,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2599213000066811,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8017386999999871,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.056310999993002,
+    "unaccounted_latency_s": 0.00015700000221841037,
+    "rewritten_query": "When did the Forbury Gardens area's English local newspaper featuring a sculpture and war memorial change its name? \n\nThis rephrased query maintains the essence of the original question while making it more concise and search-friendly. It specifically targets the location (Forbury Gardens) and the type of publication (local newspaper), along with the key elements (sculpture, war memorial). This should help in generating relevant results for users looking to find information about this specific change.",
+    "query_was_rewritten": true
+  }
+}

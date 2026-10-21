@@ -1,0 +1,42 @@
+{
+  "question_id": "Q437",
+  "query": "Where is the school that Tyler Kalinoski went to located?",
+  "ground_truth": "located in Olathe, Kansas",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The school that Tyler Kalinoski attended is located in West Haven, Connecticut. This can be inferred from the context provided, which mentions that he \"completed his college career for the Davidson Wildcats at the University of New Haven (UNH)\". UNH is situated in West Haven, Connecticut.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tyler Kalinoski: Tyler Kalinoski (born December 19, 1992) is an American basketball player for Antwerp Giants in the Belgian League.  Kalinoski was a McDonald\u2019s All-American nominee as a senior at Olathe East High School in Kansas and completed his college career for the Davidson Wildcats.  He was named Atlantic 10 Conference Men's Basketball Player of the Year in 2015.",
+      "University of New Haven: The University of New Haven (UNH) is a private, nonsectarian, coeducational university located in West Haven, Connecticut, which borders the larger city of New Haven and Long Island Sound.  U.S. News & World Report has named the University the 100th best university in the northeastern United States as well as in the top tier of engineering programs nationwide in its annual \"America's Best Colleges\" rankings.  Between its main campus in West Haven and its graduate school campus in Orange, Connecticut, the University is situated on approximately 122 acres of land.  Combining a liberal arts education with professional training, the University comprises six degree-granting colleges: the College of Arts and Sciences, the Lyme Academy College of Fine Arts, the College of Business, the Tagliatela College of Engineering, the Henry C. Lee College of Criminal Justice and Forensic Sciences, and the College of Lifelong & eLearning for adult and online students.",
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 506,
+    "generation_tokens": 62,
+    "generation_speed": 218.24453948642133,
+    "prompt_eval_speed": 47975.727695079164,
+    "generation_latency_s": 0.6020744999987073,
+    "latency": 1.5012289000005694,
+    "total_prompt_tokens": 578,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5179306,
+    "stage_rewrite_s": 0.5326402000064263,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16631020000204444,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1999987000017427,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6021394999988843,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5012451999937184,
+    "unaccounted_latency_s": 0.00015719998918939382,
+    "rewritten_query": "Where is Tyler Kalinoski's former school situated? \n\n\nThis rephrased query is more direct and uses natural language while still conveying the same information.",
+    "query_was_rewritten": true
+  }
+}

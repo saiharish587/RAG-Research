@@ -1,0 +1,42 @@
+{
+  "question_id": "Q533",
+  "query": "Luke Null is an actor who was on the program that premiered its 43rd season on which date?",
+  "ground_truth": "September 30, 2017",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Luke Null was part of Saturday Night Live's 43rd season, which premiered on September 30, 2017.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Luke Null: Luke Null (born July 7, 1990 in Cincinnati, Ohio) is an American actor, comedian, and singer, who currently works as a cast member on \"Saturday Night Live\", having joined the show at the start of its forty-third season.  Prior to joining the show, Null was known for performing at the iO Theater in Chicago specializing in musical comedy.  Luke Null is now the second \"SNL\" cast member born in the 1990s after Pete Davidson (though Null is older than Davidson by three years).",
+      "Life in Pieces: Life in Pieces is an American sitcom television series created by Justin Adler and airs on CBS.  The series debuted on September 21, 2015.  The first season was picked up for a full 22-episode order on October 27, 2015.  On May 11, 2016, CBS renewed the show for a second season, which premiered on October 27, 2016.",
+      "Saturday Night Live (season 43): The forty-third season of the NBC comedy series \"Saturday Night Live\" premiered on September 30, 2017 with host Ryan Gosling and musical guest Jay-Z during the 2017\u20132018 television season.  Like the final four episodes of season 42, season 43 will be broadcast live in all four time zones within the contiguous United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 370,
+    "generation_tokens": 27,
+    "generation_speed": 220.19426026961563,
+    "prompt_eval_speed": 31071.548538797448,
+    "generation_latency_s": 0.45761999998649117,
+    "latency": 1.630288299988024,
+    "total_prompt_tokens": 450,
+    "total_generation_tokens": 129,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5086958,
+    "stage_rewrite_s": 0.8087343999941368,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15222309999808203,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21148490000632592,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4577068000071449,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6303114999900572,
+    "unaccounted_latency_s": 0.0001632999919820577,
+    "rewritten_query": "When did Luke Null join a show premiering its 43rd season? The answer to this question is the premiere date of the 43rd season of a program Luke Null starred in.\n\nTo further refine it for clarity and readability, consider:\nLuke Null's involvement with which show's 43rd season premiere? The premiere date of that particular season is what we're looking for.\n\nThis rephrased query maintains the core information while making it more concise and easier to understand.",
+    "query_was_rewritten": true
+  }
+}

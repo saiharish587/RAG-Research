@@ -1,0 +1,42 @@
+{
+  "question_id": "Q155",
+  "query": "Are Broughtonia and Laeliocattleya both orchids?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Yes, both Broughtonia and Laeliocattleya are orchids. Broughtonia is a genus of orchids within the Orchidaceae family, while Laeliocattleya is a nothogenus of intergeneric orchid hybrids descended from \"Laelia\" and \"Cattleya\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Broughtonia: Broughtonia is a genus of orchids (family Orchidaceae) native to the Bahamas and the Greater Antilles.  The genus is abbreviated Bro in trade journals.",
+      "Laeliocattleya: Laeliocattleya is a nothogenus of intergeneric orchid hybrids descended from the parental genera \"Laelia\" and \"Cattleya\".  It is abbreviated Lc.  in the horticultural trade.",
+      "Cattleytonia: Cattleytonia (from \"Cattleya\" and \"Broughtonia\", its parental genera) is an intergeneric hybrid of orchids.  It is abbreviated Ctna in horticultural trade."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 223,
+    "generation_tokens": 69,
+    "generation_speed": 224.9198111977469,
+    "prompt_eval_speed": 17849.995997758742,
+    "generation_latency_s": 0.6842589000007138,
+    "latency": 1.4465385999938007,
+    "total_prompt_tokens": 298,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5700327000000001,
+    "stage_rewrite_s": 0.44753299999865703,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1626581000018632,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15185409999685362,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6843479000090156,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4465627999888966,
+    "unaccounted_latency_s": 0.00017079999088309705,
+    "rewritten_query": "Are Broughtonia and Laeliocattleya classified as orchids?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q134",
+  "query": "Which Eminem album included vocals from a singer who had an album titled \"Unapologetic\"?",
+  "ground_truth": "\"The Marshall Mathers LP 2\"",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Eminem album that included vocals from a singer who had an album titled \"Unapologetic\" is \"Unapologetic.\" The song \"Numb,\" featured on this album, has Rihanna's vocals. However, the specific mention of a singer with \"Unapologetic\" in the context provided refers to \"Love the Way You Lie,\" which was released after \"Numb.\" Therefore, the Eminem album that fits this description is \"Recovery.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Numb (Rihanna song): \"Numb\" is a song by Barbadian singer Rihanna from her seventh studio album \"Unapologetic\" (2012).  It features guest vocals by American rapper Eminem, making it the pair's third collaboration since the two official versions of \"Love the Way You Lie\".  Following the album's release, \"Numb\" charted on multiple charts worldwide including in Canada, the United Kingdom and the United States.",
+      "The Monster (song): \"The Monster\" is a song by American rapper Eminem, featuring guest vocals from Barbadian singer Rihanna, taken from Eminem's album \"The Marshall Mathers LP 2\" (2013).  The song was written by Eminem, Jon Bellion, and Bebe Rexha, with production handled by Frequency.  \"The Monster\" marks the fourth collaboration between Eminem and Rihanna, following \"Love the Way You Lie\", its sequel \"Love the Way You Lie (Part II)\" (2010), and \"Numb\" (2012).  \"The Monster\" was released on October 29, 2013, as the fourth single from the album.  The song's lyrics present Rihanna coming to grips with her inner demons, while Eminem ponders the negative effects of his fame.",
+      "Love the Way You Lie: \"Love the Way You Lie\" is a song recorded by the American rapper Eminem, featuring the Barbadian singer Rihanna, from Eminem's seventh studio album \"Recovery\" (2010).  The singer and songwriter Skylar Grey wrote and recorded a demo of the song alongside the producer Alex da Kid when she felt she was in an abusive romantic relationship with the music industry.  Eminem wrote the verses and chose Rihanna to sing the chorus, resulting in a collaboration influenced by their past experiences in difficult relationships.  Recording sessions were held in Ferndale, Michigan, and Dublin, Ireland.  Backed by guitar, piano and violin, the track is a midtempo hip hop ballad with a pop refrain, sung by Rihanna, and describes two lovers who refuse to separate despite being in a dangerous love\u2013hate relationship."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 545,
+    "generation_tokens": 100,
+    "generation_speed": 211.38833516888872,
+    "prompt_eval_speed": 40711.137670874734,
+    "generation_latency_s": 0.8801052999915555,
+    "latency": 1.7708239999919897,
+    "total_prompt_tokens": 626,
+    "total_generation_tokens": 123,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5992529,
+    "stage_rewrite_s": 0.49458169999707025,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17543730000033975,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22042579999833833,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.880201300009503,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7708505999908084,
+    "unaccounted_latency_s": 0.00020559999393299222,
+    "rewritten_query": "Which Eminem album featured a vocalist with a \"Unapologetic\" album by another artist?",
+    "query_was_rewritten": true
+  }
+}

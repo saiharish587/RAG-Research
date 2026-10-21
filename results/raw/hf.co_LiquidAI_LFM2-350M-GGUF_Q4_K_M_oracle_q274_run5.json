@@ -1,0 +1,33 @@
+{
+  "question_id": "Q274",
+  "query": "on 16 January 1995 \"First Knight\" was being filmed at a studio located how far from Windsor ?",
+  "ground_truth": "7 miles",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The answer to the question can be determined by analyzing the provided context. The film \"First Knight\" had its principal photography begin on 16 January 1995 and continued until June, with the studios initially set up at Pinewood Studios in Hertfordshire. However, due to logistical constraints, they were unable to film at Pinewood Studios altogether because it was reserved for \"First Knight\".\n\nGiven that the context specifies that the old Rolls-Royce factory at the Leavesden Aerodrome in Hertfordshire was converted into a new studio instead of Pinewood Studios, we can deduce that the distance from Windsor to this new location is 20 miles. This information directly answers the question posed.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Filming of James Bond in the 1990s: Principal photography for the film began on 16 January 1995 and continued until 6 June.  The producers were unable to film at Pinewood Studios, the usual location for Bond films, because it had been reserved for \"First Knight\".  Instead, an old Rolls-Royce factory at the Leavesden Aerodrome in Hertfordshire was converted into a new studio.  The producers later said Pinewood would have been too small.",
+      "Pinewood Studios: Pinewood Studios is a British film and television studio located approximately 20 mi west of central London, and 7 miles from Windsor."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 211,
+    "generation_tokens": 143,
+    "generation_speed": 319.0717911530094,
+    "prompt_eval_speed": 18235.24328061533,
+    "generation_latency_s": 0.6664748000039253,
+    "latency": 0.6665849999990314,
+    "total_prompt_tokens": 211,
+    "total_generation_tokens": 143,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1951055,
+    "stage_generate_s": 0.6665500999952201,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.666599899996072,
+    "unaccounted_latency_s": 5.0700007705017924e-05
+  }
+}

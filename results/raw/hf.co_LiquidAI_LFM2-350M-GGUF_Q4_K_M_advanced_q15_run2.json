@@ -1,0 +1,42 @@
+{
+  "question_id": "Q15",
+  "query": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+  "ground_truth": "from 1986 to 2013",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The football manager who recruited David Beckham to manage Manchester United during the 2017\u201318 Premier League season was Frank Lampard. He took over as the head coach of the team in February 2018, succeeding Pep Guardiola.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2017\u201318 Manchester United F.C. season: The 2017\u201318 season is Manchester United's 26th season in the Premier League and their 43rd consecutive season in the top flight of English football.  The club will participate in the Premier League, FA Cup, EFL Cup (as holders), UEFA Champions League and UEFA Super Cup.",
+      "2017\u201318 Premier League: The 2017\u201318 Premier League is the 26th season of the Premier League, the top English professional league for association football clubs, since its establishment in 1992.  The season started on 11 August 2017 and is scheduled to finish on 13 May 2018.  Fixtures for the 2017\u201318 season were announced on 14 June 2017.",
+      "David Beckham Academy: The David Beckham Academy was a football school founded by England international David Beckham in 2005.  In 2009 it operated in two locations: in London, United Kingdom, and in Los Angeles, California, United States.  The academy pulled out of the London site at the end of the lease in October 2009, and the California branch closed soon after."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 314,
+    "generation_tokens": 49,
+    "generation_speed": 304.84580401525477,
+    "prompt_eval_speed": 29184.86848220095,
+    "generation_latency_s": 0.4361438000050839,
+    "latency": 1.3909838999970816,
+    "total_prompt_tokens": 389,
+    "total_generation_tokens": 145,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.42072980000000004,
+    "stage_rewrite_s": 0.5672465000097873,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13613979998626746,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2512894999963464,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4361962999973912,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.390997900001821,
+    "unaccounted_latency_s": 0.00012630000128410757,
+    "rewritten_query": "Search Query Optimization:\n\nGiven: \"Football manager recruiting David Beckham, Manchester United\", Optimized Answer: \"Manchester United Football Manager - Recruiting David Beckham (2020-2022)\". \n\nThis rephrased version focuses on the key elements of the original query: the football manager, the specific recruitment event (David Beckham), and the timeframe (2020-2022). It uses more concise language while maintaining clarity.",
+    "query_was_rewritten": true
+  }
+}

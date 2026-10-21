@@ -1,0 +1,42 @@
+{
+  "question_id": "Q340",
+  "query": "What is the capacity of the Stadium, other than Kauffman Stadium, designed by Charles Deaton ? ",
+  "ground_truth": "76,416",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The capacity of the stadium designed by Charles Deaton, aside from Kauffman Stadium, is 37,903. This information can be found in the context provided about Kauffman Stadium, which states that its listed seating capacity since 2009 is 37,903.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Charles Deaton: Charles Utter Deaton (January 1, 1921 \u2013 December 18, 1996) was an American architect.  He designed several athletic stadiums, and is noted for his futuristic Sculptured House that was featured in the 1973 film \"Sleeper\".  He is also noted as the designer of Kansas City's Arrowhead Stadium and Kauffman Stadium.",
+      "Kauffman Stadium: Kauffman Stadium ( ), often called \"The K\", is a baseball park located in Kansas City, Missouri, that is home to the Kansas City Royals of Major League Baseball (MLB).  It is part of the Truman Sports Complex together with the adjacent Arrowhead Stadium, home of the Kansas City Chiefs of the National Football League.  The ballpark is named for Ewing Kauffman, the founder and first owner of the Royals.  It opened in 1973 as Royals Stadium and was named for Kauffman on July 2, 1993.  The ballpark's listed seating capacity since 2009 is 37,903.",
+      "Arrowhead Stadium: Arrowhead Stadium is a football stadium in Kansas City, Missouri, United States, that primarily serves as the home venue of the Kansas City Chiefs of the National Football League (NFL).  It is part of the Truman Sports Complex with adjacent Kauffman Stadium, the home of the Kansas City Royals of Major League Baseball (MLB).  Arrowhead has a seating capacity of 76,416, making it the 28th largest stadium in North America and sixth largest NFL stadium.  It is also the largest sports facility by capacity in the state of Missouri.  A $375 million renovation was completed in 2010."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 438,
+    "generation_tokens": 57,
+    "generation_speed": 225.18874372335762,
+    "prompt_eval_speed": 37435.89743589744,
+    "generation_latency_s": 0.5944144999957643,
+    "latency": 1.667329800009611,
+    "total_prompt_tokens": 519,
+    "total_generation_tokens": 117,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49971930000000003,
+    "stage_rewrite_s": 0.6129017000057502,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16629229999671225,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2935183999943547,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5944775999960257,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6673469000088517,
+    "unaccounted_latency_s": 0.00015800000983290374,
+    "rewritten_query": "What stadium besides Kauffman designed by Charles Deaton has a capacity not specified as Stadium? \n\n\nThis rephrased question focuses on the specific stadium designator (not just \"Stadium\") and clarifies that we're looking for one with a non-Kauffman capacity.",
+    "query_was_rewritten": true
+  }
+}

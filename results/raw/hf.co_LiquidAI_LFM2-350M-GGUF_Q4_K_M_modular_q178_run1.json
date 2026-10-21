@@ -1,0 +1,49 @@
+{
+  "question_id": "Q178",
+  "query": "When was the Western Germanic language spoken from which the small settlement situated on the river Leda opposite Leer derives its name?",
+  "ground_truth": "between the 8th and 16th centuries",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The small settlement on the river Leda opposite Leer derives its name from the Old Frisian word \"Muhde,\" which means \"river mouth.\" This reflects the historical context of the area's linguistic evolution, as Old Frisian evolved into Middle Frisian between the 16th and 19th centuries.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Leer: Leer is a town in the district of Leer, the northwestern part of Lower Saxony, Germany.  It is situated on the river Leda, a tributary of the river Ems, near the border with the Netherlands.",
+      "Leda (river): The Leda is a river in north-western Germany in the state of Lower Saxony.  It is a right tributary of the Ems and originates at the confluence of the Sagter Ems and the Soeste (Dreyschloot) near the town of Bar\u00dfel.  The Leda flows into the Ems near the town of Leer.  On the southern bank of the Leda, in the \"Overledingen Land\" (Overledingen=\"country over the Leda\"), opposite Leer, lies the small settlement of Kloster Muhde (\"Muhde\" from the Old Frisian \"mutha\" meaning \"(river) mouth\").  The total length of the river is 29 km , of which the lower 1.9 km are navigable for sea-going vessels.",
+      "Old Frisian: Old Frisian is a West Germanic language spoken between the 8th and 16th centuries in the area between the Rhine and Weser on the European North Sea coast.  The Frisian settlers on the coast of South Jutland (today's Northern Friesland) also spoke Old Frisian but no medieval texts of this area are known.  The language of the earlier inhabitants of the region between the Zuiderzee and Ems River (the Frisians mentioned by Tacitus) is attested in only a few personal names and place-names.  Old Frisian evolved into Middle Frisian, spoken from the 16th to the 19th century."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 453,
+    "generation_tokens": 67,
+    "generation_speed": 309.44881162419057,
+    "prompt_eval_speed": 10909.09090909091,
+    "generation_latency_s": 0.5698720000073081,
+    "latency": 1.5612600000022212,
+    "total_prompt_tokens": 602,
+    "total_generation_tokens": 134,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7281763,
+    "stage_route_s": 0.3083311000082176,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5465317000052892,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.13618139999744017,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 8.700000762473792e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.5699615999910748,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5612854000064544,
+    "unaccounted_latency_s": 0.0001936999906320125,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Where did the small settlement on the river Leda near Leer originate from in terms of the Western Germanic language's historical context?",
+      "What year was the settlement located on the river Leda opposite Leer when it spoke Western Germanic?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q129",
+  "query": "Where is the Bubblegum Alley, that is similar to Gum Wall, located in California?",
+  "ground_truth": "San Luis Obispo, California",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Bubblegum Alley, which resembles Gum Wall, is located in San Luis Obispo, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bubblegum Alley: Bubblegum Alley is a tourist attraction in downtown San Luis Obispo, California, known for its accumulation of used bubble gum on the walls of an alley.  It is a 15 ft high and 70 ft long alley lined with chewed gum left by passers-by.  It covers a stretch of 20 meters in the 700 block of Higuera Street in downtown San Luis Obispo.",
+      "San Luis Obispo, California: San Luis Obispo ( ; Spanish for \"St. Louis, the Bishop [of Toulouse]\"), or SLO for short, is a city in the U.S. state of California, located roughly midway between Los Angeles and San Francisco on the Central Coast.  The population was 45,119 at the 2010 census.  The population of San Luis Obispo County was 269,637 in 2010.",
+      "Glendale, California: Glendale is a city in Los Angeles County, California, United States.  Its estimated 2014 population was 200,167, making it the third largest city in Los Angeles County and the 23rd-largest city in California.  It is located about 8 miles (13 km) north of downtown Los Angeles."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 336,
+    "generation_tokens": 25,
+    "generation_speed": 308.5581693860927,
+    "prompt_eval_speed": 29207.23226703755,
+    "generation_latency_s": 0.3703932999924291,
+    "latency": 1.3108627000037814,
+    "total_prompt_tokens": 417,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5160785,
+    "stage_rewrite_s": 0.5456059999996796,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14877210000122432,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24593920000188518,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3704447999916738,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.310876500006998,
+    "unaccounted_latency_s": 0.00011500000255182385,
+    "rewritten_query": "Bubblegum Alley, a similar location in California, is situated in the Los Angeles County area. \n\nThis rephrased version maintains the core query while making it more concise and clear. It specifies \"Los Angeles County\" to provide context about the exact location within California.",
+    "query_was_rewritten": true
+  }
+}

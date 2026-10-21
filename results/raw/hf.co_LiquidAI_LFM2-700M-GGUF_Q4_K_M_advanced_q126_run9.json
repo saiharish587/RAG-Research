@@ -1,0 +1,42 @@
+{
+  "question_id": "Q126",
+  "query": "Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of which river?",
+  "ground_truth": "Richmond",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of Shannon Brook, which flows between Tenterfield and Casino. Shannon Brook is located in Mummulgum, making it the river that connects this village to the town on its banks.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mummulgum: Mummulgum is a small rural village in the Northern Rivers region of New South Wales, Australia, 740 kilometres from the state capital, Sydney.  Mummulgum is located on Shannon Brook between Tenterfield and Casino on the Bruxner Highway (Highway 44).  It is 58 km south-west of Kyogle with the village and surrounding area being locally administered by Kyogle Council.  The nearest large town is Casino which is 27 kilometres east of Mummulgum.",
+      "Bruxner Highway: The Bruxner Highway is a 420 km state highway located in New South Wales, Australia.  The highway forms an east-west link from the Northern Rivers coast, across the Northern Tablelands in northern New South Wales, close to the border with Queensland.",
+      "Wollongbar, New South Wales: Wollongbar is a town (2011 population: 2,396) in the Northern Rivers region of New South Wales, Australia.  The town is located on the Bruxner Highway between the towns of Lismore and Alstonville."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 305,
+    "generation_tokens": 59,
+    "generation_speed": 226.31463872128393,
+    "prompt_eval_speed": 27912.510295598062,
+    "generation_latency_s": 0.606078199998592,
+    "latency": 1.801494499988621,
+    "total_prompt_tokens": 388,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5830173000000001,
+    "stage_rewrite_s": 0.7586862999887671,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17745930000091903,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2589793000079226,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6061794999986887,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.8015210000012303,
+    "unaccounted_latency_s": 0.0002175999979954213,
+    "rewritten_query": "Where does Mummulgum stop, directly before entering the town along the Bruxner Highway? This rephrased query maintains the essential information while making it more concise and easier to read. It specifies the location (directly before entering the town) and the route (Bruxner Highway), which are key elements of the original query.",
+    "query_was_rewritten": true
+  }
+}

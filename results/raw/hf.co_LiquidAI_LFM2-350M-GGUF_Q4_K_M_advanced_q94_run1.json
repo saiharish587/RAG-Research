@@ -1,0 +1,42 @@
+{
+  "question_id": "Q94",
+  "query": "Do the drinks Gibson and Zurracapote both contain gin?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, the context provided does not explicitly state whether the drinks in question contain gin or not. While it mentions that the drink made with gin is sometimes called zurra (though this isn't a definitive rule), we cannot be certain without additional information about the specific recipes used for each drink.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Zurracapote: Zurracapote (sometimes abbreviated as zurra) is a popular Spanish alcoholic mixed drink, similar to sangr\u00eda.  It consists of red wine mixed with fruit such as peaches and lemons, sugar, and cinnamon.  The concoction is then traditionally left to steep for several days, though some recipes call for the addition of other alcoholic beverages, juices, and fruit extracts.  The result is a mild-to-medium alcoholic drink, similar to sangr\u00eda.",
+      "Gibson (cocktail): The Gibson is a mixed drink made with gin and vermouth, and often garnished with a pickled onion.  The oldest published recipe for the Gibson is found in the 1908 book, \"The World's Drinks And How To Mix Them\" by William Boothby.",
+      "Gin: Gin is a spirit which derives its predominant flavour from juniper berries (\"Juniperus communis\").  From its earliest origins in the Middle Ages, gin has evolved from use in herbal medicine to an object of commerce in the spirits industry.  Gin was developed on the basis of the older jenever, and became popular in Great Britain (particularly in London) when William of Orange, leader of the Dutch Republic, occupied the English, Scottish, and Irish thrones with his wife Mary.  Gin is one of the broadest categories of spirits, represented by products of various origins, styles, and flavour profiles that all revolve around juniper as a common ingredient."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 377,
+    "generation_tokens": 61,
+    "generation_speed": 305.9284929761827,
+    "prompt_eval_speed": 11054.09763964228,
+    "generation_latency_s": 0.5384873000002699,
+    "latency": 1.3485417000047164,
+    "total_prompt_tokens": 450,
+    "total_generation_tokens": 109,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5093577,
+    "stage_rewrite_s": 0.4746357999974862,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.139765100000659,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19547449999663513,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.538534699997399,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3485615999961738,
+    "unaccounted_latency_s": 0.00015230001008603722,
+    "rewritten_query": "To optimize for searchability, consider this rephrased version: \"Gibson and Zurracapoise: Both brands offer gin-infused beverages.\" This maintains the original intent while using more concise and natural phrasing.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q114",
+  "query": "Who died first, George Archainbaud or Ralph Murphy?",
+  "ground_truth": "George Archainbaud",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Based on the provided context, George Archainbaud died first. The context states that George Archainbaud was cashiered and arrested, sentenced to death, and feared losing his head due to exceeding his powers. He was pardoned by Queen Victoria, which led to him retiring into private life. Ralph Murphy's death is mentioned as a later event: \"At length Queen Victoria interposed on his behalf; and in response to her letter he was pardoned, upon which he retired into private life.\" Therefore, George Archainbaud died first.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George Archainbaud: George Archainbaud (May 7, 1890 \u2013 February 20, 1959) was a French-born American film and television director.",
+      "Ralph Murphy: Ralph Murphy (May 1, 1895 \u2013 February 10, 1967) was an American film director.  Born in Rockville, Connecticut, Murphy was active in films from 1931 through 1962, with some work in television.  From 1941\u201344 he was married to Gloria Dickson, whom he directed in \"I Want a Divorce\".",
+      "having exceeded his powers.  He was cashiered and arrested, and finally sentenced to death.  For some time it was feared that he would lose his head.  The foreign Ministers did all in their power to effect his release, but in vain.  At length Queen Victoria interposed on his behalf; and in response to her letter he was pardoned, upon which he retired into private life.  He died in 1893, of creeping paralysis; and in 1894 his rank was restored, less two grades.  He was extremely courteous to foreigners, and was much liked by all foreign officials with whom he was thrown into contact."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 325,
+    "generation_tokens": 117,
+    "generation_speed": 218.98015182432954,
+    "prompt_eval_speed": 30039.744893243365,
+    "generation_latency_s": 0.8990264000021853,
+    "latency": 1.930636399993091,
+    "total_prompt_tokens": 397,
+    "total_generation_tokens": 155,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.6013071999999999,
+    "stage_rewrite_s": 0.5962900999875274,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17453099999693222,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2605327000055695,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8991286999953445,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9306574999936856,
+    "unaccounted_latency_s": 0.00017600001592654735,
+    "rewritten_query": "When did George Archainbaud pass away before Ralph Murphy? \n\n\nThis rephrased question is more direct and focuses on the specific timeframe of death between two individuals.",
+    "query_was_rewritten": true
+  }
+}

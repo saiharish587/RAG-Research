@@ -1,0 +1,42 @@
+{
+  "question_id": "Q163",
+  "query": "What major city is the Faith Lutheran Middle School and High School located by?",
+  "ground_truth": "Las Vegas",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Faith Lutheran Middle School & High School is located in Summerlin, Clark County, Nevada. Therefore, the major city where it is situated is Summerlin.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Faith Lutheran Middle School &amp; High School: Faith Lutheran Middle School & High School is a private Christian school located in Summerlin, Clark County, Nevada serving the Las Vegas Valley.  Faith has students who come from 60 different zip codes.  The school, which began in 1979, serves grades 6\u201312 and is affiliated with the Lutheran Church\u2013Missouri Synod.  Faith Lutheran is the largest Lutheran school in the United States and the largest non-public school in the state of Nevada.  Faith Lutheran is governed by a Board of Directors representing the thirteen Lutheran churches in its association.",
+      "Faith Lutheran High School: Faith Lutheran High School, commonly referred to as Faith or FLHS, is a private high school located in Crystal Lake, Illinois.  It is affiliated with the Lutheran Church\u2013Missouri Synod and serves students of McHenry County, Illinois.",
+      "Lutheran High School (La Verne, California): Lutheran High School La Verne (also known as Faith Lutheran), is a private, college preparatory Lutheran High School in La Verne, California.  In the century-long tradition of the Lutheran Church\u2013Missouri Synod, Lutheran High School La Verne serves students from the San Gabriel, Pomona, and Inland Valleys.  Built on a foundation of faith in Christ, the school provides rigorous, college preparatory curriculum to a co-educational student population in grades nine through twelve.  It is part of the Lutheran Church\u2013Missouri Synod.  The school colors are red, white and blue and the mascot is the Trojans."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 33,
+    "generation_speed": 218.7719600641731,
+    "prompt_eval_speed": 32899.131596526386,
+    "generation_latency_s": 0.4800230999971973,
+    "latency": 1.4834992000105558,
+    "total_prompt_tokens": 468,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5279369,
+    "stage_rewrite_s": 0.6228285999968648,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16633839999849442,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2140759000030812,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.48010729999805335,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4835206999996444,
+    "unaccounted_latency_s": 0.00017440000374335796,
+    "rewritten_query": "Where is Faith Lutheran Middle School situated? \n\n\nThis rephrasing focuses on the key information - location - by \"situated\". It's concise, clear, and directly answers the user's question about the school's proximity to a specific landmark.",
+    "query_was_rewritten": true
+  }
+}

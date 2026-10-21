@@ -1,0 +1,49 @@
+{
+  "question_id": "Q498",
+  "query": "What edition of tennis' US Open was the 2017 US Open when Petra Kvitova was a quarterfinalist?",
+  "ground_truth": "137th",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The 2017 US Open was the 137th edition of tennis' US Open, and Petra Kvitova was a quarterfinalist in that event.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2017 US Open (tennis): The 2017 US Open was the 137th edition of tennis' US Open and the fourth and final Grand Slam event of the year.  It was held on outdoor hard courts at the USTA Billie Jean King National Tennis Center in New York City.  Experimental rules featured in qualifying for the main draw as well as in the junior, wheelchair and exhibition events.",
+      "2017 US Open Series: In tennis, the 2017 US Open Series was the fourteenth edition of the US Open Series, which comprised a group of hard court tournaments that started on July 24, 2017 in Atlanta and concluded in Connecticut for the women and in Winston-Salem for the men on August 26, 2017.  This edition consisted of three separate men's tournaments and three women's tournaments, with the Western & Southern Open hosting both a men's and women's event.  The series was headlined by two ATP World Tour Masters 1000 and two WTA Premier 5 events.",
+      "2017 Connecticut Open: The 2017 Connecticut Open (also known as the 2017 Connecticut Open presented by United Technologies for sponsorship reasons) was a tennis tournament played on outdoor hard courts.  It was the 49th edition of the Connecticut Open, and part of the Premier Series of the 2017 WTA Tour.  It took place at the Cullman-Heyman Tennis Center in New Haven, Connecticut, United States, from August 20 through August 26.  It was the last event of the 2017 US Open Series before the 2017 US Open."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 33,
+    "generation_speed": 316.66522727926997,
+    "prompt_eval_speed": 31808.99051174366,
+    "generation_latency_s": 0.4485992999980226,
+    "latency": 1.5043510000105016,
+    "total_prompt_tokens": 558,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7392923,
+    "stage_route_s": 0.327982200004044,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.587784700008342,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.13965250000183005,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 0.00010740000288933516,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.448664399998961,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5043755000078818,
+    "unaccounted_latency_s": 0.00018619999173097312,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Which edition of US Open did Petra Kvitova qualify for in 2017?",
+      "When was the 2017 US Open US Finals?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

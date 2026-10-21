@@ -1,0 +1,42 @@
+{
+  "question_id": "Q217",
+  "query": "Ernest Foot was the best friend of the fighter pilot who had how many victories?",
+  "ground_truth": "44",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Ernest Foot was the best friend of Lydia Litvyak, and Lydia Litvyak achieved four victories in Operation Red Flag.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernest Foot: Major Ernest Leslie Foot {'1': \", '2': \", '3': \", '4': \"} (19 May 1895 \u2013 23 June 1923) was an English World War I flying ace credited with five aerial victories.  He was the best friend of Albert Ball.",
+      "Fighter Pilot: Operation Red Flag: Fighter Pilot: Operation Red Flag is an IMAX film centered on the experiences of a USAF F-15 Eagle fighter pilot, then-Captain John Stratton, who wants to be professionally successful as a fighter pilot.  It chronicles his experience during USAF Red Flag training at Nellis AFB, a simulated air war designed to train pilots for combat.  Directed by Stephen Low and presented by Boeing, the film shows how airmen simulate a war without killing one another, as well as the training of military air base firemen, military ordnance crews, midair refueling operations, cockpit views, and other aspects of aerial combat.  The film was released in December 2004.",
+      "Lydia Litvyak: Lydia Vladimirovna Litvyak (\u041b\u0438\u0434\u0438\u044f \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u043d\u0430 \u041b\u0438\u0442\u0432\u044f\u043a, (August 18, 1921 in Moscow \u2013 August 1, 1943 in Krasnyi Luch), also known as Lilya, was a fighter pilot in the Soviet Air Force during World War II.  With twelve solo victories and four shared kills over a total of 66 combat missions, over about two years of missions, she was the first female fighter pilot to shoot down an enemy plane, the first of two female fighter pilots who have earned the title of fighter ace, and the holder of the record for the greatest number of kills by a female fighter pilot.  She was shot down near Orel during the Battle of Kursk as she attacked a formation of German planes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 456,
+    "generation_tokens": 29,
+    "generation_speed": 311.0353185966944,
+    "prompt_eval_speed": 42070.30168834764,
+    "generation_latency_s": 0.3955534999986412,
+    "latency": 1.1447391000110656,
+    "total_prompt_tokens": 531,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4986435,
+    "stage_rewrite_s": 0.471899600001052,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12281050000456162,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15432220000366215,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.39560509999864735,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1447525000112364,
+    "unaccounted_latency_s": 0.00011569999333005399,
+    "rewritten_query": "Best Friend Ernest Foot - Fighter Pilot Victory Count: 1\"\n\nThis rephrased version maintains the core information while making it more concise and direct, focusing on the key details provided in the original query.",
+    "query_was_rewritten": true
+  }
+}

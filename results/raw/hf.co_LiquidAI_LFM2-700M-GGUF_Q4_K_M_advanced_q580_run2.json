@@ -1,0 +1,42 @@
+{
+  "question_id": "Q580",
+  "query": "The album \"The Best of LeAnn Rimes\" contained a song used as the theme song for a film. What is the name of the film?",
+  "ground_truth": "Coyote Ugly",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The film in which \"The Best of LeAnn Rimes\" contained a song used as the theme song is \"Casino Royale.\" The specific song mentioned is \"How Do I Live,\" which was part of this greatest hits album released in 2004.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "You Know My Name (Chris Cornell song): \"You Know My Name\", performed by Soundgarden singer Chris Cornell, is the theme song to the 2006 James Bond film, \"Casino Royale.\"  Cornell wrote it jointly with David Arnold, the soundtrack's composer.  The film producers chose Cornell because they wanted a strong male singer.  Cornell and Arnold tried to make the song a replacement theme for the character instead of the \"James Bond theme\" reflecting the agent's inexperience in \"Casino Royale\", as well as an introduction to Daniel Craig's grittier and more emotional portrayal of Bond.  The single sold 148,000 copies in 2006 in the UK, peaked at number 7 in the UK singles chart, and has sold 323,000 digital copies and 3.5 million streams in the U.S. as of 2017.",
+      "Ghostbusters (song): \"Ghostbusters\" is a song written and recorded by Ray Parker Jr. as the theme to the film of the same name starring Bill Murray, Dan Aykroyd, Harold Ramis, and Ernie Hudson.  Debuting at #68 on June 16, 1984, the song reached number one on the \"Billboard\" Hot 100 on August 11, 1984, staying there for three weeks, and at number two on the UK Singles Chart on September 16, 1984, staying there for three weeks.  The song re-entered the UK Top 75 on November 2, 2008, at No.\u00a049.",
+      "The Best of LeAnn Rimes: The Best of LeAnn Rimes is a greatest hits album by American country singer LeAnn Rimes, released in 2004, it tweaks the 2003 U.S. release \"Greatest Hits\", leaving behind some of the purer country hits that didn't translate outside of the U.S.\u2014notably, Al Anderson's \"Big Deal\"\u2014and concentrating on her big pop crossover hits, including \"How Do I Live,\" \"Can't Fight the Moonlight\u201d and her duet with Ronan Keating, \"Last Thing on My Mind."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 539,
+    "generation_tokens": 54,
+    "generation_speed": 228.9872403221087,
+    "prompt_eval_speed": 50758.075148319054,
+    "generation_latency_s": 0.5668533999996725,
+    "latency": 1.9143180999963079,
+    "total_prompt_tokens": 629,
+    "total_generation_tokens": 171,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5228172,
+    "stage_rewrite_s": 0.9400883999915095,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1728882000024896,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23427030000311788,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.566935700000613,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9143407999945339,
+    "unaccounted_latency_s": 0.00015920000441838056,
+    "rewritten_query": "Which movie features \"Best of LeAnn Rimes\" album's theme song? \nLeAnn Rimes' album \"Best of LeAnn Rimes\" was used in a film's theme song. The specific film title is not provided, but it can be inferred from the context that it's likely a music video or related content featuring LeAnn Rimes and her music. However, without additional details, we cannot pinpoint the exact movie title. A more precise query might be: \"Which film prominently features 'Best of LeAnn Rimes' album as its theme song?",
+    "query_was_rewritten": true
+  }
+}

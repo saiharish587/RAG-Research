@@ -1,0 +1,42 @@
+{
+  "question_id": "Q95",
+  "query": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+  "ground_truth": "March and April",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The annual documentary film festival, presented by the British Journal of Literary Essays, takes place in March every year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "London Review of Books: The London Review of Books (LRB) is a British journal of literary essays.  It is published fortnightly.",
+      "London International Documentary Festival: The London International Documentary Festival (or LIDF) is an annual documentary film festival that takes place in the months of March and April every year.  The event is presented in association with the London Review of Books.",
+      "British Journal: The British Journal was an English newspaper published from 22 September 1722 until 13 January 1728.  The paper was then published as the British Journal or The Censor from 20 January 1728 until 23 November 1730, and then as the British Journal or The Traveller from 30 November 1730 until 20 March 1731."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 243,
+    "generation_tokens": 23,
+    "generation_speed": 308.9446183190726,
+    "prompt_eval_speed": 32387.045181927228,
+    "generation_latency_s": 0.3152208000101382,
+    "latency": 1.1003104999981588,
+    "total_prompt_tokens": 330,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4374012,
+    "stage_rewrite_s": 0.4255479999992531,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12715010000101756,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23223020001023542,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3152692000003299,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1003235999960452,
+    "unaccounted_latency_s": 0.0001270999782718718,
+    "rewritten_query": "British Journal of Literary Essays Annual Film Festival Month: [Insert Month]\" \n\n\nThis rephrased version directly states the month and provides context for clarity.",
+    "query_was_rewritten": true
+  }
+}

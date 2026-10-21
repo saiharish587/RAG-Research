@@ -1,0 +1,42 @@
+{
+  "question_id": "Q536",
+  "query": "Who has released more studio albums, Candlelight Red or Motion City Soundtrack?",
+  "ground_truth": "Motion City Soundtrack",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Based on the provided context, Motion City Soundtrack has released more studio albums than Candlelight Red. The context states that Motion City Soundtrack's second studio album, \"Commit This to Memory,\" was released in 2005, while Candlelight Red was released earlier in 2002. Therefore, \"Commit This to Memory\" is the second studio album of Motion City Soundtrack and surpasses the number of albums released by Candlelight Red.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Motion City Soundtrack: Motion City Soundtrack was an American rock band that formed in Minneapolis, Minnesota in 1997.  The band's line-up consisted of vocalist and guitarist Justin Pierre, lead guitarist Joshua Cain, keyboardist Jesse Johnson, bassist Matthew Taylor, and drummer Tony Thaxton.  Over the course of their nearly twenty-year career, the group toured heavily and released six studio albums, the majority on independent label Epitaph Records.  The band's sound, at times described as pop punk or emo, made notable use of the Moog synthesizer.",
+      "Even If It Kills Me: Even if It Kills Me is the third studio album by American rock band Motion City Soundtrack.  Produced by Ric Ocasek, Adam Schlesinger and Eli Janney, the album was released on September 18, 2007, in the United States by Epitaph Records.  Motion City Soundtrack, based in Minneapolis, Minnesota, made a breakthrough with their second album, \"Commit This to Memory\", garnering praise and independent buzz upon its 2005 release.  Following the release, the band toured relentlessly over the next two years, during which time frontman Justin Pierre struggled with alcohol and substance abuse.  These addictions were infused into the writing process of \"Even If Kills Me\", which was recorded in early 2007 Stratosphere Studios in Chelsea and the legendary Electric Lady Studios in Greenwich Village.",
+      "Commit This to Memory: Commit This to Memory is the second studio album by American rock band Motion City Soundtrack.  Produced by Mark Hoppus, the album was released on June 7, 2005, in the United States by Epitaph Records.  Motion City Soundtrack, formed in 1997, had first found success with their debut album, \"I Am the Movie\" (2002).  The band toured in the interim years, creating positive word-of-mouth.  In 2004, the band joined Blink-182 on the road for a string of shows, which led to their bassist, Mark Hoppus, joining the band in the studio for his first producing effort."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 519,
+    "generation_tokens": 93,
+    "generation_speed": 224.08018697443558,
+    "prompt_eval_speed": 46866.53422430919,
+    "generation_latency_s": 0.7492104999982985,
+    "latency": 1.4822564000060083,
+    "total_prompt_tokens": 595,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4971053,
+    "stage_rewrite_s": 0.436545999997179,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1422339999990072,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15404269999999087,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7492756999999983,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4822736000060104,
+    "unaccounted_latency_s": 0.00017600001592654735,
+    "rewritten_query": "Which artist has more studio albums, Candlelight Red or Motion City Soundtrack?",
+    "query_was_rewritten": true
+  }
+}

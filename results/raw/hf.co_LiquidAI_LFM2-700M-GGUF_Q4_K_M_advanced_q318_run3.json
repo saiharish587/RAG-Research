@@ -1,0 +1,42 @@
+{
+  "question_id": "Q318",
+  "query": "What Kentucky county has a population of 60,316 and features the Lake Louisvilla neighborhood?",
+  "ground_truth": "Oldham County",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Oldham County, Kentucky.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lake Louisvilla, Louisville: Lake Louisvilla is a neighborhood partially located in Louisville, Kentucky.  It is located between Westport Road in Louisville and KY 22 in Oldham County.  Lake Louisvilla was developed in the 1920s as a summer resort for people living in the city of Louisville.  The state of Kentucky drained the lake in the late 1980s due to safety concerns regarding the stability of a dam.",
+      "Oldham County, Kentucky: Oldham County is a county located in the commonwealth of Kentucky.  As of the 2010 census, the population was 60,316.  Its county seat is La Grange.  The county is named for Colonel William Oldham.  Oldham County was a prohibition or completely dry county until January 2005 as the result of a 2004 'moist' vote, permitting sales of alcohol in restaurants that seat at least 100 patrons in which 70%+ of total revenue is derived from sales of food.  After a vote in late 2015; Oldham county has become a completely wet county.",
+      "Middletown, Kentucky: Middletown is an independent, home rule-class city in Jefferson County, Kentucky, United States, and a former neighborhood of Louisville.  The population was 7,218 at the 2010 census."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 353,
+    "generation_tokens": 7,
+    "generation_speed": 214.106563895516,
+    "prompt_eval_speed": 35699.83818770227,
+    "generation_latency_s": 0.4054374000115786,
+    "latency": 1.1636167999968166,
+    "total_prompt_tokens": 432,
+    "total_generation_tokens": 29,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5459951000000001,
+    "stage_rewrite_s": 0.46023300000524614,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16504510000231676,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13266279999515973,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.40552210000169,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1636351000051945,
+    "unaccounted_latency_s": 0.00017279999156016856,
+    "rewritten_query": "Find a Kentucky county with a population of 60,316 that includes the Lake Louisvilla neighborhood.",
+    "query_was_rewritten": true
+  }
+}

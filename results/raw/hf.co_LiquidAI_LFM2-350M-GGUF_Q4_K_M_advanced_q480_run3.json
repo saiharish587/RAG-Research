@@ -1,0 +1,42 @@
+{
+  "question_id": "Q480",
+  "query": "Who programmed a cartridge-based development system made by a company noted for authoring Atari's BASIC?",
+  "ground_truth": "Kathleen O'Brien",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The context provided does not specify who programmed the cartridge-based development system created by Kathleen O'Brien of Shepardson Microsystems, which was used to edit, assemble, and debug 6502 programs for Atari's Atari Assembler Editor. The text only mentions that this system was the first commercially available assembler for the Atari 8-bit family and was programmed by Kathleen O'Brien herself.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Atari Assembler Editor: The Atari Assembler Editor is a cartridge-based development system used to edit, assemble, and debug 6502 programs for the Atari 8-bit family of home computers.  It was programmed by Kathleen O'Brien of Shepardson Microsystems.  It was the first commercially available assembler for the Atari 8-bit computers.",
+      "Atari Corporation: Atari Corporation was an American manufacturer of computers and video game consoles from 1984 to 1996.  Atari Corp. was founded in July 1984 when Warner Communications sold the home computing and game console divisions of Atari, Inc. to Jack Tramiel.  Its chief products were the Atari ST, , Atari 7800, Atari Lynx, and Atari Jaguar.  The company reverse merged with JTS Inc. in 1996, becoming a small division, which itself closed when JTS liquidated the IP to Hasbro Interactive in 1998.",
+      "XaAES: FreeMint, MultiTOS, and a few more obscure OSes are all successors to TOS the proprietary operating system of the Atari ST computer.  Later models of the ST Computer were called the TT and the Falcon.  TOS stands for The Operating System or Tramiel Operating System, as Jack Tramiel was the owner of Atari.  GEMDOS itself was a near clone of DOS, the IBM PC OS.  This was most visible to users in the 8.3 character file naming system.  Like all personal computer operating systems of the day, TOS was single tasking.  GEM, the graphical user interface, was licensed from Digital Research and was not included in Apple's lawsuit against DR, thus the Macintosh like appearance and ways of doing things remained on Atari computers.  As time went on, the big goal for the ST within and without Atari was to have a multitasking TOS."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 492,
+    "generation_tokens": 87,
+    "generation_speed": 313.005936319482,
+    "prompt_eval_speed": 56350.933455503386,
+    "generation_latency_s": 0.6014482000027783,
+    "latency": 1.6346191000047838,
+    "total_prompt_tokens": 573,
+    "total_generation_tokens": 178,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5026261000000001,
+    "stage_rewrite_s": 0.6043708000070183,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16965609999897424,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2588850000029197,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6015382000041427,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6346440000052098,
+    "unaccounted_latency_s": 0.00019499998597893864,
+    "rewritten_query": "To optimize the search query, we can rephrase it as follows:\n\n**\"Searched for individuals who developed cartridge-based systems from companies known for Atari BASIC authorship.\"**\n\nThis version is more concise and directly conveys the user's intent while maintaining clarity. It also uses \"developed cartridge-based systems\" to specify the type of development system mentioned, making it easier for a search engine to understand the context.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q107",
+  "query": "hree Men on a Horse is a play by a playwright born in which year ?",
+  "ground_truth": "1887",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "To answer the question, we need to identify the birth year of George Abbott, who wrote \"Three Men on a Horse.\" From the context provided, George Abbott was born in 1859. Therefore, \"Three Men on a Horse\" is a play by a playwright born in 1859.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Three Men on a Horse: Three Men on a Horse is a play by George Abbott and John Cecil Holm.  The comedy focuses on a man who discovers he has a talent for choosing the winning horse in a race as long as he never places a bet himself.",
+      "William Shakespeare's collaborations: Like most playwrights of his period, William Shakespeare did not always write alone.  A number of his surviving plays are collaborative, or were revised by others after their original composition, although the exact number is open to debate.  Some of the following attributions, such as \"The Two Noble Kinsmen\", have well-attested contemporary documentation; others, such as \"Titus Andronicus\", are dependent on linguistic analysis by modern scholars; recent work on computer analysis of textual style (word use, word and phrase patterns) has given reason to believe that parts of some of the plays ascribed to Shakespeare are actually by other writers.",
+      "The Last Question: \"The Last Question\" is a science fiction short story by American writer Isaac Asimov.  It first appeared in the November 1956 issue of \"Science Fiction Quarterly\" and was anthologized in the collections \"Nine Tomorrows\" (1959), \"The Best of Isaac Asimov\" (1973), \"Robot Dreams\" (1986), the retrospective \"Opus 100\" (1969), and in \"Isaac Asimov: The Complete Stories, Vol.  1\" (1990).  It was Asimov's favorite short story of his own authorship, and is one of a loosely connected series of stories concerning a fictional computer called Multivac.  The story overlaps science fiction, theology, and philosophy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 424,
+    "generation_tokens": 61,
+    "generation_speed": 218.16257045578092,
+    "prompt_eval_speed": 35549.59335960426,
+    "generation_latency_s": 0.6739150000066729,
+    "latency": 1.6031641000008676,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5558736,
+    "stage_rewrite_s": 0.5715705000038724,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16600900000776164,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19145620000199415,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6740066000056686,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6032465000025695,
+    "unaccounted_latency_s": 0.00020519997633527964,
+    "rewritten_query": "Who wrote \"Three Men on a Horse\" and when was it composed? \n\n\nThis rephrased query focuses on the key elements of the original question - who, what, and when - making it more concise and searchable.",
+    "query_was_rewritten": true
+  }
+}

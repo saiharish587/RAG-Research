@@ -1,0 +1,42 @@
+{
+  "question_id": "Q311",
+  "query": "What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",
+  "ground_truth": "2013",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "To determine which event occurred first, we need to compare the production years of both films mentioned in the context provided.\n\n1. **Making Today a Perfect Day**:\n   - Produced: 2015 (as stated for \"Making Today a Perfect Day\").\n\n2. **Frozen**:\n   - Produced: 2013 (as stated for \"Frozen\").\n\nComparing these years, we find that \"Frozen\" was produced in 2013, while \"Making Today a Perfect Day\" was produced in 2015.\n\nTherefore, the event that occurred first is **Frozen**, which was produced in 2013.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Making Today a Perfect Day: \"Making Today a Perfect Day\" is a song from the 2015 Walt Disney Animation Studios computer-animated short film \"Frozen Fever\", with music and lyrics by Kristen Anderson-Lopez and Robert Lopez and performed throughout most of the short.  It was released as a single in the United States on March 12, 2015.",
+      "Frozen (2013 film): Frozen is a 2013 American 3D computer-animated musical fantasy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures.  It is the 53rd Disney animated feature film.  Inspired by Hans Christian Andersen's fairy tale \"The Snow Queen\", the film tells the story of a fearless princess who sets off on a journey alongside a rugged iceman, his loyal pet reindeer, and a na\u00efve snowman to find her estranged sister, whose icy powers have inadvertently trapped the kingdom in eternal winter.",
+      "Frozen Fever: Frozen Fever is a 2015 American computer-animated musical fantasy short film produced by Walt Disney Animation Studios and released by Walt Disney Pictures.  It is a sequel to the 2013 feature film \"Frozen\", and tells the story of Anna's birthday party given by Elsa with the help of Kristoff, Sven, and Olaf.  Chris Buck and Jennifer Lee again served as the directors with Kristen Bell, Idina Menzel, Jonathan Groff, and Josh Gad providing the lead voices."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 139,
+    "generation_speed": 227.15276268419393,
+    "prompt_eval_speed": 36263.23055683387,
+    "generation_latency_s": 0.9244245000008959,
+    "latency": 1.8081092999927932,
+    "total_prompt_tokens": 479,
+    "total_generation_tokens": 183,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5073431,
+    "stage_rewrite_s": 0.5566308999987086,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15168589999666438,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1751832000009017,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9244758999993792,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.8081223999906797,
+    "unaccounted_latency_s": 0.00014709999959450215,
+    "rewritten_query": "Which year saw \"Making Today a Perfect Day\" premiere before \"Frozen\" debuted? \n\n\nThis rephrased query clearly states the comparison and asks for the specific year of the first event.",
+    "query_was_rewritten": true
+  }
+}

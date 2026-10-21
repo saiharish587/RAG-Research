@@ -1,0 +1,42 @@
+{
+  "question_id": "Q435",
+  "query": "The movies The Boatniks and The Great Locomotive Chase were both made by which production company?",
+  "ground_truth": "Walt Disney Productions",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The boats, The Boatniks, was made by Walt Disney Productions, while The Great Locomotive Chase was made by Walt Disney Productions as well. However, since the question specifically asks about the production companies for these two movies and we have only one movie in mind (The Boatniks), it is reasonable to infer that both were produced by Walt Disney Productions. Therefore, the answer is:\n\nWalt Disney Productions",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Great Locomotive Chase: The Great Locomotive Chase is a 1956 Walt Disney Productions CinemaScope adventure film based on the real Great Locomotive Chase that occurred in 1862 during the American Civil War.  The film stars Fess Parker as James J. Andrews, the leader of a group of Union soldiers from various Ohio regiments who volunteered to go behind Confederate lines in civilian clothes, steal a Confederate train north of Atlanta, and drive it back to Union lines in Tennessee, tearing up railroad tracks and destroying bridges and telegraph lines along the way.",
+      "The Boatniks: The Boatniks is a 1970 American comedy film starring Robert Morse, Stefanie Powers, Don Ameche and Phil Silvers.  It was made by Walt Disney Productions, released by Buena Vista Distribution and directed by Norman Tokar.",
+      "The Great Locomotive Chase Festival: The Great Locomotive Chase Festival is a three-day celebration held in remembering the Great Locomotive Chase of April 12, 1862.  It is held the first weekend each October in the center of downtown Adairsville, GA.  The festival has arts and crafts booths, historical exhibits, concerts, entertainment, carnival rides, and over 40 food booths.  The Grand Parade and multiple pageants are held on Friday and Saturday, as well as street dances.  Gospel singing takes place on Sunday afternoon.  The festival was founded by the towns Principle Marion Lacey.  The schools fall festival had been canceled due to funding issues.  Mr. Lacey planned the festival in town to get the small businesses together and provide entertainment for the students each fall."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 413,
+    "generation_tokens": 85,
+    "generation_speed": 224.07516271811082,
+    "prompt_eval_speed": 27867.74628879892,
+    "generation_latency_s": 0.7294168999942485,
+    "latency": 1.5630479000101332,
+    "total_prompt_tokens": 492,
+    "total_generation_tokens": 129,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4971491,
+    "stage_rewrite_s": 0.5201498999958858,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14902109999093227,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16423520000535063,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.729515300001367,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5630799000064144,
+    "unaccounted_latency_s": 0.00015970000822562724,
+    "rewritten_query": "Which production company made both The Boatniks and The Great Locomotive Chase? \n\n\nThe answer to this query is: Both The Boatniks and The Great Locomotive Chase were produced by Universal Pictures.",
+    "query_was_rewritten": true
+  }
+}

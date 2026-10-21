@@ -1,0 +1,33 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "No, based on the given context, neither Sorbaria nor Goldenrod is described as having more than 50 flowering plants. The context only provides information about the number of species within each genus for their respective families, but does not give a specific count for the total number of species in each genus. Therefore, we cannot determine whether both genera have more than 50 flowering plants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sorbaria: Sorbaria is a genus of around 9 species of flowering plants belong to family Rosaceae.",
+      "Goldenrod: Solidago, commonly called goldenrods, is a genus of about 100 to 120 species of flowering plants in the aster family, Asteraceae.  Most are herbaceous perennial species found in open areas such as meadows, prairies, and savannas.  They are mostly native to North America, including Mexico; a few species are native to South America and Eurasia.  Some American species have also been introduced into Europe and other parts of the world."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 195,
+    "generation_tokens": 78,
+    "generation_speed": 223.08277514972286,
+    "prompt_eval_speed": 20602.218700475438,
+    "generation_latency_s": 0.5573940000031143,
+    "latency": 0.5574699999997392,
+    "total_prompt_tokens": 195,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1869579,
+    "stage_generate_s": 0.5574437000032049,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.557479000010062,
+    "unaccounted_latency_s": 3.589998232200742e-05
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q119",
+  "query": "Were the bands Skin Yard and Ostava from the U.S.?",
+  "ground_truth": "no",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Based on the provided context, there is insufficient information to determine if Skin Yard or Ostava were from the U.S. as they are described solely in relation to their Bulgarian origins and formation dates. The context does not mention any American affiliations for these bands.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ostava: Ostava are an alternative rock band from Bulgaria.  They formed in 1991, but it was not until 2000 that they released a long-playing record (and subsequently received critical acclaim.",
+      "Skin Yard: Skin Yard was an American grunge band from Seattle, Washington, who were active from 1985 to 1993.  The group never gained a mainstream audience, but were an influence on several of their grunge contemporaries, including Soundgarden, Screaming Trees, The Melvins, and Green River.",
+      "Skin Yard (album): Skin Yard was the first album released by the band Skin Yard in January, 1987.  1400 vinyl copies were released on translucent skin-tone vinyl."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 224,
+    "generation_tokens": 53,
+    "generation_speed": 297.6558200137034,
+    "prompt_eval_speed": 24740.446211619175,
+    "generation_latency_s": 0.4522796999954153,
+    "latency": 1.3952025000035064,
+    "total_prompt_tokens": 297,
+    "total_generation_tokens": 123,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4419259,
+    "stage_rewrite_s": 0.5133006000105524,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1251639999973122,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3042864000017289,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4523417000018526,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.39521760000207,
+    "unaccounted_latency_s": 0.00012549999519251287,
+    "rewritten_query": "To optimize the original query for searchability, consider this rephrased version:\n\n\"Search for bands Skin Yard and Ostava in the US genre.\"\n\nThis revised query maintains the core intent of identifying specific bands while making it more concise and direct to users who might be searching for U.S.-based indie or alternative rock acts.",
+    "query_was_rewritten": true
+  }
+}

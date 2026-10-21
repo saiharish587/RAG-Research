@@ -1,0 +1,42 @@
+{
+  "question_id": "Q591",
+  "query": "The American restaurant chain, the Original House of Pies, is also responsible for an American chain of fruit drink beverage stores with an eponymous beverage consisting of what?",
+  "ground_truth": "orange juice",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The American restaurant chain, the Original House of Pies, is also responsible for the Fruit-O-Gelato brand, which consists of a variety of fruit-flavored gelato drinks. This brand was introduced as part of their fruit drink beverage offerings alongside other products like Punch and Copper Penny Coffee Shops.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "House of Pies: The Original House of Pies is an American restaurant chain, started c. 1965 by Al Lapin Jr., an early franchise system designer also responsible for International House of Pancakes, Copper Penny Coffee Shops, Orange Julius, and others.",
+      "Punch (drink): Punch is a wide assortment of drinks, both non-alcoholic and alcoholic, generally containing fruit or fruit juice.  The drink was introduced from India to the United Kingdom in the early seventeenth century, and from there its use spread to other countries.  Punch is typically served at parties in large, wide bowls, known as \"punch bowls\".",
+      "Original brand manufacturer: An original brand manufacturer, or OBM, is typically a company that sells an entire product made by a second company or including a component from a second company sources as its own branded product.  Selling the product of the second company under its own brand just adds a virtual extrinsic value to the product."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 292,
+    "generation_tokens": 65,
+    "generation_speed": 233.02920035133633,
+    "prompt_eval_speed": 29200.0,
+    "generation_latency_s": 0.591021299987915,
+    "latency": 1.6805328000045847,
+    "total_prompt_tokens": 386,
+    "total_generation_tokens": 141,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49958199999999997,
+    "stage_rewrite_s": 0.718451400010963,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16205279999121558,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2087899999896763,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5911026999965543,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6805545000097482,
+    "unaccounted_latency_s": 0.0001584000128787011,
+    "rewritten_query": "The Original House of Pies operates a brand of American fruit drink beverages called \"Pie Punch\" or similar names.\n\nThis rephrased query maintains the essence of the original while making it more concise and search-friendly by using clear, common terms related to the subject matter. It also specifies the exact product name for easier indexing and retrieval in search engines.",
+    "query_was_rewritten": true
+  }
+}

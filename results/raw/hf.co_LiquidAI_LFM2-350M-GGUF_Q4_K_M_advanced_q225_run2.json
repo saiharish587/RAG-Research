@@ -1,0 +1,42 @@
+{
+  "question_id": "Q225",
+  "query": "What film was written and directed by Joby Harold with music written by Samuel Sim?",
+  "ground_truth": "Awake",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The film \"Awake\" (2007) was written and directed by Joby Harold, and his music was composed by Samuel Sim.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Samuel Sim: Samuel Sim is a film and television composer.  He first gained recognition with his award winning score for the BBC drama series \"Dunkirk\".  Since then he has written the music for a wide variety of film and television productions, most recently scoring the film \"Awake\" for The Weinstein Company and the BBC/HBO drama series \"House of Saddam\".  His most recent acclaimed music is the soundtrack for Home Fires.  Home Fires (Music from the Television Series) released May 6, 2016 by Sony Classical Records.",
+      "Awake (film): Awake is a 2007 American conspiracy thriller film written and directed by Joby Harold.  It stars Hayden Christensen, Jessica Alba, Terrence Howard and Lena Olin.  The film was released in the United States and Canada on November 30, 2007.",
+      "John Carpenter: John Howard Carpenter (born January 16, 1948) is an American movie director, screenwriter, producer, musician, editor and composer.  Although Carpenter has worked with various movie genres, he is associated most commonly with horror, action and science fiction movies of the 1970s and 1980s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 30,
+    "generation_speed": 305.87899426986684,
+    "prompt_eval_speed": 28986.80786143767,
+    "generation_latency_s": 0.35554030000639614,
+    "latency": 1.2673366999952123,
+    "total_prompt_tokens": 399,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4305375,
+    "stage_rewrite_s": 0.519768899990595,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12077390000922605,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.27109499998914544,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3555906999972649,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2673509000014747,
+    "unaccounted_latency_s": 0.00012300001981202513,
+    "rewritten_query": "Joby Harold's Film & Director: Music by Samuel Sim\" \n\nThis rephrased version is more concise while still conveying the key information about the director, the composer, and the year of the film. It eliminates unnecessary words like \"What\" and \"with,\" making it easier to read and understand.",
+    "query_was_rewritten": true
+  }
+}

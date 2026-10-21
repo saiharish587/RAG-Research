@@ -1,0 +1,33 @@
+{
+  "question_id": "Q153",
+  "query": "The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aim\u00e9 Argand?",
+  "ground_truth": "Argand lamp",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The lamp used in many lighthouses, similar to the Argand lamp patented in 1780 by Aim\u00e9 Argand, is the Lewis lamp. The Lewis lamp was invented by Winslow Lewis and it features a parabolic reflector behind the lamp and a magnifying lens made from 4-inch green bottle glass in front of the lamp. This design was selected for its efficiency in using less oil compared to earlier oil lamps, making it particularly suitable for lighthouses where frequent maintenance is required.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Argand lamp: The Argand lamp, a kind of oil lamp, was invented and patented in 1780 by Aim\u00e9 Argand.  Its output is 6 to 10 candela, brighter than that of earlier lamps.  Its more complete combustion of the candle wick and oil than in other lamps required much less frequent trimming of the wick.",
+      "Lewis lamp: The Lewis lamp is a type of light fixture used in lighthouses.  It was invented by Winslow Lewis who patented the design in 1810.  The primary marketing point of the Lewis lamp was that it used less than half the oil of the prior oil lamps which they replaced.  The lamp used a similar design to an Argand lamp, adding a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.  A similar variant using a parabolic reflector was created by the inventor of the Argand lamp, Aim\u00e9 Argand.  While the Argand variant became widely used by European lighthouses, the Lewis lamp design was selected by the United States for use in American lighthouses."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 323,
+    "generation_tokens": 104,
+    "generation_speed": 230.36472938789433,
+    "prompt_eval_speed": 33298.969072164946,
+    "generation_latency_s": 0.6630807000037748,
+    "latency": 0.6631857000174932,
+    "total_prompt_tokens": 323,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1896876,
+    "stage_generate_s": 0.6631476999900769,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6632012000191025,
+    "unaccounted_latency_s": 5.4500007536262274e-05
+  }
+}

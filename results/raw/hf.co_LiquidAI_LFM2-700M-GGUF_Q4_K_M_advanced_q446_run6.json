@@ -1,0 +1,42 @@
+{
+  "question_id": "Q446",
+  "query": "Mick Carter is the landlord of a public house located at what address?",
+  "ground_truth": "46 Albert Square, Walford, London E20",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Mick Carter is the landlord of The Vic, which is a public house located at Castle Hill near the centre of Dudley, West Midlands.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mick Carter: Michael \"Mick\" Carter is a fictional character from the BBC soap opera \"EastEnders\" played by Danny Dyer, making his first appearance in the show in the episode originally broadcast in the United Kingdom on 25 December 2013.  Dyer's casting was announced on 1 October 2013 with that of his on-screen partner, Linda Carter, played by Kellie Bright.  He is the son of established character Shirley Carter (Linda Henry) and a member of the Carter family.  Mick immediately becomes the new landlord of The Queen Victoria public house (referred to as \"The Vic\"), bringing Linda, their son Johnny Carter (Sam Strike/Ted Reilly) and pet dog Lady Di with him.  They are later joined by daughter Nancy Carter (Maddy Hill), son Lee Carter (Danny-Boy Hatchard) and other members of the extended family.",
+      "Nick Carter (musician): Nickolas Gene \"Nick\" Carter (born January 28, 1980) is an American singer, songwriter, actor, and dancer.  He is best known as a member of the pop group the Backstreet Boys.  As of 2015, Carter has released three solo albums, \"Now or Never\", \"I'm Taking Off\" and \"All American\" during breaks between Backstreet Boys schedules, and a collaboration with Jordan Knight titled \"Nick & Knight\".  He has made occasional television appearances and starred in his own reality shows, \"House of Carters\" and \"I (Heart) Nick Carter\".  He gained fame in the mid 1990s and early 2000s as a teen idol.  He is also the older brother of singer Aaron Carter and the late Leslie Carter.",
+      "JB's Dudley: JB's Dudley, usually known simply as JB's, was a nightclub and live music venue located on Castle Hill near the centre of Dudley, West Midlands.  Originally opened on a different site in 1969, it claimed to be the longest-running live music venue in the United Kingdom, and hosted early performances by acts such as Dire Straits and U2."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 515,
+    "generation_tokens": 32,
+    "generation_speed": 222.47559720793126,
+    "prompt_eval_speed": 48856.84470164121,
+    "generation_latency_s": 0.47699789999751374,
+    "latency": 1.179692799996701,
+    "total_prompt_tokens": 589,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5044495,
+    "stage_rewrite_s": 0.4006933000055142,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.148509800012107,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1532904000050621,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4770709999866085,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.179710399999749,
+    "unaccounted_latency_s": 0.00014659999578725547,
+    "rewritten_query": "Find the location of Mick Carter's pub, specifically its address.",
+    "query_was_rewritten": true
+  }
+}

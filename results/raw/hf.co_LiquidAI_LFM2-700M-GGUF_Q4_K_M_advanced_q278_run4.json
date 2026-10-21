@@ -1,0 +1,42 @@
+{
+  "question_id": "Q278",
+  "query": "In what city was the Italian Baroque composer who composed a set of sonatas, titled Op. 5, born?",
+  "ground_truth": "Venice",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Antonio Vivaldi was born in Venice. He composed a set of six violin sonatas, Op. 5, which were published after his death in 1716.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Antonio Vivaldi: Antonio Lucio Vivaldi (] ; 4 March 1678 \u2013 28 July 1741) was an Italian Baroque composer, virtuoso violinist, teacher and cleric.  Born in Venice, he is recognized as one of the greatest Baroque composers, and his influence during his lifetime was widespread across Europe.  He composed many instrumental concertos, for the violin and a variety of other instruments, as well as sacred choral works and more than forty operas. His best-known work is a series of violin concertos known as \"The Four Seasons\".",
+      "Tomaso Albinoni: Tomaso Giovanni Albinoni (8 June 1671 \u2013 17 January 1751) was an Italian Baroque composer.  While famous in his day as an opera composer, he is mainly remembered today for his instrumental music, such as the concerti.",
+      "Six Violin Sonatas, Op. 5 (Vivaldi): Antonio Vivaldi wrote a set of sonatas, Op. 5, in 1716."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 301,
+    "generation_tokens": 37,
+    "generation_speed": 222.92648246110835,
+    "prompt_eval_speed": 22600.991139810783,
+    "generation_latency_s": 0.5165479999996023,
+    "latency": 1.5489250999962678,
+    "total_prompt_tokens": 385,
+    "total_generation_tokens": 117,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5011946,
+    "stage_rewrite_s": 0.6968306000053417,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15873219999775756,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17656569999235217,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5166313000081573,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5489496999944095,
+    "unaccounted_latency_s": 0.0001908999984152615,
+    "rewritten_query": "Where was the Italian Baroque composer who wrote Op. 5, known as an Italian Baroque composer, born?\n\nThis rephrased query is more concise and directly asks for the city of birth of a specific composer, which should be easier to search for effectively. It also removes unnecessary details like \"set of sonatas\" that might complicate the search without adding significant value.",
+    "query_was_rewritten": true
+  }
+}

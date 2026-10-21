@@ -1,0 +1,42 @@
+{
+  "question_id": "Q527",
+  "query": "The Duke Steps Out stars an actress who was ranked tenth on a list of greatest female Hollywood stars in what year?",
+  "ground_truth": "1999",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The actress ranked tenth on the list of greatest female Hollywood stars, Joan Crawford, starred in the 1929 silent film \"The Duke Steps Out.\" In 1999, the American Film Institute ranked her as tenth on its list. Therefore, the answer is 1999.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Duke Steps Out: The Duke Steps Out is a 1929 silent film starring William Haines and Joan Crawford.  The film is lost, but the Vitaphone sound discs track survive at UCLA Film and TV Archives.",
+      "Joan Crawford: Joan Crawford (born Lucille Fay LeSueur; (March 23, 190?  \u2013 May 10, 1977) was an American film and television actress who began her career as a dancer and stage showgirl.  In 1999, the American Film Institute ranked Crawford tenth on its list of the greatest female stars of Classic Hollywood Cinema.",
+      "Katharine Hepburn: Katharine Houghton Hepburn (May 12, 1907\u00a0\u2013 June 29, 2003) was an American actress.  Known for her fierce independence and spirited personality, Hepburn was a leading lady in Hollywood for more than 60 years.  She appeared in a range of genres, from screwball comedy to literary drama, and she received four Academy Awards\u2014a record for any performer\u2014for Best Actress.  In 1999, Hepburn was named by the American Film Institute as the greatest female star of Classic Hollywood Cinema."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 322,
+    "generation_tokens": 57,
+    "generation_speed": 230.38122029294792,
+    "prompt_eval_speed": 27627.627627627626,
+    "generation_latency_s": 0.6101815000001807,
+    "latency": 1.5133403000072576,
+    "total_prompt_tokens": 404,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5490605,
+    "stage_rewrite_s": 0.5225199999986216,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17197690000466537,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2084294999949634,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6102610999951139,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5133620999986306,
+    "unaccounted_latency_s": 0.00017560001288075,
+    "rewritten_query": "Find out which actress, ranked tenth on a list of top ten female Hollywood stars, starred in \"The Duke Steps Out\" and the year it aired.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q486",
+  "query": "In what year was the team that Luke Clark plays either right back or central midfielder for founded?",
+  "ground_truth": "1963",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Wolverhampton Wanderers F.C. (now known as Wolves) was founded in the year 1889. This information is directly stated in the context provided about the club's history and its previous name, St. Luke's FC.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Luke Clark: Luke Stephen Clark (born 24 May 1994) is an English footballer who is plays for Curzon Ashton.  He can play either as a right back or as a central midfielder.",
+      "Bastian Schweinsteiger: Bastian Schweinsteiger (] ; born 1 August 1984) is a German professional footballer who plays as a midfielder for Major League Soccer club Chicago Fire.  A right-footed player, he usually plays as central midfielder.  Earlier in his career, he primarily played as a wide midfielder.",
+      "Wolverhampton Wanderers F.C.: Wolverhampton Wanderers Football Club (commonly referred to as Wolves) is a professional association football club based in the city of Wolverhampton, West Midlands.  The club was originally known as St. Luke's FC and was founded in 1877 and since 1889 has played at Molineux.  They compete in the Championship, the second highest tier of English football, having been promoted from League One in 2014 after a solitary season at that level."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 302,
+    "generation_tokens": 52,
+    "generation_speed": 297.3195499039429,
+    "prompt_eval_speed": 23647.32597290737,
+    "generation_latency_s": 0.503493600001093,
+    "latency": 1.2154314999934286,
+    "total_prompt_tokens": 381,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49937809999999994,
+    "stage_rewrite_s": 0.4373384999926202,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1603322000009939,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11405180000292603,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5035826999956043,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2154563999938546,
+    "unaccounted_latency_s": 0.0001525000116089359,
+    "rewritten_query": "Year Luke Clark plays as right back/central midfielder - Founded Team Year\" \n\n\nThis version is more concise and directly answers the user's question about the founding team year.",
+    "query_was_rewritten": true
+  }
+}

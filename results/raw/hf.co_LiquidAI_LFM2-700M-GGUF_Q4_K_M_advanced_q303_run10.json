@@ -1,0 +1,42 @@
+{
+  "question_id": "Q303",
+  "query": "What is the birthday of the actress who was the Duchess in \"The Revengers Tragedy\"?",
+  "ground_truth": "23 November 1946",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Katharine Hepburn's birthday is May 12, 1907. She was the Duchess in \"The Revengers Tragedy.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Revenge tragedy: Revenge tragedy (less commonly referred to as revenge drama, revenge play, or tragedy of blood) defines a genre of plays made popular in early modern England.  Ashley H. Thorndike formally established this genre in his seminal 1902 article \"The Relations of Hamlet to Contemporary Revenge Plays,\" which characterizes revenge tragedy \"as a tragedy whose leading motive is revenge and whose main action deals with the progress of this revenge, leading to the death of the murderers and often the death of the avenger himself.\"  Thomas Kyd's \"The Spanish Tragedy\" (c.1580s) is often considered the inaugural revenge tragedy on the early modern stage.  However, more recent research extends early modern revenge tragedy to the 1560s with poet and classicist Jasper Heywood's translations of Seneca at Oxford University, including \"Troas\" (1559), \"Thyestes\" (1560), and \"Hercules Furens\" (1561).  Additionally, Thomases Norton and Sackville's play \"Gorbuduc\" (1561) is considered an early revenge tragedy (almost twenty years prior to \"The Spanish Tragedy\").  Other well-known revenge tragedies include William Shakespeare's \"Hamlet\" (c.1599-1602) and \"Titus Andronicus\" (c.1588-1593) and Thomas Middleton's \"The Revenger's Tragedy\" (c.1606).",
+      "Katharine Hepburn: Katharine Houghton Hepburn (May 12, 1907\u00a0\u2013 June 29, 2003) was an American actress.  Known for her fierce independence and spirited personality, Hepburn was a leading lady in Hollywood for more than 60 years.  She appeared in a range of genres, from screwball comedy to literary drama, and she received four Academy Awards\u2014a record for any performer\u2014for Best Actress.  In 1999, Hepburn was named by the American Film Institute as the greatest female star of Classic Hollywood Cinema.",
+      "Joan Crawford: Joan Crawford (born Lucille Fay LeSueur; (March 23, 190?  \u2013 May 10, 1977) was an American film and television actress who began her career as a dancer and stage showgirl.  In 1999, the American Film Institute ranked Crawford tenth on its list of the greatest female stars of Classic Hollywood Cinema."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 585,
+    "generation_tokens": 30,
+    "generation_speed": 224.10637582639225,
+    "prompt_eval_speed": 56708.02636680884,
+    "generation_latency_s": 0.5081661000003805,
+    "latency": 1.6398205000004964,
+    "total_prompt_tokens": 665,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5500804,
+    "stage_rewrite_s": 0.6640847999951802,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15340690000448376,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.31392650000634603,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5082586000062292,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.639845300000161,
+    "unaccounted_latency_s": 0.00016969998250715435,
+    "rewritten_query": "Find the birthday of the actress who played Duchess in \"The Revengers Tragedy\"\n\nThis rephrased query maintains the essential information while making it more concise and user-friendly. It directly asks for the specific date (birthday) associated with a particular role in a film, which is likely what the original user was seeking.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q499",
+  "query": "Walt Zeboski photographed which 40th President during his campaign in 1980?",
+  "ground_truth": "Ronald Wilson Reagan",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Walt Zeboski photographed Ronald Reagan, the 40th President of the United States, during his 1980 presidential campaign.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Walt Zeboski: Walt Zeboski (died 12 November 2012), was an American photographer and photojournalist for the Associated Press for more than thirty years.  Zeboski extensively photographed Ronald Reagan during his 1980 presidential campaign, snapping some of the most iconic pictures of Reagan's campaign.  Zeboski, who often focused on California politics, covered the political terms of four consecutive Governors of California from the 1960s to the 1980s - Pat Brown, Ronald Reagan, Jerry Brown and George Deukmejian.",
+      "Ronald Reagan: Ronald Wilson Reagan ( ; February 6, 1911 \u2013 June 5, 2004) was an American statesman and actor who served as the 40th President of the United States from 1981 to 1989.  Before his presidency, he was the 33rd Governor of California, from 1967 to 1975, after a career as a Hollywood actor and union leader.",
+      "Speeches and debates of Ronald Reagan: The speeches and debates of Ronald Reagan comprise the seminal oratory of the 40th President of the United States.  Reagan began his career in Iowa as a radio broadcaster.  In 1937, he moved to Los Angeles where he started acting, first in films and later television.  After delivering a stirring speech in support of Barry Goldwater's presidential candidacy in 1964, he was persuaded to seek the California governorship, winning two years later and again in 1970.  In 1980 as the Republican candidate for president of the United States, he defeated incumbent Jimmy Carter.  He was reelected in a landslide in 1984, proclaiming that it was \"Morning in America\".  Reagan left office in 1989."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 446,
+    "generation_tokens": 28,
+    "generation_speed": 222.10764288263988,
+    "prompt_eval_speed": 37812.63247138618,
+    "generation_latency_s": 0.503546500010998,
+    "latency": 1.2868913999991491,
+    "total_prompt_tokens": 523,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5346234,
+    "stage_rewrite_s": 0.4516699000087101,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15958379999210592,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1718550000077812,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5036320999934105,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2869111000036355,
+    "unaccounted_latency_s": 0.00017109999316744506,
+    "rewritten_query": "Who took Walt Zeboski's picture of the 40th President during his 1980 campaign?",
+    "query_was_rewritten": true
+  }
+}

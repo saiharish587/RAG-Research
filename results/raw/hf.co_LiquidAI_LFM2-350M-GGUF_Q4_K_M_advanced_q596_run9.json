@@ -1,0 +1,42 @@
+{
+  "question_id": "Q596",
+  "query": "Who was born first, Krzysztof Zanussi or Thom Andersen?",
+  "ground_truth": "Krzysztof Zanussi",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "To determine who was born first, we need to compare the birth dates provided in the context.\n\nKrzysztof Zanussi was born on 17 June 1939.\n\nThom Andersen, on the other hand, was born on 1943.\n\nComparing these dates:\n- 17 June 1939 is earlier than 1943.\n  \nTherefore, Krzysztof Zanussi was born first, as he was born on 17 June 1939, while Thom Andersen was born on 1943.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Krzysztof Zanussi: Krzysztof Zanussi, (born 17 June 1939) is a Polish film and theatre director, producer and screenwriter.  He is a professor of European film at the European Graduate School in Saas-Fee, Switzerland where he conducts a summer workshop.  He is also a professor at the Silesian University in Katowice.",
+      "Thom Andersen: Thom Andersen (born 1943, Chicago) is a filmmaker, film critic and teacher.",
+      "Baidu Tieba: Baidu Tieba () is the largest Chinese communication platform provided by the Chinese search engine company, Baidu.  It is an online community bound tightly with internet search services, one of the main business of Baidu.  The website functions by having users search or create a bar (Forum) by typing a keyword, and if the bar has not been created before, it is then created upon the search."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 269,
+    "generation_tokens": 113,
+    "generation_speed": 315.9637172991533,
+    "prompt_eval_speed": 31883.370866421712,
+    "generation_latency_s": 0.656510699991486,
+    "latency": 1.6250911999959499,
+    "total_prompt_tokens": 345,
+    "total_generation_tokens": 211,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4638918,
+    "stage_rewrite_s": 0.5906875999935437,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16105349999270402,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21664400000008754,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6565823999990243,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6251087999989977,
+    "unaccounted_latency_s": 0.00014200001896824688,
+    "rewritten_query": "To optimize for search clarity and conciseness, consider this rephrased version of the user's query:\n\n**\"Who was born first? - Krzysztof Zanussi vs. Thom Andersen - Answer Key\"**\n\nThis version directly addresses the core question while providing a clear comparison between the birth dates of these two individuals. It eliminates unnecessary words and focuses on the essential information, making it more easily digestible for search engines or users seeking quick answers.",
+    "query_was_rewritten": true
+  }
+}

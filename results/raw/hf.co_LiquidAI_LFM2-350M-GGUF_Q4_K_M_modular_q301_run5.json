@@ -1,0 +1,49 @@
+{
+  "question_id": "Q301",
+  "query": "Where is the company that owns thanKing Horse pub restaurant chain based ?",
+  "ground_truth": "Bury St Edmunds,",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The company that owns the Hungry Horse chain of pub restaurants is Greene King Brewery.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hungry Horse: Hungry Horse is a chain of 225 pub-restaurants in England, Wales and Scotland, owned by Greene King Brewery.  It was founded in 1995, and promotes itself as offering low cost meals for families and groups.",
+      "Wetherspoons: J D Wetherspoon plc, branded as Wetherspoon's, is a pub company in the United Kingdom and the Republic of Ireland.  Founded in 1979 by Tim Martin, the company owns just under 1,000 outlets, including the chain of Lloyds No.1 bars and the chain of Wetherspoon hotels.  With its headquarters in Watford, Wetherspoons is known for converting unconventional premises into pubs.  The company is listed on the London Stock Exchange and is a constituent of the FTSE 250 Index.",
+      "Chef &amp; Brewer: Chef & Brewer is a chain of around 127 licensed traditional pub restaurants in the United Kingdom, owned by the Greene King subsidiary, the Spirit Pub Company.  The concept is providing more up market pub food and those in the chain have been re-furbished."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 308,
+    "generation_tokens": 19,
+    "generation_speed": 249.48461730372782,
+    "prompt_eval_speed": 30169.458321089238,
+    "generation_latency_s": 0.42883760000404436,
+    "latency": 1.3711163999978453,
+    "total_prompt_tokens": 435,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7764467,
+    "stage_route_s": 0.33896000000822823,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.47392210000543855,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.12906189999193884,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 9.109999518841505e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.42891610000515357,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3711413999990327,
+    "unaccounted_latency_s": 0.00019199999223928899,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Where is the company that owns ThanKing Horse pub restaurant chain located?",
+      "Where does ThanKing Horse pub restaurant chain own the company?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

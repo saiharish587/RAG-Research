@@ -1,0 +1,42 @@
+{
+  "question_id": "Q22",
+  "query": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+  "ground_truth": "Sonic",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Donald Duck",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Rather Blustery Day: \"A Rather Blustery Day\" is a whimsical song from the Walt Disney musical film featurette, \"Winnie the Pooh and the Blustery Day\".  It was written by Robert & Richard Sherman and sung by Jim Cummings as \"Pooh\".",
+      "Jim Cummings: James Jonah Cummings (born November 3, 1952) is an American voice actor and singer, who has appeared in almost 400 roles.  He is known for voicing the title character from \"Darkwing Duck\", Dr. Robotnik from \"Sonic the Hedgehog\", and Pete.  His other characters include Winnie the Pooh, Tigger, and the Tasmanian Devil.  He has performed in numerous Disney and DreamWorks animations including \"Aladdin\", \"The Lion King\", \"Balto\", \"Antz\", \"The Road to El Dorado\", \"Shrek\", and \"The Princess and the Frog\".  He has also provided voice-over work for video games, such as \"Icewind Dale\", \"Fallout\", \"\", \"Baldur's Gate\", \"Mass Effect 2\", \"\", \"\", \"\", and \"Splatterhouse\".",
+      "Donald Duck talk: Donald Duck voice, formally called buccal speech, is an alaryngeal form of vocalization which uses the inner cheek to produce sound rather than the larynx.  The speech is most closely associated with the Disney cartoon character Donald Duck whose voice was created and performed by voice actor Clarence Nash, and by Tony Anselmo after Nash's death in 1985."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 3,
+    "generation_speed": 219.45866861741038,
+    "prompt_eval_speed": 28304.537154094676,
+    "generation_latency_s": 0.31745889999729116,
+    "latency": 1.1017521999892779,
+    "total_prompt_tokens": 478,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5057541999999999,
+    "stage_rewrite_s": 0.47938050000811927,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13697910000337288,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1677715999976499,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3175092000019504,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.101765899991733,
+    "unaccounted_latency_s": 0.000126199985970743,
+    "rewritten_query": "Search for 'A Rather Blustery Day' singer who also voiced a hedgehog character.\" \n\n\nThis rephrased version is more concise and directly states the query while maintaining the search intent.",
+    "query_was_rewritten": true
+  }
+}

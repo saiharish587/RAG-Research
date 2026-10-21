@@ -1,0 +1,42 @@
+{
+  "question_id": "Q429",
+  "query": "What party does the House of Commons representative for Congleton belong to?",
+  "ground_truth": "British Conservative Party",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The House of Commons representative for Congleton belongs to the Conservative Party. This can be inferred from the context provided, which states that Fiona Bruce, who represents this constituency since 2010, is a member of the Conservative Party.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Congleton (UK Parliament constituency): Congleton is a constituency in Cheshire, represented in the House of Commons of the UK Parliament since 2010 by Fiona Bruce of the Conservative Party.",
+      "Fiona Bruce (politician): Fiona Claire Bruce (born 26 March 1957) is a British Conservative Party politician who is the Member of Parliament for Congleton, elected at the 2010 general election, and then again in 2015.",
+      "Ann Winterton: Jane Ann, Lady Winterton (n\u00e9e Hodgson; born 6 March 1941 in Sutton Coldfield) is a British Conservative Party politician who was the Member of Parliament (MP) for Congleton from 1983 to 2010.  She is married to Sir Nicholas Winterton, also a former Conservative MP."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 231,
+    "generation_tokens": 48,
+    "generation_speed": 212.92262923960007,
+    "prompt_eval_speed": 21217.966381923394,
+    "generation_latency_s": 0.6033447999943746,
+    "latency": 1.2636018000048352,
+    "total_prompt_tokens": 304,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5120272,
+    "stage_rewrite_s": 0.3875409000029322,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.165068499991321,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10739390000526328,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.603468300003442,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.263619600009406,
+    "unaccounted_latency_s": 0.00014869999722577631,
+    "rewritten_query": "Which parliamentary constituency does the Commons member from Congleton belong to?",
+    "query_was_rewritten": true
+  }
+}

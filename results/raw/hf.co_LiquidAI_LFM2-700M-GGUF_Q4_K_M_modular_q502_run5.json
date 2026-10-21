@@ -1,0 +1,49 @@
+{
+  "question_id": "Q502",
+  "query": "Which city was the man who is known for a science humor story based on the tongue-in-cheek combination of two adages born in?",
+  "ground_truth": "New York City, New York",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The man known for the science humor story \"the Buttered cat paradox\" is John Frazee, born in New York City, New York. The context provided does not specify the exact birthplace as New York City itself but rather mentions John Frazee's work being displayed around the world and his connection to New York City. However, given that Frazee was an artist from New York City, it is reasonable to infer that he likely grew up in or near New York City where his work would eventually be showcased internationally.\n\nThe context does not explicitly state the birthplace of John Frazee but provides information about his artistic contributions and connections to New York City. Therefore, based on the available information, we can conclude that John Frazee's work is likely associated with New York City due to its prominence in his career as an artist and writer.\n\nAnswer: New York City",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Frazee: John Frazee (born 1949) is an artist from New York City, New York.  Frazee's work as a painter and sculptor is displayed around the world.  He is also known for a science humor story he wrote in OMNI magazine, the Buttered cat paradox.",
+      "Jagadish Chandra Bose: Sir Jagadish Chandra Bose, CSI, CIE, FRS ( ; ] ; 30 November 1858 \u2013 23 November 1937), also spelled Jagdish and Jagadis, was a Bengali polymath, physicist, biologist, biophysicist, botanist and archaeologist, and an early writer of science fiction.  Living in British India, he pioneered the investigation of radio and microwave optics, made significant contributions to plant science, and laid the foundations of experimental science in the Indian subcontinent.  IEEE named him one of the fathers of radio science.  Bose is considered the father of Bengali science fiction, and also invented the crescograph, a device for measuring the growth of plants.  A crater on the moon has been named in his honour.",
+      "P. G. Wodehouse: Sir Pelham Grenville Wodehouse {'1': \", '2': \", '3': \", '4': \"} ( ; 15 October 188114 February 1975) was an English author and one of the most widely read humorists of the 20th century.  Born in Guildford, the son of a British magistrate based in Hong Kong, Wodehouse spent happy teenage years at Dulwich College, to which he remained devoted all his life.  After leaving school he was employed by a bank but disliked the work and turned to writing in his spare time.  His early novels were mostly school stories, but he later switched to comic fiction, creating several regular characters who became familiar to the public over the years.  They include the jolly gentleman of leisure Bertie Wooster and his sagacious valet, Jeeves; the immaculate and loquacious Psmith; Lord Emsworth and the Blandings Castle set; the Oldest Member, with stories about golf; and Mr Mulliner, with tall tales on subjects ranging from bibulous bishops to megalomaniac movie moguls."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 566,
+    "generation_tokens": 184,
+    "generation_speed": 223.16744957204003,
+    "prompt_eval_speed": 58254.42568958419,
+    "generation_latency_s": 1.1195407999912277,
+    "latency": 2.2153028000029735,
+    "total_prompt_tokens": 723,
+    "total_generation_tokens": 267,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.6982942,
+    "stage_route_s": 0.3323104000010062,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6624768000037875,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.10072930000023916,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.459999713115394e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 1.1196018000191543,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.215321199997561,
+    "unaccounted_latency_s": 0.00013999996008351445,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Man who created a science humor story combining two adages from which city?",
+      "Science humor story by man born in city with tongue-in-cheek adage combinations"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q311",
+  "query": "What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",
+  "ground_truth": "2013",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The production year of \"Making Today a Perfect Day\" was made in 2013, as stated in the context provided. However, it does not specify which year Frozen was produced. The information given only indicates that Frozen was released in 2013 and is set to premiere on January 1st of the following year (which would be February 2014). Since \"Making Today a Perfect Day\" was released in 2013, it predates Frozen's production year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Frozen (soundtrack): Frozen: Original Motion Picture Soundtrack is the soundtrack to the 2013 Disney animated film, \"Frozen\".  The soundtrack features 10 original songs written and composed by Kristen Anderson-Lopez and Robert Lopez, and twenty-two score pieces composed by Christophe Beck.  It features the critically acclaimed song \"Let It Go\"\u2014film version performed by Idina Menzel; single version performed by Demi Lovato\u2014which won the Academy Award for Best Original Song, the Grammy Award for Best Song Written for Visual Media, and the Critics' Choice Award for Best Song, and was nominated for the Golden Globe Award for Best Original Song.",
+      "Frozen 2: Frozen 2 is an upcoming American computer-animated film produced by Walt Disney Animation Studios and will be released by Walt Disney Pictures.  It is a sequel to the 2013 film, \"Frozen\".",
+      "Calendar year: Generally speaking, a calendar year begins on the New Year's Day of the given calendar system and ends on the day before the following New Year's Day, and thus consists of a whole number of days.  A year can be measured by also starting on any other named day of the calendar, and end on the day before this named day in the following year.  This may be termed as a \"years time\" but not in practice or an accepted means to term a Calendar year.  To reconcile the calendar year with the astronomical cycle (which has a fractional number of days) certain years contain extra days."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 398,
+    "generation_tokens": 100,
+    "generation_speed": 305.29876537179285,
+    "prompt_eval_speed": 31402.872021461262,
+    "generation_latency_s": 0.607820500008529,
+    "latency": 1.5466537000029348,
+    "total_prompt_tokens": 483,
+    "total_generation_tokens": 177,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4243572,
+    "stage_rewrite_s": 0.524224900000263,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12688309999066405,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.28754509999998845,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6078880999993999,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5466710000036983,
+    "unaccounted_latency_s": 0.00013050000416114926,
+    "rewritten_query": "Year of 'Make Today' premieres & 'Frozen' release - determining the earliest production date.\" \n\n\nThis version focuses on the key elements:\n\n* **Year:** Emphasizes the most important aspect.\n* **Premiere:** Highlights the event's significance.\n* **Determining:**  Conveys a sense of anticipation and importance.",
+    "query_was_rewritten": true
+  }
+}

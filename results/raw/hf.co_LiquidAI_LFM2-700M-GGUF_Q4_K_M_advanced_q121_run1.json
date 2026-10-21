@@ -1,0 +1,42 @@
+{
+  "question_id": "Q121",
+  "query": "What major truck road is located in Backford Cross?",
+  "ground_truth": "The A41",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The major truck road located in Backford Cross is the **U.S. Route 19 Truck (US 19 Truck)**. This route connects various locations within and around Backford Cross, serving as a significant transportation link for both local commuters and freight traffic between different parts of the region.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "U.S. Route 287: U.S. Route 287 is a north\u2013south United States highway.  It is 2,882 km long.  It serves as the major truck route between Fort Worth, Texas and Amarillo, Texas, and between Fort Collins, Colorado and Laramie, Wyoming.  The highway is broken into two segments by Yellowstone National Park, where an unnumbered park road serves as a connector.",
+      "Backford Cross: Backford Cross is a village on the Wirral Peninsula, Cheshire, England.  It is a suburb of the town of Ellesmere Port and part of Cheshire West and Chester.  Backford Cross is located around the A41/A5117 junction, south of Great Sutton and about 1.5 mi north of the village of Backford, near Chester.  Backford Cross is largely made up of residential homes built from 1990 onwards and serves as a commuter village to Ellesmere Port and Chester, although inhabitants show no allegiance to either locality.  The area is split between postcode districts, with parts of the village in Great Sutton, Ellesmere Port CH66 and other areas in Backford, Chester CH1.",
+      "U.S. Route 19 Truck (Pittsburgh): U.S. Route 19 Truck (US 19 Truck) is a truck route of U.S. Route 19 (US 19) located in Western Pennsylvania in the Pittsburgh Metro Area that has a length of 19 mi .  It is a loop off US 19; the southern terminus located in Mt. Lebanon and the northern terminus in McCandless Township, connecting to US 19 at both ends.  The route is notable for a large, unorthodox interchange with the Penn\u2013Lincoln Parkway (I-376/US 22/US 30) just west of the Fort Pitt Tunnel, where the route joins the Parkway and forms several wrong-way concurrencies, including one with its own opposing directions.  North of Pittsburgh, U.S. Route 19 Truck is called McKnight Road and south of Pittsburgh it carries West Liberty Avenue and Washington Road."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 504,
+    "generation_tokens": 61,
+    "generation_speed": 217.90305814439472,
+    "prompt_eval_speed": 7418.310273770974,
+    "generation_latency_s": 0.7144986999919638,
+    "latency": 1.76051870000083,
+    "total_prompt_tokens": 574,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5757439,
+    "stage_rewrite_s": 0.6081269999995129,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16814379999414086,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2695404999976745,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7145527999964543,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7605322000017622,
+    "unaccounted_latency_s": 0.0001686000032350421,
+    "rewritten_query": "Where is the main truck route passing through Backford Cross? \n\n\nThis rephrasing focuses on the key information - the location of a major truck route - and uses more natural phrasing for easier understanding.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q54",
+  "query": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+  "ground_truth": "Rome",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The \"Prince of tenors\" starred Jacopo Puccini in a film based on Giacomo Puccini's opera \"La Boh\u00e8me.\" The film, titled \"Rent,\" was directed by Chris Columbus and took place in the East Village of New York City from 1989 to 1990.\n\nTo answer the question directly using the provided context:\nThe city where Jacopo Puccini starred in a film based on an opera by Giacomo Puccini is New York City, specifically the East Village area.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rent (film): Rent is a 2005 American musical drama film directed by Chris Columbus.  It is an adaptation of the Broadway musical of the same name, in turn based on Giacomo Puccini's opera \"La boh\u00e8me\".  The film depicts the lives of several Bohemians and their struggles with sexuality, drugs, paying their rent, and life under the shadow of AIDS.  It takes place in the East Village of New York City from 1989 to 1990.  The film features six of the original Broadway cast members reprising their roles.",
+      "Tosca: Tosca (] ) is an opera in three acts by Giacomo Puccini to an Italian libretto by Luigi Illica and Giuseppe Giacosa.  It premiered at the Teatro Costanzi in Rome on 14 January 1900.  The work, based on Victorien Sardou's 1887 French-language dramatic play, \"La Tosca\", is a melodramatic piece set in Rome in June 1800, with the Kingdom of Naples's control of Rome threatened by Napoleon's invasion of Italy.  It contains depictions of torture, murder and suicide, as well as some of Puccini's best-known lyrical arias.",
+      "Jacopo Puccini: Jacopo (Giacomo) Puccini (] ; 26 January 1712 16 May 1781) was an 18th-century Italian composer who lived and worked primarily in Lucca, Tuscany.  He was the first of five generations of composers, the most famous of whom was his great-great-grandson, the opera composer Giacomo Puccini."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 419,
+    "generation_tokens": 107,
+    "generation_speed": 209.35524454453494,
+    "prompt_eval_speed": 33624.90971832116,
+    "generation_latency_s": 0.8977304000000004,
+    "latency": 1.9264452000061283,
+    "total_prompt_tokens": 504,
+    "total_generation_tokens": 154,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5667491,
+    "stage_rewrite_s": 0.5634589999972377,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17626069999823812,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2887559999944642,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8978031000006013,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9264667999959784,
+    "unaccounted_latency_s": 0.00018870001076720655,
+    "rewritten_query": "Where did \"Prince of Tenors\" starred in a film inspired by a Puccini opera? \n\n\nThis rephrased query is more concise and directly asks about the city where the film adaptation took place.",
+    "query_was_rewritten": true
+  }
+}

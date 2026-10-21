@@ -1,0 +1,42 @@
+{
+  "question_id": "Q436",
+  "query": "How long is the river for which Frenchmans Creek is a tributary?",
+  "ground_truth": "2844 km",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The river for which Frenchmans Creek is a tributary measures 7.51 km (km) in length, as stated in the context provided.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Columbia River: The Columbia River is the largest river in the Pacific Northwest region of North America.  The river rises in the Rocky Mountains of British Columbia, Canada.  It flows northwest and then south into the US state of Washington, then turns west to form most of the border between Washington and the state of Oregon before emptying into the Pacific Ocean.  The river is 1243 mi long, and its largest tributary is the Snake River.  Its drainage basin is roughly the size of France and extends into seven US states and a Canadian province.  The fourth-largest river in the United States by volume, the Columbia has the greatest flow of any North American river entering the Pacific.",
+      "Frenchmans Creek (California): Frenchmans Creek is a 4.4 mi stream in San Mateo County, California.  Locks Creek is its largest tributary.",
+      "Frenchmans Creek (New South Wales): Frenchmans Creek is a short tributary of the Darling River in west New South Wales, measuring 7.51 km from its source south of Pooncarie, New South Wales at an elevation of 54.4 m to its confluence into the Darling River at an elevation of 48 m ."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 31,
+    "generation_speed": 297.80488976415774,
+    "prompt_eval_speed": 9811.20396162179,
+    "generation_latency_s": 0.43997349998971913,
+    "latency": 1.407959000003757,
+    "total_prompt_tokens": 391,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.48998600000000003,
+    "stage_rewrite_s": 0.5758742000034545,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16528840000682976,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2266352000006009,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4400286000018241,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.407972899993183,
+    "unaccounted_latency_s": 0.00014709998504258692,
+    "rewritten_query": "To optimize the original query about the length of the river for which Frenchman's Creek is a tributary, here's a search-friendly rephrased version:\n\n**\"Frenchman's Creek River Length (Tributary)\": \"How long is this specific river channel?\"**\n\nThis version is more concise and directly addresses the user's inquiry about the length of the river in question.",
+    "query_was_rewritten": true
+  }
+}

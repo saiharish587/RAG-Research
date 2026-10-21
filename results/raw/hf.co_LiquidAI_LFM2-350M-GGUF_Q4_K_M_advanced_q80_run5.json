@@ -1,0 +1,42 @@
+{
+  "question_id": "Q80",
+  "query": "In which year was the King who made the 1925 Birthday Honours born?",
+  "ground_truth": "1865",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The context provided does not specify the exact birth year of King George VI, who made the 1925 Birthday Honours appointments. It only mentions that these were made to celebrate The King's official birthday in 1925 and was published in \"The London Gazette\". Therefore, without additional specific information about his birth year, we cannot determine when he was born.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1925 Birthday Honours: The 1925 Birthday Honours were appointments by King George V to various orders and honours to reward and highlight good works by citizens of the British Empire.  The appointments were made to celebrate the official birthday of The King, and were published in \"The London Gazette\" on 3 June 1925.",
+      "Birthday Honours: King's/Queen's Birthday Honours is, in some Commonwealth realms, the marking of the reigning monarch's official birthday by granting various individuals appointment into national or dynastic orders or the award of decorations and medals.  The honours are presented by the monarch or a viceregal representative.  New Year Honours and Birthday Honours are bestowed each year.  All royal honours are published in the relevant gazette, and the daily newspapers of each realm.",
+      "2017 Birthday Honours: The 2017 Queen's Birthday Honours are appointments by some of the 16 Commonwealth realms of Queen Elizabeth II to various orders and honours to reward and highlight good works by citizens of those countries.  The Birthday Honours are awarded as part of the Queen's Official Birthday celebrations during the month of June.  The Queen's Birthday Honours for the United Kingdom were announced on 16 June; the honours for New Zealand were announced on 5 June and for Australia on 12 June."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 74,
+    "generation_speed": 325.8046052921235,
+    "prompt_eval_speed": 32740.79448576093,
+    "generation_latency_s": 0.4948695999919437,
+    "latency": 1.37105070000689,
+    "total_prompt_tokens": 438,
+    "total_generation_tokens": 168,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.41405000000000003,
+    "stage_rewrite_s": 0.5768928999896161,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13243149999470916,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1667019999877084,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.49491690000286326,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3710633000009693,
+    "unaccounted_latency_s": 0.00012050002987962216,
+    "rewritten_query": "To find the birth year of King George V's birthday honor, consider this rephrased version: \"Where is the King's 1925 Birthday Honours awarded in? - Year\"\n\nThis query directly addresses the original user's search while maintaining a clear and concise format. It also provides context by mentioning the specific honor (1925 Birthday Honours) and the year of award, making it easier for users to locate the relevant information quickly.",
+    "query_was_rewritten": true
+  }
+}

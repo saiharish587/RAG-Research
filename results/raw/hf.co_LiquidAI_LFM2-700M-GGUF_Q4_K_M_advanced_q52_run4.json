@@ -1,0 +1,42 @@
+{
+  "question_id": "Q52",
+  "query": "In 1991 Euromarch\u00e9 was bought by a chain that operated how any hypermarkets at the end of 2016?",
+  "ground_truth": "1,462",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Carrefour S.A., which rebought Euromarch\u00e9 in June 1991 for 5,2 billion francs. By the end of 2016, Carrefour operated 1,462 hypermarkets worldwide.\n\nTherefore, Carrefour was the chain that bought Euromarch\u00e9 in 1991 and operated hypermarkets at the same scale by the end of 2016.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Euromarch\u00e9: Euromarch\u00e9 (\"Euromarket\") was a French hypermarket chain.  The first store opened in 1968 in Saint-Michel-sur-Orge.  In June 1991, the group was rebought by its rival, Carrefour, for 5,2 billion francs.",
+      "Carrefour: Carrefour S.A. (] ) is a French multinational retailer headquartered in Boulogne Billancourt, France, in the Hauts-de-Seine Department near Paris.  It is one of the largest hypermarket chains in the world (with 1,462 hypermarkets at the end of 2016).  Carrefour operates in more than 30 countries, in Europe, the Americas, Asia and Africa.  Carrefour means \"crossroads\" and \"public square\" in French.  The company is a component of the Euro Stoxx 50 stock market index.",
+      "Chain store: Chain store(s) or retail chain are retail outlets that share a brand and central management, and usually have standardized business methods and practices.  In retail, dining, and many service categories, chain businesses have come to dominate the market in many parts of the world.  A franchise retail establishment is one form of chain store.  In 2004, the world's largest retail chain, Wal-Mart, became the world's largest corporation based on gross sales."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 375,
+    "generation_tokens": 85,
+    "generation_speed": 221.27752627345217,
+    "prompt_eval_speed": 30352.084176446784,
+    "generation_latency_s": 0.8092936000030022,
+    "latency": 1.685566000000108,
+    "total_prompt_tokens": 462,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5598103000000001,
+    "stage_rewrite_s": 0.49059599998872727,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17818889999762177,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20723159999761265,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8093828999990365,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6855912000028184,
+    "unaccounted_latency_s": 0.00019270001212134957,
+    "rewritten_query": "In what year did Euromarch\u00e9 become part of a hypermarket chain in 1991?",
+    "query_was_rewritten": true
+  }
+}

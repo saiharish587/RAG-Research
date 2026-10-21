@@ -1,0 +1,42 @@
+{
+  "question_id": "Q91",
+  "query": "Andrew Jaspan was the co-founder of what not-for-profit media outlet?",
+  "ground_truth": "The Conversation",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Andrew Jaspan was the co-founder of \"The Conversation\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Andrew Jaspan: Andrew Jaspan, (b. 20 April 1952) British-Australian journalist, the co-founder of \"The Conversation\", an independent not-for-profit website of analysis and news from the university and research sector\u200a and its Editor-in-Chief from The Conversation's launch in March 2011 until March 2017.",
+      "Chicago Public Media: Chicago Public Media is a not-for-profit media company that operates as the primary National Public Radio member organization for Chicago.  It owns three non-commercial educational FM broadcast stations and one FM translator, and produces the programs \"Wait Wait... Don't Tell Me! \" for NPR stations, \"This American Life\" which is self-distributed but uses PRX for distribution to other radio stations, and \"Sound Opinions\" for PRX.  CPM is based at Navy Pier in Chicago.",
+      "State media: State media or state-owned media is media for mass communication which is \"controlled financially and editorially by the state.\"  These news outlets may be the sole media outlet or may exist in competition with corporate and non-corporate media."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 299,
+    "generation_tokens": 15,
+    "generation_speed": 276.06007067137807,
+    "prompt_eval_speed": 23673.79255740301,
+    "generation_latency_s": 0.3121779999928549,
+    "latency": 1.182129900000291,
+    "total_prompt_tokens": 374,
+    "total_generation_tokens": 95,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4476628,
+    "stage_rewrite_s": 0.5629606000002241,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.11831599999277387,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18850570000358857,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.31223080000199843,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.182150199994794,
+    "unaccounted_latency_s": 0.0001379000023007393,
+    "rewritten_query": "Andrew Jaspan co-founded [Name of Media Outlet] - a non-profit news organization (not-for-profit)\n\nThis rephrased version is more concise and directly conveys the key information about Andrew Jaspan's role and the name of the media outlet. It also uses \"non-profit\" to emphasize the unique aspect of the organization, which is not-for-profit.",
+    "query_was_rewritten": true
+  }
+}

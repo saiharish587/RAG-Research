@@ -1,0 +1,49 @@
+{
+  "question_id": "Q353",
+  "query": "Are both Rutgers University and Carnegie Mellon University located in America?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Yes, both Rutgers University and Carnegie Mellon University are located in America. Rutgers University\u2013Camden is situated in Camden, New Jersey, which is a state within the United States, while Carnegie Mellon University is a private research university located in Pittsburgh, Pennsylvania, which is also part of the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Carnegie Mellon University: Carnegie Mellon University (Carnegie Mellon or CMU or ) is a private research university in Pittsburgh, Pennsylvania.",
+      "Rutgers University\u2013Camden: Rutgers University\u2013Camden is one of three regional campuses of Rutgers University, New Jersey's public research university.  It is located in Camden, New Jersey, United States.  Founded in the 1920s, Rutgers\u2013Camden began as an amalgam of the South Jersey Law School and the College of South Jersey.  It is the southernmost of the three regional campuses of Rutgers\u2014the others being located in New Brunswick and Newark.  The city of Camden is located on the Delaware River, east of Philadelphia.",
+      "Rutgers University: Rutgers, The State University of New Jersey ( ), commonly referred to as Rutgers University, Rutgers, or RU, is an American public research university and the largest institution for higher education in New Jersey."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 268,
+    "generation_tokens": 66,
+    "generation_speed": 216.42395485265138,
+    "prompt_eval_speed": 23735.718714020015,
+    "generation_latency_s": 0.6547436999971978,
+    "latency": 1.5166770000068936,
+    "total_prompt_tokens": 395,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7439544,
+    "stage_route_s": 0.3345686999964528,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4239419999939855,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.10315619999892078,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.330000516958535e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6548094999743626,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.516694899997674,
+    "unaccounted_latency_s": 0.0001462000363972038,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Rutgers University location verification\"",
+      "\"Carnegie Mellon University America affiliation\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

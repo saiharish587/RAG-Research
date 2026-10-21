@@ -1,0 +1,42 @@
+{
+  "question_id": "Q234",
+  "query": "Which case came first, Craig v. Boren or United States v. Paramount Pictures, Inc.?",
+  "ground_truth": "Craig v. Boren",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "United States v. Paramount Pictures, Inc. came before Craig v. Boren. The former is the earlier case mentioned in the provided context, while the latter was decided in 1976.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "United States v. Paramount Pictures, Inc.: United States v. Paramount Pictures, Inc., 334 US 131 (1948) (also known as the Hollywood Antitrust Case of 1948, the Paramount Case, the Paramount Decision or the Paramount Decree) was a landmark United States Supreme Court antitrust case that decided the fate of movie studios owning their own theatres and holding exclusivity rights on which theatres would show their films.  It would also change the way Hollywood movies were produced, distributed, and exhibited.  The Court held in this case that the existing distribution scheme was in violation of the antitrust laws of the United States, which prohibit certain exclusive dealing arrangements.",
+      "Craig v. Boren: Craig v. Boren, 429 U.S. 190 (1976) , was the first case in which a majority of the United States Supreme Court determined that statutory or administrative sex classifications were subject to intermediate scrutiny under the Fourteenth Amendment's Equal Protection Clause.",
+      "Paramount Pictures: Paramount Pictures Corporation (also known simply as Paramount) is an American film studio based in Hollywood, California, that has been a subsidiary of the American media conglomerate Viacom since 1994.  Paramount is the fifth oldest surviving film studio in the world, the second oldest in the United States, and the sole member of the \"Big Six\" film studios still located in the Los Angeles neighborhood of Hollywood.  In 1916, film producer Adolph Zukor contracted 22 actors and actresses and honored each with a star on the logo.  These fortunate few would become the first \"movie stars.\"  In 2014, Paramount Pictures became the first major Hollywood studio to distribute all of its films in digital form only."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 444,
+    "generation_tokens": 41,
+    "generation_speed": 229.6841562748591,
+    "prompt_eval_speed": 36540.202452473044,
+    "generation_latency_s": 0.5369625000021188,
+    "latency": 1.583877199998824,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5136665,
+    "stage_rewrite_s": 0.6734717999934219,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16251110000303015,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21072390000335872,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.537028000006103,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.583894399998826,
+    "unaccounted_latency_s": 0.00016039999900385737,
+    "rewritten_query": "Which case predates United States v. Paramount Pictures, Inc. over Craig v. Boren? \n\nThis rephrased query maintains the core information while making it more concise and easier to understand for a search engine or user. It directly asks about the chronological order of cases without including unnecessary details like the full case names.",
+    "query_was_rewritten": true
+  }
+}

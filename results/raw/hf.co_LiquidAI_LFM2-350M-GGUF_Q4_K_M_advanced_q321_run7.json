@@ -1,0 +1,42 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "John Fogerty was not an actor. The context provided does not mention any other role for Serri beyond being a member of the South Korean girl group Dal Shabet.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Fogerty: John Cameron Fogerty (born May 28, 1945) is an American musician, singer, and songwriter.  He was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.  The group had nine top-ten singles and eight gold albums between 1968 and 1972.  They were inducted into the Rock and Roll Hall of Fame in 1993.",
+      "Serri (singer): Park Mi-yeon (born September 16, 1990), better known by the stage name Serri, is a South Korean singer, songwriter and actress.  She is best known as a member and leader of the South Korean girl group Dal Shabet.",
+      "John Fogerty (engineer): John Fogerty was an Irish millwright, architect, builder, and civil engineer, active in early to mid-19th-century Limerick. He was the brother of Joseph Fogerty, Sr. and the father of engineer and novelist Joseph Fogerty of London, architect William Fogerty of Dublin, and grandfather of architect John Frederick Fogerty.  He retired as an architect sometime between 1870 and 1879."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 322,
+    "generation_tokens": 36,
+    "generation_speed": 312.0557539613744,
+    "prompt_eval_speed": 31448.383631213987,
+    "generation_latency_s": 0.39527590000943746,
+    "latency": 1.4442791000037687,
+    "total_prompt_tokens": 395,
+    "total_generation_tokens": 152,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4366876,
+    "stage_rewrite_s": 0.6605425000016112,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14205399999627843,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24625949999608565,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.39532330000656657,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.444292400003178,
+    "unaccounted_latency_s": 0.0001137000072048977,
+    "rewritten_query": "To optimize the original query for searchability, we can break down and rephrase it as follows:\n\n**Query:** \"Who was both an actor (Serri) and a comedian (John Fogerty)?\"\n\n**Optimized Output:**\n\n\"Search for individuals who were also actors (e.g., Serri) and comedians (e.g., John Fogerty). Consider using specific keywords like 'actor' and 'comedian' to refine the search.\"\n\nThis version maintains the core intent while making it more concise and user-friendly.",
+    "query_was_rewritten": true
+  }
+}

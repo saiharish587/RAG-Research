@@ -1,0 +1,42 @@
+{
+  "question_id": "Q185",
+  "query": "What year did the series on CBS, starring the actor who known for his role in \"Rebel Without a Cause,\" air?",
+  "ground_truth": "1952",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The series on CBS that starred Corey Allen, an actor known for his role as Buzz Gunderson in \"Rebel Without a Cause,\" aired in 1956. This information is derived from the context provided about Corey Allen's early career and his involvement in \"Rebel Without a Cause.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Corey Allen: Corey Allen (June 29, 1934 \u2013 June 27, 2010) was an American film and television director, writer, producer, and actor.  He began his career as an actor but eventually became a television director.  He may be best known for playing the character Buzz Gunderson in Nicholas Ray's \"Rebel Without a Cause\" (1955).",
+      "Sal Mineo: Salvatore Mineo, Jr. (January 10, 1939February 12, 1976), was an American film and theatre actor, known for his performance as John \"Plato\" Crawford opposite James Dean in the film \"Rebel Without a Cause\" (1955).  He was twice nominated for the Academy Award for Best Supporting Actor, for his roles in \"Rebel Without a Cause\" and \"Exodus\" (1960).",
+      "Jack Grinnage: Jack Grinnage (born January 20, 1931) is an American actor with a film and television career spanning seven decades.  Born in Los Angeles, Grinnage made his first television appearances in 1954.  The following year, he played as Moose \u2013 one of three teenage rebels who chase James Dean \u2013 in \"Rebel Without a Cause\" (1955).  \"Rebel Without a Cause\" was his first movie where he received a screen credit."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 371,
+    "generation_tokens": 65,
+    "generation_speed": 212.9457938291585,
+    "prompt_eval_speed": 22319.817109854408,
+    "generation_latency_s": 0.6675855999928899,
+    "latency": 1.649600200005807,
+    "total_prompt_tokens": 457,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5534729,
+    "stage_rewrite_s": 0.6286134999973001,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16099119999853428,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19221020000986755,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6676509999961127,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6496189000026789,
+    "unaccounted_latency_s": 0.00015360000543296337,
+    "rewritten_query": "When did the CBS show featuring an actor from \"Rebel Without a Cause\" premiere? \n\n\nThis rephrased query is more concise and directly asks about the release year of the series starring the relevant actor.",
+    "query_was_rewritten": true
+  }
+}

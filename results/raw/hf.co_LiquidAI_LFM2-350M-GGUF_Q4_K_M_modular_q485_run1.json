@@ -1,0 +1,49 @@
+{
+  "question_id": "Q485",
+  "query": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to what?",
+  "ground_truth": "four months in jail",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Detroit mayoral elections of 2009 took place to fill the vacancy created when Kwame Kilpatrick resigned as mayor in September 2008 after being convicted of perjury and obstruction of justice.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kwame Kilpatrick: Kwame Malik Kilpatrick (born June 8, 1970) is an American former politician, having served as a Democratic Michigan state representative and mayor of Detroit from 2002 to 2008.  He resigned as mayor in September 2008 after being convicted of perjury and obstruction of justice.  Kilpatrick was sentenced to four months in jail and was released on probation after serving 99 days.",
+      "Detroit mayoral election, 2009: The Detroit mayoral elections of 2009 took place on May 5, 2009, with a primary on February 24, 2009 to fill the vacancy created when Kwame Kilpatrick resigned as mayor.",
+      "Chokwe Lumumba: Chokwe Lumumba ( ; August 2, 1947 \u2013 February 25, 2014) was an American attorney and politician, affiliated with the Republic of New Afrika and serving as its second vice president.  He served as a human rights lawyer in Michigan and Mississippi.  In 2013, after serving on the City Council, he was elected as Mayor of Jackson, Mississippi.  He was born in Detroit, Michigan, as Edwin Finley Taliaferro, and was raised there, attending local schools."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 44,
+    "generation_speed": 326.9965368094056,
+    "prompt_eval_speed": 32363.365043835103,
+    "generation_latency_s": 0.4809629999945173,
+    "latency": 1.5327621000033105,
+    "total_prompt_tokens": 498,
+    "total_generation_tokens": 128,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7355202000000001,
+    "stage_route_s": 0.33259669999824837,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5991589999903226,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.11971050000283867,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 0.00010220000694971532,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.48105189998750575,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5328453999973135,
+    "unaccounted_latency_s": 0.00022770001669414341,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "What was the reason for the 2009 Detroit mayoral election vacancy?",
+      "Who was sentenced to prison for the 2009 Detroit mayoral election?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

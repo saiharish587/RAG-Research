@@ -1,0 +1,42 @@
+{
+  "question_id": "Q490",
+  "query": "How many Senate seats will be contested during the midterm elections that Nancy Soderberg has filed to run for Congress in?",
+  "ground_truth": "33",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Based on the provided context, Nancy Soderberg is a candidate for Congress in the 2018 United States midterm elections. The text does not specify which specific Senate seat she intends to contest. However, it mentions that all 33 of the 100 seats in the United States Senate will be contested during these midterm elections. Therefore, the number of Senate seats that will be contested is 33.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Nancy Soderberg: Nancy Elisabet Soderberg (born 1958) is an American foreign policy strategist.  She served President Bill Clinton as Deputy National Security Advisor and as an Ambassador at the United Nations.  She is currently President and CEO of Soderberg Global Solutions and Director of the Public Service Leadership Program at the University of North Florida in Jacksonville, FL.  She was appointed by President Obama to serve as Chair of the Public Interest Declassification Board (2011-2014).  She has also previously served as President of Connect U.S. Fund, as Vice President of the International Crisis Group, and on the Board of the Jacksonville Port Authority.  She was a senior advisor to Senator Edward M. Kennedy, and worked on four presidential campaigns.  She is a member of the Council on Foreign Relations.  She is a regular commentator on national and international television and radio, having appeared on NBC, ABC, CBS, CNN, BBC, Fox, National Public Radio, the Lehrer News Hour, CNN Crossfire, and The Daily Show.  She is the author of numerous articles on American foreign policy and two books: \u201cThe Prosperity Agends\u201d (2008) written with Brian Katulis, and the Superpower Myth (2005).  In 1984, Soderberg received a Master of Science Degree from Georgetown University's School of Foreign Service, concentrating on development economics and political risk analysis.  She received her Bachelor of Arts in 1980 from Vanderbilt University.",
+      "United States midterm election: Midterm elections in the United States refer to general elections in the United States that are held two years after the quadrennial (four-year) elections for the President of the United States (i.e. near the midpoint of the four-year presidential term).  Federal offices that are up for election during the midterms are members of the United States Congress, including all 435 seats in the United States House of Representatives, and the full terms for 33 or 34 of the 100 seats in the United States Senate.",
+      "United States elections, 2018: The 2018 United States elections will mostly be held on Tuesday, November 6, 2018.  These midterm elections will take place in the middle of Republican President Donald Trump's term.  All 435 seats in the United States House of Representatives and 33 of the 100 seats in the United States Senate will be contested.  39 state and territorial governorships and numerous other state and local elections will also be contested."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 609,
+    "generation_tokens": 83,
+    "generation_speed": 226.23694367517828,
+    "prompt_eval_speed": 59218.203033838974,
+    "generation_latency_s": 0.7035310000064783,
+    "latency": 1.7076372000010451,
+    "total_prompt_tokens": 693,
+    "total_generation_tokens": 134,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5073106000000001,
+    "stage_rewrite_s": 0.5863772000011522,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1485160000011092,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2689941999997245,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7036055000062333,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.707664499990642,
+    "unaccounted_latency_s": 0.00017279999156016856,
+    "rewritten_query": "How many Senate seats are up for grabs in the midterms Nancy Soderberg plans to contest? \n\n\nThis rephrased query is more concise and directly asks about the number of seats, making it easier to understand and search.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q316",
+  "query": "\"Ew!\" is a song by a television host born where?",
+  "ground_truth": "Bay Ridge, Brooklyn",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The context provided does not specify the exact place of birth for Jimmy Fallon's song \"Ew!\". It only mentions that the song was created by Fallon and his guest, will.i.am, based on a sketch involving teenage girls. There is no information given about the specific location where Fallon was born.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ew!: \"Ew!\"  is a song by American television host and comedian Jimmy Fallon, featuring American rapper will.i.am.  The song is based on a sketch from \"The Tonight Show Starring Jimmy Fallon\", in which Fallon and guests play teenage girls constantly disgusted by things around them.",
+      "Locative adverb: A locative adverb is a type of adverb that refers to a location or to a combination of a location and a relation to that location.  Generally, a locative adverb is semantically equivalent to a prepositional phrase involving a locative or directional preposition.  In English, for example, \"homeward\" is a locative adverb, specifying a location \"home\" and a relation \"toward\" (in this case a direction), and is equivalent to the phrase \"toward home\".  The relation need not be a direction, as it can be any relation that can be specified by a locational preposition such as \"to\", \"from\", \"in\", \"at\", \"near\", \"toward\", or \"away from\".  For example, the word \"home\" is itself a locative adverb in a sentence like \"I took him home today\" or \"I found him home today\"; in the former case, it is equivalent to the phrase \"to home\", and in the latter to the phrase \"at home\".",
+      "Place of birth: The place of birth (POB) is the place where a person was born.  This place is often used in legal documents, together with name and date of birth, to uniquely identify a person.  As a general rule with respect to passports, the place of birth is determined to be country that currently has \"sovereignty\" over the actual place of birth regardless of when the birth actually occurred.  The place of birth is not necessarily the place where the parents of the new baby live.  If the baby is born in a hospital in another place, that place is the place of birth.  In many countries, this also means that the government requires that the birth of the new baby is registered in the place of birth."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 518,
+    "generation_tokens": 65,
+    "generation_speed": 327.18065909285383,
+    "prompt_eval_speed": 49062.32240954726,
+    "generation_latency_s": 0.5026467000134289,
+    "latency": 1.4950368999998318,
+    "total_prompt_tokens": 591,
+    "total_generation_tokens": 165,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.45967009999999997,
+    "stage_rewrite_s": 0.613231099996483,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12802620000729803,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25095250000595115,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5027111999952467,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.495050400000764,
+    "unaccounted_latency_s": 0.00013000000035390258,
+    "rewritten_query": "Search for 'Ew!' - Song by [Host Name] - Born in [Location]\" \n\n\nThis rephrased version focuses on the key elements of the original query:\n- **Replace \"Ew!\" with a descriptive title** (e.g., \"Song Title\")\n- **Specify the location** (e.g., \"Born in [City/Country]\") \n- **Add context** (if needed) to make it more informative and searchable.",
+    "query_was_rewritten": true
+  }
+}

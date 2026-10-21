@@ -1,0 +1,36 @@
+{
+  "question_id": "Q59",
+  "query": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+  "ground_truth": "35,124",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "According to the 2001 census, the population of the city in which Kirton End is located (which is not explicitly named but can be inferred from the context) was 273. However, since Kirton End itself has a population of 261 as per the 2011 census, we need to reconcile these numbers.\n\nTo find the discrepancy:\n- In 2001: Population = 273\n- In 2011: Population = 261\n\nThe difference is 273 - 261 = 12.\n\nTherefore, according to the 2001 census, the population of the city in which Kirton End is located was 12 more people than it is today (as of 2011). However, without additional information about how this discrepancy was resolved or any other context provided, we cannot definitively state that the population increase was due to an actual growth in the city itself but rather a difference between the census figures and the current population count.\n\nGiven the available data, the most accurate answer based on the 2001 census alone is: The population of the city in which Kirton End is located according to the 2001 census was 273.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kirton, Nottinghamshire: Kirton is a village in Nottinghamshire, England.  It is located 3 mi east of Ollerton.  According to the United Kingdom Census 2001 it had a population of 273, reducing to 261 at the 2011 census.",
+      "Kirton End: Kirton End is a hamlet in the civil parish of Kirton in the Boston district of Lincolnshire, England.  It lies on the B1391 road, 4 mi south-west from Boston, and 1.5 mi north-east from Kirton.",
+      "Kirton, Suffolk: Kirton is a village and a civil parish in the shire county of Suffolk, England, situated off the A14 road, about 4.5 km from Felixstowe and around 10 km from Ipswich.  The closest train station to Kirton is Trimley.  According to the 2011 census, Kirton had a population of 1,146.  It is located between the River Debben and the River Orwell.  The village of Kirton covers a total area of 8.3 km2 .  As the county of Suffolk lacks quarries, many of the buildings are made from flint, clay and timber."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 338,
+    "generation_tokens": 240,
+    "generation_speed": 231.57573803339685,
+    "prompt_eval_speed": 31436.01190476191,
+    "generation_latency_s": 1.2991688999900362,
+    "latency": 1.3379727999999886,
+    "total_prompt_tokens": 338,
+    "total_generation_tokens": 240,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2388891,
+    "stage_retrieve_s": 0.03867000000900589,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 1.2992353000008734,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.337990300002275,
+    "unaccounted_latency_s": 8.609998621977866e-05
+  }
+}

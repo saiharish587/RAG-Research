@@ -1,0 +1,42 @@
+{
+  "question_id": "Q336",
+  "query": "Mamie Gummer played the role of Nancy Crozier on the TV series airing on what network?",
+  "ground_truth": "CBS",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Mamie Gummer played the role of Nancy Crozier on the TV series \"The Good Wife\" (2010\u201315).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mamie Gummer: Mary Willa \"Mamie\" Gummer (born August 3, 1983) is an American actress.  She starred in the title role of The CW series \"Emily Owens, M.D.\" (2012\u201313), and played the recurring role of Nancy Crozier on \"The Good Wife\" (2010\u201315).  She has also appeared in the films \"Evening\" (2007), \"Side Effects\" (2013), \"Cake\" (2014), and \"Ricki and the Flash\" (2015).  She was nominated for the 2016 Drama Desk Award for Outstanding Actress in a Play for the original production of \"Ugly Lies the Bone\".",
+      "CBS: CBS (an initialism of the network's former name, the Columbia Broadcasting System) is an American English language commercial broadcast television network that is a flagship property of CBS Corporation.  The company is headquartered at the CBS Building in New York City with major production facilities and operations in New York City (at the CBS Broadcast Center) and Los Angeles (at CBS Television City and the CBS Studio Center).",
+      "Cartoon Network: Cartoon Network is an American basic cable and satellite television channel that is owned by The Cartoon Network, Inc., a subsidiary of Turner Broadcasting System, itself being a subsidiary of Time Warner.  It was founded by Betty Cohen and launched on October 1, 1992."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 30,
+    "generation_speed": 296.0857464321668,
+    "prompt_eval_speed": 38453.73376623377,
+    "generation_latency_s": 0.3824432999972487,
+    "latency": 1.302422499997192,
+    "total_prompt_tokens": 460,
+    "total_generation_tokens": 119,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4293014,
+    "stage_rewrite_s": 0.5614783999917563,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12535799999022856,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23299380000389647,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3824923999927705,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3024360999988858,
+    "unaccounted_latency_s": 0.00011410002480261028,
+    "rewritten_query": "Mamie Gummer portrayed Nancy Crozier in the television series, which aired on [Network Name] - a highly recommended show! \n\n**Explanation:** \n* **Original Query:** Specifies \"network\" but uses \"airing on what network?\"\n* **Optimized Query:** Clearly states the network (\"tv series\") and provides additional context (\"highly recommended\"). This makes it more concise and user-friendly.",
+    "query_was_rewritten": true
+  }
+}

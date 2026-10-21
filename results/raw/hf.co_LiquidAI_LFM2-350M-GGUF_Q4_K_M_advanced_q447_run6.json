@@ -1,0 +1,42 @@
+{
+  "question_id": "Q447",
+  "query": "What television thriller anthology did the winner of one Golden Globe, two tony Awards and six Primetime Emmy Awards appear on?",
+  "ground_truth": "Darkroom",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The television thriller anthology that Ian McKellen received multiple awards for is \"The Big Sick.\" This was his 31st Golden Globe Award appearance.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ian McKellen: Sir Ian Murray McKellen, {'1': \", '2': \", '3': \", '4': \"} (born 25 May 1939) is an English actor.  He is the recipient of six Laurence Olivier Awards, a Tony Award, a Golden Globe Award, a Screen Actors Guild Award, a BIF Award, two Saturn Awards, four Drama Desk Awards, and two Critics' Choice Awards.  He has also received two Oscar nominations, four BAFTA nominations and five Emmy Award nominations.",
+      "31st Golden Globe Awards: The 31st Golden Globe Awards, honoring the best in film and television for 1973, were held on January 26, 1974.",
+      "Laura Linney: Laura Leggett Linney (born February 5, 1964) is an American actress and singer.  She is the recipient of several awards, including two Golden Globe Awards and four Primetime Emmy Awards.  She has also been nominated for three Academy Awards and four Tony Awards."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 293,
+    "generation_tokens": 31,
+    "generation_speed": 310.20783925229904,
+    "prompt_eval_speed": 29554.1658261045,
+    "generation_latency_s": 0.3841872999910265,
+    "latency": 1.3782821999920998,
+    "total_prompt_tokens": 378,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4682747,
+    "stage_rewrite_s": 0.5648098999954527,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16645109999808483,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.26259320000826847,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.38428069998917636,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3783076999970945,
+    "unaccounted_latency_s": 0.00017389999993611127,
+    "rewritten_query": "Golden Glove Finalists, Tony Awards & Emmy Wins Television Thriller Anthology Appear On [Specific Name]'s Channel - [Title]\"\n\nThis rephrased version maintains the key elements of the original query while making it more concise and clear. It specifies the Golden Globe winners, Tony Awards, and Emmy nominations, as well as mentions the television anthology title.",
+    "query_was_rewritten": true
+  }
+}

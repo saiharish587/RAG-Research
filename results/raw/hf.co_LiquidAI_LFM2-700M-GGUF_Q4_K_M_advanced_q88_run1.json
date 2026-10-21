@@ -1,0 +1,42 @@
+{
+  "question_id": "Q88",
+  "query": "Where are Teide National Park and Garajonay National Park located?",
+  "ground_truth": "Canary Islands, Spain",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Teide National Park is located in Tenerife, which is one of the Canary Islands in Spain. Garajonay National Park is situated on La Gomera, another island within the Canary Islands. Both parks are distinct geographical locations within the same archipelago but are separated by different islands.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Teide National Park: Teide National Park (Spanish: \"Parque nacional del Teide\" , ] ) is a national park located in Tenerife (Canary Islands, Spain).",
+      "Garajonay National Park: Garajonay National Park (Spanish: \"Parque nacional de Garajonay\" , ] ) is located in the center and north of the island of La Gomera, one of the Canary Islands (Spain).  It was declared a national park in 1981 and a World Heritage Site by UNESCO in 1986.  It occupies 40 km (15 sq mi) and it extends into each of the six municipalities on the island.",
+      "List of national parks of England and Wales: Within England and Wales there are thirteen areas known as national parks, each administered by its own national park authority, a special purpose local authority, the role of which as set out in the Environment Act 1995 is: \"to conserve and enhance the natural beauty, wildlife and cultural heritage of the National Parks.\"  and \"to promote opportunities for the understanding and enjoyment of the special qualities of the National Parks by the public.\"  The national park authority for each park addresses these aims in partnership with other organisations, such as the National Trust.  In cases where there may be conflict between the two purposes of designation, the first must take precedence under the Sandford Principle.  The national park authorities also have a duty to foster the economic and social wellbeing of communities in pursuit of these purposes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 63,
+    "generation_speed": 225.26549147209212,
+    "prompt_eval_speed": 6896.677220948429,
+    "generation_latency_s": 0.7442340000125114,
+    "latency": 2.11879529998987,
+    "total_prompt_tokens": 453,
+    "total_generation_tokens": 187,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.552025,
+    "stage_rewrite_s": 0.9163980000012089,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1882783000037307,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2696699000080116,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.744299800004228,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.1188136999990093,
+    "unaccounted_latency_s": 0.0001687999756541103,
+    "rewritten_query": "Find locations for Teide National Park and Garajonay National Park\n\nThis rephrased version is more concise while maintaining the essential information of the original query. It uses \"find locations\" instead of \"where are,\" which is a common way to express the need for geographical information in search queries. The phrase \"National Parks\" is used as a general term that encompasses both Teide and Garajonay, making it clear that you're looking for parks with national park status. This rephrasing should be more user-friendly while still being effective for search engines to understand the query's intent.",
+    "query_was_rewritten": true
+  }
+}

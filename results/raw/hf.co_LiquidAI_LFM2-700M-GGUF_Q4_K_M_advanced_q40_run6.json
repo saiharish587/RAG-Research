@@ -1,0 +1,42 @@
+{
+  "question_id": "Q40",
+  "query": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+  "ground_truth": "New York City",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Ralph Hefferline was a psychology professor at the University of California, Berkeley, which is located in Berkeley, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ralph Hefferline: Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana \u2013 16 March 1974) was a psychology professor at Columbia University.",
+      "University of California, Berkeley: The University of California, Berkeley (also referred to as UC Berkeley, Berkeley, and Cal ) is a public research university located in Berkeley, California.  Founded in 1868, Berkeley is the oldest of the ten research universities affiliated with the University of California system (although UCSF was founded in 1864 and predates the establishment of the UC system) and is ranked as one of the world's leading research universities and the top public university in the United States.",
+      "Ralph Breaks the Internet: Wreck-It Ralph 2: Ralph Breaks the Internet: Wreck-It Ralph 2 is an upcoming American 3D computer-animated comedy-adventure film that is being produced by Walt Disney Animation Studios.  It will be the sequel to 2012's \"Wreck-It Ralph\", and is scheduled to be released on November 21, 2018 by Walt Disney Pictures."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 305,
+    "generation_tokens": 26,
+    "generation_speed": 221.68033695411216,
+    "prompt_eval_speed": 20907.5952837949,
+    "generation_latency_s": 0.49664290000509936,
+    "latency": 1.549605199994403,
+    "total_prompt_tokens": 382,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5526688,
+    "stage_rewrite_s": 0.6665352999989409,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.186387099995045,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1997382999979891,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.49674260000756476,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5496294999902602,
+    "unaccounted_latency_s": 0.0002271999983349815,
+    "rewritten_query": "Find information about the psychology professor Ralph Hefferline's university location and name.\n\nRalph Hefferline was a psychology professor at the University of California, Berkeley, which is located in Berkeley, California. \n\nOptimized Query: Identify the university where Ralph Hefferline worked as a psychology professor and its city.",
+    "query_was_rewritten": true
+  }
+}

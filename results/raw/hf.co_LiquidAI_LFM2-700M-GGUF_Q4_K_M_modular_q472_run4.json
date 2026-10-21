@@ -1,0 +1,49 @@
+{
+  "question_id": "Q472",
+  "query": "In what field does the firm at which Claudio Fern\u00e1ndez-Ar\u00e1oz was a currently a senior adviser offers services?",
+  "ground_truth": "Executive Search, Board Consulting",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The firm in which Claudio Fern\u00e1ndez-Ar\u00e1oz, as a senior adviser to Egon Zehnder, offers services is professional services, specifically in the areas of talent and leadership. This can be inferred from his background as an influential executive search consultant and his current role at Egon Zehnder, where he likely applies these skills to help clients with their talent management needs.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernst &amp; Young: EY (formerly Ernst & Young) is a multinational professional services firm headquartered in London, England.  EY is one of the largest professional services firms in the world and is one of the \"Big Four\" accounting firms.",
+      "Claudio Fern\u00e1ndez-Ar\u00e1oz: Claudio Fern\u00e1ndez-Ar\u00e1oz is an Argentinian author, international speaker and global expert on talent and leadership, ranked by \"BusinessWeek\" as one of the most influential executive search consultants in the world.  He is currently a senior adviser of Egon Zehnder.  Before joining Egon Zehnder in 1986, he worked at McKinsey & Company in Europe.  He is a frequent lecturer at the Harvard Business School.",
+      "carry out the financial advisory work within an internal unit of their own company, as well as accepting referrals from an independent broker network.  Examples of firms with which these brokers are associated are Raymond James, Edward Jones Investments and Morgan Stanley.  The brokers may be employees of these firms or independent contractors.  The plan assets of the organizational retirement plans in question sometimes reside on a trading platform controlled by the administration firm.  But more often than not the assets are held by large financial institutions who provide a variety of investment options for plan participants.  Examples of large firms in this market space are Principal Financial Group, John Hancock Insurance, ING Group and Mass Mutual, although there are many others.  Plans which contain over one-hundred participants must perform an independent audit each year, necessitating yearly coordination with representatives of a public accounting firm.  In cases where a defined benefit plan is being managed the pension administration firm must employ an actuary to certify the plan's present and future benefit liabilities and compliance with minimum funding standards set by the IRS.  Pension administration firms with a large block of defined benefit plans often employ an actuary directly."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 468,
+    "generation_tokens": 76,
+    "generation_speed": 222.49546226359857,
+    "prompt_eval_speed": 45689.73933417944,
+    "generation_latency_s": 0.6972472000052221,
+    "latency": 1.512207199994009,
+    "total_prompt_tokens": 611,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7163386,
+    "stage_route_s": 0.29626199998892844,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3989189999992959,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.1195280000101775,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.650000043213367e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6972945000161417,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5122217999887653,
+    "unaccounted_latency_s": 0.00014259997988119721,
+    "route": "rag",
+    "router_raw": "law firms",
+    "sub_queries": [
+      "Firm services in finance",
+      "Senior adviser services in law"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

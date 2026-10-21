@@ -1,0 +1,42 @@
+{
+  "question_id": "Q195",
+  "query": "What is the full name of the viral respiratory disease in which Yi Guan's research helped to prevent the outbreak of?",
+  "ground_truth": "severe acute respiratory syndrome",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Severe Acute Respiratory Syndrome (SARS)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yi Guan: Yi Guan is a Chinese virologist who, in 2014, was ranked as 11th in the world by Thomson Reuters (now known as Clarivate Analytics) among global researchers in the field of microbiology.  His research on the viral respiratory disease SARS allowed the Chinese government to successfully avert the 2004 outbreak of this disease.  He is the current Director (China affairs) of the State Key Laboratory for Emerging Infectious Diseases University of Hong Kong.  In early 2017, Guan warned that the H7N9 influenza virus \"poses the greatest threat to humanity than any other in the past 100 years.\"",
+      "Severe acute respiratory syndrome: Severe acute respiratory syndrome (SARS) is a viral respiratory disease of zoonotic origin caused by the SARS coronavirus (SARS-CoV).  Between November 2002 and July 2003, an outbreak of SARS in southern China caused an eventual 8,098 cases, resulting in 774 deaths reported in 37 countries, with the majority of cases in Hong Kong (9.6% fatality rate) according to the World Health Organization (WHO).  No cases of SARS have been reported worldwide since 2004.",
+      "Chronic Respiratory Disease: Chronic Respiratory Disease is a quarterly peer-reviewed medical journal that covers research in the field of respiratory disease, including chronic obstructive pulmonary disease, respiratory failure, and obstructive sleep apnea.  The editors-in-chief are Mike Morgan (Glenfield Hospital), Carolyn Rochester (Yale University), and Sally Singh (Glenfield Hospital).  It was established in 2004 and is published by SAGE Publications."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 413,
+    "generation_tokens": 11,
+    "generation_speed": 300.4479405659347,
+    "prompt_eval_speed": 47129.97831792765,
+    "generation_latency_s": 0.34068189999379683,
+    "latency": 1.3364169999986188,
+    "total_prompt_tokens": 495,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5057655,
+    "stage_rewrite_s": 0.6037903000105871,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13622429998940788,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25553120000404306,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3407504000060726,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3364348000031896,
+    "unaccounted_latency_s": 0.00013929999840911478,
+    "rewritten_query": "Yi Guan's respiratory disease prevention research targeted the outbreak of [specific respiratory disease] with a focus on [name of virus/condition].\" \n\n\nThis version:\n* **Specifies:** It clarifies \"respiratory disease\" and \"viral respiratory disease.\"\n* **Rephrases:** Uses more concise language.\n* **Focuses:** Emphasizes the connection to Yi Guan's work.",
+    "query_was_rewritten": true
+  }
+}

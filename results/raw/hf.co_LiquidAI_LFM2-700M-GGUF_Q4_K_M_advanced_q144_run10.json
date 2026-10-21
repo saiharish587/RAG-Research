@@ -1,0 +1,42 @@
+{
+  "question_id": "Q144",
+  "query": "Josey Scott and Ian Watkins were both promising musicians. Which of these talented men was incarcerated, impacting his career with a rock band?",
+  "ground_truth": "Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Based on the provided context, Josey Scott was the one who left his former rock band Saliva in 2012 due to legal issues, while Ian Watkins was charged and subsequently jailed for sexual offenses. Therefore, Josey Scott was the talented musician who was incarcerated, impacting his career with a rock band.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ian Watkins (Lostprophets): Ian David Karslake Watkins (born 30 July 1977) is a Welsh singer, musician, and convicted sex offender.  He achieved prominence as a founding member, lead vocalist, and lyricist of the rock band Lostprophets.  Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.  In November 2013, he pleaded guilty to 13 charges, including the attempted rape and sexual assault of a child under 13; these offences were committed against the infant children of two women who were also convicted.  He was subsequently jailed for 29 years and ordered to serve a further six years on extended licence.",
+      "Josey Scott: Josey Scott (born Joseph Scott Sappington; May 3, 1972) is the former lead vocalist of the rock band Saliva.  In addition to Saliva, Scott co-wrote and performed \"Hero\" (which was used as one of the theme songs to the 2002 film \"Spider-Man\") with Chad Kroeger of Nickelback.",
+      "Under Your Skin (album): Under Your Skin is the seventh studio album by American rock band Saliva.  It is the final album to feature singer Josey Scott, who left the band in 2012.  It was released on March 22, 2011.  Prior to release, the album had been titled both \"Take That Society\" and \"Skin Deep\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 67,
+    "generation_speed": 220.38458755188904,
+    "prompt_eval_speed": 27322.033898305086,
+    "generation_latency_s": 0.6969177999999374,
+    "latency": 1.4938849000027403,
+    "total_prompt_tokens": 491,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5640232000000001,
+    "stage_rewrite_s": 0.463625200005481,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17899910001142416,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15413290000287816,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6969836999924155,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4939025000057882,
+    "unaccounted_latency_s": 0.00016229999891947955,
+    "rewritten_query": "Which musician from Josey Scott and Ian Watkins was imprisoned, affecting his career with a rock band?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q53",
+  "query": "What race track in the midwest hosts a 500 mile race eavery May?",
+  "ground_truth": "Indianapolis Motor Speedway",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Indianapolis Motor Speedway in Indiana, United States, does not host a 500-mile race every May. However, it is known for hosting the Indianapolis 500, which is an annual event held on April 15th. The Auto Club 400 at the Auto Club Speedway in Fontana, California, hosts a 400-mile race every May, but this is not specifically mentioned as being in the Midwest or related to the 500-mile track.\n\nGiven the context provided and focusing strictly on the question's reference to the Midwest, the answer would be:\n\nThe race track in the Midwest that hosts an annual 500-mile race every May is the Indianapolis Motor Speedway (Indianapolis 500).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Subway 400: The Subway 400 was the second race of the NASCAR Winston Cup Series season until 2004, held a week after the Daytona 500.  This 400-mile (644\u00a0km) annual race was sponsored by Subway and was held at North Carolina Speedway (\"The Rock\") since 1966.  From 1966 to 1995, a 500-mile (805-km) race was held; the race was known as the Peach Blossom 500 (1966), the Carolina 500 (1967\u20131985), and the Goodwrench 500 (1986\u20131995).  In 1996, the race was shortened to its current distance of 400 miles; the 400 mile race was called the Goodwrench Service 400 (1996\u20131997), the GM Goodwrench Service Plus 400 (1998), the Dura Lube/Big K 400 (1999), the Dura Lube/Kmart 400 (2000), the Dura Lube 400 (2001), and the Subway 400 (2002\u20132004).",
+      "Indianapolis Motor Speedway: The Indianapolis Motor Speedway is an automobile racing circuit located in Speedway, Indiana, (an enclave suburb of Indianapolis) in the United States.  It is the home of the Indianapolis 500 and the Brickyard 400, and formerly the home of the United States Grand Prix.  It is located on the corner of 16th Street and Georgetown Road, approximately 6 mi west of Downtown Indianapolis.",
+      "Auto Club 400: The Auto Club 400 is a 400-mile (643.737\u00a0km) Monster Energy NASCAR Cup Series stock car race held at the Auto Club Speedway in Fontana, California.  Prior to 2005, the race was held in late April or early May, and until 2010, the race was run at a length of 500 miles.  When the NASCAR Realignment of 2005 was made, the race was moved to February and the week following the Daytona 500.  The February date stayed until the 2011 season when the date changed to March.  After being pleased with the results of the shortening of the track's former fall race date, the Pepsi Max 400, from 500 to 400 miles Auto Club Speedway decided to do the same thing to its spring race."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 585,
+    "generation_tokens": 144,
+    "generation_speed": 219.74366291322107,
+    "prompt_eval_speed": 30052.399054762147,
+    "generation_latency_s": 1.068271600001026,
+    "latency": 1.913006699993275,
+    "total_prompt_tokens": 661,
+    "total_generation_tokens": 161,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.6313091,
+    "stage_rewrite_s": 0.4966529000084847,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16700669999409,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18088149999675807,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0683373999927426,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.9130240999948,
+    "unaccounted_latency_s": 0.00014650000957772136,
+    "rewritten_query": "Which Midwest track hosts an annual 500-mile race on May 1st?",
+    "query_was_rewritten": true
+  }
+}

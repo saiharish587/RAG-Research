@@ -1,0 +1,42 @@
+{
+  "question_id": "Q485",
+  "query": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to what?",
+  "ground_truth": "four months in jail",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Kilpatrick resigned as mayor in September 2008 and was subsequently convicted of perjury and obstruction of justice, leading to his removal from office. Therefore, he was sentenced to four months in jail before being released on probation. The context provided does not specify the exact sentence given for his conviction.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Detroit mayoral election, 2009: The Detroit mayoral elections of 2009 took place on May 5, 2009, with a primary on February 24, 2009 to fill the vacancy created when Kwame Kilpatrick resigned as mayor.",
+      "Kwame Kilpatrick: Kwame Malik Kilpatrick (born June 8, 1970) is an American former politician, having served as a Democratic Michigan state representative and mayor of Detroit from 2002 to 2008.  He resigned as mayor in September 2008 after being convicted of perjury and obstruction of justice.  Kilpatrick was sentenced to four months in jail and was released on probation after serving 99 days.",
+      "Electoral history of Hansen Clarke: Hansen Clarke is a politician from the state of Michigan.  He served two-terms in the Michigan Senate, serving from 2003 thru 2011, representing the city of Detroit.  In 2005, Clarke unsuccessfully ran for Mayor of Detroit.  He served in the United States House of Representatives, representing Michigan's 13th congressional district, from 2011 to 2013."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 324,
+    "generation_tokens": 64,
+    "generation_speed": 307.3007946606487,
+    "prompt_eval_speed": 31419.705197827774,
+    "generation_latency_s": 0.5140018999954918,
+    "latency": 1.6989634999918053,
+    "total_prompt_tokens": 409,
+    "total_generation_tokens": 188,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4781556,
+    "stage_rewrite_s": 0.6942733000032604,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1583154999971157,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.33212219999404624,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5140956999966875,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.698988099989947,
+    "unaccounted_latency_s": 0.000182400006451644,
+    "rewritten_query": "Detroit's 2009 mayoral race occurred amidst a political void caused by a former judge's conviction, as evidenced by this specific detail.\n\nExplanation:\n- The original query is about the Detroit mayoral elections of 2009.\n- It mentions a politician who was sentenced to prison.\n- The optimized query focuses on the key element - the conviction and its impact on the race. \n- It rephrases \"what\" (the sentence) to be more concise and directly related to the core information provided in the original query, making it easier for search engines to understand and index.",
+    "query_was_rewritten": true
+  }
+}

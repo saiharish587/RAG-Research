@@ -1,0 +1,42 @@
+{
+  "question_id": "Q596",
+  "query": "Who was born first, Krzysztof Zanussi or Thom Andersen?",
+  "ground_truth": "Krzysztof Zanussi",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Krzysztof Zanussi was born first, with the birthdate given as 17 June 1939. Thom Andersen was born later, with the birthdate provided as 1943.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Krzysztof Zanussi: Krzysztof Zanussi, (born 17 June 1939) is a Polish film and theatre director, producer and screenwriter.  He is a professor of European film at the European Graduate School in Saas-Fee, Switzerland where he conducts a summer workshop.  He is also a professor at the Silesian University in Katowice.",
+      "Thom Andersen: Thom Andersen (born 1943, Chicago) is a filmmaker, film critic and teacher.",
+      "Krzysztof Penderecki: Krzysztof Eugeniusz Penderecki ( ; ] ; born 23 November 1933) is a Polish composer and conductor. \" The Guardian\" has called him Poland's greatest living composer.  Among his best known works are his \"Threnody to the Victims of Hiroshima\", \"Symphony No. 3\", \"St. Luke Passion\", \"Polish Requiem\", \"Anaklasis\", \"Utrenja\", four operas, eight symphonies and other orchestral pieces, a variety of instrumental concertos, choral settings of mainly religious texts, as well as chamber and instrumental works."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 322,
+    "generation_tokens": 42,
+    "generation_speed": 223.46368715083798,
+    "prompt_eval_speed": 31063.090874011188,
+    "generation_latency_s": 0.5648963999992702,
+    "latency": 1.3269169999985024,
+    "total_prompt_tokens": 398,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5287082000000001,
+    "stage_rewrite_s": 0.43901619999087416,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15632120000373106,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1664288000029046,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5649829000030877,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3269399999990128,
+    "unaccounted_latency_s": 0.0001917000045068562,
+    "rewritten_query": "Which birth year precedes that of Krzysztof Zanussi versus Thom Andersen?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q507",
+  "query": "Is Gasherbrum II or Nuptse closest to the tallest mountain in the world?",
+  "ground_truth": "It lies two kilometres WSW of Mount Everest.",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "To determine if Gasherbrum II (or Nuptse) is closest to the tallest mountain in the world, we need to compare their heights.\n\nGasherbrum II:\n- Height: 8035 meters above sea level\n\nNuptse (or Sherpa peak):\n- The Nepalese Himalayas, specifically Khumbu region.\n- It's located two kilometers WSW of Mount Everest.\n\nComparing these:\n- Gasherbrum II is significantly higher than Nuptse.\n\nTherefore, Gasherbrum II is not the closest to Nuptse in terms of height relative to Mount Everest.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gasherbrum II: Gasherbrum II (Urdu: \u200e ); surveyed as K4, is the 13th highest mountain in the world at 8035 m above sea level.  It is the third-highest peak of the Gasherbrum massif, and is located in the Karakoram, on the border between Gilgit\u2013Baltistan province, Pakistan, and Xinjiang, China.  The mountain was first climbed on July 7, 1956, by an Austrian expedition which included Fritz Moravec, Josef Larch, and Hans Willenpart.",
+      "Karakoram: The Karakoram, or Karakorum is a large mountain range spanning the borders of Pakistan, India, and China, with the northwest extremity of the range extending to Afghanistan and Tajikistan.  It is located in the regions of Gilgit\u2013Baltistan (Pakistan), Ladakh (India), and southern Xinjiang (China), and reaches the Wakhan Corridor (Afghanistan).  A part of the complex of ranges from the Hindu Kush to the Himalayan Range, it is one of the Greater Ranges of Asia.  The Karakoram is home to the four most closely located peaks over 8000m in height on earth: K2, the second highest peak in the world at 8611 m , Gasherbrum I, Broad Peak and Gasherbrum II.",
+      "Nuptse: Nuptse or Nubtse (Sherpa: \u0f53\u0f74\u0f56\u0f0b\u0f62\u0fa9\u0f7a\u0f0d \u0928\u0941\u092c\u091a\u0947, Wylie: Nub rtse) is a mountain in the Khumbu region of the Mahalangur Himal, in the Nepalese Himalayas.  It lies two kilometres WSW of Mount Everest.  Nubtse is Tibetan for \"west peak\", as it is the western segment of the Lhotse-Nubtse massif."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 507,
+    "generation_tokens": 136,
+    "generation_speed": 310.91897131543874,
+    "prompt_eval_speed": 38051.63614530171,
+    "generation_latency_s": 0.7502223000046797,
+    "latency": 1.7075471999996807,
+    "total_prompt_tokens": 587,
+    "total_generation_tokens": 227,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.491974,
+    "stage_rewrite_s": 0.592036600006395,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16050589999940712,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20455799999763258,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7502782999945339,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7075613000051817,
+    "unaccounted_latency_s": 0.00018309999722987413,
+    "rewritten_query": "Gasherbrum II (or Nuptse) ranks as the top-ranked mountain among the highest peaks in the world, with a height of 5,287 meters.\n\nThis rephrased version is more concise and directly conveys the same information as the original query, focusing on the key points: the mountain's name, its elevation (5,287m), and its ranking as the top-ranked peak.",
+    "query_was_rewritten": true
+  }
+}

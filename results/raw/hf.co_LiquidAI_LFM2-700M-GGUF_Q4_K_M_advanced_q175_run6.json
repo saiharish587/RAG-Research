@@ -1,0 +1,42 @@
+{
+  "question_id": "Q175",
+  "query": "Which of the city at the south of Shelly Beach, New South Wales is a local government area in the Hunter region of New South Wales, Australia?",
+  "ground_truth": "City of Newcastle",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The City of Newcastle is the local government area in the Hunter region of New South Wales, Australia, which includes Shelly Beach. However, based on the provided context, it specifically mentions that Shelly Beach is located \"south of Newcastle & 93 km north of Sydney.\" Therefore, the city at the south of Shelly Beach, New South Wales, that is a local government area in the Hunter region of New South Wales, Australia, is the City of Newcastle.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shelly Beach, New South Wales: Shelly Beach is a coastal suburb of the Central Coast region of New South Wales, Australia, located east of Tuggerah Lake and bordering the Pacific Ocean south of The Entrance.  It is part of the Central Coast Council local government area.  It is 66 km south of Newcastle & 93 km north of Sydney.  Shelly Beach is considered one of the most popular surfing beaches on the Central Coast.",
+      "Shelly Beach (Manly): Shelly Beach (also known as Shelley Beach ) is a beach located in Manly, a suburb of Sydney, New South Wales, Australia.  It is adjacent to North Head and Fairy Bower.  Shelly Beach is a western facing beach on the eastern coast of Australia.",
+      "City of Newcastle: The City of Newcastle is a local government area in the Hunter region of New South Wales, Australia.  The City of Newcastle incorporates much of the area of the Newcastle metropolitan area."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 287,
+    "generation_tokens": 96,
+    "generation_speed": 226.32008260683014,
+    "prompt_eval_speed": 23914.673777185235,
+    "generation_latency_s": 0.7959390000032727,
+    "latency": 1.7022824000014225,
+    "total_prompt_tokens": 377,
+    "total_generation_tokens": 139,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5936448999999999,
+    "stage_rewrite_s": 0.5999602999945637,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16445820000080857,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14164760000130627,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7960286000015913,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7023066999972798,
+    "unaccounted_latency_s": 0.00021290000586304814,
+    "rewritten_query": "Which southern city lies near Shelly Beach, NSW, within the Hunter region of New South Wales, Australia? \n\n\nThis rephrased query maintains the original meaning while being more concise and direct.",
+    "query_was_rewritten": true
+  }
+}

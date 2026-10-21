@@ -1,0 +1,42 @@
+{
+  "question_id": "Q411",
+  "query": "Which has the larger population, Shanghai or Hanggin Rear Banner?",
+  "ground_truth": "Shanghai",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Shanghai has the larger population compared to Hangguan Banner. According to the provided context, Shanghai is described as one of the four direct-controlled municipalities of China and the most populous city proper in the world with a population of more than 24 million as of 2014. On the other hand, Hangguan Banner is mentioned as an expressway connecting cities in Yunnan province, but it does not provide specific population figures for comparison. Therefore, based on the information given, Shanghai clearly has a larger population than Hangguan Banner.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shanghai: Shanghai is one of the four direct-controlled municipalities of China and the most populous city proper in the world with a population of more than 24 million as of 2014 .  It is a global financial centre and transport hub, with the world's busiest container port.  Located in the Yangtze River Delta, it sits on the south edge of the estuary of the Yangtze in the middle portion of the East China coast.  The municipality borders the provinces of Jiangsu and Zhejiang to the north, south and west, and is bounded to the east by the East China Sea.",
+      "Old City (Shanghai): The Old City of Shanghai (; Shanghainese: \"Z\u00e5nhae Loh Senshian\"), also formerly known as the Chinese city, is the traditional urban core of Shanghai, China.  Its boundary was formerly defined by a defensive wall.  The Old City was the county seat for the old county of Shanghai.  With the advent of foreign concessions in Shanghai, the Old City became just one part of Shanghai's urban core but continued for decades to be the seat of the Chinese authority in Shanghai.  Notable features include the City God Temple which is located in the center of the Old City and is connected to the Yuyuan Garden.  With the exception of two short sections, the walls were demolished in 1912, and a broad circular avenue built over the former wall and moat: the southern half was named the \"Zhonghua Road\" and the northern half the \"Minguo Road\" (together making up \"\"Zhonghua Minguo\"\", or \"Republic of China\" in Chinese).  (The northern half was renamed \"Renmin Road\" (\"People's Road\") in 1950 by the new Communist government of Shanghai).",
+      "G56 Hangzhou\u2013Ruili Expressway: The Hangzhou\u2013Ruili Expressway (), commonly referred to as the \"Hangrui Expressway\" () is an expressway in China that connects the cities of Hangzhou, Zhejiang, and Ruili, Yunnan, a city on the border with Burma.  When complete, it will be 2935 km in length."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 525,
+    "generation_tokens": 115,
+    "generation_speed": 227.54434146688936,
+    "prompt_eval_speed": 50509.90956320954,
+    "generation_latency_s": 0.8773606000031577,
+    "latency": 1.6169574999948964,
+    "total_prompt_tokens": 599,
+    "total_generation_tokens": 128,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.49058650000000004,
+    "stage_rewrite_s": 0.38159980000637006,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15531110001029447,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20247469999594614,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8774263999948744,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6169748999964213,
+    "unaccounted_latency_s": 0.0001638999965507537,
+    "rewritten_query": "Which city has the bigger population: Shanghai or Hangzhou?",
+    "query_was_rewritten": true
+  }
+}

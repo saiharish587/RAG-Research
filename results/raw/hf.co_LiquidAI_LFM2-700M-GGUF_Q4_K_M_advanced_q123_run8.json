@@ -1,0 +1,42 @@
+{
+  "question_id": "Q123",
+  "query": "What's the name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate?",
+  "ground_truth": "The Spiderwick Chronicles",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The fantasy film starring Sarah Bolger that features a New England family discovering magical creatures around their estate is \"Spiderwick Chronicles\" (2008). This film is based on Holly Black and Tony DiTerlizzi's book series and stars Sarah Bolger among other notable actors. The story takes place in the Spiderwick Estate in New England, where Jared Grace and his family encounter various magical creatures while exploring their field guide to faeries.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sarah Bolger: Sarah Lee Bolger (born 28 February 1991) is an Irish actress.  She is best known for her roles in the films \"In America\", \"Stormbreaker\", and \"The Spiderwick Chronicles\", as well as her award-winning role as Lady Mary Tudor in the TV series \"The Tudors\", and for guest starring as Princess Aurora in \"Once Upon a Time\".",
+      "The Spiderwick Chronicles (film): The Spiderwick Chronicles is a 2008 American fantasy adventure film based on the bestselling book series of the same name by Holly Black and Tony DiTerlizzi.  It was directed by Mark Waters and stars Freddie Highmore, Sarah Bolger, Mary-Louise Parker, Martin Short, Nick Nolte, and Seth Rogen.  Set in the Spiderwick Estate in New England, it follows the adventures of Jared Grace and his family as they discover a field guide to faeries, battle goblins, mole trolls and other magical creatures.",
+      "Magical creatures in Harry Potter: Magical creatures are a colourful aspect of the fictional wizarding world contained in the \"Harry Potter\" series by J. K. Rowling.  Throughout the seven books of the series, Harry and his friends come across many of these creatures on their adventures, as well as in the Care of Magical Creatures class at Hogwarts.  Rowling has also written \"Fantastic Beasts and Where to Find Them\", a guide to the magical beasts found in the series.  Many of these are derived from folklore, primarily Greek mythology, but also British and Scandinavian folklore.  Many of the legends surrounding mythical creatures are also incorporated in the books.  \"Children ... know that I didn't invent unicorns, but I've had to explain frequently that I didn't actually invent hippogriffs,\" Rowling told Stephen Fry in an interview for BBC Radio 4.  \"When I do use a creature that I know is a mythological entity, I like to find out as much as I can about it.  I might not use it, but to make it as consistent as I feel is good for my plot.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 532,
+    "generation_tokens": 91,
+    "generation_speed": 214.05116528513497,
+    "prompt_eval_speed": 20582.659496266493,
+    "generation_latency_s": 0.8231058000092162,
+    "latency": 2.0242941999895265,
+    "total_prompt_tokens": 617,
+    "total_generation_tokens": 177,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5770417000000001,
+    "stage_rewrite_s": 0.770205699998769,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1709463000006508,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.259836199998972,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8231726000085473,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.024311699991813,
+    "unaccounted_latency_s": 0.0001514999894425273,
+    "rewritten_query": "Fantasy Film with Sarah Bolger and Magical New England Family\n\nThis rephrased version maintains the key elements of the original query while making it more concise and search-friendly. It highlights the main actors, the setting (New England family), and the central plot point (magical creatures). This structure should help users quickly understand the core of the film they're looking for without needing to read the entire description.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q485",
+  "query": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to what?",
+  "ground_truth": "four months in jail",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by Kwame Kilpatrick, who was sentenced to four months in jail and released on probation after serving 99 days.\n\nSo, the answer is: Kwame Kilpatrick was sentenced to four months in jail and released on probation after serving 99 days.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Detroit mayoral election, 2009: The Detroit mayoral elections of 2009 took place on May 5, 2009, with a primary on February 24, 2009 to fill the vacancy created when Kwame Kilpatrick resigned as mayor.",
+      "Kwame Kilpatrick: Kwame Malik Kilpatrick (born June 8, 1970) is an American former politician, having served as a Democratic Michigan state representative and mayor of Detroit from 2002 to 2008.  He resigned as mayor in September 2008 after being convicted of perjury and obstruction of justice.  Kilpatrick was sentenced to four months in jail and was released on probation after serving 99 days.",
+      "Split sentence: In United States law, a split sentence is a sentence which the defendant serves up to half of his term of imprisonment outside of prison.  Martha Stewart received a split sentence.  The Bureau of Prisons general counsel has opined that when an offender has received a sentence of imprisonment, the Bureau of Prisons does not have general authority, either upon the recommendation of the sentencing judge or otherwise, to place such an offender in community confinement at the outset of his sentence or to transfer him from prison to community confinement at any time BOP chooses during the course of his sentence.  A split sentence is only available to defendants who fall into Zone C of the Federal Sentencing Table."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 375,
+    "generation_tokens": 74,
+    "generation_speed": 229.87077534791254,
+    "prompt_eval_speed": 31488.78999076329,
+    "generation_latency_s": 0.6767269999982091,
+    "latency": 1.3896096999960719,
+    "total_prompt_tokens": 460,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5147630000000001,
+    "stage_rewrite_s": 0.4533945000002859,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13004720000026282,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12922859999525826,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6767934000090463,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.389628899996751,
+    "unaccounted_latency_s": 0.00016589999722782522,
+    "rewritten_query": "Detroit's 2009 mayoral election filled the position left vacant after a convicted politician received a sentence",
+    "query_was_rewritten": true
+  }
+}

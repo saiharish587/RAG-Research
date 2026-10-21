@@ -1,0 +1,42 @@
+{
+  "question_id": "Q20",
+  "query": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+  "ground_truth": "Robert Erskine Childers DSC",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Robert Erskine Childers was not from England. He was born in Britain (specifically in Fenland) and had connections to the British literary world through his father's background as a Fenian revolutionary and his uncle being the fourth President of Ireland.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry Roth: Henry Roth (February 8, 1906 \u2013 October 13, 1995) was an American novelist and short story writer.",
+      "Samuel Roth: Samuel Roth (1893 \u2013 July 3, 1974) was an American publisher and writer.  He was the plaintiff in \"Roth v. United States\" (1957), which was a key Supreme Court ruling on freedom of sexual expression.  The minority opinion, regarding redeeming social value as a criterion in obscenity prosecutions, became a template for the liberalizing First Amendment decisions of the 1960s.",
+      "Robert Erskine Childers: Robert Erskine Childers DSC (25 June 1870 \u2013 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\".  He was executed by the authorities of the nascent Irish Free State during the Irish Civil War.  He was the son of British Orientalist scholar Robert Caesar Childers; the cousin of Hugh Childers and Robert Barton; and the father of the fourth President of Ireland, Erskine Hamilton Childers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 335,
+    "generation_tokens": 52,
+    "generation_speed": 316.7390496610283,
+    "prompt_eval_speed": 29918.7282307761,
+    "generation_latency_s": 0.44198359998699743,
+    "latency": 1.5032864999957383,
+    "total_prompt_tokens": 410,
+    "total_generation_tokens": 175,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4604304,
+    "stage_rewrite_s": 0.6913210000057006,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12552950000099372,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24428880000778008,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4420324999955483,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.503299000003608,
+    "unaccounted_latency_s": 0.00012769998284056783,
+    "rewritten_query": "To optimize the original user query for search clarity and relevance, consider this rephrased version:\n\n**\"Search for English authors by name: Henry Roth (Robert Erskine Childers)\".**\n\nThis version:\n- Clearly specifies the author's nationality (Henry Roth) as an alternative to \"Which writer was from England\".\n- Uses a more direct search phrase (\"Search for\") that is easier to understand.\n- Emphasizes the distinction between the two authors by using \"by name\" instead of just \"from England\".\n\nThis optimized query should help users find the intended information more efficiently.",
+    "query_was_rewritten": true
+  }
+}

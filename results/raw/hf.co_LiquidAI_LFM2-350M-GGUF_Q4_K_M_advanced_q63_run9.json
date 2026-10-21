@@ -1,0 +1,42 @@
+{
+  "question_id": "Q63",
+  "query": "Who was born earlier, Emma Bull or Virginia Woolf?",
+  "ground_truth": "Adeline Virginia Woolf",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "To answer this question, we need to compare the birth years mentioned in the context. \n\nThe context states that \"Optimize (magazine): Optimize was an American monthly business magazine published between November 2001 and June 2007.\" This indicates that Emma Bull was born before the publication date of the magazine.\n\nOn the other hand, Virginia Woolf was born on January 22, 1882.\n\nComparing these dates:\n- Emma Bull: Born in 1953\n- The magazine's publication period: 2001 to 2007 (which is earlier than her birth year)\n\nTherefore, Emma Bull was not born earlier than Virginia Woolf.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Optimize (magazine): Optimize was an American monthly business magazine published between November 2001 and June 2007.",
+      "Me! I'm Afraid of Virginia Woolf: Me!  I'm Afraid of Virginia Woolf is a 1978 television play by Alan Bennett, produced by London Weekend Television and directed by Stephen Frears.  The title of the play is a parody of \"Who's Afraid of Virginia Woolf? \", which in turn plays on the title of the Disney song \"Who's Afraid of the Big Bad Wolf? \".",
+      "Jane de Gay: Rev Dr \"Jane de Gay\" is a British academic and lecturer who has earned a reputation as an expert on the life and works of Virginia Woolf.  Dr de Gay's works on Woolf include a series of articles and a 2006 book, \"Virginia Woolf's Novels and the Literary Past\", published by Edinburgh University Press.  Her work has been recognised by the Virginia Woolf Society of Great Britain.  She has co-edited four books on gender and theatre, including \"Languages of Theatre Shaped by Women\" (with Lizbeth Goodman)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 308,
+    "generation_tokens": 140,
+    "generation_speed": 327.62946044108287,
+    "prompt_eval_speed": 37648.21386727953,
+    "generation_latency_s": 0.6974019999906886,
+    "latency": 1.6984335000015562,
+    "total_prompt_tokens": 379,
+    "total_generation_tokens": 255,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4022421,
+    "stage_rewrite_s": 0.6107195999938995,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13584000000264496,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2542715000017779,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6974881999922218,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6984545000013895,
+    "unaccounted_latency_s": 0.00013620001845993102,
+    "rewritten_query": "To optimize for search clarity and SEO, consider this rephrased version:\n\n**\"Who was born earlier, Emma Bull or Virginia Woolf?**\n\nRephrased Query:\n- Emphasizes the birth year comparison.\n- Uses \"who was born earlier\" to directly state the question.\n- Specifies both names for clarity.\"\n- Avoids unnecessary words like \"earlier\" and \"or\".\n- Structured in a more natural, readable format.\"\n\nThis version is more concise and easier for users to understand while maintaining the core inquiry.",
+    "query_was_rewritten": true
+  }
+}

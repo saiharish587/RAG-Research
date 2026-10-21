@@ -1,0 +1,49 @@
+{
+  "question_id": "Q325",
+  "query": "This work of literature _______ , known by its Greek title Oedipus Tyrannus was argued by Sigmund Freud to be one of the greatest works of world literature in his 1928 article. ",
+  "ground_truth": "Oedipus Rex",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "This work of literature, known as \"Oedipus Tyrannus,\" is argued by Sigmund Freud to be one of the greatest works of world literature in his 1928 article. The answer is: **Parricide**.\n\nThe context provided states that Dostoevsky and Parricide discusses parricide, which in Dostoevsky's case is linked to his epilepsy. This connection suggests that \"Oedipus Tyrannus,\" a play by Sophocles (whose name is often translated as \"Tyrannus\" or \"Tyrannous\"), is the subject of Freud's argument about parricide in his 1928 article.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dostoevsky and Parricide: \"Dostoevsky and Parricide\" (German: \"Dostojewski und die Vatert\u00f6tung\" ) is an introductory article contributed by Sigmund Freud to a scholarly collection on \"The Brothers Karamazov\" by Fyodor Dostoyevsky.  The collection was published in 1928.  The article argues that it is no coincidence that some of the greatest works of world literature - including \"Oedipus Rex\", \"Hamlet\", as well as \"The Brothers Karamazov\" \u2013 all concern parricide, which in Dostoevsky's case Freud links to his epilepsy.",
+      "Critical approaches to Hamlet: From its premiere at the turn of the 17th century, \"Hamlet\" has remained Shakespeare's best-known, most-imitated, and most-analyzed play.  The character of Hamlet played a critical role in Sigmund Freud's explanation of the Oedipus complex and thus influenced modern psychology.  Even within the narrower field of literature, the play's influence has been strong.  As Foakes writes, \"No other character's name in Shakespeare's plays, and few in literature, have come to embody an attitude to life [...] and been converted into a noun in this way.\"",
+      "The Interpretation of Dreams: The Interpretation of Dreams (German: \"Die Traumdeutung\" ) is a 1899 book by psychoanalyst Sigmund Freud, in which the author introduces his theory of the unconscious with respect to dream interpretation, and discusses what would later become the theory of the Oedipus complex.  Freud revised the book at least eight times and, in the third edition, added an extensive section which treated dream symbolism very literally, following the influence of Wilhelm Stekel.  Freud said of this work, \"Insight such as this falls to one's lot but once in a lifetime.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 497,
+    "generation_tokens": 142,
+    "generation_speed": 227.7414781384219,
+    "prompt_eval_speed": 47550.707998469195,
+    "generation_latency_s": 0.9971908000006806,
+    "latency": 2.1917704999796115,
+    "total_prompt_tokens": 682,
+    "total_generation_tokens": 202,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.823002,
+    "stage_route_s": 0.4038179999915883,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6483375999960117,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.1410551000153646,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 9.620000491850078e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.9972866000025533,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.1918097999878228,
+    "unaccounted_latency_s": 0.0012180999910924584,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "This work of literature is known as Oedipus Tyrannus and was argued by Sigmund Freud in his 1928 article.",
+      "This work of literature, also known as Oedipus Tyrannus, was analyzed by Sigmund Freud in his 1928 article."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

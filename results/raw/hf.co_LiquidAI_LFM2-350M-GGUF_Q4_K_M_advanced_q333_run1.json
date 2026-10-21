@@ -1,0 +1,42 @@
+{
+  "question_id": "Q333",
+  "query": "The Ingerophrynus gollum is named after a character in a book that sold how many copies?",
+  "ground_truth": "150 million copies",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Ingerophrynus gollum was named after the character Gollum created by J.R.R. Tolkien.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ingerophrynus: Ingerophrynus is a genus of true toads with 12 species.  These species distributed in southern Yunnan and Indochina; peninsular Thailand and Malaya to Sumatra, Borneo, Java, Nias Island, Sulawesi, and the Philippines.  This genus was established after a major taxonomical revision of frogs.  Ten of the species in this genus were formerly considered species of the genus \"Bufo\".  In 2007 a new species, \"Ingerophrynus gollum\", was added to this genus.  This species is named after the character Gollum created by J. R. R. Tolkien.",
+      "Harry Potter in translation: The \"Harry Potter\" series of fantasy novels by J. K. Rowling have become some of the most widely read works of children's literature in history, with readers of all ages and in many countries.  In April 2011 worldwide sales of Harry Potter books were estimated to be about 450 million copies.  Oddly enough, it has been difficult to accurately determine with any degree of certainty exactly how many languages Harry Potter has been translated into.  As best as can be determined (as of 2017), The Philosopher's Stone has been officially translated from the original English into 73 other languages.  A 74th language, Scots, was announced on 2017-06-28 and it is expected to be available in October, 2017.  Both Bloomsbury's and J.K. Rowling's sites have recently stated that the books have been translated into 79 languages (80 with the 2017-06-28 announcement of Scots); however, it has been argued that number actually represents the number of authorized translations (of The Philosopher's Stone) plus the original English.  The number of authorized translations is not equal to the number of languages because there have been multiple authorized translations into the same language.  Specifically, there have been two separate translations into each of: Mandarin Chinese, Portuguese, Romanian, Russian and Turkish (5 languages).",
+      "Ingerophrynus gollum: Ingerophrynus gollum (Gollum's toad) is a species of true toad.  It has only been recorded from Endau-Rompin National Park, Johor, in closed-canopy lowland forests in the early evening following brief periods of afternoon precipitation.  It is called \"gollum\" with reference of the eponymous character of The Lord of the Rings by J. R. R. Tolkien."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 615,
+    "generation_tokens": 27,
+    "generation_speed": 300.9228300120369,
+    "prompt_eval_speed": 12657.706793998395,
+    "generation_latency_s": 0.40217220000340603,
+    "latency": 1.3515740000002552,
+    "total_prompt_tokens": 697,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4005227,
+    "stage_rewrite_s": 0.5244754000013927,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12407019999227487,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.30068559999926947,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.40222659999562893,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3515870999981416,
+    "unaccounted_latency_s": 0.00012990001414436847,
+    "rewritten_query": "Given the user query \"The Ingerophrynus gollum is named after a character from a book that sold X number of copies\", an optimized search-friendly rephrased version would be:\n\n**\"Ingerophrynus gollum's name inspired by 'Harry Potter' sold Y million copies.\"** \n\nThis version maintains the core information while being more concise and easier to read.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q362",
+  "query": "Scott Sandelin grew up in a town in what Minnesota county?",
+  "ground_truth": "Saint Louis County",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Scott Sandelin grew up in Hibbing, Minnesota, which is located in Ramsey County.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Sandelin: Scott Alan Sandelin (born August 8, 1964) is an American former professional ice hockey player.  He is currently the head coach of the Minnesota-Duluth Bulldogs men's ice hockey team.  In 2011, he became the first coach in Bulldog history to lead them to a national title.  It was a 3\u20132 overtime game against the University of Michigan at the Xcel Energy Center in Saint Paul, Minnesota.  He grew up in Hibbing, Minnesota where he went on to be drafted in the second round by the Montreal Canadiens (40th overall) and play collegiate hockey for the North Dakota Fighting Sioux.",
+      "History of Saint Paul, Minnesota: Saint Paul is the second largest city in the state of Minnesota in the United States, the county seat of Ramsey County, and the state capital of Minnesota.  The origin and growth of the city was spurred by the proximity of Fort Snelling, the first major United States military presence in the area, and by its location on the Upper Mississippi River, with the northernmost natural navigable port on the mighty river.",
+      "Minneapolis: Minneapolis ( ) is the county seat of Hennepin County, and the larger of the Twin Cities, the 16th-largest metropolitan area in the United States.  As of 2016, Minneapolis is the largest city in the state of Minnesota and 46th-largest in the United States, with an estimated population of 413,651.  The Twin Cities metropolitan area is the third largest in the Midwest with about 3.5 million people.  Minneapolis and Saint Paul anchor the second-largest economic center in the Midwest, after Chicago."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 419,
+    "generation_tokens": 21,
+    "generation_speed": 228.63115262762517,
+    "prompt_eval_speed": 37257.69162368842,
+    "generation_latency_s": 0.42152079999505077,
+    "latency": 1.1728328000026522,
+    "total_prompt_tokens": 491,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5208547,
+    "stage_rewrite_s": 0.4374109999916982,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14646010000433307,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16723980000824668,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.42158110000309534,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1728510999964783,
+    "unaccounted_latency_s": 0.0001598999951966107,
+    "rewritten_query": "Where did Scott Sandelin grow up? Specifically, which Minnesota county was his hometown?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q287",
+  "query": "Other than racing, what sport does the 1998 champion of the Toyota GRand Prix practice?",
+  "ground_truth": "paracyclist",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The text states that Alex Zanardi won the race but was a lap down at one point. It does not mention any other sport he practiced besides racing. Therefore, based on the given context, we can infer that the 1998 Toyota Grand Prix champion also practiced motorized vehicle racing, specifically motocross.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1998 Toyota Grand Prix of Long Beach: The 1998 Toyota Grand Prix of Long Beach was the third round of the 1998 CART FedEx Champ Car World Series season, held on April 5, 1998, on the streets of Long Beach, California.  Alex Zanardi won the race, even though he was a lap down at one point.",
+      "Motorsport: Motorsport or motorsports is a global term used to encompass the group of competitive sporting events which primarily involve the use of motorised vehicles, whether for racing or non-racing competition.  The terminology can also be used to describe forms of competition of two-wheeled motorised vehicles under the banner of motorcycle racing, and includes off-road racing such as motocross.",
+      "Formula One World Champions: A Formula One World Champion is a racing driver or automobile constructor which has been designated such a title by the governing body of Formula One - the FIA.  Every Formula One World Champion since the inaugural World Drivers' Championship in 1950 and the inaugural World Constructors' Championship in 1958 has been awarded the title by accumulating the required points during the course of the F1 season of that particular year, by participating in relevant Grands Prix."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 329,
+    "generation_tokens": 64,
+    "generation_speed": 314.7128245476003,
+    "prompt_eval_speed": 32571.03257103257,
+    "generation_latency_s": 0.4631348999973852,
+    "latency": 1.2437006999971345,
+    "total_prompt_tokens": 408,
+    "total_generation_tokens": 128,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.41727990000000004,
+    "stage_rewrite_s": 0.4610882999986643,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.11114309998811223,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2081762999878265,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.46318439999595284,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2437132000050042,
+    "unaccounted_latency_s": 0.00012170002446509898,
+    "rewritten_query": "Toyota GRP 1998 Grand Prix practice athlete other than racing\"\n\nThis rephrased version maintains the core intent while using more concise and natural-sounding language. It clearly conveys that the 1998 champion was involved in practice, but specifically excludes racing as the sole sport.",
+    "query_was_rewritten": true
+  }
+}

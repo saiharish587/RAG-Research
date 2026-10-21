@@ -1,0 +1,36 @@
+{
+  "question_id": "Q49",
+  "query": "Are Ferocactus and Silene both types of plant?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, they are not both types of plants. The context provided describes two different genera within the family Caryophyllaceae, which includes plants like Silene conoidea (a type of weed) and Ferocactus, but does not explicitly state that they are both types of plants in general.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Silene: Silene is a genus of flowering plants in the family Caryophyllaceae.  Containing approximately 700 species, it is the largest genus in the family.  Common names include campion (which is shared with the related genus \"Lychnis\") and catchfly.  Many \"Silene\" species are widely distributed, particularly in the northern hemisphere.",
+      "Ferocactus: Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers.  There are about 30 species included in the genus.  They are found in the southwestern United States and northwestern Mexico.",
+      "Silene conoidea: Silene conoidea is a species of flowering plant in the pink family known by the common names weed silene and large sand catchfly.  It is native to Eurasia, and it is known in other parts of the world, such as western North America, as a weed.  It is an annual herb growing up to a meter in height with a hairy, partially glandular stem.  The lance-shaped leaves are up to 12 centimeters long near the base of the plant and smaller farther up.  The flower is enclosed in an inflated, hairy, glandular calyx of fused sepals which is ridged with many veins.  It is open at the top, revealing five bright pink petals."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 61,
+    "generation_speed": 303.229141811819,
+    "prompt_eval_speed": 37120.23962344886,
+    "generation_latency_s": 0.5400201000011293,
+    "latency": 0.589062200000626,
+    "total_prompt_tokens": 347,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.3148531,
+    "stage_retrieve_s": 0.04891409999981988,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.5400712999980897,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5890726999932667,
+    "unaccounted_latency_s": 8.820000221021473e-05
+  }
+}

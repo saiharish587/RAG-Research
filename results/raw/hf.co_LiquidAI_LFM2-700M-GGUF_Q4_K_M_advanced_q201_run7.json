@@ -1,0 +1,42 @@
+{
+  "question_id": "Q201",
+  "query": "The 2000 British film Snatch was later adapted into a television series for what streaming service?",
+  "ground_truth": "Crackle",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The 2000 British film Snatch was later adapted into a television series for Crackle on March 16, 2017.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Snatch (film): Snatch (stylised as snatch.)  is a 2000 British crime comedy film written and directed by Guy Ritchie, featuring an ensemble cast.  Set in the London criminal underworld, the film contains two intertwined plots: one dealing with the search for a stolen diamond, the other with a small-time boxing promoter (Jason Statham) who finds himself under the thumb of a ruthless gangster (Alan Ford) who is ready and willing to have his subordinates carry out severe and sadistic acts of violence.",
+      "Snatch (TV series): Snatch is a British/American television series based on the film of the same name, which debuted on Crackle on 16 March 2017.  The show has been renewed for a second season.",
+      "Shameless (U.S. TV series): Shameless is an American comedy-drama television series which airs on Showtime.  It is the remake of the British series of the same name.  Set in Chicago, the series is filmed in Los Angeles, with the exterior scenes shot in Chicago."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 304,
+    "generation_tokens": 29,
+    "generation_speed": 221.29465001106473,
+    "prompt_eval_speed": 28817.89743103612,
+    "generation_latency_s": 0.46412509999936447,
+    "latency": 1.4444325000076788,
+    "total_prompt_tokens": 383,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5203237000000001,
+    "stage_rewrite_s": 0.6218716999865137,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16712879999249708,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1910080000088783,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4642681999976048,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4444574000081047,
+    "unaccounted_latency_s": 0.00018190001719631255,
+    "rewritten_query": "What streaming service aired the 2000 British film \"Snatch\" remade as a TV series?\n\nThis rephrased query maintains the essential information while making it more concise and search-friendly. It specifies the original film, the adaptation, and the platform for easier identification.",
+    "query_was_rewritten": true
+  }
+}

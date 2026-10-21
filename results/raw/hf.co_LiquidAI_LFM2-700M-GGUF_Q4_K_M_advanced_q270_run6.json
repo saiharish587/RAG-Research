@@ -1,0 +1,42 @@
+{
+  "question_id": "Q270",
+  "query": "Which composer created Night Ferry first performed in 2012 at Symphony Center in Chicago?",
+  "ground_truth": "Anna Clyne",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Anna Clyne created Night Ferry, which was first performed in 2012 at Symphony Center in Chicago by the Chicago Symphony Orchestra under conductor Riccardo Muti.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Night Ferry (composition): Night Ferry is an orchestral composition in one movement by the British-born composer Anna Clyne.  The work was commissioned by the Chicago Symphony Orchestra, for which Clyne was then composer-in-residence.  It was first performed February 9, 2012 at Symphony Center, Chicago by the Chicago Symphony Orchestra under conductor Riccardo Muti.",
+      "Alternative Energy (composition): Alternative Energy is a symphony for electronica and orchestra in four movements by the American composer Mason Bates.  The work was commissioned by the Chicago Symphony Orchestra, for whom Bates was then composer-in-residence.  It was premiered by the orchestra under conductor Riccardo Muti at Symphony Center in Chicago, February 2, 2012.",
+      "Symphony Center: Symphony Center is a music complex located at 220 South Michigan Avenue in the Loop area of Chicago, Illinois.  Home to the Chicago Symphony Orchestra; Chicago Symphony Chorus; Civic Orchestra of Chicago; and the Institute for Learning, Access, and Training; Symphony Center includes the 2,522-seat Orchestra Hall, which dates from 1904; Buntrock Hall, a rehearsal and performance space; Grainger Ballroom, an event space overlooking Michigan Avenue and the Art Institute of Chicago; a public multi-story rotunda; tesori restaurant; and administrative offices.  In June 1993, plans to significantly renovate and expand Orchestra Hall were approved and the $110 million project resulting in Symphony Center began in 1995 and was completed in 1997."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 392,
+    "generation_tokens": 34,
+    "generation_speed": 226.31964321373894,
+    "prompt_eval_speed": 36584.22771815212,
+    "generation_latency_s": 0.5016092000005301,
+    "latency": 1.4171897999913199,
+    "total_prompt_tokens": 468,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5551967,
+    "stage_rewrite_s": 0.45531130000017583,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15675340000598226,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3032913999923039,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5016939000051934,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4172158000001218,
+    "unaccounted_latency_s": 0.0001669999910518527,
+    "rewritten_query": "Who composed \"Night Ferry\" and premiered it at the Symphony Center in Chicago in 2012?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q42",
+  "query": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+  "ground_truth": "Mumbai",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The company that Sachin Warrier worked for as a software engineer, which was founded in Kochi and later renamed Tripcombi, is headquartered in Kochi.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sachin Warrier: Sachin Warrier is a playback singer and composer in the Malayalam cinema industry from Kerala.  He became notable with the song \"Muthuchippi Poloru\" from the film Thattathin Marayathu.  He made his debut with the movie Malarvaadi Arts Club.  He was working as a software engineer in Tata Consultancy Services in Kochi.  Later he resigned from the job to concentrate more on music.  His latest work is as a composer for the movie Aanandam.",
+      "Tripcombi: Tripcombi, founded in 2012, as Tripdelta, is an online startup.  Free for users, it is a flight search engine that enables travelers to find airfares globally from different online travel agencies and airlines.  It does this by using hidden flight routing and hidden city ticketing techniques.  Tripdelta's tactics include combining two separate ticket bookings, searching airfares on low-cost carriers, and booking passengers in the airports close to their place of departure and their intended destination.  In March 2015, Tripdelta took part in the third batch of the Microsoft Ventures Accelerator in Berlin.  The company is based in Cologne, Germany and was recently voted as one of \"Germany's Top 25 Hottest Young Companies\" by the newspaper Horizont.",
+      "Sachin Bansal: Sachin Bansal (born 5 August 1981) is an Indian Software engineer and Internet entrepreneur known for co-founding India's e-commerce platform Flipkart.  Sachin is from Chandigarh and is an engineering graduate from Indian Institute of Technology Delhi."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 421,
+    "generation_tokens": 36,
+    "generation_speed": 210.32091466228886,
+    "prompt_eval_speed": 31178.25668369992,
+    "generation_latency_s": 0.5440696000005119,
+    "latency": 1.5158214999974007,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5122607,
+    "stage_rewrite_s": 0.5531114999903366,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16640470000857022,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2520000000076834,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5441610999987461,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.515908599991235,
+    "unaccounted_latency_s": 0.00023249999503605068,
+    "rewritten_query": "Where does the software engineering team led by Sachin Warrier, based in the same location, currently reside? \n\n\nThis rephrased query maintains the core information while making it more concise and natural-sounding for search engines.",
+    "query_was_rewritten": true
+  }
+}

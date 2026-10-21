@@ -1,0 +1,42 @@
+{
+  "question_id": "Q303",
+  "query": "What is the birthday of the actress who was the Duchess in \"The Revengers Tragedy\"?",
+  "ground_truth": "23 November 1946",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "To answer this question, we need to look at the information provided about Katharine Hepburn's birthdays. The context states that she was born on May 12, 1907.\n\nTherefore, the birthday of the actress who played the Duchess in \"The Revengers Tragedy\" is May 12, 1907.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sheila Hancock: Sheila Cameron Hancock, CBE (born 22 February 1933) is an English actress and author.  Hancock trained at the Royal Academy of Dramatic Art before starting her career in repertory theatre.  Hancock went on to perform in plays and musicals in London, and her Broadway debut in \"Entertaining Mr Sloane.\"  (1966) earned her a Tony Award nomination for Best Lead Actress in Play.  She won a Laurence Olivier Award for Best Performance in a Supporting Role in a Musical for her role in \"Cabaret\" (2007) and was nominated at the Laurence Olivier Awards four other times for her work in \"\" (1980), \"The Winter's Tale\" (1982), \"Prin\" (1989) and \"Sister Act\" (2010).",
+      "Katharine Hepburn: Katharine Houghton Hepburn (May 12, 1907\u00a0\u2013 June 29, 2003) was an American actress.  Known for her fierce independence and spirited personality, Hepburn was a leading lady in Hollywood for more than 60 years.  She appeared in a range of genres, from screwball comedy to literary drama, and she received four Academy Awards\u2014a record for any performer\u2014for Best Actress.  In 1999, Hepburn was named by the American Film Institute as the greatest female star of Classic Hollywood Cinema.",
+      "Revengers Tragedy: Revengers Tragedy is a film adaptation of the 1606 play \"The Revenger's Tragedy\" (attributed to Thomas Middleton in the credits, following the current scholarly consensus).  It was directed by Alex Cox and adapted for the screen by Cox's fellow Liverpudlian, Frank Cottrell Boyce.  The film stars Christopher Eccleston as the revenge-obsessed Vindice, with Derek Jacobi as the evil Duke, Eddie Izzard as his lecherous son Lussurioso, Diana Quick as the Duchess, Andrew Schofield as Vindice's brother Carlo (a version of the play's Hippolito), Carla Henry as his virtuous sister Castiza, and Marc Warren and Justin Salinger as the Duchess's sons Supervacuo and Ambitioso."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 545,
+    "generation_tokens": 69,
+    "generation_speed": 311.22718231147076,
+    "prompt_eval_speed": 54331.57212640814,
+    "generation_latency_s": 0.49630440000328235,
+    "latency": 1.8397095999971498,
+    "total_prompt_tokens": 625,
+    "total_generation_tokens": 254,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4051057,
+    "stage_rewrite_s": 0.8322159999952419,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13472089999413583,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.37627019999490585,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4963745999993989,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.83973189999233,
+    "unaccounted_latency_s": 0.00015090001397766173,
+    "rewritten_query": "To find the birthdate of the actress who played the Duchess in \"The Revengers Tragedy\", search for her name and look up the relevant film's metadata.\n\n**Key Points:**\n\n* **Focus on Key Information:** Emphasize the actress's name (Duchess) and the specific role (Birthday).\n* **Concise Language:** Use shorter, punchier phrasing.\n* **Specificity:**  \"Tragedy\" implies a dramatic film context, so it's helpful to be precise.\n\n**Example:**\n\nOriginal: \"What is the birthday of the actress who was the Duchess in 'The Revengers Tragedy'?\"\n\nOptimized: \"Duchess birthdate for 'The Revengers Tragedy': [Insert specific date here]\" \n\n\nThis rephrased query directly addresses the user's need while providing a clear and concise searchable link.",
+    "query_was_rewritten": true
+  }
+}

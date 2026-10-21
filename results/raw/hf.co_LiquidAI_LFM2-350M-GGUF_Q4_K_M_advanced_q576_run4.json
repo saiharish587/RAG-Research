@@ -1,0 +1,42 @@
+{
+  "question_id": "Q576",
+  "query": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+  "ground_truth": "IK Start",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "IK Start won the 2011 La Manga Cup. The specific match result mentioned is that Viking beat Start on goal differential after both clubs finished with identical records of two wins and one draw.\n\nTo break it down:\n- **Viking** defeated **Start**.\n- The score was tied at 2-2.\n- The difference in goals was 1 (starting point for Viking's win).\n\nThis indicates that the final score was 1-1, with Viking securing victory by conceding just one goal.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2011 La Manga Cup: The 2011 La Manga Cup was an exhibition international club football (soccer) competition featuring football club teams from Europe, which was held in February 2011.  All matches were played in La Manga Stadium in La Manga, Spain.  This was the fourteenth La Manga Cup.  The tournament was won by Viking, who beat Start on goal differential after both clubs finished with identical records of two wins and one draw.",
+      "Sarpsborg 08 FF: Sarpsborg 08 Fotballforening, commonly known as Sarpsborg 08 or simply Sarpsborg, is a Norwegian football club based in Sarpsborg, currently playing in Tippeligaen.  Sarpsborg 08 played in Adeccoligaen from 2005 to 2010.  In 2010, the club was promoted to the Tippeligaen, the top league in Norway, but finished last and was relegated back to Adeccoligaen in 2011.  In 2012, they were promoted again.  They play their home games at Sarpsborg Stadion.",
+      "IK Start: IK Start is a Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012.  The club was founded on 19 September 1905.  The coach is Steinar Pedersen.  The team plays in yellow jerseys, black shorts and yellow socks at home, and blue jerseys, white shorts and blue socks away."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 436,
+    "generation_tokens": 108,
+    "generation_speed": 310.0392429301005,
+    "prompt_eval_speed": 18320.86729977309,
+    "generation_latency_s": 0.6781895000021905,
+    "latency": 1.6232993000012357,
+    "total_prompt_tokens": 544,
+    "total_generation_tokens": 191,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4913497,
+    "stage_rewrite_s": 0.6072310000017751,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1573766999936197,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18027579999761656,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6782552999939071,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6233167999889702,
+    "unaccounted_latency_s": 0.00017880000814329833,
+    "rewritten_query": "2011 La Manga Cup winner Viking defeated Kristiansand FC (Norwegian top flight team) from Kristiansand, now in Tippeligaen promotion since Adeccoligaen status.\n\nThis rephrased version maintains the key information while making it more concise and search-friendly. It highlights the winning team's name, victory type, winner's club, and current league status clearly.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q91",
+  "query": "Andrew Jaspan was the co-founder of what not-for-profit media outlet?",
+  "ground_truth": "The Conversation",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Andrew Jaspan was the co-founder of \"The Conversation\", an independent not-for-profit website of analysis and news from the university and research sector.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Andrew Jaspan: Andrew Jaspan, (b. 20 April 1952) British-Australian journalist, the co-founder of \"The Conversation\", an independent not-for-profit website of analysis and news from the university and research sector\u200a and its Editor-in-Chief from The Conversation's launch in March 2011 until March 2017.",
+      "News Corp: News Corporation (officially referred to as News Corp; trading as News Corp) is an American multinational mass media company, formed as a spin-off of the former News Corporation (as founded by Rupert Murdoch in 1979) focusing on newspapers and publishing.  It is one of two companies which succeeded the former News Corporation, alongside 21st Century Fox\u2014which consists of the old News Corporation's broadcasting and media properties, such as Fox Entertainment Group.  The spin out was structured so that 21st Century Fox would be the legal successor and continuation of the old News Corporation, with the new News Corp being an entirely new company formed by a stock split.",
+      "Center for Organizational Research and Education: The Center for Organizational Research and Education (CORE), formerly the Center for Consumer Freedom (CCF) and prior to that the Guest Choice Network, is an American non-profit entity founded by Richard Berman that lobbies on behalf of the fast food, meat, alcohol and tobacco industries.  It describes itself as \"dedicated to protecting consumer choices and promoting common sense.\"  Experts on non-profit law have questioned the validity of the group's non-profit status in \"The Chronicle of Philanthropy\" and other publications, while commentators from Rachel Maddow to Michael Pollan have treated the group as an entity that specializes in astroturfing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 429,
+    "generation_tokens": 32,
+    "generation_speed": 215.03642179394134,
+    "prompt_eval_speed": 37226.657410621316,
+    "generation_latency_s": 0.4772896999929799,
+    "latency": 1.2509078000002773,
+    "total_prompt_tokens": 504,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5335579,
+    "stage_rewrite_s": 0.4304129000083776,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16774879999866243,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17517360000056215,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.47737579999375157,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2509327000007033,
+    "unaccounted_latency_s": 0.00022259999241214246,
+    "rewritten_query": "Who founded the non-profit media organization Andrew Jaspan?",
+    "query_was_rewritten": true
+  }
+}

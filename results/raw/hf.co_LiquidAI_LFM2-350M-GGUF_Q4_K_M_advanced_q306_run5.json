@@ -1,0 +1,42 @@
+{
+  "question_id": "Q306",
+  "query": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+  "ground_truth": "1901",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The 1984 film \"Marlene\" is a documentary about Marlene Dietrich, who was born on December 27, 1901.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marlene (1984 film): Marlene, also known in Germany as Marlene Dietrich - Portr\u00e4t eines Mythos, is a 1984 documentary film made by Maximilian Schell about the legendary film star Marlene Dietrich.  It was made by Bayerischer Rundfunk (BR) and OKO-Film and released by Futura Film, Munich and Alive Films, (USA).",
+      "Marlene Dietrich: Marie Magdalene \"Marlene\" Dietrich ( , ] ; 27 December 1901 \u2013 6 May 1992) was a German actress and singer who held both German and American citizenship.  Throughout her unusually long career, which spanned from the 1910s to the 1980s, she maintained popularity by continually reinventing herself.",
+      "Marlene Favela: Marlene Favela (born Silvia Marlene Favela Meraz on August 5, 1976 in Santiago Papasquiaro, Durango, Mexico) is a Mexican actress.  In Mexican television, she is best known as Esmeralda in the TV show \"Zorro, La Espada y la Rosa\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 309,
+    "generation_tokens": 31,
+    "generation_speed": 318.16082516549494,
+    "prompt_eval_speed": 34064.60147723515,
+    "generation_latency_s": 0.42076649999944493,
+    "latency": 1.5014636999985669,
+    "total_prompt_tokens": 389,
+    "total_generation_tokens": 128,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5233789,
+    "stage_rewrite_s": 0.6384487000032095,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1590299999952549,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2830407000001287,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4208401999931084,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.501480699997046,
+    "unaccounted_latency_s": 0.00012199999764561653,
+    "rewritten_query": "To optimize this user query, we can rephrase it as follows:\n\n**Original:** \"The 1984 film 'Marlene' is a documentary about an actress born in _______.\"\n**Optimized:** \"Documentary 'Marlene' (1984) - Filmmaker: Unknown. Birth Year: Not Specified.\"\n\nThis version maintains the core information while making it more concise and clear for search engines to understand the context of the query.",
+    "query_was_rewritten": true
+  }
+}

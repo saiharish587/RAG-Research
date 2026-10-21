@@ -1,0 +1,42 @@
+{
+  "question_id": "Q332",
+  "query": "The Column of Saint Zanobi  is a monumental marble column located just north of religious building with the status of what?",
+  "ground_truth": "a minor basilica",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Column of Saint Zanobi is a monumental marble column located just north of the Bapstistery of San Giovanni in Florence, Italy, and it stands as a symbol of religious significance. Specifically, it is surmounted by a cross above a crown of fire, which likely represents the triumph over darkness or evil, aligning with its location near a church (Bapstistery) dedicated to Saint Zanobi.\n\nAs for the status of what this column is commemorating, it is not explicitly stated in the provided context. However, given its location and design, it can be inferred that it likely commemorates a religious event or figure significant to Florence's history and culture. The column's design with a cross above a crown of fire suggests themes of victory and divine protection, which are often associated with religious monuments.\n\nTherefore, the most accurate answer based on the given context is: The Column of Saint Zanobi stands as a monumental marble column commemorating a significant event or figure related to Florence's religious heritage. However, without additional specific information about its exact dedication or the event it honors, we cannot pinpoint the exact status beyond this general interpretation.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Colonna di San Zanobi, Florence: The Column of Saint Zanobi (it:Colonna di San Zanobi) is a monumental marble column, surmounted by a cross above a crown of fire, located just north of the Bapstistery of San Giovanni in Florence, Italy.",
+      "Lewis and Clark Memorial Column: The Lewis and Clark Memorial Column is an outdoor monument by artist Otto Schumann, dedicated to Meriwether Lewis and William Clark for their expedition and located at Washington Park in Portland, Oregon.",
+      "Alexander II Column in Odessa: Alexander II Column, also known as Alexander's column or Monument to Alexander II of Russia, is a triumphal column located in Shevchenko, Odessa and is commemorated to the visit of Russian Emperor Alexander II the city of Odessa in 1875."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 246,
+    "generation_tokens": 235,
+    "generation_speed": 223.97249045972498,
+    "prompt_eval_speed": 25259.26686518123,
+    "generation_latency_s": 1.3834761000034632,
+    "latency": 2.5414859000011347,
+    "total_prompt_tokens": 329,
+    "total_generation_tokens": 305,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5309683000000001,
+    "stage_rewrite_s": 0.6841852999932598,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15676680000615306,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3168240000086371,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.383565299998736,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.541509100003168,
+    "unaccounted_latency_s": 0.0001686999894445762,
+    "rewritten_query": "What does the monument known as the Column of Saint Zanobi belong to?\n\nThis rephrased version simplifies the original query by focusing on the main subject (the column) and its location, while removing unnecessary details like \"just north of religious building\" which can be inferred from context. It also uses more concise language for clarity.",
+    "query_was_rewritten": true
+  }
+}

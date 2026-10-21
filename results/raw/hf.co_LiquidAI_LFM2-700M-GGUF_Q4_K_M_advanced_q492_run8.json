@@ -1,0 +1,42 @@
+{
+  "question_id": "Q492",
+  "query": "Which jazz singer has a 2003 album entitled The Boy Next Door? ",
+  "ground_truth": "Stacey Kent",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Based on the provided context, Stacey Kent is the jazz singer whose 2003 album \"The Boy Next Door\" features this title. She covered the song for her album and it has been performed by various other artists as well.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Boy Next Door (album): The Boy Next Door is a 2003 album by jazz singer Stacey Kent.  The songs were chosen to reflect male singers that Kent admires.",
+      "'Tis Autumn: American jazz singer Stacey Kent covered it for her 2003 album \"The Boy Next Door\".  It has also been covered by Stan Getz, Bruce Eskovitz, Carmen McRae, Lee Konitz, Spike Robinson, Eddie Higgins and Bennie Wallace.",
+      "Boy next door: The boy next door is an archetype of storytelling.  He is often invoked in Western contexts to indicate wholesome, unassuming, or \"average\" masculinity.  A boy next door may serve as a love interest for a female protagonist who lives near by."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 232,
+    "generation_tokens": 49,
+    "generation_speed": 218.36882940937915,
+    "prompt_eval_speed": 21739.13043478261,
+    "generation_latency_s": 0.5633300000044983,
+    "latency": 1.8065483999962453,
+    "total_prompt_tokens": 307,
+    "total_generation_tokens": 134,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5082803,
+    "stage_rewrite_s": 0.7632671000028495,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.17758669999602716,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3021372999937739,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5633809999999357,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.8065613999933703,
+    "unaccounted_latency_s": 0.00018990000535268337,
+    "rewritten_query": "Find a jazz singer's 2003 album titled \"The Boy Next Door\"\n\nThis rephrased query is more direct and clearly states what information the user is looking for, making it easier to understand and search effectively. It eliminates unnecessary words and focuses on the key elements of the original query: the artist (jazz singer), the year (2003), and the album title (\"The Boy Next Door\").",
+    "query_was_rewritten": true
+  }
+}

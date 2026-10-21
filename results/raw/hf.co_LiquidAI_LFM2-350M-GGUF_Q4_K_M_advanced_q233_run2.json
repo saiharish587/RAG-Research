@@ -1,0 +1,42 @@
+{
+  "question_id": "Q233",
+  "query": "One Raffles Place is one of the tallest skyscrapers in the city of Singapore and tallest in the wolrd outside North America until it was succeeded by a Building in city?",
+  "ground_truth": "Hong Kong",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Republic Plaza (Singapore) is one of the tallest skyscrapers in the city of Singapore, and it was the tallest building in the world outside North America at the time of its completion in 1986. The text does not mention any other skyscraper that surpassed One Raffles Place until then.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "One Raffles Place: One Raffles Place, formerly Overseas Union Bank Centre or OUB Centre is one of the tallest skyscrapers in the city of Singapore.  It was the tallest together with the UOB Plaza and Republic Plaza until the construction of Tanjong Pagar Centre in 2016.  At 280 m , it was also the tallest building in the world outside North America at the time of its completion in 1986, surpassing South Korea's 63 Building completed one year earlier, until it was succeeded by the Bank of China Tower.  The building sits at the city centre of Raffles Place.",
+      "One Raffles Link: One Raffles Link (Chinese: \u83b1\u4f5b\u58eb\u8fde\u9053\u4e00\u53f7) is an office building located at Marina Centre, Singapore.  The building is six storeys high with a basement and is managed by Hongkong Land.  Completed in 2000, it was jointly designed by world-renowned architect, Kohn Pedersen Fox and Aedas LPT Architects.  The development costs S$340 million and is a Grade A office building.  VISA, Credit Suisse, Goldman Sachs and Citibank are major tenants of the building.  Built on an elongated slip of land, the building offers the largest columnless floor-plates in the city.  The development includes CityLink Mall, Singapore's first subterranean mall, which links One Raffles Link with the City Hall MRT Station, Raffles City, Marina Square, Suntec City and the Esplanade.",
+      "Republic Plaza (Singapore): Republic Plaza (Chinese: \u5171\u548c\u5927\u53a6) is one of the three tallest skyscrapers in Singapore, located at the Southern end of Raffles Place in the Downtown Core, the central business district of Singapore.  It shares the title of \"tallest building\" with the OUB Centre and UOB Plaza One.  Built at 280 metres (919 feet) tall, it was completed in 1995, and incorporates earthquake proof features despite the city being relatively far from earthquake zones."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 532,
+    "generation_tokens": 69,
+    "generation_speed": 322.5067656310616,
+    "prompt_eval_speed": 50676.31929891407,
+    "generation_latency_s": 0.4753536000062013,
+    "latency": 1.4627801000024192,
+    "total_prompt_tokens": 631,
+    "total_generation_tokens": 177,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4335503,
+    "stage_rewrite_s": 0.6340818000026047,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13505139999324456,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21812119999958668,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.47541389999969397,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.462793700004113,
+    "unaccounted_latency_s": 0.00012600001355167478,
+    "rewritten_query": "To optimize the search query for clarity and SEO, we can rephrase it as follows:\n\n**Original Query:** \"One Raffles Place is one of the tallest skyscrapers in Singapore and tallest in the world outside North America.\"\n\n**Optimized Query:** \"Raffles Place (Singapore) stands as the city's highest skyscraper, surpassing North American heights until replaced by a new structure.\"\n\nThis version maintains the core information while improving readability and search engine visibility.",
+    "query_was_rewritten": true
+  }
+}

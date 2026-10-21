@@ -1,0 +1,42 @@
+{
+  "question_id": "Q352",
+  "query": "Which playwright lived a longer life, Edward Albee or J. M. Barrie?",
+  "ground_truth": "Edward Franklin Albee III",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Edward Albee lived a longer life than J. M. Barrie. He passed away on September 16, 2016, while still in his thirties, whereas J. M. Barrie died on June 19, 1937, at the age of 72. This means Edward Albee had lived for over half a century longer than J. M. Barrie.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Edward Albee: Edward Franklin Albee III ( ; March 12, 1928 \u2013 September 16, 2016) was an American playwright known for works such as \"The Zoo Story\" (1958), \"The Sandbox\" (1959), \"Who's Afraid of Virginia Woolf? \" (1962), and \"A Delicate Balance\" (1966).  Three of his plays won the Pulitzer Prize for Drama, and two of his other works won the Tony Award for Best Play.",
+      "William Shakespeare: William Shakespeare ( ; 26 April 1564 (baptised)\u00a0\u2013 23 April 1616) was an English poet, playwright, and actor, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist.  He is often called England's national poet, and the \"Bard of Avon\".  His extant works, including collaborations, consist of approximately 38 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship.  His plays have been translated into every major living language and are performed more often than those of any other playwright.",
+      "J. M. Barrie: Sir James Matthew Barrie, 1st Baronet, {'1': \", '2': \", '3': \", '4': \"} ( ; 9 May 1860 19 June 1937) was a Scottish novelist and playwright, best remembered today as the creator of Peter Pan.  He was born and educated in Scotland but moved to London, where he wrote a number of successful novels and plays.  There he met the Llewelyn Davies boys, who inspired him to write about a baby boy who has magical adventures in Kensington Gardens (included in \"The Little White Bird\"), then to write \"Peter Pan, or The Boy Who Wouldn't Grow Up\", a \"fairy play\" about an ageless boy and an ordinary girl named Wendy who have adventures in the fantasy setting of Neverland."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 494,
+    "generation_tokens": 80,
+    "generation_speed": 304.36651816116967,
+    "prompt_eval_speed": 12741.482035542029,
+    "generation_latency_s": 0.5938083000073675,
+    "latency": 1.6467495000106283,
+    "total_prompt_tokens": 571,
+    "total_generation_tokens": 195,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.45921460000000003,
+    "stage_rewrite_s": 0.6554742000007536,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15207949999603443,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24520740000298247,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5938574999890989,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6467630000115605,
+    "unaccounted_latency_s": 0.00014510001346934587,
+    "rewritten_query": "Edward Albee's extended career spans over 50 years, while J.M. Barrie's relatively brief but impactful existence (around 25 years) is notable in the context of theatrical longevity.\n\nThis rephrased version maintains the core inquiry about which playwright lived a longer life and provides a clearer comparison through the use of \"extended career\" to emphasize Albee's prolonged presence, followed by \"compared to J.M. Barrie's brief but significant existence.\" This format is more concise and directly addresses the user's query in search-friendly terms.",
+    "query_was_rewritten": true
+  }
+}

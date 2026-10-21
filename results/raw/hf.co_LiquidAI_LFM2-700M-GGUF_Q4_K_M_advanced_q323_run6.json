@@ -1,0 +1,42 @@
+{
+  "question_id": "Q323",
+  "query": "Rock Springs is a collection of short stories by an author born in what year?",
+  "ground_truth": "1944",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Annie Proulx, the author behind \"Rock Springs,\" was born in 1937.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rock Springs, Wyoming: Rock Springs is a city in Sweetwater County, Wyoming, United States.  The population was 23,036 at the 2010 census, making it the 4th most populated city in the state of Wyoming.  Rock Springs is the principal city of the Rock Springs micropolitan statistical area, which has a population of 37,975.  Rock Springs is known as the Home of 56 Nationalities because of the influx of immigrants from all over the world who came to work in the coal mines that supplied the fuel to power the steam engines of the Union Pacific Railroad.  The city's rich cultural heritage is celebrated each summer on International Day, a festival where the foods, costumes, and traditions of residents' ancestors are recreated and enjoyed at Bunning Park in downtown Rock Springs.",
+      "Rock Springs (short story collection): Rock Springs is a collection of short stories by author Richard Ford, published in 1987 and largely dealing with dysfunctional mothers and fathers and their effects on young male narrators.",
+      "Job History: \"Job History\" is part of a short story series, \"\" by Annie Proulx.  It takes place in then author's home town of Cora, Wyoming.  then story follows then life of then main character Leeland Lee and his unsuccessful attempts to find a successful career.  then occasional mention of then radio news report throughout then story relates to Leelands struggles and disappointment.  His lack of education and unavailability of jobs in his home town makes life very difficult for him so he moves various times to seek occupation.  His determination is commendable but in then end his efforts are futile as he lives his life in discontent."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 22,
+    "generation_speed": 215.5425794568327,
+    "prompt_eval_speed": 33623.60909530721,
+    "generation_latency_s": 0.45080829999642447,
+    "latency": 1.7246051000111038,
+    "total_prompt_tokens": 492,
+    "total_generation_tokens": 121,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5361123,
+    "stage_rewrite_s": 0.8031905999960145,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16783150000264868,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.30255180000676773,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.45089459999871906,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7246268000017153,
+    "unaccounted_latency_s": 0.00015940000594127923,
+    "rewritten_query": "Find stories by an author from birth year 1900-1950 in Rock Springs, Wyoming\n\nThis rephrased query maintains the original meaning while making it more concise and search-friendly. It specifies the time period of birth years for the author, which is a common format for searching literary works. The phrase \"Rock Springs, Wyoming\" is included to ensure geographical accuracy. This query can be used with most search engines to find stories by this specific author within the given timeframe.",
+    "query_was_rewritten": true
+  }
+}

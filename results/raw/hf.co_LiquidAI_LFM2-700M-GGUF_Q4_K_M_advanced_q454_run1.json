@@ -1,0 +1,42 @@
+{
+  "question_id": "Q454",
+  "query": "What was position of the man who served Prince Andrew from 1990-2001? ",
+  "ground_truth": "Private Secretary and Treasurer",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The position of the man who served Prince Andrew as Prime Minister from 1990 to 2001 was Prime Minister of the United Kingdom. This can be inferred from the context provided, which mentions that Prince Andrew served as Prime Minister during the time when Queen Elizabeth II passed away in 2013, making him the sixth person in line for the throne at that point.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Major: Sir John Major, {'1': \", '2': \", '3': \", '4': \"} (born 29 March 1943) is a British politician who was Prime Minister of the United Kingdom and Leader of the Conservative Party from 1990 to 1997.  He served as Foreign Secretary and then Chancellor of the Exchequer in the Thatcher Government from 1989 to 1990, and was the Member of Parliament (MP) for Huntingdon from 1979 until he retired in 2001.  Since Margaret Thatcher's death in 2013, he is the oldest living former Prime Minister.",
+      "Prince Andrew, Duke of York: Prince Andrew, Duke of York, {'1': \", '2': \", '3': \", '4': \"} (Andrew Albert Christian Edward, born 19 February 1960), is the second son and third child of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.  At the time of his birth, he was second in the line of succession to the British throne; as of 2017 he is sixth in line.",
+      "Prince Philip, Duke of Edinburgh: Prince Philip, Duke of Edinburgh (born Prince Philip of Greece and Denmark, 10 June 1921) is the husband and consort of Queen Elizabeth II of the United Kingdom and the other Commonwealth realms."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 355,
+    "generation_tokens": 75,
+    "generation_speed": 220.86106366688261,
+    "prompt_eval_speed": 7103.836071478599,
+    "generation_latency_s": 0.6775510000006761,
+    "latency": 1.4873946000006981,
+    "total_prompt_tokens": 433,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4802041,
+    "stage_rewrite_s": 0.4572471999999834,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16470019999542274,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18768119999731425,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.677632300008554,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4874133999983314,
+    "unaccounted_latency_s": 0.0001531999878352508,
+    "rewritten_query": "What was the role held by the individual serving Prince Andrew from 1990 to 2001?",
+    "query_was_rewritten": true
+  }
+}

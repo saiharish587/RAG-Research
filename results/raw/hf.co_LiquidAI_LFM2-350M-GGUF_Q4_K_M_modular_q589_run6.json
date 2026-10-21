@@ -1,0 +1,49 @@
+{
+  "question_id": "Q589",
+  "query": "Which country borders the Central African Republic and is south of Libya and east of Niger?",
+  "ground_truth": "Republic of Chad",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Central African Republic borders Chad to the west and Niger to the east.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chad: Chad ( ; Arabic: \u062a\u0634\u0627\u062f\u200e \u200e \"Tsh\u0101d \"; French: \"Tchad\" ] ), officially the Republic of Chad (Arabic: \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u062a\u0634\u0627\u062f\u200e \u200e \"Jumh\u016br\u012byat Tsh\u0101d \"; French: \"R\u00e9publique du Tchad\" \"Republic of the Chad\"), is a landlocked country in Central Africa.  It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon and Nigeria to the southwest and Niger to the west.  It is the fifth largest country in Africa in terms of area.",
+      "Geography of the Central African Republic: The Central African Republic is a landlocked nation within the interior of the African continent.  It is bordered by the countries of Cameroon, Chad, Sudan, South Sudan, the Democratic Republic of the Congo and the Republic of the Congo.  Much of the country consists of flat, or rolling plateau savanna, about 1640 ft above sea level.  In the northeast are the Fertit Hills, and there are scattered hills in the southwestern part of the country.  To the northwest are the Karre Mountains (also known as Yade Massif), a granite plateau with an altitude of 3750 ft .",
+      "Sudan: The Sudan or Sudan ( , ; Arabic: \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u200e \u200e \"as-S\u016bd\u0101n\") also known as North Sudan since South Sudan's independence and officially the Republic of the Sudan (Arabic: \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u200e \u200e \"Jumh\u016briyyat as-S\u016bd\u0101n\"), is a country in Northern Africa.  It is bordered by Egypt to the north, the Red Sea, Eritrea and Ethiopia to the east, South Sudan to the south, the Central African Republic to the southwest, Chad to the west and Libya to the northwest.  It is the third largest country in Africa.  The River Nile divides the country into eastern and western halves.  Before the Sudanese Civil War, South Sudan was part of Sudan, but it became independent in 2011.  Its predominant religion is Islam."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 522,
+    "generation_tokens": 16,
+    "generation_speed": 305.4192834100063,
+    "prompt_eval_speed": 47022.790739573014,
+    "generation_latency_s": 0.4091266000032192,
+    "latency": 1.502731100001256,
+    "total_prompt_tokens": 655,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.8098957,
+    "stage_route_s": 0.36870839999755844,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5259130000049481,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.19867230000090785,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 8.159999561030418e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4092002999968827,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5027539000002434,
+    "unaccounted_latency_s": 0.00018000000272877514,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Which country shares borders with the Central African Republic to the north, south, and west?",
+      "What is the border between Libya and Niger?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

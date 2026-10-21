@@ -1,0 +1,42 @@
+{
+  "question_id": "Q344",
+  "query": "Which of these battles occurred earlier--the Battle of Peleliu or the Battle of Belleau Wood?",
+  "ground_truth": "The Battle of Belleau Wood",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Battle of Peleliu occurred earlier than the Battle of Belleau Wood. The Battle of Peleliu took place from September to November 1944, while the Battle of Belleau Wood happened between June and July 1918 during the German Spring Offensive in World War I.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Battle of Belleau Wood: The Battle of Belleau Wood (1\u201326 June 1918) occurred during the German Spring Offensive in World War I, near the Marne River in France.  The battle was fought between the U.S. 2nd (under the command of Major General Omar Bundy) and 3rd Divisions along with French and British forces against an assortment of German units including elements from the 237th, 10th, 197th, 87th, and 28th Divisions.  The battle has become a key component of the lore of the United States Marine Corps.",
+      "Battle of Peleliu: The Battle of Peleliu, codenamed Operation Stalemate II by the United States military, was fought between the U.S. and the Empire of Japan during the Mariana & Palau Campaign of World War II, from September to November 1944, on the island of Peleliu.",
+      "USS Belleau Wood (CVL-24): USS \"Belleau Wood was a United States Navy \"Independence\"-class light aircraft carrier active during World War II in the Pacific Theater, from 1943 to 1945.  The ship also served in the First Indochina War under French Navy temporary service as Bois Belleau\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 349,
+    "generation_tokens": 61,
+    "generation_speed": 219.53738793696036,
+    "prompt_eval_speed": 14590.910991262177,
+    "generation_latency_s": 0.6644311999989441,
+    "latency": 1.4464079999888781,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5422794,
+    "stage_rewrite_s": 0.4387183999933768,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.14583949999359902,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19692410000425298,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6645195000019157,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4464322999992874,
+    "unaccounted_latency_s": 0.0004317999992053956,
+    "rewritten_query": "Which battle happened first, the Battle of Peleliu or the Battle of Belleau Wood?",
+    "query_was_rewritten": true
+  }
+}

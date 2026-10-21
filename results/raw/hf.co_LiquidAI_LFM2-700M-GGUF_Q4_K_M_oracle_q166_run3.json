@@ -1,0 +1,33 @@
+{
+  "question_id": "Q166",
+  "query": "In 2017, what was 3/4th of the organization that also has a Center for Veterinary Medicine as well as part of the U.S. Department of Health and Human Services, spent on?",
+  "ground_truth": "Prescription Drug User Fee Act",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "To answer this question, we need to identify which organization fits all the criteria mentioned in the context provided.\n\n1. **Organization with a Center for Veterinary Medicine**: The FDA (Food and Drug Administration) has centers for veterinary medicine.\n2. **Part of the U.S. Department of Health and Human Services**: This refers to the Food Safety and Inspection Service (FSIS), which is part of the USDA (United States Department of Agriculture).\n\nGiven these points, we are looking for a portion of the FDA that also has a Center for Veterinary Medicine and is part of the USDA. The closest match from the provided context would be:\n\n- **FDA's Center for Veterinary Medicine**: This center operates under the FDA and is responsible for ensuring the safety of veterinary drugs, including trypanocides like Melarsomine.\n- **FSIS (Food Safety and Inspection Service)**: While not directly a Center for Veterinary Medicine, FSIS oversees food safety and animal health, which includes veterinary drugs.\n\nHowever, since the question specifically asks about the portion that spent on something in 2017, we need to focus on the portion of the FDA's budget allocated to these entities.\n\nFrom the provided information:\n- The FDA's budget for 2017 was approximately $700 million.\n- 3/4th of this budget (approximately $525 million) is funded by pharmaceutical companies due to the Prescription Drug User Fee Act.\n\nThus, **3/4th of the organization that also has a Center for Veterinary Medicine and is part of the U.S. Department of Health and Human Services** spent approximately $525 million in 2017 on the Pharmaceutical Companies. This amount represents the portion of the FDA's budget allocated to these entities during that year.\n\nSo, the answer is:\n**Pharmaceutical companies spent approximately $525 million on the organization with a Center for Veterinary Medicine as part of the U.S. Department of Health and Human Services in 2017.**",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Melarsomine: Melarsomine (melaminylthioarsenate) is a trypanocidal agent.  In the U.S., it is marketed under the trade names \"Immiticide\" (Merial) and \"Diroban\" (Zoetis), and is approved by the FDA's Center for Veterinary Medicine for the treatment of adult heartworm (\"Dirofilaria immitis\") infection in dogs.  It is not approved for treatment in cats, or dogs in late-stage infection.",
+      "Food and Drug Administration: The Food and Drug Administration (FDA or USFDA) is a federal agency of the United States Department of Health and Human Services, one of the United States federal executive departments.  The FDA is responsible for protecting and promoting public health through the control and supervision of food safety, tobacco products, dietary supplements, prescription and over-the-counter pharmaceutical drugs (medications), vaccines, biopharmaceuticals, blood transfusions, medical devices, electromagnetic radiation emitting devices (ERED), cosmetics, animal foods & feed and veterinary products.  As of 2017, 3/4th of the FDA budget (approximately $700 million) is funded by the pharmaceutical companies due to the Prescription Drug User Fee Act."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 358,
+    "generation_tokens": 412,
+    "generation_speed": 227.68494151481224,
+    "prompt_eval_speed": 30777.16643741403,
+    "generation_latency_s": 2.0266804000129923,
+    "latency": 2.026757699990412,
+    "total_prompt_tokens": 358,
+    "total_generation_tokens": 412,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1907454,
+    "stage_generate_s": 2.026727699994808,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.026767599978484,
+    "unaccounted_latency_s": 4.05999890062958e-05
+  }
+}

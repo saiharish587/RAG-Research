@@ -1,0 +1,42 @@
+{
+  "question_id": "Q575",
+  "query": "Lorenzo Monaco was influenced by which Italian painter and architect?",
+  "ground_truth": "Giotto",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Lorenzo Monaco was influenced by Giotto and his followers Spinello Aretino and Agnolo Gaddi.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lorenzo Monaco: Lorenzo Monaco (born Piero di Giovanni; 1370 \u2013 c. 1425) was an Italian painter of the late Gothic-early Renaissance age.  He was born Piero di Giovanni in Siena.  Little is known about his youth, apart from the fact that he was apprenticed in Florence.  He was influenced by Giotto and his followers Spinello Aretino and Agnolo Gaddi.",
+      "Bartolini Salimbeni Chapel: The Bartolini Salimbeni Chapel (Italian: \"Cappella Bartolini Salimbeni\") is a chapel in the church of Santa Trinita, Florence, central Italy.  Its decoration by Lorenzo Monaco, dating to the 1420s, are one of the few surviving examples of International Gothic frescoes in Italy.  The chapels has kept other original elements, such as its altarpiece, an \"Annunciation\", also by Lorenzo Monaco, and the railings.",
+      "Bartolini Salimbeni Annunciation: The Bartolini Salimbeni Annunciation (Italian: \"Annunciazione Bartolini Salimbeni\") is a painting by the Italian Gothic painter Lorenzo Monaco, completed just before his death (1420\u20131424) and housed in the Bartolini Salimbeni Chapel of the church of Santa Trinita, Florence, Italy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 27,
+    "generation_speed": 226.81261078115944,
+    "prompt_eval_speed": 32258.064516129034,
+    "generation_latency_s": 0.47945790000085253,
+    "latency": 1.2485109000117518,
+    "total_prompt_tokens": 416,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5341947,
+    "stage_rewrite_s": 0.4196325000084471,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1546509000036167,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19454949999635573,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.47954280000703875,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.248536500002956,
+    "unaccounted_latency_s": 0.0001618999958736822,
+    "rewritten_query": "Which Italian artist and architect did Lorenzo Monaco emulate?",
+    "query_was_rewritten": true
+  }
+}

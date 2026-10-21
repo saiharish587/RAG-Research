@@ -1,0 +1,42 @@
+{
+  "question_id": "Q255",
+  "query": "in 1999, Spirit Halloween LLC was purchased by a mall retailer that has how many stores in the United States and Canada ?",
+  "ground_truth": "over 600 stores",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "In 1999, Spirit Halloween LLC was purchased by Spencer Gifts, which is described as having over 600 stores in the United States and Canada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Spirit Halloween: Spirit Halloween LLC is a seasonal retailer that supplies Halloween decorations, costumes and accessories.  It was founded in 1983 and is based in Egg Harbor Township, New Jersey.  In 1999, the store had 60 seasonal locations and was purchased by Spencer Gifts.",
+      "Spencer Gifts: Spencer Gifts LLC, doing business as Spencer's, is a North American mall retailer with over 600 stores in the United States and Canada.  Their stores specialize in novelty and gag gifts, and also sell clothing, band merchandise, sex toys, room decor, collectible figures, fashion and body jewelry, and fantasy and horror items.  The company also owns and operates a seasonal retailer, Spirit Halloween.",
+      "Chain store: Chain store(s) or retail chain are retail outlets that share a brand and central management, and usually have standardized business methods and practices.  In retail, dining, and many service categories, chain businesses have come to dominate the market in many parts of the world.  A franchise retail establishment is one form of chain store.  In 2004, the world's largest retail chain, Wal-Mart, became the world's largest corporation based on gross sales."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 326,
+    "generation_tokens": 32,
+    "generation_speed": 316.3274384397149,
+    "prompt_eval_speed": 32876.15974183138,
+    "generation_latency_s": 0.358853799989447,
+    "latency": 1.171944399990025,
+    "total_prompt_tokens": 411,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.43030809999999997,
+    "stage_rewrite_s": 0.49036769999656826,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12748319999082014,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.195080900011817,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3589019999926677,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1719573000009404,
+    "unaccounted_latency_s": 0.00012409999908413738,
+    "rewritten_query": "In 1999, Spirit Halloween LLC was acquired by a U.S. and Canadian mall chain with over 50 locations.\n\nThis rephrased version maintains the core information while making it more concise and direct, focusing on the key details of the transaction without unnecessary elaboration.",
+    "query_was_rewritten": true
+  }
+}

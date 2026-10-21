@@ -1,0 +1,42 @@
+{
+  "question_id": "Q52",
+  "query": "In 1991 Euromarch\u00e9 was bought by a chain that operated how any hypermarkets at the end of 2016?",
+  "ground_truth": "1,462",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "In 1991, Euromarch\u00e9 was rebought by Carrefour for 5.2 billion francs, which is equivalent to approximately 5.7 billion euros in today's currency. This acquisition occurred after a period where Euromarch\u00e9 had been part of the Carrefour group since its inception in 1968.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Euromarch\u00e9: Euromarch\u00e9 (\"Euromarket\") was a French hypermarket chain.  The first store opened in 1968 in Saint-Michel-sur-Orge.  In June 1991, the group was rebought by its rival, Carrefour, for 5,2 billion francs.",
+      "Carrefour: Carrefour S.A. (] ) is a French multinational retailer headquartered in Boulogne Billancourt, France, in the Hauts-de-Seine Department near Paris.  It is one of the largest hypermarket chains in the world (with 1,462 hypermarkets at the end of 2016).  Carrefour operates in more than 30 countries, in Europe, the Americas, Asia and Africa.  Carrefour means \"crossroads\" and \"public square\" in French.  The company is a component of the Euro Stoxx 50 stock market index.",
+      "Big Y: Big Y Foods, Inc. (or Big Y) is an American supermarket chain.  Big Y operates stores in Massachusetts and Connecticut.  It operates under the trade names \"Big Y World Class Market\" or \"Big Y Supermarket.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 330,
+    "generation_tokens": 70,
+    "generation_speed": 325.9164070975282,
+    "prompt_eval_speed": 39558.85878686166,
+    "generation_latency_s": 0.47022309999738354,
+    "latency": 1.4632116000138922,
+    "total_prompt_tokens": 417,
+    "total_generation_tokens": 160,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4297301,
+    "stage_rewrite_s": 0.586288099992089,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.11467500000435393,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.291866100000334,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4702720000059344,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4632245000102557,
+    "unaccounted_latency_s": 0.0001238000113517046,
+    "rewritten_query": "In 1991, Euromarch\u00e9 was acquired by a supermarket chain that continues to operate hypermarkets as of 2016.\n\nThis rephrased version maintains the core query while improving readability and conciseness. It clearly states the historical context (Euromarch\u00e9 acquisition in 1991) and specifies the current operation of the supermarket chain, making it easier for users to understand the transaction's timeline and continuation.",
+    "query_was_rewritten": true
+  }
+}

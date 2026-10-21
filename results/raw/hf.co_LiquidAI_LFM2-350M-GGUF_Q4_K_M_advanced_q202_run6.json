@@ -1,0 +1,42 @@
+{
+  "question_id": "Q202",
+  "query": "Chris Williams last played for which football club from the National League North?",
+  "ground_truth": "Salford City Football Club",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Chris Williams last played for Liverpool F.C. in the National League North.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Williams (English footballer): Christopher Jonathan \"Chris\" Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City as a forward.",
+      "Liverpool F.C. league record by opponent: Liverpool Football Club is an English association football club based in Liverpool, Merseyside, which competes in the top tier of English football, for the 2015\u201316 season.  The club was formed in 1892 following a disagreement between the board of Everton and club president John Houlding, who owned the club's ground, Anfield.  The dispute over rent resulted in Everton leaving Anfield for Goodison Park, which left Houlding with an empty stadium.  Not content for his ground to lay idle, he created his own club: Liverpool.  Liverpool joined the Lancashire League on their foundation before the 1892\u201393 season.  They ended their inaugural season as league champions, and were elected to The Football League soon afterwards.  The club remained in The Football League until 1992, when its First Division was superseded as English football's top level by the newly formed Premier League.",
+      "Jarvis Williams (American football): Jarvis Eric Williams, Sr. (May 16, 1965 \u2013 May 25, 2010) was an American college and professional football player who was a defensive back in the National Football League (NFL) for seven seasons during the 1980s and 1990s.  Williams played college football for the University of Florida, and was recognized as an All-American.  Thereafter, he played professionally for the Miami Dolphins and the New York Giants of the NFL.  Williams died unexpectedly at the age of 45."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 16,
+    "generation_speed": 292.9008164610259,
+    "prompt_eval_speed": 39203.20174640713,
+    "generation_latency_s": 0.299426500001573,
+    "latency": 1.4779216000024462,
+    "total_prompt_tokens": 504,
+    "total_generation_tokens": 145,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4265934,
+    "stage_rewrite_s": 0.6931666000018595,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1391825000027893,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3459698000078788,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2994964999961667,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.477935399991111,
+    "unaccounted_latency_s": 0.00012059998698532581,
+    "rewritten_query": "Chris Williams last played for [Club Name] in the National League North (NFL) - [Specific Team Name]**[Year]**\n\nThis rephrased version is more concise and directly conveys the information about Chris Williams' last professional football club. \n\n\nHere's why it's optimized:\n\n* **Focus on the key detail:** It highlights \"last played for\" instead of a generic \"last played.\"\n* **Specificity:** It mentions \"National League North (NFL) - [Specific Team Name]\" to give context.\n* **Clear structure:** The format is easy to read and understand.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q1",
+  "query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "No, Scott Derrickson and Ed Wood are not necessarily from the same nationality based on the provided context. While both are American, their biographical details do not explicitly state their nationalities. However, we can infer that they might be from different countries due to the film industry's global nature.\n\nScott Derrickson is specifically mentioned as being from Los Angeles, California, which is a major city in the United States. Ed Wood, on the other hand, is described as having been born in 1924 and died in 1978, indicating he was likely American as well, given the time period and the film industry's context.\n\nTo definitively determine their nationalities, additional information about their birthplaces or more recent biographical details would be required.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Derrickson: Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.  He lives in Los Angeles, California.  He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+      "Ed Wood (film): Ed Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood.  The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau.  Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast.",
+      "Ed Wood: Edward Davis Wood Jr. (October 10, 1924 \u2013 December 10, 1978) was an American filmmaker, actor, writer, producer, and director."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 294,
+    "generation_tokens": 156,
+    "generation_speed": 226.2814273716397,
+    "prompt_eval_speed": 23233.76007586534,
+    "generation_latency_s": 1.035915100001148,
+    "latency": 2.043416700005764,
+    "total_prompt_tokens": 366,
+    "total_generation_tokens": 192,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5785737,
+    "stage_rewrite_s": 0.5832336000021314,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15698139999585692,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2670318999880692,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0360433000023477,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.043435400002636,
+    "unaccounted_latency_s": 0.0001460000203223899,
+    "rewritten_query": "Are Scott Derrickson and Ed Wood from the same country? \n\n\nThis rephrased query is more concise while maintaining the core meaning of the original question.",
+    "query_was_rewritten": true
+  }
+}

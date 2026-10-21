@@ -1,0 +1,42 @@
+{
+  "question_id": "Q335",
+  "query": "Which case was decided first, Selle v. Gibb or Reynolds v. Sims?",
+  "ground_truth": "1964",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Based on the provided context, Reynolds v. Sims was decided first. The information states that \"Selle v. Gibb\" was a landmark ruling on the doctrine of striking similarities, while \"Reynolds v. Sims\" was the case that ruled about equal population in electoral districts for state legislatures. Therefore, Reynolds v. Sims predates Selle v. Gibb by approximately 10 years.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Reynolds v. Sims: Reynolds v. Sims, 377 U.S. 533 (1964) was a United States Supreme Court case that ruled that unlike in the election of the United States Senate, in the election of \"any\" chamber of a state legislature the electoral districts must be roughly equal in population (thus negating the traditional function of a State Senate, which was to allow rural counties to counter balance large towns and cities).  The case was brought on behalf of voters in Alabama by M.O. Sims, a taxpayer in Birmingham, Alabama, but affected both northern and southern states that had similarly failed to reapportion their legislatures in keeping with changes in state population after its application in five companion cases in Colorado, New York, Maryland, Virginia, and Delaware.",
+      "Selle v. Gibb: Selle v. Gibb, 741 F.2d 896 (7th Cir.  1984) was a landmark ruling on the doctrine of striking similarities.  The U.S. Court of Appeals for the Seventh Circuit ruled that while copying must be proved by access and substantial similarity, where evidence of access does not exist, striking similarities may raise an inference of copying by showing that the work could not have been the result of independent creation, coincidence, or common source.  Striking similarity alone is not enough to infer access.  The similarity must preclude independent creation in order to infer access.",
+      "Charles Morgan Jr.: Charles \"Chuck\" Morgan Jr. (March 11, 1930 \u2013 January 8, 2009) was an American civil rights attorney from Alabama who played a key role in establishing the principle of \"one man, one vote\" in the Supreme Court of the United States decision in the 1964 case \"Reynolds v. Sims\" and represented Julian Bond and Muhammad Ali in their legal battles."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 460,
+    "generation_tokens": 86,
+    "generation_speed": 214.40074990401828,
+    "prompt_eval_speed": 37492.86820441764,
+    "generation_latency_s": 0.7761274999938905,
+    "latency": 1.6270294999994803,
+    "total_prompt_tokens": 538,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5137318,
+    "stage_rewrite_s": 0.4962307999958284,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.158086600000388,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19637009999132715,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7762071999895852,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6270474000048125,
+    "unaccounted_latency_s": 0.00015340003301389515,
+    "rewritten_query": "Which court case came before Selle v. Gibb or Reynolds v. Sims? \n\n\nThis rephrased question is more direct and clearly asks for a comparison between the two cases without using unnecessary words.",
+    "query_was_rewritten": true
+  }
+}

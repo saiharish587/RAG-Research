@@ -1,0 +1,49 @@
+{
+  "question_id": "Q489",
+  "query": "What produces the hormone that promotes sodium retention in the distal nephron?",
+  "ground_truth": "zona glomerulosa",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Angiotensin, specifically its peptide form known as angiotensin I, stimulates the release of aldosterone from the adrenal cortex. This process is part of the renin-angiotensin system and plays a crucial role in regulating sodium retention in the distal nephron, which ultimately contributes to increased blood pressure.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Aldosterone: Aldosterone, the main mineralocorticoid hormone, is a steroid hormone produced by the zona glomerulosa of the adrenal cortex in the adrenal gland.  It is essential for sodium conservation in the kidney, salivary glands, sweat glands and colon.  It plays a central role in the regulation of the plasma sodium (Na), the extracellular potassium (K) and arterial blood pressure.  It does so mainly by acting on the mineralocorticoid receptors in the distal tubules and collecting ducts of the nephron.  It influences the reabsorption of sodium and excretion of potassium (from and into the tubular fluids, respectively) of the kidney, thereby indirectly influencing water retention or loss, blood pressure and blood volume.  When dysregulated, aldosterone is pathogenic and contributes to the development and progression of cardiovascular and renal disease.  Aldosterone has exactly the opposite function of the atrial natriuretic hormone secreted by the heart.",
+      "Angiotensin: Angiotensin is a peptide hormone that causes vasoconstriction and a subsequent increase in blood pressure.  It is part of the renin-angiotensin system, which is a major target for drugs that raises blood pressure.  Angiotensin also stimulates the release of aldosterone, another hormone, from the adrenal cortex.  Aldosterone promotes sodium retention in the distal nephron, in the kidney, which also drives blood pressure up.",
+      "Tubuloglomerular feedback: In the physiology of the kidney, tubuloglomerular feedback (TGF) is a feedback system inside the kidneys. Within each nephron, information from the renal tubules (a downstream area of the tubular fluid) is signaled to the glomerulus (an upstream area).  Tubuloglomerular feedback is one of several mechanisms the kidney uses to regulate glomerular filtration rate (GFR).  It involves the concept of purinergic signaling, in which an increased distal tubular sodium chloride concentration causes a basolateral release of adenosine from the macula densa cells.  This initiates a cascade of events that ultimately brings GFR to an appropriate level."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 514,
+    "generation_tokens": 66,
+    "generation_speed": 305.42405353250683,
+    "prompt_eval_speed": 55657.823497563615,
+    "generation_latency_s": 0.5749592000065604,
+    "latency": 1.4911337999947136,
+    "total_prompt_tokens": 641,
+    "total_generation_tokens": 108,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7870552,
+    "stage_route_s": 0.3238305999984732,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.46643100000801496,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.12562160000379663,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.890000415500253e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.575030499996501,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.491152400005376,
+    "unaccounted_latency_s": 0.00016149999282788485,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Which hormone is responsible for promoting sodium reabsorption in the distal nephron?",
+      "What is the primary function of the hormone that influences sodium retention in the nephron?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

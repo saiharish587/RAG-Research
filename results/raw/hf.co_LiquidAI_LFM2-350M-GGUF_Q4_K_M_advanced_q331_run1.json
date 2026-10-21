@@ -1,0 +1,42 @@
+{
+  "question_id": "Q331",
+  "query": "Where is the singer of \"B Boy\" raised?",
+  "ground_truth": "Philadelphia",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The question cannot be answered based on the provided context because it does not specify where Meek Mill's singer, Amy Winehouse, was raised. The context only provides information about the song \"B Boy,\" its production credits, and details about the boy band \"Boy Band.\" It does not mention any specific information regarding the singer's upbringing or location.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "B Boy (song): \"B Boy\" is a song by American hip hop recording artist Meek Mill.  It was released as a third single from \"Dreams Worth More Than Money\" on March 3, 2015, by Maybach Music Group and Atlantic Records.  The song, which was produced by Sap, features guest appearances from Big Sean and ASAP Ferg.",
+      "B Boy Baby: \"B Boy Baby\" is a song written by Phil Spector, Ellie Greenwich, Jeff Barry Craig Klepto Tucker, Peter Celik and Angela Hunte.  It features uncredited vocals by singer Amy Winehouse and was produced by Salaam Remi for Mutya Buena's debut album, \"Real Girl\", being released as the fourth and final single from the album.",
+      "Boy Band (TV series): Boy Band is an American television music competition series that premiered on June 22, 2017 on ABC.  The 10-episode first season features young male vocalists competing to become a member of a new five-piece boy band.  The final five boys who form the boy band receive a recording contract with Hollywood Records and perform the band's debut single during the finale.  On August 24, 2017, it was announced on the live show that Brady Tutton, Chance Perez, Drew Ramos, Sergio Calderon, and Michael Conor were the new members of the boy band, In Real Life.  They performed for the very first time their first single, \"Eyes Closed\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 380,
+    "generation_tokens": 74,
+    "generation_speed": 306.69252830689146,
+    "prompt_eval_speed": 10872.986351540816,
+    "generation_latency_s": 0.5604561000072863,
+    "latency": 1.6789701999950921,
+    "total_prompt_tokens": 450,
+    "total_generation_tokens": 186,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.4799403,
+    "stage_rewrite_s": 0.6838870000065072,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.13354209999670275,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.30091109999921173,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5605253999965498,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.678984300000593,
+    "unaccounted_latency_s": 0.000119399992399849,
+    "rewritten_query": "To find the singer of \"B Boy\", look for public records and biographical information about the artist's early life, focusing on where they were born or raised. This rephrased version aims to be more concise and direct while still conveying the user's intent.\n\nExample:\nOriginal: \"Where is the singer of 'B Boy' raised?\"\nOptimized: \"Who was the original singer of 'B Boy'?\"\n\nThis version uses simpler language and a more active structure, making it easier for users to quickly locate the answer.",
+    "query_was_rewritten": true
+  }
+}

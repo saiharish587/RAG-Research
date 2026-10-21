@@ -1,0 +1,33 @@
+{
+  "question_id": "Q153",
+  "query": "The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aim\u00e9 Argand?",
+  "ground_truth": "Argand lamp",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The lamp used in many lighthouses that are similar to the Argand lamp patented in 1780 by Aim\u00e9 Argand is the Lewis lamp.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Argand lamp: The Argand lamp, a kind of oil lamp, was invented and patented in 1780 by Aim\u00e9 Argand.  Its output is 6 to 10 candela, brighter than that of earlier lamps.  Its more complete combustion of the candle wick and oil than in other lamps required much less frequent trimming of the wick.",
+      "Lewis lamp: The Lewis lamp is a type of light fixture used in lighthouses.  It was invented by Winslow Lewis who patented the design in 1810.  The primary marketing point of the Lewis lamp was that it used less than half the oil of the prior oil lamps which they replaced.  The lamp used a similar design to an Argand lamp, adding a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.  A similar variant using a parabolic reflector was created by the inventor of the Argand lamp, Aim\u00e9 Argand.  While the Argand variant became widely used by European lighthouses, the Lewis lamp design was selected by the United States for use in American lighthouses."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 323,
+    "generation_tokens": 33,
+    "generation_speed": 316.13131903397937,
+    "prompt_eval_speed": 11075.678085245001,
+    "generation_latency_s": 0.33710389997577295,
+    "latency": 0.337201999995159,
+    "total_prompt_tokens": 323,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1859343,
+    "stage_generate_s": 0.3371709000202827,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.3372125999885611,
+    "unaccounted_latency_s": 4.239997360855341e-05
+  }
+}

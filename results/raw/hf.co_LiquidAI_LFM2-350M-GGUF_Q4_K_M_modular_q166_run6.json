@@ -1,0 +1,49 @@
+{
+  "question_id": "Q166",
+  "query": "In 2017, what was 3/4th of the organization that also has a Center for Veterinary Medicine as well as part of the U.S. Department of Health and Human Services, spent on?",
+  "ground_truth": "Prescription Drug User Fee Act",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "In 2017, 3/4th of the Humane Society of the United States (HSUS) and its veterinary medicine center were allotted approximately $700 million in funding by the Prescription Drug User Fee Act (PDUFA). This substantial amount was allocated to support various aspects of HSUS's mission, including enhancing their animal welfare programs and expanding their services related to veterinary care.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Humane Society of the United States: The Humane Society of the United States (HSUS), based in Washington, D.C., is an American nonprofit organization founded by journalist Fred Myers and Helen Jones, Larry Andrews, and Marcia Glaser in 1954, to address what they saw as animal-related cruelties of national scope, and to resolve animal welfare problems by applying strategies beyond the resources or abilities of local organizations.  In 2013, the \"Chronicle of Philanthropy\" identified HSUS as the 136th largest charity in the United States in its Philanthropy 400 listing.",
+      "Food and Drug Administration: The Food and Drug Administration (FDA or USFDA) is a federal agency of the United States Department of Health and Human Services, one of the United States federal executive departments.  The FDA is responsible for protecting and promoting public health through the control and supervision of food safety, tobacco products, dietary supplements, prescription and over-the-counter pharmaceutical drugs (medications), vaccines, biopharmaceuticals, blood transfusions, medical devices, electromagnetic radiation emitting devices (ERED), cosmetics, animal foods & feed and veterinary products.  As of 2017, 3/4th of the FDA budget (approximately $700 million) is funded by the pharmaceutical companies due to the Prescription Drug User Fee Act.",
+      "Johns Hopkins School of Medicine: The Johns Hopkins University School of Medicine (JHUSOM), located in Baltimore, Maryland, U.S., is the academic medical teaching and research arm of Johns Hopkins University.  Johns Hopkins has consistently been among the nation's top medical schools in the number of research grants awarded by the National Institutes of Health.  Its main teaching hospital, the Johns Hopkins Hospital, is ranked the #3 hospital in the United States by \"U.S. News & World Report\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 82,
+    "generation_speed": 323.6437550569337,
+    "prompt_eval_speed": 58383.41714706243,
+    "generation_latency_s": 0.5728568000049563,
+    "latency": 1.6494211999961408,
+    "total_prompt_tokens": 659,
+    "total_generation_tokens": 187,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.7538556000000001,
+    "stage_route_s": 0.300618499997654,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6518907999998191,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.12367499999527354,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 9.730001329444349e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.572972199996002,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.6494410000013886,
+    "unaccounted_latency_s": 0.00018859999545384198,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "What percentage of the organization's expenditures in 2017 did 3/4th of the time have center for veterinary medicine and U.S. Department of Health and Human Services affiliation?",
+      "Which organization's expenditures in 2017 constituted 3/4th of the total?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

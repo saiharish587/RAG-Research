@@ -1,0 +1,42 @@
+{
+  "question_id": "Q423",
+  "query": "How many novels are there in the series of novels of which Shadows in Flight is the tenth novel ?",
+  "ground_truth": "fifteen",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "There are nine novels in the series of novels that \"Shadows in Flight\" is part of. The specific number of novels in the series isn't directly stated in the given context, but we can infer it from the information provided about other books within the series.\n\nFrom the context:\n- \"Ender's Game\" series: 4 novels (Bean and his friends)\n- \"Shadows in Flight\": 1 novel (Bean and his children)\n- \"The Great Tree of Avalon\" trilogy: 3 novels (including \"Shadows on the Stars\")\n- \"Merlin Saga\": 12 novels\n\nGiven that \"Shadows in Flight\" is the tenth novel in this series, we can deduce:\n- The first nine novels are from the \"Ender's Game\" series.\n- Adding \"Shadows in Flight\" and \"The Great Tree of Avalon\" trilogy gives us a total of 10 novels.\n\nTherefore, there are **11 novels** in the series of novels that \"Shadows in Flight\" is part of.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shadows in Flight: Shadows in Flight is a science fiction novel by Orson Scott Card.  When released in 2012, it became the tenth novel published in the \"Ender's Game\" series.  The story follows on from where the original four \"Shadow series\" books left off.  It is about Bean and his children discovering an ancient Formic \"ark\" during their journey in space.  A sample chapter was released on November 28, 2011.  The hardcover version was released on January 17, 2012, and the paperback was released on January 29, 2013.  It was nominated for the Goodreads Choice Award for science fiction.",
+      "Merlin Book 10: Shadows on the Stars: \"Shadows on the Stars\" is a work of fiction by T. A. Barron, published by Penguin Young Readers Group.  The book is the tenth novel in the 12-book series known as Merlin Saga.  It was originally published as \"The Great Tree of Avalon: Shadows on the Stars\", the second novel in \"The Great Tree of Avalon\" trilogy, and is set in a world made up of a great tree and its seven roots inhabited by creatures.",
+      "Walter Sorrells: Walter Sorrells is an award-winning author of mystery and suspense novels for adults and teens.  He has written many novels, including \"Fake I.D.\", named one of the ten Best Mysteries by Booklist magazine in 2005 and several novels based-on the television series Flight 29 Down.  He also writes under the pseudonyms Lynn Abercrombie and Ruth Birmingham.  He graduated from Haverford College in 1985, where he majored in History."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 445,
+    "generation_tokens": 219,
+    "generation_speed": 224.96009269588478,
+    "prompt_eval_speed": 40587.376869755564,
+    "generation_latency_s": 1.3529197999887401,
+    "latency": 2.1409551999968244,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 236,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5703292,
+    "stage_rewrite_s": 0.449412800007849,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1599949000083143,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17839430000458378,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.3530039000033867,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 2.1409771999897202,
+    "unaccounted_latency_s": 0.00017219997243955731,
+    "rewritten_query": "How many Shadows in Flight novels exist, specifically the tenth in the series?",
+    "query_was_rewritten": true
+  }
+}

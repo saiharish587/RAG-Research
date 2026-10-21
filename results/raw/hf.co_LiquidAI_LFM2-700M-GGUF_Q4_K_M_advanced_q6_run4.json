@@ -1,0 +1,42 @@
+{
+  "question_id": "Q6",
+  "query": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+  "ground_truth": "YG Entertainment",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The South Korean boy group WINNER debuted their debut album \"2014 S/S\" in 2014 under YG Entertainment.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2014 S/S: 2014 S/S is the debut album of South Korean group WINNER.  It was released on August 12, 2014 by the group's record label, YG Entertainment.  The members were credited for writing the lyrics and composing the majority of the album's songs.",
+      "Winner (band): Winner (Hangul: \uc704\ub108), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014.  It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon.  Originally a five-piece group with Taehyun, who later departed from the group in November 2016.",
+      "History (band): History (Korean: \ud788\uc2a4\ud1a0\ub9ac ) was a South Korean boy group formed by LOEN Entertainment in 2013.  They debuted on April 26, 2013 with \"Dreamer\", featuring the narration of their labelmate IU.  They were LOEN Entertainment's first boy group.  They officially disbanded on May 12, 2017."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 318,
+    "generation_tokens": 28,
+    "generation_speed": 212.82741217068755,
+    "prompt_eval_speed": 20744.99315023811,
+    "generation_latency_s": 0.5109421000088332,
+    "latency": 1.4121784000017215,
+    "total_prompt_tokens": 398,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.6021563999999999,
+    "stage_rewrite_s": 0.5321363999973983,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.18788619998667855,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18096260000311304,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5110266999981832,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.4122017000045162,
+    "unaccounted_latency_s": 0.0001907000259961933,
+    "rewritten_query": "Who formed the South Korean boy group \"S/S\" in 2014, and what was their label?",
+    "query_was_rewritten": true
+  }
+}

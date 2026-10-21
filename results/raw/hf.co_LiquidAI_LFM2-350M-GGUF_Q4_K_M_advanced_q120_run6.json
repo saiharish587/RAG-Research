@@ -1,0 +1,42 @@
+{
+  "question_id": "Q120",
+  "query": "Are Daryl Hall and Gerry Marsden both musicians?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Yes, based on the provided context, Daryl Hall and Gerry Marsden are both musicians. The text explicitly states that they are \"an American musical duo from Philadelphia.\" This indicates that they are indeed two individuals who share the same profession as a musician.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gerry Marsden: Gerard Marsden MBE (born 24 September 1942) is an English musician and television personality, best known for being leader of the British Merseybeat band Gerry and the Pacemakers.",
+      "Daryl Hall: Daryl Franklin Hohl (born October 11, 1946), known professionally as Daryl Hall, is an American rock, R&B, and soul singer; keyboardist, guitarist, songwriter, and producer, best known as the co-founder and lead vocalist of Hall & Oates (with guitarist and songwriter John Oates).",
+      "Hall &amp; Oates: Daryl Hall and John Oates, often referred to as Hall & Oates, are an American musical duo from Philadelphia.  Daryl Hall is generally the lead vocalist of the pairing.  John Oates primarily plays electric guitar and provides backing vocals.  The two write most of the songs they perform, either separately or in collaboration.  They achieved their greatest fame from the late 1970s to the mid-1980s with a fusion of rock and roll and rhythm and blues."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 301,
+    "generation_tokens": 54,
+    "generation_speed": 305.29862728691285,
+    "prompt_eval_speed": 31256.49013499481,
+    "generation_latency_s": 0.4428067999979248,
+    "latency": 1.3760465999948792,
+    "total_prompt_tokens": 373,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.42978890000000003,
+    "stage_rewrite_s": 0.5078474000038113,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12238680000882596,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.3028494000027422,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.44285710000258405,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3760596999927657,
+    "unaccounted_latency_s": 0.00011969998013228178,
+    "rewritten_query": "To optimize the search for \"Daryl Hall vs. Gerry Marsden Musicians\", consider this rephrased version:\n\n**\"Searching for musical collaborations between Daryl Hall and Gerry Marsden? Here's what I found.\"**\n\nThis version is more concise and directly addresses the user's query, making it easier to scan and understand.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q264",
+  "query": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+  "ground_truth": "Tybalt",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Romeo Montague. The text states that Romeo Montague secretly loves and marries Juliet, who is from the rival House of Capulet. Benvolio, being Montague's nephew and Romeo's cousin, is mentioned as trying to prevent violence between the two families but ultimately fails in his attempt.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Romeo: Romeo Montague (Italian: \"Romeo Montecchi\" ) is the protagonist of William Shakespeare's tragedy \"Romeo and Juliet\".  The son of Montague and his wife, he secretly loves and marries Juliet, a member of the rival House of Capulet.  Forced into exile after slaying Juliet's cousin, Tybalt, in a duel, Romeo commits suicide upon hearing falsely of Juliet's death.",
+      "Benvolio: Benvolio is a fictional character in Shakespeare's drama \"Romeo and Juliet\".  He is Montague's nephew and Romeo's cousin.  Benvolio serves as an unsuccessful peacemaker in the play, attempting to prevent violence between the Capulet and Montague families.",
+      "Prince Hamlet: Prince Hamlet is the title character and protagonist of William Shakespeare's tragedy \"Hamlet\".  He is the Prince of Denmark, nephew to the usurping Claudius, and son of King Hamlet, the previous King of Denmark.  At the beginning of the play, he struggles with whether, and how, to avenge the murder of his father, and struggles with his own sanity along the way.  By the end of the tragedy, Hamlet has caused the deaths of Polonius, Laertes, Claudius, and two acquaintances of his from the University of Wittenberg Rosencrantz and Guildenstern.  He is also indirectly involved in the deaths of his love Ophelia (drowning) and of his mother Gertrude (poisoned by Claudius by mistake)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 64,
+    "generation_speed": 217.13832050294664,
+    "prompt_eval_speed": 7260.128488604906,
+    "generation_latency_s": 0.7021734999871114,
+    "latency": 1.5503086999960942,
+    "total_prompt_tokens": 511,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5231838,
+    "stage_rewrite_s": 0.47395200000028126,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.15606549999210984,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2179039000038756,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7022400999994716,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.550326299999142,
+    "unaccounted_latency_s": 0.00016560000949539244,
+    "rewritten_query": "Who is the secret love interest of the protagonist in Shakespeare's tragic play, where Benvolio kills a rival's member?",
+    "query_was_rewritten": true
+  }
+}

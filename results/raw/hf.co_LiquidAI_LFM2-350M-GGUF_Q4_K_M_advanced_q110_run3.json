@@ -1,0 +1,42 @@
+{
+  "question_id": "Q110",
+  "query": "Which airplane was this Major test-flying after whom the base, that 514th Flight Test Squadron is stated at, is named?",
+  "ground_truth": "B-17 Flying Fortress bomber",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The 514th Flight Test Squadron was flying after the 10th Flight Test Squadron of the 413th Flight Test Group of Air Force Materiel Command. The base where this squadron is stationed is named Duke Field in Eglin Air Force Base, Florida.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "514th Flight Test Squadron: The 514th Flight Test Squadron (514 FLTS) is a United States Air Force squadron.  It is assigned to the Ogden Air Logistics Center (OO-ALC), Air Force Materiel Command, stationed at Hill Air Force Base, Utah.",
+      "10th Flight Test Squadron: The 10th Flight Test Squadron is part of the 413th Flight Test Group of Air Force Materiel Command based at Tinker Air Force Base, Oklahoma.  It performs acceptance testing on refurbished Rockwell B-1 Lancer, Boeing B-52 Stratofortress, Boeing E-3 Sentry, and Boeing KC-135 Stratotanker aircraft before they are returned to their units.",
+      "413th Flight Test Squadron: The 413th Flight Test Squadron is part of the 96th Test Wing and is based at Duke Field, Eglin Air Force Base, Florida.  It performs flight testing on C-130 Hercules, CV-22 Osprey, MH-53 Pave Low, UH-1 Iroquois, and HH-60 Pave Hawk aircraft."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 311,
+    "generation_tokens": 54,
+    "generation_speed": 308.94922934331123,
+    "prompt_eval_speed": 32819.75517095821,
+    "generation_latency_s": 0.453984899999341,
+    "latency": 1.2897135999955935,
+    "total_prompt_tokens": 397,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.445832,
+    "stage_rewrite_s": 0.503641899995273,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.12370140000712126,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20823450000898447,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.45403380000789184,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2897267999942414,
+    "unaccounted_latency_s": 0.00011599998106248677,
+    "rewritten_query": "Major flight testing aircraft for which the 514th Flight Test Squadron is based - this plane is named [Airplane Name].\"\n\nThis rephrased version maintains the core query while making it more concise and clear. It specifies the name of the aircraft in question, directly addressing the user's intent to find information about a specific flight test squadron.",
+    "query_was_rewritten": true
+  }
+}

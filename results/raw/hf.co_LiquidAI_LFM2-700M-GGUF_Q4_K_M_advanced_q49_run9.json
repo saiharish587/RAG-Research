@@ -1,0 +1,42 @@
+{
+  "question_id": "Q49",
+  "query": "Are Ferocactus and Silene both types of plant?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "No, Ferocactus and Silene are not both types of plants. Ferocactus is a genus of large barrel-shaped cacti, while Silene is a genus of flowering plants in the family Caryophyllaceae. Both belong to different kingdoms of life - plants (Ferocactus) and animals (Silene).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Silene: Silene is a genus of flowering plants in the family Caryophyllaceae.  Containing approximately 700 species, it is the largest genus in the family.  Common names include campion (which is shared with the related genus \"Lychnis\") and catchfly.  Many \"Silene\" species are widely distributed, particularly in the northern hemisphere.",
+      "Ferocactus: Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers.  There are about 30 species included in the genus.  They are found in the southwestern United States and northwestern Mexico.",
+      "Silene suksdorfii: Silene suksdorfii is a species of flowering plant in the pink family known by the common names Suksdorf's silene, Suksdorf's catchfly and Cascade alpine campion.  It is native to the Pacific Northwest of the United States, where it occurs from Washington and Idaho to northern California.  It is mainly an alpine species, growing in the talus of high mountain slopes.  It can also be found below the tree line in forested subalpine habitat.  It is a squat perennial herb producing several erect stems from a leafy, woody caudex.  It generally takes a clumpy form.  The stems grow up to 10 or 15 centimeters tall and are hairy in texture, with glandular, sticky areas on the upper parts.  The leaves occur in tufts around the caudex.  They are fleshy and coated in soft hairs.  Solitary flowers arise on erect peduncles.  Each is encapsulated in an inflated calyx of fused sepals, which is starkly purple-veined and has purplish glandular hairs.  The petals are white or purple-tinged and have two lobes at their tips and appendages at their bases."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 457,
+    "generation_tokens": 67,
+    "generation_speed": 222.6942009765307,
+    "prompt_eval_speed": 34912.146676852564,
+    "generation_latency_s": 0.7049995999987004,
+    "latency": 1.5320243000023765,
+    "total_prompt_tokens": 528,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.5710356,
+    "stage_rewrite_s": 0.4162997999956133,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.16172220000589732,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24874690000433475,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7050670000026003,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.5320420999923954,
+    "unaccounted_latency_s": 0.0002069999900413677,
+    "rewritten_query": "Are Ferocactus and Silene classified as plants?",
+    "query_was_rewritten": true
+  }
+}

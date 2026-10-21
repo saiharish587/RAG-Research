@@ -1,0 +1,42 @@
+{
+  "question_id": "Q424",
+  "query": "One of the coaches of Southern Methodist University also played what role at the Arizona State Sun Devils?",
+  "ground_truth": "defensive coordinator",
+  "model_name": "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Assistant coach",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Phil Bennett (American football): Phil Bennett (born December 3, 1955) is an American football coach and former player.  He is the defensive coordinator at Arizona State Sun Devils.  Prior to this position, he served as the defensive coordinator for the Baylor Bears from 2011-2016, and was interim head coach of the Pittsburgh Panthers during their 2011 BBVA Compass Bowl win over Kentucky after serving as defensive coordinator of the Panthers for three seasons.  Prior to coaching the Panthers, he served as the head football coach at Southern Methodist University (SMU) from 2002 to 2007.  Before his stint at SMU, he served as an assistant coach at seven different colleges.",
+      "Arizona State Sun Devils football: The Arizona State Sun Devils football team represents Arizona State University in the sport of American football.  The Sun Devils team competes in the Football Bowl Subdivision (FBS) of the National Collegiate Athletic Association (NCAA) and the South Division of the Pac-12 Conference (Pac-12).  Arizona State University has fielded a football team since 1897 and has an all-time record of 600-382-24 (a .608 winning percentage).  The Sun Devils are currently led by head coach Todd Graham and play their home games at Sun Devil Stadium in Tempe, Arizona.  The Sun Devils have won seventeen conference titles, including three Pac-12 titles.",
+      "1955 Arizona State Sun Devils football team: The 1955 Arizona State Sun Devils football team was an American football team that represented Arizona State College (later renamed Arizona State University) in the Border Intercollegiate Athletic Association (BIAA) during the 1955 college football season.  In their first season under head coach Dan Devine, the Sun Devils compiled an 8\u20132\u20131 record (3\u20131 against BIAA opponents) and outscored their opponents by a combined total of 343 to 107.  Assistant Coaches were Robert Carey, Tom Fletcher, Frank Kush, & Al Onofrio.  Arizona State's team captains were FB Bob Sedlar & LT John Jankans.  The Sun Devils finished (5-1) at home and (3-1-1) on the road.  All home games were played at Goodwin Stadium in Tempe, Arizona."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 572,
+    "generation_tokens": 4,
+    "generation_speed": 277.623542476402,
+    "prompt_eval_speed": 57354.858116915675,
+    "generation_latency_s": 0.3334677999955602,
+    "latency": 1.1085771999933058,
+    "total_prompt_tokens": 651,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.522332,
+    "stage_rewrite_s": 0.45113359999959357,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.1588913000014145,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16487269999925047,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.33353630000783596,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1085954000009224,
+    "unaccounted_latency_s": 0.00016229998436756432,
+    "rewritten_query": "Coach of Southern Methodist University - Arizona State Sun Devils - What Role?\" \n\n\nThis version is more concise and directly asks for the specific role mentioned in the original query.",
+    "query_was_rewritten": true
+  }
+}
