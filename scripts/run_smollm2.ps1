@@ -24,7 +24,9 @@ foreach ($m in $models) { "model $m digest: $((ollama list | Select-String ([reg
 & $python scripts/check_retrieval.py 50
 if ($LASTEXITCODE -ne 0) { throw "Retrieval differs from the logged runs. Stop and report this before running." }
 
-# 4. Benchmark, one arm at a time across both models (Naive first)
+# 4. Benchmark, one arm at a time across both models (Naive first).
+# Python writes warnings to stderr; PowerShell must not treat them as fatal.
+$ErrorActionPreference = "Continue"
 foreach ($arm in @("naive", "oracle", "no_rag", "advanced", "modular")) {
     Write-Host "=== $(Get-Date -Format s) start $arm"
     & $python main.py --config configs/config_smollm2.yaml --output-csv $csv --arms $arm --skip-post *>&1 |
