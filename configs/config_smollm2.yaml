@@ -1,0 +1,35 @@
+# Second model family (SmolLM2) for the cross-family check.
+# Identical to config.yaml except for the models.
+
+experiment:
+  runs_per_config: 10
+  seed: 42
+
+# Optional cap on generated tokens per call. Leave commented out to match the
+# LFM2 runs (no cap). Uncomment to bound runaway (repetition-loop) generations.
+# generation:
+#   num_predict: 1024
+
+chunking:
+  chunk_size: 1500
+  chunk_overlap: 150
+
+embedding:
+  model_name: "BAAI/bge-small-en-v1.5"
+  device: "cuda"
+
+vector_db:
+  provider: "faiss"
+  path: "vector_db/faiss_index"
+  documents_dir: "documents/hotpotqa_corpus"
+
+models:
+  - name: "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M"
+    display_name: "SmolLM2 135M"
+  - name: "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M"
+    display_name: "SmolLM2 360M"
+
+retrieval:
+  top_k: 3
+  rerank: true
+  rerank_model: "BAAI/bge-reranker-base"

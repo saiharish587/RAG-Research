@@ -60,6 +60,13 @@ def main():
     parser.add_argument("--config", type=str, default="configs/config.yaml", help="Path to config.yaml")
     parser.add_argument("--runs", type=int, default=None, help="Number of runs per configuration (overrides config)")
     parser.add_argument("--test-only", action="store_true", help="Run only 1 test question to verify pipeline works")
+    parser.add_argument("--output-csv", type=str, default=os.path.join("results", "csv", "benchmark_results.csv"),
+                        help="Results CSV (also the resume source)")
+    parser.add_argument("--arms", nargs="+", default=None,
+                        choices=["no_rag", "oracle", "naive", "advanced", "modular"],
+                        help="Run only these arms (default: all five)")
+    parser.add_argument("--skip-post", action="store_true",
+                        help="Skip the RAGChecker report and plots after the runs")
     args = parser.parse_args()
 
     # 1. Load config
@@ -100,9 +107,8 @@ def main():
     models = config.get("models", [])
     results_list = []
     
-    csv_dir = os.path.join("results", "csv")
-    os.makedirs(csv_dir, exist_ok=True)
-    csv_path = os.path.normpath(os.path.join(csv_dir, "benchmark_results.csv"))
+    csv_path = os.path.normpath(args.output_csv)
+    os.makedirs(os.path.dirname(csv_path) or ".", exist_ok=True)
     
     # Load existing runs to support resumption
     existing_runs = set()
@@ -125,7 +131,10 @@ def main():
         print(f"\nEvaluating Model: {display_name} ({model_name})")
 
         # Initialize generator for this model
-        generator = Generator(model_name=model_name)
+        generator = Generator(
+            model_name=model_name,
+            num_predict=config.get("generation", {}).get("num_predict"),
+        )
 
         # Warm up before any measured call. The first request to a cold model
         # pays the weight-loading cost; leaving it inside the first measured run
@@ -161,7 +170,9 @@ def main():
             "advanced": advanced_rag,
             "modular": modular_rag
         }
-        
+        if args.arms:
+            pipelines = {arm: pipelines[arm] for arm in pipelines if arm in args.arms}
+
         raw_dir = os.path.join("results", "raw")
         os.makedirs(raw_dir, exist_ok=True)
 
@@ -245,6 +256,8 @@ def main():
     results_df = pd.DataFrame(results_list)
     results_df.to_csv(csv_path, index=False)
     print(f"\n[SUCCESS] Benchmark results saved to {csv_path}")
+    if args.skip_post:
+        return
 
     # 8. Run RAGChecker Diagnostic Evaluation
     print("\n[INFO] Running RAGChecker diagnostic evaluation...")

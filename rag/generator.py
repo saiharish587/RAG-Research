@@ -34,10 +34,13 @@ class Generator:
     """Single-turn generation against an Ollama model."""
 
     def __init__(self, model_name: str = "qwen2.5:0.5b", temperature: float = 0.0,
-                 seed: int = 42, client=None):
+                 seed: int = 42, client=None, num_predict: int | None = None):
         self.model_name = model_name
         self.temperature = temperature
         self.seed = seed
+        # Optional cap on generated tokens. None (the default, used for the
+        # LFM2 runs) leaves generation length to the server.
+        self.num_predict = num_predict
         # Injectable so the calling code is testable without an Ollama daemon.
         self._client = client
         self._warmed_up = False
@@ -49,6 +52,12 @@ class Generator:
 
             self._client = ollama
         return self._client
+
+    def _options(self) -> dict[str, Any]:
+        options = {"temperature": self.temperature, "seed": self.seed}
+        if self.num_predict is not None:
+            options["num_predict"] = self.num_predict
+        return options
 
     # ------------------------------------------------------------------
 
@@ -77,7 +86,7 @@ class Generator:
                 model=self.model_name,
                 prompt=prompt,
                 system=system_prompt or "",
-                options={"temperature": self.temperature, "seed": self.seed},
+                options=self._options(),
             )
         except Exception as exc:
             print(f"Error during generation with model {self.model_name}: {exc}")
