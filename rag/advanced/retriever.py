@@ -64,8 +64,14 @@ class AdvancedRAGPipeline:
         rerank_top_n: int = 12,
         dense_weight: float = 0.7,
         sparse_index_factory=TfidfIndex,
+        rewrite: bool = True,
+        sparse: bool = True,
         clock=time.perf_counter,
     ):
+        # Ablation switches. With all three of rewrite, sparse and rerank off,
+        # the arm reduces to dense top-k retrieval on the original query.
+        self.rewrite = rewrite
+        self.sparse = sparse
         self.db_manager = db_manager
         self.generator = generator
         self.top_k = top_k
@@ -192,7 +198,7 @@ class AdvancedRAGPipeline:
         dense_results = self.db_manager.search(query, top_k=n_candidates)
 
         chunks = self.db_manager.doc_chunks
-        if not chunks or not self._ensure_sparse_index(chunks):
+        if not self.sparse or not chunks or not self._ensure_sparse_index(chunks):
             return dense_results
 
         sparse_scores = self._sparse_index.scores(query)
@@ -252,7 +258,7 @@ class AdvancedRAGPipeline:
         # Every stage below is timed. In v1 only the final generate() call was,
         # so this arm's two extra costs -- the rewrite call and the
         # cross-encoder pass -- were invisible in the reported latency.
-        optimized_query = self.rewrite_query(query, recorder=recorder)
+        optimized_query = self.rewrite_query(query, recorder=recorder) if self.rewrite else query
 
         with recorder.stage("retrieve"):
             candidates = self.hybrid_search(optimized_query, top_k=self.rerank_top_n)

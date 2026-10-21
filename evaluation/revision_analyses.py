@@ -363,6 +363,20 @@ def scale_tests(q: pd.DataFrame, ev: Evidence) -> None:
                    (series(q, model, arm, "token_recall") >= 1.0).mean(), model, arm)
 
 
+def router_need(df: pd.DataFrame, q: pd.DataFrame, ev: Evidence) -> None:
+    """On questions the Modular router sent away from retrieval, would retrieval have helped?"""
+    route = df[df["rag_type"] == "modular"].groupby(["model", "query"])["route"].first()
+    for model in ("350M", "700M"):
+        declined = route.loc[model][route.loc[model] == "no_rag"].index
+        no_rag = series(q, model, "no_rag", "token_f1").loc[declined]
+        naive = series(q, model, "naive", "token_f1").loc[declined]
+        ev.add("router_need", "questions_routed_away_from_retrieval", len(declined), model, "modular")
+        ev.add("router_need", "no_rag_f1_on_those", no_rag.mean(), model, "modular")
+        ev.add("router_need", "naive_f1_on_those", naive.mean(), model, "modular")
+        ev.add("router_need", "questions_retrieval_helped", int((naive > no_rag).sum()), model, "modular")
+        ev.add("router_need", "questions_retrieval_hurt", int((no_rag > naive).sum()), model, "modular")
+
+
 def metric_agreement(q: pd.DataFrame, ev: Evidence, arm: str = "naive") -> None:
     for metric in ("token_f1", "exact_match", "token_precision", "token_recall", "cosine", "groundedness"):
         ev.add_test(
@@ -529,6 +543,7 @@ def main() -> None:
         length_matched_gap(q, ev, arm)
     scale_tests(q, ev)
     metric_agreement(q, ev, "naive")
+    router_need(df, q, ev)
     retrieval_loss(ev)
     rewrite_diagnostics(q, ev)
     latency_and_limits(df, ev)
