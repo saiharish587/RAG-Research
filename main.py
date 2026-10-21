@@ -100,7 +100,10 @@ def main():
     # 4. Setup Evaluator
     evaluator = Evaluator(
         embedding_model_name=config.get("embedding", {}).get("model_name", "BAAI/bge-small-en-v1.5"),
-        device=config.get("embedding", {}).get("device", "cpu")
+        device=config.get("embedding", {}).get("device", "cpu"),
+        # With a generation cap, an answer that reaches it is a truncated
+        # failure, scored like an uncapped runaway (degenerate) answer.
+        token_limit=config.get("generation", {}).get("num_predict"),
     )
 
     # 5. Define Evaluation Matrix
