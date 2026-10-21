@@ -23,7 +23,6 @@ The FAISS index, evaluation set and HotpotQA data are included in the repository
 
 ```powershell
 py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cu121
 .\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
 ```
 
