@@ -1,0 +1,42 @@
+{
+  "question_id": "Q319",
+  "query": "Are both Duke Energy and Affiliated Managers Group based in Massachusetts?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, Duke Energy and Affiliated Managers Group are not based in Massachusetts. They were headquartered in Charlotte, North Carolina, which is located in the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Affiliated Managers Group: Affiliated Managers Group Inc. is an American international investment management company headquartered in Massachusetts that owns stakes in a number of boutique asset management, hedge fund, and specialized private equity firms.",
+      "Duke Energy: Duke Energy, headquartered in Charlotte, North Carolina, is an electric power holding company in the United States, with assets also in Canada and Latin America.",
+      "Progress Energy Inc: Progress Energy, headquartered in Raleigh, North Carolina, is a subsidiary of Duke Energy and prior to its merger with Duke Energy was a Fortune 500 energy company with more than 21,000 megawatts of generation capacity and $9 billion in annual revenues.  Progress Energy includes two major electric utilities that serve approximately 3.1 million customers in the Carolinas and Florida.  As an independent company, the last chairman and CEO of Progress Energy was William D. Johnson; his predecessor was Robert McGehee, who died on October 9, 2007 at the age of 64 of a stroke while on a business trip to London."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 293,
+    "generation_tokens": 34,
+    "generation_speed": 395.5788248981966,
+    "prompt_eval_speed": 39097.94502268481,
+    "generation_latency_s": 0.1714399999473244,
+    "latency": 0.5480852000182495,
+    "total_prompt_tokens": 366,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1293857,
+    "stage_rewrite_s": 0.12236220005434006,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07268810004461557,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1814752999925986,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17147499998100102,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5480949999764562,
+    "unaccounted_latency_s": 9.499990846961737e-05,
+    "rewritten_query": "Are both Duke Energy and Affiliated Management Groups based in Massachusetts?",
+    "query_was_rewritten": true
+  }
+}

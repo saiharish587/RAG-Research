@@ -1,0 +1,49 @@
+{
+  "question_id": "Q106",
+  "query": "Which American film actor and dancer starred in the 1945 film Johnny Angel?",
+  "ground_truth": "George Raft",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Johnny Angel is a 1945 film noir directed by Edwin L. Marin and written by Frank Gruber and Steve Fisher from the novel \"Mr. Angel Comes Aboard\" by Charles Gordon Booth. The movie stars George Raft, Claire Trevor, Hoagy Carmichael, and features Hoagy Carmichael.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gene Kelly: Eugene Curran Kelly (August 23, 1912 \u2013 February 2, 1996) was an American dancer, actor of film, stage and television, singer, film director, producer, and choreographer.  He was known for his energetic and athletic dancing style, his good looks, and the likeable characters that he played on screen.",
+      "John Travolta: John Joseph Travolta (born February 18, 1954) is an American actor, producer, dancer, and singer.  Travolta first became known in the 1970s, after appearing on the television series \"Welcome Back, Kotter\" (1975\u20131979) and starring in the box office successes \"Saturday Night Fever\" (1977) and \"Grease\" (1978).  His acting career declined through the 1980s, but enjoyed a resurgence in the 1990s with his role in \"Pulp Fiction\" (1994), and he has since starred in films such as \"Face/Off\" (1997), \"Swordfish\" (2001), \"Wild Hogs\", and \"Hairspray\" (both 2007).",
+      "Johnny Angel: Johnny Angel is a 1945 film noir directed by Edwin L. Marin and written by Frank Gruber and Steve Fisher from the novel \"Mr. Angel Comes Aboard\" by Charles Gordon Booth.  The movie stars George Raft, Claire Trevor and Signe Hasso, and features Hoagy Carmichael."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 71,
+    "generation_speed": 234.98651309801585,
+    "prompt_eval_speed": 15009.054185819752,
+    "generation_latency_s": 0.4383856999920681,
+    "latency": 0.7777938999934122,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 95,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23638779999999998,
+    "stage_route_s": 0.09566520003136247,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18634469993412495,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057217500056140125,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.370001938194036e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.43841729999985546,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7778030999470502,
+    "unaccounted_latency_s": 9.519990999251604e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Johnny Angel\"",
+      "Query 2: \"American film actor and dancer\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

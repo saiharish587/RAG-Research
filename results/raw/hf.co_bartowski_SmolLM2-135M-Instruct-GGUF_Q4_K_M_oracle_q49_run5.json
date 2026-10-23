@@ -1,0 +1,33 @@
+{
+  "question_id": "Q49",
+  "query": "Are Ferocactus and Silene both types of plant?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, Silenaceae is a family of flowering plants that includes many genera with large spines and small flowers. It does not include Ferocactus as it belongs to the genus Lychnis which contains about 700 species.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Silene: Silene is a genus of flowering plants in the family Caryophyllaceae.  Containing approximately 700 species, it is the largest genus in the family.  Common names include campion (which is shared with the related genus \"Lychnis\") and catchfly.  Many \"Silene\" species are widely distributed, particularly in the northern hemisphere.",
+      "Ferocactus: Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers.  There are about 30 species included in the genus.  They are found in the southwestern United States and northwestern Mexico."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 199,
+    "generation_tokens": 48,
+    "generation_speed": 403.8738230864374,
+    "prompt_eval_speed": 67366.28300609344,
+    "generation_latency_s": 0.20763419999275357,
+    "latency": 0.20769740000832826,
+    "total_prompt_tokens": 199,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0777744,
+    "stage_generate_s": 0.20767599996179342,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.20770589995663613,
+    "unaccounted_latency_s": 3.0399998649954796e-05
+  }
+}

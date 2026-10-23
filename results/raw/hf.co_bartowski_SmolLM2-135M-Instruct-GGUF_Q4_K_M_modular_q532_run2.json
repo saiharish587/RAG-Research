@@ -1,0 +1,49 @@
+{
+  "question_id": "Q532",
+  "query": "Are Mauritz Stiller and Johannes Grenzfurthner both of the same nationality?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, they are not both of the same nationality.\n\nMauritz Stiller (born 17 July 1883) is a Finnish-Swedish film director who discovered Greta Garbo and brought her to America in 1920. He was also known as the founder, conceptualist, artistic director, and lecturer of monochrom.\n\nJohannes Grenzfurthner (born 7 May 1704) is an award-winning Austrian artist, filmmaker, writer, actor, curator, theatre director, and lecturer. He is considered to be the most important Austrian painter of his time.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mauritz Stiller: Mauritz Stiller (17 July 1883 \u2013 18 November 1928) was a Finnish-Swedish film director, best known for discovering Greta Garbo and bringing her to America.",
+      "Johannes Grenzfurthner: Johannes Grenzfurthner (] ; born 1975 in Vienna) is an award-winning Austrian artist, filmmaker, writer, actor, curator, theatre director and lecturer.  He is known as the founder, conceptualist and artistic director of monochrom, an international art and theory group.  Most of his artworks are labelled \"monochrom\".",
+      "Carl Heinrich Graun: Carl Heinrich Graun (7 May 1704 \u2013 8 August 1759) was a German composer and tenor singer.  Along with Johann Adolph Hasse, he is considered to be the most important German composer of Italian opera of his time."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 276,
+    "generation_tokens": 134,
+    "generation_speed": 410.1772945440298,
+    "prompt_eval_speed": 21286.441462285977,
+    "generation_latency_s": 0.4571773000061512,
+    "latency": 1.1605245000682771,
+    "total_prompt_tokens": 412,
+    "total_generation_tokens": 323,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23291509999999999,
+    "stage_route_s": 0.10517640004400164,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5443083000136539,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05368839995935559,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.849997978657484e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4572096000192687,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1605344000272453,
+    "unaccounted_latency_s": 9.380001574754715e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, both Mauritz and Johannes Grenzfurthner are of the same nationality.",
+      "Here's how to generate these queries:"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

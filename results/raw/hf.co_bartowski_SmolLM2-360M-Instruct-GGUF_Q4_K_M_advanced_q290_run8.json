@@ -1,0 +1,42 @@
+{
+  "question_id": "Q290",
+  "query": "Which came to market first, \"Hey Pa! There's a Goat on the Roof\" or \"Poleconomy\"",
+  "ground_truth": "Hey Pa! There's a Goat on the Roof",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "\"Hey Pa!\" was released in 1980 and is a children's board game created by Bruce E. Hatherley. On the other hand, \"Poleconomy\" was first published in 1982 as a board game for adults and has been widely distributed worldwide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Poleconomy: Poleconomy is a board game invented by New Zealander Bruce E. Hatherley and first published in 1980.  It is similar to \"Monopoly\" but the board is divided into companies rather than properties.  Players compete to acquire properties and investments through stylized economic and political activity.  The playing time is set by agreement from all players, e.g. 2 hours, and the winner is determined by the monetary sum of all player cash, companies, insurance or other assets.  The game can also end when there are no more companies, advertisements in the bank or bonds in the treasury.  Another objective of the game is \"to teach players some of the fundamentals of economics, and the ways in which the economy and the government interact.\"  Different editions were published for several different countries.  The name \"Poleconomy\" is a portmanteau of \"politics\" and \"economy\".",
+      "Hey Pa! There's a Goat on the Roof: Hey Pa!  There's a Goat on the Roof was a children's board game issued by Parker Brothers in 1966.",
+      "Rove goat: The Rove is a breed of goat first domesticated in France.  The breed was previously considered endangered, but as of 2003, more than 5000 registered Roves are on French farms.  The goat was originally bred for meat, but because the current French market for goat meat is poor, farmers have begun to use the Rove for dairying, instead."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 62,
+    "generation_speed": 252.59624120496554,
+    "prompt_eval_speed": 58179.231863442394,
+    "generation_latency_s": 1.0815573000581935,
+    "latency": 3.556886099977419,
+    "total_prompt_tokens": 495,
+    "total_generation_tokens": 110,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1552073,
+    "stage_rewrite_s": 1.3263537000166252,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9340551999630406,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21478589996695518,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.081599299912341,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5568971999455243,
+    "unaccounted_latency_s": 0.00010360009036958218,
+    "rewritten_query": "Which came to market first, \"Hey Pa!\" There's a Goat on the Roof or \"Poleconomy\"?\n\nOptimized Query: Hey Pa! The Goat is coming out first.",
+    "query_was_rewritten": true
+  }
+}

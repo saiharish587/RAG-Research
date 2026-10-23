@@ -1,0 +1,48 @@
+{
+  "question_id": "Q300",
+  "query": "When did the rock band that sang \"All Join Hands\" rise to prominence? ",
+  "ground_truth": "early 1970s",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The rock band that sang \"All Join Hands\" rose to prominence when it was signed to Geffen Records in 1986, and has since been one of the most successful bands in alternative rock radio history.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fleetwood Mac: Fleetwood Mac are a British-American rock band, formed in London in 1967.  The band have sold more than 100 million records worldwide, making them one of the world's best-selling bands of all time.  In 1998, selected members of Fleetwood Mac were inducted into the Rock and Roll Hall of Fame, and received the Brit Award for Outstanding Contribution to Music.",
+      "Guns N' Roses: Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985.  The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler.  Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million records in the United States, making them one of the world's best-selling artists of all time.",
+      "Red Hot Chili Peppers: Red Hot Chili Peppers are an American funk rock band formed in Los Angeles in 1983.  The group's musical style primarily consists of rock with an emphasis on funk, as well as elements from other genres such as punk rock and psychedelic rock.  When played live, their music incorporates elements of jam band due to the improvised nature of many of their performances.  Currently, the band consists of founding members vocalist Anthony Kiedis and bassist Flea, longtime drummer Chad Smith, and former touring guitarist Josh Klinghoffer.  Red Hot Chili Peppers are one of the best-selling bands of all time with over 80 million records sold worldwide, have been nominated for sixteen Grammy Awards, of which they have won six, and are the most successful band in alternative rock radio history, currently holding the records for most number-one singles (13), most cumulative weeks at number one (85) and most top-ten songs (25) on the \"Billboard\" Alternative Songs chart.  In 2012, they were inducted into the Rock and Roll Hall of Fame."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 563,
+    "generation_tokens": 46,
+    "generation_speed": 351.82182788128176,
+    "prompt_eval_speed": 72309.27305419985,
+    "generation_latency_s": 0.2517812999431044,
+    "latency": 0.6888288999907672,
+    "total_prompt_tokens": 697,
+    "total_generation_tokens": 134,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2274699,
+    "stage_route_s": 0.18530169990845025,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21536070003639907,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03621230006683618,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.439998883754015e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2518320999806747,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6888409000821412,
+    "unaccounted_latency_s": 9.029998909682035e-05,
+    "route": "rag",
+    "router_raw": "The rock band that sang \"All Join Hands\" rose to prominence in 1975, when it released its debut album, \"Rock Band of All Seasons.\"",
+    "sub_queries": [
+      "The rock band that sang \"All Join Hands\" rose to prominence in the late 1970s and early 1980s, with its debut album \"Rock Band of the Year\" being released in 1976."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

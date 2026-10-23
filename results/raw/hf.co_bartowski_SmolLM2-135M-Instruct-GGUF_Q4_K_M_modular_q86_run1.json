@@ -1,0 +1,48 @@
+{
+  "question_id": "Q86",
+  "query": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+  "ground_truth": "April 1, 1949",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The American lawyer, lobbyist, and political consultant who was a senior member of the presidential campaign of Donald Trump was born in 1966/67. He joined Donald Trump's presidential campaign team in March 2016 and served as campaign manager from June to August 2016.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Paul Manafort: Paul John Manafort Jr. (born April 1, 1949) is an American lawyer, lobbyist and political consultant.  He joined Donald Trump's presidential campaign team in March 2016 and served as campaign manager from June to August 2016.  He was previously an adviser to the U.S. presidential campaigns of Republicans Gerald Ford, Ronald Reagan, George H. W. Bush, and Bob Dole.  In 1980 Manafort co-founded the Washington, D.C.-based lobbying firm Black, Manafort & Stone, along with principals Charles R. Black Jr., and Roger J. Stone.  In 1984 it was renamed Black, Manafort, Stone and Kelly (BMSK) & associates, after Peter G. Kelly was recruited.",
+      "Post-80s: The Post-'80 (also the Post-1980, ) is a colloquial term which refers to the generation, especially in urban cities, whose members were born between 1980 and 1989 in Mainland China after the introduction of the One-child policy.  This generation, the first to grow up entirely within the reformist era, currently ranges in age from 27 to 37 , making up a major portion of China's young adult demographic.",
+      "Michael D. Cohen (lawyer): Michael Dean Cohen (born 1966/67) is an American attorney who works as a lawyer and spokesperson for U.S. President Donald Trump.  Prior to this appointment he was Executive Vice-President of the Trump Organization and special counsel to Trump.  Cohen also previously served as co-president of Trump Entertainment and a member of the board of the Eric Trump Foundation, a children's health charity.  He joined the Trump Organization after having been a partner at Phillips Nizer."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 483,
+    "generation_tokens": 65,
+    "generation_speed": 354.68345865482206,
+    "prompt_eval_speed": 19520.672513438145,
+    "generation_latency_s": 0.3172832999844104,
+    "latency": 0.6089505000272766,
+    "total_prompt_tokens": 633,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2259663,
+    "stage_route_s": 0.1368938999949023,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1188490999629721,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03574830002617091,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8900023102760315e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.31731850001960993,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6089612999930978,
+    "unaccounted_latency_s": 0.00010309997014701366,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents.",
+    "sub_queries": [
+      "1980s-2005"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

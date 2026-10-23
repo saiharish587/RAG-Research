@@ -1,0 +1,49 @@
+{
+  "question_id": "Q10",
+  "query": "Are Local H and For Against both from the United States?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "No, Local H and For Against are not from the United States. They were formed by Scott Lucas, Matt Garcia, Joe Daniels, John Sparkman, and John Sparkman in Zion, Illinois in 1987.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Local H: Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987.  The members all met in high school in 1987 and founded Local H three years later.",
+      "For Against: For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.  Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from its 1984 inception to the present.",
+      "Mendocino County GMO Ban: Mendocino County, California, was the first jurisdiction in the United States to ban the cultivation, production or distribution of genetically modified organisms (GMOs).  The ordinance, entitled Measure H, was passed by referendum on March 2, 2004.  Initiated by the group \"GMO Free Mendocino\", the campaign was a highly publicized grassroots effort by local farmers and environmental groups who contend that the potential risks of GMOs to human health and the ecosystem have not yet been fully understood.  The measure was met with opposition by several interest groups representing the biotechnology industry, The California Plant Health Association (now the Western Plant Health Association) and CropLife America, a Washington-based consortium whose clients represent some of the largest food distributors in the nation, including Monsanto, DuPont and Dow Chemical.  Since the enactment of the ordinance, Mendocino County has been added to an international list of \"GMO free zones.\"  Pre-emptive statutes banning local municipalities from such ordinances have now become widespread with adoption in sixteen states."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 48,
+    "generation_speed": 372.6158437234868,
+    "prompt_eval_speed": 70057.25833614012,
+    "generation_latency_s": 0.24720039998646826,
+    "latency": 0.6928812999976799,
+    "total_prompt_tokens": 540,
+    "total_generation_tokens": 133,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2258833,
+    "stage_route_s": 0.09374699997715652,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.29557900002691895,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05614290002267808,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.089999806135893e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24725670006591827,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6928979000076652,
+    "unaccounted_latency_s": 0.00011229992378503084,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Local H, for example, is a local government agency in the United States that provides services to residents of the state of California. It also serves as a member of the National Association of Counties (NAC) and is part of the California Department of Motor Vehicles (DMV). For Against Local H from the United States?",
+      "Question: Is the United States' National Association of Counties (NAC)?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

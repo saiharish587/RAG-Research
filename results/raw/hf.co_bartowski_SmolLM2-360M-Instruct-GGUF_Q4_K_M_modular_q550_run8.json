@@ -1,0 +1,49 @@
+{
+  "question_id": "Q550",
+  "query": "WAVN is a Gospel formatted broadcast radio station tied to which city in DeSoto County, Mississippi?",
+  "ground_truth": "Southaven, Mississippi",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "WAVN is a gospel formatted broadcast radio station that is tied to DeSoto County, Mississippi.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "WAVN: WAVN is a Gospel formatted broadcast radio station licensed to Southaven, Mississippi, serving Metro Memphis.  WAVN is owned and operated by Flinn Broadcasting.",
+      "DeSoto County, Mississippi: DeSoto County is a county located in the U.S. state of Mississippi.  As of the 2010 census, the population was 161,252, making it the third-most populous county in Mississippi.  Its county seat is Hernando.  DeSoto County is part of the Memphis, TN-MS-AR Metropolitan Statistical Area (MSA).  It is the second-most populous county in the MSA.  The county has lowland areas that were developed in the 19th century for cotton plantations, and hill country in the eastern part of the county.",
+      "WAKK (AM): WAKK was a gospel formatted broadcast radio station licensed to McComb, Mississippi, serving South-Central Mississippi.  The station was owned and operated by Charles W. Dowdy, debtor-in-possession, following the September 2011 bankruptcy filing by Southwest Broadcasting, Inc."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 319,
+    "generation_tokens": 22,
+    "generation_speed": 241.8618968568947,
+    "prompt_eval_speed": 45892.67731261689,
+    "generation_latency_s": 0.20764120004605502,
+    "latency": 0.5234059999929741,
+    "total_prompt_tokens": 463,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.223108,
+    "stage_route_s": 0.09679270000196993,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16219910001382232,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0565869000274688,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.809997674077749e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2076803999952972,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5234176999656484,
+    "unaccounted_latency_s": 0.00010119995567947626,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"WAVN Radio Station\"",
+      "\"DeSoto County, Mississippi\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

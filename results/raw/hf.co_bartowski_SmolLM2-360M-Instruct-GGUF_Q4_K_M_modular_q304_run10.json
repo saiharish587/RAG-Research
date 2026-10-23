@@ -1,0 +1,49 @@
+{
+  "question_id": "Q304",
+  "query": "Which film starring Patrick Tatten is based on a book written by Steve Lopez?",
+  "ground_truth": "The Soloist",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The film \"National Treasure\" is based on the book \"National Treasure: Book of Secrets\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Patrick Tatten: Patrick James Bolger Tatten (born January 21, 1981) is an American actor and producer.  He is best known for roles in films such as: \"Dirty Deeds\", \"The Good German\", \"The Soloist\" , \"Lucky Bastard\" & the t.v. series Boystown on \"OutTV\".",
+      "National Treasure: Book of Secrets: National Treasure: Book of Secrets (released on home video as National Treasure 2: Book of Secrets) is a 2007 mystery adventure film directed by Jon Turteltaub and produced by Jerry Bruckheimer.  It is a sequel to the 2004 film \"National Treasure\" and is the second part of the \"National Treasure\" franchise.  The film stars Nicolas Cage, Diane Kruger, Justin Bartha, Jon Voight, Harvey Keitel, Ed Harris, Bruce Greenwood, and Helen Mirren.",
+      "Age of Secrets: Age of Secrets: The Conspiracy that Toppled Richard Nixon and the Hidden Death of Howard Hughes is a conspiracy theory-oriented biography of Howard Hughes personal advisor John H. Meier.  It is written by newspaper reporter Gerald Bellett and was published by the Las Vegas Free Press in 2015.  The book argues that Meier was one of the people who played a role in affecting President Richard Nixon's resignation in the wake of the Watergate scandal.  It also details how Meier was supposedly pursued for 20 years by the CIA, the Hughes organization, as well as Nixon sympathizers.  The book includes an excerpt from Meier's diary regarding what he says is his knowledge regarding the assassination of Robert F. Kennedy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 435,
+    "generation_tokens": 20,
+    "generation_speed": 217.82933071938137,
+    "prompt_eval_speed": 52145.7684008631,
+    "generation_latency_s": 0.21401560003869236,
+    "latency": 0.595776499947533,
+    "total_prompt_tokens": 567,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2393815,
+    "stage_route_s": 0.10655319993384182,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21877300005871803,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05622260004747659,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.450006574392319e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21406699996441603,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5957911000587046,
+    "unaccounted_latency_s": 0.00012149987742304802,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Book of Secrets\" (Steve Lopez)",
+      "\"The Book of Secrets\" (Patrick Tatten)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

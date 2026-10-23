@@ -1,0 +1,49 @@
+{
+  "question_id": "Q48",
+  "query": "What type of forum did a former Soviet statesman initiate?",
+  "ground_truth": "Organizations could come together to address global issues",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Petrashevsky Circle was an informal literary discussion group that originated in St. Petersburg during the 1840s, organized by Mikhail Petrashevsky and his followers. This forum was primarily focused on discussing Western philosophy and literature that were banned by the Imperial government of Tsar Nicholas I.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Petrashevsky Circle: The Petrashevsky Circle was a Russian literary discussion group of progressive-minded commoner-intellectuals in St. Petersburg in the 1840s.  It was organized by Mikhail Petrashevsky, a follower of the French utopian socialist Charles Fourier.  Among the members were writers, teachers, students, minor government officials, and army officers.  While differing in political views, most of them were opponents of the tsarist autocracy and Russian serfdom.  Like that of the Lyubomudry group founded earlier in the century, the purpose of the circle was to discuss Western philosophy and literature that was officially banned by the Imperial government of Tsar Nicholas I.",
+      "Mikhail Gorbachev: Mikhail Sergeyevich Gorbachev, ( ; Russian: \u041c\u0438\u0445\u0430\u0438\u0301\u043b \u0421\u0435\u0440\u0433\u0435\u0301\u0435\u0432\u0438\u0447 \u0413\u043e\u0440\u0431\u0430\u0447\u0451\u0432 ; ] ; born 2 March 1931) is a former Soviet statesman.  He was the eighth and last leader of the Soviet Union, having been General Secretary of the Communist Party of the Soviet Union from 1985 until 1991.  He was the country's head of state from 1988 until 1991 (titled as Chairman of the Presidium of the Supreme Soviet from 1988 to 1989, as Chairman of the from 1989 to 1990, and as Soviet Union]] from 1990 to 1991).",
+      "Nikita Khrushchev: Nikita Sergeyevich Khrushchev (15 April [O.S. 3 April] 1894  \u2013 11 September 1971) was a Soviet politician who led the Soviet Union during part of the Cold War as the First Secretary of the Communist Party of the Soviet Union from 1953 to 1964, and as Chairman of the Council of Ministers, or Premier, from 1958 to 1964.  Khrushchev was responsible for the de-Stalinization of the Soviet Union, for backing the progress of the early Soviet space program, and for several relatively liberal reforms in areas of domestic policy.  Khrushchev's party colleagues removed him from power in 1964, replacing him with Leonid Brezhnev as First Secretary and Alexei Kosygin as Premier."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 594,
+    "generation_tokens": 62,
+    "generation_speed": 232.87084682356655,
+    "prompt_eval_speed": 69612.09422243056,
+    "generation_latency_s": 0.3893233999842778,
+    "latency": 0.6939567000372335,
+    "total_prompt_tokens": 716,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2434217,
+    "stage_route_s": 0.1012789000524208,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14709529990796,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05608919996302575,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.340005736798048e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3893559999996796,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6939658999908715,
+    "unaccounted_latency_s": 9.360001422464848e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Soviet Forum\"",
+      "\"Russian Forum\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q305",
+  "query": "Are Skeptical Inquirer and The Progressive Populist both tabloid-style magazines?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Skeptical Inquirer and The Progressive Populist are not both tabloid-style magazines.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Progressive Populist: The Progressive Populist is a magazine in tabloid newspaper format published twice monthly.  Founded in 1995, the magazine is based in Storm Lake, Iowa, with editorial offices in Manchaca, Texas.  The editor is James M. Cullen, managing editor is Art Cullen and the publisher is John Cullen.",
+      "Skeptical Inquirer: Skeptical Inquirer is a bimonthly American magazine published by the Committee for Skeptical Inquiry (CSI) with the subtitle: \"The Magazine for Science and Reason\".  In 2016 it celebrated its fortieth anniversary.  For most of its existence, the Skeptical Inquirer (SI) was published by the Committee for the Scientific Investigation of Claims of the Paranormal, widely known by its acronym CSICOP.  In 2006 the CSICOP Executive Council shortened CSICOP\u2019s name to the Committee for Skeptical Inquiry (CSI) and broadened its mission statement.",
+      "Skeptic (U.S. magazine): Skeptic, colloquially known as Skeptic magazine, is a quarterly science education and science advocacy magazine published internationally by The Skeptics Society, a nonprofit organization devoted to promoting scientific skepticism and resisting the spread of pseudoscience, superstition, and irrational beliefs.  Founded by Michael Shermer, founder of the Skeptics Society, the magazine was first published in the spring of 1992 and is published through Millennium Press."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 388,
+    "generation_tokens": 24,
+    "generation_speed": 235.29873134767348,
+    "prompt_eval_speed": 13392.24078420544,
+    "generation_latency_s": 0.24286120000761002,
+    "latency": 0.907201899914071,
+    "total_prompt_tokens": 528,
+    "total_generation_tokens": 119,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2339204,
+    "stage_route_s": 0.10648610000498593,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4987553999526426,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05892940005287528,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.070003680884838e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24289400002453476,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9072113999864087,
+    "unaccounted_latency_s": 9.689992293715477e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Skeptical Inquirer is a tabloid-style magazine that focuses on debunking conspiracy theories, promoting critical thinking, and exploring the unknown. It often features articles on topics like climate change, politics, and science fiction.",
+      "The Progressive Populist is another tabloid-style magazine that aims to promote progressive causes through its content. It covers a wide range of issues, including social justice, education, and environmentalism."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

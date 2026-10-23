@@ -1,0 +1,42 @@
+{
+  "question_id": "Q304",
+  "query": "Which film starring Patrick Tatten is based on a book written by Steve Lopez?",
+  "ground_truth": "The Soloist",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on the given information, the film \"28 Days Later\" is not directly related to the book \"Steve Lopez\". The book \"Steve Lopez\" is about a group of survivors who survive after being infected with a highly contagious virus. The film starring Patrick Tatten (played by Sam Raimi) does feature a story based on the book, but it is not set in the same world as the book.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Patrick Tatten: Patrick James Bolger Tatten (born January 21, 1981) is an American actor and producer.  He is best known for roles in films such as: \"Dirty Deeds\", \"The Good German\", \"The Soloist\" , \"Lucky Bastard\" & the t.v. series Boystown on \"OutTV\".",
+      "Sam Raimi: Samuel M \"Sam\" Raimi ( ; born October 23, 1959) is an American film director, producer, screenwriter and actor, famous for creating the cult horror \"Evil Dead\" series, as well as directing the original \"Spider-Man\" trilogy (2002\u201307), the 1990 superhero film \"Darkman\" and the \"I Will Rip Your Soul Out\" scene from the 2013 remake of \"Evil Dead\".  His most recent film is the 2013 Disney fantasy film \"Oz the Great and Powerful\".",
+      "28 Days Later: 28 Days Later is a 2002 British post-apocalyptic horror film directed by Danny Boyle, written by Alex Garland, and starring Cillian Murphy, Naomie Harris, Brendan Gleeson, Megan Burns, and Christopher Eccleston.  The plot depicts the breakdown of society following the accidental release of a highly contagious virus and focuses upon the struggle of four survivors to cope with the destruction of the life they once knew."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 396,
+    "generation_tokens": 87,
+    "generation_speed": 366.8301239211189,
+    "prompt_eval_speed": 21950.002771464995,
+    "generation_latency_s": 0.34095139999408275,
+    "latency": 0.8029181000310928,
+    "total_prompt_tokens": 472,
+    "total_generation_tokens": 110,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1389909,
+    "stage_rewrite_s": 0.1613018000498414,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07775820000097156,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22277009999379516,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3409911999478936,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8029319000197574,
+    "unaccounted_latency_s": 0.00011120003182440996,
+    "rewritten_query": "Which film starring Patrick Tatten is based on Steve Lopez's book, \"The Last Days of the Dead\"?",
+    "query_was_rewritten": true
+  }
+}

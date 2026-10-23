@@ -1,0 +1,49 @@
+{
+  "question_id": "Q374",
+  "query": "which is traditionally drunk before retiring to bed, Hot toddy or Kir?",
+  "ground_truth": "Hot toddy",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Hot toddy",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hot toddy: A hot toddy, also known as hot whiskey in Ireland, is typically a mixed drink made of liquor and water with honey (or, in some recipes, sugar), herbs (such as tea) and spices, and served hot.  Hot toddy recipes vary and are traditionally drunk before retiring for the night, or in wet or cold weather.  Some believe the drink relieves the symptoms of the cold and flu\u2014in \"How to Drink\", Victoria Moore describes the drink as \"the vitamin C for health, the honey to soothe, the alcohol to numb\".",
+      "Hot toddy (disambiguation): Hot toddy is a mixed drink, usually including alcohol, that is served hot.",
+      "Kir (cocktail): Kir is a popular French cocktail made with a measure of cr\u00e8me de cassis (blackcurrant liqueur) topped up with white wine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 255,
+    "generation_tokens": 4,
+    "generation_speed": 208.2357228382529,
+    "prompt_eval_speed": 54933.218440327444,
+    "generation_latency_s": 0.13255420001223683,
+    "latency": 0.4585449999431148,
+    "total_prompt_tokens": 385,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2321996,
+    "stage_route_s": 0.1072332999901846,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1612377999117598,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057337600039318204,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.070003680884838e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13259330007713288,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.45855649991426617,
+    "unaccounted_latency_s": 0.00010449986439198256,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Hot Toddy\"",
+      "Query 2: \"Kir\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

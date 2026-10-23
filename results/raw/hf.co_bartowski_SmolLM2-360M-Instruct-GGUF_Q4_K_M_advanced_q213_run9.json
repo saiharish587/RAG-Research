@@ -1,0 +1,42 @@
+{
+  "question_id": "Q213",
+  "query": "Which tower is taller, 712 Fifth Avenue or Manhattan Life Insurance Building?",
+  "ground_truth": "712 5th Avenue",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Manhattan Life Insurance Building is taller than 712 Fifth Avenue.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Manhattan Life Insurance Building: The Manhattan Life Insurance Building was a 348 ft tower at 64-66 Broadway in New York City completed in 1894 to the designs of the architects of Kimball & Thompson and slightly extended north in 1904 making its new address 64-70 Broadway.  It was the first skyscraper to pass 100 m in Manhattan.",
+      "New York Life Building: The New York Life Insurance Building, New York, located at 51 Madison Avenue, Manhattan, New York City, across from Madison Square Park, is the headquarters of the New York Life Insurance Company.",
+      "Manhattan Life Insurance Company: Manhattan Life Insurance Company, incorporated on May 29, 1850, is a life insurance company domiciled in New York but operates as a subsidiary of Manhattan Life Group in Houston, Texas."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 261,
+    "generation_tokens": 16,
+    "generation_speed": 257.0281124497992,
+    "prompt_eval_speed": 34148.894413188544,
+    "generation_latency_s": 0.8875644999789074,
+    "latency": 3.366868400014937,
+    "total_prompt_tokens": 338,
+    "total_generation_tokens": 22,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1240803,
+    "stage_rewrite_s": 1.1135451999725774,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1414488999871537,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22419219999574125,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8876044999342412,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3668796999845654,
+    "unaccounted_latency_s": 8.970010094344616e-05,
+    "rewritten_query": "Manhattan Life Insurance Building",
+    "query_was_rewritten": true
+  }
+}

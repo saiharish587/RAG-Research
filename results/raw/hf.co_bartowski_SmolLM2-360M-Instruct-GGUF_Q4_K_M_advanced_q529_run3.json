@@ -1,0 +1,42 @@
+{
+  "question_id": "Q529",
+  "query": "Which band was formed first, Wavves or Social Code?",
+  "ground_truth": "Social Code",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Wavves is formed first, as stated in the context.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wavves: Wavves is an American rock band based in San Diego, California.  Formed in 2008 by singer-songwriter Nathan Williams (born June 12, 1986), the band also features Alex Gates (guitar, backing vocals), Stephen Pope (bass guitar, backing vocals) and Brian Hill (drums and backing vocals).",
+      "Social Code: Social Code (formerly known as Fifth Season) was a Canadian alternative rock group formed in 1999 in St. Albert.",
+      "Rock 'n' Roll (Social Code album): Rock 'N' Roll is the third album by the Canadian alternative rock band Social Code.  It was released on September 1, 2009, with the first single \"Satisfied\" released on iTunes on July 28, 2009."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 256,
+    "generation_tokens": 14,
+    "generation_speed": 249.79926844499957,
+    "prompt_eval_speed": 53906.08549168246,
+    "generation_latency_s": 0.9012411999283358,
+    "latency": 3.3629673999967054,
+    "total_prompt_tokens": 329,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1255388,
+    "stage_rewrite_s": 1.1610041999956593,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0998152999673039,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20079429994802922,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9012736999429762,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3629761999472976,
+    "unaccounted_latency_s": 8.910009637475014e-05,
+    "rewritten_query": "Wavves was formed first, followed by Social Code.",
+    "query_was_rewritten": true
+  }
+}

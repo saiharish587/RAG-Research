@@ -1,0 +1,48 @@
+{
+  "question_id": "Q160",
+  "query": "The song \"Chim Chim Cher-ee\" can be heard  in the \"Mary Poppins\" scene of a Disney ride that debuted in what year?",
+  "ground_truth": "1989",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The song \"Chim Chim Cher-ee\" is mentioned to have been sung by Dick Van Dyke and Julie Andrews during the \"Mary Poppins\" segment of the \"Mary Poppins\" musical.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chim Chim Cher-ee: \"Chim Chim Cher-ee\" is a song from \"Mary Poppins\", the 1964 musical motion picture.  It was originally sung by Dick Van Dyke and Julie Andrews, and also is featured in the Cameron Mackintosh/Disney \"Mary Poppins\" musical.  The song can be heard in the \"Mary Poppins\" scene of The Great Movie Ride at Disney's Hollywood Studios and during the \"Mary Poppins\" segment of \"\" at Disneyland.",
+      "Mary Poppins (song): \"Mary Poppins\" is a song from the 2015 stage musical \"Love Birds\" with music and lyrics by Robert J. Sherman.  It is sung by \"The Original Quack Pack\", a penguin barbershop quartet who resemble the penguins from the 1964 Walt Disney motion picture, \"Mary Poppins\".  In dialogue leading up to the song, the penguins explain that while they did know the same nanny, (Mary Poppins) they are not the same penguins as in the movie.  The song expresses their longing for the magical nanny of literary fame.",
+      "I Love to Laugh: \"I Love to Laugh\", also called \"We Love to Laugh\", is a song from Walt Disney's film \"Mary Poppins\".  It was composed by Richard M. Sherman and Robert B. Sherman.  The song is sung in the film by \"Uncle Albert\" (Ed Wynn), and \"Bert\" (Dick Van Dyke) as they levitate uncontrollably toward the ceiling, eventually joined by Mary Poppins (Julie Andrews) herself.  The premise of the scene, that laughter and happiness cause Uncle Albert (and like-minded visitors) to float into the air, can be seen as a metaphor for the way laughter can \"lighten\" a mood.  (Compare Peter Pan's flight power, which is also powered by happy thoughts.)  Conversely, thinking of something sad literally brings Albert and his visitors \"down to earth\" again.  The song states a case strongly in favor of laughter, even if Mary Poppins appears to disapprove of Uncle Albert's behavior, especially since it not only complicates the task of getting Albert down, but the infectious mood sends Bert and the Banks children into the air as well."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 585,
+    "generation_tokens": 44,
+    "generation_speed": 362.133956642689,
+    "prompt_eval_speed": 73640.4833836858,
+    "generation_latency_s": 0.24540669994894415,
+    "latency": 0.638545099995099,
+    "total_prompt_tokens": 753,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23672179999999998,
+    "stage_route_s": 0.17584839998744428,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17864940001163632,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03846109996084124,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.369998350739479e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24545329995453358,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6385564999654889,
+    "unaccounted_latency_s": 0.00010120007209479809,
+    "route": "rag",
+    "router_raw": "The song \"Chim Chim Cher-ee\" is often referenced as part of the \"Mary Poppins\" series, which was released in 1963.",
+    "sub_queries": [
+      "The song \"Chim Chim Cher-ee\" is featured in the \"Mary Poppins\" ride, which was released in 1953."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

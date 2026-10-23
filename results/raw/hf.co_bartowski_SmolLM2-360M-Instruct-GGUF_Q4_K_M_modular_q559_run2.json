@@ -1,0 +1,49 @@
+{
+  "question_id": "Q559",
+  "query": "Which has more species, Aichryson or Polypodium?",
+  "ground_truth": "Polypodium",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Aichryson has more species than Polypodium.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Aichryson: Aichryson is a genus of about 15 species of succulent, subtropical plants, mostly native to the Canary Islands, with a few in the Azores, Madeira and Morocco, and one in Portugal.",
+      "Polypodium: Polypodium is a genus of 75\u2013100 species of true ferns, widely distributed throughout the world, with the highest species diversity in the tropics.  The name is derived from Ancient Greek \"poly\" (\u03c0\u03bf\u03bb\u03cd) \"many\" + \"podion\" (\u03c0\u03cc\u03b4\u03b9\u03bf\u03bd) \"little foot\", on account of the foot-like appearance of the rhizome and its branches.  They are commonly called polypody or rockcap fern, but for many species unique vernacular names exist.",
+      "Polypodium australe: Polypodium is derived from the Greek \"Polus\", many, and \"podion\", small foot, since the rhizome bears numerous roots.  \"Australe\" comes from the Latin \"auter\", wind of the south, for in Europe, this species grows more particularly in southern France.  The common polypody is medicinal plant known since the times of Dioscorides, and its rhizome is used against cough and liver diseases."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 334,
+    "generation_tokens": 13,
+    "generation_speed": 221.4047278424961,
+    "prompt_eval_speed": 43745.90700720366,
+    "generation_latency_s": 0.1795907000778243,
+    "latency": 0.5698050999781117,
+    "total_prompt_tokens": 462,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2249026,
+    "stage_route_s": 0.10304590000305325,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23196830006781965,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05503909999970347,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.610000178217888e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17962309997528791,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.569814300048165,
+    "unaccounted_latency_s": 9.240000508725643e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Aichryson has more species than Polypodium.",
+      "Query 2: Polypodium has more species than Aichryson."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

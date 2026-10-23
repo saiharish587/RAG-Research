@@ -1,0 +1,42 @@
+{
+  "question_id": "Q24",
+  "query": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+  "ground_truth": "Badly Drawn Boy",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Hour of Bewilderbeast is the debut studio album by British musician Badly Drawn Boy. It features an increased number of instruments compared to Badly Drawn Boy's previous albums.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Badly Drawn Boy: Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+      "Wolf Alice: Wolf Alice are a four-piece alternative rock band from North London, formed initially as a two-person band in 2010.  Its members since 2012 are Ellie Rowsell (vocals, guitar), Joff Oddie (guitars, vocals), Theo Ellis (bass), and Joel Amey (drums, vocals).",
+      "The Hour of Bewilderbeast: The Hour of Bewilderbeast is the debut studio album by British musician Badly Drawn Boy, released on 26 June 2000.  Damon Gough, who performs as Badly Drawn Boy, wrote, produced, and played several instruments on the album's eighteen tracks, several of which also feature accompaniment by members of the British indie rock bands Alfie and Doves.  \"The Hour of Bewilderbeast\" was released to great critical acclaim and went on to win the 2000 Mercury Prize, and has sold 455,000 copies in the United Kingdom as of September 2011."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 375,
+    "generation_tokens": 42,
+    "generation_speed": 421.97060271467757,
+    "prompt_eval_speed": 47063.2530120482,
+    "generation_latency_s": 0.18748339999001473,
+    "latency": 0.6972828999860212,
+    "total_prompt_tokens": 456,
+    "total_generation_tokens": 108,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1377695,
+    "stage_rewrite_s": 0.2447894000215456,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08039850008208305,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18447899993043393,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18752209993544966,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6972937999526039,
+    "unaccounted_latency_s": 0.00010529998689889908,
+    "rewritten_query": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice?\"\n\nThis output meets the requirements of the original query. It uses the same phrase as the original query and includes only the relevant information in the response. The rest of the text remains unchanged.",
+    "query_was_rewritten": true
+  }
+}

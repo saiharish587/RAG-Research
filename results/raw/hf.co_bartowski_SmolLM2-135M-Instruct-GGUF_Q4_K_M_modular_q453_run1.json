@@ -1,0 +1,48 @@
+{
+  "question_id": "Q453",
+  "query": "Which Argentine telenovela broadcast by Telefe from March 12 to December 19, 2012 starred Isabel Macedo as Jimena Benitez?",
+  "ground_truth": "Graduados",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The question asks which Argentine telenovela \"Graduados\" starred Isabel Macedo as Jimena Benitez.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Patricia Longo: Patricia Longo, also known as Jimena Ben\u00ectez, is a fictional character in the 2012 Argentine telenovela \"Graduados\".  She is played by Isabel Macedo, both as an adult and, in flashbacks, as a teenager.",
+      "Amar despu\u00e9s de amar: Amar, despu\u00e9s de amar (English: \"To love after love\") is a 2017 Argentine telenovela produced by Telefe Contenidos and broadcast by Telefe premiered on 23 January 2017.  Starring Mariano Mart\u00ednez, Isabel Macedo, Eleonora Wexler, Federico Amador, Michel Noher, Manuela Pal, Delfina Chaves, Franco Masini, Camila Mateos, Manuel Ramos and Virginia Lago in the lead roles.",
+      "Mercedes Sosa: Hayd\u00e9e Mercedes Sosa (] ; 9 July 1935 \u2013 4 October 2009), sometimes known as La Negra (literally: \"The Black One\"), was an Argentine singer who was popular throughout Latin America and many countries outside the region.  She was born on Argentina's Independence Day.  With her roots in Argentine folk music, Sosa became one of the preeminent exponents of nueva canci\u00f3n.  She gave voice to songs written by many Latin American songwriters.  Her music made people hail her as the \"voice of the voiceless ones\", and \"the voice of America\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 427,
+    "generation_tokens": 27,
+    "generation_speed": 374.6565648155857,
+    "prompt_eval_speed": 22397.062680304225,
+    "generation_latency_s": 0.20353840000461787,
+    "latency": 0.5596426000120118,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 73,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23012539999999998,
+    "stage_route_s": 0.10427849995903671,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2135750000597909,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03807719994802028,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.700000863522291e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20357799995690584,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5596520999679342,
+    "unaccounted_latency_s": 9.680003859102726e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Jimena Benitez is a character in the Argentine telenovela \"El Cielo de la Vie\" (The World of Life). The user asked for two search queries related to this character."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

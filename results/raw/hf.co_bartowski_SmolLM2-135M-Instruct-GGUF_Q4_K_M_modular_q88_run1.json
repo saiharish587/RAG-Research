@@ -1,0 +1,49 @@
+{
+  "question_id": "Q88",
+  "query": "Where are Teide National Park and Garajonay National Park located?",
+  "ground_truth": "Canary Islands, Spain",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is: Teide National Park and Garajonay National Park are located in Tenerife (Canary Islands, Spain).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Teide National Park: Teide National Park (Spanish: \"Parque nacional del Teide\" , ] ) is a national park located in Tenerife (Canary Islands, Spain).",
+      "Roque Cinchado: The Roque Cinchado is a rock formation, regarded as emblematic of the island of Tenerife (Canary Islands, Spain).  It lies within the Teide National Park (a World Heritage Site) in the municipality of La Orotava, near the volcano of the same name, in the heart of the island.  The Roque Cinchado is one of the largest in the world by altitude, for the entire park totals more than 2000 metres.",
+      "Shortest common supersequence problem: In computer science, the shortest common supersequence of two sequences X and Y is the shortest sequence which has X and Y as subsequences.  This is a problem closely related to the longest common subsequence problem.  Given two sequences X = < x.. . ,x > and Y = < y.. . ,y >, a sequence U = < u.. . ,u > is a common supersequence of X and Y if items can be removed from U to produce X or Y."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 328,
+    "generation_tokens": 29,
+    "generation_speed": 392.74106175514623,
+    "prompt_eval_speed": 19473.9654455857,
+    "generation_latency_s": 0.1963252000277862,
+    "latency": 0.6893234000308439,
+    "total_prompt_tokens": 458,
+    "total_generation_tokens": 144,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2221885,
+    "stage_route_s": 0.08595690003130585,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3517850999487564,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055070600006729364,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.049999501556158e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19636399997398257,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6893359000096098,
+    "unaccounted_latency_s": 9.970006067305803e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Here are the two search queries for the given question:",
+      "Where is Teide National Park located? (Search query)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

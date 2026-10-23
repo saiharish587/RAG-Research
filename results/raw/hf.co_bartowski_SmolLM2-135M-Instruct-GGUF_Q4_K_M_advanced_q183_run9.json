@@ -1,0 +1,42 @@
+{
+  "question_id": "Q183",
+  "query": "Which English musician is known for both the songs \"See Yourself\" and \"Withing You Without You\"?",
+  "ground_truth": "George Harrison",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "George Harrison",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "See Yourself: \"See Yourself\" is a song by English musician George Harrison, released on his 1976 album \"Thirty Three & 1/3\".  Harrison began writing the song in 1967, while he was a member of the Beatles, in response to the public outcry surrounding bandmate Paul McCartney's admission that he had taken the hallucinogenic drug LSD.  McCartney's announcement created a reaction in the press similar to that caused in 1966 by John Lennon's statement that the Beatles were more popular than Christianity.  In its finished form, the song's lyrics advocate self-awareness and consideration for the consequences of one's actions.  Musically, the composition contains unusual shifts in time signature from standard 4/4 to 9/8, while the songwords reflect the era of its genesis by recalling themes first espoused in the Beatles tracks \"Within You Without You\" and \"All You Need Is Love\".",
+      "Without You (Silverchair song): \"Without You\" is the second single released on 13 May 2002 by Australian rock band Silverchair from their fourth album, \"Diorama\", issued in March that year (see 2002 in music).  It was written in Db major by lead singer-guitarist Daniel Johns and was composed during the recording sessions for the band's third album \"Neon Ballroom\" (1999) but was not used at that time.",
+      "Within You Without You: \"Within You Without You\" is a song written by George Harrison and released on the Beatles' 1967 album \"Sgt. Pepper's Lonely Hearts Club Band\".  It was Harrison's second composition in the Indian classical style, after \"Love You To\", and was inspired by his six-week stay in India with his mentor and sitar teacher, Ravi Shankar, over September\u2013October 1966.  Recorded in London without the other Beatles, the song features Indian instrumentation such as sitar, dilruba and tabla, and was performed by Harrison and members of the Asian Music Circle.  The recording marked a significant departure from the Beatles' previous work; musically, it evokes the Indian devotional tradition, while the overtly spiritual quality of the lyrics reflects Harrison's absorption in Hindu philosophy and the teachings of the Vedas.  Although the song was his only composition on \"Sgt. Pepper\", Harrison's endorsement of Indian culture was further reflected in the inclusion of yogis such as Paramahansa Yogananda among the crowd depicted on the album cover."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 628,
+    "generation_tokens": 3,
+    "generation_speed": 469.9248120300752,
+    "prompt_eval_speed": 88115.61666900519,
+    "generation_latency_s": 0.09919700003229082,
+    "latency": 0.4718747000442818,
+    "total_prompt_tokens": 709,
+    "total_generation_tokens": 20,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1423627,
+    "stage_rewrite_s": 0.1390130000654608,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07751650002319366,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15602899994701147,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.09923100005835295,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.47188359999563545,
+    "unaccounted_latency_s": 9.479990694671869e-05,
+    "rewritten_query": "Which English musician is known for both \"Seeing Yourself\" and \"Without You?",
+    "query_was_rewritten": true
+  }
+}

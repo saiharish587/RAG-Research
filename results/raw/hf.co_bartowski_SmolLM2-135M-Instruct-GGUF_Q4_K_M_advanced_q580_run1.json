@@ -1,0 +1,42 @@
+{
+  "question_id": "Q580",
+  "query": "The album \"The Best of LeAnn Rimes\" contained a song used as the theme song for a film. What is the name of the film?",
+  "ground_truth": "Coyote Ugly",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on the context provided, the correct answer to the question is that the song \"Big Deal\" was released as the first single from the album \"LeAnn Rimes\". The song was released on September 28, 1999 and charted at number 6 on the US country charts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Malkovich: John Gavin Malkovich (born December 9, 1953) is an American actor, director, and producer.  He has appeared in more than 70 films.  For his roles in \"Places in the Heart\" and \"In the Line of Fire\", he received Academy Award nominations.  He has also appeared in films such as \"Empire of the Sun\", \"The Killing Fields\", \"Con Air\", \"Of Mice and Men\", \"Rounders\", \"Ripley's Game\", \"Knockaround Guys\", \"Being John Malkovich\", \"Shadow of the Vampire\", \"Burn After Reading\", \"RED\", \"Mulholland Falls\", \"Dangerous Liaisons\", and \"Warm Bodies\", as well as producing films such as \"Ghost World\", \"Juno\", and \"The Perks of Being a Wallflower\".",
+      "John Malkovich filmography: American actor, director, and producer John Malkovich has appeared in more than 70 motion pictures.  He started acting in the 1980s, appearing in the films \"Places in the Heart\" (1984) with Sally Field, \"Death of a Salesman\" (1985), \"The Glass Menagerie\" (1987), \"Empire of the Sun\" (1987), and \"Dangerous Liaisons\" (1988) with Glenn Close.  His role in \"Places in the Heart\" earned him an Academy Award nomination.  During the 1990s, he starred in the films \"Of Mice and Men\" (1992) as Lennie Small, \"In the Line of Fire\" (1993) as Mitch Leary, \"Beyond the Clouds\" (1995) as The Director, \"The Portrait of a Lady\" (1996) Gilbert Osmond, \"Con Air\" (1997) as Cyrus \"The Virus\" Grissom, \"The Man in the Iron Mask\" (1998) as Athos, \"Being John Malkovich\" (1999) as John Horatio Malkovich, and \"\" (1999) as Charles VII.  His role as Mitch Leary in \"In the Line of Fire\" earned him his second Academy Award nomination.",
+      "Big Deal (LeAnn Rimes song): \"Big Deal\" is a song written by Jeffrey Steele and Al Anderson, and recorded by American country music artist LeAnn Rimes.  It was released on September 28, 1999 as the first single from her album \"LeAnn Rimes\".  The song charted at number 6 on the US country charts and number 23 on the US Hot 100 chart.  The B-side track, \"Leaving's Not Leaving,\" was released on the soundtrack for the film, \"Anywhere But Here\" on November 2, 1999."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 735,
+    "generation_tokens": 64,
+    "generation_speed": 367.7083153788257,
+    "prompt_eval_speed": 22933.632874660674,
+    "generation_latency_s": 0.29042740003205836,
+    "latency": 0.7190162000479177,
+    "total_prompt_tokens": 826,
+    "total_generation_tokens": 88,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1327769,
+    "stage_rewrite_s": 0.17057190008927137,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08254850003868341,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1753436999861151,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.29046829999424517,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7190642000641674,
+    "unaccounted_latency_s": 0.00013239996042102575,
+    "rewritten_query": "The film, \"LeAnn Rimes,\" was directed by John Malkovich and stars LeAnn Rimes.",
+    "query_was_rewritten": true
+  }
+}

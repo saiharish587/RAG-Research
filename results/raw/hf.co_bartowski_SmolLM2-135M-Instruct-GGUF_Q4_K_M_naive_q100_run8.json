@@ -1,0 +1,36 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "No, the two cities are not the same level of city. Yingkou is a prefecture-level city in northeastern Liaoning province, People's Republic of China, while Fuding is a county-level city located on Fujian's border with Zhejiang province. The Nanchang Railway Bureau operates both railway stations at Fuding and Yingkou.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "Fuding Railway Station: Fuding Railway Station () is a railway station located in Fuding City, Ningde, Fujian Province, China, on the Wenzhou-Fuzhou Railway operated by the Nanchang Railway Bureau, China Railway Corporation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 212,
+    "generation_tokens": 77,
+    "generation_speed": 399.8317591039614,
+    "prompt_eval_speed": 29084.922485937714,
+    "generation_latency_s": 0.31107859988696873,
+    "latency": 0.3268604000331834,
+    "total_prompt_tokens": 212,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1042677,
+    "stage_retrieve_s": 0.015706799924373627,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.31111479992978275,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.3268676999723539,
+    "unaccounted_latency_s": 4.6500121243298054e-05
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q81",
+  "query": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+  "ground_truth": "Newport",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "East Lempster is located in Sullivan County, New Hampshire.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "East Lempster, New Hampshire: East Lempster is an unincorporated community in the town of Lempster in Sullivan County, New Hampshire, United States.",
+      "Lempster, New Hampshire: Lempster is a town in Sullivan County, New Hampshire, United States.  The population was 1,154 at the 2010 census.  Settlements include the town center (Lempster village) and the village of East Lempster.",
+      "Miner Memorial Library: Miner Memorial Library is the public library of Lempster, New Hampshire, located at 3 Second New Hampshire Turnpike.  The library occupies a single-story wood frame structure built in 1845 as a church for a Universalist congregation.  Despite significant alteration for its use as a library, the building remains a fine example of vernacular church architecture in Sullivan County.  The building was formally dedicated in 1927 to the memory of Lempster native Alonzo Ames Miner, a leading Universalist minister and president of Tufts College.  After years of declining attendance, the remaining congregants gave the building to the town in 1965.  The building was listed on the National Register of Historic Places in 2006."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 14,
+    "generation_speed": 247.15332332950834,
+    "prompt_eval_speed": 44616.37653127015,
+    "generation_latency_s": 0.17577370000071824,
+    "latency": 0.5516471000155434,
+    "total_prompt_tokens": 484,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2261808,
+    "stage_route_s": 0.10007010004483163,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21956140000838786,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056085700052790344,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.339998122304678e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17580620001535863,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5516564999707043,
+    "unaccounted_latency_s": 9.029987268149853e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Find the county seat of East Lempster, New Hampshire\"",
+      "\"What is the county seat of East Lempster, New Hampshire?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

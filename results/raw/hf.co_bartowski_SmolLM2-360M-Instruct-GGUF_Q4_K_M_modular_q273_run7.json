@@ -1,0 +1,49 @@
+{
+  "question_id": "Q273",
+  "query": "What movie did Pitof direct which had an action-adventure tie-in video game based off of it in 2004?",
+  "ground_truth": "Catwoman",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Pitof directed the film \"Vidocq\", which was a 2005 action-adventure film. The action-adventure video game, Shrek 2: The Game, was developed by Luxoflux for the PlayStation 2, Xbox and GameCube, while a version for PC was developed by KnowWonder.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pitof: Jean-Christophe \"Pitof\" Comar (born 4 July 1957) is a French visual effects supervisor and director notable for \"Vidocq\" and \"Catwoman\".",
+      "Pit Fighter (film): Pit Fighter is a 2005 action film directed by Jesse V. Johnson and starring Dominique Vandenberg, Steven Bauer and Stephen Graham and Scott Adkins.",
+      "Shrek 2 (video game): Shrek 2 (also known as Shrek 2: The Game and ported for the PC as Shrek 2: Team Action at Beenox) is a 2004 action-adventure video game published by Activision and released in 2004.  The game was developed by Luxoflux for the PlayStation 2, Xbox and GameCube, while a version for PC was developed by KnowWonder.  The Game Boy Advance version was also released on a \"Twin Pack\" cartridge bundled with \"Shark Tale\" in 2005."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 76,
+    "generation_speed": 224.7416949072349,
+    "prompt_eval_speed": 32778.409678420016,
+    "generation_latency_s": 0.4590862999903038,
+    "latency": 0.8720507000107318,
+    "total_prompt_tokens": 475,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24115599999999998,
+    "stage_route_s": 0.0956175000173971,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2604283000109717,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05672930006403476,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3600058890879154e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.45912719995249063,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8720620999811217,
+    "unaccounted_latency_s": 0.0001067998819053173,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Pitof Directed\"",
+      "\"Action-Adventure Tie-In Video Game Based Off It In 2004\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q560",
+  "query": "Who is the psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\"?",
+  "ground_truth": "James G. Kiernan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\" is Clellan S. Ford and Frank A. Beach. They integrated information from 191 different cultures, including animal species, with particular emphasis on primates, to provide a comprehensive understanding of human sexual behavior.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Georges Bataille: Georges Albert Maurice Victor Bataille (] ; 10 September 1897 \u2013 9 July 1962) was a French intellectual and literary figure working in literature, philosophy, anthropology, economics, sociology and history of art.  His writing, which included essays, novels, and poetry, explored such subjects as eroticism, mysticism, surrealism, and transgression.  His work would prove influential on subsequent schools of philosophy and social theory, including poststructuralism.",
+      "Jane Goodall: Dame Jane Morris Goodall {'1': \", '2': \", '3': \", '4': \"} ( ; born Valerie Jane Morris-Goodall, 3 April 1934), formerly Baroness Jane van Lawick-Goodall, is a British primatologist, ethologist, anthropologist, and UN Messenger of Peace.  Considered to be the world's foremost expert on chimpanzees, Goodall is best known for her over 55-year study of social and family interactions of wild chimpanzees since she first went to Gombe Stream National Park, Tanzania in 1960.  She is the founder of the Jane Goodall Institute and the Roots & Shoots programme, and she has worked extensively on conservation and animal welfare issues.  She has served on the board of the Nonhuman Rights Project since its founding in 1996.",
+      "Patterns of Sexual Behavior: Patterns of Sexual Behavior is a 1951 book by Clellan S. Ford and Frank A. Beach.  In this work of scientific literature, the authors integrate information about human sexual behavior from 191 different cultures, and include detailed comparisons across animal species, with particular emphasis on primates.  The book, which has been called a \"classic\" of its field, provided the foundation for the later research of Masters and Johnson.  A revised edition, titled \"Human Sexuality in Four Perspectives\", was published in 1977."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 492,
+    "generation_tokens": 65,
+    "generation_speed": 208.3567066818393,
+    "prompt_eval_speed": 57129.5866233163,
+    "generation_latency_s": 0.438584899995476,
+    "latency": 0.8927742000669241,
+    "total_prompt_tokens": 636,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2313165,
+    "stage_route_s": 0.1022121999412775,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28988259995821863,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06192070001270622,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.91999851167202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.43861710000783205,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8927840000251308,
+    "unaccounted_latency_s": 9.310012683272362e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Wild Woman of Buttle\" by Laura Ridinger, 1970",
+      "\"The Psychoanalytic Theory of the Female Dominant\" by Carl Jung, 1936"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

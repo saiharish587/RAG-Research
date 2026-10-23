@@ -1,0 +1,42 @@
+{
+  "question_id": "Q13",
+  "query": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+  "ground_truth": "1999",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Guns N' Roses performed a promo for a movie starring Arnold Schwarzenegger as a former New York Police Detective in 1987.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Guns N' Roses: Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985.  The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler.  Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million records in the United States, making them one of the world's best-selling artists of all time.",
+      "Slash (musician): Saul Hudson (born July 23, 1965), better known by his stage name Slash, is a British-American musician and songwriter.  He is best known as the lead guitarist of the American hard rock band Guns N' Roses, with whom he achieved worldwide success in the late 1980s and early 1990s.  During his later years with Guns N' Roses, Slash formed the side project Slash's Snakepit.  After leaving Guns N' Roses in 1996, he co-founded the supergroup Velvet Revolver, which re-established him as a mainstream performer in the mid to late 2000s.  Slash has since released three solo albums: \"Slash\" (2010), featuring an array of famous guest musicians, and \"Apocalyptic Love\" (2012) and \"World on Fire\" (2014), recorded with his band, Myles Kennedy and the Conspirators.  He returned to Guns N' Roses in 2016, nearly 20 years after he had left.",
+      "One in a Million (Guns N' Roses song): \"One in a Million\" is a song by American rock band Guns N' Roses.  It is the eighth track on the album \"G N' R Lies\" and was released in 1988.  The lyrics describe Guns N' Roses singer Axl Rose's experience of getting hustled in the Greyhound bus station upon first arriving in Los Angeles.  The song is notable not only for its controversy, but also for being one of the first Guns N' Roses songs that Axl Rose wrote solo.  According to interviews, Rose wrote \"One in a Million\" on guitar (with which he was not proficient at the time), using only the bottom two strings.  This differs from other Rose-written Guns N' Roses songs, which Rose composed on piano or keyboards.  This is the first Guns N' Roses song to feature piano, played by Rose on the outro."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 695,
+    "generation_tokens": 34,
+    "generation_speed": 246.79529056516122,
+    "prompt_eval_speed": 14382.9804846754,
+    "generation_latency_s": 1.014308400102891,
+    "latency": 3.480707500013523,
+    "total_prompt_tokens": 783,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1238889,
+    "stage_rewrite_s": 1.3028547000139952,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9507955999579281,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21262709994334728,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0143498999532312,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4807190999854356,
+    "unaccounted_latency_s": 9.230012074112892e-05,
+    "rewritten_query": "Guns N Roses' 2015 performance at the 2016 Tribeca Film Festival was a memorable promo for \"The Last Song\" and \"The Last Goodbye.",
+    "query_was_rewritten": true
+  }
+}

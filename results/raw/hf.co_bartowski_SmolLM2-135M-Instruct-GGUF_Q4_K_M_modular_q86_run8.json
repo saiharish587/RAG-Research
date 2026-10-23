@@ -1,0 +1,49 @@
+{
+  "question_id": "Q86",
+  "query": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+  "ground_truth": "April 1, 1949",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump was born in 1980.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Post-80s: The Post-'80 (also the Post-1980, ) is a colloquial term which refers to the generation, especially in urban cities, whose members were born between 1980 and 1989 in Mainland China after the introduction of the One-child policy.  This generation, the first to grow up entirely within the reformist era, currently ranges in age from 27 to 37 , making up a major portion of China's young adult demographic.",
+      "Presidency of Ronald Reagan: The presidency of Ronald Reagan began on January 20, 1981, when Ronald Reagan was inaugurated as President of the United States, and ended on January 20, 1989.  Reagan, a Republican, took office as the 40th United States president following a landslide win over Democratic incumbent President Jimmy Carter in the 1980 presidential election.  Reagan was succeeded by his vice president, George H. W. Bush, who won the 1988 presidential election with Reagan's support.",
+      "Speeches and debates of Ronald Reagan: The speeches and debates of Ronald Reagan comprise the seminal oratory of the 40th President of the United States.  Reagan began his career in Iowa as a radio broadcaster.  In 1937, he moved to Los Angeles where he started acting, first in films and later television.  After delivering a stirring speech in support of Barry Goldwater's presidential candidacy in 1964, he was persuaded to seek the California governorship, winning two years later and again in 1970.  In 1980 as the Republican candidate for president of the United States, he defeated incumbent Jimmy Carter.  He was reelected in a landslide in 1984, proclaiming that it was \"Morning in America\".  Reagan left office in 1989."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 488,
+    "generation_tokens": 31,
+    "generation_speed": 361.2295788762264,
+    "prompt_eval_speed": 55656.93430656935,
+    "generation_latency_s": 0.20468510000500828,
+    "latency": 0.5295067999977618,
+    "total_prompt_tokens": 638,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2282205,
+    "stage_route_s": 0.12580529996193945,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14370880008209497,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05513519991654903,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.389994475990534e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20471839990932494,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.52951669995673,
+    "unaccounted_latency_s": 9.580014739185572e-05,
+    "route": "rag",
+    "router_raw": "The answer to this question requires retrieving information from internal files/documents.",
+    "sub_queries": [
+      "1980s-2005",
+      "Answer: 1980s-2005"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

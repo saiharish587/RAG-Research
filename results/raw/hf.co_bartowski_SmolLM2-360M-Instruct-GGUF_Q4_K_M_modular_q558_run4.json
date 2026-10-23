@@ -1,0 +1,48 @@
+{
+  "question_id": "Q558",
+  "query": "Are Ganzhou and Jimo District both located in China?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Yes, Ganzhou and Jimo District are both located in China.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ganzhou District: Ganzhou District, formerly the separate city of Ganzhou or Kanchow, is a district in and the seat of the prefecture-level city of Zhangye in Gansu Province in the People's Republic of China.  Ganzhou was formerly an important outpost in western China and, along with Suzhou (now the central district of Jiuquan), it is the namesake of the province.  As a settlement, it is now known as Zhangye after the prefecture it heads.",
+      "Ganzhou: Ganzhou (), formerly romanized as Kanchow, is a prefecture-level city in southern Jiangxi, China, bordering Fujian to the east, Guangdong to the south, and Hunan to the west.  Its administrative seat is at Zhanggong District.  Its population was 8,361,447 at the 2010 census whom 1,977,253 in the built-up (or \"metro\") area made of Zhanggong and Nankang, and Ganxian largely being urbanized.",
+      "Jimo District: Jimo () is a District of Qingdao, Shandong."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 330,
+    "generation_tokens": 16,
+    "generation_speed": 219.8647831583576,
+    "prompt_eval_speed": 43307.086614173226,
+    "generation_latency_s": 0.19134060002397746,
+    "latency": 0.5722745000384748,
+    "total_prompt_tokens": 456,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2361475,
+    "stage_route_s": 0.11197410000022501,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23204630007967353,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03674040001351386,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.850006032735109e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19137620006222278,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5722868000157177,
+    "unaccounted_latency_s": 0.00011219980660825968,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Are Ganzhou and Jimo District both located in China?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

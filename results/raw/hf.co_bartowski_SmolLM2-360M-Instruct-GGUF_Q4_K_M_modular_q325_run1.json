@@ -1,0 +1,49 @@
+{
+  "question_id": "Q325",
+  "query": "This work of literature _______ , known by its Greek title Oedipus Tyrannus was argued by Sigmund Freud to be one of the greatest works of world literature in his 1928 article. ",
+  "ground_truth": "Oedipus Rex",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Oedipus Rex",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oedipus Rex: Oedipus Rex, also known by its Greek title, Oedipus Tyrannus (Ancient Greek: \u039f\u1f30\u03b4\u03af\u03c0\u03bf\u03c5\u03c2 \u03a4\u03cd\u03c1\u03b1\u03bd\u03bd\u03bf\u03c2 IPA: [oid\u00edpu\u02d0s t\u00fdran\u02d0os]), or Oedipus the King, is an Athenian tragedy by Sophocles that was first performed around 429 BC.  Originally, to the ancient Greeks, the title was simply \"Oedipus\" (\"\u039f\u1f30\u03b4\u03af\u03c0\u03bf\u03c5\u03c2\"), as it is referred to by Aristotle in the \"Poetics\".  It is thought to have been renamed \"Oedipus Tyrannus\" to distinguish it from \"Oedipus at Colonus\".  In antiquity, the term \u201ctyrant\u201d referred to a ruler, but it did not necessarily have a negative connotation.",
+      "Dostoevsky and Parricide: \"Dostoevsky and Parricide\" (German: \"Dostojewski und die Vatert\u00f6tung\" ) is an introductory article contributed by Sigmund Freud to a scholarly collection on \"The Brothers Karamazov\" by Fyodor Dostoyevsky.  The collection was published in 1928.  The article argues that it is no coincidence that some of the greatest works of world literature - including \"Oedipus Rex\", \"Hamlet\", as well as \"The Brothers Karamazov\" \u2013 all concern parricide, which in Dostoevsky's case Freud links to his epilepsy.",
+      "Ursus maritimus tyrannus: Ursus maritimus tyrannus (meaning tyrant polar bear) is an extinct subspecies of polar bear, known from a single fragmentary ulna found in the gravels of the Thames at Kew Bridge, London.  It was named by the Finnish paleontologist Bj\u00f6rn Kurt\u00e9n in 1964 and is interpreted to represent a relatively large subadult individual: the ulna is estimated to have been 48.5 cm long when complete.  For comparison, modern subadult polar bear ulnae are 36 - long."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 536,
+    "generation_tokens": 4,
+    "generation_speed": 223.00273178346433,
+    "prompt_eval_speed": 12527.169467361582,
+    "generation_latency_s": 0.18111529992893338,
+    "latency": 0.5229077000403777,
+    "total_prompt_tokens": 720,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23862899999999998,
+    "stage_route_s": 0.10377689998131245,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18156419997103512,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05625539994798601,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.280001252889633e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18114829994738102,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5229191000107676,
+    "unaccounted_latency_s": 0.00011210015509277582,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Oedipus Tyrannus\"",
+      "Query 2: \"World Literature\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

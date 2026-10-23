@@ -1,0 +1,42 @@
+{
+  "question_id": "Q332",
+  "query": "The Column of Saint Zanobi  is a monumental marble column located just north of religious building with the status of what?",
+  "ground_truth": "a minor basilica",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Column of Saint Zanobi is a monumental marble column located just north of religious buildings with the status of a monument or landmark.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Colonna di San Zanobi, Florence: The Column of Saint Zanobi (it:Colonna di San Zanobi) is a monumental marble column, surmounted by a cross above a crown of fire, located just north of the Bapstistery of San Giovanni in Florence, Italy.",
+      "St. Patrick's Cathedral (Manhattan): The Cathedral of St. Patrick (commonly called St. Patrick's Cathedral) is a decorated Neo-Gothic-style Roman Catholic cathedral church in the United States and a prominent landmark of New York City.  It is the seat of the archbishop of the Roman Catholic Archdiocese of New York, and a parish church, located on the east side of Fifth Avenue between 50th and 51st Streets in Midtown Manhattan, directly across the street from Rockefeller Center and specifically facing the Atlas statue.  It is considered one of the most visible symbols of Roman Catholicism in New York City and the United States.",
+      "Lewis and Clark Memorial Column: The Lewis and Clark Memorial Column is an outdoor monument by artist Otto Schumann, dedicated to Meriwether Lewis and William Clark for their expedition and located at Washington Park in Portland, Oregon."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 328,
+    "generation_tokens": 28,
+    "generation_speed": 256.47601949217744,
+    "prompt_eval_speed": 13976.478609169933,
+    "generation_latency_s": 1.0243545999983326,
+    "latency": 3.4133703999686986,
+    "total_prompt_tokens": 413,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1319588,
+    "stage_rewrite_s": 1.2343726999824867,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0205476999981329,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13398349995259196,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0243876999011263,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.413378500030376,
+    "unaccounted_latency_s": 8.730008266866207e-05,
+    "rewritten_query": "The Column of Saint Zanobi is a monumental marble column located just north of religious buildings, serving as a significant landmark.",
+    "query_was_rewritten": true
+  }
+}

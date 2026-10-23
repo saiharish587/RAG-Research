@@ -1,0 +1,42 @@
+{
+  "question_id": "Q128",
+  "query": "When was the palace founded at which Columba de Dunbar died in 1435?",
+  "ground_truth": "the late 12th Century",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is: \"1422\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Columba de Dunbar: Columba de Dunbar ( 1386 \u2013 1435) was Bishop of Moray from 1422 until his death at Spynie Palace near Elgin sometime before 7 November 1435.",
+      "George I, Earl of March: George de Dunbar, 10th Earl of Dunbar and March (1338\u20131420), 12th Lord of Annandale and Lord of the Isle of Man, was \"one of the most powerful nobles in Scotland of his time, and the rival of the Douglases.\"",
+      "George II, Earl of March: George de Dunbar, 11th Earl of Dunbar & March Lord of Annandale and the Isle of Man, (c. 1370 \u2013 after 1457) was the last of his family to hold these titles."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 268,
+    "generation_tokens": 11,
+    "generation_speed": 369.5615655971779,
+    "prompt_eval_speed": 18537.732586290378,
+    "generation_latency_s": 0.12206969992257655,
+    "latency": 0.603168600006029,
+    "total_prompt_tokens": 348,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1371382,
+    "stage_rewrite_s": 0.19660419994033873,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07842880010139197,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20594359992537647,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.12210309994406998,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.603176899952814,
+    "unaccounted_latency_s": 9.750004392117262e-05,
+    "rewritten_query": "The Palace of Columba de Dunbar, founded by the great King Columba de Dunbar around 980 AD, was established in 972 AD.",
+    "query_was_rewritten": true
+  }
+}

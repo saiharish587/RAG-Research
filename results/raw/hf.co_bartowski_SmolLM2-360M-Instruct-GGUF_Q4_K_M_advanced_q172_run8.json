@@ -1,0 +1,42 @@
+{
+  "question_id": "Q172",
+  "query": "What is the birthplace of the Senator who represents the first of 62 districts in the State Senate?",
+  "ground_truth": "Brooklyn, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Senator who represents the first of 62 districts in the New York State Senate is Senator Kenneth LaValle, currently represented by him.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "New York's 1st State Senate district: New York's 1st State Senate district is one of 62 districts of the New York State Senate.  It is currently represented by Senator Kenneth LaValle (R).",
+      "New York's 2nd State Senate district: New York's 2nd State Senate district is one of 62 districts of the New York State Senate.  It is currently represented by John J. Flanagan (R).  Senator Flanagan is New York State Senate's majority leader and temporary president.",
+      "New York's 4th State Senate district: New York's 4th State Senate district is one of 62 districts of the New York State Senate.  It is currently represented by Philip M. Boyle (R)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 239,
+    "generation_tokens": 30,
+    "generation_speed": 255.80027114828744,
+    "prompt_eval_speed": 57981.56234837458,
+    "generation_latency_s": 0.9838155000470579,
+    "latency": 3.4143646999727935,
+    "total_prompt_tokens": 320,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1281271,
+    "stage_rewrite_s": 1.2227665000827983,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0318170000100508,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1758517000125721,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9838501000776887,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.414373300038278,
+    "unaccounted_latency_s": 8.849985897541046e-05,
+    "rewritten_query": "The Senator who represents the first of 62 districts in the State Senate is from a city called [City Name].",
+    "query_was_rewritten": true
+  }
+}

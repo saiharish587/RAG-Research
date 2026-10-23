@@ -1,0 +1,49 @@
+{
+  "question_id": "Q93",
+  "query": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+  "ground_truth": "Las Vegas Strip in Paradise",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The hotel and casino location is located at the International Hotel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "At Last Bill Cosby Really Sings: At Last Bill Cosby Really Sings is an album by Bill Cosby.  It is his fifth music-based album and the only one released on the Stax Records-distributed Partee Records.  It features appearances from former Stevie Wonder band members like future R&B star Ray Parker, Jr. on guitar, and also features a second collaboration with his songwriting partner Stu Gardner, who plays organ on this set.",
+      "Bill Cosby Talks to Kids About Drugs: Bill Cosby Talks to Kids About Drugs (1971) is an album by Bill Cosby.  Unlike most of his recordings, this is not a full-fledged comedy album, but rather a record intended for children to school them on the dangers of drugs through songs and dialogue.  It won the Grammy Award in 1972 for Best Recording for Children.",
+      "For Adults Only: For Adults Only (1971) is the 13th comedy album by Bill Cosby.  It was recorded at the Westgate Las Vegas Resort & Casino, then known as the International Hotel.  The title \"For Adults Only\" was also used for a 1959 Pearl Bailey LP (Roulette R-25016)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 13,
+    "generation_speed": 338.30379680953496,
+    "prompt_eval_speed": 17147.388244622856,
+    "generation_latency_s": 0.16609519999474287,
+    "latency": 1.0867399999406189,
+    "total_prompt_tokens": 482,
+    "total_generation_tokens": 274,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2208004,
+    "stage_route_s": 0.17697160004172474,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6917313999729231,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05176579998806119,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.150000263005495e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1661274000070989,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0867495000129566,
+    "unaccounted_latency_s": 9.270000737160444e-05,
+    "route": "rag",
+    "router_raw": "The hotel and casino location is located in Bill Cosby's third album, which was recorded at the Bill Cosbys' third studio album production facility.",
+    "sub_queries": [
+      "Bill Cosy Records",
+      "BILL COSBY'S THIRD AUDIO BOOKS"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q85",
+  "query": "What was the name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine \" and was also a former white house intern?",
+  "ground_truth": "Monica Lewinsky",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The name of a woman from the book \"Their Lives: The Women Targeted by the Clinton Machine\" is Paula Jones. She was a former White House intern who crossed paths with Bill Clinton in 1987, during his first term as President.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hillary Clinton: Hillary Diane Rodham Clinton ( ; born October 26, 1947) is an American politician who was the First Lady of the United States from 1993 to 2001, U.S. Senator from New York from 2001 to 2009, 67th United States Secretary of State from 2009 to 2013, and the Democratic Party's nominee for President of the United States in the 2016 election.",
+      "Their Lives: Their Lives: The Women Targeted by the Clinton Machine is a book by Candice E. Jackson.  Published by conservative publisher World Ahead Publishing on May 31, 2005, it recounts the stories of seven women who crossed paths with Bill Clinton: Monica Lewinsky, Paula Jones, Gennifer Flowers, Kathleen Willey, Elizabeth Gracen, Juanita Broaddrick, and Sally Perdue.",
+      "Dear Socks, Dear Buddy: Dear Socks, Dear Buddy: Kids' Letters to the First Pets is a 1998 children's book written by First Lady of the United States Hillary Rodham Clinton.  It concerns the two pets that lived in the White House during the Clinton administration, Socks the cat and Buddy the dog."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 372,
+    "generation_tokens": 54,
+    "generation_speed": 236.05731821400784,
+    "prompt_eval_speed": 14233.24150596878,
+    "generation_latency_s": 0.36120519996620715,
+    "latency": 0.6929925000295043,
+    "total_prompt_tokens": 538,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23448760000000002,
+    "stage_route_s": 0.10126840008888394,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17524010001216084,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05507390003185719,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.19000056758523e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.36125720001291484,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.693008300033398,
+    "unaccounted_latency_s": 0.00010779988951981068,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Clinton Machine\"",
+      "Query 2: \"Evelyn Wilson\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

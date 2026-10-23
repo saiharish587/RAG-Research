@@ -1,0 +1,49 @@
+{
+  "question_id": "Q151",
+  "query": "What occupation was shared by David Yates and Pietro Germi?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "David Yates and Pietro Germi both had occupations that involved acting, as they were born in Aldershot, Hampshire, and were both Italian actors.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "David Yates: David Yates (born (1963--)08 1963 ) is an English filmmaker who has directed feature films, short films, and television productions.",
+      "Peter Yates: Peter James Yates (24 July 1929 \u2013 9 January 2011) was an English film director and producer.  He was born in Aldershot, Hampshire.",
+      "Pietro Germi: Pietro Germi (] ; 14 September 1914 \u2013 5 December 1974) was an Italian actor, screenwriter, and director.  Germi was born in Genoa, Liguria, to a lower-middle-class family.  He was a messenger and briefly attended nautical school before deciding on a career in acting."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 243,
+    "generation_tokens": 33,
+    "generation_speed": 229.35461002766155,
+    "prompt_eval_speed": 12677.378964941568,
+    "generation_latency_s": 0.2674953000387177,
+    "latency": 0.7122967999894172,
+    "total_prompt_tokens": 371,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2366229,
+    "stage_route_s": 0.10381060000509024,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2828975999727845,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05787459993734956,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.789997521787882e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2675471000839025,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7123111999826506,
+    "unaccounted_latency_s": 0.00012450001668184996,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: David Yates was an actor, known for his role in the film \"The Last Mimy\".",
+      "Query 2: Pietro Germi was a musician, known for his work with the band \"The Beatles\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

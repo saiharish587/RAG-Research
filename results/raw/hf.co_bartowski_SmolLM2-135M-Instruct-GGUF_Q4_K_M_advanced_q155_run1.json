@@ -1,0 +1,42 @@
+{
+  "question_id": "Q155",
+  "query": "Are Broughtonia and Laeliocattleya both orchids?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Broughtonia: Broughtonia is a genus of orchids (family Orchidaceae) native to the Bahamas and the Greater Antilles.  The genus is abbreviated Bro in trade journals.",
+      "Laeliocattleya: Laeliocattleya is a nothogenus of intergeneric orchid hybrids descended from the parental genera \"Laelia\" and \"Cattleya\".  It is abbreviated Lc.  in the horticultural trade.",
+      "Hawkinsara: Hawkinsara, abbreviated Hknsa.  in the horticultural trade, is an intergeneric hybrid of orchids, with parent genera \"Broughtonia\", \"Cattleya\", \"Laelia\" and \"Sophronitis\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 218,
+    "generation_tokens": 3,
+    "generation_speed": 213.73610715303505,
+    "prompt_eval_speed": 17469.348505489223,
+    "generation_latency_s": 0.10114400007296354,
+    "latency": 0.6221385000972077,
+    "total_prompt_tokens": 292,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1406797,
+    "stage_rewrite_s": 0.2773223000112921,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07633499999064952,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16721990006044507,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10117589996661991,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6221470000455156,
+    "unaccounted_latency_s": 9.430001955479383e-05,
+    "rewritten_query": "Broughtonia and Laelioclea are both orchids, but they have distinct differences in terms of their growth habits, blooming times, and overall appearance. Broughtonia is a tropical species that blooms from late spring to early fall, while Laelioclea is a subtropical species that blooms from mid-summer to mid-fall.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q231",
+  "query": "What building is opposite the ceremonial meeting place of the Accession Council in the United Kingdom?",
+  "ground_truth": "Mark Masons' Hall",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The building that stands opposite the ceremonial meeting place of the Accession Council in the United Kingdom is Buckingham Palace.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "St James's Palace: St James's Palace is the most senior royal palace in the United Kingdom.  Located in the City of Westminster, although no longer the principal residence of the monarch, it is the ceremonial meeting place of the Accession Council and the London residence of several members of the royal family.",
+      "Accession Council: In the United Kingdom, the Accession Council is a ceremonial body which assembles in St James's Palace upon the death of a monarch (Demise of the Crown), to formally proclaim the accession of his or her successor to the throne.  Under the terms of the Act of Settlement 1701, a new monarch succeeds automatically.  The proclamation confirms by name the identity of the heir who has succeeded.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 294,
+    "generation_tokens": 23,
+    "generation_speed": 322.32296761354877,
+    "prompt_eval_speed": 39028.27558741537,
+    "generation_latency_s": 0.18759500002488494,
+    "latency": 0.5815067000221461,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2302132,
+    "stage_route_s": 0.1726205999730155,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18306150007992983,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03807139990385622,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.0899962186813354e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1876288999337703,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5815165999811143,
+    "unaccounted_latency_s": 9.390013292431831e-05,
+    "route": "rag",
+    "router_raw": "The building that is opposite the ceremonial meeting place of the Accession Council in the United Kingdom is the Royal Palace of Westminster, also known as the Westminster Abbey.",
+    "sub_queries": [
+      "The building that stands opposite the ceremonial meeting place of the Accession Council in the United Kingdom is the Royal Palace of Westminster, also known as the Westminster Abbey."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

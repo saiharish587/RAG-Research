@@ -1,0 +1,49 @@
+{
+  "question_id": "Q56",
+  "query": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+  "ground_truth": "Marion, South Australia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Sydney contains a boarding school named Westminster School that was opened by Robert Menzies, the Prime Minister of Australia, and is named after Westminster School in London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sydney: Sydney ( ) is the state capital of New South Wales and the most populous city in Australia and Oceania.  Located on Australia's east coast, the metropolis surrounds the world's largest natural harbour and sprawls about 70 km on its periphery towards the Blue Mountains to the west, Hawkesbury to the north and Macarthur to the south.  Sydney is made up of 658 suburbs, 40 local government areas and 15 contiguous regions.  Residents of the city are known as \"Sydneysiders\".  As at June 2016 Sydney's estimated population was 5,029,768.",
+      "Westminster School, Adelaide: Westminster School is an independent, Uniting Church, Early Learning to Year 12, coeducational, day and boarding school located at Marion, South Australia, 12 km south of Adelaide.  Founded as a Methodist day and boarding school for boys, the school was opened by the Prime Minister Robert Menzies in 1961 and is named after Westminster School in London.  The school became co-educational in 1978, and has a current enrolment of around 1150 students.",
+      "Fitzroy, Victoria: Fitzroy is an inner-city suburb of Melbourne, Victoria, Australia, 3\u00a0km north-east of Melbourne's Central Business District in the local government area of the City of Yarra.  At the 2016 Census, Fitzroy had a population of 10,445.  Planned as Melbourne's first suburb, it was later also one of the city's first areas to gain municipal status.  It occupies Melbourne's smallest and most densely populated suburban area, just 100 ha."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 463,
+    "generation_tokens": 35,
+    "generation_speed": 234.18420260279012,
+    "prompt_eval_speed": 55776.41248042405,
+    "generation_latency_s": 0.2674671000568196,
+    "latency": 0.569975700112991,
+    "total_prompt_tokens": 629,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2227928,
+    "stage_route_s": 0.0950578999472782,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15513140009716153,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05215529992710799,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.359994247555733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26749849994666874,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5699852000689134,
+    "unaccounted_latency_s": 8.900021202862263e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Search Query 1: Sydney, Australia",
+      "Search Query 2: Melbourne, Australia"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

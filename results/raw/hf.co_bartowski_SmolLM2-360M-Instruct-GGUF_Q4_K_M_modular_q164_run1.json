@@ -1,0 +1,49 @@
+{
+  "question_id": "Q164",
+  "query": "What British singer-songwriter hosted the 16th Annual Young Hollywood Awards?",
+  "ground_truth": "Kelly Lee Osbourne",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The British singer-songwriter who hosted the 16th Annual Young Hollywood Awards was Kelly Osbourne.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2014 Young Hollywood Awards: The 16th Annual Young Hollywood Awards were held on Monday, July 28, 2014 in Los Angeles, California, previously recorded the day before.  Kelly Osbourne hosted the show, with Justin Bieber being honored for his charity work and contributions to the Make-A-Wish Foundation, and Vanessa Hudgens was honored with the Trendsetter Award.",
+      "The X Factor (U.S. TV series): The X Factor is an American reality television music competition show created by Simon Cowell and produced by FremantleMedia North America and SYCOtv, a partnership between Cowell and Sony Music Entertainment, which aired on Fox from 2011 to 2013.  Based on the original UK show, and an addition to \"The X Factor\" franchise, the series found new singing talent (solo artists and groups ages 12 and over), drawn from public auditions, and they competed against each other for votes.  The winner was determined by the show's viewers via telephone, the Internet, and SMS text voting, and was awarded a recording contract with Cowell's record label Syco Music, worth $5 million in seasons one and two, and $1 million in season three.  America voted for the following winners: Melanie Amaro, Tate Stevens, and Alex & Sierra, respectively.",
+      "Young Hollywood Awards: The Young Hollywood Awards was an award presented annually which honors the year's biggest achievements in pop music, movies, sports, television, fashion and more, as voted on by teenagers aged 13\u201319 and young adults.  The award ceremonies also honor rising and promising young aged performers in Hollywood.  The award ceremony usually features a high number of celebrities and musical performers such as Taylor Swift, Justin Bieber, and Nick Jonas.  New artists such as Black Cards and Brazzabelle have also performed."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 478,
+    "generation_tokens": 23,
+    "generation_speed": 230.4447583836805,
+    "prompt_eval_speed": 14810.683522339965,
+    "generation_latency_s": 0.24025419994723052,
+    "latency": 0.7387616999913007,
+    "total_prompt_tokens": 612,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2220704,
+    "stage_route_s": 0.09935609996318817,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3420916000613943,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05682689999230206,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5699958465993404e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24033940001390874,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7387778999982402,
+    "unaccounted_latency_s": 0.00010910001583397388,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The 16th Annual Young Hollywood Awards was hosted by the British singer-songwriter, Simon Cowell.",
+      "Query 2: Simon Cowell is a British singer-songwriter who has been known for his work in music and television."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

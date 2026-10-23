@@ -1,0 +1,42 @@
+{
+  "question_id": "Q231",
+  "query": "What building is opposite the ceremonial meeting place of the Accession Council in the United Kingdom?",
+  "ground_truth": "Mark Masons' Hall",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The building that stands opposite the ceremonial meeting place of the Accession Council in the United Kingdom is St James's Palace.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "St James's Palace: St James's Palace is the most senior royal palace in the United Kingdom.  Located in the City of Westminster, although no longer the principal residence of the monarch, it is the ceremonial meeting place of the Accession Council and the London residence of several members of the royal family.",
+      "Accession Council: In the United Kingdom, the Accession Council is a ceremonial body which assembles in St James's Palace upon the death of a monarch (Demise of the Crown), to formally proclaim the accession of his or her successor to the throne.  Under the terms of the Act of Settlement 1701, a new monarch succeeds automatically.  The proclamation confirms by name the identity of the heir who has succeeded.",
+      "Treaty of Accession 1994: The Treaty of Accession 1994 was the agreement between the member states of the European Union and four countries (Norway, Austria, Finland and Sweden), concerning these countries' accession into the EU.  It entered into force on 1 January 1995.  The Treaty arranged accession of Austria, Finland and Sweden to the EU and amended earlier Treaties of the European Union.  As such it is an integral part of the constitutional basis of the European Union.  Norway failed to join the EU because its referendum did not pass."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 351,
+    "generation_tokens": 25,
+    "generation_speed": 379.25332605166943,
+    "prompt_eval_speed": 22125.567322239032,
+    "generation_latency_s": 0.15826290007680655,
+    "latency": 0.5772456000559032,
+    "total_prompt_tokens": 429,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.136154,
+    "stage_rewrite_s": 0.13207140006124973,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0717535000294447,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2150121999438852,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15831599989905953,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5772574000293389,
+    "unaccounted_latency_s": 0.00010510010179132223,
+    "rewritten_query": "Accession Council, Opposite Meeting Place of the Accession Council",
+    "query_was_rewritten": true
+  }
+}

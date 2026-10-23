@@ -1,0 +1,49 @@
+{
+  "question_id": "Q519",
+  "query": "Where is the academy, for which Joseph D. Stewart was appointed Superintendent, located?",
+  "ground_truth": "Kings Point, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Joseph D. Stewart was appointed Superintendent of Benjamin Banneker Academy for Community Development in Brooklyn, New York City. The academy is located in Clinton Hill section of Brooklyn, New York City.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+      "New York City English: New York City English, or Metropolitan New York English, is a regional dialect of American English spoken by many people in New York City and much of its surrounding metropolitan area.  Described by sociolinguist William Labov as the most recognizable dialect in North America, the dialect is known through its association in the media with many public figures and fictional characters.  Its features are most densely concentrated in New York City proper and its immediate suburbs (whose residents often commute to New York City), but they also extend somewhat to the wider metropolitan area and the New York City diaspora in other regions.",
+      "Benjamin Banneker Academy: Benjamin Banneker Academy for Community Development (usually called Banneker) is a public high school located in the Clinton Hill section of Brooklyn, New York City.  The school was originally a Drake's Cakes factory.  Still today, different floors of the school are in Drake's colors, blue and yellow.  It has a small, but family type atmosphere for a high school.  It is usually called a junior college because the faculty and students are so focused on college.  Banneker, which serves grades 9 through 12+, is operated by the New York City Department of Education.  Many of the graduates attend SUNY schools, HBCUs (historically black colleges and universities) and CUNY schools.  There are also a few that attend Ivy League schools and a few are recruited for Posse schools.  The school's graduation rate has been at least 90% since 2002."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 486,
+    "generation_tokens": 39,
+    "generation_speed": 209.63346395110702,
+    "prompt_eval_speed": 59889.094269870606,
+    "generation_latency_s": 0.3113042999757454,
+    "latency": 0.6787996999919415,
+    "total_prompt_tokens": 620,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2269578,
+    "stage_route_s": 0.10544429998844862,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20405870000831783,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05781379994004965,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.409994628280401e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3113360999850556,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.678808500058949,
+    "unaccounted_latency_s": 0.00010210019536316395,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Academy is located in New York City.",
+      "Query 2: The Academy is located in New York City."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

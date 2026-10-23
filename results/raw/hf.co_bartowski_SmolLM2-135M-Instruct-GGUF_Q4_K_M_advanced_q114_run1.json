@@ -1,0 +1,42 @@
+{
+  "question_id": "Q114",
+  "query": "Who died first, George Archainbaud or Ralph Murphy?",
+  "ground_truth": "George Archainbaud",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The question asks who died first, George Archainbaud or Ralph Murphy. The answer is that Ralph Murphy died first.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George Archainbaud: George Archainbaud (May 7, 1890 \u2013 February 20, 1959) was a French-born American film and television director.",
+      "John Adams: John Adams (October 30 [O.S. October 19] 1735 \u2013 July 4, 1826) was an American patriot who served as the second President of the United States (1797\u20131801) and the first Vice President (1789\u201397).  He was a lawyer, diplomat, statesman, political theorist, and, as a Founding Father, a leader of the movement for American independence from Great Britain.  He was also a dedicated diarist and correspondent, particularly with his wife and closest advisor Abigail.",
+      "Andrew Johnson: Andrew Johnson (December 29, 1808 July 31, 1875) was the 17th President of the United States, serving from 1865 to 1869.  Johnson became president as he was vice president at the time of the assassination of Abraham Lincoln.  A Democrat who ran with Lincoln on the National Union ticket, Johnson came to office as the Civil War concluded.  The new president favored quick restoration of the seceded states to the Union.  His plans did not give protection to the former slaves, and he came into conflict with the Republican-dominated Congress, culminating in his impeachment by the House of Representatives.  He was acquitted in the Senate by one vote."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 26,
+    "generation_speed": 360.9156151529033,
+    "prompt_eval_speed": 22956.42267160353,
+    "generation_latency_s": 0.16268810001201928,
+    "latency": 0.7458311999216676,
+    "total_prompt_tokens": 476,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1279952,
+    "stage_rewrite_s": 0.29833869996946305,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.072169000050053,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21250829997006804,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1627283999696374,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7458423000061885,
+    "unaccounted_latency_s": 9.850005153566599e-05,
+    "rewritten_query": "George Archainbaud was the first to die in 1920s America.\n\nI removed the introductory text and rephrased the query for better readability and concision. The original query had a few phrases that were not necessary, such as \"who died first\" and \"George Archainbaud,\" which didn't add much value to the output.",
+    "query_was_rewritten": true
+  }
+}

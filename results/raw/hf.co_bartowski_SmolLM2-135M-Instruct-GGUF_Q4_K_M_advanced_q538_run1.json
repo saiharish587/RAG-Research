@@ -1,0 +1,42 @@
+{
+  "question_id": "Q538",
+  "query": "Jack Alfred Evans played with a football club team that is based in what city in Australia?",
+  "ground_truth": "Melbourne",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The correct answer is Melbourne.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "St Kilda Football Club: The St Kilda Football Club, nicknamed the Saints, is an Australian rules football club based in Melbourne, Victoria, Australia.  The club plays in the Australian Football League, the sport's premier league.",
+      "Jack Evans (footballer, born 1930): Jack Alfred Evans (born 11 October 1930) was an Australian rules footballer who played with St Kilda in the Victorian Football League (VFL).",
+      "Melbourne University Soccer Club: Melbourne University Soccer Club is an Australian amateur soccer club based in Melbourne, Victoria.  It is the association football club affiliated with the University of Melbourne.  It is Melbourne's largest senior association football club, fielding 13 men's teams and 5 women's teams, competing in various leagues in the state of Victoria.  The clubs highest Men's team competes in State League 3, and highest Women's team compete in State League 1, competitions affiliated with Football Federation Australia.  It is also the only club in Victoria to have two State League teams, also competing in Men's State League 5.  The club also send representative teams to competitions including World Elite University Football Tournament, Australian University Games, Southern University Games, Varsity Challenge to represent the University of Melbourne."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 7,
+    "generation_speed": 285.2601980520804,
+    "prompt_eval_speed": 20649.319646693722,
+    "generation_latency_s": 0.12394489999860525,
+    "latency": 0.5554087000200525,
+    "total_prompt_tokens": 424,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13033070000000002,
+    "stage_rewrite_s": 0.21524239995051175,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08299519994761795,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13309190003201365,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.12398739997297525,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5554193999851122,
+    "unaccounted_latency_s": 0.00010310008656233549,
+    "rewritten_query": "Jack Alfred Evans, who plays with a football club team based in Melbourne, has been named as the best player of all time by the International Football Association Board (IFAB).",
+    "query_was_rewritten": true
+  }
+}

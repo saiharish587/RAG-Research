@@ -1,0 +1,49 @@
+{
+  "question_id": "Q79",
+  "query": "What nationality were social anthropologists Alfred Gell and Edmund Leach?",
+  "ground_truth": "British",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Alfred Gell was a British social anthropologist whose most influential work concerned art, language, symbolism and ritual. He was trained by Edmund Leach (MPhil, Cambridge University) and Raymond Firth (PhD, London School of Economics). Alfred Gell taught at the London School of Economics among other places. He also did extensive fieldwork in the Amazon River basin and then in the Malay Archipelago where he identified the faunal divide now termed the Wallace Line which separates the Indonesian archipelago into two distinct parts: a western portion in which the animals are largely of Asian origin, and an eastern portion where the fauna reflect Australasia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alfred Gell: Alfred Antony Francis Gell, {'1': \", '2': \", '3': \", '4': \"} ( ; June 12, 1945 \u2013 January 28, 1997) was a British social anthropologist whose most influential work concerned art, language, symbolism and ritual.  He was trained by Edmund Leach (MPhil, Cambridge University) and Raymond Firth (PhD, London School of Economics) and did his fieldwork in Melanesia and tribal India.  Gell taught at the London School of Economics, among other places.  He was also a Fellow of the British Academy.  He died of cancer in 1997, at the age of 51.",
+      "Edmund Leach: Sir Edmund Ronald Leach (7 November 1910 \u2013 6 January 1989) was a British social anthropologist.",
+      "Alfred Russel Wallace: Alfred Russel Wallace {'1': \", '2': \", '3': \", '4': \"} (8 January 1823\u00a0\u2013 7 November 1913) was a British naturalist, explorer, geographer, anthropologist, and biologist.  He is best known for independently conceiving the theory of evolution through natural selection; his paper on the subject was jointly published with some of Charles Darwin's writings in 1858.  This prompted Darwin to publish his own ideas in \"On the Origin of Species.\"  Wallace did extensive fieldwork, first in the Amazon River basin and then in the Malay Archipelago, where he identified the faunal divide now termed the Wallace Line, which separates the Indonesian archipelago into two distinct parts: a western portion in which the animals are largely of Asian origin, and an eastern portion where the fauna reflect Australasia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 446,
+    "generation_tokens": 126,
+    "generation_speed": 232.3252996719788,
+    "prompt_eval_speed": 14492.753623188406,
+    "generation_latency_s": 0.6784411000553519,
+    "latency": 1.358701099990867,
+    "total_prompt_tokens": 572,
+    "total_generation_tokens": 212,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24810959999999999,
+    "stage_route_s": 0.11259159992914647,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5119329000590369,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055569499963894486,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.419994704425335e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6784730000654235,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3587104000616819,
+    "unaccounted_latency_s": 9.000010322779417e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Alfred Gell (1863-1940) was an English anthropologist who is best known for his work on the development of modern anthropology, particularly in the field of cultural relativism.",
+      "Edmund Leach (1875-1940) was a British ethnologist and anthropologist who made significant contributions to the study of indigenous cultures and their relationship with modernity."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

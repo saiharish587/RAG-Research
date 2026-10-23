@@ -1,0 +1,48 @@
+{
+  "question_id": "Q236",
+  "query": "The Kansas City Wizards have had three home venues in Kansas City in their time.  Which was their first?",
+  "ground_truth": "Arrowhead Stadium",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Kansas City Wizards did not have a home venue until 1985 when the Kansas City Royals moved to Arrowhead Stadium, which is now known as Arrowhead Stadium.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2008 Kansas City Wizards season: The 2008 Kansas City Wizards season was the first season played at the temporary home Community America Ballpark in Kansas City, Kansas.",
+      "1998 Kansas City Wizards season: The 1998 Kansas City Wizards season was the third MLS history.  Played at Arrowhead Stadium in Kansas City, Missouri.  MLS did not allow matches to end in ties in 1998 and thus Shootouts were used to decide draws, the stats that follow do not include shootout goals scored and the teams actually point total in the regular season was 32 even though it is shown below as 36.  Shootout win= 1 point, Shootout loss= 0 points.",
+      "Kauffman Stadium: Kauffman Stadium ( ), often called \"The K\", is a baseball park located in Kansas City, Missouri, that is home to the Kansas City Royals of Major League Baseball (MLB).  It is part of the Truman Sports Complex together with the adjacent Arrowhead Stadium, home of the Kansas City Chiefs of the National Football League.  The ballpark is named for Ewing Kauffman, the founder and first owner of the Royals.  It opened in 1973 as Royals Stadium and was named for Kauffman on July 2, 1993.  The ballpark's listed seating capacity since 2009 is 37,903."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 41,
+    "generation_speed": 218.61186795843176,
+    "prompt_eval_speed": 48073.48778163996,
+    "generation_latency_s": 0.3087556000100449,
+    "latency": 0.6752624999498948,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2420853,
+    "stage_route_s": 0.15834389999508858,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1694417999824509,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038564000045880675,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.7800054997205734e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30879170005209744,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6752725000260398,
+    "unaccounted_latency_s": 9.389990009367466e-05,
+    "route": "rag",
+    "router_raw": "The Kansas City Wizards have had three home venues in Kansas City in their time.",
+    "sub_queries": [
+      "The Kansas City Wizards have had three home venues in Kansas City in their time."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

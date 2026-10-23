@@ -1,0 +1,49 @@
+{
+  "question_id": "Q303",
+  "query": "What is the birthday of the actress who was the Duchess in \"The Revengers Tragedy\"?",
+  "ground_truth": "23 November 1946",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Harriet Walter",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Revengers Tragedy: Revengers Tragedy is a film adaptation of the 1606 play \"The Revenger's Tragedy\" (attributed to Thomas Middleton in the credits, following the current scholarly consensus).  It was directed by Alex Cox and adapted for the screen by Cox's fellow Liverpudlian, Frank Cottrell Boyce.  The film stars Christopher Eccleston as the revenge-obsessed Vindice, with Derek Jacobi as the evil Duke, Eddie Izzard as his lecherous son Lussurioso, Diana Quick as the Duchess, Andrew Schofield as Vindice's brother Carlo (a version of the play's Hippolito), Carla Henry as his virtuous sister Castiza, and Marc Warren and Justin Salinger as the Duchess's sons Supervacuo and Ambitioso.",
+      "Cate Blanchett: Catherine Elise Blanchett, {'1': \", '2': \", '3': \", '4': \"} ( ; born 14 May 1969) is an Australian actress and theatre director.  She has received international acclaim and many accolades, including two Academy Awards, three Golden Globe Awards, three BAFTA Awards, six AACTA Awards, and three Screen Actors Guild Awards. Blanchett came to international attention for her role as Elizabeth I of England in Shekhar Kapur's 1998 film \"Elizabeth\", for which she won the BAFTA Award for Best Actress, the Golden Globe Award, and earned her first Academy Award for Best Actress nomination.  Her portrayal of Katharine Hepburn in Martin Scorsese's 2004 film \"The Aviator\" brought her critical acclaim and many accolades, including the Academy Award for Best Actress in a Supporting Role, making her the only actor to win an Oscar for portraying another Oscar-winning actor.  In 2013, she starred as Jasmine Francis in Woody Allen's \"Blue Jasmine\", for which she won numerous accolades including the Academy Award for Best Actress.",
+      "Harriet Walter: Dame Harriet Mary Walter, {'1': \", '2': \", '3': \", '4': \"} (born 24 September 1950) is an English stage and screen actress.  Her film appearances include \"Sense and Sensibility\" (1995), \"The Governess\" (1998), \"Villa des Roses\" (2002), \"Atonement\" (2007) and \"Man Up\" (2015).  On television she starred opposite John Lithgow as Clementine Churchill in \"The Crown\" (2016), Natalie Chandler in the ITV drama series \"\" (2009\u201314), and as Lady Prudence Shackleton in four episodes of \"Downton Abbey\" (2013\u201315).  She was appointed Dame Commander of the Order of the British Empire (DBE) in 2011 for services to drama."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 727,
+    "generation_tokens": 4,
+    "generation_speed": 193.37684312303602,
+    "prompt_eval_speed": 13709.479718644516,
+    "generation_latency_s": 0.18869209999684244,
+    "latency": 0.7649842000100762,
+    "total_prompt_tokens": 865,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22919630000000002,
+    "stage_route_s": 0.10554829996544868,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.41241019999142736,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05814580002333969,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.430006422102451e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1887328999582678,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7649954999797046,
+    "unaccounted_latency_s": 0.00010469998233020306,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The actress who played the role of Lady Catherine Markham in the film adaptation of \"The Revenger's Tragedy\" is Elizabeth Taylor.",
+      "Query 2: The birthdate of the actress who portrayed Lady Catherine Markham in the film adaptation of \"The Revenger's Tragedy\" is July 18, 1930."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

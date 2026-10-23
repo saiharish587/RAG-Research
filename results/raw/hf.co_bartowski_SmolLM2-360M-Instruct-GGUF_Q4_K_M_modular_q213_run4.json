@@ -1,0 +1,49 @@
+{
+  "question_id": "Q213",
+  "query": "Which tower is taller, 712 Fifth Avenue or Manhattan Life Insurance Building?",
+  "ground_truth": "712 5th Avenue",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "712 Fifth Avenue",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "712 Fifth Avenue: 712 5th Avenue is a 650 ft skyscraper at 56th Street and Fifth Avenue in the Midtown neighborhood of Manhattan, New York City.  It was constructed from 1990 to 1991 and is the 53rd tallest building in New York City.  The tower's design had to accommodate the landmarked facades of the Coty and Rizzoli Buildings at the base of the tower.  It was purchased by the Bannister Trust in 2007 in a \"Private Treaty\", and placed in \"Property Fund #1\" managed by JP Morgan.  The building is sometimes referred to as the Henri Bendel building.",
+      "Manhattan Life Insurance Building: The Manhattan Life Insurance Building was a 348 ft tower at 64-66 Broadway in New York City completed in 1894 to the designs of the architects of Kimball & Thompson and slightly extended north in 1904 making its new address 64-70 Broadway.  It was the first skyscraper to pass 100 m in Manhattan.",
+      "New York Life Building: The New York Life Insurance Building, New York, located at 51 Madison Avenue, Manhattan, New York City, across from Madison Square Park, is the headquarters of the New York Life Insurance Company."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 366,
+    "generation_tokens": 6,
+    "generation_speed": 253.65688678447617,
+    "prompt_eval_speed": 41991.73932996787,
+    "generation_latency_s": 0.14304290001746267,
+    "latency": 0.4529738000128418,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22146500000000002,
+    "stage_route_s": 0.09503169998060912,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15723570005502552,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05747709993738681,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.590003613382578e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14307879994157702,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.452984599978663,
+    "unaccounted_latency_s": 9.590003173798323e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: 712 Fifth Avenue",
+      "Query 2: Manhattan Life Insurance Building"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

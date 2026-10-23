@@ -1,0 +1,42 @@
+{
+  "question_id": "Q20",
+  "query": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+  "ground_truth": "Robert Erskine Childers DSC",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Henry Roth was from England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry Roth: Henry Roth (February 8, 1906 \u2013 October 13, 1995) was an American novelist and short story writer.",
+      "Roth v. United States: Roth v. United States, 354 U.S. 476 (1957) , along with its companion case \"Miller v. California\", was a landmark case before the United States Supreme Court which redefined the Constitutional test for determining what constitutes obscene material unprotected by the First Amendment.",
+      "Samuel Roth: Samuel Roth (1893 \u2013 July 3, 1974) was an American publisher and writer.  He was the plaintiff in \"Roth v. United States\" (1957), which was a key Supreme Court ruling on freedom of sexual expression.  The minority opinion, regarding redeeming social value as a criterion in obscenity prosecutions, became a template for the liberalizing First Amendment decisions of the 1960s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 285,
+    "generation_tokens": 7,
+    "generation_speed": 259.48991696322656,
+    "prompt_eval_speed": 37579.11392405064,
+    "generation_latency_s": 0.87105039996095,
+    "latency": 3.3324268999276683,
+    "total_prompt_tokens": 362,
+    "total_generation_tokens": 10,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1263244,
+    "stage_rewrite_s": 1.1161980000324547,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1285177000099793,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21653740003239363,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8710921000456437,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3324372000060976,
+    "unaccounted_latency_s": 9.279989171773195e-05,
+    "rewritten_query": "Henry Roth",
+    "query_was_rewritten": true
+  }
+}

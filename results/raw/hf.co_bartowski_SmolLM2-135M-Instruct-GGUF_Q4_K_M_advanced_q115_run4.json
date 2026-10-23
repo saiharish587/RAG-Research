@@ -1,0 +1,42 @@
+{
+  "question_id": "Q115",
+  "query": "Which component of shellite has the formula (ON)CHOH?",
+  "ground_truth": "picric acid",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The chemical formula for Shellite (Tridite) is CHOH.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shellite (explosive): Shellite (known as Tridite in US service) is an explosive mixture of Picric acid and Dinitrophenol or Picric acid and Hexanitrodiphenylamine in a ratio of 70/30.  It was typically used as a filling in Royal Navy armour-piercing shells during the early part of the 20th century.",
+      "Isopropyl alcohol: Isopropyl alcohol (IUPAC name propan-2-ol), also called dimethyl carbinol or, incorrectly, isopropanol, is a compound with the chemical formula CHO or CHOH or CHCHOHCH (sometimes represented as \"i\"-PrOH).  It is a colorless, flammable chemical compound with a strong odor.  As a propyl group linked to a hydroxyl group, it is the simplest example of a secondary alcohol, where the alcohol carbon atom is attached to two other carbon atoms, sometimes shown as (CH)CHOH.  It is a structural isomer of 1-propanol.  It has a wide variety of industrial and household uses, and is a common ingredient in chemicals such as antiseptics, disinfectants and detergents.",
+      "Index of alcohol-related articles: Alcohol is any organic compound in which a hydroxyl functional group (-OH) is bound to a carbon atom, usually connected to other carbon or hydrogen atoms.  An important class are the simple acyclic alcohols, the general formula for which is CHOH.  Of those, ethanol (CHOH) is the type of alcohol found in alcoholic beverages, and in common speech the word alcohol refers specifically to ethanol.  Articles related to alcohol include:"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 17,
+    "generation_speed": 399.72724493874773,
+    "prompt_eval_speed": 70344.37734617268,
+    "generation_latency_s": 0.12769610004033893,
+    "latency": 0.4439187999814749,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1408683,
+    "stage_rewrite_s": 0.13250579999294132,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06685469998046756,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11674650001805276,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.12772870005574077,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.44392730004619807,
+    "unaccounted_latency_s": 9.200000204145908e-05,
+    "rewritten_query": "Which component of Shellite has the formula (On + CHOH)?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q144",
+  "query": "Josey Scott and Ian Watkins were both promising musicians. Which of these talented men was incarcerated, impacting his career with a rock band?",
+  "ground_truth": "Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Josey Scott and Ian Watkins were both promising musicians who impacted their careers with the Rock Band Lostprophets.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ian Watkins (Lostprophets): Ian David Karslake Watkins (born 30 July 1977) is a Welsh singer, musician, and convicted sex offender.  He achieved prominence as a founding member, lead vocalist, and lyricist of the rock band Lostprophets.  Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.  In November 2013, he pleaded guilty to 13 charges, including the attempted rape and sexual assault of a child under 13; these offences were committed against the infant children of two women who were also convicted.  He was subsequently jailed for 29 years and ordered to serve a further six years on extended licence.",
+      "Josey Scott: Josey Scott (born Joseph Scott Sappington; May 3, 1972) is the former lead vocalist of the rock band Saliva.  In addition to Saliva, Scott co-wrote and performed \"Hero\" (which was used as one of the theme songs to the 2002 film \"Spider-Man\") with Chad Kroeger of Nickelback.",
+      "Scott Ian: Scott Ian (born Scott Ian Rosenfeld; December 31, 1963) is an American musician, best known as the rhythm guitarist, backing and additional lead vocalist, and the only remaining original founding member of the thrash metal band Anthrax.  He also writes the lyrics on all their albums.  Ian is the guitarist and a founding member of the crossover thrash band Stormtroopers of Death.  He has hosted \"The Rock Show\" on VH1 and has appeared on VH1's \"I Love the...\" series, \"\" and \"\"Supergroup\" (TV series)\".  Ian is also the rhythm guitarist for the metal band The Damned Things."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 496,
+    "generation_tokens": 26,
+    "generation_speed": 364.85595206354105,
+    "prompt_eval_speed": 71925.75406032482,
+    "generation_latency_s": 0.19007949996739626,
+    "latency": 0.5371738999383524,
+    "total_prompt_tokens": 652,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23011179999999998,
+    "stage_route_s": 0.12184749997686595,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16410809999797493,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060970299993641675,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.340005736798048e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19011429999954998,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5371897999430075,
+    "unaccounted_latency_s": 9.729992598295212e-05,
+    "route": "rag",
+    "router_raw": "Josey Scott and Ian Watkins were both promising musicians.",
+    "sub_queries": [
+      "Josey Scott and Ian Watkins were both promising musicians. Which one impacted their careers with a rock band?",
+      "Answer: Ian Watkins."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

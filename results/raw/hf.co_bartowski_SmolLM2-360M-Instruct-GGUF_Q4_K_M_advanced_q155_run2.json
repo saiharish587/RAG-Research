@@ -1,0 +1,42 @@
+{
+  "question_id": "Q155",
+  "query": "Are Broughtonia and Laeliocattleya both orchids?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, Broughtonia and Laeliocattleya are not both orchids.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Laeliocattleya: Laeliocattleya is a nothogenus of intergeneric orchid hybrids descended from the parental genera \"Laelia\" and \"Cattleya\".  It is abbreviated Lc.  in the horticultural trade.",
+      "Broughtonia: Broughtonia is a genus of orchids (family Orchidaceae) native to the Bahamas and the Greater Antilles.  The genus is abbreviated Bro in trade journals.",
+      "Cattleytonia: Cattleytonia (from \"Cattleya\" and \"Broughtonia\", its parental genera) is an intergeneric hybrid of orchids.  It is abbreviated Ctna in horticultural trade."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 212,
+    "generation_tokens": 18,
+    "generation_speed": 280.1207675327705,
+    "prompt_eval_speed": 45977.011494252874,
+    "generation_latency_s": 0.9382906999671832,
+    "latency": 3.363124500028789,
+    "total_prompt_tokens": 286,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1255028,
+    "stage_rewrite_s": 1.1758064000168815,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0780958000104874,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17080199997872114,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9383379999781027,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.363136800006032,
+    "unaccounted_latency_s": 9.520002640783787e-05,
+    "rewritten_query": "No, Broughtonia and Laeliocattleya are not orchids.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q117",
+  "query": "Suicide's 1977 released album features a song based on what brand's comic character?",
+  "ground_truth": "Marvel",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Suicide's 1977 album \"Suicide\" features a song titled \"Ghost Rider,\" which is inspired by the Marvel Comics character.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Suicide (1977 album): Suicide is the debut album from the American rock band Suicide.  It was released in 1977 on Red Star Records and produced by Craig Leon and Marty Thau.  The album was recorded in four days at Ultima Sound Studios in New York and featured Martin Rev's minimalist electronics and harsh, repetitive rhythms paired with Alan Vega's rock and roll-inspired vocals and depictions of urban life.",
+      "Batman (1989 film): Batman is a 1989 American superhero film directed by Tim Burton and produced by Jon Peters and Peter Guber, based on the DC Comics character of the same name.  It is the first installment of Warner Bros.' initial \"Batman\" film series.  The film stars Michael Keaton as Bruce Wayne/Batman and Jack Nicholson as The Joker, alongside Kim Basinger, Robert Wuhl, Pat Hingle, Billy Dee Williams, Michael Gough and Jack Palance.  The film takes place early in the title character's war on crime, and depicts a battle with his arch-nemesis the Joker.",
+      "Ghost Rider (Suicide song): Ghost Rider is a song by the protopunk band Suicide appearing on their debut album.  The song is based on the Marvel Comics character."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 33,
+    "generation_speed": 252.2376537312064,
+    "prompt_eval_speed": 46581.03023225639,
+    "generation_latency_s": 1.0086351000936702,
+    "latency": 3.4418444999027997,
+    "total_prompt_tokens": 439,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14309,
+    "stage_rewrite_s": 1.218039199942723,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0409231999656186,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1741002999478951,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0086899999296293,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4418593998998404,
+    "unaccounted_latency_s": 0.00010750012006610632,
+    "rewritten_query": "Suicide's 1977 released album features a song based on the comic character \"Batman.",
+    "query_was_rewritten": true
+  }
+}

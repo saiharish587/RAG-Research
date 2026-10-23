@@ -1,0 +1,42 @@
+{
+  "question_id": "Q255",
+  "query": "in 1999, Spirit Halloween LLC was purchased by a mall retailer that has how many stores in the United States and Canada ?",
+  "ground_truth": "over 600 stores",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Spirit Halloween LLC was purchased by Spencer Gifts in 1999.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Spirit Halloween: Spirit Halloween LLC is a seasonal retailer that supplies Halloween decorations, costumes and accessories.  It was founded in 1983 and is based in Egg Harbor Township, New Jersey.  In 1999, the store had 60 seasonal locations and was purchased by Spencer Gifts.",
+      "Spencer Gifts: Spencer Gifts LLC, doing business as Spencer's, is a North American mall retailer with over 600 stores in the United States and Canada.  Their stores specialize in novelty and gag gifts, and also sell clothing, band merchandise, sex toys, room decor, collectible figures, fashion and body jewelry, and fantasy and horror items.  The company also owns and operates a seasonal retailer, Spirit Halloween.",
+      "Yankee Candle: The Yankee Candle Company (referred to simply as Yankee Candle) is an American manufacturer and retailer of scented candles, candleholders, accessories, and dinnerware.  Its products are sold by thousands of gift shops nationwide, through catalogs, and online, and in nearly 50 countries around the world.  The company operates about 560 small-box format stores, located in malls across all fifty 50 U.S. states, the District of Columbia, Puerto Rico, and nine locations in Ontario, Canada.  The company is headquartered in South Deerfield, Massachusetts."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 372,
+    "generation_tokens": 17,
+    "generation_speed": 249.6768887322289,
+    "prompt_eval_speed": 14712.861888941623,
+    "generation_latency_s": 0.9464764000149444,
+    "latency": 3.3812207999872044,
+    "total_prompt_tokens": 460,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.147649,
+    "stage_rewrite_s": 1.2728925000410527,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.973559100064449,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18818090006243438,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9465118000516668,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3812297000549734,
+    "unaccounted_latency_s": 8.599983993917704e-05,
+    "rewritten_query": "Spirit Halloween LLC was acquired by Mall Retailer Inc. in 2018, with 35 stores currently operating in the U.S. and Canada.",
+    "query_was_rewritten": true
+  }
+}

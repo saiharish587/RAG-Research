@@ -1,0 +1,49 @@
+{
+  "question_id": "Q555",
+  "query": "Woman's Era and Naj are what kind of magazines?",
+  "ground_truth": "fortnightly women interest magazine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Woman's Era is a Polish language fortnightly lifestyle and women's magazine published in Warsaw, Poland. It is an English-language publication that focuses on the interests and experiences of women. On the other hand, Vogue is an American fashion and lifestyle magazine made up of many components including fashion, beauty, culture, living, and runway.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Naj: Naj is a Polish language fortnightly lifestyle and women's magazine published in Warsaw, Poland.",
+      "Woman's Era: Woman's Era is a fortnightly women interest magazine published in English in India.  It was started in 1973 by Vishwanath under his publishing house, the Delhi Press.  The magazine is owned by the Delhi Press.  Divesh Nath has been the managing editor of the magazine since 2002.",
+      "Vogue (magazine): Vogue is an American fashion and lifestyle magazine made up of many components including fashion, beauty, culture, living, and runway.  \"Vogue\" began as a weekly newspaper in 1892 in the United States, before becoming a monthly publication years later."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 232,
+    "generation_tokens": 71,
+    "generation_speed": 236.12279715721456,
+    "prompt_eval_speed": 52524.33778582748,
+    "generation_latency_s": 0.41873510007280856,
+    "latency": 0.83078870002646,
+    "total_prompt_tokens": 356,
+    "total_generation_tokens": 116,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23021750000000002,
+    "stage_route_s": 0.09656709991395473,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26013280008919537,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05518779996782541,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.080003757029772e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4187679000897333,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8307979000965133,
+    "unaccounted_latency_s": 9.199988562613726e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Women's Era\" - A magazine focused on women's lifestyle, fashion, and beauty.",
+      "\"Naj\" - An Iranian magazine that focuses on art, culture, and politics."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

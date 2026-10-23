@@ -1,0 +1,48 @@
+{
+  "question_id": "Q292",
+  "query": "What is the population of the town at the intersection of Interstate Highways 77 and  the longest Interstate highway within the borders of Virginia?",
+  "ground_truth": "8,211 at the 2010 census",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The population of the town at the intersection of Interstate Highways 77 and 81 is 8,211.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Interstate 81 in Virginia: Interstate 81 (I-81) is an 855 mi highway.  In the U.S. state of Virginia, I-81 runs for 324.92 mi , making the portion in Virginia longer than any other state's portion.  It is also the longest Interstate highway within the borders of Virginia.  It stretches from the Tennessee state line near Bristol to the West Virginia state line near Winchester.",
+      "Worcester, Massachusetts: Worcester ( , ] ) is a city and the county seat of Worcester County, Massachusetts, United States.  Named after Worcester, England, as of the 2010 Census the city's population was 181,045, making it the second most populous city in New England after Boston.  Worcester is located approximately 40 mi west of Boston, 50 mi east of Springfield and 40 mi north of Providence.  Due to its location in Central Massachusetts, Worcester is known as the \"Heart of the Commonwealth\", thus, a heart is the official symbol of the city.  However, the heart symbol may also have its provenance in lore that the mass-produced Valentine's Day card was invented in the city.",
+      "Wytheville, Virginia: Wytheville ( ) is a town in, and the county seat of, Wythe County, Virginia, United States.  It is named after George Wythe, a signer of the United States Declaration of Independence, and mentor to Thomas Jefferson.  Wytheville's population was 8,211 at the 2010 census.  Located at the intersection of Interstate Highways 77 and 81, the town has long been a crossroads for travelers.  During the American Civil War, Wytheville had a strategic importance, and was attacked in 1863 (Toland's Raid) and 1865 (Stoneman's 1865 Raid).  The town is also the birthplace of Edith Bolling Wilson, wife of President Woodrow Wilson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 524,
+    "generation_tokens": 28,
+    "generation_speed": 356.4290897055641,
+    "prompt_eval_speed": 67910.83462934163,
+    "generation_latency_s": 0.20055039995349944,
+    "latency": 0.5486796998884529,
+    "total_prompt_tokens": 682,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2341551,
+    "stage_route_s": 0.16887920000590384,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13941039994824678,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039666400058194995,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.439998883754015e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20059859997127205,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5487219999777153,
+    "unaccounted_latency_s": 0.00012440001592040062,
+    "route": "rag",
+    "router_raw": "The population of the town at the intersection of Interstate Highways 77 and 1024 miles from the border is unknown.",
+    "sub_queries": [
+      "SELECT * FROM population WHERE state = 'VA' AND city_name LIKE '%HIS%';"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

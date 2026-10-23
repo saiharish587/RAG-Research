@@ -1,0 +1,49 @@
+{
+  "question_id": "Q398",
+  "query": "Which football team does Lewis Young's older brother, Ashley Young, play for?",
+  "ground_truth": "Premier League club Manchester United and the England national team",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Ashley Young (Australian footballer)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lewis Young: Lewis Jack Young (born 27 September 1989) is an English professional footballer who plays for Crawley Town.  He can play either as a striker, as a right winger or as, most recently, a right back.  He is the younger brother of Manchester United footballer Ashley Young.",
+      "Ashley Young: Ashley Simon Young (born 9 July 1985) is an English professional footballer who plays as a winger for Premier League club Manchester United and the England national team.",
+      "Lewis Young (Australian footballer): Lewis Young (born 20 December 1998) is a professional Australian rules footballer playing for the Western Bulldogs in the Australian Football League (AFL).  He was drafted by the Western Bulldogs with their third selection and forty-ninth overall in the 2016 national draft.  He made his debut in the twenty point win against Carlton at Etihad Stadium in round seventeen of the 2017 season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 292,
+    "generation_tokens": 9,
+    "generation_speed": 345.99415654313395,
+    "prompt_eval_speed": 36291.32939240982,
+    "generation_latency_s": 0.14183009997941554,
+    "latency": 0.45504220004659146,
+    "total_prompt_tokens": 424,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23122890000000001,
+    "stage_route_s": 0.10014310001861304,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1574475000379607,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05545530002564192,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.6600005589425564e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14186670002527535,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4550517000025138,
+    "unaccounted_latency_s": 9.289989247918129e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Who plays for Lewis Young's older brother Ashley Young?",
+      "Who played for Lewis Young's older brother Ashley Young?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

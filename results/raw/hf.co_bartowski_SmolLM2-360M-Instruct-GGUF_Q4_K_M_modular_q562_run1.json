@@ -1,0 +1,49 @@
+{
+  "question_id": "Q562",
+  "query": "Which band formed in England, Of Montreal or Vib Gyor?",
+  "ground_truth": "Vib Gyor was a band that was formed in Leeds, England.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Vib Gyor",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vib Gyor: Vib Gyor was a band that was formed in Leeds, England.  The name was derived from the first letters of all the colours in the rainbow, in order from the shortest to longest wavelengths.",
+      "Of Montreal: of Montreal is an American experimental pop band from Athens, Georgia.  It was founded by frontman Kevin Barnes in 1996, named after a failed romance between Barnes and a woman \"of Montreal.\"  The band is identified as part of the Elephant 6 collective.  Throughout its existence, of Montreal's musical style has evolved considerably and drawn inspiration from numerous 1960s psychedelic pop acts.",
+      "Fallen (Vib Gyor song): \"Fallen\" was the first single from the Leeds band Vib Gyor.  It was first given limited release in July 2006, and has attained critical acclaim and a large amount of radio play on both sides of the atlantic."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 267,
+    "generation_tokens": 5,
+    "generation_speed": 218.9046013747209,
+    "prompt_eval_speed": 11481.401849064716,
+    "generation_latency_s": 0.15820930001791567,
+    "latency": 0.47793919988907874,
+    "total_prompt_tokens": 393,
+    "total_generation_tokens": 23,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23237780000000002,
+    "stage_route_s": 0.10351099993567914,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15883800003211945,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05720489996019751,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.849997978657484e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15824380004778504,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4779482999583706,
+    "unaccounted_latency_s": 9.280000813305378e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Of Montreal\"",
+      "\"Vib Gyor\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

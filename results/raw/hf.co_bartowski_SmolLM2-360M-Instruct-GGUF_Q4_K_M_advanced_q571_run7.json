@@ -1,0 +1,42 @@
+{
+  "question_id": "Q571",
+  "query": "What city and nation was the location of the 2015 Pacific Games where the Kiribati national basketball team finished with a 0-4 record?",
+  "ground_truth": "Port Moresby, Papua New Guinea",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The location of the 2015 Pacific Games where the Kiribati national basketball team finished with a 0-4 record was Port Moresby, Papua New Guinea.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kiribati at the 2015 Pacific Games: Kiribati competed at the 2015 Pacific Games in Port Moresby, Papua New Guinea from 4 to 18 July 2015.  A total of 86 competitors for Kiribati were listed as of 4 July 2015.",
+      "2015 Pacific Games: The 2015 Pacific Games was held in Port Moresby, Papua New Guinea, from 4 to 18 July 2015.  It was the fifteenth staging of the Pacific Games.",
+      "Powerlifting at the 2015 Pacific Games: Powerlifting at the 2015 Pacific Games was held from 9\u201310 July 2015 in the Sir John Guise Indoor Power Dome at Port Moresby, Papua New Guinea.  The host nation Papua New Guinea was the dominant team, particularly in the women's divisions where it claimed six of the seven possible gold medals.  Nauru was the strongest team in the men's divisions, winning four of the eight weight categories.  Telupe Iosefa received the first ever gold medal won by Tuvalu at the Pacific Games in the 120\u00a0kg male division."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 38,
+    "generation_speed": 259.781100241323,
+    "prompt_eval_speed": 49110.807113543095,
+    "generation_latency_s": 1.0503842999460176,
+    "latency": 3.441781000001356,
+    "total_prompt_tokens": 452,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1270306,
+    "stage_rewrite_s": 1.2314316999400035,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0189659000607207,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1408794999588281,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0504242000170052,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.441793499980122,
+    "unaccounted_latency_s": 9.310001041740179e-05,
+    "rewritten_query": "The 2015 Pacific Games were held in Kiribati, a small island nation located in the South Pacific Ocean.",
+    "query_was_rewritten": true
+  }
+}

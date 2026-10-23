@@ -1,0 +1,33 @@
+{
+  "question_id": "Q398",
+  "query": "Which football team does Lewis Young's older brother, Ashley Young, play for?",
+  "ground_truth": "Premier League club Manchester United and the England national team",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "If you do not have enough information to answer, state that you do not know.\n\nContext:\nRyan Giggs (born 27 September 1989) is an English footballer who plays as a right winger for Manchester United and the England national team.\n\nLewis Young: Lewis Jack Young (born 9 July 1985) is an English professional footballer who plays for Crawley Town. He can play either as a striker, as a right winger or as, most recently, a right back.\n\nQuestion: Who played for Manchester United?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ashley Young: Ashley Simon Young (born 9 July 1985) is an English professional footballer who plays as a winger for Premier League club Manchester United and the England national team.",
+      "Lewis Young: Lewis Jack Young (born 27 September 1989) is an English professional footballer who plays for Crawley Town.  He can play either as a striker, as a right winger or as, most recently, a right back.  He is the younger brother of Manchester United footballer Ashley Young."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 186,
+    "generation_tokens": 126,
+    "generation_speed": 377.6978417266187,
+    "prompt_eval_speed": 57336.62145499384,
+    "generation_latency_s": 0.41155740001704544,
+    "latency": 0.4116181000135839,
+    "total_prompt_tokens": 186,
+    "total_generation_tokens": 126,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.068145,
+    "stage_generate_s": 0.41159669996704906,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4116260999580845,
+    "unaccounted_latency_s": 2.989999484270811e-05
+  }
+}

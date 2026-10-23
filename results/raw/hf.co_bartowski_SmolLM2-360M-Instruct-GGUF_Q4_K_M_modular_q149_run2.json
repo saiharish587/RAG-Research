@@ -1,0 +1,48 @@
+{
+  "question_id": "Q149",
+  "query": "Who is Bruce Spizer an expert on, known as the most influential act of the rock era?",
+  "ground_truth": "The Beatles",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Bruce Spizer is an expert on The Beatles, known for his work in tax law and being recognized as an authority on the history of the band.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bruce Spizer: David \"Bruce\" Spizer (born July 2, 1955) is a tax attorney in New Orleans, Louisiana, who is also recognized as an expert on The Beatles.  He has published eight books, and is frequently quoted as an authority on the history of the band and its recordings.",
+      "Miles Davis: Miles Dewey Davis III (May 26, 1926September 28, 1991) was an American jazz trumpeter, bandleader, and composer.  He is among the most influential and acclaimed figures in the history of jazz and 20th century music.  Davis adopted a variety of musical directions in his five-decade career which kept him at the forefront of a number of major stylistic developments in jazz.",
+      "Sly Stone: Sly Stone (born Sylvester Stewart, March 15, 1943, Denton, Texas) is an American musician, songwriter, and record producer, most famous for his role as frontman for Sly and the Family Stone, a band which played a critical role in the development of soul, funk, rock, and psychedelia in the 1960s and 1970s.  In 1993, he was inducted into the Rock and Roll Hall of Fame as a member of the group."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 368,
+    "generation_tokens": 33,
+    "generation_speed": 231.0584577898208,
+    "prompt_eval_speed": 14212.335380218592,
+    "generation_latency_s": 0.27547489991411567,
+    "latency": 0.5574168000603095,
+    "total_prompt_tokens": 508,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2267069,
+    "stage_route_s": 0.09055109997279942,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15514149994123727,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03609299997333437,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.339998122304678e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.27550879993941635,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.557427000021562,
+    "unaccounted_latency_s": 8.980021812021732e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bruce Spizer - The Most Influential Act of the Rock Era\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

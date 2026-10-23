@@ -1,0 +1,42 @@
+{
+  "question_id": "Q388",
+  "query": "Dead but Rising was a song by the Danish band fomed in what city in 2001?",
+  "ground_truth": "Copenhagen",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Deep Purple",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dead but Rising: \"Dead but Rising\" is a song by Danish heavy metal band Volbeat.  The song was released as the seventh single from the band's fifth studio album \"Outlaw Gentlemen & Shady Ladies\".",
+      "Deep Purple: Deep Purple are an English rock band formed in Hertford in 1968.  The band is considered to be among the pioneers of heavy metal and modern hard rock, although their musical approach changed over the years.  Originally formed as a progressive rock band, the band shifted to a heavier sound in 1970.  Deep Purple, together with Led Zeppelin and Black Sabbath, have been referred to as the \"unholy trinity of British hard rock and heavy metal in the early to mid-seventies\".  They were listed in the 1975 \"Guinness Book of World Records\" as \"the globe's loudest band\" for a 1972 concert at London's Rainbow Theatre, and have sold over 100 million albums worldwide.",
+      "Oasis (band): Oasis were an English rock band formed in Manchester in 1991.  Developed from an earlier group, the Rain, the band originally consisted of Liam Gallagher (vocals and tambourine), Paul \"Bonehead\" Arthurs (guitar), Paul \"Guigsy\" McGuigan (bass guitar), and Tony McCarroll (drums, percussion).  They were later joined by Liam's older brother Noel Gallagher (lead guitar and vocals) as a fifth member, becoming the band's settled line-up until April 1995."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 3,
+    "generation_speed": 319.3527783691718,
+    "prompt_eval_speed": 58305.08474576272,
+    "generation_latency_s": 0.929439099971205,
+    "latency": 3.3661241000518203,
+    "total_prompt_tokens": 512,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1260734,
+    "stage_rewrite_s": 1.27687820000574,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0306695000035688,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12902780005242676,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9294713999843225,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3661644000094384,
+    "unaccounted_latency_s": 0.00011799996718764305,
+    "rewritten_query": "Dead but Rising was a song by the Danish band formed in Copenhagen, Denmark in 2001.",
+    "query_was_rewritten": true
+  }
+}

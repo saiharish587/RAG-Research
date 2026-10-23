@@ -1,0 +1,49 @@
+{
+  "question_id": "Q541",
+  "query": "Cardinal Pole Roman Catholic School was named after the last Roman Catholic to hold what position?",
+  "ground_truth": "Archbishop of Canterbury",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The last Roman Catholic to hold a position is Cardinal Gibbons.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pontifical Gregorian University: The Pontifical Gregorian University (Italian: \"Pontificia Universit\u00e0 Gregoriana\" ; also known as the Gregoriana) is a pontifical university located in Rome, Italy.  It was originally a part of the Roman College founded in 1551 by Saint Ignatius of Loyola, and included all grades of schooling.  The university division of philosophy and theology of the Roman College was given Papal approval in 1556, making it the first university founded by the Society of Jesus (Jesuits).  In 1584 the Roman College was given a grandiose new home by Pope Gregory XIII, after whom it was renamed.  It was already making its mark not only in sacred but also in natural science.",
+      "Chaminade High School: Chaminade High School is a Roman Catholic college preparatory high school for boys in Mineola, New York, United States.  The school was founded in 1930 by the Society of Mary (Marianists), an international Roman Catholic teaching order of priests and religious brothers.  The school is named after William Joseph Chaminade, S.M. (1761\u20131850), who founded the Marianist order in 1817, and who was beatified by Pope John Paul II in 2000.  Operated by the Marianists, Chaminade is independent of the Roman Catholic Diocese of Rockville Centre.  The student body numbers over 1,700, mostly from Nassau and Suffolk counties, as well as neighboring New York City.  The administration and faculty consists of both Marianists and lay men and women.",
+      "Cardinal Gibbons School (Baltimore, Maryland): The Cardinal Gibbons School, also referred to as Cardinal Gibbons, CG and most commonly as Gibbons, was a Roman Catholic high school and middle school for boys in Baltimore, Maryland, USA.  A private institution for grades 6\u201312, Gibbons drew its enrollment from the neighborhoods of southwest Baltimore City and the counties surrounding the Baltimore metropolitan area, with some as far away as Harford County, Carroll County and Frederick County."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 535,
+    "generation_tokens": 14,
+    "generation_speed": 232.68182422550194,
+    "prompt_eval_speed": 12456.054573816675,
+    "generation_latency_s": 0.2169189000269398,
+    "latency": 0.7136198000516742,
+    "total_prompt_tokens": 669,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2216847,
+    "stage_route_s": 0.09996299992781132,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3400589000666514,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05647990002762526,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.140000186860561e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21695889998227358,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.713629600009881,
+    "unaccounted_latency_s": 0.00010820000898092985,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The name of the school is derived from the last Roman Catholic who held a position in the school's history.",
+      "Query 2: The school was named after Cardinal Pietro Marcello, a prominent figure in the Catholic Church during the time when the school was founded."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

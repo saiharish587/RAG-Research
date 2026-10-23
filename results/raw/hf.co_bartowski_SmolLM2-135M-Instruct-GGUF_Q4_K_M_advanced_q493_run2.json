@@ -1,0 +1,42 @@
+{
+  "question_id": "Q493",
+  "query": "The actor who appeared on Charlotte's Shorts and Weeds was born in what year?",
+  "ground_truth": "1966",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The actor who appeared on Charlotte's Shorts and Weeds is 2014, not 2013 as stated by the context provided.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Charlotte's Shorts: Charlotte's Shorts is a 90 minute live performance of Charlotte Dean's short stories.  The show has traditionally been cast with current and past Groundlings, such as Tim Bagley, Jim Rash, Jillian Bell, Jordan Black, Gary Anthony Williams, Jonathan Stark, Michael Hitchcock, Andrew Friedman, Daniele Gaither, Mindy Sterling, and Laraine Newman.  In 2014, \"Charlotte's Shorts\" was performed at various theaters in Los Angeles, including two shows at The Groundlings Theater.  \"Charlotte's Shorts\" is prominently featured in SF Sketchfest and The Hollywood Fringe Festival.",
+      "Jamie Foxx: Eric Marlon Bishop (born December 13, 1967), known professionally by his stage name Jamie Foxx, is an American actor, singer, songwriter, musician, producer, and comedian.  He won an Academy Award for Best Actor, BAFTA Award for Best Actor in a Leading Role, and a Golden Globe Award for Best Actor in a Musical or Comedy, for his portrayal of Ray Charles in the 2004 biographical film \"Ray\".  The same year, he was nominated for the Academy Award for Best Supporting Actor for his role in the crime film \"Collateral\".  As of spring 2017, Foxx serves as host and executive producer of the new Fox game show \"Beat Shazam\".",
+      "Andy Milder: Andy Milder (born August 16, 1969) is an American actor and voice actor.  He has appeared in such films as \"Apollo 13\", \"Armageddon\", \"Rumor Has It\u2026\", \"Frost/Nixon\", \"Transformers\" and \"Domino\".  He was a series regular on \"Fame L.A.\" and \"Weeds\", and appeared on such shows as \"\", \"\", \"The West Wing\", \"Six Feet Under\", \"Ugly Betty\", \"Boston Legal\", \"Parks and Recreation\", \"Married... with Children\", \"The Wonder Years\", \"Private Practice\" and \"Criminal Minds\".  Milder provided narration for \"Ballroom Bootcamp\", \"101 Most Starlicious Make-Overs\", and \"Wrecks to Riches\".  He provided the voice of Prince Sebastian LaCroix in the 2004 video game \"\" and Lightning Lad in the 2006 animated series \"Legion of Super Heroes\" and the film \"\".  From 2005 to 2009, he was a recurring cast member and later series regular on \"Weeds\" as Dean Hodes.  Starting in 2011, he is a recurring cast member on the Disney Channel sitcom \"Austin & Ally\" as Lester Dawson.  He also had an appearance on the show \"Royal Pains\" on the USA Network."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 696,
+    "generation_tokens": 33,
+    "generation_speed": 387.27394350494654,
+    "prompt_eval_speed": 41559.682331163785,
+    "generation_latency_s": 0.1875825000461191,
+    "latency": 0.6528247999958694,
+    "total_prompt_tokens": 774,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1325519,
+    "stage_rewrite_s": 0.1701146000996232,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07751259999349713,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21749349997844547,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18761590006761253,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6528333000605926,
+    "unaccounted_latency_s": 9.739992674440145e-05,
+    "rewritten_query": "The actor who appeared on Charlotte's Shorts and Weeds, born in 2015, is a notable figure from the show.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q565",
+  "query": "Who is the author of the 1993 production Madge Ryan participated in?",
+  "ground_truth": "Euripides",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The author of the 1993 production \"Madge Ryan\" was Madge Jenison.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Huston: John Marcellus Huston ( ; August 5, 1906\u00a0\u2013 August 28, 1987) was an American film director, screenwriter and actor.  He wrote the screenplays for most of the 37 feature films he directed, many of which are today considered classics: \"The Maltese Falcon\" (1941), \"The Treasure of the Sierra Madre\" (1948), \"The Asphalt Jungle\" (1950), \"The African Queen\" (1951), \"The Misfits\" (1961), \"Fat City\" (1972) and \"The Man Who Would Be King\" (1975).  During his 46-year career, Huston received 15 Oscar nominations, won twice, and directed both his father, Walter Huston, and daughter, Anjelica Huston, to Oscar wins in different films.",
+      "Danny Huston: Daniel Sallis Huston (born May 14, 1962) is an American actor, writer and director.  Huston got his start directing \"Mr. North\" starring Anthony Edwards, Robert Mitchum and his half-sister, Anjelica Huston.  Later, Huston gave his breakthrough acting performance in the independent film \"Ivans Xtc\" and was nominated for Best Male Performance at the Independent Spirit Awards in 2003.",
+      "Madge Jenison: Madge Jenison (1874\u20131960) was an American author, activist, and bookstore owner.  She wrote novels, short stories, cultural criticism, and scripts.  Her father, Edward Spencer Jenison, was a prominent Chicago architect who helped rebuild the city after The Great Chicago Fire of 1871.  Her sister, Nancy Blanche Jenison, was a pioneering woman physician.  In the early years of the 20th century Madge Jenison moved from Chicago to New York, where she found success with writing, primarily for magazines."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 529,
+    "generation_tokens": 22,
+    "generation_speed": 228.4266594677659,
+    "prompt_eval_speed": 12341.646641625644,
+    "generation_latency_s": 0.25115530006587505,
+    "latency": 0.7320983000099659,
+    "total_prompt_tokens": 665,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2383027,
+    "stage_route_s": 0.10480059997644275,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3173052000347525,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05865609995089471,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.559995770454407e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25119479990098625,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7321096999803558,
+    "unaccounted_latency_s": 9.82001656666398e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The author of the 1993 production Madge Ryan participated in was John Huston.",
+      "Query 2: The author of the 1993 production Madge Ryan participated in is John Huston."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

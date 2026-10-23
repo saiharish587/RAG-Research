@@ -1,0 +1,49 @@
+{
+  "question_id": "Q161",
+  "query": "Who held the record for the longest service in the Australian Parliament for a woman, and was surpassed by  a former Australian politician who was the 29th Speaker of the House of Representatives?",
+  "ground_truth": "Kathryn Jean Martin",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Julia Gillard held the record for the longest service in the Australian Parliament for a woman, surpassing Bronwyn Bishop.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dean of the House (Canada): In Canada, the Dean of the House is the Member of the House of Commons with the longest unbroken record of service who is not a Cabinet Minister, party Leader, House Leader or Whip.  The Dean is responsible for presiding over the election of the Speaker of the House of Commons at the beginning of each Parliament.  The position is the equivalent of the Father of the House in the British House of Commons.",
+      "Julia Gillard: Julia Eileen Gillard, {'1': \", '2': \", '3': \", '4': \"} (born 29 September 1961) is a former Australian politician who was the 27th Prime Minister of Australia from 2010 to 2013, as Leader of the Australian Labor Party.  She was previously the 13th Deputy Prime Minister of Australia, and held the cabinet positions of Minister for Education, Minister for Employment and Workplace Relations and Minister for Social Inclusion from 2007 to 2010.  She was the first and to date only woman to hold the positions of deputy prime minister, prime minister and leader of a major party in Australia.",
+      "Kathy Sullivan (Australian politician): Kathryn Jean Martin \"Kathy\" Sullivan AM (born 8 March 1942), Australian politician, was a Liberal member of the Australian Senate from 1974 to 1984, representing Queensland, and a member of the House of Representatives for the Division of Moncrieff, Queensland, from 1984 to 2001.  She previously held the record for the longest service in the Australian Parliament for a woman, oustripping the record previously held by Dorothy Tangney.  This record has since been surpassed by Bronwyn Bishop.  She was the first woman member of the parliament to have served in both houses."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 496,
+    "generation_tokens": 27,
+    "generation_speed": 225.71098961729447,
+    "prompt_eval_speed": 15247.932613975221,
+    "generation_latency_s": 0.2594764999812469,
+    "latency": 0.7116422000108287,
+    "total_prompt_tokens": 674,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2415504,
+    "stage_route_s": 0.10856799990870059,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2841103000100702,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.059304900001734495,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2999937906861305e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.259516799938865,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7116535999812186,
+    "unaccounted_latency_s": 0.00010140019003301859,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Who holds the record for the longest service in the Australian Parliament for a woman?\"",
+      "\"Was surpassed by a former Australian politician who was the 29th Speaker of the House of Representatives.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q472",
+  "query": "In what field does the firm at which Claudio Fern\u00e1ndez-Ar\u00e1oz was a currently a senior adviser offers services?",
+  "ground_truth": "Executive Search, Board Consulting",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The firm at which Claudio Fern\u00e1ndez-Ar\u00e1oz was a currently a senior adviser offered services in the American tax preparation industry.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Claudio Fern\u00e1ndez-Ar\u00e1oz: Claudio Fern\u00e1ndez-Ar\u00e1oz is an Argentinian author, international speaker and global expert on talent and leadership, ranked by \"BusinessWeek\" as one of the most influential executive search consultants in the world.  He is currently a senior adviser of Egon Zehnder.  Before joining Egon Zehnder in 1986, he worked at McKinsey & Company in Europe.  He is a frequent lecturer at the Harvard Business School.",
+      "Kelly Services: Kelly Services, Inc. (formerly Russell Kelly Office Service and Kelly Girl Service, Inc.) is an American office staffing and workforce solutions company that operates globally.  The company places employees at all levels in various sectors including the financial services, information technology, and law industries.  It also offers professional services, including human resource and management consulting, outsourcing, recruitment, career transition, and vendor management services.  Kelly Services was founded by William Russell Kelly in 1946 and is headquartered in Troy, Michigan.  In 2015, the company reported 8,100 employees, $5.5 billion in revenue, and placed 550,000 employees to work in positions in various sectors, making it one of the world's largest staffing firms.",
+      "H&amp;R Block: H&R Block is an American tax preparation company in North America, Australia, and India.  The Kansas City-based company also offers payroll, and business consulting services."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 399,
+    "generation_tokens": 29,
+    "generation_speed": 261.46619422430194,
+    "prompt_eval_speed": 55734.041067188155,
+    "generation_latency_s": 0.9830910000018775,
+    "latency": 3.478023400064558,
+    "total_prompt_tokens": 485,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12334210000000001,
+    "stage_rewrite_s": 1.2914823000319302,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0384644999867305,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16486639995127916,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9831305999541655,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4780336000258103,
+    "unaccounted_latency_s": 9.060010779649019e-05,
+    "rewritten_query": "The firm where Claudio Fern\u00e1ndez-Ar\u00e1oz was a senior adviser offers services in various fields, including finance and consulting.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q50",
+  "query": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+  "ground_truth": "English Electric Canberra",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The North American P-51 Mustang was used in the South West Pacific Theatre of World War II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "North American P-51 Mustang: The North American Aviation P-51 Mustang is an American long-range, single-seat fighter and fighter-bomber used during World War II and the Korean War, among other conflicts.  The Mustang was designed in 1940 by North American Aviation (NAA) in response to a requirement of the British Purchasing Commission.  The Purchasing Commission approached North American Aviation to build Curtiss P-40 fighters under license for the Royal Air Force (RAF).  Rather than build an old design from another company, North American Aviation proposed the design and production of a more modern fighter.  The prototype NA-73X airframe was rolled out on 9 September 1940, 102 days after the contract was signed, and first flew on 26 October.",
+      "Gloster Meteor: The Gloster Meteor was the first British jet fighter and the Allies' only jet aircraft to achieve combat operations during the Second World War.  The Meteor's development was heavily reliant on its ground-breaking turbojet engines, pioneered by Sir Frank Whittle and his company, Power Jets Ltd.  Development of the aircraft began in 1940, although work on the engines had been under way since 1936.  The Meteor first flew in 1943 and commenced operations on 27 July 1944 with No. 616 Squadron RAF.  The Meteor was not a sophisticated aircraft in its aerodynamics, but proved to be a successful combat fighter.  Gloster's 1946 civil Meteor F.4 demonstrator \"G-AIDC\" was the first civilian-registered jet aircraft in the world.",
+      "English Electric Canberra: The English Electric Canberra is a British first-generation jet-powered medium bomber that was manufactured during the 1950s.  It was developed by English Electric during the mid-to-late 1940s in response to a 1944 Air Ministry requirement for a successor to the wartime de Havilland Mosquito fast-bomber.  Amongst the performance requirements for the type was the demand for an outstanding high altitude bombing capability in addition to flying at high speeds.  These were partly accomplished by making use of newly developed jet propulsion technology.  When the Canberra was introduced to service with the Royal Air Force (RAF), the type's first operator, in May 1951, it became the service's first jet-powered bomber aircraft."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 609,
+    "generation_tokens": 23,
+    "generation_speed": 232.60753041596297,
+    "prompt_eval_speed": 13221.310407711346,
+    "generation_latency_s": 0.25420059997122735,
+    "latency": 0.6170830000191927,
+    "total_prompt_tokens": 755,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2158243,
+    "stage_route_s": 0.09758179995696992,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20609610003884882,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05901530000846833,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.879998207092285e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25424690009094775,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.617092699976638,
+    "unaccounted_latency_s": 9.429990313947201e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The North American P51 Mustang\"",
+      "\"The Lockheed P-40 Warhawk\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

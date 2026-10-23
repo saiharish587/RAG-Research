@@ -1,0 +1,49 @@
+{
+  "question_id": "Q299",
+  "query": "The mass killing that took place at Oakland, California on April 2, 2012 was less deadly than the one that took place on October 1, 2015 in which state?",
+  "ground_truth": "Oregon",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The mass killing that took place at Oakland, California on April 2, 2012, was less deadly than the one that took place on October 1, 2015 in which state is California City.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oikos University shooting: The Oikos University shooting occurred on April 2, 2012, when a gunman shot at people inside Oikos University, a Korean Christian college in Oakland, California, United States.  Within a few hours, the number of reported fatalities reached seven.  43-year-old One L. Goh, a former student at the school, was taken into custody and identified as the suspect in the shootings.  Along with the California State University, Fullerton massacre, this was the fourth-deadliest university shooting in United States history, after the Virginia Tech massacre, the University of Texas Clock Tower shooting, and the Umpqua Community College shooting, and the eighth-deadliest U.S. school massacre overall.  It is also considered the deadliest mass killing in the city's history.",
+      "1991 Sacramento hostage crisis: On April 4, 1991, in Sacramento, California forty-one people were taken hostage at a Good Guys!  electronics store located near the Florin Mall, by four Vietnamese gunmen after botching a prior robbery.  During the hostage crisis, three hostages, as well as three of the four hostage-takers, were killed.  The fourth hostage-taker was captured by authorities, and an additional fourteen hostages were injured during the crisis.  To this day, the hostage crisis remains the largest hostage rescue operation in U.S. history, with over forty hostages having been held at gunpoint.",
+      "California City, California: California City is a city incorporated in 1965 in the northern Antelope Valley in Kern County, California, 65 mi southwest of Death Valley National Park.  The population was 14,120 at the 2010 census making California City the 331st largest city in the state by population.  Covering 203.631 sqmi , the city is the third largest city in the state by area."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 520,
+    "generation_tokens": 48,
+    "generation_speed": 234.52730533012164,
+    "prompt_eval_speed": 62275.44910179641,
+    "generation_latency_s": 0.3293708000564948,
+    "latency": 0.755858900025487,
+    "total_prompt_tokens": 706,
+    "total_generation_tokens": 95,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.225025,
+    "stage_route_s": 0.10294510005041957,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2637193000409752,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05963189993053675,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.779997445642948e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3294194000773132,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7558720000088215,
+    "unaccounted_latency_s": 9.919994045048952e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"The mass killings at Oakland, California on April 2, 2012 and October 1, 2015\"",
+      "Query 2: \"the state of California\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

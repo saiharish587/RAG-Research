@@ -1,0 +1,42 @@
+{
+  "question_id": "Q166",
+  "query": "In 2017, what was 3/4th of the organization that also has a Center for Veterinary Medicine as well as part of the U.S. Department of Health and Human Services, spent on?",
+  "ground_truth": "Prescription Drug User Fee Act",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is: The PHS comprised all Agency Divisions of Health and Human Services and the Commissioned Corps.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Food and Drug Administration: The Food and Drug Administration (FDA or USFDA) is a federal agency of the United States Department of Health and Human Services, one of the United States federal executive departments.  The FDA is responsible for protecting and promoting public health through the control and supervision of food safety, tobacco products, dietary supplements, prescription and over-the-counter pharmaceutical drugs (medications), vaccines, biopharmaceuticals, blood transfusions, medical devices, electromagnetic radiation emitting devices (ERED), cosmetics, animal foods & feed and veterinary products.  As of 2017, 3/4th of the FDA budget (approximately $700 million) is funded by the pharmaceutical companies due to the Prescription Drug User Fee Act.",
+      "Veterinary specialties: A veterinary specialist is a veterinarian who specializes in a clinical field of veterinary medicine.",
+      "United States Public Health Service: The Public Health Service Act of 1944 structured the United States Public Health Service (PHS), founded in 1798, as the primary division of the U.S. Department of Health, Education and Welfare (HEW; which was established in 1953), which later became the United States Department of Health and Human Services in 1979\u20131980 (when the Education agencies were separated into their own U.S. Department of Education).  The Office of the Surgeon General was created in 1871.  The PHS comprises all Agency Divisions of Health and Human Services and the Commissioned Corps.  The Assistant Secretary for Health (ASH) oversees the PHS and the United States Public Health Service Commissioned Corps."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 446,
+    "generation_tokens": 24,
+    "generation_speed": 378.1850270244717,
+    "prompt_eval_speed": 25566.064775007166,
+    "generation_latency_s": 0.1584581999341026,
+    "latency": 0.5986810000613332,
+    "total_prompt_tokens": 551,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1371181,
+    "stage_rewrite_s": 0.19604870001785457,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07565110002178699,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16838389995973557,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15850629995111376,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5986928000347689,
+    "unaccounted_latency_s": 0.0001034000888466835,
+    "rewritten_query": "In 2017, the organization with the center for veterinary medicine (U.S. Department of Health and Human Services) also had a Center for Veterinary Medicine (USDOH).",
+    "query_was_rewritten": true
+  }
+}

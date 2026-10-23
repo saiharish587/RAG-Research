@@ -1,0 +1,49 @@
+{
+  "question_id": "Q255",
+  "query": "in 1999, Spirit Halloween LLC was purchased by a mall retailer that has how many stores in the United States and Canada ?",
+  "ground_truth": "over 600 stores",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "In 1999, Spirit Halloween LLC was purchased by Spencer Gifts, which had over 600 stores in the United States and Canada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Spencer Gifts: Spencer Gifts LLC, doing business as Spencer's, is a North American mall retailer with over 600 stores in the United States and Canada.  Their stores specialize in novelty and gag gifts, and also sell clothing, band merchandise, sex toys, room decor, collectible figures, fashion and body jewelry, and fantasy and horror items.  The company also owns and operates a seasonal retailer, Spirit Halloween.",
+      "Spirit Halloween: Spirit Halloween LLC is a seasonal retailer that supplies Halloween decorations, costumes and accessories.  It was founded in 1983 and is based in Egg Harbor Township, New Jersey.  In 1999, the store had 60 seasonal locations and was purchased by Spencer Gifts.",
+      "Halloween Adventure: Halloween Adventure Stores (also known as Masquerade, LLC) is a retail store chain specializing in Halloween-related merchandise, they are one of the world's largest costuming companies and arguably the largest chain store specializing in Halloween in the United States.  The company was founded in 1981 by brothers Bruce and Darron Goldman in Philadelphia, Pennsylvania and has locations in Pennsylvania, New York, New Jersey, Delaware, Maryland, Florida, and California.  In 2006 there were over 120 \"seasonal stores\", using temporary locations in shopping malls that were vacated for seasonal short-term rentals.  Halloween Adventure sells a variety of costumes, masks, makeup, props, hats and other accessories for adults and children.  They also sell online as they found costumers would brouse in-store then search online for the best pricing.  Its main competition for this group is Halloween Thrills."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 438,
+    "generation_tokens": 33,
+    "generation_speed": 240.9937706761701,
+    "prompt_eval_speed": 53007.38230666828,
+    "generation_latency_s": 0.26230050006415695,
+    "latency": 0.7009222999913618,
+    "total_prompt_tokens": 594,
+    "total_generation_tokens": 83,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23239769999999998,
+    "stage_route_s": 0.09620460006408393,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2812863999279216,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060969000100158155,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.950002767145634e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26233200007118285,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.700931700062938,
+    "unaccounted_latency_s": 9.069987572729588e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: In 1999, Spirit Halloween LLC was purchased by a mall retailer that has how many stores in the United States and Canada?",
+      "Query 2: How many stores does Spirit Halloween LLC have currently?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

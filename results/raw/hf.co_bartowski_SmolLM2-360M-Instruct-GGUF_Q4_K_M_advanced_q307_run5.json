@@ -1,0 +1,42 @@
+{
+  "question_id": "Q307",
+  "query": "Which former mill town is near Rivington Hall Barn?",
+  "ground_truth": "Bolton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Rivington Hall Barn is located near Chorley, Bolton, in Lancashire, England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rivington Hall Barn: Rivington Hall Barn adjoins Rivington Hall in Rivington, Lancashire, near Chorley and Bolton.  The barn may date from between the 9th and 13th centuries, but more likely the 16th century, and was restored, altered and enlarged in 1905 by Jonathan Simpson for Lord Leverhulme.  It is a Grade II Listed building.",
+      "Rivington Hall: Rivington Hall is a Grade II* listed building in Rivington, Lancashire, England.  It was the manor house for the Lords of the Manor of Rivington.  The hall is of various builds as successor to a 15th-century timber-framed courtyard house that was built near to the present building of which no trace remains.  It is a private residence.",
+      "Manor of Rivington: The Manor of Rivington was a manorial estate in Rivington, Lancashire, England that possibly predates the Domesday survey.  Before 1212 the Pilkington family owned six oxgangs of land.  Over time it became separated in moieties and by the 16th century the Pilkingtons of Rivington Hall owned a 5/8 share.  In 1605 the Lathoms of Irlam owned a quarter share and the Shaws 1/8."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 370,
+    "generation_tokens": 21,
+    "generation_speed": 265.45652201393017,
+    "prompt_eval_speed": 51589.514779698824,
+    "generation_latency_s": 0.9355328000383452,
+    "latency": 3.371492200065404,
+    "total_prompt_tokens": 442,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1261411,
+    "stage_rewrite_s": 1.1884150000987574,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0582963000051677,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18913030007388443,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9355730999959633,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3715030000312254,
+    "unaccounted_latency_s": 8.889986202120781e-05,
+    "rewritten_query": "Rivington Hall Barn is located in Mill Town, a nearby village.",
+    "query_was_rewritten": true
+  }
+}

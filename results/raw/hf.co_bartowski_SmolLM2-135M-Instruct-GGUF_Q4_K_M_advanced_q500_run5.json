@@ -1,0 +1,42 @@
+{
+  "question_id": "Q500",
+  "query": "What type of film are both \"500 Years Later\" and \"Manson\"?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The film is a documentary film made in 1973 about Charles Manson and his followers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "500 Years Later: 500 Years Later (\u136d\u137b \u12d3\u1218\u1273\u1275 \u1260\u128b\u120b \"500 \u02bfam\u00e4tat\u0259 b\u00e4hwala \") is an independent documentary film directed by Owen 'Alik Shahadah, written by M. K. Asante, Jr. and released in 2005.  It has won five international film festival awards in the category of Best Documentary (including) UNESCO \"Breaking the Chains Award\").  Other awards it has won include \"Best Documentary at the Pan African (Los Angeles) and Bridgetown (Barbados) Film Festivals; Best Film at the International Black Cinema (Berlin) Film Festival; and Best International Documentary at the Harlem (New York) International Film Festival\".",
+      "Manson (film): Manson is a documentary film made in 1973 about Charles Manson and his followers.  It was directed by Robert Hendrickson and Laurence Merrick.",
+      "Marilyn Manson: Brian Hugh Warner (born January 5, 1969), known professionally as Marilyn Manson, is an American singer, songwriter, musician, composer, actor, painter, author and former music journalist.  He is known for his controversial stage personality and image as the lead singer of the band Marilyn Manson, which he co-founded with guitarist Daisy Berkowitz and of which he remains the only constant member.  His stage name was formed by combining and juxtaposing the names of two American pop cultural icons: actress Marilyn Monroe and cult leader Charles Manson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 427,
+    "generation_tokens": 22,
+    "generation_speed": 402.8418662565004,
+    "prompt_eval_speed": 51009.437343208694,
+    "generation_latency_s": 0.16373699996620417,
+    "latency": 0.5546383999753743,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1508873,
+    "stage_rewrite_s": 0.1595069000031799,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08588719996623695,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14536189998034388,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16377860005013645,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5546496000606567,
+    "unaccounted_latency_s": 0.00011580006685107946,
+    "rewritten_query": "The original query was \"What type of film are both \"500 Years Later\" and \"Manson?",
+    "query_was_rewritten": true
+  }
+}

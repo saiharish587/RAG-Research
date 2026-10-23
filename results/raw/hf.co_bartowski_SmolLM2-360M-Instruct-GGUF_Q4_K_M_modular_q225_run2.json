@@ -1,0 +1,49 @@
+{
+  "question_id": "Q225",
+  "query": "What film was written and directed by Joby Harold with music written by Samuel Sim?",
+  "ground_truth": "Awake",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Bohemian Rhapsody (film)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Samuel Sim: Samuel Sim is a film and television composer.  He first gained recognition with his award winning score for the BBC drama series \"Dunkirk\".  Since then he has written the music for a wide variety of film and television productions, most recently scoring the film \"Awake\" for The Weinstein Company and the BBC/HBO drama series \"House of Saddam\".  His most recent acclaimed music is the soundtrack for Home Fires.  Home Fires (Music from the Television Series) released May 6, 2016 by Sony Classical Records.",
+      "Nicole Maurey: Nicole Maurey (20 December 1925 \u2013 11 March 2016) was a French actress, who has appeared in 65 film and television productions between 1945 and 1997.  Born in Bois-Colombes, a northwestern suburb of Paris, she was originally a dancer before being cast in her first film role in 1944.  She remains most noted as Charlton Heston's leading lady in \"Secret of the Incas\" (1954), often cited as the primary inspiration for \"Raiders of the Lost Ark\" (1981).  She starred in films with Alec Guinness, Bette Davis, Bing Crosby, Jeff Chandler, Fess Parker, Rex Harrison, Robert Taylor and Mickey Rooney, among numerous others.  She was the leading lady in the original 1962 science fiction cult film \"The Day of the Triffids\".  Later in life, she moved into television, appearing in various made-for-TV movies and mini-series.",
+      "Bohemian Rhapsody (film): Bohemian Rhapsody is an upcoming American-British biographical drama film directed by Bryan Singer and written by Justin Haythe.  It focuses on a 15 year period from the formation of Queen and lead singer Freddie Mercury up to their performance at Live Aid in 1985, six years before Mercury's death.  The film stars Rami Malek, Ben Hardy, Gwilym Lee, Joseph Mazzello, Allen Leech, and Lucy Boynton.  Queen guitarist Brian May and drummer Roger Taylor are serving as the film's music producers.  The film is scheduled for release in the United States on December 25, 2018 by 20th Century Fox."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 590,
+    "generation_tokens": 10,
+    "generation_speed": 202.45373932056526,
+    "prompt_eval_speed": 18088.17217487277,
+    "generation_latency_s": 0.197298499988392,
+    "latency": 0.598087300080806,
+    "total_prompt_tokens": 724,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22465809999999997,
+    "stage_route_s": 0.09814609994646162,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24589639995247126,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05654540006071329,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.0999998822808266e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1973391999490559,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5980988000519574,
+    "unaccounted_latency_s": 0.00011140014976263046,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The film is called 'The Lost City' and it's directed by Joby Harold.\"",
+      "\"The film features a score composed by Samuel Sim.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

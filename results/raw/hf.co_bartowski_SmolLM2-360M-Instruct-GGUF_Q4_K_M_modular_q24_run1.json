@@ -1,0 +1,49 @@
+{
+  "question_id": "Q24",
+  "query": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+  "ground_truth": "Badly Drawn Boy",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Badly Drawn Boy has a higher instrument to person ratio than Wolf Alice.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Badly Drawn Boy: Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+      "The Hour of Bewilderbeast: The Hour of Bewilderbeast is the debut studio album by British musician Badly Drawn Boy, released on 26 June 2000.  Damon Gough, who performs as Badly Drawn Boy, wrote, produced, and played several instruments on the album's eighteen tracks, several of which also feature accompaniment by members of the British indie rock bands Alfie and Doves.  \"The Hour of Bewilderbeast\" was released to great critical acclaim and went on to win the 2000 Mercury Prize, and has sold 455,000 copies in the United Kingdom as of September 2011.",
+      "Artists Under the Big Top: Perplexed: Artists in the Big Top: Perplexed (German: Die Artisten in der Zirkuskuppel: Ratlos ) is a 1968 West German film written and directed by Alexander Kluge.  The film is made in a collage style, featuring newsreels and quotations from philosophers alongside the story of a failing circus whose owner, Leni (Hannelore Hoger), must decide whether her dream of a new kind of circus is too optimistic.  The film is a symbolic representation of Kluge's own frustrations in trying to help stimulate the New German Cinema movement."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 423,
+    "generation_tokens": 17,
+    "generation_speed": 230.51785157362335,
+    "prompt_eval_speed": 14404.41326704352,
+    "generation_latency_s": 0.209515199996531,
+    "latency": 0.6664545000530779,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2227377,
+    "stage_route_s": 0.09661420003976673,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.29947600001469254,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060676799970678985,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7900015488266945e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20954719989094883,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6664633000036702,
+    "unaccounted_latency_s": 0.00010170007590204477,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query1: The performance of Badly Drawn Boy is more complex and intricate compared to Wolf Alice.",
+      "Query2: Both performances have a high level of complexity but the performance by Badly Drawn Boy has a higher instrument to person ratio."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

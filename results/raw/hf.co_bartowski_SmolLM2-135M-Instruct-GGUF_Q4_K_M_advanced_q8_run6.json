@@ -1,0 +1,42 @@
+{
+  "question_id": "Q8",
+  "query": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+  "ground_truth": "3,677 seated",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Lewiston Maineiacs could seat up to 1,400 people at the Androscoggin Bank Colis\u00e9e Arena.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Androscoggin Bank Colis\u00e9e: The Androscoggin Bank Colis\u00e9e (formerly Central Maine Civic Center and Lewiston Colisee) is a 4,000 capacity (3,677 seated) multi-purpose arena, in Lewiston, Maine, that opened in 1958.  In 1965 it was the location of the World Heavyweight Title fight during which one of the most famous sports photographs of the century was taken of Muhammed Ali standing over Sonny Liston.",
+      "Lewiston Maineiacs: The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine.  The team played its home games at the Androscoggin Bank Colis\u00e9e.  They were the second QMJHL team in the United States, and the only one to play a full season.  They won the President's Cup in 2007.",
+      "Dwyer Arena: The Robert and Concetta Dwyer Arena houses two ice surfaces, both 200 x 85 ft., and pro shop on Niagara University's campus in Lewiston, New York, United States.  The main rink can seat up to 1,400 people and is the home to the Niagara Purple Eagles men's ice hockey team, which plays in Atlantic Hockey.  The arena was formerly home to the women's ice hockey team, which played in College Hockey America."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 387,
+    "generation_tokens": 31,
+    "generation_speed": 404.80014625037546,
+    "prompt_eval_speed": 60242.8393524284,
+    "generation_latency_s": 0.16018979996442795,
+    "latency": 0.46712009992916137,
+    "total_prompt_tokens": 466,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.130461,
+    "stage_rewrite_s": 0.14084999996703118,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07010550005361438,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09585279994644225,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16022640001028776,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4671288999961689,
+    "unaccounted_latency_s": 9.470002260059118e-05,
+    "rewritten_query": "The Lewiston Maineiacs had a seating capacity of 1,052 people at the arena.",
+    "query_was_rewritten": true
+  }
+}

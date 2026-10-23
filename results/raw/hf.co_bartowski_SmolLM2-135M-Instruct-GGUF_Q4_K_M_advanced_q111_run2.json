@@ -1,0 +1,42 @@
+{
+  "question_id": "Q111",
+  "query": "Based on a True Story... is an album by which country music star, with the single My Eyes?",
+  "ground_truth": "Blake Shelton",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Based on the given context, the correct answer to the question \"Is an album by which country music star, with the single 'My Eyes'?\" is \"Loretta Lynn.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "My Eyes (Blake Shelton song): \"My Eyes\" is a song recorded by American country music artist Blake Shelton featuring Gwen Sebastian.  It was released in April 2014 as the fifth single from his seventh studio album, \"Based on a True Story...\".  The song was written by Andrew Dorff, Tommy Lee James and Josh Osborne.",
+      "Eddy Arnold: Richard Edward \"Eddy\" Arnold (May 15, 1918 \u2013 May 8, 2008) was an American country music singer who performed for six decades.  He was a Nashville sound (country/popular music) innovator of the late 1950s, and scored 147 songs on the \"Billboard\" country music charts, second only to George Jones.  He sold more than 85 million records.  A member of the Grand Ole Opry (beginning 1943) and the Country Music Hall of Fame (beginning 1966), Arnold ranked 22nd on Country Music Television's 2003 list of \"The 40 Greatest Men of Country Music.\"",
+      "Loretta Lynn: Loretta Lynn (n\u00e9e Webb; born April 14, 1932) is an American country music singer-songwriter with multiple gold albums over a career of almost 60 years.  She has received numerous awards and other accolades for her groundbreaking role in country music, including awards from both the Country Music Association and Academy of Country Music as a duet partner and an individual artist.  She is the most awarded female country recording artist and the only female ACM Artist of the Decade (1970s)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 444,
+    "generation_tokens": 38,
+    "generation_speed": 366.77412505067275,
+    "prompt_eval_speed": 24522.25781508892,
+    "generation_latency_s": 0.19992570008616894,
+    "latency": 0.59291150001809,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1361244,
+    "stage_rewrite_s": 0.12394760001916438,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06879069993738085,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20011629990767688,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19996759993955493,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5929204999702051,
+    "unaccounted_latency_s": 9.880017023533583e-05,
+    "rewritten_query": "My Eyes: An Album by Country Music Star.",
+    "query_was_rewritten": true
+  }
+}

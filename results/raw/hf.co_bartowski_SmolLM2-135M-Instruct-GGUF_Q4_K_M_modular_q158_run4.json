@@ -1,0 +1,49 @@
+{
+  "question_id": "Q158",
+  "query": "What retailer in ABQ Uptown is headquarted in Poole, Dorset, United Kingdom?",
+  "ground_truth": "Lush Ltd.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Tesco is a British multinational grocery and general merchandise retailer with headquarters in Welwyn Garden City, Hertfordshire, England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tesco: Tesco PLC is a British multinational grocery and general merchandise retailer with headquarters in Welwyn Garden City, Hertfordshire, England, United Kingdom.  It is the third largest retailer in the world measured by profits and ninth-largest retailer in the world measured by revenues.  It has stores in 12 countries across Asia and Europe and is the grocery market leader in the UK (where it has a market share of around 28.4%), Ireland, Hungary and Thailand.",
+      "Lush (company): Lush Ltd. is a cosmetics retailer headquartered in Poole, Dorset, United Kingdom.  The company was founded by Mark Constantine, a trichologist and Liz Weir, a beauty therapist.  They met in a hair and beauty salon in Poole, England.  A few years later, they decided to branch out and start their own business selling natural hair and beauty products.",
+      "Shop Direct: Shop Direct is a multi - brand online retailer in the United Kingdom and Ireland.  It is based in the Speke area of the city of Liverpool, in Merseyside, England.  Established in November 2005 as a result of the merger of the former Littlewoods and Shop Direct companies, the retailer was known as Littlewoods Shop Direct Group until a corporate rebranding to Shop Direct Group in May 2008.  In 2013, the company rebranded to Shop Direct, dropping the 'group' from its name."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 392,
+    "generation_tokens": 28,
+    "generation_speed": 393.2473806915536,
+    "prompt_eval_speed": 26194.453725359173,
+    "generation_latency_s": 0.19661010010167956,
+    "latency": 0.5551164000062272,
+    "total_prompt_tokens": 536,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23033579999999998,
+    "stage_route_s": 0.09236259991303086,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20354850008152425,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.062434199964627624,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.930002614855766e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19664099998772144,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5551260000793263,
+    "unaccounted_latency_s": 9.100011084228754e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Headquarter of the retailer in Poole, Dorset, United Kingdom (Barcelona)",
+      "Headquarters of the retailer in Poole, Dorset, United Kingdom (Poole)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

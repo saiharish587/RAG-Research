@@ -1,0 +1,49 @@
+{
+  "question_id": "Q316",
+  "query": "\"Ew!\" is a song by a television host born where?",
+  "ground_truth": "Bay Ridge, Brooklyn",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Ew! is a song by a television host named Jimmy Fallon, who was born in the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ew!: \"Ew!\"  is a song by American television host and comedian Jimmy Fallon, featuring American rapper will.i.am.  The song is based on a sketch from \"The Tonight Show Starring Jimmy Fallon\", in which Fallon and guests play teenage girls constantly disgusted by things around them.",
+      "Radio personality: A radio personality (American English) or radio presenter (British English), commonly referred to as a \"disc jockey\" or \"DJ\" for short, is a person who has an on-air position in radio broadcasting.  A radio personality that hosts a radio show is also known as a radio host, and in India and Pakistan as a radio jockey.  Radio personalities who introduce and play individual selections of recorded music are known as disc jockeys.  The term has evolved to also describe a person who mixes a continuous flow of recorded music in real time.  Broadcast radio personalities may include talk radio hosts, AM/FM radio show hosts, and satellite radio program hosts.  Notable radio personalities include pop music radio hosts Martin Block, Alan Freed, Dick Clark, Delilah Luke, Ameen Sayani, Wolfman Jack, and Casey Kasem, shock jocks such as Don Imus and Howard Stern, as well as sports talk hosts such as Mike Francesa and political talk hosts such as Rush Limbaugh.",
+      "Dan Smith (singer): Daniel Campbell \"Dan\" Smith (born 14 July 1986) is a British singer-songwriter and record producer.  He is the lead singer, primary songwriter.  and founder of the British rock band Bastille.  The band formed in 2010 and gained mass popularity in 2013 when the song \"Pompeii\" was released.  The band released their second album, \"Wild World\" in September 2016. ."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 469,
+    "generation_tokens": 24,
+    "generation_speed": 232.70470742231055,
+    "prompt_eval_speed": 17986.577181208053,
+    "generation_latency_s": 0.24683509999886155,
+    "latency": 0.7568282000720501,
+    "total_prompt_tokens": 597,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2472321,
+    "stage_route_s": 0.10542400006670505,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3450522000202909,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05932739994022995,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7900015488266945e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24689229996874928,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7568412000546232,
+    "unaccounted_latency_s": 9.830005001276731e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Ew!\" is a song by a television host named John Smith, who was born in 1985.",
+      "\"Ew!\" is a song by a television host named John Smith, who was born on July 30, 1985."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

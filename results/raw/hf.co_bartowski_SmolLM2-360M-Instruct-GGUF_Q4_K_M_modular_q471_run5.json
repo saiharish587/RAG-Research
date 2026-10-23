@@ -1,0 +1,49 @@
+{
+  "question_id": "Q471",
+  "query": "What type of profession does Ithu Engal Neethi and Shoba Chandrasekhar have in common?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Ithu Engal Neethi and Shoba Chandrasekhar both have professions that involve acting, as they are both Tamil film producers. They were both involved in the production of the 1988 Indian Tamil film \"Ithu Engal Neethi\" and \"Shoba Chandrasekhar's Film\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ithu Engal Neethi: Ithu Engal Neethi is a 1988 Indian Tamil film, directed by S. A. Chandrasekhar and produced by S. S. Neelakandan and Shoba Chandrasekhar.  The film stars Ramki, Radhika, Ramki and Vani Viswanath in lead roles.  The film had musical score by Ilayaraja.",
+      "Shoba Chandrasekhar: Shoba Chandrasekhar is an Indian film playback singer, director, writer and producer.  She is best known as the mother of Tamil Leading Star Vijay.",
+      "Nandita Chandra: Nandita Chandra is a multiple award-winning actor and model."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 234,
+    "generation_tokens": 69,
+    "generation_speed": 214.7138082761282,
+    "prompt_eval_speed": 50042.77159965783,
+    "generation_latency_s": 0.4349469000007957,
+    "latency": 0.8432311000069603,
+    "total_prompt_tokens": 380,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2269173,
+    "stage_route_s": 0.09504899999592453,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24997369991615415,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06308610003907233,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3299940191209316e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.43498070002533495,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8432398999575526,
+    "unaccounted_latency_s": 9.780004620552063e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Ithu Engal Neethi is a professional who works as an accountant\"",
+      "\"Shoba Chandrasekhar is a professional who works as a lawyer\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

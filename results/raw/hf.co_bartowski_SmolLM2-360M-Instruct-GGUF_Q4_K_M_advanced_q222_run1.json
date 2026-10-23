@@ -1,0 +1,42 @@
+{
+  "question_id": "Q222",
+  "query": "Which television series featured an actor who also performed in \"The Young Ones\"?",
+  "ground_truth": "\"The Comic Strip Presents...\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Young Ones (TV series)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Young Ones (film): Young Ones (UK title Bad Land: Road to Fury) is a 2014 action science fiction film directed and written by Jake Paltrow.  The film stars Nicholas Hoult, Elle Fanning, Michael Shannon and Kodi Smit-McPhee.  The film had its world premiere at 2014 Sundance Film Festival on January 18, 2014.  The film was released on October 17, 2014 in the United States.",
+      "The Young Ones (TV series): The Young Ones is a British sitcom, broadcast in the United Kingdom from 1982 to 1984 in two six-part series.  Shown on BBC2, it featured anarchic, offbeat humour which helped bring alternative comedy to television in the 1980s and made household names of its writers and performers.  In 1985, it was shown on MTV, one of the first non-music television shows on the fledgling channel.  In a 2004 poll, it ranked at number 31 in the BBC's list of \"Britain's Best Sitcoms\".  The show's title relates to the song of the same name, written by Sid Tepper and Roy C. Bennett, and sung by Cliff Richard and The Shadows, which was a No. 1 UK hit single.",
+      "Filthy Rich &amp; Catflap: Filthy Rich & Catflap is a BBC sitcom produced in 1986 and broadcast in 1987.  The series featured former \"The Young Ones\" co-stars Nigel Planer, Rik Mayall, and Adrian Edmondson as its three title characters.  It was written by Ben Elton (with additional material credited to Mayall), and produced and directed by Paul Jackson (who also directed \"The Young Ones\"), with film sequences directed by Ed Bye.  The show's music was written by Peter Brewis.  One series consisting of six half-hour episodes was produced."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 514,
+    "generation_tokens": 7,
+    "generation_speed": 246.21012275333263,
+    "prompt_eval_speed": 15750.444321872892,
+    "generation_latency_s": 0.884721799986437,
+    "latency": 3.37294400006067,
+    "total_prompt_tokens": 589,
+    "total_generation_tokens": 25,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.11972740000000001,
+    "stage_rewrite_s": 1.213639699970372,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0476274999091402,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22681029990781099,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8847756000468507,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3729582000523806,
+    "unaccounted_latency_s": 0.00010590022429823875,
+    "rewritten_query": "The Young Ones\" featured an actor who also performed in 'The Young Ones",
+    "query_was_rewritten": true
+  }
+}

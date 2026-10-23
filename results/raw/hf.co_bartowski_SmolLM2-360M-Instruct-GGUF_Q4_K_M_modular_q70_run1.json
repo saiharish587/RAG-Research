@@ -1,0 +1,48 @@
+{
+  "question_id": "Q70",
+  "query": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?",
+  "ground_truth": "Carabao Cup",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the League One-backed Carabao Cup, also known as the \"Carabao Cup\" or \"Carabao Challenge Cup.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2017\u201318 Wigan Athletic F.C. season: The 2017\u201318 season is Wigan Athletic's 86th year in existence and their first back in League One, after being relegated the previous season.  Along with competing in the league, the club will also participate in the FA Cup, EFL Cup and EFL Trophy.  Paul Cook was appointed as manager on 31 May 2017, signing a 3 year deal, following the departure of much of the previous coaching staff the day before.",
+      "2017\u201318 EFL Cup: The 2017\u201318 EFL Cup is the 58th season of the EFL Cup.  The competition is open to all 92 English and Welsh clubs participating in the Premier League and the English Football League.  It is known as the Carabao Cup due to the start of a sponsorship deal with Carabao Energy Drinks after the tournament was unsponsored the previous year.  The final will be held at Wembley Stadium in London.  The reigning champions are Manchester United.  The winners will qualify for the second qualifying round of the 2018\u201319 UEFA Europa League.",
+      "2017\u201318 FA Cup: The 2017\u201318 FA Cup (also known as the FA Challenge Cup) is the 137th edition of the oldest recognised football tournament in the world.  It is sponsored by Emirates, and known as the Emirates FA Cup for sponsorship purposes.  737 clubs were accepted into the tournament.  It began with the Extra Preliminary Round on 5 August 2017, and will conclude with the final on 19 May 2018.  The winner will qualify for the 2018\u201319 UEFA Europa League group stage."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 500,
+    "generation_tokens": 58,
+    "generation_speed": 212.7222580834458,
+    "prompt_eval_speed": 15368.537529968648,
+    "generation_latency_s": 0.4142409999622032,
+    "latency": 0.8268406999995932,
+    "total_prompt_tokens": 678,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22264509999999998,
+    "stage_route_s": 0.10094919998664409,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27370449993759394,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.037762599997222424,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.200008697807789e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4142834999365732,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8268518999684602,
+    "unaccounted_latency_s": 0.00011090002954006195,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The 2017-18 Wigan Athletic F.C. season will be a year in which the team competes in the League Cup Known as the \"Wigan Cup\" for sponsorship reasons.*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q374",
+  "query": "which is traditionally drunk before retiring to bed, Hot toddy or Kir?",
+  "ground_truth": "Hot toddy",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Kir",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hot toddy: A hot toddy, also known as hot whiskey in Ireland, is typically a mixed drink made of liquor and water with honey (or, in some recipes, sugar), herbs (such as tea) and spices, and served hot.  Hot toddy recipes vary and are traditionally drunk before retiring for the night, or in wet or cold weather.  Some believe the drink relieves the symptoms of the cold and flu\u2014in \"How to Drink\", Victoria Moore describes the drink as \"the vitamin C for health, the honey to soothe, the alcohol to numb\".",
+      "Hot toddy (disambiguation): Hot toddy is a mixed drink, usually including alcohol, that is served hot.",
+      "Kir (cocktail): Kir is a popular French cocktail made with a measure of cr\u00e8me de cassis (blackcurrant liqueur) topped up with white wine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 255,
+    "generation_tokens": 3,
+    "generation_speed": 295.01425902251947,
+    "prompt_eval_speed": 33438.237608182535,
+    "generation_latency_s": 0.12261500000022352,
+    "latency": 0.8463729999493808,
+    "total_prompt_tokens": 385,
+    "total_generation_tokens": 206,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22617199999999998,
+    "stage_route_s": 0.09512569999787956,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5703342999331653,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05811460001859814,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8600020818412304e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.12265419994946569,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8463852000422776,
+    "unaccounted_latency_s": 0.00010870012920349836,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Hot toddy and Kir are both popular drinks that originated in India but have evolved into distinct beverages with different origins.",
+      "The first drink, hot toddy, was popularized by the Indian subcontinent during the 18th century. It is a fermented beverage made from boiled water, sugarcane, and various spices like cardamom, cinnamon, cloves, and ginger. The term \"hot\" refers to the fact that it's typically served warm or at room temperature."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

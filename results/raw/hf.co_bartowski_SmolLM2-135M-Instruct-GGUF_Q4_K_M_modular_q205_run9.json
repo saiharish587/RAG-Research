@@ -1,0 +1,48 @@
+{
+  "question_id": "Q205",
+  "query": "Which actor does American Beauty and American Beauty have in common?",
+  "ground_truth": "Kevin Spacey",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The answer to this question is: \"American Beauty\" and \"American Beauty (original motion picture)\" are both actors who play roles that involve romantic, paternal love, self-liberation, and redemption.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "American Beauty (1999 film): American Beauty is a 1999 American drama film directed by Sam Mendes and written by Alan Ball.  Kevin Spacey stars as Lester Burnham, a 42-year-old advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, Angela (Mena Suvari).  Annette Bening co-stars as Lester's materialistic wife, Carolyn, and Thora Birch plays their insecure daughter, Jane.  Wes Bentley, Chris Cooper, and Allison Janney also feature.  The film is described by academics as a satire of American middle-class notions of beauty and personal satisfaction; analysis has focused on the film's explorations of romantic, and paternal love, sexuality, beauty, materialism, self-liberation, and redemption.",
+      "American Beauty (soundtrack): American Beauty: Music from the Original Motion Picture Soundtrack is the soundtrack album to the 1999 film starring Kevin Spacey and Annette Bening.",
+      "American Beauty: Original Motion Picture Score: American Beauty: Original Motion Picture Score is the original score for the 1999 film composed by Thomas Newman."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 42,
+    "generation_speed": 388.0732164801759,
+    "prompt_eval_speed": 42494.40863044336,
+    "generation_latency_s": 0.226573699968867,
+    "latency": 0.5050862999632955,
+    "total_prompt_tokens": 447,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2173651,
+    "stage_route_s": 0.10750209994148463,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1324773000087589,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03838660009205341,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.920006565749645e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2266067999880761,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.505096000037156,
+    "unaccounted_latency_s": 8.459994569420815e-05,
+    "route": "rag",
+    "router_raw": "American Beauty and American Beauty do not have in common.",
+    "sub_queries": [
+      "American Beauty and American Beauty are both actors who starred in the movie American Beauty and American Beauty has in common."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

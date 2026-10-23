@@ -1,0 +1,42 @@
+{
+  "question_id": "Q418",
+  "query": "Which mall, Wilton Mall or Viaport Rotterdam, has had more owners?",
+  "ground_truth": "Viaport Rotterdam",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The mall with more owners is Viaport Rotterdam.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Viaport Rotterdam: Viaport Rotterdam, formerly Rotterdam Square, is a shopping mall located in Rotterdam, New York, United States.  When it opened, the mall was originally called Rotterdam Square and owned by Wilmorite Properties (who also owned Wilton Mall in Wilton) until 2005, when Wilmorite was acquired by The Macerich Company, who then took over ownership and management of most of their properties.  The mall has an area of 900000 sqft on one level with over 80 stores, a 450-seat food court as well as restaurants and a seven-screen Sony-Loews Cineplex, now operated by Zurich Cinemas (independent company).  The mall was purchased by Kohan Retail Investment Group in January 2014, and was later sold to Via Properties in June 2015.  In 2016 Via Properties renamed the mall to Via Port Rotterdam",
+      "Wilton Mall: Wilton Mall at Saratoga (or simply The Wilton Mall) is a regional shopping center, located off Interstate 87 exit 15 in the town of Wilton, directly north of Saratoga Springs, New York.  The mall has a gross leasable area of 763270 sqft .  The mall is anchored by Bon-Ton, Dick's Sporting Goods, JCPenney, HomeGoods, and Sears; in addition, it features a food court and movie theater.  It is currently owned by Macerich, having been purchased from Wilmorite Properties of Rochester, New York in 2004.",
+      "Saratoga Mall: Saratoga Mall was an enclosed shopping mall in Wilton, New York near the city of Saratoga Springs, New York.  It was demolished in 1999.  It was previously known as Pyramid Mall Saratoga and was located on Route 50 just off Exit 15 on I-87 (the Adirondack Northway portion).  After demolition, it was replaced by a big box strip center known as Wilton Square."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 14,
+    "generation_speed": 419.9412082308477,
+    "prompt_eval_speed": 78352.29727783379,
+    "generation_latency_s": 0.12513709999620914,
+    "latency": 0.7597518999828026,
+    "total_prompt_tokens": 623,
+    "total_generation_tokens": 124,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.135392,
+    "stage_rewrite_s": 0.3491803000215441,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07688780000898987,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20841900003142655,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1251772999530658,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7597638999577612,
+    "unaccounted_latency_s": 9.999994654208422e-05,
+    "rewritten_query": "Which mall in Wilton, Wilton, or Viaprot Rotterdam have had more owners?\n\nThis is a search-friendly rephrased version of the original query. It uses the same keywords as the original query but with some minor adjustments to make it more concise and user-friendly. The phrase \"which mall\" has been replaced with \"Which mall\", which conveys the same meaning in fewer words. Additionally, the phrase \"has had more owners\" was removed because it's implied by the context of the question.",
+    "query_was_rewritten": true
+  }
+}

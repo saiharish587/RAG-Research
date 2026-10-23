@@ -1,0 +1,36 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "To answer this question, we need to know that:\n1) The context states that John Cameron Fogerty (born May 28, 1945), is an American musician, singer, and songwriter.\n2) The context states that John Fogerty (born May 28, 1945), is an American musician, singer, and songwriter.\n3) The context states that John Cameron Fogerty (born May 28, 1945), was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.\n4) The context states that John Fogerty (born May 28, 1945), was also an actor, Park Mi-yeon (better known by the stage name Serri).\n\nBased on this information, it is clear that John Cameron Fogerty (born May 28, 1945) was an actor, and he played the role of Serri in the film.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Fogerty: John Cameron Fogerty (born May 28, 1945) is an American musician, singer, and songwriter.  He was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.  The group had nine top-ten singles and eight gold albums between 1968 and 1972.  They were inducted into the Rock and Roll Hall of Fame in 1993.",
+      "Serendipity (film): Serendipity is a 2001 American romantic comedy film directed by Peter Chelsom, written by Marc Klein, and starring John Cusack and Kate Beckinsale.  The music score was composed by Alan Silvestri.",
+      "Serri (singer): Park Mi-yeon (born September 16, 1990), better known by the stage name Serri, is a South Korean singer, songwriter and actress.  She is best known as a member and leader of the South Korean girl group Dal Shabet."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 302,
+    "generation_tokens": 218,
+    "generation_speed": 425.3002960037385,
+    "prompt_eval_speed": 19739.85227792666,
+    "generation_latency_s": 0.6362962999846786,
+    "latency": 0.6528311999281868,
+    "total_prompt_tokens": 302,
+    "total_generation_tokens": 218,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0939688,
+    "stage_retrieve_s": 0.01646220008842647,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.6363327000290155,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6528378999792039,
+    "unaccounted_latency_s": 4.359986633062363e-05
+  }
+}

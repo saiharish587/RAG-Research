@@ -1,0 +1,49 @@
+{
+  "question_id": "Q277",
+  "query": "Which Genus has more species Eucryphia or Lepidozamia ?",
+  "ground_truth": "Eucryphia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Eucryphia has more species than Ceratozamia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Eucryphia: Eucryphia is a small genus of trees and large shrubs native to the south temperate regions of South America and coastal eastern Australia.  Sometimes placed in a family of their own, the Eucryphiaceae, more recent classifications place them in the Cunoniaceae.  There are seven species, two in South America and five in Australia, and several named hybrids.  They are mostly evergreen though one species (\"E. glutinosa\") is usually deciduous.",
+      "Lepidozamia: Lepidozamia is a genus of two species of cycad, both endemic to Australia.  The name, derived from the Greek word lepidos, meaning scaly, refers to the scale-like structure of the stem and leaf bases.  They are native to rainforest climates in eastern Queensland and eastern New South Wales.  They have a chromosome number of 2n = 18.",
+      "Ceratozamia: Ceratozamia is a genus of New World cycads in the family Zamiaceae.  The genus contains 27 known currently living species and one or two fossil species.  Most species are endemic to mountainous areas of Mexico, while few species extend into the mountains of Guatemala, Honduras and Belize.  The genus name comes from the Greek \"ceras\", meaning horn, which refers to the paired, spreading horny projections on the male and female sporophylls of all species."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 375,
+    "generation_tokens": 16,
+    "generation_speed": 241.42562191881493,
+    "prompt_eval_speed": 49827.26547967048,
+    "generation_latency_s": 0.18532569997478276,
+    "latency": 0.5052993999561295,
+    "total_prompt_tokens": 511,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.228672,
+    "stage_route_s": 0.10461230005603284,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1588795999996364,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05628869996871799,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.539995618164539e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.185377600020729,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5053130999440327,
+    "unaccounted_latency_s": 0.00010029994882643223,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Eucryphia",
+      "Query 2: Lepidozamia"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

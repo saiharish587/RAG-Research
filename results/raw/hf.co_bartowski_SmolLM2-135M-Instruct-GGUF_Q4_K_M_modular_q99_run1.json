@@ -1,0 +1,49 @@
+{
+  "question_id": "Q99",
+  "query": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
+  "ground_truth": "Beijing",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The embassy of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China is located in Rabat, Morocco.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Moroccan Ambassador to China: The Moroccan ambassador in Beijing is the official representative of the Government in Rabat to the Government of the People's Republic of China.",
+      "Xinjiang: Xinjiang ( ; ; Uyghur: \u0634\u0649\u0646\u062c\u0627\u06ad \u200e, ULY: \"Shinjang\" ), officially the Xinjiang Uyghur Autonomous Region, is a provincial-level autonomous region of China in the northwest of the country.  It is the largest Chinese administrative division and the eighth largest country subdivision in the world, spanning over 1.6 million km (640,000 square\u00a0miles).  Xinjiang contains the disputed territory of Aksai Chin, which is administered by China.  Xinjiang borders the countries of Mongolia, Russia, Kazakhstan, Kyrgyzstan, Tajikistan, Afghanistan, Pakistan and India.  The rugged Karakoram, Kunlun, and Tian Shan mountain ranges occupy much of Xinjiang's borders, as well as its western and southern regions.  Xinjiang also borders Tibet Autonomous Region and the provinces of Gansu and Qinghai.  The most well-known route of the historical Silk Road ran through the territory from the east to its northwestern border.  In recent decades, abundant oil and mineral reserves have been found in Xinjiang, and it is currently China's largest natural gas-producing region.",
+      "Rabat: Rabat (Berber: , Arabic: \u0627\u0644\u0631\u0650\u0651\u0628\u064e\u0627\u0637\u200e \u200e , Moroccan Arabic: \u0631\u0651\u0628\u0627\u0637\u200e \u200e ) is the capital city of Morocco and its second largest city with an urban population of approximately 580,000 (2014) and a metropolitan population of over 1.2 million.  It is also the capital city of the Rabat-Sal\u00e9-K\u00e9nitra administrative region."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 477,
+    "generation_tokens": 27,
+    "generation_speed": 384.2267791834469,
+    "prompt_eval_speed": 24605.385329619312,
+    "generation_latency_s": 0.19611790007911623,
+    "latency": 0.704969699960202,
+    "total_prompt_tokens": 625,
+    "total_generation_tokens": 140,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2263618,
+    "stage_route_s": 0.1485120999859646,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30275160004384816,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0573807000182569,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8699981309473515e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19616000005044043,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7049816000508144,
+    "unaccounted_latency_s": 0.0001191999763250351,
+    "route": "rag",
+    "router_raw": "The embassy of the Rabat-Sal\u00e9-K\u00e9nitra administrative region in China is located in Beijing, China.",
+    "sub_queries": [
+      "Which city in Morocco has the highest concentration of people from the Rabat-Sal\u00e9-K\u00e9nitra administrative region?",
+      "Question: In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

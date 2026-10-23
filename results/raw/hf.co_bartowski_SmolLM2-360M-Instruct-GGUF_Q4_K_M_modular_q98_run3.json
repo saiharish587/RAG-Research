@@ -1,0 +1,49 @@
+{
+  "question_id": "Q98",
+  "query": "Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?",
+  "ground_truth": "Levni Yilmaz",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Pamela B. Green is known for her work in feature film titles and motion graphics.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lev Yilmaz: Levni Yilmaz (born 1973) is a San Francisco based independent film maker, artist and publisher, best known for his \u201cTales of Mere Existence\u201d animated comic series.",
+      "Pamela B. Green: Pamela B. Green is an American film producer and director known for her work in feature film titles and motion graphics.  She is the director and producer of the documentary \"Be Natural: The Untold Story of Alice Guy-Blache\".",
+      "Autism-spectrum quotient: The autism-spectrum quotient (AQ) is a questionnaire published in 2001 by Simon Baron-Cohen and his colleagues at the Autism Research Centre in Cambridge, UK.  Consisting of fifty questions, it aims to investigate whether adults of average intelligence have symptoms of autism or one of the other autism spectrum conditions.  More recently, versions of the AQ for children and adolescents have also been published."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 278,
+    "generation_tokens": 20,
+    "generation_speed": 239.02001792650134,
+    "prompt_eval_speed": 33453.670276774974,
+    "generation_latency_s": 0.20016860007308424,
+    "latency": 0.5352251000003889,
+    "total_prompt_tokens": 416,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2315074,
+    "stage_route_s": 0.10155989998020232,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17775000003166497,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05557919992133975,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.64999645575881e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20020019996445626,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5352343000704423,
+    "unaccounted_latency_s": 8.910021279007196e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1:",
+      "Lev Yilmaz"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

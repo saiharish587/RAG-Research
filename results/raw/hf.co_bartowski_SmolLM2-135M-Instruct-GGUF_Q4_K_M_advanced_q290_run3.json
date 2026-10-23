@@ -1,0 +1,42 @@
+{
+  "question_id": "Q290",
+  "query": "Which came to market first, \"Hey Pa! There's a Goat on the Roof\" or \"Poleconomy\"",
+  "ground_truth": "Hey Pa! There's a Goat on the Roof",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Bazaar",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hey Pa! There's a Goat on the Roof: Hey Pa!  There's a Goat on the Roof was a children's board game issued by Parker Brothers in 1966.",
+      "Bazaar: A bazaar is a permanently enclosed marketplace or street where goods and services are exchanged or sold.  The term originates from the Persian word b\u0101z\u0101r, from Middle Persian \"w\u0101z\u0101r\", from Old Persian \"v\u0101\u010dar\", from Proto-Indo-Iranian \"*wah\u0101-\u010darana\".  The term bazaar is sometimes also used to refer to the \"network of merchants, bankers, and craftsmen\" who work in that area.  Although the current meaning of the word is believed to have originated in native Zoroastrian Persia, its use has spread and now has been accepted into the vernacular in countries around the world.  In Balinese, the word \"pasar\", means \"market\".  The capital of Bali province, in Indonesia, is Denpasar, which means \"North market\". \" Souq\" is another word used in the Middle East for an open-air marketplace or commercial quarter.",
+      "Order (business): In business or commerce, an order is a stated intention, either spoken or written, to engage in a commercial transaction for specific products or services.  From a buyer's point of view it expresses the intention to buy and is called a purchase order.  From a seller's point of view it expresses the intention to sell and is referred to as a sales order.  When the purchase order of the buyer and the sales order of the seller agree, the orders become a contract between the buyer and seller."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 428,
+    "generation_tokens": 4,
+    "generation_speed": 459.8229681572594,
+    "prompt_eval_speed": 66739.43552159675,
+    "generation_latency_s": 0.09372060000896454,
+    "latency": 0.6072499000001699,
+    "total_prompt_tokens": 514,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13646740000000002,
+    "stage_rewrite_s": 0.24428640003316104,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07545779994688928,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19364940002560616,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.0937613999703899,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6072602999629453,
+    "unaccounted_latency_s": 0.0001058999914675951,
+    "rewritten_query": "Which came to market first? The answer is \"poleeconomy.\"\n\nThe original query was \"Hey Pa! There's a Goat on the Roof,\" which had an introductory text that included the phrase \"which comes to market.\" However, the optimized query outputted instead of the original query.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q38",
+  "query": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+  "ground_truth": "World War II",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The livesey hal war memorial is a tribute to those who served in both world wars. It was designed and executed by British sculptor Sydney March, of the March family of artists.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Livesey Hall War Memorial: The Livesey Hall War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London.  It is also a tribute to those employees who served in the wars.  The monument was designed and executed by British sculptor Sydney March, of the March family of artists.",
+      "Rainham War Memorial: The Rainham War Memorial commemorates soldiers killed in both World Wars as well as civilian casualties of World War II.",
+      "World war: A world war, as it is commonly understood, is a large-scale war involving many of the countries of the world or many of the most powerful and populous ones.  World wars span multiple countries on multiple continents, with battles fought in many theaters.  While a variety of global conflicts have been subjectively deemed \"world wars\", such as the Cold War and the War on Terror, the term is widely and generally accepted only as it is retrospectively applied to two major international conflicts that occurred during the 20th century: World War I (1914\u20131918) and World War II (1939\u20131945)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 321,
+    "generation_tokens": 37,
+    "generation_speed": 380.4470767269213,
+    "prompt_eval_speed": 32565.68935781678,
+    "generation_latency_s": 0.18708109995350242,
+    "latency": 0.6025822999654338,
+    "total_prompt_tokens": 403,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1349728,
+    "stage_rewrite_s": 0.1396443999838084,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0698380001122132,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20588179992046207,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18711709999479353,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6025912000332028,
+    "unaccounted_latency_s": 0.0001105000264942646,
+    "rewritten_query": "The livesey hal war memorial honors the fallen soldiers who fought in World War II and its aftermath.",
+    "query_was_rewritten": true
+  }
+}

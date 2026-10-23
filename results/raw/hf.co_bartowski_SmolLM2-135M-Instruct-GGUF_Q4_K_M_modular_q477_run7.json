@@ -1,0 +1,48 @@
+{
+  "question_id": "Q477",
+  "query": "What Division was the college footbal team that fired their head coach on November 24, 2006?",
+  "ground_truth": "NCAA Division I FBS football",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The division that the college football team that fired their head coach on November 24, 2006 played is Division I Football Bowl Subdivision (formerly Division I-A).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2006 Alabama Crimson Tide football team: The 2006 Alabama Crimson Tide football team represented the University of Alabama for the 2006 NCAA Division I FBS football season trying to improve from a 10\u20132 record in the 2005 season.  The Tide was led by head coach Mike Shula entering his fourth year at Alabama.  Despite a strong 5\u20132 start, they finished out the season by losing four of their final five games.  The team closed the regular season at 6\u20136 (4\u20134, SEC) and lost for a fifth-straight time to rival Auburn.  Following the loss Shula was fired as head coach and defensive coordinator Joe Kines served as interim head coach for the bowl game.",
+      "2006 Miami Hurricanes football team: The 2006 Miami Hurricanes football team represented the University of Miami during the 2006 NCAA Division I FBS football season.  The team's head coach was Larry Coker.",
+      "Oklahoma Sooners football: The Oklahoma Sooners football program is a college football team that represents the University of Oklahoma (variously \"Oklahoma\" or \"OU\").  The team is currently a member of the Big 12 Conference, which is in Division I Football Bowl Subdivision (formerly Division I-A) of the National Collegiate Athletic Association (NCAA).  The program began in 1895 and is one of the most successful programs since World War II with the most wins (606) and the highest winning percentage (.762) since 1945.  The program has 7 national championships, 45 conference championships, 154 All-Americans (76 consensus), and five Heisman Trophy winners.  In addition, the school has had 23 members (five coaches and 18 players) inducted into the College Football Hall of Fame and holds the record for the longest winning streak in Division I history with 47 straight victories, a record that stands to this day.  Oklahoma is also the only program that has had four coaches with 100+ wins.  They became the sixth NCAA FBS team to win 850 games when they defeated the Kansas Jayhawks on November 22, 2014.  The Sooners play their home games at Gaylord Family Oklahoma Memorial Stadium in Norman, Oklahoma.  Lincoln Riley is currently the team's head coach."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 617,
+    "generation_tokens": 39,
+    "generation_speed": 361.1345179780171,
+    "prompt_eval_speed": 83604.33604336042,
+    "generation_latency_s": 0.22798850003164262,
+    "latency": 0.6651303999824449,
+    "total_prompt_tokens": 767,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2222631,
+    "stage_route_s": 0.16268820001278073,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23509510001167655,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03919130004942417,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.760005347430706e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2280268999747932,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6651394999353215,
+    "unaccounted_latency_s": 0.00010119983926415443,
+    "route": "rag",
+    "router_raw": "The division that fired their head coach on November 24, 2006 is the Division of 1985.",
+    "sub_queries": [
+      "What division did the head coach of the college football team who fired his head coach on November 24, 2006?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

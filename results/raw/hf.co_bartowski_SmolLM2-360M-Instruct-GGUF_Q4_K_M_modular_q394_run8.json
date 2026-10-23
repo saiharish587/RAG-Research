@@ -1,0 +1,49 @@
+{
+  "question_id": "Q394",
+  "query": "In which county is the English king Harold Godwinson buried?",
+  "ground_truth": "Essex",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The English King Harold Godwinson was buried in York, a historic county located in Northern England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tostig Godwinson: Tostig Godwinson ( 1026 \u2013 25 September 1066) was an Anglo-Saxon Earl of Northumbria and brother of King Harold Godwinson.  After being exiled by his brother, Tostig supported the Norwegian king Harald Hardrada's invasion of England, and was killed at the Battle of Stamford Bridge.",
+      "Yorkshire: Yorkshire ( or ; abbreviated Yorks), formally known as the County of York, is a historic county of Northern England and the largest in the United Kingdom.  Due to its great size in comparison to other English counties, functions have been undertaken over time by its subdivisions, which have also been subject to periodic reform.  Throughout these changes, Yorkshire has continued to be recognised as a geographical territory and cultural region.  The name is familiar and well understood across the United Kingdom and is in common use in the media and the military, and also features in the titles of current areas of civil administration such as North Yorkshire, South Yorkshire, West Yorkshire and East Riding of Yorkshire.",
+      "Thomas Hungerford of Rowden: Sir Thomas Hungerford of Rowden (died 17 January 1469), the eldest son of Robert Hungerford, 3rd Baron Hungerford, lived chiefly at Rowden, near Chippenham, Wiltshire.  After giving some support to Edward IV and the Yorkists he joined in Warwick's conspiracy to restore Henry VI in January 1469, was attainted, and was executed at Salisbury, Wiltshire.  He was buried in the chapel of Farleigh Castle."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 408,
+    "generation_tokens": 21,
+    "generation_speed": 217.27434507304557,
+    "prompt_eval_speed": 49653.158086893025,
+    "generation_latency_s": 0.21807509998325258,
+    "latency": 0.7130625999998301,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2399254,
+    "stage_route_s": 0.09490919997915626,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3439950000029057,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0559211999643594,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7999899834394455e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2181057999841869,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7130718000698835,
+    "unaccounted_latency_s": 9.310024324804544e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The English King Harold Godwinson was buried in the County of Mercia, specifically in the City of York.",
+      "Query 2: The English King Harold Godwinson was buried in the County of Mercia, specifically in the City of York."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

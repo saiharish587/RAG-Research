@@ -1,0 +1,42 @@
+{
+  "question_id": "Q252",
+  "query": "What is Opry Mills in Nashville, Tennessee?",
+  "ground_truth": "super-regional shopping mall",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Opry Mills in Nashville, Tennessee is a super-regional shopping mall owned by Simon Property Group, formerly by its initial owners Mills Corporation and Gaylord Entertainment.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Opry Mills: Opry Mills is a super-regional shopping mall owned by Simon Property Group, formerly by its initial owners Mills Corporation and Gaylord Entertainment.  It opened in Nashville, Tennessee in 2000 on the former site of the Opryland USA theme park.",
+      "Grand Ole Opry: The Grand Ole Opry is a weekly country-music stage concert in Nashville, Tennessee, which was founded on November 28, 1925, by George D. Hay as a one-hour radio \"barn dance\" on WSM.  Currently owned and operated by Opry Entertainment (a division of Ryman Hospitality Properties, Inc.), it is the longest-running radio broadcast in US history, albeit not the longest-running one on a radio network.  Dedicated to honoring country music and its history, the Opry showcases a mix of famous singers and contemporary chart-toppers performing country, bluegrass, Americana, folk, gospel, and comedic performances and skits.  It attracts hundreds of thousands of visitors from around the world and millions of radio and Internet listeners.",
+      "Ryman Auditorium: Ryman Auditorium (formerly Grand Ole Opry House and Union Gospel Tabernacle) is a 2,362-seat live performance venue, located at 116 5th Avenue North, in Nashville, Tennessee and is best known as the home of the \"Grand Ole Opry\" from 1943 to 1974.  It is owned and operated by Ryman Hospitality Properties, Inc."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 396,
+    "generation_tokens": 33,
+    "generation_speed": 381.78536720810774,
+    "prompt_eval_speed": 22259.696458684655,
+    "generation_latency_s": 0.17847769998479635,
+    "latency": 0.5581434000050649,
+    "total_prompt_tokens": 466,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1318702,
+    "stage_rewrite_s": 0.1610845000250265,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08076949999667704,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1376966000534594,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17851230001542717,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5581524000735953,
+    "unaccounted_latency_s": 8.999998681247234e-05,
+    "rewritten_query": "Opry Mills in Nashville, Tennessee is a music venue located on the Tennessee River and is known for hosting numerous concerts throughout the year.",
+    "query_was_rewritten": true
+  }
+}

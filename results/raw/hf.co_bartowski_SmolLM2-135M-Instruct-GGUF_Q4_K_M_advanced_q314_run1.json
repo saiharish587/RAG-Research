@@ -1,0 +1,42 @@
+{
+  "question_id": "Q314",
+  "query": "Who was born first Am Rong or Ava DuVernay ?",
+  "ground_truth": "Am Rong",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The correct answer is that Nicki Minaj was born on December 8, 1982, and was the first Am Rong to be nominated for a Golden Globe Award.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ava DuVernay: Ava Marie DuVernay ( ; born August 24, 1972) is an American director, screenwriter, film marketer, and film distributor.  At the 2012 Sundance Film Festival, DuVernay won the Best Director Prize for her second feature film \"Middle of Nowhere\", becoming the first African-American woman to win the award.  For her work in \"Selma\" (2014), DuVernay was the first black female director to be nominated for a Golden Globe Award.  With \"Selma\", she was also the first black female director to have her film nominated for the Academy Award for Best Picture.  In 2017, she was nominated for the Academy Award for Best Documentary Feature for her film \"13th\" (2016).",
+      "Taylor Swift: Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter.  One of the leading contemporary recording artists, she is known for narrative songs about her personal life, which have received widespread media coverage.",
+      "Nicki Minaj: Onika Tanya Maraj (born December 8, 1982), known professionally as Nicki Minaj ( ), is a rapper, singer, songwriter and model.  Born in Saint James, Trinidad and Tobago and raised in Queens, New York, Minaj gained public recognition after releasing three mixtapes between 2007 to 2009 and subsequently signed to Young Money Entertainment in 2009."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 413,
+    "generation_tokens": 39,
+    "generation_speed": 344.1247319797761,
+    "prompt_eval_speed": 21866.8925716101,
+    "generation_latency_s": 0.21071629994548857,
+    "latency": 0.9729973999783397,
+    "total_prompt_tokens": 488,
+    "total_generation_tokens": 159,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12652249999999998,
+    "stage_rewrite_s": 0.3985706999665126,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08761010004673153,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2759534999495372,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.21077270002570003,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9730082999449223,
+    "unaccounted_latency_s": 0.00010189996100962162,
+    "rewritten_query": "Who was born first Am Rong or Ava DuVernay?\n\nThe original query is \"Am Rong or Ava DuVernay?\" This question has been asked by a user who wants to know the birthdate of their favorite singer. The optimized query uses the phrase \"who was born first\" and replaces it with \"whose birth date.\" This rephrased query conveys the same information as the original query but in a more concise and natural way, making it easier for users like the user to quickly find the answer without needing to read through the entire question.",
+    "query_was_rewritten": true
+  }
+}

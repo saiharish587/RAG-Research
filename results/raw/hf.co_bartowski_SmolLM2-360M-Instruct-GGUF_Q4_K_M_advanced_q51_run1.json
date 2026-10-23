@@ -1,0 +1,42 @@
+{
+  "question_id": "Q51",
+  "query": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+  "ground_truth": "2009 Big 12 Conference",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 14th season for the University of Colorado Buffaloes was 2011. The conference they played in was the Pac-12 Conference.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2009 Colorado Buffaloes football team: The 2009 Colorado Buffaloes football team represented the University of Colorado in the 2009 NCAA Division I FBS college football season.  The Buffaloes were led by fourth year head coach Dan Hawkins and played their home games at Folsom Field.  The Buffaloes finished the season with a record of 3\u20139 and 2\u20136 in Big 12 play.",
+      "2011 Colorado Buffaloes football team: The 2011 Colorado Buffaloes football team represented the University of Colorado at Boulder in the 2011 NCAA Division I FBS football season.  Led by first-year head coach and alumnus Jon Embree, the Buffaloes played their home games on-campus at Folsom Field in Boulder and were first-year members of the newly expanded Pac-12 Conference.  They finished with a record of 3\u201310, 2\u20137 in Pac-12 play, in a tie for last place in the South Division.",
+      "Colorado Buffaloes: The Colorado Buffaloes are the athletic teams that represent the University of Colorado Boulder.  The university sponsors 17 varsity sports teams.  Both the men's and women's teams are called the Buffaloes (Buffs for short) or, rarely, the Golden Buffaloes.  \"Lady Buffs\" referred to the women's teams beginning in the 1970s, but was officially dropped in 1993.  The nickname was selected by the campus newspaper in a contest with a $5 prize in 1934 won by Andrew Dickson of Boulder.  The university participates as a member of the Pac-12 Conference at the National Collegiate Athletic Association (NCAA) Division I Football Bowl Subdivision (FBS) level.  Rick George was announced as the sixth athletic director in program history on July 17, 2013, following the resignation of Mike Bohn, and after an interim appointment by former Women's Basketball Head Coach and current senior associate athletic director and senior women's administrator Ceal Barry.  Colorado has won 28 national championships in its history, with 20 in skiing, including 2015.  It was ranked #14 of \"America's Best Sports College\" in a 2002 analysis performed by \"Sports Illustrated.\"  The University has no men's baseball, tennis, soccer, lacrosse, or volleyball programs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 639,
+    "generation_tokens": 35,
+    "generation_speed": 251.11927448054183,
+    "prompt_eval_speed": 14271.038056101483,
+    "generation_latency_s": 1.0023048999719322,
+    "latency": 3.455857399967499,
+    "total_prompt_tokens": 741,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1266747,
+    "stage_rewrite_s": 1.254108100081794,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9886484999442473,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2106653000228107,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0023523999843746,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.455887299962342,
+    "unaccounted_latency_s": 0.0001137999352067709,
+    "rewritten_query": "The 14th season for the NCAA Division, where the Colorado Buffaloes played against an impressive record of 2-6.",
+    "query_was_rewritten": true
+  }
+}

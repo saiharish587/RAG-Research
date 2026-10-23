@@ -1,0 +1,42 @@
+{
+  "question_id": "Q195",
+  "query": "What is the full name of the viral respiratory disease in which Yi Guan's research helped to prevent the outbreak of?",
+  "ground_truth": "severe acute respiratory syndrome",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The full name of the viral respiratory disease in which Yi Guan's research helped to prevent the outbreak of is Severe acute respiratory syndrome (SARS).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yi Guan: Yi Guan is a Chinese virologist who, in 2014, was ranked as 11th in the world by Thomson Reuters (now known as Clarivate Analytics) among global researchers in the field of microbiology.  His research on the viral respiratory disease SARS allowed the Chinese government to successfully avert the 2004 outbreak of this disease.  He is the current Director (China affairs) of the State Key Laboratory for Emerging Infectious Diseases University of Hong Kong.  In early 2017, Guan warned that the H7N9 influenza virus \"poses the greatest threat to humanity than any other in the past 100 years.\"",
+      "Severe acute respiratory syndrome: Severe acute respiratory syndrome (SARS) is a viral respiratory disease of zoonotic origin caused by the SARS coronavirus (SARS-CoV).  Between November 2002 and July 2003, an outbreak of SARS in southern China caused an eventual 8,098 cases, resulting in 774 deaths reported in 37 countries, with the majority of cases in Hong Kong (9.6% fatality rate) according to the World Health Organization (WHO).  No cases of SARS have been reported worldwide since 2004.",
+      "SARS (disambiguation): SARS is severe acute respiratory syndrome, a viral respiratory disease of zoonotic origin caused by the SARS coronavirus."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 378,
+    "generation_tokens": 31,
+    "generation_speed": 392.76302452868435,
+    "prompt_eval_speed": 56790.86538461539,
+    "generation_latency_s": 0.16469110001344234,
+    "latency": 0.5915414000628516,
+    "total_prompt_tokens": 462,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1332678,
+    "stage_rewrite_s": 0.16359849995933473,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07798930001445115,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18512749997898936,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16473640000913292,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5915525000309572,
+    "unaccounted_latency_s": 0.00010140007361769676,
+    "rewritten_query": "The full name of the viral respiratory disease that Yi Guan researched and prevented was SARS-CoV-2, also known as COVID-19.",
+    "query_was_rewritten": true
+  }
+}

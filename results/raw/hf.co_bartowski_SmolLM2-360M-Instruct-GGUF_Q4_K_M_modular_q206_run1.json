@@ -1,0 +1,49 @@
+{
+  "question_id": "Q206",
+  "query": "Onika Tanya Maraj is a judge on a television show hosted by whom? ",
+  "ground_truth": "Ryan Seacrest",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Onika Tanya Maraj is a judge on a television show hosted by Jang Han-byul and Eric Nam.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Raaz Pichhle Janam Ka: Raaz Pichhle Janm Ka (Hindi: \u0930\u093e\u091c\u093c \u092a\u093f\u091b\u0932\u0947 \u091c\u0928\u092e \u0915\u093e , \"Past Life Secrets\") is an Indian reality television series based on the technique of past life regression.  The NDTV Imagine show is hosted by actor Ravi Kishan, while the past life regression sessions are conducted by Mumbai-based psychologist Trupti Jayin.  The first season started on December 7, 2009, was planned for a 20-episode run from Monday to Friday, 9.30 pm, by Ideas Box Entertainment, got an extension of 20 episodes, and ended on January 15, 2010, while Second season started on October 23, 2010, with actor, Chunky Pandey as guest.",
+      "Please Take Care of My Refrigerator: Please Take Care of My Refrigerator () is a 2014 South Korean cooking-variety program starring by many chefs and celebrity guests.  It airs on JTBC on Mondays at 21:30 (KST) beginning November 17, 2014.",
+      "After School Club: After School Club, often shortened to ASC, is a South Korean internet-based live-music request television talk show co-hosted by Kevin Woo, Park Jimin, and Jae.  K-pop idols Jang Han-byul and Eric Nam were the original main hosts of the show, and departed in January 2014 and April 2016, respectively.  Debuting on April 17, 2013, it is produced by Lee Hyun-ah and airs on Arirang TV.  ASC features various musical guests of South Korea and the series is directed at an international audience so the principal language is English with Korean subtitles and translations produced on air.  It allows international fans of K-pop music to interact directly with the live shows through social media: fans can join in on the live broadcasts through video chats in Google Hangouts, send in tweets to the show's official Twitter account, and are also able to share comments, ask questions, and request music videos on the show's official Facebook account.  The show is also available on Viki (website), a community for subtitles, Soompi, and on DramaFever."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 598,
+    "generation_tokens": 26,
+    "generation_speed": 226.03781786568138,
+    "prompt_eval_speed": 11799.526440410418,
+    "generation_latency_s": 0.27644929999951273,
+    "latency": 0.7224162999773398,
+    "total_prompt_tokens": 734,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.226296,
+    "stage_route_s": 0.0948352999985218,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2934471999760717,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057500299997627735,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.989999044686556e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2764892000705004,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7224274999462068,
+    "unaccounted_latency_s": 9.649991989135742e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Onika Tanya Maraj\" - Hosted by Onika Tanya Maraj",
+      "\"A TV Show Hosted by Onika Tanya Maraj\" - Hosted by Onika Tanya Maraj"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

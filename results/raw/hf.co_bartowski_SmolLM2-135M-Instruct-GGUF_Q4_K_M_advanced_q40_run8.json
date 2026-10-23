@@ -1,0 +1,42 @@
+{
+  "question_id": "Q40",
+  "query": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+  "ground_truth": "New York City",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Ralph Hefferline was a psychology professor at Columbia University.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ralph Hefferline: Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana \u2013 16 March 1974) was a psychology professor at Columbia University.",
+      "Illinois Institute of Technology: Illinois Institute of Technology, commonly called Illinois Tech or IIT, is a private Ph.D.-granting research university located in Chicago, in the U.S. state of Illinois, with programs in engineering, science, psychology, architecture, business, communications, industrial technology, information technology, design and law.  It traces its history to several 19th century engineering and professional education institutions in the United States.",
+      "Abraham Maslow: Abraham Harold Maslow ( ; April 1, 1908\u00a0\u2013 June 8, 1970) was an American psychologist who was best known for creating Maslow's hierarchy of needs, a theory of psychological health predicated on fulfilling innate human needs in priority, culminating in self-actualization.  Maslow was a psychology professor at Alliant International University, Brandeis University, Brooklyn College, New School for Social Research, and Columbia University.  He stressed the importance of focusing on the positive qualities in people, as opposed to treating them as a \"bag of symptoms.\"  A \"Review of General Psychology\" survey, published in 2002, ranked Maslow as the tenth most cited psychologist of the 20th century."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 377,
+    "generation_tokens": 14,
+    "generation_speed": 390.1786460800981,
+    "prompt_eval_speed": 43095.56470050297,
+    "generation_latency_s": 0.12188049999531358,
+    "latency": 0.4649306000210345,
+    "total_prompt_tokens": 455,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1305412,
+    "stage_rewrite_s": 0.13360530009958893,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0736260999692604,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13569000002462417,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.12192310008686036,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4649417999899015,
+    "unaccounted_latency_s": 9.819981642067432e-05,
+    "rewritten_query": "Ralph Hefferline, a psychology professor at a university located in Springfield, Illinois.",
+    "query_was_rewritten": true
+  }
+}

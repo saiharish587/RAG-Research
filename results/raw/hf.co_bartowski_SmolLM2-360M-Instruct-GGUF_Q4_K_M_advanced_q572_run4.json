@@ -1,0 +1,42 @@
+{
+  "question_id": "Q572",
+  "query": "What was the release date and price for the release of Mac OS X that has the software for creating WWF files?",
+  "ground_truth": "April 29, 2005 for US$129.95",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Mac OS X 10.2, released on August 23, 2002.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mac OS X 10.1: Mac OS X version 10.1, code named Puma, is the second major release of Mac OS X (now named macOS), Apple's desktop and server operating system.  It superseded Mac OS X 10.0 and preceded Mac OS X 10.2.  Version 10.1 was released on September 25, 2001 as a free update for Mac OS X 10.0 users.",
+      "Mac OS X 10.0: Mac OS X version 10.0, code named Cheetah, is the first major release of Mac OS X (later named OS X and then macOS), Apple\u2019s desktop and server operating system.  Mac OS X 10.0 was released on March 24, 2001 for a price of US$129.  It was the successor of the Mac OS X Public Beta and the predecessor of Mac OS X 10.1.",
+      "Mac OS X 10.2: Mac OS X Jaguar, version 10.2, is the third major release of Mac OS X (now named macOS), Apple's desktop and server operating system.  It superseded Mac OS X 10.1 and preceded Mac OS X Panther.  The operating system was released on August 23, 2002 either for single-computer installations, and in a \u201cfamily pack,\u201d which allowed five installations on separate computers in one household.  The operating system was generally well received by most Mac users as a large step forward in the areas of stability, general speed enhancements, compatibility with other flavors of Unix and the lineup of both graphical and terminal applications available; however, many critics, such as Amazon.com users, still claimed that significant user interface speed issues existed and that the operating system was still a big step down from Mac OS 9."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 486,
+    "generation_tokens": 23,
+    "generation_speed": 262.0843683766722,
+    "prompt_eval_speed": 63871.73084505191,
+    "generation_latency_s": 1.0054228999651968,
+    "latency": 3.374724099994637,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12793870000000002,
+    "stage_rewrite_s": 1.2572565999580547,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9798066000221297,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13211400003638119,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0054675999563187,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3747366000898182,
+    "unaccounted_latency_s": 9.25001222640276e-05,
+    "rewritten_query": "The release date for the release of Mac OS X is July 25, 2001. The price for this software is $99.99.",
+    "query_was_rewritten": true
+  }
+}

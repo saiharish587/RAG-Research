@@ -1,0 +1,42 @@
+{
+  "question_id": "Q37",
+  "query": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+  "ground_truth": "2000",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The year Seven Brief Lessons on Physics was written is 1924.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Seven Brief Lessons on Physics: Seven Brief Lessons on Physics (Italian: \"\" ) is a short book by the Italian physicist Carlo Rovelli.  Originally published in Italian in 2014, the book has been translated into 41 languages.  It is an Italian bestseller, with more than 300,000 copies sold in Rovelli's home country.",
+      "Aldo Pontremoli: Aldo Pontremoli (] ; 19 January 1896 \u2013 25 May 1928) was an Italian physicist who held a chair of theoretical physics at the University of Milan from 1926 and who founded and directed the Institute of Advanced Physics at the University of Milan from 1924 until his disappearance and presumed death in May 1928.  Pontremoli was one of the six men who disappeared with the airborne envelope of the airship \"Italia\" after it had crashed on the Arctic ice on 25 May 1928.",
+      "Albert Einstein: Albert Einstein (14 March 1879 \u2013 18 April 1955) was a German-born theoretical physicist.  Einstein developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics).  Einstein's work is also known for its influence on the philosophy of science.  Einstein is best known by the general public for his mass\u2013energy equivalence formula \"E\" = \"mc\" (which has been dubbed \"the world's most famous equation\").  He received the 1921 Nobel Prize in Physics \"for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\", a pivotal step in the evolution of quantum theory."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 449,
+    "generation_tokens": 17,
+    "generation_speed": 254.2778547068005,
+    "prompt_eval_speed": 15276.785410499813,
+    "generation_latency_s": 0.9279749999986961,
+    "latency": 3.370604099938646,
+    "total_prompt_tokens": 529,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12863819999999998,
+    "stage_rewrite_s": 1.2561290999874473,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9879170999629423,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19847020006272942,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9280115000437945,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.370612800004892,
+    "unaccounted_latency_s": 8.549995254725218e-05,
+    "rewritten_query": "The Italian physicist who wrote \"Seven Brief Lessons on Physics\" is Alessandro Volta, a French-Italian scientist born in 1745.",
+    "query_was_rewritten": true
+  }
+}

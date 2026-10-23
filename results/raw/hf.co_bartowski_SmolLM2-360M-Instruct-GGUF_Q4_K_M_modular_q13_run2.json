@@ -1,0 +1,49 @@
+{
+  "question_id": "Q13",
+  "query": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+  "ground_truth": "1999",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Guns N Roses performed a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective in 2005.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "True Lies: True Lies is a 1994 American action film written, co-produced and directed by James Cameron, starring Arnold Schwarzenegger, Jamie Lee Curtis, Tom Arnold, Art Malik, Tia Carrere, Bill Paxton, Eliza Dushku, Grant Heslov and Charlton Heston.  It is a loose remake of the 1991 French comedy film \"La Totale! \" The film follows U.S. government agent Harry Tasker (Schwarzenegger), who balances his life as a spy with his familial duties.",
+      "2005 in Swiss music: 2005 was a big year for Swiss music, with the charts becoming steadier yet less predictable than they had been in previous years.  The year saw many chart debuts from both Swiss and international acts, and saw two novelty songs share a combined total of over ten weeks at the singles chart number one spot.  Internationally, the Swiss also saw Vanilla Ninja take the country to their best Eurovision Song Contest position in twelve years.",
+      "2006 PDC World Darts Championship: The 2006 Ladbrokes.com World Darts Championship was the 13th World Championship organised by the Professional Darts Corporation (PDC) since it separated from the British Darts Organisation (BDO).  It was held from 19 December 2005 to 2 January 2006 at the Circus Tavern, Purfleet, Essex."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 408,
+    "generation_tokens": 32,
+    "generation_speed": 234.6815298302226,
+    "prompt_eval_speed": 23751.3098148795,
+    "generation_latency_s": 0.26487840001937,
+    "latency": 0.563918299973011,
+    "total_prompt_tokens": 564,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2243484,
+    "stage_route_s": 0.09592810005415231,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1491942999418825,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0537333000684157,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8399979025125504e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2649172000819817,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.563929499941878,
+    "unaccounted_latency_s": 9.909982327371836e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"2005\"",
+      "\"2006\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

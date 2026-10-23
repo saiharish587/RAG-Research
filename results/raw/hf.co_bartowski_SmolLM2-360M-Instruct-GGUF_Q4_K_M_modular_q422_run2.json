@@ -1,0 +1,49 @@
+{
+  "question_id": "Q422",
+  "query": "\"A Summer in the Cage\" and \"American Hardcore\" are both what kind of film?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "A Summer in the Cage is a documentary film about a man's experiences with bipolar disorder, while American Hardcore is a subgenre of electronic dance music. Both films explore themes related to mental health and social issues, but they focus on different aspects of these topics.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Summer in the Cage: A Summer in the Cage is a 2007 documentary film about a man's experiences with bipolar disorder.  The film follows the filmmaker's friend Sam and features an interview with mental health scholar Kay Redfield Jamison.  It was directed by Benjamin Selkow.  The documentary debuted on the Sundance Channel in 2007.",
+      "Hardcore punk: Hardcore punk (often abbreviated to hardcore) is a punk rock music genre and subculture that originated in the late 1970s.  It is generally faster, harder, and more aggressive than other forms of punk rock.  Its roots can be traced to earlier punk scenes in San Francisco and Southern California which arose as a reaction against the still predominant hippie cultural climate of the time.  It was also inspired by New York punk rock and early proto-punk.  New York punk had a harder-edged sound than its San Francisco counterpart, featuring anti-art expressions of masculine anger, energy and subversive humor.  Hardcore punk generally disavows commercialism, the established music industry and \"anything similar to the characteristics of mainstream rock\" and often addresses social and political topics with \"confrontational, politically-charged lyrics\".",
+      "Hardcore (electronic dance music genre): Hardcore techno (often abbreviated to hardcore) is a subgenre of electronic dance music that originated in the Netherlands from the emergent raves/gabber in the 1990s.  Its subgenres are usually distinguished from other electronic dance music genres by faster tempos (160 to 200 BPM or more), the intensity of the kicks and the synthesized bass (in some subgenres), the rhythm and the atmosphere of the themes (sometimes violent), the usage of saturation and experimentation close to that of industrial dance music."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 461,
+    "generation_tokens": 54,
+    "generation_speed": 205.51933594419006,
+    "prompt_eval_speed": 53492.689719192385,
+    "generation_latency_s": 0.39026100002229214,
+    "latency": 0.9866328000789508,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 133,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2343917,
+    "stage_route_s": 0.10249220009427518,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4375804999144748,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05612510000355542,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.719996988773346e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.39029500004835427,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9866421000333503,
+    "unaccounted_latency_s": 9.280000813305378e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "A summer in the cage - a horror movie that follows a group of friends as they escape from their small town to a remote location for a weekend, only to find themselves trapped by an evil force.",
+      "American hardcore - a subgenre of punk rock music characterized by its raw and aggressive sound, often featuring distorted guitars, pounding drums, and shouted vocals."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

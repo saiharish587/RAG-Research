@@ -1,0 +1,49 @@
+{
+  "question_id": "Q63",
+  "query": "Who was born earlier, Emma Bull or Virginia Woolf?",
+  "ground_truth": "Adeline Virginia Woolf",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Virginia Woolf was born earlier than Emma Bull.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Virginia Woolf: Adeline Virginia Woolf (n\u00e9e Stephen; 25 January 1882 \u2013 28 March 1941) was an English writer who is considered one of the foremost modernists of the twentieth century, and a pioneer in the use of stream of consciousness as a narrative device.  Born in an affluent household in Kensington, London, she attended the King's College London and was acquainted with the early reformers of women's higher education.",
+      "Orlando: A Biography: Orlando: A Biography is a novel by Virginia Woolf, first published on 11 October 1928.  A high-spirited romp inspired by the tumultuous family history of Woolf's lover and close friend, the aristocratic poet and novelist Vita Sackville-West, it is arguably one of Woolf's most popular novels: a history of English literature in satiric form.  The book describes the adventures of a poet who changes sex from man to woman and lives for centuries, meeting the key figures of English literary history.  Considered a feminist classic, the book has been written about extensively by scholars of women's writing and gender and transgender studies.",
+      "Vanessa Walters: Vanessa Walters, (born 1978, in London, United Kingdom) is an English novelist and playwright.  She is also a commentator and critic.  She is best known as the teenage novelist discovered to be writing a novel as a hobby to share with her school friends.  Educated at Queen's College, London, when discovered by teachers, the journal was passed over to an agent who quickly had her signed to a publishing company with a five-figure book deal even before she'd left."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 11,
+    "generation_speed": 225.76143173795253,
+    "prompt_eval_speed": 49170.954831332194,
+    "generation_latency_s": 0.17505479999817908,
+    "latency": 0.5467148999450728,
+    "total_prompt_tokens": 554,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23363879999999998,
+    "stage_route_s": 0.10058309999294579,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2147647999227047,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05609910003840923,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9900030717253685e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17512350005563349,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.546724799904041,
+    "unaccounted_latency_s": 0.00010499986819922924,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Emma Bull was born earlier than Virginia Woolf.",
+      "Query 2: Virginia Woolf was born earlier than Emma Bull."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

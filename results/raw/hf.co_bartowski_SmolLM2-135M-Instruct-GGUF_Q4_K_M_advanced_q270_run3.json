@@ -1,0 +1,42 @@
+{
+  "question_id": "Q270",
+  "query": "Which composer created Night Ferry first performed in 2012 at Symphony Center in Chicago?",
+  "ground_truth": "Anna Clyne",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Jonathan Paul Cambry",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Night Ferry (composition): Night Ferry is an orchestral composition in one movement by the British-born composer Anna Clyne.  The work was commissioned by the Chicago Symphony Orchestra, for which Clyne was then composer-in-residence.  It was first performed February 9, 2012 at Symphony Center, Chicago by the Chicago Symphony Orchestra under conductor Riccardo Muti.",
+      "Alternative Energy (composition): Alternative Energy is a symphony for electronica and orchestra in four movements by the American composer Mason Bates.  The work was commissioned by the Chicago Symphony Orchestra, for whom Bates was then composer-in-residence.  It was premiered by the orchestra under conductor Riccardo Muti at Symphony Center in Chicago, February 2, 2012.",
+      "Jonathan Paul Cambry: Jonathan Paul Cambry (born 1982) is an American classical pianist, teacher, composer and producer from Chicago, Illinois.  He has performed at multiple locations around the world, most notably the Chicago Symphony Center as part of the 2012 Chicago Piano Day curated by concert pianist and Grammy-winning Soviet-born naturalized American classical pianist, Emanuel Ax.  Pianists at this festival included world-renowned pianists Jorge Federico Osorio, Jeremy Denk, Reginald Robinson, Marc-Andr\u00e9 Hamelin, Orli Shaham, Valentina Lisitsa, Bill Charlap, Renee Rosnes and others."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 385,
+    "generation_tokens": 6,
+    "generation_speed": 404.0948275862069,
+    "prompt_eval_speed": 52877.35201208625,
+    "generation_latency_s": 0.10020079999230802,
+    "latency": 0.5601132001029328,
+    "total_prompt_tokens": 464,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1285222,
+    "stage_rewrite_s": 0.13582379999570549,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07844229997135699,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24552900006528944,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10023360000923276,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5601214000489563,
+    "unaccounted_latency_s": 9.310001041740179e-05,
+    "rewritten_query": "Which composer created Night Ferry's first performance at Symphony Center in Chicago in 2012?",
+    "query_was_rewritten": true
+  }
+}

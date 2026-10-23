@@ -1,0 +1,48 @@
+{
+  "question_id": "Q44",
+  "query": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+  "ground_truth": "sovereignty",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The battle in which Giuseppe Arimondi lost his life secured Ethiopia's sovereignty and freedom from colonization.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Giuseppe Arimondi: Giuseppe Edoardo Arimondi, OSML, OMS, OCI (Savigliano, 26 April 1846 \u2013 Adwa, 1 March 1896) was an Italian general, mostly known for his role during the First Italo-Ethiopian War.  He was one of the few European commanders who gained a victory over the Mahdists before Kitchener's Expedition, soundly defeating them at Agordat in 1893.  After a long and successfull colonial service, he died in combat at Adwa, and was posthumously awarded the Gold Medal of Military Valor.",
+      "Battle of Adwa: The Battle of Adwa (Amharic: \u12a0\u12f5\u12cb; Amharic translated: Adowa, or sometimes by the Italian name \"Adua\") was fought on 2 March 1896/Yekatit 23, 1889 according to Ethiopian calendar between the Ethiopian Empire and the Kingdom of Italy near the town of Adwa, Ethiopia, in Tigray.  This climactic battle of the First Italo-Ethiopian War, was a decisive defeat for Italy and secured Ethiopian sovereignty.",
+      "t (\"Era of the Judges/Princes\"), the country was reunited in 1855 by Kassa Hailu, who became Emperor Tewodros II, beginning Ethiopia's modern history.  Ethiopia's borders underwent significant territorial expansion to its modern borders for the rest of the century, especially by Emperor Menelik II and Ras Gobena, culminating in its victory over the Italians at the Battle of Adwa in 1896 with the military leadership of Ras Makonnen, and ensuring its sovereignty and freedom from colonization.  It was brutally occupied by Benito Mussolini's Fascist Italy from 1936 to 1941, ending with its liberation by British Empire and Ethiopian Patriot forces."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 499,
+    "generation_tokens": 24,
+    "generation_speed": 340.50280914817546,
+    "prompt_eval_speed": 63704.83850376612,
+    "generation_latency_s": 0.1888225000584498,
+    "latency": 0.5048820999218151,
+    "total_prompt_tokens": 637,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.240413,
+    "stage_route_s": 0.15024430002085865,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12914879992604256,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03651279991026968,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.869994543492794e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18885439995210618,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5048903999850154,
+    "unaccounted_latency_s": 9.200023487210274e-05,
+    "route": "rag",
+    "router_raw": "The battle in which Giuseppe Arimondi lost his life secured the fate of Ethiopia.",
+    "sub_queries": [
+      "The battle in which Giuseppe Arimondi lost his life secured for Ethiopia."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

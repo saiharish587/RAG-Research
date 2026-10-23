@@ -1,0 +1,48 @@
+{
+  "question_id": "Q560",
+  "query": "Who is the psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\"?",
+  "ground_truth": "James G. Kiernan",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\" was Timothy Leary.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Beatrice Edgell: Beatrice Edgell (26 October 1871 \u2013 10 August 1948) was a British psychologist, researcher and university teacher.  She taught at Bedford College in the University of London from 1897 to 1933.  She was the first British woman to earn a PhD in psychology and the first British woman to be named a professor of psychology.  She was also the first female president of the British Psychological Society, the Aristotelian Society, the Mind Association and the Psychological Division of the British Association for the Advancement of Science.",
+      "Timothy Leary: Timothy Francis Leary (October 22, 1920 \u2013 May 31, 1996) was an American psychologist and writer known for advocating the exploration of the therapeutic potential of psychedelic drugs under controlled conditions.  Leary conducted experiments under the Harvard Psilocybin Project during American legality of LSD and psilocybin, resulting in the Concord Prison Experiment and the Marsh Chapel Experiment.  Leary's colleague, Richard Alpert (Ram Dass), was fired from Harvard University on May 27, 1963 for giving psilocybin to an undergraduate student.  Leary was planning to leave Harvard when his teaching contract expired in June, the following month.  He was fired, for \"failure to keep classroom appointments\", with his pay docked on April 30.  National illumination as to the effects of psychedelics did not occur until after the Harvard scandal.",
+      "William James: William James (January 11, 1842 \u2013 August 26, 1910) was an American philosopher and psychologist who was also trained as a physician.  The first educator to offer a psychology course in the United States, James was one of the leading thinkers of the late nineteenth century and is believed by many to be one of the most influential philosophers the United States has ever produced, while others have labeled him the \"Father of American psychology\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 506,
+    "generation_tokens": 26,
+    "generation_speed": 325.1707146251782,
+    "prompt_eval_speed": 56134.90126469936,
+    "generation_latency_s": 0.2045965000288561,
+    "latency": 0.5865853000432253,
+    "total_prompt_tokens": 650,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2490115,
+    "stage_route_s": 0.17874770006164908,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1675407999427989,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03552759997546673,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.309997893869877e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20463699998799711,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5865965000120923,
+    "unaccounted_latency_s": 0.00010090006981045008,
+    "route": "rag",
+    "router_raw": "The psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\" was Dr. John D. Harris.",
+    "sub_queries": [
+      "The psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\" was Dr. Elizabeth Taylor."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

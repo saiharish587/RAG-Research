@@ -1,0 +1,42 @@
+{
+  "question_id": "Q503",
+  "query": "What was the largest passenger capacity of the plane type used for BOAC Flight 911 ?",
+  "ground_truth": "219",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Boeing 707-436 on BOAC Flight 911 had a seating capacity of 314 to 396 passengers, with a range of 5240 to .",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "BOAC Flight 911: BOAC Flight 911 (Speedbird 911) was a round-the-world flight operated by British Overseas Airways Corporation that crashed as a result of an encounter with severe clear-air turbulence near Mount Fuji in Japan on 5 March 1966.  The Boeing 707-436 on this flight was commanded by Captain Bernard Dobson, 45, from Dorset, an experienced 707 pilot who had been flying these aircraft since November 1960.",
+      "Boeing 777: The Boeing 777 is a family of long-range wide-body twin-engine jet airliners developed and manufactured by Boeing Commercial Airplanes.  It is the world's largest twinjet and has a typical seating capacity of 314 to 396 passengers, with a range of 5240 to .  Commonly referred to as the \"Triple Seven\", its distinguishing features include the largest-diameter turbofan engines of any aircraft, six wheels on each main landing gear, fully circular fuselage cross-section, and a blade-shaped tail cone.  Developed in consultation with eight major airlines, the 777 was designed to replace older wide-body airliners and bridge the capacity difference between Boeing's 767 and 747.  As Boeing's first fly-by-wire airliner, it has computer-mediated controls.  It was also the first commercial aircraft to be designed entirely with computer-aided design.",
+      "Pan Am Flight 73: Pan Am Flight 73, a Pan American World Airways Boeing 747-121, was hijacked on September 5, 1986, while on the ground at Karachi, Pakistan, by four armed Palestinian men of the Abu Nidal Organization.  The aircraft, with 360 passengers on board, had just arrived from Sahar International Airport in Mumbai, India, and was preparing to depart Jinnah International Airport in Karachi for Frankfurt Airport in Frankfurt am Main, West Germany, ultimately continuing on to John F. Kennedy International Airport in New York City, United States.  A June 2001 grand jury charged that the militants were planning to use the hijacked plane to pick up Palestinian prisoners in both Cyprus and Israel."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 578,
+    "generation_tokens": 46,
+    "generation_speed": 245.14636836972335,
+    "prompt_eval_speed": 50520.05943536404,
+    "generation_latency_s": 1.1008303998969495,
+    "latency": 3.4976418999722227,
+    "total_prompt_tokens": 658,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1236112,
+    "stage_rewrite_s": 1.2378113999729976,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0235871000913903,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1352698999689892,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1008886999916285,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4976598999928683,
+    "unaccounted_latency_s": 0.00010359997395426035,
+    "rewritten_query": "The largest passenger capacity of the plane type used for BOAC Flight 911 is approximately 2,000 passengers.",
+    "query_was_rewritten": true
+  }
+}

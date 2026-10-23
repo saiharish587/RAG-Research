@@ -1,0 +1,49 @@
+{
+  "question_id": "Q498",
+  "query": "What edition of tennis' US Open was the 2017 US Open when Petra Kvitova was a quarterfinalist?",
+  "ground_truth": "137th",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The 2017 US Open was the 137th edition of the US Open and the fourth and final Grand Slam event of the year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2017 US Open (tennis): The 2017 US Open was the 137th edition of tennis' US Open and the fourth and final Grand Slam event of the year.  It was held on outdoor hard courts at the USTA Billie Jean King National Tennis Center in New York City.  Experimental rules featured in qualifying for the main draw as well as in the junior, wheelchair and exhibition events.",
+      "Petra Kvitov\u00e1 career statistics: This is a list of the main career statistics of Czech professional tennis player Petra Kvitov\u00e1.  To date, Kvitov\u00e1 has won 20 singles titles including two Grand Slam singles titles at the Wimbledon Championships, one WTA Tour Championships singles title, two WTA Premier Mandatory singles titles and four WTA Premier 5 singles titles.  She was also the bronze medallist at the 2016 Rio Olympics, a semifinalist at the 2010 Wimbledon Championships, 2012 Australian Open and 2012 French Open and a quarterfinalist at the 2011 Australian Open, 2012 Wimbledon Championships, 2013 Wimbledon Championships, 2015 US Open and 2017 US Open.  Kvitov\u00e1 reached her career-high ranking of world no. 2 on 31 October 2011.",
+      "2017 US Open Series: In tennis, the 2017 US Open Series was the fourteenth edition of the US Open Series, which comprised a group of hard court tournaments that started on July 24, 2017 in Atlanta and concluded in Connecticut for the women and in Winston-Salem for the men on August 26, 2017.  This edition consisted of three separate men's tournaments and three women's tournaments, with the Western & Southern Open hosting both a men's and women's event.  The series was headlined by two ATP World Tour Masters 1000 and two WTA Premier 5 events."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 546,
+    "generation_tokens": 34,
+    "generation_speed": 233.0267432456513,
+    "prompt_eval_speed": 58483.29048843187,
+    "generation_latency_s": 0.2679144999710843,
+    "latency": 0.782678599935025,
+    "total_prompt_tokens": 702,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22528019999999999,
+    "stage_route_s": 0.10173440002836287,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3572197000030428,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05563590000383556,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.430006422102451e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26794769999105483,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7826878000050783,
+    "unaccounted_latency_s": 9.629991836845875e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The 2017 US Open was the quarterfinalist for Petra Kvitova in the 2016 US Open.",
+      "Query 2: The 2017 US Open was the quarterfinalist for Petra Kvitova in the 2015 US Open."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

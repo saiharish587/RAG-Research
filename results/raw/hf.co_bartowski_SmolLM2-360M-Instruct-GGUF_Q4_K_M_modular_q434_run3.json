@@ -1,0 +1,49 @@
+{
+  "question_id": "Q434",
+  "query": "Which band has more members, Test Icicles or X Ambassadors?",
+  "ground_truth": "X Ambassadors",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Test Icicles has more members than X Ambassadors.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Test Icicles: Test Icicles were a short-lived dance-punk band that formed in England, primarily influenced by indie rock but containing musical elements from a variety of genres (notably hip hop, crossover thrash and punk).  The band was formed in 2004 by Rory Attwell and Sam Mehran, who were later joined by Devonte Hynes.  Hynes and Mehran were both 18 years old at the time of the band's inception.  The group has since become notable due to the later success of its members.",
+      "X Ambassadors: X Ambassadors (also stylized XA) is an American rock band from Ithaca, New York.  It currently consists of lead vocalist Sam Harris, keyboardist Casey Harris, lead guitarist Noah Feldshuh, and drummer Adam Levin.  Their most notable songs include \"Jungle\", \"Renegades\", and \"Unsteady\".  The band's debut full-length album, \"VHS\", was released on June 30, 2015.",
+      "For Screening Purposes Only: For Screening Purposes Only is the debut album by UK dance-punk trio Test Icicles.  After being released in 2005, the album was critically praised for being unique and compelling in an increasingly homogenous indie music scene.  Following the group's split in February 2006, the album remains Test Icicles' only LP."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 381,
+    "generation_tokens": 13,
+    "generation_speed": 212.95067734696218,
+    "prompt_eval_speed": 45030.138281527004,
+    "generation_latency_s": 0.18210129998624325,
+    "latency": 0.49803749995771796,
+    "total_prompt_tokens": 511,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22576249999999998,
+    "stage_route_s": 0.10209019994363189,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15889830002561212,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054764000000432134,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.280005279928446e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1821514000184834,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4980529999593273,
+    "unaccounted_latency_s": 9.749992750585079e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Test Icicles\"",
+      "\"X Ambassadors\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

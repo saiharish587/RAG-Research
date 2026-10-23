@@ -1,0 +1,42 @@
+{
+  "question_id": "Q95",
+  "query": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+  "ground_truth": "March and April",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held in New Haven, Connecticut, on the month of June.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "London International Documentary Festival: The London International Documentary Festival (or LIDF) is an annual documentary film festival that takes place in the months of March and April every year.  The event is presented in association with the London Review of Books.",
+      "New Haven Documentary Film Festival: New Haven Documentary Film Festival (also known as NHdocs) is an annual documentary film festival held in New Haven, Connecticut, over a weekend in the month of June.  Screenings take place at Yale University\u2019s Whitney Humanities Center Auditorium and the New Haven Free Public Library.  NHdocs is a regional festival that showcases documentaries by filmmakers from the greater New Haven area and beyond.  NHdocs was launched in 2014 when the film festival\u2019s co-founders Charles Musser, Gorman Bechard, Jacob Bricca, and Lisa Molomot came together at the Big Sky Documentary Film Festival and decided to create a documentary film festival in New Haven that would \u201cbuild a sense of community among documentary filmmakers from the greater New Haven area.\u201d  In 2014, the four filmmakers each showed one of their recently completed documentaries, three of which had just played at the Big Sky.",
+      "Doc NYC: Doc NYC (stylized as DOC NYC) is an annual documentary film festival in New York City.  Co-founded by Thom Powers and his wife Raphaela Neihausen, the festival is the country's largest documentary film festival with over 300 films and events and 200 special guests.  The festival takes place over eight days in November at the West Village's IFC Center and Chelsea's Cin\u00e9polis and SVA Theater."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 437,
+    "generation_tokens": 35,
+    "generation_speed": 386.08334987976264,
+    "prompt_eval_speed": 65340.90909090909,
+    "generation_latency_s": 0.17142800008878112,
+    "latency": 0.5111405999632552,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1265824,
+    "stage_rewrite_s": 0.11610690003726631,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0771433999761939,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14633260003756732,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17146069998852909,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5111496000317857,
+    "unaccounted_latency_s": 0.00010639999527484179,
+    "rewritten_query": "In what month is the annual documentary film festival held?",
+    "query_was_rewritten": true
+  }
+}

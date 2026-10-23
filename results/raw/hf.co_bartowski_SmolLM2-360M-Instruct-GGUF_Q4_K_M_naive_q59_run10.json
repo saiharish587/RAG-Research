@@ -1,0 +1,36 @@
+{
+  "question_id": "Q59",
+  "query": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+  "ground_truth": "35,124",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "According to the 2001 census, the population of the city where Kirton End is located is 1,146.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kirton, Nottinghamshire: Kirton is a village in Nottinghamshire, England.  It is located 3 mi east of Ollerton.  According to the United Kingdom Census 2001 it had a population of 273, reducing to 261 at the 2011 census.",
+      "Kirton End: Kirton End is a hamlet in the civil parish of Kirton in the Boston district of Lincolnshire, England.  It lies on the B1391 road, 4 mi south-west from Boston, and 1.5 mi north-east from Kirton.",
+      "Kirton, Suffolk: Kirton is a village and a civil parish in the shire county of Suffolk, England, situated off the A14 road, about 4.5 km from Felixstowe and around 10 km from Ipswich.  The closest train station to Kirton is Trimley.  According to the 2011 census, Kirton had a population of 1,146.  It is located between the River Debben and the River Orwell.  The village of Kirton covers a total area of 8.3 km2 .  As the county of Suffolk lacks quarries, many of the buildings are made from flint, clay and timber."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 360,
+    "generation_tokens": 30,
+    "generation_speed": 217.18513584930247,
+    "prompt_eval_speed": 62305.29595015576,
+    "generation_latency_s": 0.24922290001995862,
+    "latency": 0.2658012999454513,
+    "total_prompt_tokens": 360,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0970949,
+    "stage_retrieve_s": 0.01650810008868575,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.2492566000437364,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.2658081999979913,
+    "unaccounted_latency_s": 4.389986861497164e-05
+  }
+}

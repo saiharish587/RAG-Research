@@ -1,0 +1,42 @@
+{
+  "question_id": "Q26",
+  "query": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+  "ground_truth": "Barton Lee Hazlewood",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The song \"These Boots Are Made for Walkin'\" was written by Lee Hazlewood and recorded by Nancy Sinatra.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "These Boots Are Made for Walkin': \"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra.  It charted January 22, 1966 and reached No. 1 in the United States \"Billboard\" Hot 100 and in the UK Singles Chart.",
+      "Puss N' Boots/These Boots Are Made for Walkin': \"Puss N' Boots/These Boots (Are Made for Walkin')\" is a song by Canadian synthpop band Kon Kan, released as the third single from their 1989 album \"Move to Move\".  The song peaked at #61 in their native Canada, and at #58 on the U.S. \"Billboard\" Hot 100.  In October 1989, the song peaked at #11 in New Zealand.",
+      "Boots (EP): Boots is an EP by KMFDM, featuring a cover of the Nancy Sinatra song \"These Boots Are Made for Walkin'\".  It was the first release by the band after their three-year hiatus."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 331,
+    "generation_tokens": 27,
+    "generation_speed": 262.29635602358724,
+    "prompt_eval_speed": 46771.23074749188,
+    "generation_latency_s": 0.9303104999708012,
+    "latency": 3.407101499964483,
+    "total_prompt_tokens": 415,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12392310000000001,
+    "stage_rewrite_s": 1.227245399961248,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0327684000367299,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21663419995456934,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9303676000563428,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4071138999424875,
+    "unaccounted_latency_s": 9.909993968904018e-05,
+    "rewritten_query": "These boots are made for walkin', and I'm sure they've got a lot to say about their creator, too.",
+    "query_was_rewritten": true
+  }
+}

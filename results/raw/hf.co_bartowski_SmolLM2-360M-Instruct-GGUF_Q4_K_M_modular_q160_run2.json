@@ -1,0 +1,49 @@
+{
+  "question_id": "Q160",
+  "query": "The song \"Chim Chim Cher-ee\" can be heard  in the \"Mary Poppins\" scene of a Disney ride that debuted in what year?",
+  "ground_truth": "1989",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The song \"Chim Chim Cher-ee\" is featured in the \"Mary Poppins\" segment of \"Mary Poppins\" at Disney's Hollywood Studios and during the \"Mary Poppins\" segment of \"\" at Disneyland. The musical premiered on Broadway in 1964, so it can be heard in both locations.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chim Chim Cher-ee: \"Chim Chim Cher-ee\" is a song from \"Mary Poppins\", the 1964 musical motion picture.  It was originally sung by Dick Van Dyke and Julie Andrews, and also is featured in the Cameron Mackintosh/Disney \"Mary Poppins\" musical.  The song can be heard in the \"Mary Poppins\" scene of The Great Movie Ride at Disney's Hollywood Studios and during the \"Mary Poppins\" segment of \"\" at Disneyland.",
+      "Mary Poppins (song): \"Mary Poppins\" is a song from the 2015 stage musical \"Love Birds\" with music and lyrics by Robert J. Sherman.  It is sung by \"The Original Quack Pack\", a penguin barbershop quartet who resemble the penguins from the 1964 Walt Disney motion picture, \"Mary Poppins\".  In dialogue leading up to the song, the penguins explain that while they did know the same nanny, (Mary Poppins) they are not the same penguins as in the movie.  The song expresses their longing for the magical nanny of literary fame.",
+      "Mary Poppins (musical): Mary Poppins is a musical with music and lyrics by the Sherman Brothers, with additional music and lyrics by George Stiles and Anthony Drewe, and a script by Julian Fellowes.  The musical is based on the similarly titled Mary Poppins children's books by P. L. Travers and the 1964 Disney film, and is a fusion of various elements from the two."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 74,
+    "generation_speed": 236.02508244930243,
+    "prompt_eval_speed": 24207.62258627484,
+    "generation_latency_s": 0.44384720001835376,
+    "latency": 1.0070108999498188,
+    "total_prompt_tokens": 598,
+    "total_generation_tokens": 158,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21846089999999999,
+    "stage_route_s": 0.09505140001419932,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4136189999990165,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05432759993709624,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8600020818412304e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.44387770001776516,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0070199000183493,
+    "unaccounted_latency_s": 9.61000332608819e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The song 'Chim Chim Cher-ee' is featured prominently in the opening sequence of the Mary Poppins ride, which premiered on December 20, 1964.\"",
+      "\"The song was also used in the opening scene of Disney's Mary Poppins Ride, which debuted on December 20, 1964.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

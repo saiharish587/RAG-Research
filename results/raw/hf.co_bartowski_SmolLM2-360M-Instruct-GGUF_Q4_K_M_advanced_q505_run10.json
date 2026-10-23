@@ -1,0 +1,42 @@
+{
+  "question_id": "Q505",
+  "query": "During which years was the model of car, featured on the cover of Earth's \"Pentastar: In the Style of Demons\" manufactured?",
+  "ground_truth": "1964 to 1974",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The model of car featured on the cover of Earth's \"Pentastar: In the Style of Demons\" is a Plymouth Barracuda. The car depicted on the cover is an example of Earth's third generation, which was released in 2003 and features a more rock-oriented sound compared to Earth's earlier drone doom work.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pentastar: In the Style of Demons: Pentastar: In the Style of Demons is the third full-length studio album by the drone doom band Earth.  It has a more rock-oriented sound than their earlier drone doom work, although in a very minimalist style.  \"Peace in Mississippi\" is a cover of the Jimi Hendrix song.  The original vinyl release of this album has an alternative take of \"Peace in Mississippi\".  The car depicted on the cover is a \"Sassy Grass Green\" Plymouth Barracuda with the car's iconic hockey-stick decal saying \"Earth.\"  The \"Pentastar\" named in the album title is an apparent reference to the brand logo of Chrysler, parent company of Plymouth and also a reference to the fact that this is the fifth CD by Earth (its predecessor being 1995's Sunn Amps and Smashed Guitars).",
+      "BMW X3: The BMW X3 is a compact luxury crossover SUV manufactured by German automaker BMW since 2003.  Based on the BMW 3 Series platform, and now in its third generation, BMW markets the crossover as a \"Sports Activity Vehicle\", the company's proprietary descriptor for its X-line of vehicles.  The first generation X3 was designed by BMW in conjunction with Magna Steyr of Graz, Austria\u2014who also manufactured all X3s under contract to BMW.  BMW manufactures the second generation X3 at their Spartanburg plant in South Carolina, United States.",
+      "Volkswagen Group: Volkswagen AG (] ), known internationally as Volkswagen Group, is a German multinational automotive manufacturing company headquartered in Wolfsburg, Lower Saxony, Germany.  It designs, manufactures and distributes passenger and commercial vehicles, motorcycles, engines, and turbomachinery and offers related services including financing, leasing and fleet management.  In 2016, it was the world's largest automaker by sales, overtaking Toyota.  It has maintained the largest market share in Europe for over two decades.  It ranked seventh in the 2016 Fortune Global 500 list of the world's largest companies."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 554,
+    "generation_tokens": 73,
+    "generation_speed": 243.48185726626576,
+    "prompt_eval_speed": 73077.43041815064,
+    "generation_latency_s": 1.194074900005944,
+    "latency": 3.606268999981694,
+    "total_prompt_tokens": 645,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1257223,
+    "stage_rewrite_s": 1.275186000042595,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9756707999622449,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16121489997021854,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.194115599966608,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.6062800999497995,
+    "unaccounted_latency_s": 9.34000127017498e-05,
+    "rewritten_query": "The model of car featured on the cover of \"Pentastar: In the Style of Demons\" was manufactured during the years 2018-2023.",
+    "query_was_rewritten": true
+  }
+}

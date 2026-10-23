@@ -1,0 +1,49 @@
+{
+  "question_id": "Q365",
+  "query": "Where did the architect of the Governor's House, located in Knutsford, graduate from college?",
+  "ground_truth": "Cambridge University",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The University of St Andrews",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oxford University Music Society: The Oxford University Music Society (OUMS) is one of the oldest societies in the University of Oxford, England, tracing its origins back to 1872.  The Society was formed in 1916 by the merger of the Oxford University Musical Club, founded in 1872, and the Oxford University Musical Union, founded in 1884.  Originally called the Oxford University Musical Club and Union, it changed its name to the Oxford University Musical Society in 1983.",
+      "University of Aberdeen: The University of Aberdeen is a public research university in Aberdeen, Scotland.  It is an ancient university founded in 1495 when William Elphinstone, Bishop of Aberdeen, petitioned Pope Alexander VI on behalf of James IV, King of Scots to establish King's College, making it Scotland's third-oldest university and the fifth-oldest in the English-speaking world.  The university as it is today was formed in 1860 by a merger between King's College and Marischal College, a second university founded in 1593 as a Protestant alternative to the former.  Today, Aberdeen is consistently ranked among the top 200 universities in the world and is one of two universities in the city, the other being the Robert Gordon University.",
+      "University of St Andrews: The University of St Andrews (informally known as St Andrews University or simply St Andrews; abbreviated as St And, from the Latin \"Sancti Andreae\", in post-nominals) is a British public research university in St Andrews, Fife, Scotland.  It is the oldest of the four ancient universities of Scotland and the third oldest university in the English-speaking world (following Oxford and Cambridge Universities).  St Andrews was founded between 1410 and 1413, when the Avignon Antipope Benedict XIII issued a papal bull to a small founding group of Augustinian clergy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 493,
+    "generation_tokens": 6,
+    "generation_speed": 251.004016064257,
+    "prompt_eval_speed": 64234.52768729642,
+    "generation_latency_s": 0.14567769994027913,
+    "latency": 0.4504672000184655,
+    "total_prompt_tokens": 633,
+    "total_generation_tokens": 23,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2254527,
+    "stage_route_s": 0.09827600000426173,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1533380999462679,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.052984500071033835,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5200071074068546e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14570939994882792,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.45047659997362643,
+    "unaccounted_latency_s": 0.00011399993672966957,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"University of Oxford\"",
+      "\"Oxford University\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

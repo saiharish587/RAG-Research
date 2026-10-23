@@ -1,0 +1,49 @@
+{
+  "question_id": "Q561",
+  "query": "The Adoption and Safe Families Act and the Adoption 2002 Initiative were both instituted under which administration?",
+  "ground_truth": "Clinton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Adoption and Safe Families Act (ASFA) was implemented by the Clinton Administration during the late 1990s, while the Adoption and Safe Families Act 1958 was enacted by the Parliament of the United Kingdom in 1958. Therefore, the answer is: The Adoption and Safe Families Act",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Adoption 2002: The Adoption 2002 Initiative was a program instituted in the United States during the late 1990s by the Clinton Administration.  Based on the Adoption and Safe Families Act of 1997, the aim of the program was to lower barriers to adoption and double the rate of adoption of children in foster care by 2002 from a 1996 figure of 27,000 to a 2002 figure of 54,000.",
+      "Adoption and Safe Families Act: The Adoption and Safe Families Act (ASFA, Public Law 105-89) was signed into law by President Bill Clinton on November 19, 1997, after having been approved by the United States Congress earlier in the month.",
+      "Adoption Act 1958: The Adoption Act 1958 was an Act of the Parliament of the United Kingdom that updated and consolidated the law relating to adoption.  After receiving Royal Assent on 18 December 1958 it came into force on 1 April 1959, regulating requirements for adopters, requirements for adoption agencies and the procedure to be used when making or appealing a court decision on adoption.  After the regulations on adoption procedure were sharply criticised, law in this area was reformed with the Adoption Act 1976, which repealed the 1958 Act."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 388,
+    "generation_tokens": 67,
+    "generation_speed": 258.86916775057824,
+    "prompt_eval_speed": 46741.35646307674,
+    "generation_latency_s": 0.38096019998192787,
+    "latency": 0.7118522999808192,
+    "total_prompt_tokens": 532,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2238524,
+    "stage_route_s": 0.09982809994835407,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17518040002323687,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0557000000262633,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.650000482797623e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3810058000963181,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7118636999512091,
+    "unaccounted_latency_s": 0.00010349985677748919,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Adoption and Safe Families Act\"",
+      "\"The Adoption 2002 Initiative\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

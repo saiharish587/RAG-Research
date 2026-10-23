@@ -1,0 +1,49 @@
+{
+  "question_id": "Q588",
+  "query": "When was the date of birth of one of the founder of Congo Reform Association?",
+  "ground_truth": "1 September 1864",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The date of birth of one of the founder of the Congo Reform Association is 1904.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Congo Reform Association: The Congo Reform Association was a movement formed with the declared intention to aid the exploited and impoverished workforce of the Congo by drawing attention to their plight.  The association was founded in March, 1904, by Dr. Henry Grattan Guinness (1861\u20131915), Edmund Dene Morel, and Roger Casement.",
+      "Lists of protests against the Vietnam War: Protests against the Vietnam War took place in the 1960s and 1970s.  The protests were part of a movement in opposition to the Vietnam War and took place mainly in the United States.",
+      "2007\u201308 BAI Basket: The 2007-2008 Season of BAI Basket (30th edition) ran from November 21, 2008 through May 16, 2009, with 12 teams playing in three different stages: in stage one (regular season) teams played a double round robin system.  In stage two, the six best teams played a single round robin tournament in serie A and the last six did the same for the consolation group, serie B. Finally, in stage three (final four) the best four teams from serie A played in a round robin at four rounds for the title.  The winners of the regular season and of the serie A are awarded a bonus point for the serie A and the final four, respectively."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 391,
+    "generation_tokens": 22,
+    "generation_speed": 366.89291729900106,
+    "prompt_eval_speed": 22030.65134099617,
+    "generation_latency_s": 0.18935070000588894,
+    "latency": 0.6366693000309169,
+    "total_prompt_tokens": 523,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2251876,
+    "stage_route_s": 0.14654590003192425,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23793489998206496,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06265450001228601,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6699966080486774e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18939259997569025,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6366816000081599,
+    "unaccounted_latency_s": 9.780004620552063e-05,
+    "route": "rag",
+    "router_raw": "The date of birth of one of the founder of Congo Reform Association is 1920.",
+    "sub_queries": [
+      "1960s-70s",
+      "2008-2014"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

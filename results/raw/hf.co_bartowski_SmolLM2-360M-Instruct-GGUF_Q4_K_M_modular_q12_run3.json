@@ -1,0 +1,49 @@
+{
+  "question_id": "Q12",
+  "query": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and T\u00e9a Leoni?",
+  "ground_truth": "David Weissman",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Coen brothers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Coen brothers: Joel David Coen (born November 29, 1954) and Ethan Jesse Coen (born September 21, 1957), collectively referred to as the Coen brothers, are American filmmakers.  Their films span many genres and styles, which they frequently subvert or parody.  Their best-reviewed works include \"\"Miller's Crossing\" (1990), \"Fargo\" (1996), \"The Big Lebowski\" (1998), \"No Country for Old Men\" (2007), \"A Serious Man\" (2009), \"True Grit\" (2010), and \"Inside Llewyn Davis\" (2013).",
+      "was we subtitled pictures in Chinese, in Indian and for the Chinese picture I had to have a Chinese waiter with me to tell me where the subtitles [...] I had the Italian dialogue and I had the picture, they gave me a film and we did the spotting together with Lew Watt and the measurements and I used to type the script.  We had the film, we had the print which used to run on the two sided thing.  And Lew Watt was working all the day so we had to do this at night, so we either used to work at night till 2 o'clock in the morning or we used to work at the weekends.  There was always the problem that the Movieola might break down and so we had spare keys of other cutting rooms in in elm St in case we were caught.  And that was how we started.Coen later founded his own company Kenilworth Film Productions and spent most of the post-war years producing second features.  He made a dozen films in partnership with the director Charles Saunders.  He later produced the 1971 horror film \"Burke & Hare\" and the comedies \"Au Pair Girls\" and \"Intimate Games.\"",
+      "John Goodman: John Stephen Goodman (born June 20, 1952) is an American actor.  Early in his career, he was best known for playing Dan Conner on the ABC TV series \"Roseanne\" (1988\u20131997), for which he won a Golden Globe Award for Best Actor in 1993.  He is also a regular collaborator with the Coen brothers on such films as \"Raising Arizona\" (1987), \"Barton Fink\" (1991), \"The Big Lebowski\" (1998), \"O Brother, Where Art Thou? \" (2000), and \"Inside Llewyn Davis\" (2013).  Goodman's voice roles in animated films include Pacha in Disney's \"The Emperor's New Groove\" (2000), and Sulley in Pixar's \"Monsters, Inc.\" (2001), and \"Monsters University\" (2013)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 711,
+    "generation_tokens": 5,
+    "generation_speed": 255.0760126517702,
+    "prompt_eval_speed": 82789.9394503959,
+    "generation_latency_s": 0.14462049992289394,
+    "latency": 0.5026525999419391,
+    "total_prompt_tokens": 863,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2316015,
+    "stage_route_s": 0.10183770000003278,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19851769995875657,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057483799988403916,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.549995694309473e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14466140000149608,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5026634000241756,
+    "unaccounted_latency_s": 0.000108000123873353,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Coen Brothers' 'No Country For Old Men'\"",
+      "\"The Coen Brothers' 'Fargo'\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

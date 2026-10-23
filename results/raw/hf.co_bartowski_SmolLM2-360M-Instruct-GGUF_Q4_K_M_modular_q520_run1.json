@@ -1,0 +1,49 @@
+{
+  "question_id": "Q520",
+  "query": "James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?",
+  "ground_truth": "Lord Chancellor of England",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "James Spedding was primarily known for being the editor of the works of Francis Bacon, a British author who served as Attorney General and later as Vice President under John Adams.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Spedding: James Spedding (28 June 1808 \u2013 9 March 1881) was an English author, chiefly known as the editor of the works of Francis Bacon.",
+      "John Dean: John Wesley Dean III (born October 14, 1938) is an investment banker, author, columnist, lecturer and former attorney who served as White House Counsel for United States President Richard Nixon from July 1970 until April 1973.  In this position, he became deeply involved in events leading up to the Watergate burglaries and the subsequent Watergate scandal cover-up.  He was referred to as the \"master manipulator of the cover-up\" by the Federal Bureau of Investigation (FBI).  He pleaded guilty to a single felony count, in exchange for becoming a key witness for the prosecution.  This ultimately resulted in a reduced prison sentence, which he served at Fort Holabird outside Baltimore, Maryland.",
+      "John Adams: John Adams (October 30 [O.S. October 19] 1735 \u2013 July 4, 1826) was an American patriot who served as the second President of the United States (1797\u20131801) and the first Vice President (1789\u201397).  He was a lawyer, diplomat, statesman, political theorist, and, as a Founding Father, a leader of the movement for American independence from Great Britain.  He was also a dedicated diarist and correspondent, particularly with his wife and closest advisor Abigail."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 422,
+    "generation_tokens": 36,
+    "generation_speed": 236.26077939806,
+    "prompt_eval_speed": 14247.13031735314,
+    "generation_latency_s": 0.2959302000235766,
+    "latency": 0.6690629000077024,
+    "total_prompt_tokens": 574,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2328018,
+    "stage_route_s": 0.11028759996406734,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20762929995544255,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05501160002313554,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3799943998456e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29597420000936836,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6690756001044065,
+    "unaccounted_latency_s": 0.00011970009654760361,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"James Spedding, Editor of Works by John Smith\"",
+      "\"John Smith, Attorney General and Author\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

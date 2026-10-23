@@ -1,0 +1,49 @@
+{
+  "question_id": "Q211",
+  "query": "Who was the captain of the only battleship to provide gunfire support during the Vietnam War?",
+  "ground_truth": "Rear Adm. J. Edward Snyder",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "John Paul Jones Memorial Park",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "USS New Jersey (BB-62): USS \"New Jersey\" (BB-62) (\"Big J\" or \"Black Dragon\") is an \"Iowa\"-class battleship , and was the second ship of the United States Navy to be named after the US state of New Jersey.  \"New Jersey\" earned more battle stars for combat actions than the other three completed \"Iowa\"-class battleships, and was the only US battleship providing gunfire support during the Vietnam War.",
+      "John Paul Jones Memorial Park: John Paul Jones Memorial Park is a municipal park in the town of Kittery, Maine.  The trapezoidal park, flanked by the lanes of United States Route 1 approaching the Memorial Bridge across the Piscataqua River, was established in 1926 and named for American Revolutionary War naval hero John Paul Jones.  Its centerpiece is a memorial commemorating the soldiers and sailors of the state of Maine, designed by Bashka Paeff.  The park was listed on the National Register of Historic Places in 1998.",
+      "Enterprise (NX-01): Enterprise is a fictional spaceship that appeared in the American science fiction television series \"\".  It had the in-universe registration of NX-01 and appeared earlier in the franchise timeline than any other Starfleet ship named \"Enterprise\".  The producers of the series had originally intended to use an Akira-class starship as seen in \"\" (1996), but production designer Herman Zimmerman talked them into using a design with greater influence from \"\".  Doug Drexler designed the exterior of the vessel, eventually arriving at the final design after also suggesting a \"Daedalus\"-class starship with a sphere-shaped primary hull, and a ship more reminiscent of the USS \"Enterprise\" (NCC-1701) complete with secondary hull."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 473,
+    "generation_tokens": 6,
+    "generation_speed": 234.00936037441497,
+    "prompt_eval_speed": 50324.50260666029,
+    "generation_latency_s": 0.1471286000451073,
+    "latency": 0.4658142999978736,
+    "total_prompt_tokens": 611,
+    "total_generation_tokens": 25,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23998940000000002,
+    "stage_route_s": 0.10611980000976473,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15730860002804548,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05508259998168796,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.630007945001125e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1471617000643164,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.46582339995075017,
+    "unaccounted_latency_s": 9.499979205429554e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Captain John Paul Jones\"",
+      "\"USS Enterprise\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

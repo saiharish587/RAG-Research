@@ -1,0 +1,42 @@
+{
+  "question_id": "Q184",
+  "query": "Which professional ice hockey position does the Captain of the National Hockey League All-Star Game \"Away Team\" play?",
+  "ground_truth": "Canadian professional ice hockey centre",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The captain of the national hockey league all-star game, Nick Foligno, plays as a goaltender for the away team.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "60th National Hockey League All-Star Game: The 60th National Hockey League All-Star Game was an exhibition ice hockey game played on January 25, 2015.  The game was held in Columbus, Ohio, for the first time, at Nationwide Arena, home of the Columbus Blue Jackets.  The team captains were chosen by NHL Hockey Operations: Nick Foligno of the All-Star Game-hosting Blue Jackets served as captain for the home team, and Jonathan Toews of the Chicago Blackhawks served for the away team.  Team Toews won the game 17\u201312, as the teams and players broke a variety of All-Star Game scoring records.",
+      "National Hockey League All-Star Game: The National Hockey League All-Star Game (French: \"Match des \u00c9toiles de la Ligue Nationale de Hockey\" ) is an exhibition ice hockey game that is traditionally held during the regular season of the National Hockey League (NHL), with many of the League's star players playing against each other.  The Game's proceeds benefit the pension fund of the players.",
+      "63rd National Hockey League All-Star Game: The 63rd National Hockey League All-Star Game, also known as the 2018 NHL All-Star Game, will be held at Amalie Arena in Tampa, Florida, home of the Tampa Bay Lightning on January 28, 2018.  Tampa last held the NHL All Star Game in 1999.  The All-Star Game will be played in lieu of NHL participation in the 2018 Olympics, as the NHL Board of Governors ruled against interrupting the season to send players to PyeongChang from 10\u201325 February."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 29,
+    "generation_speed": 252.22216424011552,
+    "prompt_eval_speed": 21083.654500113353,
+    "generation_latency_s": 1.026341799995862,
+    "latency": 3.412835399969481,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1318344,
+    "stage_rewrite_s": 1.2115715999389067,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0372071000747383,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13759239995852113,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.02638139994815,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4128437999170274,
+    "unaccounted_latency_s": 9.180000051856041e-05,
+    "rewritten_query": "The captain of the national hockey league all-star game, \"Away Team,\" plays as a defenseman.",
+    "query_was_rewritten": true
+  }
+}

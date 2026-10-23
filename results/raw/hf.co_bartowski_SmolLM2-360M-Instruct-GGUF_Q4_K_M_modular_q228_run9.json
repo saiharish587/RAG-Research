@@ -1,0 +1,49 @@
+{
+  "question_id": "Q228",
+  "query": "How long is the bridge in the \u00d6resund Region that connect Copenhagen, Denmark and Malmo, Sweden?",
+  "ground_truth": "8 km",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The \u00d8resund Bridge connects Copenhagen, Denmark, and Malm\u00f6, Sweden. It spans approximately 8 kilometers between the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Copenhagen Malm\u00f6 Port: Copenhagen Malm\u00f6 Port AB (CMP) operates the ports in Denmark's capital Copenhagen and in Sweden's third largest city, Malm\u00f6.  The ports are located either side of \u00d8resund, a strait between the two countries.  The combined \u00d8resund Region is the Nordic countries' largest metropolitan area in terms of population.  The region is connected by the \u00d8resund Bridge, which spans the strait at its southern end, and the HH Ferry route between Helsing\u00f8r, Denmark and Helsingborg, Sweden.",
+      "Malm\u00f6 Harbour Heliport: Malm\u00f6 Harbour Heliport (IATA: JMM,\u00a0ICAO: ESHM) , is an heliport serving Malm\u00f6, Sweden.  Before the \u00d6resund Bridge was opened in 2000 and before Sweden entered the Schengen Area in 2001, Malm\u00f6 Harbour Heliport and port had passport and customs check, and there were helicopter and speedboat connections directly to Copenhagen Airport transfer area.",
+      "\u00d8resund Bridge: The \u00d8resund/\u00d6resund/Oresund Bridge (Danish: \"\u00d8resundsbroen\" , ] ; Swedish: \"\u00d6resundsbron\" , ] ; hybrid name: \"\u00d8resundsbron \") is a combined railway and motorway bridge across the \u00d8resund strait between Sweden and Denmark.  The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.  The crossing is completed by the 4 km Drogden Tunnel from Peberholm to the Danish island of Amager."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 44,
+    "generation_speed": 257.87092388119186,
+    "prompt_eval_speed": 38602.300453119555,
+    "generation_latency_s": 0.29551900003571063,
+    "latency": 0.7005767999216914,
+    "total_prompt_tokens": 587,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2311202,
+    "stage_route_s": 0.10085479996632785,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24582840001676232,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058204100001603365,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.47999918833375e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2955514000495896,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7005854999879375,
+    "unaccounted_latency_s": 0.00010279996786266565,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"How long is the bridge connecting Copenhagen, Denmark to Malmo, Sweden?\"",
+      "\"What is the length of the bridge connecting Copenhagen, Denmark to Malmo, Sweden?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

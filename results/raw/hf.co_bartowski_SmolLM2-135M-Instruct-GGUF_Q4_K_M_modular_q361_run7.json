@@ -1,0 +1,48 @@
+{
+  "question_id": "Q361",
+  "query": "The Waterloo Vase has been used as a garden ornament at whose residence and administrative headquarters?",
+  "ground_truth": "reigning monarch of the United Kingdom",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Waterloo Vase has been used as a garden ornament at Buckingham Palace, London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waterloo Vase: The Waterloo Vase is a great urn, 15ft (5m) high and weighing 20 tons, fashioned from a single piece of Carrara marble.  Since 1906, it has been used as a garden ornament in the garden of Buckingham Palace, London.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning.",
+      "Medici Vase: The Medici Vase is a monumental marble bell-shaped krater sculpted in Athens in the second half of the 1st century AD as a garden ornament for the Roman market.  It is now in the Uffizi Gallery in Florence."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 268,
+    "generation_tokens": 18,
+    "generation_speed": 328.9533799959795,
+    "prompt_eval_speed": 31352.363125877397,
+    "generation_latency_s": 0.16956149996258318,
+    "latency": 0.5380512999836355,
+    "total_prompt_tokens": 404,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2151778,
+    "stage_route_s": 0.1709442000137642,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16087090002838522,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03650779998861253,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.329998046159744e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16960060002747923,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5380639000795782,
+    "unaccounted_latency_s": 9.770004544407129e-05,
+    "route": "rag",
+    "router_raw": "The Waterloo Vase is used as a garden ornament at the residence of the owner of the building, which is located in the city center.",
+    "sub_queries": [
+      "The Waterloo Vase is an antique vase that was once used as a garden ornament at the residence of the British monarch, Queen Victoria."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

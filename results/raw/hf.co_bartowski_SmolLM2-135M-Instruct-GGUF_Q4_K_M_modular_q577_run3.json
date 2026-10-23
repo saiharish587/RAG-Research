@@ -1,0 +1,48 @@
+{
+  "question_id": "Q577",
+  "query": "When did the tour begin for the album Taylor Swift released on October 22, 2012?",
+  "ground_truth": "March 13, 2013",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The answer is June 12, 2014. The concert tour by Taylor Swift was officially launched on June 12, 2014, which marks the completion of the Red Tour for the album Taylor Swift released on October 22, 2012.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Red Tour: The Red Tour was the third concert tour by American singer-songwriter Taylor Swift.  Launched in support of Swift's fourth studio album, \"Red\" (2012), the tour began on March 13, 2013 in Omaha, Nebraska and concluded on June 12, 2014 in Singapore.",
+      "Fall 2012 Tour (Kansas): The Fall 2012 Tour (unofficial name) is a concert tour by the American progressive rock band Kansas.  Each concert featured King's X as the opening act.  The tour featured several songs not played live by the band in several years, including \"Paradox,\" \"Can I Tell You,\" and \"Journey from Mariabronn,\" as well as a short medley of songs from \"The Ed Sullivan Show\" (classified as \"Ed Sullivan Medley\").  A backdrop of the album cover of the band's first album (which is a cropped photo of the \"Tragic Prelude\" painting) was also featured on the tour.",
+      "Red (Taylor Swift album): Red is the fourth studio album by American singer-songwriter Taylor Swift.  It was released on October 22, 2012, by Big Machine Records, as the follow-up to her third studio album, \"Speak Now\".  The album title was inspired by the \"semi-toxic relationships\" that Swift experienced during the process of conceiving this album, which Swift described the emotions she felt as \"red emotions\" due to their intense and tumultuous nature.  \"Red\" touches on Swift's signature themes of love and heartbreak, however, from a more mature perspective while exploring other themes such as fame and the pressure of being in the limelight.  The album features collaborations with producers and guest artists such as Gary Lightbody of Snow Patrol and Ed Sheeran and is noted for Swift's experimentation with new musical genres.  Swift completed The Red Tour in support of the album on June 12, 2014, which became the highest-grossing tour of all time by a country artist, grossing over $150 million."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 538,
+    "generation_tokens": 62,
+    "generation_speed": 366.22031105099325,
+    "prompt_eval_speed": 74888.64142538975,
+    "generation_latency_s": 0.2943783999653533,
+    "latency": 0.6268784999847412,
+    "total_prompt_tokens": 684,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2377165,
+    "stage_route_s": 0.15888380003161728,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1341343999374658,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039288199972361326,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2899977415800095e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2944342000409961,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6268942999886349,
+    "unaccounted_latency_s": 0.00011200003791600466,
+    "route": "rag",
+    "router_raw": "The tour began when Taylor Swift released her album on October 22, 2012.",
+    "sub_queries": [
+      "The tour began on October 22, 2012."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

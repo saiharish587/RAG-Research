@@ -1,0 +1,49 @@
+{
+  "question_id": "Q14",
+  "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, 888 7th Avenue and 888 7th Avenue are not used for real estate. They were built by the same company, Random House, which is known as Emery Roth & Sons. The building's continuous helix design was caused by the New York City Building Code, which requires setbacks.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+      "888 7th Avenue: 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.  Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City.  It currently carries the Vornado Realty Trust corporate headquarters.  Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation.  The Red Eye Grill is located in the building at street level.",
+      "750 7th Avenue: 750 Seventh Avenue is a 615 ft (187m) tall Class-A office skyscraper in New York City.  It was completed in 1989 in the postmodern style and has 36 floors.  Kevin Roche John Dinkeloo & Associates designed the building, and it is owned by Hines, a Texas based real estate investment company.  The building's continuous helix design, culminating in a chimney-like extension, was caused by the New York City Building Code, which requires setbacks.  The 84 exterior column transfers exist because of the owner's requirement for a column-free space.  It is tied with the New York Life Building for the 74th tallest building in New York City.  It is also LEED certified."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 479,
+    "generation_tokens": 68,
+    "generation_speed": 383.2799747486134,
+    "prompt_eval_speed": 25770.699951579063,
+    "generation_latency_s": 0.30203689995687455,
+    "latency": 0.781259800074622,
+    "total_prompt_tokens": 617,
+    "total_generation_tokens": 177,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2212893,
+    "stage_route_s": 0.08675820007920265,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.33714730001520365,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05513850005809218,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.410006269812584e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30206959997303784,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7812686000252143,
+    "unaccounted_latency_s": 0.00010179984383285046,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Random House Tower and 888 7th Avenue are indeed used for real estate, but they have different purposes.",
+      "The first query is about the use of these two buildings as a location for real estate transactions. The second query asks whether they both exist in the same area or if there's any overlap between them."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

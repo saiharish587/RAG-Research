@@ -1,0 +1,42 @@
+{
+  "question_id": "Q576",
+  "query": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+  "ground_truth": "IK Start",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The 2011 La Manga Cup was won by Viking, who beat IK Start.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2011 La Manga Cup: The 2011 La Manga Cup was an exhibition international club football (soccer) competition featuring football club teams from Europe, which was held in February 2011.  All matches were played in La Manga Stadium in La Manga, Spain.  This was the fourteenth La Manga Cup.  The tournament was won by Viking, who beat Start on goal differential after both clubs finished with identical records of two wins and one draw.",
+      "IK Start: IK Start is a Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012.  The club was founded on 19 September 1905.  The coach is Steinar Pedersen.  The team plays in yellow jerseys, black shorts and yellow socks at home, and blue jerseys, white shorts and blue socks away.",
+      "Minnesota Vikings: The Minnesota Vikings are an American football team based in Minneapolis, Minnesota.  The Vikings joined the National Football League (NFL) as an expansion team in 1960, and first took the field for the 1961 season.  The team competes in the National Football Conference (NFC) North division; before that, the Vikings were in the NFC Central, and before that they were in the NFL's Western Conference Central Division.  The team has played in four Super Bowl games, but have not won one.  They were the NFL champions in 1969.  The team plays its home games at U.S. Bank Stadium in the Downtown East section of Minneapolis."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 471,
+    "generation_tokens": 22,
+    "generation_speed": 261.17409627826913,
+    "prompt_eval_speed": 58451.22859270291,
+    "generation_latency_s": 1.0161668000509962,
+    "latency": 3.400840000016615,
+    "total_prompt_tokens": 584,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1250461,
+    "stage_rewrite_s": 1.2709871000843123,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9976062999339774,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11595720006152987,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0162062000017613,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.400851699989289,
+    "unaccounted_latency_s": 9.559991303831339e-05,
+    "rewritten_query": "The 2011 La Manga Cup was won by Viking, who defeated Norwegian football club Kristiansand from the town of Kristiansand.",
+    "query_was_rewritten": true
+  }
+}

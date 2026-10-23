@@ -1,0 +1,42 @@
+{
+  "question_id": "Q17",
+  "query": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+  "ground_truth": "the North Atlantic Conference",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Vermont Catamounts men's soccer team currently competes in the America East Conference, which was previously known as the American Division I Conference.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vermont Catamounts men's soccer: The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions.  The team competes in the America East Conference.",
+      "Major League Soccer: Major League Soccer (MLS) is a men's professional soccer league, sanctioned by U.S. Soccer, that represents the sport's highest level in both the United States and Canada.  MLS constitutes one of the major professional sports leagues of the United States and Canada.  The league comprises 22 teams\u201419 in the U.S. and 3 in Canada.  The MLS regular season runs from March to October, with each team playing 34 games; the team with the best record is awarded the Supporters' Shield.  The postseason includes twelve teams competing in the MLS Cup Playoffs through November and December, culminating in the championship game, the MLS Cup.  MLS teams also play in other domestic competitions against teams from other divisions in the U.S. Open Cup and in the Canadian Championship.  MLS teams also compete against continental rivals in the CONCACAF Champions League.",
+      "Vermont Catamounts men's basketball: The Vermont Catamounts Basketball team is the basketball team that represents the University of Vermont in Burlington, Vermont.  The school's team currently competes in the America East Conference and plays its home games at Patrick Gym.  The team has reached the NCAA Division I Men's Basketball Tournament six times, in 2003, 2004, 2005, 2010, 2012, and 2017.  UVM famously upset Syracuse University in the first round of the 2005 tournament.  The Catamounts are coached by John Becker."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 486,
+    "generation_tokens": 30,
+    "generation_speed": 245.75056317837394,
+    "prompt_eval_speed": 68780.07359184828,
+    "generation_latency_s": 1.0288764999713749,
+    "latency": 3.422881599981338,
+    "total_prompt_tokens": 580,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12231410000000001,
+    "stage_rewrite_s": 1.3100637000752613,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9405834999633953,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14321419992484152,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0289177000522614,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4228915000567213,
+    "unaccounted_latency_s": 0.00011300004553049803,
+    "rewritten_query": "The Vermont Catamounts men's soccer team currently competes in the Conference USA, which was previously known as the Men's Soccer League (MSL) from 1988 to 1996.",
+    "query_was_rewritten": true
+  }
+}

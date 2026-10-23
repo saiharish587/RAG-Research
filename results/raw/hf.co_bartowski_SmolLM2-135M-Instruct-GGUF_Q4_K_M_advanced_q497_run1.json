@@ -1,0 +1,42 @@
+{
+  "question_id": "Q497",
+  "query": "Anthony Avent played basketball fo a High School that is located in a city approcimately 8 mi west of where?",
+  "ground_truth": "lower Manhattan",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The question asks about the location of a high school in Lancaster County, Pennsylvania, which is approximately eight miles west of Shawnee, Oklahoma.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Anthony Avent: Anthony Avent (born October 18, 1969) is a retired American professional basketball player who was selected by the Atlanta Hawks in the first round (15th pick overall) of the 1991 NBA Draft.  Born in Rocky Mount, North Carolina, Avent played for the Milwaukee Bucks, Orlando Magic, Vancouver Grizzlies, Utah Jazz and Los Angeles Clippers in six NBA seasons.  He played collegiately at Seton Hall University where he played in the 1989 NCAA championship game.  Prior to Seton Hall, Avent played at Malcolm X Shabazz High School in Newark, New Jersey.",
+      "Manheim Central School District: The Manheim Central School District is a school district in Lancaster County, Pennsylvania.  Manheim Central School District consists of the borough of Manheim, Penn Township, and Rapho Township.  Located in northwestern Lancaster County, the school district encompasses 78.2 square miles.  The school district lies approximately seven miles north of the City of Lancaster, approximately eighty miles west of the City of Philadelphia and twenty-five miles east of the City of Harrisburg.",
+      "Bethel High School (Shawnee, Oklahoma): Bethel High School is a high school located five miles west of Shawnee, Oklahoma in Bethel Acres, approximately 35 miles east of Oklahoma City.  It serves approximately 400 students and is part of the Bethel School District."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 396,
+    "generation_tokens": 29,
+    "generation_speed": 369.5444409047467,
+    "prompt_eval_speed": 22710.32861157309,
+    "generation_latency_s": 0.17830169992521405,
+    "latency": 0.6044229000108317,
+    "total_prompt_tokens": 481,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1340775,
+    "stage_rewrite_s": 0.1723732000682503,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08398939995095134,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16960670007392764,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1783597000176087,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6044370000017807,
+    "unaccounted_latency_s": 0.00010869989637285471,
+    "rewritten_query": "Avengement: Anthony Avent plays basketball for a high school in a city approximately 8 miles west of where.",
+    "query_was_rewritten": true
+  }
+}

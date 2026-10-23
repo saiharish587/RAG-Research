@@ -1,0 +1,49 @@
+{
+  "question_id": "Q474",
+  "query": "Which \"Official Ireland\" group comprises about  78.3% of the population of Ireland? ",
+  "ground_truth": "The Catholic Church in Ireland",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Official Irish Republican Army (OIRA)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Official Ireland: \"Official Ireland\" (Irish: \"\u00c9ire Oifigi\u00fail\" ) is a term widely used in the Republic of Ireland to denote The Establishment.  It refers to the most powerful figures in the media, the Catholic Church, and the political parties, who control the national debate.",
+      "Official Irish Republican Army: The Official Irish Republican Army or Official IRA (OIRA) was an Irish republican paramilitary group whose goal was to remove Northern Ireland from the United Kingdom and create a \"workers' republic\" encompassing all of Ireland.  It emerged in December 1969, shortly after the beginning of the Troubles, when the Irish Republican Army split into two factions.  The other was the Provisional IRA.  Each continued to call itself simply \"the IRA\" and rejected the other's legitimacy.  Unlike the \"Provisionals\", the \"Officials\" were Marxist and worked to form a united front with other Irish communist groups, named the Irish National Liberation Front (NLF).  The Officials were called the NLF by the Provisionals and were sometimes nicknamed the \"Red IRA\" by others.",
+      "Workers' Party of Ireland: The Workers' Party (Irish: \"P\u00e1irt\u00ed na nOibrithe\" ), originally known as Official Sinn F\u00e9in, is a Marxist\u2013Leninist political party active throughout Ireland.  The party originated with a split between factions of Sinn F\u00e9in (which was founded in 1905) and the Irish Republican Army (IRA), which took place in 1969\u201370, early in the Troubles.  The faction that broke away became known as the Provisional Irish Republican Army and Provisional Sinn F\u00e9in.  The Officials' leaders at the time the Provisionals left were Cathal Goulding and Tom\u00e1s Mac Giolla."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 469,
+    "generation_tokens": 11,
+    "generation_speed": 218.7183106993021,
+    "prompt_eval_speed": 54963.0844954881,
+    "generation_latency_s": 0.173103200038895,
+    "latency": 0.4978172000264749,
+    "total_prompt_tokens": 611,
+    "total_generation_tokens": 31,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2330271,
+    "stage_route_s": 0.09700599999632686,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.170495199970901,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05699430010281503,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7299970649182796e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17314709990750998,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4978287999983877,
+    "unaccounted_latency_s": 0.00012970005627721548,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Official Irish Group\"",
+      "\"Irish National Music Group\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

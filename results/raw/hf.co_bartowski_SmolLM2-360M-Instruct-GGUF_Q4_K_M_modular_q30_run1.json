@@ -1,0 +1,49 @@
+{
+  "question_id": "Q30",
+  "query": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+  "ground_truth": "Arena of Khazan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The name for the adventure in \"Tunnels and Trolls,\" a game designed by Ken St. Andre, is \"Arena of Khazan.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Labyrinth (paper-and-pencil game): Labyrinth (or Terra Incognita) is a logical game played with pencil (or pen) and paper by three or more participants.  One participant, known as the \"game master\" or \"game leader\", designs the labyrinth map, sets the game rules, and announces results of every move.  The other players attempt to traverse the labyrinth, trying to reveal the labyrinth design and achieve the objective (usually, it consists of finding the treasure and exiting the labyrinth with it).",
+      "Tunnels &amp; Trolls: Tunnels & Trolls (abbreviated \"T&T\") is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo.  The second modern role-playing game published, it was written by Ken St. Andre to be a more accessible alternative to \"Dungeons & Dragons\" and is suitable for solitaire, group, and play-by-mail gameplay.",
+      "Arena of Khazan: Arena of Khazan is a 1979 role-playing game adventure for \"Tunnels & Trolls\" published by Flying Buffalo."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 333,
+    "generation_tokens": 34,
+    "generation_speed": 212.23868112386623,
+    "prompt_eval_speed": 12715.262132956585,
+    "generation_latency_s": 0.293453500024043,
+    "latency": 0.6607783000217751,
+    "total_prompt_tokens": 483,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2169533,
+    "stage_route_s": 0.10125399997923523,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21059300005435944,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055283900001086295,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.4699950851500034e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29350480006542057,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6607947000302374,
+    "unaccounted_latency_s": 0.0001050999853760004,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Adventure in \"Tunnels and Trolls\"",
+      "Query 2: A game named after the adventure"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

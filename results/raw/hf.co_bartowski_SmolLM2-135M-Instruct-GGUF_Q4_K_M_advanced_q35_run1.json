@@ -1,0 +1,42 @@
+{
+  "question_id": "Q35",
+  "query": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+  "ground_truth": "Letters to Cleo",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The band Letters to Cleo had more members than Screaming Trees.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Letters to Cleo: Letters to Cleo are an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\".  The band's members are Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later, Tom Polce.",
+      "Screaming Trees: Screaming Trees was an American rock band formed in Ellensburg, Washington in 1985 by vocalist Mark Lanegan, guitarist Gary Lee Conner, bass player Van Conner and drummer Mark Pickerel.  Pickerel had been replaced by Barrett Martin by the time the band reached its most successful period.  Although widely associated with grunge, the band's sound incorporated hard rock and psychedelic elements.  During Screaming Trees' existence the band released seven studio albums, five EPs, and three compilations.",
+      "Van Conner: Van Conner (born March 17, 1967 in Apple Valley, California) is an American rock musician.  In 1984 he co-founded the band Screaming Trees with his brother Gary Lee Conner and close friends Mark Lanegan and Mark Pickerel.  On the 25 June 2000 Screaming Trees announced their official breakup.  Conner would start a low key band under the name Gardener which released its only album in the 1990s under the name \"New Dawning Time\".  Conner has also had brief appearances as a session musician with other known bands such as Queens of the Stone Age and helping Mark Lanegan on his solo album I'll Take Care of You."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 438,
+    "generation_tokens": 15,
+    "generation_speed": 330.14922745080776,
+    "prompt_eval_speed": 20954.932542340444,
+    "generation_latency_s": 0.14178790000732988,
+    "latency": 0.7468396999174729,
+    "total_prompt_tokens": 514,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12791160000000001,
+    "stage_rewrite_s": 0.27867050003260374,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0714650999289006,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25478620000649244,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.14183219999540597,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7468518000096083,
+    "unaccounted_latency_s": 9.839993435889482e-05,
+    "rewritten_query": "Which band had more members?\n\nThe original query was \"which band, letters to cleo or screaming trees, had more members?\" The optimized query output is \"screaming trees.\" This rephrased query uses the same information as the original query but with a few minor adjustments for better readability and concision.",
+    "query_was_rewritten": true
+  }
+}

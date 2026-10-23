@@ -1,0 +1,49 @@
+{
+  "question_id": "Q505",
+  "query": "During which years was the model of car, featured on the cover of Earth's \"Pentastar: In the Style of Demons\" manufactured?",
+  "ground_truth": "1964 to 1974",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The model of car, featured on the cover of Earth's \"Pentastar: In the Style of Demons\", was produced during the 1970s and 80s. It is a popular cultural artifact in many countries around the world due to its unique design and aesthetic appeal.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Open Geosciences: Open Geosciences is a peer-reviewed open access scientific journal covering all aspects of the Earth sciences.  It is published by De Gruyter Open and the editor-in-chief is Piotr Jankowski (San Diego State University).  The journal was established in 2009 as the \"Central European Journal of Geosciences\", co-published by Versita and Springer Science+Business Media.  In 2014, the journal was moved to the De Gruyter Open imprint.  It obtained its current name in 2015 when it became open access.",
+      "Landsat program: The Landsat program is the longest-running enterprise for acquisition of satellite imagery of Earth.  On July 23, 1972 the Earth Resources Technology Satellite was launched.  This was eventually renamed to Landsat.  The most recent, Landsat 8, was launched on February 11, 2013.  The instruments on the Landsat satellites have acquired millions of images.  The images, archived in the United States and at Landsat receiving stations around the world, are a unique resource for global change research and applications in agriculture, cartography, geology, forestry, regional planning, surveillance and education, and can be viewed through the U.S. Geological Survey (USGS) 'EarthExplorer' website.  Landsat 7 data has eight spectral bands with spatial resolutions ranging from 15 to 60 meters; the temporal resolution is 16 days.  Landsat images are usually divided into scenes for easy downloading.  Each Landsat scene is about 115 miles long and 115 miles wide (or 100 nautical miles long and 100 nautical miles wide, or 185 kilometers long and 185 kilometers wide).",
+      "Museum of the Earth: The Museum of the Earth is a natural history museum located in Ithaca, New York.  The museum was opened in 2003 as part of the Paleontological Research Institution (PRI), an independent organization pursuing research and education in the history of the Earth and its life.  Both PRI and the Museum of the Earth are formally affiliated with Cornell University.  The Museum of the Earth is home to earth-science exhibits and science-related art displays with a focus on the concurrent evolution of the Earth and life."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 581,
+    "generation_tokens": 63,
+    "generation_speed": 292.17391304347825,
+    "prompt_eval_speed": 78534.73911868072,
+    "generation_latency_s": 0.3415030000032857,
+    "latency": 0.7621571000199765,
+    "total_prompt_tokens": 743,
+    "total_generation_tokens": 124,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2325019,
+    "stage_route_s": 0.18463369994424284,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1770122000016272,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05883620004169643,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.950002767145634e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.34154430008493364,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7621679999865592,
+    "unaccounted_latency_s": 9.279989171773195e-05,
+    "route": "rag",
+    "router_raw": "The model of car featured on the cover of Earth's \"Pentastar: In the Style of Demons\" was produced during 2015.",
+    "sub_queries": [
+      "earth_pentstar-innovation2018",
+      "earth_pentstar-innovation2019"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

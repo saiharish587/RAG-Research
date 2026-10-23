@@ -1,0 +1,49 @@
+{
+  "question_id": "Q185",
+  "query": "What year did the series on CBS, starring the actor who known for his role in \"Rebel Without a Cause,\" air?",
+  "ground_truth": "1952",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The series on CBS, starring Jack Grinnage, was broadcasted in 1954.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jack Grinnage: Jack Grinnage (born January 20, 1931) is an American actor with a film and television career spanning seven decades.  Born in Los Angeles, Grinnage made his first television appearances in 1954.  The following year, he played as Moose \u2013 one of three teenage rebels who chase James Dean \u2013 in \"Rebel Without a Cause\" (1955).  \"Rebel Without a Cause\" was his first movie where he received a screen credit.",
+      "Football at the 2006 Asian Games: Football at the 2006 Asian Games was held in Doha, Qatar from November 18 to December 15, 2006.  The opening match was played 14 days prior to the opening ceremony.  In this tournament, some 30 teams played in the men's competition, and 8 teams participated in women's competition.",
+      "2007 Summer Universiade: The 2007 Summer Universiade, also known as the XXIV Summer Universiade, took place in Bangkok, Thailand."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 327,
+    "generation_tokens": 22,
+    "generation_speed": 232.88062750743632,
+    "prompt_eval_speed": 13395.600344107166,
+    "generation_latency_s": 0.2253944999538362,
+    "latency": 0.5489703000057489,
+    "total_prompt_tokens": 481,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2360585,
+    "stage_route_s": 0.10428580001462251,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16444989992305636,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054664399940520525,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.0600112192332745e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22542569995857775,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5489800999639556,
+    "unaccounted_latency_s": 9.430001955479383e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "2006",
+      "2007"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

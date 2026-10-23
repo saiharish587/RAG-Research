@@ -1,0 +1,48 @@
+{
+  "question_id": "Q30",
+  "query": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+  "ground_truth": "Arena of Khazan",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The name for the adventure in \"Tunnels & Trolls\" is \"Labyrinth\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tunnels &amp; Trolls: Tunnels & Trolls (abbreviated \"T&T\") is a fantasy role-playing game designed by Ken St. Andre and first published in 1975 by Flying Buffalo.  The second modern role-playing game published, it was written by Ken St. Andre to be a more accessible alternative to \"Dungeons & Dragons\" and is suitable for solitaire, group, and play-by-mail gameplay.",
+      "Arena of Khazan: Arena of Khazan is a 1979 role-playing game adventure for \"Tunnels & Trolls\" published by Flying Buffalo.",
+      "Labyrinth (paper-and-pencil game): Labyrinth (or Terra Incognita) is a logical game played with pencil (or pen) and paper by three or more participants.  One participant, known as the \"game master\" or \"game leader\", designs the labyrinth map, sets the game rules, and announces results of every move.  The other players attempt to traverse the labyrinth, trying to reveal the labyrinth design and achieve the objective (usually, it consists of finding the treasure and exiting the labyrinth with it)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 333,
+    "generation_tokens": 20,
+    "generation_speed": 403.95063723213025,
+    "prompt_eval_speed": 40019.228458118014,
+    "generation_latency_s": 0.16814620001241565,
+    "latency": 0.5215077999746427,
+    "total_prompt_tokens": 483,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2230894,
+    "stage_route_s": 0.17558790009934455,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1398472998989746,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03775839996524155,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.20999713242054e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16817870002705604,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5215176000492647,
+    "unaccounted_latency_s": 0.00010380009189248085,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents, specifically the game \"Tunnels and Trolls\" by Ken St. Andre.",
+    "sub_queries": [
+      "The name of the adventure in \"Tunnels and Trolls\" is \"Tunnels and Trolls\"."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

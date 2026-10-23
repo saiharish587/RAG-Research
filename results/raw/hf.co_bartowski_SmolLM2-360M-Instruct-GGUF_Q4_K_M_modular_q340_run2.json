@@ -1,0 +1,49 @@
+{
+  "question_id": "Q340",
+  "query": "What is the capacity of the Stadium, other than Kauffman Stadium, designed by Charles Deaton ? ",
+  "ground_truth": "76,416",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Kauffman Stadium has a capacity of 37,903 seats.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kauffman Stadium: Kauffman Stadium ( ), often called \"The K\", is a baseball park located in Kansas City, Missouri, that is home to the Kansas City Royals of Major League Baseball (MLB).  It is part of the Truman Sports Complex together with the adjacent Arrowhead Stadium, home of the Kansas City Chiefs of the National Football League.  The ballpark is named for Ewing Kauffman, the founder and first owner of the Royals.  It opened in 1973 as Royals Stadium and was named for Kauffman on July 2, 1993.  The ballpark's listed seating capacity since 2009 is 37,903.",
+      "Charles Deaton: Charles Utter Deaton (January 1, 1921 \u2013 December 18, 1996) was an American architect.  He designed several athletic stadiums, and is noted for his futuristic Sculptured House that was featured in the 1973 film \"Sleeper\".  He is also noted as the designer of Kansas City's Arrowhead Stadium and Kauffman Stadium.",
+      "Rungrado 1st of May Stadium: The Rungrado 1st of May Stadium, also known as the May Day Stadium, is a multi-purpose stadium in Pyongyang, North Korea, completed on 1 May 1989.  It is the largest stadium in the world, with a total capacity of 114,000.  The site occupies an area of 20.7 ha ."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 429,
+    "generation_tokens": 20,
+    "generation_speed": 232.09125828275677,
+    "prompt_eval_speed": 14263.864875648358,
+    "generation_latency_s": 0.2264697999926284,
+    "latency": 0.577100700000301,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2421606,
+    "stage_route_s": 0.10039450007025152,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19443309993948787,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05563570000231266,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1699928008019924e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22650140000041574,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5771097999531776,
+    "unaccounted_latency_s": 9.440002031624317e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Capacity of Kauffman Stadium, designed by Charles Deaton",
+      "Other capacities beyond Kauffman Stadium"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

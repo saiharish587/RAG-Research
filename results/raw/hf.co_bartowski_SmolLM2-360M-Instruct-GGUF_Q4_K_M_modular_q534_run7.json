@@ -1,0 +1,49 @@
+{
+  "question_id": "Q534",
+  "query": "With whom did this American singer, songwriter and record producer, who contributed to the single \"Marvin Gaye\" with Julie Frost, co-produced and performed the 2015 song for a movie soundtrack?",
+  "ground_truth": "Wiz Khalifa",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The American singer, songwriter, and record producer Marvin Gaye co-produced and performed the 2015 song \"Lift Me Up\" for the movie soundtrack \"Endless Love\" Soundtrack.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marvin Gaye: Marvin Gaye ( ; born Marvin Pentz Gay Jr.; April 2, 1939\u00a0\u2013 April 1, 1984) was an American singer, songwriter and record producer.  Gaye helped to shape the sound of Motown in the 1960s, first as an in-house session player and later as a solo artist with a string of hits, including \"Ain't That Peculiar\", \"How Sweet It Is (To Be Loved By You)\" and \"I Heard It Through the Grapevine\", and duet recordings with Mary Wells, Kim Weston, Diana Ross and Tammi Terrell, later earning the titles \"Prince of Motown\" and \"Prince of Soul\".",
+      "Julie Frost: Julie Frost is an American songwriter, singer, guitar player and music producer.  She is also the founder of the non-profit \"Songs For Elephants\", with the mission to help mobilize the music and entertainment industry in support of the world's elephants.  She is the second American songwriter to win the Eurovision Song Contest, as co-writer of the song \"Satellite\", which won the contest for Germany.  Frost wrote the hook for Black Eyed Peas' multi-platinum single \"Just Can't Get Enough\", the hook for Pitbull's \"Castle Made of Sand\", and Flo Rida's \"Sweet Spot\".  She also co-wrote Beyonc\u00e9's single \"Countdown\", Ed Sheeran's \"Kiss Me\", Marina and the Diamonds's \"Primadonna\", and Madonna's song \"Masterpiece\", from the soundtrack of her movie \"W.E.\", and won a Golden Globe award for best original song in a soundtrack.  Most recently, Frost wrote the end credit song and lead single for the \"Endless Love\" Soundtrack performed by Tegan and Sara and co-wrote \"Lift Me Up\" featuring Nico and Vinz and Ladysmith Black Mambazo on Guetta's album \"Listen\", and co-wrote Charlie Puth's single \"Marvin Gaye\" with Charlie Puth featuring Meghan Trainor.",
+      "Here, My Dear: Here, My Dear is the fifteenth studio album by music artist Marvin Gaye, released December 15, 1978, on Motown-subsidiary label Tamla Records.  Recording sessions for the album took place between 1977 and 1978 at Gaye's personal studios, Marvin Gaye Studios in Los Angeles, California.  The album was notable for its subject matter's being dedicated to the fallout of Gaye's marriage to his first wife, Anna Gordy Gaye.  Initially a commercial and critical failure upon its release, it was later hailed by music critics as one of Gaye's best produced albums in the years following Gaye's death.  \"It's taken me a while,\" Anna Gordy admitted in later years, \"but I've come to appreciate every form of Marvin's music.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 760,
+    "generation_tokens": 46,
+    "generation_speed": 222.60075103557742,
+    "prompt_eval_speed": 88795.42002570393,
+    "generation_latency_s": 0.3393087999429554,
+    "latency": 0.6440699000377208,
+    "total_prompt_tokens": 954,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2324036,
+    "stage_route_s": 0.10314260004088283,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1480530999833718,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0533914000261575,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.770009011030197e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3393409999553114,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6440789999905974,
+    "unaccounted_latency_s": 9.379989933222532e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Marvin Gaye",
+      "Query 2: Julie Frost"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

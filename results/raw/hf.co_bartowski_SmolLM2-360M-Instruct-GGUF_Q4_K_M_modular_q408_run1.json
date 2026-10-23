@@ -1,0 +1,49 @@
+{
+  "question_id": "Q408",
+  "query": "which writer has the highest number of skill  Langston Hughes or  Ian McEwan",
+  "ground_truth": "Langston Hughes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Ian McEwan has the highest number of skill in both writing and film, with a total of 50 skill points.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ian McEwan: Ian Russell McEwan (born 21 June 1948) is an English novelist and screenwriter.  In 2008, \"The Times\" featured him on their list of \"The 50 greatest British writers since 1945\", and also in 2008 \"The Daily Telegraph\" ranked him number 19 in their list of the \"100 most powerful people in British culture\".",
+      "Langston Hughes: James Mercer Langston Hughes (February 1, 1902 \u2013 May 22, 1967) was an American poet, social activist, novelist, playwright, and columnist from Joplin, Missouri.",
+      "Anthony Frewin: Anthony Edward Frewin (born 1947, in Kentish Town, London) is a writer and erstwhile personal assistant to film director Stanley Kubrick (from 1965 to 1968, and from 1979 to 1999).  Frewin now represents the Stanley Kubrick Estate.  His novel \"London Blues\" has been described as \"masterful\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 328,
+    "generation_tokens": 28,
+    "generation_speed": 217.8496681682733,
+    "prompt_eval_speed": 11470.536807134114,
+    "generation_latency_s": 0.27004109998233616,
+    "latency": 0.6203807999845594,
+    "total_prompt_tokens": 464,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23228179999999998,
+    "stage_route_s": 0.11270559998229146,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1779578001005575,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05949219991452992,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.789997521787882e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2700856000883505,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6203914999496192,
+    "unaccounted_latency_s": 9.299989324063063e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Ian McEwan\"",
+      "\"Langston Hughes\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

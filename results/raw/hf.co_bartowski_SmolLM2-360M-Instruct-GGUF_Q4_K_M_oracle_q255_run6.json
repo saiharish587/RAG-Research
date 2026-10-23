@@ -1,0 +1,33 @@
+{
+  "question_id": "Q255",
+  "query": "in 1999, Spirit Halloween LLC was purchased by a mall retailer that has how many stores in the United States and Canada ?",
+  "ground_truth": "over 600 stores",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Spirit Halloween LLC was purchased by Spencer Gifts LLC in 1999.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Spirit Halloween: Spirit Halloween LLC is a seasonal retailer that supplies Halloween decorations, costumes and accessories.  It was founded in 1983 and is based in Egg Harbor Township, New Jersey.  In 1999, the store had 60 seasonal locations and was purchased by Spencer Gifts.",
+      "Spencer Gifts: Spencer Gifts LLC, doing business as Spencer's, is a North American mall retailer with over 600 stores in the United States and Canada.  Their stores specialize in novelty and gag gifts, and also sell clothing, band merchandise, sex toys, room decor, collectible figures, fashion and body jewelry, and fantasy and horror items.  The company also owns and operates a seasonal retailer, Spirit Halloween."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 241,
+    "generation_tokens": 18,
+    "generation_speed": 226.32684110598382,
+    "prompt_eval_speed": 29837.811068466013,
+    "generation_latency_s": 0.16333350003696978,
+    "latency": 0.1633927000220865,
+    "total_prompt_tokens": 241,
+    "total_generation_tokens": 18,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0676227,
+    "stage_generate_s": 0.1633721999824047,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.16339929995592684,
+    "unaccounted_latency_s": 2.7499976567924023e-05
+  }
+}

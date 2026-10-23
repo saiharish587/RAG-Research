@@ -1,0 +1,49 @@
+{
+  "question_id": "Q5",
+  "query": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+  "ground_truth": "Greenwich Village, New York City",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The director of the romantic comedy \"Big Stone Gap\" is based in Albany, New York.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Big Stone Gap (film): Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.  Based on Trigiani's 2000 best-selling novel of the same name, the story is set in the actual Virginia town of Big Stone Gap circa 1970s.  The film had its world premiere at the Virginia Film Festival on November 6, 2014.",
+      "Albany, New York: Albany ( ) is the capital of the U.S. state of New York and the seat of Albany County.  Roughly 150 mi north of New York City, Albany developed on the west bank of the Hudson River, about 10 mi south of its confluence with the Mohawk River.  The population of the City of Albany was 97,856 according to the 2010 census.  Albany constitutes the economic and cultural core of the Capital District of New York State, which comprises the Albany-Schenectady-Troy, NY Metropolitan Statistical Area, including the nearby cities and suburbs of Troy, Schenectady, and Saratoga Springs.  With a 2013 Census-estimated population of 1.1 million the Capital District is the third-most populous metropolitan region in the state and 38th in the United States.",
+      "Oliver Stone: William Oliver Stone (born September 15, 1946) is an American screenwriter, film producer, and director of motion pictures and documentaries.  Stone won an Academy Award for Best Adapted Screenplay as writer of \"Midnight Express\" (1978).  He also wrote the acclaimed gangster movie \"Scarface\" (1983).  As a director, Stone achieved prominence as director/writer of the war drama \"Platoon\" (1986), for which Stone won the Academy Award for Best Director; the film was awarded Best Picture.  \"Platoon\" was the first in a trilogy of films based on the Vietnam War, in which Stone served as an infantry soldier.  He continued the series with \"Born on the Fourth of July\" (1989)\u2014for which Stone won his second Best Director Oscar\u2014and \"Heaven & Earth\" (1993).  Stone's other notable works include the Salvadoran Civil War-based drama \"Salvador\" (1986); the financial drama \"Wall Street\" (1987) and its 2010 sequel \"\"; the Jim Morrison biopic \"The Doors\" (1991); and a trilogy of films based on the American Presidency\u2014\"JFK\" (1991), \"Nixon\" (1995) and \"W.\" (2008).  His latest film is \"Snowden\" (2016)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 712,
+    "generation_tokens": 20,
+    "generation_speed": 230.41740112213273,
+    "prompt_eval_speed": 13998.663049034643,
+    "generation_latency_s": 0.24827670003287494,
+    "latency": 0.5903131000231951,
+    "total_prompt_tokens": 850,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235533,
+    "stage_route_s": 0.09632869996130466,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1904983000131324,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055033500073477626,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.959998816251755e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2483103999402374,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5903218999737874,
+    "unaccounted_latency_s": 9.200000204145908e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"New York City, NY\"",
+      "\"The Big Stone Gap, New York City\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

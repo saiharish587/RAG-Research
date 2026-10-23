@@ -1,0 +1,42 @@
+{
+  "question_id": "Q52",
+  "query": "In 1991 Euromarch\u00e9 was bought by a chain that operated how any hypermarkets at the end of 2016?",
+  "ground_truth": "1,462",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The question is asking about whether Euromarch\u00e9 was bought by a chain that operates hypermarkets in 1991. The answer to this question would be yes, as it appears to be a part of a larger chain called Future Group. This chain has been operating for over two decades and has expanded its reach into various markets beyond just hypermarkets.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Euromarch\u00e9: Euromarch\u00e9 (\"Euromarket\") was a French hypermarket chain.  The first store opened in 1968 in Saint-Michel-sur-Orge.  In June 1991, the group was rebought by its rival, Carrefour, for 5,2 billion francs.",
+      "Carrefour: Carrefour S.A. (] ) is a French multinational retailer headquartered in Boulogne Billancourt, France, in the Hauts-de-Seine Department near Paris.  It is one of the largest hypermarket chains in the world (with 1,462 hypermarkets at the end of 2016).  Carrefour operates in more than 30 countries, in Europe, the Americas, Asia and Africa.  Carrefour means \"crossroads\" and \"public square\" in French.  The company is a component of the Euro Stoxx 50 stock market index.",
+      "Big Bazaar: Big Bazaar is an Indian retail store that operates as a chain of hypermarkets, discount department stores, and grocery stores.  The retail chain was founded by Kishore Biyani under his parent organisation Future Group, which is known for having a significant prominence in Indian retail and fashion sectors.  Big Bazaar is also the parent chain of Food Bazaar, Fashion at Big Bazaar (abbreviated as \"fbb\") and eZone where at locations it houses all under one roof, while it is sister chain of retail outlets like Brand Factory, Home Town, Central, eZone, etc."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 433,
+    "generation_tokens": 73,
+    "generation_speed": 401.9403256267241,
+    "prompt_eval_speed": 58442.43487650155,
+    "generation_latency_s": 0.2664820000063628,
+    "latency": 0.6183172999881208,
+    "total_prompt_tokens": 524,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.132081,
+    "stage_rewrite_s": 0.15069299994502217,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07176749990321696,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12925550004001707,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2665153000270948,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6183264999417588,
+    "unaccounted_latency_s": 9.560002945363522e-05,
+    "rewritten_query": "In 1991, Euromarch\u00e9 acquired a chain that operated hypermarkets in 2016.",
+    "query_was_rewritten": true
+  }
+}

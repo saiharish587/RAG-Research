@@ -1,0 +1,42 @@
+{
+  "question_id": "Q268",
+  "query": "Candy Coburn has shared the stage with an American country music group with who playing guitar?",
+  "ground_truth": "Charles Kelley",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Lady Antebellum",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Candy Coburn: Candy Coburn is an American national performing country music artist who has shared the stage with many notable artists, including Brooks and Dunn, Kellie Pickler, Montgomery Gentry, Blake Shelton, Miranda Lambert, Gary Allan, Josh Turner, Lady Antebellum and others.  Scheduled to release her third album in 2010, Candy's most notable contribution to music so far has been her song, \"Pink Warrior.\"",
+      "The Bama Band: The Bama Band is an American country music group composed of Lamar Morris (vocals, guitar), Wayne \"Animal\" Turner (guitar), Clifford E. \"Cowboy\" Eddie Long (steel guitar), Jerry McKinney (saxophone), Vernon Derrick (fiddle), Ray Barrickman (bass), Billy Earheart (keyboards) and William Claude Marshall (drums).  For more than twenty years, The Bama Band were the backing band for Hank Williams, Jr. The Bama Band was nominated twice for Band of the Year by the Academy of Country Music.  They also found success on the \"Billboard\" Hot Country Singles chart in the 1980s with singles like \"Dallas,\" \"Tijuana Sunrise\" and \"What Used to Be Crazy.\"  An eponymous album released on Compleat Records in 1985 charted on the \"Billboard\" Top Country Albums chart.",
+      "Lady Antebellum: Lady Antebellum is an American country music group formed in Nashville, Tennessee in 2006.  The group is composed of Hillary Scott (lead and background vocals), Charles Kelley (lead and background vocals, guitar), and Dave Haywood (background vocals, guitar, piano, mandolin).  Scott is the daughter of country music singer Linda Davis, and Kelley is the brother of pop singer Josh Kelley."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 480,
+    "generation_tokens": 6,
+    "generation_speed": 247.2086028593795,
+    "prompt_eval_speed": 15680.637679265625,
+    "generation_latency_s": 0.9450890000443906,
+    "latency": 3.4143961999798194,
+    "total_prompt_tokens": 559,
+    "total_generation_tokens": 31,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12290119999999999,
+    "stage_rewrite_s": 1.3059133000206202,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0220052000368014,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14127410005312413,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9451229000696912,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.414405000046827,
+    "unaccounted_latency_s": 9.009987115859985e-05,
+    "rewritten_query": "Candy Coburn has joined a band that plays guitar, bringing her to the stage alongside another American country music group.",
+    "query_was_rewritten": true
+  }
+}

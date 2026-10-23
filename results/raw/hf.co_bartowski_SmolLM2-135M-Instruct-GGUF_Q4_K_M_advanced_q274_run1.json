@@ -1,0 +1,42 @@
+{
+  "question_id": "Q274",
+  "query": "on 16 January 1995 \"First Knight\" was being filmed at a studio located how far from Windsor ?",
+  "ground_truth": "7 miles",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "On 16 January 1995, \"First Knight\" was being filmed at a studio located approximately 20 miles west of central London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Filming of James Bond in the 1990s: Principal photography for the film began on 16 January 1995 and continued until 6 June.  The producers were unable to film at Pinewood Studios, the usual location for Bond films, because it had been reserved for \"First Knight\".  Instead, an old Rolls-Royce factory at the Leavesden Aerodrome in Hertfordshire was converted into a new studio.  The producers later said Pinewood would have been too small.",
+      "Pinewood Studios: Pinewood Studios is a British film and television studio located approximately 20 mi west of central London, and 7 miles from Windsor.",
+      "Lord Frederick Windsor: Lord Frederick Windsor (Frederick Michael George David Louis; born 6 April 1979), also nicknamed Freddie Windsor, is a British financial analyst, and the only son of Prince and Princess Michael of Kent."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 279,
+    "generation_tokens": 33,
+    "generation_speed": 396.62984819893995,
+    "prompt_eval_speed": 18331.1432325887,
+    "generation_latency_s": 0.1747674000216648,
+    "latency": 0.5216472999891266,
+    "total_prompt_tokens": 365,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1355007,
+    "stage_rewrite_s": 0.16059880005195737,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08201499993447214,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.104143499978818,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1748017999343574,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5216557999374345,
+    "unaccounted_latency_s": 9.720004163682461e-05,
+    "rewritten_query": "On 16 January 1995, the first Knight film premiered at a location near Windsor.",
+    "query_was_rewritten": true
+  }
+}

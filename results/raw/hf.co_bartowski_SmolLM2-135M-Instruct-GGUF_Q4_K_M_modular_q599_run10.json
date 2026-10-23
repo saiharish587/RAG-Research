@@ -1,0 +1,48 @@
+{
+  "question_id": "Q599",
+  "query": "What movie is the the Spinning turtle attraction in the worlds 21st largest theme park based off of?",
+  "ground_truth": "Finding Nemo",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Spinning Turtle attraction in the world's 21st-largest theme park, Disneyland Paris, is a spinner coaster featuring a green sea turtle character from the film \"Finding Nemo\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Crush's Coaster: Crush's Coaster is a spinning roller coaster at Walt Disney Studios Park in Disneyland Paris.  The attraction officially opened on June 9, 2007 as part of an expansion project in Toon Studio, an area within Walt Disney Studios Park formerly known as Animation Courtyard.  It is themed to the Disney-Pixar film \"Finding Nemo\" and named after Crush, a green sea turtle character from the film.  Most of the roller coaster is enclosed and features dark ride special effects.",
+      "Rock 'n' Roller Coaster Starring Aerosmith: Rock 'n' Roller Coaster Starring Aerosmith is an enclosed launched steel roller coaster at Disney's Hollywood Studios at the Walt Disney World Resort and at the Walt Disney Studios Park in Disneyland Paris (where it is called \"Rock 'n' Roller Coaster avec Aerosmith\").  As the attraction's name suggests, the coaster features Aerosmith members, Steven Tyler, Joe Perry, Tom Hamilton, Joey Kramer, and Brad Whitford.",
+      "Jurassic World: Jurassic World is a 2015 American science-fiction adventure film, the first film in the sequel trilogy and the fourth installment of the \"Jurassic Park\" series.  The film was directed and co-written by Colin Trevorrow, produced by Frank Marshall and Patrick Crowley, and stars Chris Pratt and Bryce Dallas Howard.  The production companies were Steven Spielberg's Amblin Entertainment, also responsible for the rest of the \"Jurassic Park\" franchise, and Thomas Tull's Legendary Pictures.  Set 22 years after the events of \"Jurassic Park\", \"Jurassic World\" takes place on the same fictional Central American island of Isla Nublar, off the Pacific coast of Costa Rica, where a theme park populated with cloned dinosaurs has operated for ten years.  The park plunges into chaos when a genetically created dinosaur breaks loose and goes on a rampage across the island."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 515,
+    "generation_tokens": 43,
+    "generation_speed": 367.0351244078358,
+    "prompt_eval_speed": 69332.2563274098,
+    "generation_latency_s": 0.23980440001469105,
+    "latency": 0.6161419999552891,
+    "total_prompt_tokens": 661,
+    "total_generation_tokens": 95,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2443652,
+    "stage_route_s": 0.16780920000746846,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16888479993212968,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039460100000724196,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3899985030293465e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23985500005073845,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.616154900053516,
+    "unaccounted_latency_s": 0.00010289996862411499,
+    "route": "rag",
+    "router_raw": "The Spinning Turtle attraction in the world's largest theme park, based on a Disney animated film called \"Spinning.\"",
+    "sub_queries": [
+      "The Spinning Turtle attraction in the world's largest theme park, based on the movie \"Spinning\" by the same name."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q317",
+  "query": "The northern English anglian Kingdom in the Humber estuary spoke what dialect of english?",
+  "ground_truth": "Northumbrian",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The northern English Anglian Kingdom in the Humber estuary spoke a dialect of Old English called Northumbrian.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Northumbrian dialect: Northumbrian was a dialect of Old English spoken in the Anglian Kingdom of Northumbria.  Together with Mercian, Kentish and West Saxon, it forms one of the sub-categories of Old English devised and employed by modern scholars.",
+      "Essex dialect: The Essex dialect is a rapidly disappearing dialect similar to some forms of East Anglian English and is now mainly confined to the north and the east of Essex.  It shares vast similarities with both Suffolk and Norfolk dialects, with its own peculiarities.  With rapid urbanisation in the twentieth century as well as the impact of the London overspill, Estuary English, a milder form of the London accent predominant largely along the Thames Estuary and thus the name, has become common, mainly in the southern portion of the county.  As a result of the growing London influence, the usage of rural accents everywhere and the rural Essex dialect is now normally, but not always, confined to older generations in some of the areas affected and the dialect itself stands in a vulnerable state in those affected parts of the county.  Elsewhere in Essex, the dialect and rural accent continues.",
+      "Kingdom of Northumbria: The Kingdom of Northumbria ( ; Old English: \"Nor\u00fehymbra r\u012bce\" , \"kingdom of the Northumbrians\") was a medieval Anglian kingdom in what is now northern England and south-east Scotland, which subsequently became an earldom in a unified English kingdom.  The name reflects the approximate southern limit to the kingdom's territory, the Humber estuary."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 24,
+    "generation_speed": 226.80880018144705,
+    "prompt_eval_speed": 13299.89109270321,
+    "generation_latency_s": 0.25007960002403706,
+    "latency": 0.6955684999702498,
+    "total_prompt_tokens": 539,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23306759999999999,
+    "stage_route_s": 0.11444989999290556,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27352150005754083,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057346399989910424,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.340005736798048e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25011310004629195,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6955785999307409,
+    "unaccounted_latency_s": 9.499979205429554e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The northern English dialect spoken in the Humber estuary is called the Northumbrian dialect.",
+      "It's also known as the East Midland dialect or the Lincolnshire dialect."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

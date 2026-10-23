@@ -1,0 +1,42 @@
+{
+  "question_id": "Q228",
+  "query": "How long is the bridge in the \u00d6resund Region that connect Copenhagen, Denmark and Malmo, Sweden?",
+  "ground_truth": "8 km",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The \u00d8resund Bridge connects Copenhagen, Denmark and Malm\u00f6, Sweden. It spans a distance of approximately 118 km between the two cities.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "\u00d8resund Region: The \u00d8resund or \u00d6resund Region (Danish: \"\u00d8resundsregionen\" ; Swedish: \"\u00d6resundsregionen\" ] ) is a transnational metropolitan area in northern Europe, centred around the \u00d8resund strait and the two cities which lie on either side, Copenhagen, Denmark and Malm\u00f6, Sweden.  The region is connected by the \u00d8resund Bridge, which spans the strait at its southern end, and the HH Ferry route between Elsinore, Denmark (Danish: \"Helsing\u00f8r\") and Helsingborg, Sweden at the narrowest point of the strait.",
+      "Copenhagen Malm\u00f6 Port: Copenhagen Malm\u00f6 Port AB (CMP) operates the ports in Denmark's capital Copenhagen and in Sweden's third largest city, Malm\u00f6.  The ports are located either side of \u00d8resund, a strait between the two countries.  The combined \u00d8resund Region is the Nordic countries' largest metropolitan area in terms of population.  The region is connected by the \u00d8resund Bridge, which spans the strait at its southern end, and the HH Ferry route between Helsing\u00f8r, Denmark and Helsingborg, Sweden.",
+      "\u00d8resund: \u00d8resund or \u00d6resund (Danish: \"\u00d8resund\" , ] ; Swedish: \"\u00d6resund\" , ] ), commonly known in English as the Sound, is a strait which forms the Danish\u2013Swedish border, separating Sj\u00e6lland (Denmark) from Sk\u00e5ne (Sweden).  The strait has a length of 118 km and the width varies from 4 km to 28 km .  It is 4 km wide at its narrowest point between Helsing\u00f8r in Denmark and Helsingborg in Sweden."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 34,
+    "generation_speed": 261.29927220467414,
+    "prompt_eval_speed": 63163.481953290866,
+    "generation_latency_s": 1.043817300000228,
+    "latency": 3.4209340000525117,
+    "total_prompt_tokens": 558,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1227837,
+    "stage_rewrite_s": 1.214546899893321,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0212447999510914,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14120579999871552,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0438565999502316,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.420945900026709,
+    "unaccounted_latency_s": 9.240023791790009e-05,
+    "rewritten_query": "The \u00d6resund Region connects Copenhagen, Denmark, with Malmo, Sweden via a 120-kilometer bridge.",
+    "query_was_rewritten": true
+  }
+}

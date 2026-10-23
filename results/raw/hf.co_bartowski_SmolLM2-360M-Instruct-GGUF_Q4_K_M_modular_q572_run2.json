@@ -1,0 +1,49 @@
+{
+  "question_id": "Q572",
+  "query": "What was the release date and price for the release of Mac OS X that has the software for creating WWF files?",
+  "ground_truth": "April 29, 2005 for US$129.95",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Mac OS X 10.2, code named Jaguar, was released on August 23, 2002 either for single-computer installations or in a \u201cfamily pack,\u201d which allowed five installations on separate computers in one household. The operating system was generally well received by most Mac users as a large step forward in the areas of stability, general speed enhancements, compatibility with other flavors of Unix and the lineup of both graphical and terminal applications available; however, many critics, such as Amazon.com users, still claimed that significant user interface speed issues existed and that the operating system was still a big step down from Mac OS 9.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mac OS X Tiger: Mac OS X 10.4 Tiger is the fifth major release of Mac OS X (now named macOS), Apple's desktop and server operating system for Mac computers.  Tiger was released to the public on April 29, 2005 for US$129.95 as the successor to Mac OS X 10.3 Panther.  Some of the new features included a fast searching system called Spotlight, a new version of the Safari web browser, Dashboard, a new \u2018Unified\u2019 theme, and improved support for 64-bit addressing on Power Mac G5s. Mac OS X 10.4 Tiger shocked executives at Microsoft by offering a number of features, such as fast file searching and improved graphics processing, that Microsoft had spent several years struggling to add to Windows with acceptable performance.",
+      "Mac OS X 10.0: Mac OS X version 10.0, code named Cheetah, is the first major release of Mac OS X (later named OS X and then macOS), Apple\u2019s desktop and server operating system.  Mac OS X 10.0 was released on March 24, 2001 for a price of US$129.  It was the successor of the Mac OS X Public Beta and the predecessor of Mac OS X 10.1.",
+      "Mac OS X 10.2: Mac OS X Jaguar, version 10.2, is the third major release of Mac OS X (now named macOS), Apple's desktop and server operating system.  It superseded Mac OS X 10.1 and preceded Mac OS X Panther.  The operating system was released on August 23, 2002 either for single-computer installations, and in a \u201cfamily pack,\u201d which allowed five installations on separate computers in one household.  The operating system was generally well received by most Mac users as a large step forward in the areas of stability, general speed enhancements, compatibility with other flavors of Unix and the lineup of both graphical and terminal applications available; however, many critics, such as Amazon.com users, still claimed that significant user interface speed issues existed and that the operating system was still a big step down from Mac OS 9."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 561,
+    "generation_tokens": 134,
+    "generation_speed": 230.9078815408104,
+    "prompt_eval_speed": 13034.689467692093,
+    "generation_latency_s": 0.7351831999840215,
+    "latency": 1.0856640000129119,
+    "total_prompt_tokens": 707,
+    "total_generation_tokens": 159,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2428786,
+    "stage_route_s": 0.10931209998670965,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18416379997506738,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05682229995727539,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.340005736798048e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.7352240999462083,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0856764999916777,
+    "unaccounted_latency_s": 0.00010160007514059544,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Mac OS X 10.5\"",
+      "\"$99.99\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

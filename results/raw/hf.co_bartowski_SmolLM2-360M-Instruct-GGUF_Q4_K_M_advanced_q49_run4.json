@@ -1,0 +1,42 @@
+{
+  "question_id": "Q49",
+  "query": "Are Ferocactus and Silene both types of plant?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "No, Ferocactus and Silene are not both types of plants. They belong to different genera within the family Caryophyllaceae.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Silene: Silene is a genus of flowering plants in the family Caryophyllaceae.  Containing approximately 700 species, it is the largest genus in the family.  Common names include campion (which is shared with the related genus \"Lychnis\") and catchfly.  Many \"Silene\" species are widely distributed, particularly in the northern hemisphere.",
+      "Ferocactus: Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers.  There are about 30 species included in the genus.  They are found in the southwestern United States and northwestern Mexico.",
+      "Silene stenophylla: Silene stenophylla is a species of flowering plant in the family Caryophyllaceae.  Commonly called narrow-leafed campion, it is a species in the genus \"Silene\".  It grows in the Arctic tundra of far eastern Siberia and the mountains of Northern Japan.  Frozen samples, estimated via radiocarbon dating to be around 32,000 years old, were discovered in the same area as current living specimens, and in 2012 a team of scientists successfully regenerated a plant from the samples."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 29,
+    "generation_speed": 259.92184419029866,
+    "prompt_eval_speed": 42890.001352996886,
+    "generation_latency_s": 1.0487799999536946,
+    "latency": 3.4243948999792337,
+    "total_prompt_tokens": 389,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1237364,
+    "stage_rewrite_s": 1.1993895000778139,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.063165400060825,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11294259992428124,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0488204000284895,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4244055000599474,
+    "unaccounted_latency_s": 8.809985592961311e-05,
+    "rewritten_query": "Ferocactus is a type of cactus, while Silene is a type of flowering plant.",
+    "query_was_rewritten": true
+  }
+}

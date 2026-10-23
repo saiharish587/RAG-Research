@@ -1,0 +1,49 @@
+{
+  "question_id": "Q470",
+  "query": "What 2016 film stars actor Xavier Samuel and an actress who portrayed Vasilisa Dragomir in the film \"Vampire Academy\"?",
+  "ground_truth": "Mr. Church",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "X-Men: Apocalypse",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vampire Academy (film): Vampire Academy (also known as Vampire Academy: Blood Sisters) is a 2014 American fantasy comedy film based on Richelle Mead's 2007 best-selling novel of the same name, directed by Mark Waters, and scripted by Daniel Waters.  The film stars Zoey Deutch, Danila Kozlovsky, Lucy Fry, and Dominic Sherwood in lead roles.  It was released in North America on February 7, 2014 and globally between March and July of the same year.  It was distributed in the United States by The Weinstein Company.",
+      "Lucy Fry: Lucy Elizabeth Fry (born 13 March 1992) is an Australian actress.  She is known for portraying Zoey in \"Lightning Point\", Lyla in \"\", and Vasilisa Dragomir in the film \"Vampire Academy\".  Fry was also cast in Hulu's eight part miniseries \"11.22.63\" as Marina Oswald, wife of Lee Harvey Oswald, and played the lead in the 2016 Australian horror television series \"Wolf Creek\".",
+      "X-Men: Apocalypse: X-Men: Apocalypse is a 2016 American superhero film based on the fictional X-Men characters that appear in Marvel Comics.  It is the ninth installment in the \"X-Men\" film series and a sequel to \"\".  Directed by Bryan Singer, with a screenplay by Simon Kinberg from a story conceived by Singer, Kinberg, Michael Dougherty and Dan Harris, the film stars James McAvoy, Michael Fassbender, Jennifer Lawrence, Oscar Isaac, Nicholas Hoult, Rose Byrne, Tye Sheridan, Sophie Turner, Olivia Munn and Lucas Till.  The ancient mutant En Sabah Nur awakens in 1983 and plans to wipe out modern civilization and take over the world, leading the X-Men to try to stop him and defeat his team of renegade mutants."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 528,
+    "generation_tokens": 7,
+    "generation_speed": 225.1527822450949,
+    "prompt_eval_speed": 61776.06177606177,
+    "generation_latency_s": 0.15557069994974881,
+    "latency": 0.6260817999718711,
+    "total_prompt_tokens": 692,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2361874,
+    "stage_route_s": 0.10428600001614541,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3063476000679657,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0597012999933213,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.21000474691391e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1556127000367269,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6260916000464931,
+    "unaccounted_latency_s": 9.249988943338394e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Film Starring Actor Xavier Samuel:* \"The Last Song\" (2016)",
+      "Actress Who Played Vasilisa Dragomir:* \"Vampire Academy\" (2016)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

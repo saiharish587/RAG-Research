@@ -1,0 +1,49 @@
+{
+  "question_id": "Q598",
+  "query": "Caste starred what English character actress who was nominated for an Academ Award for her performance in Room at the Top?",
+  "ground_truth": "Hermione Baddeley",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Katharine Hepburn",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hermione Baddeley: Hermione Youlanda Ruby Clinton-Baddeley, known as Hermione Baddeley (13 November 1906 \u2013 19 August 1986), was an English character actress of theatre, film and television.  She was nominated for an Academy Award for Best Supporting Actress for her performance in \"Room at the Top\" (1959) and a Tony Award for Best Performance by a Leading Actress in a Play for \"The Milk Train Doesn't Stop Here Anymore\" in 1963.  She typically played brash, vulgar characters, often referred to as \"brassy\" or \"blowsy\".  She found her milieu in revue, in which she played from the 1930s to the 1950s, co-starring several times with Hermione Gingold.",
+      "Kevin Spacey filmography: Kevin Spacey is an American actor, director and producer, who began acting on stage.  After winning two Academy Awards for \"The Usual Suspects\" and \"American Beauty\".  He stars in the Netflix television series \"House of Cards\".",
+      "Katharine Hepburn: Katharine Houghton Hepburn (May 12, 1907\u00a0\u2013 June 29, 2003) was an American actress.  Known for her fierce independence and spirited personality, Hepburn was a leading lady in Hollywood for more than 60 years.  She appeared in a range of genres, from screwball comedy to literary drama, and she received four Academy Awards\u2014a record for any performer\u2014for Best Actress.  In 1999, Hepburn was named by the American Film Institute as the greatest female star of Classic Hollywood Cinema."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 458,
+    "generation_tokens": 6,
+    "generation_speed": 322.9626439875121,
+    "prompt_eval_speed": 24064.733081126524,
+    "generation_latency_s": 0.15458749991375953,
+    "latency": 0.7941906000487506,
+    "total_prompt_tokens": 606,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2508819,
+    "stage_route_s": 0.17709870007820427,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.40743519994430244,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05489660007879138,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.709996912628412e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15462079993449152,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7941999000031501,
+    "unaccounted_latency_s": 9.200000204145908e-05,
+    "route": "rag",
+    "router_raw": "Casting actor Caste Starred\n\nAnswer with the single word 'yes' or 'no':",
+    "sub_queries": [
+      "Casting actor who was nominated for an Academy Award for his performance in Room at the Top is a question that has been asked many times. Here are two search queries related to this question:",
+      "Who was the first woman to win an Academy Award for Best Actor?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

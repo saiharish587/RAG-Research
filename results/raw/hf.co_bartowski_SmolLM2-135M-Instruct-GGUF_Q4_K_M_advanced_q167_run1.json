@@ -1,0 +1,42 @@
+{
+  "question_id": "Q167",
+  "query": "Which came out first, Dinosaur or McFarland, USA",
+  "ground_truth": "Dinosaur",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The movie \"Dinosaur\" was released on June 30, 2017 in the United States and was directed by Niki Caro, produced by Mark Ciardi and Gordon Gray. The film stars Kevin Costner as Jim White, the school's coach who leads the team to win a state championship.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "McFarland, USA: McFarland, USA (also known as McFarland) is a 2015 American sports drama film directed by Niki Caro, produced by Mark Ciardi and Gordon Gray, written by Christopher Cleveland, Bettina Gilois and Grant Thompson with music composed by Ant\u00f4nio Pinto.  The film was co-produced by Walt Disney Pictures and Mayhem Pictures.  Based on the true story of a 1987 cross country team from a mainly Latino high school in McFarland, California, the film stars Kevin Costner as Jim White, the school's coach, who leads the team to win a state championship.  The film also stars Maria Bello and Morgan Saylor.",
+      "Dinosaur (film): Dinosaur is a 2000 American CGI animated adventure film produced by Walt Disney Feature Animation and The Secret Lab and released by Walt Disney Pictures.  It is the 39th Disney animated feature film and Disney's The Secret Lab computer animated feature, though it is not officially labeled as one of the animated classics in the United Kingdom, where \"The Wild\" (2006) is included in the canon instead.",
+      "Billy McFarland (entrepreneur): William Z. McFarland (born 1991) is an American entrepreneur who was the founder and CEO of three companies: Spling, Magnises, and Fyre Media.  McFarland was placed under arrest on June 30, 2017, and charged with wire fraud in Manhattan federal court related to the organization of the Fyre Festival to promote the Fyre music booking app."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 413,
+    "generation_tokens": 66,
+    "generation_speed": 402.4144869215292,
+    "prompt_eval_speed": 23085.522638345446,
+    "generation_latency_s": 0.25631859991699457,
+    "latency": 0.8276470999699086,
+    "total_prompt_tokens": 485,
+    "total_generation_tokens": 139,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1292003,
+    "stage_rewrite_s": 0.2702308000298217,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08180520008318126,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21917569998186082,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.25635189993772656,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8276560999220237,
+    "unaccounted_latency_s": 9.31998947635293e-05,
+    "rewritten_query": "Dinosaur and McFarland were both released in 2013, but they didn't come out at the same time. The first dinosaur was released in 2014, while the second one came out in 2015. So, the original query is: Which came out first, Dinosaur or McFarland, USA?",
+    "query_was_rewritten": true
+  }
+}

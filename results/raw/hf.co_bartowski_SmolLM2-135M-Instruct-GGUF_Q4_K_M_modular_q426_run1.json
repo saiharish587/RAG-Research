@@ -1,0 +1,49 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Stratosphere Las Vegas (formerly Vegas World) is located on the Las Vegas Strip in Winchester, Nevada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "Stratosphere Las Vegas: The Stratosphere Las Vegas (formerly Vegas World) is a hotel, casino, and tower located on Las Vegas Boulevard just north of the Las Vegas Strip in Las Vegas, Nevada, United States.",
+      "Flamingo Las Vegas: Flamingo Las Vegas (formerly The Fabulous Flamingo and Flamingo Hilton Las Vegas) is a hotel and casino located on the Las Vegas Strip in Paradise, Nevada.  It is owned and operated by Caesars Entertainment Corporation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 239,
+    "generation_tokens": 23,
+    "generation_speed": 321.4086081609838,
+    "prompt_eval_speed": 13974.156580716834,
+    "generation_latency_s": 0.19682940002530813,
+    "latency": 0.5750767000718042,
+    "total_prompt_tokens": 373,
+    "total_generation_tokens": 73,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22671390000000002,
+    "stage_route_s": 0.09253409993834794,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22470629995223135,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060823399922810495,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.619996227324009e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1968715999973938,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5750888000475243,
+    "unaccounted_latency_s": 9.830028284341097e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Las Vegas Festival Grounds is located at 5200 El Camino Blvd, Las Vegas, Nevada;",
+      "The company that owns this venue is Las Vegas Convention and Visitors Center (LZBC)."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

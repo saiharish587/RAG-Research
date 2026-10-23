@@ -1,0 +1,49 @@
+{
+  "question_id": "Q447",
+  "query": "What television thriller anthology did the winner of one Golden Globe, two tony Awards and six Primetime Emmy Awards appear on?",
+  "ground_truth": "Darkroom",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The television thriller anthology that Michael Douglas won awards for appearing in was \"The Walking Dead\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Michael Douglas: Michael Kirk Douglas (born September 25, 1944) is an American actor and producer.  Douglas's career includes a diverse range of films in independent and blockbuster genres, for which he has received a number of accolades, both competitive and honorary.  These awards include the Golden Globe Cecil B. DeMille Award for \"outstanding contributions to the world of entertainment\" and the AFI Life Achievement Award, which \"honor[s] an individual whose career in motion pictures or television has greatly contributed to the enrichment of American culture\".",
+      "It (novel): It is a 1986 horror novel by American author Stephen King.  It was his 22nd book and 18th novel written under his own name.  The story follows the experiences of seven children as they are terrorized by a being that exploits the fears and phobias of its victims to disguise itself while hunting its prey.  \"It\" primarily appears in the form of a clown to attract its preferred prey of young children.",
+      "The Walking Dead (season 1): The first season of \"The Walking Dead\", an American post-apocalyptic horror television series on AMC, premiered on October 31, 2010, and concluded on December 5, 2010, consisting of 6 episodes.  Developed for television by Frank Darabont, who wrote or co-wrote four of the season's six episodes and directed the pilot episode, \"Days Gone Bye\", the series is based on the eponymous series of comic books by Robert Kirkman, Tony Moore, and Charlie Adlard.  It was executive produced by Darabont, Kirkman, David Alpert, Charles H. Eglee, and Gale Anne Hurd, with Darabont assuming the role of showrunner."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 471,
+    "generation_tokens": 20,
+    "generation_speed": 242.53301480664058,
+    "prompt_eval_speed": 60176.31276351092,
+    "generation_latency_s": 0.20489679998718202,
+    "latency": 0.5420692000770941,
+    "total_prompt_tokens": 625,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.237954,
+    "stage_route_s": 0.1013144999742508,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18078880000393838,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05489779997151345,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.549995694309473e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20492789999116212,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5420784000307322,
+    "unaccounted_latency_s": 9.4400136731565e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Haunting\" by Stephen King",
+      "\"The Walking Dead\" by Robert Kirkman"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

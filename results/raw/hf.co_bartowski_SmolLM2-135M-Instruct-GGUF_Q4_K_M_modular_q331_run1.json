@@ -1,0 +1,49 @@
+{
+  "question_id": "Q331",
+  "query": "Where is the singer of \"B Boy\" raised?",
+  "ground_truth": "Philadelphia",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The singer of \"B Boy\" was raised in Florida.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "B Boy (song): \"B Boy\" is a song by American hip hop recording artist Meek Mill.  It was released as a third single from \"Dreams Worth More Than Money\" on March 3, 2015, by Maybach Music Group and Atlantic Records.  The song, which was produced by Sap, features guest appearances from Big Sean and ASAP Ferg.",
+      "B Boy Baby: \"B Boy Baby\" is a song written by Phil Spector, Ellie Greenwich, Jeff Barry Craig Klepto Tucker, Peter Celik and Angela Hunte.  It features uncredited vocals by singer Amy Winehouse and was produced by Salaam Remi for Mutya Buena's debut album, \"Real Girl\", being released as the fourth and final single from the album.",
+      "Backstreet Boys: The Backstreet Boys (often abbreviated as BSB) are an American vocal group, formed in Orlando, Florida in 1993.  The group consists of AJ McLean, Howie D., Nick Carter, Kevin Richardson, and Brian Littrell."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 293,
+    "generation_tokens": 13,
+    "generation_speed": 351.58891142663964,
+    "prompt_eval_speed": 19104.12727391276,
+    "generation_latency_s": 0.16195950005203485,
+    "latency": 0.8901472999714315,
+    "total_prompt_tokens": 415,
+    "total_generation_tokens": 209,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2241718,
+    "stage_route_s": 0.13937929994426668,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5324980999575928,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05613649997394532,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.079992115497589e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16199180006515235,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8901567000430077,
+    "unaccounted_latency_s": 0.0001009001862257719,
+    "route": "rag",
+    "router_raw": "The singer of \"B Boy\" was raised in New York City, USA.",
+    "sub_queries": [
+      "Here are two specific searches for the singer of \"B Boy\":",
+      "*Search Query:** \"Where is the singer of \"B Boy\" raised?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

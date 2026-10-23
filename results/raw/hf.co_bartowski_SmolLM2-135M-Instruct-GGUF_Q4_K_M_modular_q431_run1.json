@@ -1,0 +1,48 @@
+{
+  "question_id": "Q431",
+  "query": "What team did the recipient of the 2007 Brownlow Medal play for?",
+  "ground_truth": "Geelong Football Club",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The recipient of the 2007 Brownlow Medal played for the Geelong Football Club.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2007 Brownlow Medal: The 2007 Brownlow Medal was the 80th year the award was presented to the player adjudged the fairest and best player during the Australian Football League (AFL) home and away season.  Jimmy Bartel of the Geelong Football Club won the medal by polling twenty-nine votes during the 2007 AFL season.",
+      "2006 Brownlow Medal: The 2006 Brownlow Medal was the 79th year the award was presented to the player adjudged the fairest and best player during the Australian Football League (AFL) home and away season.  Adam Goodes of the Sydney Swans won the medal by polling twenty-six votes during the 2006 AFL season.  It was Goodes' second Brownlow Medal win, after his victory in 2003.",
+      "2005 Brownlow Medal: The 2005 Brownlow Medal was the 78th year the award was presented to the player adjudged the fairest and best player during the Australian Football League (AFL) home and away season.  Ben Cousins of the West Coast Eagles won the medal by polling twenty votes during the 2005 AFL season.  It was Cousins' first Brownlow Medal win, and with Daniel Kerr finishing the runner up, it was the first time in 86 years that the top two votesgetters were from the same club."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 390,
+    "generation_tokens": 21,
+    "generation_speed": 360.47170297131674,
+    "prompt_eval_speed": 22523.82327461738,
+    "generation_latency_s": 0.18639689998235554,
+    "latency": 0.5499591000843793,
+    "total_prompt_tokens": 526,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2336193,
+    "stage_route_s": 0.1549210000084713,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17235440004151314,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036118000047281384,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.369998350739479e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1864372999407351,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5499711000593379,
+    "unaccounted_latency_s": 9.760004468262196e-05,
+    "route": "rag",
+    "router_raw": "The recipient of the 2007 Brownlow Medal played for the team that won the 1985 World Series.",
+    "sub_queries": [
+      "The recipient of the 2007 Brownlow Medal played for the team that won the award in 1985."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q106",
+  "query": "Which American film actor and dancer starred in the 1945 film Johnny Angel?",
+  "ground_truth": "George Raft",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Johnny Angel is a 1945 American screwball comedy film directed by Howard Hawks and starring Gary Cooper and Barbara Stanwyck.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "my Honorary Award is often awarded in preference to those with noted achievements in motion pictures who have nevertheless never won an Academy Award.  Thus, many of its recipients are Classic Hollywood stars, such as Lillian Gish, Barbara Stanwyck, Kirk Douglas, and Lauren Bacall.",
+      "Ball of Fire: Ball of Fire is a 1941 American screwball comedy film directed by Howard Hawks and starring Gary Cooper and Barbara Stanwyck.  This Samuel Goldwyn Productions film (originally distributed by RKO) concerns a group of professors laboring to write an encyclopedia and their encounter with a nightclub performer who provides her own unique knowledge.",
+      "Clark Gable: William Clark Gable (February 1, 1901 \u2013 November 16, 1960) was an American film actor and military officer, often referred to as \"The King of Hollywood\" or just simply as \"The King\".  Gable began his career as a stage actor and appeared as an extra in silent films between 1924 and 1926, and progressed to supporting roles with a few films for Metro-Goldwyn-Mayer in 1931.  The next year, he landed his first leading Hollywood role and over the next three decades he became a leading man in more than 60 motion pictures."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 31,
+    "generation_speed": 262.240720062261,
+    "prompt_eval_speed": 46353.36414997432,
+    "generation_latency_s": 0.9821711999829859,
+    "latency": 3.437951299943961,
+    "total_prompt_tokens": 440,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12277769999999999,
+    "stage_rewrite_s": 1.186783600016497,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.088978899992071,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17989170004148036,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.982213000068441,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4379634999204427,
+    "unaccounted_latency_s": 9.699980728328228e-05,
+    "rewritten_query": "Film Actor: John Wayne\nDancer: Barbara Stanwyck",
+    "query_was_rewritten": true
+  }
+}

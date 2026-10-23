@@ -1,0 +1,49 @@
+{
+  "question_id": "Q77",
+  "query": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+  "ground_truth": "Ann",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The middle name of the actress who plays Bobbi Bacha in Suburban Madness is \"Edna.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bobbi Bacha: Bobbi Bacha is a Texas Private Investigator portrayed in 2004 TV Sony Pictures Movie \"Suburban Madness\" played by actress Sela Ward.  Bobbi Bacha also was involved and worked on the case of New York millionaire Robert Durst who was charged with murder in Galveston, Texas for killing his neighbor Morris Black but was found not guilty by a Galveston County Jury.",
+      "Suburban Madness: Suburban Madness is an American crime drama television film, based on a true story, starring Sela Ward as PI Bobbi Bacha of Blue Moon Investigations.  It aired on CBS on October 3, 2004.",
+      "Linda Cardellini: Linda Edna Cardellini (born June 25, 1975) is an American actress.  She is known for her roles as Lindsay Weir on \"Freaks and Geeks\", Samantha Taggart on \"ER\", Velma Dinkley in the live-action \"Scooby-Doo\" feature films, Sylvia Rosen, a neighbor of Don Draper's on the AMC drama series \"Mad Men\", Meg Rayburn on the Netflix original series \"Bloodline\", Cassie in \"Brokeback Mountain\", and Laura Barton in \"\".  She is also known for voicing roles in animated projects such as CJ in \"Regular Show\", Wendy Corduroy in \"Gravity Falls\", and Megan in \"Sanjay and Craig\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 391,
+    "generation_tokens": 23,
+    "generation_speed": 233.65910152995917,
+    "prompt_eval_speed": 13369.80680458198,
+    "generation_latency_s": 0.23334739997517318,
+    "latency": 0.6324479000177234,
+    "total_prompt_tokens": 531,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2543645,
+    "stage_route_s": 0.10578859993256629,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23480670002754778,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05831590003799647,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.439994856715202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23338740004692227,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6324602999957278,
+    "unaccounted_latency_s": 0.00010800000745803118,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bobbi Bacha's Middle Name\"",
+      "\"Suburban Madness Actress Who Plays Bobbi Bacha\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q477",
+  "query": "What Division was the college footbal team that fired their head coach on November 24, 2006?",
+  "ground_truth": "NCAA Division I FBS football",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The division that fired the head coach on November 24, 2006 is the Division of 11 (D11).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2006 Alabama Crimson Tide football team: The 2006 Alabama Crimson Tide football team represented the University of Alabama for the 2006 NCAA Division I FBS football season trying to improve from a 10\u20132 record in the 2005 season.  The Tide was led by head coach Mike Shula entering his fourth year at Alabama.  Despite a strong 5\u20132 start, they finished out the season by losing four of their final five games.  The team closed the regular season at 6\u20136 (4\u20134, SEC) and lost for a fifth-straight time to rival Auburn.  Following the loss Shula was fired as head coach and defensive coordinator Joe Kines served as interim head coach for the bowl game.",
+      "2006 Miami Hurricanes football team: The 2006 Miami Hurricanes football team represented the University of Miami during the 2006 NCAA Division I FBS football season.  The team's head coach was Larry Coker.",
+      "2012 Colorado Buffaloes football team: The 2012 Colorado Buffaloes football team represented the University of Colorado Boulder during the 2012 NCAA Division I FBS football season.  Led by second-year head coach and alumnus Jon Embree, the Buffaloes played their home games on-campus at Folsom Field in Boulder and were members of the Pac-12 Conference.  On November 25, 2012, head coach Jon Embree was fired after compiling a 4\u201321 record including 1\u201311 in his final year, the worst year in the history of Colorado Buffaloes football."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 447,
+    "generation_tokens": 31,
+    "generation_speed": 378.9916377328965,
+    "prompt_eval_speed": 24549.648506151145,
+    "generation_latency_s": 0.21093369997106493,
+    "latency": 0.6947244999464601,
+    "total_prompt_tokens": 597,
+    "total_generation_tokens": 118,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.250575,
+    "stage_route_s": 0.1783176000462845,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25055429991334677,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054717699997127056,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.359994247555733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2109675999963656,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6947340000187978,
+    "unaccounted_latency_s": 0.0001240001292899251,
+    "route": "rag",
+    "router_raw": "The division that fired their head coach on November 24, 2006 is the Division of 1985.",
+    "sub_queries": [
+      "What division did the college football team fire its head coach on November 24, 2006?",
+      "What division of football players were fired by the college football team that fired their head coach on November 24, 2006?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

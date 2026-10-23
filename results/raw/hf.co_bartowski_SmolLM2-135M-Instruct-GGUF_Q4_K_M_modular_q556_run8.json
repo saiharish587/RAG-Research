@@ -1,0 +1,48 @@
+{
+  "question_id": "Q556",
+  "query": "Name a musician that worked with Hiren Roy and Vilayat Khan.",
+  "ground_truth": "Nikhil Banerjee",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "A. R. Rahman",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hiren Roy: Hiren Roy (1920\u20131992) was for many years considered to be the best sitar maker in India.  Many great musicians, including Nikhil Banerjee, Vilayat Khan, Annapurna Devi, and Ravi Shankar, have sworn by his creations.",
+      "Vilayat Khan: Ustad Vilayat Khan (28 August 1928 \u2013 13 March 2004) was one of India's well known sitar maestros.  Along with Ravi Shankar, Ali Akbar Khan, Nikhil Banerjee and his younger brother Imrat Khan, Vilayat Khan helped introduce Indian Classical Music to the West.",
+      "A. R. Rahman: Allah-Rakha Rahman (\u00a0\u00a0 , born A. S. Dileep Kumar), is an Indian composer, singer-songwriter, music producer, musician and philanthropist.  A. R. Rahman's works are noted for integrating Indian classical music with electronic music, world music and traditional orchestral arrangements.  Among his awards are two Academy Awards, two Grammy Awards, a BAFTA Award, a Golden Globe, four National Film Awards, fifteen Filmfare Awards and sixteen Filmfare Awards South.  He has been awarded the Padma Bhushan, the third highest civilian award, in 2010 by the Government of India."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 376,
+    "generation_tokens": 7,
+    "generation_speed": 302.2061045633122,
+    "prompt_eval_speed": 48366.34936969385,
+    "generation_latency_s": 0.14595259993802756,
+    "latency": 0.4596366999903694,
+    "total_prompt_tokens": 508,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2435624,
+    "stage_route_s": 0.09698719996958971,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17769430007319897,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038849800010211766,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.200008697807789e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14598469994962215,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.45964839996304363,
+    "unaccounted_latency_s": 9.109987877309322e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Hiren Roy - Vilayat Khan"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

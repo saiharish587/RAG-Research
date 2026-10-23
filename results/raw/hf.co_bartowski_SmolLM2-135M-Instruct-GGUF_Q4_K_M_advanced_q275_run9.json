@@ -1,0 +1,42 @@
+{
+  "question_id": "Q275",
+  "query": "What is the name of the actress who has received a Drama Desk award and was part of the cast album for the 2007 Broadway production of the hit musical, \"Grease\"?",
+  "ground_truth": "Laura Ann Osnes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Linda Eder",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Grease: The New Broadway Cast Recording: Grease: The New Broadway Cast Recording is the cast album for the 2007 Broadway production of the hit musical, \"Grease\".  The show, directed by Tony Award-winner Kathleen Marshall, played at the Brooks Atkinson Theatre in New York City.  This recording features performances from the cast of \"Grease\" including Jenny Powers, Matthew Saldivar, and \"\" winners, Laura Osnes and Max Crumm as Sandy Dumbrowski and Danny Zuko, respectively.",
+      "Laura Osnes: Laura Ann Osnes (born November 19, 1985) is an American actress and singer known for her work on the Broadway stage.  She has played starring roles in \"Grease\" as Sandy, \"South Pacific\" as Nellie Forbush, \"Anything Goes\" as Hope Harcourt, and \"Bonnie and Clyde\" as Bonnie Parker, for which she received a Tony Award nomination for Best Actress in a Musical.  She also starred in the title role of Rodgers & Hammerstein's \"Cinderella\" on Broadway, for which she received a Drama Desk Award and her second Tony Award nomination for Best Actress in a Musical.",
+      "Linda Eder: Linda Eder ( ; born February 3, 1961) is an American singer and actress.  She made her Broadway debut in the musical \"Jekyll & Hyde\", originating the role of Lucy, for which she was nominated for the Drama Desk Award.  Eder has performed in concert halls across the country including Carnegie Hall and Radio City Musical Hall.  She has released 15 solo albums."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 459,
+    "generation_tokens": 5,
+    "generation_speed": 397.61431411530816,
+    "prompt_eval_speed": 65032.58713516577,
+    "generation_latency_s": 0.10152160003781319,
+    "latency": 0.5250009000301361,
+    "total_prompt_tokens": 560,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13878069999999998,
+    "stage_rewrite_s": 0.19608729996252805,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07722830004058778,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1500450000166893,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10155489994212985,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5250092000933364,
+    "unaccounted_latency_s": 9.410001803189516e-05,
+    "rewritten_query": "The actress who received a Drama Desk Award and played the lead role in the 2007 Broadway production of \"Grease\" was known as \"Lena.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q217",
+  "query": "Ernest Foot was the best friend of the fighter pilot who had how many victories?",
+  "ground_truth": "44",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Ernest Foot was the best friend of Albert Ball. He had five aerial victories.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernest Foot: Major Ernest Leslie Foot {'1': \", '2': \", '3': \", '4': \"} (19 May 1895 \u2013 23 June 1923) was an English World War I flying ace credited with five aerial victories.  He was the best friend of Albert Ball.",
+      "Ernest Charles Hoy: Captain Ernest Charles Hoy DFC (6 May 1895\u00a0\u201322 April 1982) was a Canadian First World War flying ace, officially credited with 13 victories.  He later pioneered airmail flight over the Canadian Rockies.",
+      "urgeons agreed that stress and fatigue don't impact their performance level, while only 26% of pilots denied that stress influences their performance.  Pilots themselves realize how powerful stress can be, and yet many accidents and incidents continues to occur and have occurred, such as Asiana Airlines Flight 214, American Airlines Flight 1420, and Polish Air Force Tu-154"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 288,
+    "generation_tokens": 18,
+    "generation_speed": 243.80333197887035,
+    "prompt_eval_speed": 33012.379642365886,
+    "generation_latency_s": 0.19190960004925728,
+    "latency": 0.5296012999024242,
+    "total_prompt_tokens": 420,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2314024,
+    "stage_route_s": 0.09400279994588345,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18847549997735769,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055029200040735304,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.429990753531456e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19194280006922781,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5296101999701932,
+    "unaccounted_latency_s": 9.61000332608819e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Ernest Foot's greatest victory\"",
+      "Query 2: \"Fighter Pilot with most victories\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

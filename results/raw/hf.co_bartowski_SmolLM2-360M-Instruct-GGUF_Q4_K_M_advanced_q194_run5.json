@@ -1,0 +1,42 @@
+{
+  "question_id": "Q194",
+  "query": "In which city are the headquarters of the American research and scientific development company where Ravi Sethi worked as computer scientist located?",
+  "ground_truth": "Murray Hill",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The headquarters of the American research and scientific development company where Ravi Sethi worked as a computer scientist is Murray Hill, New Jersey.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ravi Sethi: Ravi Sethi (born 1947) is an Indian computer scientist retired from Bell Labs and president of Avaya Labs Research.  He also serves as a member of the National Science Foundation's Computer and Information Science and Engineering (CISE) Advisory Committee.  He is best known as one of three authors of the classic computer science textbook \"\", also known as the \"Dragon Book\".",
+      "Bell Labs: Nokia Bell Labs (formerly named AT&T Bell Laboratories, Bell Telephone Laboratories and Bell Labs) is an American research and scientific development company, owned by Finnish company Nokia.  Its headquarters are located in Murray Hill, New Jersey, in addition to other laboratories around the rest of the United States and in other countries.",
+      "Sethi\u2013Ullman algorithm: In computer science, the Sethi\u2013Ullman algorithm is an algorithm named after Ravi Sethi and Jeffrey D. Ullman, its inventors, for translating abstract syntax trees into machine code that uses as few registers as possible."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 298,
+    "generation_tokens": 28,
+    "generation_speed": 263.1603680485719,
+    "prompt_eval_speed": 41562.06415620641,
+    "generation_latency_s": 0.9421673000324517,
+    "latency": 3.3960077998926863,
+    "total_prompt_tokens": 383,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1198971,
+    "stage_rewrite_s": 1.2410168999340385,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.010844999924302,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20183799997903407,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.942225500009954,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3960189999779686,
+    "unaccounted_latency_s": 9.430013597011566e-05,
+    "rewritten_query": "The headquarters of the American research and scientific development company, where Ravi Sethi worked as a computer scientist, is located in New York City.",
+    "query_was_rewritten": true
+  }
+}

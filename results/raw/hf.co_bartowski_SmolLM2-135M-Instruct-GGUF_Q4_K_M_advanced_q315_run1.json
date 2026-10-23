@@ -1,0 +1,42 @@
+{
+  "question_id": "Q315",
+  "query": "How many days did it take the Best New Artist of 2009 to sell 2 million copies of an album in the UK and break a twenty year old record?",
+  "ground_truth": "29",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on the context, it is stated that \"Encore (stylized as \u018eNCORE)\" sold 710,000 copies in its first three days. Therefore, it took approximately 23 months for the Best New Artist of 2009 to sell 2 million copies of an album in the UK and break a twenty-year-old record.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Encore (Eminem album): Encore (stylized as \u018eNCORE) is the fifth studio album by American rapper Eminem.  It was released by Aftermath Entertainment, Shady Records, and Interscope Records.  Its release was set for November 16, 2004, but was moved up to November 12 (coincidentally, exactly eight years to the day since his debut album, \"Infinite\", was released) after the album was leaked to the Internet.  \"Encore\" sold 710,000 copies in its first three days, and went on to sell over 1.5 million copies in its first two weeks of release in the United States, certified quadruple-platinum that mid-December.  Nine months after its release, worldwide sales of the album stood at 11 million copies.  By December 2016, the album had sold over 5 million copies in the United States and more than 23 million copies worldwide.",
+      "Adam Lambert: Adam Mitchel Lambert (born January 29, 1982) is an American singer, songwriter and stage actor.  Since 2009, he has sold over 3 million albums and 5 million singles worldwide.",
+      "David Bowie: David Robert Jones (8 January 1947 \u2013 10 January 2016), known professionally as David Bowie ( ), was an English singer, songwriter and actor.  He was a leading figure in popular music for over five decades, acclaimed by critics and other musicians for his innovative work.  His career was marked by reinvention and visual presentation, his music and stagecraft significantly influencing popular music.  During his lifetime, his record sales, estimated at 140 million albums worldwide, made him one of the world's best-selling music artists.  In the UK, he was awarded nine platinum album certifications, eleven gold and eight silver, releasing eleven number-one albums.  In the US, he received five platinum and nine gold certifications.  He was inducted into the Rock and Roll Hall of Fame in 1996."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 554,
+    "generation_tokens": 82,
+    "generation_speed": 401.84259531510344,
+    "prompt_eval_speed": 18054.423985660746,
+    "generation_latency_s": 0.3151972000487149,
+    "latency": 0.8106607999652624,
+    "total_prompt_tokens": 650,
+    "total_generation_tokens": 118,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1280267,
+    "stage_rewrite_s": 0.17977849999442697,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08602050004992634,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2295386999612674,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3152362999971956,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8106708999257535,
+    "unaccounted_latency_s": 9.749992750585079e-05,
+    "rewritten_query": "The best new artist of 2009 sold approximately 1.5 million copies of their album worldwide, breaking a twenty-year-old record within six months.",
+    "query_was_rewritten": true
+  }
+}

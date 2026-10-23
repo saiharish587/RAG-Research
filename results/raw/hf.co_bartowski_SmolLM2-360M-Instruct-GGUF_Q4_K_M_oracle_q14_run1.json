@@ -1,0 +1,33 @@
+{
+  "question_id": "Q14",
+  "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Random House Tower and 888 7th Avenue are not both used for real estate. Random House Tower is a book publisher's headquarters while the other building mentioned is an apartment complex.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "888 7th Avenue: 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.  Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City.  It currently carries the Vornado Realty Trust corporate headquarters.  Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation.  The Red Eye Grill is located in the building at street level.",
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 306,
+    "generation_tokens": 42,
+    "generation_speed": 251.65975600987463,
+    "prompt_eval_speed": 13889.51931369434,
+    "generation_latency_s": 0.27277919999323785,
+    "latency": 0.2728378000902012,
+    "total_prompt_tokens": 306,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0703907,
+    "stage_generate_s": 0.27281330002006143,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.27284440002404153,
+    "unaccounted_latency_s": 3.160000778734684e-05
+  }
+}

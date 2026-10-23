@@ -1,0 +1,49 @@
+{
+  "question_id": "Q582",
+  "query": "Where was the author of Thoughts of Machiavelli born?",
+  "ground_truth": "Germany",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Henry III of France",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thoughts on Machiavelli: Thoughts on Machiavelli is a book by Leo Strauss first published in 1958.  The book is a collection of lectures he gave at the University of Chicago in which he dissects the work of Niccol\u00f2 Machiavelli.  The book contains commentary on Machiavelli's \"The Prince\" and the \"Discourses on Livy\".",
+      "Henry III of France: Henry III (19 September 1551 \u2013 2 August 1589; born \"Alexandre \u00c9douard de France\", Polish: \"Henryk Walezy\" , Lithuanian: \"Henrikas Valua\" ) was King of the Polish-Lithuanian Commonwealth from 1573 to 1575 and King of France from 1574 until his death.  He was the last French monarch of the House of Valois.",
+      "Colonna dell'Abbondanza, Florence: The Colonna dell'Abbondanza is a monumental column located in the Piazza della Repubblica in Florence, region of Tuscany, Italy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 306,
+    "generation_tokens": 5,
+    "generation_speed": 206.347241137386,
+    "prompt_eval_speed": 20421.78323545115,
+    "generation_latency_s": 0.15052809996996075,
+    "latency": 0.4936173000605777,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.235551,
+    "stage_route_s": 0.10895350005012006,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17551789991557598,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058425000053830445,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.340001709759235e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15056630002800375,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49362980003934354,
+    "unaccounted_latency_s": 0.00010459998156875372,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"born in 1503\"",
+      "\"in Florence, Italy\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

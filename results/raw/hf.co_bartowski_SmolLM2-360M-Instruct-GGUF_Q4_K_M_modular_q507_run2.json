@@ -1,0 +1,49 @@
+{
+  "question_id": "Q507",
+  "query": "Is Gasherbrum II or Nuptse closest to the tallest mountain in the world?",
+  "ground_truth": "It lies two kilometres WSW of Mount Everest.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Gasherbrum II is the 13th highest mountain in the world at 8035 m above sea level, making it the second-highest peak of the Karakoram massif.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gasherbrum II: Gasherbrum II (Urdu: \u200e ); surveyed as K4, is the 13th highest mountain in the world at 8035 m above sea level.  It is the third-highest peak of the Gasherbrum massif, and is located in the Karakoram, on the border between Gilgit\u2013Baltistan province, Pakistan, and Xinjiang, China.  The mountain was first climbed on July 7, 1956, by an Austrian expedition which included Fritz Moravec, Josef Larch, and Hans Willenpart.",
+      "Gasherbrum I: Gasherbrum I (Urdu: \u200e ; ), surveyed as K5 and also known as Hidden Peak, is the 11th highest mountain in the world at 8080 m above sea level.  It is located on the Pakistani\u2013Chinese border in Gilgit\u2013Baltistan region of Pakistan and Xinjiang region of China.  Gasherbrum I is part of the Gasherbrum massif, located in the Karakoram region of the Himalaya.  Gasherbrum is often claimed to mean \"Shining Wall\", presumably a reference to the highly visible face of the neighboring peak Gasherbrum IV; but in fact it comes from \"rgasha\" (beautiful) + \"brum\" (mountain) in Balti, hence it actually means \"beautiful mountain.\"",
+      "Nuptse: Nuptse or Nubtse (Sherpa: \u0f53\u0f74\u0f56\u0f0b\u0f62\u0fa9\u0f7a\u0f0d \u0928\u0941\u092c\u091a\u0947, Wylie: Nub rtse) is a mountain in the Khumbu region of the Mahalangur Himal, in the Nepalese Himalayas.  It lies two kilometres WSW of Mount Everest.  Nubtse is Tibetan for \"west peak\", as it is the western segment of the Lhotse-Nubtse massif."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 506,
+    "generation_tokens": 44,
+    "generation_speed": 243.51502875137672,
+    "prompt_eval_speed": 63076.53951633009,
+    "generation_latency_s": 0.30225579999387264,
+    "latency": 0.6895053000189364,
+    "total_prompt_tokens": 644,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2307102,
+    "stage_route_s": 0.10073519998695701,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22919569991063327,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057128800079226494,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9900030717253685e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30231010005809367,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6895156999817118,
+    "unaccounted_latency_s": 9.659992065280676e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Is Gasherbrum II or Nuptse closer to the tallest mountain in the world?\"",
+      "\"Which of these two peaks is the highest on Earth?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

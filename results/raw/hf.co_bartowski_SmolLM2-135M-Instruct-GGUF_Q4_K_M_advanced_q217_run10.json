@@ -1,0 +1,42 @@
+{
+  "question_id": "Q217",
+  "query": "Ernest Foot was the best friend of the fighter pilot who had how many victories?",
+  "ground_truth": "44",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The correct answer is that Ernest Foot was the best friend of Albert Ball, who had 80 air combat victories.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernest Foot: Major Ernest Leslie Foot {'1': \", '2': \", '3': \", '4': \"} (19 May 1895 \u2013 23 June 1923) was an English World War I flying ace credited with five aerial victories.  He was the best friend of Albert Ball.",
+      "Gervais Raoul Lufbery: Gervais Raoul Victor Lufbery (March 14, 1885 \u2013 May 19, 1918) was a French and American fighter pilot and flying ace in World War I. Because he served in both the French Air Force, and later the United States Army Air Service in World War I, he is sometimes listed alternately as a French ace or as an American ace.  Officially, all but one of his 17 combat victories came while flying in French units.",
+      "The Red Fighter Pilot: The Red Fighter Pilot (German: \"Der Rote Kampfflieger\") is a book written by Manfred von Richthofen, a famous German fighter pilot who is considered the top scoring ace of the First World War, being officially credited with 80 air combat victories.  Richthofen's most common German nickname was \"Der Rote Kampfflieger\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 343,
+    "generation_tokens": 25,
+    "generation_speed": 398.00678203556595,
+    "prompt_eval_speed": 53376.90631808279,
+    "generation_latency_s": 0.147755500045605,
+    "latency": 0.499263699981384,
+    "total_prompt_tokens": 419,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1401941,
+    "stage_rewrite_s": 0.15665539994370192,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07478200003970414,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11995329998899251,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.14778990007471293,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49927260004915297,
+    "unaccounted_latency_s": 9.250000584870577e-05,
+    "rewritten_query": "Ernest Foot, the best-selling fighter pilot, has won 10 more victories than his brother.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q515",
+  "query": "What number album is the first W.A.S.P. album to feature Steven Edward Duren playing guitar?",
+  "ground_truth": "third",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The First W.A.S.P. Album features Steven Edward Duren playing guitar on \"The Last Command.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Blackie Lawless: Blackie Lawless (born Steven Edward Duren; September 4, 1956) is an American songwriter and musician best known as the lead singer and rhythm guitarist (formerly bassist) for the heavy metal band W.A.S.P.",
+      "The Last Command (album): The Last Command is the second album by heavy metal band W.A.S.P., released in November 9, 1985.  The album was produced by Spencer Proffer, who was perhaps best known for producing the six-time Platinum selling album \"Metal Health\" by Quiet Riot in 1983.  \"The Last Command\" is the first W.A.S.P. album to feature the work of drummer Steve Riley.  The album reached No. 47 on the \"Billboard\" 200 album chart in early 1986 and sold over one million copies, their first album to do so.  It was also the last album to feature founding member Randy Piper on guitar.",
+      "Guns N' Roses: Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985.  The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler.  Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million records in the United States, making them one of the world's best-selling artists of all time."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 457,
+    "generation_tokens": 26,
+    "generation_speed": 228.42884880645926,
+    "prompt_eval_speed": 53531.6856038421,
+    "generation_latency_s": 0.23875810008030385,
+    "latency": 0.6526955000590533,
+    "total_prompt_tokens": 605,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22746339999999998,
+    "stage_route_s": 0.10145079996436834,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2565776000265032,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05571550002787262,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.159992724657059e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23880710010416806,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6527119000675157,
+    "unaccounted_latency_s": 0.00012360000982880592,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Steven Edward Duren's First Album\"",
+      "\"The First W.A.S.P. Album to Feature Steven Edward Duren Playing Guitar\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

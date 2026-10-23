@@ -1,0 +1,42 @@
+{
+  "question_id": "Q309",
+  "query": "Which dog is considered a giant dog breed, the  Leonberger or the Basset Hound?",
+  "ground_truth": "The Leonberger is a giant dog breed.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Basset Hound is considered a giant dog breed.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Leonberger: The Leonberger is a giant dog breed.  The breed's name derives from the city of Leonberg in Baden-W\u00fcrttemberg, Germany.  According to legend, the Leonberger was ostensibly bred as a \"symbolic dog\" that would mimic the lion in the town crest.  It is in the Working Group for dog shows such as Crufts, but not at the World Dog Show.",
+      "Basset Hound: The Basset Hound is a short-legged breed of dog of the hound family.  The Basset is a scent hound that was originally bred for the purpose of hunting hare.  Their sense of smell and ability to ground-scent is second only to that of the Bloodhound.  Basset Hounds are one of 6 recognised basset-type breeds in France.",
+      "Giant dog breed: A giant dog breed has no universal height or weight classification, although some groups define \"giant breeds\" as those heavier than 50 kg .  Giant breeds grow rapidly, but take longer to mature into their full adult sizes than smaller dogs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 307,
+    "generation_tokens": 13,
+    "generation_speed": 384.60400579864506,
+    "prompt_eval_speed": 34061.91057361589,
+    "generation_latency_s": 0.13206129998434335,
+    "latency": 0.752955500036478,
+    "total_prompt_tokens": 387,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.151354,
+    "stage_rewrite_s": 0.3328062000218779,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07652240002062172,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21142809989396483,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13210459996480495,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7529665000038221,
+    "unaccounted_latency_s": 0.00010570010636001825,
+    "rewritten_query": "The Leonberger is considered a giant dog breed.\n\nI removed the introductory phrase \"Which dog\" and replaced it with the more concise \"which dog.\" I also changed \"the Basset Hound\" to simply \"Basset Hound,\" as it's implied that the Basset Hound belongs to the giant dog breed category. This revised query is now more informative and user-friendly, making it easier for users to find relevant information when searching for specific breeds or characteristics.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q20",
+  "query": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+  "ground_truth": "Robert Erskine Childers DSC",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Based on the given information, it is clear that Robert Caesar Childers was from England (Henry Caesar Childers) and Henry Roth was from England (Robert Caesar Childers). The two writers are related through their shared ancestry.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Robert Erskine Childers: Robert Erskine Childers DSC (25 June 1870 \u2013 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\".  He was executed by the authorities of the nascent Irish Free State during the Irish Civil War.  He was the son of British Orientalist scholar Robert Caesar Childers; the cousin of Hugh Childers and Robert Barton; and the father of the fourth President of Ireland, Erskine Hamilton Childers.",
+      "Henry Roth: Henry Roth (February 8, 1906 \u2013 October 13, 1995) was an American novelist and short story writer.",
+      "Robert Caesar Childers: Robert Caesar Childers (1838 \u2013 25 July 1876) was a British Orientalist scholar, compiler of the first P\u0101li-English dictionary.  Childers was the husband of Anna Barton of Ireland.  He was the father of Irish nationalist Robert Erskine Childers and grandfather to the fourth President of Ireland, Erskine Hamilton Childers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 348,
+    "generation_tokens": 46,
+    "generation_speed": 425.4964896539604,
+    "prompt_eval_speed": 36409.29064657878,
+    "generation_latency_s": 0.19796600006520748,
+    "latency": 0.6703753999900073,
+    "total_prompt_tokens": 425,
+    "total_generation_tokens": 120,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1285485,
+    "stage_rewrite_s": 0.2552522000623867,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07128040003590286,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14574439998250455,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19801230006851256,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6703873999649659,
+    "unaccounted_latency_s": 9.879982098937035e-05,
+    "rewritten_query": "The original query \"Which writer was from England, Henry Roth or Robert Erskine Childers?\" is a bit long and wordy. A more concise version would be: \"Who wrote the novel 'Henry Roth' by Robert Erskine Childers?\" This revised query conveys the same information in fewer words while still being informative and user-friendly.",
+    "query_was_rewritten": true
+  }
+}

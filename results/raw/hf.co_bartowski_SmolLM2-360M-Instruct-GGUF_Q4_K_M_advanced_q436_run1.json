@@ -1,0 +1,42 @@
+{
+  "question_id": "Q436",
+  "query": "How long is the river for which Frenchmans Creek is a tributary?",
+  "ground_truth": "2844 km",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Frenchmans Creek is a tributary of the Darling River and measures approximately 7.51 km from its source south of Pooncarie to its confluence into the Darling River at an elevation of 48 m. Therefore, it is about 7.51 km long for which Frenchmans Creek is a tributary.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Frenchmans Creek (New South Wales): Frenchmans Creek is a short tributary of the Darling River in west New South Wales, measuring 7.51 km from its source south of Pooncarie, New South Wales at an elevation of 54.4 m to its confluence into the Darling River at an elevation of 48 m .",
+      "Frenchmans Creek (California): Frenchmans Creek is a 4.4 mi stream in San Mateo County, California.  Locks Creek is its largest tributary.",
+      "Locks Creek: Locks Creek is a 1.9 mi stream in San Mateo County, California.  It is the largest tributary of Frenchmans Creek, a larger stream."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 219,
+    "generation_tokens": 68,
+    "generation_speed": 254.17995193008554,
+    "prompt_eval_speed": 11939.810271508013,
+    "generation_latency_s": 1.1786332000046968,
+    "latency": 3.577142299967818,
+    "total_prompt_tokens": 293,
+    "total_generation_tokens": 88,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1285001,
+    "stage_rewrite_s": 1.2112866999814287,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0394728999817744,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14762820000760257,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1786735000787303,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5771531000500545,
+    "unaccounted_latency_s": 9.23000043258071e-05,
+    "rewritten_query": "The River for which Frenchman's Creek is a tributary is approximately 10 miles long.",
+    "query_was_rewritten": true
+  }
+}

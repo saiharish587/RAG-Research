@@ -1,0 +1,42 @@
+{
+  "question_id": "Q568",
+  "query": "Which company owns the hotel on whose premises the Cotal Arena is located ?",
+  "ground_truth": "Las Vegas Sands company.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The company that owns the hotel and casino resort is Las Vegas Sands Company.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Venetian Macao: The Venetian Macao () is a luxury hotel and casino resort in Macau owned by the American Las Vegas Sands company.  The Venetian is a 39-story, casino hotel on the Cotai Strip in Macau.  The 10500000 sqft Venetian Macao is modeled on its sister casino resort The Venetian Las Vegas, and is the seventh-largest building in the world by floor area.  The Venetian Macao is also the largest casino in the world, and the largest single structure hotel building in Asia.",
+      "Choice Hotels: Choice Hotels International, Inc. is a hospitality holding corporation based in Rockville, Maryland, in the United States.  The company owns the hotel and motel brands Comfort Inn, Comfort Suites, Quality Inn, Sleep Inn, Clarion, Cambria Hotel & Suites, Mainstay Suites, Suburban Extended Stay, Econo Lodge, Rodeway Inn, and Ascend Hotel Collection.  The company manages 6,379 properties worldwide.  There were 505,278 rooms, with approximately $45.80 in revenue per room, totaling $758 million in revenue as of April 2016.",
+      "City of Dreams (casino): City of Dreams () is a resort and casino in Cotai, Macau, China.  It is built, owned and managed by Melco Crown Entertainment, formerly known as Melco PBL Entertainment.  City of Dreams is Melco's second mega-sized property in Macau.  It is located directly opposite The Venetian Macao, the first property in Cotai, opened by Las Vegas Sands Corp."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 426,
+    "generation_tokens": 16,
+    "generation_speed": 385.4214342495122,
+    "prompt_eval_speed": 56030.51427068262,
+    "generation_latency_s": 0.13222010002937168,
+    "latency": 0.4513816999970004,
+    "total_prompt_tokens": 502,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.129232,
+    "stage_rewrite_s": 0.14339019998442382,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07586730003822595,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09978879999835044,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13225320004858077,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4513904000632465,
+    "unaccounted_latency_s": 9.129999671131372e-05,
+    "rewritten_query": "Which company owns the hotel on whose premises the Cotal Arena is located?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "question_id": "Q94",
+  "query": "Do the drinks Gibson and Zurracapote both contain gin?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, the drinks Gibson and Zurracapote do not contain gin. The original recipe for the Gibson is found in the 1908 book \"The World's Drinks And How To Mix Them\" by William Boothby, while the original recipe for the Zurracapote is attributed to a different source: it appears in the 1923 book \"Gibson's World of Drinks\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gibson (cocktail): The Gibson is a mixed drink made with gin and vermouth, and often garnished with a pickled onion.  The oldest published recipe for the Gibson is found in the 1908 book, \"The World's Drinks And How To Mix Them\" by William Boothby.",
+      "Zurracapote: Zurracapote (sometimes abbreviated as zurra) is a popular Spanish alcoholic mixed drink, similar to sangr\u00eda.  It consists of red wine mixed with fruit such as peaches and lemons, sugar, and cinnamon.  The concoction is then traditionally left to steep for several days, though some recipes call for the addition of other alcoholic beverages, juices, and fruit extracts.  The result is a mild-to-medium alcoholic drink, similar to sangr\u00eda.",
+      "Gin: Gin is a spirit which derives its predominant flavour from juniper berries (\"Juniperus communis\").  From its earliest origins in the Middle Ages, gin has evolved from use in herbal medicine to an object of commerce in the spirits industry.  Gin was developed on the basis of the older jenever, and became popular in Great Britain (particularly in London) when William of Orange, leader of the Dutch Republic, occupied the English, Scottish, and Irish thrones with his wife Mary.  Gin is one of the broadest categories of spirits, represented by products of various origins, styles, and flavour profiles that all revolve around juniper as a common ingredient."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 382,
+    "generation_tokens": 86,
+    "generation_speed": 331.15642905551107,
+    "prompt_eval_speed": 15109.564116762915,
+    "generation_latency_s": 0.4003000999800861,
+    "latency": 0.41717229993082583,
+    "total_prompt_tokens": 382,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1030672,
+    "stage_retrieve_s": 0.01679730007890612,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.4003357000183314,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4171794999856502,
+    "unaccounted_latency_s": 4.689989145845175e-05
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q110",
+  "query": "Which airplane was this Major test-flying after whom the base, that 514th Flight Test Squadron is stated at, is named?",
+  "ground_truth": "B-17 Flying Fortress bomber",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The airplane being tested by the Major test-flying who was named after the squadron's name is the Wright Brothers' first powered aircraft.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "514th Flight Test Squadron: The 514th Flight Test Squadron (514 FLTS) is a United States Air Force squadron.  It is assigned to the Ogden Air Logistics Center (OO-ALC), Air Force Materiel Command, stationed at Hill Air Force Base, Utah.",
+      "Wright brothers: The Wright brothers, Orville (August 19, 1871 \u2013 January 30, 1948) and Wilbur (April 16, 1867 \u2013 May 30, 1912), were two American brothers, inventors, and aviation pioneers who are generally credited with inventing, building, and flying the world's first successful airplane.  They made the first controlled, sustained flight of a powered, heavier-than-air aircraft on December 17, 1903, four miles south of Kitty Hawk, North Carolina.  In 1904\u201305 the brothers developed their flying machine into the first practical fixed-wing aircraft.  Although not the first to build and fly experimental aircraft, the Wright brothers were the first to invent aircraft controls that made fixed-wing powered flight possible.",
+      "No. 401 Squadron RCAF: No. 401 Tactical Fighter Squadron , a.k.a. \"City of Westmount\" Squadron (originally No. 1 Squadron), is a Royal Canadian Air Force squadron based at CFB Cold Lake.  During World War II it was a fighter squadron and is notable for having fought in the Battle of Britain.  Postwar, the squadron operated in Canada as an auxiliary squadron, reserve squadron and a helicopter and training squadron.  In 2015 it was reactivated as a Tactical Fighter Squadron."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 460,
+    "generation_tokens": 29,
+    "generation_speed": 261.95035589117316,
+    "prompt_eval_speed": 66406.8139165584,
+    "generation_latency_s": 0.9284986000275239,
+    "latency": 3.4160258999327198,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12097269999999999,
+    "stage_rewrite_s": 1.2471153000369668,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0153939999872819,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22489589999895543,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9285331000573933,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.41603419999592,
+    "unaccounted_latency_s": 9.639991912990808e-05,
+    "rewritten_query": "The 514th Flight Test Squadron is named after Major John Smith, who tested flying a plane after which the squadron's name is named.",
+    "query_was_rewritten": true
+  }
+}

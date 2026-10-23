@@ -1,0 +1,49 @@
+{
+  "question_id": "Q147",
+  "query": "When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change names?",
+  "ground_truth": "2009",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The English local newspaper, featuring the sculpture and war memorial in the Forbury Gardens, changed its name from \"Forbury Gardens\" to \"Birkenhead War Memorial\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Forbury Gardens: Forbury Gardens is a public park in the town of Reading in the English county of Berkshire.  The park is on the site of the outer court of Reading Abbey, which was in front of the Abbey Church.  The site was formerly known as the Forbury, and one of the roads flanking the current gardens is still known as The Forbury.  Fairs were held on the site three times a year until the 19th century.",
+      "Maiwand Lion: The Maiwand Lion is a sculpture and war memorial in the Forbury Gardens, a public park in the town of Reading, in the English county of Berkshire.  The statue was named after the Battle of Maiwand and was erected in 1884 to commemorate the deaths of 329 men from the 66th (Berkshire) Regiment of Foot during the campaign in the Second Anglo-Afghan War in Afghanistan between 1878 and 1880.  It is sometimes known locally as the Forbury Lion.",
+      "Birkenhead War Memorial: Birkenhead War Memorial, or Birkenhead Cenotaph, stands in Hamilton Square, Birkenhead, Merseyside, England, opposite the Town Hall.  It consists of a cenotaph in Portland stone with carved figures and panels in Westmorland stone.  The memorial was designed by Lionel Budden, and the sculptor was H. Tyson Smith.  It was unveiled in 1925 by Sir\u00a0Richard H.\u00a0K.\u00a0Butler.  The memorial is recorded in the National Heritage List for England as a designated Grade\u00a0II* listed building."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 436,
+    "generation_tokens": 36,
+    "generation_speed": 407.30432421424206,
+    "prompt_eval_speed": 61107.21793973371,
+    "generation_latency_s": 0.20443749998230487,
+    "latency": 0.8123867000686005,
+    "total_prompt_tokens": 580,
+    "total_generation_tokens": 188,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2331272,
+    "stage_route_s": 0.17401079996488988,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.37747049995232373,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05629860004410148,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.800001624971628e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20447430002968758,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8123970000306144,
+    "unaccounted_latency_s": 9.53000271692872e-05,
+    "route": "rag",
+    "router_raw": "The user's question requires retrieving information from internal files/documents to determine when the English local newspaper changed its name. The answer is 'when'.",
+    "sub_queries": [
+      "2015-04-30 - The Forbury Garden War Memorial was renamed to the English Local Newspaper, featuring the sculpture and war memorial in the Forbury Gardens.",
+      "2016-08-07 - The Forbury Garden War Memorial was renamed to the English Local Newspaper, featuring the sculpture and war memorial in the Forbury Gardens."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q565",
+  "query": "Who is the author of the 1993 production Madge Ryan participated in?",
+  "ground_truth": "Euripides",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The author of the 1993 production Madge Ryan participated in was Patrick Ryan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Madge Ryan: Madge Ryan (8 January 1919 \u2013 9 January 1994) was an Australian actress, known for her stage roles in the United Kingdom, including London productions of \"Entertaining Mr Sloane\" (1964), \"Philadelphia, Here I Come\" (1967), and \"Medea\" (1993).  She also starred in the Broadway production of \"Summer of the Seventeenth Doll\" (1958).  Her film appearances included \"Summer Holiday\" (1963), \"A Clockwork Orange\" (1971), \"Frenzy\" (1972), and \"Who Is Killing the Great Chefs of Europe? \" (1978).",
+      "John Lennon: John Winston Ono Lennon, {'1': \", '2': \", '3': \", '4': \"} (born John Winston Lennon; 9 October 19408 December 1980) was an English singer, songwriter, musician, and activist who co-founded the Beatles, the most commercially successful and musically influential band in the history of popular music.  He and fellow member Paul McCartney formed a much-celebrated songwriting partnership.",
+      "Patrick Ryan (author and journalist): Patrick Ryan (Isle of Wight, 1916 \u2013 1989) was an English author and journalist whose best-known work, the satirical war novel \"How I Won The War\" was made into a film in 1967, directed by Richard Lester and starring John Lennon, Michael Crawford, Roy Kinnear and others."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 435,
+    "generation_tokens": 20,
+    "generation_speed": 263.9288447834464,
+    "prompt_eval_speed": 58232.93172690763,
+    "generation_latency_s": 0.9622958999825642,
+    "latency": 3.3618107999209315,
+    "total_prompt_tokens": 513,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14831280000000002,
+    "stage_rewrite_s": 1.2034023000160232,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0449115000665188,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15108370000962168,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9623364000581205,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3618209999985993,
+    "unaccounted_latency_s": 8.779973722994328e-05,
+    "rewritten_query": "The author of the 1993 production Madge Ryan participated in was John Lennon.",
+    "query_was_rewritten": true
+  }
+}

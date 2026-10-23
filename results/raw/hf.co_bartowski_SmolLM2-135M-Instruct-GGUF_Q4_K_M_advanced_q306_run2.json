@@ -1,0 +1,42 @@
+{
+  "question_id": "Q306",
+  "query": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+  "ground_truth": "1901",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Based on the given information, the 1984 film \"Marlene\" is a documentary about actress Marie Magdalene Dietrich.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marlene (1984 film): Marlene, also known in Germany as Marlene Dietrich - Portr\u00e4t eines Mythos, is a 1984 documentary film made by Maximilian Schell about the legendary film star Marlene Dietrich.  It was made by Bayerischer Rundfunk (BR) and OKO-Film and released by Futura Film, Munich and Alive Films, (USA).",
+      "Marlene Dietrich: Marie Magdalene \"Marlene\" Dietrich ( , ] ; 27 December 1901 \u2013 6 May 1992) was a German actress and singer who held both German and American citizenship.  Throughout her unusually long career, which spanned from the 1910s to the 1980s, she maintained popularity by continually reinventing herself.",
+      "Around the World in 80 Days (2004 film): Around the World in 80 Days is a 2004 American action-adventure comedy family film based on Jules Verne's novel of the same name.  It stars Jackie Chan, Steve Coogan and C\u00e9cile de France.  The film is set in 19th-century Britain and centers on Phileas Fogg (Steve Coogan), here reimagined as an eccentric inventor, and his efforts to circumnavigate the globe in 80 days.  During the trip, he is accompanied by his Chinese valet, Passepartout (Jackie Chan).  For comedic reasons, the film intentionally deviated wildly from the novel and included a number of anachronistic elements.  With production costs of about $110 million and estimated marketing costs of $30 million, it earned $24 million at the U.S. box office and $72 million worldwide, making it a box office flop.  It was Arnold Schwarzenegger's last film before he took a hiatus from acting to become Governor of California until 2010's \"The Expendables\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 516,
+    "generation_tokens": 30,
+    "generation_speed": 393.9385981038422,
+    "prompt_eval_speed": 25787.106446776612,
+    "generation_latency_s": 0.18365010002162308,
+    "latency": 0.6226316000102088,
+    "total_prompt_tokens": 599,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1487505,
+    "stage_rewrite_s": 0.15406940004322678,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07358820002991706,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2111989000113681,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18368989997543395,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.622641299967654,
+    "unaccounted_latency_s": 9.549991227686405e-05,
+    "rewritten_query": "The movie \"Marlene\" was released on January 26, 1984.",
+    "query_was_rewritten": true
+  }
+}

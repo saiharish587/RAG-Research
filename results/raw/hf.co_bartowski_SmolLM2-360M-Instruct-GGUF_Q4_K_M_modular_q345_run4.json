@@ -1,0 +1,49 @@
+{
+  "question_id": "Q345",
+  "query": "Garden Island Naval Chapel is the oldest Chistian chapel of a naval branch of what defence force?",
+  "ground_truth": "Australian Defence Force",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Garden Island Naval Chapel is the oldest Christian chapel of the Royal Australian Navy (RAN).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Garden Island Naval Chapel: The Naval Chapel at Garden Island dockyard is the oldest Christian chapel of the Royal Australian Navy (RAN).  It was established in 1902 after conversion from the former sail loft, and has stained glass windows and plaques from that era to the present.  The building is the oldest on Garden Island, two storey, built of stuccoed brick with stone sills, arches and columns.  The original loft floor of timber remains, caulked with oakum and bitumen.",
+      "Royal Australian Navy Heritage Centre: The Royal Australian Navy Heritage Centre is the maritime museum of the Royal Australian Navy.  The centre opened on 4 October 2005 and is located within the Public Access Area on the northern end of the Garden Island naval base in Sydney.",
+      "Christ Church (Port Republic, Maryland): The Christ Church is a historic Episcopal church located at Port Republic, Calvert County, Maryland, United States.  The church is a three-bay-wide, five bays long, beige stucco covered structure featuring stained glass in most of the tall paired round-arched sash windows.  It is the mother Episcopal Church of Calvert County and its oldest continually worshipping congregation.  Middleham Chapel was started from this congregation as a Chapel of Ease.  Christ Church Parish was one of the original 30 Anglican parishes in the Province of Maryland.  Burials in the church cemetery include former U. S. Representative Thomas Parran, Sr. and United States Coast Guard Admiral Merlin O'Neill."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 402,
+    "generation_tokens": 19,
+    "generation_speed": 240.5185072661907,
+    "prompt_eval_speed": 45244.794597636464,
+    "generation_latency_s": 0.20034959993790835,
+    "latency": 0.6101784000638872,
+    "total_prompt_tokens": 542,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2253238,
+    "stage_route_s": 0.09188669989816844,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2616112999385223,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05617410002741963,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7200010158121586e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2003813999472186,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6101877000182867,
+    "unaccounted_latency_s": 8.760020136833191e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Oldest Christian Chapel of a Naval Branch of the Defence Force\"",
+      "\"Garden Island Naval Chapel, the oldest Christian Chapel of a Naval Branch of the Defence Force\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q262",
+  "query": "Patrick Kennedy is known for his collections of Irish  folktales from a province situated in which part of Ireland ?",
+  "ground_truth": "the east of Ireland",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Patrick Kennedy is known for his collections of Irish folk tales, including the Greek Princess and the Young Gardener. He was born in Co. Wexford, Ireland, and is credited with preserving Irish idioms in the turn of phrase, sentence structure, and Irish words. Patrick Kennedy's work includes bookseller, bookseller, and Irish folklore.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Patrick Kennedy (folklorist): Patrick Kennedy (early 1801 \u2013 29 March 1873) was a folklorist from Co.  Wexford, Ireland.  A bookseller by trade, he is known for his collections of Irish (Leinster) folktales.  The tales are told in rusticated English of the Irish peasantry who had established roots in The Pale, the anglicized part of Ireland.  He is \"widely credited with preserving irish idioms in the turn of phrase, sentence structure, Irish words\".",
+      "Irish Fairy Tales: Irish Fairy Tales is a retelling of ten Irish folktales by the Irish author James Stephens.  The English illustrator Arthur Rackham provided interior artwork, including numerous black and white illustrations and sixteen color plates.  The stories are set in a wooded, Medieval Ireland filled with larger-than-life hunters, warriors, kings, and fairies.  Many stories concern the Fianna and their captain, Fionn mac Uail, from the Fenian Cycle of Irish mythology.",
+      "The Greek Princess and the Young Gardener: The Greek Princess and the Young Gardener is an Irish fairy tale collected by Patrick Kennedy in \"Fireside Stories of Ireland\".  Joseph Jacobs included it in \"More Celtic Fairy Tales\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 349,
+    "generation_tokens": 71,
+    "generation_speed": 253.98687853703558,
+    "prompt_eval_speed": 13958.883289336853,
+    "generation_latency_s": 0.4124273000052199,
+    "latency": 0.7770967000396922,
+    "total_prompt_tokens": 491,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2271788,
+    "stage_route_s": 0.10606290004216135,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20412050001323223,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05430359998717904,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.300005432218313e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.41246729996055365,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7771077000070363,
+    "unaccounted_latency_s": 0.00010109995491802692,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Patrick Kennedy's collection of Irish folklore from County Cork\"",
+      "\"Irish folklore from County Cork, Ireland\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

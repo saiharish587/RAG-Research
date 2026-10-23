@@ -1,0 +1,49 @@
+{
+  "question_id": "Q514",
+  "query": "What professions did S. Sylvan Simon and Danny Cannon have in common?",
+  "ground_truth": "director and producer",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Sylvan Simon and Danny Cannon both had a medical background and were involved with the development of various scientific instruments and technologies during their careers. They shared similar interests, skills, and experiences that contributed to their respective fields.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "S. Sylvan Simon: S. Sylvan Simon (March 9, 1910 \u2013 May 17, 1951) was an American stage/film director and producer.",
+      "Danny Cannon: John Danny Cannon (born 1968 in Luton, England) is a British film and television writer, director and producer.",
+      "David Gregory (physician): David Gregory (20 December 1625 \u2013 1720) was a Scottish physician and inventor.  His surname is sometimes spelt as Gregorie, the original Scottish spelling.  He inherited Kinnairdy Castle in 1664.  Three of his twenty-nine children became mathematics professors.  He is credited with inventing a military cannon that Isaac Newton described as \"being destructive to the human species\".  Copies and details of the model no longer exist.  Gregory's use of a barometer to predict farming-related weather conditions led him to be accused of witchcraft by Presbyterian ministers from Aberdeen, although he was never convicted."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 299,
+    "generation_tokens": 47,
+    "generation_speed": 382.6146419296803,
+    "prompt_eval_speed": 19235.717961914565,
+    "generation_latency_s": 0.2502440999960527,
+    "latency": 0.9495071000419557,
+    "total_prompt_tokens": 433,
+    "total_generation_tokens": 221,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2216067,
+    "stage_route_s": 0.3696428999537602,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27212460001464933,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057291300036013126,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.549995694309473e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2502980000572279,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9495229000458494,
+    "unaccounted_latency_s": 0.00011160003487020731,
+    "route": "rag",
+    "router_raw": "Sylvan Simon and Danny Cannon were both professionals who worked as detectives, but they had different careers. Sylvan Simon was a detective who specialized in solving crimes by interviewing witnesses and following up on leads. He also worked as a forensic psychologist, which is related to psychology and the study of human behavior. Danny Cannon, on the other hand, was a detective who focused more on solving mysteries and crimes through surveillance and observation rather than interviewing witnesses or following up on leads.",
+    "sub_queries": [
+      "Sylvan Simon and Danny Cannon were both professionals who worked as engineers, but they had different backgrounds and specialties.",
+      "Sylvan Simon was a British engineer who specialized in mechanical engineering, while Danny Cannon was an American engineer with expertise in electrical engineering."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

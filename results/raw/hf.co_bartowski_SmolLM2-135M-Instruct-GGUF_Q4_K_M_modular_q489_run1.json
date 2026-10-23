@@ -1,0 +1,48 @@
+{
+  "question_id": "Q489",
+  "query": "What produces the hormone that promotes sodium retention in the distal nephron?",
+  "ground_truth": "zona glomerulosa",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The hormone produced by the adrenal cortex is aldosterone, which stimulates the release of antidiuretic hormone (ADH/Vasopressin) from the hypothalamus and vasopressin-1 into the blood. This leads to an increase in sodium retention in the distal nephron, resulting in a decrease in blood pressure.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Aldosterone: Aldosterone, the main mineralocorticoid hormone, is a steroid hormone produced by the zona glomerulosa of the adrenal cortex in the adrenal gland.  It is essential for sodium conservation in the kidney, salivary glands, sweat glands and colon.  It plays a central role in the regulation of the plasma sodium (Na), the extracellular potassium (K) and arterial blood pressure.  It does so mainly by acting on the mineralocorticoid receptors in the distal tubules and collecting ducts of the nephron.  It influences the reabsorption of sodium and excretion of potassium (from and into the tubular fluids, respectively) of the kidney, thereby indirectly influencing water retention or loss, blood pressure and blood volume.  When dysregulated, aldosterone is pathogenic and contributes to the development and progression of cardiovascular and renal disease.  Aldosterone has exactly the opposite function of the atrial natriuretic hormone secreted by the heart.",
+      "Angiotensin: Angiotensin is a peptide hormone that causes vasoconstriction and a subsequent increase in blood pressure.  It is part of the renin-angiotensin system, which is a major target for drugs that raises blood pressure.  Angiotensin also stimulates the release of aldosterone, another hormone, from the adrenal cortex.  Aldosterone promotes sodium retention in the distal nephron, in the kidney, which also drives blood pressure up.",
+      "Low pressure receptors: Low pressure receptors are baroreceptors located in the venae cavae and the pulmonary arteries, and in the atria.  They are also called volume receptors.  These receptors respond to changes in the wall tension, which is proportional to the filling state of the low pressure side of circulation (below 60mmHg).  Their impulses regulate the secretion of antidiuretic hormone (ADH/Vasopressin), renin and aldosterone.  An elevated atrial pressure produces a decrease in ADH and aldosterone secretion.  The decrease in vasopressin secretion results in an increase in the volume of urine excreted, serving to lower blood pressure.  In addition, stretching of atrial receptors increases secretion of atrial natriuretic peptide (ANP), which promotes increased water and sodium excretion through the urine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 536,
+    "generation_tokens": 69,
+    "generation_speed": 347.77875223032026,
+    "prompt_eval_speed": 17107.110940891103,
+    "generation_latency_s": 0.3403482000576332,
+    "latency": 0.7402082000626251,
+    "total_prompt_tokens": 664,
+    "total_generation_tokens": 123,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2332035,
+    "stage_route_s": 0.15582689992152154,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20311359991319478,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.040731500019319355,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.900002386420965e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.34038710000459105,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7402204000391066,
+    "unaccounted_latency_s": 0.00011300016194581985,
+    "route": "rag",
+    "router_raw": "The hormone responsible for producing the hormone that promotes sodium retention is **diuretogenin**.",
+    "sub_queries": [
+      "The hormone responsible for promoting sodium retention is called aldosterone, which is produced by the adrenal glands and secreted into the bloodstream to regulate electrolyte balance in the body."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

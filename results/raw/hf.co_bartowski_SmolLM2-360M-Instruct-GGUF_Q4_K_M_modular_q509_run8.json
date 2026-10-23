@@ -1,0 +1,49 @@
+{
+  "question_id": "Q509",
+  "query": "In what London botanical garden can you find the fungus described by Elise Maud Wakefield as \"Lepiota\"?",
+  "ground_truth": "Kew Gardens",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Kew Gardens",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kew Gardens: Kew Gardens is a botanical garden in southwest London that houses the \"largest and most diverse botanical and mycological collections in the world\".  Founded in 1840, from the exotic garden at Kew Park in the London Borough of Richmond upon Thames, UK, its living collections include more than 30,000 different kinds of plants, while the herbarium, which is one of the largest in the world, has over seven million preserved plant specimens.  The library contains more than 750,000 volumes, and the illustrations collection contains more than 175,000 prints and drawings of plants.  It is one of London's top tourist attractions and is a World Heritage Site.",
+      "Botanical garden: A botanical garden or botanic garden is a garden dedicated to the collection, cultivation and display of a wide range of plants labelled with their botanical names.  It may contain specialist plant collections such as cacti and other succulent plants, herb gardens, plants from particular parts of the world, and so on; there may be greenhouses, shadehouses, again with special collections such as tropical plants, alpine plants, or other exotic plants. Visitor services at a botanical garden might include tours, educational displays, art exhibitions, book rooms, open-air theatrical and musical performances, and other entertainment.",
+      "Botany: Botany, also called plant science(s), plant biology or phytology, is the science of plant life and a branch of biology.  A botanist or plant scientist is a scientist who specialises in this field.  The term \"botany\" comes from the Ancient Greek word \u03b2\u03bf\u03c4\u03ac\u03bd\u03b7 (\"botan\u0113\") meaning \"pasture\", \"grass\", or \"fodder\"; \u03b2\u03bf\u03c4\u03ac\u03bd\u03b7 is in turn derived from \u03b2\u03cc\u03c3\u03ba\u03b5\u03b9\u03bd (\"boskein\"), \"to feed\" or \"to graze\".  Traditionally, botany has also included the study of fungi and algae by mycologists and phycologists respectively, with the study of these three groups of organisms remaining within the sphere of interest of the International Botanical Congress.  Nowadays, botanists (in the strict sense) study approximately 410,000 species of land plants of which some 391,000 species are vascular plants (including ca 369,000 species of flowering plants), and ca 20,000 are bryophytes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 587,
+    "generation_tokens": 4,
+    "generation_speed": 238.05272867940252,
+    "prompt_eval_speed": 70299.40119760479,
+    "generation_latency_s": 0.14303839998319745,
+    "latency": 0.6774125000229105,
+    "total_prompt_tokens": 735,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2480621,
+    "stage_route_s": 0.10806190001312643,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.36991759994998574,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05622590007260442,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.700000863522291e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.143069599987939,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6774214999750257,
+    "unaccounted_latency_s": 9.999994654208422e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The London Botanical Garden is home to several species of fungi, including Lepiota.",
+      "Query 2: The London Botanical Garden has a section dedicated to carnivorous plants and mushrooms, which might include the fungus described by Elise Maud Wakefield as \"Lepiota.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

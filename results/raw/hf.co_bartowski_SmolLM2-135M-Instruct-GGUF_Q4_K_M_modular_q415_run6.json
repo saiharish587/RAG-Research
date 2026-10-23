@@ -1,0 +1,48 @@
+{
+  "question_id": "Q415",
+  "query": "The actress that played the leading role in the independent film \"A Perfect Ending\" also stars with John Bregar in a 2008 film directed by who?",
+  "ground_truth": "Douglas Jackson",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The actress that played the leading role in the independent film \"A Perfect Ending\" (2012) is John Bregar.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Perfect Murder: A Perfect Murder is a 1998 American crime thriller film directed by Andrew Davis and starring Michael Douglas, Gwyneth Paltrow, and Viggo Mortensen.  It is a modern remake of Alfred Hitchcock's 1954 film \"Dial M for Murder\", though the characters' names are all changed, and over half the plot is completely rewritten and altered.  Loosely based on the play by Frederick Knott, the screenplay was written by Patrick Smith Kelly.",
+      "Barbara Niven: Barbara Niven (born February 26, 1953) is an American actress and producer, best known for her performances in Lifetime movies and television roles in \"\", \"One Life to Live\", and \"Cedar Cove\".  Niven also had the leading role in the independent film \"A Perfect Ending\" (2012).",
+      "Flashbacks of a Fool: Flashbacks of a Fool is a 2008 British drama film about a Hollywood actor who, following the death of his childhood best friend, reflects upon his life and what might have been, had he stayed in England.  The film was directed by Baillie Walsh, and stars Daniel Craig, Harry Eden, Claire Forlani, Felicity Jones, Emilia Fox, Eve, Jodhi May, Helen McCrory and Miriam Karlin."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 389,
+    "generation_tokens": 30,
+    "generation_speed": 388.36962431711675,
+    "prompt_eval_speed": 52624.45887445888,
+    "generation_latency_s": 0.1974589000456035,
+    "latency": 0.52642630005721,
+    "total_prompt_tokens": 561,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2291281,
+    "stage_route_s": 0.14925380004569888,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1429469999857247,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03660130000207573,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1499966755509377e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19749840011354536,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5264387000352144,
+    "unaccounted_latency_s": 9.729992598295212e-05,
+    "route": "rag",
+    "router_raw": "The actress that played the leading role in the independent film \"A Perfect Ending\" is John Bregar.",
+    "sub_queries": [
+      "The actress that played the leading role in the independent film \"A Perfect Ending\" is John Bregar."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

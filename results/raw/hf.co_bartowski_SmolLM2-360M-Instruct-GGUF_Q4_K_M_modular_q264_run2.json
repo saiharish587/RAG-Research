@@ -1,0 +1,49 @@
+{
+  "question_id": "Q264",
+  "query": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+  "ground_truth": "Tybalt",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Benvolio",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Benvolio: Benvolio is a fictional character in Shakespeare's drama \"Romeo and Juliet\".  He is Montague's nephew and Romeo's cousin.  Benvolio serves as an unsuccessful peacemaker in the play, attempting to prevent violence between the Capulet and Montague families.",
+      "Romeo: Romeo Montague (Italian: \"Romeo Montecchi\" ) is the protagonist of William Shakespeare's tragedy \"Romeo and Juliet\".  The son of Montague and his wife, he secretly loves and marries Juliet, a member of the rival House of Capulet.  Forced into exile after slaying Juliet's cousin, Tybalt, in a duel, Romeo commits suicide upon hearing falsely of Juliet's death.",
+      "Romeo and Juliet (1968 film): Romeo and Juliet is a 1968 British-Italian romance film based on the tragic play of the same name (1591\u20131595) by William Shakespeare."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 295,
+    "generation_tokens": 4,
+    "generation_speed": 230.10987746649025,
+    "prompt_eval_speed": 12182.028410967954,
+    "generation_latency_s": 0.15194619994144887,
+    "latency": 0.47882530000060797,
+    "total_prompt_tokens": 465,
+    "total_generation_tokens": 25,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2440038,
+    "stage_route_s": 0.09635529993101954,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1711420000065118,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05920020001940429,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7300087064504623e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15198009996674955,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.47883439995348454,
+    "unaccounted_latency_s": 0.00010019994806498289,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Benvolio\"",
+      "\"William Shakespeare's Romeo and Juliet\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

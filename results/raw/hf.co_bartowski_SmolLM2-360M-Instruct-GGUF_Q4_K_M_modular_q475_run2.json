@@ -1,0 +1,49 @@
+{
+  "question_id": "Q475",
+  "query": "Where was the telefilm shot that was based on the 1977 Katherine Paterson book?",
+  "ground_truth": "Edmonton, Alberta",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Great Movie Ride was shot in Columbus Circle, New York City.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Great Movie Ride: The Great Movie Ride was a dark ride attraction located at Disney's Hollywood Studios in the Walt Disney World Resort.  The attraction employed the use of Audio-Animatronic figures, practical sets, live actors, special effects, and projections to recreate iconic scenes from twelve classic films throughout motion picture history.  The attraction\u2014which debuted with the park on May 1, 1989\u2014was located inside a replica of Grauman's Chinese Theatre, one of Hollywood's most famous movie palaces.",
+      "2 Columbus Circle: 2 Columbus Circle is a 12-story building located on a small, trapezoidal lot on the south side of Columbus Circle on the Upper West Side of Manhattan, New York City.  Bordered by 58th Street, 59th Street, Broadway, and Eighth Avenue, it stands on the site of the seven-story Grand Circle Hotel designed by William H. Cauvet.  Opened in 1964 after A&P heir Huntington Hartford hired architect Edward Durell Stone to build a museum for him at the site.  The building came under controversy in 2002 after the Museum of Arts and Design (MAD) was designated as the building's developer.  MAD subsequently significantly altered its design, including modifying its facade; since 1996, ideas had been put forward for the building to be landmarked, so its proposed landmark status was brought into question with this renovation.",
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 474,
+    "generation_tokens": 15,
+    "generation_speed": 245.8774546765892,
+    "prompt_eval_speed": 15220.60240190097,
+    "generation_latency_s": 0.2036445999983698,
+    "latency": 0.7311236999230459,
+    "total_prompt_tokens": 616,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2206103,
+    "stage_route_s": 0.10103619995061308,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3703590000513941,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055901699932292104,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.19000056758523e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20368110004346818,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7311324999900535,
+    "unaccounted_latency_s": 9.330001194030046e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The film \"The Night Circus\" was shot in New York City, specifically at the New York Public Library and the Metropolitan Museum of Art.",
+      "Query 2: The film \"The Night Circus\" was shot on location in New York City, with the main set located at the New York Public Library and the Met Arts Center."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

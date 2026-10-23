@@ -1,0 +1,42 @@
+{
+  "question_id": "Q277",
+  "query": "Which Genus has more species Eucryphia or Lepidozamia ?",
+  "ground_truth": "Eucryphia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Lepidozamia has more species than Eucryphia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lepidozamia: Lepidozamia is a genus of two species of cycad, both endemic to Australia.  The name, derived from the Greek word lepidos, meaning scaly, refers to the scale-like structure of the stem and leaf bases.  They are native to rainforest climates in eastern Queensland and eastern New South Wales.  They have a chromosome number of 2n = 18.",
+      "Eucryphia: Eucryphia is a small genus of trees and large shrubs native to the south temperate regions of South America and coastal eastern Australia.  Sometimes placed in a family of their own, the Eucryphiaceae, more recent classifications place them in the Cunoniaceae.  There are seven species, two in South America and five in Australia, and several named hybrids.  They are mostly evergreen though one species (\"E. glutinosa\") is usually deciduous.",
+      "List of birds of South America: This is a list of the bird species recorded in South America.  South America is the \"Bird Continent\": It hosts 3379 species, more than any other.  (Much larger Eurasia is second with 3232.)  Colombia's list alone numbers more than 1800 species.  Of the continent's species, 2304 are endemic, significantly more than Eurasia's 2018.  Nine entire families, containing 21 species, are endemic to the continent."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 382,
+    "generation_tokens": 16,
+    "generation_speed": 262.44997047437835,
+    "prompt_eval_speed": 50223.50775703392,
+    "generation_latency_s": 0.8836081000044942,
+    "latency": 3.374316900037229,
+    "total_prompt_tokens": 460,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12219189999999999,
+    "stage_rewrite_s": 1.1855572001077235,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0637605999363586,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24127040000166744,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8836491999682039,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3743268999969587,
+    "unaccounted_latency_s": 9.019998833537102e-05,
+    "rewritten_query": "Eucryphia has more species than Lepidozamia.",
+    "query_was_rewritten": true
+  }
+}

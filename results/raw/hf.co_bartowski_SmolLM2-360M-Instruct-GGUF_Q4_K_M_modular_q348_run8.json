@@ -1,0 +1,49 @@
+{
+  "question_id": "Q348",
+  "query": "What fictional character created by Tom Clancy was turned into a film in 2002?",
+  "ground_truth": "Jack Ryan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The fictional character created by Tom Clancy who was turned into a film in 2002 is Red October, the submarine from the novel \"The Hunt for Red October\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Hunt for Red October (1987 video game): The Hunt for Red October is a video game based on the book The Hunt for Red October.  It was released in 1987 and was available for the Atari ST, Amiga, Apple II, ZX Spectrum, MSX, Commodore 64 and IBM PC.  A port for the Apple IIGS was released in 1989.  The player must navigate the \"Red October\" towards U.S. waters while avoiding the Soviet Navy.  The game is a combination of submarine simulator and strategy game.",
+      "The Hunt for Red October (1990 video game): The Hunt for Red October is video game based on the movie \"The Hunt for Red October\".  It was developed by Images Software and released by Grandslam Interactive Ltd. in 1990 and was available for the Amiga, Amstrad CPC, Atari ST, Commodore 64, MS-DOS, and ZX Spectrum.",
+      "Red October (fictional submarine): Red October (Russian: \u041a\u0440\u0430\u0441\u043d\u044b\u0439 O\u043a\u0442\u044f\u0431\u0440\u044c , [\u02c8krasn\u0268j \u0250k\u02c8t\u02b2abr\u02b2] \"Krasniy Oktyabr\") is a modified \"Typhoon\" class submarine in the Tom Clancy novel \"The Hunt for Red October\" and the film of the same name.  It was built with a revolutionary stealth propulsion system called a \"caterpillar drive\", which is described as a pump-jet system in the book.  In the film however, it is shown as being a magnetohydrodynamic drive."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 432,
+    "generation_tokens": 37,
+    "generation_speed": 258.2752795655391,
+    "prompt_eval_speed": 53339.918508457835,
+    "generation_latency_s": 0.26489330001641065,
+    "latency": 0.6117604000028223,
+    "total_prompt_tokens": 572,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2439349,
+    "stage_route_s": 0.09876920003443956,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19362479995470494,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05429779994301498,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.239993333816528e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26493190007749945,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6117727999808267,
+    "unaccounted_latency_s": 9.770004544407129e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Tom Clancy's The Hunt for Red October\"",
+      "\"The Hunt for Red October (film)\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

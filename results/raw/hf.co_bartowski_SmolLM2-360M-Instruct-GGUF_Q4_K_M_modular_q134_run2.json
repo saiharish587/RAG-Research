@@ -1,0 +1,49 @@
+{
+  "question_id": "Q134",
+  "query": "Which Eminem album included vocals from a singer who had an album titled \"Unapologetic\"?",
+  "ground_truth": "\"The Marshall Mathers LP 2\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "\"Unapologetically\" was released on November 19, 2012, by Def Jam Recordings and SRP Records.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Unapologetic: Unapologetic is the seventh studio album by Barbadian singer Rihanna.  It was released on November 19, 2012, by Def Jam Recordings and SRP Records.  It was recorded between June and November 2012, during promotion of her sixth album, \"Talk That Talk\" (2011).  As executive producer, Rihanna enlisted previous collaborators The-Dream, David Guetta, Chase & Status, and StarGate to work alongside new collaborators such as Parker Ighile, Mike Will Made-It, and Labrinth.  \"Unapologetic\" is mainly a pop, dubstep and R&B album that incorporates elements of hip hop, EDM and reggae in its production, similar to the sound of her previous albums \"Talk That Talk\" and \"Rated R\" (2009).",
+      "Unapologetically: Unapologetically is the upcoming second studio album by American country music artist Kelsea Ballerini.  It is set to be released on November 3, 2017.  Ballerini announced the album's title and release date on July 25, 2017.  In August, the album's track listing was first revealed to fans during a four-day check-in event over the mobile app Swarm.",
+      "Encore (Eminem album): Encore (stylized as \u018eNCORE) is the fifth studio album by American rapper Eminem.  It was released by Aftermath Entertainment, Shady Records, and Interscope Records.  Its release was set for November 16, 2004, but was moved up to November 12 (coincidentally, exactly eight years to the day since his debut album, \"Infinite\", was released) after the album was leaked to the Internet.  \"Encore\" sold 710,000 copies in its first three days, and went on to sell over 1.5 million copies in its first two weeks of release in the United States, certified quadruple-platinum that mid-December.  Nine months after its release, worldwide sales of the album stood at 11 million copies.  By December 2016, the album had sold over 5 million copies in the United States and more than 23 million copies worldwide."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 592,
+    "generation_tokens": 31,
+    "generation_speed": 231.53507756425097,
+    "prompt_eval_speed": 29198.52034525277,
+    "generation_latency_s": 0.2672635999042541,
+    "latency": 0.5704455999657512,
+    "total_prompt_tokens": 736,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.232564,
+    "stage_route_s": 0.09529199998360127,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15329249994829297,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054418900050222874,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.850009620189667e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26729420002084225,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5704541000304744,
+    "unaccounted_latency_s": 9.85999358817935e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Eminem\"",
+      "\"Unapologetic\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

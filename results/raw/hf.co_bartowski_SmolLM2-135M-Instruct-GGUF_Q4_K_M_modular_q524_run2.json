@@ -1,0 +1,48 @@
+{
+  "question_id": "Q524",
+  "query": "Conrad Anker located the body of a mountaineer who took part it the first three British expeditions to which mountain?",
+  "ground_truth": "Mount Everest",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Conrad Anker located the body of a mountaineer who took part in the first three British expeditions to which mountain?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Conrad Anker: Conrad Anker (born November 27, 1962) is an American rock climber, mountaineer, and author.  He is famous for his challenging ascents in the high Himalaya and Antarctica.  He is the team leader of The North Face climbing team.  In 1999 he located George Mallory's body on Everest as a member of a search team looking for the remains of the legendary British climber.  He lives in Bozeman, Montana.",
+      "2007 Altitude Everest expedition: The 2007 Altitude Everest expedition, led by the American climber Conrad Anker, arrived at Base Camp below the north face of Everest in May 2007 and retraced the last journey of British climber George Mallory.  On 8 June 1924, Mallory, along with his climbing partner Andrew 'Sandy' Irvine, set out for the summit of Everest but disappeared from view short of the summit.  The mystery of whether they could have been the first climbers to reach the world's highest point has never been resolved.  Anker and his colleagues investigated what happened to them, testing out the durability of their clothing and equipment to establish whether Mallory and Irvine could have reached the summit in the conditions they faced in 1924.",
+      "Mallory and Irvine Research Expedition: The goal of the Mallory and Irvine Research Expedition of 1999 was to discover evidence of whether George Mallory and Andrew Irvine had been the first to summit Mount Everest in their attempt of 8\u20139 June 1924.  The expedition was organized by regular Everest expedition leader Eric Simonson and advised by researcher Jochen Hemmleb, with a team of climbers from the U.S., the United Kingdom, and Germany.  Hemmleb's investigations of sketchy reports of earlier sightings and photographs had led him to identify what he believed was the area in which Irvine's body lay, some distance below where his ice axe had been found by Percy Wyn-Harris on the expedition led by Hugh Ruttledge in 1933.  The team hoped in particular to find a camera on Irvine's body which, had the pair been successful, should have contained a picture of the summit.  Within hours of commencing the search on 1 May 1999, Conrad Anker found a body on the North Face, at 8,155 m; but to their surprise it was that of Mallory, not Irvine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 615,
+    "generation_tokens": 25,
+    "generation_speed": 358.00206209187763,
+    "prompt_eval_speed": 36848.41222288796,
+    "generation_latency_s": 0.20601189997978508,
+    "latency": 0.565563700045459,
+    "total_prompt_tokens": 761,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2432356,
+    "stage_route_s": 0.11092380003537983,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20924530003685504,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03922120004426688,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.970006946474314e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20604429999366403,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5655725999968126,
+    "unaccounted_latency_s": 9.889982175081968e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Conrad Anker, the first British expedition to climb Mount Everest in 1953, was located by the mountaineers who took part in the first three British expeditions to climb Mount Everest."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q370",
+  "query": "Erica Packer was the second wife of what Australian businessman?",
+  "ground_truth": "James Packer",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Erica Packer was the second wife of Australia's eighth richest man, James Packer.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Packer: James Douglas Packer (born 8 September 1967) is an Australian businessman and investor.",
+      "Erica Packer: Erica Georgia Packer (n\u00e9e Baxter; born 10 November 1977) is an Australian singer and model.  She was the second wife of Australia's eighth richest man, James Packer.",
+      "Rupert Murdoch: Keith Rupert Murdoch, {'1': \", '2': 'AC KCSG', '3': \", '4': \"} ( ; born 11 March 1931) is an Australian-born American media mogul.  His father, Sir Keith Murdoch, had been a reporter, editor, and senior executive of the \"Herald\" and \"Weekly Times\" newspaper publishing company, covering all Australian states except New South Wales.  After his father's death in 1952, Murdoch declined to join his late father's registered public company and created his own private company, News Limited.  Murdoch thus had full control as Chairman and CEO of global media holding company News Corporation, now the world's second-largest media conglomerate, and its successors, News Corp and 21st Century Fox, after the conglomerate split on 28 June 2013."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 355,
+    "generation_tokens": 20,
+    "generation_speed": 242.6448286320898,
+    "prompt_eval_speed": 41863.20754716981,
+    "generation_latency_s": 0.204972599982284,
+    "latency": 0.5116450999630615,
+    "total_prompt_tokens": 481,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2360767,
+    "stage_route_s": 0.09507519996259362,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1567478000652045,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05467010010033846,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1600043661892414e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2050134000601247,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5116564999334514,
+    "unaccounted_latency_s": 9.909970685839653e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Erica Packer\"",
+      "\"Australian businessman\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q227",
+  "query": "The author of The Thing of It Is... is what Nationality?",
+  "ground_truth": "American",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The author of The Thing of It Is... is an Anglo-American writer and journalist, Christopher Hitchens.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Thing of It Is...: The Thing of It Is... is a 1967 novel written by William Goldman about Amos McCracken, a 31-year-old man who has written a popular show tune and who is having marriage troubles.",
+      "Barack Obama: Barack Hussein Obama II ( ; born August 4, 1961) is an American politician who served as the 44th President of the United States from 2009 to 2017.  He is the first African American to have served as president.  He previously served in the U.S. Senate representing Illinois from 2005 to 2008 and in the Illinois State Senate from 1997 to 2004.",
+      "God Is Not Great: God Is Not Great: How Religion Poisons Everything is a 2007 book by Anglo-American author and journalist Christopher Hitchens, in which he makes a case against organized religion.  It was published by Atlantic Books in the United Kingdom as God Is Not Great: The Case Against Religion."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 302,
+    "generation_tokens": 23,
+    "generation_speed": 347.57378386955406,
+    "prompt_eval_speed": 38628.80532105398,
+    "generation_latency_s": 0.1805648000445217,
+    "latency": 0.4312802000204101,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22464220000000001,
+    "stage_route_s": 0.12760789995081723,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.08603390003554523,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03691829997114837,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.349998198449612e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18059820006601512,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4312889000866562,
+    "unaccounted_latency_s": 8.769996929913759e-05,
+    "route": "rag",
+    "router_raw": "The author of The Thing Of It Is... is a Canadian.",
+    "sub_queries": [
+      "Nationality: American"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

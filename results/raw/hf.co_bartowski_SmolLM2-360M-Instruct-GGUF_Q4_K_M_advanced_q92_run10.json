@@ -1,0 +1,42 @@
+{
+  "question_id": "Q92",
+  "query": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+  "ground_truth": "John Waters",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "John Waters hosted the 18th Independent Spirit Awards in 2002.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "18th Independent Spirit Awards: The 2002 Independent Spirit Awards, honoring the best in independent filmmaking for 2002, were announced on March 22, 2003.  It was hosted by John Waters.",
+      "John Waters: John Samuel Waters Jr. (born April 22, 1946) is an American film director, screenwriter, author, actor, stand-up comedian, journalist, visual artist, and art collector, who rose to fame in the early 1970s for his transgressive cult films.",
+      "Independent Spirit Awards: The Film Independent Spirit Awards (abbreviated \"Spirit Awards\" and originally known as the FINDIE or Friends of Independents Awards), founded in 1984, are awards dedicated to independent filmmakers.  Winners were typically presented with acrylic glass pyramids containing suspended shoestrings representing the paltry budgets of independent films.  Since 2006, winners have received a trophy depicting a bird with its wings spread sitting atop of a pole with the shoestrings from the previous design wrapped around the pole."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 19,
+    "generation_speed": 261.79092549981397,
+    "prompt_eval_speed": 41014.361495665675,
+    "generation_latency_s": 0.8992741999682039,
+    "latency": 3.3595853000879288,
+    "total_prompt_tokens": 397,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1221238,
+    "stage_rewrite_s": 1.2126637999899685,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0405340999132022,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20699829992372543,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8993079999927431,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.359593900036998,
+    "unaccounted_latency_s": 9.010022040456533e-05,
+    "rewritten_query": "The American film director, John Hughes, hosted the 18th Independent Spirit Awards in 2002.",
+    "query_was_rewritten": true
+  }
+}

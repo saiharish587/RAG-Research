@@ -1,0 +1,42 @@
+{
+  "question_id": "Q446",
+  "query": "Mick Carter is the landlord of a public house located at what address?",
+  "ground_truth": "46 Albert Square, Walford, London E20",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Mick Carter is the landlord of a public house located at 700 Jackson Place NW in Washington D.C.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mick Carter: Michael \"Mick\" Carter is a fictional character from the BBC soap opera \"EastEnders\" played by Danny Dyer, making his first appearance in the show in the episode originally broadcast in the United Kingdom on 25 December 2013.  Dyer's casting was announced on 1 October 2013 with that of his on-screen partner, Linda Carter, played by Kellie Bright.  He is the son of established character Shirley Carter (Linda Henry) and a member of the Carter family.  Mick immediately becomes the new landlord of The Queen Victoria public house (referred to as \"The Vic\"), bringing Linda, their son Johnny Carter (Sam Strike/Ted Reilly) and pet dog Lady Di with him.  They are later joined by daughter Nancy Carter (Maddy Hill), son Lee Carter (Danny-Boy Hatchard) and other members of the extended family.",
+      "5th Avenue Theatre: The 5th Avenue Theatre (often referred to as 5th Avenue or the 5th) is a landmark theatre building located in Seattle, Washington.  It has hosted a variety of theatre productions and motion pictures since it opened in 1926.  The building and land is owned by the University of Washington and was once part of the original campus.  It is operated as a venue for nationally touring Broadway and original shows by the non-profit 5th Avenue Theatre Association.  The theatre, located at 1308 Fifth Avenue in the historic Skinner Building, has been listed on the U.S. National Register of Historic Places since 1978.",
+      "Peter Parker House: The Peter Parker House, also known as the former headquarters of the Carnegie Endowment for International Peace, is a historic row house at 700 Jackson Place NW in Washington D.C. Built in 1860, it is historically significant for its association with the Carnegie Endowment, whose headquarters it was from its founding in 1910 until 1948.  The building was declared a National Historic Landmark in 1974.  It has since been incorporated into the Blair House complex serving high-profile official visitors to the capital."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 538,
+    "generation_tokens": 26,
+    "generation_speed": 381.0472938314305,
+    "prompt_eval_speed": 17901.11133293405,
+    "generation_latency_s": 0.18218749994412065,
+    "latency": 0.5846212999895215,
+    "total_prompt_tokens": 613,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1260571,
+    "stage_rewrite_s": 0.14324110001325607,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07822919997852296,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18083490000572056,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18222980003338307,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5846324000740424,
+    "unaccounted_latency_s": 9.80000477284193e-05,
+    "rewritten_query": "Mick Carter's public house is located at 123 Main Street, 5th Avenue.",
+    "query_was_rewritten": true
+  }
+}

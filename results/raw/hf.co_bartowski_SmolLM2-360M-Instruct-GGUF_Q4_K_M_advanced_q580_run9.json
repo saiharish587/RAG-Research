@@ -1,0 +1,42 @@
+{
+  "question_id": "Q580",
+  "query": "The album \"The Best of LeAnn Rimes\" contained a song used as the theme song for a film. What is the name of the film?",
+  "ground_truth": "Coyote Ugly",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Can't Fight the Moonlight",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Can't Fight the Moonlight: \"Can't Fight the Moonlight\" is a song written by Diane Warren, recorded by country pop singer LeAnn Rimes.  It was the theme song of the film \"Coyote Ugly\".  Released as a single on August 22, 2000 by Rimes, the song reached the top twenty in every country it charted in, and peaked at number eleven on the \"Billboard\" Hot 100.  Internationally, the song topped the charts in eight countries, including Australia, Ireland and the United Kingdom.  \"Can't Fight the Moonlight\" became Australia's best-selling single of 2001.",
+      "The Best of LeAnn Rimes: The Best of LeAnn Rimes is a greatest hits album by American country singer LeAnn Rimes, released in 2004, it tweaks the 2003 U.S. release \"Greatest Hits\", leaving behind some of the purer country hits that didn't translate outside of the U.S.\u2014notably, Al Anderson's \"Big Deal\"\u2014and concentrating on her big pop crossover hits, including \"How Do I Live,\" \"Can't Fight the Moonlight\u201d and her duet with Ronan Keating, \"Last Thing on My Mind.",
+      "Love Is Love Is Love: \"Love Is Love Is Love\" (stylized as \"LovE Is LovE Is LovE\") is a song recorded by American singer LeAnn Rimes, and the fourth release from her sixteenth studio album, \"Remnants\".  Rimes co-produced the track with Darrell Brown, Mark Batson, and Niko Bolas, and co-wrote the song with Darrell Brown, Lindy Robbins and Toby Gad.  The single will be featured in the 2017 American film \"Lucky Logan\", in which Rimes will have a cameo."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 495,
+    "generation_tokens": 7,
+    "generation_speed": 281.5428548445481,
+    "prompt_eval_speed": 66389.48497854077,
+    "generation_latency_s": 0.9114849999314174,
+    "latency": 3.3913685999577865,
+    "total_prompt_tokens": 586,
+    "total_generation_tokens": 22,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1231502,
+    "stage_rewrite_s": 1.2504772000247613,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0693202998954803,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15996700001414865,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9115178999491036,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3913773999083787,
+    "unaccounted_latency_s": 9.540002793073654e-05,
+    "rewritten_query": "Film Name: The Best of LeAnn Rimes' Theme Song",
+    "query_was_rewritten": true
+  }
+}

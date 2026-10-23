@@ -1,0 +1,49 @@
+{
+  "question_id": "Q506",
+  "query": "The \"civic rally cross\" was sold alongside what other model sold exclusively in Japan at Honda Verno dealerships? ",
+  "ground_truth": "Honda Ballade",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Civic rally cross was sold alongside the Honda Element, which was also available at Honda Verno dealerships.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Honda Civic (third generation): The third generation Honda Civic is an automobile which was produced by Honda from 1983 to 1987.  It was introduced in September 1983 for model year 1984.  The Civic's wheelbase was increased by 2\u20135 inches (13\u00a0cm) to 93.7 inches (hatchback) or 96.5 inches (sedan).  A three-door hatchback/kammback, four-door sedan (also known as the Honda Ballade), the five-door \"Shuttle\" station wagon, and sporting CRX coup\u00e9 shared common underpinnings.  This included MacPherson strut suspension with torsion bars in the front and a rear beam with coil springs.  However, the body panels were largely different between models.  The Civic-based Honda Quint five-door hatchback also underwent a model change, and became the Honda Quint Integra, available as both a three- and five-door fastback.  The Quint Integra (soon just \"Integra\") was sold at the Japanese \"Honda Verno\" dealership along with the CR-X.  The Civic in Japan was now exclusive to \"Honda Primo\", along with Honda's kei cars as well as superminis like the Honda City.",
+      "Honda Vigor: The Honda Vigor was a premium sedan that was sold in Japan through the \"Honda Verno\" dealer network from 1981 to 1995 derived from the Honda Accord, and briefly sold in North America from 1992 to 1994 as the Acura Vigor.  Early Vigors were more upmarket versions of the Accord and served as Honda's flagship until the arrival of the Honda Legend.  In 1989, the Vigor would differentiate itself further from the Accord with unique styling and an available longitudinal five-cylinder engine, and a twin to the Vigor was introduced with the Honda Inspire, available at \"Honda Clio\" dealerships.",
+      "Honda Crosstour: The Honda Crosstour (initially branded the Accord Crosstour) is a full-size crossover SUV manufactured by Japanese automaker Honda.  Sales began in November 2009 for the 2010 model year, and was discontinued for the 2016 model year due to slow sales.Along with the Element (which was discontinued in the second year of the Crosstour), the Crosstour was succeeded by the smaller HR-V crossover for the 2016 model year."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 664,
+    "generation_tokens": 25,
+    "generation_speed": 246.2714502433162,
+    "prompt_eval_speed": 80778.58880778588,
+    "generation_latency_s": 0.2263645000057295,
+    "latency": 0.6361972999293357,
+    "total_prompt_tokens": 818,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22489920000000002,
+    "stage_route_s": 0.10105970001313835,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2515034000389278,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05709040001966059,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.880002234131098e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2264033000683412,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6362084000138566,
+    "unaccounted_latency_s": 0.00010369974188506603,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Civic Rally Cross: Exclusive Model Sold at Honda Verno Dealerships\"",
+      "\"Exclusive Civic Rally Cross: Sold at Honda Verno Dealerships\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

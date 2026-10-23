@@ -1,0 +1,42 @@
+{
+  "question_id": "Q65",
+  "query": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+  "ground_truth": "more than 70 countries",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Scott Parkin has been a vocal critic of Exxonmobil and other corporations such as Bank of America, Citibank, TXU, and the Keystone XL Pipeline. He has organized campaigns against these companies and their operations in various countries including New Jersey, Pennsylvania, Texas, and the Mid-Atlantic and Southeastern states.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Parkin: Scott Parkin (born 1969, Garland, Texas is an anti-war, environmental and global justice organizer, former community college history instructor, and a founding member of the Houston Global Awareness Collective.  He has been a vocal critic of the American invasion of Iraq, and of corporations such as Exxonmobil and Halliburton.  Since 2006, he has worked as an campaigner for the Rainforest Action Network, organizing campaigns against Bank of America, Citibank, TXU and the Keystone XL Pipeline.  He also organizes with Rising Tide North America.",
+      "Exxon: Exxon was the brand name of oil and natural resources company Exxon Corporation, prior to 1972 known as Standard Oil Company of New Jersey.  In 1999, Exxon Corporation merged with Mobil to form ExxonMobil.  The \"Exxon\" brand is still used by ExxonMobil's downstream operations as a brand for certain of its gas stations, motor fuel and related products (the highest concentration of which are located in New Jersey, Pennsylvania, Texas and in the Mid-Atlantic and Southeastern states).  Standard Oil Company of New Jersey was one of the Seven Sisters that dominated the global petroleum industry from the mid-1940s to the 1970s.",
+      "Esso Australia: Esso Australia is an Australian affiliate of ExxonMobil, the US based oil giant.  Esso operates a number of oil and gas platforms in Bass Strait, south east of Melbourne, Australia, as well as a gas processing facility at Longford and Long Island Point (LIP) in Hastings."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 67,
+    "generation_speed": 256.00758088120097,
+    "prompt_eval_speed": 14996.52052887961,
+    "generation_latency_s": 1.1522268999833614,
+    "latency": 3.590262999990955,
+    "total_prompt_tokens": 515,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1277337,
+    "stage_rewrite_s": 1.2098223000066355,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0432642999803647,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18483149993699044,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1522685999516398,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.590273299952969,
+    "unaccounted_latency_s": 8.720008190721273e-05,
+    "rewritten_query": "Scott Parkin has criticized ExxonMobil for its environmental impact, operating across multiple countries.",
+    "query_was_rewritten": true
+  }
+}

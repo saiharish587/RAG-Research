@@ -1,0 +1,42 @@
+{
+  "question_id": "Q35",
+  "query": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+  "ground_truth": "Letters to Cleo",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Screaming Trees had more members than Letters to Cleo.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Letters to Cleo: Letters to Cleo are an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\".  The band's members are Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later, Tom Polce.",
+      "Van Conner: Van Conner (born March 17, 1967 in Apple Valley, California) is an American rock musician.  In 1984 he co-founded the band Screaming Trees with his brother Gary Lee Conner and close friends Mark Lanegan and Mark Pickerel.  On the 25 June 2000 Screaming Trees announced their official breakup.  Conner would start a low key band under the name Gardener which released its only album in the 1990s under the name \"New Dawning Time\".  Conner has also had brief appearances as a session musician with other known bands such as Queens of the Stone Age and helping Mark Lanegan on his solo album I'll Take Care of You.",
+      "Screaming Trees: Screaming Trees was an American rock band formed in Ellensburg, Washington in 1985 by vocalist Mark Lanegan, guitarist Gary Lee Conner, bass player Van Conner and drummer Mark Pickerel.  Pickerel had been replaced by Barrett Martin by the time the band reached its most successful period.  Although widely associated with grunge, the band's sound incorporated hard rock and psychedelic elements.  During Screaming Trees' existence the band released seven studio albums, five EPs, and three compilations."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 438,
+    "generation_tokens": 13,
+    "generation_speed": 255.19718890481144,
+    "prompt_eval_speed": 15212.559044178937,
+    "generation_latency_s": 0.9235667999600992,
+    "latency": 3.3721014000475407,
+    "total_prompt_tokens": 514,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13315369999999999,
+    "stage_rewrite_s": 1.1496638000244275,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1003487999550998,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19840949994977564,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9236001999815926,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.372109599993564,
+    "unaccounted_latency_s": 8.770008571445942e-05,
+    "rewritten_query": "Screaming Trees had more members than Letters to Cleo.",
+    "query_was_rewritten": true
+  }
+}

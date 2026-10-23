@@ -1,0 +1,49 @@
+{
+  "question_id": "Q328",
+  "query": "What studio album did Kanye West record with Roc-A-Fella Records and soul singer Dwele?",
+  "ground_truth": "My Beautiful Dark Twisted Fantasy",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Kanye West recorded his second studio album, \"Late Registration,\" with Roc-A-Fella Records and producer Jon Brion.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Late Registration: Late Registration is the second studio album by American rapper Kanye West.  It was released on August 30, 2005, through Roc-A-Fella Records.  It was recorded over the course of a year in sessions held across studios in New York City and Hollywood, with West collaborating with American record producer and composer Jon Brion.  The album features guest contributions from Adam Levine, Lupe Fiasco, Jamie Foxx, Common, Jay-Z, Brandy, and Nas, among others.  Its production was notably more lush and elaborate than West's 2004 debut album \"The College Dropout\", as he utilized intricate sampling methods and string orchestration with Brion.  West's lyrics explore both personal and political themes, including poverty, drug trafficking, racism, healthcare, and the blood diamond trade.",
+      "The College Dropout: The College Dropout is the debut studio album by American rapper Kanye West.  It was released on February 10, 2004, through Roc-A-Fella Records.  It was recorded over a period of four years, beginning in 1999.  Prior to the album's release, West had received praise for his production work for artists such as Jay-Z and Talib Kweli, but faced difficulty being accepted as a recording artist in his own right by figures in the music industry.  Nonetheless intent on pursuing a solo career, it was several years before West finally received a record deal from Roc-A-Fella Records.",
+      "The People (Common song): \"The People\" is a song by American rapper Common, released as the second single of his seventh studio album \"Finding Forever\".  It made its first appearance on Kanye West's \"Can't Tell Me Nothing\" mixtape.  The song features production by West and contains background vocals provided by soul singer Dwele.  The original version of the song had Common singing the hook by himself, but this was later replaced with Dwele singing the hook.  It contains samples of \"We Almost Lost Detroit\" by Gil Scott-Heron as well as vocal samples of \"Long Red\" by Mountain (the latter of which was sampled on Wouldn't Get Far featuring West).  This action was part of West's intention to pay tribute to J Dilla through the production style expressed within the album."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 583,
+    "generation_tokens": 29,
+    "generation_speed": 230.93584761419382,
+    "prompt_eval_speed": 12909.36870308452,
+    "generation_latency_s": 0.2848903000121936,
+    "latency": 0.7675147999543697,
+    "total_prompt_tokens": 731,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2376183,
+    "stage_route_s": 0.11220710002817214,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.31424440001137555,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05599790008272976,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.370005965232849e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2849240000359714,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7675243000267074,
+    "unaccounted_latency_s": 9.779981337487698e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Roc-A-Fella Records\" - The studio album by Kanye West that was recorded with the soul singer Dwele.",
+      "\"Dwele\" - The soul singer who provided vocals on the album."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

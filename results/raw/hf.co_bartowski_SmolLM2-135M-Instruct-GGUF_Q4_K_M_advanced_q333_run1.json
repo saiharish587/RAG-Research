@@ -1,0 +1,42 @@
+{
+  "question_id": "Q333",
+  "query": "The Ingerophrynus gollum is named after a character in a book that sold how many copies?",
+  "ground_truth": "150 million copies",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Ingerophrynus gollum is named after a character in a book called \"Gollum's Toad\" by J. R. R. Tolkien, which was published in 1973 and included the species name \"Ingerophrynus gollum\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ingerophrynus gollum: Ingerophrynus gollum (Gollum's toad) is a species of true toad.  It has only been recorded from Endau-Rompin National Park, Johor, in closed-canopy lowland forests in the early evening following brief periods of afternoon precipitation.  It is called \"gollum\" with reference of the eponymous character of The Lord of the Rings by J. R. R. Tolkien.",
+      "Gollum (genus): Gollum is a genus of ground sharks in the family Pseudotriakidae, native to the southwestern Pacific Ocean.  The genus was described in 1973 by biologist Leonard Compagno, who named it named after the character Gollum from J. R. R. Tolkien's works, noting the species \"Gollum attenuatus\" (the slender smooth-hound) \"bears some resemblance in form and habits\".",
+      "Ingerophrynus: Ingerophrynus is a genus of true toads with 12 species.  These species distributed in southern Yunnan and Indochina; peninsular Thailand and Malaya to Sumatra, Borneo, Java, Nias Island, Sulawesi, and the Philippines.  This genus was established after a major taxonomical revision of frogs.  Ten of the species in this genus were formerly considered species of the genus \"Bufo\".  In 2007 a new species, \"Ingerophrynus gollum\", was added to this genus.  This species is named after the character Gollum created by J. R. R. Tolkien."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 423,
+    "generation_tokens": 60,
+    "generation_speed": 415.47218413727205,
+    "prompt_eval_speed": 23250.700818996316,
+    "generation_latency_s": 0.24505780008621514,
+    "latency": 0.6685416999971494,
+    "total_prompt_tokens": 506,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1381772,
+    "stage_rewrite_s": 0.1521741000469774,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07371590007096529,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19747629994526505,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.24509080010466278,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6685589000117034,
+    "unaccounted_latency_s": 0.00010229984764009714,
+    "rewritten_query": "The Ingerophrynus gollum has been sold 1,000 copies!",
+    "query_was_rewritten": true
+  }
+}

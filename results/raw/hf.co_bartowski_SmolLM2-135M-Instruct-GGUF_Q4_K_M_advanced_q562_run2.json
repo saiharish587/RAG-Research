@@ -1,0 +1,42 @@
+{
+  "question_id": "Q562",
+  "query": "Which band formed in England, Of Montreal or Vib Gyor?",
+  "ground_truth": "Vib Gyor was a band that was formed in Leeds, England.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The band that formed in Leeds, Of Montreal (Leeds) and Vib Gyor is known as Vib Gyor. They were founded by Kevin Barnes in 1996 and named after a failed romance between Barnes and a woman named \"of Montreal.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vib Gyor: Vib Gyor was a band that was formed in Leeds, England.  The name was derived from the first letters of all the colours in the rainbow, in order from the shortest to longest wavelengths.",
+      "Of Montreal: of Montreal is an American experimental pop band from Athens, Georgia.  It was founded by frontman Kevin Barnes in 1996, named after a failed romance between Barnes and a woman \"of Montreal.\"  The band is identified as part of the Elephant 6 collective.  Throughout its existence, of Montreal's musical style has evolved considerably and drawn inspiration from numerous 1960s psychedelic pop acts.",
+      "The Secret (Vib Gyor EP): The Secret EP is the EP from the Leeds band Vib Gyor.  It was released on 5 March 2007, and is the follow-up to their well-received debut single, \"Fallen\".  It was recorded in Bath and produced by Paul Corkett.  It also has a hidden fifth instrumental track - which the band recently revealed was called <:. ~. :>"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 298,
+    "generation_tokens": 53,
+    "generation_speed": 426.913256059349,
+    "prompt_eval_speed": 41131.81504485852,
+    "generation_latency_s": 0.21629379992373288,
+    "latency": 0.5817431000759825,
+    "total_prompt_tokens": 371,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1426137,
+    "stage_rewrite_s": 0.14169590000528842,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07648749998770654,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1471517999889329,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.21632659994065762,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5817516000242904,
+    "unaccounted_latency_s": 9.030010551214218e-05,
+    "rewritten_query": "Which band formed in England, Of Montreal or Vib Gyor?",
+    "query_was_rewritten": false
+  }
+}

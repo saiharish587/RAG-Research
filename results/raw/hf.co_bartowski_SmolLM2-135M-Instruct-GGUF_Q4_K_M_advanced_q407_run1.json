@@ -1,0 +1,42 @@
+{
+  "question_id": "Q407",
+  "query": "Which magazine is older, Gallery or Dime Magazine?",
+  "ground_truth": "arose on the \"Playboy\" magazine pattern in the 1970s.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Dime Magazine",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dime Magazine: Dime Magazine is an American basketball magazine that began circulation in 2001.  The magazine publishes six issues a year for its worldwide readership, as well as a handful of editions of \"Dime China\", a Chinese-language version consisting of regular \"Dime\" content translated from English and original content from editorial staff in China.  It makes an appearance as an endorsement in \"NBA 2K12\", and \"NBA 2K13\".  It is owned by Uproxx itself a brand of Woven Digital.",
+      "Gallery (magazine): Gallery is a men's magazine published by Magna Publishing Group.  It is one of the more popular \"skin\" magazines that arose on the \"Playboy\" magazine pattern in the 1970s.",
+      "USS Gallery (FFG-26): USS \"Gallery\" (FFG-26), eighteenth ship of the \"Oliver Hazard Perry\"\u00a0class of guided-missile frigates, was named for three brothers: Rear Admiral Daniel V. Gallery (1901\u20131977), Rear Admiral William O. Gallery (1904\u20131981), and Rear Admiral Philip D. Gallery (1907\u20131973).  Ordered from Bath Iron Works, Bath, Maine, on 28 February 1977 as part of the FY77 program, \"Gallery\" was laid down on 17 May 1980, launched on 20 December 1980, co-sponsored by Mrs. Philip D. Gallery and Mrs. Daniel V. Gallery, and commissioned on 5 December 1981, commanded by Commander Norman Stuart Scott.  Decommissioned and stricken on 14 June 1996, she was transferred to Egypt on 25 September 1996 as \"Taba\" (F916).  s of 2007 , she remained in active service with the Egyptian Navy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 503,
+    "generation_tokens": 4,
+    "generation_speed": 301.84123151222457,
+    "prompt_eval_speed": 22556.053811659192,
+    "generation_latency_s": 0.12746129999868572,
+    "latency": 0.5726575000444427,
+    "total_prompt_tokens": 574,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1483913,
+    "stage_rewrite_s": 0.19445779989473522,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08836709999013692,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16223299992270768,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.12750620010774583,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5726678000064567,
+    "unaccounted_latency_s": 0.00010410009417682886,
+    "rewritten_query": "The original query was \"Which magazine is older, Gallery or Dime Magazine?\" The optimized query outputted a search-friendly rephrased version of it as \"Gallery.",
+    "query_was_rewritten": true
+  }
+}

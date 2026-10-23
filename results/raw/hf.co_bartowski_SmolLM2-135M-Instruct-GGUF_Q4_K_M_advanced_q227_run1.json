@@ -1,0 +1,42 @@
+{
+  "question_id": "Q227",
+  "query": "The author of The Thing of It Is... is what Nationality?",
+  "ground_truth": "American",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The author of The Thing of It Is... is a foreigner.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Thing of It Is...: The Thing of It Is... is a 1967 novel written by William Goldman about Amos McCracken, a 31-year-old man who has written a popular show tune and who is having marriage troubles.",
+      "Nationality: Nationality is a legal relationship between an individual person and a state.  Nationality affords the state jurisdiction over the person and affords the person the protection of the state.  What these rights and duties are vary from state to state.",
+      "Nationality law: Nationality law (or citizenship law) is the law in each country and in each jurisdiction within each country which defines the rights and obligations of citizenship within the jurisdiction and the manner in which citizenship is acquired as well as how citizenship may be lost.  A person who is not a citizen of the country is generally regarded as a foreigner, also referred to as an alien.  A person who has no recognised nationality or citizenship is regarded as stateless."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 273,
+    "generation_tokens": 15,
+    "generation_speed": 339.74315417544335,
+    "prompt_eval_speed": 17650.48167065365,
+    "generation_latency_s": 0.13713079993613064,
+    "latency": 0.5046314999926835,
+    "total_prompt_tokens": 347,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13582329999999998,
+    "stage_rewrite_s": 0.17119510006159544,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07734119996894151,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11883469996973872,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13717230001930147,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5046425999607891,
+    "unaccounted_latency_s": 9.999994654208422e-05,
+    "rewritten_query": "The author of The Thing of It Is... is a person from the United States who has been referred to as Nationality.",
+    "query_was_rewritten": true
+  }
+}

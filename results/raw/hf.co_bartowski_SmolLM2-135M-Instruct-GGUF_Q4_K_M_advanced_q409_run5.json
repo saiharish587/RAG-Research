@@ -1,0 +1,42 @@
+{
+  "question_id": "Q409",
+  "query": "How large is the shopping mall where KGOT radio station has its studios ?",
+  "ground_truth": "728,000 ft\u00b2",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The shopping mall where KGOT radio station has its studios is located in the Brea Mall, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "KGOT: KGOT (101.3 FM) is a commercial Top 40 (CHR) radio station in Anchorage, Alaska.  The station is owned by iHeartMedia, Inc. and broadcasts (along with its sister stations) from studios in the Dimond Center.",
+      "Brea Mall: The Brea Mall is a shopping mall located in the Orange County city of Brea, California.  Since 1998 the mall has been owned and operated by the Simon Property Group.  It is home to four major department stores, over 175 specialty shops and boutiques, and a food court.  It is approximately 1,310,000 square feet (1.31 million).",
+      "Metrocenter Mall (Jackson, Mississippi): Metrocenter Mall is an enclosed shopping mall in South Jackson.  The largest enclosed shopping mall in Mississippi, it is composed of 1,250,000 square feet of retail space on two levels, including four anchor spaces.  Regional real estate developer Jim Wilson & Associates built the mall in Mississippi's capital city in 1978, as one of its portfolio of properties throughout the southeastern United States.  Key tenants as of 2014 include one of two Burlington Coat Factory stores in the state, and offices of the City of Jackson.  The mall is located near the junction of Interstates 20 and 220, along South Jackson's U.S. Highway 80 corridor.  After years of ownership by Cannon Management and Jackson Metrocenter Limited, a decade-long decline at the mall led to a foreclosure in November 2012, and subsequent sale to Metrocenter Mall, LLC."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 437,
+    "generation_tokens": 23,
+    "generation_speed": 405.8656408265542,
+    "prompt_eval_speed": 60467.69060467691,
+    "generation_latency_s": 0.1427280999487266,
+    "latency": 0.566692000022158,
+    "total_prompt_tokens": 513,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1396602,
+    "stage_rewrite_s": 0.15884779999032617,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07924310001544654,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18574489990714937,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1427693999139592,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5667032999917865,
+    "unaccounted_latency_s": 9.880017023533583e-05,
+    "rewritten_query": "The shopping mall where KGOT radio station has its studios is approximately 10,500 square feet.",
+    "query_was_rewritten": true
+  }
+}

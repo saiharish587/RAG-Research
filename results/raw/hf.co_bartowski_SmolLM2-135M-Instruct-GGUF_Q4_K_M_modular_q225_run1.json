@@ -1,0 +1,48 @@
+{
+  "question_id": "Q225",
+  "query": "What film was written and directed by Joby Harold with music written by Samuel Sim?",
+  "ground_truth": "Awake",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "You are correct that the answer is \"Bryan Singer and Justin Haythe.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Samuel Sim: Samuel Sim is a film and television composer.  He first gained recognition with his award winning score for the BBC drama series \"Dunkirk\".  Since then he has written the music for a wide variety of film and television productions, most recently scoring the film \"Awake\" for The Weinstein Company and the BBC/HBO drama series \"House of Saddam\".  His most recent acclaimed music is the soundtrack for Home Fires.  Home Fires (Music from the Television Series) released May 6, 2016 by Sony Classical Records.",
+      "Bohemian Rhapsody (film): Bohemian Rhapsody is an upcoming American-British biographical drama film directed by Bryan Singer and written by Justin Haythe.  It focuses on a 15 year period from the formation of Queen and lead singer Freddie Mercury up to their performance at Live Aid in 1985, six years before Mercury's death.  The film stars Rami Malek, Ben Hardy, Gwilym Lee, Joseph Mazzello, Allen Leech, and Lucy Boynton.  Queen guitarist Brian May and drummer Roger Taylor are serving as the film's music producers.  The film is scheduled for release in the United States on December 25, 2018 by 20th Century Fox.",
+      "Charmian Carr: Charmian Carr (born Charmian Anne Farnon; December 27, 1942 \u2013 September 17, 2016) was an American actress and singer best known for her role as Liesl, the eldest Von Trapp daughter in the 1965 film version of \"The Sound of Music\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 18,
+    "generation_speed": 330.742516950554,
+    "prompt_eval_speed": 23028.424877110494,
+    "generation_latency_s": 0.17867609998211265,
+    "latency": 0.5092624999815598,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2260154,
+    "stage_route_s": 0.09789089998230338,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19604760000947863,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036477799993008375,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8900023102760315e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17871650005690753,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5092736999504268,
+    "unaccounted_latency_s": 9.269989095628262e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Joby Harold wrote and directed \"The Sound of Music\" (1964), while Samuel Sim wrote and produced \"Symphony of the Night\" (1970)."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

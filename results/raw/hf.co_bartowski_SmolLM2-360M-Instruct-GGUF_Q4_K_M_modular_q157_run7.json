@@ -1,0 +1,49 @@
+{
+  "question_id": "Q157",
+  "query": "Which was fought earlier in our nation's history, the Seven Days Battles or the Battle of Manila?",
+  "ground_truth": "The Seven Days Battles",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Seven Days Battles were fought earlier in our nation's history than the Battle of Manila.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Seven Days Battles: The Seven Days Battles were a series of six major battles over the seven days from June 25 to July 1, 1862, near Richmond, Virginia, during the American Civil War.  Confederate General Robert E. Lee drove the invading Union Army of the Potomac, commanded by Maj. Gen. George B. McClellan, away from Richmond and into a retreat down the Virginia Peninsula.  The series of battles is sometimes known erroneously as the Seven Days Campaign, but it was actually the culmination of the Peninsula Campaign, not a separate campaign in its own right.",
+      "Battle of Manila (1945): The Battle of Manila (February 3, 1945 \u2013 March 3, 1945) was a major battle of the Philippine campaign of 1944-45, during the Second World War.  It was fought by American and Filipino forces against Japanese troops in Manila, the capital city of the Philippines.  The month-long battle, which resulted in the death of over 100,000 civilians and the complete devastation of the city, was the scene of the worst urban fighting in the Pacific theater.  Japanese forces committed mass murder against Filipino civilians during the battle.  Along with massive loss of life, the battle also destroyed architectural and cultural heritage dating back to the city's foundation.  The battle ended the almost three years of Japanese military occupation in the Philippines (1942\u20131945).  The city's capture was marked as General Douglas MacArthur's key to victory in the campaign of reconquest.",
+      "Battle of Manila (1898): The Battle of Manila, sometimes called the Mock Battle of Manila, was a land engagement which took place in Manila on August 13, 1898, at the end of the Spanish\u2013American War, four months after the decisive victory by Commodore Dewey's Asiatic Squadron at the Battle of Manila Bay.  The belligerents were Spanish forces led by Governor-General of the Philippines Ferm\u00edn J\u00e1udenes, and American forces led by United States Army Brigadier General Wesley Merritt and United States Navy Commodore George Dewey.  American forces were supported by units of the Philippine Revolutionary Army, led by Emilio Aguinaldo."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 553,
+    "generation_tokens": 19,
+    "generation_speed": 256.12682321857056,
+    "prompt_eval_speed": 64317.28308909049,
+    "generation_latency_s": 0.19754009996540844,
+    "latency": 0.9019144999329001,
+    "total_prompt_tokens": 693,
+    "total_generation_tokens": 136,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2281959,
+    "stage_route_s": 0.10360419994685799,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5448924000374973,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05570099991746247,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7600013203918934e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19757910002954304,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9019246000098065,
+    "unaccounted_latency_s": 0.00010079995263367891,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Seven Days Battles were fought on June 25-30, 1863, while the Battle of Manila took place on August 14, 1863.",
+      "Query 2: Both battles occurred in the same year (1863), but the Seven Days Battles were a series of land battles that began on June 25-27 and lasted until July 1, while the Battle of Manila was a naval battle that took place from August 14 to September 19."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q590",
+  "query": "Which piece did Ludwig van Beethoven publish in 1801 that was dedicated to Count Moritz von Fries? ",
+  "ground_truth": "Symphony No. 7",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Ludwig van Beethoven published the Violin Sonata No. 4 (Beethoven) in A major, Op. 92, in 1801, while improving his health in the Bohemian spa town of Teplice.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Symphony No. 7 (Beethoven): The Symphony No. 7 in A major, Op. 92, is a symphony in four movements composed by Ludwig van Beethoven between 1811 and 1812, while improving his health in the Bohemian spa town of Teplice.  The work is dedicated to Count Moritz von Fries.",
+      "Violin Sonata No. 4 (Beethoven): The Violin Sonata No. 4 of Ludwig van Beethoven in A minor, his Opus 23, was composed in 1801, published in October that year, and dedicated to Count Moritz von Fries.  It followed by one year the composition of his first symphony, and was originally meant to be published alongside Violin Sonata No. 5, however it was published on different sized paper, so the opus numbers had to be split.  Unlike the three first sonatas, Sonata No. 4 received a favourable reception from critics.",
+      "Violin Sonata No. 5 (Beethoven): The Violin Sonata No. 5 in F major, Opus 24, is a violin sonata by Ludwig van Beethoven.  It is often known as the \"Spring Sonata\" (\"Fr\u00fchlingssonate\"), and was published in 1801.  Its dedicatee was Count Moritz von Fries, a patron to whom Beethoven also dedicated two other works of the same year\u2014the C major string quintet and the fourth violin sonata\u2014as well as his later seventh symphony."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 415,
+    "generation_tokens": 52,
+    "generation_speed": 258.6138298718867,
+    "prompt_eval_speed": 52491.77839615482,
+    "generation_latency_s": 0.32408990000840276,
+    "latency": 0.6437061000615358,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2351705,
+    "stage_route_s": 0.10273489996325225,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17777169996406883,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038941800012253225,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.979995381087065e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.32412989996373653,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6437175000319257,
+    "unaccounted_latency_s": 0.00010030018165707588,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Ludwig van Beethoven, 1801, Dedicated to Count Moritz von Fries.*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

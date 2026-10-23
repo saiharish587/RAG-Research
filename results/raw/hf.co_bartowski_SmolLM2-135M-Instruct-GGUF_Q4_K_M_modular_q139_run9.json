@@ -1,0 +1,48 @@
+{
+  "question_id": "Q139",
+  "query": "For what type of work is the production company for The Year Without a Santa Claus best known?",
+  "ground_truth": "seasonal television specials, particularly its work in stop motion animation",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The production company for The Year Without a Santa Claus is known as Rankin/Bass Productions.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Year Without a Santa Claus: The Year Without a Santa Claus is a 1974 Christmas stop motion animated television special produced by Rankin/Bass Productions.  The story is based on Phyllis McGinley's 1956 book of the same name, illustrated by Kurt Werth.  It was originally broadcast on December 10, 1974 on ABC.",
+      "Santa Claus: The Movie: Santa Claus: The Movie (known on-screen as simply Santa Claus) is a 1985 British-American Christmas film starring Dudley Moore, John Lithgow, and David Huddleston in the title role.  It is the last major fantasy film produced by the Paris-based father-and-son production team of Alexander and Ilya Salkind.  The film was directed by Jeannot Szwarc and released in North America on November 27, 1985, by TriStar Pictures.  The 2005 DVD release was released by Anchor Bay Entertainment, now known as Starz Home Entertainment, under license from the film's current owner, StudioCanal; however, the current, 25th Anniversary home video release (which also now includes Blu-ray) is by Lionsgate Home Entertainment, again under StudioCanal's license.",
+      "Santa Claus: Santa Claus, also known as Saint Nicholas, Saint Nick, Kris Kringle, Father Christmas, or simply Santa (Santy in Hiberno-English), is a legendary figure of Western Christian culture who is said to bring gifts to the homes of well-behaved (\"good\" or \"nice\") children on Christmas Eve (24 December) and the early morning hours of Christmas Day (25 December).  The modern Santa Claus grew out of traditions surrounding the historical Saint Nicholas, a fourth-century Greek bishop and gift-giver of Myra, the British figure of Father Christmas and the Dutch figure of \"Sinterklaas\" (himself also based on Saint Nicholas).  Some maintain Santa Claus also absorbed elements of the Germanic god Wodan, who was associated with the pagan midwinter event of Yule and led the Wild Hunt, a ghostly procession through the sky."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 548,
+    "generation_tokens": 22,
+    "generation_speed": 361.8183014275377,
+    "prompt_eval_speed": 79524.01683355101,
+    "generation_latency_s": 0.17759850004222244,
+    "latency": 0.5801750000100583,
+    "total_prompt_tokens": 686,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2401833,
+    "stage_route_s": 0.1863071999978274,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17520960001274943,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04088779992889613,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.029995761811733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1776401000097394,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5801892000017688,
+    "unaccounted_latency_s": 0.00010490010026842356,
+    "route": "rag",
+    "router_raw": "The production company for The Year Without a Santa Claus is best known as a Christmas-themed entertainment company, specifically known for its holiday-themed productions and live performances.",
+    "sub_queries": [
+      "The production company for The Year Without a Santa Claus is best known as a travel agency, offering services such as booking flights and accommodations to destinations around the world."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

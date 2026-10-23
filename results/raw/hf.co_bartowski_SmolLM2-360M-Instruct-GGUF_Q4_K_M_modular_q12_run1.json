@@ -1,0 +1,49 @@
+{
+  "question_id": "Q12",
+  "query": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and T\u00e9a Leoni?",
+  "ground_truth": "David Weissman",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Damien Sayre Chazelle.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Family Man: The Family Man is a 2000 American romantic comedy-drama film directed by Brett Ratner, written by David Diamond and David Weissman, and starring Nicolas Cage and T\u00e9a Leoni.  Cage's production company, Saturn Films, helped produce the film.  The film centers on a man who sees what could have been had he made a different decision 13 years prior.",
+      "Damien Chazelle: Damien Sayre Chazelle ( ; born January 19, 1985) is an American director, screenwriter and producer.  Chazelle made his directorial debut with the musical film \"Guy and Madeline on a Park Bench\" (2009).  He rose to prominence for writing and directing his second feature film, \"Whiplash\" (2014), which received five Academy Award nominations, including Best Picture and Best Adapted Screenplay.  His 2016 film \"La La Land\" was a critical and commercial success, winning all seven of its Golden Globe nominations, including Best Picture, Best Director and Best Screenplay.  It also received a record-tying fourteen Academy Award nominations, winning six including Best Director, making Chazelle the youngest person in history to win the Oscar for Best Director and to win the Golden Globe for Best Director.",
+      "Nicolas Cage: Nicolas Kim Coppola (born January 7, 1964), known professionally as Nicolas Cage, is an American actor, director and producer.  During his early career, Cage starred in a variety of films such as \"Valley Girl\" (1983), \"Racing with the Moon\" (1984), \"Birdy\" (1984), \"Peggy Sue Got Married\" (1986), \"Raising Arizona\" (1987), \"Moonstruck\" (1987), \"Vampire's Kiss\" (1989), \"Wild at Heart\" (1990), \"Fire Birds\" (1990), \"Honeymoon in Vegas\" (1992), and \"Red Rock West\" (1993)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 557,
+    "generation_tokens": 9,
+    "generation_speed": 240.8606754803832,
+    "prompt_eval_speed": 13254.96168673552,
+    "generation_latency_s": 0.18743869999889284,
+    "latency": 0.6088315999368206,
+    "total_prompt_tokens": 709,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22970970000000002,
+    "stage_route_s": 0.10164110001642257,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2610374999931082,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05851620004978031,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.979998968541622e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.187470700009726,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.608840600005351,
+    "unaccounted_latency_s": 0.00011579995043575764,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Coen Brothers' 'Fargo'\"",
+      "\"Nicolas Cage's 'Ted Lasso' and T\u00e9a Leoni's 'The Last Song'\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

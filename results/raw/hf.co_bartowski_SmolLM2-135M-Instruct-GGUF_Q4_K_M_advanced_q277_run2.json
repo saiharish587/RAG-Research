@@ -1,0 +1,42 @@
+{
+  "question_id": "Q277",
+  "query": "Which Genus has more species Eucryphia or Lepidozamia ?",
+  "ground_truth": "Eucryphia",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The genus \"Syzygium\" is a genus of cycad with two species, Syzygium glomerata and Syzygium glomeratus. The genus contains at least two major lineages, recognizable by anatomical and other features.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lepidozamia: Lepidozamia is a genus of two species of cycad, both endemic to Australia.  The name, derived from the Greek word lepidos, meaning scaly, refers to the scale-like structure of the stem and leaf bases.  They are native to rainforest climates in eastern Queensland and eastern New South Wales.  They have a chromosome number of 2n = 18.",
+      "d World genus \"Syzygium\" in \"Eugenia\", but research by Rudolf Schmid in the early 1970s convinced most botanists that the genera are easily separable.  Research by van Wyk and colleagues in South Africa suggests the genus may comprise at least two major lineages, recognizable by anatomical and other features.",
+      "Dactylis: The genus has been treated as containing only a single species \"D. glomerata\" by many authors, treating variation in the genus at only subspecific rank within \"Dactylis glomerata\", but more recently, there has been a trend to accept two species, while some authors accept even more species in the genus, particularly island endemic species in Macaronesia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 313,
+    "generation_tokens": 46,
+    "generation_speed": 397.9101069167157,
+    "prompt_eval_speed": 19654.63108320251,
+    "generation_latency_s": 0.2095409999601543,
+    "latency": 0.6948863000143319,
+    "total_prompt_tokens": 391,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1287722,
+    "stage_rewrite_s": 0.24074519996065646,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07370359997730702,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17076160002034158,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2095832999330014,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6948988999938592,
+    "unaccounted_latency_s": 0.00010590010788291693,
+    "rewritten_query": "Which Genus has more species Eucyphia or Lepidozamia?\n\nThe original query was \"Which Genus has more species Eucyphia or Lepidozamia?\" The optimized query is \"Which Genus has more species Eucyphia or Lepidozamia?\".",
+    "query_was_rewritten": true
+  }
+}

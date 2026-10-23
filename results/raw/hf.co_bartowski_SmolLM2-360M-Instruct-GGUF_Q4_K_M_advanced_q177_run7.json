@@ -1,0 +1,42 @@
+{
+  "question_id": "Q177",
+  "query": "Works by Hanna Leena Kristiina Varis are part of a collection in a museum that houses approximately 65,000 what?",
+  "ground_truth": "drawings",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The works by Hanna Leena Kristiina Varis are part of a collection in the Albertina Museum.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hanna Varis: Hanna Leena Kristiina Varis (b. 1959 in Kuusankoski) is a Finnish graphic artist and painter.  She earned a Master of Arts degree from the Aalto University School of Arts, Design and Architecture in 1990.  She participated in the NUROPE, Nomadic University for Art, Philosophy and Enterprise in Europe, in 2006-2010.  She has held over 70 solo exhibitions and participated at over 140 group exhibitions.  Her works are part of major art collections in Finland and abroad, such as the Kiasma, Amos Anderson Art Museum, and Helsinki Art Museum in Helsinki, W\u00e4in\u00f6 Aaltonen Museum of Art in Turku, and Albertina Museum in Vienna.",
+      "Albertina: The Albertina is a museum in the Innere Stadt (First District) of Vienna, Austria.  It houses one of the largest and most important print rooms in the world with approximately 65,000 drawings and approximately 1 million old master prints, as well as more modern graphic works, photographs and architectural drawings.  Apart from the graphics collection the museum has recently acquired on permanent loan two significant collections of Impressionist and early 20th-century art, some of which will be on permanent display.  The museum also houses temporary exhibitions.",
+      "Rijksmuseum: The Rijksmuseum (] ; English: National Museum ) is a Dutch national museum dedicated to arts and history in Amsterdam.  The museum is located at the Museum Square in the borough Amsterdam South, close to the Van Gogh Museum, the Stedelijk Museum Amsterdam, and the Concertgebouw."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 456,
+    "generation_tokens": 24,
+    "generation_speed": 254.82305723962924,
+    "prompt_eval_speed": 59274.665280124784,
+    "generation_latency_s": 0.9698606999590993,
+    "latency": 3.4768381000030786,
+    "total_prompt_tokens": 547,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1307036,
+    "stage_rewrite_s": 1.2880143999354914,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0355859000701457,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18321509996894747,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9699373999610543,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.476854500011541,
+    "unaccounted_latency_s": 0.00010270008351653814,
+    "rewritten_query": "The museum's collection includes approximately 65,000 works by Hanna Leena Kristiina Varis.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q130",
+  "query": "At what venue was the January 2, 2012 game featured the University of Louisville team?",
+  "ground_truth": "Mercedes-Benz Superdome",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The University of Louisville team played their home games at Papa John's Cardinal Stadium at Freedom Hall.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Freedom Hall: Freedom Hall is a multipurpose arena in Louisville, Kentucky, on the grounds of the Kentucky Exposition Center, which is owned by the Commonwealth of Kentucky.  It is best known for its use as a basketball arena, serving as the home of the University of Louisville Cardinals men's team from 1956 to 2010, the Kentucky Colonels of the American Basketball Association from 1970 until the ABA-NBA merger in June 1976, and the Louisville Cardinals women's team from its inception in 1975 to 2010.  Freedom Hall's last regular tenant was the Kentucky Stickhorses of the North American Lacrosse League, who used it from 2011 until the team folded in 2013.",
+      "2012 Louisville Cardinals football team: The 2012 Louisville Cardinals football team represented the University of Louisville in the 2012 NCAA Division I FBS football season.  The Cardinals were led by third-year head coach Charlie Strong and played their home games at Papa John's Cardinal Stadium.  They were a member of the Big East Conference.  They finished the season 11\u20132, 5\u20132 in Big East play to finish in a four-way tie for the Big East championship.  As the highest rated of the four Big East champions in the final BCS poll, the Cardinals received the conference's automatic bid into a BCS game.  They were invited to the Sugar Bowl where they defeated Florida.",
+      "Louisville Fire: The Louisville Fire was an arena football team that played its home games at the Brown-Forman Field in Freedom Hall in Louisville, Kentucky.  They were a 2001 expansion team of the af2.  Their owner/operator was former Pro Bowl lineman and Louisville native Will Wolford.  The team was somewhat successful.  After a rocky first few seasons they finally found success in 2004 and then made it all the way to the Arena Cup in the 2005 season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 522,
+    "generation_tokens": 22,
+    "generation_speed": 230.57171304302258,
+    "prompt_eval_speed": 10115.690948200685,
+    "generation_latency_s": 0.2532218999695033,
+    "latency": 0.8227746000047773,
+    "total_prompt_tokens": 666,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2350737,
+    "stage_route_s": 0.0960903000086546,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4156161000719294,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05765570001676679,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.449994932860136e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2532538999803364,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8227835999568924,
+    "unaccounted_latency_s": 0.0001137999352067709,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The University of Louisville (UL) hosted the January 2, 2012 game at their home stadium, the Louisville Cardinals Arena.",
+      "Query 2: The University of Louisville (UL) played a match against the Louisville Cardinals on January 2, 2012, in the Louisville Cardinals Arena."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

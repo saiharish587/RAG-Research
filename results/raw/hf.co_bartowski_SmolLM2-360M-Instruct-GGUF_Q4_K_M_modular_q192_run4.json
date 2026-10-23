@@ -1,0 +1,49 @@
+{
+  "question_id": "Q192",
+  "query": "What station broadcast the episode \"Marry Me a Little, Marry Me a Little More\" , of the series created by Max Mutchnick and David Kohan?",
+  "ground_truth": "National Broadcasting Company",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The New York Daily News was the station that broadcast the episode \"Marry Me a Little, Marry Me a Little More\" from the series created by Max Mutchnick and David Kohan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The New Yorker: The New Yorker is an American magazine of reportage, commentary, criticism, essays, fiction, satire, cartoons, and poetry.  It is published by Cond\u00e9 Nast.  Started as a weekly in 1925, the magazine is now published 47 times annually, with five of these issues covering two-week spans.",
+      "New York Daily News: The New York Daily News, officially titled Daily News, is an American newspaper based in New York City.  s of May 2016 , it was the ninth-most widely circulated daily newspaper in the United States.  It was founded in 1919, and was the first U.S. daily printed in tabloid format.  It is owned by tronc.",
+      "New York Daily News (19th century): The New York Daily News was a daily New York City newspaper from 1855 to 1906, unrelated to the present-day \"Daily News\" founded in 1919.  Founded in the 1850s, it flourished under the stewardship of Benjamin Wood, becoming one of the highest circulation papers in the United States.  It was notable for its racist and pro-Confederate views.  The paper faltered after Wood's death in 1900, and folded in December 1906."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 381,
+    "generation_tokens": 41,
+    "generation_speed": 240.81241887264548,
+    "prompt_eval_speed": 47948.653410521016,
+    "generation_latency_s": 0.28963030001614243,
+    "latency": 0.6011251000454649,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23462,
+    "stage_route_s": 0.10528839996550232,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1495016000699252,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05652310000732541,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.370005965232849e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2896694999653846,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.601134299999103,
+    "unaccounted_latency_s": 9.869993664324284e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The New York Times\"",
+      "\"The New York Post\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q14",
+  "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, neither Random House Tower nor 888 7th Avenue is used for real estate.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "River City Marketplace: River City Marketplace (RCM) is a quasi-regional outdoor shopping mall in the Northside of Jacksonville, Florida and the only one north of the St. Johns River.  It opened its doors on November 17, 2006 with three major anchor stores including Walmart, Lowe's and Regal Cinemas River City Marketplace 14.  The fourth, Gander Mountain, opened ten months later and will close in 2017.  The 125 acre shopping district is located south of Airport Road on the east side of Interstate 95, two miles (3\u00a0km) east of Jacksonville International Airport (JIA).  When Phase II is fully built out, the project will have cost over $300 million to build and boast more than 100 retailers.",
+      "888 7th Avenue: 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.  Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City.  It currently carries the Vornado Realty Trust corporate headquarters.  Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation.  The Red Eye Grill is located in the building at street level.",
+      "area mall.  Much of the parking lot space is leased to area car dealerships to store overstock vehicles due to the low volume of shoppers at the mall.  Eastern Hills Mall is currently at approximately 70% occupancy, with many vacant stores throughout the mall and popular anchor store Dave & Busters shuttering its doors in 2015 to move to the nearby Walden Galleria.  Eastern Hills is considered by many area residents to be a \"dead mall\" and is listed on the website Deadmalls.com.  Most major and nationally recognized retailers have left and been replaced by independently owned \"mom-and-pop\" type stores, selling crafts and homemade goods.  It is common for retailers to open and close within their first few months, unable to turn a profit due to the low volume of shoppers that still visit Eastern Hills Mall."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 579,
+    "generation_tokens": 22,
+    "generation_speed": 229.99560917473394,
+    "prompt_eval_speed": 12942.307262444956,
+    "generation_latency_s": 0.2487087999470532,
+    "latency": 0.6377667000051588,
+    "total_prompt_tokens": 717,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2263274,
+    "stage_route_s": 0.09018259996082634,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24307720002252609,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055617299978621304,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.230000872164965e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24873940006364137,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6377762999618426,
+    "unaccounted_latency_s": 9.799993131309748e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Are there any properties in either of these locations that are currently being sold?\"",
+      "\"Do you know if there's a current listing or auction happening at either location?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

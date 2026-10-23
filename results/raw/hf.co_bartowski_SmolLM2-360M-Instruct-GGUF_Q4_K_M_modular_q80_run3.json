@@ -1,0 +1,49 @@
+{
+  "question_id": "Q80",
+  "query": "In which year was the King who made the 1925 Birthday Honours born?",
+  "ground_truth": "1865",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The King who made the 1925 Birthday Honours was Harald V of Norway, born on 21 February 1937.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1925 Birthday Honours: The 1925 Birthday Honours were appointments by King George V to various orders and honours to reward and highlight good works by citizens of the British Empire.  The appointments were made to celebrate the official birthday of The King, and were published in \"The London Gazette\" on 3 June 1925.",
+      "Harald V of Norway: Harald V (] ; born 21 February 1937) is the King of Norway, having ascended the throne following the death of his father on 17 January 1991.",
+      "George V: George V (George Frederick Ernest Albert; 3 June 1865 \u2013 20 January 1936) was King of the United Kingdom and the British Dominions, and Emperor of India, from 6 May 1910 until his death in 1936."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 269,
+    "generation_tokens": 33,
+    "generation_speed": 241.37098720733766,
+    "prompt_eval_speed": 34912.39454899416,
+    "generation_latency_s": 0.25542060006409883,
+    "latency": 0.6802562999073416,
+    "total_prompt_tokens": 407,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2205794,
+    "stage_route_s": 0.09238589997403324,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27652149996720254,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055750199942849576,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.000010762363672e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2554529000772163,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6802651999751106,
+    "unaccounted_latency_s": 9.519990999251604e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The King who made the 1925 Birthday Honours was born in 1876.",
+      "Query 2: The King who made the 1925 Birthday Honours was born in 1876."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

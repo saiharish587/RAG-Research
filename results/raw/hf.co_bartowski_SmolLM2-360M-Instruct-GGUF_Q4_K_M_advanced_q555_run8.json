@@ -1,0 +1,42 @@
+{
+  "question_id": "Q555",
+  "query": "Woman's Era and Naj are what kind of magazines?",
+  "ground_truth": "fortnightly women interest magazine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Woman's Era and Naj are both lifestyle magazines published in Poland.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Woman's Era: Woman's Era is a fortnightly women interest magazine published in English in India.  It was started in 1973 by Vishwanath under his publishing house, the Delhi Press.  The magazine is owned by the Delhi Press.  Divesh Nath has been the managing editor of the magazine since 2002.",
+      "Naj: Naj is a Polish language fortnightly lifestyle and women's magazine published in Warsaw, Poland.",
+      "Lifestyle magazine: Lifestyle magazine is an umbrella term for popular magazines concerned with lifestyle and is often used to encompass a number of men's magazines, women's magazines and magazines about health and fitness, tourism, leisure, fashion, decorating, or culture.  The concept is chiefly used in reference to a magazine's tone."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 235,
+    "generation_tokens": 16,
+    "generation_speed": 280.8397107350979,
+    "prompt_eval_speed": 52927.92792792792,
+    "generation_latency_s": 0.9973328999476507,
+    "latency": 3.3753193999873474,
+    "total_prompt_tokens": 307,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1360251,
+    "stage_rewrite_s": 1.2491572999861091,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0221139000495896,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10660509997978806,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.997367599979043,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3753281999379396,
+    "unaccounted_latency_s": 8.489994797855616e-05,
+    "rewritten_query": "Woman's Era and Naj are both types of magazines that focus on women's interests, such as fashion, lifestyle, and beauty.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q2",
+  "query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+  "ground_truth": "Chief of Protocol",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Theresa May",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kiss and Tell (1945 film): Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.  In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys.  The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+      "Theresa May: Theresa Mary May ( , \"n\u00e9e\" Brasier ; born 1 October 1956) is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2016, the second woman to hold both positions, the first being Margaret Thatcher.  She has been the Member of Parliament (MP) for Maidenhead since 1997.  Ideologically, she identifies herself as a one-nation conservative.",
+      "Hillary Clinton: Hillary Diane Rodham Clinton ( ; born October 26, 1947) is an American politician who was the First Lady of the United States from 1993 to 2001, U.S. Senator from New York from 2001 to 2009, 67th United States Secretary of State from 2009 to 2013, and the Democratic Party's nominee for President of the United States in the 2016 election."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 386,
+    "generation_tokens": 4,
+    "generation_speed": 299.35638377488397,
+    "prompt_eval_speed": 52645.93562465903,
+    "generation_latency_s": 0.8782481999369338,
+    "latency": 3.366517100017518,
+    "total_prompt_tokens": 468,
+    "total_generation_tokens": 25,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1284895,
+    "stage_rewrite_s": 1.25626470008865,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.043927300022915,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1879581999965012,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8782889998983592,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3665385000640526,
+    "unaccounted_latency_s": 9.980006143450737e-05,
+    "rewritten_query": "The woman who played Corliss Archer in the film Kiss and Tell held a government position.",
+    "query_was_rewritten": true
+  }
+}

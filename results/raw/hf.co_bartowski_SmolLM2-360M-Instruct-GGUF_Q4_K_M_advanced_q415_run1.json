@@ -1,0 +1,42 @@
+{
+  "question_id": "Q415",
+  "query": "The actress that played the leading role in the independent film \"A Perfect Ending\" also stars with John Bregar in a 2008 film directed by who?",
+  "ground_truth": "Douglas Jackson",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Anna Camp",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Barbara Niven: Barbara Niven (born February 26, 1953) is an American actress and producer, best known for her performances in Lifetime movies and television roles in \"\", \"One Life to Live\", and \"Cedar Cove\".  Niven also had the leading role in the independent film \"A Perfect Ending\" (2012).",
+      "Dead at 17: Dead at 17 is a 2008 Canadian drama film directed by Douglas Jackson. This film has been music composed by Richard Bowers. The film stars Barbara Niven, John Bregar, Justin Bradley, Matthew Raudsepp and Kyle Switzer in the lead roles.",
+      "Anna Camp: Anna Ragsdale Camp (born September 27, 1982) is an American actress and singer.  She is known for her role as Sarah Newlin in \"True Blood\", and her recurring roles in \"Mad Men\", \"The Good Wife\", and \"The Mindy Project\".  She is also known for her role as Aubrey Posen in \"Pitch Perfect\" (2012), \"Pitch Perfect 2\" (2015), and the upcoming \"Pitch Perfect 3\" (2017).  She made her Broadway debut in the 2008 production of \"A Country House\" and played Jill Mason in the 2008 Broadway revival of \"Equus\".  In 2012, she was nominated for a Drama Desk Award for her performance in the Off-Broadway play \"All New People\".  Camp played Jane Hollander, a researcher for the fictitious \"News of the Week\" magazine in the Amazon series \"Good Girls Revolt.\"  She also had a role in the 2011 film \"The Help\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 479,
+    "generation_tokens": 3,
+    "generation_speed": 243.28927094315142,
+    "prompt_eval_speed": 15287.396674432706,
+    "generation_latency_s": 0.938423200044781,
+    "latency": 3.3508692999603227,
+    "total_prompt_tokens": 575,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1311773,
+    "stage_rewrite_s": 1.284196599968709,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9871901000151411,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14093430002685636,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9384649998974055,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.35088119993452,
+    "unaccounted_latency_s": 9.580003097653389e-05,
+    "rewritten_query": "The actress who plays the lead role in \"A Perfect Ending\" also starred in the 2008 film directed by John Bregar.",
+    "query_was_rewritten": true
+  }
+}

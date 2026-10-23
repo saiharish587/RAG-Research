@@ -1,0 +1,42 @@
+{
+  "question_id": "Q500",
+  "query": "What type of film are both \"500 Years Later\" and \"Manson\"?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Both \"500 Years Later\" and \"Manson\" are documentaries, as they aim to document the lives and events of individuals or groups through various mediums such as film. They provide an objective account of their experiences, often focusing on the personal stories behind the events being documented.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "500 Years Later: 500 Years Later (\u136d\u137b \u12d3\u1218\u1273\u1275 \u1260\u128b\u120b \"500 \u02bfam\u00e4tat\u0259 b\u00e4hwala \") is an independent documentary film directed by Owen 'Alik Shahadah, written by M. K. Asante, Jr. and released in 2005.  It has won five international film festival awards in the category of Best Documentary (including) UNESCO \"Breaking the Chains Award\").  Other awards it has won include \"Best Documentary at the Pan African (Los Angeles) and Bridgetown (Barbados) Film Festivals; Best Film at the International Black Cinema (Berlin) Film Festival; and Best International Documentary at the Harlem (New York) International Film Festival\".",
+      "Manson (film): Manson is a documentary film made in 1973 about Charles Manson and his followers.  It was directed by Robert Hendrickson and Laurence Merrick.",
+      "Marilyn Manson: Brian Hugh Warner (born January 5, 1969), known professionally as Marilyn Manson, is an American singer, songwriter, musician, composer, actor, painter, author and former music journalist.  He is known for his controversial stage personality and image as the lead singer of the band Marilyn Manson, which he co-founded with guitarist Daisy Berkowitz and of which he remains the only constant member.  His stage name was formed by combining and juxtaposing the names of two American pop cultural icons: actress Marilyn Monroe and cult leader Charles Manson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 427,
+    "generation_tokens": 58,
+    "generation_speed": 246.46346179178934,
+    "prompt_eval_speed": 59661.86949839318,
+    "generation_latency_s": 1.118505800026469,
+    "latency": 3.52800000004936,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1290299,
+    "stage_rewrite_s": 1.2352288000984117,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0232420000247657,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15090720006264746,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1185395000502467,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5280093000037596,
+    "unaccounted_latency_s": 9.229977149516344e-05,
+    "rewritten_query": "Both \"500 Years Later\" and \"Manson\" feature a mix of historical drama, crime, and action elements.",
+    "query_was_rewritten": true
+  }
+}

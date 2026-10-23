@@ -1,0 +1,42 @@
+{
+  "question_id": "Q403",
+  "query": "American Blues included the drummer from which American rock band?",
+  "ground_truth": "ZZ Top",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "American Blues included the drummer from the band Led Zeppelin.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pearl Jam: Pearl Jam is an American rock band formed in Seattle, Washington, in 1990.  Since its inception, the band's line-up has consisted of Eddie Vedder (lead vocals), Mike McCready (lead guitar), Stone Gossard (rhythm guitar) and Jeff Ament (bass).  The band's fifth member is drummer Matt Cameron (also of Soundgarden), who has been with the band since 1998.  Boom Gaspar (piano) has also been a session/touring member with the band since 2002.  Drummers Dave Krusen, Matt Chamberlain, Dave Abbruzzese and Jack Irons are former members of the band.",
+      "American Blues: American Blues were an American 1960s Texas-based garage rock band, who played a psychedelic style of blues rock music influenced by the 13th Floor Elevators.  They are most notable for including two future members of the band ZZ Top in their ranks, Dusty Hill and Frank Beard.  From 1966 to 1968, they played the Dallas-Fort Worth-Houston circuit and headlined in three clubs all called \"The Cellar\", in Dallas at clubs such as \"The Walrus\" on Mockingbird Lane, and in Houston at \"Love Street Light Circus Feel Good Machine\" on Allen's Landing, as late as 1968.",
+      "John Bonham: John Henry Bonham (31 May 1948 \u2013 25 September 1980) was an English musician and songwriter, best known as the drummer for the British rock band Led Zeppelin.  Bonham was esteemed for his speed, power, fast bass-drumming, distinctive sound, and \"feel\" for the groove.  He is considered one of the greatest rock drummers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 477,
+    "generation_tokens": 15,
+    "generation_speed": 250.35466911457897,
+    "prompt_eval_speed": 15438.392076900669,
+    "generation_latency_s": 0.9671378000639379,
+    "latency": 3.3891998999752104,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12578620000000001,
+    "stage_rewrite_s": 1.1891581000527367,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0809749000472948,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15180550003424287,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9671835000626743,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.38921090005897,
+    "unaccounted_latency_s": 8.93998658284545e-05,
+    "rewritten_query": "American Blues featured the drummer who played in a rock band called American Rock.",
+    "query_was_rewritten": true
+  }
+}

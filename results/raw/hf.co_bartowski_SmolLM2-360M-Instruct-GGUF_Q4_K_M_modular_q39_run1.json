@@ -1,0 +1,49 @@
+{
+  "question_id": "Q39",
+  "query": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, neither Elko Regional Airport nor Gerald R. Ford International Airport are located in Michigan. They are located in Nevada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Elko Regional Airport: Elko Regional Airport (IATA: EKO, ICAO: KEKO, FAA LID: EKO) , formerly Elko Municipal Airport, is a mile west of downtown Elko, in Elko County, Nevada.",
+      "Gerald R. Ford International Airport: Gerald R. Ford International Airport (IATA: GRR, ICAO: KGRR, FAA LID: GRR) is a commercial airport in Cascade Township approximately 13 mi southeast of Grand Rapids, Michigan.  The facility is owned by the Kent County Board of Commissioners and managed by an independent authority.  The Federal Aviation Administration (FAA) National Plan of Integrated Airport Systems for 2017\u20132021 categorized it as a small hub primary commercial service facility.",
+      "Reno\u2013Tahoe International Airport: Reno\u2013Tahoe International Airport (IATA: RNO, ICAO: KRNO, FAA LID: RNO) is a public and military use airport located three nautical miles (6 km) southeast of downtown Reno, in Washoe County, Nevada.  It is the state's second busiest commercial airport after McCarran International Airport in Las Vegas.  The Nevada Air National Guard has the 152nd Airlift Wing southwest of the airport's main terminal.  It is named after Jesse L. Reno and Lake Tahoe."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 372,
+    "generation_tokens": 26,
+    "generation_speed": 200.90251591766088,
+    "prompt_eval_speed": 11961.414790996785,
+    "generation_latency_s": 0.2675061000045389,
+    "latency": 0.7363240000559017,
+    "total_prompt_tokens": 506,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2380726,
+    "stage_route_s": 0.11118759994860739,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.29878199996892363,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058670599944889545,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0699920393526554e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26754060003440827,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7363328000064939,
+    "unaccounted_latency_s": 0.00010180019307881594,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Is the airport located in either Elko, Nevada or Gerald R. Ford International Airport?",
+      "Query 2: Is the airport located in either Elko, Nevada or Gerald R. Ford International Airport?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

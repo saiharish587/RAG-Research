@@ -1,0 +1,49 @@
+{
+  "question_id": "Q502",
+  "query": "Which city was the man who is known for a science humor story based on the tongue-in-cheek combination of two adages born in?",
+  "ground_truth": "New York City, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "John Cleese's birthplace was London, England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Cleese: John Marwood Cleese ( ; born 27 October 1939) is an English actor, voice actor, screenwriter, producer, and comedian.  He achieved success at the Edinburgh Festival Fringe and as a scriptwriter and performer on \"The Frost Report\".  In the late 1960s, he co-founded Monty Python, the comedy troupe responsible for the sketch show \"Monty Python's Flying Circus\" and the four Monty Python films: \"And Now for Something Completely Different\", \"Monty Python and the Holy Grail\", \"Life of Brian\" and \"The Meaning of Life\".",
+      "Jagadish Chandra Bose: Sir Jagadish Chandra Bose, CSI, CIE, FRS ( ; ] ; 30 November 1858 \u2013 23 November 1937), also spelled Jagdish and Jagadis, was a Bengali polymath, physicist, biologist, biophysicist, botanist and archaeologist, and an early writer of science fiction.  Living in British India, he pioneered the investigation of radio and microwave optics, made significant contributions to plant science, and laid the foundations of experimental science in the Indian subcontinent.  IEEE named him one of the fathers of radio science.  Bose is considered the father of Bengali science fiction, and also invented the crescograph, a device for measuring the growth of plants.  A crater on the moon has been named in his honour.",
+      "P. G. Wodehouse: Sir Pelham Grenville Wodehouse {'1': \", '2': \", '3': \", '4': \"} ( ; 15 October 188114 February 1975) was an English author and one of the most widely read humorists of the 20th century.  Born in Guildford, the son of a British magistrate based in Hong Kong, Wodehouse spent happy teenage years at Dulwich College, to which he remained devoted all his life.  After leaving school he was employed by a bank but disliked the work and turned to writing in his spare time.  His early novels were mostly school stories, but he later switched to comic fiction, creating several regular characters who became familiar to the public over the years.  They include the jolly gentleman of leisure Bertie Wooster and his sagacious valet, Jeeves; the immaculate and loquacious Psmith; Lord Emsworth and the Blandings Castle set; the Oldest Member, with stories about golf; and Mr Mulliner, with tall tales on subjects ranging from bibulous bishops to megalomaniac movie moguls."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 648,
+    "generation_tokens": 11,
+    "generation_speed": 245.08165675199965,
+    "prompt_eval_speed": 85420.5114684946,
+    "generation_latency_s": 0.16911580006126314,
+    "latency": 0.6922404000069946,
+    "total_prompt_tokens": 808,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2264852,
+    "stage_route_s": 0.09928550000768155,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.36508430005051196,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05854690005071461,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.360001862049103e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1691681999946013,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6922564000124112,
+    "unaccounted_latency_s": 0.00010879989713430405,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The City That Never Sleeps\" - A man named John Cleese, an actor and comedian, wrote this humorous story about a city that never sleeps.",
+      "\"The City That Always Sleeps\" - Another man named John Cleese also wrote a similar story about a city that always sleeps."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

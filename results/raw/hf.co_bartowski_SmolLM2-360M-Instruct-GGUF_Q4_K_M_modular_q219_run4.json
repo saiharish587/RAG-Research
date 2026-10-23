@@ -1,0 +1,49 @@
+{
+  "question_id": "Q219",
+  "query": "Which suburb is a soap opera featuring a character named Beverly Marshall set in?",
+  "ground_truth": "Erinsborough",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The suburb that features a character named Beverly Marshall is Ramsay Street.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Beverly Marshall: Beverly Marshall is a fictional character from the Australian soap opera \"Neighbours\".  The character was originally played by Lisa Armytage and she made her first on-screen appearance on 6 July 1987.  Shaunna O'Grady took over from Armytage and began playing the character from 16 March 1989 until her departure on 5 September 1990.  Beverly is a doctor and was Jim Robinson's second wife.  O'Grady reprised her role of Beverly in 2005 to help celebrate \"Neighbours\"<nowiki>'</nowiki> 20th anniversary, she made a cameo in Annalise Hartman's documentary on Ramsay Street.",
+      "Shaunna O'Grady: Shaunna O'Grady (born 1958) is an Australian retired actress who played the second incarnation of Jim Robinson's wife, Dr. Beverly Marshall, on the long-running soap opera \"Neighbours\".  She is the granddaughter of writer John O'Grady (author of \"They're a Weird Mob\"), and is married to the television director Chris Adshead.  They have one daughter, Savannah.",
+      "Lisa Vanderpump: Lisa Jane Vanderpump (born 15 September 1960) is a British restaurateur, author, actress, and television personality.  She is known for her appearances on Bravo's \"The Real Housewives of Beverly Hills\", \"Vanderpump Rules\", and ABC's \"Dancing with the Stars\".  Vanderpump and husband, Ken Todd, have owned 26 restaurants, bars and clubs in London and Los Angeles, including The Shadow Lounge, Bar Soho, SUR, Pump, and Villa Blanca."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 466,
+    "generation_tokens": 16,
+    "generation_speed": 240.93119908446147,
+    "prompt_eval_speed": 46253.101736972705,
+    "generation_latency_s": 0.1887214999878779,
+    "latency": 0.6299258000217378,
+    "total_prompt_tokens": 598,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24731229999999998,
+    "stage_route_s": 0.10069710004609078,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28350789996329695,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05682980001438409,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.080003757029772e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18875510001089424,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6299346999730915,
+    "unaccounted_latency_s": 9.449990466237068e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Beverly Marshalls are fictional characters from the soap opera \"The Beverly Hills Hotel.\"",
+      "Query 2: The soap opera \"The Beverly Hills Hotel\" features a character named Beverly Marshall."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

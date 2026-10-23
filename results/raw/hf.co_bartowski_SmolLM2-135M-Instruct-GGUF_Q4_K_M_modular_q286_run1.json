@@ -1,0 +1,49 @@
+{
+  "question_id": "Q286",
+  "query": "Who is older, Ferdi Taygan or Mahesh Bhupathi?",
+  "ground_truth": "Ferdi Taygan",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Mahesh Bhupathi",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mahesh Bhupathi: Mahesh Shrinivas Bhupathi (born 7 June 1974) is a retired Indian professional tennis player.  In 1997, he became the first Indian to win a Grand Slam tournament (with Rika Hiraki).  With his win at the Australian Open mixed doubles in 2006, he joined the elite group of eight tennis players who have achieved a career Grand Slam in mixed doubles.  He is also the founder of International Premier Tennis League.  In December 2016, Bhupathi was appointed as India's next non-playing Davis Cup captain and took over the reins from Anand Amritraj in February 2017.",
+      "Ferdi Taygan: Ferdi Taygan (born December 5, 1956), is a former professional tennis player from the United States.  He is of Turkish descent.",
+      "Zaheer Khan: Zaheer Khan (born 7 October 1978) is a former Indian cricketer who played all forms of the game for Indian national cricket team from 2000 till 2014.  He was the second-most successful Indian pace bowler in Test cricket, behind Kapil Dev."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 348,
+    "generation_tokens": 7,
+    "generation_speed": 356.9607343192249,
+    "prompt_eval_speed": 21651.216325514837,
+    "generation_latency_s": 0.1447775000706315,
+    "latency": 0.9511251000221819,
+    "total_prompt_tokens": 480,
+    "total_generation_tokens": 245,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23008099999999998,
+    "stage_route_s": 0.1275736999232322,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6177163000684232,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06087879999540746,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.959998816251755e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14481180009897798,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.95113499998115,
+    "unaccounted_latency_s": 9.519990999251604e-05,
+    "route": "rag",
+    "router_raw": "Mahesh Bhupathi is older than Ferdi Taygan.",
+    "sub_queries": [
+      "Mahesh Bhupathi (born 1980) and Ferdi Taygan are both Indian cricketers who have played in the Indian cricket league. Ferdi Taygan was born on January 2, 1973, in Mumbai, India, while Mahesh Bhupathi was born on July 6, 1954, in Mumbai, India.",
+      "Mahesh Bhupathi has won 84 Tests and 10 ODIs (ODI) for India, with Ferdi Taygan winning 23 Tests and 7 ODIs for India. Ferdi Taygan is the youngest player to win a Test cricket match, while Mahesh Bhupathi was the youngest player to win an ODIs match."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q437",
+  "query": "Where is the school that Tyler Kalinoski went to located?",
+  "ground_truth": "located in Olathe, Kansas",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The school that Tyler Kalinoski went to was Rochester High School of Rochester, Illinois.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tyler Kalinoski: Tyler Kalinoski (born December 19, 1992) is an American basketball player for Antwerp Giants in the Belgian League.  Kalinoski was a McDonald\u2019s All-American nominee as a senior at Olathe East High School in Kansas and completed his college career for the Davidson Wildcats.  He was named Atlantic 10 Conference Men's Basketball Player of the Year in 2015.",
+      "Rochester High School (Illinois): Rochester High School of Rochester, IL is a public high school located five miles (8\u00a0km) east of Springfield, IL.  As the only high school serving District 3A, Rochester High School accommodates students from Rochester, Buckhart, portions of eastern Springfield, and other surrounding areas.  Rochester has grown rapidly over the past few years.  In 2008, the enrollment was 699 students, which was up from 589 in 2004.",
+      "Springfield, Missouri: Springfield is the third-largest city in the state of Missouri and the county seat of Greene County.  As of the 2010 census, its population was 159,498.  As of 2016, the Census Bureau estimated its population at 167,319.  It is one of the two principal cities of the Springfield-Branson Metropolitan Area, which has a population of 541,991 and includes the counties of Christian, Dallas, Greene, Polk, Webster, Stone and Taney.  Springfield's nickname is \"Queen City of the Ozarks\" and it is known as the \"Birthplace of Route 66\".  It is home to several universities, including Missouri State University, Drury University, and Evangel University."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 463,
+    "generation_tokens": 20,
+    "generation_speed": 396.92777899061264,
+    "prompt_eval_speed": 66618.70503597123,
+    "generation_latency_s": 0.13959699997212738,
+    "latency": 0.5034448999213055,
+    "total_prompt_tokens": 537,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1310187,
+    "stage_rewrite_s": 0.12765199993737042,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07623249990865588,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1598353999434039,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13963680004235357,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5034558000043035,
+    "unaccounted_latency_s": 9.960017632693052e-05,
+    "rewritten_query": "Tyler Kalinoski attended the school in Springfield, Illinois.",
+    "query_was_rewritten": true
+  }
+}

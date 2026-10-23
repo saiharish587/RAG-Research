@@ -1,0 +1,42 @@
+{
+  "question_id": "Q46",
+  "query": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+  "ground_truth": "Yellowcraig",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of Broad Sands Bay.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dirleton Castle: Dirleton Castle is a medieval fortress in the village of Dirleton, East Lothian, Scotland.  It lies around 2 mi west of North Berwick, and around 19 mi east of Edinburgh.  The oldest parts of the castle date to the 13th century, and it was abandoned by the end of the 17th century.",
+      "Yellowcraigs: Yellowcraig, less commonly known as Broad Sands Bay, is a coastal area of forest, beach and grassland in East Lothian, south-east Scotland.  Yellowcraig is partly within the Firth of Forth Site of Special Scientific Interest (SSSI).  It is bordered to the north by the Firth of Forth, to the south by the village of Dirleton and Dirleton Castle, to the east by the North Berwick West Links golf course, and to the west by the Archerfield Estate and Links golf courses.",
+      "Lord Haliburton of Dirleton: Lord Haliburton of Dirleton (or \"Dirletoun\") was a Scottish Lordship of Parliament created \"circa.\"  1450 for Sir Walter de Haliburton, Lord High Treasurer of Scotland.  The seat of Lord Haliburton was at Dirleton Castle in present-day East Lothian."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 357,
+    "generation_tokens": 24,
+    "generation_speed": 263.2329392151271,
+    "prompt_eval_speed": 48249.76348155156,
+    "generation_latency_s": 0.9620788999600336,
+    "latency": 3.393633299972862,
+    "total_prompt_tokens": 440,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12472720000000001,
+    "stage_rewrite_s": 1.1856471999781206,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.059453299967572,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18633719999343157,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9621204000432044,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3936445999424905,
+    "unaccounted_latency_s": 8.709996473044157e-05,
+    "rewritten_query": "The medieval fortress in Dirleton, East Lothian, Scotland is bordered by the south coast.",
+    "query_was_rewritten": true
+  }
+}

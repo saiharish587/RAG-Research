@@ -1,0 +1,49 @@
+{
+  "question_id": "Q529",
+  "query": "Which band was formed first, Wavves or Social Code?",
+  "ground_truth": "Social Code",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Wavves was formed first, as stated in the context provided.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wavves: Wavves is an American rock band based in San Diego, California.  Formed in 2008 by singer-songwriter Nathan Williams (born June 12, 1986), the band also features Alex Gates (guitar, backing vocals), Stephen Pope (bass guitar, backing vocals) and Brian Hill (drums and backing vocals).",
+      "Social Code: Social Code (formerly known as Fifth Season) was a Canadian alternative rock group formed in 1999 in St. Albert.",
+      "WAVN: WAVN is a Gospel formatted broadcast radio station licensed to Southaven, Mississippi, serving Metro Memphis.  WAVN is owned and operated by Flinn Broadcasting."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 226,
+    "generation_tokens": 15,
+    "generation_speed": 227.91157031071944,
+    "prompt_eval_speed": 12143.35607973779,
+    "generation_latency_s": 0.19197270006407052,
+    "latency": 0.500600399915129,
+    "total_prompt_tokens": 352,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235011,
+    "stage_route_s": 0.10012259997893125,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1530660999706015,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05525390000548214,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.120000034570694e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1920052000787109,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5006098999874666,
+    "unaccounted_latency_s": 0.00010149995796382427,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Wavves\"",
+      "\"Social Code\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

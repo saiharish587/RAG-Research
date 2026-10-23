@@ -1,0 +1,49 @@
+{
+  "question_id": "Q476",
+  "query": "Which American cable news and talk radio host was the former GOP representative",
+  "ground_truth": "Charles Joseph",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "John McCain",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dennis Prager: Dennis Mark Prager ( ; born August 2, 1948) is an American conservative and nationally syndicated radio talk show host, columnist, author, and public speaker.",
+      "Joe Scarborough: Charles Joseph Scarborough ( ; born April 9, 1963) is an American cable news and talk radio host.  He is currently the co-host of \"Morning Joe\" on MSNBC, and previously hosted \"Scarborough Country\" on the same channel.  Scarborough was previously a lawyer and a politician, and served in the United States House of Representatives from 1995 to 2001 as a Republican from the 1st district of Florida.",
+      "John McCain presidential campaign, 2008: The 2008 presidential campaign of John McCain, the longtime senior U.S. Senator from Arizona, was launched with an informal announcement on February 28, 2007 during a live taping of the \"Late Show with David Letterman\", and formally launched at an event on April 25, 2007.  His second candidacy for the Presidency of the United States, he had previously run for his party's nomination in the 2000 primaries and was considered as a potential running mate for his party's nominee, then-Governor George W. Bush of Texas.  After winning a majority of delegates in the Republican primaries of 2008, on August 29, leading up to the convention, McCain selected Governor Sarah Palin of Alaska as his running mate for Vice President.  Five days later, at the 2008 Republican National Convention, McCain was formally selected as the Republican Party presidential nominee in the 2008 presidential election."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 456,
+    "generation_tokens": 4,
+    "generation_speed": 247.00507885668017,
+    "prompt_eval_speed": 49808.84762424904,
+    "generation_latency_s": 0.14025650010444224,
+    "latency": 0.5784933000104502,
+    "total_prompt_tokens": 584,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2503643,
+    "stage_route_s": 0.11544650001451373,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26581739995162934,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056792200077325106,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7699973694980145e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1402930999174714,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5785049999831244,
+    "unaccounted_latency_s": 9.8800053820014e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The former Republican Representative, John McCain, hosted The Daily Show with Colbert.\"",
+      "\"The show's hosts were a mix of political commentators and comedians.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

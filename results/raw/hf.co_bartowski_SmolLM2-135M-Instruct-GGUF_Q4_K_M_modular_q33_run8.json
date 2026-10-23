@@ -1,0 +1,49 @@
+{
+  "question_id": "Q33",
+  "query": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+  "ground_truth": "Charles Eug\u00e8ne",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Jean-Fran\u00e7ois Pil\u00e2tre de Rozier, the French chemist and aviation pioneer who flew the first manned free balloon flight on November 21, 1783.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wright brothers: The Wright brothers, Orville (August 19, 1871 \u2013 January 30, 1948) and Wilbur (April 16, 1867 \u2013 May 30, 1912), were two American brothers, inventors, and aviation pioneers who are generally credited with inventing, building, and flying the world's first successful airplane.  They made the first controlled, sustained flight of a powered, heavier-than-air aircraft on December 17, 1903, four miles south of Kitty Hawk, North Carolina.  In 1904\u201305 the brothers developed their flying machine into the first practical fixed-wing aircraft.  Although not the first to build and fly experimental aircraft, the Wright brothers were the first to invent aircraft controls that made fixed-wing powered flight possible.",
+      "Tony Jannus: Antony Habersack Jannus, more familiarly known as Tony Jannus (July 22, 1889 \u2013 October 12, 1916), was an early American pilot whose aerial exploits were widely publicized in aviation's pre-World War I period.  He flew the first airplane from which a parachute jump was made, in 1912.  Jannus was also the first airline pilot, having pioneered the inaugural flight of the St. Petersburg\u2013Tampa Airboat Line on January 1, 1914, the first scheduled commercial airline flight in the world using heavier-than-air aircraft.  The \"Tony Jannus Award\", created to perpetuate his legacy, recognizes outstanding individual achievement in the scheduled commercial aviation industry and is conferred annually by the Tony Jannus Distinguished Aviation Society founded in Tampa, Florida, in 1963.",
+      "Jean-Fran\u00e7ois Pil\u00e2tre de Rozier: Jean-Fran\u00e7ois Pil\u00e2tre de Rozier (30 March 1754\u00a0\u2013 15 June 1785) was a French chemistry and physics teacher, and one of the first pioneers of aviation.  He and the Marquis d'Arlandes made the first manned free balloon flight on 21 November 1783, in a Montgolfier balloon.  He later died when his balloon crashed near Wimereux in the Pas-de-Calais during an attempt to fly across the English Channel.  He and his companion, Pierre Romain, thus became the first known fatalities in an air crash.  He also risked himself while researching the flammability of hydrogen: in \"A Short History of Nearly Everything\", Bill Bryson writes \"In France, a chemist named Pilatre de Rozier tested the flammability of hydrogen by gulping a mouthful and blowing across an open flame, proving at a stroke that hydrogen is indeed explosively combustible and that eyebrows are not necessarily a permanent feature of one\u2019s face.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 694,
+    "generation_tokens": 40,
+    "generation_speed": 393.0238270695161,
+    "prompt_eval_speed": 99985.5928540556,
+    "generation_latency_s": 0.226396800018847,
+    "latency": 0.6415734000038356,
+    "total_prompt_tokens": 824,
+    "total_generation_tokens": 116,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2233577,
+    "stage_route_s": 0.09513659996446222,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26143439998850226,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058414399973116815,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.279993638396263e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2264458000427112,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6415855999803171,
+    "unaccounted_latency_s": 0.0001023000804707408,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Who was the first person to fly a plane with no wings?",
+      "Who flew the first airplane with no tail fins?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

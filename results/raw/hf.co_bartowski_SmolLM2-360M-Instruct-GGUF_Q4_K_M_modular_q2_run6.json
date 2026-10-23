@@ -1,0 +1,49 @@
+{
+  "question_id": "Q2",
+  "query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+  "ground_truth": "Chief of Protocol",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The woman who portrayed Corliss Archer in the film Kiss and Tell was Shirley Temple.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ben Franklin (The Office): \"Ben Franklin\" is the fifteenth episode of the third season of the American comedy television series \"The Office\", and the show's forty-third episode overall.  Written by Mindy Kaling, who also acts in the show as Kelly Kapoor, and directed by Randall Einhorn, the episode first aired in the United States on February 1, 2007, on NBC.  \"Ben Franklin\" received 5.0/13 in the ages 18\u201349\u00a0demographic of the Nielsen ratings, and was watched by an estimated audience of 10.1\u00a0million viewers, and the episode received mixed reviews among critics.",
+      "Office (2015 South Korean film): Office (\uc624\ud53c\uc2a4 ) is 2015 South Korean slasher-thriller film directed by Hong Won-chan and starring Go Ah-sung and Park Sung-woong.  It is about a detective trying to figure out why a mild-mannered man has killed his family and is targeting his co-workers.  The film premiered at the Midnight Screenings section of the 2015 Cannes Film Festival.",
+      "Kiss and Tell (1945 film): Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.  In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys.  The parents' bickering about which girl is the worse influence causes more problems than it solves."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 20,
+    "generation_speed": 240.63624222444142,
+    "prompt_eval_speed": 50367.38563640673,
+    "generation_latency_s": 0.20382900000549853,
+    "latency": 0.5415615999372676,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23285509999999998,
+    "stage_route_s": 0.09255249996203929,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18945440009701997,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055553900077939034,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.640008021146059e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20386050001252443,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5415708000073209,
+    "unaccounted_latency_s": 9.399978443980217e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Office: The Office\"",
+      "\"The Office: The Office (2013)\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

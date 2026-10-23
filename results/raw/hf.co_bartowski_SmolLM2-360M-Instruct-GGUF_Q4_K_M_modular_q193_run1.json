@@ -1,0 +1,49 @@
+{
+  "question_id": "Q193",
+  "query": "Georges-Henri Bousquet translated the work of a historian who is of what heritage?",
+  "ground_truth": "North African Arab",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Georges-Henri Bousquet was a French jurist and economist who was of European heritage, specifically of French origin. He was born in Meudon, France, and later studied at the Faculty of Law in Algiers before becoming a specialist in the sociology of North Africa (Berbers) and Islamology.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Georges-Henri Bousquet: Georges-Henri Bousquet (21 June 1900, Meudon \u2013 23 January 1978, Latresne) was a 20th-century French jurist, economist and Islamologist.  He was Professor of law at the Faculty of Law of the University of Algiers where he was a specialist in the sociology of North Africa (Berbers, Islam).  He is also known for his translation work of the great Muslim authors, Al-Ghazali, a theologian who died in 1111 and Tunisian historian Ibn Khaldun (1332-1406).  He was known as a polyglot, spoke several European languages (Dutch, his second mother tongue, English, German, Italian, but also Spanish, Danish, Norwegian ...) and Eastern ones (Arab, Malay ...).",
+      "Fran\u00e7ois Guizot: Fran\u00e7ois Pierre Guillaume Guizot (] ; 4 October 1787 \u2013 12 September 1874) was a French historian, orator, and statesman.  Guizot was a dominant figure in French politics prior to the Revolution of 1848.  A conservative liberal who opposed the attempt by King Charles X to usurp legislative power, he worked to sustain a constitutional monarchy following the July Revolution of 1830.",
+      "The Age of Louis XIV: The Age of Louis XIV (\"\"Le Si\u00e8cle de Louis XIV\"\", also translated The Century of Louis XIV) is a historical work by the French historian, philosopher, and writer Voltaire, first published in 1751.  Through it, the French 17th century became identified with Louis XIV of France, who reigned from 1643 to 1715."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 66,
+    "generation_speed": 230.78698361412415,
+    "prompt_eval_speed": 14919.626528058523,
+    "generation_latency_s": 0.42894580005668104,
+    "latency": 0.8274416999192908,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22316799999999998,
+    "stage_route_s": 0.09655979997478426,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2437571999616921,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05799590004608035,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8699981309473515e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.42897939996328205,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8274516999954358,
+    "unaccounted_latency_s": 0.00010130007285624743,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Georges Henri Bousquet, a French historian, was born in 1859.\"",
+      "\"His heritage is of French and English descent.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

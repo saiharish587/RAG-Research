@@ -1,0 +1,49 @@
+{
+  "question_id": "Q309",
+  "query": "Which dog is considered a giant dog breed, the  Leonberger or the Basset Hound?",
+  "ground_truth": "The Leonberger is a giant dog breed.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Basset Hound is considered a giant dog breed.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Basset Hound: The Basset Hound is a short-legged breed of dog of the hound family.  The Basset is a scent hound that was originally bred for the purpose of hunting hare.  Their sense of smell and ability to ground-scent is second only to that of the Bloodhound.  Basset Hounds are one of 6 recognised basset-type breeds in France.",
+      "Giant dog breed: A giant dog breed has no universal height or weight classification, although some groups define \"giant breeds\" as those heavier than 50 kg .  Giant breeds grow rapidly, but take longer to mature into their full adult sizes than smaller dogs.",
+      "Basset Bleu de Gascogne: The Basset Bleu de Gascogne (] ), also known as the Blue Gascony Basset, is a long-backed, short legged breed of dog of the hound type.  The breed originated in the Middle Ages, descended from the Grand Bleu de Gascogne.  It nearly became extinct around the early 19th century; its salvation was attributed to one Alain Bourbon.  A French native breed, it is rare outside of its homeland.  It is recognized internationally by the F\u00e9d\u00e9ration Cynologique Internationale, in the UK by The Kennel Club, and by the United Kennel Club in the United States.  The \"bleu\" of its name is a reference to its coat which has a ticked appearance."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 392,
+    "generation_tokens": 13,
+    "generation_speed": 360.7303401964593,
+    "prompt_eval_speed": 39821.21088988216,
+    "generation_latency_s": 0.156977100064978,
+    "latency": 0.5745578999631107,
+    "total_prompt_tokens": 532,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2308243,
+    "stage_route_s": 0.1283528000349179,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23343150003347546,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05562709993682802,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0299917347729206e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1570112999761477,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5745677000377327,
+    "unaccounted_latency_s": 9.52001428231597e-05,
+    "route": "rag",
+    "router_raw": "The Basset Hound is considered a giant dog breed.",
+    "sub_queries": [
+      "Which dog breeds are considered giant dogs?",
+      "Answer: The Basset Hound (Bichon Frise) is considered a giant dog breed, as it has been recognized by the International Canine Genetic Association (ICA)."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

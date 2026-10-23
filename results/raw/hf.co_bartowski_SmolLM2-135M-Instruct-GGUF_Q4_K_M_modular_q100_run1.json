@@ -1,0 +1,49 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, the two cities are not the same level of city. Yingkou is a prefecture-level city in northeastern Ningbo province, while Fuding is a county-level city in northeastern Zhejiang province. The prefectures and counties have different levels of administrative authority.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "County-level city: A county-level municipality (), county-level city, or county city is a county-level administrative division of mainland China.  County-level cities are usually governed by prefecture-level divisions, but a few are governed directly by province-level divisions.  Formerly known as prefecture-controlled city (1949-1970: ; 1970-1983: )."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 252,
+    "generation_tokens": 61,
+    "generation_speed": 372.63969406892,
+    "prompt_eval_speed": 17070.857607370275,
+    "generation_latency_s": 0.28666949993930757,
+    "latency": 0.7324232999235392,
+    "total_prompt_tokens": 380,
+    "total_generation_tokens": 138,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2245301,
+    "stage_route_s": 0.0933578999247402,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.29516330000478774,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05704579991288483,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.170004442334175e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28671010001562536,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7324349998962134,
+    "unaccounted_latency_s": 0.00010679999832063913,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "YINGKOU AND FUDING ARE THE SAME LEVEL OF CITY, BUT IT'S NOT A QUESTION ABOUT THE LEVELS.",
+      "The query \"Are Yingkou and Fuding the same level of city?\" is a question about whether Yingkou and Fuding are the same level of city."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

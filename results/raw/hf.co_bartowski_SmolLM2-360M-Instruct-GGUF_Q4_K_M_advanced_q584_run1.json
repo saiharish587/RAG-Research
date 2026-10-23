@@ -1,0 +1,42 @@
+{
+  "question_id": "Q584",
+  "query": "Which NCAA record does the quarterback of the Minnesota Vikings hold?",
+  "ground_truth": "most total touchdowns in NCAA history",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The quarterback of the Minnesota Vikings holds the NCAA's all-time passing yards record for the most total passing yards, touchdowns, and completions in a single season.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sam Bradford: Samuel Jacob Bradford (born November 8, 1987) is an American football quarterback for the Minnesota Vikings of the National Football League (NFL).  Bradford attended Putnam City North High School in Oklahoma City, where he starred in football, basketball and golf.  As a senior quarterback in 2005, he threw for 2,029 yards and 17 touchdowns in 12 games.  Bradford was not highly recruited coming out of high school, but he did receive a scholarship offer from the University of Oklahoma, which he accepted.  After a redshirt season in 2006, Bradford threw for 3,121 yards and 36 touchdowns as a redshirt freshman.  That set the stage for a phenomenal 2008 year, when Bradford became only the second sophomore to win the Heisman Trophy as he was the trigger man for the highest-scoring offense in NCAA history, throwing for 4,464 yards with 48 touchdowns and just six interceptions.  He again led the nation in passing and also added five rushing touchdowns as the Sooners went 12-1 and advanced to the BCS national title game.  Bradford declared for the NFL draft following the 2009 season and was drafted by the St. Louis Rams with the first overall pick in the 2010 NFL Draft.",
+      "Case Keenum: Casey Austin Keenum (born February 17, 1988) is an American football quarterback for the Minnesota Vikings of the National Football League (NFL).  He played college football for Houston, where he became the NCAA's all-time leader in total passing yards, touchdowns, and completions.  He was signed by the Houston Texans as an undrafted free agent in 2012, and has also played for the St. Louis/Los Angeles Rams.",
+      "1994 Minnesota Vikings season: The Minnesota Vikings season was the 34th year of season play for the Minnesota Vikings and the 75th regular season of the National Football League.  The Vikings finished with a record of ten wins and six losses.  For the third straight season in the Dennis Green era, the Vikings did not make it out of the Wild Card round, losing 35-18 to the rival Chicago Bears."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 579,
+    "generation_tokens": 37,
+    "generation_speed": 249.0894769794198,
+    "prompt_eval_speed": 13501.53903553773,
+    "generation_latency_s": 1.0132960000773892,
+    "latency": 3.478354200022295,
+    "total_prompt_tokens": 653,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1273076,
+    "stage_rewrite_s": 1.1887783000711352,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0682590999640524,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20790249994024634,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.013338999939151,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4783651999896392,
+    "unaccounted_latency_s": 8.680007886141539e-05,
+    "rewritten_query": "The Minnesota Vikings quarterback holds the NCAA record for most wins in a single season.",
+    "query_was_rewritten": true
+  }
+}

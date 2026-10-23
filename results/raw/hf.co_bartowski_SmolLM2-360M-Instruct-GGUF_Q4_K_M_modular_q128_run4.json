@@ -1,0 +1,48 @@
+{
+  "question_id": "Q128",
+  "query": "When was the palace founded at which Columba de Dunbar died in 1435?",
+  "ground_truth": "the late 12th Century",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Bishop Dunbar's Hospital was founded in 1531 by Bishop Gavin Dunbar, the Elder.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Columba de Dunbar: Columba de Dunbar ( 1386 \u2013 1435) was Bishop of Moray from 1422 until his death at Spynie Palace near Elgin sometime before 7 November 1435.",
+      "Bishop Dunbar's Hospital: Bishop Dunbar's Hospital was founded in 1531 by Bishop Gavin Dunbar, the Elder.  The hospital was endowed by a mortification just before his death.  Dunbar petitioned the King, James V of Scotland, and the charter, signed on 24 February 1531 records the King\u2019s approval that \u2018[Dunbar shall] ... \"found an hospital near the cathedral church, but outside the cemetery\"...\u2019 It was also known as St Mary's Hospital.  In the mortification, Dunbar's charitable purpose is recorded.  Bedesmen were supported by a charitable foundation that emerged from the original church control until the twenty-first century.  Bedesmen drew their name from the word \"bede\" - a prayer.  The residents of Dunbar's Hospital said prayers in a cycle of Divine Office.  The Bede House, Old Aberdeen was used by the Bedesmen from the hospital from 1789 to the end of the nineteenth century.  The only remains of the 1531 building can be seen in a perimeter wall for Seaton Park in Old Aberdeen.  The last Bedesman died in 1988.  The Managers of the Hospital constituted a Charity, Bishop Dunbar Hospital Trust.  The Charity ceased active operation in 2012.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 492,
+    "generation_tokens": 25,
+    "generation_speed": 226.23615434735393,
+    "prompt_eval_speed": 61638.68704585317,
+    "generation_latency_s": 0.23299950000364333,
+    "latency": 0.5572621000465006,
+    "total_prompt_tokens": 632,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.232152,
+    "stage_route_s": 0.09338809992186725,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19239229999948293,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03831540001556277,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.099996294826269e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2330378000624478,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5572742000222206,
+    "unaccounted_latency_s": 0.00010050006676465273,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Founded at Dunbar, Scotland, by Columba de Dunbar in 628 AD.*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

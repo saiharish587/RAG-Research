@@ -1,0 +1,49 @@
+{
+  "question_id": "Q26",
+  "query": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+  "ground_truth": "Barton Lee Hazlewood",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The writer of \"These Boots Are Made for Walkin'\" is Lee Hazlewood.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "These Boots Are Made for Walkin': \"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra.  It charted January 22, 1966 and reached No. 1 in the United States \"Billboard\" Hot 100 and in the UK Singles Chart.",
+      "Boots (EP): Boots is an EP by KMFDM, featuring a cover of the Nancy Sinatra song \"These Boots Are Made for Walkin'\".  It was the first release by the band after their three-year hiatus.",
+      "Nancy Sinatra: Nancy Sandra Sinatra (born June 8, 1940) is an American singer and actress.  She is the elder daughter of Frank Sinatra and Nancy (Barbato) Sinatra, and is widely known for her 1966 signature hit \"These Boots Are Made for Walkin'\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 285,
+    "generation_tokens": 20,
+    "generation_speed": 219.103646980204,
+    "prompt_eval_speed": 33973.05995947073,
+    "generation_latency_s": 0.20708940003532916,
+    "latency": 0.6043867999687791,
+    "total_prompt_tokens": 433,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.221913,
+    "stage_route_s": 0.08636700001079589,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.256477800081484,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05429339990951121,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8900023102760315e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20712110004387796,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6043967000441626,
+    "unaccounted_latency_s": 8.909997995942831e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"These Boots Are Made for Walkin'\" - unknown author, 2007",
+      "\"John Lennon\" - John Lennon, 1980"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

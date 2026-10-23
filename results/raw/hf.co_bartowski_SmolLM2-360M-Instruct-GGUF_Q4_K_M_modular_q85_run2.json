@@ -1,0 +1,49 @@
+{
+  "question_id": "Q85",
+  "query": "What was the name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine \" and was also a former white house intern?",
+  "ground_truth": "Monica Lewinsky",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The name of a woman from the book \"Their Lives: The Women Targeted by the Clinton Machine\" is Monica Lewinsky. She was an American activist, fashion designer, and former White House intern.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Their Lives: Their Lives: The Women Targeted by the Clinton Machine is a book by Candice E. Jackson.  Published by conservative publisher World Ahead Publishing on May 31, 2005, it recounts the stories of seven women who crossed paths with Bill Clinton: Monica Lewinsky, Paula Jones, Gennifer Flowers, Kathleen Willey, Elizabeth Gracen, Juanita Broaddrick, and Sally Perdue.",
+      "Monica Lewinsky: Monica Samille Lewinsky (born July 23, 1973) is an American activist, television personality, fashion designer, and former White House intern.",
+      "Sarah Huckabee Sanders: Sarah Elizabeth Huckabee Sanders (born August 13, 1982) is an American political aide who currently serves as White House press secretary.  She is the daughter of former governor of Arkansas and Republican presidential candidate Mike Huckabee and former Arkansas first lady Janet Huckabee."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 292,
+    "generation_tokens": 42,
+    "generation_speed": 252.66653431752962,
+    "prompt_eval_speed": 12416.549729982566,
+    "generation_latency_s": 0.29473989992402494,
+    "latency": 0.6624090999830514,
+    "total_prompt_tokens": 458,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2199073,
+    "stage_route_s": 0.09463029995094985,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21784069994464517,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05499869992490858,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.3000014051795e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2947726999409497,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6624187999404967,
+    "unaccounted_latency_s": 0.00011400016956031322,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The name of a woman in the book 'Their Lives' is Sarah Palin\"",
+      "\"Sarah Palin was a former White House Intern\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

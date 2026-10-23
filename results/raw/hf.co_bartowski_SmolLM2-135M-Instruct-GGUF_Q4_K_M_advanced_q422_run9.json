@@ -1,0 +1,42 @@
+{
+  "question_id": "Q422",
+  "query": "\"A Summer in the Cage\" and \"American Hardcore\" are both what kind of film?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Based on the information provided, it is unclear which type of film \"American Hardcore\" refers to. The two films mentioned have different genres and styles that do not overlap with each other. However, if we assume that \"American Hardcore\" refers to a specific subgenre or genre within electronic dance music (EDM), then \"A Summer in the Cage\" would be an example of this subgenre.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "American Hardcore (film): American Hardcore: The History of American Punk Rock 1980-1986 is a documentary directed by Paul Rachman and written by Steven Blush.  It is based on the book \"\" also written by Blush.  It was released on September 22, 2006 on a limited basis.  The film features some early pioneers of the hardcore punk music scene including Bad Brains, Black Flag, D.O.A., Minor Threat, Minutemen, SSD, and others.  It was released on DVD by Sony Pictures Home Entertainment on February 20, 2007.",
+      "I Against I: I Against I is the third studio album by the American hardcore punk band Bad Brains.  It was released in November 1986 through SST Records with the catalog number SST 065.  The best-selling album in the band's catalog, \"I Against I\" is a critically acclaimed album that mixes American hardcore punk with funk, soul, reggae and heavy metal.  It is also included in the book \"1001 Albums You Must Hear Before You Die\".  The album featured an MTV video for the title track directed by Paul Rachman who later went on to direct the documentary feature film \"American Hardcore\".",
+      "Hardcore (electronic dance music genre): Hardcore techno (often abbreviated to hardcore) is a subgenre of electronic dance music that originated in the Netherlands from the emergent raves/gabber in the 1990s.  Its subgenres are usually distinguished from other electronic dance music genres by faster tempos (160 to 200 BPM or more), the intensity of the kicks and the synthesized bass (in some subgenres), the rhythm and the atmosphere of the themes (sometimes violent), the usage of saturation and experimentation close to that of industrial dance music."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 487,
+    "generation_tokens": 82,
+    "generation_speed": 399.80887185638085,
+    "prompt_eval_speed": 73035.39292141571,
+    "generation_latency_s": 0.29424630000721663,
+    "latency": 0.8973746000556275,
+    "total_prompt_tokens": 568,
+    "total_generation_tokens": 158,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1262416,
+    "stage_rewrite_s": 0.2660309000639245,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0840815999545157,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.252871899981983,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2942978999344632,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8973895000526682,
+    "unaccounted_latency_s": 0.000108000123873353,
+    "rewritten_query": "The original query was \"A Summer in the Cage,\" which is a classic American hardcore film, while \"American Hardcore\" is an alternative spin-off from the original. The optimized query would be:\n\n\"What kind of film is American Hardcore?\"\n\nThis output accurately reflects the optimized query and provides a clear answer to the user's question.",
+    "query_was_rewritten": true
+  }
+}

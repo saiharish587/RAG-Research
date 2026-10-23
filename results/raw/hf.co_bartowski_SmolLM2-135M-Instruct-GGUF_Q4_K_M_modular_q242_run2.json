@@ -1,0 +1,49 @@
+{
+  "question_id": "Q242",
+  "query": "What american actress/singer born in 1956 recorded the song Something there for beauty and the beast?",
+  "ground_truth": "Donna Paige Helmintoller",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Yes, Cher (born Cherilyn Sarkisian; May 20, 1946) is an American singer-songwriter who has been described as embodying female autonomy in a male-dominated industry. She has worked extensively in various areas of entertainment and has adopted a variety of styles throughout her career.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Something There: \"Something There\" is a song written by lyricist Howard Ashman and composer Alan Menken for Walt Disney Pictures 30th animated feature film \"Beauty and the Beast\" (1991).  Sung by the majority of the film's main cast, the song was recorded by American actors Paige O'Hara as Belle and Robby Benson as the Beast via voice over, featuring actors Jerry Orbach, Angela Lansbury and David Ogden Stiers as Lumiere, Mrs. Potts and Cogsworth, respectively.  The only song performed by the Beast, \"Something There\" is heard midway through \"Beauty and the Beast \"during a scene in which Belle and the Beast finally begin to acknowledge their own feelings for each other.",
+      "Cher: Cher ( ; born Cherilyn Sarkisian; May 20, 1946) is an American singer and actress.  Sometimes referred to as the Goddess of Pop, she has been described as embodying female autonomy in a male-dominated industry.  She is known for her distinctive contralto singing voice and for having worked in numerous areas of entertainment, as well as adopting a variety of styles and appearances during her five-decade-long career.",
+      "Idina Menzel: Idina Kim Menzel ( ; born Idina Kim Mentzel; May 30, 1971) is an American actress, singer, and songwriter."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 395,
+    "generation_tokens": 67,
+    "generation_speed": 384.1632980705828,
+    "prompt_eval_speed": 33993.11531841652,
+    "generation_latency_s": 0.29535559995565563,
+    "latency": 0.8629047999856994,
+    "total_prompt_tokens": 543,
+    "total_generation_tokens": 212,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2180348,
+    "stage_route_s": 0.08984380005858839,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4220534999622032,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05546870001126081,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.450006574392319e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29539610003121197,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.862916799960658,
+    "unaccounted_latency_s": 0.00010099983774125576,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Here are two search queries related to the American actress/singer born in 1956's \"Something there\" song:",
+      "\"American actress/singer born in 1956: What was her name?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

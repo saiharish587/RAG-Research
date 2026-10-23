@@ -1,0 +1,42 @@
+{
+  "question_id": "Q592",
+  "query": "Red Mountain is a film that centers on an attempt by a group of what group of Civil War rangers?",
+  "ground_truth": "pro-Confederate",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The question asks about the plot or storyline of the movie, which is focused on the story of a group of American Civil War rangers trying to stir up rebellion in the West. The answer provided is that Red Mountain is a film centered around an attempt by a group of Civil War rangers to overthrow a rebellion in the West and establish their own exclusive distribution scheme for films.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Red Mountain (film): Red Mountain is a 1951 Western historical film, starring Alan Ladd, set in the last days of the US Civil War.  The plot centers on an attempt by Quantrill's Raiders to stir up rebellion in the West.",
+      "United States v. Paramount Pictures, Inc.: United States v. Paramount Pictures, Inc., 334 US 131 (1948) (also known as the Hollywood Antitrust Case of 1948, the Paramount Case, the Paramount Decision or the Paramount Decree) was a landmark United States Supreme Court antitrust case that decided the fate of movie studios owning their own theatres and holding exclusivity rights on which theatres would show their films.  It would also change the way Hollywood movies were produced, distributed, and exhibited.  The Court held in this case that the existing distribution scheme was in violation of the antitrust laws of the United States, which prohibit certain exclusive dealing arrangements.",
+      "Brokeback Mountain: Brokeback Mountain is a 2005 American neo-western romantic drama film directed by Ang Lee and produced by Diana Ossana and James Schamus.  Adapted from the 1997 short story of the same name by Annie Proulx, the screenplay was written by Ossana and Larry McMurtry.  The film stars Heath Ledger, Jake Gyllenhaal, Anne Hathaway, and Michelle Williams, and depicts the complex emotional and homosexual relationship between Ennis Del Mar and Jack Twist in the American West from 1963 to 1983."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 421,
+    "generation_tokens": 74,
+    "generation_speed": 392.8480421302981,
+    "prompt_eval_speed": 23062.174746644756,
+    "generation_latency_s": 0.28553799993824214,
+    "latency": 0.6775392999406904,
+    "total_prompt_tokens": 502,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13645659999999998,
+    "stage_rewrite_s": 0.17982179997488856,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08105029992293566,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13098730007186532,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2855872999643907,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6775531999301165,
+    "unaccounted_latency_s": 0.00010740000288933516,
+    "rewritten_query": "The original query was \"Red Mountain is a film.\" The optimized query would be \"A Film about Red Mountain.",
+    "query_was_rewritten": true
+  }
+}

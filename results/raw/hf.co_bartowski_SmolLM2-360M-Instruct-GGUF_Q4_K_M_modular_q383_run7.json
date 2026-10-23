@@ -1,0 +1,49 @@
+{
+  "question_id": "Q383",
+  "query": "What act for Innocent Records achieved Platinum sales and shares its name with a primary color in the RGB color model?",
+  "ground_truth": "Blue",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Billie Piper achieved Platinum sales and shared her name with a primary color in the RGB color model.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Innocent Records: Innocent Records was a pop record label created to cater to for EMI's Virgin Records more pop oriented acts.  Following the success of the Spice Girls, Virgin Records decided to delve into the pop market.  In doing so they poached Hugh Goldsmith from RCA Records (famous for steering Take That's initial flagging sales, to a multi-platinum act).  They let him launch his own Virgin Records offshoot.  His first signing was Billie Piper, followed by Martine McCutcheon, along with several dance acts Todd Terry to name one.  The label continued to thrive well into the mid-2000s with Atomic Kitten and Blue achieving Platinum sales.",
+      "RGB color space: An RGB color space is any additive color space based on the RGB color model.  A particular RGB color space is defined by the three chromaticities of the red, green, and blue additive primaries, and can produce any chromaticity that is the triangle defined by those primary colors.  The complete specification of an RGB color space also requires a white point chromaticity and a gamma correction curve.  As of 2007, sRGB is by far the most commonly used RGB color space.",
+      "RGB color model: The RGB color model is an additive color model in which red, green and blue light are added together in various ways to reproduce a broad array of colors.  The name of the model comes from the initials of the three additive primary colors, red, green, and blue."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 399,
+    "generation_tokens": 23,
+    "generation_speed": 239.51098105780545,
+    "prompt_eval_speed": 53759.09458367017,
+    "generation_latency_s": 0.21826690004672855,
+    "latency": 0.7183030999731272,
+    "total_prompt_tokens": 547,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2225884,
+    "stage_route_s": 0.09325410006567836,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.348211899981834,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05839289992582053,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.449994932860136e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21830120007507503,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7183130000485107,
+    "unaccounted_latency_s": 9.8800053820014e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Platinum\" - The name of the album by the band Innocent Records, which was released in 2007.",
+      "\"Platinum\" - A color that is part of the RGB color model and has a value between 3000 and 6000."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

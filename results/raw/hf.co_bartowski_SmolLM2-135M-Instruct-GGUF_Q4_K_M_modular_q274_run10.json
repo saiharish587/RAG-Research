@@ -1,0 +1,48 @@
+{
+  "question_id": "Q274",
+  "query": "on 16 January 1995 \"First Knight\" was being filmed at a studio located how far from Windsor ?",
+  "ground_truth": "7 miles",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "on 16 January 1995, the film \"First Knight\" was being filmed at Pinewood Studios, not at Buckingham Palace.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pinewood Studios: Pinewood Studios is a British film and television studio located approximately 20 mi west of central London, and 7 miles from Windsor.",
+      "Filming of James Bond in the 1990s: Principal photography for the film began on 16 January 1995 and continued until 6 June.  The producers were unable to film at Pinewood Studios, the usual location for Bond films, because it had been reserved for \"First Knight\".  Instead, an old Rolls-Royce factory at the Leavesden Aerodrome in Hertfordshire was converted into a new studio.  The producers later said Pinewood would have been too small.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 297,
+    "generation_tokens": 32,
+    "generation_speed": 368.5998963312791,
+    "prompt_eval_speed": 44648.226097414314,
+    "generation_latency_s": 0.2030749999685213,
+    "latency": 0.550509599968791,
+    "total_prompt_tokens": 449,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2304119,
+    "stage_route_s": 0.15568159997928888,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.155679399962537,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.035900200018659234,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.0400074794888496e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20311620004940778,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5505222999490798,
+    "unaccounted_latency_s": 0.00010519986972212791,
+    "route": "rag",
+    "router_raw": "On 16 January 1995, \"First Knight\" was being filmed at a studio located in Windsor.",
+    "sub_queries": [
+      "On 16th January 1995, \"The First Knight\" was being filmed at a studio located in Windsor."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q361",
+  "query": "The Waterloo Vase has been used as a garden ornament at whose residence and administrative headquarters?",
+  "ground_truth": "reigning monarch of the United Kingdom",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Waterloo Vase has been used as a garden ornament in the palace of Buckingham Palace since 1906.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waterloo Vase: The Waterloo Vase is a great urn, 15ft (5m) high and weighing 20 tons, fashioned from a single piece of Carrara marble.  Since 1906, it has been used as a garden ornament in the garden of Buckingham Palace, London.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning.",
+      "Kensington Palace: Kensington Palace is a royal residence set in Kensington Gardens, in the Royal Borough of Kensington and Chelsea in London, England.  It has been a residence of the British Royal Family since the 17th century, and is currently the official London residence of the Duke and Duchess of Cambridge, Prince Harry, the Duke and Duchess of Gloucester, the Duke and Duchess of Kent, and Prince and Princess Michael of Kent."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 309,
+    "generation_tokens": 25,
+    "generation_speed": 227.48780665356338,
+    "prompt_eval_speed": 12690.980778708723,
+    "generation_latency_s": 0.24366310006007552,
+    "latency": 0.6146375000244007,
+    "total_prompt_tokens": 445,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.225852,
+    "stage_route_s": 0.10449229995720088,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2093927999958396,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05690710002090782,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.439994856715202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24370400002226233,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6146498000016436,
+    "unaccounted_latency_s": 9.990006219595671e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Waterloo Vase\"",
+      "\"The Waterloo Vase at the residence of Lord Nelson's family\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

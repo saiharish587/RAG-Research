@@ -1,0 +1,49 @@
+{
+  "question_id": "Q270",
+  "query": "Which composer created Night Ferry first performed in 2012 at Symphony Center in Chicago?",
+  "ground_truth": "Anna Clyne",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Night Ferry was commissioned by the Chicago Symphony Orchestra for which Clyne was then composer-in-residence.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Night Ferry (composition): Night Ferry is an orchestral composition in one movement by the British-born composer Anna Clyne.  The work was commissioned by the Chicago Symphony Orchestra, for which Clyne was then composer-in-residence.  It was first performed February 9, 2012 at Symphony Center, Chicago by the Chicago Symphony Orchestra under conductor Riccardo Muti.",
+      "Symphony Center: Symphony Center is a music complex located at 220 South Michigan Avenue in the Loop area of Chicago, Illinois.  Home to the Chicago Symphony Orchestra; Chicago Symphony Chorus; Civic Orchestra of Chicago; and the Institute for Learning, Access, and Training; Symphony Center includes the 2,522-seat Orchestra Hall, which dates from 1904; Buntrock Hall, a rehearsal and performance space; Grainger Ballroom, an event space overlooking Michigan Avenue and the Art Institute of Chicago; a public multi-story rotunda; tesori restaurant; and administrative offices.  In June 1993, plans to significantly renovate and expand Orchestra Hall were approved and the $110 million project resulting in Symphony Center began in 1995 and was completed in 1997.",
+      "Staten Island Ferry: The Staten Island Ferry is a passenger ferry route operated by the New York City Department of Transportation.  It runs 5.2 mi in New York Harbor between the New York City boroughs of Manhattan and Staten Island.  The ferry operates 24/7, running every 15 to 20 minutes during peak hours and every 30 minutes at other times.  Since 1997, the Staten Island Ferry has been fare-free, though historically, it has charged a relatively low fare compared to other modes of transit in the area.  The Staten Island Ferry is one of several ferry systems in the New York City area, besides NYC Ferry, New York Water Taxi, and NY Waterway."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 494,
+    "generation_tokens": 23,
+    "generation_speed": 215.8894645941278,
+    "prompt_eval_speed": 60995.18459069021,
+    "generation_latency_s": 0.2308265999890864,
+    "latency": 0.5552231000037864,
+    "total_prompt_tokens": 632,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2288158,
+    "stage_route_s": 0.09252149995882064,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17419809999410063,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05749100004322827,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.350005812942982e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23086679994594306,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5552678999956697,
+    "unaccounted_latency_s": 0.00013830000534653664,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Night Ferry\"",
+      "Query 2: \"Symphony Center, Chicago\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

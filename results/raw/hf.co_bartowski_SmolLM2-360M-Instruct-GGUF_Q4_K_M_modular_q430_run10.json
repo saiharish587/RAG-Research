@@ -1,0 +1,49 @@
+{
+  "question_id": "Q430",
+  "query": "Season 2 of Rick and Morty began with the episode directed by whom?",
+  "ground_truth": "Wes Archer",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Season 2 of Rick and Morty began with the episode \"The Rickshank Rickdemption\" directed by Juan Meza-Leon.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Rickle in Time: \"A Rickle in Time\" is the first episode in the second season of the American animated television sitcom \"Rick and Morty\", and the twelfth overall episode of the series.  Written by Matt Roller and directed by Wes Archer, the episode first aired on Adult Swim in the United States on July 26, 2015.",
+      "Rick and Morty: Rick and Morty is an American adult animated science-fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's late-night programming block Adult Swim.  The series follows the misadventures of cynical mad scientist Rick Sanchez and his fretful, easily influenced grandson Morty Smith, who split their time between domestic family life and interdimensional adventures.  Roiland voices the series' eponymous characters, with the voice talent of Chris Parnell, Spencer Grammer, and Sarah Chalke providing the rest of the family.  It premiered on December 2, 2013.",
+      "The Rickshank Rickdemption: \"The Rickshank Rickdemption\" is the first episode in the third season of the American animated television sitcom \"Rick and Morty\", and the twenty-second episode overall in the series.  It was written by Mike McMahan and directed by Juan Meza-Leon.  The season three premiere first aired unannounced on Adult Swim in the United States on April 1, 2017 when it was watched by 676,000 American households.  On the first day of its original broadcast, \"The Rickshank Rickdemption\" was replayed every half hour from 8pm to 12am ET with improved ratings, as a part of Adult Swim's annual April Fools' Day joke."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 467,
+    "generation_tokens": 31,
+    "generation_speed": 240.194635136601,
+    "prompt_eval_speed": 56791.925088167336,
+    "generation_latency_s": 0.2512478999560699,
+    "latency": 0.5893117999657989,
+    "total_prompt_tokens": 599,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2229388,
+    "stage_route_s": 0.09730829996988177,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18384169996716082,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056738600018434227,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.83999028801918e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25128580001182854,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5893209999194369,
+    "unaccounted_latency_s": 9.870005305856466e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Season 2 of Rick and Morty\"",
+      "\"The production team for Rick and Morty\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

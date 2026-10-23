@@ -1,0 +1,42 @@
+{
+  "question_id": "Q540",
+  "query": "Where was the sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne located?",
+  "ground_truth": "Alice Springs, Northern Territory",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne was the Sydney Opera House.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2017 Australian Open \u2013 Men's singles final: The 2017 Australian Open Men's Singles final was the championship tennis match of the Men's Singles tournament at the 2017 Australian Open.  It was contested between Roger Federer and Rafael Nadal, ranked 17th and 9th in the world respectively.  It was their record ninth meeting in a Grand Slam final in their rivalry, and their 1st meeting in a Grand Slam final since the 2011 French Open.  In a rematch of the 2009 Australian Open final, which Nadal won in 5 sets, Roger Federer won the duel in 5 sets, beating Nadal for the first time in a Grand Slam since the 2007 Wimbledon final.  He also trailed Nadal 3\u20131 in the final set but won 5 games in a row to win the title.  This ended a 6-match losing streak against Nadal in Grand Slam events.  Having lost all of their previous three encounters, this was the first time Federer defeated Nadal at the Australian Open and also marked Federer's first Grand Slam victory over Nadal outside the grass courts of Wimbledon.  Federer extended his record of Grand Slam men's singles titles to 18, marking the third time he broke his own all-time record, after breaking the previous record of 14, held by Pete Sampras.",
+      "Sydney Opera House: The Sydney Opera House is a multi-venue performing arts centre in Sydney, New South Wales, Australia.  It is one of the 20th century's most famous and distinctive buildings.",
+      "Ben McNiece: Ben McNiece (born 22 March 1992) is a professional Australian rules footballer playing for the Essendon Football Club in the Australian Football League (AFL).  He was recruited by Essendon as a category B rookie through the next generation academy in November 2016, qualifying by virtue of his mother being Indian.  He had previously played for Essendon's VFL team for the prior two seasons.  He made his AFL debut in the Anzac Day clash against Collingwood at the Melbourne Cricket Ground in round five of the 2017 season in an eighteen-point win."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 590,
+    "generation_tokens": 27,
+    "generation_speed": 248.12755594357398,
+    "prompt_eval_speed": 13094.815340909092,
+    "generation_latency_s": 0.9924434999702498,
+    "latency": 3.448690799996257,
+    "total_prompt_tokens": 674,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1243123,
+    "stage_rewrite_s": 1.215084100025706,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0396290000062436,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20140320004429668,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9924849000526592,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.44870000006631,
+    "unaccounted_latency_s": 9.93999419733882e-05,
+    "rewritten_query": "Brody's debut in Melbourne, where he scored a 35-point win over Sydney.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q13",
+  "query": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+  "ground_truth": "1999",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Guns N Roses performed a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective in 2005.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "True Lies: True Lies is a 1994 American action film written, co-produced and directed by James Cameron, starring Arnold Schwarzenegger, Jamie Lee Curtis, Tom Arnold, Art Malik, Tia Carrere, Bill Paxton, Eliza Dushku, Grant Heslov and Charlton Heston.  It is a loose remake of the 1991 French comedy film \"La Totale! \" The film follows U.S. government agent Harry Tasker (Schwarzenegger), who balances his life as a spy with his familial duties.",
+      "2005 in Swiss music: 2005 was a big year for Swiss music, with the charts becoming steadier yet less predictable than they had been in previous years.  The year saw many chart debuts from both Swiss and international acts, and saw two novelty songs share a combined total of over ten weeks at the singles chart number one spot.  Internationally, the Swiss also saw Vanilla Ninja take the country to their best Eurovision Song Contest position in twelve years.",
+      "2004 in film: The year 2004 in film involved some significant events.  Major releases of sequels took place.  It included blockbuster films like \"Shrek 2\", \"Harry Potter and the Prisoner of Azkaban\", \"The Bourne Supremacy\", \"Van Helsing\", \"The Passion of the Christ\", \"\", \"Thunderbirds\", \"Meet the Fockers\", \"Harold and Kumar\", \"The Day After Tomorrow\", \"Anchorman\", \"Saw\", \"\", \"Spider-Man 2\", \"Alien vs. Predator\", \"The Incredibles\", \"Kill Bill Vol.  2\", \"Fahrenheit 9/11\", \"I, Robot\", \"Ocean's Twelve\" and \"\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 477,
+    "generation_tokens": 32,
+    "generation_speed": 235.02798301922823,
+    "prompt_eval_speed": 15118.858954041203,
+    "generation_latency_s": 0.2785663000540808,
+    "latency": 0.5957067999988794,
+    "total_prompt_tokens": 633,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22213,
+    "stage_route_s": 0.10135889996308833,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15897240000776947,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05658900004345924,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.660004146397114e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.27863309998065233,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5957188999745995,
+    "unaccounted_latency_s": 9.959994349628687e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"2005\"",
+      "\"2004\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

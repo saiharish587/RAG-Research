@@ -1,0 +1,49 @@
+{
+  "question_id": "Q272",
+  "query": "Can Stenocereus and Pachypodium both include tree like plants?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Stenocereus and Pachypodium do not both include tree-like plants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pachypodium: Pachypodium is a genus of succulent spine-bearing trees and shrubs, native to Madagascar and Africa.  It belongs to the dogbane family, Apocynaceae.  \"Pachypodium\" comes from a Latin form from Greek \"pachus\" (thick) and \"podion\" (foot) (or Gk podos, root form of pous, foot), hence meaning \"thick-footed\".",
+      "Stenocereus: Stenocereus (Gk.  stenos, narrow, L. cereus, candle) is a genus of columnar or tree-like cacti from the Baja California Peninsula and other parts of Mexico, Arizona in the United States, Colombia, Costa Rica, Guatemala, Venezuela and the ABC islands of the Dutch Caribbean.  The genus has been enlarged by the addition of species from several other genera.  A close relative is the peculiar chinoa or chende cactus, \"Polaskia chende\".",
+      "Pachypodium lealii: The Bottle tree (\"Pachypodium lealii\" Welw.)  is a species of plant included in the \"genus\" \"Pachypodium\".  The scientific name derives from the 19th century Portuguese geologist Fernando da Costa Leal, who described the Bottle tree during an exploration in southern Angola."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 356,
+    "generation_tokens": 21,
+    "generation_speed": 231.39220979560355,
+    "prompt_eval_speed": 13786.159625140379,
+    "generation_latency_s": 0.22578039998188615,
+    "latency": 0.6482697000028566,
+    "total_prompt_tokens": 488,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2369108,
+    "stage_route_s": 0.1145066999597475,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24365110008511692,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06415049999486655,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.840009544044733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22582009993493557,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6482804999686778,
+    "unaccounted_latency_s": 9.439990390092134e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Stenocereus and Pachypodium can be classified as trees.",
+      "Query 2: No, they are not trees."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

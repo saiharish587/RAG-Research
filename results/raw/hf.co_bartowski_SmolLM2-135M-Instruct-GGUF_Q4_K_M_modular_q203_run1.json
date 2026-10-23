@@ -1,0 +1,48 @@
+{
+  "question_id": "Q203",
+  "query": "Who designed the hotel that held the IFBB professional bodybuilding competition in September 1991?",
+  "ground_truth": "architect Michael Graves",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The IFBB experienced a significant increase in popularity during the 2017 Ms. Olympia event, which was hosted by Joe Weider and his Olympia Fitness & Performance Weekend. The hotel that hosted this event is located at the South Hall in Las Vegas, Nevada. It played host to several other competitions throughout the year including the 2010 Ms. Olympia competition and the 2017 Mr. Olympia contest.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Arnold Sports Festival: The IFBB Arnold Sports Festival, also known as the Arnold Schwarzenegger Sports Festival is an annual multi-sport event consisting of professional bodybuilding (\"Arnold Classic\"), strongman (\"Arnold Strongman Classic\"), fitness, figure and bikini weekend expo.  It was established in 1989 and is named after Arnold Schwarzenegger.  The main event is held annually around late February or early March in Columbus, Ohio, United States by the International Federation of BodyBuilding & Fitness (IFBB).  It is the second most prestigious event in professional men's bodybuilding, physique, figure and bikini; as well as formerly the second most prestigious event in professional female bodybuilding.",
+      "2017 Mr. Olympia: The 2017 Mr. Olympia contest was a weekend long IFBB professional bodybuilding competition that was held on September 14 to 17, 2017, in Las Vegas, Nevada.  This was the 53rd Mr. Olympia competition celebrated.  The weekend competition is also known as the Joe Weider's Olympia Fitness and Performance Weekend.  While the main event was the competition for the title of Mr. Olympia, several other events were held which includes the Amateur competition and sports expo.",
+      "2010 Ms. Olympia: The 2010 Ms. Olympia was an IFBB professional bodybuilding competition and part of Joe Weider's Olympia Fitness & Performance Weekend 2010 was held on September 24, 2010, at the South Hall in the Las Vegas Convention Center in Winchester, Nevada and in the Orleans Arena at The Orleans Hotel and Casino in Paradise, Nevada.  It was the 31st Ms. Olympia competition held.  Other events at the exhibition included the 202 Olympia Showdown, Mr. Olympia, Fitness Olympia, Figure Olympia, and Bikini Olympia contests."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 498,
+    "generation_tokens": 93,
+    "generation_speed": 360.90995878641115,
+    "prompt_eval_speed": 23617.56615764014,
+    "generation_latency_s": 0.3861019000178203,
+    "latency": 0.8519609000068158,
+    "total_prompt_tokens": 571,
+    "total_generation_tokens": 122,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1613018,
+    "stage_route_s": 0.18182810000143945,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24386250006500632,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04001390002667904,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.200008697807789e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3861342000309378,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8519702000776306,
+    "unaccounted_latency_s": 9.009987115859985e-05,
+    "route": "rag",
+    "router_raw": "The hotel that hosted the IFBB professional bodybuilding competition in September 1991 is called \"Hotel 201.\"",
+    "sub_queries": [
+      "The hotel that hosted the IFBB professional bodybuilding competition was called \"Hilton Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel Hotel"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

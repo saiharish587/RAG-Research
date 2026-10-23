@@ -1,0 +1,42 @@
+{
+  "question_id": "Q292",
+  "query": "What is the population of the town at the intersection of Interstate Highways 77 and  the longest Interstate highway within the borders of Virginia?",
+  "ground_truth": "8,211 at the 2010 census",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The population of the town at the intersection of Interstate Highway 77 and Interstate Highway 102 in Virginia is approximately 3,548.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Texas State Highway 77: State Highway 77, or SH 77, is a numbered state highway in Texas, occupying the counties of Morris and Cass.  SH 77 is 46.815 mi long, and connects U.S. Highway 259 to the eastern state line.  It begins four miles (6\u00a0km) north of Omaha on US 259, and travels eastward to Naples, meeting U.S. Highway 67 and State Highway 338.  In Douglassville, SH 77 intersects State Highway 8.  After cutting across the south side of Atlanta, where it meets U.S. Highway 59 (Future Interstate 369), SH 77 cuts to the southeast, and crosses into the very northwest corner of Louisiana, becoming Louisiana Highway 1.  SH 77 was originally proposed in 1926 as a route from Douglasville to Naples, replacing SH 1B.  By 1933, SH 77 extended southeast to Louisiana, replacing a portion of SH 47.  It was originally planned to travel farther west to Commerce, but this plan was cancelled in 1941.  In 1966, SH 77 was extended west over FM 2880 from US 259 to US 67.",
+      "Route 102 (Virginia \u2013 West Virginia): Virginia State Route 102 (SR 102) and West Virginia Route 102 (WV 102) are adjoining state highways in the U.S. states of Virginia and West Virginia.  The two state highways together run 11.4 mi from Center Street in Pocahontas, Virginia east to the Virginia\u00a0\u2013 West Virginia state line between the twin cities of Bluefield, Virginia and Bluefield, West Virginia.  Most of Route 102 consists of three sections in Virginia maintained by the Virginia Department of Transportation (VDOT); the two intervening sections in West Virginia are maintained by the West Virginia Division of Highways.  In addition to connecting Pocahontas with the two Bluefields, the state highway passes through Nemours, West Virginia and Falls Mills, Virginia and provides access to Bluefield College.",
+      "New York State Route 24: New York State Route\u00a024 (NY\u00a024) is an east\u2013west state highway on Long Island in New York in the United States.  The route is split into two segments, with the longest and westernmost of the two extending from an intersection with Interstate\u00a0295 (I-295, named the Clearview Expressway) and NY\u00a025 (Hillside Avenue) in the Queens Village section of the New York City borough of Queens to a junction with NY\u00a0110 in East Farmingdale in the Suffolk County town of Babylon.  The shorter eastern section, located in eastern Suffolk County, runs from an interchange with I-495 in Calverton to an intersection with County Route\u00a080 (CR\u00a080) in Hampton Bays."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 745,
+    "generation_tokens": 33,
+    "generation_speed": 359.8181282915181,
+    "prompt_eval_speed": 100417.84607089905,
+    "generation_latency_s": 0.18924320000223815,
+    "latency": 0.5923507999395952,
+    "total_prompt_tokens": 834,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14005099999999998,
+    "stage_rewrite_s": 0.15675660001579672,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07819770008791238,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1680013999575749,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1893053000094369,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.592363000032492,
+    "unaccounted_latency_s": 0.00010309997014701366,
+    "rewritten_query": "The population of the town at the intersection of Interstate Highways 77 and 102 miles from the state line.",
+    "query_was_rewritten": true
+  }
+}

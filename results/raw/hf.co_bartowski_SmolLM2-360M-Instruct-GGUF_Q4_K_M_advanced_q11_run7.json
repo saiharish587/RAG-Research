@@ -1,0 +1,42 @@
+{
+  "question_id": "Q11",
+  "query": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+  "ground_truth": "Kansas Song",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The University of Kansas' main campus is in Lawrence, Kansas, while its branch campuses are in the Kansas City metropolitan area. The University of Kansas' name is \"KU\" or \"Kansas State University.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities.",
+      "Kansas City metropolitan area: The Kansas City metropolitan area is a 15-county metropolitan area anchored by Kansas City, Missouri, that straddles the border between the U.S. states of Missouri and Kansas.  With a population of about 2,340,000, it ranks as the second largest metropolitan area with its core in Missouri (after Greater St. Louis).  Alongside Kansas City, the area includes a number of other cities and suburbs, the largest being Overland Park, Kansas; Kansas City, Kansas; Olathe, Kansas; and Independence, Missouri; each over 100,000 in population.  The Mid-America Regional Council (MARC) serves as the Council of Governments and the Metropolitan Planning Organization for the area.",
+      "Kansas City, Missouri: Kansas City is the largest city in Missouri, United States, and the sixth largest city in the Midwest.  According to the U.S. Census Bureau, the city had an estimated population of 481,420 in 2016, making it the 37th largest city by population in the United States.  It is the anchor city of the Kansas City metropolitan area, which straddles the Kansas\u2013Missouri border.  Kansas City was founded in the 1830s as a Missouri River port at its confluence with the Kansas River coming in from the west.  On June 1, 1850 the town of Kansas was incorporated; shortly after came the establishment of the Kansas Territory.  Confusion between the two ensued and the name Kansas City was assigned to distinguish them soon thereafter."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 583,
+    "generation_tokens": 44,
+    "generation_speed": 254.84052195972362,
+    "prompt_eval_speed": 81209.08204485304,
+    "generation_latency_s": 1.0156689001014456,
+    "latency": 3.4750739000737667,
+    "total_prompt_tokens": 674,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1413118,
+    "stage_rewrite_s": 1.2522218000376597,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.006819700007327,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20024069992359728,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0157096999464557,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4750855000456795,
+    "unaccounted_latency_s": 9.420013520866632e-05,
+    "rewritten_query": "The University of Kansas (KU) has a main campus located in Lawrence, Kansas. The KU branch campuses are spread across the Kansas City metropolitan area.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q360",
+  "query": "Who were the producers of the show for which Chris McKay made his feature film directorial debut?",
+  "ground_truth": "Dan Lin, Roy Lee, Phil Lord and Christopher Miller",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Context:\nChris McKay: Chris McKay, also known as Chris Taylor, is an American film and television director, producer, editor, animator, and visual effects artist.  He was best known for directing and editing three seasons of \"Robot Chicken\" and two seasons of \"Moral Orel\".  He worked as an animation co-director on \"The Lego Movie\" (2014) with Phil Lord and Christopher Miller.\n\nKevin Spacey: Kevin Spacey Fowler, KBE (born July 26, 1959) is an American actor, film director, producer, screenwriter, and singer.  He began his career as a stage actor during the 1980s before obtaining supporting roles in film and television.  He gained critical acclaim in the early 1990s that culminated in his first Academy Award for Best Supporting Actor for the neo-noir crime thriller \"The Usual Suspects\" (1995).\n\nDavid Fincher: David Andrew Leo Fincher (born August 28, 1962) is an American film and television director, producer, editor, animator, and visual effects artist.  He was nominated for the Academy Award for Best Director for \"The Curious Case of Benjamin Button\" (2008) and \"The Social Network\" (2010).\n\nQuestion: Who were the producers of the show for which Chris McKay made his feature film directorial debut?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris McKay: Chris McKay, also known as Chris Taylor, is an American film and television director, producer, editor, animator, and visual effects artist.  He is best known for directing and editing three seasons of \"Robot Chicken\" and two seasons of \"Moral Orel\".  He worked as an animation co-director on \"The Lego Movie\" (2014) with Phil Lord and Christopher Miller.  He made his feature film directorial debut with \"The Lego Batman Movie\" (2017)\".\"  He is attached to direct a live-action film about Nightwing.",
+      "Kevin Spacey: Kevin Spacey Fowler, KBE (born July 26, 1959) is an American actor, film director, producer, screenwriter, and singer.  He began his career as a stage actor during the 1980s before obtaining supporting roles in film and television.  He gained critical acclaim in the early 1990s that culminated in his first Academy Award for Best Supporting Actor for the neo-noir crime thriller \"The Usual Suspects\" (1995), and an Academy Award for Best Actor for midlife crisis-themed drama \"American Beauty\" (1999).",
+      "David Fincher: David Andrew Leo Fincher (born August 28, 1962) is an American director and producer, notably for films, television series and music videos.  He was nominated for the Academy Award for Best Director for \"The Curious Case of Benjamin Button\" (2008) and \"The Social Network\" (2010).  For the latter, he won the Golden Globe Award for Best Director and the BAFTA Award for Best Direction."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 450,
+    "generation_tokens": 318,
+    "generation_speed": 372.5577259451309,
+    "prompt_eval_speed": 24050.02405002405,
+    "generation_latency_s": 0.9616077999817207,
+    "latency": 1.3940930000972003,
+    "total_prompt_tokens": 530,
+    "total_generation_tokens": 348,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1397722,
+    "stage_rewrite_s": 0.18413019995205104,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0855236001079902,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16270449990406632,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9616502999560907,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3941032000584528,
+    "unaccounted_latency_s": 9.52001428231597e-05,
+    "rewritten_query": "Chris McKay's directorial debut, \"The Show,\" was directed by David Fincher and stars Kevin Spacey as the lead actor.",
+    "query_was_rewritten": true
+  }
+}

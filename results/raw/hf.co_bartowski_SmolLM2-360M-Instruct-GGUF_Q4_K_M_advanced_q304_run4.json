@@ -1,0 +1,42 @@
+{
+  "question_id": "Q304",
+  "query": "Which film starring Patrick Tatten is based on a book written by Steve Lopez?",
+  "ground_truth": "The Soloist",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Gone Girl.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gone Girl (film): Gone Girl is a 2014 American psychological thriller film directed by David Fincher and written by Gillian Flynn, based on her 2012 novel of the same name.  The film stars Ben Affleck, Rosamund Pike, Neil Patrick Harris, and Tyler Perry.  Set in Missouri, the story begins as a mystery that follows the events surrounding Nick Dunne (Affleck), who becomes the primary suspect in the sudden disappearance of his wife, Amy (Pike).",
+      "Njan Steve Lopez: Njan Steve Lopez (\"English: I am Steve Lopez)\" is a 2014 Malayalam film, directed by Rajeev Ravi.  The production is also supported by Jar Pictures, M.R Filmworks and Media Mill.  The film is set in Thiruvananthapuram city and stars Farhaan Faasil and debutante Ahaana Krishna.  It released on August 8, 2014.",
+      "Alencier Ley Lopez: Alencier Ley Lopez is an Indian film and theatre actor, who acts in Malayalam films. Lopez debuted in the Malayalam film \"Daya\" in 1998; he amassed recognition through the films \"Annayum Rasoolum\" (2013), \"Njan Steve Lopez\" (2013) and \"Maheshinte Prathikaaram\" (2016)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 384,
+    "generation_tokens": 5,
+    "generation_speed": 295.24653085326247,
+    "prompt_eval_speed": 53796.58167553937,
+    "generation_latency_s": 0.8430524000432342,
+    "latency": 3.3876199000515044,
+    "total_prompt_tokens": 460,
+    "total_generation_tokens": 29,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1221332,
+    "stage_rewrite_s": 1.2825315000955015,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.043958600028418,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2179615000495687,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8430911999894306,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.387628299999051,
+    "unaccounted_latency_s": 8.609984070062637e-05,
+    "rewritten_query": "Based on the title, \"The Book Thief\" is the most likely film adaptation of Steve Lopez's novel.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q158",
+  "query": "What retailer in ABQ Uptown is headquarted in Poole, Dorset, United Kingdom?",
+  "ground_truth": "Lush Ltd.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Poole Methodist Church",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Canford Cliffs: Canford Cliffs is an affluent suburb of Poole in Dorset, England.  The neighbourhood lies on the English Channel coast midway between Poole and Bournemouth.  To the southwest is Sandbanks which has some of the highest property values in the world, and together Canford Cliffs and Sandbanks form a parish, which has the fourth highest property prices in the world and second highest in the United Kingdom after London.",
+      "Poole Methodist Church: Poole Methodist Church (also known as Poole High Street Methodist Church or The Spire) is a nineteenth-century Methodist church on Poole High Street in Dorset, England.  An extension to the church was nominated for the 2016 Carbuncle Cup for \"the ugliest building in the United Kingdom completed in the last 12 months\".",
+      "Poole Town F.C.: Poole Town Football Club is a football club based in Poole, Dorset, England.  They currently compete in the National League South, the sixth tier of English football, after being promoted as champions of the Southern League Premier Division in the 2015\u201316 season.  They were established in 1880 and joined the Western League Division Two in 1930.  The club is affiliated to the Dorset County Football Association and is a FA Charter Standard Community Club.  They won the Western League title in 1957 and reached the First Round Proper of the FA Cup four times in their history and the Third Round once, losing to Everton at Goodison.  They play at the Black Gold Stadium, at Tatnam, Poole, and finished the 2008\u201309 season as \"Double\" winners \u2013 champions and Dorset Senior Cup winners.  In 2009\u201310 they became back-to-back champions of the Wessex League and completed an unprecedented treble winning the League for the 3rd time in a row in 2010\u201311.  Promotion to the Southern League was finally achieved after an upgrade to the Tatnam facilities.  Poole were second in their first season, losing to Gosport in a playoff final and then Champions and promoted to the Southern League Premier Division the following season.  In 2015-2016 they were promoted to the National League South after finishing as champions of the Southern League.  In the 2016/17 season there were on course to finish in the playoffs after a prolonged stay in the top 7 places."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 622,
+    "generation_tokens": 6,
+    "generation_speed": 231.68706800015445,
+    "prompt_eval_speed": 13437.89832998466,
+    "generation_latency_s": 0.17917269992176443,
+    "latency": 0.5666622999124229,
+    "total_prompt_tokens": 766,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2361004,
+    "stage_route_s": 0.10366799996700138,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23025739996228367,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05337350000627339,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.789997521787882e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17921219998970628,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5666747998911887,
+    "unaccounted_latency_s": 0.00010659999679774046,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Poole, Dorset, United Kingdom\"",
+      "\"Headquarters of Poole, Dorset, United Kingdom\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

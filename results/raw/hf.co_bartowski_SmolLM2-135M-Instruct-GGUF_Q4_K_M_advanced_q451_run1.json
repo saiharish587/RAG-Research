@@ -1,0 +1,42 @@
+{
+  "question_id": "Q451",
+  "query": "What is the name of the oldest child that attended the Trump campaign-Russian meeting?",
+  "ground_truth": "Donald Trump Jr.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer to this question is \"Hillary Clinton.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Donald Trump Jr.: Donald John Trump Jr. (born December 31, 1977) is an American businessman and former reality TV personality.  He is the oldest child of the 45th President of the United States, Donald Trump, and his first wife, Ivana.",
+      "Hillary Clinton: Hillary Diane Rodham Clinton ( ; born October 26, 1947) is an American politician who was the First Lady of the United States from 1993 to 2001, U.S. Senator from New York from 2001 to 2009, 67th United States Secretary of State from 2009 to 2013, and the Democratic Party's nominee for President of the United States in the 2016 election.",
+      "Hillary Clinton presidential campaign, 2016: The 2016 presidential campaign of Hillary Rodham Clinton was announced in a YouTube video, on April 12, 2015.  Hillary Clinton was the 67th United States Secretary of State and served during the first term of the Obama administration from 2009 to 2013.  She was previously the United States Senator from New York from 2001 to 2009, and is the wife of former President Bill Clinton.  This campaign marked her second bid for the presidency after losing in her first attempt to Barack Obama in the 2008 Democratic primary."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 396,
+    "generation_tokens": 12,
+    "generation_speed": 363.37209302325584,
+    "prompt_eval_speed": 22627.27844123193,
+    "generation_latency_s": 0.12678179994691163,
+    "latency": 0.5311677000718191,
+    "total_prompt_tokens": 473,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1423885,
+    "stage_rewrite_s": 0.20346279989462346,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0804449999704957,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12035859993193299,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.12681539996992797,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5311765000224113,
+    "unaccounted_latency_s": 9.520025923848152e-05,
+    "rewritten_query": "The oldest child attending the Trump campaign-Russia meeting was Hillary Clinton, who attended the event in 2016 and later became a key figure in her husband's presidency.",
+    "query_was_rewritten": true
+  }
+}

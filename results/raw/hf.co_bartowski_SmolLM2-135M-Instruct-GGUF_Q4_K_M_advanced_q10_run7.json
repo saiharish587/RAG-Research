@@ -1,0 +1,42 @@
+{
+  "question_id": "Q10",
+  "query": "Are Local H and For Against both from the United States?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "No.\n\nThe correct answer would be that the word \"homeward\" is a locative adverb, specifying a location \"home\" and a relation \"toward\", whereas \"for against\" is not an adverb in this context because it does not specify any direction or relationship between the two locations.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "United States Army: The United States Army (USA) is the largest branch of the United States Armed Forces and performs land-based military operations.  It is one of the seven uniformed services of the United States and is designated as the Army of the United States in the United States Constitution, Article 2, Section 2, Clause 1 and United States Code, Title 10, Subtitle B, Chapter 301, Section 3001.  As the oldest and most senior branch of the U.S. military in order of precedence, the modern U.S. Army has its roots in the Continental Army, which was formed (14 June 1775) to fight the American Revolutionary War (1775\u20131783)\u2014before the United States of America was established as a country.  After the Revolutionary War, the Congress of the Confederation created the United States Army on 3 June 1784 to replace the disbanded Continental Army.  The United States Army considers itself descended from the Continental Army, and dates its institutional inception from the origin of that armed force in 1775.",
+      "United States House of Representatives: The United States House of Representatives is the lower chamber of the United States Congress, which along with the Senate composes the legislature of the United States.",
+      "Locative adverb: A locative adverb is a type of adverb that refers to a location or to a combination of a location and a relation to that location.  Generally, a locative adverb is semantically equivalent to a prepositional phrase involving a locative or directional preposition.  In English, for example, \"homeward\" is a locative adverb, specifying a location \"home\" and a relation \"toward\" (in this case a direction), and is equivalent to the phrase \"toward home\".  The relation need not be a direction, as it can be any relation that can be specified by a locational preposition such as \"to\", \"from\", \"in\", \"at\", \"near\", \"toward\", or \"away from\".  For example, the word \"home\" is itself a locative adverb in a sentence like \"I took him home today\" or \"I found him home today\"; in the former case, it is equivalent to the phrase \"to home\", and in the latter to the phrase \"at home\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 562,
+    "generation_tokens": 62,
+    "generation_speed": 412.65932310559424,
+    "prompt_eval_speed": 87091.2753757942,
+    "generation_latency_s": 0.23367760004475713,
+    "latency": 1.1021224000724033,
+    "total_prompt_tokens": 634,
+    "total_generation_tokens": 248,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1274275,
+    "stage_rewrite_s": 0.523565899929963,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0703551999758929,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2743806999642402,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2337301999796182,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1021379000740126,
+    "unaccounted_latency_s": 0.00010680023115128279,
+    "rewritten_query": "Local H vs. For Both From The United States: A Search-Friendly Rephrased Query\n\nI made a few changes to improve the search functionality for this user query. First, I replaced \"Are Local H and For Against both from the United States?\" with \"are local h and against the united states.\" This rephrased sentence is more concise and clearly conveys the intent of the question.\n\nNext, I removed the phrase \"from the united states\" as it's implied by the context in which the user query appears to be asking about. Instead, I used a single word (\"United States\") to convey that the answer should focus on the United States.\n\nFinally, I replaced \"are local h and against both from the united states?\" with \"are local h and against the united states.\" This rephrased sentence is more concise and clearly conveys the intent of the question.",
+    "query_was_rewritten": true
+  }
+}

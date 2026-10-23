@@ -1,0 +1,49 @@
+{
+  "question_id": "Q379",
+  "query": "Which of the movie which has Rich Lee 3-D previsualizations was directed by Francis Lawrence?",
+  "ground_truth": "Constantine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The film that has Rich Lee's 3-D previsualizations is \"Mockingjay \u2013 Part 2: The Hunger Games: Mockingjay \u2013 Part 2.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Stanley Kubrick: Stanley Kubrick ( ; July 26, 1928 \u2013 March 7, 1999) was an American film director, screenwriter, producer, cinematographer, editor, and photographer.  He is frequently cited as one of the greatest and most influential directors in cinematic history.  His films, which are mostly adaptations of novels or short stories, cover a wide range of genres, and are noted for their realism, dark humor, unique cinematography, extensive set designs, and evocative use of music.",
+      "The Hunger Games: Mockingjay \u2013 Part 2: The Hunger Games: Mockingjay \u2013 Part 2 is a 2015 American dystopian science fiction adventure film directed by Francis Lawrence, with a screenplay by Peter Craig and Danny Strong.  It is the fourth and final installment in \"The Hunger Games\" film series, and the second of two films based on the novel \"Mockingjay\", the final book in \"The Hunger Games\" trilogy, by Suzanne Collins.  Produced by Nina Jacobson and Jon Kilik, and distributed by Lionsgate, the film features an ensemble cast that includes Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson, Elizabeth Banks, Julianne Moore, Philip Seymour Hoffman, and Donald Sutherland.  Hoffman died in February 2014, making \"Mockingjay \u2013 Part 2\" his final film role.  Principal photography on both parts of the film began on September 23, 2013 in Atlanta, before moving to Paris for two weeks of back-to-back filming and officially concluding on June 20, 2014, in Berlin and at Babelsberg Studios, Germany.",
+      "Christopher Nolan: Christopher Edward Nolan ( ; born 30 July 1970) is an English-American film director, producer, and screenwriter.  He is one of the highest-grossing directors in history, and among the most successful and acclaimed filmmakers of the 21st century."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 524,
+    "generation_tokens": 39,
+    "generation_speed": 227.9168979925781,
+    "prompt_eval_speed": 12272.812441446506,
+    "generation_latency_s": 0.32726280007045716,
+    "latency": 0.6920200999593362,
+    "total_prompt_tokens": 666,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2269581,
+    "stage_route_s": 0.1059372000163421,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20091160002630204,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057735899928957224,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9699988923966885e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.327295699971728,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6920288000255823,
+    "unaccounted_latency_s": 8.939998224377632e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Hunger Games\" directed by Francis Lawrence",
+      "\"The Dark Knight Rises\" directed by Christopher Nolan"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

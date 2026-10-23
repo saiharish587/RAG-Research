@@ -1,0 +1,42 @@
+{
+  "question_id": "Q365",
+  "query": "Where did the architect of the Governor's House, located in Knutsford, graduate from college?",
+  "ground_truth": "Cambridge University",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The architect of the Governor's House, located in Knutsford, graduated from Tufts University.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Governor's House, Knutsford: The former Governor's House is located in Toft Road, Knutsford, Cheshire, England.  It was built for the governor of Knutsford Gaol, and has later been used as a Tourist Information Centre.  It was built in 1844 and designed by the Lancaster architect Edmund Sharpe.  It is recorded in the National Heritage List for England as a designated Grade II listed building.  The house is constructed in red brick in Georgian style.",
+      "Northern Chamber Orchestra: The Northern Chamber Orchestra (or NCO) is a chamber orchestra based in Manchester, England.  Established in 1967, the orchestra gives concerts at Heritage Centre, Macclesfield, St Ann's Church, Manchester, as well as Blackburn, Skipton, Lancaster and Tatton Park, Knutsford.  They are also currently the resident orchestra for the Buxton Festival.",
+      "Tufts University: Tufts University is a private research university incorporated in the municipality of Medford, Massachusetts, United States.  Tufts College was founded in 1852 by Christian Universalists who worked for years to open a nonsectarian institution of higher learning.  Charles Tufts donated the land for the campus on Walnut Hill, the highest point in Medford, saying that he wanted to set a \"light on the hill\".  The name was changed to Tufts University in 1954, although the corporate name remains \"the Trustees of Tufts College\".  For more than a century, Tufts was a small New England liberal arts college until its transformation into a larger research university in the 1970s.  Tufts is a charter member of the New England Small College Athletic Conference (NESCAC).  In 2017, the university accepted 14.8% of undergraduate applicants from a pool of 21,101.  In 2016, it was ranked 27th nationally and 156th internationally by \"U.S. News & World Report\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 516,
+    "generation_tokens": 21,
+    "generation_speed": 232.32915509630598,
+    "prompt_eval_speed": 15362.172139688588,
+    "generation_latency_s": 0.9230641999747604,
+    "latency": 3.4203814999200404,
+    "total_prompt_tokens": 596,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1245139,
+    "stage_rewrite_s": 1.1350524999434128,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1138327999506146,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24830930004827678,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9231065000640228,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4203938998980448,
+    "unaccounted_latency_s": 9.359989780932665e-05,
+    "rewritten_query": "Knutsford University",
+    "query_was_rewritten": true
+  }
+}

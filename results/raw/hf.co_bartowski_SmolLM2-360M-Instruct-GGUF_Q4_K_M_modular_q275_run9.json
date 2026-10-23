@@ -1,0 +1,49 @@
+{
+  "question_id": "Q275",
+  "query": "What is the name of the actress who has received a Drama Desk award and was part of the cast album for the 2007 Broadway production of the hit musical, \"Grease\"?",
+  "ground_truth": "Laura Ann Osnes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Jennifer Lopez",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Grease: The New Broadway Cast Recording: Grease: The New Broadway Cast Recording is the cast album for the 2007 Broadway production of the hit musical, \"Grease\".  The show, directed by Tony Award-winner Kathleen Marshall, played at the Brooks Atkinson Theatre in New York City.  This recording features performances from the cast of \"Grease\" including Jenny Powers, Matthew Saldivar, and \"\" winners, Laura Osnes and Max Crumm as Sandy Dumbrowski and Danny Zuko, respectively.",
+      "Grease (film): Grease is a 1978 American musical romantic comedy film based on Jim Jacobs and Warren Casey's musical of the same name.  Written by Bronte Woodard and directed by Randal Kleiser in his theatrical feature film debut, the film depicts the life of Rydell High School students Danny (John Travolta) and Sandy (Olivia Newton-John) in the late 1950s.  \"Grease\" was successful both critically and commercially.  Its ended 1978 as the second-best selling album of the year in the United States, behind the of the 1977 blockbuster \"Saturday Night Fever\".",
+      "Jennifer Lopez filmography: American entertainer Jennifer Lopez has appeared in many motion pictures and television programs.  She is one of the highest paid actresses in Hollywood and is the highest paid actress of Latin descent, making up to US$15\u00a0million per film role.  She is also the richest actress in Hollywood, with an estimated net worth of $320 million (as of 2014).  Lopez made her acting debut at age 16 with a small role in the 1986 film \"My Little Girl\".  From there, she received her first high-profile job in 1991 as a Fly Girl dancer on the television comedy program \"In Living Color\".  Following her departure from the show in 1993, Lopez made several guest appearances in the television series \"South Central\", appeared in the made-for-television movie \"Lost in the Wild\" (1993) and starred as Melinda Lopez in the television series \"Second Chances\" (1993) and its spin-off \"Hotel Malibu\" (1994).  \"Second Chances\" and \"Hotel Malibu\" ran for only a brief period, receiving negative reviews.  Lopez's first major film role came in the 1995 motion picture \"Money Train\", alongside Wesley Snipes and Woody Harrelson.  The film faced negative reviews and is considered to be a box office bomb.  Her next two film roles in \"Jack\" (1996) and \"Blood and Wine\" (1997) were received similarly; however, critics were divided by the latter.  Lopez received her first leading role in the Selena biopic of the same name in 1997."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 738,
+    "generation_tokens": 5,
+    "generation_speed": 262.1781762886057,
+    "prompt_eval_speed": 91415.83054626532,
+    "generation_latency_s": 0.14526060002390295,
+    "latency": 0.5728286999510601,
+    "total_prompt_tokens": 920,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22564299999999998,
+    "stage_route_s": 0.10340959997847676,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26656360004562885,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05742750002536923,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1200040616095066e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14529250003397465,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5728385000256822,
+    "unaccounted_latency_s": 9.489990770816803e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The name of the actress who has received a Drama Desk award is Jennifer Lopez.\"",
+      "\"Jennifer Lopez was part of the cast of the 2007 Broadway production of 'Grease'.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q24",
+  "query": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+  "ground_truth": "Badly Drawn Boy",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Badly Drawn Boy has a higher instrument to person ratio than Wolf Alice.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Badly Drawn Boy: Damon Michael Gough (born 2 October 1969, in Dunstable, Bedfordshire), known by the stage name Badly Drawn Boy, is an English indie singer-songwriter and multi-instrumentalist.",
+      "The Hour of Bewilderbeast: The Hour of Bewilderbeast is the debut studio album by British musician Badly Drawn Boy, released on 26 June 2000.  Damon Gough, who performs as Badly Drawn Boy, wrote, produced, and played several instruments on the album's eighteen tracks, several of which also feature accompaniment by members of the British indie rock bands Alfie and Doves.  \"The Hour of Bewilderbeast\" was released to great critical acclaim and went on to win the 2000 Mercury Prize, and has sold 455,000 copies in the United Kingdom as of September 2011.",
+      "Badly Drawn Boy discography: The discography of English alternative music singer/songwriter Badly Drawn Boy (real name Damon Gough) includes eight studio albums (including two soundtracks), one compilation, six extended plays and twenty-one singles.  The first EP and several singles were released on Gough's own label \"Twisted Nerve\", which he started with like-minded Manchester musician Andy Votel.  Badly Drawn Boy rose in popularity in 1997 when he joined the likes of Thom Yorke, Richard Ashcroft, and Mike D on the celebrity-filled UNKLE album \"Psyence Fiction\".  Due to the mild UK chart success of the 1999 single \"Once Around the Block\", XL Recordings signed up Badly Drawn Boy to release the debut album \"The Hour of Bewilderbeast\" in 2000.  The album won critical praise and Britain's acclaimed Mercury Prize for Best Album.  The album caught the attention of author Nick Hornby who then asked Gough to score the film being made for his book \"About a Boy\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 530,
+    "generation_tokens": 17,
+    "generation_speed": 224.17089734291554,
+    "prompt_eval_speed": 21755.19251292997,
+    "generation_latency_s": 0.21525600005406886,
+    "latency": 0.66890000004787,
+    "total_prompt_tokens": 672,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23373339999999998,
+    "stage_route_s": 0.09937700000591576,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2960800000000745,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0580197999952361,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.67000063508749e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21529650001320988,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6689116000197828,
+    "unaccounted_latency_s": 9.220000356435776e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query1: \"Which performance has a higher instrument-to-person ratio, Badly Drawn Boy or Wolf Alice?\"",
+      "Query2: \"Which performance has a higher instrument-to-person ratio, Badly Drawn Boy or Wolf Alice?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

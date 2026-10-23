@@ -1,0 +1,48 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Serri",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Serri (singer): Park Mi-yeon (born September 16, 1990), better known by the stage name Serri, is a South Korean singer, songwriter and actress.  She is best known as a member and leader of the South Korean girl group Dal Shabet.",
+      "Serendipity (film): Serendipity is a 2001 American romantic comedy film directed by Peter Chelsom, written by Marc Klein, and starring John Cusack and Kate Beckinsale.  The music score was composed by Alan Silvestri.",
+      "John Lasseter: John Alan Lasseter (born January 12, 1957) is an American animator, film director, screenwriter, and film producer.  He currently is the chief creative officer of Pixar Animation Studios, Walt Disney Animation Studios, and DisneyToon Studios.  He is also the Principal Creative Advisor for Walt Disney Imagineering."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 279,
+    "generation_tokens": 3,
+    "generation_speed": 309.2145949288806,
+    "prompt_eval_speed": 35419.57598070331,
+    "generation_latency_s": 0.12736839998979121,
+    "latency": 0.43856829998549074,
+    "total_prompt_tokens": 407,
+    "total_generation_tokens": 31,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2282713,
+    "stage_route_s": 0.09207210002932698,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18143949995283037,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03752479993272573,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.109996370971203e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.12739879998844117,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4385763999307528,
+    "unaccounted_latency_s": 0.00010060006752610207,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Serri (actor) - John Fogerty"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

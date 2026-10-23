@@ -1,0 +1,42 @@
+{
+  "question_id": "Q4",
+  "query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, the Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque is a historical yal\u0131 (English: waterside mansion ) located at Bosphorus in Ortak\u00f6y neighborhood of Istanbul, Turkey, while the Esma Sultan Mansion is used today as a cultural center after being redeveloped.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Esma Sultan Mansion: The Esma Sultan Mansion (Turkish: \"Esma Sultan Yal\u0131s\u0131\" ), a historical yal\u0131 (English: waterside mansion ) located at Bosphorus in Ortak\u00f6y neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+      "Laleli Mosque: The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+      "Esma Sultan (daughter of Ahmed III): Esma Sultan (14 March 1726 \u2013 13 August 1788) was an Ottoman princess, daughter of Sultan Ahmed III and his consort Zeynep Kad\u0131n.  She was the half-sister of Sultan Mustafa III and Abdul Hamid I."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 273,
+    "generation_tokens": 73,
+    "generation_speed": 246.99879545792902,
+    "prompt_eval_speed": 37948.29024186822,
+    "generation_latency_s": 1.2027812999440357,
+    "latency": 3.596986399963498,
+    "total_prompt_tokens": 350,
+    "total_generation_tokens": 91,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1227386,
+    "stage_rewrite_s": 1.187582500046119,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0551083999453112,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15137929993215948,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.2028246000409126,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5969972999300808,
+    "unaccounted_latency_s": 0.000103199970908463,
+    "rewritten_query": "The Laleli Mosque and Esma Sultan Mansion are located in the same neighborhood.",
+    "query_was_rewritten": true
+  }
+}

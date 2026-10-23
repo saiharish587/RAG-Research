@@ -1,0 +1,48 @@
+{
+  "question_id": "Q471",
+  "query": "What type of profession does Ithu Engal Neethi and Shoba Chandrasekhar have in common?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "You are correct that Ithu Engal Neethi and Shoba Chandrasekhar both have a musical background, which is characteristic of Indian film. They also share the role of a mother to Tamil leading stars like Vijay and Ramki.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ithu Engal Neethi: Ithu Engal Neethi is a 1988 Indian Tamil film, directed by S. A. Chandrasekhar and produced by S. S. Neelakandan and Shoba Chandrasekhar.  The film stars Ramki, Radhika, Ramki and Vani Viswanath in lead roles.  The film had musical score by Ilayaraja.",
+      "Shoba Chandrasekhar: Shoba Chandrasekhar is an Indian film playback singer, director, writer and producer.  She is best known as the mother of Tamil Leading Star Vijay.",
+      "Nandita Chandra: Nandita Chandra is a multiple award-winning actor and model."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 234,
+    "generation_tokens": 51,
+    "generation_speed": 369.5036334523956,
+    "prompt_eval_speed": 73677.58186397985,
+    "generation_latency_s": 0.2478180000325665,
+    "latency": 0.6246006999863312,
+    "total_prompt_tokens": 380,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2308768,
+    "stage_route_s": 0.17037700000219047,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16564659995492548,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04059459990821779,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.299997817724943e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24786220001988113,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6246132999658585,
+    "unaccounted_latency_s": 9.060010779649019e-05,
+    "route": "rag",
+    "router_raw": "Answer: Both Ithu and Shoba are professionals in the field of physics, with Ithu being a physicist and Shoba being a scientist.",
+    "sub_queries": [
+      "Ithu Engal Neethi and Shoba Chandrasekhar are both professionals with a variety of roles, including a career as a teacher."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

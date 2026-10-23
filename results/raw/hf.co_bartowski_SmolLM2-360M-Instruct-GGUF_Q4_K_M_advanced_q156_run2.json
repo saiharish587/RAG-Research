@@ -1,0 +1,42 @@
+{
+  "question_id": "Q156",
+  "query": "Where was the world cup hosted that Algeria qualified for the first time into the round of 16?",
+  "ground_truth": "Brazil",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Algeria qualified for the first time into the round of 16 at the 2014 FIFA World Cup in Brazil.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Algeria at the FIFA World Cup: Algeria have appeared in the finals of the FIFA World Cup on four occasions in 1982, 1986, 2010 and 2014.  They have once qualified for the knockout rounds, reaching the round of 16 in 2014 before losing to Germany.  32 years before, Algeria nearly qualified to the second round of the 1982 World Cup after beating both West Germany and Chile; however, an arrangement match between West Germany and Austria wound up eliminating the Algerians.  In 2014, Algeria qualifyed for the first time into the round of 16.",
+      "1998 FIFA World Cup: The 1998 FIFA World Cup was the 16th FIFA World Cup, the world championship for men's national association football teams.  It was held in France from 10 June to 12 July 1998.  The country was chosen as the host nation by FIFA for the second time in the history of the tournament, defeating Morocco in the bidding process.  It was the second time that France staged the competition (the first was in 1938), and the ninth time that it was held in Europe.",
+      "2014 FIFA World Cup: The 2014 FIFA World Cup was the 20th FIFA World Cup, the quadrennial world championship for men's national football teams organized by FIFA.  It took place in Brazil from 12 June to 13 July 2014, after the country was awarded the hosting rights in 2007.  It was the second time that Brazil staged the competition, the first being in 1950, and the fifth time that it was held in South America."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 484,
+    "generation_tokens": 31,
+    "generation_speed": 252.8403761612306,
+    "prompt_eval_speed": 64585.001334400855,
+    "generation_latency_s": 0.9373937000054866,
+    "latency": 3.4249298999784514,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1294012,
+    "stage_rewrite_s": 1.1890705999685451,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.057544800103642,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2407993000233546,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9374337000772357,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.424939899938181,
+    "unaccounted_latency_s": 9.199976921081543e-05,
+    "rewritten_query": "Algeria qualified for the Round of 16 in Brazil, hosting the World Cup.",
+    "query_was_rewritten": true
+  }
+}

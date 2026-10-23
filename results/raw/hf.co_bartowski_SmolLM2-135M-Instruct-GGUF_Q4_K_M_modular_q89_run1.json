@@ -1,0 +1,49 @@
+{
+  "question_id": "Q89",
+  "query": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
+  "ground_truth": "250 million",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is 13 September 1916 \u2013 23 November 1990.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Best of Roald Dahl: The Best of Roald Dahl is a collection of 25 of Roald Dahl's short stories.  The first edition was published in 1978.",
+      "Roald Dahl: Collected Stories: Roald Dahl: Collected Stories is a hardcover edition of short-stories by Roald Dahl for adults.  It was published in the US in October 2006 by Random House as part of the Everyman Library.  The present volume includes for the first time all the stories in chronological order as established by Dahl's biographer, Jeremy Treglown, in consultation with the Dahl estate.  A few of the short stories were not published chronologically in book form, but appeared later, collected in \"More Tales of the Unexpected\" (1980).  The collection contains all of the short stories published in the following collections:",
+      "Roald Dahl: Roald Dahl ( , ] ; 13 September 1916 \u2013 23 November 1990) was a British novelist, short story writer, poet, screenwriter, and fighter pilot.  His books have sold more than 250 million copies worldwide."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 24,
+    "generation_speed": 368.31847270606653,
+    "prompt_eval_speed": 16013.882002974715,
+    "generation_latency_s": 0.19125259993597865,
+    "latency": 0.6596282999962568,
+    "total_prompt_tokens": 455,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2172103,
+    "stage_route_s": 0.09128439996857196,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3190048000542447,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05789970001205802,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.400002166628838e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1912857999559492,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6596380999544635,
+    "unaccounted_latency_s": 0.00010019994806498289,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "100, 250, 300, 400, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400",
+      "Question: How many copies of Roald Dahl's variation on a popular anecdote sold?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

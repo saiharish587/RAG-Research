@@ -1,0 +1,48 @@
+{
+  "question_id": "Q292",
+  "query": "What is the population of the town at the intersection of Interstate Highways 77 and  the longest Interstate highway within the borders of Virginia?",
+  "ground_truth": "8,211 at the 2010 census",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The population of the town at the intersection of Interstate Highways 77 and 81 is approximately 8,211.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Interstate 81 in Virginia: Interstate 81 (I-81) is an 855 mi highway.  In the U.S. state of Virginia, I-81 runs for 324.92 mi , making the portion in Virginia longer than any other state's portion.  It is also the longest Interstate highway within the borders of Virginia.  It stretches from the Tennessee state line near Bristol to the West Virginia state line near Winchester.",
+      "Pennsylvania: Pennsylvania (Pennsylvania German: \"Pennsylvaani\" or \"Pennsilfaani\"), officially the Commonwealth of Pennsylvania, is a state located in the northeastern and Mid-Atlantic regions of the United States.  The Appalachian Mountains run through its middle.  The Commonwealth borders Delaware to the southeast, Maryland to the south, West Virginia to the southwest, Ohio to the west, Lake Erie and the Canadian province of Ontario to the northwest, New York to the north, and New Jersey to the east.",
+      "Wytheville, Virginia: Wytheville ( ) is a town in, and the county seat of, Wythe County, Virginia, United States.  It is named after George Wythe, a signer of the United States Declaration of Independence, and mentor to Thomas Jefferson.  Wytheville's population was 8,211 at the 2010 census.  Located at the intersection of Interstate Highways 77 and 81, the town has long been a crossroads for travelers.  During the American Civil War, Wytheville had a strategic importance, and was attacked in 1863 (Toland's Raid) and 1865 (Stoneman's 1865 Raid).  The town is also the birthplace of Edith Bolling Wilson, wife of President Woodrow Wilson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 469,
+    "generation_tokens": 29,
+    "generation_speed": 359.22654808061543,
+    "prompt_eval_speed": 24027.870280239764,
+    "generation_latency_s": 0.2117943000048399,
+    "latency": 0.549228599993512,
+    "total_prompt_tokens": 627,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2309905,
+    "stage_route_s": 0.1477286999579519,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15362180001102388,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03591799992136657,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7200010158121586e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21182810002937913,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5492388000711799,
+    "unaccounted_latency_s": 9.55001451075077e-05,
+    "route": "rag",
+    "router_raw": "The population of the town at the intersection of Interstate Highways 77 and 102 is unknown.",
+    "sub_queries": [
+      "SELECT * FROM population WHERE state = 'VA' AND city = 'Harrisburg';"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

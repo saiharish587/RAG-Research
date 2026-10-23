@@ -1,0 +1,49 @@
+{
+  "question_id": "Q537",
+  "query": "What number president was Annie Caputo nominated by to become a member of the Nuclear Regulatory Commission?",
+  "ground_truth": "45th",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Annie Caputo was nominated by President Donald Trump to become a member of the Nuclear Regulatory Commission for the remainder of a five-year term expiring on June 30, 2021.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Annie Caputo: Annie Caputo is an American political advisor and government official.  Currently serving as senior policy advisor for Chairman John Barrasso (R-WY) on the United States Senate Committee on Environment and Public Works, she is President Donald Trump's nominee to become a member of the Nuclear Regulatory Commission for the remainder of a five-year term expiring on June 30, 2021.",
+      "David A. Wright: David A. Wright is an American businessman, politician, and energy policy advisor.  In May 2017, he was nominated by President Donald Trump to become a member of the Nuclear Regulatory Commission for the remainder of a five-year term expiring on June 30, 2020.",
+      "Nuclear Fuel Cycle Royal Commission: The Nuclear Fuel Cycle Royal Commission is a Royal Commission into South Australia's future role in the nuclear fuel cycle.  It commenced on 19 March 2015 and delivered its final report to the Government of South Australia on 6 May 2016.  The Commissioner was former Governor of South Australia, Kevin Scarce, a retired Royal Australian Navy Rear-Admiral and chancellor of the University of Adelaide.  The Commission delivered 12 key recommendations, including identifying an economic opportunity in the establishment of a deep geological storage facility and the receipt of spent nuclear fuel from prospective international clients.  The Commission also recommended repealing prohibitions which prevent the future development of nuclear industry in South Australia and nationally."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 390,
+    "generation_tokens": 43,
+    "generation_speed": 236.02641300231085,
+    "prompt_eval_speed": 13524.291708568851,
+    "generation_latency_s": 0.3214000000152737,
+    "latency": 0.7476388000650331,
+    "total_prompt_tokens": 528,
+    "total_generation_tokens": 83,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2373286,
+    "stage_route_s": 0.11209149996284395,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25435099995229393,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.059598200023174286,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.910010077059269e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3214526999508962,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7476503000361845,
+    "unaccounted_latency_s": 9.850005153566599e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Who was the first female elected to serve on the Nuclear Regulatory Commission?",
+      "What is the name of the person who served as the first female member of the NRC?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q408",
+  "query": "which writer has the highest number of skill  Langston Hughes or  Ian McEwan",
+  "ground_truth": "Langston Hughes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Langston Hughes.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ian McEwan: Ian Russell McEwan (born 21 June 1948) is an English novelist and screenwriter.  In 2008, \"The Times\" featured him on their list of \"The 50 greatest British writers since 1945\", and also in 2008 \"The Daily Telegraph\" ranked him number 19 in their list of the \"100 most powerful people in British culture\".",
+      "Langston Hughes: James Mercer Langston Hughes (February 1, 1902 \u2013 May 22, 1967) was an American poet, social activist, novelist, playwright, and columnist from Joplin, Missouri.",
+      "Langston Hughes Medal: The Langston Hughes Medal has been awarded annually since 1978 to recognize an influential and distinguished writer associated with the African diaspora for their \"impressive works of poetry, fiction, drama, autobiography and critical essays that help to celebrate the memory and tradition of Langston Hughes\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 295,
+    "generation_tokens": 6,
+    "generation_speed": 232.43201363601148,
+    "prompt_eval_speed": 34298.33740262761,
+    "generation_latency_s": 0.14534909999929368,
+    "latency": 0.4537096000276506,
+    "total_prompt_tokens": 431,
+    "total_generation_tokens": 25,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2297126,
+    "stage_route_s": 0.08809410000685602,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16418880003038794,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05588190001435578,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.3000014051795e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1453911999706179,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4537211999995634,
+    "unaccounted_latency_s": 0.00010289996862411499,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Langston Hughes",
+      "Query 2: Ian McEwan"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

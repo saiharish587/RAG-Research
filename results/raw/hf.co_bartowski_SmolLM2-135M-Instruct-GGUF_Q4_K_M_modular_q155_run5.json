@@ -1,0 +1,48 @@
+{
+  "question_id": "Q155",
+  "query": "Are Broughtonia and Laeliocattleya both orchids?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, Broughtonia and Laelioc Cattleya are not orchids. They belong to a different group of plants called \"intergeneric hybrids\" or \"genus-specific hybrids\". The genus is abbreviated Bro in trade journals.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Broughtonia: Broughtonia is a genus of orchids (family Orchidaceae) native to the Bahamas and the Greater Antilles.  The genus is abbreviated Bro in trade journals.",
+      "Laeliocattleya: Laeliocattleya is a nothogenus of intergeneric orchid hybrids descended from the parental genera \"Laelia\" and \"Cattleya\".  It is abbreviated Lc.  in the horticultural trade.",
+      "Broughtonia sanguinea: Broughtonia sanguinea, also known as Blood Red Broughtonia is a plant in the genus \"Broughtonia\", a member of the Orchidaceae family.  The genus is abbreviated Bro in trade journals."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 221,
+    "generation_tokens": 48,
+    "generation_speed": 387.41545464817835,
+    "prompt_eval_speed": 79382.18390804598,
+    "generation_latency_s": 0.23215900000650436,
+    "latency": 0.4828207000391558,
+    "total_prompt_tokens": 349,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2190509,
+    "stage_route_s": 0.08623950008768588,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12466119998134673,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03960479993838817,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.869994543492794e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23219170002266765,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4828296999912709,
+    "unaccounted_latency_s": 9.470002260059118e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Broughtonia is an orchid, while Laelioclea is a type of orchid."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q540",
+  "query": "Where was the sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne located?",
+  "ground_truth": "Alice Springs, Northern Territory",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The sports complex where Will Brodie made his debut in the 35-point loss to Melbourne was located at the Melbourne Cricket Ground.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Melbourne Cricket Ground: The Melbourne Cricket Ground (MCG), also known simply as \"The G\", is an Australian sports stadium located in Yarra Park, Melbourne, Victoria.  Home to the Melbourne Cricket Club, it is the 10th-largest stadium in the world, the largest in Australia, the largest in the Southern Hemisphere, the largest cricket ground by capacity, and has the tallest light towers of any sporting venue.  The MCG is within walking distance of the city centre and is served by the Richmond railway station, Richmond, and the Jolimont railway station, East Melbourne.  It is part of the Melbourne Sports and Entertainment Precinct.",
+      "Subiaco Oval: Subiaco Oval ( ; currently known under naming rights as Domain Stadium, and colloquially as Subi) is a football stadium located in Subiaco, a suburb of Perth, Western Australia.  The highest capacity stadium in Western Australia and one of the main stadiums in Australia, seating 43,500 people, the ground is the home of Australian rules football in Western Australia, being the home ground for the West Coast Eagles and Fremantle Football Club, the two Western Australian teams in the Australian Football League (AFL).  The ground is also used for occasional West Australian Football League (WAFL) matches, including the competition's yearly grand final.  The stadium has also hosted Perth Glory games, including two National Soccer League grand finals, international rules matches, rugby union games and rock concerts.  It was the home ground for the Western Force between 2006 and 2009.",
+      "Collingwood Football Club: The Collingwood Football Club, nicknamed the Magpies or less formally the Pies, is an Australian rules football club which plays in the Australian Football League (AFL).  Formed in 1892, the club was named after the inner-Melbourne suburb and city of Collingwood, and was originally based at Victoria Park in Abbotsford; the club is now based in the nearby Melbourne Sports and Entertainment Precinct in Melbourne, playing its home games at the Melbourne Cricket Ground and with its training and administrative base at Olympic Park Oval and the Holden Centre."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 552,
+    "generation_tokens": 30,
+    "generation_speed": 231.6817002347708,
+    "prompt_eval_speed": 12990.374885275221,
+    "generation_latency_s": 0.2838724999455735,
+    "latency": 0.6027707000030205,
+    "total_prompt_tokens": 700,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22301369999999998,
+    "stage_route_s": 0.10163000004831702,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1611830999609083,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055889499955810606,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.170000415295362e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28391950007062405,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6027834999840707,
+    "unaccounted_latency_s": 0.0001004999503493309,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Sporting Complex\"",
+      "\"Melbourne Stadium\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

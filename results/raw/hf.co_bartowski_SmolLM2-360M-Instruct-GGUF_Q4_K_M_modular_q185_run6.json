@@ -1,0 +1,48 @@
+{
+  "question_id": "Q185",
+  "query": "What year did the series on CBS, starring the actor who known for his role in \"Rebel Without a Cause,\" air?",
+  "ground_truth": "1952",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The series on CBS, starring Jack Grinnage, was broadcasted from July 22 to August 7, 1967.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jack Grinnage: Jack Grinnage (born January 20, 1931) is an American actor with a film and television career spanning seven decades.  Born in Los Angeles, Grinnage made his first television appearances in 1954.  The following year, he played as Moose \u2013 one of three teenage rebels who chase James Dean \u2013 in \"Rebel Without a Cause\" (1955).  \"Rebel Without a Cause\" was his first movie where he received a screen credit.",
+      "1967 Pan American Games medal table: The 1967 Pan American Games, officially known as the V Pan American Games, were a continental multi-sport event held in Winnipeg, Canada, from July\u00a022 to August\u00a07, 1967.  At the Games, 2,361 athletes selected from 29 National Olympic Committees (NOCs) participated in events in 19 sports.  Twenty-one nations earned medals during the competition, and eleven won at least one gold medal.",
+      "Corey Allen: Corey Allen (June 29, 1934 \u2013 June 27, 2010) was an American film and television director, writer, producer, and actor.  He began his career as an actor but eventually became a television director.  He may be best known for playing the character Buzz Gunderson in Nicholas Ray's \"Rebel Without a Cause\" (1955)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 404,
+    "generation_tokens": 31,
+    "generation_speed": 238.76458582046442,
+    "prompt_eval_speed": 54366.84160947383,
+    "generation_latency_s": 0.24831489997450262,
+    "latency": 0.4746541000204161,
+    "total_prompt_tokens": 558,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2226494,
+    "stage_route_s": 0.09266620001289994,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.09602290007751435,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03747260000091046,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.410006269812584e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2483542999252677,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4746682000113651,
+    "unaccounted_latency_s": 9.919994045048952e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "1967"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q361",
+  "query": "The Waterloo Vase has been used as a garden ornament at whose residence and administrative headquarters?",
+  "ground_truth": "reigning monarch of the United Kingdom",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Waterloo Vase has been used as a garden ornament in the gardens of Buckingham Palace since 1906.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waterloo Vase: The Waterloo Vase is a great urn, 15ft (5m) high and weighing 20 tons, fashioned from a single piece of Carrara marble.  Since 1906, it has been used as a garden ornament in the garden of Buckingham Palace, London.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning.",
+      "Kensington Palace: Kensington Palace is a royal residence set in Kensington Gardens, in the Royal Borough of Kensington and Chelsea in London, England.  It has been a residence of the British Royal Family since the 17th century, and is currently the official London residence of the Duke and Duchess of Cambridge, Prince Harry, the Duke and Duchess of Gloucester, the Duke and Duchess of Kent, and Prince and Princess Michael of Kent."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 309,
+    "generation_tokens": 25,
+    "generation_speed": 265.07480410971976,
+    "prompt_eval_speed": 43006.2630480167,
+    "generation_latency_s": 1.0221703000133857,
+    "latency": 3.3946646000258625,
+    "total_prompt_tokens": 387,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1236413,
+    "stage_rewrite_s": 1.1664866999490187,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0798588000470772,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12604100001044571,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.022203900036402,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3946733000921085,
+    "unaccounted_latency_s": 8.340005297213793e-05,
+    "rewritten_query": "The Waterloo Vase is often displayed in gardens at the residence of whom?",
+    "query_was_rewritten": true
+  }
+}

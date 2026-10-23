@@ -1,0 +1,42 @@
+{
+  "question_id": "Q73",
+  "query": "What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag? ",
+  "ground_truth": "orange",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "During Oranjegekte, people in the Netherlands typically wear orange clothing such as T-shirts, caps, and scarfs.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oranjegekte: Oranjegekte (Orange craze) or Oranjekoorts (Orange fever) is a phenomenon in the Netherlands that occurs during major sporting events, especially international football championships, and during Koningsdag, an annual holiday celebrating the king's birthday.  It manifests itself in the wearing of orange clothing such as T-shirts, caps and scarfs; lavish attention for sports and sports fans in the media; and the decoration of cars, rooms, houses, shops, and even entire streets in orange, the traditional color of the Dutch royal family, the House of Orange-Nassau.",
+      "Koningsdag: Koningsdag (] ) or King's Day is a national holiday in the Kingdom of the Netherlands.  Celebrated on 27 April (26 April if the 27th is a Sunday), the date marks the birth of King Willem-Alexander.",
+      "Queen's Day (disambiguation): Queen's Day or \"Koninginnedag\" is the former name of a national holiday in the Netherlands, the Netherlands Antilles and Aruba from 1890 to 2013.  It has since been renamed King's Day or \"Koningsdag\" to honor the birthday of King Willem-Alexander."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 29,
+    "generation_speed": 253.91599758342016,
+    "prompt_eval_speed": 14503.816793893131,
+    "generation_latency_s": 1.0817940999986604,
+    "latency": 3.4316023000283167,
+    "total_prompt_tokens": 448,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1332464,
+    "stage_rewrite_s": 1.2317616998916492,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0185694999527186,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09935520007275045,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0818361000856385,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4316133999964222,
+    "unaccounted_latency_s": 9.14999982342124e-05,
+    "rewritten_query": "What colors are commonly worn by Dutch citizens during Oranjegekte and when celebrating the National Holiday, Koningsdag?",
+    "query_was_rewritten": true
+  }
+}

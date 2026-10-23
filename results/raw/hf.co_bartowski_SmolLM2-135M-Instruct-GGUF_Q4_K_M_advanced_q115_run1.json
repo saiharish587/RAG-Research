@@ -1,0 +1,42 @@
+{
+  "question_id": "Q115",
+  "query": "Which component of shellite has the formula (ON)CHOH?",
+  "ground_truth": "picric acid",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The chemical compound that has the formula (ON)CHOH is carbon suboxide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shellite (explosive): Shellite (known as Tridite in US service) is an explosive mixture of Picric acid and Dinitrophenol or Picric acid and Hexanitrodiphenylamine in a ratio of 70/30.  It was typically used as a filling in Royal Navy armour-piercing shells during the early part of the 20th century.",
+      "Ionic compound: In chemistry, an ionic compound is a chemical compound composed of ions held together by electrostatic forces termed ionic bonding.  The compound is neutral overall, but consists of positively charged ions called cations and negatively charged ions called anions.  These can be simple ions such as the sodium (Na) and chloride (Cl) in sodium chloride, or polyatomic species such as the ammonium (NH4+ ) and carbonate (CO32\u2212 ) ions in ammonium carbonate.  Individual ions within an ionic compound usually have multiple nearest neighbours, so are not considered to be part of molecules, but instead part of a continuous three-dimensional network, usually in a crystalline structure.",
+      "Carbon suboxide: Carbon suboxide, or tricarbon dioxide, is an oxide of carbon with chemical formula CO or O=C=C=C=O.  Its four cumulative double bonds make it a cumulene.  It is one of the stable members of the series of linear oxocarbons O=C=O, which also includes carbon dioxide (CO) and pentacarbon dioxide (CO).  Although if carefully purified it can exist at room temperature in the dark without decomposing, it will polymerize under certain conditions."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 408,
+    "generation_tokens": 18,
+    "generation_speed": 361.07600649936813,
+    "prompt_eval_speed": 23406.57449371809,
+    "generation_latency_s": 0.14359979995060712,
+    "latency": 0.5080805000616238,
+    "total_prompt_tokens": 482,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1289577,
+    "stage_rewrite_s": 0.12803580006584525,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0659884000197053,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17032160004600883,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.14364599995315075,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5080916000297293,
+    "unaccounted_latency_s": 0.00010039994958788157,
+    "rewritten_query": "Which component of Shellite is the formula for (on-carbonate conjugate)?",
+    "query_was_rewritten": true
+  }
+}

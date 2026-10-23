@@ -1,0 +1,42 @@
+{
+  "question_id": "Q425",
+  "query": "What is the height of the player who won the 2015 AFL Rising Star award?",
+  "ground_truth": "1.95 m",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Daniel Talia's height was 49 cm tall and weighed 100 kg.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2015 AFL Rising Star: The NAB AFL Rising Star award is given annually to a stand out young player in the Australian Football League.  The award was won by Jesse Hogan of Melbourne who polled 49 votes, beating Carlton 's Patrick Cripps who finished on 41 votes.",
+      "Jesse Hogan: Jesse Hogan (born 12 February 1995) is a professional Australian rules footballer playing for the Melbourne Football Club in the Australian Football League (AFL).  A key forward, Hogan is 1.95 m tall and weighs 100 kg .  He was a stand-out basketballer and footballer at a young age, representing Western Australia in both sports and played in the West Australian Football League colts competition with the Claremont Football Club.  He was rewarded with All-Australian selection as a junior in the 2012 AFL Under 18 Championships and in turn, he was drafted by Melbourne with the second selection in the 2012 mini-draft, meaning he was ineligible to play in the 2013 AFL season.  After a back injury ruined his 2014 season, he made his AFL debut in the 2015 season and won the Ron Evans Medal as the AFL Rising Star.  In his first two playing years for Melbourne, he was the leading goalkicker in both seasons.",
+      "Daniel Talia: Daniel Talia (born 2 October 1991) is a professional Australian rules football player who plays for the Adelaide Football Club in the Australian Football League (AFL).  He was drafted with selection 13 in the 2009 National Draft from the Calder Cannons.  In 2012 he won the AFL Rising Star award as the best young player in the league.  Talia is the great-grandson of former Footscray player Arthur Stevens, and the grandson of Harvey Stevens who played in Footscray's 1954 VFL Grand Final victory.  His younger brother, Michael Talia, played for the Western Bulldogs before being traded to the Sydney Swans after the 2015 season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 552,
+    "generation_tokens": 20,
+    "generation_speed": 383.8034926117828,
+    "prompt_eval_speed": 19169.994790762285,
+    "generation_latency_s": 0.16134230000898242,
+    "latency": 0.5573242999380454,
+    "total_prompt_tokens": 633,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1374656,
+    "stage_rewrite_s": 0.173192200018093,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08219650003593415,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14045840001199394,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16139560006558895,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.557335100020282,
+    "unaccounted_latency_s": 9.299989324063063e-05,
+    "rewritten_query": "The player who won the 2015 AFL Rising Star award was named \"Ryan\" from \"AFL.",
+    "query_was_rewritten": true
+  }
+}

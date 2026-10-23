@@ -1,0 +1,49 @@
+{
+  "question_id": "Q575",
+  "query": "Lorenzo Monaco was influenced by which Italian painter and architect?",
+  "ground_truth": "Giotto",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Lorenzo Monaco was influenced by Giotto and his followers Spinello Aretino and Agnolo Gaddi.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lorenzo Monaco: Lorenzo Monaco (born Piero di Giovanni; 1370 \u2013 c. 1425) was an Italian painter of the late Gothic-early Renaissance age.  He was born Piero di Giovanni in Siena.  Little is known about his youth, apart from the fact that he was apprenticed in Florence.  He was influenced by Giotto and his followers Spinello Aretino and Agnolo Gaddi.",
+      "Mariotto di Nardo: Mariotto di Nardo di Cione (\"fl\".  1388\u20131424) was a Florentine painter.  His style belongs to the Florentine Gothic, and shows the influence of Spinello Aretino and Lorenzo Monaco.  He worked at the Duomo of Florence, at the church of Santa Maria Maggiore and at the Orsanmichele.  He painted both frescoes and in oils on panels, and was also active as an illuminator of manuscripts.",
+      "Bartolini Salimbeni Annunciation: The Bartolini Salimbeni Annunciation (Italian: \"Annunciazione Bartolini Salimbeni\") is a painting by the Italian Gothic painter Lorenzo Monaco, completed just before his death (1420\u20131424) and housed in the Bartolini Salimbeni Chapel of the church of Santa Trinita, Florence, Italy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 370,
+    "generation_tokens": 28,
+    "generation_speed": 217.0727736473653,
+    "prompt_eval_speed": 41727.75459569189,
+    "generation_latency_s": 0.251016000052914,
+    "latency": 0.6469494999619201,
+    "total_prompt_tokens": 494,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2343228,
+    "stage_route_s": 0.10763640003278852,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22845219995360821,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0596466000424698,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1299924962222576e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25105630001053214,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6469614000525326,
+    "unaccounted_latency_s": 0.0001194000942632556,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Lorenzo Monaco, influence of Italian artist and architect\"",
+      "\"Italian artist and architect Lorenzo Monaco influences Lorenzo Monaco\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q1",
+  "query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, Scott Derrickson is not a native of California. He was born in Los Angeles, California, and has lived there since childhood.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ed Wood: Edward Davis Wood Jr. (October 10, 1924 \u2013 December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+      "Scott Derrickson: Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.  He lives in Los Angeles, California.  He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+      "Ed Wood (film): Ed Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood.  The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau.  Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 310,
+    "generation_tokens": 29,
+    "generation_speed": 372.6692110978321,
+    "prompt_eval_speed": 42136.74051923338,
+    "generation_latency_s": 0.1908811000175774,
+    "latency": 0.5867776999948546,
+    "total_prompt_tokens": 434,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2382513,
+    "stage_route_s": 0.10748160001821816,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.230165799963288,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058061799965798855,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.10999234393239e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19092400011140853,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5867875999538228,
+    "unaccounted_latency_s": 0.00010379997547715902,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Scott Derrickson, who was born in the United States, is from Canada.",
+      "Ed Wood, who was born in Canada, is from the United States."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q596",
+  "query": "Who was born first, Krzysztof Zanussi or Thom Andersen?",
+  "ground_truth": "Krzysztof Zanussi",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "To answer this question, we need to know that:\n1) Krzysztof Zanussi (born 17 June 1939) is a Polish film and theatre director.\n2) Thom Andersen (born 18 January 1940) was a Polish actor who starred in \"Pitbull\" directed by Krzysztoz Zanussi.\n3) The question asks about the birth of Krzysztof Zanussi and Thom Andersen, but we do not know their names or ages yet.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Krzysztof Zanussi: Krzysztof Zanussi, (born 17 June 1939) is a Polish film and theatre director, producer and screenwriter.  He is a professor of European film at the European Graduate School in Saas-Fee, Switzerland where he conducts a summer workshop.  He is also a professor at the Silesian University in Katowice.",
+      "Weronika Rosati: Weronika Anna Rosati (] ; born 9 January 1984) is a Polish actress and a member of European Film Academy.  She began her acting career in Polish soaps.  In 2005, she starred as D\u017cemma in her first theatrical feature film \"Pitbull\".  A year later, she launched her international career with a small uncredited role in \"Inland Empire\" directed by David Lynch.  Since then she has appeared in many critically acclaimed Polish and international productions.  In 2013, she has received her first Polish Academy Award nomination for Best Actress for her role in \"Ob\u0142awa\" (2012).  A year later, she starred alongside Agnieszka Grochowska in \"Obce cia\u0142o\" directed by Krzysztof Zanussi.  She also had a recurring role in the HBO TV series \"Luck\" (2012).",
+      "At Full Gallop: At Full Gallop (Polish: Cwa\u0142 , and also known as \"In Full Gallop\") is a 1996 Polish drama film directed by Krzysztof Zanussi.  Zanussi has described the film as his most autobiographical work.  It was screened in the Un Certain Regard section at the 1996 Cannes Film Festival.  The film was selected as the Polish entry for the Best Foreign Language Film at the 69th Academy Awards, but was not accepted as a nominee."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 508,
+    "generation_tokens": 123,
+    "generation_speed": 380.2963219471172,
+    "prompt_eval_speed": 69560.45460769547,
+    "generation_latency_s": 0.42285410000476986,
+    "latency": 0.8342974999686703,
+    "total_prompt_tokens": 587,
+    "total_generation_tokens": 159,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1417805,
+    "stage_rewrite_s": 0.19451389997266233,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08132120000664145,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13547750003635883,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.4228926000650972,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.834307000041008,
+    "unaccounted_latency_s": 0.00010229996405541897,
+    "rewritten_query": "Krzysztof Zanussi (born 1980) is the son of Polish-born Polish-American actor and actress Thom Andersen.",
+    "query_was_rewritten": true
+  }
+}

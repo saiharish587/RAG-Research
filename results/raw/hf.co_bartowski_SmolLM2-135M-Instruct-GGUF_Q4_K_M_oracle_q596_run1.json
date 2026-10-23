@@ -1,0 +1,33 @@
+{
+  "question_id": "Q596",
+  "query": "Who was born first, Krzysztof Zanussi or Thom Andersen?",
+  "ground_truth": "Krzysztof Zanussi",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "To answer this question, we need to know that:\n\nContext:\nThom Andersen (born 1943) is a filmmaker, film critic and teacher. He is a professor of European film at the European Graduate School in Saas-Fee Switzerland where he conducts a summer workshop.\n\nKrzysztof Zanussi (born 17 June 1939): Krzysztof Zanussi was born on June 17, 1939.\n\nQuestion: Who was born first, Thom Andersen or Krzysztof Zanussi?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thom Andersen: Thom Andersen (born 1943, Chicago) is a filmmaker, film critic and teacher.",
+      "Krzysztof Zanussi: Krzysztof Zanussi, (born 17 June 1939) is a Polish film and theatre director, producer and screenwriter.  He is a professor of European film at the European Graduate School in Saas-Fee, Switzerland where he conducts a summer workshop.  He is also a professor at the Silesian University in Katowice."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 195,
+    "generation_tokens": 135,
+    "generation_speed": 362.8963971108071,
+    "prompt_eval_speed": 14543.556085918855,
+    "generation_latency_s": 0.46713490004185587,
+    "latency": 0.46719120000489056,
+    "total_prompt_tokens": 195,
+    "total_generation_tokens": 135,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0625945,
+    "stage_generate_s": 0.4671701000770554,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4671996000688523,
+    "unaccounted_latency_s": 2.989999484270811e-05
+  }
+}

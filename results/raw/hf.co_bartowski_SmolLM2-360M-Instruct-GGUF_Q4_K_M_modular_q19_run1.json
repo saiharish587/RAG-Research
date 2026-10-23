@@ -1,0 +1,49 @@
+{
+  "question_id": "Q19",
+  "query": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+  "ground_truth": "1969 until 1974",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Roger O. Egeberg served as Assistant Secretary for Health and Scientific Affairs during the administration of President George H. W. Bush from 1989 to 1993.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Roger O. Egeberg: Roger Olaf Egeberg, M.D. (13 November 1902 \u2013 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health.  He was General Douglas MacArthur's personal physician during World War II in the Pacific theater.  His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.",
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States.",
+      "Lawrence Eagleburger: Lawrence Sidney Eagleburger (August 1, 1930 \u2013 June 4, 2011) was an American statesman and career diplomat, who served briefly as the Secretary of State under President George H. W. Bush.  Previously, he had served in lesser capacities under Presidents Richard Nixon, Jimmy Carter, and Ronald Reagan, and as Deputy Secretary of State under George H. W. Bush."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 489,
+    "generation_tokens": 41,
+    "generation_speed": 242.7112623945538,
+    "prompt_eval_speed": 15738.148112387757,
+    "generation_latency_s": 0.3187313999515027,
+    "latency": 0.9233238999731839,
+    "total_prompt_tokens": 641,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23878919999999998,
+    "stage_route_s": 0.09938519995193928,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4503656999440864,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05465100007131696,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.979998968541622e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3187708999030292,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9233333999291062,
+    "unaccounted_latency_s": 0.0001015000743791461,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of President Ronald Reagan, which spanned from 1981 to 1985.",
+      "Query 2: Roger O. Egeberg served as Assistant Secretary for Health and Scientific Affairs under President George H. W. Bush, who held office from 1989 to 1993."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

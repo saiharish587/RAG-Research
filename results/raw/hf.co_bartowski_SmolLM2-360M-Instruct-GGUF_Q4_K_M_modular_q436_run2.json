@@ -1,0 +1,49 @@
+{
+  "question_id": "Q436",
+  "query": "How long is the river for which Frenchmans Creek is a tributary?",
+  "ground_truth": "2844 km",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Frenchmans Creek is a tributary of the Darling River and measures approximately 7.51 km from its source south of Pooncarie to its confluence into the Darling River at an elevation of 48 m. Therefore, it spans a distance of about 7.51 km.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Frenchmans Creek (New South Wales): Frenchmans Creek is a short tributary of the Darling River in west New South Wales, measuring 7.51 km from its source south of Pooncarie, New South Wales at an elevation of 54.4 m to its confluence into the Darling River at an elevation of 48 m .",
+      "Frenchmans Creek (California): Frenchmans Creek is a 4.4 mi stream in San Mateo County, California.  Locks Creek is its largest tributary.",
+      "Locks Creek: Locks Creek is a 1.9 mi stream in San Mateo County, California.  It is the largest tributary of Frenchmans Creek, a larger stream."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 219,
+    "generation_tokens": 62,
+    "generation_speed": 236.01335378782397,
+    "prompt_eval_speed": 50321.69117647059,
+    "generation_latency_s": 0.3784036999568343,
+    "latency": 0.7109097999054939,
+    "total_prompt_tokens": 347,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23871340000000002,
+    "stage_route_s": 0.09486059995833784,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18309820001013577,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05436189996544272,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6299963034689426e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3784371999790892,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7109186999732628,
+    "unaccounted_latency_s": 0.00010510010179132223,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "River length: 20 miles",
+      "Frenchman's Creek length: 5 miles"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

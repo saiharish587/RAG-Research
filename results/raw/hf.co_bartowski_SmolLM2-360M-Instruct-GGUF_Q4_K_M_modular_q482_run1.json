@@ -1,0 +1,49 @@
+{
+  "question_id": "Q482",
+  "query": "Hate Them is the ninth album by a band likened to who?",
+  "ground_truth": "Mot\u00f6rhead",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Hate Them is the ninth album by Norwegian black metal band Darkthrone.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hate Them: Hate Them is the ninth album by Norwegian black metal band, Darkthrone.  It was released by Moonfog Productions in 2003.  Like their subsequent release, \"Sardonic Wrath\", the album had an electronic intro and outro created by Lars S\u00f8rensen (aka LRZ) from Red Harvest.  The cover image was the work of Eric Syre from Thesyre, and incorporated images of the Sagrada Fam\u00edlia Catholic church in Barcelona.  In 2012, the album was reissued by Peaceville Records, including a bonus CD with audio commentary by the band.",
+      "The Darkness (band): The Darkness are an English rock band from Lowestoft, Suffolk, formed in 2000.  The band consists of Justin Hawkins (lead vocals, guitar), his brother Dan Hawkins (guitar, backing vocals), Frankie Poullain (bass, backing vocals) and Rufus Tiger Taylor (drums).",
+      "The Smashing Pumpkins: The Smashing Pumpkins are an American alternative rock band from Chicago, Illinois, formed in 1988.  Formed by frontman Billy Corgan (lead vocals, guitar) and James Iha (guitar), the band included D'arcy Wretzky (bass guitar) and Jimmy Chamberlin (drums) in its original incarnation.  It has undergone many line-up changes over the course of its existence, with the current lineup being Corgan and rhythm guitarist Jeff Schroeder."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 17,
+    "generation_speed": 225.1953901178964,
+    "prompt_eval_speed": 13698.17134436332,
+    "generation_latency_s": 0.2156059000408277,
+    "latency": 0.5434878999367356,
+    "total_prompt_tokens": 537,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2257861,
+    "stage_route_s": 0.10431239998433739,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16847579996101558,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05490059999283403,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.230000872164965e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21563900006003678,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5434975000098348,
+    "unaccounted_latency_s": 0.00010790000669658184,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The band \"Hate\"",
+      "The band \"The Clash\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

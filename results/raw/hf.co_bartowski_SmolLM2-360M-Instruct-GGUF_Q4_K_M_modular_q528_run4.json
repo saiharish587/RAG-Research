@@ -1,0 +1,49 @@
+{
+  "question_id": "Q528",
+  "query": "What drum machine was introduced in 1989 and allowed 32 notes to be played simultaneously?",
+  "ground_truth": "The R-8 Human Rhythm Composer",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The R-8 Human Rhythm Composer was introduced in 1989, allowing for 32 notes to be played simultaneously.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Roland R-8: The R-8 Human Rhythm Composer is an electronic drum machine introduced in 1989 by Roland Corporation, using PCM voices.  The R-8 features velocity- and pressure-sensitive trigger pads, and the ability to create loops of beats.  The device has eight individual outputs, 32-voice polyphony, and four-part multitimbral MIDI.",
+      "Roland TR-909: The Roland TR-909 Rhythm Composer is a drum machine introduced by the Roland Corporation in 1983.  It was the first Roland drum machine to use samples (for its cymbal and hi-hat sounds) alongside analog sounds.  Designed by Tadao Kikumoto, who also designed the Roland TB-303 synthesizer, the 909 features a 16-step step sequencer and drum sounds that aimed for realism and cost-effectiveness.  It is fully programmable, and like its predecessor, the TR-808, it can store entire songs with multiple sections, as opposed to simply storing patterns.  It was the first MIDI-equipped drum machine.  Around 10,000 units were produced.",
+      "Boss Doctor Rhythm DR-110: The Boss Doctor Rhythm DR-110 Graphic is a drum machine produced by the Boss product division of the Japanese Roland Corporation in 1983.  It featured advances in technology compared to previous Roland drum machines: it had an LCD graphic display, showing a step-programming grid for the various drum voices.  The DR-110 allowed the drum sounds to be played manually from rubber pads (as well as programmed).  Like all Roland's previous drum machines, the DR-110's synthesized drum \"voices\" (synthesizer sounds) used analog synthesizer circuits.  Tempo was continuously variable between 45 and 300 beats per minute (BPM).  The DR-110 used a 4-bit Hitachi microprocessor and 1KB of \u03bcPD444C RAM memory."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 526,
+    "generation_tokens": 29,
+    "generation_speed": 210.73131031275435,
+    "prompt_eval_speed": 60307.268975005725,
+    "generation_latency_s": 0.26216719998046756,
+    "latency": 0.834933300036937,
+    "total_prompt_tokens": 670,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2318909,
+    "stage_route_s": 0.10342870000749826,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4164559000637382,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05270539992488921,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.850002005696297e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26220599992666394,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8349459000164643,
+    "unaccounted_latency_s": 0.00010220007970929146,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Drum Machine Introduced in 1989:* The Roland TR-808 was introduced in 1989.",
+      "Allowed 32 Notes to Be Played Synchronously:* The TR-808 allowed up to 32 notes to be played simultaneously, making it a popular choice for drum machines."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

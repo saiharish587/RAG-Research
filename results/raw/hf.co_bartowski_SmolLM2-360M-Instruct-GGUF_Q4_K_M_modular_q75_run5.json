@@ -1,0 +1,49 @@
+{
+  "question_id": "Q75",
+  "query": "Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?",
+  "ground_truth": "William Jefferson Clinton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Robert Suetter was the national intelligence officer under which former Governor of Arkansas, Mike Huckabee.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bill Clinton: William Jefferson Clinton (born William Jefferson Blythe III; August 19, 1946) is an American politician who served as the 42nd President of the United States from 1993 to 2001.  Prior to the presidency, he was the Governor of Arkansas during two separate terms, from 1979 to 1981, and again from 1983 to 1992.  Before that, he served as Arkansas attorney general, from 1977 to 1979.  A member of the Democratic Party, Clinton was ideologically a New Democrat and many of his policies reflected a centrist \"Third Way\" political philosophy.",
+      "Mike Huckabee: Michael Dale Huckabee (born August 24, 1955) is an American politician, Christian minister, author, and commentator who served as the 44th governor of Arkansas from 1996 to 2007.  He was a candidate in the United States Republican presidential primaries in both 2008 and 2016.  He won the 2008 Iowa Republican caucuses and finished second in delegate count and third in both popular vote and number of states won, behind John McCain and Mitt Romney.",
+      "Kelly Bryant: Kelly Bryant (August 28, 1908 \u2013 October 1975) served as the Democratic secretary of state of the U.S. state of Arkansas from 1963 until his death nearly thirteen years later.  He was one of three statewide politicians born in Hope, the seat of Hempstead County, in southern Arkansas.  The others are former Governor and U.S. President Bill Clinton and former Governor and unsuccessful 2008 presidential candidate Mike Huckabee."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 472,
+    "generation_tokens": 22,
+    "generation_speed": 241.07739680243705,
+    "prompt_eval_speed": 56264.155441649775,
+    "generation_latency_s": 0.21236659993883222,
+    "latency": 0.5837703999131918,
+    "total_prompt_tokens": 604,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2320638,
+    "stage_route_s": 0.09998099994845688,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21297480002976954,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05828340002335608,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.349998198449612e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21240449999459088,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5837820000015199,
+    "unaccounted_latency_s": 9.540002793073654e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Robert Suetter, National Intelligence Officer Under Former Governor of Arkansas\"",
+      "\"Former Governor of Arkansas, Robert Suetter\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

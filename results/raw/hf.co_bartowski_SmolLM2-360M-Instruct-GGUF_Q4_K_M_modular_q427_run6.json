@@ -1,0 +1,49 @@
+{
+  "question_id": "Q427",
+  "query": "Which musical fantasy film is older, Bedknobs and Broomsticks or The Muppet Christmas Carol?",
+  "ground_truth": "Bedknobs and Broomsticks",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Bedknobs and Broomsticks is older than The Muppet Christmas Carol.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bedknobs and Broomsticks: Bedknobs and Broomsticks is a 1971 British-American musical fantasy film produced by Walt Disney Productions and released by Buena Vista Distribution Company in North America on December 13, 1971.  It is based upon the books \"The Magic Bedknob; or, How to Become a Witch in Ten Easy Lessons\" (1943) and \"Bonfires and Broomsticks\" (1945) by English children's author Mary Norton.  The film, which combines live action and animation, stars Angela Lansbury and David Tomlinson.",
+      "The Muppet Christmas Carol: The Muppet Christmas Carol is a 1992 American-British musical fantasy comedy-drama film and an adaptation of Charles Dickens's 1843 novel \"A Christmas Carol\".  It is the fourth in a series of live-action musical films featuring The Muppets, with Michael Caine starring as Ebenezer Scrooge.  Although it is a comedic film with contemporary songs, \"The Muppet Christmas Carol\" otherwise follows Dickens's original story closely.  The film was produced and directed by Brian Henson for Jim Henson Productions and released by Walt Disney Pictures.",
+      "Gonzo (Muppet): Developed and performed by Dave Goelz, Gonzo made his first appearance in the 1970 special \"The Great Santa Claus Switch\", as the \"Cigar Box Frackle\".  Originally a minor figure in \"The Muppet Show\", he soon evolved into one of the franchise's primary characters.  Gonzo has appeared in every Muppet film, including \"The Muppet Christmas Carol\", where he portrayed author Charles Dickens and developed a double act with Rizzo the Rat."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 462,
+    "generation_tokens": 18,
+    "generation_speed": 242.03633234277723,
+    "prompt_eval_speed": 54085.694216811055,
+    "generation_latency_s": 0.19488179998006672,
+    "latency": 0.5786554999649525,
+    "total_prompt_tokens": 606,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2221565,
+    "stage_route_s": 0.09108819998800755,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2258913000114262,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06662779999896884,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.359994247555733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19491249998100102,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5786646000342444,
+    "unaccounted_latency_s": 9.180011693388224e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Bedknobs and Broomsticks (2009)",
+      "Query 2: The Muppet Christmas Carol (1934)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

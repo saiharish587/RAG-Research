@@ -1,0 +1,42 @@
+{
+  "question_id": "Q270",
+  "query": "Which composer created Night Ferry first performed in 2012 at Symphony Center in Chicago?",
+  "ground_truth": "Anna Clyne",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Night Ferry was commissioned by the Chicago Symphony Orchestra for which Anna Clyne was then composer-in-residence.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Night Ferry (composition): Night Ferry is an orchestral composition in one movement by the British-born composer Anna Clyne.  The work was commissioned by the Chicago Symphony Orchestra, for which Clyne was then composer-in-residence.  It was first performed February 9, 2012 at Symphony Center, Chicago by the Chicago Symphony Orchestra under conductor Riccardo Muti.",
+      "Symphony Center: Symphony Center is a music complex located at 220 South Michigan Avenue in the Loop area of Chicago, Illinois.  Home to the Chicago Symphony Orchestra; Chicago Symphony Chorus; Civic Orchestra of Chicago; and the Institute for Learning, Access, and Training; Symphony Center includes the 2,522-seat Orchestra Hall, which dates from 1904; Buntrock Hall, a rehearsal and performance space; Grainger Ballroom, an event space overlooking Michigan Avenue and the Art Institute of Chicago; a public multi-story rotunda; tesori restaurant; and administrative offices.  In June 1993, plans to significantly renovate and expand Orchestra Hall were approved and the $110 million project resulting in Symphony Center began in 1995 and was completed in 1997.",
+      "Alternative Energy (composition): Alternative Energy is a symphony for electronica and orchestra in four movements by the American composer Mason Bates.  The work was commissioned by the Chicago Symphony Orchestra, for whom Bates was then composer-in-residence.  It was premiered by the orchestra under conductor Riccardo Muti at Symphony Center in Chicago, February 2, 2012."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 24,
+    "generation_speed": 265.14063501182085,
+    "prompt_eval_speed": 57060.7553366174,
+    "generation_latency_s": 0.8852252000942826,
+    "latency": 3.398607900016941,
+    "total_prompt_tokens": 496,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1231005,
+    "stage_rewrite_s": 1.2337140999734402,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.032506899908185,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24702819995582104,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8852753998944536,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3986214000033215,
+    "unaccounted_latency_s": 9.750027675181627e-05,
+    "rewritten_query": "Night Ferry was first performed at the Chicago Symphony Orchestra on November 18, 2012, at the Chicago Symphony Center.",
+    "query_was_rewritten": true
+  }
+}

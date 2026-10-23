@@ -1,0 +1,49 @@
+{
+  "question_id": "Q202",
+  "query": "Chris Williams last played for which football club from the National League North?",
+  "ground_truth": "Salford City Football Club",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Chris Williams last played for Salford City as a forward.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Williams (English footballer): Christopher Jonathan \"Chris\" Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City as a forward.",
+      "Jarvis Williams (American football): Jarvis Eric Williams, Sr. (May 16, 1965 \u2013 May 25, 2010) was an American college and professional football player who was a defensive back in the National Football League (NFL) for seven seasons during the 1980s and 1990s.  Williams played college football for the University of Florida, and was recognized as an All-American.  Thereafter, he played professionally for the Miami Dolphins and the New York Giants of the NFL.  Williams died unexpectedly at the age of 45.",
+      "Tampa Bay Buccaneers: The Tampa Bay Buccaneers (often shortened as the Bucs) are a professional American football franchise based in Tampa, Florida.  The Buccaneers currently compete in the National Football League (NFL) as a member team of the National Football Conference (NFC) South division.  Along with the Seattle Seahawks, the team joined the NFL in as an expansion team.  The Bucs played their first season in the American Football Conference (AFC) West division as part of the 1976 expansion plan, whereby each new franchise would play every other franchise over the first two years.  After the season, the club switched conferences with the Seahawks and became a member of the NFC Central division.  During the 2002 league realignment, the Bucs joined three former NFC West teams to form the NFC South.  The club is owned by the Glazer family, and plays its home games at Raymond James Stadium in Tampa."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 14,
+    "generation_speed": 207.50270494597518,
+    "prompt_eval_speed": 14185.046215795737,
+    "generation_latency_s": 0.20820989995263517,
+    "latency": 0.6027082999935374,
+    "total_prompt_tokens": 593,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2285451,
+    "stage_route_s": 0.10216599993873388,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2316137000452727,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06052509997971356,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.969994865357876e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2082499999087304,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6027192999608815,
+    "unaccounted_latency_s": 9.560014586895704e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Chris Williams last played for the Tampa Bay Buccaneers\"",
+      "\"Chris Williams last played for the New York Giants\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

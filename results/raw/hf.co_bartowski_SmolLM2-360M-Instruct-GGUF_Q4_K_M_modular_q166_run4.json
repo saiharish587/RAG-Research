@@ -1,0 +1,49 @@
+{
+  "question_id": "Q166",
+  "query": "In 2017, what was 3/4th of the organization that also has a Center for Veterinary Medicine as well as part of the U.S. Department of Health and Human Services, spent on?",
+  "ground_truth": "Prescription Drug User Fee Act",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "In 2017, Animal Care Centers of NYC (ACC) spent approximately $700 million on the FDA budget due to the Prescription Drug User Fee Act. This includes the Food and Drug Administration's share of the FDA budget.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Banfield Pet Hospital: Banfield Pet Hospital is a privately owned company based in Vancouver, Washington, United States, that operates veterinary clinics.  Part of the Mars, Incorporated family of companies, Banfield owns clinics in the United States, Mexico, and the United Kingdom.  Founded in 1955, the company operates many of its 800 plus clinics inside PetSmart stores.  Banfield is the largest privately owned veterinary practice in the United States.  On April 2, 2014, Banfield Pet Hospital announced its headquarters would be relocating to Vancouver, Washington, from nearby Portland, Oregon.",
+      "Food and Drug Administration: The Food and Drug Administration (FDA or USFDA) is a federal agency of the United States Department of Health and Human Services, one of the United States federal executive departments.  The FDA is responsible for protecting and promoting public health through the control and supervision of food safety, tobacco products, dietary supplements, prescription and over-the-counter pharmaceutical drugs (medications), vaccines, biopharmaceuticals, blood transfusions, medical devices, electromagnetic radiation emitting devices (ERED), cosmetics, animal foods & feed and veterinary products.  As of 2017, 3/4th of the FDA budget (approximately $700 million) is funded by the pharmaceutical companies due to the Prescription Drug User Fee Act.",
+      "Animal Care Centers of NYC: Animal Care Centers of NYC (ACC), formerly known as Animal Care & Control of NYC, is a not-for-profit corporation that was formed for the purpose of providing animal care and control services in New York City.  ACC was created in 1994 to assume the responsibilities of the American Society for the Prevention of Cruelty to Animals (ASPCA), after the ASPCA decided not to renew its contract to run New York City\u2019s animal shelter system.  ACC entered into its own contract with the New York City Department of Health (DOH), and on January 1, 1995, followed the ASPCA as New York City\u2019s provider of animal care and control services.  It has a nine-member board of directors, which includes as ex officio members the Commissioner of DOH, the Commissioner of New York City Department of Parks and Recreation and the Deputy Commissioner for Community Affairs at the New"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 583,
+    "generation_tokens": 51,
+    "generation_speed": 251.80335639062108,
+    "prompt_eval_speed": 60558.84491534226,
+    "generation_latency_s": 0.33116099995095283,
+    "latency": 0.9870975000085309,
+    "total_prompt_tokens": 773,
+    "total_generation_tokens": 156,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2264729,
+    "stage_route_s": 0.09461309993639588,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.504362800042145,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05678149999585003,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.270005203783512e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.33119699999224395,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9871070000808686,
+    "unaccounted_latency_s": 0.00010030006524175406,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: 3/4th of the organization that also has a Center for Veterinary Medicine as well as part of the U.S. Department of Health and Human Services spent on veterinary care in 2017.",
+      "Query 2: The total amount spent by the organization on veterinary care in 2017 can be found at the following link: [https://www.veterinarycarecenter.org/](https://www.veterinarycarecenter.org/)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

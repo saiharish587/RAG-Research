@@ -1,0 +1,48 @@
+{
+  "question_id": "Q404",
+  "query": "The Indian actor and philanthropist, who starred in \"Mera Damad,\" entered the film industry in what year?",
+  "ground_truth": "1977",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The question asks about the year of the Indian actor and philanthropist Kareena Kapoor's entry into the film industry. The answer is that Kareena Kapoor was born on 21 September 1980, which is the year she entered the film industry.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Aamir Khan: Aamir Khan (] ; born Mohammed Aamir Hussain Khan on 14 March 1965) is an Indian film actor, director, and producer.  Through his career in Hindi films, Khan has established himself as one of the most popular and influential actors of Indian cinema.  He is the recipient of numerous awards, including four National Film Awards and eight Filmfare Awards, as well as an Academy Award nomination.  He was honoured by the Government of India with the Padma Shri in 2003 and the Padma Bhushan in 2010.",
+      "Mera Damad: Mera Damad is a 1985 family-drama Indian Hindi film directed by Partho Ghosh and produced by Shipra Biswas and Tushar Mazumdar.  It starred Utpal Dutt (in his final film appearance), Ashok Kumar, Farooq Sheikh, Zarina Wahab, Rakesh Bedi, Prema Narayan, and Jankidas in lead roles.  Music for the film was scored by Salil Choudhury and Babul Bose.>",
+      "Kareena Kapoor: Kareena Kapoor (] ; born 21 September 1980), also known by her married name Kareena Kapoor Khan, is an Indian actress who appears in Hindi films.  She is the daughter of actors Randhir Kapoor and Babita, and the younger sister of actress Karisma Kapoor.  Noted for playing a variety of characters in a range of film genres\u2014from romantic comedies to crime dramas\u2014Kapoor is the recipient of several awards, including six Filmfare Awards, and is one of Bollywood's most popular and highest-paid actresses."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 463,
+    "generation_tokens": 58,
+    "generation_speed": 358.1042700847102,
+    "prompt_eval_speed": 59336.1527617583,
+    "generation_latency_s": 0.2841292000375688,
+    "latency": 0.6299981999909505,
+    "total_prompt_tokens": 613,
+    "total_generation_tokens": 116,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2245474,
+    "stage_route_s": 0.16014870000071824,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14888509991578758,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03664000006392598,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.890006337314844e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28416609996929765,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6300073000602424,
+    "unaccounted_latency_s": 0.00012930005323141813,
+    "route": "rag",
+    "router_raw": "The Indian actor and philanthropist, who starred in \"Mera Damad,\" entered the film industry in 1980.",
+    "sub_queries": [
+      "The Indian actor and philanthropist, who starred in \"Mera Damad,\" entered the film industry in 2015."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

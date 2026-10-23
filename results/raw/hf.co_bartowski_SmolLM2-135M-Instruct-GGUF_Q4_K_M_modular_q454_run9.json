@@ -1,0 +1,48 @@
+{
+  "question_id": "Q454",
+  "query": "What was position of the man who served Prince Andrew from 1990-2001? ",
+  "ground_truth": "Private Secretary and Treasurer",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The man who served Prince Andrew from 1990 to 1997 is John Major, who was a British politician and Prime Minister. He served as the Foreign Secretary and Chancellor of the Exchequer in the Thatcher Government from 1989 until he retired in 2001.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Prince Andrew, Duke of York: Prince Andrew, Duke of York, {'1': \", '2': \", '3': \", '4': \"} (Andrew Albert Christian Edward, born 19 February 1960), is the second son and third child of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.  At the time of his birth, he was second in the line of succession to the British throne; as of 2017 he is sixth in line.",
+      "John Major: Sir John Major, {'1': \", '2': \", '3': \", '4': \"} (born 29 March 1943) is a British politician who was Prime Minister of the United Kingdom and Leader of the Conservative Party from 1990 to 1997.  He served as Foreign Secretary and then Chancellor of the Exchequer in the Thatcher Government from 1989 to 1990, and was the Member of Parliament (MP) for Huntingdon from 1979 until he retired in 2001.  Since Margaret Thatcher's death in 2013, he is the oldest living former Prime Minister.",
+      "having exceeded his powers.  He was cashiered and arrested, and finally sentenced to death.  For some time it was feared that he would lose his head.  The foreign Ministers did all in their power to effect his release, but in vain.  At length Queen Victoria interposed on his behalf; and in response to her letter he was pardoned, upon which he retired into private life.  He died in 1893, of creeping paralysis; and in 1894 his rank was restored, less two grades.  He was extremely courteous to foreigners, and was much liked by all foreign officials with whom he was thrown into contact."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 471,
+    "generation_tokens": 65,
+    "generation_speed": 315.86517902266456,
+    "prompt_eval_speed": 54837.58295494237,
+    "generation_latency_s": 0.3280432999599725,
+    "latency": 0.7122231000103056,
+    "total_prompt_tokens": 617,
+    "total_generation_tokens": 132,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2247535,
+    "stage_route_s": 0.16900560003705323,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17786809999961406,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03715590003412217,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.160008393228054e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3280753999715671,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.712231699959375,
+    "unaccounted_latency_s": 8.559983689337969e-05,
+    "route": "rag",
+    "router_raw": "The man who served Prince Andrew from 1990 to 2001 is known as the \"Prince Andrew\" or \"Andrew\".",
+    "sub_queries": [
+      "Position of the man who served Prince Andrew from 1990 to 2001 is 34 years, which means he served in the British Army."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

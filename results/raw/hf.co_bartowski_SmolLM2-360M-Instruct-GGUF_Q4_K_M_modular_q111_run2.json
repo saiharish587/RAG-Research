@@ -1,0 +1,49 @@
+{
+  "question_id": "Q111",
+  "query": "Based on a True Story... is an album by which country music star, with the single My Eyes?",
+  "ground_truth": "Blake Shelton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Based on a True Story... is an album by Blake Shelton.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Boss (Rick Ross song): \"The Boss\" is the second single from Rick Ross's second studio album \"Trilla\".  It samples the song \"Paul Revere\" by Beastie Boys.  It is produced by J. R. Rotem.  Matt Kemp from the San Diego Padres and Brian McCann from the New York Yankees use this song as their at-bat / intro music.  The song is also Ross's highest charting single to date, peaking at seventeen on the \"Billboard\" Hot 100",
+      "My Eyes (Blake Shelton song): \"My Eyes\" is a song recorded by American country music artist Blake Shelton featuring Gwen Sebastian.  It was released in April 2014 as the fifth single from his seventh studio album, \"Based on a True Story...\".  The song was written by Andrew Dorff, Tommy Lee James and Josh Osborne.",
+      "Light in Your Eyes (Blessid Union of Souls song): \"Light in Your Eyes\" is a song by the American rock band, Blessid Union of Souls.  It was the third track on, and the second single from, their second studio album, \"Blessid Union of Souls\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 341,
+    "generation_tokens": 15,
+    "generation_speed": 246.41871467998422,
+    "prompt_eval_speed": 39096.53749140105,
+    "generation_latency_s": 0.17939770000521094,
+    "latency": 0.5056796000571921,
+    "total_prompt_tokens": 483,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2219264,
+    "stage_route_s": 0.09249369997996837,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17855510010849684,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05506659997627139,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.75000885874033e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17942890000995249,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5056884000077844,
+    "unaccounted_latency_s": 8.69998475536704e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"My Eyes\" by The Bosses",
+      "\"The Bosses\" by The Bosses"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

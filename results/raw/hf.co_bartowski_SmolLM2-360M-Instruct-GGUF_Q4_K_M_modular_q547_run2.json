@@ -1,0 +1,49 @@
+{
+  "question_id": "Q547",
+  "query": "What drug is among the list of illegal drugs in the Philippines and can be taken by mouth or by injection?",
+  "ground_truth": "Ephedrine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Illicit drugs include illegal drugs (such as cannabis, opiates, and certain types of stimulants), pharmaceutical drugs when used for non-medical purposes, and other substances used inappropriately. According to government and community organisations, the use and abuse, and the illegality, of illicit drugs is a social, health, and legal issue that creates an annual illegal market estimated to be worth A$ 6.7 billion.\n\nThe list of illegal drugs in the Philippines includes:\n\n1. Cannabis (also known as marijuana)\n2. Opiate (such as heroin or morphine)\n3. Certain types of stimulants (such as cocaine, methamphetamine, and ephedrine)\n4. Inhalants (such as nitrous oxide, amyl nitrate, and benzoylethylamine)\n5. Other substances used inappropriately (such as inhalants)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Illicit drug use in Australia: Illicit drug use in Australia is the recreational use of prohibited drugs in Australia.  Illicit drugs include illegal drugs (such as cannabis, opiates, and certain types of stimulants), pharmaceutical drugs (such as pain-killers and tranquillisers) when used for non-medical purposes, and other substances used inappropriately (such as inhalants).  According to government and community organisations, the use and abuse, and the illegality, of illicit drugs is a social, health and legal issue that creates an annual illegal market estimated to be worth A$ 6.7 billion.",
+      "Drug user: The term drug user is often used to refer to a person who consumes an illegal psychoactive substance.  The term \"user\" is typically employed to refer to someone who is a drug user, abuser, or addict.  Drug users are sometimes referred to as \"heads\", depending on the drug used, i.e., pothead, hophead, crackhead, etc.",
+      "Drug addiction in Pakistan: Drug addiction is defined as compulsive and out-of-control drug use, despite negative consequences.  In the last few decades, drug addiction has increased exponentially in Pakistan.  Most of the illegal drugs come from the neighbouring Afghanistan.  According to the UN estimate, 8.9 million people in the country are drug users.  Cannabis is the most used drug.  The rate of injection drug abuse has also increased significantly in Pakistan, sparking fears of an HIV epidemic."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 389,
+    "generation_tokens": 178,
+    "generation_speed": 236.81612691215716,
+    "prompt_eval_speed": 13109.560880261517,
+    "generation_latency_s": 0.8945636000717059,
+    "latency": 1.4184102999279276,
+    "total_prompt_tokens": 533,
+    "total_generation_tokens": 248,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23496840000000002,
+    "stage_route_s": 0.10239100002218038,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3639539999421686,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05733500001952052,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.539995618164539e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.8945963000878692,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.418419099994935,
+    "unaccounted_latency_s": 8.829997386783361e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "**Drugs:** Narcan (Narcotec) - a prescription medication used to treat opioid addiction, but also available over-the-counter for short-term use.",
+      "**Drugs:** Narcotics Anonymous (NA) - an international organization that provides support and resources for individuals struggling with drug addiction."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

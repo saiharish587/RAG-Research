@@ -1,0 +1,49 @@
+{
+  "question_id": "Q397",
+  "query": "\"Kapit\u00e4n zur See\" Ernst Lindemann was the commander of which one of two battleships built for Nazi Germany's \"Kriegsmarine\"?",
+  "ground_truth": "Bismarck",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The answer is \"Bismarck\".\n\nExplanation:\nIn the context provided, the question asks about the commander of a battleship built by Germany during World War II. The information about the Kriegsmarine and the ships' construction details are crucial to answering this question. Specifically, it states that \"the two of the largest built by any European power\" were \"two of the largest built by any European power\". This means that the Kriegsmarine was a major contributor to Germany's naval rearmament during World War II.\n\nThe answer is \"Bismarck\", which refers to the battleship \"Bismarck\" built for Nazi Germany in 1936 and launched in February 1939.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "German battleship Bismarck: Bismarck was the first of two \"Bismarck\"-class battleship s built for Nazi Germany's \"Kriegsmarine\".  Named after Chancellor Otto von Bismarck, the primary force behind the unification of Germany in 1871, the ship was laid down at the Blohm & Voss shipyard in Hamburg in July 1936 and launched in February 1939.  Work was completed in August 1940, when she was commissioned into the German fleet.  \"Bismarck\" and her sister ship \"Tirpitz\" were the largest battleships ever built by Germany, and two of the largest built by any European power.",
+      "Scharnhorst-class battleship: The \"Scharnhorst\" class were the first capital ships, alternatively referred to as battleships or battlecruisers, built for Nazi Germany's \"Kriegsmarine\" after World War I.  The class comprised two vessels: the lead ship \"Scharnhorst\" and \"Gneisenau\" .  \"Scharnhorst\" was launched first, and so she is considered to be the lead ship by some sources; however, they are also referred to as the \"Gneisenau\" class in some other sources, as \"Gneisenau\" was the first to be laid down and commissioned.  They marked the beginning of German naval rearmament after the Treaty of Versailles.  The ships were armed with nine 28\u00a0cm (11\u00a0in) SK C/34 guns in three triple turrets, though there were plans to replace these weapons with six 38\u00a0cm (15\u00a0in) SK C/34 guns in twin turrets.",
+      "Ernst Lindemann: Otto Ernst Lindemann (28 March 1894 \u2013 27 May 1941) was a German \"Kapit\u00e4n zur See\" (naval captain).  He was the only commander of the battleship \"Bismarck\" during its eight months of service in World War II."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 533,
+    "generation_tokens": 151,
+    "generation_speed": 392.01331287594985,
+    "prompt_eval_speed": 70605.37819578752,
+    "generation_latency_s": 0.5066982000134885,
+    "latency": 0.9457401999970898,
+    "total_prompt_tokens": 703,
+    "total_generation_tokens": 238,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2269211,
+    "stage_route_s": 0.1006560999667272,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28309600008651614,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05507920007221401,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.280005279928446e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.5067311000311747,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9457534999819472,
+    "unaccounted_latency_s": 0.00013919977936893702,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Zur See\" (German: \"To see\") - The second battle ship built by the Kriegsmarine, designed to protect German naval forces from Allied aircraft and submarines.",
+      "\"Der Kriegsmarine\" (German: \"The Kriegsmarine\") - The Kriegsmarine was a German military organization responsible for the defense of Germany's naval fleet during World War II."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

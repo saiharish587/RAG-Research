@@ -1,0 +1,42 @@
+{
+  "question_id": "Q256",
+  "query": "James Fieser received his B.A. from what liberal arts work college that was founded in 1855?",
+  "ground_truth": "Berea College",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "James Fieser received his B.A. from Berea College, which was founded in 1868 and predates the establishment of the UC system.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "University of California, Berkeley: The University of California, Berkeley (also referred to as UC Berkeley, Berkeley, and Cal ) is a public research university located in Berkeley, California.  Founded in 1868, Berkeley is the oldest of the ten research universities affiliated with the University of California system (although UCSF was founded in 1864 and predates the establishment of the UC system) and is ranked as one of the world's leading research universities and the top public university in the United States.",
+      "James Fieser: James Fieser is professor of philosophy at the University of Tennessee at Martin.  He received his B.A. from Berea College, and his M.A. and Ph.D. in philosophy from Purdue University.  He is founder and general editor of the Internet Encyclopedia of Philosophy.  He is author, coauthor or editor of more than ten text books.",
+      "Bachelor's degree: A bachelor's degree (from Middle Latin \"baccalaureus\") or baccalaureate (from Modern Latin \"baccalaureatus\") is an undergraduate academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years (depending on institution and academic discipline).  In some institutions and educational systems, some bachelor's degrees can only be taken as graduate or postgraduate degrees after a first degree has been completed.  In countries with qualifications frameworks, bachelor's degrees are normally one of the major levels in the framework (sometimes two levels where non-honours and honours bachelor's degrees are considered separately), although some qualifications titled bachelor's degrees may be at other levels (e.g. MBBS) and some qualifications with non-bachelor's titles may be classified as bachelor's degrees (e.g. the Scottish MA and Canadian MD)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 453,
+    "generation_tokens": 35,
+    "generation_speed": 252.7897150698783,
+    "prompt_eval_speed": 50394.92713316275,
+    "generation_latency_s": 0.9856368000619113,
+    "latency": 3.443798699998297,
+    "total_prompt_tokens": 539,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1213081,
+    "stage_rewrite_s": 1.2415270999772474,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0107050000224262,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20581590000074357,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9856686999555677,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4438071999466047,
+    "unaccounted_latency_s": 9.099999442696571e-05,
+    "rewritten_query": "James Fieser received his Bachelor of Arts degree from the University of California, Berkeley, which was established in 1902.",
+    "query_was_rewritten": true
+  }
+}

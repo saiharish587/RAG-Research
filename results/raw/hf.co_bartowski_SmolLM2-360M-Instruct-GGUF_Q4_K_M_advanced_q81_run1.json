@@ -1,0 +1,42 @@
+{
+  "question_id": "Q81",
+  "query": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+  "ground_truth": "Newport",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Sullivan County, New Hampshire",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "East Lempster, New Hampshire: East Lempster is an unincorporated community in the town of Lempster in Sullivan County, New Hampshire, United States.",
+      "Lempster, New Hampshire: Lempster is a town in Sullivan County, New Hampshire, United States.  The population was 1,154 at the 2010 census.  Settlements include the town center (Lempster village) and the village of East Lempster.",
+      "Sullivan County, New Hampshire: Sullivan County is a county located in the U.S. state of New Hampshire.  As of the 2010 census, the population was 43,742, making it the second-least populous county in New Hampshire.  Its county seat is Newport."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 245,
+    "generation_tokens": 7,
+    "generation_speed": 258.08354533053125,
+    "prompt_eval_speed": 13347.134451950315,
+    "generation_latency_s": 0.968210400082171,
+    "latency": 3.353658100008033,
+    "total_prompt_tokens": 324,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1272957,
+    "stage_rewrite_s": 1.2203301000408828,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.051076199975796,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11392280005384237,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9682517000474036,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3536686999723315,
+    "unaccounted_latency_s": 8.849985897541046e-05,
+    "rewritten_query": "The county seat of East Lempster, New Hampshire is located in the town of Westford.",
+    "query_was_rewritten": true
+  }
+}

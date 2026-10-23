@@ -1,0 +1,49 @@
+{
+  "question_id": "Q544",
+  "query": "Southeastern Illinois College offers an undergraduate academic degree considered to be greater level of education than what?",
+  "ground_truth": "high school diploma or GED",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Southeastern Illinois College offers an undergraduate academic degree considered to be greater level of education than a high school diploma or GED.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bachelor's degree: A bachelor's degree (from Middle Latin \"baccalaureus\") or baccalaureate (from Modern Latin \"baccalaureatus\") is an undergraduate academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years (depending on institution and academic discipline).  In some institutions and educational systems, some bachelor's degrees can only be taken as graduate or postgraduate degrees after a first degree has been completed.  In countries with qualifications frameworks, bachelor's degrees are normally one of the major levels in the framework (sometimes two levels where non-honours and honours bachelor's degrees are considered separately), although some qualifications titled bachelor's degrees may be at other levels (e.g. MBBS) and some qualifications with non-bachelor's titles may be classified as bachelor's degrees (e.g. the Scottish MA and Canadian MD).",
+      "Associate degree: An associate degree (or associate's degree) is an undergraduate academic degree awarded by colleges and universities upon completion of a course of study intended to usually last two years.  It is considered to be greater level of education than a high school diploma or GED.",
+      "UIUC College of Education: The School of Education at the University of Illinois at Urbana-Champaign was founded in 1905.  It was later renamed the College of Education in 1918.  The college offers undergraduate, graduate, and online programs in areas including elementary education, early childhood education, special education, and Educational Organization and Leadership.  It began with six departments; three of them merged and formed the largest department in the college.  All departments offer masters and doctoral degrees.  However, only two departments offer undergraduate degree programs: Special Education and Curriculum & Instruction.  The college also offers 16 online programs.  Students seeking an undergraduate degree in the college must meet the minimum graduation requirement set forth by the university.  To obtain a certification, students must also meet the requirements of the Council on Teacher Education, a professional educational administration at the University of Illinois.  The total enrollment is 1,361 students as of 2015."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 521,
+    "generation_tokens": 26,
+    "generation_speed": 236.39802153040443,
+    "prompt_eval_speed": 58394.978704326386,
+    "generation_latency_s": 0.23472820001188666,
+    "latency": 0.5380764999426901,
+    "total_prompt_tokens": 657,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22422340000000002,
+    "stage_route_s": 0.10673040000256151,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14453769999090582,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.051905900007113814,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3299940191209316e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2347671000752598,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5380882999161258,
+    "unaccounted_latency_s": 9.469990618526936e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Undergraduate Degree\"",
+      "\"Higher Education Diploma\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

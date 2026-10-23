@@ -1,0 +1,42 @@
+{
+  "question_id": "Q301",
+  "query": "Where is the company that owns thanKing Horse pub restaurant chain based ?",
+  "ground_truth": "Bury St Edmunds,",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The company that owns ThanKing Horse Pub Restaurant Chain is KFC.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fast food restaurant: A fast food restaurant, also known as a quick service restaurant (QSR) within the industry, is a specific type of restaurant that serves fast food cuisine and has minimal table service.  The food served in fast food restaurants is typically part of a \"meat-sweet diet\", offered from a limited menu, cooked in bulk in advance and kept hot, finished and packaged to order, and usually available for take away, though seating may be provided.  Fast food restaurants are typically part of a restaurant chain or franchise operation that provisions standardized ingredients and/or partially prepared foods and supplies to each restaurant through controlled supply channels.  The term \"fast food\" was recognized in a dictionary by Merriam\u2013Webster in 1951.",
+      "KFC: KFC, until 1991 known as Kentucky Fried Chicken, is an American fast food restaurant chain that specializes in fried chicken.  Headquartered in Louisville, Kentucky, it is the world's second-largest restaurant chain (as measured by sales) after McDonald's, with almost 20,000 locations globally in 123 countries and territories as of December 2015 .  The chain is a subsidiary of Yum!  Brands, a restaurant company that also owns the Pizza Hut and Taco Bell chains.",
+      "VIP's: VIP's, alternatively written Vip's, is a defunct restaurant chain in the Western United States that operated from 1968 until the late 1980s, based in Salem, Oregon.  With more than 50 locations, it was once the largest restaurant chain based in Oregon.  It was a Denny's-style restaurant, a type that was commonly known at that time as a \"coffee shop\" but is now more commonly known as a casual dining restaurant.  Most restaurants were located near freeways and were open 24 hours.  At its peak, the chain had locations in five states: Oregon, Washington, Idaho, Nevada and northern California."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 490,
+    "generation_tokens": 16,
+    "generation_speed": 249.67230509955684,
+    "prompt_eval_speed": 68617.84063856603,
+    "generation_latency_s": 0.9848907999694347,
+    "latency": 3.4211047999560833,
+    "total_prompt_tokens": 564,
+    "total_generation_tokens": 25,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1253411,
+    "stage_rewrite_s": 1.2070408000145108,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1093581999884918,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11969540000427514,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9849314000457525,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.421116799931042,
+    "unaccounted_latency_s": 9.149988181889057e-05,
+    "rewritten_query": "ThanKing Horse Restaurant Chain.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q154",
+  "query": "The songs from the sountrack to \"When Harry Met Sally\" are performed by a singer that has had how many top 20 US albums?",
+  "ground_truth": "seven",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The song titles from the track \"Harry Connick Jr., Joseph Harry Fowler Connick Jr.\" are performed by a singer who has had over 16 million sales worldwide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "When Harry Met Sally... (soundtrack): When Harry Met Sally... is the soundtrack to the movie \"When Harry Met Sally...\" starring Billy Crystal and Meg Ryan.  The songs are performed by pianist Harry Connick Jr., who won the Grammy Award for Best Jazz Male Vocal Performance.",
+      "When Harry Met Sally...: When Harry Met Sally\u2026 is a 1989 American romantic comedy film written by Nora Ephron and directed by Rob Reiner.  It stars Billy Crystal as Harry and Meg Ryan as Sally.  The story follows the title characters from the time they meet just before sharing a cross-country drive, through twelve years or so of chance encounters in New York City.  The film raises the question \"Can men and women ever just be friends?\"  and advances many ideas about relationships that became household concepts, such as \"high-maintenance\" and the \"transitional person\".",
+      "Harry Connick Jr.: Joseph Harry Fowler Connick Jr. (born September 11, 1967) is an American singer, big band leader, talk show host and actor.  He has sold over 28million albums worldwide.  Connick is ranked among the top60 best-selling male artists in the United States by the Recording Industry Association of America, with 16million in certified sales.  He has had seven top20 US albums, and ten number-one US jazz albums, earning more number-one albums than any other artist in US jazz chart history."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 400,
+    "generation_tokens": 37,
+    "generation_speed": 379.12166731561365,
+    "prompt_eval_speed": 23738.872403560832,
+    "generation_latency_s": 0.18952799995895475,
+    "latency": 0.6562102000461891,
+    "total_prompt_tokens": 491,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.132778,
+    "stage_rewrite_s": 0.17529319995082915,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07610669999849051,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21516799996607006,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1895599999697879,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6562190999975428,
+    "unaccounted_latency_s": 9.17001161724329e-05,
+    "rewritten_query": "The songs from the Searchers' album, \"When Harry Met Sally,\" were played by a singer who has had 14 Top 20 US albums.",
+    "query_was_rewritten": true
+  }
+}

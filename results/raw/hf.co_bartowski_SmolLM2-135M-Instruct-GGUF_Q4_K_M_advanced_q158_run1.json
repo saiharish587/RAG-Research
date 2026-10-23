@@ -1,0 +1,42 @@
+{
+  "question_id": "Q158",
+  "query": "What retailer in ABQ Uptown is headquarted in Poole, Dorset, United Kingdom?",
+  "ground_truth": "Lush Ltd.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Next is the largest clothing retailer by sales in the United Kingdom, having overtaken Marks & Spencer in early 2012 and 2014.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lush (company): Lush Ltd. is a cosmetics retailer headquartered in Poole, Dorset, United Kingdom.  The company was founded by Mark Constantine, a trichologist and Liz Weir, a beauty therapist.  They met in a hair and beauty salon in Poole, England.  A few years later, they decided to branch out and start their own business selling natural hair and beauty products.",
+      "Fire Radio: Fire Radio is a United Kingdom radio station broadcasting to Bournemouth, Poole, and Christchurch, Dorset, based in Southampton, Hampshire.",
+      "Next plc: Next (), styled as next, is a British multinational clothing, footwear and home products retailer headquartered in Enderby, Leicestershire.  It has around 700 stores, of which 500 are in the United Kingdom and Ireland, and around 200 are in continental Europe, Asia and the Middle East.  Next is the largest clothing retailer by sales in the United Kingdom, having overtaken Marks & Spencer in early 2012 and 2014.  It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 332,
+    "generation_tokens": 34,
+    "generation_speed": 392.1704326562626,
+    "prompt_eval_speed": 21937.35958768336,
+    "generation_latency_s": 0.17710540001280606,
+    "latency": 0.5115985999582335,
+    "total_prompt_tokens": 414,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1286037,
+    "stage_rewrite_s": 0.16669750004075468,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07556080003269017,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09211279998999089,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17714040004648268,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5116070000221953,
+    "unaccounted_latency_s": 9.599991608411074e-05,
+    "rewritten_query": "The retailer in Poole, Dorset, United Kingdom, is Headquarter of the Retailers Association of Dorset (RAD).",
+    "query_was_rewritten": true
+  }
+}

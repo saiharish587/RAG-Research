@@ -1,0 +1,42 @@
+{
+  "question_id": "Q119",
+  "query": "Were the bands Skin Yard and Ostava from the U.S.?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, the bands Skin Yard and Ostava are not from the United States. The band Skin Yard was formed in 1985 and disbanded by 2000 but never gained a mainstream audience. The band's music peaked at number one on the Billboard Hot 100 chart for several years before it eventually faded away into grunge history.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ostava: Ostava are an alternative rock band from Bulgaria.  They formed in 1991, but it was not until 2000 that they released a long-playing record (and subsequently received critical acclaim.",
+      "Skin Yard: Skin Yard was an American grunge band from Seattle, Washington, who were active from 1985 to 1993.  The group never gained a mainstream audience, but were an influence on several of their grunge contemporaries, including Soundgarden, Screaming Trees, The Melvins, and Green River.",
+      "Skin Yard (album): Skin Yard was the first album released by the band Skin Yard in January, 1987.  1400 vinyl copies were released on translucent skin-tone vinyl."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 237,
+    "generation_tokens": 76,
+    "generation_speed": 360.9662496556572,
+    "prompt_eval_speed": 15632.214233889585,
+    "generation_latency_s": 0.303286699927412,
+    "latency": 0.9793921000091359,
+    "total_prompt_tokens": 311,
+    "total_generation_tokens": 156,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1293279,
+    "stage_rewrite_s": 0.3055979999480769,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07864570000674576,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.29174199991393834,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3033192999428138,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9794006999582052,
+    "unaccounted_latency_s": 9.620015043765306e-05,
+    "rewritten_query": "The band Skin Yard and Ostava were both popular in the United States during the 1980s, with Skin Yard being a major American rock band that peaked at number one on the Billboard 200 chart in 1983. Ostava was another influential American rock band from the same era, with both bands achieving success and reaching the top of the charts.",
+    "query_was_rewritten": true
+  }
+}

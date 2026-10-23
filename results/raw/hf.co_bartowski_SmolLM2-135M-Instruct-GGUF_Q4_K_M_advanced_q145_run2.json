@@ -1,0 +1,42 @@
+{
+  "question_id": "Q145",
+  "query": "The movies Queen of Blood and Battle Beyond the Sun both contained scenes from what 1959 Soviet feature?",
+  "ground_truth": "Nebo Zovyot",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The movie Queen of Blood is not available in English, as it was released by American International Pictures (AIP) on a double bill with \"Blood Bath\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Queen of Blood: Queen of Blood is a 1966 color science fiction-horror film based on the screenplay for the earlier, Soviet film called \"Mechte Navstrechu\".  The film was produced by George Edwards and Samuel Z. Arkoff, directed by Curtis Harrington, and stars John Saxon, Basil Rathbone, Dennis Hopper, and Judi Meredith.  \"Queen of Blood\" was released by American International Pictures on a double bill with \"Blood Bath\".  Director Harrington reused special effects footage from the Soviet features \"Mechte Navstrechu\" and \"Nebo Zovyot\".",
+      "I Was a Satellite of the Sun: I Was a Satellite of the Sun - (Russian: \u042f \u0431\u044b\u043b \u0441\u043f\u0443\u0442\u043d\u0438\u043a\u043e\u043c \u0421\u043e\u043b\u043d\u0446\u0430 ) Soviet feature dramatic science-fiction film of 1959 with animation elements.",
+      "Battle Beyond the Sun: Battle Beyond the Sun is the English-dubbed and re-edited U.S. version of \"Nebo Zovyot\", a 1959 Soviet science fiction film directed by Mikhail Karyukov and Aleksandr Kozyr.  It tells of the \"space race\" of two future nations competing to become the first to land a spacecraft on the planet Mars."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 33,
+    "generation_speed": 403.86239306825274,
+    "prompt_eval_speed": 22181.03319005457,
+    "generation_latency_s": 0.1764997000573203,
+    "latency": 0.5885793999768794,
+    "total_prompt_tokens": 442,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1493805,
+    "stage_rewrite_s": 0.16792030003853142,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07621670002117753,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16780329996254295,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17654980008956045,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5885927999624982,
+    "unaccounted_latency_s": 0.00010349985677748919,
+    "rewritten_query": "The movie \"Queen of Blood\" featured scenes from \"Battle Beyond the Sun,\" which was a 1959 Soviet feature film.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q103",
+  "query": "What year was the brother of this first round draft pick by the Washington Redskins drafted?",
+  "ground_truth": "2003",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Washington Redskins' brother, Joe Stydahar, was drafted in 1936.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Washington Redskins: The Washington Redskins are a professional American football team based in the Washington metropolitan area.  The Redskins compete in the National Football League (NFL) as a member of the National Football Conference (NFC) East division.  The team plays its home games at FedExField in Landover, Maryland; its headquarters and training facility are at Inova Sports Performance Center at Redskins Park in Ashburn, Virginia, and the Redskins Complex in Richmond, Virginia, respectively.  The Redskins have played more than 1,000 games since 1932, and are one of only five franchises in the NFL to record over 600 regular season and postseason wins, reaching that mark in 2015.  The Redskins have won five NFL Championships (two pre-1966 merger announcement, and three Super Bowls).  The franchise has captured 14 NFL divisional titles and six NFL conference championships.  The Redskins were the first team in the NFL with an official marching band, and also the first team to have a fight song, \"Hail to the Redskins\".",
+      "List of Chicago Bears first-round draft picks: The Chicago Bears are an American football franchise based in Chicago, Illinois.  They are members of the National Football Conference (NFC) North division in the National Football League (NFL).  They participated in the first ever NFL draft in 1936 and selected Joe Stydahar, an tackle from the West Virginia University.  Stydahar went to have a stellar career with the franchise and is inducted in the Pro Football Hall of Fame.  The team's most recent first round selection (2015) was Leonard Floyd, a outside linebacker from Georgia.  The Bears have not had first round selections a total of six times, most recently in 2010 draft.  The Bears have only selected the number one overall pick in the draft twice, choosing Tom Harmon in 1941 and Bob Fenimore in 1947.  The team's six selections from the University of Texas are the most chosen by the Bears from one program.  Nine of the first round selections have been inducted into the Pro Football Hall of Fame.",
+      "List of Green Bay Packers first-round draft picks: The Green Bay Packers joined the National Football League (NFL) in 1921, two years after their original founding by Curly Lambeau.  They participated in the first ever NFL draft in 1936 and selected Russ Letlow, a guard from the University of San Francisco.  The team's most recent first round selection was Kenny Clark, a defensive tackle from UCLA in the 2016 NFL Draft.  The Packers have selected the number one overall pick in the draft twice, choosing future Hall of Fame halfback Paul Hornung in 1957 and quarterback Randy Duncan in 1959.  They have also selected the second overall pick three times and the third overall pick once.  The team's eight selections from the University of Minnesota are the most chosen by the Packers from one university."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 753,
+    "generation_tokens": 24,
+    "generation_speed": 221.5780046900678,
+    "prompt_eval_speed": 78716.28684925778,
+    "generation_latency_s": 0.2354214999359101,
+    "latency": 0.6574719999916852,
+    "total_prompt_tokens": 891,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2312892,
+    "stage_route_s": 0.11116690002381802,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24753319995943457,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06316559994593263,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0600036047399044e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23545999999623746,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6574825000716373,
+    "unaccounted_latency_s": 0.00010680011473596096,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Washington Redskins drafted their first round draft pick in 2015.",
+      "Query 2: The Washington Redskins drafted their first round draft pick in 2016."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q150",
+  "query": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+  "ground_truth": "\"We'll Burn That Bridge\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "\"Chattahoochee\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Lot About Livin' (And a Little 'bout Love): A Lot About Livin' (And a Little 'bout Love) is the third studio album by American country music artist Alan Jackson.  It was released on October 6, 1992, and produced the singles \"Chattahoochee\", \"She's Got the Rhythm (And I Got the Blues)\", \"Tonight I Climbed the Wall\", \"(Who Says) You Can't Have It All\" and \"Mercury Blues\".  \"Chattahoochee\" and \"She's Got the Rhythm\" were both Number One hits on the Hot Country Songs charts, while the other three songs all reached Top Five.",
+      "Nitty Gritty Dirt Band: The Nitty Gritty Dirt Band is an American country rock band that has existed in various forms since its founding in Long Beach, California in 1966.  The group's membership has had at least a dozen changes over the years, including a period from 1976 to 1981 when the band performed and recorded as the Dirt Band.  Constant members since the early times are singer-guitarist Jeff Hanna and drummer Jimmie Fadden.  Multi-instrumentalist John McEuen was with the band from 1966 to 1986 and returned during 2001.  Keyboardist Bob Carpenter joined the band in 1977.  The band is often cited as instrumental to the progression of contemporary country and roots music.",
+      "Lightning (song): \"Lightning\" is a song by British-Irish boy band The Wanted, taken as the third single from their second studio album, \"Battleground\".  It was released on 16 October 2011.  The song was written by Steve Mac, Wayne Hector and Ed Drewett, the same team responsible for the band's number-one single, \"Glad You Came\".  The song debuted at number two on the UK Singles Chart, behind Rihanna's \"We Found Love\".  The single was originally intended for release in the United States, following the success of \"Glad You Came\", and a promotional remix single was issued, however, its release was cancelled."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 578,
+    "generation_tokens": 8,
+    "generation_speed": 223.2890476722117,
+    "prompt_eval_speed": 59275.971695210756,
+    "generation_latency_s": 0.16163390001747757,
+    "latency": 0.5346453000092879,
+    "total_prompt_tokens": 748,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2304744,
+    "stage_route_s": 0.10352499992586672,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21318970003630966,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056126700015738606,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.680008325725794e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16166600002907217,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5346546000801027,
+    "unaccounted_latency_s": 9.099999442696571e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Dirt\" by The Dirty Dozen",
+      "\"I'm Gonna Get You\" by The Wanted"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

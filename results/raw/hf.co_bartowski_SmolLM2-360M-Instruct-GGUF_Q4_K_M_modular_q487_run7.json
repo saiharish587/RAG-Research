@@ -1,0 +1,49 @@
+{
+  "question_id": "Q487",
+  "query": "What genre of music was played by both Tappi T\u00edkarrass and INXS?",
+  "ground_truth": "rock",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The genre of music played by both Tappi T\u00edkarrass and INXS is rock music.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Band (rock and pop): A rock band or pop band is a small musical ensemble which performs rock music, pop music or a related genre.  The four-piece band is the most common configuration in rock and pop music.  Before the development of the electronic keyboard, the configuration was typically two guitarists (a lead guitarist and a rhythm guitarist, with one of them singing lead vocals), a bassist, and a drummer (e.g. the Beatles, KISS, Franz Ferdinand).  Another common formation is a vocalist who does not play an instrument, electric guitarist, bass guitarist, and a drummer (e.g. the Who, the Monkees, Led Zeppelin, Queen, and U2).  Instrumentally, these bands can be considered as trios.",
+      "Rock music: Rock music is a genre of popular music that originated as \"rock and roll\" in the United States in the early 1950s, and developed into a range of different styles in the 1960s and later, particularly in the United Kingdom and the United States.  It has its roots in 1940s and 1950s rock and roll, a style which drew heavily on the African-American genres of blues and rhythm and blues, and from country music.  Rock music also drew strongly on a number of other genres such as electric blues and folk, and incorporated influences from jazz, classical and other musical styles.  Musically, rock has centered on the electric guitar, usually as part of a rock group with electric bass and drums and one or more singers. Typically, rock is song-based music usually with a 4/4 time signature using a verse\u2013chorus form, but the genre has become extremely diverse.  Like pop music, lyrics often stress romantic love but also address a wide variety of other themes that are frequently social or political.",
+      "Tappi T\u00edkarrass: Tappi T\u00edkarrass was an Icelandic punk band which added elements of funk, rock and jazz to their music, marking a difference from other traditional bands at that time.  The band is also considered the first serious music project of now renowned singer Bj\u00f6rk Gu\u00f0mundsd\u00f3ttir."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 551,
+    "generation_tokens": 24,
+    "generation_speed": 236.7541012715668,
+    "prompt_eval_speed": 65681.24925497675,
+    "generation_latency_s": 0.2252032000105828,
+    "latency": 0.5090500999940559,
+    "total_prompt_tokens": 693,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23393730000000001,
+    "stage_route_s": 0.10771939996629953,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.11969099997077137,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05625749996397644,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3200055845081806e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22524069994688034,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5090615999652073,
+    "unaccounted_latency_s": 0.00010090006981045008,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Rock Music",
+      "Pop Music"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

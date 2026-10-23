@@ -1,0 +1,42 @@
+{
+  "question_id": "Q456",
+  "query": "What shallow water table aquifer is located near the county seat of Keith County, Nebraska?",
+  "ground_truth": "Ogallala Aquifer",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Ogallala Aquifer is a shallow water table aquifer located near the county seat of Keith County, Nebraska.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Keith County, Nebraska: Keith County is a county located in the U.S. state of Nebraska.  As of the 2010 census, the population was 8,368.  Its county seat is Ogallala.",
+      "Ogallala, Nebraska: Ogallala is a city in Keith County, Nebraska, United States.  The population was 4,737 at the 2010 census.  It is the county seat of Keith County.  In the days of the Nebraska Territory, the city was a stop on the Pony Express and later along the transcontinental railroad.  The Ogallala Aquifer was named after the city.",
+      "Ogallala Aquifer: The Ogallala Aquifer is a shallow water table aquifer surrounded by sand, silt, clay and gravel located beneath the Great Plains in the United States.  One of the world's largest aquifers, it underlies an area of approximately 174000 sqmi in portions of eight states (South Dakota, Nebraska, Wyoming, Colorado, Kansas, Oklahoma, New Mexico, and Texas).  It was named in 1898 by geologist N. H. Darton from its type locality near the town of Ogallala, Nebraska.  The aquifer is part of the High Plains Aquifer System, and rests on the Ogallala Formation, which is the principal geologic unit underlying 80% of the High Plains."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 375,
+    "generation_tokens": 24,
+    "generation_speed": 401.5929855091864,
+    "prompt_eval_speed": 48070.760158953985,
+    "generation_latency_s": 0.1538674000184983,
+    "latency": 0.5038873000303283,
+    "total_prompt_tokens": 452,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1339024,
+    "stage_rewrite_s": 0.14567350002471358,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07671070005744696,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1275084000080824,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15390709997154772,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5038984999991953,
+    "unaccounted_latency_s": 9.93999419733882e-05,
+    "rewritten_query": "The shallow water table aquifer in Keith County, Nebraska is located near the county seat of Keith County, Nebraska.",
+    "query_was_rewritten": true
+  }
+}

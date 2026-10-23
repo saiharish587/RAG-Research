@@ -1,0 +1,42 @@
+{
+  "question_id": "Q264",
+  "query": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+  "ground_truth": "Tybalt",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The protagonist of William Shakespeare's tragedy \"Romeo and Juliet\" is Prince Hamlet. He is the title character and protagonist of the play.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Romeo: Romeo Montague (Italian: \"Romeo Montecchi\" ) is the protagonist of William Shakespeare's tragedy \"Romeo and Juliet\".  The son of Montague and his wife, he secretly loves and marries Juliet, a member of the rival House of Capulet.  Forced into exile after slaying Juliet's cousin, Tybalt, in a duel, Romeo commits suicide upon hearing falsely of Juliet's death.",
+      "Prince Hamlet: Prince Hamlet is the title character and protagonist of William Shakespeare's tragedy \"Hamlet\".  He is the Prince of Denmark, nephew to the usurping Claudius, and son of King Hamlet, the previous King of Denmark.  At the beginning of the play, he struggles with whether, and how, to avenge the murder of his father, and struggles with his own sanity along the way.  By the end of the tragedy, Hamlet has caused the deaths of Polonius, Laertes, Claudius, and two acquaintances of his from the University of Wittenberg Rosencrantz and Guildenstern.  He is also indirectly involved in the deaths of his love Ophelia (drowning) and of his mother Gertrude (poisoned by Claudius by mistake).",
+      "Hamlet: The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet ( ), is a tragedy written by William Shakespeare at an uncertain date between 1599 and 1602.  Set in Denmark, the play dramatises the revenge Prince Hamlet is called to wreak upon his uncle, Claudius, by the ghost of Hamlet's father, King Hamlet.  Claudius had murdered his own brother and seized the throne, also marrying his deceased brother's widow."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 29,
+    "generation_speed": 395.8882230079314,
+    "prompt_eval_speed": 59074.54327243633,
+    "generation_latency_s": 0.1593816999811679,
+    "latency": 0.5197527999989688,
+    "total_prompt_tokens": 538,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1297899,
+    "stage_rewrite_s": 0.1623887000605464,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07526940002571791,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12258660001680255,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15942240005824715,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5197678999975324,
+    "unaccounted_latency_s": 0.00010139984078705311,
+    "rewritten_query": "Which character is this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragic play \"Hamlet\"?",
+    "query_was_rewritten": true
+  }
+}

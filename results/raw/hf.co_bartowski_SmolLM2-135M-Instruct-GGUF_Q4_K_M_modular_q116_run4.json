@@ -1,0 +1,48 @@
+{
+  "question_id": "Q116",
+  "query": "The Argentine PGA Championship record holder has won how many tournaments worldwide?",
+  "ground_truth": "230",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The answer is 8 times",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Argentine PGA Championship: The Argentine PGA Championship is a golf tournament played in Argentina since 1920.  It was generally supported by the leading Argentine golfers and its list of champions includes Eduardo Romero (8 times), Jos\u00e9 Jurado (7 times), Vicente Fern\u00e1ndez (5 times), Jos\u00e9 C\u00f3ceres (twice) and \u00c1ngel Cabrera.  However, the record holder is former British Open champion Roberto De Vicenzo, who recorded 16 victories between 1944 and 1985.",
+      "Northern California PGA Championship: The Northern California PGA Championship is a golf tournament that is the championship of the Northern California section of the PGA of America.  Mark Fry, long-time pro at Sequoyah Country Club in Oakland, California, holds the record for most victories with 10.  Tony Lema, British Open winner in 1964 and 12-time PGA Tour winner, won three consecutive Northern California PGA championships from 1962\u201364.  Other PGA Tour winners who were also victorious in the Northern California PGA Championship include Bob Lunn (six-time PGA tour winner), Dick Lotz (three-time PGA tour winner), Bruce Summerhays (three-time PGA tour winner, Bob Wynn, and John McMullin.",
+      "Roberto De Vicenzo: Roberto De Vicenzo (14 April 1923 \u2013 1 June 2017) was a professional golfer from Argentina.  He won more than 230 tournaments worldwide in his career including eight on the PGA Tour and most famously the 1967 Open Championship."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 449,
+    "generation_tokens": 7,
+    "generation_speed": 391.0614525139665,
+    "prompt_eval_speed": 66825.42044947164,
+    "generation_latency_s": 0.1329985000193119,
+    "latency": 0.4221459000837058,
+    "total_prompt_tokens": 579,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22871070000000002,
+    "stage_route_s": 0.12802970001939684,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12624889996368438,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03470990003552288,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.830005880445242e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13303749996703118,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.42215720005333424,
+    "unaccounted_latency_s": 9.370001498609781e-05,
+    "route": "rag",
+    "router_raw": "The answer to this question is \"10\" (the number of tournaments).",
+    "sub_queries": [
+      "The Argentina PGA Championship record holder has won 10,275 tournaments globally."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q169",
+  "query": "What was the 58th quadrennial American presidential election held after the 2016 Michigan Democratic primary?",
+  "ground_truth": "United States presidential election of 2016",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 58th quadrennial American presidential election took place on March 8, 2016, as one of the Democratic Party's primaries ahead of the 2016 presidential election.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Michigan Democratic primary, 2016: The 2016 Michigan Democratic primary took place on March 8 in the U.S. state of Michigan as one of the Democratic Party's primaries ahead of the 2016 presidential election.",
+      "United States presidential election, 2016: The United States presidential election of 2016 was the 58th quadrennial American presidential election, held on Tuesday, November 8, 2016.  In a surprise victory, the Republican ticket of businessman Donald Trump and Indiana Governor Mike Pence defeated the Democratic ticket of former First Lady, U.S. Senator of New York and Secretary of State Hillary Clinton and U.S. Senator from Virginia Tim Kaine.  Trump took office as the 45th President, and Pence as the 48th Vice President, on January 20, 2017.  Concurrent with the presidential election, Senate, House, and many gubernatorial and state and local elections were also held on November 8.",
+      "United States presidential election, 2012: The United States presidential election of 2012 was the 57th quadrennial American presidential election.  It was held on Tuesday, November 6, 2012.  The Democratic nominee, incumbent President Barack Obama, and his running mate, Vice President Joe Biden, were elected to a second term, defeating the Republican nominee, former Governor of Massachusetts Mitt Romney and his running mate, Representative and future House Speaker Paul Ryan of Wisconsin."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 422,
+    "generation_tokens": 46,
+    "generation_speed": 235.02002779367282,
+    "prompt_eval_speed": 14459.978070175437,
+    "generation_latency_s": 0.33157529996242374,
+    "latency": 0.6805892999982461,
+    "total_prompt_tokens": 574,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23374709999999999,
+    "stage_route_s": 0.09629960008896887,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2154107999522239,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03715390001889318,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.630004357546568e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.33160799997858703,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6805982999503613,
+    "unaccounted_latency_s": 9.019987192004919e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "What was the 58th quadrennial American presidential election held after the 2016 Michigan Democratic primary?*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q569",
+  "query": "Rex Riot is known for a remix of the Kanye West song that was from which album?",
+  "ground_truth": "My Beautiful Dark Twisted Fantasy",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Rex Riot is known for his work with Nintendo, for their 2012 Wii U Campaign, and various work including a popular remix of Kanye West's \"All of the Lights\", which he produced with Infuze. He currently has releases under Play Me Records, Heavy Artillery Records, and an upcoming album scheduled for release in summer 2013.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Late Registration: Late Registration is the second studio album by American rapper Kanye West.  It was released on August 30, 2005, through Roc-A-Fella Records.  It was recorded over the course of a year in sessions held across studios in New York City and Hollywood, with West collaborating with American record producer and composer Jon Brion.  The album features guest contributions from Adam Levine, Lupe Fiasco, Jamie Foxx, Common, Jay-Z, Brandy, and Nas, among others.  Its production was notably more lush and elaborate than West's 2004 debut album \"The College Dropout\", as he utilized intricate sampling methods and string orchestration with Brion.  West's lyrics explore both personal and political themes, including poverty, drug trafficking, racism, healthcare, and the blood diamond trade.",
+      "Slow Jamz: \"Slow Jamz\" is a single by American rapper Twista featuring Kanye West and Jamie Foxx.  It was released in late 2003 as the lead single from his album \"Kamikaze\" and the second single from Kanye West's debut album \"The College Dropout\".  The Kanye West version includes an intro and two extra verses by Jamie Foxx, and excludes the original outro by Twista.",
+      "Rex Riot: Rex Riot, born Nicholas Rex Valente, is an electronic music producer.  He is known for his work with Nintendo, for their 2012 Wii U Campaign, and various work including a popular remix of Kanye West's \"All of the Lights\", which he produced with Infuze.  He currently has releases under Play Me Records, Heavy Artillery Records, and an upcoming album scheduled for release in summer 2013."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 461,
+    "generation_tokens": 81,
+    "generation_speed": 233.17605943974414,
+    "prompt_eval_speed": 59491.54729642535,
+    "generation_latency_s": 0.4669516000431031,
+    "latency": 0.7889884000178427,
+    "total_prompt_tokens": 605,
+    "total_generation_tokens": 103,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.235463,
+    "stage_route_s": 0.09484259993769228,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1722781000426039,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05474559997674078,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.4699950851500034e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.46698380005545914,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7889983000932261,
+    "unaccounted_latency_s": 9.420013520866632e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Kanye West Remix\"",
+      "\"The Black Album\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

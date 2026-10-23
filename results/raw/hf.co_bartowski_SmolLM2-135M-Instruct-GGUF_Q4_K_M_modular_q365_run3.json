@@ -1,0 +1,48 @@
+{
+  "question_id": "Q365",
+  "query": "Where did the architect of the Governor's House, located in Knutsford, graduate from college?",
+  "ground_truth": "Cambridge University",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The architect of the Governor's House, located in Knutsford, graduated from Dartmouth College (Dartmouth College) in 1844 and later became a prominent figure in Alabama history.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Governor's House, Knutsford: The former Governor's House is located in Toft Road, Knutsford, Cheshire, England.  It was built for the governor of Knutsford Gaol, and has later been used as a Tourist Information Centre.  It was built in 1844 and designed by the Lancaster architect Edmund Sharpe.  It is recorded in the National Heritage List for England as a designated Grade II listed building.  The house is constructed in red brick in Georgian style.",
+      "Alabama Governor's Mansion: The Alabama Governor's Mansion is the official residence of the Governor of Alabama and the governor's family in Montgomery, the capital city of Alabama.  The current Governor of Alabama, Kay Ivey lives at the governor's mansion.  The original governor's mansion for Alabama was occupied from 1911 until 1950, when the current mansion was acquired.  The current mansion was added to the National Register of Historic Places on July 3, 1972.",
+      "Dartmouth College: Dartmouth College ( ) is a private Ivy League research university in Hanover, New Hampshire, United States.  Established in 1769 by Eleazar Wheelock, it is the ninth-oldest institution of higher education in the United States and one of the nine colonial colleges chartered before the American Revolution.  Although founded as a school to educate Native Americans in Christian theology and the English way of life, Dartmouth primarily trained Congregationalist ministers throughout its early history before it gradually secularized, emerging at the turn of the 20th century from relative obscurity into national prominence."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 420,
+    "generation_tokens": 41,
+    "generation_speed": 370.6683783710481,
+    "prompt_eval_speed": 54751.66210402816,
+    "generation_latency_s": 0.23000030010007322,
+    "latency": 0.5208888999186456,
+    "total_prompt_tokens": 560,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2294437,
+    "stage_route_s": 0.13677850004751235,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.11523019999731332,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03869209997355938,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.409998655319214e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2300401000538841,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5209011000115424,
+    "unaccounted_latency_s": 0.00011689995881170034,
+    "route": "rag",
+    "router_raw": "The architect of the Governor's House, located in Knutsford, graduated from college.",
+    "sub_queries": [
+      "Where did the architect of the Governor's House graduate from college?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

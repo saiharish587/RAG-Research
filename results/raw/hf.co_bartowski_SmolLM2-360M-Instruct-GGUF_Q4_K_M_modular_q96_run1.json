@@ -1,0 +1,49 @@
+{
+  "question_id": "Q96",
+  "query": "Tysons Galleria is located in what county?",
+  "ground_truth": "Fairfax County",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Tysons Corner Center is located in Fairfax County, Virginia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tysons, Virginia: Tysons, or formerly \u201cTysons Corner\u201d is a census-designated place (CDP) and unincorporated community in Fairfax County, Virginia, United States.  Located in Northern Virginia between the community of McLean and the town of Vienna along the Capital Beltway (I-495), it lies within the Washington Metropolitan Area.  Tysons is home to two super-regional shopping malls\u2014Tysons Corner Center and Tysons Galleria\u2014and the corporate headquarters of numerous companies such as Intelsat, Gannett, Hilton Worldwide, Freddie Mac, Capital One and Booz Allen Hamilton.  Tysons is Fairfax County's central business district and a regional commercial center.  It has been characterized as a quintessential example of an edge city.  The population was 19,627 as of the 2010 census.",
+      "Tysons Galleria: Tysons Galleria is a three-level super-regional mall owned by General Growth Properties located at 2001 International Drive, McLean, Virginia, in Tysons Corner.  It is the second-largest mall in McLean/Tysons Corner, and one of the largest in the Washington metropolitan area.",
+      "Tysons Corner Center: Tysons Corner Center, located in the Tysons Corner unincorporated area in Fairfax County, Virginia, United States (between McLean and Vienna, Virginia), opened to the public in 1968, becoming one of the first fully enclosed, climate-controlled shopping malls in the Washington metropolitan area."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 412,
+    "generation_tokens": 15,
+    "generation_speed": 205.6625762665387,
+    "prompt_eval_speed": 13237.373088291994,
+    "generation_latency_s": 0.21262270002625883,
+    "latency": 0.6767715000314638,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23930020000000002,
+    "stage_route_s": 0.10877219995018095,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2964259999571368,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05876220006030053,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.309993866831064e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21266250009648502,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6767830000026152,
+    "unaccounted_latency_s": 0.00010760000441223383,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Tysons Galleria is located in the county of Virginia\"",
+      "\"Tysons Galleria is located in the county of Virginia, which is part of the Commonwealth of Virginia\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

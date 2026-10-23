@@ -1,0 +1,48 @@
+{
+  "question_id": "Q354",
+  "query": "Vanessa Bley is what person who organizes and often finances concerts, plays, or operas, performing a role?",
+  "ground_truth": "impresario",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Vanessa Bley is an impresario (from the Italian \"impresa\", \"an enterprise or undertaking\") who organizes and often finances concerts, plays, or operas.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vanessa Bley: Vanessa Bley is a New York City and Los Angeles\u2013based singer, composer, producer, and musician.  She is daughter of jazz pianist Paul Bley and pioneer video artist Carol Goss.",
+      "Madonna (entertainer): Madonna Louise Ciccone ( ; born August 16, 1958) is an American singer, songwriter, actress, and businesswoman.  A leading presence during the emergence of MTV in the 1980s, Madonna is known for pushing the boundaries of lyrical content in mainstream popular music, as well as visual imagery in music videos and on stage.  She has also frequently reinvented both her music and image while maintaining autonomy within the recording industry.  Besides sparking controversy, her works have been acclaimed by music critics.  Referred to as the \"Queen of Pop\", Madonna is widely cited as an influence by other artists.",
+      "Impresario: An impresario (from the Italian \"impresa\", \"an enterprise or undertaking\") is a person who organizes and often finances concerts, plays, or operas, performing a role similar to that of an artist manager or a film or television producer.  The term originated in the social and economic world of Italian opera, in which from the mid-18th century to the 1830s, the impresario was the key figure in the organization of a lyric season.  The owners of the theatre, usually noble amateurs, charged the impresario with hiring a composer (until the 1850s operas were expected to be new) and the orchestra, singers, costumes and sets, all while assuming considerable financial risk.  In 1786 Mozart satirized the stress and emotional mayhem in a single-act farce \"Der Schauspieldirektor\" (\"The Impresario\").  Antonio Vivaldi was unusual in acting as both impresario and composer; in 1714 he managed seasons at Teatro San Angelo in Venice, where his opera \"Orlando finto pazzo\" was followed by numerous others."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 524,
+    "generation_tokens": 36,
+    "generation_speed": 325.28846762024375,
+    "prompt_eval_speed": 71099.05020352782,
+    "generation_latency_s": 0.22851569997146726,
+    "latency": 0.576258199987933,
+    "total_prompt_tokens": 670,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23477209999999998,
+    "stage_route_s": 0.15752909996081144,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15371620003134012,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03632459999062121,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1500083170831203e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22855449991766363,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5762689999537542,
+    "unaccounted_latency_s": 0.00010359997395426035,
+    "route": "rag",
+    "router_raw": "Vanessa Bley is a singer-songwriter who performs music for various audiences across the globe.",
+    "sub_queries": [
+      "Vanessa Bley is a singer-songwriter who performs music for various audiences across multiple stages of her career."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q551",
+  "query": "The Azad Hind Dal was created by an Indian nationalist whose defiant patriotism made him a hero in India, but whose attempt to rid India of British rule during what war left a troubled legacy?",
+  "ground_truth": "World War II",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Azad Hind Dal was created by Subhas Chandra Bose, who initially started the Azad Hind Radio as a propaganda radio service. However, his defiant patriotism made him a hero in India but left a troubled legacy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Azad Hind Dal: The Azad Hind Dal was a branch of the Indian Independence League that was formed during World War II to take administrative control of the Indian territories to fall to the Indian National Army starting with the latter's Imphal campaign.  The branch was created by Subhas Chandra Bose to replace the Indian Civil Service in areas of British India, and is also thought to have been the nascent concept of a one-party political, bureaucractic and civil administrative system similar to that of the Soviet Union or the Fascist states of the time.  During the brief period that Azad Hind was in possession of small Indian territories around Imphal and Kohima during the U Go offensive between April and May 1944, parties of the Azad Hind Dal were sent along with the INA contingents to take administrative charge and rehabilitation of these areas.",
+      "Subhas Chandra Bose: Subhas Chandra Bose (23 January 1897 \u2013 18 August 1945) was an Indian nationalist whose defiant patriotism made him a hero in India, but whose attempt during World War II to rid India of British rule with the help of Nazi Germany and Imperial Japan left a troubled legacy.  The honorific Netaji (Hindustani: \"Respected Leader\"), first applied in early 1942 to Bose in Germany by the Indian soldiers of the \"Indische Legion\" and by the German and Indian officials in the Special Bureau for India in Berlin, was later used throughout India.",
+      "Azad Hind Radio: Azad Hind Radio was a propaganda radio service that was started under the leadership of Netaji Subhas Chandra Bose in Germany in 1942 to encourage Indians to fight for freedom.  Though initially based in Germany, its headquarters was shifted to Singapore and later to Rangoon following the course of the war in South East Asia.  Following Netaji's departure to South East Asia, the German operations were continued by A.C.N. Nambiar, the head of the Indian Legion in Germany and later Ambassador of the Arzi Hukumate Azad Hind in Germany."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 537,
+    "generation_tokens": 47,
+    "generation_speed": 208.11193765497697,
+    "prompt_eval_speed": 11320.277420578874,
+    "generation_latency_s": 0.386502500041388,
+    "latency": 0.7815895999083295,
+    "total_prompt_tokens": 715,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2335849,
+    "stage_route_s": 0.09770589997060597,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24164879997260869,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0555560999782756,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.359994247555733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3865337000461295,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7815998999867588,
+    "unaccounted_latency_s": 0.00010240008123219013,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Azad Hind Dal: A Hero's Journey\"",
+      "\"The Azad Hind Dal: The Indian Patriot's Quest for Freedom\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

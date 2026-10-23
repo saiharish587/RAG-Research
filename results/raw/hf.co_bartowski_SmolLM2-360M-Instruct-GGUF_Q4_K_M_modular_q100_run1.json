@@ -1,0 +1,48 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Yingkou and Fuding are not the same level of city.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "Fuding Railway Station: Fuding Railway Station () is a railway station located in Fuding City, Ningde, Fujian Province, China, on the Wenzhou-Fuzhou Railway operated by the Nanchang Railway Bureau, China Railway Corporation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 212,
+    "generation_tokens": 18,
+    "generation_speed": 235.72242375034378,
+    "prompt_eval_speed": 11692.681043516628,
+    "generation_latency_s": 0.19755559996701777,
+    "latency": 0.5917895999737084,
+    "total_prompt_tokens": 340,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21817029999999998,
+    "stage_route_s": 0.09556490008253604,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2606878000078723,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03782560001127422,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.9899954572319984e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19758739997632802,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.591800200054422,
+    "unaccounted_latency_s": 9.53000271692872e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Is there a difference between Yingkou and Fuding in terms of population, economy, or infrastructure?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

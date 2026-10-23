@@ -1,0 +1,49 @@
+{
+  "question_id": "Q184",
+  "query": "Which professional ice hockey position does the Captain of the National Hockey League All-Star Game \"Away Team\" play?",
+  "ground_truth": "Canadian professional ice hockey centre",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The captain of the national hockey league all-star game \"Away Team\" plays as a goalie.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "60th National Hockey League All-Star Game: The 60th National Hockey League All-Star Game was an exhibition ice hockey game played on January 25, 2015.  The game was held in Columbus, Ohio, for the first time, at Nationwide Arena, home of the Columbus Blue Jackets.  The team captains were chosen by NHL Hockey Operations: Nick Foligno of the All-Star Game-hosting Blue Jackets served as captain for the home team, and Jonathan Toews of the Chicago Blackhawks served for the away team.  Team Toews won the game 17\u201312, as the teams and players broke a variety of All-Star Game scoring records.",
+      "National Hockey League All-Star Game: The National Hockey League All-Star Game (French: \"Match des \u00c9toiles de la Ligue Nationale de Hockey\" ) is an exhibition ice hockey game that is traditionally held during the regular season of the National Hockey League (NHL), with many of the League's star players playing against each other.  The Game's proceeds benefit the pension fund of the players.",
+      "58th National Hockey League All-Star Game: The 58th National Hockey League All-Star Game, also known as the 2011 National Hockey League All-Star Game presented by Discover, was the National Hockey League's (NHL) annual All-Star Game played on January 30, 2011.  The game took place during the 2010\u201311 NHL season at the RBC Center in Raleigh, North Carolina, home of the Carolina Hurricanes.  Originally, the Game was supposed to be hosted by the Phoenix Coyotes, but due to ownership issues, the NHL decided to move the game.  After bidding for the game reopened, it was awarded to Carolina and fulfilled a nine-year-old promise made to the franchise by NHL Commissioner Gary Bettman."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 496,
+    "generation_tokens": 23,
+    "generation_speed": 245.79214533796417,
+    "prompt_eval_speed": 63876.36831938184,
+    "generation_latency_s": 0.2147112999809906,
+    "latency": 0.6294252999359742,
+    "total_prompt_tokens": 644,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2306256,
+    "stage_route_s": 0.09090509999077767,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26320940000005066,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06042620004154742,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.640000406652689e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21475280006416142,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6294359999010339,
+    "unaccounted_latency_s": 9.659980423748493e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The captain of the national hockey league all star game away team plays as a goaltender.",
+      "The captain of the national hockey league all star game away team plays as a defenseman."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

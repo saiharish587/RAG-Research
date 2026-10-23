@@ -1,0 +1,42 @@
+{
+  "question_id": "Q292",
+  "query": "What is the population of the town at the intersection of Interstate Highways 77 and  the longest Interstate highway within the borders of Virginia?",
+  "ground_truth": "8,211 at the 2010 census",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The population of the town at the intersection of Interstate Highways 77 and the longest Interstate Highway within the borders of Virginia is approximately 1,000.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Texas State Highway 77: State Highway 77, or SH 77, is a numbered state highway in Texas, occupying the counties of Morris and Cass.  SH 77 is 46.815 mi long, and connects U.S. Highway 259 to the eastern state line.  It begins four miles (6\u00a0km) north of Omaha on US 259, and travels eastward to Naples, meeting U.S. Highway 67 and State Highway 338.  In Douglassville, SH 77 intersects State Highway 8.  After cutting across the south side of Atlanta, where it meets U.S. Highway 59 (Future Interstate 369), SH 77 cuts to the southeast, and crosses into the very northwest corner of Louisiana, becoming Louisiana Highway 1.  SH 77 was originally proposed in 1926 as a route from Douglasville to Naples, replacing SH 1B.  By 1933, SH 77 extended southeast to Louisiana, replacing a portion of SH 47.  It was originally planned to travel farther west to Commerce, but this plan was cancelled in 1941.  In 1966, SH 77 was extended west over FM 2880 from US 259 to US 67.",
+      "New Jersey Route 77: Route 77 is a state highway in the southern part of the U.S. state of New Jersey.  It runs 22.55 mi from an intersection with Route 49 in Bridgeton, Cumberland County north to a junction with Route 45 in Mullica Hill, Gloucester County.  It is a mostly two-lane, undivided road traversing through farmland in Cumberland, Salem, and Gloucester Counties.  Along the way, Route 77 intersects Route 56 in Upper Deerfield Township and U.S. Route 40 (US 40) in Upper Pittsgrove Township.",
+      "Interstate 990: Interstate\u00a0990 (I-990) is an auxiliary Interstate Highway located entirely within the town of Amherst in Erie County, New York, in the United States.  It runs in a roughly north\u2013south direction for 6.43 mi through the southwestern and central parts of Amherst from an interchange with I-290 north of Buffalo to an intersection with New York State Route\u00a0263 (NY\u00a0263, named Millersport Highway) south of Lockport.  The highway serves as a connection between Buffalo, the University at Buffalo, and Lockport (via NY\u00a0263 and NY\u00a078).  Like I-590 in nearby Rochester, I-990 does not physically meet I-90, its parent Interstate Highway; instead, the highway makes the connection by way of a \"sibling\" highway (I-290).  I-990 is the highest numbered Interstate Highway in the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 733,
+    "generation_tokens": 35,
+    "generation_speed": 252.42144284096727,
+    "prompt_eval_speed": 96752.90390707497,
+    "generation_latency_s": 0.9658405999653041,
+    "latency": 3.4531395999947563,
+    "total_prompt_tokens": 822,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12994070000000002,
+    "stage_rewrite_s": 1.2616837000241503,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9952219999395311,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2302625000011176,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9658876999747008,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4531510999659076,
+    "unaccounted_latency_s": 9.560002945363522e-05,
+    "rewritten_query": "Interstate Highway 90 intersects with Interstate Highway 77 in the town, so the population can be found by looking up the number on the map.",
+    "query_was_rewritten": true
+  }
+}

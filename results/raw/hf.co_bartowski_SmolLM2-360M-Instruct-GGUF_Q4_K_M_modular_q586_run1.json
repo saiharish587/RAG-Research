@@ -1,0 +1,49 @@
+{
+  "question_id": "Q586",
+  "query": "What foundation do scholars give for the likelihood of collaboration on a William Shakespeare Play written between 1588 and 1593?",
+  "ground_truth": "linguistic analysis",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Scholars generally attribute the likelihood of collaboration on a William Shakespeare play written between 1588 and 1593 to linguistic analysis, particularly in the context of word use patterns. This is based on the fact that many of Shakespeare's plays are attributed to him by contemporary sources, such as \"The Two Noble Kinsmen\" (1592) and \"Titus Andronicus\" (1587). However, these attributions have been disputed by modern scholars who argue that some of these works may actually be collaborative revisions or reworkings of existing plays.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "William Shakespeare's collaborations: Like most playwrights of his period, William Shakespeare did not always write alone.  A number of his surviving plays are collaborative, or were revised by others after their original composition, although the exact number is open to debate.  Some of the following attributions, such as \"The Two Noble Kinsmen\", have well-attested contemporary documentation; others, such as \"Titus Andronicus\", are dependent on linguistic analysis by modern scholars; recent work on computer analysis of textual style (word use, word and phrase patterns) has given reason to believe that parts of some of the plays ascribed to Shakespeare are actually by other writers.",
+      "Shakespeare's plays: The plays written by English poet, playwright, and actor William Shakespeare (1564 \u2013 1616) have the reputation of being among the greatest in the English language and in Western literature.  Traditionally, the plays are divided into the genres of tragedy, history, and comedy; they have been translated into every major living language, in addition to being continually performed all around the world.",
+      "Shakespeare's reputation: In his own time, William Shakespeare (1564\u20131616) was rated as merely one among many talented playwrights and poets, but since the late 17th century he has been considered the supreme playwright and poet of the English language."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 366,
+    "generation_tokens": 121,
+    "generation_speed": 251.05140744398545,
+    "prompt_eval_speed": 13495.57522123894,
+    "generation_latency_s": 0.6282861999934539,
+    "latency": 1.1553749999729916,
+    "total_prompt_tokens": 524,
+    "total_generation_tokens": 188,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2344441,
+    "stage_route_s": 0.10570590000133961,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3595574999926612,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06163469993043691,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.719996988773346e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.628327300073579,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1553869999479502,
+    "unaccounted_latency_s": 0.0001050999853760004,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Elizabethan Theatre Company (ETC) was established in 1576, which would have been around 20 years before Shakespeare's birth.",
+      "Query 2: The play could be written by either William Shakespeare or his contemporaries, such as Christopher Marlowe or Ben Jonson."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

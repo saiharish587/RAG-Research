@@ -1,0 +1,49 @@
+{
+  "question_id": "Q236",
+  "query": "The Kansas City Wizards have had three home venues in Kansas City in their time.  Which was their first?",
+  "ground_truth": "Arrowhead Stadium",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Kansas City Wizards have had three home venues in Kansas City in their time. Their first venue was Kauffman Stadium, which opened in 1973 as Royals Stadium and was named for Ewing Kauffman, the founder and first owner of the Kansas City Royals.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2008 Kansas City Wizards season: The 2008 Kansas City Wizards season was the first season played at the temporary home Community America Ballpark in Kansas City, Kansas.",
+      "List of Washington Wizards head coaches: The Washington Wizards are an American professional basketball team based in Washington, D.C. They are a member of the Southeast Division of the Eastern Conference in the National Basketball Association (NBA).  The team plays its home games at the Capital One Arena.  The franchise was established in Chicago, Illinois as the Chicago Packers in 1961; after one season, its name was changed to the Chicago Zephyrs.  In 1963, the franchise moved to Baltimore, Maryland and was renamed the Baltimore Bullets.  It moved to Landover, Maryland in 1973 and changed its name to the Capital Bullets.  After one season, the team became the Washington Bullets.  In 1978, the Bullets won the 1978 NBA Finals in seven games for the franchise's only championship.  In 1997, the team became the Washington Wizards, which is the team's current name.  Since their formation, the Wizards have won six\u00a0divisional championships, four\u00a0conference championships, one\u00a0league championship and have appeared in the playoffs twenty-three\u00a0times.",
+      "Kauffman Stadium: Kauffman Stadium ( ), often called \"The K\", is a baseball park located in Kansas City, Missouri, that is home to the Kansas City Royals of Major League Baseball (MLB).  It is part of the Truman Sports Complex together with the adjacent Arrowhead Stadium, home of the Kansas City Chiefs of the National Football League.  The ballpark is named for Ewing Kauffman, the founder and first owner of the Royals.  It opened in 1973 as Royals Stadium and was named for Kauffman on July 2, 1993.  The ballpark's listed seating capacity since 2009 is 37,903."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 535,
+    "generation_tokens": 63,
+    "generation_speed": 251.20318350193187,
+    "prompt_eval_speed": 12854.705783416228,
+    "generation_latency_s": 0.4031593999825418,
+    "latency": 0.8051571999676526,
+    "total_prompt_tokens": 681,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22174880000000002,
+    "stage_route_s": 0.10128549998626113,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24275550001766533,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05777499999385327,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2200048230588436e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.40320459997747093,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8051682999357581,
+    "unaccounted_latency_s": 9.619991760700941e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Kansas City Wizards' first venue was the Walmart Center.\"",
+      "\"The Kansas City Wizards played at the Walmart Center for their first season.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

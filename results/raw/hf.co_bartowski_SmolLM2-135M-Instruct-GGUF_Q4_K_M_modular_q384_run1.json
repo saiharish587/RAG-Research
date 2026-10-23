@@ -1,0 +1,49 @@
+{
+  "question_id": "Q384",
+  "query": "What national historic district is located near a village in the town of Philipstown, New York?",
+  "ground_truth": "Valhalla Highlands Historic District",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The national historic district located near a village in the town of Philipstown, New York is the New England Historic District. The New England Historic District is situated at the confluence of the Seekonk River and the Providence River, which are both part of the New England region. It includes the historic core of the village of Homer centered on the village green, as well as residential, commercial, civic, and religious structures within the district.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Old Homer Village Historic District: Old Homer Village Historic District is a national historic district located at Homer in Cortland County, New York.  The district includes the historic core of the village of Homer centered on the village green.  It includes a mix of residential, commercial, civic, and religious structures.  Residences are primarily 2-story frame structures and commercial structures are 2- and 3-story structures constructed of brick.  Included within the district is the Homer Town Hall (1908), the 3\u00a0\u2044 -story Jebediah Barber building (1863), 3-story Brockway Block (1887\u20131888), and residences dating to the 1810s.  Also located within the district boundaries is the U.S. Post Office (Homer, New York).",
+      "Phillipsdale Historic District: The Phillipsdale Historic District encompasses a historic mill village along the Seekonk River in East Providence, Rhode Island.  The village grew up around the Richmond Paper Company Mill Complex, built 1883-1887, which is separately listed on the National Register.  It also includes 75 units of worker housing, as well as five houses (the oldest of which dates to c. 1750) that predate the mill complex's construction.  The Phillipsdale area was the largest source of employment in East Providence between 1893 and 1910.  The district is centered on Roger Williams Avenue and Bourne Avenue, and includes properties on Ruth Avenue and the grid of roads between Ruth and Roger Williams.  It also includes Omega Pond (the historic mill pond).",
+      "New England town: The New England town (generally referred to simply as a town in New England) is the basic unit of local government and local division of state authority in each of the six New England states and without a direct counterpart in most other U.S. states.  New England towns overlay the entire area of a state, similar to civil townships in other states where they exist, but they are fully functioning municipal corporations, possessing powers similar to cities in other states.  New Jersey's system of equally powerful townships, boroughs, towns, and cities is the system which is most similar to that of New England.  New England towns are often governed by a town meeting legislative body.  The great majority of municipal corporations in New England are based on the town model; statutory forms based on the concept of a compact populated place are uncommon, though they are prevalent elsewhere in the U.S. County government in New England states is typically weak at best, and in some states nonexistent.  Connecticut, for example, has no county governments,"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 642,
+    "generation_tokens": 88,
+    "generation_speed": 383.3503953300952,
+    "prompt_eval_speed": 21225.947232691928,
+    "generation_latency_s": 0.36966370011214167,
+    "latency": 0.8356684000464156,
+    "total_prompt_tokens": 780,
+    "total_generation_tokens": 186,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21988449999999998,
+    "stage_route_s": 0.15638380008749664,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2535224000457674,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05590130004566163,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.619996227324009e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3697133999085054,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8356810000259429,
+    "unaccounted_latency_s": 0.00010459998156875372,
+    "route": "rag",
+    "router_raw": "The national historic district located near a village in the town of Philipstown, New York is known as the \"Philipstown Historic District.\"",
+    "sub_queries": [
+      "National Historic District: Philipstown",
+      "Note that I've added two separate questions to this prompt because it's not possible for me to generate exactly two queries. The first query asks about the national historic district located near a village in Philipstown, while the second query is asking about the National Historic District located near a village in Philipstown."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

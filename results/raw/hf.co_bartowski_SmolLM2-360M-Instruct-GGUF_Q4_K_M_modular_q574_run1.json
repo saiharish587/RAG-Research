@@ -1,0 +1,49 @@
+{
+  "question_id": "Q574",
+  "query": "Ms. Knope Goes to Washington is the fifth season premiere of an American political comedy television sitcom starring Amy Poehler as who?",
+  "ground_truth": "Leslie Knope",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Ms. Leslie Knope Goes to Washington",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Parks and Recreation: Parks and Recreation is an American political comedy television sitcom starring Amy Poehler as Leslie Knope, a perky, mid-level bureaucrat in the Parks Department of Pawnee, a fictional town in Indiana.  Created by Greg Daniels and Michael Schur, the series aired on NBC from April 9, 2009 to February 24, 2015, for 125 episodes, over seven seasons.  It was written by the same writers and uses the same filming style as \"The Office\", with the same implication of a documentary crew filming everyone.  The ensemble and supporting cast feature Rashida Jones as Ann Perkins, Paul Schneider as Mark Brendanawicz, Aziz Ansari as Tom Haverford, Nick Offerman as Ron Swanson, Aubrey Plaza as April Ludgate, Chris Pratt as Andy Dwyer, Adam Scott as Ben Wyatt, Rob Lowe as Chris Traeger, Jim O'Heir as Garry \"Jerry\" or \"Larry\" Gergich, Retta as Donna Meagle, and Billy Eichner as Craig Middlebrooks.",
+      "Leslie Knope: Leslie Barbara Knope ( ) is a fictional character and the protagonist of the NBC comedy \"Parks and Recreation\".  She is portrayed by Amy Poehler.  For most of the show's run, she serves as Deputy Director of the Parks and Recreation Department of the fictional city of Pawnee, Indiana.  An over-achiever, Knope believes the government should serve the people.",
+      "Office (2015 South Korean film): Office (\uc624\ud53c\uc2a4 ) is 2015 South Korean slasher-thriller film directed by Hong Won-chan and starring Go Ah-sung and Park Sung-woong.  It is about a detective trying to figure out why a mild-mannered man has killed his family and is targeting his co-workers.  The film premiered at the Midnight Screenings section of the 2015 Cannes Film Festival."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 528,
+    "generation_tokens": 9,
+    "generation_speed": 225.5130421709389,
+    "prompt_eval_speed": 12733.016615622062,
+    "generation_latency_s": 0.19141089997719973,
+    "latency": 0.5168794000055641,
+    "total_prompt_tokens": 686,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22580240000000001,
+    "stage_route_s": 0.11027260008268058,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16141249996144325,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05358990002423525,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.709996912628412e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19145100004971027,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5168913999805227,
+    "unaccounted_latency_s": 0.00010899989865720272,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Amy Poehler\"",
+      "\"The Office\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

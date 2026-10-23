@@ -1,0 +1,49 @@
+{
+  "question_id": "Q319",
+  "query": "Are both Duke Energy and Affiliated Managers Group based in Massachusetts?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, I do not know if both Duke Energy and Affiliated Managers Group are based in Massachusetts. The context provided does not mention this information.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Duke Energy: Duke Energy, headquartered in Charlotte, North Carolina, is an electric power holding company in the United States, with assets also in Canada and Latin America.",
+      "Progress Energy Inc: Progress Energy, headquartered in Raleigh, North Carolina, is a subsidiary of Duke Energy and prior to its merger with Duke Energy was a Fortune 500 energy company with more than 21,000 megawatts of generation capacity and $9 billion in annual revenues.  Progress Energy includes two major electric utilities that serve approximately 3.1 million customers in the Carolinas and Florida.  As an independent company, the last chairman and CEO of Progress Energy was William D. Johnson; his predecessor was Robert McGehee, who died on October 9, 2007 at the age of 64 of a stroke while on a business trip to London.",
+      "Duke Energy Florida: Duke Energy Florida, formerly Florida Power, was the generation, transmission, and distribution sector of Florida Progress Corporation.  The company distributed power over much of central and north Florida.  Florida Progress merged with Carolina Power & Light in 2000 to form Progress Energy.  Progress Energy merged with Duke Energy in 2012.  Today the Florida operations operate as Duke Energy Florida."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 335,
+    "generation_tokens": 30,
+    "generation_speed": 237.13727877068033,
+    "prompt_eval_speed": 38373.424971363114,
+    "generation_latency_s": 0.2513740999856964,
+    "latency": 0.6386473999591544,
+    "total_prompt_tokens": 461,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23142269999999998,
+    "stage_route_s": 0.09510279993992299,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2331730000441894,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05880310002248734,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.859998054802418e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2514115999219939,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.638655599905178,
+    "unaccounted_latency_s": 0.00010710000060498714,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Is Duke Energy's headquarters located in Boston, Massachusetts?",
+      "Query 2: Does Duke Energy have a presence in New York City or other major cities?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

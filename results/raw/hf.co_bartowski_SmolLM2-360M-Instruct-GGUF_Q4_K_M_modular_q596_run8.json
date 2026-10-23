@@ -1,0 +1,49 @@
+{
+  "question_id": "Q596",
+  "query": "Who was born first, Krzysztof Zanussi or Thom Andersen?",
+  "ground_truth": "Krzysztof Zanussi",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Krzysztof Zanussi was born first.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thom Andersen: Thom Andersen (born 1943, Chicago) is a filmmaker, film critic and teacher.",
+      "Krzysztof Zanussi: Krzysztof Zanussi, (born 17 June 1939) is a Polish film and theatre director, producer and screenwriter.  He is a professor of European film at the European Graduate School in Saas-Fee, Switzerland where he conducts a summer workshop.  He is also a professor at the Silesian University in Katowice.",
+      "Krzysztof Ksi\u0105\u017cek: Krzysztof Ksi\u0105\u017cek \u00a0\u00a0 was born on 5 August 1992 in Cracow, is a Polish classical pianist from Krakow, he is a winner of highest prizes at national and international piano competitions.  His nomation is Polityka Passport Award for Classical Music.  Since 2005, he has trained with Stefan Wojtas, first at music secondary school, now as a student of the Feliks Nowowiejski Academy of Music in Bydgoszcz.  He has won prizes in Polish and international competitions, including the Ricard Vines in Leida, Spain, the Lviv international competitions in Ukraine, the \"Citt\u00e0 di Avezzano\" in Italy (2011, First Prize) and the Polish Fr\u00e9d\u00e9ric Chopin Piano Competition in Warsaw (2011, Third Prize; 2015, Second Prize ex aequo), XV International Pianist Ricard Vines (Lleida, Spain 2009), The International Chopin Piano Competition (Lviv, Ukraine 2010), VI Concorso Internazionale Pianistico \"Citta di Avezzano\" (Avezzano, He participated in the 67th International Chopin Festival in Duszniki-Zdr\u00f3j, the 18th International Festival of Young Winners of Silesian Music Contests, 5th National Promotion Festival \"August Talents\" He is a scholarship recipient of the \"Sapere Auso\" Malopolska Foundation, the Prime Minister, the Ministry of Culture and National Heritage, and the Pro Musica Bona Foundation.  His nationality is Polish."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 583,
+    "generation_tokens": 16,
+    "generation_speed": 236.86859714573342,
+    "prompt_eval_speed": 76308.90052356021,
+    "generation_latency_s": 0.19128749996889383,
+    "latency": 0.5235866999719292,
+    "total_prompt_tokens": 721,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2253306,
+    "stage_route_s": 0.10089790006168187,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17738210002426058,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05383249989245087,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8399979025125504e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1913291000528261,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5235975000541657,
+    "unaccounted_latency_s": 9.819993283599615e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Krzysztof Zanussi\"",
+      "\"Thom Andersen\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

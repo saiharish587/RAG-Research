@@ -1,0 +1,48 @@
+{
+  "question_id": "Q311",
+  "query": "What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",
+  "ground_truth": "2013",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The year of the event that occurred first, making today a perfect day was produced in 2015.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Making Today a Perfect Day: \"Making Today a Perfect Day\" is a song from the 2015 Walt Disney Animation Studios computer-animated short film \"Frozen Fever\", with music and lyrics by Kristen Anderson-Lopez and Robert Lopez and performed throughout most of the short.  It was released as a single in the United States on March 12, 2015.",
+      "Ice Age (2002 film): Ice Age is a 2002 American computer-animated buddy comedy road film directed by Chris Wedge and co-directed by Carlos Saldanha from a story by Michael J. Wilson.  Produced by Blue Sky Studios as its first feature film, it was released by 20th Century Fox on March 15, 2002.  The film features the voices of Ray Romano, John Leguizamo, Denis Leary and Chris Wedge.",
+      "Ice trade: The ice trade, also known as the frozen water trade, was a 19th-century industry, centering on the east coast of the United States and Norway, involving the large-scale harvesting, transport and sale of natural ice for domestic consumption and commercial purposes.  Ice was cut from the surface of ponds and streams, then stored in ice houses, before being sent on by ship, barge or railroad to its final destination around the world.  Networks of ice wagons were typically used to distribute the product to the final domestic and smaller commercial customers.  The ice trade revolutionized the U.S. meat, vegetable and fruit industries, enabled significant growth in the fishing industry, and encouraged the introduction of a range of new drinks and foods."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 435,
+    "generation_tokens": 24,
+    "generation_speed": 399.4208397823156,
+    "prompt_eval_speed": 62806.8149003754,
+    "generation_latency_s": 0.177240600110963,
+    "latency": 0.5036203999770805,
+    "total_prompt_tokens": 585,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23268660000000002,
+    "stage_route_s": 0.1557283999864012,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13514580007176846,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03533220000099391,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2899977415800095e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17727979994378984,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5036329000722617,
+    "unaccounted_latency_s": 0.00010460009798407555,
+    "route": "rag",
+    "router_raw": "The year of the event that occurred first, making today a perfect day was produced, or Frozen was produced.",
+    "sub_queries": [
+      "The year of the event that occurred first, making today a perfect day was produced, or Frozen was produced."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

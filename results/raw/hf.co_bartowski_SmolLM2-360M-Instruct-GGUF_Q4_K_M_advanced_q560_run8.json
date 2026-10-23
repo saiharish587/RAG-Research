@@ -1,0 +1,42 @@
+{
+  "question_id": "Q560",
+  "query": "Who is the psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\"?",
+  "ground_truth": "James G. Kiernan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\" was Henry Murray, a Canadian-born American writer and psychologist.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mary MacLane: Mary MacLane (May 1, 1881 \u2013 \"c\".  August 6, 1929) was a controversial Canadian-born American writer whose frank memoirs helped usher in the confessional style of autobiographical writing.  MacLane was known as the \"Wild Woman of Butte\".",
+      "Henry Murray: Henry Alexander Murray (May 13, 1893 \u2013 June 23, 1988) was an American psychologist at Harvard University.  He was Director of the Harvard Psychological Clinic in the School of Arts and Sciences after 1930.  Murray developed a theory of personality called personology, based on \"need\" and \"press\".  Murray was also a co-developer, with Christiana Morgan, of the Thematic Apperception Test (TAT), which he referred to as \"the second best-seller that Harvard ever published, second only to the Harvard Handbook of Music.\"",
+      "Beatrice Edgell: Beatrice Edgell (26 October 1871 \u2013 10 August 1948) was a British psychologist, researcher and university teacher.  She taught at Bedford College in the University of London from 1897 to 1933.  She was the first British woman to earn a PhD in psychology and the first British woman to be named a professor of psychology.  She was also the first female president of the British Psychological Society, the Aristotelian Society, the Mind Association and the Psychological Division of the British Association for the Advancement of Science."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 414,
+    "generation_tokens": 34,
+    "generation_speed": 258.79523404828234,
+    "prompt_eval_speed": 57531.9622012229,
+    "generation_latency_s": 1.020379599998705,
+    "latency": 3.4249826000304893,
+    "total_prompt_tokens": 496,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12219350000000001,
+    "stage_rewrite_s": 1.1912909999955446,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0458817000035197,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16730199998710304,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0204290999099612,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4249961000168696,
+    "unaccounted_latency_s": 9.290012530982494e-05,
+    "rewritten_query": "The psychologist who wrote about the Wild Woman of Buttle was Dr. Laura Buttle.",
+    "query_was_rewritten": true
+  }
+}

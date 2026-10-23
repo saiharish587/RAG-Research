@@ -1,0 +1,49 @@
+{
+  "question_id": "Q34",
+  "query": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, Freakonomics and In the Realm of the Hackers are not both American documentaries.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Freakonomics (film): Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner.  The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year.  The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes.",
+      "In the Realm of the Hackers: In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990.  The storyline is centered on the Australian teenagers going by the hacker names \"Electron\" and \"Phoenix\", who were members of an elite computer hacking group called 'The Realm' and hacked into some of the most secure computer networks in the world, including those of the US Naval Research Laboratory, Lawrence Livermore National Laboratory, a government lab charged with the security of the US nuclear stockpile, and NASA.  The film runs for 55 minutes and was inspired by the book \"Underground\", by Melbourne-based writer and academic Suelette Dreyfus.",
+      "Hackers (film): Hackers is a 1995 American crime film directed by Iain Softley and starring Jonny Lee Miller, Angelina Jolie, Renoly Santiago, Matthew Lillard, Jesse Bradford, Lorraine Bracco, and Fisher Stevens.  The film follows a group of high school hackers and their involvement in a corporate extortion conspiracy.  Made in the 1990s when the internet was unfamiliar to the general public, it reflects the ideals laid out in the Hacker Manifesto quoted in the film: \"This is our world now... the world of the electron and the switch [...] We exist without skin color, without nationality, without religious bias... and you call us criminals.  [...] Yes, I am a criminal.  My crime is that of curiosity.\"  \"Hackers\" has achieved cult classic status."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 549,
+    "generation_tokens": 22,
+    "generation_speed": 239.29169657812872,
+    "prompt_eval_speed": 73444.8160535117,
+    "generation_latency_s": 0.21311709994915873,
+    "latency": 0.6024985000258312,
+    "total_prompt_tokens": 685,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2248413,
+    "stage_route_s": 0.09162279998417944,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2351516999769956,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06241739995311946,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1200040616095066e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2131661999737844,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6025105000007898,
+    "unaccounted_latency_s": 0.00010190007742494345,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, both \"Freakonomics\" and \"In the Realm of the Hackers\" are American documentaries.",
+      "No, they are not."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

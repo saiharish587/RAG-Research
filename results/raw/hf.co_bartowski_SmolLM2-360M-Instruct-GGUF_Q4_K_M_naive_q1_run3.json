@@ -1,0 +1,36 @@
+{
+  "question_id": "Q1",
+  "query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, Scott Derrickson and Ed Wood were not of the same nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ed Wood: Edward Davis Wood Jr. (October 10, 1924 \u2013 December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+      "Scott Derrickson: Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.  He lives in Los Angeles, California.  He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+      "Ed Wood (film): Ed Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood.  The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau.  Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 310,
+    "generation_tokens": 16,
+    "generation_speed": 236.5988909426987,
+    "prompt_eval_speed": 65608.4656084656,
+    "generation_latency_s": 0.17646180000156164,
+    "latency": 0.19241040002088994,
+    "total_prompt_tokens": 310,
+    "total_generation_tokens": 16,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0964876,
+    "stage_retrieve_s": 0.015873600030317903,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.17649530002381653,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.19241730007342994,
+    "unaccounted_latency_s": 4.880002234131098e-05
+  }
+}

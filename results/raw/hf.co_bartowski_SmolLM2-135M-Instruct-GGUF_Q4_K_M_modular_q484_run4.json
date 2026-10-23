@@ -1,0 +1,49 @@
+{
+  "question_id": "Q484",
+  "query": "Were Goo Goo Dolls and Echosmith formed in the same city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "No, the Goo Goo Dolls were originally from Buffalo, New York but later signed to Warner Bros. Records.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Goo Goo Dolls: The Goo Goo Dolls are an American rock band formed in 1985 in Buffalo, New York, by vocalist and guitarist John Rzeznik, vocalist and bassist Robby Takac, and drummer George Tutuska.  Mike Malinin was the band's drummer from January 1995 until December 27, 2013 (but not made an official member until 1998).  Although renowned for their commercially successful 1998 single \"Iris\", they have had several other notable and popular singles including \"Name\" and \"Naked\" from 1995's \"A Boy Named Goo\". \" Slide\", \"Black Balloon\", \"Dizzy\", and \"Broadway\" from 1998's \"Dizzy Up the Girl\", \"Here Is Gone\" from 2002's \"Gutterflower\", \"Better Days\", \"Give a Little Bit\", and \"Stay with You\" from 2006's \"Let Love In\" (although \"Give A Little Bit\" was originally released on the 2004 live CD/DVD album \"\"), and \"Home\" from 2010's \"Something for the Rest of Us\".  The Goo Goo Dolls have had 19 top ten singles on various charts, and have sold more than 12 million albums worldwide.",
+      "Echosmith: Echosmith is an American, Corporate indie pop band formed in February 2009 in Chino, California.  Originally formed as a quartet of siblings, the band currently consists of Sydney, Noah and Graham Sierota, following the departure of eldest sibling Jamie in late 2016.  Echosmith started first as \"Ready Set Go!\"  until they signed to Warner Bros.  Records in May 2012.  They are best known for their hit song \"Cool Kids\", which reached number 13 on the \"Billboard\" Hot 100 and was certified double platinum by the RIAA with over 1,200,000 sales in the United States and also double platinum by ARIA in Australia.  The song was Warner Bros.  Records' fifth-biggest-selling-digital song of 2014, with 1.3 million downloads sold.  The band's debut album, \"Talking Dreams\", was released on October 8, 2013.",
+      "Goo Goo Dolls (album): is the eponymous debut studio album by American rock band Goo Goo Dolls.  All of the songs are sung by bassist Robby Takac, who was originally the band's lead vocalist.  It is the hardest to find of all the band's studio albums, being only an LP, out of print, and not in wide circulation to begin with.  The song \"I'm Addicted\" was the only song from \"Goo Goo Dolls\" represented on the band's 2001 compilation album, \"What I Learned About Ego, Opinion, Art & Commerce\".  The song \"Torn Apart\" was also included on the compilation album \"Volume Two\", which consisted of other album tracks, b-sides and rarities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 787,
+    "generation_tokens": 27,
+    "generation_speed": 352.39760891696466,
+    "prompt_eval_speed": 79833.6376546967,
+    "generation_latency_s": 0.20291669992730021,
+    "latency": 0.8466992999892682,
+    "total_prompt_tokens": 921,
+    "total_generation_tokens": 182,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2370152,
+    "stage_route_s": 0.09866110002622008,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4883980000158772,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05655119998846203,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.979991354048252e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20295529998838902,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8467112999642268,
+    "unaccounted_latency_s": 9.660003706812859e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Goo Goo Dolls was founded in 1985 in San Francisco, California by two friends named Goo Goo and Echoesmith. The duo's first album, \"The Goo Goo Dolls,\" released in 2003, marked a significant milestone for the music industry.",
+      "Echosmith is another famous band that formed in San Francisco around the same time as Goo Goo Dolls. They were both part of the same city and had similar musical influences."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

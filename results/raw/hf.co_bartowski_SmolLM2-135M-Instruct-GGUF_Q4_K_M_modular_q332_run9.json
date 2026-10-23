@@ -1,0 +1,48 @@
+{
+  "question_id": "Q332",
+  "query": "The Column of Saint Zanobi  is a monumental marble column located just north of religious building with the status of what?",
+  "ground_truth": "a minor basilica",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Column of Saint Zanobi is a monumental marble column located in Florence, Italy that commemorates the visit of Russian Emperor Alexander II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Colonna di San Zanobi, Florence: The Column of Saint Zanobi (it:Colonna di San Zanobi) is a monumental marble column, surmounted by a cross above a crown of fire, located just north of the Bapstistery of San Giovanni in Florence, Italy.",
+      "Alexander II Column in Odessa: Alexander II Column, also known as Alexander's column or Monument to Alexander II of Russia, is a triumphal column located in Shevchenko, Odessa and is commemorated to the visit of Russian Emperor Alexander II the city of Odessa in 1875.",
+      "Column of the Vicariate: The Column of the Vicariate or Colonna della Vicaria was a simple white marble column on a pedestal that formerly stood outside the Castel Capuano along Via dei Tribunali in Naples, Italy.  It was used by the government first as a place for punishment of debtors."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 282,
+    "generation_tokens": 28,
+    "generation_speed": 391.84952978056424,
+    "prompt_eval_speed": 21451.392058420814,
+    "generation_latency_s": 0.19180909998249263,
+    "latency": 0.5408069000113755,
+    "total_prompt_tokens": 432,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2287437,
+    "stage_route_s": 0.14526690007187426,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.167137699900195,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036426100065000355,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.9100064896047115e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1918488999363035,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5408184999832883,
+    "unaccounted_latency_s": 0.0001004999503493309,
+    "route": "rag",
+    "router_raw": "The Column of Saint Zanobi is a monumental marble column located just north of religious buildings.",
+    "sub_queries": [
+      "The Column of Saint Zanobi is a monumental marble column located just north of religious buildings, and it's considered a symbol of the Church of Saint Zanibbi."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

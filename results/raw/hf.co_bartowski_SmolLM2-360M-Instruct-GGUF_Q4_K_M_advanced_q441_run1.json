@@ -1,0 +1,42 @@
+{
+  "question_id": "Q441",
+  "query": "Ronald Reagan and George H. W. Bush both held which position in office?",
+  "ground_truth": "President of the United States",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "George H. W. Bush held the position of President of the United States, as he was the first sitting vice president to be elected president after a landslide victory over Democrat nominee Michael Dukakis in the 1988 presidential election.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States.",
+      "Presidency of George H. W. Bush: The presidency of George H. W. Bush began at noon EST on January 20, 1989, when George H. W. Bush was inaugurated as 41st President of the United States, and ended on January 20, 1993.  Bush, a Republican, took office after a landslide victory over Democrat nominee Michael Dukakis in the 1988 presidential election.  He was the first sitting vice president to be elected president since Martin Van Buren in 1836.  Later, Bush, the 41st president, and his oldest son, George W. Bush, the country's 43rd (2001\u20132009), would become only the second father and son pair to become president.  (John Adams and John Quincy Adams were the first.)  Bush was denied a second term in the 1992 presidential election, which was won by Democrat Bill Clinton.",
+      "Inauguration of George H. W. Bush: The inauguration of George H. W. Bush as the 41st President of the United States was held on Friday, January 20, 1989.  The inauguration marked the commencement of the four-year term of George H. W. Bush as President and Dan Quayle as Vice President.  Chief Justice William Rehnquist administered the presidential oath of office to Bush and Associate Justice Sandra Day O'Connor administered the vice presidential oath of office to Quayle."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 587,
+    "generation_tokens": 51,
+    "generation_speed": 250.31166256024656,
+    "prompt_eval_speed": 13331.819214172156,
+    "generation_latency_s": 1.1653784000081941,
+    "latency": 3.5375562000554055,
+    "total_prompt_tokens": 663,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1275305,
+    "stage_rewrite_s": 1.2670914999907836,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9844482999760658,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12052399991080165,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1654133999254555,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.537565500009805,
+    "unaccounted_latency_s": 8.870020974427462e-05,
+    "rewritten_query": "George H.W. Bush was the 41st President of the United States, serving from 1989 to 1993.",
+    "query_was_rewritten": true
+  }
+}

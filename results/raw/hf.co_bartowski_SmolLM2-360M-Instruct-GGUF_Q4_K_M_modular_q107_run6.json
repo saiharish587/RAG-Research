@@ -1,0 +1,49 @@
+{
+  "question_id": "Q107",
+  "query": "hree Men on a Horse is a play by a playwright born in which year ?",
+  "ground_truth": "1887",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Three Men on a Horse was written by George Abbott and John Cecil Holm, both of whom were born in Ireland. Therefore, the answer to the question is 1856.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Three Men on a Horse: Three Men on a Horse is a play by George Abbott and John Cecil Holm.  The comedy focuses on a man who discovers he has a talent for choosing the winning horse in a race as long as he never places a bet himself.",
+      "George Bernard Shaw: George Bernard Shaw ( ; 26 July 1856 \u2013 2 November 1950), known at his insistence simply as Bernard Shaw, was an Irish playwright, critic and polemicist whose influence on Western theatre, culture and politics extended from the 1880s to his death and beyond.  He wrote more than sixty plays, including major works such as \"Man and Superman\" (1902), \"Pygmalion\" (1912)\" and Saint Joan\" (1923).  With a range incorporating both contemporary satire and historical allegory, Shaw became the leading dramatist of his generation, and in 1925 was awarded the Nobel Prize in Literature.",
+      "William Shakespeare: William Shakespeare ( ; 26 April 1564 (baptised)\u00a0\u2013 23 April 1616) was an English poet, playwright, and actor, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist.  He is often called England's national poet, and the \"Bard of Avon\".  His extant works, including collaborations, consist of approximately 38 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship.  His plays have been translated into every major living language and are performed more often than those of any other playwright."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 39,
+    "generation_speed": 240.66200564013008,
+    "prompt_eval_speed": 50286.516196936034,
+    "generation_latency_s": 0.2823233000235632,
+    "latency": 0.8094166000373662,
+    "total_prompt_tokens": 564,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2178193,
+    "stage_route_s": 0.09324389998801053,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.37883960001636297,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054817199939861894,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3799943998456e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2823655999964103,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8094276000047103,
+    "unaccounted_latency_s": 0.00010820012539625168,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The play \"Hree Men on a Horse\" was written by a playwright named John Millington Synge, who was born in 1879.",
+      "Query 2: The play \"Hree Men on a Horse\" is set during the Victorian era and tells the story of two men who are traveling together on horseback."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q567",
+  "query": "On what date will the comedy film directed by Kevin Tent and starring the Bulgarian-Canadian actress known for portraying the role of Mia Jones be released on video on demand services?",
+  "ground_truth": "September 25, 2017",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "On which date will the comedy film directed by Kevin Tent and starring the Bulgarian-Canadian actress known for portraying the role of Mia Jones be released on video on demand services?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Crash Pad: Crash Pad is an upcoming American comedy film directed by Kevin Tent, from a screenplay by Jeremy Catalino.  It stars Domhnall Gleeson, Christina Applegate, Thomas Haden Church, and Nina Dobrev.  It will be released on video on demand services on September 25, 2017 and will then be released by Vertical Entertainment in select theaters on October 27, 2017.  A hopeless romantic who thinks he's found true love with an older woman, only to learn that she's married and that his fling is merely an instrument of revenge against her neglectful husband.",
+      "Mamma Mia: Here We Go Again!: Mamma Mia: Here We Go Again!  is an upcoming American romantic comedy musical film directed and written by Ol Parker.  It is based on the musical of same name and a sequel to 2008 film \"Mamma Mia! \" The film stars Amanda Seyfried, Dominic Cooper, Meryl Streep, Lily James, Colin Firth, Pierce Brosnan, and Jeremy Irvine.  It is scheduled to be released on July 20, 2018, 10 years after the original, by Universal Pictures.  The film is currently in production.",
+      "Nina Dobrev: Nina Dobrev ( ; born Nikolina Konstantinova Dobreva; Bulgarian: \u041d\u0438\u043a\u043e\u043b\u0438\u043d\u0430 \u041a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0438\u043d\u043e\u0432\u0430 \u0414\u043e\u0431\u0440\u0435\u0432\u0430 ; January 9, 1989) is a Bulgarian-Canadian actress.  She is known for portraying the role of Mia Jones in the drama series \"\" and then Elena Gilbert on The CW's supernatural drama series \"The Vampire Diaries\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 469,
+    "generation_tokens": 36,
+    "generation_speed": 341.3195794184294,
+    "prompt_eval_speed": 22991.32310407373,
+    "generation_latency_s": 0.23869129992090166,
+    "latency": 0.582981999963522,
+    "total_prompt_tokens": 639,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2360719,
+    "stage_route_s": 0.12198429997079074,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18399180006235838,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03814059996511787,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.529999569058418e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23873520002234727,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5829947999445722,
+    "unaccounted_latency_s": 9.829993359744549e-05,
+    "route": "rag",
+    "router_raw": "The answer to this question requires retrieval from internal files/documents.",
+    "sub_queries": [
+      "On what date will the comedy film, directed by Kevin Tent and starring Mia Jones, be released on video on demand services?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

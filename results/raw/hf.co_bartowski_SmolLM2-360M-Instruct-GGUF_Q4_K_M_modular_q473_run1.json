@@ -1,0 +1,49 @@
+{
+  "question_id": "Q473",
+  "query": "Eric Ambler and Carol Shields are both best Known for what profession?",
+  "ground_truth": "author",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Eric Ambler is known for his work as a British author of thrillers, particularly in the spy novels genre. He also worked as a screenwriter.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Eric Ambler: Eric Clifford Ambler OBE (28 June 1909 \u2013 22 October 1998) was an influential British author of thrillers, in particular spy novels, who introduced a new realism to the genre.  He also worked as a screenwriter.  Ambler used the pseudonym Eliot Reed for books co-written with Charles Rodda.",
+      "Carol Shields: Carol Ann Shields, {'1': \", '2': \", '3': \", '4': \"} (n\u00e9e Warner; June 2, 1935 \u2013 July 16, 2003) was an American-born Canadian novelist and short story writer.  She is best known for her 1993 novel \"The Stone Diaries\", which won the U.S. Pulitzer Prize for Fiction as well as the Governor General's Award in Canada.",
+      "Helen Hunt: Helen Elizabeth Hunt (born June 15, 1963) is an American actress, director, and screenwriter.  She starred in the sitcom \"Mad About You\" for seven years, and played single mother Carol Connelly in the 1997 romantic comedy film \"As Good as It Gets\", for which she won the Academy Award for Best Actress.  Some of her other notable films include \"Twister\" (1996), \"Cast Away\" (2000), \"What Women Want\" (2000), \"Pay It Forward\" (2000), and \"The Sessions\" (2012), the latter garnered her a second Academy Award nomination.  She made her directorial debut in 2007 with \"Then She Found Me\" (2007).  Hunt has also won four Emmy Awards, four Golden Globe Awards, and two Screen Actors Guild Awards."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 468,
+    "generation_tokens": 33,
+    "generation_speed": 233.49111672433193,
+    "prompt_eval_speed": 14908.731802108883,
+    "generation_latency_s": 0.2871177000924945,
+    "latency": 0.8168972000712529,
+    "total_prompt_tokens": 598,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2238974,
+    "stage_route_s": 0.10389200004283339,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3642869999166578,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06140710006002337,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8699981309473515e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28715789993293583,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8169080000370741,
+    "unaccounted_latency_s": 0.00010590010788291693,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Eric Ambler is an English author known for his works in science fiction, fantasy, and adventure genres.",
+      "Query 2: Carol Shields is a British actress who has appeared in numerous films and television shows across various genres, including drama, comedy, and horror."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

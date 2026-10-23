@@ -1,0 +1,49 @@
+{
+  "question_id": "Q80",
+  "query": "In which year was the King who made the 1925 Birthday Honours born?",
+  "ground_truth": "1865",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The King who made the 1925 Birthday Honours was born on June 3, 1865.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1925 Birthday Honours: The 1925 Birthday Honours were appointments by King George V to various orders and honours to reward and highlight good works by citizens of the British Empire.  The appointments were made to celebrate the official birthday of The King, and were published in \"The London Gazette\" on 3 June 1925.",
+      "1951 Birthday Honours: The King's Birthday Honours 1951 were appointments in many of the Commonwealth realms of King George VI to various orders and honours to reward and highlight good works by citizens of those countries.  The appointments were made to celebrate the official birthday of the King, and were published on 1 June 1951 for the British Empire, Australia, New Zealand, Ceylon, and Pakistan.  These were the last Birthday Honours awarded by George VI, who died eight months later.",
+      "George V: George V (George Frederick Ernest Albert; 3 June 1865 \u2013 20 January 1936) was King of the United Kingdom and the British Dominions, and Emperor of India, from 6 May 1910 until his death in 1936."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 327,
+    "generation_tokens": 27,
+    "generation_speed": 354.3307086614173,
+    "prompt_eval_speed": 19252.281424786575,
+    "generation_latency_s": 0.19730770005844533,
+    "latency": 0.7031454000389203,
+    "total_prompt_tokens": 465,
+    "total_generation_tokens": 124,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23171429999999998,
+    "stage_route_s": 0.16207920003216714,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28758929995819926,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05599620006978512,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.700000863522291e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19735070003662258,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7031560000032187,
+    "unaccounted_latency_s": 9.419990237802267e-05,
+    "route": "rag",
+    "router_raw": "The King who made the 1925 Birthday Honours was born in 1876.",
+    "sub_queries": [
+      "Here are the two search queries related to the year when the King who made the 1925 Birthday Honours was born:",
+      "Who was the King who made the 1925 Birthday Honours in which year?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

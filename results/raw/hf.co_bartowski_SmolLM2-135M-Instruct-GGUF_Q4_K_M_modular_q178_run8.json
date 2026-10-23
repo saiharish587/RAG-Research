@@ -1,0 +1,49 @@
+{
+  "question_id": "Q178",
+  "query": "When was the Western Germanic language spoken from which the small settlement situated on the river Leda opposite Leer derives its name?",
+  "ground_truth": "between the 8th and 16th centuries",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Western Germanic language spoken from which the small settlement situated on the river Leda opposite Leer derives its name is Old Low German.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "English language: English is a West Germanic language that was first spoken in early medieval England and is now a global \"lingua franca\".  Named after the Angles, one of the Germanic tribes that migrated to England, it ultimately derives its name from the Anglia (Angeln) peninsula in the Baltic Sea.  It is closely related to the Frisian languages, but its vocabulary has been significantly influenced by other Germanic languages, particularly Norse (a North Germanic language), as well as by Latin and Romance languages, particularly French.",
+      "German language: German (\"Deutsch\" ] ) is a West Germanic language that is mainly spoken in Central Europe.  It is the most widely spoken and (co-) official language in Germany, Austria, Switzerland, South Tyrol (Italy), the German-speaking Community of Belgium, and Liechtenstein.  It is also one of the three official languages of Luxembourg.  The languages which are most similar to German are the other members of the West Germanic language branch: Afrikaans, Dutch, English, the Frisian languages, Low German/Low Saxon, Luxembourgish, and Yiddish.  German is the second most widely spoken Germanic language, after English.",
+      "Old Saxon: Old Saxon, also known as Old Low German, was a Germanic language and the earliest recorded form of Low German (spoken nowadays in Northern Germany, the northeastern Netherlands, southern Denmark, the Americas and parts of Eastern Europe).  It is a West Germanic language, closely related to the Anglo-Frisian languages.  It has been documented from the 8th century until the 12th century, when it gradually evolved into Middle Low German.  It was spoken throughout modern northwestern Germany, primarily in the coastal regions and in the eastern Netherlands by Saxons, a Germanic tribe who inhabited the region of Saxony.  It partially shares Anglo-Frisian's (Old Frisian, Old English) Ingvaeonic nasal spirant law which sets it apart from Low Franconian and Irminonic languages, such as Dutch, Luxembourgish and German."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 509,
+    "generation_tokens": 28,
+    "generation_speed": 347.1361269526407,
+    "prompt_eval_speed": 63792.45519488658,
+    "generation_latency_s": 0.200264299986884,
+    "latency": 0.6919504000106826,
+    "total_prompt_tokens": 659,
+    "total_generation_tokens": 124,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2414567,
+    "stage_route_s": 0.16828850004822016,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26709860004484653,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05612160009332001,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.950002767145634e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2003031000494957,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6919609000906348,
+    "unaccounted_latency_s": 0.00010039971675723791,
+    "route": "rag",
+    "router_raw": "The user's question requires retrieving information from internal files/documents, specifically the document \"Leir-Gothic.\"",
+    "sub_queries": [
+      "The answer is: \"When was the Western Germanic language spoken.\"",
+      "This query uses a combination of two search queries to generate exactly two questions related to the user's question. The first query asks about when the Western Germanic language was spoken, while the second query asks about the name of the small settlement situated on the river Leda opposite Leer."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q119",
+  "query": "Were the bands Skin Yard and Ostava from the U.S.?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, the bands Ostava and Skin Yard are not from the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ostava: Ostava are an alternative rock band from Bulgaria.  They formed in 1991, but it was not until 2000 that they released a long-playing record (and subsequently received critical acclaim.",
+      "Skin Yard: Skin Yard was an American grunge band from Seattle, Washington, who were active from 1985 to 1993.  The group never gained a mainstream audience, but were an influence on several of their grunge contemporaries, including Soundgarden, Screaming Trees, The Melvins, and Green River.",
+      "Skin Yard (album): Skin Yard was the first album released by the band Skin Yard in January, 1987.  1400 vinyl copies were released on translucent skin-tone vinyl."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 237,
+    "generation_tokens": 17,
+    "generation_speed": 282.31699216155175,
+    "prompt_eval_speed": 59893.858984078855,
+    "generation_latency_s": 0.9762024000519887,
+    "latency": 3.3692246000282466,
+    "total_prompt_tokens": 311,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1226445,
+    "stage_rewrite_s": 1.1788348000263795,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.082206099992618,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13185480004176497,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9762512999586761,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.36923830001615,
+    "unaccounted_latency_s": 9.190000128000975e-05,
+    "rewritten_query": "Did you know that bands like Skin Yard and Ostava originated in the United States?",
+    "query_was_rewritten": true
+  }
+}

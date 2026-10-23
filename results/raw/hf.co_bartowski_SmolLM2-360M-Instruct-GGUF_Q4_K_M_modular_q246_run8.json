@@ -1,0 +1,48 @@
+{
+  "question_id": "Q246",
+  "query": "Jamie Harris is best known for his role as The Hook-Handed Man in a movie directed by who ?",
+  "ground_truth": "Brad Silberling",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Jamie Harris is best known for his role as The Hook-Handed Man in \"Lemony Snicket's A Series of Unfortunate Events\", Rodney in \"Rise of the Planet of the Apes\" and Gordon in Marvel's \"Agents of S.H.I.E.L.D.\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hook (film): Hook is a 1991 American fantasy adventure film directed by Steven Spielberg and written by James V. Hart and Malia Scotch Marmo.  It stars Robin Williams as Peter Banning / Peter Pan, Dustin Hoffman as Captain Hook, Julia Roberts as Tinker Bell, Bob Hoskins as Smee, Maggie Smith as Wendy, Caroline Goodall as Moira Banning, and Charlie Korsmo as Jack Banning.  It acts as a sequel to J. M. Barrie's 1911 novel \"Peter and Wendy\" focusing on an adult Peter Pan who has forgotten all about his childhood.  In his new life, he is known as Peter Banning, a successful but unimaginative and workaholic corporate lawyer with a wife (Wendy's granddaughter) and two children.  However, when Captain Hook, the enemy of his past, kidnaps his children, he returns to Neverland in order to save them.  Along the journey he reclaims the memories of his past.",
+      "A Single Man: A Single Man is a 2009 American drama film based on the novel of the same name by Christopher Isherwood.  It is directed by Tom Ford in his directorial debut and stars Colin Firth, who was nominated for an Academy Award for Best Actor for his portrayal of George Falconer, a depressed gay British university professor living in Southern California in 1962.",
+      "Jamie Harris (actor): Jamie Harris (born May 15, 1963) is a British actor.  He is best known for his role as The Hook-Handed Man in \"Lemony Snicket's A Series of Unfortunate Events\", Rodney in \"Rise of the Planet of the Apes\" and Gordon in Marvel's \"Agents of S.H.I.E.L.D.\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 478,
+    "generation_tokens": 68,
+    "generation_speed": 230.02658836742012,
+    "prompt_eval_speed": 59586.13812016953,
+    "generation_latency_s": 0.4172320000361651,
+    "latency": 0.6856737999478355,
+    "total_prompt_tokens": 622,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2214623,
+    "stage_route_s": 0.09266550000756979,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13966260000597686,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.035959500004537404,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3899985030293465e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4172643000492826,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6856819000095129,
+    "unaccounted_latency_s": 8.669996168464422e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Hook Handed Man\" directed by John Hughes"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

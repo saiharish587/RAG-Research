@@ -1,0 +1,42 @@
+{
+  "question_id": "Q119",
+  "query": "Were the bands Skin Yard and Ostava from the U.S.?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Yes, the bands Skin Yard and Ostava from the U.S. are indeed from Bulgaria. They formed in 1985 and were active until 2000, respectively. The band's first album, \"Skin Yard,\" released on translucent skin-tone vinyl in January 1987.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ostava: Ostava are an alternative rock band from Bulgaria.  They formed in 1991, but it was not until 2000 that they released a long-playing record (and subsequently received critical acclaim.",
+      "Skin Yard: Skin Yard was an American grunge band from Seattle, Washington, who were active from 1985 to 1993.  The group never gained a mainstream audience, but were an influence on several of their grunge contemporaries, including Soundgarden, Screaming Trees, The Melvins, and Green River.",
+      "Skin Yard (album): Skin Yard was the first album released by the band Skin Yard in January, 1987.  1400 vinyl copies were released on translucent skin-tone vinyl."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 237,
+    "generation_tokens": 66,
+    "generation_speed": 407.15607649599013,
+    "prompt_eval_speed": 93417.4221521482,
+    "generation_latency_s": 0.2386390999890864,
+    "latency": 0.6019435999915004,
+    "total_prompt_tokens": 311,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1288348,
+    "stage_rewrite_s": 0.1512160999700427,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07646519993431866,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1355051000136882,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.23867160000372678,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6019522999413311,
+    "unaccounted_latency_s": 9.470002260059118e-05,
+    "rewritten_query": "Did you know that the bands Skin Yard and Ostava were both popular American rock bands in the 1970s?",
+    "query_was_rewritten": true
+  }
+}

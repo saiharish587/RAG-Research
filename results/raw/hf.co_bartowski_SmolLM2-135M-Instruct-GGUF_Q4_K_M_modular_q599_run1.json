@@ -1,0 +1,48 @@
+{
+  "question_id": "Q599",
+  "query": "What movie is the the Spinning turtle attraction in the worlds 21st largest theme park based off of?",
+  "ground_truth": "Finding Nemo",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Spinning Turtle attraction in the world's 21st-largest theme park, Walt Disney Studios Park, is \"Jurassic World\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Crush's Coaster: Crush's Coaster is a spinning roller coaster at Walt Disney Studios Park in Disneyland Paris.  The attraction officially opened on June 9, 2007 as part of an expansion project in Toon Studio, an area within Walt Disney Studios Park formerly known as Animation Courtyard.  It is themed to the Disney-Pixar film \"Finding Nemo\" and named after Crush, a green sea turtle character from the film.  Most of the roller coaster is enclosed and features dark ride special effects.",
+      "Canada's Wonderland: Canada's Wonderland is a 330 acre theme park located in Vaughan, Ontario, a suburb approximately 40 km north of Downtown Toronto.  Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country's largest.  The park, currently owned by Cedar Fair, has been the most visited seasonal amusement park in North America for several consecutive years.  As a seasonal park, Canada's Wonderland is open daily from May to September, with weekend openings in late April, October and early November.  With sixteen roller coasters, Canada's Wonderland is ranked third in the world by number of roller coasters, after Six Flags Magic Mountain (19 coasters) and Cedar Point (17 coasters).  The 330 acre park includes a 20 acre water park named Splash Works.  The park holds Halloween Haunt, a Halloween-themed event, each fall, as well as special events throughout the season.",
+      "Jurassic World: Jurassic World is a 2015 American science-fiction adventure film, the first film in the sequel trilogy and the fourth installment of the \"Jurassic Park\" series.  The film was directed and co-written by Colin Trevorrow, produced by Frank Marshall and Patrick Crowley, and stars Chris Pratt and Bryce Dallas Howard.  The production companies were Steven Spielberg's Amblin Entertainment, also responsible for the rest of the \"Jurassic Park\" franchise, and Thomas Tull's Legendary Pictures.  Set 22 years after the events of \"Jurassic Park\", \"Jurassic World\" takes place on the same fictional Central American island of Isla Nublar, off the Pacific coast of Costa Rica, where a theme park populated with cloned dinosaurs has operated for ten years.  The park plunges into chaos when a genetically created dinosaur breaks loose and goes on a rampage across the island."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 624,
+    "generation_tokens": 32,
+    "generation_speed": 328.3364627902443,
+    "prompt_eval_speed": 16125.69774653711,
+    "generation_latency_s": 0.2527914000675082,
+    "latency": 0.6731085000792518,
+    "total_prompt_tokens": 770,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2543605,
+    "stage_route_s": 0.21437189995776862,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1696290000109002,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03614990005735308,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.840001929551363e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2528320000274107,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6731210000580177,
+    "unaccounted_latency_s": 9.029998909682035e-05,
+    "route": "rag",
+    "router_raw": "The Spinning Turtle attraction in the world's 21st largest theme park, based on the movie \"Spinning\" by the same name.",
+    "sub_queries": [
+      "The Spinning Turtle attraction in the world's 21st largest theme park is The Spinning Turtle."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

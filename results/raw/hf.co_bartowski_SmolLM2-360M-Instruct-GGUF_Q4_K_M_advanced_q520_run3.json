@@ -1,0 +1,42 @@
+{
+  "question_id": "Q520",
+  "query": "James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?",
+  "ground_truth": "Lord Chancellor of England",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "James Spedding was primarily known for his role as the editor of the works of Francis Bacon, a prominent English author and essayist. He also served as the attorney general under President Barack Obama in 2015 to replace Eric Holder.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Spedding: James Spedding (28 June 1808 \u2013 9 March 1881) was an English author, chiefly known as the editor of the works of Francis Bacon.",
+      "Loretta Lynch: Loretta Elizabeth Lynch (born May 21, 1959) is an American attorney who served as the 83rd Attorney General of the United States, appointed by President Barack Obama in 2015 to succeed Eric Holder.  Previously, she held the position for United States Attorney for the Eastern District of New York under both the Clinton (1999\u20132001) and Obama administrations (2010\u201315).  As U.S. Attorney, Lynch oversaw federal prosecutions in Brooklyn, Queens, Staten Island and Long Island.",
+      "Attorney General for England and Wales: Her Majesty's Attorney General for England and Wales, usually known simply as the Attorney General, is one of the Law Officers of the Crown.  Along with the subordinate Solicitor General for England and Wales, the Attorney General serves as the chief legal adviser of the Crown and its government in England and Wales.  The current Attorney General is Jeremy Wright, MP."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 340,
+    "generation_tokens": 52,
+    "generation_speed": 257.6936419049507,
+    "prompt_eval_speed": 44778.08507836165,
+    "generation_latency_s": 1.1151820999803022,
+    "latency": 3.5273912999546155,
+    "total_prompt_tokens": 426,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12455669999999999,
+    "stage_rewrite_s": 1.295150400022976,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.985867700073868,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1310805999673903,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1152163000078872,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5273998000193387,
+    "unaccounted_latency_s": 8.52999510243535e-05,
+    "rewritten_query": "James Spedding was primarily known for his role as the editor of the works of a lawyer who held office in both the Attorney General's Office and the Senate.",
+    "query_was_rewritten": true
+  }
+}

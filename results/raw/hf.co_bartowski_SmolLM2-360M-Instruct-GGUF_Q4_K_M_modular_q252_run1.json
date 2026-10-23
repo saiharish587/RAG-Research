@@ -1,0 +1,49 @@
+{
+  "question_id": "Q252",
+  "query": "What is Opry Mills in Nashville, Tennessee?",
+  "ground_truth": "super-regional shopping mall",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Opry Mills is a super-regional shopping mall owned by Simon Property Group, formerly by its initial owners Mills Corporation and Gaylord Entertainment. It opened in Nashville, Tennessee in 2000 on the former site of the Opryland USA theme park.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Opry Mills: Opry Mills is a super-regional shopping mall owned by Simon Property Group, formerly by its initial owners Mills Corporation and Gaylord Entertainment.  It opened in Nashville, Tennessee in 2000 on the former site of the Opryland USA theme park.",
+      "Grand Ole Opry: The Grand Ole Opry is a weekly country-music stage concert in Nashville, Tennessee, which was founded on November 28, 1925, by George D. Hay as a one-hour radio \"barn dance\" on WSM.  Currently owned and operated by Opry Entertainment (a division of Ryman Hospitality Properties, Inc.), it is the longest-running radio broadcast in US history, albeit not the longest-running one on a radio network.  Dedicated to honoring country music and its history, the Opry showcases a mix of famous singers and contemporary chart-toppers performing country, bluegrass, Americana, folk, gospel, and comedic performances and skits.  It attracts hundreds of thousands of visitors from around the world and millions of radio and Internet listeners.",
+      "Music City Queen: Music City Queen was a replica showboat formerly operating for entertainment purposes on the Cumberland River in the southern United States.  It was the smaller of two stern-wheel paddle steamers based at Opry Mills in Nashville, Tennessee; the other is the \"General Jackson\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 356,
+    "generation_tokens": 54,
+    "generation_speed": 235.80065238180492,
+    "prompt_eval_speed": 13707.596935042931,
+    "generation_latency_s": 0.365157000022009,
+    "latency": 0.9633286000462249,
+    "total_prompt_tokens": 476,
+    "total_generation_tokens": 142,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2229984,
+    "stage_route_s": 0.1022207000060007,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.44251000008080155,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05326920002698898,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.030003376305103e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3651988999918103,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9633401000173762,
+    "unaccounted_latency_s": 9.20998863875866e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Opry Mills is a historic music venue located in Nashville, Tennessee. It was founded in 1925 and has hosted numerous famous musical acts including Elvis Presley, Buddy Holly, and The Turtles.",
+      "Query 2: Opry Mills is also known as the \"Music Capital of the World\" due to its rich history and cultural significance within Nashville's music scene."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

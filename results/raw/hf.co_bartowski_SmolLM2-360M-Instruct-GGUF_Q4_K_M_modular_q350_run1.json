@@ -1,0 +1,48 @@
+{
+  "question_id": "Q350",
+  "query": "What year did the biographical-comedy-crime film directed by Steven Soderbergh about the highest-level corporate executive whistleblower come out?",
+  "ground_truth": "2009",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The year of the biographical-comedy-crime film directed by Steven Soderbergh about the highest-level corporate executive whistleblower is 2009.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Informant!: The Informant!  is a 2009 American biographical-comedy-crime film directed by Steven Soderbergh.  Written by Scott Z. Burns, the film stars Matt Damon as the titular informant named Mark Whitacre, as well as Scott Bakula, Joel McHale and Melanie Lynskey.  It depicts Whitacre's involvement as a whistle blower in the lysine price-fixing conspiracy of the mid-1990s as described in the 2000 nonfiction book \"The Informant\", by journalist Kurt Eichenwald.",
+      "1987 (2017 film): 1987 is an upcoming South Korean political drama film directed by Jang Joon-hwan, starring Kim Yoon-seok, Ha Jung-woo, Yoo Hae-jin and Kim Tae-ri.",
+      "Bubble (film): Bubble is a 2005 American drama film directed by Steven Soderbergh about three low-paid doll factory workers, one of whom is murdered.  Soderbergh also shot and edited the film under the pseudonyms Peter Andrews and Mary Ann Bernard, taken from his father's given names and his mother's maiden name, respectively.  The film was shot on high-definition video."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 370,
+    "generation_tokens": 36,
+    "generation_speed": 214.84841250895204,
+    "prompt_eval_speed": 11997.794999837868,
+    "generation_latency_s": 0.30814169999212027,
+    "latency": 0.5634679000359029,
+    "total_prompt_tokens": 532,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235353,
+    "stage_route_s": 0.10686839988920838,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.10935929999686778,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03894100000616163,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7600013203918934e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3081739000044763,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5634764999849722,
+    "unaccounted_latency_s": 8.71000811457634e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "1987"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

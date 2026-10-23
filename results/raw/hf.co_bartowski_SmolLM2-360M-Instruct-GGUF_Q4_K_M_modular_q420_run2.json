@@ -1,0 +1,49 @@
+{
+  "question_id": "Q420",
+  "query": "What is the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station?",
+  "ground_truth": "51,271",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The 2010 population of the city 2.1 miles southwest of Marietta Air Force Station is 520,116.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marietta Air Force Station: Marietta Air Force Station (ADC ID: M-111, NORAD ID: Z-111) is a closed United States Air Force General Surveillance Radar station.  It is located 2.1 mi northeast of Smyrna, Georgia.  It was closed in 1968.",
+      "List of cities by population density: This is a list of the cities worldwide that have the highest population density.  The population, population density and land area for the cities listed are based on the entire city proper, the defined boundary or border of a city or the city limits of the city.  The population density of the cities listed is based on the average number of people living per square mile or per square kilometre.  This list does not refer to the population, population density or land area of the greater metropolitan area or urban area, nor particular districts in any of the cities listed.",
+      "Tucson, Arizona: Tucson ( ) is a city and the county seat of Pima County, Arizona, United States, and home to the University of Arizona.  The 2010 United States Census put the population at 520,116, while the 2015 estimated population of the entire Tucson metropolitan statistical area (MSA) was 980,263.  The Tucson MSA forms part of the larger Tucson-Nogales combined statistical area (CSA), with a total population of 1,010,025 as of the 2010 Census.  Tucson is the second-largest populated city in Arizona behind Phoenix, both of which anchor the Arizona Sun Corridor.  The city is located 108 mi southeast of Phoenix and 60 mi north of the U.S.\u2013Mexico border.  Tucson is the 33rd largest city and the 53rd largest metropolitan area in the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 489,
+    "generation_tokens": 33,
+    "generation_speed": 206.5869950356519,
+    "prompt_eval_speed": 14747.572229929428,
+    "generation_latency_s": 0.3045062000164762,
+    "latency": 0.9272006000392139,
+    "total_prompt_tokens": 639,
+    "total_generation_tokens": 117,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2356829,
+    "stage_route_s": 0.09871050005313009,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.46387470001354814,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0599188000196591,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.160000339150429e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30454510007984936,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.927212500013411,
+    "unaccounted_latency_s": 0.00010279985144734383,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The 2010 population of the city 2.1 miles southwest of Marietta Air Force Station can be found by searching for \"Marietta Air Force Station\" in a search engine like Google or Bing.",
+      "Query 2: To find the exact population, you would need to use a specific database or online resource that provides data on the city's population."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

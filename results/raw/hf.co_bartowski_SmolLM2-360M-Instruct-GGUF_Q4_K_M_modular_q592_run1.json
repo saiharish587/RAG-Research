@@ -1,0 +1,49 @@
+{
+  "question_id": "Q592",
+  "query": "Red Mountain is a film that centers on an attempt by a group of what group of Civil War rangers?",
+  "ground_truth": "pro-Confederate",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Red Mountain is a film centered around an attempt by Quantrill's Raiders to stir up rebellion in the West during the last days of the US Civil War. The plot revolves around an attempt by Quantrill's Raiders to destroy bridges and roads potentially useful to the Japanese during World War II, which is similar to the story of the \"United States Volunteers\" mentioned in Galvanized Yankees.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Red Mountain (film): Red Mountain is a 1951 Western historical film, starring Alan Ladd, set in the last days of the US Civil War.  The plot centers on an attempt by Quantrill's Raiders to stir up rebellion in the West.",
+      "The Mountain Road: The Mountain Road is a 1960 war film starring James Stewart and directed by Daniel Mann.  Set in China and based on the 1958 novel of the same name by journalist-historian Theodore H. White, the film follows the attempts of a U.S. Army Major to destroy bridges and roads potentially useful to the Japanese during World War II.  White's time covering China for \"Time\" magazine during the war led to an interview with former OSS Major Frank Gleason Jr., who served as head of a demolition crew that inspired the story and film.  Gleason was later hired as an (uncredited) technical consultant for the film.",
+      "Galvanized Yankees: Galvanized Yankees was a term from the American Civil War denoting former Confederate prisoners of war who swore allegiance to the United States and joined the Union Army.  Approximately 5,600 former Confederate soldiers enlisted in the \"United States Volunteers\", organized into six regiments of infantry between January 1864 and November 1866.  Of those, more than 250 had begun their service as Union soldiers, were captured in battle, then enlisted in prison to join a regiment of the Confederate States Army.  They surrendered to Union forces in December 1864 and were held by the United States as deserters, but were saved from prosecution by being enlisted in the 5th and 6th U.S. Volunteers.  An additional 800 former Confederates served in volunteer regiments raised by the states, forming ten companies.  Four of those companies saw combat in the Western Theater against the Confederate Army, two served on the western frontier, and one became an independent company of U.S. Volunteers, serving in Minnesota."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 507,
+    "generation_tokens": 84,
+    "generation_speed": 245.46474658687114,
+    "prompt_eval_speed": 15685.91052533878,
+    "generation_latency_s": 0.4871334999334067,
+    "latency": 0.8549785000504926,
+    "total_prompt_tokens": 649,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2278556,
+    "stage_route_s": 0.10391959990374744,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20816749997902662,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05557749990839511,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.420002318918705e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4871655999450013,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8549882000079378,
+    "unaccounted_latency_s": 9.430025238543749e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Red Mountain Film\"",
+      "\"A group of Confederate soldiers attempting to escape Union forces during the American Civil War.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

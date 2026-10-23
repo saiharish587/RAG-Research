@@ -1,0 +1,42 @@
+{
+  "question_id": "Q121",
+  "query": "What major truck road is located in Backford Cross?",
+  "ground_truth": "The A41",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The major truck road that is located in Backford Cross is U.S. Route 287.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Backford Cross: Backford Cross is a village on the Wirral Peninsula, Cheshire, England.  It is a suburb of the town of Ellesmere Port and part of Cheshire West and Chester.  Backford Cross is located around the A41/A5117 junction, south of Great Sutton and about 1.5 mi north of the village of Backford, near Chester.  Backford Cross is largely made up of residential homes built from 1990 onwards and serves as a commuter village to Ellesmere Port and Chester, although inhabitants show no allegiance to either locality.  The area is split between postcode districts, with parts of the village in Great Sutton, Ellesmere Port CH66 and other areas in Backford, Chester CH1.",
+      "Strawberry Park, Cheshire: Strawberry Park and Strawberry Fields are suburbs in the town of Ellesmere Port, Cheshire West and Chester.  They are located to the south of Hope Farm and to the west of Backford Cross.",
+      "U.S. Route 287: U.S. Route 287 is a north\u2013south United States highway.  It is 2,882 km long.  It serves as the major truck route between Fort Worth, Texas and Amarillo, Texas, and between Fort Collins, Colorado and Laramie, Wyoming.  The highway is broken into two segments by Yellowstone National Park, where an unnumbered park road serves as a connector."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 383,
+    "generation_tokens": 23,
+    "generation_speed": 372.4455096026168,
+    "prompt_eval_speed": 24291.24119997463,
+    "generation_latency_s": 0.16343179997056723,
+    "latency": 0.5165680999634787,
+    "total_prompt_tokens": 454,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13722230000000002,
+    "stage_rewrite_s": 0.13601359992753714,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08454029995482415,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1324402999598533,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16348360001575202,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5165818999521434,
+    "unaccounted_latency_s": 0.00010490010026842356,
+    "rewritten_query": "The major truck road in Backford Cross, which is located in the Backford Cross area.",
+    "query_was_rewritten": true
+  }
+}

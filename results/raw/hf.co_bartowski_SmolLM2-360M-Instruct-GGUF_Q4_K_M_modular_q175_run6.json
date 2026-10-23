@@ -1,0 +1,49 @@
+{
+  "question_id": "Q175",
+  "query": "Which of the city at the south of Shelly Beach, New South Wales is a local government area in the Hunter region of New South Wales, Australia?",
+  "ground_truth": "City of Newcastle",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Port Macquarie",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Port Macquarie: Port Macquarie is a coastal town in the local government area of Port Macquarie-Hastings.  It is located on the Mid North Coast of New South Wales, Australia, about 390 km north of Sydney, and 570 km south of Brisbane.  The town is located on the Tasman Sea coast, at the mouth of the Hastings River, and at the eastern end of the Oxley Highway (B56).  The town with its suburbs had a population of 45,698 in June 2016.",
+      "Shelly Beach, New South Wales: Shelly Beach is a coastal suburb of the Central Coast region of New South Wales, Australia, located east of Tuggerah Lake and bordering the Pacific Ocean south of The Entrance.  It is part of the Central Coast Council local government area.  It is 66 km south of Newcastle & 93 km north of Sydney.  Shelly Beach is considered one of the most popular surfing beaches on the Central Coast.",
+      "City of Newcastle: The City of Newcastle is a local government area in the Hunter region of New South Wales, Australia.  The City of Newcastle incorporates much of the area of the Newcastle metropolitan area."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 350,
+    "generation_tokens": 5,
+    "generation_speed": 241.196333815726,
+    "prompt_eval_speed": 33209.981971724075,
+    "generation_latency_s": 0.1506814999738708,
+    "latency": 0.501067400095053,
+    "total_prompt_tokens": 512,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235545,
+    "stage_route_s": 0.09270769997965544,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20284899999387562,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05466200003866106,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.530007183551788e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1507127999793738,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5010762000456452,
+    "unaccounted_latency_s": 9.019998833537102e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Shelley Beach, New South Wales\"",
+      "\"Local Government Area, Hunter Region, New South Wales\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

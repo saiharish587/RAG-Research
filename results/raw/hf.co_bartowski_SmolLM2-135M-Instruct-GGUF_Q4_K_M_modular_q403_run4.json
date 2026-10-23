@@ -1,0 +1,48 @@
+{
+  "question_id": "Q403",
+  "query": "American Blues included the drummer from which American rock band?",
+  "ground_truth": "ZZ Top",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Derek and the Dominos were an American blues rock band formed in Texas during the late 1960s, primarily playing garage rock music influenced by the 13th Floor Elevators.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Derek and the Dominos: Derek and the Dominos were a blues rock band formed in the spring of 1970 by guitarist and singer Eric Clapton, keyboardist and singer Bobby Whitlock, bassist Carl Radle and drummer Jim Gordon.  All four members had previously played together in Delaney & Bonnie and Friends, during and after Clapton's brief tenure with Blind Faith.  Dave Mason supplied additional lead guitar on early studio sessions and played at their first live gig.  Another participant at their first session as a band was George Harrison, the recording for whose album \"All Things Must Pass\" marked the formation of Derek and the Dominos.",
+      "American Blues: American Blues were an American 1960s Texas-based garage rock band, who played a psychedelic style of blues rock music influenced by the 13th Floor Elevators.  They are most notable for including two future members of the band ZZ Top in their ranks, Dusty Hill and Frank Beard.  From 1966 to 1968, they played the Dallas-Fort Worth-Houston circuit and headlined in three clubs all called \"The Cellar\", in Dallas at clubs such as \"The Walrus\" on Mockingbird Lane, and in Houston at \"Love Street Light Circus Feel Good Machine\" on Allen's Landing, as late as 1968.",
+      "John Bonham: John Henry Bonham (31 May 1948 \u2013 25 September 1980) was an English musician and songwriter, best known as the drummer for the British rock band Led Zeppelin.  Bonham was esteemed for his speed, power, fast bass-drumming, distinctive sound, and \"feel\" for the groove.  He is considered one of the greatest rock drummers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 462,
+    "generation_tokens": 43,
+    "generation_speed": 368.92137684889667,
+    "prompt_eval_speed": 69883.52745424293,
+    "generation_latency_s": 0.23377499997150153,
+    "latency": 0.5047153000487015,
+    "total_prompt_tokens": 586,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2277458,
+    "stage_route_s": 0.12427539995405823,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.11063410004135221,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03585780004505068,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.409998655319214e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2338166000554338,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5047260000137612,
+    "unaccounted_latency_s": 9.879993740469217e-05,
+    "route": "rag",
+    "router_raw": "American Blues includes the drummer from which American rock band?",
+    "sub_queries": [
+      "American Blues includes the drummer from which American rock band?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

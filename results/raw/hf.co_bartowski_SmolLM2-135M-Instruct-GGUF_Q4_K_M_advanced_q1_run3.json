@@ -1,0 +1,42 @@
+{
+  "question_id": "Q1",
+  "query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, the two individuals are not related in any way. They were born on different dates (October 10, 1924) and have distinct backgrounds that do not overlap. They both made successful careers as filmmakers and actors but did not share a common nationality or ethnicity.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Derrickson: Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.  He lives in Los Angeles, California.  He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+      "Ed Wood (film): Ed Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood.  The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau.  Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast.",
+      "Ed Wood: Edward Davis Wood Jr. (October 10, 1924 \u2013 December 10, 1978) was an American filmmaker, actor, writer, producer, and director."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 310,
+    "generation_tokens": 59,
+    "generation_speed": 417.2766685762379,
+    "prompt_eval_speed": 48673.26110849427,
+    "generation_latency_s": 0.22471519990358502,
+    "latency": 0.5662383999442682,
+    "total_prompt_tokens": 382,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1305846,
+    "stage_rewrite_s": 0.14432980003766716,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07085120002739131,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12620410008821636,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2247575999936089,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5662497999146581,
+    "unaccounted_latency_s": 0.00010759977158159018,
+    "rewritten_query": "Scott Derrickson and Ed Wood were both from the same nationality, but they had different backgrounds and opinions on the matter.",
+    "query_was_rewritten": true
+  }
+}

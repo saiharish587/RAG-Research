@@ -1,0 +1,42 @@
+{
+  "question_id": "Q357",
+  "query": "Bartlett's Bridge was built by the engineer who worked for the county seat of which Massachusetts county?",
+  "ground_truth": "Worcester County",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Bartlett's Bridge was built by Charles A. Allen, a civil engineer from Worcester, Massachusetts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bartlett's Bridge: Bartlett's Bridge is a historic stone arch bridge carrying Clara Barton Road over the French River in Oxford, Massachusetts.  The bridge was built in 1889 to a design by Charles A. Allen, at the time a civil engineer for the city of Worcester.  The bridge was built to replace an older wooden span at the request of Edwin Bartlett, the owner of textile mills in North Oxford, whose businesses and employees would have used the road.  The bridge is 30 ft long and 42 ft wide, with its elliptical arch reaching a height of 13 ft above the river.  The facing of the bridge is rough-cut granite that has been fixed with mortar.  In contrast, the granite stones that make up the arch have been very precisely worked.  The bridge has parapet walls made of large granite slabs 4.5 ft , 2 ft wide, and 1 ft thick.",
+      "Worcester, Massachusetts: Worcester ( , ] ) is a city and the county seat of Worcester County, Massachusetts, United States.  Named after Worcester, England, as of the 2010 Census the city's population was 181,045, making it the second most populous city in New England after Boston.  Worcester is located approximately 40 mi west of Boston, 50 mi east of Springfield and 40 mi north of Providence.  Due to its location in Central Massachusetts, Worcester is known as the \"Heart of the Commonwealth\", thus, a heart is the official symbol of the city.  However, the heart symbol may also have its provenance in lore that the mass-produced Valentine's Day card was invented in the city.",
+      "Hampden County, Massachusetts: Hampden County is a non-governmental county located in the Pioneer Valley of the state of Massachusetts, in the United States.  As of the 2010 census, Hampden County's population was 463,490.  Its traditional county seat is Springfield, the Connecticut River Valley's largest city, and economic and cultural capital.  Hampden County was split from Hampshire County in 1812, because Northampton, Massachusetts, was made Hampshire County's \"shire town\" in 1794; however, Springfield\u2014theretofore Hampshire County's traditional shire town, dating back to its founding in 1636\u2014grew at a pace far quicker than Northampton and was granted shire town-status over its own, southerly jurisdiction.  It was named for John Hampden.  To the north of Hampden County is modern-day Hampshire County; to the west is Berkshire County; to the east is Worcester County; to the south are Litchfield County, Hartford County, and Tolland County in Connecticut."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 671,
+    "generation_tokens": 22,
+    "generation_speed": 387.3512219170364,
+    "prompt_eval_speed": 97813.41107871721,
+    "generation_latency_s": 0.1438784000929445,
+    "latency": 0.6275778999552131,
+    "total_prompt_tokens": 751,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13639469999999998,
+    "stage_rewrite_s": 0.19266000005882233,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07413279998581856,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2167763999896124,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.14391950005665421,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6275881000328809,
+    "unaccounted_latency_s": 9.999994654208422e-05,
+    "rewritten_query": "Bartlett's Bridge, built by the engineer who worked for the county seat of Massachusetts, was constructed in 1850 by the engineer who worked for the county seat of Massachusetts.",
+    "query_was_rewritten": true
+  }
+}

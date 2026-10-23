@@ -1,0 +1,49 @@
+{
+  "question_id": "Q174",
+  "query": "Which songwriting duo composed music for \"La La Land\", and created lyrics for \"A Christmas Story: The Musical\"? ",
+  "ground_truth": "Pasek & Paul",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The songwriting duo composing music for \"La La Land,\" which was released as the album's second single, was Damien Chazelle.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "La La Land (Demi Lovato song): \"La La Land\" is a song recorded by American singer Demi Lovato.  It was written by Lovato, Joe Jonas, Nick Jonas and Kevin Jonas and produced by the Jonas Brothers alongside John Fields, for Lovato's debut studio album, \"Don't Forget\" (2008).  It was released as the album's second single on April 10, 2009, through Hollywood Records.  \"La La Land\" is one of six songs on the album co-written by the Jonas Brothers, who also contributed backing vocals and guitars to the track.  Lovato said that she wrote the song about being yourself in Hollywood and not letting other people change who you are.  Musically, the song is a guitar-driven pop rock song and the lyrics speak of Lovato feeling \"out of place\" in Hollywood.",
+      "List of accolades received by La La Land: \"La La Land\" is a 2016 American romantic musical comedy-drama film written and directed by Damien Chazelle.  Starring Ryan Gosling and Emma Stone, the film focuses on two young people struggling to make ends meet in Los Angeles, while pursuing their dreams as artists.  Justin Hurwitz composed the film's musical score, while Linus Sandgren was the cinematographer.  David and Sandy Reynolds-Wasco were responsible for the production design and Mary Zophres designed the costumes.",
+      "La La Land (soundtrack): La La Land: Original Motion Picture Soundtrack is the soundtrack album to the 2016 film \"La La Land\".  The soundtrack album was released through Interscope Records on December 9, 2016.  The album has peaked at number 2 on the US \"Billboard 200\" and number 1 on the UK Albums Chart."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 485,
+    "generation_tokens": 30,
+    "generation_speed": 365.4436485893875,
+    "prompt_eval_speed": 25278.84916084645,
+    "generation_latency_s": 0.2079847001004964,
+    "latency": 0.6404636000515893,
+    "total_prompt_tokens": 635,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2268049,
+    "stage_route_s": 0.0931889999192208,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2837171000428498,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05539449991192669,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8699981309473515e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2080200999043882,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.640472500002943,
+    "unaccounted_latency_s": 9.370024781674147e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Musical\": 2018 - 2019",
+      "\"La La Land\": 2017 - 2018"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

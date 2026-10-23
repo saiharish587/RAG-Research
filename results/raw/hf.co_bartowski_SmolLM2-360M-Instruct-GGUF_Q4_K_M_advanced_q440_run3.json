@@ -1,0 +1,42 @@
+{
+  "question_id": "Q440",
+  "query": "What town host an annual media finance conference that has featured an Australian-born American media mogul?",
+  "ground_truth": "Sun Valley, Idaho",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The town hosting an annual media finance conference that has featured an Australian-born American media mogul is New York City.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rupert Murdoch: Keith Rupert Murdoch, {'1': \", '2': 'AC KCSG', '3': \", '4': \"} ( ; born 11 March 1931) is an Australian-born American media mogul.  His father, Sir Keith Murdoch, had been a reporter, editor, and senior executive of the \"Herald\" and \"Weekly Times\" newspaper publishing company, covering all Australian states except New South Wales.  After his father's death in 1952, Murdoch declined to join his late father's registered public company and created his own private company, News Limited.  Murdoch thus had full control as Chairman and CEO of global media holding company News Corporation, now the world's second-largest media conglomerate, and its successors, News Corp and 21st Century Fox, after the conglomerate split on 28 June 2013.",
+      "Turner: American media mogul Ted Turner created several channels featuring his name:",
+      "Media proprietor: A media proprietor, media mogul or media tycoon refers to a successful entrepreneur or businessperson who controls, through personal ownership or via a dominant position in any media related company or enterprise, media consumed by a large number of individuals.  Those with significant control, ownership, and influence of a large company in the mass media may also be called a tycoon, baron, or business magnate.  Social media creators and founders can also be considered media moguls, as such channels deliver media to a large consumer base."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 26,
+    "generation_speed": 256.4406044107784,
+    "prompt_eval_speed": 57541.05146957362,
+    "generation_latency_s": 0.9031407000729814,
+    "latency": 3.4117293999297544,
+    "total_prompt_tokens": 498,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1371101,
+    "stage_rewrite_s": 1.2232536000665277,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0451824000338092,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2400282999733463,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9031852999469265,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4117416000226513,
+    "unaccounted_latency_s": 9.26000066101551e-05,
+    "rewritten_query": "Hosted by a local media mogul, this event features an Australian-born American media figure.",
+    "query_was_rewritten": true
+  }
+}

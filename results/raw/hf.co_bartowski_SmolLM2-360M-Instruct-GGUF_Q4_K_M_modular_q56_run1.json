@@ -1,0 +1,49 @@
+{
+  "question_id": "Q56",
+  "query": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+  "ground_truth": "Marion, South Australia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Sydney",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "University of New South Wales: The University of New South Wales (UNSW; branded as UNSW Sydney) is an Australian public research university located in the Sydney suburb of Kensington.  Established in 1949, it is regarded as one of the world's leading universities, ranked 3rd in Australia, 45th in the world, and 1st in New South Wales according to the 2017 \"QS World University Rankings\".",
+      "Sydney: Sydney ( ) is the state capital of New South Wales and the most populous city in Australia and Oceania.  Located on Australia's east coast, the metropolis surrounds the world's largest natural harbour and sprawls about 70 km on its periphery towards the Blue Mountains to the west, Hawkesbury to the north and Macarthur to the south.  Sydney is made up of 658 suburbs, 40 local government areas and 15 contiguous regions.  Residents of the city are known as \"Sydneysiders\".  As at June 2016 Sydney's estimated population was 5,029,768.",
+      "Westminster School, Adelaide: Westminster School is an independent, Uniting Church, Early Learning to Year 12, coeducational, day and boarding school located at Marion, South Australia, 12 km south of Adelaide.  Founded as a Methodist day and boarding school for boys, the school was opened by the Prime Minister Robert Menzies in 1961 and is named after Westminster School in London.  The school became co-educational in 1978, and has a current enrolment of around 1150 students."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 445,
+    "generation_tokens": 4,
+    "generation_speed": 201.78580436866267,
+    "prompt_eval_speed": 11625.17307139685,
+    "generation_latency_s": 0.16495010000653565,
+    "latency": 0.5969450999982655,
+    "total_prompt_tokens": 611,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2214804,
+    "stage_route_s": 0.10092069988604635,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27670040004886687,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05419990001246333,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6600081734359264e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16498240001965314,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5969618000090122,
+    "unaccounted_latency_s": 0.0001023999648168683,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Aboriginal Boarding School in Sydney, Australia.*",
+      "The Sydney Boarding School, established in 1838, is located in Sydney, Australia.*"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

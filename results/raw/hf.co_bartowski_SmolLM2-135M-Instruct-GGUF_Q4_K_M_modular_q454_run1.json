@@ -1,0 +1,48 @@
+{
+  "question_id": "Q454",
+  "query": "What was position of the man who served Prince Andrew from 1990-2001? ",
+  "ground_truth": "Private Secretary and Treasurer",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The man who served Prince Andrew from 1990 to 1997, who was also known as Prince Andrew, Duke of York, is John Major. He was the Prime Minister of the United Kingdom and Leader of the Conservative Party from 1990 until his retirement in 2001.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Prince Andrew, Duke of York: Prince Andrew, Duke of York, {'1': \", '2': \", '3': \", '4': \"} (Andrew Albert Christian Edward, born 19 February 1960), is the second son and third child of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.  At the time of his birth, he was second in the line of succession to the British throne; as of 2017 he is sixth in line.",
+      "John Major: Sir John Major, {'1': \", '2': \", '3': \", '4': \"} (born 29 March 1943) is a British politician who was Prime Minister of the United Kingdom and Leader of the Conservative Party from 1990 to 1997.  He served as Foreign Secretary and then Chancellor of the Exchequer in the Thatcher Government from 1989 to 1990, and was the Member of Parliament (MP) for Huntingdon from 1979 until he retired in 2001.  Since Margaret Thatcher's death in 2013, he is the oldest living former Prime Minister.",
+      "having exceeded his powers.  He was cashiered and arrested, and finally sentenced to death.  For some time it was feared that he would lose his head.  The foreign Ministers did all in their power to effect his release, but in vain.  At length Queen Victoria interposed on his behalf; and in response to her letter he was pardoned, upon which he retired into private life.  He died in 1893, of creeping paralysis; and in 1894 his rank was restored, less two grades.  He was extremely courteous to foreigners, and was much liked by all foreign officials with whom he was thrown into contact."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 471,
+    "generation_tokens": 67,
+    "generation_speed": 331.83758778837677,
+    "prompt_eval_speed": 16737.739872068232,
+    "generation_latency_s": 0.341695100069046,
+    "latency": 0.7905980999348685,
+    "total_prompt_tokens": 617,
+    "total_generation_tokens": 125,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2294656,
+    "stage_route_s": 0.2233049999922514,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18890909990295768,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036517699947580695,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.279997665435076e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.34174010006245226,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.79061029991135,
+    "unaccounted_latency_s": 9.650003630667925e-05,
+    "route": "rag",
+    "router_raw": "The man who served Prince Andrew from 1990 to 2001 is known as the \"Prince Andrew's son.\"",
+    "sub_queries": [
+      "Position of the man who served Prince Andrew from 1990 to 2001 is 34567."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

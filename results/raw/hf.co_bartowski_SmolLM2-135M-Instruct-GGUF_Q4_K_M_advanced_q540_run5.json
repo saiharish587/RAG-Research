@@ -1,0 +1,42 @@
+{
+  "question_id": "Q540",
+  "query": "Where was the sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne located?",
+  "ground_truth": "Alice Springs, Northern Territory",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne is located at the Harry S. Truman Sports Complex, Kansas City, Missouri.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Will Brodie: Will Brodie (born 23 August 1998) is a professional Australian rules footballer playing for the Gold Coast Football Club in the Australian Football League (AFL).  He was drafted by Gold Coast with their third selection and ninth overall in the 2016 national draft.  He made his debut in the thirty-five point loss against Melbourne at TIO Traeger Park in round ten of the 2017 season.",
+      "Melbourne Cricket Ground: The Melbourne Cricket Ground (MCG), also known simply as \"The G\", is an Australian sports stadium located in Yarra Park, Melbourne, Victoria.  Home to the Melbourne Cricket Club, it is the 10th-largest stadium in the world, the largest in Australia, the largest in the Southern Hemisphere, the largest cricket ground by capacity, and has the tallest light towers of any sporting venue.  The MCG is within walking distance of the city centre and is served by the Richmond railway station, Richmond, and the Jolimont railway station, East Melbourne.  It is part of the Melbourne Sports and Entertainment Precinct.",
+      "Truman Sports Complex: The Harry S. Truman Sports Complex is a sports and entertainment facility located in Kansas City, Missouri.  It is home to two major sports venues: Arrowhead Stadium\u2014home of the National Football League's Kansas City Chiefs, and Kauffman Stadium\u2014home of Major League Baseball's Kansas City Royals.  The complex also hosts various other events during the year."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 37,
+    "generation_speed": 396.7913520933425,
+    "prompt_eval_speed": 64039.40886699507,
+    "generation_latency_s": 0.18521520006470382,
+    "latency": 0.5692434000084177,
+    "total_prompt_tokens": 487,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1391873,
+    "stage_rewrite_s": 0.18356789997778833,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07766419998370111,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12265549995936453,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18525830004364252,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.569254899979569,
+    "unaccounted_latency_s": 0.0001094000181183219,
+    "rewritten_query": "The sports complex where Will Brodie made his debut in the 35-point loss against Melbourne was located at the 20-foot line.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q540",
+  "query": "Where was the sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne located?",
+  "ground_truth": "Alice Springs, Northern Territory",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The sports complex where Will Brodie made his debut in the thirty-five point loss against Melbourne is located at the ESPN Wide World of Sports Complex, which is part of Walt Disney World Resort.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Will Brodie: Will Brodie (born 23 August 1998) is a professional Australian rules footballer playing for the Gold Coast Football Club in the Australian Football League (AFL).  He was drafted by Gold Coast with their third selection and ninth overall in the 2016 national draft.  He made his debut in the thirty-five point loss against Melbourne at TIO Traeger Park in round ten of the 2017 season.",
+      "ESPN Wide World of Sports Complex: The ESPN Wide World of Sports Complex is a 220 acre athletic complex located in the Walt Disney World Resort, in Bay Lake, Florida, near Orlando, Florida.  The complex includes 9 venues and hosts numerous amateur and professional sporting events throughout the year.",
+      "John Brodie (Scottish footballer): John C. Brodie (died 1901) was a Scottish professional footballer who played as an inside forward.  Born in Kilmarnock, he was playing for his hometown club when he was signed by Football League side Burnley in November 1890.  Brodie made his debut for the club in the 0\u20137 defeat away at Preston North End on 2 February 1891, in place of the regular right-inside forward Alexander McLardie.  He was also selected for the following match, a 0\u20134 loss to Notts County, but did not appear again for Burnley and returned to Kilmarnock in March 1891."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 42,
+    "generation_speed": 241.2101859615672,
+    "prompt_eval_speed": 53271.64573694647,
+    "generation_latency_s": 1.0684789000079036,
+    "latency": 3.4511295000556856,
+    "total_prompt_tokens": 487,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1282459,
+    "stage_rewrite_s": 1.1921588000841439,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0391433999175206,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15122750005684793,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.068514300044626,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4511375000001863,
+    "unaccounted_latency_s": 9.389990009367466e-05,
+    "rewritten_query": "Brodie's debut match at the 35-point loss to Melbourne was held at the sports complex.",
+    "query_was_rewritten": true
+  }
+}

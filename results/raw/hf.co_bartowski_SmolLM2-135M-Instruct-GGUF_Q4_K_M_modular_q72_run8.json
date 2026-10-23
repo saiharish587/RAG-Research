@@ -1,0 +1,48 @@
+{
+  "question_id": "Q72",
+  "query": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
+  "ground_truth": "276,170 inhabitants",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The inhabitant of the city where 122nd SS-Standarte was formed in 2014 is San Antonio.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "122nd SS-Standarte: The 122nd SS-Standarte was a regimental command of the Allgemeine-SS that was formed in the city of Strasbourg during World War II.  The Standarte was activated on November 12, 1940, and reached battalion strength by the end of the year.  The command was a successor to the previously disbanded 121st SS-Standarte, also situated in Strasbourg.",
+      "San Antonio: San Antonio ( Spanish for \"Saint Anthony\"), officially the City of San Antonio, is the seventh-most populous city in the United States and the second-most populous city in Texas.  Founded as a Spanish mission and colonial outpost in 1718, the city became the first chartered civil settlement in Texas in 1731, making it the state's oldest municipality.  The city's deep history is contrasted with its rapid growth: it was the fastest growing of the top ten largest cities in the United States from 2000 to 2010, and the second from 1990 to 2000.  Straddling the regional divide between South and Central Texas, San Antonio anchors the southwestern corner of an urban megaregion colloquially known as the \"Texas Triangle\".",
+      "Stavanger: Stavanger (] ) is a city and municipality in Norway.  The city is the third-largest urban zone and metropolitan area in Norway (through conurbation with neighbouring Sandnes) and the administrative centre of Rogaland county.  The municipality is the fourth most populous in Norway.  Located on the Stavanger Peninsula in Southwest Norway, Stavanger counts its official founding year as 1125, the year the Stavanger Cathedral was completed.  Stavangers core is to a large degree 18th- and 19th-century wooden houses that are protected and considered part of the city's cultural heritage.  This has caused the town centre and inner city to retain a small-town character with an unusually high ratio of detached houses, and has contributed significantly to spreading the city's population growth to outlying parts of Greater Stavanger."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 547,
+    "generation_tokens": 29,
+    "generation_speed": 366.47163635904116,
+    "prompt_eval_speed": 70335.60498907033,
+    "generation_latency_s": 0.1976928999647498,
+    "latency": 0.5497290999628603,
+    "total_prompt_tokens": 697,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2285177,
+    "stage_route_s": 0.15140600001905113,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16477970010600984,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03568580001592636,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.120008088648319e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1977325000334531,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5497421999461949,
+    "unaccounted_latency_s": 9.789969772100449e-05,
+    "route": "rag",
+    "router_raw": "The inhabitant of the city where 122nd SS-Standarte was formed in 2014.",
+    "sub_queries": [
+      "The inhabitant of the city where 122nd SS-Standarte was formed in 2014 is a person named \"John\"."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

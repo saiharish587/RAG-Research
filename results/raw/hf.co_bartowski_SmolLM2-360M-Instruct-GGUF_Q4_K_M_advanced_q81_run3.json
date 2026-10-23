@@ -1,0 +1,42 @@
+{
+  "question_id": "Q81",
+  "query": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+  "ground_truth": "Newport",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The county seat of Sullivan County, New Hampshire, is Amherst, Massachusetts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "East Lempster, New Hampshire: East Lempster is an unincorporated community in the town of Lempster in Sullivan County, New Hampshire, United States.",
+      "Lempster, New Hampshire: Lempster is a town in Sullivan County, New Hampshire, United States.  The population was 1,154 at the 2010 census.  Settlements include the town center (Lempster village) and the village of East Lempster.",
+      "Amherst, Massachusetts: Amherst ( ) is a town in Hampshire County, Massachusetts, United States, in the Connecticut River valley.  As of the 2010 census, the population was 37,819, making it the largest municipality in Hampshire County (although the county seat is Northampton).  The town is home to Amherst College, Hampshire College, and the University of Massachusetts Amherst, three of the Five Colleges.  The name of the town is pronounced without the \"h\" (\"AM-erst\"), giving rise to the local saying, \"only the 'h' is silent\", in reference both to the pronunciation and to the town's politically active populace."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 17,
+    "generation_speed": 265.61254941174633,
+    "prompt_eval_speed": 47486.03351955307,
+    "generation_latency_s": 0.9415340999839827,
+    "latency": 3.3451266000047326,
+    "total_prompt_tokens": 402,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12677290000000002,
+    "stage_rewrite_s": 1.2074302000692114,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0320003000088036,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1640407000668347,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9415779000846669,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.345138299977407,
+    "unaccounted_latency_s": 8.979975245893002e-05,
+    "rewritten_query": "The county seat of East Lempster, New Hampshire is located in the town of Northampton.",
+    "query_was_rewritten": true
+  }
+}

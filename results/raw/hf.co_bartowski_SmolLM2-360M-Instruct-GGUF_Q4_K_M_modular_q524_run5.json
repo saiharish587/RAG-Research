@@ -1,0 +1,49 @@
+{
+  "question_id": "Q524",
+  "query": "Conrad Anker located the body of a mountaineer who took part it the first three British expeditions to which mountain?",
+  "ground_truth": "Mount Everest",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Conrad Anker located the body of a mountaineer who took part in the first three British expeditions to Mount Everest, specifically the Mallory and Irvine Research Expedition.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mallory and Irvine Research Expedition: The goal of the Mallory and Irvine Research Expedition of 1999 was to discover evidence of whether George Mallory and Andrew Irvine had been the first to summit Mount Everest in their attempt of 8\u20139 June 1924.  The expedition was organized by regular Everest expedition leader Eric Simonson and advised by researcher Jochen Hemmleb, with a team of climbers from the U.S., the United Kingdom, and Germany.  Hemmleb's investigations of sketchy reports of earlier sightings and photographs had led him to identify what he believed was the area in which Irvine's body lay, some distance below where his ice axe had been found by Percy Wyn-Harris on the expedition led by Hugh Ruttledge in 1933.  The team hoped in particular to find a camera on Irvine's body which, had the pair been successful, should have contained a picture of the summit.  Within hours of commencing the search on 1 May 1999, Conrad Anker found a body on the North Face, at 8,155 m; but to their surprise it was that of Mallory, not Irvine.",
+      "Ernest Shackleton: Sir Ernest Henry Shackleton ( ; 15 February 1874\u00a0\u2013 5\u00a0January 1922) was a polar explorer who led three British expeditions to the Antarctic, and one of the principal figures of the period known as the Heroic Age of Antarctic Exploration.  Born in Kilkea, Athy, County Kildare, Ireland, Shackleton and his Anglo-Irish family moved to Sydenham in suburban south London when he was ten.  His first experience of the polar regions was as third officer on Captain Robert Falcon Scott's Discovery Expedition 1901\u20131904, from which he was sent home early on health grounds, after he and his companions Scott and Edward Adrian Wilson set a new southern record by marching to latitude 82\u00b0S.",
+      "Edmund Hillary: Sir Edmund Percival \"Ed\" Hillary {'1': \", '2': \", '3': \", '4': \"} (20 July 1919 \u2013 11 January 2008) was a New Zealand mountaineer, explorer, and philanthropist.  On 29 May 1953, Hillary and Nepalese Sherpa mountaineer Tenzing Norgay became the first climbers confirmed to have reached the summit of Mount Everest.  They were part of the ninth British expedition to Everest, led by John Hunt. \" TIME magazine\" named Hillary one of the people of the 20th century."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 642,
+    "generation_tokens": 34,
+    "generation_speed": 236.3277448772486,
+    "prompt_eval_speed": 83976.45519947678,
+    "generation_latency_s": 0.26809129992034286,
+    "latency": 0.5785697000101209,
+    "total_prompt_tokens": 788,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2335313,
+    "stage_route_s": 0.10049189999699593,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15531659999396652,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05448419996537268,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.440006498247385e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2681348000187427,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5785914999432862,
+    "unaccounted_latency_s": 0.00011039990931749344,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Mount Everest Expedition\"",
+      "\"The North Face Expedition\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

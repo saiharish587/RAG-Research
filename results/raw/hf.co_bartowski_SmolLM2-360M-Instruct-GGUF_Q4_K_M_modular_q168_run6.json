@@ -1,0 +1,49 @@
+{
+  "question_id": "Q168",
+  "query": "Both Bishop Carroll Catholic High School and Kapaun Mt. Carmel Catholic High School are located in which city in Kansas?",
+  "ground_truth": "Wichita",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Both Bishop Carroll Catholic High School and Kapaun Mt. Carmel Catholic High School are located in Wichita, Kansas.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bishop Carroll Catholic High School: Bishop Carroll Catholic High School is a private high school located in Wichita, Kansas, United States.  Along with Kapaun Mt. Carmel Catholic High School, it is one of two Catholic high schools in the city, part of the Roman Catholic Diocese of Wichita.",
+      "Kapaun Mt. Carmel Catholic High School: Kapaun Mt. Carmel Catholic High School, sometimes called Kapaun, is a private, four year, co-educational, secondary school operated by the Roman Catholic Diocese of Wichita.  It is located in the east side of Wichita, Kansas.  The school colors are blue and white.  The average annual enrollment is approximately 850 students.",
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 388,
+    "generation_tokens": 26,
+    "generation_speed": 239.70424184314123,
+    "prompt_eval_speed": 34375.830601577036,
+    "generation_latency_s": 0.23434520000591874,
+    "latency": 0.6638207000214607,
+    "total_prompt_tokens": 536,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2262691,
+    "stage_route_s": 0.09799420007038862,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27438550000078976,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05692480003926903,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.409998655319214e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2343762000091374,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.663833099999465,
+    "unaccounted_latency_s": 0.0001091999001801014,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Bishop Carroll Catholic High School is located in the city of Wichita, Kansas.",
+      "Query 2: Kapaun Mt. Carmel Catholic High School is located in the city of Wichita, Kansas."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

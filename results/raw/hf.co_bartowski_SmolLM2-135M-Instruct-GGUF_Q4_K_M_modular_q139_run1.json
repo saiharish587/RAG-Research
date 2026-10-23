@@ -1,0 +1,48 @@
+{
+  "question_id": "Q139",
+  "query": "For what type of work is the production company for The Year Without a Santa Claus best known?",
+  "ground_truth": "seasonal television specials, particularly its work in stop motion animation",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The production company for The Year Without a Santa Claus is best known as a 2006 live-action remake of the Rankin-Bass classic \"The Year Without a Santa Claus.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Year Without a Santa Claus: The Year Without a Santa Claus is a 1974 Christmas stop motion animated television special produced by Rankin/Bass Productions.  The story is based on Phyllis McGinley's 1956 book of the same name, illustrated by Kurt Werth.  It was originally broadcast on December 10, 1974 on ABC.",
+      "The Year Without a Santa Claus (2006 film): The Year Without a Santa Claus is a 90-minute 2006 live-action remake of the Rankin-Bass classic \"The Year Without a Santa Claus\" which premiered on NBC December 11, 2006.  A widescreen DVD was released on December 12, 2006 (UPC 085391115120).",
+      "Walt Disney Pictures: Walt Disney Pictures, Inc. is an American film production company and a subsidiary of Walt Disney Studios, owned by The Walt Disney Company.  The division is based at the Walt Disney Studios in Burbank, California, and is the main producer of live-action feature films within the Walt Disney Studios unit.  It took on its current name in 1983.  Today, in conjunction with the other units of Walt Disney Studios, Walt Disney Pictures is classified as one of Hollywood's \"Big Six\" film studios.  Films produced by Walt Disney Animation Studios and Pixar Animation Studios are also released under this brand."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 408,
+    "generation_tokens": 42,
+    "generation_speed": 391.29098074289385,
+    "prompt_eval_speed": 22237.968060173327,
+    "generation_latency_s": 0.23092509992420673,
+    "latency": 0.5782845999347046,
+    "total_prompt_tokens": 546,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2263087,
+    "stage_route_s": 0.1519895000383258,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15354079997632653,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04164499999023974,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.67000063508749e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23097609996329993,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5783012999454513,
+    "unaccounted_latency_s": 0.00010409997776150703,
+    "route": "rag",
+    "router_raw": "The production company for The Year Without a Santa Claus is known as The Year Without a Santa Claus.",
+    "sub_queries": [
+      "The production company for The Year Without a Santa Claus is best known as a creative agency specializing in short films, commercials, and video games."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

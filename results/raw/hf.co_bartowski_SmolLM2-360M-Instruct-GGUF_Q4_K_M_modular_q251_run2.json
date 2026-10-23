@@ -1,0 +1,48 @@
+{
+  "question_id": "Q251",
+  "query": "In what city can a person find both the Nusretiye Clock Tower and the Eski Imaret Mosque be found?",
+  "ground_truth": "Istanbul, Turkey",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Nusretiye Clock Tower and the Eski Imaret Mosque are located in Istanbul, Turkey.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mihrimah Sultan Mosque (Edirnekap\u0131): The Mihrimah Sultan Mosque (Turkish: 'Mihrimah Sultan Camii' ) is an Ottoman mosque located in the Edirnekap\u0131 neighborhood near the Byzantine land walls of Istanbul, Turkey.  Located on the peak of the Sixth Hill near the highest point of the city, the mosque is a prominent landmark in Istanbul.",
+      "Nusretiye Clock Tower: Nusretiye Clock Tower, aka Tophane Clock Tower, is a clock tower situated in Tophane, a neighborhood in Beyo\u011flu district of Istanbul, Turkey next to Nusretiye Mosque and Tophane Kiosk at the European waterfront of Bosphorus.  It was ordered by the Ottoman sultan Abd\u00fclmecid I (1823-1861), designed by architect Garabet Amira Balyan and completed in 1848.",
+      "S\u00fcleymaniye Mosque: The S\u00fcleymaniye Mosque (Turkish: \"S\u00fcleymaniye Camii\" , ] ) is an Ottoman imperial mosque located on the Third Hill of Istanbul, Turkey.  It is the second largest mosque in the city, and one of the best-known sights of Istanbul."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 354,
+    "generation_tokens": 23,
+    "generation_speed": 210.12625847356978,
+    "prompt_eval_speed": 11142.587346553353,
+    "generation_latency_s": 0.250749500002712,
+    "latency": 0.5129535000305623,
+    "total_prompt_tokens": 506,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2227819,
+    "stage_route_s": 0.09651649999432266,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12723159999586642,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03829629998654127,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.67000063508749e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25078050000593066,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5129624999826774,
+    "unaccounted_latency_s": 9.14999982342124e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Istanbul, Turkey"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

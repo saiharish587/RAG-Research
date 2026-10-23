@@ -1,0 +1,49 @@
+{
+  "question_id": "Q379",
+  "query": "Which of the movie which has Rich Lee 3-D previsualizations was directed by Francis Lawrence?",
+  "ground_truth": "Constantine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Hunger Games: Mockingjay \u2013 Part 2: The Hunger Games: Mockingjay \u2013 Part 2 was directed by Francis Lawrence.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Stanley Kubrick: Stanley Kubrick ( ; July 26, 1928 \u2013 March 7, 1999) was an American film director, screenwriter, producer, cinematographer, editor, and photographer.  He is frequently cited as one of the greatest and most influential directors in cinematic history.  His films, which are mostly adaptations of novels or short stories, cover a wide range of genres, and are noted for their realism, dark humor, unique cinematography, extensive set designs, and evocative use of music.",
+      "The Hunger Games: Mockingjay \u2013 Part 2: The Hunger Games: Mockingjay \u2013 Part 2 is a 2015 American dystopian science fiction adventure film directed by Francis Lawrence, with a screenplay by Peter Craig and Danny Strong.  It is the fourth and final installment in \"The Hunger Games\" film series, and the second of two films based on the novel \"Mockingjay\", the final book in \"The Hunger Games\" trilogy, by Suzanne Collins.  Produced by Nina Jacobson and Jon Kilik, and distributed by Lionsgate, the film features an ensemble cast that includes Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson, Elizabeth Banks, Julianne Moore, Philip Seymour Hoffman, and Donald Sutherland.  Hoffman died in February 2014, making \"Mockingjay \u2013 Part 2\" his final film role.  Principal photography on both parts of the film began on September 23, 2013 in Atlanta, before moving to Paris for two weeks of back-to-back filming and officially concluding on June 20, 2014, in Berlin and at Babelsberg Studios, Germany.",
+      "The Hunger Games: Mockingjay \u2013 Part 1: The Hunger Games: Mockingjay \u2013 Part 1 is a 2014 American dystopian science fiction adventure film directed by Francis Lawrence with a screenplay by Peter Craig and Danny Strong.  It is the first of two films based on Suzanne Collins' novel \" Mockingjay\", the final book in \"The Hunger Games\" trilogy, and the third installment in \"The Hunger Games\" film series, produced by Nina Jacobson and Jon Kilik and distributed by Lionsgate.  The film features an ensemble cast that includes Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson, Elizabeth Banks, Julianne Moore, Philip Seymour Hoffman, Jeffrey Wright, Stanley Tucci, and Donald Sutherland.  Principal photography for both parts of the film began on September 23, 2013, in Atlanta, before moving to Paris for two weeks of filming and officially concluding on June 20, 2014, in Berlin."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 678,
+    "generation_tokens": 32,
+    "generation_speed": 231.06528316328374,
+    "prompt_eval_speed": 82421.59008023339,
+    "generation_latency_s": 0.2654709001071751,
+    "latency": 0.7704414000036195,
+    "total_prompt_tokens": 820,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2315356,
+    "stage_route_s": 0.10383039992302656,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3455030000768602,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05545250000432134,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6999968364834785e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2655111999483779,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7704703999916092,
+    "unaccounted_latency_s": 0.00011830008588731289,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Hunger Games\" directed by Francis Lawrence",
+      "\"The Shawshank Redemption\" directed by Timur Bek\u00fc\u00e7"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

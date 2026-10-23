@@ -1,0 +1,49 @@
+{
+  "question_id": "Q279",
+  "query": "Meaning \"reddish water\" in Hawaiian, which location was Butch Van Artsdalen known for surfing 25-foot waves at?",
+  "ground_truth": "Waimea Bay",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Butch Van Arsdale was known for surfing 25-foot waves at Waimea Bay on the North Shore of Oahu.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Honolulu: Honolulu ( ; ] ) is the capital and largest city of the U.S. state of Hawaii.  It is an unincorporated part of and the county seat of the City and County of Honolulu on the island of Oahu.  The city is the main gateway to Hawaii and a major portal into the United States.  The city is also a major hub for international business, military defense, as well as famously being host to a diverse variety of east-west and Pacific culture, cuisine, and traditions.",
+      "Ford Island: Ford Island (Hawaiian: ' ) is an islet in the center of Pearl Harbor, Oahu, in the U.S. state of Hawaii.  It has been known as Rabbit Island, Mar\u00edn's Island, and Little Goats Island, and its native Hawaiian name is Moku\u02bb ume\u02bb ume.  The island had an area of 334 acres when it was surveyed in 1825, which was increased during the 1930s to 441 acres with fill dredged out of Pearl Harbor by the United States Navy to accommodate battleships.",
+      "Waimea Bay, Hawaii: Waimea Bay is located in Haleiwa on the North Shore of O'ahu in the Hawaiian Islands at the mouth of the Waimea River.  Waimea Valley extends behind Waimea Bay.  \"Waimea\" means \"reddish water\" in Hawaiian."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 393,
+    "generation_tokens": 30,
+    "generation_speed": 259.35403554879315,
+    "prompt_eval_speed": 43979.40913160251,
+    "generation_latency_s": 0.23731250001583248,
+    "latency": 0.5597985999193043,
+    "total_prompt_tokens": 551,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.225047,
+    "stage_route_s": 0.09518489998299628,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1732661999994889,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05384919990319759,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9400026910007e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23735509999096394,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5598101000068709,
+    "unaccounted_latency_s": 0.00010590010788291693,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The island of Kauai, Hawaii.\"",
+      "\"The North Shore of Oahu, Hawaii.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

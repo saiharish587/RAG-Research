@@ -1,0 +1,49 @@
+{
+  "question_id": "Q25",
+  "query": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+  "ground_truth": "World's Best Goalkeeper",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The father of Kasper Schmeichel who was voted to be by the International Federation of Football History & Statistics (IFFHS) in 1996 is Kasper Schmeichel. He played as a goalkeeper at Manchester United from 1978 until his retirement in 2003, and won the IFFHSA World's Best Goalkeeper award for his career.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Peter Schmeichel: Peter Boles\u0142aw Schmeichel MBE (] ; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993.  He is best remembered for his most successful years at English club Manchester United, whom he captained to the 1999 UEFA Champions League to complete the Treble, and for winning UEFA Euro 1992 with Denmark.",
+      "IFFHS World's Best Club Coach: The IFFHS World's Best Club Coach is an association football award given annually, since 1996, to the most outstanding club coach as voted by the International Federation of Football History & Statistics (IFFHS).  The votes, in 1996, were cast by IFFHS's editorial staff as well as experts from 89 countries spanning six different continents.  Since then, the votes are now awarded by 81 experts and selected editorial offices from all of the continents.",
+      "Shortest common supersequence problem: In computer science, the shortest common supersequence of two sequences X and Y is the shortest sequence which has X and Y as subsequences.  This is a problem closely related to the longest common subsequence problem.  Given two sequences X = < x.. . ,x > and Y = < y.. . ,y >, a sequence U = < u.. . ,u > is a common supersequence of X and Y if items can be removed from U to produce X or Y."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 429,
+    "generation_tokens": 85,
+    "generation_speed": 367.1373223163341,
+    "prompt_eval_speed": 58090.72444143534,
+    "generation_latency_s": 0.3512448000255972,
+    "latency": 1.0101301999529824,
+    "total_prompt_tokens": 581,
+    "total_generation_tokens": 250,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2248796,
+    "stage_route_s": 0.19531760003883392,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.40570290002506226,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05769229994621128,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.609996151179075e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.35127700003795326,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0101387000177056,
+    "unaccounted_latency_s": 9.350001346319914e-05,
+    "route": "rag",
+    "router_raw": "The father of Kasper Schmeichel who was voted to be by the International Federation of Association of School Teachers (IFST) in 1992 is Kasper Schmeichel.",
+    "sub_queries": [
+      "IffHS voted to be by the IFFHS in 1992.",
+      "Here are two search queries related to this question:"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

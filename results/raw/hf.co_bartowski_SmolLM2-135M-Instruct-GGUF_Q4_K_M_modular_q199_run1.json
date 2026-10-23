@@ -1,0 +1,49 @@
+{
+  "question_id": "Q199",
+  "query": "What amount was the settlement that the character from the Son of al Quada got in 2017?",
+  "ground_truth": "$10.5 million",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is \"30 million dollars.\" The settlement given by the character from the Son of Al Quada to the character from the Son of Ra's al Ghul, Damian Wayne, was $30 million.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Emmanuel Muhammad: Emmanuel Muhammad (February 3, 1921 - September 14, 1998) was the oldest son of Elijah Muhammad, and a leader in the Nation of Islam (NOI).  He was known for receiving a 5-year prison term for refusal to serve in the World War II.  He told the court \"I hope the Japs win the war.  Then all the Negroes will be free!\"  While in prison, he preached on behalf of the NOI.",
+      "Damian Wayne: Damian Wayne or Damian al Ghul (Arabic: \u062f\u0627\u0645\u064a\u0627\u0646 \u0627\u0644\u063a\u0648\u0644) is a fictional superhero and at times antihero appearing in American comic books published by DC Comics, commonly in association with Batman.  He is the son of Batman and Talia al Ghul (Arabic: \u062a\u0627\u0644\u064a\u0627 \u0627\u0644\u063a\u0648\u0644), and thus, the grandson of Batman villain Ra's al Ghul.  The character originally appeared as an unnamed infant in the 1987 story \"\", which at that time was not considered canon.  Following this, various alternate universe stories dealt with the character's life, giving him various names.  In 2006, the character was reinterpreted as Damian Wayne by Grant Morrison, and introduced into the main continuity in \"Batman\" #655, the first issue of the \"Batman and Son\" story arc.  Damian Wayne is the fifth character to assume the role of Robin, Batman's vigilante partner.",
+      "here.  Will rides to the fief, where he is greeted by a feast made by his childhood friend, Jenny.  He greets Pauline, and Crowley, then Halt arrives.  Crowley assigns Will, Halt, and Horace (Will's current best friend, and a knight) to investigate Clonmel.  Halt tells them he knows the king, and when they ask how, he tells them he is the King's brother.  They go around, investigating the Outsiders (the group who are stealing gold).  When Halt's brother tells them he made a deal with the Outsiders, he is knocked out by Horace, and Halt takes the king's place (they are twins).  The Outsiders' leader, Tennyson, is angry, and challenges Horace to duel his two giant bodyguards.  Horace accepts.  Will meanwhile, is investigating a camp, and he sees that Tennyson has recruited three Genovesans (foreigners; assassins).  He tells Horace and Halt this, and Halt is expecting treachery from Tennyson.  The duel proceeds, with Horace barely winning against the chain and mace used by the first giant.  Horace is then drugged by the assassins, causing his eyes to waver a lot, and he is unable to see clearly.  Will shoots the second giant in the arm, after which he manages to accuse Tennyson.  Tennyson escapes, though not before killing Halt's brother.  Halt abdicates the throne to his nephew, Sean, a warrior and worthy king.  They begin to follow Tennyson's trail to Picta, thus ending the book."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 761,
+    "generation_tokens": 46,
+    "generation_speed": 283.04557033682426,
+    "prompt_eval_speed": 13713.194219194867,
+    "generation_latency_s": 0.32752279995474964,
+    "latency": 0.84316819999367,
+    "total_prompt_tokens": 907,
+    "total_generation_tokens": 129,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2365155,
+    "stage_route_s": 0.16305169998668134,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2923696000361815,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06004390004090965,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.230000872164965e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3275566999800503,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8431771999457851,
+    "unaccounted_latency_s": 9.359989780932665e-05,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents, specifically the Son of Al Quada settlement.",
+    "sub_queries": [
+      "QUERY: \"What amount was the settlement that the character from the Son of Al Quada received?\"",
+      "The answer is $5.49, which is the amount the character from the Son of Al Quada earned after receiving a settlement in 2017."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

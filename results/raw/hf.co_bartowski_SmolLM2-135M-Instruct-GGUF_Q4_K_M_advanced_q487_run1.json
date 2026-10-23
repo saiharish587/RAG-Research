@@ -1,0 +1,42 @@
+{
+  "question_id": "Q487",
+  "query": "What genre of music was played by both Tappi T\u00edkarrass and INXS?",
+  "ground_truth": "rock",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The band that played \"I Get Up\" is known as INXS, which refers to the band's new wave/pop style. The song was written by Andrew Farriss and Jon Stevens, who were former Noiseworks frontman Michael Hutchence.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "INXS: INXS ( ) were an Australian rock band, formed as The Farriss Brothers in 1977 in Sydney, New South Wales.  They began playing covers in Western Australian pubs and clubs, occasionally playing some of their original music.  Mainstays were main composer and keyboardist Andrew Farriss, drummer Jon Farriss, guitarists Tim Farriss and Kirk Pengilly, bassist Garry Gary Beers and main lyricist and vocalist Michael Hutchence.  For twenty years, INXS was fronted by Hutchence, whose \"sultry good looks\" and magnetic stage presence made him the focal point of the band.  Initially known for their new wave/pop style, the band later developed a harder pub rock style that included funk and dance elements.",
+      "Tappi T\u00edkarrass: Tappi T\u00edkarrass was an Icelandic punk band which added elements of funk, rock and jazz to their music, marking a difference from other traditional bands at that time.  The band is also considered the first serious music project of now renowned singer Bj\u00f6rk Gu\u00f0mundsd\u00f3ttir.",
+      "I Get Up: \"I Get Up\" was a single that was released in 2003 by Australian band INXS.  The song was written by Andrew Farriss and Jon Stevens.  It was the first new material by INXS since their former frontman Michael Hutchence died by suicide on 22 November 1997.  The lead singer on \"I Get Up\" is former Noiseworks frontman Jon Stevens.  It is the only studio recorded material by INXS with Stevens singing.  Stevens resigned from INXS by the end of 2003 because of \"differing views\" about the bands' future."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 468,
+    "generation_tokens": 54,
+    "generation_speed": 380.02744642668637,
+    "prompt_eval_speed": 25126.167722538386,
+    "generation_latency_s": 0.24624800006859004,
+    "latency": 0.8712091000052169,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 126,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1295373,
+    "stage_rewrite_s": 0.2806932999519631,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08837629994377494,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2557653000112623,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.24628239998128265,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8712183000752702,
+    "unaccounted_latency_s": 0.00010150019079446793,
+    "rewritten_query": "The original query \"What genre of music was played by both Tappi T\u00edkarrass and INXS?\" is a bit long and wordy. A more concise version would be:\n\n\"Tappi T\u00edkarrass and INXS were both featured in the music scene during the 1980s.",
+    "query_was_rewritten": true
+  }
+}

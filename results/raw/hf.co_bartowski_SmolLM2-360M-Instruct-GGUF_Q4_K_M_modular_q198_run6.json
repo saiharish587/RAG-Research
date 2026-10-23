@@ -1,0 +1,49 @@
+{
+  "question_id": "Q198",
+  "query": " Robert Smith founded the multinational company headquartered in what city?",
+  "ground_truth": "Golden Valley, Minnesota,",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Robert Smith founded the multinational company headquartered in New York City, not Marks & Spencer.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "JPMorgan Chase: JPMorgan Chase & Co. is a U.S. multinational banking and financial services holding company headquartered in New York City.  It is the largest bank in the United States, the world's sixth largest bank by total assets, with total assets of US$2.5 trillion, and the world's second most valuable bank by market capitalization, after ICBC.  It is a major provider of financial services, and according to \"Forbes\" magazine is the world's sixth largest public company based upon a composite ranking.  The hedge fund unit of JPMorgan Chase is the second largest hedge fund in the United States.  The company was formed in 2000, when Chase Manhattan Corporation merged with J.P. Morgan & Co.",
+      "Royal Dutch Shell: Royal Dutch Shell plc (, ), commonly known as Shell, is a British\u2013Dutch multinational oil and gas company headquartered in the Netherlands and incorporated in the United Kingdom.  It is one of the six oil and gas \"supermajors\" and the sixth-largest company in the world measured by 2016 revenues (and the largest based in Europe).  Shell was first in the 2013 Fortune Global 500 list of the world's largest companies; in that year its revenues were equivalent to 84% of the Netherlands' $556 billion GDP.",
+      "Marks &amp; Spencer: Marks and Spencer plc (also known as M&S) is a major British multinational retailer headquartered in the City of Westminster, London.  It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 420,
+    "generation_tokens": 19,
+    "generation_speed": 245.15180057546158,
+    "prompt_eval_speed": 53258.939893482115,
+    "generation_latency_s": 0.19635810004547238,
+    "latency": 0.5756251000566408,
+    "total_prompt_tokens": 546,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2263307,
+    "stage_route_s": 0.10316040006000549,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.222239000024274,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053679200005717576,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.180004518479109e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1964123999932781,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5756371000315994,
+    "unaccounted_latency_s": 9.489990770816803e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Robert Smith founded the multinational company headquartered in New York City\"",
+      "\"Robert Smith founded the multinational company headquartered in London\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

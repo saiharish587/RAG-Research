@@ -1,0 +1,42 @@
+{
+  "question_id": "Q480",
+  "query": "Who programmed a cartridge-based development system made by a company noted for authoring Atari's BASIC?",
+  "ground_truth": "Kathleen O'Brien",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Atari Corporation",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Atari Assembler Editor: The Atari Assembler Editor is a cartridge-based development system used to edit, assemble, and debug 6502 programs for the Atari 8-bit family of home computers.  It was programmed by Kathleen O'Brien of Shepardson Microsystems.  It was the first commercially available assembler for the Atari 8-bit computers.",
+      "Shepardson Microsystems: Shepardson Microsystems, Inc. (SMI) was a small company producing operating systems and programming languages for the Atari 8-bit and Apple II computer families.  SMI is most noted for authoring Atari's BASIC and Disk Operating System (DOS) products.",
+      "Atari Corporation: Atari Corporation was an American manufacturer of computers and video game consoles from 1984 to 1996.  Atari Corp. was founded in July 1984 when Warner Communications sold the home computing and game console divisions of Atari, Inc. to Jack Tramiel.  Its chief products were the Atari ST, , Atari 7800, Atari Lynx, and Atari Jaguar.  The company reverse merged with JTS Inc. in 1996, becoming a small division, which itself closed when JTS liquidated the IP to Hasbro Interactive in 1998."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 372,
+    "generation_tokens": 4,
+    "generation_speed": 431.59257660768236,
+    "prompt_eval_speed": 50722.661576220344,
+    "generation_latency_s": 0.09660839999560267,
+    "latency": 0.6962684000609443,
+    "total_prompt_tokens": 454,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1403451,
+    "stage_rewrite_s": 0.31500500009860843,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07845350005663931,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20607419998850673,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.09664869995322078,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6962793000275269,
+    "unaccounted_latency_s": 9.829993359744549e-05,
+    "rewritten_query": "A user query was generated with the following optimized version of it:\n\n\"Who programmed a cartridge-based development system made by a company noted for authoring Atari's BASIC?\"\n\nThis rephrased query is more concise and uses natural language to convey the same information as the original query. It also includes an additional phrase \"a company noted for authoring\" to provide context and clarify who wrote the program.",
+    "query_was_rewritten": true
+  }
+}

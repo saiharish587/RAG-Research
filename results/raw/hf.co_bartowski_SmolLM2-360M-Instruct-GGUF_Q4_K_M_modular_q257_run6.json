@@ -1,0 +1,49 @@
+{
+  "question_id": "Q257",
+  "query": "What year did Roy Rogers and his third wife star in a film directed by Frank McDonald?",
+  "ground_truth": "1945",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Frank McDonald (director) was active from 1935 to 1966. Therefore, the correct answer is that he directed more than 100 films, including many Westerns starring Gene Autry and Roy Rogers, and numerous TV show episodes. The year of his birth is not relevant in this context as it does not provide information about his film directing career.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Frank McDonald (director): Frank McDonald (November 9, 1899 Baltimore, Maryland \u2013 March 8, 1980 Oxnard, California) was an American film and television director, active from 1935 to 1966.  He directed more than 100 films, including many Westerns starring Gene Autry and Roy Rogers, and numerous TV show episodes.  He is interred at Conejo Mountain Memorial Park in Camarillo, California.",
+      "2005 SANFL Grand Final: The 2005 South Australian National Football League (SANFL) Grand Final saw the Central District Bulldogs defeat Woodville-West Torrens by 28 points to claim the clubs fifth premiership victory.",
+      "Football at the 2006 Asian Games: Football at the 2006 Asian Games was held in Doha, Qatar from November 18 to December 15, 2006.  The opening match was played 14 days prior to the opening ceremony.  In this tournament, some 30 teams played in the men's competition, and 8 teams participated in women's competition."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 328,
+    "generation_tokens": 79,
+    "generation_speed": 237.59898704634384,
+    "prompt_eval_speed": 40225.65611969586,
+    "generation_latency_s": 0.45229739998467267,
+    "latency": 0.7544980000238866,
+    "total_prompt_tokens": 464,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2314988,
+    "stage_route_s": 0.09598240000195801,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15193090005777776,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05410219996701926,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.439994856715202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4523369000526145,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7545097999973223,
+    "unaccounted_latency_s": 0.00010359997395426035,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "2005",
+      "2006"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

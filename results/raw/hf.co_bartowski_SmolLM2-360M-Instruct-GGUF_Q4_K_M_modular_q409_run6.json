@@ -1,0 +1,49 @@
+{
+  "question_id": "Q409",
+  "query": "How large is the shopping mall where KGOT radio station has its studios ?",
+  "ground_truth": "728,000 ft\u00b2",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The shopping mall where KGOT radio station has its studios is approximately 50,000 sqft in size.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Station Mall: The Station Mall in Sault Ste. Marie, Ontario, Canada, is the second largest shopping mall in Northern Ontario, trailing just behind the New Sudbury Centre in Greater Sudbury in area, while also lagging behind the Intercity Shopping Centre in Thunder Bay in number of stores.  Station Mall has 97 stores and 555000 sqft of retail space on one level .  Built in 1973, the mall has since undergone two major expansions.  Its major tenants include Sears, Walmart and the 52000 sqft Galaxy Cinemas movie theatre complex.  The mall is located on the waterfront in downtown Sault Ste. Marie, and is roughly five minutes away from the Sault Ste. Marie International Bridge to the United States.  The Sault Ste. Marie railway station is located in the mall parking lot.",
+      "KGOT: KGOT (101.3 FM) is a commercial Top 40 (CHR) radio station in Anchorage, Alaska.  The station is owned by iHeartMedia, Inc. and broadcasts (along with its sister stations) from studios in the Dimond Center.",
+      "Central City Shopping Centre: Central City Shopping Centre (formerly known as Surrey Place Mall) is a shopping mall and office tower complex in Whalley/City Centre, Surrey, British Columbia, Canada, which is owned by Blackwood Partners Management Corporation.  It is near Surrey Central and King George SkyTrain stations.  It was designed by Bing Thom Architects.  It is the second largest mall in Surrey, smaller than Guildford Town Centre (mall).  A major portion of the upper shopping centre floors also host one of the three Simon Fraser University campuses."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 437,
+    "generation_tokens": 27,
+    "generation_speed": 239.29381735677822,
+    "prompt_eval_speed": 34996.39625210219,
+    "generation_latency_s": 0.23848029994405806,
+    "latency": 0.9653056000825018,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 143,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2435077,
+    "stage_route_s": 0.10951189999468625,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5588468000059947,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058276399970054626,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.200004670768976e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23852739995345473,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9653198000742123,
+    "unaccounted_latency_s": 0.0001061001094058156,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The size of the shopping mall where KGOT radio station has its studios can be determined by looking at the dimensions and layout of the building itself. This information would typically be available from the local government or property management company.",
+      "Query 2: To find out how large the shopping mall is, you could use online mapping tools or websites that provide data on building sizes and layouts. These resources often include detailed information about the structure's dimensions, including its length, width, height, and any notable features such as elevators or parking lots."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

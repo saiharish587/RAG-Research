@@ -1,0 +1,42 @@
+{
+  "question_id": "Q268",
+  "query": "Candy Coburn has shared the stage with an American country music group with who playing guitar?",
+  "ground_truth": "Charles Kelley",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Context:\nCandy Coburn: Candy Coburn is an American national performing country music artist who has shared the stage with many notable artists, including Brooks and Dunn, Kellie Pickler, Montgomery Gentry, Blake Shelton, Miranda Lambert, Gary Allan, Josh Turner, Lady Antebellum and others.  Scheduled to release her third album in 2010, Candy's most notable contribution is her song \"Pink Warrior.\"\n\nGrammy Award for Best Country Song: The Grammy Award for Best Country Song (sometimes known as the Country Songwriter's Award) has been awarded since 1965.\n\nCountry Showdown: The Country Showdown is an annual talent contest to find undiscovered country music singers across the United States. As many as 100,000 acts compete in the Country Showdown annually, which is considered to be the largest country music talent competition in the United States.\n\nQuestion: Candy Coburn has shared the stage with an American country music group with who playing guitar?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Candy Coburn: Candy Coburn is an American national performing country music artist who has shared the stage with many notable artists, including Brooks and Dunn, Kellie Pickler, Montgomery Gentry, Blake Shelton, Miranda Lambert, Gary Allan, Josh Turner, Lady Antebellum and others.  Scheduled to release her third album in 2010, Candy's most notable contribution to music so far has been her song, \"Pink Warrior.\"",
+      "Grammy Award for Best Country Song: The Grammy Award for Best Country Song (sometimes known as the Country Songwriter's Award) has been awarded since 1965.  The award is given to the writer(s) of the song, not to the artist, except if the artist is also the songwriter.",
+      "Country Showdown: The Country Showdown is an annual talent contest to find undiscovered country music singers across the United States.  As many as 100,000 acts compete in the Country Showdown annually, which is considered to be the largest country music talent competition in the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 305,
+    "generation_tokens": 220,
+    "generation_speed": 415.95764794857246,
+    "prompt_eval_speed": 44885.9455481972,
+    "generation_latency_s": 0.6116614999482408,
+    "latency": 1.083323400001973,
+    "total_prompt_tokens": 384,
+    "total_generation_tokens": 251,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1257834,
+    "stage_rewrite_s": 0.15964650001842529,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08051480003632605,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23138160002417862,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6116960999788716,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0833324999548495,
+    "unaccounted_latency_s": 9.389990009367466e-05,
+    "rewritten_query": "Candy Coburn's American Country Music Group has performed at the Grammy Awards, where they showcased their talent and showcase of talent in the genre.",
+    "query_was_rewritten": true
+  }
+}

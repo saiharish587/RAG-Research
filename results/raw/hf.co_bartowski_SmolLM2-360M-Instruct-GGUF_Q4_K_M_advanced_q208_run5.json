@@ -1,0 +1,42 @@
+{
+  "question_id": "Q208",
+  "query": "Who was Chamberlain and Colonel of the military staff of The Merrie Monarch?",
+  "ground_truth": "Colonel Charles Hastings Judd",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Neville Chamberlain was a British Conservative politician who served as Prime Minister of the United Kingdom from May 1937 to May 1940. He is best known for his appeasement foreign policy, and in particular for his signing of the Munich Agreement in 1938, conceding the German-speaking Sudetenland region of Czechoslovakia to Germany. However, when Adolf Hitler later invaded Poland, the UK declared war on Germany on 3 September 1939, and Chamberlain led Britain through the first eight months of World War II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Neville Chamberlain: Arthur Neville Chamberlain, ( ; 18 March 1869 \u2013 9 November 1940) was a British Conservative politician who served as Prime Minister of the United Kingdom from May 1937 to May 1940.  Chamberlain is best known for his appeasement foreign policy, and in particular for his signing of the Munich Agreement in 1938, conceding the German-speaking Sudetenland region of Czechoslovakia to Germany.  However, when Adolf Hitler later invaded Poland, the UK declared war on Germany on 3 September 1939, and Chamberlain led Britain through the first eight months of World War II.",
+      "George V: George V (George Frederick Ernest Albert; 3 June 1865 \u2013 20 January 1936) was King of the United Kingdom and the British Dominions, and Emperor of India, from 6 May 1910 until his death in 1936.",
+      "Edward I of England: Edward I (17/18 June 1239 \u2013 7 July 1307), also known as Edward Longshanks and the Hammer of the Scots (Latin: \"Malleus Scotorum\" ), was King of England from 1272 to 1307.  He spent much of his reign reforming royal administration and common law.  Through an extensive legal inquiry, Edward investigated the tenure of various feudal liberties, while the law was reformed through a series of statutes regulating criminal and property law.  Increasingly, however, Edward's attention was drawn towards military affairs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 116,
+    "generation_speed": 241.96054791548903,
+    "prompt_eval_speed": 57850.090390766236,
+    "generation_latency_s": 1.3509298000717536,
+    "latency": 3.7839688999811187,
+    "total_prompt_tokens": 491,
+    "total_generation_tokens": 146,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1217009,
+    "stage_rewrite_s": 1.226370400050655,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.04018360003829,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1663723000092432,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.350963000091724,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.7839768000412732,
+    "unaccounted_latency_s": 8.799985516816378e-05,
+    "rewritten_query": "Chamberlain was a British Army officer who served as the Commander-in-Chief of the Royal Household during the reign of King George III.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q110",
+  "query": "Which airplane was this Major test-flying after whom the base, that 514th Flight Test Squadron is stated at, is named?",
+  "ground_truth": "B-17 Flying Fortress bomber",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 514th Flight Test Squadron is named after the 514th Fighter Wing, which is part of the 514th Flight Test Group. The 514th Fighter Wing was established in 1962 and has been operational since then.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "514th Flight Test Squadron: The 514th Flight Test Squadron (514 FLTS) is a United States Air Force squadron.  It is assigned to the Ogden Air Logistics Center (OO-ALC), Air Force Materiel Command, stationed at Hill Air Force Base, Utah.",
+      "486th Flight Test Squadron: The 486th Flight Test Squadron is a secretive unit, with a somewhat misleading designation, assigned to Eglin Air Force Base, Florida, and which is associated with United States Department of State Foreign Emergency Support Team activities.  The squadron motto is \"\"Non semper ea sunt quae videntur\"\" which translates as \"Not always what they seem\".  It was apparently assigned to the 227th Special Operations Flight, later redesignated the 150th Special Operations Squadron, McGuire Air Force Base, New Jersey, but is currently assigned to the 46th Test Wing at Eglin, and operates a pair of Boeing C-32B or Boeing 757-23A aircraft, on stand-by alert for special operations and intelligence missions world-wide.  Official documents make it clear that operations fall under the aegis of Air Force Special Operations Command.",
+      "10th Flight Test Squadron: The 10th Flight Test Squadron is part of the 413th Flight Test Group of Air Force Materiel Command based at Tinker Air Force Base, Oklahoma.  It performs acceptance testing on refurbished Rockwell B-1 Lancer, Boeing B-52 Stratofortress, Boeing E-3 Sentry, and Boeing KC-135 Stratotanker aircraft before they are returned to their units."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 446,
+    "generation_tokens": 59,
+    "generation_speed": 235.583488392522,
+    "prompt_eval_speed": 14631.585853946592,
+    "generation_latency_s": 0.3877230000216514,
+    "latency": 0.839872199925594,
+    "total_prompt_tokens": 604,
+    "total_generation_tokens": 109,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23186489999999998,
+    "stage_route_s": 0.10062159993685782,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2959568001097068,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05540650000330061,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.040003452450037e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.38775440002791584,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8398815999971703,
+    "unaccounted_latency_s": 9.249988943338394e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "This Major test-flying aircraft was named after the 514th Flight Test Squadron.",
+      "The base, which houses this major test-flying aircraft, is named after the 514th Flight Test Squadron."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q301",
+  "query": "Where is the company that owns thanKing Horse pub restaurant chain based ?",
+  "ground_truth": "Bury St Edmunds,",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The company that owns Than King Horse Pub is the Than King Horse Pub Company, which is located in Glendale, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Los Angeles Clippers: The Los Angeles Clippers, often abbreviated by the team as the LA Clippers, are an American professional basketball team based in Los Angeles, California.  The Clippers compete in the National Basketball Association (NBA) as a member of the league's Western Conference Pacific Division.  The Clippers play their home games at Staples Center in downtown Los Angeles, an arena shared with the Los Angeles Lakers of the NBA, the Los Angeles Sparks of the Women's National Basketball Association (WNBA), and the Los Angeles Kings of the National Hockey League (NHL).",
+      "DoubleTree by Hilton Hotel Los Angeles Downtown: The DoubleTree by Hilton Hotel Los Angeles Downtown is located in Los Angeles, California, USA.  Managed by Rim Hospitality Inc., the hotel is located in the Little Tokyo area of downtown Los Angeles at 120 South Los Angeles Street.",
+      "Glendale, California: Glendale is a city in Los Angeles County, California, United States.  Its estimated 2014 population was 200,167, making it the third largest city in Los Angeles County and the 23rd-largest city in California.  It is located about 8 miles (13 km) north of downtown Los Angeles."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 27,
+    "generation_speed": 410.7713372889092,
+    "prompt_eval_speed": 46192.75825346113,
+    "generation_latency_s": 0.15175319998525083,
+    "latency": 0.542271799989976,
+    "total_prompt_tokens": 421,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12944,
+    "stage_rewrite_s": 0.1293872999958694,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07828929997049272,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18271940003614873,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15178590000141412,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5422806999413297,
+    "unaccounted_latency_s": 9.93999419733882e-05,
+    "rewritten_query": "The company that owns Than King Horse Pub located in downtown Los Angeles, California.",
+    "query_was_rewritten": true
+  }
+}

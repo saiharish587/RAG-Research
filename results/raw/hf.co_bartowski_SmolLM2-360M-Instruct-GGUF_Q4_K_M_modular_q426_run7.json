@@ -1,0 +1,49 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Las Vegas Festival Grounds is north of the Hotel owned by MGM Resorts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "Stratosphere Las Vegas: The Stratosphere Las Vegas (formerly Vegas World) is a hotel, casino, and tower located on Las Vegas Boulevard just north of the Las Vegas Strip in Las Vegas, Nevada, United States.",
+      "Downtown Las Vegas: Downtown Las Vegas (commonly abbreviated as DTLV) is the central business district and historic center of Las Vegas, Nevada.  It is the original townsite and was the gambling district of Las Vegas prior to the Strip, and the area still incorporates downtown gaming.  As the urban core of the Las Vegas Valley, it features a variety of hotel and business highrises, cultural centers, historical buildings and government institutions, as well as residential and retail developments.  Downtown is located in the center of the Las Vegas Valley and just north of the Las Vegas Strip, centered on Fremont Street, the Fremont Street Experience and Fremont East.  The city defines the area as bounded by I-15 on the west, Washington Avenue on the north, Maryland Parkway on the east and Sahara Avenue on the south."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 360,
+    "generation_tokens": 19,
+    "generation_speed": 259.62668415730644,
+    "prompt_eval_speed": 47287.534480493894,
+    "generation_latency_s": 0.1937249000184238,
+    "latency": 0.5147606999380514,
+    "total_prompt_tokens": 494,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.227518,
+    "stage_route_s": 0.10256099991966039,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16574389999732375,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05255529994610697,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9999915063381195e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19376470008865,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.51477269991301,
+    "unaccounted_latency_s": 9.860005229711533e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Las Vegas Convention and Events Center\"",
+      "\"The Las Vegas Convention & Events Center\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

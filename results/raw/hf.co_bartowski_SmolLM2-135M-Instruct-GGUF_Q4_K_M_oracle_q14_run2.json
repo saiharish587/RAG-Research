@@ -1,0 +1,33 @@
+{
+  "question_id": "Q14",
+  "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, 888 7th Avenue and 888 7th Avenue are not used for real estate. They were built by the same company, Arlen Realty & Development Corporation, which is known as the \"Park Imperial Apartments.\" The Park Imperial Apartments was a luxury apartment complex that was built in 1969 and has since been converted into a modern-style office building.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "888 7th Avenue: 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.  Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City.  It currently carries the Vornado Realty Trust corporate headquarters.  Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation.  The Red Eye Grill is located in the building at street level.",
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 306,
+    "generation_tokens": 86,
+    "generation_speed": 433.3628960735306,
+    "prompt_eval_speed": 116040.95563139932,
+    "generation_latency_s": 0.2674538999563083,
+    "latency": 0.2675044999923557,
+    "total_prompt_tokens": 306,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0602515,
+    "stage_generate_s": 0.26748649997171015,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.26751089992467314,
+    "unaccounted_latency_s": 2.4799956008791924e-05
+  }
+}

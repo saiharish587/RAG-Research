@@ -1,0 +1,49 @@
+{
+  "question_id": "Q472",
+  "query": "In what field does the firm at which Claudio Fern\u00e1ndez-Ar\u00e1oz was a currently a senior adviser offers services?",
+  "ground_truth": "Executive Search, Board Consulting",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "In general usage, a financial plan is a comprehensive evaluation of an individual's current pay and future financial state by using current known variables to predict future income, asset values and withdrawal plans. This often includes a budget which organizes an individual's finances and sometimes includes a series of steps or specific goals for spending and saving in the future. A financial plan allocates future income to various types of expenses such as rent or utilities and also reserves some income for short-term and long-term savings.\n\nA firm at which Claudio Fern\u00e1ndez-Ar\u00e1oz was a currently a senior adviser offers services in this field, specifically focusing on personal finance and estate planning.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Accenture: Accenture PLC is a global management consulting and professional services company that provides strategy, consulting, digital, technology and operations services.  A Fortune Global 500 company, it has been incorporated in Dublin, Ireland, since 1 September 2009.  In 2017, the company reported net revenues of $34.9 billion, with more than 425,000 employees serving clients in more than 200 cities in 120 countries.  In 2015, the company had about 130,000 employees in India, about 48,000 in the US, and about 50,000 in the Philippines.  On August 29, 2017, Apple Inc.  announced a partnership with Accenture to create iOS business solutions.  Accenture's current clients include 94 of the Fortune Global 100 and more than three-quarters of the Fortune Global 500.",
+      "Claudio Fern\u00e1ndez-Ar\u00e1oz: Claudio Fern\u00e1ndez-Ar\u00e1oz is an Argentinian author, international speaker and global expert on talent and leadership, ranked by \"BusinessWeek\" as one of the most influential executive search consultants in the world.  He is currently a senior adviser of Egon Zehnder.  Before joining Egon Zehnder in 1986, he worked at McKinsey & Company in Europe.  He is a frequent lecturer at the Harvard Business School.",
+      "Financial plan: In general usage, a financial plan is a comprehensive evaluation of an individual's current pay and future financial state by using current known variables to predict future income, asset values and withdrawal plans.  This often includes a budget which organizes an individual's finances and sometimes includes a series of steps or specific goals for spending and saving in the future.  This plan allocates future income to various types of expenses, such as rent or utilities, and also reserves some income for short-term and long-term savings.  A financial plan is sometimes referred to as an investment plan, but in personal finance a financial plan can focus on other specific areas such as risk management, estates, college, or retirement."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 556,
+    "generation_tokens": 136,
+    "generation_speed": 229.59786609042106,
+    "prompt_eval_speed": 12642.110050022739,
+    "generation_latency_s": 0.7470915999729186,
+    "latency": 1.0508645999943838,
+    "total_prompt_tokens": 708,
+    "total_generation_tokens": 152,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22465269999999998,
+    "stage_route_s": 0.09534600004553795,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15341299993451685,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054833299946039915,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.949998740106821e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.7471259000012651,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0508743999525905,
+    "unaccounted_latency_s": 9.750004392117262e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Finance\"",
+      "\"Management consulting\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q2",
+  "query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+  "ground_truth": "Chief of Protocol",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The woman who played Corliss Archer in the film \"Kiss and Tell\" is the First Lady of the United States, which is a position that is not mentioned in the context provided. The information about her role as the First Lady was only mentioned in the context of the 1945 film \"Kiss and Tell\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kiss and Tell (1945 film): Kiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.  In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys.  The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+      "A Kiss for Corliss: A Kiss for Corliss is a 1949 American comedy film directed by Richard Wallace and written by Howard Dimsdale.  It stars Shirley Temple in her final starring role as well as her final film appearance.  It is a sequel to the 1945 film \"Kiss and Tell\".  \"A Kiss for Corliss\" was retitled \"Almost a Bride\" before release and this title appears in the title sequence.  The film was released on November 25, 1949, by United Artists.",
+      "Hillary Clinton: Hillary Diane Rodham Clinton ( ; born October 26, 1947) is an American politician who was the First Lady of the United States from 1993 to 2001, U.S. Senator from New York from 2001 to 2009, 67th United States Secretary of State from 2009 to 2013, and the Democratic Party's nominee for President of the United States in the 2016 election."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 404,
+    "generation_tokens": 70,
+    "generation_speed": 368.66941939833146,
+    "prompt_eval_speed": 52969.712862200075,
+    "generation_latency_s": 0.3061271000187844,
+    "latency": 0.6484644000884145,
+    "total_prompt_tokens": 548,
+    "total_generation_tokens": 123,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2319058,
+    "stage_route_s": 0.15037179994396865,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15431800007354468,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03749349992722273,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.109996370971203e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3061616999329999,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6484734000405297,
+    "unaccounted_latency_s": 8.790020365267992e-05,
+    "route": "rag",
+    "router_raw": "The woman who portrayed Corliss Archer in the film Kiss and Tell is a member of the House of Representatives.",
+    "sub_queries": [
+      "The woman who portrayed Corliss Archer in the film Kiss and Tell played the role of the \"Mother\" in the film."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

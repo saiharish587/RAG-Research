@@ -1,0 +1,42 @@
+{
+  "question_id": "Q173",
+  "query": "The Memphis Hustle are based in a suburb of a city with a population of what in 2010?",
+  "ground_truth": "48,982",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Memphis Hustle are based in a suburb of Shelby County, Tennessee, which has a population of approximately 12,430 people in 2010.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Memphis Hustle: The Memphis Hustle are an American professional basketball team of the NBA G League announced to begin play for the 2017\u201318 season as an affiliate of the Memphis Grizzlies of the National Basketball Association (NBA).  Based in the Memphis suburb of Southaven, Mississippi, the team will play their home games at the Landers Center.",
+      "West Memphis, Arkansas: West Memphis is the largest city in Crittenden County, Arkansas, United States.  The population was 26,245 at the 2010 census, ranking it as the state's 18th largest city, behind Bella Vista.  It is part of the Memphis metropolitan area, and is located directly across the Mississippi River from Memphis.",
+      "Lakeland, Tennessee: Lakeland is a city in Shelby County, Tennessee, and a suburb of Memphis.  The population was 12,430 at the 2010 census."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 293,
+    "generation_tokens": 39,
+    "generation_speed": 260.05547850208046,
+    "prompt_eval_speed": 41226.95933586605,
+    "generation_latency_s": 1.062637299997732,
+    "latency": 3.463386100018397,
+    "total_prompt_tokens": 378,
+    "total_generation_tokens": 73,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1200962,
+    "stage_rewrite_s": 1.2687651000451297,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.99957159999758,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1322805000236258,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0626874999143183,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4634014000184834,
+    "unaccounted_latency_s": 9.760004468262196e-05,
+    "rewritten_query": "The Memphis Hustle is based in a suburb of a city with a population of approximately 35,000 people in 2010.",
+    "query_was_rewritten": true
+  }
+}

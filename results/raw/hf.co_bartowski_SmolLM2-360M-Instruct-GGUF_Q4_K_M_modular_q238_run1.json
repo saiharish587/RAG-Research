@@ -1,0 +1,49 @@
+{
+  "question_id": "Q238",
+  "query": "A scam involving a male calling small town fast-food restaurants and pretending to be a police officer to have them strip search employees was turned into a movie of what name?",
+  "ground_truth": "Compliance",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The strip search phone call scam was turned into a movie named \"Strip Search\" (\u30d0\u30a4\u30c8\u30c6\u30ed).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Strip search phone call scam: The strip search phone call scam is a series of incidents that extended over a period of about ten years before an arrest was made in 2004.  The incidents involved a man prank calling a restaurant or grocery store, claiming to be a police officer and then convincing managers to conduct strip searches of female employees, and to perform other bizarre acts on behalf of \"the police\".  The calls were most often placed to fast-food restaurants in small towns, located in rural areas of the United States.",
+      "Part-time job terrorism: Part-time job terrorism (\u30d0\u30a4\u30c8\u30c6\u30ed , baito tero ) is a Japanese social phenomenon; part-time employees perform pranks and stunts, such as climbing into ice cream freezers or holding their body horizontally suspended, more colloquially termed 'planking', on the counter-tops at fast-food restaurants, usually with the sole purpose of gaining recognition from their peers through the photos and/or videos they later display on social media sites.  This social phenomenon commonly involves people with high job dissatisfaction\u2014a factor which is commonly cited by the media alongside low pay and arduously long working hours.  Although pranks such as the aforementioned would not be seen as shocking by many other cultures, they are considered disgraceful in Japanese culture.",
+      "Strip Search (film): Strip Search is a drama film made for the HBO network, first aired on April 27, 2004.  The film explores the status of individual liberties in the aftermath of the September 11, 2001 attacks and the approval of the USA PATRIOT Act.  The film was directed by Sidney Lumet and written by \"Oz\" creator Tom Fontana.  It stars Glenn Close, Maggie Gyllenhaal, Ken Leung, Bruno Lastra and Dean Winters.  The film was first screened at the Monaco Film Premiere with Lumet in person presenting it, in the presence of Fontana."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 513,
+    "generation_tokens": 30,
+    "generation_speed": 232.034712392974,
+    "prompt_eval_speed": 14713.052456477471,
+    "generation_latency_s": 0.2759977999376133,
+    "latency": 0.6020311000756919,
+    "total_prompt_tokens": 681,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2338016,
+    "stage_route_s": 0.10780519992113113,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1622501000529155,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055771099985577166,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.91999851167202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2760314999613911,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6020407000323758,
+    "unaccounted_latency_s": 0.00012410013005137444,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Fast Food Scam\"",
+      "\"Strip Search Movie\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

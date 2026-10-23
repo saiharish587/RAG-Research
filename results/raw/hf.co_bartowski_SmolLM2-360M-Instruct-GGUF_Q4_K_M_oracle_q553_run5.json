@@ -1,0 +1,33 @@
+{
+  "question_id": "Q553",
+  "query": "Are both Jim McBride and Neil Jordan American?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, they are not both American. Neil Patrick Jordan is an Irish film director, screenwriter, novelist, and short-story writer, while Jim McBride is an American television and film director, film producer, and screenwriter.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jim McBride: Jim McBride (born September 16, 1941) is an American television and film director, film producer and screenwriter.",
+      "Neil Jordan: Neil Patrick Jordan (born 25 February 1950) is an Irish film director, screenwriter, novelist and short-story writer.  His first book, \"Night in Tunisia\", won a Somerset Maugham Award and the Guardian Fiction Prize in 1979.  He won an Academy Award (Best Original Screenplay) for \"The Crying Game\" (1992).  He also won the Silver Bear for Best Director at the Berlin International Film Festival for \"The Butcher Boy\" (1997)."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 222,
+    "generation_tokens": 49,
+    "generation_speed": 236.14685442751258,
+    "prompt_eval_speed": 29710.920770877943,
+    "generation_latency_s": 0.28374290000647306,
+    "latency": 0.2838022999931127,
+    "total_prompt_tokens": 222,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0609438,
+    "stage_generate_s": 0.2837789999321103,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.2838084000395611,
+    "unaccounted_latency_s": 2.9700109735131264e-05
+  }
+}

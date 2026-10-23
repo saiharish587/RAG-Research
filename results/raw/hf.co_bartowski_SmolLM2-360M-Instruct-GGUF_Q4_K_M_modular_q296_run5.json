@@ -1,0 +1,48 @@
+{
+  "question_id": "Q296",
+  "query": "What army did the namesake of the ship launched as the M\u00fcnchen in 1930 fight in during the American Revolutionary War?",
+  "ground_truth": "Continental Army",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The name \"Bismarck\" is associated with the German battleship \"Bismarck\", which was launched in 1930 and later served as a capital ship for Nazi Germany's Kriegsmarine. The ship was named after Chancellor Otto von Bismarck, who played a significant role in unifying Germany in 1871.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "SS General von Steuben: SS \"General von Steuben was a German passenger liner and later an armed transport in the Kriegsmarine of Nazi Germany that was sunk during World War II.  She was launched as M\u00fcnchen (sometimes spelled Muenchen), renamed in 1930 as General von Steuben (after the famous German officer of the American Revolutionary War), and renamed again in 1938 as Steuben\".",
+      "Scharnhorst-class battleship: The \"Scharnhorst\" class were the first capital ships, alternatively referred to as battleships or battlecruisers, built for Nazi Germany's \"Kriegsmarine\" after World War I.  The class comprised two vessels: the lead ship \"Scharnhorst\" and \"Gneisenau\" .  \"Scharnhorst\" was launched first, and so she is considered to be the lead ship by some sources; however, they are also referred to as the \"Gneisenau\" class in some other sources, as \"Gneisenau\" was the first to be laid down and commissioned.  They marked the beginning of German naval rearmament after the Treaty of Versailles.  The ships were armed with nine 28\u00a0cm (11\u00a0in) SK C/34 guns in three triple turrets, though there were plans to replace these weapons with six 38\u00a0cm (15\u00a0in) SK C/34 guns in twin turrets.",
+      "German battleship Bismarck: Bismarck was the first of two \"Bismarck\"-class battleship s built for Nazi Germany's \"Kriegsmarine\".  Named after Chancellor Otto von Bismarck, the primary force behind the unification of Germany in 1871, the ship was laid down at the Blohm & Voss shipyard in Hamburg in July 1936 and launched in February 1939.  Work was completed in August 1940, when she was commissioned into the German fleet.  \"Bismarck\" and her sister ship \"Tirpitz\" were the largest battleships ever built by Germany, and two of the largest built by any European power."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 70,
+    "generation_speed": 248.72528292500934,
+    "prompt_eval_speed": 69061.82556810968,
+    "generation_latency_s": 0.40761730005033314,
+    "latency": 0.7444357000058517,
+    "total_prompt_tokens": 702,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22935650000000002,
+    "stage_route_s": 0.09792339999694377,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20005089999176562,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03866849991027266,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.299997817724943e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4076489999424666,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7444445999572054,
+    "unaccounted_latency_s": 0.00011060014367103577,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "M\u00fcnchen, a German warship launched by the name of the city M\u00fcnchen in 1930.*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

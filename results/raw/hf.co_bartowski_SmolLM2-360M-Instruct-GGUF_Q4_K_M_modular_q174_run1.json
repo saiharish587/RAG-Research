@@ -1,0 +1,49 @@
+{
+  "question_id": "Q174",
+  "query": "Which songwriting duo composed music for \"La La Land\", and created lyrics for \"A Christmas Story: The Musical\"? ",
+  "ground_truth": "Pasek & Paul",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Keith Richards and Mick Jagger were the two guitarists who wrote songs for \"La La Land\" and contributed to the lyrics.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "La La Land (Demi Lovato song): \"La La Land\" is a song recorded by American singer Demi Lovato.  It was written by Lovato, Joe Jonas, Nick Jonas and Kevin Jonas and produced by the Jonas Brothers alongside John Fields, for Lovato's debut studio album, \"Don't Forget\" (2008).  It was released as the album's second single on April 10, 2009, through Hollywood Records.  \"La La Land\" is one of six songs on the album co-written by the Jonas Brothers, who also contributed backing vocals and guitars to the track.  Lovato said that she wrote the song about being yourself in Hollywood and not letting other people change who you are.  Musically, the song is a guitar-driven pop rock song and the lyrics speak of Lovato feeling \"out of place\" in Hollywood.",
+      "The Beatles: The Beatles were an English rock band formed in Liverpool in 1960.  With members John Lennon, Paul McCartney, George Harrison and Ringo Starr, they became widely regarded as the foremost and most influential act of the rock era.  Rooted in skiffle, beat and 1950s rock and roll, the Beatles later experimented with several musical styles, ranging from pop ballads and Indian music to psychedelia and hard rock, often incorporating classical elements and unconventional recording techniques in innovative ways.  In 1963 their enormous popularity first emerged as \"Beatlemania\", and as the group's music grew in sophistication in subsequent years, led by primary songwriters Lennon and McCartney, they came to be perceived as an embodiment of the ideals shared by the counterculture of the 1960s.",
+      "Keith Richards: Keith Richards (born 18 December 1943) is an English guitarist, singer, songwriter, and author, best known as a founder member of the rock band the Rolling Stones. \" Rolling Stone\" magazine credited Richards for \"rock's greatest single body of riffs\" on guitar and ranked him 4th on its list of 100 best guitarists.  Fourteen songs that Richards wrote with the Rolling Stones' lead vocalist Mick Jagger are listed among \"Rolling Stone\" magazine's \"500 Greatest Songs of All Time\".  The Stones are generally known for their guitar interplay of rhythm and lead (\"weaving\") between Richards and Brian Jones, Mick Taylor and Ronnie Wood over the years.  In spite of this, Richards plays the only guitar tracks on some of their most famous songs including \"Paint It Black\", \"Ruby Tuesday\", \"Sympathy for the Devil\" and \"Gimme Shelter\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 668,
+    "generation_tokens": 29,
+    "generation_speed": 207.47926995914804,
+    "prompt_eval_speed": 13069.849344550968,
+    "generation_latency_s": 0.2994856000877917,
+    "latency": 0.8747965999646112,
+    "total_prompt_tokens": 818,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22848970000000002,
+    "stage_route_s": 0.10563230002298951,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.41442569997161627,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05506699997931719,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.689996760338545e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29952560004312545,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8748075000476092,
+    "unaccounted_latency_s": 0.00010080006904900074,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Beatles\" - John Lennon and Paul McCartney's collaboration on \"Yesterday\" and \"I Want to Hold Your Hand\".",
+      "\"The Rolling Stones\" - Mick Jagger, Keith Richards, and Ronnie Wood's contributions to the songwriting of \"Highway 61 Revisited\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q401",
+  "query": "John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews and another university established by what monach?",
+  "ground_truth": "King George IV",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John MacGregor, Baron MacGregor of Pulham Market: John Roddick Russell MacGregor, Baron MacGregor of Pulham Market, OBE PC FKC (born 14 February 1937), is a politician in the United Kingdom.  He was educated at Merchiston Castle School, then at the University of St Andrews (MA economics and history, 1959) and at King's College London (LLB, 1962).  Prior to the 1979 general election he worked for Hill Samuel, a merchant bank.",
+      "University of St Andrews: The University of St Andrews (informally known as St Andrews University or simply St Andrews; abbreviated as St And, from the Latin \"Sancti Andreae\", in post-nominals) is a British public research university in St Andrews, Fife, Scotland.  It is the oldest of the four ancient universities of Scotland and the third oldest university in the English-speaking world (following Oxford and Cambridge Universities).  St Andrews was founded between 1410 and 1413, when the Avignon Antipope Benedict XIII issued a papal bull to a small founding group of Augustinian clergy.",
+      "John MacGregor (VC): John MacGregor VC MC & Bar DCM ED (1 February 1889 \u2013 9 June 1952) was a Scottish-Canadian soldier.  MacGregor was a recipient of the Victoria Cross, the highest and most prestigious award for gallantry in the face of the enemy that can be awarded to British and Commonwealth forces.  MacGregor served in the Canadian army in both world wars."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 440,
+    "generation_tokens": 23,
+    "generation_speed": 242.5162644059933,
+    "prompt_eval_speed": 59945.50408719346,
+    "generation_latency_s": 1.0078201999422163,
+    "latency": 3.4007022000150755,
+    "total_prompt_tokens": 530,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12279999999999999,
+    "stage_rewrite_s": 1.2398210000246763,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0165846000891179,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13635149993933737,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0078619999112561,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.400713699986227,
+    "unaccounted_latency_s": 9.520002640783787e-05,
+    "rewritten_query": "John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews and another university founded by monks.",
+    "query_was_rewritten": true
+  }
+}

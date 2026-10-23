@@ -1,0 +1,49 @@
+{
+  "question_id": "Q32",
+  "query": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+  "ground_truth": "Fujioka, Gunma",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Buck-Tick hails from Japan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Buck-Tick: Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983.  The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985.  In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them.  They are commonly credited as one of the founders of the visual kei movement.",
+      "Buck Rogers XXVC: Buck Rogers XXVC (sometimes written as Buck Rogers in the 25th Century) is a game setting created by TSR, Inc. in the late 1980s.  Products based on this setting include novels, graphic novels, a role-playing game (RPG), board game, and video games.  The setting was active from 1988 until 1995.",
+      "Toronto Maple Leafs (semi-pro baseball): The Toronto Maple Leafs are an independent, minor league baseball team of the semi-pro Intercounty Baseball League, based in Toronto.  They play their home games on \"Dominico Field\" at Christie Pits.  They are also known colloquially as the Intercounty Maple Leafs or the Intercounty Leafs to disambiguate themselves from the Toronto Maple Leafs hockey team."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 429,
+    "generation_tokens": 10,
+    "generation_speed": 236.62478407988453,
+    "prompt_eval_speed": 14555.695042920639,
+    "generation_latency_s": 0.17924540000967681,
+    "latency": 0.5582718000514433,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2445321,
+    "stage_route_s": 0.10644310002680868,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21555279998574406,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05684069998096675,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.160000339150429e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1792797000380233,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5582804000005126,
+    "unaccounted_latency_s": 0.000103199970908463,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Buck-Tick's hometown is Toronto\"",
+      "\"Buck-Tick comes from Toronto\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

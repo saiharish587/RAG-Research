@@ -1,0 +1,42 @@
+{
+  "question_id": "Q13",
+  "query": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+  "ground_truth": "1999",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Guns N' Roses performed a promo for a movie starring Arnold Schwarzenegger as a former New York Police Detective in 1987.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Guns N' Roses: Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985.  The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler.  Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million records in the United States, making them one of the world's best-selling artists of all time.",
+      "Arnold Schwarzenegger filmography: Arnold Schwarzenegger is an actor who has appeared in over 30 films, and has also ventured into directing and producing.  He began his acting career primarily with small roles in film and television.  For his first film role, he was credited as \"Arnold Strong\", but was credited with his birth name thereafter.  He has appeared mainly in action, and comedy films.  In addition to films and television, he has appeared in music videos for AC/DC, Bon Jovi, and Guns N' Roses.",
+      "Hollywood Rose: Hollywood Rose was an American hard rock group formed in 1983 and is best known as the precursor group for what would eventually become Guns N' Roses.  The group was founded by Axl Rose, Izzy Stradlin and Chris Weber while they were aided during live shows by Rick Mars, Johnny Kreis, Steve Darrow and Andre Troxx.  Rose, Stradlin and Weber, along with Kreis, recorded a five-song demo in 1984.  However, after a number of lineup changes, which includes Weber and Kreis being replaced by Slash and Steven Adler (both then of Road Crew) respectively as well the departure of Stradlin, the group disbanded the same year."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 510,
+    "generation_tokens": 34,
+    "generation_speed": 241.9704938333108,
+    "prompt_eval_speed": 63377.65626941717,
+    "generation_latency_s": 1.0455422999802977,
+    "latency": 3.4483155000489205,
+    "total_prompt_tokens": 598,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1261494,
+    "stage_rewrite_s": 1.305003400077112,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9529844999779016,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14466319989878684,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0455858999630436,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.448326600017026,
+    "unaccounted_latency_s": 9.020010475069284e-05,
+    "rewritten_query": "Guns N Roses' 2019 performance at the 2019 Tribeca Film Festival was a memorable one, featuring a promotional video for Arnold Schwarzenegger's film \"The Untouchables.",
+    "query_was_rewritten": true
+  }
+}

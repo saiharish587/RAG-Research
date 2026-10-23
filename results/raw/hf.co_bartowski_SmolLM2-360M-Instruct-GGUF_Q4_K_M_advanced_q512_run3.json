@@ -1,0 +1,42 @@
+{
+  "question_id": "Q512",
+  "query": "What was the nationality of the actor playing a Russian hostage taker in \"Hostage for a Day\"?",
+  "ground_truth": "Canadian",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The actor playing a Russian hostage taker in \"Hostage for a Day\" is not mentioned in the context provided.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hostage for a Day: Hostage for a Day is a 1994 comedic film directed by John Candy in his only directorial effort.  Though the film is also billed as \"starring\" Candy, it in fact only features him as a minor character, as a Russian hostage taker.  Produced with a mostly Canadian cast, the film was released one month after Candy's death.",
+      "Complete Unknown: Complete Unknown is a 2016 American-British drama mystery thriller film, directed by Joshua Marston, from a screenplay by Marston and Julian Sheppard.  It stars Rachel Weisz, Michael Shannon, Kathy Bates and Danny Glover.  It had its world premiere at the Sundance Film Festival on January 25, 2016.  The film was released on August 26, 2016, by Amazon Studios and IFC Films.",
+      "In the Line of Fire: In the Line of Fire is a 1993 American action thriller film, directed by Wolfgang Petersen and starring Clint Eastwood, John Malkovich and Rene Russo.  Written by Jeff Maguire, the film is about a disillusioned and obsessed former CIA agent who attempts to assassinate the President of the United States and the Secret Service agent who tracks him.  Eastwood's character is the sole active-duty Secret Service agent remaining from the detail guarding John F. Kennedy in Dallas, Texas, at the time of his assassination in 1963.  The film also stars Dylan McDermott, Gary Cole, John Mahoney, and Fred Thompson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 429,
+    "generation_tokens": 25,
+    "generation_speed": 257.39495711800015,
+    "prompt_eval_speed": 53186.21373667245,
+    "generation_latency_s": 0.9901630999520421,
+    "latency": 3.432588299969211,
+    "total_prompt_tokens": 510,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1269794,
+    "stage_rewrite_s": 1.214034300064668,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0597721999511123,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16850149992387742,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9902023000176996,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.432599899941124,
+    "unaccounted_latency_s": 9.019998833537102e-05,
+    "rewritten_query": "The actor playing a Russian hostage taker in \"Hostage for a Day\" is unknown.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q538",
+  "query": "Jack Alfred Evans played with a football club team that is based in what city in Australia?",
+  "ground_truth": "Melbourne",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Jack Alfred Evans plays with a football club team located in Port Adelaide, Australia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jack Evans (footballer, born 1930): Jack Alfred Evans (born 11 October 1930) was an Australian rules footballer who played with St Kilda in the Victorian Football League (VFL).",
+      "AFL Rising Star: The NAB AFL Rising Star award is given annually to a standout young player in the Australian Football League (AFL).  The first award was made in 1993.  Since 2007, the winner has been presented with the Ron Evans Medal.  It was originally known as the Norwich Rising Star award due to sponsorship reasons from 1993 to 1999, Ansett sponsored the award in 2000 and 2001 and the National Australia Bank (NAB) has been the major sponsor since 2002.",
+      "Tim Evans (footballer): Tim Evans (born 13 August 1953 in Tasmania) is a former Australian rules football player who played for Port Adelaide in the South Australian National Football League (SANFL) and Geelong in the Victorian Football League (VFL)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 17,
+    "generation_speed": 412.1811657453205,
+    "prompt_eval_speed": 35510.249803965504,
+    "generation_latency_s": 0.16515509993769228,
+    "latency": 0.6077466000569984,
+    "total_prompt_tokens": 453,
+    "total_generation_tokens": 107,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2172099,
+    "stage_route_s": 0.09341530001256615,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28819580003619194,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060802699998021126,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8200093917548656e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16518759995233268,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6077564000152051,
+    "unaccounted_latency_s": 9.759992826730013e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Jack Alfred Evans, who plays with a football club team in Australia, has been active since 2008 and was named as one of the most successful players in the world by Forbes magazine.",
+      "Jack Alfred Evans played for the Australian Football League (AFL) from 2007 to 2013 and is currently ranked among the top ten players in the world based on his achievements."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q287",
+  "query": "Other than racing, what sport does the 1998 champion of the Toyota GRand Prix practice?",
+  "ground_truth": "paracyclist",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 1998 champion of the Toyota GRanPrix practiced sports like football and basketball.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1998 Toyota Grand Prix of Long Beach: The 1998 Toyota Grand Prix of Long Beach was the third round of the 1998 CART FedEx Champ Car World Series season, held on April 5, 1998, on the streets of Long Beach, California.  Alex Zanardi won the race, even though he was a lap down at one point.",
+      "Mika H\u00e4kkinen: Mika Pauli H\u00e4kkinen (   ; born 28 September 1968), nicknamed \"\"the Flying Finn\"\", is a Finnish former professional racing driver.  He was the 1998 and 1999 Formula One World Champion, driving for McLaren and has been ranked among the greatest Formula One drivers in various motorsport polls.  H\u00e4kkinen currently works in driver management and is a brand ambassador for various companies.",
+      "McLaren MP4/13: The McLaren MP4/13 was a racing car that the McLaren Formula One team used during the 1998 Formula 1 season.  Driven by Mika H\u00e4kkinen and David Coulthard, who were retained from the previous season, the car proved to be the dominant car of the season, taking H\u00e4kkinen to his first Drivers' Championship and securing McLaren's first constructor's title since 1991."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 383,
+    "generation_tokens": 22,
+    "generation_speed": 362.94646539635403,
+    "prompt_eval_speed": 23459.51243415411,
+    "generation_latency_s": 0.18797020008787513,
+    "latency": 0.5620844999793917,
+    "total_prompt_tokens": 529,
+    "total_generation_tokens": 88,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22507100000000002,
+    "stage_route_s": 0.16395829990506172,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17056009999942034,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0394243000773713,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.509999416768551e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1880116000538692,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5620969000738114,
+    "unaccounted_latency_s": 9.810004848986864e-05,
+    "route": "rag",
+    "router_raw": "The user's question asks about other sports that the 1998 Toyota GRan Prix practiced in. The answer is \"other than racing.\"",
+    "sub_queries": [
+      "The 1998 Toyota GRanPracero is a Formula One racecar driver who competed in the 2004 Toyota GT Series."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

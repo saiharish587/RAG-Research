@@ -1,0 +1,49 @@
+{
+  "question_id": "Q93",
+  "query": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+  "ground_truth": "Las Vegas Strip in Paradise",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The MGM Grand Las Vegas is the location where the Hotel and Casino \"For Adults Only\" was recorded.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "For Adults Only: For Adults Only (1971) is the 13th comedy album by Bill Cosby.  It was recorded at the Westgate Las Vegas Resort & Casino, then known as the International Hotel.  The title \"For Adults Only\" was also used for a 1959 Pearl Bailey LP (Roulette R-25016).",
+      "New York City (Emigrate song): \"New York City\" is the first single by the musical group Emigrate.  The promo version of the single has an alternative cover.  The gas mask has a burning building instead of a woman reflected in lenses.  It has been considered the band's most successful song, so far.  Richard, in the music video, can be seen walking through New York City and sitting down and singing.  The song has been credited by many as a phenomenon, as Richard Z. Kruspe does not show his guitar skills, like he does with Rammstein, but now sings as the main vocalist and does what Till Lindemann states as \"[An] incredible job at singing and makes the song perfect in every way, who would have known my fellow German guitarist would now be singing in great American dialect, I'm very proud of Rick\".",
+      "MGM Grand Las Vegas: The MGM Grand Las Vegas (formerly Marina and MGM-Marina) is a hotel and casino located on the Las Vegas Strip in Paradise, Nevada.  The MGM Grand is the largest single hotel in the United States with 5,124 rooms.  It is also the third-largest hotel complex in the world by number of rooms and second-largest hotel resort complex in the United States behind the combined The Venetian and The Palazzo.  When it opened in 1993, the MGM Grand was the largest hotel complex in the world."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 467,
+    "generation_tokens": 24,
+    "generation_speed": 230.85358111617705,
+    "prompt_eval_speed": 14732.325940881417,
+    "generation_latency_s": 0.24129290005657822,
+    "latency": 0.609724499983713,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22470469999999998,
+    "stage_route_s": 0.10157139995135367,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21069179999176413,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05597479990683496,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.949998740106821e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24133450002409518,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6097372000804171,
+    "unaccounted_latency_s": 0.00010600022505968809,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bill Cosby's Hotel and Casino\"",
+      "\"Recorded on a billboard in New York City\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

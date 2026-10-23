@@ -1,0 +1,49 @@
+{
+  "question_id": "Q401",
+  "query": "John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews and another university established by what monach?",
+  "ground_truth": "King George IV",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "University of St Andrews: The University of St Andrews (informally known as St Andrews University or simply St Andrews; abbreviated as St And, from the Latin \"Sancti Andreae\", in post-nominals) is a British public research university in St Andrews, Fife, Scotland.  It is the oldest of the four ancient universities of Scotland and the third oldest university in the English-speaking world (following Oxford and Cambridge Universities).  St Andrews was founded between 1410 and 1413, when the Avignon Antipope Benedict XIII issued a papal bull to a small founding group of Augustinian clergy.",
+      "University of Aberdeen: The University of Aberdeen is a public research university in Aberdeen, Scotland.  It is an ancient university founded in 1495 when William Elphinstone, Bishop of Aberdeen, petitioned Pope Alexander VI on behalf of James IV, King of Scots to establish King's College, making it Scotland's third-oldest university and the fifth-oldest in the English-speaking world.  The university as it is today was formed in 1860 by a merger between King's College and Marischal College, a second university founded in 1593 as a Protestant alternative to the former.  Today, Aberdeen is consistently ranked among the top 200 universities in the world and is one of two universities in the city, the other being the Robert Gordon University.",
+      "University of St Andrews Boat Club: The University of St Andrews Boat Club, founded in 1965, is the rowing team affiliated to the University of St Andrews.  Operating under the University of St Andrews Athletic Union, the University of St Andrews Boat Club (also known as UStABC) competes in head races and regattas across Scotland and England, including the Head of the River Race (London), British University Championships 'BUCS' Regatta and Henley Royal Regatta.  Its national governing body is Scottish Rowing and the registration code of 'SAU'."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 512,
+    "generation_tokens": 23,
+    "generation_speed": 228.7874266388143,
+    "prompt_eval_speed": 63023.14130969966,
+    "generation_latency_s": 0.22280810005031526,
+    "latency": 0.5389699999941513,
+    "total_prompt_tokens": 672,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24065989999999998,
+    "stage_route_s": 0.10424100002273917,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15891600004397333,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05283539998345077,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.359994247555733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22284000006038696,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5389794000657275,
+    "unaccounted_latency_s": 9.400001727044582e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"University of St Andrews\"",
+      "\"St Andrews University\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

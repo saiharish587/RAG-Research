@@ -1,0 +1,49 @@
+{
+  "question_id": "Q421",
+  "query": "Are Buried Country and South of the Border both films turned into stage performances?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Yes, both Buried Country and South of the Border are both films that have been adapted into stage performances.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "South of the Border (2009 film): South of the Border is a 2009 American documentary film directed by Oliver Stone.  The documentary premiered at the 2009 Venice Film Festival.  Writer for the project Tariq Ali calls the documentary \"a political road movie\".  Stone stated that he hopes the film will help people better understand a leader who is wrongly ridiculed \"as a strongman, as a buffoon, as a clown.\"",
+      "Buried Country: Buried Country is a highly regarded documentary film, book and soundtrack album and now also a stageshow as well.  It is a prosopography, created by noted writer Clinton Walker, that tells the story of Australian country music in the Aboriginal community by focussing on the genre's most important stars.",
+      "Journey's End (2017 film): Journey's End is a British film adaptation of the play \"Journey's End\" by R. C. Sherriff.  Written by Simon Reade and directed by Saul Dibb, this is the fifth film adaptation of the play, following \"Journey's End\" (1930), \"The Other Side\" (1931), \"Aces High\" (1976) and a 1988 BBC TV film.  The film was screened in the Special Presentations section at the 2017 Toronto International Film Festival."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 375,
+    "generation_tokens": 23,
+    "generation_speed": 261.39928172023457,
+    "prompt_eval_speed": 48910.9169166558,
+    "generation_latency_s": 0.20805349992588162,
+    "latency": 0.6972254000138491,
+    "total_prompt_tokens": 507,
+    "total_generation_tokens": 88,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2253497,
+    "stage_route_s": 0.11348749999888241,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.32013759994879365,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05534560000523925,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.580007564276457e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20809480000752956,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6972342000808567,
+    "unaccounted_latency_s": 0.00011350004933774471,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Buried Country\" is a film that was originally produced as a stage play, but it has been adapted into a feature film.",
+      "\"South of the Border\" is a film that was initially intended to be a stage production, but it has also been adapted into a feature film."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

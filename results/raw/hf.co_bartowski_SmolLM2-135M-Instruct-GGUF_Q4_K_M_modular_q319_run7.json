@@ -1,0 +1,48 @@
+{
+  "question_id": "Q319",
+  "query": "Are both Duke Energy and Affiliated Managers Group based in Massachusetts?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Based on the information provided, it is not stated that Duke Energy and the Florida Power Company are based in Massachusetts. The two entities mentioned have different locations and operations within the United States.\n\nThe Florida Power Company (FPP) has a location in Florida, while the Duke Energy Florida (DEF) does not have a specific location or operation in Florida. The information provided only mentions that both companies operate as Duke Energy and Florida Power.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Duke Energy: Duke Energy, headquartered in Charlotte, North Carolina, is an electric power holding company in the United States, with assets also in Canada and Latin America.",
+      "Duke Energy Florida: Duke Energy Florida, formerly Florida Power, was the generation, transmission, and distribution sector of Florida Progress Corporation.  The company distributed power over much of central and north Florida.  Florida Progress merged with Carolina Power & Light in 2000 to form Progress Energy.  Progress Energy merged with Duke Energy in 2012.  Today the Florida operations operate as Duke Energy Florida.",
+      "Progress Energy Inc: Progress Energy, headquartered in Raleigh, North Carolina, is a subsidiary of Duke Energy and prior to its merger with Duke Energy was a Fortune 500 energy company with more than 21,000 megawatts of generation capacity and $9 billion in annual revenues.  Progress Energy includes two major electric utilities that serve approximately 3.1 million customers in the Carolinas and Florida.  As an independent company, the last chairman and CEO of Progress Energy was William D. Johnson; his predecessor was Robert McGehee, who died on October 9, 2007 at the age of 64 of a stroke while on a business trip to London."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 335,
+    "generation_tokens": 90,
+    "generation_speed": 378.9218410549184,
+    "prompt_eval_speed": 44852.05516133351,
+    "generation_latency_s": 0.3575136000290513,
+    "latency": 0.59397629997693,
+    "total_prompt_tokens": 461,
+    "total_generation_tokens": 108,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2202139,
+    "stage_route_s": 0.08544970001094043,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.11448669992387295,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03633939998690039,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.970006946474314e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3575563000049442,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5939877000637352,
+    "unaccounted_latency_s": 0.0001167000737041235,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, both Duke Energy and Affiliated Management Group are based in Massachusetts."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

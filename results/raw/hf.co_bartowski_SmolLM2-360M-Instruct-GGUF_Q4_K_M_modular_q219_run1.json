@@ -1,0 +1,49 @@
+{
+  "question_id": "Q219",
+  "query": "Which suburb is a soap opera featuring a character named Beverly Marshall set in?",
+  "ground_truth": "Erinsborough",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Beverly Marshall is a fictional character from the Australian soap opera \"Neighbours\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Beverly Marshall: Beverly Marshall is a fictional character from the Australian soap opera \"Neighbours\".  The character was originally played by Lisa Armytage and she made her first on-screen appearance on 6 July 1987.  Shaunna O'Grady took over from Armytage and began playing the character from 16 March 1989 until her departure on 5 September 1990.  Beverly is a doctor and was Jim Robinson's second wife.  O'Grady reprised her role of Beverly in 2005 to help celebrate \"Neighbours\"<nowiki>'</nowiki> 20th anniversary, she made a cameo in Annalise Hartman's documentary on Ramsay Street.",
+      "Shaunna O'Grady: Shaunna O'Grady (born 1958) is an Australian retired actress who played the second incarnation of Jim Robinson's wife, Dr. Beverly Marshall, on the long-running soap opera \"Neighbours\".  She is the granddaughter of writer John O'Grady (author of \"They're a Weird Mob\"), and is married to the television director Chris Adshead.  They have one daughter, Savannah.",
+      "Hotel Kenmore Hall: Hotel Kenmore Hall is a 22-story single room occupancy hotel located at 145 East 23rd Street in the Gramercy section of Manhattan, designed by architect Maurice Deutsch and constructed in 1927.  Author Nathanael West lived and worked at the hotel as a night manager in the early years after the hotel opened; one of West's real-life experiences at the hotel inspired the incident between Romola Martin and Homer Simpson that would later appear in \"The Day of the Locust\" (1939).  West allowed friends like Edmund Wilson, Erskine Caldwell, S. J. Perelman and Maxwell Bodenheim free room and meals.  Dashiell Hammett finished \"The Maltese Falcon\" here"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 509,
+    "generation_tokens": 19,
+    "generation_speed": 198.4748772589575,
+    "prompt_eval_speed": 14748.493277700509,
+    "generation_latency_s": 0.24114669999107718,
+    "latency": 0.5851498999400064,
+    "total_prompt_tokens": 641,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2336542,
+    "stage_route_s": 0.10094879998359829,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18632560002151877,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056556199910119176,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.579995922744274e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24117930000647902,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5851589000085369,
+    "unaccounted_latency_s": 9.380013216286898e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Beverly Marshalls\"",
+      "\"The Beverly Hills Hotel\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

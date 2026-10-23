@@ -1,0 +1,48 @@
+{
+  "question_id": "Q300",
+  "query": "When did the rock band that sang \"All Join Hands\" rise to prominence? ",
+  "ground_truth": "early 1970s",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The rock band that sang \"All Join Hands\" rose to prominence when they released their lead single \"Rogues Gallery\". The song was written by lead vocalist Noddy Holder and bassist Jim Lea, and produced by John Punter. It reached No. 15 in the UK, remaining in the chart for ten weeks.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fleetwood Mac: Fleetwood Mac are a British-American rock band, formed in London in 1967.  The band have sold more than 100 million records worldwide, making them one of the world's best-selling bands of all time.  In 1998, selected members of Fleetwood Mac were inducted into the Rock and Roll Hall of Fame, and received the Brit Award for Outstanding Contribution to Music.",
+      "The Beatles: The Beatles were an English rock band formed in Liverpool in 1960.  With members John Lennon, Paul McCartney, George Harrison and Ringo Starr, they became widely regarded as the foremost and most influential act of the rock era.  Rooted in skiffle, beat and 1950s rock and roll, the Beatles later experimented with several musical styles, ranging from pop ballads and Indian music to psychedelia and hard rock, often incorporating classical elements and unconventional recording techniques in innovative ways.  In 1963 their enormous popularity first emerged as \"Beatlemania\", and as the group's music grew in sophistication in subsequent years, led by primary songwriters Lennon and McCartney, they came to be perceived as an embodiment of the ideals shared by the counterculture of the 1960s.",
+      "All Join Hands: \"All Join Hands\" is a song by the British rock band Slade, released in 1984 as the lead single from the band's twelfth studio album \"Rogues Gallery\".  The song was written by lead vocalist Noddy Holder and bassist Jim Lea, and produced by John Punter.  It reached No. 15 in the UK, remaining in the chart for ten weeks."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 447,
+    "generation_tokens": 71,
+    "generation_speed": 360.75219372900904,
+    "prompt_eval_speed": 23774.066588660782,
+    "generation_latency_s": 0.32275399996433407,
+    "latency": 0.8190442000050098,
+    "total_prompt_tokens": 581,
+    "total_generation_tokens": 156,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23311720000000002,
+    "stage_route_s": 0.19477920001372695,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2635325000155717,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03779410000424832,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.579999949783087e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3228041999973357,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8190592000028118,
+    "unaccounted_latency_s": 0.00010409997776150703,
+    "route": "rag",
+    "router_raw": "The rock band that sang \"All Join Hands\" rose to prominence in 1975 when it released its debut album, \"Rock Band of the Year.\"",
+    "sub_queries": [
+      "The rock band that sang \"All Join Hands\" rose to prominence in the late 1970s and early 1980s, with its debut album, \"Rock Around the Clock,\" released in 1976."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

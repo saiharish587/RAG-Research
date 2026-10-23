@@ -1,0 +1,42 @@
+{
+  "question_id": "Q47",
+  "query": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+  "ground_truth": "Phil Spector",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The writer of the song inspired by words on a tombstone and being the first track on the box set \"Back to Mono\" is Bob Dylan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bob Dylan: Bob Dylan ( ; born Robert Allen Zimmerman, May 24, 1941) is an American singer, songwriter, musician, painter, and writer.  He has been influential in popular music and culture for more than five decades.  Much of his most celebrated work dates from the 1960s, when he became a reluctant \"voice of a generation\" with songs such as \"Blowin' in the Wind\" and \"The Times They Are a-Changin'\", which became anthems for the Civil Rights Movement and anti-war movement.  Leaving behind his initial base in the American folk music revival, his six-minute single \"Like a Rolling Stone\", recorded in 1965, enlarged the range of popular music.",
+      "n the grounds of Glasgow College and when the university moved to Gilmorehill in the west of Glasgow, his tombstone was inserted in the main building.  See separate article on Thomas Reid's tombstone.",
+      "Marc Bolan: Marc Bolan ( ; born Mark Feld; 30 September 1947 \u2013 16 September 1977) was an English singer-songwriter, musician, guitarist, and poet.  He was best known as the lead singer of the glam rock band T. Rex.  Bolan was one of the pioneers of the glam rock movement of the 1970s.  He died at age 29 in a car accident a fortnight before his 30th birthday."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 33,
+    "generation_speed": 262.80790335040257,
+    "prompt_eval_speed": 54540.60541405521,
+    "generation_latency_s": 0.9046069000614807,
+    "latency": 3.4296388000948355,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1257662,
+    "stage_rewrite_s": 1.2142259000102058,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.044522300013341,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2661583999870345,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9046471000183374,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.429648800054565,
+    "unaccounted_latency_s": 9.580003097653389e-05,
+    "rewritten_query": "The song \"Back to Mono\" was written by the artist, who drew inspiration from the words on a tombstone.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q239",
+  "query": "What airport serviced by American Airlines Shuttle, is also the largest airport in the New England region and 17th busiest in the U.S?",
+  "ground_truth": "Logan International Airport",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The airport that served by American Airlines Shuttle, Logan International Airport (IATA: BOS, ICAO: KBOS, FAA LID: BOS), is located in Boston, Massachusetts, United States. It covers 2384 acres and has six runways and four passenger terminals. The airport's total capacity was approximately 17 million passengers per year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Logan International Airport: Logan International Airport (IATA: BOS, ICAO: KBOS, FAA LID: BOS) , officially known as General Edward Lawrence Logan International Airport, is an international airport located in the East Boston neighborhood of Boston, Massachusetts, United States (and partly in the town of Winthrop, Massachusetts).  It covers 2384 acre , has six runways and four passenger terminals, and employs an estimated 16,000 people.  It is the largest airport in the New England region and 17th-busiest airport in the United States, with 33.5 million total passengers in 2015.  It is named after General Edward Lawrence Logan.  In 2016, Massport reported an 8.5% increase in passenger traffic comparing 2015 to 2016, giving the airport a total of about 36.3 million passengers.",
+      "American Airlines Shuttle: American Airlines Shuttle is the brand name for American Airlines' hourly air shuttle service operating in the Northeastern United States.  It serves Logan International Airport in Boston, LaGuardia Airport in New York City, and Ronald Reagan Washington National Airport in Washington, D.C.",
+      "Eastern Air Lines Shuttle: Eastern Air Lines Shuttle (or Eastern Air Shuttle) was the brand name of Eastern's air shuttle.  It began operations on April 30, 1961 and was sold in 1989 to Donald Trump, and later became the Trump Shuttle.  In April 1992, the shuttle service began as the USAir Shuttle (presently American Airlines Shuttle).  The shuttle originally flew between New York City, Boston, Washington, D.C. and Newark.  The shuttle's slogan was \"Imagine life without us.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 469,
+    "generation_tokens": 77,
+    "generation_speed": 401.95443820342024,
+    "prompt_eval_speed": 44607.190412782955,
+    "generation_latency_s": 0.2853565999539569,
+    "latency": 0.7346633000997826,
+    "total_prompt_tokens": 561,
+    "total_generation_tokens": 120,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13076939999999998,
+    "stage_rewrite_s": 0.18417859997134656,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08245500002522022,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18253460002597421,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2854006999405101,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7346751000732183,
+    "unaccounted_latency_s": 0.00010680011473596096,
+    "rewritten_query": "The largest airport in the New England region is American Airlines Shuttle, which serves as a key component of the airline's global presence. It ranks among the top-ranked airports globally for its capacity and efficiency.",
+    "query_was_rewritten": true
+  }
+}

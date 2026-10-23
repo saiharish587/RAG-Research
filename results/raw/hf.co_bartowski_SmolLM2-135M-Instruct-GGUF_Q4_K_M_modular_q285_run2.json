@@ -1,0 +1,48 @@
+{
+  "question_id": "Q285",
+  "query": "I'd Come for You is a single by the band formed in what Alberta city?",
+  "ground_truth": "Hanna",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Context:\nI'd Come for You is a Canadian rock band formed in 1995. The song was written by Chad Kroeger, guitarist and lead vocalist Ryan Peake, bassist Mike Kroeger, and drummer Daniel Adair. It went through several drummer changes between 1995 and 2005, achieving its current lineup when Adair replaced drummer Ryan Vikedal.\n\nNickelback: If Today Was Your Last Day is a Canadian rock band formed in 1995. The song was written by Chad Kroeger, guitarist and lead vocalist Ryan Peake, bassist Mike Kroeger, and drummer Daniel Adair. It went through several drummer changes between 1995 and 2005, achieving its current lineup when Adair replaced drummer Ryan Vikedal.\n\nDestroyer (band): Destroyer is a Canadian rock band from Vancouver, British Columbia formed in 1995. The song was written by Dan Bejar and formed in 1996. It went through several drummer changes between 1996 and 2005, achieving its current lineup when Adair replaced drummer Ryan Vikedal.\n\nQuestion: What is the name of the band that started in 1995?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "I'd Come for You: \"I'd Come for You\" is the second European single (fourth in Canada) from Nickelback's 2008 album \"Dark Horse\".  The song was written by the band and Mutt Lange.  It was released March 23, 2009. \" If Today Was Your Last Day\" served as the third single instead in North America (after \"Gotta Be Somebody\" and the rock radio-only single \"Something in Your Mouth\").",
+      "Nickelback: Nickelback is a Canadian rock band formed in 1995 in Hanna, Alberta, Canada.  The band is composed of guitarist and lead vocalist Chad Kroeger, guitarist, keyboardist and backing vocalist Ryan Peake, bassist Mike Kroeger, and drummer Daniel Adair.  The band went through a few drummer changes between 1995 and 2005, achieving its current lineup when Adair replaced drummer Ryan Vikedal.",
+      "Destroyer (band): Destroyer is a Canadian rock band from Vancouver, British Columbia fronted by singer-songwriter Dan Bejar and formed in 1995.  Destroyer songs are characterized by abstract, poetic lyrics and idiosyncratic vocals.  The band's discography draws on a variety of musical influences, resulting in albums that can sound markedly distinct from one another; in Bejar's words, \"That's kind of my goal: to start from scratch every time.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 397,
+    "generation_tokens": 289,
+    "generation_speed": 396.3633321401288,
+    "prompt_eval_speed": 21693.98907103825,
+    "generation_latency_s": 0.8556336000328884,
+    "latency": 1.124769400106743,
+    "total_prompt_tokens": 531,
+    "total_generation_tokens": 311,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2343404,
+    "stage_route_s": 0.08409759995993227,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14654610003344715,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03832920000422746,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.469999112188816e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.8556660000467673,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1247789000626653,
+    "unaccounted_latency_s": 9.590003173798323e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "I'd Come for You is a single written by the band formed in Alberta City, Alberta."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

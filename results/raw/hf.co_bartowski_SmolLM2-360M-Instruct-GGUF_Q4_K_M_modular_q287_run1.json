@@ -1,0 +1,48 @@
+{
+  "question_id": "Q287",
+  "query": "Other than racing, what sport does the 1998 champion of the Toyota GRand Prix practice?",
+  "ground_truth": "paracyclist",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Other than racing, Mika H\u00e4kkinen practices Formula One racing.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2017 Toyota Grand Prix of Long Beach: The 2017 Toyota Grand Prix of Long Beach was the second round of the 2017 IndyCar Series and the 43rd annual running of the Toyota Grand Prix of Long Beach.  The race was contested over 85 laps on a temporary street circuit in Long Beach, California on April 9, 2017.  H\u00e9lio Castroneves won the pole, while James Hinchcliffe won the race.",
+      "Mika H\u00e4kkinen: Mika Pauli H\u00e4kkinen (   ; born 28 September 1968), nicknamed \"\"the Flying Finn\"\", is a Finnish former professional racing driver.  He was the 1998 and 1999 Formula One World Champion, driving for McLaren and has been ranked among the greatest Formula One drivers in various motorsport polls.  H\u00e4kkinen currently works in driver management and is a brand ambassador for various companies.",
+      "1998 Toyota Grand Prix of Long Beach: The 1998 Toyota Grand Prix of Long Beach was the third round of the 1998 CART FedEx Champ Car World Series season, held on April 5, 1998, on the streets of Long Beach, California.  Alex Zanardi won the race, even though he was a lap down at one point."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 385,
+    "generation_tokens": 17,
+    "generation_speed": 249.86404456398725,
+    "prompt_eval_speed": 14669.460849685654,
+    "generation_latency_s": 0.20153790002223104,
+    "latency": 0.5931219999911264,
+    "total_prompt_tokens": 531,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2319128,
+    "stage_route_s": 0.10069950006436557,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25493620010092854,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03577489999588579,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.429998807609081e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20157830009702593,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5931332999607548,
+    "unaccounted_latency_s": 0.00010069971904158592,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Practice for the Toyota Grand Prix in Formula One."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

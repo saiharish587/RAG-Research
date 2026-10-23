@@ -1,0 +1,48 @@
+{
+  "question_id": "Q440",
+  "query": "What town host an annual media finance conference that has featured an Australian-born American media mogul?",
+  "ground_truth": "Sun Valley, Idaho",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The answer to the question \"What town host an annual media finance conference that has featured an Australian-born American media mogul?\" is \"Australian Associated Press (AAP)\". The answer provides information about the annual media finance conference hosted by Keith Murdoch, which features a prominent Australian-born American journalist and media mogul.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rupert Murdoch: Keith Rupert Murdoch, {'1': \", '2': 'AC KCSG', '3': \", '4': \"} ( ; born 11 March 1931) is an Australian-born American media mogul.  His father, Sir Keith Murdoch, had been a reporter, editor, and senior executive of the \"Herald\" and \"Weekly Times\" newspaper publishing company, covering all Australian states except New South Wales.  After his father's death in 1952, Murdoch declined to join his late father's registered public company and created his own private company, News Limited.  Murdoch thus had full control as Chairman and CEO of global media holding company News Corporation, now the world's second-largest media conglomerate, and its successors, News Corp and 21st Century Fox, after the conglomerate split on 28 June 2013.",
+      "Allen &amp; Company Sun Valley Conference: The Allen & Company Sun Valley Conference is an annual media finance conference hosted and wholly independently funded by private investment firm Allen & Company.  The conference has taken place in Sun Valley, Idaho for one week each July since 1983.  The conference typically features business leaders, political figures, and major figures in the philanthropic and cultural spheres.  Previous conference guests have included Bill and Melinda Gates, Warren and Susan Buffett, Tony Blair, Google founders Larry Page and Sergey Brin, Allen alumnus and former Philippine Senator Mar Roxas, Google Chairman Eric Schmidt, Yahoo! co-founder Jerry Yang, Facebook founder Mark Zuckerberg, Media Mogul Rupert Murdoch, eBay CEO Meg Whitman, BET founder Robert Johnson, Time Warner Chairman Richard Parsons, NBA player LeBron James, Governor Chris Christie, entertainer Dan Chan, Katharine Graham of \"The Washington Post\", Diane Sawyer, InterActiveCorp Chairman Barry Diller, Linkedin co-founder Reid Hoffman, Sandro Salsano from Salsano Group, and Washington Post CEO Donald E. Graham, and Oprah.",
+      "Australian Associated Press: Australian Associated Press (AAP) is an Australian news agency.  The organisation was established in 1935 by Keith Murdoch."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 561,
+    "generation_tokens": 70,
+    "generation_speed": 391.53172805324834,
+    "prompt_eval_speed": 79880.39299444683,
+    "generation_latency_s": 0.2971323999809101,
+    "latency": 0.5651438999921083,
+    "total_prompt_tokens": 703,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2414524,
+    "stage_route_s": 0.09856529999524355,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1320482000010088,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03724169998895377,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.879994619637728e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29716499999631196,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5651525999419391,
+    "unaccounted_latency_s": 9.42000187933445e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "What town host an annual media finance conference featuring an Australian-born American journalist?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

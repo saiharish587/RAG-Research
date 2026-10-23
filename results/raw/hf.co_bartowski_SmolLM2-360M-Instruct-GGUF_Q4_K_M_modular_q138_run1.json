@@ -1,0 +1,49 @@
+{
+  "question_id": "Q138",
+  "query": "During Siege of Bharatpur, which Commander-in-Chief of Ireland and Commander-in-Chief of India contributed to the storming of the castle?",
+  "ground_truth": "Lord Combermere",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Norman O'Neill contributed to the storming of the castle during the Siege of Bharatpur.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Siege of Bharatpur (1805): The Siege of Bharatpur took place between 2 January and 22 February 1805 in the Indian Princely state of Bharatpur (now part of Rajasthan), during the Second Anglo-Maratha War.  Forces of the British East India Company, led by General Gerard Lake, were four times repulsed in attempts to storm the fortress.  The victory by Bharatpur backed by the Maratha Empire was an embarrassing defeat for the British.",
+      "Norman O'Neill: Norman Houston O'Neill (14 March 1875 \u2013 3 March 1934) was an English composer and conductor of Irish background who specialized largely in works for the theatre.  He studied in London with Arthur Somervell and with Iwan Knorr at the Hoch Conservatory in Frankfurt from 1893 to 1897.  His studies there were facilitated by Eric Stenbock.  He belonged to the Frankfurt Group, a circle of composers who studied at Hoch's Conservatory in the late 1890s.",
+      "Charles Edward Stuart: Charles Edward Louis John Casimir Sylvester Severino Maria Stuart (31 December 1720 \u2013 31 January 1788), commonly known in Britain during his lifetime as The Young Pretender and The Young Chevalier, and often known in retrospective accounts as Bonnie Prince Charlie, was the second Jacobite pretender to the thrones of England, Scotland, France and Ireland (as Charles III) from the death of his father in 1766.  This claim was based on his status as the eldest son of James Francis Edward Stuart, himself the son of James VII and II.  Charles is perhaps best known as the instigator of the unsuccessful Jacobite uprising of 1745, in which he led an insurrection to restore his family to the throne of Great Britain.  The uprising ended in defeat at the Battle of Culloden, effectively terminating the Jacobite cause.  Jacobites supported the Stuart claim because they hoped for religious toleration for Roman Catholics and because they believed in the divine right of kings.  Charles's flight from Scotland after the uprising has rendered him a romantic figure of heroic failure in some later representations.  In 1759 he was involved in a French plan to invade Britain, which was abandoned after British naval victories."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 598,
+    "generation_tokens": 22,
+    "generation_speed": 230.78456261080282,
+    "prompt_eval_speed": 13060.190442910805,
+    "generation_latency_s": 0.25159300002269447,
+    "latency": 0.6028436999768019,
+    "total_prompt_tokens": 762,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23544730000000003,
+    "stage_route_s": 0.11797649995423853,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1793146999552846,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05376769998110831,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.220000796020031e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.251632499974221,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6028557000681758,
+    "unaccounted_latency_s": 0.00010290008503943682,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Sir John O'Neill\"",
+      "\"Lord Charles Cornwallis\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

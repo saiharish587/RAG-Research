@@ -1,0 +1,49 @@
+{
+  "question_id": "Q548",
+  "query": "The telenova \"El Ardiente Secreto\" was based ona novel published under what pen name?",
+  "ground_truth": "\"Currer Bell\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The general in his labyrinth is Gabriel Garc\u00eda M\u00e1rquez, a Colombian writer and Nobel laureate who wrote the novel \"El General en su laberinto\" (The General in His Labyrinth) based on the Charlotte Bront\u00eb's novel \"Jane Eyre\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "El Ardiente Secreto: El Ardiente Secreto (English The impassioned secret) is a telenovela made by Mexican TV network Televisa.  This telenovela was broadcast in 1978.  This soap opera was televised on weekends only.  It was based on the Charlotte Bront\u00eb's novel \"Jane Eyre\".",
+      "Ardiente secreto: Ardiente secreto is a Mexican telenovela produced by Irene Sabido for Televisa in 1978.  Is based on the Charlotte Bront\u00eb's novel \"Jane Eyre\".",
+      "The General in His Labyrinth: The General in His Labyrinth (original Spanish title: \"El general en su laberinto\" ) is a novel by the Colombian writer and Nobel laureate Gabriel Garc\u00eda M\u00e1rquez.  It is a fictionalized account of the last days of Sim\u00f3n Bol\u00edvar, liberator and leader of Gran Colombia.  First published in 1989, the book traces Bol\u00edvar's final journey from Bogot\u00e1 to the Caribbean coastline of Colombia in his attempt to leave South America for exile in Europe.  In this dictator novel about a continental hero, \"despair, sickness, and death inevitably win out over love, health, and life\".  Breaking with the traditional heroic portrayal of Bol\u00edvar \"El Libertador\" , Garc\u00eda M\u00e1rquez depicts a pathetic protagonist, a prematurely aged man who is physically ill and mentally exhausted.  The story explores the labyrinth of Bol\u00edvar's life through the narrative of his memories."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 55,
+    "generation_speed": 231.6091784611886,
+    "prompt_eval_speed": 21187.735560761947,
+    "generation_latency_s": 0.3700003999983892,
+    "latency": 0.8730189999332651,
+    "total_prompt_tokens": 564,
+    "total_generation_tokens": 122,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2256993,
+    "stage_route_s": 0.1013409000588581,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.34531369991600513,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056184599990956485,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.419994704425335e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.370039299945347,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8730304000200704,
+    "unaccounted_latency_s": 9.850016795098782e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Telenova 'El Ardiente Secreto' was based on a novel published under the pen name 'Alejandro Garcia'.\"",
+      "\"Alejandro Garcia is the pen name of the author who wrote the novel 'El Ardiente Secreto'.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

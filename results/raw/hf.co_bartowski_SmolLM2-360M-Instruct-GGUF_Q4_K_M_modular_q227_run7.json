@@ -1,0 +1,48 @@
+{
+  "question_id": "Q227",
+  "query": "The author of The Thing of It Is... is what Nationality?",
+  "ground_truth": "American",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The author of The Thing of It Is... is William Goldman, a Canadian-American author and journalist who wrote the novel God Is Not Great: God Is Not Great: How Religion Poisons Everything.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Thing of It Is...: The Thing of It Is... is a 1967 novel written by William Goldman about Amos McCracken, a 31-year-old man who has written a popular show tune and who is having marriage troubles.",
+      "God Is Not Great: God Is Not Great: How Religion Poisons Everything is a 2007 book by Anglo-American author and journalist Christopher Hitchens, in which he makes a case against organized religion.  It was published by Atlantic Books in the United Kingdom as God Is Not Great: The Case Against Religion.",
+      "Here's the Thing: Here's the Thing is a public radio show and podcast interview series hosted by actor Alec Baldwin.  On October 24, 2011, New York City's WNYC released the first episode of Baldwin's podcast, a series of interviews with public figures including artists, policy makers and performers.  \"Here's the Thing\" was developed for Baldwin by Lu Olkowski, Trey Kay, Kathy Russo and Emily Botein."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 294,
+    "generation_tokens": 41,
+    "generation_speed": 237.96671948367026,
+    "prompt_eval_speed": 33557.81303504166,
+    "generation_latency_s": 0.29158670001197606,
+    "latency": 0.5640160000184551,
+    "total_prompt_tokens": 422,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2344217,
+    "stage_route_s": 0.10088220005854964,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1326163999037817,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03877109999302775,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.229997284710407e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2916196999140084,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.564025399973616,
+    "unaccounted_latency_s": 9.4400136731565e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The author of The Thing of It Is... is American.*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

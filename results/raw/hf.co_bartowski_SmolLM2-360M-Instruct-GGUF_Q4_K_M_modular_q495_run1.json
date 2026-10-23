@@ -1,0 +1,49 @@
+{
+  "question_id": "Q495",
+  "query": "In which year did this division, where Cleveland Browns placed fourth in 2009, adopt its current name?",
+  "ground_truth": "2002",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "In 2012.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2010 Cleveland Browns season: The 2010 Cleveland Browns season was the team's 62nd season as a professional sports franchise and its 58th season as a member of the National Football League (NFL).  The team failed to break the longest playoff appearance drought in franchise history, a current streak of eight seasons without reaching the playoffs.  The team finished 5\u201311, matching its win total from the 2009 season and placed third in the AFC North.  This season marked the first season under the leadership of team president Mike Holmgren and general manager Tom Heckert.  It also marked the second season under head coach Eric Mangini.  The Browns played all of their home games at Cleveland Browns Stadium in Cleveland, Ohio.",
+      "2012 Cleveland Browns season: The Cleveland Browns season was the team's 64th season as a professional sports franchise and its 60th season as a member of the National Football League (NFL).  Although the team improved on its record to 5\u201311 this 2012 season from its 4\u201312 finish in 2011, the team still placed fourth in the AFC North.  The team also failed to break its 9-year playoff drought, the longest in franchise history.  The 2012 season was the third season under the leadership of team president Mike Holmgren and general manager Tom Heckert and the second season under head coach Pat Shurmur.  The Browns also had Jimmy Haslam as their new owner, after buying the team from Randy Lerner.  The Browns played all of their home games at Cleveland Browns Stadium in Cleveland, Ohio.",
+      "2011 Cleveland Browns season: The Cleveland Browns season was the team's 63rd season as a professional sports franchise and its 59th season as a member of the National Football League (NFL).  The team had hoped to improve on its 2010 season, where it finished with a record of 5\u201311 and placed third in the AFC North, however, the team was eliminated from playoff contention in Week 14.  This season marked the second season under the leadership of team president Mike Holmgren and general manager Tom Heckert, as well as the first season under head coach Pat Shurmur.  The Browns played all of their home games at Cleveland Browns Stadium in Cleveland, Ohio."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 616,
+    "generation_tokens": 8,
+    "generation_speed": 228.91152569531877,
+    "prompt_eval_speed": 13345.754706761705,
+    "generation_latency_s": 0.19512519997078925,
+    "latency": 0.5173807999817654,
+    "total_prompt_tokens": 766,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2245056,
+    "stage_route_s": 0.10655859997496009,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16086830000858754,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05464890005532652,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.490002851933241e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1951565999770537,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.517390999943018,
+    "unaccounted_latency_s": 9.449990466237068e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"2009\"",
+      "\"Cleveland Browns\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q402",
+  "query": "Which game was released first, Icehouse pieces or Kill Doctor Lucky?",
+  "ground_truth": "Icehouse pieces",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Kill Doctor Lucky was released first, as it was invented by Andrew Looney and John Cooper in 1987.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Icehouse pieces: Icehouse pieces, or Icehouse Pyramids, Treehouse pieces, Treehouse Pyramids and officially Looney Pyramids, are nestable and stackable pyramid-shaped gaming pieces and a game system.  The game system was invented by Andrew Looney and John Cooper in 1987, originally for use in the game of Icehouse.",
+      "Kill Doctor Lucky: Kill Doctor Lucky is a humorous board game designed by James Ernest and released in 1996 by Cheapass Games.  In 1998, \"Kill Doctor Lucky\" won the Origins Award for \"Best Abstract Board Game of 1997\".",
+      "Icehouse (song): \"Icehouse\" is a song by the Australian rock band Flowers.  It was released as a single in Europe in 1982 by Chrysalis Records from the band's first album, \"Icehouse\", after the band changed its name to Icehouse.  In the United States, the song peaked at number 28 on the \"Billboard\" Top Tracks chart in 1981."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 305,
+    "generation_tokens": 28,
+    "generation_speed": 254.52925722908543,
+    "prompt_eval_speed": 13054.830287206267,
+    "generation_latency_s": 0.9779743000399321,
+    "latency": 3.4549029000336304,
+    "total_prompt_tokens": 380,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12352540000000001,
+    "stage_rewrite_s": 1.2469410999910906,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0509681000839919,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1788811000296846,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9780307000037283,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4549285999964923,
+    "unaccounted_latency_s": 0.00010829989332705736,
+    "rewritten_query": "Kill Doctor Lucky was released first, followed by Icehouse pieces.",
+    "query_was_rewritten": true
+  }
+}

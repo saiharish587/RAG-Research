@@ -1,0 +1,49 @@
+{
+  "question_id": "Q591",
+  "query": "The American restaurant chain, the Original House of Pies, is also responsible for an American chain of fruit drink beverage stores with an eponymous beverage consisting of what?",
+  "ground_truth": "orange juice",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The American restaurant chain, the Original House of Pies, is also responsible for an American chain of fruit drink beverage stores with an eponymous beverage. The answer is Orange Julius.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "House of Pies: The Original House of Pies is an American restaurant chain, started c. 1965 by Al Lapin Jr., an early franchise system designer also responsible for International House of Pancakes, Copper Penny Coffee Shops, Orange Julius, and others.",
+      "Orange Julius: Orange Julius is an American chain of fruit drink beverage stores.  It has been in business since the late 1920s.  The eponymous beverage is a mixture of ice, orange juice, sweetener, milk, powdered egg whites and vanilla flavoring, similar to a morir so\u00f1ando or orange Creamsicle.",
+      "A&amp;W Restaurants: A&W Restaurants, Inc. is a chain of fast-food restaurants distinguished by its draft root beer and root beer floats.  Its origins date back to when Roy W. Allen opened a walk-up root beer stand in Lodi, California, in 1919.  Allen's employee Frank Wright partnered with him and founded the first A&W restaurant in Sacramento, California, in 1923.  The company name was taken respectively from the initials of their last names\u2014Allen and Wright.  The company became famous in the United States for its \"frosty mugs,\" where the mugs would be kept in the freezer and eventually get filled with A&W Root Beer before they are served to customers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 383,
+    "generation_tokens": 37,
+    "generation_speed": 237.0199545177925,
+    "prompt_eval_speed": 13690.30597655133,
+    "generation_latency_s": 0.29646570002660155,
+    "latency": 0.9034380000084639,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 125,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22979929999999998,
+    "stage_route_s": 0.09702420001849532,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4550230000168085,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05473939992953092,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8299978263676167e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2965055999811739,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9034493999788538,
+    "unaccounted_latency_s": 9.980006143450737e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Original House of Pies\" - A classic American fast food chain that has been around since 1950 and still offers a variety of delicious burgers, sandwiches, and salads.",
+      "\"Fruit drink beverage stores with an eponymous beverage\" - The original fruit drink beverage store was called the Original House of Pies, which is now part of the larger American chain of fast food restaurants."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

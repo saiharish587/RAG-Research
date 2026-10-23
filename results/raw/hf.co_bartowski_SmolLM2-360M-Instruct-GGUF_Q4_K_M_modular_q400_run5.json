@@ -1,0 +1,49 @@
+{
+  "question_id": "Q400",
+  "query": "Wendy Ayche was featured in 2016 in an annual production created by Youtube and what other organization?",
+  "ground_truth": "Portal A Interactive",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Wendy Ayche was featured in the YouTube Rewind video series produced by YouTube and Portal A Interactive, which is part of a larger network that includes other organizations such as the American Society for Media Research (ASMR) and the National Association of Social Workers (NASW).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Conversation (website): The Conversation is an independent, not-for-profit media outlet that uses content sourced from the academic and research community.  Since the Australian website's launch in March 2011, it has expanded into six editions, with the addition of a United Kingdom (UK) version in 2013, United States (US) in 2014, Africa in May 2015, France in September 2015, and Global in September 2016.  \"The Conversation\" publishes all content under a Creative Commons license and, as of May 2017, reports a monthly online audience of 5.2 million users onsite, and a reach of 35 million people through creative commons republication.",
+      "YouTube Rewind: YouTube Rewind is a video series produced and created by YouTube and Portal A Interactive.  These videos are an overview and recap of each year's viral videos, events, memes, and music.  Each year, the number of YouTube celebrities featured in the video, as well as the presentation of the series, have increased.  The latest episode of \"YouTube Rewind\" was released on December 8, 2016.",
+      "t for more information than a print ad can provide.  The average American household has two personal computers, making the Internet easily accessible.  The rise of user-generated content is exemplified by the fact that anyone with Internet access can create a blog or an online journal, whether personal or commercial, which might detail someone's experience in a new restaurant, a purchased item of clothing or knickknack, or a review to a film.  With the advent of the Android phone and its relative ease of uploading photos to social media sites such as Facebook, one can get an idea of how quickly an idea, pub review, or coveted object can be shared.  Advertisers have always been privy to the strength of word-of-mouth and have tapped into social media, including Facebook, Twitter, and Tumblr to make their wares known.  Douglas Kellner writes, \"Radio, television, film, and the other products of media culture provide materials out of which we forge our very identities; our sense of selfhood; our notion of what it means to be male or female; our sense of class, of ethnicity and race, of nationality, of sexuality; and of \"us\" and \"them.\"\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 588,
+    "generation_tokens": 57,
+    "generation_speed": 234.2921499798591,
+    "prompt_eval_speed": 72736.26917367641,
+    "generation_latency_s": 0.36915400007274,
+    "latency": 0.7137960999971256,
+    "total_prompt_tokens": 736,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2445386,
+    "stage_route_s": 0.10153210000135005,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1880468000890687,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0548785999417305,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.279993638396263e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3691930000204593,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7138136000139639,
+    "unaccounted_latency_s": 0.00011090002954006195,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Youtube\"",
+      "Query 2: \"Youtube and other organizations\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

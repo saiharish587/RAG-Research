@@ -1,0 +1,42 @@
+{
+  "question_id": "Q562",
+  "query": "Which band formed in England, Of Montreal or Vib Gyor?",
+  "ground_truth": "Vib Gyor was a band that was formed in Leeds, England.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Vib Gyor formed in England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Of Montreal: of Montreal is an American experimental pop band from Athens, Georgia.  It was founded by frontman Kevin Barnes in 1996, named after a failed romance between Barnes and a woman \"of Montreal.\"  The band is identified as part of the Elephant 6 collective.  Throughout its existence, of Montreal's musical style has evolved considerably and drawn inspiration from numerous 1960s psychedelic pop acts.",
+      "New York Life Insurance Building (Montreal): Montreal's New York Life Insurance Building (also known as the Quebec Bank Building) is an office building at Place d'Armes in what is now known as Old Montreal, erected in 1887-1889.  At the time of its completion, it was the tallest commercial building in Montreal with the first eight floors were designed for retail office space, that quickly filled with the city's best lawyers and financiers.  When the clock tower was completed, the owner filled the ninth and tenth floors with the largest legal library in the entire country as a gift to tenants.  The building is next to another historic office tower, Aldred Building.",
+      "Declaration of Montreal: The Declaration of Montreal on Lesbian, Gay, Bisexual, and Transgender Human Rights is a document adopted in Montreal, Quebec, Canada, on July 29, 2006, by the International Conference on LGBT Human Rights which formed part of the first World Outgames.  The Declaration outlines a number of rights and freedoms pertaining to LGBT and intersex people that it is proposed be universally guaranteed.  It encompasses all aspects of human rights, from the guarantee of fundamental freedoms to the prevention of discrimination against LGBT people in healthcare, education and immigration.  The Declaration also addresses various issues that impinge on the global promotion of LGBT rights and intersex human rights.  Intended as a starting point in listing the demands of the international LGBT movement, it will ultimately be submitted to the United Nations."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 474,
+    "generation_tokens": 9,
+    "generation_speed": 270.0918312226157,
+    "prompt_eval_speed": 70159.85790408526,
+    "generation_latency_s": 0.6473003999562934,
+    "latency": 3.4521694999421015,
+    "total_prompt_tokens": 547,
+    "total_generation_tokens": 12,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1206354,
+    "stage_rewrite_s": 1.17301269993186,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1923461999977008,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.43936519999988377,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6473656999878585,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4521817999193445,
+    "unaccounted_latency_s": 9.26000066101551e-05,
+    "rewritten_query": "Of Montreal",
+    "query_was_rewritten": true
+  }
+}

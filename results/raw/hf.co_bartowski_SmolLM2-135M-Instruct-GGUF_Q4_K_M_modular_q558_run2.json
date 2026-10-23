@@ -1,0 +1,48 @@
+{
+  "question_id": "Q558",
+  "query": "Are Ganzhou and Jimo District both located in China?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, Ganzhou and Jimo District are not located in China.\n\nThe information provided about Ganzhou and Jimo District was gathered from the following sources:\n\n1. Context: Ganzhou District: Ganzhou District is a prefecture-level city in southern Jiangxi Province, China. It is situated on the east bank of the Yongding River (Yingzhi) and has been an important outpost in western China for centuries.\n\n2. Context: Jimo District: Jimo District was once known as Ganzhou, which means \"Zhangye\" in Chinese. It was a city located at the intersection of the Yongding River and the Yuzhuan River (Yuzhu) in Jiangxi Province.\n\nSo, based on the information provided above, it is not possible to conclude that Ganzhou and Jimo District are both located in China.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ganzhou District: Ganzhou District, formerly the separate city of Ganzhou or Kanchow, is a district in and the seat of the prefecture-level city of Zhangye in Gansu Province in the People's Republic of China.  Ganzhou was formerly an important outpost in western China and, along with Suzhou (now the central district of Jiuquan), it is the namesake of the province.  As a settlement, it is now known as Zhangye after the prefecture it heads.",
+      "Ganzhou: Ganzhou (), formerly romanized as Kanchow, is a prefecture-level city in southern Jiangxi, China, bordering Fujian to the east, Guangdong to the south, and Hunan to the west.  Its administrative seat is at Zhanggong District.  Its population was 8,361,447 at the 2010 census whom 1,977,253 in the built-up (or \"metro\") area made of Zhanggong and Nankang, and Ganxian largely being urbanized.",
+      "Zhanggong District: Zhanggong District () is the administrative center of the prefecture-level city of Ganzhou in Jiangxi Province, China.  The oldest part of Ganzhou's ancient sewage system named Fushou Gou (\u798f\u5bff\u6c9f, literally \"\"Happiness and Longevity Ditch\"\"), which was built during the eleventh century AD and still in use today, is located in Zhanggong District."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 405,
+    "generation_tokens": 189,
+    "generation_speed": 363.86949214215167,
+    "prompt_eval_speed": 17629.391024245855,
+    "generation_latency_s": 0.660806700005196,
+    "latency": 0.9559462999459356,
+    "total_prompt_tokens": 531,
+    "total_generation_tokens": 206,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2553925,
+    "stage_route_s": 0.09982370003126562,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15938359999563545,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03576050000265241,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.440010525286198e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6608493999810889,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9559585999231786,
+    "unaccounted_latency_s": 9.769981261342764e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, Ganzhou and Jimo District are located in China."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

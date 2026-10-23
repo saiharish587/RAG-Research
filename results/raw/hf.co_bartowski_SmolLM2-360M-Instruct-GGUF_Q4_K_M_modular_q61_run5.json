@@ -1,0 +1,49 @@
+{
+  "question_id": "Q61",
+  "query": "What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting?",
+  "ground_truth": "shortest player ever to play in the National Basketball Association",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting is Michael Jordan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Charlotte Hornets: The Charlotte Hornets are an American professional basketball team based in Charlotte, North Carolina.  The Hornets compete in the National Basketball Association (NBA), as a member of the league's Eastern Conference Southeast Division.  The team is largely owned by former NBA player and North Carolina native Michael Jordan, who acquired controlling interest in the team in 2010.  The Hornets play their home games at the Spectrum Center in Uptown Charlotte.",
+      "2014\u201315 Charlotte Hornets season: The 2014\u201315 Charlotte Hornets season was the franchise's 25th season in the National Basketball Association (NBA).  This was the team's first year as the Charlotte Hornets since 2002.  The team had been known as the Charlotte Bobcats since its revival in 2004.  However, when the team formally changed its name to the Hornets on May 20, 2014; they also reclaimed the history and records of the original Charlotte Hornets franchise from the 1988\u201389 NBA season through the 2001\u201302 NBA season.  The New Orleans Pelicans retained the remaining history that exists under the New Orleans(/Oklahoma City) Hornets name from the 2002\u201303 NBA season through the 2012\u201313 NBA season.  The team was led by head coach Steve Clifford and assistant coaches Patrick Ewing, Bob Beyer, Stephen Silas, Bob Weiss, and Mark Price.",
+      "Charlotte Hornets all-time roster: The Charlotte Hornets are an American professional basketball team based in Charlotte, North Carolina.  They play in the Southeast Division of the Eastern Conference in the National Basketball Association (NBA).  The Hornets were first established in 1988 as an expansion team, but relocated to New Orleans following the 2001\u201302 season.  In 2004, a new expansion team, the Charlotte Bobcats, was established.  After 10 seasons as the Bobcats, the team changed its name to the Charlotte Hornets for the 2014\u201315 season, a year after the New Orleans franchise relinquished the Hornets name and renamed itself the Pelicans.  In addition to re-inheriting the Hornets name from New Orleans, the Charlotte franchise reclaimed the history and records of the original 1988\u20132002 Hornets, effectively becoming a continuation of the original franchise."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 645,
+    "generation_tokens": 43,
+    "generation_speed": 205.74064238927087,
+    "prompt_eval_speed": 68544.1020191286,
+    "generation_latency_s": 0.34082579996902496,
+    "latency": 0.7423441000282764,
+    "total_prompt_tokens": 833,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2492116,
+    "stage_route_s": 0.11067039996851236,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22348079993389547,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06713940005283803,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8200017772614956e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.34087229997385293,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7423567000078037,
+    "unaccounted_latency_s": 0.00014640006702393293,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Former NBA player, Head Coach, Charlotte Sting",
+      "Query 2: Former NBA player, Charlotte Hornets"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

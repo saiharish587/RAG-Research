@@ -1,0 +1,48 @@
+{
+  "question_id": "Q520",
+  "query": "James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?",
+  "ground_truth": "Lord Chancellor of England",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "James Spedding was primarily known as the editor of the works of Francis Bacon, which included his writings on science, philosophy, and politics.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Spedding: James Spedding (28 June 1808 \u2013 9 March 1881) was an English author, chiefly known as the editor of the works of Francis Bacon.",
+      "John Dean: John Wesley Dean III (born October 14, 1938) is an investment banker, author, columnist, lecturer and former attorney who served as White House Counsel for United States President Richard Nixon from July 1970 until April 1973.  In this position, he became deeply involved in events leading up to the Watergate burglaries and the subsequent Watergate scandal cover-up.  He was referred to as the \"master manipulator of the cover-up\" by the Federal Bureau of Investigation (FBI).  He pleaded guilty to a single felony count, in exchange for becoming a key witness for the prosecution.  This ultimately resulted in a reduced prison sentence, which he served at Fort Holabird outside Baltimore, Maryland.",
+      "Francis Bacon: Francis Bacon, 1st Viscount St Alban, {'1': \", '2': \", '3': \", '4': \"} ( ; 22 January 15619 April 1626) was an English philosopher, statesman, scientist, jurist, orator, and author.  He served both as Attorney General and as Lord Chancellor of England.  After his death, he remained extremely influential through his works, especially as philosophical advocate and practitioner of the scientific method during the scientific revolution."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 405,
+    "generation_tokens": 30,
+    "generation_speed": 366.52860755781984,
+    "prompt_eval_speed": 45736.87182382835,
+    "generation_latency_s": 0.20723719999659806,
+    "latency": 0.6021287000039592,
+    "total_prompt_tokens": 557,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2462998,
+    "stage_route_s": 0.17133030004333705,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1841549000237137,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03924429998733103,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3599982745945454e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20727069990243763,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6021381999598816,
+    "unaccounted_latency_s": 9.50000248849392e-05,
+    "route": "rag",
+    "router_raw": "James Spedding is a well-known figure in American history, particularly during the 19th century.",
+    "sub_queries": [
+      "James Spedding was primarily known as the editor of the works of an author who served both as Attorney General and as a member of the House of Representatives."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

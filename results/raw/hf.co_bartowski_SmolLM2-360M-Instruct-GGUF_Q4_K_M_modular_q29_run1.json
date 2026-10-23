@@ -1,0 +1,49 @@
+{
+  "question_id": "Q29",
+  "query": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+  "ground_truth": "Henry J. Kaiser",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Kaiser Ventures was founded by Henry J. Kaiser, a prominent American industrialist and entrepreneur who became known as the father of modern American shipbuilding.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry J. Kaiser: Henry John Kaiser (May 9, 1882 \u2013 August 24, 1967) was an American industrialist who became known as the father of modern American shipbuilding.  He established the Kaiser Shipyards, which built Liberty ships during World War II, after which he formed Kaiser Aluminum and Kaiser Steel.  Kaiser organized Kaiser Permanente health care for his workers and their families.  He led Kaiser-Frazer followed by Kaiser Motors, automobile companies known for the safety of their designs.  Kaiser was involved in large construction projects such as civic centers and dams, and invested in real estate.  With his wealth, he established the Kaiser Family Foundation, a nonprofit, non-partisan, charitable organization.",
+      "Kaiser Ventures: Kaiser Ventures (formerly Kaiser Steel) corporation, headquartered in Ontario, California.  It was founded by Henry J. Kaiser to provide steel plate for the Pacific Coast shipbuilding industry, which expanded during World War II, then shrank, then expanded again during the Korean War.  California Shipbuilding Corporation on Terminal Island, California, was one of these shipyards which built hundreds of Liberty ships and Victory ships in World War II, and was also a project of Henry Kaiser.  Kaiser Steel was noted for making the most of its costly steelmaking inputs, and it captured, along with the U.S. Steel plant in Utah, much of the Pacific Coast steel market by the late 1950s.  Its assets included steelmaking plants in Napa, California (that it acquired from Basalt Rock Company in 1955) and Fontana, California (now operated by California Steel Industries), and a former open-pit iron ore mine at Eagle Mountain, California.  Steel manufactured was also used in Kaiser Motors.",
+      "John Roach &amp; Sons: John Roach & Sons was a major 19th-century American shipbuilding and manufacturing firm founded in 1864 by Irish-American immigrant John Roach.  Between 1871 and 1885, the company was the largest shipbuilding firm in the United States, building more iron ships than its next two major competitors combined.  It was also by far the largest contractor to the U.S. Navy during this period, and at its peak is said to have been the nation's largest employer behind the railroads."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 577,
+    "generation_tokens": 32,
+    "generation_speed": 228.69884650019299,
+    "prompt_eval_speed": 12869.697104875764,
+    "generation_latency_s": 0.2934740000637248,
+    "latency": 0.6517461999319494,
+    "total_prompt_tokens": 723,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.225329,
+    "stage_route_s": 0.10407260002102703,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19855460000690073,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0554697000188753,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5299955420196056e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2935056999558583,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6517553000012413,
+    "unaccounted_latency_s": 9.80000477284193e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Kaiser Ventures Corporation Founder\"",
+      "\"American Industrialist Who Became Father Of Modern Shipbuilding\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

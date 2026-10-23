@@ -1,0 +1,49 @@
+{
+  "question_id": "Q5",
+  "query": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+  "ground_truth": "Greenwich Village, New York City",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Based on the context provided, the director of the romantic comedy \"Big Stone Gap\" is based in Boston and raised in nearby Revere, Massachusetts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Big Stone Gap (film): Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.  Based on Trigiani's 2000 best-selling novel of the same name, the story is set in the actual Virginia town of Big Stone Gap circa 1970s.  The film had its world premiere at the Virginia Film Festival on November 6, 2014.",
+      "The Interview: The Interview is a 2014 American action comedy film directed by Seth Rogen and Evan Goldberg.  It is their second directorial work, following \"This Is the End\" (2013).  The screenplay is by Dan Sterling, based upon a story he co-authored with Rogen and Goldberg.  The film stars Rogen and James Franco as journalists who set up an interview with North Korean leader Kim Jong-un (Randall Park), and are recruited by the CIA to assassinate him.  The film is also heavily inspired by a Vice documentary which was shot in 2012.",
+      "Zack Norman: Zack Norman (born Howard Jerrold Zuker, May 27, 1940) is an American actor, producer, writer, comedian, musician, film financier, painter, art collector and real estate developer.  Born in Boston and raised in nearby Revere, Massachusetts, he is best known for his role as Ira in 20th Century Fox's \"Romancing the Stone\" (1984) and as Kaz Naiman in Paramount Classics' \"Festival in Cannes\" (2002).  He has also co-starred in films such as \"Ragtime\" (1981) and \"Cadillac Man\" (1990).  On television, he has guest-starred in such popular series as \"The A-Team\" (1985) and \"Baywatch\" (1993), had a recurring role on \"The Nanny\" (1993\u20131995) and was featured in several TV movies including \"At Home with the Webbers\" (1993).  As Howard Zuker, he has produced, presented and/or financed more than forty motion pictures, including \"Hearts and Minds\" (1974), which won the Academy Award for Best Documentary Feature."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 616,
+    "generation_tokens": 30,
+    "generation_speed": 234.20483737756814,
+    "prompt_eval_speed": 70424.1454212873,
+    "generation_latency_s": 0.2536451000487432,
+    "latency": 0.6692505000391975,
+    "total_prompt_tokens": 754,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.225156,
+    "stage_route_s": 0.09784169995691627,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2605133999604732,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05703170003835112,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.080003757029772e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25369200005661696,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6692662000423297,
+    "unaccounted_latency_s": 0.00013749999925494194,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The director of the romantic comedy \"Big Stone Gap\" is based in New York City.",
+      "Query 2: The director of the romantic comedy \"Big Stone Gap\" is based in Manhattan."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

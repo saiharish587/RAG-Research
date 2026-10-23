@@ -1,0 +1,48 @@
+{
+  "question_id": "Q527",
+  "query": "The Duke Steps Out stars an actress who was ranked tenth on a list of greatest female Hollywood stars in what year?",
+  "ground_truth": "1999",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Duke Steps Out stars an actress who was ranked tenaciously as the highest-paid actress.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Duke Steps Out: The Duke Steps Out is a 1929 silent film starring William Haines and Joan Crawford.  The film is lost, but the Vitaphone sound discs track survive at UCLA Film and TV Archives.",
+      "Joan Crawford: Joan Crawford (born Lucille Fay LeSueur; (March 23, 190?  \u2013 May 10, 1977) was an American film and television actress who began her career as a dancer and stage showgirl.  In 1999, the American Film Institute ranked Crawford tenth on its list of the greatest female stars of Classic Hollywood Cinema.",
+      "Angelina Jolie: Angelina Jolie Pitt ( ; n\u00e9e Voight; born June 4, 1975) is an American actress, filmmaker, and humanitarian.  She has received an Academy Award, two Screen Actors Guild Awards, and three Golden Globe Awards, and has been cited as Hollywood's highest-paid actress.  Jolie made her screen debut as a child alongside her father, Jon Voight, in \"Lookin' to Get Out\" (1982).  Her film career began in earnest a decade later with the low-budget production \"Cyborg 2\" (1993), followed by her first leading role in a major film, \"Hackers\" (1995).  She starred in the critically acclaimed biographical cable films \"George Wallace\" (1997) and \"Gia\" (1998), and won an Academy Award for Best Supporting Actress for her performance in the drama \"Girl, Interrupted\" (1999)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 438,
+    "generation_tokens": 21,
+    "generation_speed": 395.95746285541895,
+    "prompt_eval_speed": 58942.26887363746,
+    "generation_latency_s": 0.1749906000914052,
+    "latency": 0.5323656999971718,
+    "total_prompt_tokens": 584,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2190405,
+    "stage_route_s": 0.16273720003664494,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.158412899938412,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036061399965547025,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1499966755509377e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17502490000333637,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5323742999462411,
+    "unaccounted_latency_s": 9.680003859102726e-05,
+    "route": "rag",
+    "router_raw": "The Duke Stepouts stars an actress who was ranked tenth on a list of greatest female Hollywood stars in 2018.",
+    "sub_queries": [
+      "The Duke Stepouts Stars are an actress who was ranked tenth on a list of greatest female Hollywood stars in 2018."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q8",
+  "query": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+  "ground_truth": "3,677 seated",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The arena where the Lewiston Maineiacs played their home games can seat up to 1,400 people.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dwyer Arena: The Robert and Concetta Dwyer Arena houses two ice surfaces, both 200 x 85 ft., and pro shop on Niagara University's campus in Lewiston, New York, United States.  The main rink can seat up to 1,400 people and is the home to the Niagara Purple Eagles men's ice hockey team, which plays in Atlantic Hockey.  The arena was formerly home to the women's ice hockey team, which played in College Hockey America.",
+      "Lewiston Maineiacs: The Lewiston Maineiacs were a junior ice hockey team of the Quebec Major Junior Hockey League based in Lewiston, Maine.  The team played its home games at the Androscoggin Bank Colis\u00e9e.  They were the second QMJHL team in the United States, and the only one to play a full season.  They won the President's Cup in 2007.",
+      "Matthews Arena: Matthews Arena, located in Boston, Massachusetts, is a basketball and ice hockey arena.  Renovated several times, it is the oldest indoor ice hockey arena still being used for hockey \u2014 and is the oldest multi-purpose athletic building still in use in the world.  It opened in 1910 on what is now the east end of Northeastern University's campus, and is currently owned by the university.  It is the original home of the National Hockey League (NHL) Boston Bruins \u2014 the only team of the NHL's Original Six whose original home arena still exists for the sport of ice hockey at any level of competition \u2014 and the WHA New England Whalers (now the NHL Carolina Hurricanes), as well as the secondary home of the NBA Boston Celtics."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 445,
+    "generation_tokens": 26,
+    "generation_speed": 249.10418303408898,
+    "prompt_eval_speed": 53685.60743153578,
+    "generation_latency_s": 0.2226035000057891,
+    "latency": 0.5224884999915957,
+    "total_prompt_tokens": 583,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22276490000000002,
+    "stage_route_s": 0.09530490008182824,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1679766000015661,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036446899990551174,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.8100057281553745e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2226346000097692,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5224977000616491,
+    "unaccounted_latency_s": 9.709992446005344e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Arena Where The Lewiston Maineiacs Play Their Home Games Can Seat How Many People?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

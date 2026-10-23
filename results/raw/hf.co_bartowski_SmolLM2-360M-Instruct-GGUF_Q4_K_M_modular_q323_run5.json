@@ -1,0 +1,49 @@
+{
+  "question_id": "Q323",
+  "query": "Rock Springs is a collection of short stories by an author born in what year?",
+  "ground_truth": "1944",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Rock Springs is a collection of short stories by an author born in 1916.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rock Springs (short story collection): Rock Springs is a collection of short stories by author Richard Ford, published in 1987 and largely dealing with dysfunctional mothers and fathers and their effects on young male narrators.",
+      "Roald Dahl: Roald Dahl ( , ] ; 13 September 1916 \u2013 23 November 1990) was a British novelist, short story writer, poet, screenwriter, and fighter pilot.  His books have sold more than 250 million copies worldwide.",
+      "Rock Springs, Wyoming: Rock Springs is a city in Sweetwater County, Wyoming, United States.  The population was 23,036 at the 2010 census, making it the 4th most populated city in the state of Wyoming.  Rock Springs is the principal city of the Rock Springs micropolitan statistical area, which has a population of 37,975.  Rock Springs is known as the Home of 56 Nationalities because of the influx of immigrants from all over the world who came to work in the coal mines that supplied the fuel to power the steam engines of the Union Pacific Railroad.  The city's rich cultural heritage is celebrated each summer on International Day, a festival where the foods, costumes, and traditions of residents' ancestors are recreated and enjoyed at Bunning Park in downtown Rock Springs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 20,
+    "generation_speed": 243.59942510535677,
+    "prompt_eval_speed": 45866.871087262036,
+    "generation_latency_s": 0.20288080000318587,
+    "latency": 0.5630664000054821,
+    "total_prompt_tokens": 491,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24460759999999998,
+    "stage_route_s": 0.1051665999693796,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19797550002112985,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05685609998181462,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.579995922744274e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20291770005133003,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5630762000801042,
+    "unaccounted_latency_s": 0.00010510010179132223,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Rock Springs, Wyoming\"",
+      "\"The author's birth year is 1950\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

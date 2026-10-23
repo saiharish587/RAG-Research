@@ -1,0 +1,49 @@
+{
+  "question_id": "Q98",
+  "query": "Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?",
+  "ground_truth": "Levni Yilmaz",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Pamela B. Green is known as a feature film producer and director. She is best remembered for her animated comic series \"Tales of Mere Existence\" which was adapted into a 1973 film titled \"Be Natural\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pamela B. Green: Pamela B. Green is an American film producer and director known for her work in feature film titles and motion graphics.  She is the director and producer of the documentary \"Be Natural: The Untold Story of Alice Guy-Blache\".",
+      "Lev Yilmaz: Levni Yilmaz (born 1973) is a San Francisco based independent film maker, artist and publisher, best known for his \u201cTales of Mere Existence\u201d animated comic series.",
+      "Francis Ford Coppola: Francis Ford Coppola ( ; born April 7, 1939), also credited as Francis Coppola, is a semi-retired American film director, producer, screenwriter and film composer.  He was a central figure in the New Hollywood wave of filmmaking."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 251,
+    "generation_tokens": 51,
+    "generation_speed": 407.4393634359122,
+    "prompt_eval_speed": 35502.1216407355,
+    "generation_latency_s": 0.236528699984774,
+    "latency": 1.7699611000716686,
+    "total_prompt_tokens": 389,
+    "total_generation_tokens": 609,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2174178,
+    "stage_route_s": 0.08535249996930361,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 1.3886028999695554,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05929860007017851,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0200033001601696e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2365605999948457,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.769970600027591,
+    "unaccounted_latency_s": 0.00010629999451339245,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Lev Yilmaz and Pamela B. Green are two of the most famous filmmakers in the world.",
+      "Here is a list of 20-30 search queries related to the question \"Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?\":"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

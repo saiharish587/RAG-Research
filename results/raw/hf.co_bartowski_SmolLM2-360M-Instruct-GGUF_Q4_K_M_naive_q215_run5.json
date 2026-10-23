@@ -1,0 +1,36 @@
+{
+  "question_id": "Q215",
+  "query": "Who was born first, Arthur Conan Doyle or Penelope Lively?",
+  "ground_truth": "Arthur Ignatius Conan Doyle",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Arthur Conan Doyle was born first, as stated in the context.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Penelope Lively: Dame Penelope Margaret Lively DBE FRSL (born 17 March 1933) is a British writer of fiction for both children and adults.  She has won both the Booker Prize (\"Moon Tiger\", 1987) and the Carnegie Medal for British children's books (\"The Ghost of Thomas Kempe\", 1973).",
+      "Arthur Conan Doyle: Sir Arthur Ignatius Conan Doyle KStJ, DL (22 May 1859 \u2013 7 July 1930) was a British writer best known for his detective fiction featuring the character Sherlock Holmes.  Originally a physician, in 1887 he published \"A Study in Scarlet\", the first of four novels about Holmes and Dr. Watson.  In addition, Doyle wrote over fifty short stories featuring the famous detective.",
+      "Sherlock Holmes: Sherlock Holmes ( ) is a fictional private detective created by British author Sir Arthur Conan Doyle.  Known as a \"consulting detective\" in the stories, Holmes is known for his proficiency with observation, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 332,
+    "generation_tokens": 15,
+    "generation_speed": 249.9791684026331,
+    "prompt_eval_speed": 66201.3958125623,
+    "generation_latency_s": 0.16706230002455413,
+    "latency": 0.18328719993587583,
+    "total_prompt_tokens": 332,
+    "total_generation_tokens": 15,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0941298,
+    "stage_retrieve_s": 0.016135900048539042,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.16711030004080385,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.18329429998993874,
+    "unaccounted_latency_s": 4.849990364164114e-05
+  }
+}

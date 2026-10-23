@@ -1,0 +1,42 @@
+{
+  "question_id": "Q387",
+  "query": "Francisco Jose Hernandez was a participant in an invasion that took place in what year?",
+  "ground_truth": "1961",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Francisco Jos\u00e9 Hern\u00e1ndez was a participant in an invasion that took place in 1943.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dwight D. Eisenhower: Dwight David \"Ike\" Eisenhower ( ; October 14, 1890 \u2013 March 28, 1969) was an American politician and Army general who served as the 34th President of the United States from 1953 until 1961.  During World War II, he was a five-star general in the United States Army and served as Supreme Commander of the Allied Expeditionary Forces in Europe.  He was responsible for planning and supervising the invasion of North Africa in Operation Torch in 1942\u201343 and the successful invasion of France and Germany in 1944\u201345 from the Western Front.",
+      "Guadalcanal Campaign: The Guadalcanal Campaign, also known as the Battle of Guadalcanal and codenamed Operation Watchtower was a military campaign fought between 7 August 1942 and 9 February 1943 on and around the island of Guadalcanal in the Pacific theater of World War II.  It was the first major offensive by Allied forces against the Empire of Japan.",
+      "Gin Drinkers Line: The Gin Drinkers Line () or Gin Drinkers' Line was a British military defensive line against the Japanese invasion of Hong Kong during the Battle of Hong Kong in December 1941, part of the Pacific War."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 369,
+    "generation_tokens": 23,
+    "generation_speed": 262.0813819665219,
+    "prompt_eval_speed": 49824.46664866324,
+    "generation_latency_s": 0.9641583999618888,
+    "latency": 3.390796300023794,
+    "total_prompt_tokens": 446,
+    "total_generation_tokens": 34,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1235922,
+    "stage_rewrite_s": 1.1538092999253422,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0997344999341294,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17297080007847399,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9642023000633344,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3908075999934226,
+    "unaccounted_latency_s": 9.14999982342124e-05,
+    "rewritten_query": "The invasion occurred in 1942.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q207",
+  "query": "Are Hot Rod and The Memory of Our People both magazines?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "No, the two articles are not directly connected as they have different titles and focus areas. However, they share similar content and tone, which is related to the topic of hot rods and their historical context in Argentina during the 1940s-60s. The article on \"Hot Rod\" focuses on hot rodding, while the article on \"The Memory of Our People\" explores the history and cultural significance of hot rods in Argentina.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hot Rod (magazine): Hot Rod is a monthly American car magazine devoted to hot rodding, drag racing, and muscle cars \u2014 modifying automobiles for performance and appearance.",
+      "The Memory of Our People: The Memory of Our People is a magazine published in the Argentine city of Rosario, a province of Santa Fe.  The magazine was founded in 2004.  Its original title in Spanish is \"La Memoria de Nuestro Pueblo\".",
+      "Rat rod: A rat rod is a style of hot rod or custom car that, in most cases, imitates (or exaggerates) the early hot rods of the 1940s, 1950s, and early-1960s.  The style is not to be confused with the somewhat closely related \"traditional\" hot rod, which is an accurate re-creation or period-correct restoration of a hot rod from the same era."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 262,
+    "generation_tokens": 93,
+    "generation_speed": 413.57044705631233,
+    "prompt_eval_speed": 31153.388822829962,
+    "generation_latency_s": 0.3104878000449389,
+    "latency": 0.8015299000544474,
+    "total_prompt_tokens": 334,
+    "total_generation_tokens": 145,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1271184,
+    "stage_rewrite_s": 0.2052553000394255,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06913080008234829,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21652979997452348,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3105294000124559,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8015405000187457,
+    "unaccounted_latency_s": 9.569991379976273e-05,
+    "rewritten_query": "The Memory of Our People is an excellent resource for those interested in learning about the history behind the iconic motorcycle brand, Hot Rod. It offers insightful articles on the subject matter, providing readers with a deeper understanding of the industry's rich heritage and cultural significance.",
+    "query_was_rewritten": true
+  }
+}

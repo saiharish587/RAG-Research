@@ -1,0 +1,49 @@
+{
+  "question_id": "Q335",
+  "query": "Which case was decided first, Selle v. Gibb or Reynolds v. Sims?",
+  "ground_truth": "1964",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Reynolds v. Sims was decided first.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gravel v. United States: Gravel v. United States, 408 U.S. 606 (1972), was a case regarding the protections offered by the Speech or Debate Clause of the United States Constitution.  In the case, the Supreme Court of the United States held that the privileges and immunities of the Constitution's Speech or Debate Clause enjoyed by members of Congress also extend to Congressional aides, but not to activity outside the legislative process.",
+      "Reynolds v. Sims: Reynolds v. Sims, 377 U.S. 533 (1964) was a United States Supreme Court case that ruled that unlike in the election of the United States Senate, in the election of \"any\" chamber of a state legislature the electoral districts must be roughly equal in population (thus negating the traditional function of a State Senate, which was to allow rural counties to counter balance large towns and cities).  The case was brought on behalf of voters in Alabama by M.O. Sims, a taxpayer in Birmingham, Alabama, but affected both northern and southern states that had similarly failed to reapportion their legislatures in keeping with changes in state population after its application in five companion cases in Colorado, New York, Maryland, Virginia, and Delaware.",
+      "Selle v. Gibb: Selle v. Gibb, 741 F.2d 896 (7th Cir.  1984) was a landmark ruling on the doctrine of striking similarities.  The U.S. Court of Appeals for the Seventh Circuit ruled that while copying must be proved by access and substantial similarity, where evidence of access does not exist, striking similarities may raise an inference of copying by showing that the work could not have been the result of independent creation, coincidence, or common source.  Striking similarity alone is not enough to infer access.  The similarity must preclude independent creation in order to infer access."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 482,
+    "generation_tokens": 12,
+    "generation_speed": 264.3521170198705,
+    "prompt_eval_speed": 61276.37935418256,
+    "generation_latency_s": 0.1670618000207469,
+    "latency": 0.5195173000684008,
+    "total_prompt_tokens": 620,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2325253,
+    "stage_route_s": 0.09520330000668764,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20206679997500032,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0550109000178054,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.359994247555733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1671034999890253,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5195278000319377,
+    "unaccounted_latency_s": 9.020010475069284e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Case: Selle v. Gibb (1972)",
+      "Case: Reynolds v. Sims (1968)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

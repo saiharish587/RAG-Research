@@ -1,0 +1,49 @@
+{
+  "question_id": "Q472",
+  "query": "In what field does the firm at which Claudio Fern\u00e1ndez-Ar\u00e1oz was a currently a senior adviser offers services?",
+  "ground_truth": "Executive Search, Board Consulting",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The firm at which Claudio Fern\u00e1ndez-Ar\u00e1oz was a currently a senior adviser offered services in the field of financial planning.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Claudio Fern\u00e1ndez-Ar\u00e1oz: Claudio Fern\u00e1ndez-Ar\u00e1oz is an Argentinian author, international speaker and global expert on talent and leadership, ranked by \"BusinessWeek\" as one of the most influential executive search consultants in the world.  He is currently a senior adviser of Egon Zehnder.  Before joining Egon Zehnder in 1986, he worked at McKinsey & Company in Europe.  He is a frequent lecturer at the Harvard Business School.",
+      "Financial plan: In general usage, a financial plan is a comprehensive evaluation of an individual's current pay and future financial state by using current known variables to predict future income, asset values and withdrawal plans.  This often includes a budget which organizes an individual's finances and sometimes includes a series of steps or specific goals for spending and saving in the future.  This plan allocates future income to various types of expenses, such as rent or utilities, and also reserves some income for short-term and long-term savings.  A financial plan is sometimes referred to as an investment plan, but in personal finance a financial plan can focus on other specific areas such as risk management, estates, college, or retirement.",
+      "Functional management: Functional management is the most common type of organizational management.  The organization is grouped by areas of speciality within different functional areas (e.g., finance, marketing, and engineering).  Some refer to a functional area as a \"silo\".  Besides the heads of a firm's product and/or geographic units the company's top management team typically consists of several functional heads such as the chief financial officer, the chief operating officer, and the chief strategy officer.  Communication generally occurs within a single department.  If information or project work is needed from another department, a request is transmitted up to the department head, who communicates the request to the other department head.  Otherwise, communication stays within the department.  Team members complete project work in addition to normal department work."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 494,
+    "generation_tokens": 29,
+    "generation_speed": 200.25549839450332,
+    "prompt_eval_speed": 53359.256858932815,
+    "generation_latency_s": 0.2743656999664381,
+    "latency": 0.5772645999677479,
+    "total_prompt_tokens": 646,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2269427,
+    "stage_route_s": 0.09797969995997846,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14857499999925494,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056164000066928566,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.510007031261921e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.27440170000772923,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.57727440004237,
+    "unaccounted_latency_s": 9.94998263195157e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Finance\"",
+      "\"Management and Organization\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

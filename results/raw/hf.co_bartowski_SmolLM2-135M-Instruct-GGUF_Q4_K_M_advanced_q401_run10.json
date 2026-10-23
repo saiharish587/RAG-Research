@@ -1,0 +1,42 @@
+{
+  "question_id": "Q401",
+  "query": "John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews and another university established by what monach?",
+  "ground_truth": "King George IV",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "John MacGregor, Baron MacGregor of Pulham Market is a politician in the United Kingdom.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John MacGregor, Baron MacGregor of Pulham Market: John Roddick Russell MacGregor, Baron MacGregor of Pulham Market, OBE PC FKC (born 14 February 1937), is a politician in the United Kingdom.  He was educated at Merchiston Castle School, then at the University of St Andrews (MA economics and history, 1959) and at King's College London (LLB, 1962).  Prior to the 1979 general election he worked for Hill Samuel, a merchant bank.",
+      "John MacGregor: John MacGregor, John Macgregor or John McGregor may refer to:",
+      "University of St Andrews: The University of St Andrews (informally known as St Andrews University or simply St Andrews; abbreviated as St And, from the Latin \"Sancti Andreae\", in post-nominals) is a British public research university in St Andrews, Fife, Scotland.  It is the oldest of the four ancient universities of Scotland and the third oldest university in the English-speaking world (following Oxford and Cambridge Universities).  St Andrews was founded between 1410 and 1413, when the Avignon Antipope Benedict XIII issued a papal bull to a small founding group of Augustinian clergy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 369,
+    "generation_tokens": 22,
+    "generation_speed": 418.81627291591315,
+    "prompt_eval_speed": 51964.51204055767,
+    "generation_latency_s": 0.14860710001084954,
+    "latency": 0.7190711000002921,
+    "total_prompt_tokens": 459,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1443732,
+    "stage_rewrite_s": 0.2903258999576792,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07978619995992631,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20022380002774298,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.14864939998369664,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7190832999767736,
+    "unaccounted_latency_s": 9.870005305856466e-05,
+    "rewritten_query": "The original query is \"John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews.\" The optimized query uses a more concise phrase to convey the same information. It replaces \"Education\" with \"University,\" which is shorter and easier to read. Additionally, it omits the introductory text about the university's founding by removing the word \"monach.",
+    "query_was_rewritten": true
+  }
+}

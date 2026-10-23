@@ -1,0 +1,48 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "No, neither Sorbaria nor Goldenrod are known as a genus of more than 50 species of flowering plants. They belong to the sunflower family Asteraceae, which is a large group of over 130 genera and over 240 species in the plant world. The genus Sorbia contains only one species: Solidago curtisii, commonly known as Curtis' goldenrod and mountain decumbent goldenrod.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sorbaria: Sorbaria is a genus of around 9 species of flowering plants belong to family Rosaceae.",
+      "Goldenrod: Solidago, commonly called goldenrods, is a genus of about 100 to 120 species of flowering plants in the aster family, Asteraceae.  Most are herbaceous perennial species found in open areas such as meadows, prairies, and savannas.  They are mostly native to North America, including Mexico; a few species are native to South America and Eurasia.  Some American species have also been introduced into Europe and other parts of the world.",
+      "Solidago curtisii: Solidago curtisii, commonly called Curtis' goldenrod and mountain decumbent goldenrod, is a North American species of flowering plants in the sunflower family.  It is the eastern part of the United States from Pennsylvania to Mississippi and Alabama, primarily in the southern Appalachian Mountains."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 264,
+    "generation_tokens": 89,
+    "generation_speed": 309.17592457496994,
+    "prompt_eval_speed": 39693.279206134415,
+    "generation_latency_s": 0.40184430009685457,
+    "latency": 0.7397711999947205,
+    "total_prompt_tokens": 402,
+    "total_generation_tokens": 130,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2305477,
+    "stage_route_s": 0.09418189991265535,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20510120003018528,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03845820005517453,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.020007327198982e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.40189510001800954,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7397834999719635,
+    "unaccounted_latency_s": 0.000107599887996912,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Sorbia (Sorbrus) and Goldenrod (Crassulabris) belong to the genus Sorbia, which is part of the family Capparaceae."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q432",
+  "query": "Were both the Battle of Stones River and the Battle of the Ch'ongch'on River fought in the 19th century?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "No, the Battle of the Ch'ongch'on River was a decisive battle during the Korean War (1950-1953), while the Battle of Stones River was a strategic Union victory.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Stones River National Battlefield: Stones River National Battlefield, a 570 acre park along the Stones River in Rutherford County, Tennessee, three miles (5\u00a0km) northwest of Murfreesboro and twenty-eight miles southeast of Nashville, memorializes the Battle of Stones River, a key battle of the American Civil War that took place on December 31, 1862 and January 2, 1863, which resulted in a strategic Union victory.",
+      "Stones River Campaign: The Stones River Campaign of the American Civil War lasted from November 1862 to January 1863.  The campaign was tactically a draw but was a strategic Union victory due to the Confederate retreat after the Battle of Stones River.",
+      "Battle of the Ch'ongch'on River: The Battle of the Ch'ongch'on River, also known as the Battle of the Ch'ongch'on () or the Second Phase Campaign Western Sector (), was a decisive battle in the Korean War, and it took place from November 25 to December 2, 1950, along the Ch'ongch'on River Valley in the northwestern part of North Korea.  In response to the successful Chinese First Phase Campaign against the United Nations forces, General Douglas MacArthur launched the Home-by-Christmas Offensive to evict the Chinese forces from Korea and to end the war.  Anticipating this reaction, the Chinese People's Volunteer Army Commander Peng Dehuai planned a counteroffensive, dubbed the \"Second Phase Campaign\", against the advancing UN forces."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 45,
+    "generation_speed": 421.89741330008155,
+    "prompt_eval_speed": 46831.025554429805,
+    "generation_latency_s": 0.19545210001524538,
+    "latency": 0.6492767999880016,
+    "total_prompt_tokens": 504,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1261066,
+    "stage_rewrite_s": 0.22109160001855344,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08674860000610352,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14586960000451654,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19548399990890175,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6492856999393553,
+    "unaccounted_latency_s": 9.23000043258071e-05,
+    "rewritten_query": "The Battle of Stones River (1862) was fought between the armies of the Kingdom of Korea and the Kingdom of China. The battle took place on July 3, 1862, at the Ch'ongch'on River in the Korean Peninsula.",
+    "query_was_rewritten": true
+  }
+}

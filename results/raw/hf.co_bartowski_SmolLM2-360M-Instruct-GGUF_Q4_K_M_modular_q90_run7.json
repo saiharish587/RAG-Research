@@ -1,0 +1,48 @@
+{
+  "question_id": "Q90",
+  "query": "What occupation do Chris Menges and Aram Avakian share?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Chris Menges and Aram Avakian both work as cinematographers, which is a role that involves capturing the visual elements of a film through photography or videography.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Menges: Chris Menges BSC, ASC (born 15 September 1940) is an English cinematographer and film director.  He is a member of both the American and British Societies of Cinematographers.",
+      "Aram Avakian: Aram A. Avakian (April 23, 1926 \u2013 January 17, 1987) was an Armenian-American film editor and director.  His work in the latter role includes \"Jazz on a Summer's Day\" (1960) and the indie film \"End of the Road\" (1970).",
+      "Hugh Jackman: Hugh Michael Jackman (born 12 October 1968) is an Australian actor, singer, and producer.  Jackman has won international recognition for his roles in a variety of film genres.  He is known for his long-running role as Wolverine in the \"X-Men\" film series, as well as for his lead roles in films such as the romantic-comedy fantasy \"Kate & Leopold\" (2001), the action-horror film \"Van Helsing\" (2004), the magic-themed drama \"The Prestige\" (2006), the epic fantasy drama \"The Fountain\" (2006), the epic historical romantic drama \"Australia\" (2008), the film version of \"Les Mis\u00e9rables\" (2012), and the thriller \"Prisoners\" (2013).  His work in \"Les Mis\u00e9rables\" earned him his first Academy Award nomination for Best Actor and his first Golden Globe Award for Best Actor \u2013 Motion Picture Musical or Comedy in 2013."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 448,
+    "generation_tokens": 35,
+    "generation_speed": 237.06312652397725,
+    "prompt_eval_speed": 59400.68947228852,
+    "generation_latency_s": 0.2668213000288233,
+    "latency": 0.6726965000852942,
+    "total_prompt_tokens": 574,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22419289999999997,
+    "stage_route_s": 0.09431830001994967,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27352579997386783,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03786370006855577,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1199964471161366e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2668604999780655,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.672708100057207,
+    "unaccounted_latency_s": 9.930005762726068e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Occupation\" - Chris Menges is an actor, while Aram Avakian is a musician."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q42",
+  "query": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+  "ground_truth": "Mumbai",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The company that Sachin Warrier worked for was India's e-commerce platform Flipkart.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sachin Warrier: Sachin Warrier is a playback singer and composer in the Malayalam cinema industry from Kerala.  He became notable with the song \"Muthuchippi Poloru\" from the film Thattathin Marayathu.  He made his debut with the movie Malarvaadi Arts Club.  He was working as a software engineer in Tata Consultancy Services in Kochi.  Later he resigned from the job to concentrate more on music.  His latest work is as a composer for the movie Aanandam.",
+      "Sachin Bansal: Sachin Bansal (born 5 August 1981) is an Indian Software engineer and Internet entrepreneur known for co-founding India's e-commerce platform Flipkart.  Sachin is from Chandigarh and is an engineering graduate from Indian Institute of Technology Delhi.",
+      "Shortest common supersequence problem: In computer science, the shortest common supersequence of two sequences X and Y is the shortest sequence which has X and Y as subsequences.  This is a problem closely related to the longest common subsequence problem.  Given two sequences X = < x.. . ,x > and Y = < y.. . ,y >, a sequence U = < u.. . ,u > is a common supersequence of X and Y if items can be removed from U to produce X or Y."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 369,
+    "generation_tokens": 21,
+    "generation_speed": 361.5826991287579,
+    "prompt_eval_speed": 21495.980426424325,
+    "generation_latency_s": 0.1825179000152275,
+    "latency": 0.894051400013268,
+    "total_prompt_tokens": 507,
+    "total_generation_tokens": 210,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2361415,
+    "stage_route_s": 0.15993289998732507,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.49576019996311516,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05564499995671213,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.849993951618671e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1825514999218285,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8940642999950796,
+    "unaccounted_latency_s": 0.0001071002334356308,
+    "route": "rag",
+    "router_raw": "The company that Sachin Warrier worked for was the IT department of the company that he founded in 1985.",
+    "sub_queries": [
+      "Here are two specific search queries related to the question:",
+      "\"Where was Sachin Warrier's work hosted at?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q47",
+  "query": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+  "ground_truth": "Phil Spector",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono is Bob Dylan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "To Know Him Is to Love Him: \"To Know Him Is to Love Him\" is a song written by Phil Spector, inspired by words on his father's tombstone, \"To Know Him Was To Love Him.\"  It was first recorded by the only vocal group of which he was a member, the Teddy Bears.  Their recording spent three weeks at No. 1 on the \"Billboard\" Hot 100 singles chart in 1958, while reaching No. 2 on UK's \"New Musical Express\" chart.  Peter & Gordon and Bobby Vinton later had hits with the song, with its title and lyrics changed to \"To Know You Is to Love You\".  In 1987, the song was resurrected by Dolly Parton, Linda Ronstadt and Emmylou Harris, whose \"Trio\" recording topped the U.S. country singles charts.  The song is in 12/8 time.",
+      "n the grounds of Glasgow College and when the university moved to Gilmorehill in the west of Glasgow, his tombstone was inserted in the main building.  See separate article on Thomas Reid's tombstone.",
+      "Rita May (song): \"Rita May\" (sometimes spelled as \"Rita Mae\") is a song by Bob Dylan, originally recorded during the sessions for the album Desire, but released only as the B-side of a single and on the compilation album, \"Masterpieces\".  The song is based on the 1957 rockabilly song \"Bertha Lou\".  Some listeners believe that the lyrics of the song refer to writer Rita Mae Brown, who had complained of the lack of opportunities for casual lesbian sex."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 448,
+    "generation_tokens": 33,
+    "generation_speed": 390.9072602139329,
+    "prompt_eval_speed": 24658.740642888595,
+    "generation_latency_s": 0.17669530003331602,
+    "latency": 0.6978175999829546,
+    "total_prompt_tokens": 538,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1253689,
+    "stage_rewrite_s": 0.24903519998770207,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07366459991317242,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1982927001081407,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17673929990269244,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6978284999495372,
+    "unaccounted_latency_s": 9.760004468262196e-05,
+    "rewritten_query": "The song \"Who Is the Writer of This Song That Was Inspired by Words On A Tombstone?\" was written by the artist, who drew inspiration from the words on a tombstone. The song's title and lyrics were inspired by the poem \"To Whom It May Concern\" by John Keats.",
+    "query_was_rewritten": true
+  }
+}

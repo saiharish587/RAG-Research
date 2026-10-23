@@ -1,0 +1,42 @@
+{
+  "question_id": "Q133",
+  "query": "Alice David is the voice of Lara Croft in a video game developed by which company ?",
+  "ground_truth": "Crystal Dynamics",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Alice David is the voice of Lara Croft in a video game developed by Core Design.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alice David: Alice David (born 22 March 1987) is a French actress, known for the television series \"Bref\" (2011) and the film \"Babysitting\" (2014).  She is the voice of the French dub of Lara Croft in the video game \"Tomb Raider\".",
+      "Lara Croft: Tomb Raider: Lara Croft: Tomb Raider (also known as simply Tomb Raider) is a 2001 action-adventure film based on the popular \"Tomb Raider\" video game series featuring the character Lara Croft portrayed by Angelina Jolie.  An international co-production between the United States, the United Kingdom, Japan, and Germany, it was directed by Simon West and revolves around Lara Croft trying to obtain ancient artifacts from the enemy, the Illuminati.",
+      "Tomb Raider: Tomb Raider, also known as Lara Croft: Tomb Raider between 2001 and 2007, is a media franchise that originated with an action-adventure video game series created by British gaming company Core Design.  Formerly owned by Eidos Interactive, then by Square Enix after their acquisition of Eidos in 2009, the franchise focuses on a fictional English archaeologist Lara Croft, who travels around the world searching for lost artifacts and infiltrating dangerous tombs and ruins.  The gameplay generally focuses around action-adventure exploration of environments, solving puzzles, navigating hostile environments filled with traps, and fighting numerous enemies.  Additional media has grown up around the theme in the form of film adaptations, comics and novels."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 20,
+    "generation_speed": 419.014895979552,
+    "prompt_eval_speed": 52178.13372163572,
+    "generation_latency_s": 0.13351610000245273,
+    "latency": 0.705876599997282,
+    "total_prompt_tokens": 509,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1359072,
+    "stage_rewrite_s": 0.28981170000042766,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07831660006195307,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.204099899972789,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13354810001328588,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7058894000947475,
+    "unaccounted_latency_s": 0.00011380005162209272,
+    "rewritten_query": "Alice David, the voice of Lara Croft in the popular video game series, is the voice of Lara Croft from the acclaimed game series \"Lara Croft: Tomb Raider.\" The game was released on November 10, 2019 by the company \"Halo Games Inc.,\" which has since been acquired by the developer of the game, \"Oracle Studios.",
+    "query_was_rewritten": true
+  }
+}

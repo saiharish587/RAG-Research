@@ -1,0 +1,42 @@
+{
+  "question_id": "Q158",
+  "query": "What retailer in ABQ Uptown is headquarted in Poole, Dorset, United Kingdom?",
+  "ground_truth": "Lush Ltd.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Based on the context provided, it appears that Lush (company) is a retail chain store located in Poole, Dorset, United Kingdom. The company's headquarters are in Poole, and they have established themselves as one of the largest retailers in the UK.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lush (company): Lush Ltd. is a cosmetics retailer headquartered in Poole, Dorset, United Kingdom.  The company was founded by Mark Constantine, a trichologist and Liz Weir, a beauty therapist.  They met in a hair and beauty salon in Poole, England.  A few years later, they decided to branch out and start their own business selling natural hair and beauty products.",
+      "Chain store: Chain store(s) or retail chain are retail outlets that share a brand and central management, and usually have standardized business methods and practices.  In retail, dining, and many service categories, chain businesses have come to dominate the market in many parts of the world.  A franchise retail establishment is one form of chain store.  In 2004, the world's largest retail chain, Wal-Mart, became the world's largest corporation based on gross sales.",
+      "Fire Radio: Fire Radio is a United Kingdom radio station broadcasting to Bournemouth, Poole, and Christchurch, Dorset, based in Southampton, Hampshire."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 300,
+    "generation_tokens": 55,
+    "generation_speed": 352.7178513711105,
+    "prompt_eval_speed": 36398.93229798593,
+    "generation_latency_s": 0.24118200002703816,
+    "latency": 0.6139008000027388,
+    "total_prompt_tokens": 382,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1308393,
+    "stage_rewrite_s": 0.1873371999245137,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0823452000040561,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10291009990032762,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.24122510000597686,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6139130999799818,
+    "unaccounted_latency_s": 9.610014967620373e-05,
+    "rewritten_query": "The retailer in Poole, Dorset, United Kingdom, is Headquarter of the Retailers Association of Poonley, a retail chain owned by the Poonley Group.",
+    "query_was_rewritten": true
+  }
+}

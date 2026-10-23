@@ -1,0 +1,48 @@
+{
+  "question_id": "Q549",
+  "query": "In the 2012-13 FC Sion they brought in Gennaro Gattuso and a player who now plays for what Scottish team?",
+  "ground_truth": "Scottish Premiership club Hearts",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "In the 2012-13 FC Sion, Hibernian played in the Swiss Super League.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hibernian F.C.: Hibernian Football Club ( ), commonly known as Hibs, are a Scottish professional football club based in Leith in the north of Edinburgh.  Hibs play in the Scottish Premiership, the first tier of the Scottish Professional Football League (SPFL), having been promoted by winning the Scottish Championship in 2017.  It is one of three SPFL clubs in the city, the others being their Edinburgh derby rivals Hearts and Edinburgh City.  Hibernian was founded in 1875 by Irish immigrants, but support for the club is now based on geography rather than ethnicity or religion.  The Irish heritage of Hibernian is still reflected, however, in its name, colours and badge.",
+      "2012\u201313 FC Sion season: In the 2012\u201313 season, Sion competes in the Swiss Super League and the Swiss Cup.  In the summer transfer window, they brought in Italian World Cup winner Gennaro Gattuso, as well as Kyle Lafferty (former of Rangers).  In addition, they bought an until then unknown Brazilian footballer called L\u00e9o Itaperuna from the 5th division Club of Arapongas and another forward Mathieu Manset from Reading.",
+      "PFA Scotland Team of the Year: The Professional Footballers' Association Scotland Team of the Year (often called the PFA Scotland Team of the Year, or simply the Team of the Year) is an annual award given to a set of 44 footballers in the four national tiers of the Scottish football league system, who are seen to be deserving of being named in a \"Team of the Year\".  The award is compiled by the members of the players' trade union, Professional Footballers' Association Scotland (PFA Scotland), with the winners then being voted for by the other players in their respective divisions.  Unlike the (English) Professional Footballers' Association, which first announced its teams of the year in the 1970s, the award has only been instituted since the 2006\u201307 season.  In that first season, the award was voted for by the managers in each division."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 557,
+    "generation_tokens": 25,
+    "generation_speed": 343.10025389418786,
+    "prompt_eval_speed": 18492.69588313413,
+    "generation_latency_s": 0.21898719994351268,
+    "latency": 0.5534636999946088,
+    "total_prompt_tokens": 725,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2336827,
+    "stage_route_s": 0.09859229996800423,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19902910001110286,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03667830000631511,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9400026910007e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2190237999893725,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5534738000715151,
+    "unaccounted_latency_s": 0.0001015000743791461,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Gattuso, Gellato, and Gervinho are all players from the Scottish Football Association (ScotSFA) that played for the Scottish Football Club."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

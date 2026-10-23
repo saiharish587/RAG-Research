@@ -1,0 +1,49 @@
+{
+  "question_id": "Q600",
+  "query": "When was the American actor, film director which  Dana Brunetti is the president of his company born ",
+  "ground_truth": "July 26, 1959",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Dana Brunetti was born on June 11, 1973.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dana Brunetti: Dana Brunetti (born June 11, 1973) is an American film producer and social networking entrepreneur.  He is the president of Kevin Spacey's production company, Trigger Street Productions.  In 2016, he became the president of Relativity Media with Kevin Spacey taking on a chairman position.",
+      "Paris Hilton: Paris Whitney Hilton (born February 17, 1981) is an American businesswoman, socialite, television and media personality, model, actress, singer, and DJ.  She is the great-granddaughter of Conrad Hilton, the founder of Hilton Hotels.  Born in New York City and raised there and in Beverly Hills, California, Hilton began her modeling career as a teenager when she signed with New York-based modelling development agency Trump Model Management.  Her lifestyle and rumored short-lived relationships made her a feature of entertainment news and tabloid magazines, and Hilton was proclaimed \"New York's leading It girl\" in 2001.  In 2003, a sex tape with Hilton and her then-boyfriend Rick Salomon, later released as \"1 Night in Paris\", was leaked to the public.  Released only three weeks before the premiere of the reality television series \"The Simple Life\", in which she starred alongside her long-time friend Nicole Richie, the sex tape became a media sensation.",
+      "Dana Blankstein: Dana Blankstein-Cohen (born March 3, 1981) is the director of the Israeli Academy of Film and Television.  She is a film director, and an Israeli culture entrepreneur."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 435,
+    "generation_tokens": 19,
+    "generation_speed": 228.14875298694747,
+    "prompt_eval_speed": 54504.44806415236,
+    "generation_latency_s": 0.21243029995821416,
+    "latency": 0.5870314000640064,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.26040989999999997,
+    "stage_route_s": 0.11236390005797148,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19867579999845475,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06335499999113381,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.430006422102451e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21247969998512417,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5870472999522462,
+    "unaccounted_latency_s": 0.00011939986143261194,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"When was Dana Brunetti born?\"",
+      "\"What is Dana Brunetti's occupation?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

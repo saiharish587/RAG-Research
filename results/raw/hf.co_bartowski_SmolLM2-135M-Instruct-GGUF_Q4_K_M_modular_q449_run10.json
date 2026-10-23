@@ -1,0 +1,48 @@
+{
+  "question_id": "Q449",
+  "query": "What is the name of the film starring Rose McGowan and features the character Earl McGraw's daughter?",
+  "ground_truth": "Planet Terror",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The name of the film starring Rose McGowan and featuring the character Earl McGraw's daughter is \"Gone Girl\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rose McGowan: Rose Arianna McGowan (born September 5, 1973) is an Italian-born American actress, film producer, director and singer.  She is best known to television audiences for having played Paige Matthews in The WB supernatural drama series \"Charmed\" from 2001 to 2006.",
+      "Mary Poppins Returns: Mary Poppins Returns (also known as Mary Poppins 2) is an upcoming American musical fantasy film directed by Rob Marshall and written by David Magee.  It is the sequel to the 1964 film \"Mary Poppins\".  The film stars Emily Blunt, Lin-Manuel Miranda, Ben Whishaw, Emily Mortimer, Pixie Davies, Joel Dawson, Nathanael Saleh, Julie Walters, Colin Firth, Dick Van Dyke and Meryl Streep.  Set 25 years after the 1964 film, it will feature Mary Poppins, the former nanny of Jane and Michael Banks, re-visiting them after a family tragedy.  The film is scheduled for release on December 25, 2018, giving it one of the longest gaps between film sequels in history.",
+      "Gone Girl (film): Gone Girl is a 2014 American psychological thriller film directed by David Fincher and written by Gillian Flynn, based on her 2012 novel of the same name.  The film stars Ben Affleck, Rosamund Pike, Neil Patrick Harris, and Tyler Perry.  Set in Missouri, the story begins as a mystery that follows the events surrounding Nick Dunne (Affleck), who becomes the primary suspect in the sudden disappearance of his wife, Amy (Pike)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 462,
+    "generation_tokens": 25,
+    "generation_speed": 360.89617738768914,
+    "prompt_eval_speed": 18960.068945705258,
+    "generation_latency_s": 0.2077844999730587,
+    "latency": 0.5784804000286385,
+    "total_prompt_tokens": 604,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2406916,
+    "stage_route_s": 0.17161449999548495,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15967899991665035,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03921079996507615,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1499966755509377e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20784450008068234,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5784909999929368,
+    "unaccounted_latency_s": 0.00010130007285624743,
+    "route": "rag",
+    "router_raw": "The name of the film starring Rose McGowan and features the character Earl McGraw's daughter is \"Rose McGowan.\"",
+    "sub_queries": [
+      "The name of the film starring Rose McGowan and featuring the character Earl McGraw's daughter is \"Rose McGowan and the Lost Generation.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

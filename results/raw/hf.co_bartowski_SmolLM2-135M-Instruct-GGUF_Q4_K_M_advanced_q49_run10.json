@@ -1,0 +1,42 @@
+{
+  "question_id": "Q49",
+  "query": "Are Ferocactus and Silene both types of plant?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, Silenaceae is not a type of plant. Silenes are flowering plants that belong to the family Caryophyllaceae. They are commonly found in the northern hemisphere and are widely distributed throughout the world.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Silene: Silene is a genus of flowering plants in the family Caryophyllaceae.  Containing approximately 700 species, it is the largest genus in the family.  Common names include campion (which is shared with the related genus \"Lychnis\") and catchfly.  Many \"Silene\" species are widely distributed, particularly in the northern hemisphere.",
+      "Ferocactus: Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers.  There are about 30 species included in the genus.  They are found in the southwestern United States and northwestern Mexico.",
+      "Silene stenophylla: Silene stenophylla is a species of flowering plant in the family Caryophyllaceae.  Commonly called narrow-leafed campion, it is a species in the genus \"Silene\".  It grows in the Arctic tundra of far eastern Siberia and the mountains of Northern Japan.  Frozen samples, estimated via radiocarbon dating to be around 32,000 years old, were discovered in the same area as current living specimens, and in 2012 a team of scientists successfully regenerated a plant from the samples."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 44,
+    "generation_speed": 419.84332210570506,
+    "prompt_eval_speed": 51662.32073011734,
+    "generation_latency_s": 0.18766350008081645,
+    "latency": 0.7609474000055343,
+    "total_prompt_tokens": 389,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1366217,
+    "stage_rewrite_s": 0.23350510001182556,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07681399991270155,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.26284370000939816,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18769649998284876,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7609563000733033,
+    "unaccounted_latency_s": 9.750016033649445e-05,
+    "rewritten_query": "The original query was \"Are Ferocactus and Silene both types of plant?\" This query is now optimized for a search-friendly rephrased version, which includes the requested information. The revised query uses the keyword \"both\" to indicate that they are two distinct plants with different characteristics.",
+    "query_was_rewritten": true
+  }
+}

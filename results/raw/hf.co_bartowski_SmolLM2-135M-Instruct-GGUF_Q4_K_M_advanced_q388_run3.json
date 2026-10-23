@@ -1,0 +1,42 @@
+{
+  "question_id": "Q388",
+  "query": "Dead but Rising was a song by the Danish band fomed in what city in 2001?",
+  "ground_truth": "Copenhagen",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The correct answer is \"Denmark in the Eurovision Song Contest 2009.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dead but Rising: \"Dead but Rising\" is a song by Danish heavy metal band Volbeat.  The song was released as the seventh single from the band's fifth studio album \"Outlaw Gentlemen & Shady Ladies\".",
+      "Princess Josephine of Denmark: Princess Josephine of Denmark, Countess of Monpezat (Josephine Sophia Ivalo Mathilda; born 8 January 2011), is the fourth and youngest child of Crown Prince Frederik and Crown Princess Mary, and the seventh grandchild of Queen Margrethe II of Denmark and her husband, Henrik, Prince Consort of Denmark.  She is the twin sister of Prince Vincent of Denmark.",
+      "Denmark in the Eurovision Song Contest 2009: Denmark participated in the Eurovision Song Contest 2009 held in Moscow on 16 May 2009.  Denmark was represented by Brinck with the song \"Believe Again\".  Two other Danish-born contestants also participated at the 2009 Eurovision contest: Susanne Georgi represented Andorra and Yohanna represented Iceland."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 316,
+    "generation_tokens": 21,
+    "generation_speed": 408.57620919101913,
+    "prompt_eval_speed": 42882.344958610396,
+    "generation_latency_s": 0.13649780000559986,
+    "latency": 0.5107125999638811,
+    "total_prompt_tokens": 398,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1291065,
+    "stage_rewrite_s": 0.1339459998998791,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07855500001460314,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16158160008490086,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13653919997159392,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5107223000377417,
+    "unaccounted_latency_s": 0.00010120007209479809,
+    "rewritten_query": "Dead But Rising was a song from Denmark's fomed in 2001.",
+    "query_was_rewritten": true
+  }
+}

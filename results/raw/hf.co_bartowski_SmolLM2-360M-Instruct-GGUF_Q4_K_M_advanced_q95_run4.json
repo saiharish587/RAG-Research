@@ -1,0 +1,42 @@
+{
+  "question_id": "Q95",
+  "query": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+  "ground_truth": "March and April",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The annual documentary film festival, which is presented by the Fortnightly published British journal of literary essays, is held in New Haven, Connecticut over a weekend in June.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "London International Documentary Festival: The London International Documentary Festival (or LIDF) is an annual documentary film festival that takes place in the months of March and April every year.  The event is presented in association with the London Review of Books.",
+      "New Haven Documentary Film Festival: New Haven Documentary Film Festival (also known as NHdocs) is an annual documentary film festival held in New Haven, Connecticut, over a weekend in the month of June.  Screenings take place at Yale University\u2019s Whitney Humanities Center Auditorium and the New Haven Free Public Library.  NHdocs is a regional festival that showcases documentaries by filmmakers from the greater New Haven area and beyond.  NHdocs was launched in 2014 when the film festival\u2019s co-founders Charles Musser, Gorman Bechard, Jacob Bricca, and Lisa Molomot came together at the Big Sky Documentary Film Festival and decided to create a documentary film festival in New Haven that would \u201cbuild a sense of community among documentary filmmakers from the greater New Haven area.\u201d  In 2014, the four filmmakers each showed one of their recently completed documentaries, three of which had just played at the Big Sky.",
+      "Doc NYC: Doc NYC (stylized as DOC NYC) is an annual documentary film festival in New York City.  Co-founded by Thom Powers and his wife Raphaela Neihausen, the festival is the country's largest documentary film festival with over 300 films and events and 200 special guests.  The festival takes place over eight days in November at the West Village's IFC Center and Chelsea's Cin\u00e9polis and SVA Theater."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 437,
+    "generation_tokens": 35,
+    "generation_speed": 251.3519142243639,
+    "prompt_eval_speed": 61784.249964654315,
+    "generation_latency_s": 0.9878891000989825,
+    "latency": 3.4181821000529453,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12473020000000001,
+    "stage_rewrite_s": 1.1260892000282183,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.114023800007999,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19006529997568578,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9879236000124365,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4181900001131,
+    "unaccounted_latency_s": 8.859997615218163e-05,
+    "rewritten_query": "Monthly Documentary Film Festival",
+    "query_was_rewritten": true
+  }
+}

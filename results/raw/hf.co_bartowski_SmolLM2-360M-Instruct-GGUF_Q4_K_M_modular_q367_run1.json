@@ -1,0 +1,49 @@
+{
+  "question_id": "Q367",
+  "query": "What is the name of this Fortune 500 American company that operates a chain of retail home improvement stores that sponsored House Rules?",
+  "ground_truth": "Lowe's",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Lowe's Companies, Inc.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lowe's: Lowe's Companies, Inc. is a Fortune 500 American company that operates a chain of retail home improvement and appliance stores in the United States, Canada, and Mexico.  Founded in 1946 in North Wilkesboro, North Carolina, the chain has 1,840 stores in the United States, Canada, and Mexico.",
+      "House Rules (2003 TV series): House Rules is an American television show hosted by Mark L. Walberg that aired on TBS in 2003.  It featured three couples that competed in a 13-week remodeling contest.  After doing most of the technical work, the winning team received the home they had just remodeled.  The show was sponsored by Lowe's.",
+      "Monopoly (game): Monopoly is a board game where players roll two six-sided dice to move around the game-board buying and trading properties, and then develop them with houses and hotels.  Players collect rent from their opponents, with the goal being to drive them all into bankruptcy.  Money can also be gained or lost through Chance and Community Chest cards, and tax squares; players can end up in jail, which they cannot move from until they have met one of several conditions.  The game has numerous house rules and hundreds of different editions exist, in addition to many spin-offs and related media; \"Monopoly\" has become a part of popular world culture, having been locally licensed in more than 103 countries and printed in more than thirty-seven languages."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 410,
+    "generation_tokens": 8,
+    "generation_speed": 221.23893805309737,
+    "prompt_eval_speed": 12176.288904727964,
+    "generation_latency_s": 0.18175129999872297,
+    "latency": 0.5164729999378324,
+    "total_prompt_tokens": 564,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.236358,
+    "stage_route_s": 0.1191180000314489,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15977839997503906,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055638200021348894,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.889998283237219e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18179169995710254,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5164852000307292,
+    "unaccounted_latency_s": 0.00010069995187222958,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"House Rules\"",
+      "\"American Home Improvement Company\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

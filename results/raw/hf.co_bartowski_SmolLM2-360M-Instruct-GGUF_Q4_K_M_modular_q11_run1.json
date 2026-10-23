@@ -1,0 +1,49 @@
+{
+  "question_id": "Q11",
+  "query": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+  "ground_truth": "Kansas Song",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Kansas Song",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kansas Song: Kansas Song (We\u2019re From Kansas) is a fight song of the University of Kansas.",
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities.",
+      "University of Missouri\u2013Kansas City: The University of Missouri\u2013Kansas City (UMKC) is a public research university serving the greater Kansas City metropolitan area.  Located in Kansas City, Missouri, UMKC is one of four system campuses that collectively constitute the University of Missouri.  UMKC is spread across multiple locales; the main Volker Campus, home to the majority of university operations, is located in Kansas City's Rockhill neighborhood, east of the Country Club Plaza, and adjacent to both the Stowers Institute for Medical Research and the world-renowned Linda Hall Library.  In 2017 the University, in collaboration with Truman Medical Center, Children's Mercy Hospital, the Missouri Health Department, the Jackson County Medical Examiners Office, and the Missouri Department of Mental Health Behavioral Medicine, formed the UMKC Health Sciences District on Hospital Hill.  This district is a first-in-the-nation partnership between local and state governments, the university, and these nationally recognized healthcare faculties, designed to promote collaboration in research, innovation, education, grant funding, and community outreach, for the advancement of health and wellness in the greater Kansas City metropolitan area.  Also in 2017, the university announced plans to expand its metropolitan identity with the construction of a downtown Campus for the Arts, located near the Kauffman Center for the Performing Arts."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 549,
+    "generation_tokens": 4,
+    "generation_speed": 216.1811598119224,
+    "prompt_eval_speed": 12553.736394402269,
+    "generation_latency_s": 0.1711675999686122,
+    "latency": 0.6262148000532761,
+    "total_prompt_tokens": 711,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22497,
+    "stage_route_s": 0.10217920003924519,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.29345949995331466,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.059232400031760335,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7200086303055286e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17119939997792244,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6262234000023454,
+    "unaccounted_latency_s": 9.629991836845875e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The University of Kansas (KU) has a main campus located in Lawrence, Kansas.",
+      "Query 2: The KU Fight Song is called \"The Battle Hymn of the Republic.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

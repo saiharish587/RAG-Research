@@ -1,0 +1,49 @@
+{
+  "question_id": "Q581",
+  "query": "My Secret Hotel is a television series starring a South Korean DJ who rose to fame as the lead actress in what?",
+  "ground_truth": "Queen In-hyun's Man",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "My Secret Hotel is a television series starring Yoo In-na, Jin Yi-han, Namkoong Min, and Lee Young-eun.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yoo In-na: Yoo In-na (born June 5, 1982) is a South Korean actress and DJ.  After supporting roles in \"High Kick!  Through the Roof\" (2009-2010) and \"Secret Garden\" (2010), she rose to fame as the lead actress in \"Queen In-hyun's Man\" (2012), which led to a supporting role in the hit fantasy-romance drama \"My Love from the Star\" (2013-2014).  She is also the DJ of the highly rated radio program \"Let's Crank Up the Volume\".  Most recently, she starred in the hit fantasy drama \"\" (2016-2017), one of the highest rated cable television series in South Korea.",
+      "My Secret Hotel: My Secret Hotel () is a 2014 South Korean mystery-romantic comedy television series starring Yoo In-na, Jin Yi-han, Namkoong Min and Lee Young-eun.  It aired on tvN from August 18 to October 14, 2014 on Mondays and Tuesdays at 23:00 for 16 episodes.",
+      "The Secret of My Love: The Secret of My Love (Hangul:\u00a0\ub0b4 \ub0a8\uc790\uc758 \ube44\ubc00 ; RR:\u00a0\"Nae Namjaeui Bimil \"; lit. \u00a0My Man's Secret ) is a 2017 South Korean television series starring Song Chang-eui, Kang Se-jung, Kim Da-hyun, and Park Jung-ah.  The series airs on KBS2 on Monday to Friday from 7:50 p.m. to 8:30 p.m. (KST)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 485,
+    "generation_tokens": 32,
+    "generation_speed": 229.27070421929741,
+    "prompt_eval_speed": 59906.12648221343,
+    "generation_latency_s": 0.2612119000405073,
+    "latency": 0.7567236999748275,
+    "total_prompt_tokens": 631,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23622749999999998,
+    "stage_route_s": 0.10310970002319664,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.33386949996929616,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05835249996744096,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.289993714541197e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26125239999964833,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7567364999558777,
+    "unaccounted_latency_s": 0.00010050006676465273,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"My Secret Hotel\" - A South Korean DJ who rose to fame as the lead actress in what?",
+      "\"A South Korean DJ who rose to fame as the lead actress in a television series starring a South Korean DJ who rose to fame as the lead actress in what?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

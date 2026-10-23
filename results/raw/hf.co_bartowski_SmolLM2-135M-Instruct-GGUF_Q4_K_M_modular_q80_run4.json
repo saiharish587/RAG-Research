@@ -1,0 +1,49 @@
+{
+  "question_id": "Q80",
+  "query": "In which year was the King who made the 1925 Birthday Honours born?",
+  "ground_truth": "1865",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The King who made the 1925 Birthday Honours (Harald V) was born in 1937, not 1940.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1925 Birthday Honours: The 1925 Birthday Honours were appointments by King George V to various orders and honours to reward and highlight good works by citizens of the British Empire.  The appointments were made to celebrate the official birthday of The King, and were published in \"The London Gazette\" on 3 June 1925.",
+      "1951 Birthday Honours: The King's Birthday Honours 1951 were appointments in many of the Commonwealth realms of King George VI to various orders and honours to reward and highlight good works by citizens of those countries.  The appointments were made to celebrate the official birthday of the King, and were published on 1 June 1951 for the British Empire, Australia, New Zealand, Ceylon, and Pakistan.  These were the last Birthday Honours awarded by George VI, who died eight months later.",
+      "Harald V of Norway: Harald V (] ; born 21 February 1937) is the King of Norway, having ascended the throne following the death of his father on 17 January 1991."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 311,
+    "generation_tokens": 35,
+    "generation_speed": 376.1256904593032,
+    "prompt_eval_speed": 16766.40250148256,
+    "generation_latency_s": 0.22348479996435344,
+    "latency": 0.8982368999859318,
+    "total_prompt_tokens": 449,
+    "total_generation_tokens": 204,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23963220000000002,
+    "stage_route_s": 0.1785764000378549,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4399483000161126,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056040900060907006,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5900076404213905e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22352300002239645,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8982476000674069,
+    "unaccounted_latency_s": 0.00010349985677748919,
+    "route": "rag",
+    "router_raw": "The answer to this question requires retrieving information from internal files/documents, specifically those related to the birth of King George II of England in 1760.",
+    "sub_queries": [
+      "Here are two specific search queries related to the year 1925 that match the given question:",
+      "\"Who made the 1925 Birthday Honours?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

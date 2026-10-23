@@ -1,0 +1,49 @@
+{
+  "question_id": "Q265",
+  "query": "What was the name of the fanzine that interviewed the Sex Pistols bassist when he was in the band \"The Flowers of Romance?\"",
+  "ground_truth": "SKUM",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The name of the fanzine that interviewed the Sex Pistols bassist when he was in the band \"The Flowers of Romance\" is SKUM.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Flowers of Romance (band): The Flowers of Romance were an early punk band, formed in mid-1976 by Jo Faull and Sarah Hall.  The band never played live or released any recordings, and, like London SS and Masters of the Backside, are more famed for the number of band members that later became well known, including: Sid Vicious of the Sex Pistols, Keith Levene (an early member of The Clash and later of Public Image Ltd) and Palmolive and Viv Albertine, who went on to play in The Slits.  Despite never playing live, they were interviewed by a fanzine named \"SKUM\", in which Sid Vicious proclaimed \"I'll just be the yob that I am now\".",
+      "Sid Vicious: Sid Vicious (born John Simon Ritchie, 10 May 1957 \u2013 2 February 1979) was an English bassist and vocalist, most famous as a member of the influential punk rock band the Sex Pistols.",
+      "John Lennon: John Winston Ono Lennon, {'1': \", '2': \", '3': \", '4': \"} (born John Winston Lennon; 9 October 19408 December 1980) was an English singer, songwriter, musician, and activist who co-founded the Beatles, the most commercially successful and musically influential band in the history of popular music.  He and fellow member Paul McCartney formed a much-celebrated songwriting partnership."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 33,
+    "generation_speed": 237.9235760634463,
+    "prompt_eval_speed": 54198.076423186896,
+    "generation_latency_s": 0.2587246000766754,
+    "latency": 0.6936715999618173,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2273351,
+    "stage_route_s": 0.09242469992022961,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2867903000442311,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055542899994179606,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.360001862049103e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25875759997870773,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6936843999428675,
+    "unaccounted_latency_s": 0.00010599999222904444,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The name of the fanzine is \"The Flowers of Romance.\"",
+      "The name of the bassist who interviewed the Sex Pistols during their time with \"The Flowers of Romance\" is \"John Lennon.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q72",
+  "query": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
+  "ground_truth": "276,170 inhabitants",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The inhabitant of the city where the 122nd SS-Standarte was formed in 2014 would be the people living in Strasbourg, Germany.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Potsdam: Potsdam (] ) is the capital and largest city of the German federal state of Brandenburg.  It directly borders the German capital Berlin and is part of the Berlin/Brandenburg Metropolitan Region.  It is situated on the River Havel, 24 km southwest of Berlin's city centre.",
+      "122nd SS-Standarte: The 122nd SS-Standarte was a regimental command of the Allgemeine-SS that was formed in the city of Strasbourg during World War II.  The Standarte was activated on November 12, 1940, and reached battalion strength by the end of the year.  The command was a successor to the previously disbanded 121st SS-Standarte, also situated in Strasbourg.",
+      "Brandenburg an der Havel: Brandenburg an der Havel (also called Brandenburg or Brandenburg City in English) is a town in Brandenburg, Germany, which served as the capital of the Margraviate of Brandenburg until replaced by Berlin in 1417."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 312,
+    "generation_tokens": 38,
+    "generation_speed": 234.30611477300056,
+    "prompt_eval_speed": 13039.6623061813,
+    "generation_latency_s": 0.2941889999201521,
+    "latency": 0.69391569995787,
+    "total_prompt_tokens": 462,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2239381,
+    "stage_route_s": 0.10080649994779378,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24054180004168302,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058183199958875775,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8699981309473515e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29422909999266267,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6939273999305442,
+    "unaccounted_latency_s": 0.00010870001278817654,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The city where 122nd SS-Standarte was formed in 2014 is Berlin.",
+      "Query 2: Berlin, Germany."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

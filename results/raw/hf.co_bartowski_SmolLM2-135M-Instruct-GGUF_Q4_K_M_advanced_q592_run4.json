@@ -1,0 +1,42 @@
+{
+  "question_id": "Q592",
+  "query": "Red Mountain is a film that centers on an attempt by a group of what group of Civil War rangers?",
+  "ground_truth": "pro-Confederate",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The film \"Butch Cassidy and the Sundance Kid\" is set in the last days of the US Civil War, during the war between the United States and Mexico. The film follows the attempts of a U.S. Army Major to destroy bridges and roads potentially useful to the Japanese during World War II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Red Mountain (film): Red Mountain is a 1951 Western historical film, starring Alan Ladd, set in the last days of the US Civil War.  The plot centers on an attempt by Quantrill's Raiders to stir up rebellion in the West.",
+      "Sundance Group: In 1969, Robert Redford purchased 6000 acre at the base of 12000 ft Mount Timpanogos in Utah's Wasatch Mountains.  He named this land Sundance (after his character in the 1969 film \"Butch Cassidy and the Sundance Kid\").  The Sundance Group is a listing of all the businesses that run under the Sundance corporate umbrella started by and run by actor Robert Redford.",
+      "The Mountain Road: The Mountain Road is a 1960 war film starring James Stewart and directed by Daniel Mann.  Set in China and based on the 1958 novel of the same name by journalist-historian Theodore H. White, the film follows the attempts of a U.S. Army Major to destroy bridges and roads potentially useful to the Japanese during World War II.  White's time covering China for \"Time\" magazine during the war led to an interview with former OSS Major Frank Gleason Jr., who served as head of a demolition crew that inspired the story and film.  Gleason was later hired as an (uncredited) technical consultant for the film."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 383,
+    "generation_tokens": 64,
+    "generation_speed": 396.4271998612505,
+    "prompt_eval_speed": 50381.47855827414,
+    "generation_latency_s": 0.2575269000371918,
+    "latency": 0.7445143000222743,
+    "total_prompt_tokens": 464,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.127728,
+    "stage_rewrite_s": 0.17574889992829412,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08049429999664426,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23062229994684458,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2575590000487864,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7445254999911413,
+    "unaccounted_latency_s": 0.00010180007666349411,
+    "rewritten_query": "The original query was \"Red Mountain is a film.\" The optimized query would be \"A Film about Red Mountain, set in the 1860s.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q149",
+  "query": "Who is Bruce Spizer an expert on, known as the most influential act of the rock era?",
+  "ground_truth": "The Beatles",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Bruce Spizer is an expert on The Beatles, known for his extensive knowledge of their history, music, and cultural impact. He has published eight books and is frequently quoted as an authority on the band's music and its significance in the 1960s counterculture movement.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bruce Spizer: David \"Bruce\" Spizer (born July 2, 1955) is a tax attorney in New Orleans, Louisiana, who is also recognized as an expert on The Beatles.  He has published eight books, and is frequently quoted as an authority on the history of the band and its recordings.",
+      "Cultural impact of the Beatles: The Beatles were an English rock band, formed in Liverpool in 1960.  With members John Lennon, Paul McCartney, George Harrison and Ringo Starr, they became widely regarded as the foremost and most influential act of the rock era.  In the early 1960s, their enormous popularity first emerged as \"Beatlemania\", but as the group's music grew in sophistication, led by primary songwriters Lennon and McCartney, they came to be perceived as an embodiment of the ideals shared by the counterculture of the 1960s.",
+      "Mick Jagger: Sir Michael Philip Jagger, MBE (born 26 July 1943) is an English singer-songwriter, multi-instrumentalist, and composer, who gained fame as the lead singer and one of the founder members of the Rolling Stones (1962-present).  Jagger's career has spanned over five decades, and he has been described as \"one of the most popular and influential frontmen in the history of rock & roll\".  His distinctive voice and performance, along with Keith Richards' guitar style, have been the trademark of the Rolling Stones throughout the career of the band.  Jagger gained press notoriety for his admitted drug use and romantic involvements, and was often portrayed as a countercultural figure."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 60,
+    "generation_speed": 254.05105579384605,
+    "prompt_eval_speed": 14703.929899097186,
+    "generation_latency_s": 0.3741777000250295,
+    "latency": 0.978494199924171,
+    "total_prompt_tokens": 583,
+    "total_generation_tokens": 147,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22767340000000003,
+    "stage_route_s": 0.10795920004602522,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.43666500004474074,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05951269995421171,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.91999851167202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.37420910003129393,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.97850309999194,
+    "unaccounted_latency_s": 9.839993435889482e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bruce Spizer\" - Known for his influence in the rock scene and being one of the most influential acts of the 1960s and 1970s.",
+      "\"Rock Era\" - A period of time that spans from the late 1950s to the early 1980s, characterized by a surge in popularity for rock music."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

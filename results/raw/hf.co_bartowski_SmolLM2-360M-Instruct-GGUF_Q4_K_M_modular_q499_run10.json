@@ -1,0 +1,48 @@
+{
+  "question_id": "Q499",
+  "query": "Walt Zeboski photographed which 40th President during his campaign in 1980?",
+  "ground_truth": "Ronald Wilson Reagan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Walt Zeboski photographed Ronald Reagan during his 1980 presidential campaign.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Walt Zeboski: Walt Zeboski (died 12 November 2012), was an American photographer and photojournalist for the Associated Press for more than thirty years.  Zeboski extensively photographed Ronald Reagan during his 1980 presidential campaign, snapping some of the most iconic pictures of Reagan's campaign.  Zeboski, who often focused on California politics, covered the political terms of four consecutive Governors of California from the 1960s to the 1980s - Pat Brown, Ronald Reagan, Jerry Brown and George Deukmejian.",
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States.",
+      "Ronald Reagan: Ronald Wilson Reagan ( ; February 6, 1911 \u2013 June 5, 2004) was an American statesman and actor who served as the 40th President of the United States from 1981 to 1989.  Before his presidency, he was the 33rd Governor of California, from 1967 to 1975, after a career as a Hollywood actor and union leader."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 499,
+    "generation_tokens": 20,
+    "generation_speed": 228.31050228310502,
+    "prompt_eval_speed": 62981.19399217469,
+    "generation_latency_s": 0.209721100050956,
+    "latency": 0.49295310000889003,
+    "total_prompt_tokens": 643,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2268943,
+    "stage_route_s": 0.10321570001542568,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14365039998665452,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036202099989168346,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.239997360855341e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20975959999486804,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49296429997775704,
+    "unaccounted_latency_s": 9.480002336204052e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Walt Zeboski's campaign photograph for Ronald Reagan.*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

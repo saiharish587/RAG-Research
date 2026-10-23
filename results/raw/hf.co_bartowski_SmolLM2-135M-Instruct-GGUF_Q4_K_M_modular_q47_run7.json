@@ -1,0 +1,48 @@
+{
+  "question_id": "Q47",
+  "query": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+  "ground_truth": "Phil Spector",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono is Billy Corgan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Back to Mono (1958\u20131969): Back to Mono (1958\u20131969) is a box set (4 compact discs or 5 vinyl LPs) compilation of the recorded work of record producer Phil Spector, through the 1960s, released in 1991 by ABKCO as #7118-2.  The first track, \"To Know Him Is to Love Him,\" released in 1958, features Spector performing as part of the group the Teddy Bears.  Initially a vinyl album-sized package, the box contained a booklet with photographs, complete song lyrics, discographical information, and a reproduction of the essay on Spector by Tom Wolfe, \"The First Tycoon of Teen.\"  The package also contained a small, round, red \"Back to Mono\" pin.",
+      "Leonard Cohen: Leonard Norman Cohen {'1': \", '2': \", '3': \", '4': \"} (September 21, 1934 \u2013 November 7, 2016) was a Canadian singer, songwriter, musician, poet, novelist, and painter.  His work explored religion, politics, isolation, sexuality, and personal relationships.  Cohen was inducted into the Canadian Music Hall of Fame, the Canadian Songwriters Hall of Fame, and the Rock and Roll Hall of Fame.  He was a Companion of the Order of Canada, the nation's highest civilian honor.  In 2011, Cohen received one of the Prince of Asturias Awards for literature and the ninth Glenn Gould Prize.",
+      "Billy Corgan: William Patrick \"Billy\" Corgan Jr. (born March 17, 1967) is an American musician, songwriter, producer, poet, and entrepreneur.  He is best known as the lead singer, primary songwriter, guitarist, and sole permanent member of The Smashing Pumpkins.  Formed by Corgan and guitarist James Iha in Chicago, Illinois, in 1988, the band quickly gained steam with the addition of bassist D'arcy Wretzky and drummer Jimmy Chamberlin.  Strong album sales and large-scale tours propelled the band's increasing fame in the 1990s until their break-up in 2000.  Corgan started a new band called Zwan, and after their quick demise, he released a solo album (\"TheFutureEmbrace\") and a collection of poetry (\"Blinking with Fists\") before setting his sights on reforming Smashing Pumpkins."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 640,
+    "generation_tokens": 33,
+    "generation_speed": 212.32515345317907,
+    "prompt_eval_speed": 55358.53299887553,
+    "generation_latency_s": 0.2827221000334248,
+    "latency": 0.7804730000207201,
+    "total_prompt_tokens": 800,
+    "total_generation_tokens": 88,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.217416,
+    "stage_route_s": 0.2411308999871835,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21678690006956458,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03965839999727905,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.5599997974932194e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2827621001051739,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7804847999941558,
+    "unaccounted_latency_s": 0.00010169984307140112,
+    "route": "rag",
+    "router_raw": "The writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono.",
+    "sub_queries": [
+      "The writer of this song that inspired the song \"Back to Mono\" was named \"Ronald B. Thompson.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

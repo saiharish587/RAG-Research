@@ -1,0 +1,49 @@
+{
+  "question_id": "Q397",
+  "query": "\"Kapit\u00e4n zur See\" Ernst Lindemann was the commander of which one of two battleships built for Nazi Germany's \"Kriegsmarine\"?",
+  "ground_truth": "Bismarck",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is \"Bismarck\".\n\nExplanation: The question asks about the commander of a battleship, and the answer states that \"Ernst Lindemann\" was the only commander of the battleship \"Bismarck\", which were built for Nazi Germany's \"Kriegsmarine\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scharnhorst-class battleship: The \"Scharnhorst\" class were the first capital ships, alternatively referred to as battleships or battlecruisers, built for Nazi Germany's \"Kriegsmarine\" after World War I.  The class comprised two vessels: the lead ship \"Scharnhorst\" and \"Gneisenau\" .  \"Scharnhorst\" was launched first, and so she is considered to be the lead ship by some sources; however, they are also referred to as the \"Gneisenau\" class in some other sources, as \"Gneisenau\" was the first to be laid down and commissioned.  They marked the beginning of German naval rearmament after the Treaty of Versailles.  The ships were armed with nine 28\u00a0cm (11\u00a0in) SK C/34 guns in three triple turrets, though there were plans to replace these weapons with six 38\u00a0cm (15\u00a0in) SK C/34 guns in twin turrets.",
+      "German battleship Bismarck: Bismarck was the first of two \"Bismarck\"-class battleship s built for Nazi Germany's \"Kriegsmarine\".  Named after Chancellor Otto von Bismarck, the primary force behind the unification of Germany in 1871, the ship was laid down at the Blohm & Voss shipyard in Hamburg in July 1936 and launched in February 1939.  Work was completed in August 1940, when she was commissioned into the German fleet.  \"Bismarck\" and her sister ship \"Tirpitz\" were the largest battleships ever built by Germany, and two of the largest built by any European power.",
+      "Ernst Lindemann: Otto Ernst Lindemann (28 March 1894 \u2013 27 May 1941) was a German \"Kapit\u00e4n zur See\" (naval captain).  He was the only commander of the battleship \"Bismarck\" during its eight months of service in World War II."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 533,
+    "generation_tokens": 63,
+    "generation_speed": 356.67174310576166,
+    "prompt_eval_speed": 18260.30353900442,
+    "generation_latency_s": 0.3178914999589324,
+    "latency": 0.8221590999746695,
+    "total_prompt_tokens": 703,
+    "total_generation_tokens": 148,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2440367,
+    "stage_route_s": 0.1043731999816373,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.33822200004942715,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06145610008388758,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.130000110715628e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3179439000086859,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8221753999823704,
+    "unaccounted_latency_s": 0.00011969986371695995,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Zur See\" (German: \"To see\") is a German word meaning to look at something, often in order to observe or judge it.",
+      "\"Der Kriegsmarine\" (German: \"The German Navy\") refers to the German military forces of Nazi Germany during World War II."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

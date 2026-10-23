@@ -1,0 +1,49 @@
+{
+  "question_id": "Q39",
+  "query": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, the answer to this question depends on the context provided. In the first piece of information, it states that Detroit Metropolitan Airport is a major international airport covering 4,850 acres in Romulus, Michigan, and one of the largest airline hubs in the country. This implies that both Elko Regional Airport and Gerald R. Ford International Airport are located in Michigan. However, in the second piece of information, it states that Elko Regional Airport is a mile west of downtown Elko, which suggests that these two airports may not be directly located in Michigan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Detroit Metropolitan Airport: Detroit Metropolitan Wayne County Airport (IATA: DTW, ICAO: KDTW, FAA LID: DTW) , usually called Detroit Metro Airport, Metro Airport, or just DTW, is a major international airport in the United States covering 4,850 acre in Romulus, Michigan, a suburb of Detroit.  It is Michigan's busiest airport, and one of the largest airline hubs in the country.  The Federal Aviation Administration (FAA) National Plan of Integrated Airport Systems for 2017\u20132021 categorized it as a large hub primary commercial service facility.",
+      "Gerald R. Ford International Airport: Gerald R. Ford International Airport (IATA: GRR, ICAO: KGRR, FAA LID: GRR) is a commercial airport in Cascade Township approximately 13 mi southeast of Grand Rapids, Michigan.  The facility is owned by the Kent County Board of Commissioners and managed by an independent authority.  The Federal Aviation Administration (FAA) National Plan of Integrated Airport Systems for 2017\u20132021 categorized it as a small hub primary commercial service facility.",
+      "Elko Regional Airport: Elko Regional Airport (IATA: EKO, ICAO: KEKO, FAA LID: EKO) , formerly Elko Municipal Airport, is a mile west of downtown Elko, in Elko County, Nevada."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 377,
+    "generation_tokens": 116,
+    "generation_speed": 236.30307906986218,
+    "prompt_eval_speed": 14519.545542075872,
+    "generation_latency_s": 0.6224537000525743,
+    "latency": 1.0047189999604598,
+    "total_prompt_tokens": 511,
+    "total_generation_tokens": 156,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2148457,
+    "stage_route_s": 0.09513949998654425,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2303115000249818,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05661940004210919,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3799943998456e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6225056999828666,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0047325999476016,
+    "unaccounted_latency_s": 0.00010339997243136168,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Elko Regional Airport and Gerald R. Ford International Airport are located in Michigan.",
+      "Query 2: No, they are not located in Michigan."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

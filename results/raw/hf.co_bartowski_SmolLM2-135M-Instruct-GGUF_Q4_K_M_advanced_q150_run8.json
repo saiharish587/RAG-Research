@@ -1,0 +1,42 @@
+{
+  "question_id": "Q150",
+  "query": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+  "ground_truth": "\"We'll Burn That Bridge\"",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The song \"Chattahoochee\" was behind the third single on the album \"A Lot About Livin' (And a Little 'bout Love)\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Lot About Livin' (And a Little 'bout Love): A Lot About Livin' (And a Little 'bout Love) is the third studio album by American country music artist Alan Jackson.  It was released on October 6, 1992, and produced the singles \"Chattahoochee\", \"She's Got the Rhythm (And I Got the Blues)\", \"Tonight I Climbed the Wall\", \"(Who Says) You Can't Have It All\" and \"Mercury Blues\".  \"Chattahoochee\" and \"She's Got the Rhythm\" were both Number One hits on the Hot Country Songs charts, while the other three songs all reached Top Five.",
+      "Chattahoochee (song): \"Chattahoochee\" is a song co-written and recorded by American country music artist Alan Jackson.  It was released in May 1993 as the third single from his album \"A Lot About Livin' (And a Little 'bout Love)\".  The album is named for a line in the song itself.  Jackson wrote the song with Jim McBride.",
+      "(Who Says) You Can't Have It All: \"(Who Says) You Can't Have It All\" is a song co-written and recorded by American country music artist Alan Jackson.  It was released in January 1994 as the fifth and final single from his album \"A Lot About Livin' (And a Little 'bout Love)\".  The song peaked at number 4 on the U.S. \"Billboard\" Hot Country Singles chart and number 11 on the Canadian \"RPM\" Country Tracks chart.  Jackson wrote the song with Jim McBride."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 457,
+    "generation_tokens": 34,
+    "generation_speed": 398.5698376414043,
+    "prompt_eval_speed": 65585.53386911596,
+    "generation_latency_s": 0.17206799995619804,
+    "latency": 0.5162292999448255,
+    "total_prompt_tokens": 552,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1360936,
+    "stage_rewrite_s": 0.16516720002982765,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0725036000367254,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10637659998610616,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1721036999952048,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5162380000110716,
+    "unaccounted_latency_s": 8.729996625334024e-05,
+    "rewritten_query": "Which song was behind the third single on the album, \"A Lot About Livin' (And a Little 'Bout Love\"\"?",
+    "query_was_rewritten": true
+  }
+}

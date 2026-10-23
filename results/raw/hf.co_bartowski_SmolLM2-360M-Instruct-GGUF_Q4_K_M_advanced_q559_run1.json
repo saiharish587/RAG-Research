@@ -1,0 +1,42 @@
+{
+  "question_id": "Q559",
+  "query": "Which has more species, Aichryson or Polypodium?",
+  "ground_truth": "Polypodium",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Aichryson has more species than Polypodium.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Aichryson: Aichryson is a genus of about 15 species of succulent, subtropical plants, mostly native to the Canary Islands, with a few in the Azores, Madeira and Morocco, and one in Portugal.",
+      "Polypodium: Polypodium is a genus of 75\u2013100 species of true ferns, widely distributed throughout the world, with the highest species diversity in the tropics.  The name is derived from Ancient Greek \"poly\" (\u03c0\u03bf\u03bb\u03cd) \"many\" + \"podion\" (\u03c0\u03cc\u03b4\u03b9\u03bf\u03bd) \"little foot\", on account of the foot-like appearance of the rhizome and its branches.  They are commonly called polypody or rockcap fern, but for many species unique vernacular names exist.",
+      "Phlebodium: Phlebodium is a small genus of two to four species of ferns, native to tropical and subtropical regions of the Americas.  The genus is closely related to \"Polypodium\", and the species were formerly included in that genus."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 287,
+    "generation_tokens": 13,
+    "generation_speed": 252.30470645317806,
+    "prompt_eval_speed": 12687.325936077097,
+    "generation_latency_s": 0.9527282000053674,
+    "latency": 3.4333886000094935,
+    "total_prompt_tokens": 361,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13348739999999998,
+    "stage_rewrite_s": 1.2883115999866277,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.025014500017278,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16721029998734593,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9527701999759302,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4334000000962988,
+    "unaccounted_latency_s": 9.390013292431831e-05,
+    "rewritten_query": "Aichryson has more species than Polypodium.",
+    "query_was_rewritten": true
+  }
+}

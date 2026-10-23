@@ -1,0 +1,42 @@
+{
+  "question_id": "Q454",
+  "query": "What was position of the man who served Prince Andrew from 1990-2001? ",
+  "ground_truth": "Private Secretary and Treasurer",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The man who served Prince Andrew from 1990 to 2001 is Prince Charles. He was the fourth son and third child of Queen Elizabeth II and Prince Philip, Duke of Edinburgh. He was born on February 18th, 1960, and died on March 3rd, 2015 at the age of 74.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Major: Sir John Major, {'1': \", '2': \", '3': \", '4': \"} (born 29 March 1943) is a British politician who was Prime Minister of the United Kingdom and Leader of the Conservative Party from 1990 to 1997.  He served as Foreign Secretary and then Chancellor of the Exchequer in the Thatcher Government from 1989 to 1990, and was the Member of Parliament (MP) for Huntingdon from 1979 until he retired in 2001.  Since Margaret Thatcher's death in 2013, he is the oldest living former Prime Minister.",
+      "Prince Andrew, Duke of York: Prince Andrew, Duke of York, {'1': \", '2': \", '3': \", '4': \"} (Andrew Albert Christian Edward, born 19 February 1960), is the second son and third child of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.  At the time of his birth, he was second in the line of succession to the British throne; as of 2017 he is sixth in line.",
+      "Royal Marriages Act 1772: The Royal Marriages Act 1772 was an act of the Parliament of Great Britain, which prescribed the conditions under which members of the British Royal Family could contract a valid marriage, in order to guard against marriages that could diminish the status of the royal house.  The right of veto vested in the sovereign by this act provoked severe adverse criticism at the time of its passage.  It was repealed on 26 March 2015 as a result of the 2011 Perth Agreement.  Its provisions were replaced by more limited restrictions that apply only to the first six people in the line of succession (currently Prince Charles, Prince William, Prince George, Princess Charlotte, Prince Harry, and Prince Andrew)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 489,
+    "generation_tokens": 80,
+    "generation_speed": 404.30994400307276,
+    "prompt_eval_speed": 60632.36957623925,
+    "generation_latency_s": 0.29564040002878755,
+    "latency": 0.6999529999447986,
+    "total_prompt_tokens": 572,
+    "total_generation_tokens": 109,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.136276,
+    "stage_rewrite_s": 0.16596440004650503,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08095309999771416,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15726669994182885,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2956811999902129,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6999638999113813,
+    "unaccounted_latency_s": 9.919994045048952e-05,
+    "rewritten_query": "The man who served Prince Andrew from 1990 to 2001, who played a significant role in his career.",
+    "query_was_rewritten": true
+  }
+}

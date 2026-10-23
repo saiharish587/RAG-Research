@@ -1,0 +1,49 @@
+{
+  "question_id": "Q274",
+  "query": "on 16 January 1995 \"First Knight\" was being filmed at a studio located how far from Windsor ?",
+  "ground_truth": "7 miles",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Pinewood Studios is approximately 20 miles west of Windsor, Ontario.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Filming of James Bond in the 1990s: Principal photography for the film began on 16 January 1995 and continued until 6 June.  The producers were unable to film at Pinewood Studios, the usual location for Bond films, because it had been reserved for \"First Knight\".  Instead, an old Rolls-Royce factory at the Leavesden Aerodrome in Hertfordshire was converted into a new studio.  The producers later said Pinewood would have been too small.",
+      "Pinewood Studios: Pinewood Studios is a British film and television studio located approximately 20 mi west of central London, and 7 miles from Windsor.",
+      "Windsor, Ontario Streetcar System: Windsor, Ontario was the first Canadian city with an electric street car system, which was introduced in 1886.  Other Canadian cities soon followed suit, with St. Catharines in 1887 and Toronto in 1889.  By World War I, nearly 50 Canadian cities had streetcar systems in place.  By the time Windsor\u2019s streetcar system was dismantled in 1937, the system\u2019s scale was extensive and it serviced all 5 of the major riverfront communities of Windsor, Ford City (East Windsor), Sandwich, Walkerville and Ojibway."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 368,
+    "generation_tokens": 18,
+    "generation_speed": 231.95278472204322,
+    "prompt_eval_speed": 14054.384356859151,
+    "generation_latency_s": 0.2155504000838846,
+    "latency": 0.6519432000350207,
+    "total_prompt_tokens": 520,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.221163,
+    "stage_route_s": 0.09538740001153201,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2836600999580696,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05715610005427152,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8399979025125504e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21559010003693402,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6519547000061721,
+    "unaccounted_latency_s": 0.00010339997243136168,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: First Knight was being filmed at a studio located in Windsor, Ontario, Canada.",
+      "Query 2: The first location where the film \"First Knight\" was shot is Windsor, Ontario, Canada."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

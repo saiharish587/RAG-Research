@@ -1,0 +1,42 @@
+{
+  "question_id": "Q114",
+  "query": "Who died first, George Archainbaud or Ralph Murphy?",
+  "ground_truth": "George Archainbaud",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "George V",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ralph Murphy: Ralph Murphy (May 1, 1895 \u2013 February 10, 1967) was an American film director.  Born in Rockville, Connecticut, Murphy was active in films from 1931 through 1962, with some work in television.  From 1941\u201344 he was married to Gloria Dickson, whom he directed in \"I Want a Divorce\".",
+      "Charlie Murphy: Charles Quinton Murphy (July 12, 1959 \u2013 April 12, 2017) was an American actor, comedian, and writer.  Murphy was best known as a writer and cast member of the Comedy Central sketch-comedy series \"Chappelle's Show\".  He was the older brother of comedian Eddie Murphy.",
+      "George V: George V (George Frederick Ernest Albert; 3 June 1865 \u2013 20 January 1936) was King of the United Kingdom and the British Dominions, and Emperor of India, from 6 May 1910 until his death in 1936."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 318,
+    "generation_tokens": 3,
+    "generation_speed": 232.4500232450023,
+    "prompt_eval_speed": 13378.207824989482,
+    "generation_latency_s": 0.9781945999711752,
+    "latency": 3.33568700007163,
+    "total_prompt_tokens": 391,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1231399,
+    "stage_rewrite_s": 1.2699492000974715,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9896234999177977,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09777150000445545,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9782522999448702,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3357019000686705,
+    "unaccounted_latency_s": 0.00010600010864436626,
+    "rewritten_query": "George Archibald was born on 1850 and died in 1926, while Ralph Murphy passed away in 1947.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q302",
+  "query": "What is the uppermost age range for the sort of fiction written by Alexander Gordon Smith?",
+  "ground_truth": "early 20s",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The uppermost age range for the sort of fiction written by Alexander Gordon Smith is between 18 and 25 years old.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alexander Gordon Smith: Alexander Gordon Smith (27 February 1979, Norwich, England) is an author of children and Young Adult fiction.",
+      "W. Gordon Smith: W. Gordon Smith (13 December 1928 \u2013 13 August 1996) was a Scottish playwright.  He was born in Edinburgh and lived most of his life there.  He wrote many plays including the one man show, \"Jock\", made famous by Russell Hunter.  He also wrote the lyrics, \"Come By The Hills\", set to the tune of the traditional Irish song, \"Buachaill o'n \u00c9irne M\u00e9\".  In addition he wrote books on the artist, William George Gillies, and on the author, Robert Louis Stevenson and was instrumental in bringing the Scottish arts scene to BBC Scotland.",
+      "The Narrative of John Smith: The Narrative of John Smith (2011) is a novel written in 1883 by Arthur Conan Doyle, published posthumously by The British Library.  In a work of narrative fiction, Doyle writes from the perspective of a middle-aged bachelor named John Smith recovering from rheumatic gout.  Unlike his later work in detective fiction, fantasy, and science fiction, this novel unfolds through a series of tangential, essay-like thoughts stemming from observations on everyday life.  The subjects are of a \u201cpersonal-social-political complexion\u201d."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 369,
+    "generation_tokens": 28,
+    "generation_speed": 353.17415269736756,
+    "prompt_eval_speed": 21391.304347826084,
+    "generation_latency_s": 0.20377019990701228,
+    "latency": 0.7347378999693319,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 138,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22743449999999998,
+    "stage_route_s": 0.2223562999861315,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2512216999894008,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057212900021113455,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.659996531903744e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20380489993840456,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7347467999206856,
+    "unaccounted_latency_s": 9.510002564638853e-05,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents, specifically the document \"Alexander Gordon Smith\" (file \"1024895673\") and the file \"Sorting_Age.txt\".",
+    "sub_queries": [
+      "Who wrote Alexander Gordon Smith's The Great Gatsby?",
+      "What was the highest rated novel in the genre of American fiction?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q475",
+  "query": "Where was the telefilm shot that was based on the 1977 Katherine Paterson book?",
+  "ground_truth": "Edmonton, Alberta",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The telefilm \"Glendale\" (2014) was filmed in Edmonton, Alberta.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Master Puppeteer: The Master Puppeteer (1975) is a historical novel for children by Katherine Paterson.  It won the 1977 U.S. National Book Award in category Children\u2019s Literature.",
+      "Glendale, California: Glendale is a city in Los Angeles County, California, United States.  Its estimated 2014 population was 200,167, making it the third largest city in Los Angeles County and the 23rd-largest city in California.  It is located about 8 miles (13 km) north of downtown Los Angeles.",
+      "Bridge to Terabithia (1985 film): Bridge to Terabithia was the name of a telefilm for PBS in 1985, starring Annette O'Toole, Julian Coutts, and Julie Beaulieu.  It was shot in Edmonton, Alberta.  The film is based on the children's novel of the same name by Katherine Paterson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 298,
+    "generation_tokens": 22,
+    "generation_speed": 371.5839610850252,
+    "prompt_eval_speed": 18841.679312089025,
+    "generation_latency_s": 0.1653591999784112,
+    "latency": 0.6008766000159085,
+    "total_prompt_tokens": 379,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.149172,
+    "stage_rewrite_s": 0.17363139998633415,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07699450000654906,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18476179998833686,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16539370000828058,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6008848999626935,
+    "unaccounted_latency_s": 0.00010389997623860836,
+    "rewritten_query": "The telefilm shot for the 1977 Katherine Paterson book was shot in the city of Los Angeles, California.",
+    "query_was_rewritten": true
+  }
+}

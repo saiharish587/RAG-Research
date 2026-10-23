@@ -1,0 +1,49 @@
+{
+  "question_id": "Q86",
+  "query": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+  "ground_truth": "April 1, 1949",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Paul Manafort was born on April 1, 1949.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Paul Manafort: Paul John Manafort Jr. (born April 1, 1949) is an American lawyer, lobbyist and political consultant.  He joined Donald Trump's presidential campaign team in March 2016 and served as campaign manager from June to August 2016.  He was previously an adviser to the U.S. presidential campaigns of Republicans Gerald Ford, Ronald Reagan, George H. W. Bush, and Bob Dole.  In 1980 Manafort co-founded the Washington, D.C.-based lobbying firm Black, Manafort & Stone, along with principals Charles R. Black Jr., and Roger J. Stone.  In 1984 it was renamed Black, Manafort, Stone and Kelly (BMSK) & associates, after Peter G. Kelly was recruited.",
+      "Nicki Minaj: Onika Tanya Maraj (born December 8, 1982), known professionally as Nicki Minaj ( ), is a rapper, singer, songwriter and model.  Born in Saint James, Trinidad and Tobago and raised in Queens, New York, Minaj gained public recognition after releasing three mixtapes between 2007 to 2009 and subsequently signed to Young Money Entertainment in 2009.",
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 551,
+    "generation_tokens": 18,
+    "generation_speed": 210.95315667959733,
+    "prompt_eval_speed": 74449.39872990137,
+    "generation_latency_s": 0.21069569990504533,
+    "latency": 0.5706556999357417,
+    "total_prompt_tokens": 701,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2362901,
+    "stage_route_s": 0.10380679997615516,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20143160002771765,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0545513000106439,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.289993714541197e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21073389996308833,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.570667100022547,
+    "unaccounted_latency_s": 9.17001161724329e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"born in 2015\"",
+      "\"born on July 31, 1946\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

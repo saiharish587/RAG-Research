@@ -1,0 +1,49 @@
+{
+  "question_id": "Q571",
+  "query": "What city and nation was the location of the 2015 Pacific Games where the Kiribati national basketball team finished with a 0-4 record?",
+  "ground_truth": "Port Moresby, Papua New Guinea",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The location of the 2015 Pacific Games where the Kiribati national basketball team finished with a 0-4 record was Port Moresby, Papua New Guinea.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kiribati national basketball team: The Kiribati national basketball team are the basketball side that represent Kiribati in international competitions.  They competed at the 2015 Pacific Games, where they finished with an 0-4 record.",
+      "2015 Pacific Games: The 2015 Pacific Games was held in Port Moresby, Papua New Guinea, from 4 to 18 July 2015.  It was the fifteenth staging of the Pacific Games.",
+      "Kiribati at the 2015 Pacific Games: Kiribati competed at the 2015 Pacific Games in Port Moresby, Papua New Guinea from 4 to 18 July 2015.  A total of 86 competitors for Kiribati were listed as of 4 July 2015."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 271,
+    "generation_tokens": 38,
+    "generation_speed": 213.84716680641768,
+    "prompt_eval_speed": 29640.161872470744,
+    "generation_latency_s": 0.2960592999588698,
+    "latency": 0.654236700036563,
+    "total_prompt_tokens": 437,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22501709999999997,
+    "stage_route_s": 0.09163409995380789,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2082436999771744,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058113800012506545,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1200040616095066e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2960973000153899,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6542485000099987,
+    "unaccounted_latency_s": 0.0001094000181183219,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Kiribati National Basketball Team:*",
+      "Pacific Games:*"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

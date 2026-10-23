@@ -1,0 +1,42 @@
+{
+  "question_id": "Q115",
+  "query": "Which component of shellite has the formula (ON)CHOH?",
+  "ground_truth": "picric acid",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The component of shellite with the formula (ON)CHOH is hexanitrodiphenylamine.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shellite (explosive): Shellite (known as Tridite in US service) is an explosive mixture of Picric acid and Dinitrophenol or Picric acid and Hexanitrodiphenylamine in a ratio of 70/30.  It was typically used as a filling in Royal Navy armour-piercing shells during the early part of the 20th century.",
+      "Index of alcohol-related articles: Alcohol is any organic compound in which a hydroxyl functional group (-OH) is bound to a carbon atom, usually connected to other carbon or hydrogen atoms.  An important class are the simple acyclic alcohols, the general formula for which is CHOH.  Of those, ethanol (CHOH) is the type of alcohol found in alcoholic beverages, and in common speech the word alcohol refers specifically to ethanol.  Articles related to alcohol include:",
+      "Xylitol: Xylitol is a sugar alcohol used as a sweetener.  The name derives from Greek: \u03be\u03cd\u03bb\u03bf\u03bd , \"xyl[on]\", \"wood\" + suffix -\"itol\", used to denote sugar alcohols.  Xylitol is categorized as a polyalcohol or sugar alcohol (alditol).  It has the formula CHOH(CHOH)CHOH and is an achiral isomer of pentane-1,2,3,4,5-pentol.  Multiple studies using electron microscopy have indicated that xylitol is effective in inducing remineralization of deeper layers of demineralized enamel.  Fair evidence was found that xylitol (as chewing gum, lozenges, nasal spray, etc.) reduced the incidence of acute middle ear infection in healthy children."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 24,
+    "generation_speed": 253.20996381207598,
+    "prompt_eval_speed": 14697.8397593656,
+    "generation_latency_s": 1.0374545000959188,
+    "latency": 3.4885899999644607,
+    "total_prompt_tokens": 504,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1259411,
+    "stage_rewrite_s": 1.2677209000103176,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0529970000497997,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13031010003760457,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0374883998883888,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4885986000299454,
+    "unaccounted_latency_s": 8.309993427246809e-05,
+    "rewritten_query": "The component of shellite with the formula ON CHOH is calcium carbonate, also known as calcite.",
+    "query_was_rewritten": true
+  }
+}

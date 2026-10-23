@@ -1,0 +1,42 @@
+{
+  "question_id": "Q174",
+  "query": "Which songwriting duo composed music for \"La La Land\", and created lyrics for \"A Christmas Story: The Musical\"? ",
+  "ground_truth": "Pasek & Paul",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Pasek & Paul composed music for \"City of Stars\" and created lyrics for \"A Christmas Story: The Musical\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Christmas Story: The Musical: A Christmas Story: The Musical is a musical version of the film \"A Christmas Story\".  The musical has music and lyrics written by Pasek & Paul and the book by Joseph Robinette.  The musical takes place in the 1940s in Indiana and focuses on a child named Ralphie, who wants a Red Ryder BB Gun for Christmas.",
+      "Damien Chazelle: Damien Sayre Chazelle ( ; born January 19, 1985) is an American director, screenwriter and producer.  Chazelle made his directorial debut with the musical film \"Guy and Madeline on a Park Bench\" (2009).  He rose to prominence for writing and directing his second feature film, \"Whiplash\" (2014), which received five Academy Award nominations, including Best Picture and Best Adapted Screenplay.  His 2016 film \"La La Land\" was a critical and commercial success, winning all seven of its Golden Globe nominations, including Best Picture, Best Director and Best Screenplay.  It also received a record-tying fourteen Academy Award nominations, winning six including Best Director, making Chazelle the youngest person in history to win the Oscar for Best Director and to win the Golden Globe for Best Director.",
+      "City of Stars: \"City of Stars\" is a song performed by Ryan Gosling and Emma Stone from the film \"La La Land\" (2016).  The music of the song was composed by Justin Hurwitz while the lyrics were provided by Benj Pasek and Justin Paul.  The song won numerous awards, including the award for Best Original Song at both the 74th Golden Globe Awards and 89th Academy Awards."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 459,
+    "generation_tokens": 26,
+    "generation_speed": 254.67475095747912,
+    "prompt_eval_speed": 14977.484826731057,
+    "generation_latency_s": 1.0408995000179857,
+    "latency": 3.4156335999723524,
+    "total_prompt_tokens": 544,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1251825,
+    "stage_rewrite_s": 1.2458913000300527,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9931576999370009,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13556590001098812,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.040941399987787,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4156440999358892,
+    "unaccounted_latency_s": 8.849997539073229e-05,
+    "rewritten_query": "La La Land\" was composed by John Legend and Jason Mraz, while \"A Christmas Story: The Musical\" was written by Stephen Schwartz.",
+    "query_was_rewritten": true
+  }
+}

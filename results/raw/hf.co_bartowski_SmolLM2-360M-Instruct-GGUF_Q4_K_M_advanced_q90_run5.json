@@ -1,0 +1,42 @@
+{
+  "question_id": "Q90",
+  "query": "What occupation do Chris Menges and Aram Avakian share?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Chris Menges and Aram Avakian both have occupations that involve film editing, as they are members of both the American and British Societies of Cinematographers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Menges: Chris Menges BSC, ASC (born 15 September 1940) is an English cinematographer and film director.  He is a member of both the American and British Societies of Cinematographers.",
+      "Aram Avakian: Aram A. Avakian (April 23, 1926 \u2013 January 17, 1987) was an Armenian-American film editor and director.  His work in the latter role includes \"Jazz on a Summer's Day\" (1960) and the indie film \"End of the Road\" (1970).",
+      "Christopher Wren: Sir Christopher Wren PRS ( ; 30 October 1632 [O.S. 20 October] \u2013 8 March 1723 [O.S. 25 February] ) is one of the most highly acclaimed English architects in history."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 270,
+    "generation_tokens": 33,
+    "generation_speed": 259.26478791354697,
+    "prompt_eval_speed": 36105.91067130249,
+    "generation_latency_s": 0.9909615999786183,
+    "latency": 3.4106209999881685,
+    "total_prompt_tokens": 343,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1281309,
+    "stage_rewrite_s": 1.1756367000052705,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0638103999663144,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18009209993761033,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9909962000092492,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.410630700062029,
+    "unaccounted_latency_s": 9.580014739185572e-05,
+    "rewritten_query": "Chris Menges is an architect, while Aram Avakian is a lawyer.",
+    "query_was_rewritten": true
+  }
+}

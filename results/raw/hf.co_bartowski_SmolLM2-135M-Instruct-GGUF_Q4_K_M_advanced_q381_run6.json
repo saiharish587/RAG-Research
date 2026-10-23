@@ -1,0 +1,42 @@
+{
+  "question_id": "Q381",
+  "query": "Who was born first, Jos\u00e9 Echegaray y Eizaguirre or P. J. O'Rourke?",
+  "ground_truth": "Jos\u00e9 Echegaray y Eizaguirre",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "P.J. O'Rourke",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jos\u00e9 Echegaray: Jos\u00e9 Echegaray y Eizaguirre (19 April 1832 \u2013 4 September 1916) was a Spanish civil engineer, mathematician, statesman, and one of the leading Spanish dramatists of the last quarter of the 19th century.  He was awarded the 1904 Nobel Prize for Literature \"in recognition of the numerous and brilliant compositions which, in an individual and original manner, have revived the great traditions of the Spanish drama\".",
+      "P. J. O'Rourke: Patrick Jake O'Rourke ( ; born November 14, 1947), known as P.J. O'Rourke, is an American political satirist and journalist.  O'Rourke is the H. L. Mencken Research Fellow at the libertarian Cato Institute and is a regular correspondent for \"The Atlantic Monthly\", \"The American Spectator\", and \"The Weekly Standard\", and frequent panelist on National Public Radio's game show \"Wait Wait... Don't Tell Me! \".  Since 2011 he has been a columnist at \"The Daily Beast\".",
+      "Republican Party Reptile: Republican Party Reptile, subtitled \"The Confessions, Adventures, Essays and (Other) Outrages of P. J. O'Rourke\" is a 1987 collection of essays by American satirical writer P. J. O'Rourke.  In humorist Lewis Frumkes' review of the collection, he described it as only occasionally displaying O'Rourke's best writing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 10,
+    "generation_speed": 415.973377703827,
+    "prompt_eval_speed": 58639.02904677485,
+    "generation_latency_s": 0.11007739999331534,
+    "latency": 0.6171190999448299,
+    "total_prompt_tokens": 517,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1355855,
+    "stage_rewrite_s": 0.19646130001638085,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0745566999539733,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2358971000649035,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.11011960008181632,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6171306999167427,
+    "unaccounted_latency_s": 9.64998034760356e-05,
+    "rewritten_query": "P.J. O'Rourke was born in 1928 and Jos\u00e9 Echegaray y Eizaguirre was born in 1930.",
+    "query_was_rewritten": true
+  }
+}

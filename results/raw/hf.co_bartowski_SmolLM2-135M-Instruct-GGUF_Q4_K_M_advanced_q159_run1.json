@@ -1,0 +1,42 @@
+{
+  "question_id": "Q159",
+  "query": "What football club plays in the area between the old tool gates: Brook Bar and Trafford bar?",
+  "ground_truth": "Manchester United",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The football club playing in the area between the old tool gates is Manchester United Football Club.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Old Trafford, Greater Manchester: Old Trafford is an area of Stretford, in the Metropolitan Borough of Trafford, Greater Manchester, England, 2 mi southwest of Manchester city centre.  The crossroads sites of two old toll gates roughly delineate the borders of the area: Brooks's Bar to the east and Trafford Bar to the west.",
+      "Trafford Bar tram stop: Trafford Bar is a tram stop on Greater Manchester's light rail system, Metrolink, at the junction of Talbot Road and Seymour Grove in Old Trafford.  It opened on 15 June 1992 as part of Phase 1 of Metrolink's expansion, before which it was a railway station.",
+      "Manchester United F.C.: Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football.  Nicknamed \"the Red Devils\", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 337,
+    "generation_tokens": 19,
+    "generation_speed": 380.2737971339364,
+    "prompt_eval_speed": 22314.925175473447,
+    "generation_latency_s": 0.14084809995256364,
+    "latency": 0.47061720001511276,
+    "total_prompt_tokens": 418,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1386505,
+    "stage_rewrite_s": 0.1584437999408692,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07812809990718961,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09307699999772012,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.140884599997662,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.47062589996494353,
+    "unaccounted_latency_s": 9.28001245483756e-05,
+    "rewritten_query": "Brock Bar and Trafford Bar, a popular football club located in the area between the old tool gates.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q576",
+  "query": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+  "ground_truth": "IK Start",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "IK Start",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "IK Start: IK Start is a Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012.  The club was founded on 19 September 1905.  The coach is Steinar Pedersen.  The team plays in yellow jerseys, black shorts and yellow socks at home, and blue jerseys, white shorts and blue socks away.",
+      "2011 La Manga Cup: The 2011 La Manga Cup was an exhibition international club football (soccer) competition featuring football club teams from Europe, which was held in February 2011.  All matches were played in La Manga Stadium in La Manga, Spain.  This was the fourteenth La Manga Cup.  The tournament was won by Viking, who beat Start on goal differential after both clubs finished with identical records of two wins and one draw.",
+      "2001 Norwegian Football Cup Final: The 2001 Norwegian Football Cup Final was the final match of the 2001 Norwegian Football Cup, the 96th season of the Norwegian Football Cup, the premier Norwegian football cup competition organized by the Football Association of Norway (NFF).  The match was played on 4 November 2001 at the Ullevaal Stadion in Oslo, and opposed two Tippeligaen sides Bryne and Viking.  Viking defeated Bryne 3\u20130 to claim the Norwegian Cup for a fifth time in their history.  Despite the victory, the Viking's players reported for training at 2 p.m. the next day."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 462,
+    "generation_tokens": 3,
+    "generation_speed": 216.7003756139844,
+    "prompt_eval_speed": 14903.225806451614,
+    "generation_latency_s": 0.15593520004767925,
+    "latency": 0.7031762000406161,
+    "total_prompt_tokens": 668,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23571219999999998,
+    "stage_route_s": 0.10976230003871024,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3808896999107674,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056411399971693754,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8200017772614956e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15597229998093098,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.703193899942562,
+    "unaccounted_latency_s": 0.00011100003030151129,
+    "route": "rag",
+    "router_raw": "Yes.",
+    "sub_queries": [
+      "Viking vs. Norwegian Football Club from Kristiansand (Tippeligaen) in 2011 La Manga Cup",
+      "Viking vs. Norwegian Football Club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

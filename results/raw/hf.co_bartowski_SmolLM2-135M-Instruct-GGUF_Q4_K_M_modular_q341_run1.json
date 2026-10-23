@@ -1,0 +1,48 @@
+{
+  "question_id": "Q341",
+  "query": "Who is the current drummer of the band who did the song \"What Lovers Do\"?",
+  "ground_truth": "Matt Flynn",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Matt Cameron",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "What Lovers Do: \"What Lovers Do\" is a song by American pop rock band Maroon 5 featuring American R&B singer Sza.  It was released on August 30, 2017, as the third single from the band's upcoming sixth studio album (2017).  The song contains an interpolation of the 2016 song \"Sexual\" by Neiked featuring Dyo, therefore Victor R\u00e5dstr\u00f6m, Dyo and Elina Stridh are credited as songwriters.",
+      "Scott Travis: Mark Scott Travis (born September 6, 1961) is a Grammy Award-winning American rock musician, best known as the drummer for the English heavy metal band Judas Priest and the American heavy metal band Racer X.",
+      "Matt Cameron: Matthew David Cameron (born November 28, 1962) is an American musician who serves as the drummer for the American rock bands Pearl Jam and Soundgarden.  After getting his start with the Seattle, Washington-based bands Bam Bam and Skin Yard, he first gained fame as the drummer for Soundgarden, which he joined in 1986 and remained in until the band's break-up in 1997.  In 1998, Cameron was invited to play on Pearl Jam's U.S. Yield Tour.  He soon became a permanent member and has remained in the band ever since.  In 2010, Soundgarden reunited for a tour and released a new album, \"King Animal,\" on November 13, 2012."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 3,
+    "generation_speed": 229.04260192395785,
+    "prompt_eval_speed": 19968.05111821086,
+    "generation_latency_s": 0.1428833999671042,
+    "latency": 0.48793349997140467,
+    "total_prompt_tokens": 563,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2224138,
+    "stage_route_s": 0.15781160001643002,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14842049998696893,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038658499950543046,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.469999112188816e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14291759999468923,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.48794340004678816,
+    "unaccounted_latency_s": 9.110011160373688e-05,
+    "route": "rag",
+    "router_raw": "The current drummer of the band who did the song \"What Lovers Do\" is \"John\".",
+    "sub_queries": [
+      "The current drummer of the band who did the song \"What Lovers Do\" was \"Dave.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

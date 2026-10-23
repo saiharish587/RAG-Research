@@ -1,0 +1,42 @@
+{
+  "question_id": "Q215",
+  "query": "Who was born first, Arthur Conan Doyle or Penelope Lively?",
+  "ground_truth": "Arthur Ignatius Conan Doyle",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Arthur Conan Doyle was born first.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Arthur Conan Doyle: Sir Arthur Ignatius Conan Doyle KStJ, DL (22 May 1859 \u2013 7 July 1930) was a British writer best known for his detective fiction featuring the character Sherlock Holmes.  Originally a physician, in 1887 he published \"A Study in Scarlet\", the first of four novels about Holmes and Dr. Watson.  In addition, Doyle wrote over fifty short stories featuring the famous detective.",
+      "Sherlock Holmes: Sherlock Holmes ( ) is a fictional private detective created by British author Sir Arthur Conan Doyle.  Known as a \"consulting detective\" in the stories, Holmes is known for his proficiency with observation, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.",
+      "Penelope Lively: Dame Penelope Margaret Lively DBE FRSL (born 17 March 1933) is a British writer of fiction for both children and adults.  She has won both the Booker Prize (\"Moon Tiger\", 1987) and the Carnegie Medal for British children's books (\"The Ghost of Thomas Kempe\", 1973)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 332,
+    "generation_tokens": 9,
+    "generation_speed": 275.5326965466569,
+    "prompt_eval_speed": 42330.74078796379,
+    "generation_latency_s": 0.9494565000059083,
+    "latency": 3.31121409998741,
+    "total_prompt_tokens": 407,
+    "total_generation_tokens": 29,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12396879999999999,
+    "stage_rewrite_s": 1.1851774998940527,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0542040999280289,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12225269991904497,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.949502500006929,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3112249000696465,
+    "unaccounted_latency_s": 8.850032463669777e-05,
+    "rewritten_query": "Arthur Conan Doyle was born first, predating Penelope Lively by nearly a century.",
+    "query_was_rewritten": true
+  }
+}

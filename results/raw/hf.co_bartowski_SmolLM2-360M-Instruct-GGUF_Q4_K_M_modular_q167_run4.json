@@ -1,0 +1,49 @@
+{
+  "question_id": "Q167",
+  "query": "Which came out first, Dinosaur or McFarland, USA",
+  "ground_truth": "Dinosaur",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Dinosaur was released first, followed by McFarland, USA in 1987.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "McFarland, USA: McFarland, USA (also known as McFarland) is a 2015 American sports drama film directed by Niki Caro, produced by Mark Ciardi and Gordon Gray, written by Christopher Cleveland, Bettina Gilois and Grant Thompson with music composed by Ant\u00f4nio Pinto.  The film was co-produced by Walt Disney Pictures and Mayhem Pictures.  Based on the true story of a 1987 cross country team from a mainly Latino high school in McFarland, California, the film stars Kevin Costner as Jim White, the school's coach, who leads the team to win a state championship.  The film also stars Maria Bello and Morgan Saylor.",
+      "ially, Thomas Jefferson.  Amateur fossil collectors should be aware that they need permission from landowners to prospect legally on private property.  Brachiopods are the Kentucky state fossil.",
+      "Topeka Regional Airport: Topeka Regional Airport (IATA: FOE,\u00a0ICAO: KFOE,\u00a0FAA LID: FOE) , formerly known as Forbes Field, is a public airport owned by the Metropolitan Topeka Airport Authority in Shawnee County, Kansas, seven miles south of downtown Topeka, the capital city of Kansas.  The National Plan of Integrated Airport Systems for 2011\u20132015 called it a \"general aviation\" airport.  United Express had scheduled airline flights on January 7, 2014, with two daily departures to Chicago's O'Hare International Airport, but ceased on September 2, 2014.  Allegiant Air offered scheduled flights to Las Vegas, but discontinued service on July 30, 2007."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 21,
+    "generation_speed": 238.8806734159936,
+    "prompt_eval_speed": 54466.50124069479,
+    "generation_latency_s": 0.2086083999602124,
+    "latency": 0.5232326999539509,
+    "total_prompt_tokens": 563,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2276701,
+    "stage_route_s": 0.09398980007972568,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16613749996758997,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05430810002144426,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5900076404213905e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20865619997493923,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5232440000399947,
+    "unaccounted_latency_s": 9.719992522150278e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Dino\"",
+      "Query 2: \"McFarland, USA\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

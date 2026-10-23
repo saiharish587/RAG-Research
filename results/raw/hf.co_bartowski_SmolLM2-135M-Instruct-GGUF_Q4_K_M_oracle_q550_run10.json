@@ -1,0 +1,33 @@
+{
+  "question_id": "Q550",
+  "query": "WAVN is a Gospel formatted broadcast radio station tied to which city in DeSoto County, Mississippi?",
+  "ground_truth": "Southaven, Mississippi",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "WAVN is a Gospel-formatted broadcast radio station owned and operated by Flinn Broadcasting.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "WAVN: WAVN is a Gospel formatted broadcast radio station licensed to Southaven, Mississippi, serving Metro Memphis.  WAVN is owned and operated by Flinn Broadcasting.",
+      "Southaven, Mississippi: Southaven is a city in DeSoto County, Mississippi, United States.  It is a suburb of Memphis, Tennessee, and a principal city in the Memphis metropolitan area.  The 2010 census reported a population of 48,982, making Southaven the third largest city in Mississippi.  Southaven is traversed from north to south by the I-55/I-69 freeway.  The city's name derives from the fact that Southaven is located south of Whitehaven, a neighborhood in Memphis."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 236,
+    "generation_tokens": 20,
+    "generation_speed": 388.35705547680533,
+    "prompt_eval_speed": 79972.89054557777,
+    "generation_latency_s": 0.13682730006985366,
+    "latency": 0.13688680005725473,
+    "total_prompt_tokens": 236,
+    "total_generation_tokens": 20,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0749337,
+    "stage_generate_s": 0.13686790002975613,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.13689460000023246,
+    "unaccounted_latency_s": 2.7099973522126675e-05
+  }
+}

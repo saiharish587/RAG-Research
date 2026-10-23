@@ -1,0 +1,42 @@
+{
+  "question_id": "Q349",
+  "query": "Wheat salad is composed typically of what red fruit?",
+  "ground_truth": "tomato",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Wheat salad typically consists of wheat, corn, tomatoes, carrots, cucumber pickles, lemon, and parsley. The salad also includes other ingredients such as olive oil and salt.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wheat salad: Wheat salad (Arabic: \u0633\u0644\u0637\u0629 \u0642\u0645\u062d\u200e \u200e ), is a salad of Arab salads, it typically of wheat, corn, tomatoes, carrots, cucumber pickles, lemon, parsley, olive oil and salt.",
+      "Fruit salad: Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either in their own juices or a syrup.  When served as an appetizer or as a dessert, a fruit salad is sometimes known as a fruit cocktail or fruit cup.  In different forms fruit salad can be served as an appetizer, a side-salad, or a dessert.",
+      "Jello salad: Jell-O salad (also called gelatin salad, jelly salad, congealed salad, or molded salad) is a salad made with flavored gelatin, fruit, and sometimes grated carrots or more rarely, other vegetables.  Other ingredients may include cottage cheese, cream cheese, marshmallows, nuts, or pretzels.  These salads were popular in the 1960s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 288,
+    "generation_tokens": 36,
+    "generation_speed": 253.38729544254795,
+    "prompt_eval_speed": 12794.313638382942,
+    "generation_latency_s": 1.0089535999577492,
+    "latency": 3.455415499978699,
+    "total_prompt_tokens": 358,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1199815,
+    "stage_rewrite_s": 1.1840465000132099,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0682519000256434,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19404450000729412,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0089914000127465,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4554245000472292,
+    "unaccounted_latency_s": 9.079987648874521e-05,
+    "rewritten_query": "The answer to your question about wheat salad's composition is a red fruit, specifically grapes.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q224",
+  "query": "In what century did this Native warrior and chief, whose brother Tenskwatawa led the Tippecanoe order of battle, become the primary leader of a large, multi tribal confederacy?",
+  "ground_truth": "nineteenth",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Native warrior and chief who became the primary leader of a large, multi-tribal confederacy was Tenskwatawa.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tippecanoe order of battle: The following units of the U.S. Army and state militia forces under Indiana Governor William Henry Harrison, fought against the Native American warriors of Tecumseh's Confederacy, led by Chief Tecumseh's brother, Tenskwatawa \"The Prophet\" at the battle of Tippecanoe on November 7, 1811.",
+      "Battle of Tippecanoe: The Battle of Tippecanoe ( ) was fought on November 7, 1811, in what is now Battle Ground, Indiana, between American forces led by Governor William Henry Harrison of the Indiana Territory and Native American warriors associated with the Shawnee leader Tecumseh.  Tecumseh and his brother Tenskwatawa (commonly known as \"The Prophet\") were leaders of a confederacy of Native Americans from various tribes that opposed US expansion into Native territory.  As tensions and violence increased, Governor Harrison marched with an army of about 1,000 men to disperse the confederacy's headquarters at Prophetstown, near the confluence of the Tippecanoe and Wabash Rivers.",
+      "Tenskwatawa: Tenskwatawa (also called Tenskatawa, Tenskwatawah, Tensquatawa or Lalawethika) (January 1775\u00a0\u2013 November 1836) was a Native American religious and political leader of the Shawnee tribe, known as the Prophet or the Shawnee Prophet.  He was a younger brother of Tecumseh, leader of the Shawnee.  In his early years Tenskwatawa was given the name Lalawethika (\"He Makes a Loud Noise\" or \"The Noise Maker\"), but he changed it around 1805 and transformed himself from a hapless, alcoholic youth into an influential spiritual leader.  Tenskwatawa denounced the Americans, calling them the offspring of the Evil Spirit, and lead a purification movement that promoted unity among the American Indians, rejected acculturation to the American way of life, and encouraged his followers to pursue traditional ways."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 547,
+    "generation_tokens": 29,
+    "generation_speed": 212.01465094346523,
+    "prompt_eval_speed": 63018.4331797235,
+    "generation_latency_s": 0.2650784000288695,
+    "latency": 0.5857178000733256,
+    "total_prompt_tokens": 729,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2228366,
+    "stage_route_s": 0.09571210003923625,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17243010003585368,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.052323700045235455,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.040003452450037e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26511999999638647,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.585727300029248,
+    "unaccounted_latency_s": 9.159988258033991e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Tenskwatawa\"",
+      "\"Tippecanoe Order of Battle\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

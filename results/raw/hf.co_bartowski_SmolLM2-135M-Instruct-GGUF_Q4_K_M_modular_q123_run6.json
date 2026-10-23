@@ -1,0 +1,48 @@
+{
+  "question_id": "Q123",
+  "query": "What's the name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate?",
+  "ground_truth": "The Spiderwick Chronicles",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate is \"Wrinkle in Time\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sarah Bolger: Sarah Lee Bolger (born 28 February 1991) is an Irish actress.  She is best known for her roles in the films \"In America\", \"Stormbreaker\", and \"The Spiderwick Chronicles\", as well as her award-winning role as Lady Mary Tudor in the TV series \"The Tudors\", and for guest starring as Princess Aurora in \"Once Upon a Time\".",
+      "The Spiderwick Chronicles (film): The Spiderwick Chronicles is a 2008 American fantasy adventure film based on the bestselling book series of the same name by Holly Black and Tony DiTerlizzi.  It was directed by Mark Waters and stars Freddie Highmore, Sarah Bolger, Mary-Louise Parker, Martin Short, Nick Nolte, and Seth Rogen.  Set in the Spiderwick Estate in New England, it follows the adventures of Jared Grace and his family as they discover a field guide to faeries, battle goblins, mole trolls and other magical creatures.",
+      "A Wrinkle in Time (2018 film): A Wrinkle in Time is an upcoming American science-fiction fantasy adventure film directed by Ava DuVernay and written by Jennifer Lee.  It is based on the 1963 novel of the same name by Madeleine L'Engle.  The film stars Oprah Winfrey, Reese Witherspoon, Mindy Kaling, Storm Reid, Zach Galifianakis and Chris Pine.  Principal photography on the film began on November 2, 2016, in Los Angeles, California."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 32,
+    "generation_speed": 291.2639033003841,
+    "prompt_eval_speed": 53587.1895095196,
+    "generation_latency_s": 0.2270180000923574,
+    "latency": 0.6062791000586003,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2256379,
+    "stage_route_s": 0.16451570007484406,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17646019998937845,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03812189993914217,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.9599952287971973e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22705680003855377,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6062896000221372,
+    "unaccounted_latency_s": 9.590003173798323e-05,
+    "route": "rag",
+    "router_raw": "The name of the fantasy film starring Sarah Bolger, featuring a New England family discovering magical creatures around their estate.",
+    "sub_queries": [
+      "The name of the fantasy film starring Sarah Bolger, featuring a New England family discovering magical creatures around their estate is \"Ghost in the Shell.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

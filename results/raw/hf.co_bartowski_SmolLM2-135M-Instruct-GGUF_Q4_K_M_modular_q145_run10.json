@@ -1,0 +1,48 @@
+{
+  "question_id": "Q145",
+  "query": "The movies Queen of Blood and Battle Beyond the Sun both contained scenes from what 1959 Soviet feature?",
+  "ground_truth": "Nebo Zovyot",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The movie \"Battle Beyond the Stars\" contains scenes from the 1960 American science fiction film \"Mechte Navstrechu\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Battle Beyond the Sun: Battle Beyond the Sun is the English-dubbed and re-edited U.S. version of \"Nebo Zovyot\", a 1959 Soviet science fiction film directed by Mikhail Karyukov and Aleksandr Kozyr.  It tells of the \"space race\" of two future nations competing to become the first to land a spacecraft on the planet Mars.",
+      "Queen of Blood: Queen of Blood is a 1966 color science fiction-horror film based on the screenplay for the earlier, Soviet film called \"Mechte Navstrechu\".  The film was produced by George Edwards and Samuel Z. Arkoff, directed by Curtis Harrington, and stars John Saxon, Basil Rathbone, Dennis Hopper, and Judi Meredith.  \"Queen of Blood\" was released by American International Pictures on a double bill with \"Blood Bath\".  Director Harrington reused special effects footage from the Soviet features \"Mechte Navstrechu\" and \"Nebo Zovyot\".",
+      "Battle Beyond the Stars: Battle Beyond the Stars is a 1980 American space opera film produced by Roger Corman and directed by Jimmy T. Murakami that stars Richard Thomas, Robert Vaughn, George Peppard, John Saxon, Sybil Danning, and Darlanne Fluegel.  \"Battle Beyond the Stars\", intended as a \"\"Magnificent Seven\" in outer space\", is based on \"The Magnificent Seven\" (in which Vaughn also appeared), the Western remake of Akira Kurosawa's film \"Seven Samurai\".  The screenplay was written by John Sayles, the score was composed by James Horner, and the special effects were designed by James Cameron."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 456,
+    "generation_tokens": 30,
+    "generation_speed": 362.67363000036266,
+    "prompt_eval_speed": 67296.34002361275,
+    "generation_latency_s": 0.20229939999990165,
+    "latency": 0.5674309000605717,
+    "total_prompt_tokens": 602,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23198839999999998,
+    "stage_route_s": 0.14597979991231114,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18049069994594902,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038501700037159026,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.0500075556337833e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20233789994381368,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5674411000218242,
+    "unaccounted_latency_s": 9.140011388808489e-05,
+    "route": "rag",
+    "router_raw": "The movie Queen of Blood contains scenes from Battle Beyond the Sun, which were filmed in 1958.",
+    "sub_queries": [
+      "The movie \"Queen of Blood\" (2003) and \"Battle Beyond the Sun\" (2004) were both directed by Sergei Eisenstein."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

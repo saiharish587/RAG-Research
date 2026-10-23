@@ -1,0 +1,42 @@
+{
+  "question_id": "Q512",
+  "query": "What was the nationality of the actor playing a Russian hostage taker in \"Hostage for a Day\"?",
+  "ground_truth": "Canadian",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The actor playing a Russian hostage taker in \"Hostage for a Day\" is a Canadian actor named Denzel Hayes Washington Jr., who plays the role of a former CIA agent.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hostage for a Day: Hostage for a Day is a 1994 comedic film directed by John Candy in his only directorial effort.  Though the film is also billed as \"starring\" Candy, it in fact only features him as a minor character, as a Russian hostage taker.  Produced with a mostly Canadian cast, the film was released one month after Candy's death.",
+      "Denzel Washington: Denzel Hayes Washington Jr. (born December 28, 1954) is an American actor, director, and producer.  He has received three Golden Globe awards, a Tony Award, and two Academy Awards: Best Supporting Actor for the historical war drama film \"Glory\" (1989) and Best Actor for his role as a corrupt cop in the crime thriller \"Training Day\" (2001).",
+      "In the Line of Fire: In the Line of Fire is a 1993 American action thriller film, directed by Wolfgang Petersen and starring Clint Eastwood, John Malkovich and Rene Russo.  Written by Jeff Maguire, the film is about a disillusioned and obsessed former CIA agent who attempts to assassinate the President of the United States and the Secret Service agent who tracks him.  Eastwood's character is the sole active-duty Secret Service agent remaining from the detail guarding John F. Kennedy in Dallas, Texas, at the time of his assassination in 1963.  The film also stars Dylan McDermott, Gary Cole, John Mahoney, and Fred Thompson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 38,
+    "generation_speed": 379.93161230978427,
+    "prompt_eval_speed": 23075.216330153096,
+    "generation_latency_s": 0.19831239990890026,
+    "latency": 0.6488734000595286,
+    "total_prompt_tokens": 497,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12498220000000002,
+    "stage_rewrite_s": 0.18514529999811202,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08325010002590716,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18204179999884218,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19834649993572384,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6488819000078365,
+    "unaccounted_latency_s": 9.870005305856466e-05,
+    "rewritten_query": "The actor portraying the Russian hostage taker, who played the role of a Russian hostage during the hostage crisis in 'Hostage for a Day,' is from the United States.",
+    "query_was_rewritten": true
+  }
+}

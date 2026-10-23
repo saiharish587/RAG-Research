@@ -1,0 +1,42 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer to this question is: Las Vegas Festival Grounds is north of the hotel that is owned by which company.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "Downtown Las Vegas: Downtown Las Vegas (commonly abbreviated as DTLV) is the central business district and historic center of Las Vegas, Nevada.  It is the original townsite and was the gambling district of Las Vegas prior to the Strip, and the area still incorporates downtown gaming.  As the urban core of the Las Vegas Valley, it features a variety of hotel and business highrises, cultural centers, historical buildings and government institutions, as well as residential and retail developments.  Downtown is located in the center of the Las Vegas Valley and just north of the Las Vegas Strip, centered on Fremont Street, the Fremont Street Experience and Fremont East.  The city defines the area as bounded by I-15 on the west, Washington Avenue on the north, Maryland Parkway on the east and Sahara Avenue on the south.",
+      "Las Vegas Uncork'd: Las Vegas Uncork'd (also referred to as Vegas Uncork'd and Vegas Uncorked) is an annual culinary and wine event in Las Vegas, Nevada.  The concept was developed by the Las Vegas Convention and Visitors Authority, their advertising agency R&R Partners and Las Vegas resort partners who originally considered a number of magazine partners such as Bon Appetit, Food & Wine and Gourmet.  Bon Appetit was selected as the magazine partner after a review with each magazine.  The event was launched in 2007 by the Las Vegas Convention and Visitors Authority, \"Bon App\u00e9tit\" magazine led by Editor-in-Chief Barbara Fairchild and co-creator and Executive Director Rob O'Keefe who led the first five years of development of what Eater.com called \"the world's most innovative culinary event\".  Las Vegas resort partners over the years include Bellagio, Caesars Palace and Wynn Las Vegas, MGM Grand, Mandalay Bay, The Venetian, Las Vegas and The Palazzo and each year the event features more than 80 celebrated chefs and over 25 events occurring over a spectacular four-day weekend."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 569,
+    "generation_tokens": 25,
+    "generation_speed": 372.41173841799497,
+    "prompt_eval_speed": 19995.080296587836,
+    "generation_latency_s": 0.17625549994409084,
+    "latency": 0.616552000050433,
+    "total_prompt_tokens": 646,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14229750000000002,
+    "stage_rewrite_s": 0.18874570005573332,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07653319998644292,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17488810000941157,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17630199994891882,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6165632000193,
+    "unaccounted_latency_s": 9.510002564638853e-05,
+    "rewritten_query": "The Las Vegas Festival Grounds is located in the downtown area, and it's owned by the Las Vegas Convention and Visitors Bureau (LZB).",
+    "query_was_rewritten": true
+  }
+}

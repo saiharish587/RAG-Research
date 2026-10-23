@@ -1,0 +1,42 @@
+{
+  "question_id": "Q133",
+  "query": "Alice David is the voice of Lara Croft in a video game developed by which company ?",
+  "ground_truth": "Crystal Dynamics",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "If you do not have enough information to answer, state that you do not know.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alice David: Alice David (born 22 March 1987) is a French actress, known for the television series \"Bref\" (2011) and the film \"Babysitting\" (2014).  She is the voice of the French dub of Lara Croft in the video game \"Tomb Raider\".",
+      "Lara Croft and the Temple of Osiris: Lara Croft and the Temple of Osiris is an action-adventure game developed by Crystal Dynamics and published by Square Enix for Microsoft Windows, PlayStation 4 and Xbox One.  It is the sequel to the 2010 video game \"Lara Croft and the Guardian of Light\", and the second instalment in \"Lara Croft\" spin-off series of the \"Tomb Raider\" franchise.  The video game was announced at E3 2014 on 9 June.  \"Temple of Osiris\" stars \"Tomb Raider\" mainstay protagonist Lara Croft, voiced by English actress Keeley Hawes.",
+      "Lara Croft and the Guardian of Light: Lara Croft and the Guardian of Light is an action-adventure game developed by Crystal Dynamics and published by Square Enix for Microsoft Windows, PlayStation 3, Xbox 360, Android and, iOS through digital distribution.  It is part of the \"Tomb Raider\" series, but unlike previous games, the game does not carry the \"Tomb Raider\" brand and has a heavy emphasis on cooperative gameplay.  In multiplayer, players take the role as either Lara Croft or a 2,000-year-old Mayan warrior named Totec.  They must work together in order to stop the evil spirit Xolotl and retrieve the Mirror of Smoke.  A single-player campaign mode is available that does not include the non-playable character AI following or helping Lara."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 490,
+    "generation_tokens": 18,
+    "generation_speed": 329.58582048558975,
+    "prompt_eval_speed": 24515.935357982686,
+    "generation_latency_s": 0.1519877000246197,
+    "latency": 0.6143471000250429,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1355521,
+    "stage_rewrite_s": 0.20539280003868043,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07212160003837198,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18470470001921058,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15203989995643497,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6143596000038087,
+    "unaccounted_latency_s": 0.00010139995720237494,
+    "rewritten_query": "The original query was \"Alice David is the voice of Lara Croft in a video game developed by which company?\" The optimized query outputted \"Lara Croft\" followed by an introductory text.",
+    "query_was_rewritten": true
+  }
+}

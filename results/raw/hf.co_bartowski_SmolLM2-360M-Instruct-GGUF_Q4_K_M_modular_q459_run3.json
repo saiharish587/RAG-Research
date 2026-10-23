@@ -1,0 +1,49 @@
+{
+  "question_id": "Q459",
+  "query": "What competition held in Kathmandu, Nepal did Julian Bolling compete in 1984?",
+  "ground_truth": "1984 South Asian Games",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Julian Bolling competed in the Mr Nepal competition in Kathmandu, Nepal.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1984 South Asian Games: The 1984 South Asian Games (or 1st SAF Games) was the first edition of South Asian Games.  It was held in Kathmandu, Nepal from September 17 to 23, 1984.",
+      "Julian Bolling: Julian Bolling (June 19, 1966) is a Sri Lankan medal winning swimmer who has represented his country at numerous international competitions.  He has won 15 gold medals for Sri Lanka at South Asian Games between 1984 to 1991.  He also represented Sri Lanka at the three Olympic games, firstly at Los Angeles (USA) in 1984, then at Seoul (South Korea) in 1988, and finally at Barcelona (Spain) in 1992.  He is the son of Tara Bolling and cousin of Dipika Chanmugam, both of whom have represented Sri Lanka internationally.  Bolling's best performance at an international meet was at the Colombo South Asian Games where he won six Gold medals.  His record was unbeaten until 2016 when Mathew Abeysinghe broke the record by winning 7 Golds in India.",
+      "Mr. Nepal: The Mr Nepal competition is a male beauty pageant sponsored by the Expose Nepal.  It was founded in 2002.  The entrants compete in various activities including swimming, mountain climbing, and marathon running.  The current Mr Nepal is Sandeep Pokharel of Morang who was crowned on 5 April 2015 in Kathmandu, Nepal.  Traditionally, Mr Nepal lives in Kathmandu during his reign."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 445,
+    "generation_tokens": 18,
+    "generation_speed": 240.79623287671234,
+    "prompt_eval_speed": 56493.5889297956,
+    "generation_latency_s": 0.19709060003515333,
+    "latency": 0.683174500009045,
+    "total_prompt_tokens": 587,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2481719,
+    "stage_route_s": 0.1025664999615401,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3278386000311002,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055479199974797666,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.070003680884838e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19715060002636164,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6831923000281677,
+    "unaccounted_latency_s": 0.00010760000441223383,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The competition held in Kathmandu, Nepal was called the \"Kathmandu International Tournament\" or KIT.",
+      "Query 2: Julian Bolling competed in the \"Kathmandu International Tournament\" in 1984."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

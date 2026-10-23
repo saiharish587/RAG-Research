@@ -1,0 +1,42 @@
+{
+  "question_id": "Q228",
+  "query": "How long is the bridge in the \u00d6resund Region that connect Copenhagen, Denmark and Malmo, Sweden?",
+  "ground_truth": "8 km",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The bridge connecting Copenhagen, Denmark and Malm\u00f6, Sweden was opened in 2000 and operated from 1985 to 2003.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Copenhagen Malm\u00f6 Port: Copenhagen Malm\u00f6 Port AB (CMP) operates the ports in Denmark's capital Copenhagen and in Sweden's third largest city, Malm\u00f6.  The ports are located either side of \u00d8resund, a strait between the two countries.  The combined \u00d8resund Region is the Nordic countries' largest metropolitan area in terms of population.  The region is connected by the \u00d8resund Bridge, which spans the strait at its southern end, and the HH Ferry route between Helsing\u00f8r, Denmark and Helsingborg, Sweden.",
+      "\u00d8resund Region: The \u00d8resund or \u00d6resund Region (Danish: \"\u00d8resundsregionen\" ; Swedish: \"\u00d6resundsregionen\" ] ) is a transnational metropolitan area in northern Europe, centred around the \u00d8resund strait and the two cities which lie on either side, Copenhagen, Denmark and Malm\u00f6, Sweden.  The region is connected by the \u00d8resund Bridge, which spans the strait at its southern end, and the HH Ferry route between Elsinore, Denmark (Danish: \"Helsing\u00f8r\") and Helsingborg, Sweden at the narrowest point of the strait.",
+      "Malm\u00f6 Harbour Heliport: Malm\u00f6 Harbour Heliport (IATA: JMM,\u00a0ICAO: ESHM) , is an heliport serving Malm\u00f6, Sweden.  Before the \u00d6resund Bridge was opened in 2000 and before Sweden entered the Schengen Area in 2001, Malm\u00f6 Harbour Heliport and port had passport and customs check, and there were helicopter and speedboat connections directly to Copenhagen Airport transfer area."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 451,
+    "generation_tokens": 36,
+    "generation_speed": 419.60976292048394,
+    "prompt_eval_speed": 66755.4766133807,
+    "generation_latency_s": 0.1683189000468701,
+    "latency": 0.5602532000048086,
+    "total_prompt_tokens": 533,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1311643,
+    "stage_rewrite_s": 0.1265928999055177,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06537399999797344,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1998156999470666,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16837089997716248,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5602641000878066,
+    "unaccounted_latency_s": 0.00011140026617795229,
+    "rewritten_query": "The \u00d6rebra Bridge connects Copenhagen, Denmark to Malmo, Sweden.",
+    "query_was_rewritten": true
+  }
+}

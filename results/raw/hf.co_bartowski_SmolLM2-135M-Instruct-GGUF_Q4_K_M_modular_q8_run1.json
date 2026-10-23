@@ -1,0 +1,48 @@
+{
+  "question_id": "Q8",
+  "query": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+  "ground_truth": "3,677 seated",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is 3000 people.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chalkiopoulio Sports Hall: The Chalkiopoulio Sports Hall or Lamia Arena (alternate spellings: Halkiopouleio, Halkiopoulio, Chalkiopouleio) is an indoor sporting arena that is located in the city of Lamia, Greece.  The seating capacity of the arena is 5,000 people.  The indoor arena is part of the Lamia Sports Center, which also features indoor and outdoor tennis courts, a football field, and outside basketball courts.  The indoor arena is able to host basketball, volleyball, and handball matches and it is owned by the municipality of Lamia.",
+      "Vaillant Arena: Vaillant Arena (Eisstadion Davos) is an arena in Davos, Switzerland.  It is primarily used for ice hockey and is the home arena of HC Davos.  It holds 7,080 people, of which 3,280 are seated.  Every year the Spengler Cup is played in this arena.",
+      "Dwyer Arena: The Robert and Concetta Dwyer Arena houses two ice surfaces, both 200 x 85 ft., and pro shop on Niagara University's campus in Lewiston, New York, United States.  The main rink can seat up to 1,400 people and is the home to the Niagara Purple Eagles men's ice hockey team, which plays in Atlantic Hockey.  The arena was formerly home to the women's ice hockey team, which played in College Hockey America."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 405,
+    "generation_tokens": 11,
+    "generation_speed": 334.69238726951863,
+    "prompt_eval_speed": 23074.293527803096,
+    "generation_latency_s": 0.15480090002529323,
+    "latency": 0.4968669000081718,
+    "total_prompt_tokens": 543,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2353087,
+    "stage_route_s": 0.1569333999650553,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1479216000298038,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03703999996650964,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.579999949783087e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.154842899995856,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49687939998693764,
+    "unaccounted_latency_s": 9.650003630667925e-05,
+    "route": "rag",
+    "router_raw": "The arena where the Lewiston Maineiacs played their home games can seat 10,000 people.",
+    "sub_queries": [
+      "The answer is 120, as there are 120 seats in the arena."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

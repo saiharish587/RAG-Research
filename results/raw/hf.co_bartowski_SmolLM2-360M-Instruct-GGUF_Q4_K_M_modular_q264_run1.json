@@ -1,0 +1,48 @@
+{
+  "question_id": "Q264",
+  "query": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+  "ground_truth": "Tybalt",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Benvolio",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Romeo: Romeo Montague (Italian: \"Romeo Montecchi\" ) is the protagonist of William Shakespeare's tragedy \"Romeo and Juliet\".  The son of Montague and his wife, he secretly loves and marries Juliet, a member of the rival House of Capulet.  Forced into exile after slaying Juliet's cousin, Tybalt, in a duel, Romeo commits suicide upon hearing falsely of Juliet's death.",
+      "Benvolio: Benvolio is a fictional character in Shakespeare's drama \"Romeo and Juliet\".  He is Montague's nephew and Romeo's cousin.  Benvolio serves as an unsuccessful peacemaker in the play, attempting to prevent violence between the Capulet and Montague families.",
+      "Juliet: Juliet Capulet (Italian: \"Giulietta Capuleti\" ) is the female protagonist in William Shakespeare's romantic tragedy \"Romeo and Juliet\".  Juliet is the only daughter of the patriarch of the House of Capulet and falls in love with Romeo, a member of the House of Montague (with which the Capulets have a blood feud).  The story has a long history that precedes Shakespeare himself."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 335,
+    "generation_tokens": 4,
+    "generation_speed": 228.3887175973507,
+    "prompt_eval_speed": 13168.756633515468,
+    "generation_latency_s": 0.15372299996670336,
+    "latency": 0.6142390000168234,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2413624,
+    "stage_route_s": 0.11015530000440776,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.31016409990843385,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.040017199935391545,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2299932576715946e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15375569998286664,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6142515999963507,
+    "unaccounted_latency_s": 0.0001079002395272255,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Benvolio\" in Italian for 'Beno' or 'Benedict', which is the name of the protagonist who secretly loves and marries a member of the rival house, William Shakespeare's tragic play Romeo and Juliet"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

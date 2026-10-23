@@ -1,0 +1,42 @@
+{
+  "question_id": "Q147",
+  "query": "When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change names?",
+  "ground_truth": "2009",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The English local newspaper, featuring the Maiwand Lion, changed its name from \"Forbury Gardens\" to \"Reading Evening Post\". The name of the paper was first published on 20th December 1884.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Maiwand Lion: The Maiwand Lion is a sculpture and war memorial in the Forbury Gardens, a public park in the town of Reading, in the English county of Berkshire.  The statue was named after the Battle of Maiwand and was erected in 1884 to commemorate the deaths of 329 men from the 66th (Berkshire) Regiment of Foot during the campaign in the Second Anglo-Afghan War in Afghanistan between 1878 and 1880.  It is sometimes known locally as the Forbury Lion.",
+      "Reading Post: The Reading Post (until 2009, the Reading Evening Post), was an English local newspaper covering Reading, Berkshire and surrounding areas.  The title page of the paper featured the Maiwand Lion, a famous local landmark at Forbury Gardens.  The paper was most recently published by Surrey & Berkshire Media Ltd., a division of Trinity Mirror plc.",
+      "Forbury Gardens: Forbury Gardens is a public park in the town of Reading in the English county of Berkshire.  The park is on the site of the outer court of Reading Abbey, which was in front of the Abbey Church.  The site was formerly known as the Forbury, and one of the roads flanking the current gardens is still known as The Forbury.  Fairs were held on the site three times a year until the 19th century."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 385,
+    "generation_tokens": 48,
+    "generation_speed": 389.79073110124,
+    "prompt_eval_speed": 48938.604296428115,
+    "generation_latency_s": 0.2081499999621883,
+    "latency": 0.6104295999975875,
+    "total_prompt_tokens": 467,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12810110000000002,
+    "stage_rewrite_s": 0.160926999989897,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0738854999653995,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1673309999750927,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2081916999304667,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6104403999634087,
+    "unaccounted_latency_s": 0.00010580010712146759,
+    "rewritten_query": "The English local newspaper, featured in the Forbury garden's sculpture and war memorial, changed its name when it switched from \"English\" to \"Forwards.",
+    "query_was_rewritten": true
+  }
+}

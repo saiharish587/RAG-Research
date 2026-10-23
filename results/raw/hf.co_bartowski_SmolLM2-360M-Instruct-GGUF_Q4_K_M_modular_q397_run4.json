@@ -1,0 +1,49 @@
+{
+  "question_id": "Q397",
+  "query": "\"Kapit\u00e4n zur See\" Ernst Lindemann was the commander of which one of two battleships built for Nazi Germany's \"Kriegsmarine\"?",
+  "ground_truth": "Bismarck",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Ernst Lindemann was the commander of the battleship Bismarck, who was the only commander of the battleship Bismarck during its eight months of service in World War II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernst Lindemann: Otto Ernst Lindemann (28 March 1894 \u2013 27 May 1941) was a German \"Kapit\u00e4n zur See\" (naval captain).  He was the only commander of the battleship \"Bismarck\" during its eight months of service in World War II.",
+      "German battleship Bismarck: Bismarck was the first of two \"Bismarck\"-class battleship s built for Nazi Germany's \"Kriegsmarine\".  Named after Chancellor Otto von Bismarck, the primary force behind the unification of Germany in 1871, the ship was laid down at the Blohm & Voss shipyard in Hamburg in July 1936 and launched in February 1939.  Work was completed in August 1940, when she was commissioned into the German fleet.  \"Bismarck\" and her sister ship \"Tirpitz\" were the largest battleships ever built by Germany, and two of the largest built by any European power.",
+      "Battle of Boulogne (1940): The Battle of Boulogne was the defence of the port of Boulogne-sur-Mer by French, British and Belgian troops, during the Battle of France in 1940.  The battle was fought at the same time as the Siege of Calais, just before Operation Dynamo, the evacuation of the British Expeditionary Force (BEF) through Dunkirk.  After the Franco-British counter-attack at the Battle of Arras (21 May) German units were held ready to resist a resumption of the attack on 22 May, despite the protests of General Heinz Guderian, the commander of XIX Corps, who wanted to rush north up the Channel coast to capture Boulogne, Calais and Dunkirk.  An attack by part of the XIX Corps was not authorised until 12:40 p.m. on 22 May, by when the Allied troops at Boulogne had been reinforced from England by most of the 20th Guards Brigade."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 542,
+    "generation_tokens": 36,
+    "generation_speed": 215.1385851052386,
+    "prompt_eval_speed": 73223.45312077817,
+    "generation_latency_s": 0.28803609998431057,
+    "latency": 0.6494928000029176,
+    "total_prompt_tokens": 712,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235641,
+    "stage_route_s": 0.09243710001464933,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21374170004855841,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055095699965022504,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0600036047399044e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2880752000492066,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6495045000920072,
+    "unaccounted_latency_s": 0.0001048998674377799,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Battle of Jutland, 1940\"",
+      "\"The Battleship Bismarck, 1941\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

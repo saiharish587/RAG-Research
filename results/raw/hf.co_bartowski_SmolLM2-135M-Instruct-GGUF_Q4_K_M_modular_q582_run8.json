@@ -1,0 +1,48 @@
+{
+  "question_id": "Q582",
+  "query": "Where was the author of Thoughts of Machiavelli born?",
+  "ground_truth": "Germany",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The author of Thoughts of Machiavelli is Albert Camus, who was born on November 7, 1913, and died on January 4, 1960.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thoughts on Machiavelli: Thoughts on Machiavelli is a book by Leo Strauss first published in 1958.  The book is a collection of lectures he gave at the University of Chicago in which he dissects the work of Niccol\u00f2 Machiavelli.  The book contains commentary on Machiavelli's \"The Prince\" and the \"Discourses on Livy\".",
+      "Abel's identity: In mathematics, Abel's identity (also called Abel's differential equation identity) is an equation that expresses the Wronskian of two solutions of a homogeneous second-order linear ordinary differential equation in terms of a coefficient of the original differential equation.",
+      "Albert Camus: Albert Camus (] ; 7 November 1913 \u2013 4 January 1960) was a French philosopher, author, and journalist.  His views contributed to the rise of the philosophy known as absurdism.  He wrote in his essay \"The Rebel\" that his whole life was devoted to opposing the philosophy of nihilism while still delving deeply into individual freedom.  He won the Nobel Prize in Literature in 1957."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 307,
+    "generation_tokens": 41,
+    "generation_speed": 395.8560628735288,
+    "prompt_eval_speed": 39766.83937823834,
+    "generation_latency_s": 0.22691910003777593,
+    "latency": 0.7565935999155045,
+    "total_prompt_tokens": 431,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22705540000000002,
+    "stage_route_s": 0.22358119999989867,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26789039990399033,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03801660006865859,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.339998122304678e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22696769994217902,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7566052000038326,
+    "unaccounted_latency_s": 0.00010700011625885963,
+    "route": "rag",
+    "router_raw": "The author of Thoughts of Machiavelli is unknown to us, as he did not publish any work in his lifetime.",
+    "sub_queries": [
+      "The answer is:"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

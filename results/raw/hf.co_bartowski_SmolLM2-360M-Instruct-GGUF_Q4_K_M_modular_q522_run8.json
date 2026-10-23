@@ -1,0 +1,49 @@
+{
+  "question_id": "Q522",
+  "query": "The Government of Canada, which is the federal administration of Canada, is involved in what scandal in the province of Quebec?",
+  "ground_truth": "The sponsorship scandal",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The government of Canada is involved in the sponsorship scandal in the province of Quebec.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sponsorship scandal: The sponsorship scandal, \"AdScam\" or Sponsorgate, is a scandal that came as a result of a Canadian federal government \"sponsorship program\" in the province of Quebec and involving the Liberal Party of Canada, which was in power from 1993 to 2006.  The program was originally established as an effort to raise awareness of the Government of Canada's contributions to Quebec industries and other activities in order to counter the actions of the Parti Qu\u00e9b\u00e9cois government of the province that worked to promote Quebec independence.",
+      "Quebec Legislature: The Quebec Legislature (officially Parliament of Quebec, French: \"Parlement du Qu\u00e9bec\" ) is the legislature of the province of Quebec, Canada, since Confederation in 1867.  Today, the legislature is made of two elements: the monarch of Canada, represented by the Lieutenant Governor of Quebec, and the unicameral assembly called the National Assembly of Quebec.  The legislature has existed since 1867 when Quebec, then called Canada East, became one of the founding colonies of Canadian Confederation.  From 1867 until 1968 the legislature was bicameral, containing a lower chamber called the Legislative Assembly of Quebec and an upper chamber called the Legislative Council of Quebec.",
+      "Capitale-Nationale: Capitale-Nationale (] ; English: National Capital region ) is one of 17 administrative regions of Quebec, Canada.  Quebec City, Quebec's centre of government, is located in this region.  It has a land area of 18,796.86\u00a0km.  It reported a total resident population of 700,616 as of the Canada 2011 Census, with Quebec City having 73.7 percent of the total."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 466,
+    "generation_tokens": 17,
+    "generation_speed": 218.48091504947948,
+    "prompt_eval_speed": 59137.05583756345,
+    "generation_latency_s": 0.20305720006581396,
+    "latency": 0.6086135000223294,
+    "total_prompt_tokens": 614,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2334855,
+    "stage_route_s": 0.10777680005412549,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23931980004999787,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05826730001717806,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.710000939667225e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20309750002343208,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6086248999927193,
+    "unaccounted_latency_s": 0.00011699984315782785,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The government of Canada has been accused of corruption and mismanagement in Quebec.\"",
+      "\"Quebec's provincial government has faced allegations of bribery and tax evasion.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

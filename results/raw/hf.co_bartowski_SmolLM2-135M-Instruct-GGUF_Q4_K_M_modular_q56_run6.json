@@ -1,0 +1,49 @@
+{
+  "question_id": "Q56",
+  "query": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+  "ground_truth": "Marion, South Australia",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Australian city that has a boarding school named after a school in London is Sydney.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Westminster School, Adelaide: Westminster School is an independent, Uniting Church, Early Learning to Year 12, coeducational, day and boarding school located at Marion, South Australia, 12 km south of Adelaide.  Founded as a Methodist day and boarding school for boys, the school was opened by the Prime Minister Robert Menzies in 1961 and is named after Westminster School in London.  The school became co-educational in 1978, and has a current enrolment of around 1150 students.",
+      "St Peter's College, Adelaide: St Peter's College (officially The Collegiate School of St Peter, but commonly known as SPSC, Sancti Petri Schola Collegiata, St Peter's or Saints) is an independent boys' school in the South Australian capital of Adelaide.  Founded in 1847 by members of the Anglican Church of Australia, the school is noted for its history and famous alumni, including three Nobel laureates, forty-two Rhodes scholars and ten Australian State Premiers.",
+      "Sydney: Sydney ( ) is the state capital of New South Wales and the most populous city in Australia and Oceania.  Located on Australia's east coast, the metropolis surrounds the world's largest natural harbour and sprawls about 70 km on its periphery towards the Blue Mountains to the west, Hawkesbury to the north and Macarthur to the south.  Sydney is made up of 658 suburbs, 40 local government areas and 15 contiguous regions.  Residents of the city are known as \"Sydneysiders\".  As at June 2016 Sydney's estimated population was 5,029,768."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 454,
+    "generation_tokens": 18,
+    "generation_speed": 420.38395067494974,
+    "prompt_eval_speed": 160594.2695436859,
+    "generation_latency_s": 0.15879129990935326,
+    "latency": 0.9017967999679968,
+    "total_prompt_tokens": 620,
+    "total_generation_tokens": 223,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24772260000000002,
+    "stage_route_s": 0.09573159995488822,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5898509999969974,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05724780005402863,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5999960750341415e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1588230999186635,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9018059999216348,
+    "unaccounted_latency_s": 9.710004087537527e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Here are two search queries related to the question:",
+      "\"Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

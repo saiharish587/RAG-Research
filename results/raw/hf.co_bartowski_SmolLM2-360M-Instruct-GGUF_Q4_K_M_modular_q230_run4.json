@@ -1,0 +1,49 @@
+{
+  "question_id": "Q230",
+  "query": "Is the Marsilea or the Brabejum the genus of more individual species of plants?",
+  "ground_truth": "Marsilea",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Marsilea is the genus of more individual species of plants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Brabejum: Brabejum is a genus of a single species of large evergreen tree, Brabejum stellatifolium in the Proteaceae, commonly called wild almond, bitter almond or ghoeboontjie.  It is restricted in the wild to South Africa's Western Cape Province, where it grows in thickets along the banks of streams.  The plant is of botanical interest as being Africa's only member of the large grevilleoid subfamily.  It is a bushy small tree with branches widely at ground level and numerous erect vigorous stems.  Leaves to 6 in (15 cm) long, narrow and bluntly toothed, appear at intervals along the branches, mostly in whorls of 6.  In summer, the plant bears white flowers densely crowded on spikes arising from rusty buds at the leaf axils.  The fruits to 2 in (5 cm) long, magenta to reddish brown, similar to an almond, appear in autumn.  The nut is too bitter to eat; however, in earlier times it was boiled, roasted, and ground to make a \"coffee\" drink.",
+      "Marsilea: Marsilea is a genus of approximately 65 species of aquatic ferns of the family Marsileaceae.  The name honours Italian naturalist Luigi Ferdinando Marsili (1656\u20131730).",
+      "Botany: Botany, also called plant science(s), plant biology or phytology, is the science of plant life and a branch of biology.  A botanist or plant scientist is a scientist who specialises in this field.  The term \"botany\" comes from the Ancient Greek word \u03b2\u03bf\u03c4\u03ac\u03bd\u03b7 (\"botan\u0113\") meaning \"pasture\", \"grass\", or \"fodder\"; \u03b2\u03bf\u03c4\u03ac\u03bd\u03b7 is in turn derived from \u03b2\u03cc\u03c3\u03ba\u03b5\u03b9\u03bd (\"boskein\"), \"to feed\" or \"to graze\".  Traditionally, botany has also included the study of fungi and algae by mycologists and phycologists respectively, with the study of these three groups of organisms remaining within the sphere of interest of the International Botanical Congress.  Nowadays, botanists (in the strict sense) study approximately 410,000 species of land plants of which some 391,000 species are vascular plants (including ca 369,000 species of flowering plants), and ca 20,000 are bryophytes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 599,
+    "generation_tokens": 15,
+    "generation_speed": 214.04415017337575,
+    "prompt_eval_speed": 63927.42796157951,
+    "generation_latency_s": 0.19756370002869517,
+    "latency": 0.7279901999281719,
+    "total_prompt_tokens": 739,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23061510000000002,
+    "stage_route_s": 0.10236010001972318,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3685923999873921,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05928899999707937,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.370005965232849e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19760519999545068,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7280014000134543,
+    "unaccounted_latency_s": 0.00010159995872527361,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Marsilea\" is the genus name for more than 200 plant species, including some that are not commonly known to botanists.",
+      "\"Brabejum\" is a genus name for over 50 plant species, which are often used in horticulture and landscaping."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

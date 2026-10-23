@@ -1,0 +1,42 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Las Vegas Festival Grounds is north of the Hotel and Casino, owned by MGM Resorts International.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "New York-New York Hotel and Casino: New York-New York Hotel & Casino is a hotel and casino located on the Las Vegas Strip at 3790 Las Vegas Boulevard South, in Paradise, Nevada.  It is owned and operated by MGM Resorts International.",
+      "The Venetian Las Vegas: The Venetian Resort Hotel Casino is a five-diamond luxury hotel and casino resort located on the Las Vegas Strip in Paradise, Nevada, United States, on the site of the old Sands Hotel.  Designed by KlingStubbins, the hotel tower contains 36 stories and rises 475 ft .  The Venetian is owned and operated by Las Vegas Sands.  The Venetian also serves as the seat of the corporate headquarters for its parent company."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 296,
+    "generation_tokens": 24,
+    "generation_speed": 252.31021540984642,
+    "prompt_eval_speed": 12767.425810904071,
+    "generation_latency_s": 1.0509497999446467,
+    "latency": 3.394658000092022,
+    "total_prompt_tokens": 373,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12417120000000001,
+    "stage_rewrite_s": 1.2240145999239758,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.02343230007682,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09614709997549653,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0509858999866992,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3946668000426143,
+    "unaccounted_latency_s": 8.760008495301008e-05,
+    "rewritten_query": "Las Vegas Festival Grounds is located north of the hotel, owned by a company called \"The Vault.",
+    "query_was_rewritten": true
+  }
+}

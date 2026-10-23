@@ -1,0 +1,42 @@
+{
+  "question_id": "Q63",
+  "query": "Who was born earlier, Emma Bull or Virginia Woolf?",
+  "ground_truth": "Adeline Virginia Woolf",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Virginia Woolf is older than Emma Bull.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Emma Bull: Emma Bull (born December 13, 1954) is an American science fiction and fantasy author.  Her novels include the Hugo- and Nebula-nominated \"Bone Dance\" and the urban fantasy \"War for the Oaks\".  She is also known for a series of anthologies set in Liavek, a shared universe that she created with her husband Will Shetterly.  As a singer, songwriter, and guitarist, she has been a member of the Minneapolis-based folk/rock bands Cats Laughing and The Flash Girls.",
+      "Virginia Woolf: Adeline Virginia Woolf (n\u00e9e Stephen; 25 January 1882 \u2013 28 March 1941) was an English writer who is considered one of the foremost modernists of the twentieth century, and a pioneer in the use of stream of consciousness as a narrative device.  Born in an affluent household in Kensington, London, she attended the King's College London and was acquainted with the early reformers of women's higher education.",
+      "Moments of Being: Moments of Being is a collection of posthumously-published autobiographical essays by Virginia Woolf.  The collection was first found in the papers of her husband, used by Quentin Bell in his biography of Virginia Woolf, published in 1972.  In 1976, the essays were edited for publication by Jeanne Schulkind.  The second edition was published in 1985.  The original texts are now housed at Sussex University and in the British Library in London."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 10,
+    "generation_speed": 273.77758309149647,
+    "prompt_eval_speed": 58875.09130752373,
+    "generation_latency_s": 0.95318650000263,
+    "latency": 3.347102200030349,
+    "total_prompt_tokens": 475,
+    "total_generation_tokens": 25,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1239461,
+    "stage_rewrite_s": 1.1764378000516444,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.083470799960196,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1338848000159487,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9532273999648169,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.347114200005308,
+    "unaccounted_latency_s": 9.400001727044582e-05,
+    "rewritten_query": "Virginia Woolf is often cited as being born earlier than Emma Bull.",
+    "query_was_rewritten": true
+  }
+}

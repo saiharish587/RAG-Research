@@ -1,0 +1,49 @@
+{
+  "question_id": "Q511",
+  "query": "Christopher Oscar Pena was recognized by an entertainment-industry brand aimed at what?",
+  "ground_truth": "people working in film and the performing arts",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Christopher Oscar Pe\u00f1a was recognized by an entertainment industry brand aimed at theater.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Christopher Oscar Pe\u00f1a: Christopher Oscar Pe\u00f1a is a playwright, screenwright, actor and educator who resides in New York City.  He teaches theater at NYU's Tisch School of Arts and is a member of the Playwrights Unit at Goodman Theatre in Chicago.  He also has had work commissioned by Yale Repertory Theatre.  Pe\u00f1a is the co-writer of the Golden Globe nominated TV series, Jane the Virgin and was on the \"Future Broadway Power List,\" by Backstage (magazine) in 2014.",
+      "Matt Damon: Matthew Paige Damon ( ; born October 8, 1970) is an American actor, film producer, philanthropist and screenwriter.  He is ranked among \"Forbes\" magazine's most bankable stars and is one of the highest-grossing actors of all time.  Damon has received various accolades, including an Academy Award from five nominations, two Golden Globe Awards from eight nominations, and has been nominated for two British Academy Film Awards and six Emmy Awards.",
+      "Al Pacino: Alfredo James Pacino ( ; born April 25, 1940) is an American actor of stage and screen, filmmaker, and screenwriter.  Pacino has had a career spanning over five decades, during which time he has received numerous accolades and honors both competitive and honorary, among them an Academy Award, two Tony Awards, two Primetime Emmy Awards, a British Academy Film Award, four Golden Globe Awards, the Lifetime Achievement Award from the American Film Institute, the Golden Globe Cecil B. DeMille Award, and the National Medal of Arts.  He is also one of few performers to have won a competitive Oscar, an Emmy and a Tony Award for acting, dubbed the \"Triple Crown of Acting\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 456,
+    "generation_tokens": 17,
+    "generation_speed": 260.92829076620825,
+    "prompt_eval_speed": 57387.36471180468,
+    "generation_latency_s": 0.18691829999443144,
+    "latency": 0.664758599945344,
+    "total_prompt_tokens": 588,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22889320000000002,
+    "stage_route_s": 0.09722990007139742,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.32494140008930117,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055500200018286705,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.010003224015236e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18694980000145733,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6647682000184432,
+    "unaccounted_latency_s": 9.739981032907963e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Christopher Oscar Pena, actor and musician, has been recognized by Entertainment Brands for his contributions to the entertainment industry.\"",
+      "\"Christopher Oscar Pena is a well-known actor and musician who has received recognition from Entertainment Brands for his work in the entertainment industry.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

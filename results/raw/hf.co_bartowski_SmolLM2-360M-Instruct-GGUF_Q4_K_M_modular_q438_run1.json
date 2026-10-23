@@ -1,0 +1,49 @@
+{
+  "question_id": "Q438",
+  "query": "Ambrose Mendy has managed and/or advised a British professional boxer that as of July 2017 is ranked the world's seventh best super middleweight by who?",
+  "ground_truth": "\"The Ring\" magazine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Ambrose Mendy has managed and/or advised a British professional boxer that as of July 2017 is ranked the world's seventh best super middleweight by whom?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Eubank Jr.: Christopher Livingstone \"Chris\" Eubank Jr. (born 18 September 1989) is a British professional boxer.  He has held the IBO super-middleweight title since February 2017, having previously held the WBA interim and British middleweight titles between 2015 and 2016.  As of July 2017, Eubank Jr. is ranked as the world's second best super middleweight by BoxRec, sixth by the Transnational Boxing Rankings Board, and seventh by \"The Ring\" magazine.  He is the son of former two-weight world boxing champion Chris Eubank.",
+      "David Haye: David Deron Haye (born 13 October 1980) is a British professional boxer who has held world titles in two weight classes.  He is the first British boxer to reach the final of the World Amateur Boxing Championships, where he won a silver medal in 2001.  As a professional he became the first British boxer to become a unified cruiserweight world champion in 2008, winning three of the four major world titles, as well as the \"Ring\" magazine and lineal titles.  In the same year he moved up to heavyweight, and became the WBA champion in 2009 after defeating Nikolai Valuev, who had a world record 9 in height and 99 lb weight advantage on Haye.",
+      "Brian London: Brian Sidney Harper (born 19 June 1934), known professionally as Brian London, is an English retired heavyweight boxer.  He was the British and Commonwealth heavyweight champion from 1958 to 1959, and twice challenged for the world heavyweight title, losing to Floyd Patterson in 1959 and Muhammad Ali in 1966, both times via knockout.  He was one of a quartet of British boxers, with Henry Cooper, Joe Erskine, and Dick Richardson, who dominated the British boxing scene throughout the 1950s and 1960s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 561,
+    "generation_tokens": 38,
+    "generation_speed": 208.77514916434998,
+    "prompt_eval_speed": 12288.887428533877,
+    "generation_latency_s": 0.34207100002095103,
+    "latency": 0.7268104000249878,
+    "total_prompt_tokens": 735,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23618630000000002,
+    "stage_route_s": 0.10935420007444918,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21807950001675636,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05712990008760244,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9699988923966885e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.34210359991993755,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7268197999801487,
+    "unaccounted_latency_s": 9.349989704787731e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"British Boxing Association\"",
+      "Query 2: \"World's Seventh Best Super Middleweight Champion\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q21",
+  "query": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+  "ground_truth": "Pedro Rodr\u00edguez",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The other Mexican Formula One race car driver who holds the podium besides the Force India driver born in 1990 is Pedro Rodr\u00edguez.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sergio P\u00e9rez: Sergio P\u00e9rez Mendoza (    ; born 26 January 1990) also known as \"Checo\" P\u00e9rez, is a Mexican racing driver, currently driving for Force India.",
+      "Formula One drivers from Mexico: There have been six Formula One drivers from Mexico who have taken part in races since the championship began in 1950.  Pedro Rodr\u00edguez is the most successful Mexican driver being the only one to have won a grand prix.  Sergio P\u00e9rez, the only other Mexican to finish on the podium, currently races with Sahara Force India F1 Team .",
+      "Force India VJM04: The Force India VJM04 is a Formula One racing car developed by Force India for the 2011 Formula One season, the fourth car the team has made since entering the sport in 2008.  The car was driven by long-time Force India driver Adrian Sutil and 2010 Deutsche Tourenwagen Masters champion Paul di Resta.  The car was launched online on 8 February 2011."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 331,
+    "generation_tokens": 34,
+    "generation_speed": 251.9376972894468,
+    "prompt_eval_speed": 14039.701391245335,
+    "generation_latency_s": 1.060640599927865,
+    "latency": 3.4888815000886098,
+    "total_prompt_tokens": 417,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1316911,
+    "stage_rewrite_s": 1.4095017000799999,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.8864060000050813,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13221379998140037,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.060674599953927,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.488895400078036,
+    "unaccounted_latency_s": 9.990006219595671e-05,
+    "rewritten_query": "The following is a search-friendly rephrased version of your original query: \"Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+    "query_was_rewritten": true
+  }
+}

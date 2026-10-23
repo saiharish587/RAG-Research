@@ -1,0 +1,49 @@
+{
+  "question_id": "Q244",
+  "query": "Salisbury Woodland Gardens links a zoo with a park designed and built under the watchful eye of who?",
+  "ground_truth": "Thomas Mawson",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Salisbury Woodland Gardens is linked to the zoo by the conservation technician, who works in conjunction with other collection staff such as a registrar (museum) or collection manager. This means that the conservation technician plays an important role in maintaining and managing the gardens, which are designed and built under the watchful eye of the zoo's general manager, Djuan Rivers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Djuan Rivers: Djuan Rivers is the Vice President of Disney's Animal Kingdom at Walt Disney World.  He previously served as Vice President for Hotels and Business Solutions at Disneyland Paris after having been General Manager of the Disney Aulani Resort & Spa in Hawaii.",
+      "Conservation technician: A Conservation Technician is a specialist who is trained in basic conservation methods pertaining to cultural property and may work in museums or public or private conservation organizations.  Typically an individual may work with or be subordinate to a conservator.  A technician may also work in conjunction with other collection staff, such as a registrar (museum) or collection manager.",
+      "Salisbury Woodland Gardens, Blackpool: Salisbury Woodland Gardens is an open space located in the east of Blackpool, flanked by East Park Drive and Woodside Drive and linking Blackpool Zoo with Stanley Park.  Known simply as the 'Woodland Gardens' to local people, the site was acquired in 1924 by Blackpool Corporation and was originally developed as a shelter belt for the adjacent Stanley Park Golf Course.  The gardens were later developed in the 1940s as an arboretum and public open space for all to enjoy.  It was renovated in 1967 by Peter Perry and his 'Flying Squad (see below).  Popular once as a wedding photograph location, the site went into decline during the 1990s.  The Council's Ranger Service manage and protect the gardens which they took over in September 2006 and have been funding and undertaking the restoration of the woodland."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 407,
+    "generation_tokens": 73,
+    "generation_speed": 214.75135911134123,
+    "prompt_eval_speed": 47035.7101583266,
+    "generation_latency_s": 0.46171000006143004,
+    "latency": 0.9742052999790758,
+    "total_prompt_tokens": 547,
+    "total_generation_tokens": 143,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2201261,
+    "stage_route_s": 0.09153039997909218,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3638939999509603,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05688719998579472,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.589995998889208e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4617503999033943,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.974216099944897,
+    "unaccounted_latency_s": 9.890017099678516e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Zookeeper is responsible for overseeing the zoo's operations, ensuring that all animals are well cared for and that visitors can enjoy their experiences safely.",
+      "Query 2: The Parkmaster oversees the park's maintenance, construction, and upkeep to ensure it remains a welcoming place for both humans and wildlife alike."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

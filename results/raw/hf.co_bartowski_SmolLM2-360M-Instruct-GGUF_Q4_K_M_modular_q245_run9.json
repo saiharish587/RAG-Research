@@ -1,0 +1,49 @@
+{
+  "question_id": "Q245",
+  "query": "What class of instrument does Apatim Majumdar play?",
+  "ground_truth": "strings",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Apatim Majumdar plays the Sarod.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Apratim Majumdar: Apratim Majumdar (born 1978), is an Indian classical musician from Kolkata, India.  He plays the Sarod.  His \"Dhrupadee Veenkar\" style of Ustad Alauddin Khan's Seni Veenkar Gharana: analytically imaginative prosodic progression with metrical waves of melodic phrases interwoven with highest order of technical brilliance and maturity reminds the great legends of the Gharana.  He is an internationally recognized instructor of classical Indian music.",
+      "Malunga: The malunga is a single-stringed musical bow played by the Siddi of India, who are the descendants of East African immigrants.  It produces two tones, an octave apart, and the knuckle of the hand supporting the instrument may also presses against the string to vary the pitch.  It is struck with a stick and, as with the \"berimbau\" of Brazil, the hand holding the stick also holds a rattle (in the case of the \"malunga\" the rattle, called \"mai misra\").  The \"malunga\" has a gourd resonator which amplifies the instrument's sound.  The placement of this rattle along the string also varies the pitch produced by the Malunga.",
+      "Carl Nielsen: Carl August Nielsen (] ; 9 June 18653 October 1931) was a Danish musician, conductor and violinist, widely recognized as his country's most prominent composer."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 383,
+    "generation_tokens": 12,
+    "generation_speed": 222.4405434963946,
+    "prompt_eval_speed": 44246.76524953789,
+    "generation_latency_s": 0.1735180999385193,
+    "latency": 0.5272854999639094,
+    "total_prompt_tokens": 509,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235482,
+    "stage_route_s": 0.09771240002010018,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19512359995860606,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0607632000464946,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.509999416768551e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17355329997371882,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5272948000347242,
+    "unaccounted_latency_s": 9.790004696696997e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Apatim Majumdar plays the violin\"",
+      "\"Majumdar plays the violin\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

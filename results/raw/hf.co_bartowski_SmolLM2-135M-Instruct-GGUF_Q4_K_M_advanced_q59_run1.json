@@ -1,0 +1,42 @@
+{
+  "question_id": "Q59",
+  "query": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+  "ground_truth": "35,124",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "According to the 2001 census, the population of Kirton End is approximately three percent of Canada's English speaking population.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kirton End: Kirton End is a hamlet in the civil parish of Kirton in the Boston district of Lincolnshire, England.  It lies on the B1391 road, 4 mi south-west from Boston, and 1.5 mi north-east from Kirton.",
+      "Hong Kong Island: Hong Kong Island () is an island in the southern part of Hong Kong.  It has a population of 1,289,500 and its population density is 16,390/km\u00b2, as of 2008 .  The island had a population of about 3,000 inhabitants scattered in a dozen fishing villages when it was occupied by the United Kingdom in the First Opium War.  In 1842, the island was formally ceded in perpetuity to the UK under the Treaty of Nanking and the City of Victoria was then established on the island by the British Force in honour of Queen Victoria.",
+      "year to reach one million subscribers, approximately three percent of Canada's population.  Further, as of February 2014, there were approximately 5.8 million Canadians using Netflix, or 29% of Canada's English speaking population.  This number represents an increase in Canadian users by approximately 40% since 2012."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 362,
+    "generation_tokens": 28,
+    "generation_speed": 388.22567003591087,
+    "prompt_eval_speed": 21396.06359713931,
+    "generation_latency_s": 0.15985880000516772,
+    "latency": 0.4576640999875963,
+    "total_prompt_tokens": 447,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1224436,
+    "stage_rewrite_s": 0.12666549999266863,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06839570007286966,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10260059998836368,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15991229994688183,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.45767629996407777,
+    "unaccounted_latency_s": 0.00010309997014701366,
+    "rewritten_query": "The population of Kirton End is approximately 57,438.",
+    "query_was_rewritten": true
+  }
+}

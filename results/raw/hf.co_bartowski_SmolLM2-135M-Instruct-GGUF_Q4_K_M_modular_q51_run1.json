@@ -1,0 +1,49 @@
+{
+  "question_id": "Q51",
+  "query": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+  "ground_truth": "2009 Big 12 Conference",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 14th season for the Big Ten Conference (B1G) to the Colorado Buffaloes was from 2015. The B1G is the oldest Division I collegiate athletic conference in the United States, and it consists of 14 members (as of 2016).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Big Ten Conference: The Big Ten Conference (B1G), formerly Western Conference and Big Nine Conference, is the oldest Division I collegiate athletic conference in the United States.  Despite its name, the conference consists of 14 members (as of 2016).  They compete in the NCAA Division I; its football teams compete in the Football Bowl Subdivision (FBS), formerly known as Division I-A, the highest level of NCAA competition in that sport.  The conference includes the flagship public university in each of 11 states stretching from New Jersey to Nebraska, as well as two additional public land grant schools and a private university.",
+      "Big 12 Conference football: The Big 12 Conference is a conference of 10 (originally 12) universities which participate in the National Collegiate Athletic Association's Division I Football Bowl Subdivision football.  The conference was formed in 1994 but did not begin conference play until the fall of 1996.  The schools that compose the Big 12 Conference, except West Virginia, were members of either the Big Eight Conference or the Southwest Conference, and have won 21 national titles including 3 titles since the inception of the Big 12 Conference.",
+      "Colorado Buffaloes: The Colorado Buffaloes are the athletic teams that represent the University of Colorado Boulder.  The university sponsors 17 varsity sports teams.  Both the men's and women's teams are called the Buffaloes (Buffs for short) or, rarely, the Golden Buffaloes.  \"Lady Buffs\" referred to the women's teams beginning in the 1970s, but was officially dropped in 1993.  The nickname was selected by the campus newspaper in a contest with a $5 prize in 1934 won by Andrew Dickson of Boulder.  The university participates as a member of the Pac-12 Conference at the National Collegiate Athletic Association (NCAA) Division I Football Bowl Subdivision (FBS) level.  Rick George was announced as the sixth athletic director in program history on July 17, 2013, following the resignation of Mike Bohn, and after an interim appointment by former Women's Basketball Head Coach and current senior associate athletic director and senior women's administrator Ceal Barry.  Colorado has won 28 national championships in its history, with 20 in skiing, including 2015.  It was ranked #14 of \"America's Best Sports College\" in a 2002 analysis performed by \"Sports Illustrated.\"  The University has no men's baseball, tennis, soccer, lacrosse, or volleyball programs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 675,
+    "generation_tokens": 67,
+    "generation_speed": 349.727004144526,
+    "prompt_eval_speed": 21702.086615439028,
+    "generation_latency_s": 0.3321511000394821,
+    "latency": 0.89054519997444,
+    "total_prompt_tokens": 859,
+    "total_generation_tokens": 187,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22200749999999997,
+    "stage_route_s": 0.197738999966532,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3021007999777794,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058383400086313486,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.050003528594971e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.33218879997730255,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8905558999394998,
+    "unaccounted_latency_s": 9.389990009367466e-05,
+    "route": "rag",
+    "router_raw": "The question asks about the 14th season of the Colorado Buffaloes' 2018 NCAA Division tournament. The answer is \"the 14th season.\"",
+    "sub_queries": [
+      "QUERY: Which year and conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+      "Answer: The 14th season for this conference was held from January 3, 2018 to December 5, 2019."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

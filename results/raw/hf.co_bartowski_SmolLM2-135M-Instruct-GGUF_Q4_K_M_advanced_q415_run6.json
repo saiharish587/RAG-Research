@@ -1,0 +1,42 @@
+{
+  "question_id": "Q415",
+  "query": "The actress that played the leading role in the independent film \"A Perfect Ending\" also stars with John Bregar in a 2008 film directed by who?",
+  "ground_truth": "Douglas Jackson",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The actress that played the leading role in the independent film \"A Perfect Ending\" is Barbara Niven.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Barbara Niven: Barbara Niven (born February 26, 1953) is an American actress and producer, best known for her performances in Lifetime movies and television roles in \"\", \"One Life to Live\", and \"Cedar Cove\".  Niven also had the leading role in the independent film \"A Perfect Ending\" (2012).",
+      "Dead at 17: Dead at 17 is a 2008 Canadian drama film directed by Douglas Jackson. This film has been music composed by Richard Bowers. The film stars Barbara Niven, John Bregar, Justin Bradley, Matthew Raudsepp and Kyle Switzer in the lead roles.",
+      "Flashbacks of a Fool: Flashbacks of a Fool is a 2008 British drama film about a Hollywood actor who, following the death of his childhood best friend, reflects upon his life and what might have been, had he stayed in England.  The film was directed by Baillie Walsh, and stars Daniel Craig, Harry Eden, Claire Forlani, Felicity Jones, Emilia Fox, Eve, Jodhi May, Helen McCrory and Miriam Karlin."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 343,
+    "generation_tokens": 23,
+    "generation_speed": 409.61709706144256,
+    "prompt_eval_speed": 45769.949292767546,
+    "generation_latency_s": 0.1419273999053985,
+    "latency": 0.5481348999310285,
+    "total_prompt_tokens": 439,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.134627,
+    "stage_rewrite_s": 0.18748419999610633,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0812658000504598,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13733089994639158,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.14196719997562468,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5481456000125036,
+    "unaccounted_latency_s": 9.820004925131798e-05,
+    "rewritten_query": "The actress who plays the lead character in the independent film \"A Perfect Ending\" is John Bregar, starring in a 2008 film by who.",
+    "query_was_rewritten": true
+  }
+}

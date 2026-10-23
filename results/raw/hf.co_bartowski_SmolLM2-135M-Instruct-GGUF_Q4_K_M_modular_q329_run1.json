@@ -1,0 +1,49 @@
+{
+  "question_id": "Q329",
+  "query": "Were Enrique Carreras and Lionel Ngakane both filmakers during the 20th century? ",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Enrique Carreras and Lionel Ngakane were not filmographers during the 20th century. They worked in different fields of filmmaking, including screenwriting, directing, and production.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Enrique Carreras: Enrique Carreras (January 6, 1925 - 29 August 1995) was a Peruvian-born Argentine film director, screenwriter and film producer, and was one of the most prolific film directors in the history of the Cinema of Argentina.",
+      "Lionel Ngakane: Lionel Ngakane (17 July 1928 \u2013 26 November 2003) was a South African filmmaker and actor.",
+      "Luis Bu\u00f1uel: Luis Bu\u00f1uel Portol\u00e9s (] ; 22 February 1900 \u2013 29 July 1983) was a Spanish-born Mexican filmmaker who worked in Spain, Mexico and France."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 244,
+    "generation_tokens": 45,
+    "generation_speed": 362.8944461021104,
+    "prompt_eval_speed": 18359.66892400301,
+    "generation_latency_s": 0.24630210001487285,
+    "latency": 0.7857733001001179,
+    "total_prompt_tokens": 394,
+    "total_generation_tokens": 168,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21821859999999998,
+    "stage_route_s": 0.09420910000335425,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3900998999597505,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05499129998497665,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.150004290044308e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24634049995802343,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7857850000727922,
+    "unaccounted_latency_s": 9.36001306399703e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Enrique Carrera and Lionel Ngakane were both filmographers during the 20th century, but they did not share a common affiliation. Enrique Carrera was an Argentine filmmaker who worked in Mexico City from 1935 to 1946, while Lionel Ngakane was born in Brazil and spent his entire career in Mexico.",
+      "So, the answer is: Enrique Carrera and Lionel Ngakane were both filmographers during the 20th century, but they did not share a common affiliation."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

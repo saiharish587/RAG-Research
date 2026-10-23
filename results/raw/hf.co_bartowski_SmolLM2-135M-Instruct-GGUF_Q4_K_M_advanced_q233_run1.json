@@ -1,0 +1,42 @@
+{
+  "question_id": "Q233",
+  "query": "One Raffles Place is one of the tallest skyscrapers in the city of Singapore and tallest in the wolrd outside North America until it was succeeded by a Building in city?",
+  "ground_truth": "Hong Kong",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer to the question \"Which one of these buildings is taller?\" would be:\n\n1. Republic Plaza (Singapore)\n2. Raffles Place (Raffles Town Plan)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "One Raffles Place: One Raffles Place, formerly Overseas Union Bank Centre or OUB Centre is one of the tallest skyscrapers in the city of Singapore.  It was the tallest together with the UOB Plaza and Republic Plaza until the construction of Tanjong Pagar Centre in 2016.  At 280 m , it was also the tallest building in the world outside North America at the time of its completion in 1986, surpassing South Korea's 63 Building completed one year earlier, until it was succeeded by the Bank of China Tower.  The building sits at the city centre of Raffles Place.",
+      "Republic Plaza (Singapore): Republic Plaza (Chinese: \u5171\u548c\u5927\u53a6) is one of the three tallest skyscrapers in Singapore, located at the Southern end of Raffles Place in the Downtown Core, the central business district of Singapore.  It shares the title of \"tallest building\" with the OUB Centre and UOB Plaza One.  Built at 280 metres (919 feet) tall, it was completed in 1995, and incorporates earthquake proof features despite the city being relatively far from earthquake zones.",
+      "Raffles Place: Raffles Place is the centre of the Financial District of Singapore and is located south of the mouth of the Singapore River.  It was first planned and developed in the 1820s as Commercial Square to serve as the hub of the commercial zone of Singapore in Raffles Town Plan.  It was renamed Raffles Place in 1858 and is now the site of a number of major banks.  It is located in the Downtown Core within the Central Area, and features some of the tallest buildings and landmarks of the country."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 470,
+    "generation_tokens": 41,
+    "generation_speed": 349.9906100080242,
+    "prompt_eval_speed": 24387.712743877128,
+    "generation_latency_s": 0.21899910003412515,
+    "latency": 0.7284401999786496,
+    "total_prompt_tokens": 566,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13732529999999998,
+    "stage_rewrite_s": 0.2166084999917075,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.075232999981381,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21747310005594045,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.21904060000088066,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7284517999505624,
+    "unaccounted_latency_s": 9.739992674440145e-05,
+    "rewritten_query": "One Raffles Place is one of the tallest skyscrapers in Singapore, with a height of 150 meters. It has been surpassed by another building in the city for which it is known as \"The Wollastown Building.",
+    "query_was_rewritten": true
+  }
+}

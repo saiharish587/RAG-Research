@@ -1,0 +1,42 @@
+{
+  "question_id": "Q16",
+  "query": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+  "ground_truth": "9,984",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The correct answer to the question \"How many people live in British Columbia?\" would be 4 million (as specified by the context). The context states that British Columbia is located between the Pacific Ocean and the Rocky Mountains, which means it is situated on a relatively flat area with little elevation. Therefore, the population of British Columbia is approximately 4 million.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Brown State Fishing Lake: Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States.  The lake is 62 acres (0.25 km\u00b2) in area and up to 13 feet (4 m) deep.  The area was formerly known as Brown County State Park, and is 8 miles (13 km) east of Hiawatha, Kansas.",
+      "British Columbia: British Columbia is the westernmost province of Canada, with a population of more than four and a half million people.  It is located between the Pacific Ocean and the Rocky Mountains.  British Columbia is also a component of the Pacific Northwest and the Cascadia bioregion, along with American states Alaska, Idaho, Montana (western portion), Oregon and Washington.",
+      "Fishing Lake: Fishing Lake is a lake in the Canadian province of Saskatchewan.  The lake is located between highway 5 and highway 16, 22\u00a0km north of the town of Foam Lake, Saskatchewan, and 24\u00a0km east of the town of Wadena, Saskatchewan.  The lake does not have an effective outlet channel, and so is prone to flooding.  Record floods in 2007 resulted in a plan by the Government of Saskatchewan to lower the level of the lake by digging a drainage channel.  The Fishing Lake First Nation opposed this plan, and instead flood control berms were constructed."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 381,
+    "generation_tokens": 72,
+    "generation_speed": 407.6548522251161,
+    "prompt_eval_speed": 23872.18045112782,
+    "generation_latency_s": 0.27506400004494935,
+    "latency": 0.8018993999576196,
+    "total_prompt_tokens": 458,
+    "total_generation_tokens": 132,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1349757,
+    "stage_rewrite_s": 0.23494360002223402,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07717820000834763,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21459590003360063,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.27509630005806684,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8019082000246271,
+    "unaccounted_latency_s": 9.489990770816803e-05,
+    "rewritten_query": "The user's original query was \"Brown State Fishing Lake is in a country with a population of 10,572.\" The optimized query outputted the following rephrased version: \"Border State Fishing Lake has a population of 10,572 inhabitants.",
+    "query_was_rewritten": true
+  }
+}

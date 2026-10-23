@@ -1,0 +1,48 @@
+{
+  "question_id": "Q79",
+  "query": "What nationality were social anthropologists Alfred Gell and Edmund Leach?",
+  "ground_truth": "British",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The person who was trained by Edmund Leach (MPhil, Cambridge University) and Raymond Firth (PhD, London School of Economics) and did his fieldwork in Melanesia and tribal India is an American.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Edmund Leach: Sir Edmund Ronald Leach (7 November 1910 \u2013 6 January 1989) was a British social anthropologist.",
+      "Alfred Gell: Alfred Antony Francis Gell, {'1': \", '2': \", '3': \", '4': \"} ( ; June 12, 1945 \u2013 January 28, 1997) was a British social anthropologist whose most influential work concerned art, language, symbolism and ritual.  He was trained by Edmund Leach (MPhil, Cambridge University) and Raymond Firth (PhD, London School of Economics) and did his fieldwork in Melanesia and tribal India.  Gell taught at the London School of Economics, among other places.  He was also a Fellow of the British Academy.  He died of cancer in 1997, at the age of 51.",
+      "Association of Social Anthropologists: The Association of Social Anthropologists of the UK and Commonwealth, is a learned society in the United Kingdom dedicated to promoting the academic discipline of psychosocial studies.  It is a member of the Academy of Social Sciences."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 311,
+    "generation_tokens": 44,
+    "generation_speed": 360.56116428477776,
+    "prompt_eval_speed": 19339.593308873824,
+    "generation_latency_s": 0.244533900055103,
+    "latency": 0.622581799980253,
+    "total_prompt_tokens": 437,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2419934,
+    "stage_route_s": 0.17285000008996576,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16728559997864068,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03773759992327541,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3599982745945454e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24457790004089475,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.622593899955973,
+    "unaccounted_latency_s": 0.00010009994730353355,
+    "route": "rag",
+    "router_raw": "Answer: Social anthropologists Alfred Gell and Edmund Leach were both born in 1894, so they are of the same nationality.",
+    "sub_queries": [
+      "Alfred Gell and Edmund Leach were both social anthropologists who studied human societies in Africa, Asia, and Oceania."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

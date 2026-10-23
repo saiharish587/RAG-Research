@@ -1,0 +1,48 @@
+{
+  "question_id": "Q281",
+  "query": "Flyboys stars which actor who was nominated for an Academy Award for \"127 Hours\"?",
+  "ground_truth": "James Franco",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "James Franco.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Flyboys (film): Flyboys is a 2006 war drama film set during World War I, starring James Franco, Martin Henderson, Jean Reno, Jennifer Decker, David Ellison, Abdul Salis, Philip Winchester, and Tyler Labine.  It was directed by Tony Bill, a pilot and aviation enthusiast.  The screenplay about men in aerial combat was written by Phil Sears, Blake T. Evans and David S. Ward with the story by Blake T. Evans.  Themes of friendship, racial prejudice, revenge and love are also explored in the film.",
+      "List of accolades received by 127 Hours: \"127 Hours\" is a 2010 British independent biographical adventure film directed by Danny Boyle.  It stars James Franco in the principal role as real-life mountain climber Aron Ralston, whose hand was trapped under a boulder in a Utah ravine for more than five days in April 2003.  Adapted from Ralston's autobiography \"Between a Rock and a Hard Place\", \"127 Hours\"' s screenplay was written by Boyle and Simon Beaufoy.  Distributors Fox Searchlight and Path\u00e9 gave the feature limited releases in the United States and United Kingdom on 5 November 2010 and 7 January 2011, respectively.  It grossed \u00a335.8 million at the box office by the end of its worldwide theatrical run.  Rotten Tomatoes, a review aggregator surveyed 215 reviews and judged 93% to be positive.",
+      "James Franco: James Edward Franco (born April 19, 1978) is an American actor, director, screenwriter, and producer.  For his role in \"127 Hours\" (2010), Franco was nominated for an Academy Award for Best Actor.  He is known for his roles in live-action films such as \"Milk\" (2008), \"Pineapple Express\" (2008), \"Rise of the Planet of the Apes\" (2011), \"Spring Breakers\" (2012), \"Oz the Great and Powerful\" (2013), \"This Is the End\" (2013), \" The Disaster Artist\" (2017), and Sam Raimi's \"Spider-Man\" trilogy, while also voicing characters in the animated films \"The Little Prince\" (2015) and \"Sausage Party\" (2016)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 624,
+    "generation_tokens": 4,
+    "generation_speed": 327.97638570022957,
+    "prompt_eval_speed": 73715.29828706438,
+    "generation_latency_s": 0.13173300004564226,
+    "latency": 0.43428209994453937,
+    "total_prompt_tokens": 762,
+    "total_generation_tokens": 34,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2304137,
+    "stage_route_s": 0.11172799998894334,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15407809999305755,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03658329998143017,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1899969801306725e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13176710007246584,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.43429200001992285,
+    "unaccounted_latency_s": 9.410001803189516e-05,
+    "route": "rag",
+    "router_raw": "Answer: \"The Eagle\"",
+    "sub_queries": [
+      "Answer: \"Flyboys Stars Who Were Nominated For An Academy Award For '127 Hours'\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

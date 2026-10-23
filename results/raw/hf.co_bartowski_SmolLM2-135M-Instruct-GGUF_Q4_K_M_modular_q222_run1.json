@@ -1,0 +1,49 @@
+{
+  "question_id": "Q222",
+  "query": "Which television series featured an actor who also performed in \"The Young Ones\"?",
+  "ground_truth": "\"The Comic Strip Presents...\"",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "David Morrissey is a British actor known for his role as Cliff Richard on the BBC's \"One Summer\" television show, which was broadcast from 1983 to 1984.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Young Ones (film): Young Ones (UK title Bad Land: Road to Fury) is a 2014 action science fiction film directed and written by Jake Paltrow.  The film stars Nicholas Hoult, Elle Fanning, Michael Shannon and Kodi Smit-McPhee.  The film had its world premiere at 2014 Sundance Film Festival on January 18, 2014.  The film was released on October 17, 2014 in the United States.",
+      "The Young Ones (TV series): The Young Ones is a British sitcom, broadcast in the United Kingdom from 1982 to 1984 in two six-part series.  Shown on BBC2, it featured anarchic, offbeat humour which helped bring alternative comedy to television in the 1980s and made household names of its writers and performers.  In 1985, it was shown on MTV, one of the first non-music television shows on the fledgling channel.  In a 2004 poll, it ranked at number 31 in the BBC's list of \"Britain's Best Sitcoms\".  The show's title relates to the song of the same name, written by Sid Tepper and Roy C. Bennett, and sung by Cliff Richard and The Shadows, which was a No. 1 UK hit single.",
+      "David Morrissey: David Mark Morrissey (born 21 June 1964) is an English actor, director, producer and screenwriter.  At the age of 18, he was cast in the television series \"One Summer\" (1983).  After making \"One Summer,\" Morrissey attended the Royal Academy of Dramatic Art, then acted with the Royal Shakespeare Company and the National Theatre for four years."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 466,
+    "generation_tokens": 42,
+    "generation_speed": 317.12234126894236,
+    "prompt_eval_speed": 16682.179422925466,
+    "generation_latency_s": 0.2681369000347331,
+    "latency": 0.6208143000258133,
+    "total_prompt_tokens": 596,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23716720000000002,
+    "stage_route_s": 0.09340329992119223,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20269659999758005,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05640610004775226,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3200055845081806e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26817210006993264,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6208250999916345,
+    "unaccounted_latency_s": 9.439990390092134e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Who played an actor in \"The Young Ones?\"",
+      "Which television series featured an actor who also performed in \"The Young Ones.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

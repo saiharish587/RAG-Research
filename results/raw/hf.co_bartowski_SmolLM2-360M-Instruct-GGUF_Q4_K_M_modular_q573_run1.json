@@ -1,0 +1,49 @@
+{
+  "question_id": "Q573",
+  "query": "Which author influenced the animated Easter television special \"The First Easter Rabbit\"? ",
+  "ground_truth": "Margery Williams",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Will Eisner",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The First Easter Rabbit: The First Easter Rabbit is a 1976 animated Easter television special that premiered on April 9 on NBC, later airing on CBS.  Created by Rankin/Bass, it tells the story of the Easter Bunny's origin and is loosely based on \"The Velveteen Rabbit\", a children's book by Margery Williams.  Burl Ives did the narration of this special which also featured the song \"Easter Parade\".  After 1964's \"Rudolph the Red-Nosed Reindeer\", this is the second Rankin/Bass special to be narrated by Burl Ives.",
+      "Easter Bunny: The Easter Bunny (also called the Easter Rabbit or Easter Hare) is a folkloric figure and symbol of Easter, depicted as a rabbit bringing Easter eggs. Originating among German Lutherans, the \"Easter Hare\" originally played the role of a judge, evaluating whether children were good or disobedient in behaviour at the start of the season of Eastertide.  The Easter Bunny is sometimes depicted with clothes.  In legend, the creature carries colored eggs in his basket, candy, and sometimes also toys to the homes of children, and as such shows similarities to Santa Claus or the Christkind, as they both bring gifts to children on the night before their respective holidays.  The custom was first mentioned in Georg Franck von Franckenau's \"De ovis paschalibus\" ('About Easter Eggs') in 1682, referring to a German tradition of an Easter Hare bringing Easter eggs for the children.",
+      "Will Eisner: William Erwin \"Will\" Eisner ( ; March 6, 1917\u00a0\u2013 January 3, 2005) was an American cartoonist, writer, and entrepreneur.  He was one of the earliest cartoonists to work in the American comic book industry, and his series \"The Spirit\" (1940\u20131952) was noted for its experiments in content and form.  In 1978, he popularized the term \"graphic novel\" with the publication of his book \"A Contract with God\".  He was an early contributor to formal comics studies with his book \"Comics and Sequential Art\" (1985).  The Eisner Award was named in his honor, and is given to recognize achievements each year in the comics medium; he was one of the three inaugural inductees to the Will Eisner Comic Book Hall of Fame."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 596,
+    "generation_tokens": 4,
+    "generation_speed": 200.08003201280513,
+    "prompt_eval_speed": 12556.091600480333,
+    "generation_latency_s": 0.1794212000677362,
+    "latency": 0.6791621000738814,
+    "total_prompt_tokens": 726,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23191879999999998,
+    "stage_route_s": 0.11586329992860556,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3301514000631869,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053544399910606444,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.689996760338545e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17946119990665466,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6791722000343725,
+    "unaccounted_latency_s": 9.57002630457282e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The author who influenced the animated Easter television special \"The First Easter Rabbit\" is Fred Rogers.",
+      "Query 2: Fred Rogers was an American cartoonist and educator, known for his popular children's show \"The Simpsons.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

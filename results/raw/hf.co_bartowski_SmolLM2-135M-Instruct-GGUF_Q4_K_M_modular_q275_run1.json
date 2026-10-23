@@ -1,0 +1,48 @@
+{
+  "question_id": "Q275",
+  "query": "What is the name of the actress who has received a Drama Desk award and was part of the cast album for the 2007 Broadway production of the hit musical, \"Grease\"?",
+  "ground_truth": "Laura Ann Osnes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Laura Benanti",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Grease: The New Broadway Cast Recording: Grease: The New Broadway Cast Recording is the cast album for the 2007 Broadway production of the hit musical, \"Grease\".  The show, directed by Tony Award-winner Kathleen Marshall, played at the Brooks Atkinson Theatre in New York City.  This recording features performances from the cast of \"Grease\" including Jenny Powers, Matthew Saldivar, and \"\" winners, Laura Osnes and Max Crumm as Sandy Dumbrowski and Danny Zuko, respectively.",
+      "Linda Eder: Linda Eder ( ; born February 3, 1961) is an American singer and actress.  She made her Broadway debut in the musical \"Jekyll & Hyde\", originating the role of Lucy, for which she was nominated for the Drama Desk Award.  Eder has performed in concert halls across the country including Carnegie Hall and Radio City Musical Hall.  She has released 15 solo albums.",
+      "Laura Benanti: Laura Ilene Benanti (born Laura Ilene Vidnovic; July 15, 1979) is an American actress and singer.  She played Louise in the 2008 Broadway revival of \"Gypsy\", winning the Tony Award, and appeared in the stage musical \"Women on the Verge of a Nervous Breakdown\" in 2010, winning the Drama Desk Award and Outer Critics Circle Award for Best Featured Actress in a Musical.  She played Baroness Elsa Schr\u00e4der in the 2013 NBC television production of \"The Sound of Music Live! \" and in 2015 began playing twin sisters Alura and Astra in the TV series \"Supergirl\".  Beginning in 2017, Benanti appears as Edie in the TBS comedy \"The Detour\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 494,
+    "generation_tokens": 5,
+    "generation_speed": 287.35632183908046,
+    "prompt_eval_speed": 20368.614192058714,
+    "generation_latency_s": 0.15025920001789927,
+    "latency": 0.5047835999866948,
+    "total_prompt_tokens": 676,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23786780000000002,
+    "stage_route_s": 0.11408929992467165,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20095830003265291,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03930970001965761,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.9800070226192474e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15030179999303073,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5047949000727385,
+    "unaccounted_latency_s": 9.660003706812859e-05,
+    "route": "rag",
+    "router_raw": "\"Actress\"",
+    "sub_queries": [
+      "The name of the actress who has received a Drama Desk award and was part of the cast album for the 2007 Broadway production of the hit musical, \"Grease\"."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

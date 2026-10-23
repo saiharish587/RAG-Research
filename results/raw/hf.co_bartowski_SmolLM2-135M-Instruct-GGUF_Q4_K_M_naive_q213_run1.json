@@ -1,0 +1,36 @@
+{
+  "question_id": "Q213",
+  "query": "Which tower is taller, 712 Fifth Avenue or Manhattan Life Insurance Building?",
+  "ground_truth": "712 5th Avenue",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Manhattan Life Insurance Building is taller than 712 Fifth Avenue.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "712 Fifth Avenue: 712 5th Avenue is a 650 ft skyscraper at 56th Street and Fifth Avenue in the Midtown neighborhood of Manhattan, New York City.  It was constructed from 1990 to 1991 and is the 53rd tallest building in New York City.  The tower's design had to accommodate the landmarked facades of the Coty and Rizzoli Buildings at the base of the tower.  It was purchased by the Bannister Trust in 2007 in a \"Private Treaty\", and placed in \"Property Fund #1\" managed by JP Morgan.  The building is sometimes referred to as the Henri Bendel building.",
+      "Manhattan Life Insurance Building: The Manhattan Life Insurance Building was a 348 ft tower at 64-66 Broadway in New York City completed in 1894 to the designs of the architects of Kimball & Thompson and slightly extended north in 1904 making its new address 64-70 Broadway.  It was the first skyscraper to pass 100 m in Manhattan.",
+      "Metropolitan Life Insurance Company Tower: The Metropolitan Life Insurance Company Tower, colloquially known as the Met Life Tower, is a landmark skyscraper located on Madison Avenue near the intersection with East 23rd Street, across from Madison Square Park in Manhattan, New York City.  Designed by the architectural firm of Napoleon LeBrun & Sons and built by the Hedden Construction Company, the tower is modeled after the Campanile in Venice, Italy.  The hotel located in the clock tower portion of the building has the address 5 Madison Avenue, while the office building covering the rest of the block, occupied primarily by Credit Suisse, is referred to as 1 Madison Avenue."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 459,
+    "generation_tokens": 16,
+    "generation_speed": 334.4271889304601,
+    "prompt_eval_speed": 19612.870144853223,
+    "generation_latency_s": 0.18704720004461706,
+    "latency": 0.20374380005523562,
+    "total_prompt_tokens": 459,
+    "total_generation_tokens": 16,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0984267,
+    "stage_retrieve_s": 0.016617099987342954,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.18708790000528097,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.2037525000050664,
+    "unaccounted_latency_s": 4.810001701116562e-05
+  }
+}

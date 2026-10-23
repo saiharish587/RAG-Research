@@ -1,0 +1,49 @@
+{
+  "question_id": "Q500",
+  "query": "What type of film are both \"500 Years Later\" and \"Manson\"?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Both \"500 Years Later\" and \"Manson\" are documentaries.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Manson (film): Manson is a documentary film made in 1973 about Charles Manson and his followers.  It was directed by Robert Hendrickson and Laurence Merrick.",
+      "500 Years Later: 500 Years Later (\u136d\u137b \u12d3\u1218\u1273\u1275 \u1260\u128b\u120b \"500 \u02bfam\u00e4tat\u0259 b\u00e4hwala \") is an independent documentary film directed by Owen 'Alik Shahadah, written by M. K. Asante, Jr. and released in 2005.  It has won five international film festival awards in the category of Best Documentary (including) UNESCO \"Breaking the Chains Award\").  Other awards it has won include \"Best Documentary at the Pan African (Los Angeles) and Bridgetown (Barbados) Film Festivals; Best Film at the International Black Cinema (Berlin) Film Festival; and Best International Documentary at the Harlem (New York) International Film Festival\".",
+      "The Godfather Part III: The Godfather Part III is a 1990 American crime film written by Mario Puzo and Francis Ford Coppola, and directed by Coppola.  A sequel to \"The Godfather\" (1972) and \"The Godfather Part II\" (1974), it completes the story of Michael Corleone, a Mafia kingpin who attempts to legitimize his criminal empire.  The film also includes fictionalized accounts of two real-life events: the 1978 death of Pope John Paul I and the Papal banking scandal of 1981\u201382, both linked to Michael Corleone's business affairs.  The film stars Al Pacino, Diane Keaton, Talia Shire, and Andy Garc\u00eda, and features Eli Wallach, Joe Mantegna, George Hamilton, Bridget Fonda, and Sofia Coppola."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 490,
+    "generation_tokens": 17,
+    "generation_speed": 260.62027625749283,
+    "prompt_eval_speed": 61059.190031152655,
+    "generation_latency_s": 0.18581519997678697,
+    "latency": 0.7079971000785008,
+    "total_prompt_tokens": 626,
+    "total_generation_tokens": 88,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2254078,
+    "stage_route_s": 0.09678540006279945,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.36430539994034916,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06089089997112751,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.4699950851500034e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18587079993449152,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.708012800081633,
+    "unaccounted_latency_s": 0.00010660011321306229,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"500 Years Later\" is a film that was released in 2007, while \"Manson\" is a movie made in 2006.",
+      "Query 2: \"500 Years Later\" and \"Manson\" are two different films with distinct genres and themes."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

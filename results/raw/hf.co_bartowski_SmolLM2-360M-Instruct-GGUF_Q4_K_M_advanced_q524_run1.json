@@ -1,0 +1,42 @@
+{
+  "question_id": "Q524",
+  "query": "Conrad Anker located the body of a mountaineer who took part it the first three British expeditions to which mountain?",
+  "ground_truth": "Mount Everest",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Conrad Anker located the body of George Mallory and Andrew Irvine on Mount Everest in 1924.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Conrad Anker: Conrad Anker (born November 27, 1962) is an American rock climber, mountaineer, and author.  He is famous for his challenging ascents in the high Himalaya and Antarctica.  He is the team leader of The North Face climbing team.  In 1999 he located George Mallory's body on Everest as a member of a search team looking for the remains of the legendary British climber.  He lives in Bozeman, Montana.",
+      "George Mallory: George Herbert Leigh Mallory (18 June 1886 \u2013 8 or 9 June 1924) was an English mountaineer who took part in the first three British expeditions to Mount Everest, in the early 1920s.",
+      "Mallory and Irvine Research Expedition: The goal of the Mallory and Irvine Research Expedition of 1999 was to discover evidence of whether George Mallory and Andrew Irvine had been the first to summit Mount Everest in their attempt of 8\u20139 June 1924.  The expedition was organized by regular Everest expedition leader Eric Simonson and advised by researcher Jochen Hemmleb, with a team of climbers from the U.S., the United Kingdom, and Germany.  Hemmleb's investigations of sketchy reports of earlier sightings and photographs had led him to identify what he believed was the area in which Irvine's body lay, some distance below where his ice axe had been found by Percy Wyn-Harris on the expedition led by Hugh Ruttledge in 1933.  The team hoped in particular to find a camera on Irvine's body which, had the pair been successful, should have contained a picture of the summit.  Within hours of commencing the search on 1 May 1999, Conrad Anker found a body on the North Face, at 8,155 m; but to their surprise it was that of Mallory, not Irvine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 503,
+    "generation_tokens": 25,
+    "generation_speed": 227.87556171325963,
+    "prompt_eval_speed": 15780.392156862745,
+    "generation_latency_s": 1.015521900029853,
+    "latency": 3.4361949999583885,
+    "total_prompt_tokens": 586,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.149124,
+    "stage_rewrite_s": 1.228078500018455,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0265335000585765,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16592009994201362,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0155723000643775,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4362052000360563,
+    "unaccounted_latency_s": 0.00010159995872527361,
+    "rewritten_query": "Conrad Anker found the body of a mountaineer who participated in the first three British expeditions to Mount Everest.",
+    "query_was_rewritten": true
+  }
+}

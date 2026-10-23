@@ -1,0 +1,49 @@
+{
+  "question_id": "Q69",
+  "query": "who is the younger brother of The episode guest stars of The Hard Easy ",
+  "ground_truth": "Bill Murray",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Keith Allen",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Hard Easy (Adventure Time): \"The Hard Easy\" is the twenty-third episode of the fourth season of the American animated television series \"Adventure Time\".  The episode was written and storyboarded by Tom Herpich and Skyler Page, from a story by Patrick McHale, Kent Osborne, and Pendleton Ward.  It originally aired on Cartoon Network on October 1, 2012.  The episode guest stars Brian Doyle-Murray as Prince Huge and Jonathan Katz as the Mudscamp elder.",
+      "Hard Ball: \"Hard Ball\" (also known as \"Negotiation\") is the fifteenth episode of NBC's first season of \"30 Rock\".  It was written by one of the season's co-producers, Matt Hubbard, and directed by one of the season's supervising producers, Don Scardino.  It aired on February 22, 2007 in the United States.  Guest stars who appeared in the episode were David Alan Basche, Gregg Bello, Katrina Bowden, Kevin Brown, Grizz Chapman, Rachel Dratch, Keith Powell, Lonny Ross and Gregory Wooddell.  Tucker Carlson and Chris Matthews also appear as themselves in the episode.",
+      "Keith Allen (actor): Keith Howell Charles Allen (born 2 September 1953) is a Welsh actor, comedian, musician, singer-songwriter, artist, author, and television presenter.  He is the father of singer Lily Allen and actor Alfie Allen, and brother of actor and director Kevin Allen."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 4,
+    "generation_speed": 281.0567734682406,
+    "prompt_eval_speed": 45734.09370457341,
+    "generation_latency_s": 0.1364911999553442,
+    "latency": 0.5459599000168964,
+    "total_prompt_tokens": 539,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24272370000000001,
+    "stage_route_s": 0.10342300008051097,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24810859991703182,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05776640004478395,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.4600066505372524e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1365224999608472,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5459688999690115,
+    "unaccounted_latency_s": 9.469990618526936e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query1: The younger brother of The episode guest stars of The Hard Easy is John Smith.",
+      "Query2: The younger brother of The episode guest stars of The Hard Easy is Michael Brown."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

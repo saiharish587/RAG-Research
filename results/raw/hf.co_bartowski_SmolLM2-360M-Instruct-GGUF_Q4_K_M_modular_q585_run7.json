@@ -1,0 +1,49 @@
+{
+  "question_id": "Q585",
+  "query": "Which king of Northumbria did The \"Historia\" gives the abbot central place in his election as king",
+  "ground_truth": "Guthred or Guthfrith",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The King of Northumbria who is mentioned in the \"Historia\" and is given central place to the abbot is Edward II of England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Edward II of England: Edward II (25 April 1284 \u2013 21 September 1327), also called Edward of Caernarfon, was King of England from 1307 until he was deposed in January 1327.  The fourth son of Edward I, Edward became the heir to the throne following the death of his older brother Alphonso.  Beginning in 1300, Edward accompanied his father on campaigns to pacify Scotland, and in 1306 he was knighted in a grand ceremony at Westminster Abbey.  Edward succeeded to the throne in 1307, following his father's death.  In 1308, he married Isabella of France, the daughter of the powerful King Philip IV, as part of a long-running effort to resolve the tensions between the English and French crowns.",
+      "\u00c6thelred I of Northumbria: \u00c6thelred ( ; c. 762  \u2013 18 April 796), was the king of Northumbria from 774 to 779 and again from 790 until he was murdered in 796.  He was the son of \u00c6thelwald Moll and \u00c6thelthryth and possibly became king while still a child after Alhred was deposed.",
+      "\u00c6lfwald II of Northumbria: \u00c6lfwald, according to one tradition, reigned as king of Northumbria following the deposition of Eardwulf in 806.  This information appears only in the anonymous tract \"De primo Saxonum adventu\" and in the later \"Flores Historiarum\" of Roger of Wendover.  Roger states that \u00c6lfwald had overthrown Eardwulf."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 456,
+    "generation_tokens": 31,
+    "generation_speed": 241.0256827715285,
+    "prompt_eval_speed": 61183.41607406413,
+    "generation_latency_s": 0.2511286000953987,
+    "latency": 0.7337288999697194,
+    "total_prompt_tokens": 602,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.226833,
+    "stage_route_s": 0.09386879997327924,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.33137630007695407,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05718389991670847,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.449994932860136e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25115879997611046,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7337424999568611,
+    "unaccounted_latency_s": 0.00010080006904900074,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "King Edwin of Northumbria, who was elected by the Witenagemot and later crowned as king by the Abbot of York.",
+      "King Edwin's successor, Edwin's son Eanfled, who was also crowned as king in 659 AD."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

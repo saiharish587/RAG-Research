@@ -1,0 +1,42 @@
+{
+  "question_id": "Q420",
+  "query": "What is the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station?",
+  "ground_truth": "51,271",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The 2010 population of the city 2.1 miles southwest of Marietta Air Force Station was 264,152 according to the Census Bureau's Population Estimates Program.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "West Palm Beach, Florida: West Palm Beach is a city in and the county seat of Palm Beach County, Florida, United States.  It is one of the three main cities in South Florida.  The population was 100,343 (revised) at the 2010 census.  The University of Florida Bureau of Economic and Business Research (BEBR) estimates a 2016 population of 108,896, a 7.9% increase from 2010.  It is the oldest municipality in the Miami metropolitan area, having been incorporated as a city two years before Miami in November 1894.  Although West Palm Beach is located approximately 68 mi north of Downtown Miami, it is still considered a principal city within the Miami metropolitan area, due to the solid urbanization between both cities.  The estimated population of the Miami metropolitan area, which includes all of Palm Beach County, was 6,012,331 people at the 2015 census.",
+      "Addis Ababa: Addis Ababa (Amharic: \u12a0\u12f2\u1235 \u12a0\u1260\u1263 \"Addis Ab\u00e4ba \" ] , \"new flower\"; Oromo: \"Finfinne\" , ] \"Natural Spring(s)\") or Addis Abeba (the spelling used by the official Ethiopian Mapping Authority), is the capital and largest city of Ethiopia.  It has a population of 3,384,569 according to the 2007 population census, with annual growth rate of 3.8%.  This number has been increased from the originally published 2,738,248 figure and appears to be still largely underestimated.",
+      "Jersey City, New Jersey: Jersey City is the second-most-populous city in the U.S. state of New Jersey, after Newark.  It is the seat of Hudson County as well as the county's largest city.  As of 2016, the Census Bureau's Population Estimates Program calculated that Jersey City's population was 264,152, with the largest population increase of any municipality in New Jersey since 2010, an increase of about 6.7% from the 2010 United States Census, when the city's population was at 247,597, ranking the city the 77th-largest in the nation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 611,
+    "generation_tokens": 42,
+    "generation_speed": 408.568260082881,
+    "prompt_eval_speed": 88769.43193374982,
+    "generation_latency_s": 0.19189799996092916,
+    "latency": 0.5607769000343978,
+    "total_prompt_tokens": 696,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13510450000000002,
+    "stage_rewrite_s": 0.15570060000754893,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07873880001716316,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1343153000343591,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1919307999778539,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.560785899986513,
+    "unaccounted_latency_s": 0.00010079995263367891,
+    "rewritten_query": "The 2010 population of the city was approximately 3,548,769 people.",
+    "query_was_rewritten": true
+  }
+}

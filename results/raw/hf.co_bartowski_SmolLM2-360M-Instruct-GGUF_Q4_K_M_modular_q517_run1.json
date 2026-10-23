@@ -1,0 +1,49 @@
+{
+  "question_id": "Q517",
+  "query": "What screenplay was worked on by both Edward Carfagno and Miklos Rozsa?",
+  "ground_truth": "Julius Caesar",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Edward Carfagno worked on the screenplay for \"The Love Game\" (1960) alongside William Wyler, who also directed the film.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shirley Valentine (film): Shirley Valentine is an award-winning 1989 British romantic comedy-drama film directed by Lewis Gilbert.  The screenplay by Willy Russell is based on his 1986 one-character play of the same title, which follows middle aged Shirley Valentine in an unexpected discovery of herself, and rekindling of her childhood dreams and youthful love of life.",
+      "Edward Carfagno: Edward Carfagno (November 28, 1907 \u2013 December 28, 1996) was an art director who established himself in the 1950s with his Oscar-winning work on such films as Vincente Minnelli's \"The Bad and the Beautiful\" (1952), Joseph Mankiewicz's \"Julius Caesar\" (1953) and William Wyler's \"Ben-Hur\" (1959).  Carfagno went on to work consistently on a variety of films, including five collaborations with Clint Eastwood including \"Tightrope\" (1984) and \"Heartbreak Ridge\" (1987).",
+      "The Love Game: The Love Game (French: Les Jeux de l'amour ) is a 1960 French comedy film directed by Philippe de Broca.  It was entered into the 10th Berlin International Film Festival where it won the Silver Bear Extraordinary Jury Prize."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 388,
+    "generation_tokens": 34,
+    "generation_speed": 213.48603864097296,
+    "prompt_eval_speed": 13076.300889727689,
+    "generation_latency_s": 0.29985389998182654,
+    "latency": 0.7414213999873027,
+    "total_prompt_tokens": 528,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24219250000000003,
+    "stage_route_s": 0.10743850003927946,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2804311999352649,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0535084999864921,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.610003765672445e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2998856999911368,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7414300000527874,
+    "unaccounted_latency_s": 0.00010060006752610207,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Film Screenplay:* \"The Favourite\" (1962)",
+      "Film Screenplay:* \"The Favourite\" (1970)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

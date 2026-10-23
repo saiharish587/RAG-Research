@@ -1,0 +1,49 @@
+{
+  "question_id": "Q17",
+  "query": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+  "ground_truth": "the North Atlantic Conference",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Vermont Catamounts men's soccer team currently competes in the America East Conference, which was previously known as the ECAC Hockey Conference.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vermont Catamounts men's soccer: The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions.  The team competes in the America East Conference.",
+      "Vermont Catamounts men's ice hockey: The Vermont Catamounts men's ice hockey team is a National Collegiate Athletic Association (NCAA) Division I college ice hockey program that represents the University of Vermont.  The Catamounts are a member of Hockey East, joining in 2005 after competing in ECAC Hockey from 1974-2005.  They play home games at Gutterson Fieldhouse in Burlington, Vermont.  Vermont has appeared in the NCAA Men's Hockey Championship five times since making the move to Division I in 1974-75 including trips to the Frozen Four in 1996 and 2009.",
+      "Vermont Catamounts men's basketball: The Vermont Catamounts Basketball team is the basketball team that represents the University of Vermont in Burlington, Vermont.  The school's team currently competes in the America East Conference and plays its home games at Patrick Gym.  The team has reached the NCAA Division I Men's Basketball Tournament six times, in 2003, 2004, 2005, 2010, 2012, and 2017.  UVM famously upset Syracuse University in the first round of the 2005 tournament.  The Catamounts are coached by John Becker."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 436,
+    "generation_tokens": 30,
+    "generation_speed": 218.17071130924245,
+    "prompt_eval_speed": 53112.43756852236,
+    "generation_latency_s": 0.2615271999966353,
+    "latency": 0.820409300038591,
+    "total_prompt_tokens": 604,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2168275,
+    "stage_route_s": 0.0940546999918297,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4085740000009537,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056081100017763674,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.430010449141264e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26156020001508296,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8204180999891832,
+    "unaccounted_latency_s": 0.00010439986363053322,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as the Eastern Conference.",
+      "Query 2: From 1988 to 1996, the Vermont Catamounts men's soccer team competed in the Eastern Conference of the National Collegiate Athletic Association (NCAA)."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

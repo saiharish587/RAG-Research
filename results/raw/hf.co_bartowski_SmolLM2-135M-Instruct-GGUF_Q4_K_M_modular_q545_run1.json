@@ -1,0 +1,48 @@
+{
+  "question_id": "Q545",
+  "query": "The American Sweetgum is the hostplant of what kind of bug?",
+  "ground_truth": "moth",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer to this question would be:\n\nA plant pathogen that causes wood rot on \"Liquidambar\" and \"Platanus occidentalis\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Liquidambar: Liquidambar, commonly called sweetgum (sweet gum in the UK), gum, redgum, satin-walnut, or American storax, is the only genus in the flowering plant family Altingiaceae with 15 species.  They were formerly often treated in Hamamelidaceae.",
+      "Liquidambar styraciflua: American sweetgum (\"Liquidambar styraciflua\"), also known as American storax, hazel pine, bilsted, redgum, satin-walnut, star-leaved gum, alligatorwood, or simply sweetgum, is a deciduous tree in the genus \"Liquidambar\" native to warm temperate areas of eastern North America and tropical montane regions of Mexico and Central America.  Sweet gum is one of the main valuable forest trees in the southeastern United States, and is a popular ornamental tree in temperate climates.  It is recognizable by the combination of its five-pointed star-shaped leaves and its hard, spiked fruits.  It is currently classified in the plant family Altingiaceae, but was formerly considered a member of the Hamamelidaceae.",
+      "Datronia scutellata: Datronia scutellata is a plant pathogen that causes wood rot on \"Liquidambar\" (sweetgum) and \"Platanus occidentalis\" (American sycamore) trees."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 371,
+    "generation_tokens": 34,
+    "generation_speed": 352.15644031984095,
+    "prompt_eval_speed": 21907.292589312077,
+    "generation_latency_s": 0.22389040002599359,
+    "latency": 0.6332790000597015,
+    "total_prompt_tokens": 501,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2376803,
+    "stage_route_s": 0.15814539999701083,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20843409991357476,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04264220001641661,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.569999873638153e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2239298999775201,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6332909000338987,
+    "unaccounted_latency_s": 9.430013597011566e-05,
+    "route": "rag",
+    "router_raw": "The American Sweetgum is the hostplant of a type of beetle called a \"bark beetles.\"",
+    "sub_queries": [
+      "The American Sweetgum is the hostplant of the genus Sweetgum, which includes over 100 species of sweet gum trees and shrubs native to North America."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

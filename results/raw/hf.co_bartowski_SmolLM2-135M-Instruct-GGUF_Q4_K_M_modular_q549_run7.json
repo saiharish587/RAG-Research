@@ -1,0 +1,48 @@
+{
+  "question_id": "Q549",
+  "query": "In the 2012-13 FC Sion they brought in Gennaro Gattuso and a player who now plays for what Scottish team?",
+  "ground_truth": "Scottish Premiership club Hearts",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "In the 2012-13 FC Sion, they brought in Gennaro Gattuso.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2012\u201313 FC Sion season: In the 2012\u201313 season, Sion competes in the Swiss Super League and the Swiss Cup.  In the summer transfer window, they brought in Italian World Cup winner Gennaro Gattuso, as well as Kyle Lafferty (former of Rangers).  In addition, they bought an until then unknown Brazilian footballer called L\u00e9o Itaperuna from the 5th division Club of Arapongas and another forward Mathieu Manset from Reading.",
+      "Hibernian F.C.: Hibernian Football Club ( ), commonly known as Hibs, are a Scottish professional football club based in Leith in the north of Edinburgh.  Hibs play in the Scottish Premiership, the first tier of the Scottish Professional Football League (SPFL), having been promoted by winning the Scottish Championship in 2017.  It is one of three SPFL clubs in the city, the others being their Edinburgh derby rivals Hearts and Edinburgh City.  Hibernian was founded in 1875 by Irish immigrants, but support for the club is now based on geography rather than ethnicity or religion.  The Irish heritage of Hibernian is still reflected, however, in its name, colours and badge.",
+      "FC Sion: FC Sion is a Swiss football team from the city of Sion (] ).  The club was founded in 1909, and play their home games at the Stade Tourbillon.  They have won the Swiss Super League twice, and the Swiss Cup in thirteen of their fourteen appearances in the final, the most recent being in 2015."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 449,
+    "generation_tokens": 26,
+    "generation_speed": 327.25808075722483,
+    "prompt_eval_speed": 59659.84586765878,
+    "generation_latency_s": 0.2038436000002548,
+    "latency": 0.5051790000870824,
+    "total_prompt_tokens": 617,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2220778,
+    "stage_route_s": 0.08964839996770024,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17621609999332577,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0352899000281468,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.299997817724943e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2038986999541521,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5051969999913126,
+    "unaccounted_latency_s": 0.00010190007742494345,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Gattuso, Gilles Simon, and Gervinho are all part of the Scottish Football Association's (SFBA) squad."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

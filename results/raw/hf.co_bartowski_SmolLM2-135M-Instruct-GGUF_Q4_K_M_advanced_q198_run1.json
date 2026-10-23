@@ -1,0 +1,42 @@
+{
+  "question_id": "Q198",
+  "query": " Robert Smith founded the multinational company headquartered in what city?",
+  "ground_truth": "Golden Valley, Minnesota,",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The correct answer is KKR & Co., which refers to the firm that was founded by Jeremiah Smith and Samuel Smith of New Hampshire, as mentioned earlier.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "JPMorgan Chase: JPMorgan Chase & Co. is a U.S. multinational banking and financial services holding company headquartered in New York City.  It is the largest bank in the United States, the world's sixth largest bank by total assets, with total assets of US$2.5 trillion, and the world's second most valuable bank by market capitalization, after ICBC.  It is a major provider of financial services, and according to \"Forbes\" magazine is the world's sixth largest public company based upon a composite ranking.  The hedge fund unit of JPMorgan Chase is the second largest hedge fund in the United States.  The company was formed in 2000, when Chase Manhattan Corporation merged with J.P. Morgan & Co.",
+      "Robert Smith (Illinois politician): Robert Smith (June 12, 1802 \u2013 December 21, 1867) was a U.S. Representative from Illinois, nephew of Jeremiah Smith and Samuel Smith of New Hampshire.  Smith founded General Mills in 1856.",
+      "Kohlberg Kravis Roberts: KKR & Co.  L.P. (formerly known as Kohlberg Kravis Roberts & Co.) is an American multinational private equity firm, specializing in leveraged buyouts, headquartered in New York City.  The firm sponsors and manages private equity investment funds.  The firm has completed over $400 billion of private equity transactions since its inception."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 33,
+    "generation_speed": 403.8574505580575,
+    "prompt_eval_speed": 24259.10516546118,
+    "generation_latency_s": 0.1706449999473989,
+    "latency": 0.6114712000126019,
+    "total_prompt_tokens": 452,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1270424,
+    "stage_rewrite_s": 0.15960999997332692,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07498210004996508,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2061159999575466,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1706782999681309,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6114802999654785,
+    "unaccounted_latency_s": 9.440002031624317e-05,
+    "rewritten_query": "Robert Smith founded the multinational company headquartered in New York City, which is a major hub for global commerce and business operations.",
+    "query_was_rewritten": true
+  }
+}

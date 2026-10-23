@@ -1,0 +1,49 @@
+{
+  "question_id": "Q136",
+  "query": "SuperMansion starred the actress who had a recurring role as whom on Workaholics?",
+  "ground_truth": "Jillian Belk",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Roseanne Barr",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jillian Bell: Jillian Leigh Bell (born April 25, 1984) is an American comedian, actress, and screenwriter.  She is best known for her recurring roles as Jillian Belk on \"Workaholics\" and Dixie on the final season of \"Eastbound & Down\", as well as appearing in \"22 Jump Street\" and \"Fist Fight\" (2017).",
+      "Sarah Silverman: Sarah Kate Silverman (born December 1, 1970) is an American stand-up comedian, actress, producer, and writer.  Her comedy addresses social taboos and controversial topics, such as racism, sexism, and religion, having her comic character endorse them in a sarcastic or deadpan fashion.  For her work on television, she won two Primetime Emmy Awards.",
+      "Roseanne Barr: Roseanne Cherrie Barr (born November 3, 1952) is an American actress, comedian, writer, and television producer.  She was also the 2012 presidential nominee of the California-based Peace and Freedom Party.  Barr began her career in stand-up comedy at clubs before gaining fame for her role in the hit television sitcom \"Roseanne\".  The show ran for nine seasons, from 1988 to 1997.  She won both an Emmy and a Golden Globe Award for Best Actress for her work on the show.  It was announced in 2017 that an eight episode revival of the show will air in 2018.  Barr had crafted a \"fierce working-class domestic goddess\" persona in the eight years preceding her sitcom and wanted to do a realistic show about a strong mother who was not a victim of patriarchal consumerism."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 459,
+    "generation_tokens": 4,
+    "generation_speed": 256.0983417632371,
+    "prompt_eval_speed": 58463.889950324796,
+    "generation_latency_s": 0.1370390000520274,
+    "latency": 0.5488779000006616,
+    "total_prompt_tokens": 597,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2207114,
+    "stage_route_s": 0.09453710005618632,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25666329998057336,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06046099995728582,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.689996760338545e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1370713000651449,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.548887100070715,
+    "unaccounted_latency_s": 9.80000477284193e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Who played the character of Sarah in the show \"Workaholics\"?",
+      "Query 2: What was the name of the actress who portrayed Sarah in \"Workaholics\"?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

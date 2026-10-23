@@ -1,0 +1,49 @@
+{
+  "question_id": "Q4",
+  "query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "No, the Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque is a historical yal\u0131 (English: waterside mansion ) located at Bosphorus in Ortak\u00f6y neighborhood of Istanbul, Turkey, while the Esma Sultan Mansion is used today as a cultural center after being redeveloped.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Esma Sultan Mansion: The Esma Sultan Mansion (Turkish: \"Esma Sultan Yal\u0131s\u0131\" ), a historical yal\u0131 (English: waterside mansion ) located at Bosphorus in Ortak\u00f6y neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+      "Laleli Mosque: The Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 287,
+    "generation_tokens": 73,
+    "generation_speed": 238.4202859737019,
+    "prompt_eval_speed": 38831.010688675415,
+    "generation_latency_s": 0.42416199995204806,
+    "latency": 0.8226796999806538,
+    "total_prompt_tokens": 421,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2272963,
+    "stage_route_s": 0.09620829997584224,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2451403000159189,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05698140000458807,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.710008554160595e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4242043999256566,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8226926999632269,
+    "unaccounted_latency_s": 0.00010199996177107096,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Laleli Mosque and Esma Sultan Mansion are located in the same neighborhood.",
+      "Query 2: No, they are not located in the same neighborhood."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

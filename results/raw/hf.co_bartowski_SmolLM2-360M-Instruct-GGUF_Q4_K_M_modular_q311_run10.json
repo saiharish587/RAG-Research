@@ -1,0 +1,48 @@
+{
+  "question_id": "Q311",
+  "query": "What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",
+  "ground_truth": "2013",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Frozen was produced first.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Making Today a Perfect Day: \"Making Today a Perfect Day\" is a song from the 2015 Walt Disney Animation Studios computer-animated short film \"Frozen Fever\", with music and lyrics by Kristen Anderson-Lopez and Robert Lopez and performed throughout most of the short.  It was released as a single in the United States on March 12, 2015.",
+      "Ice Age (2002 film): Ice Age is a 2002 American computer-animated buddy comedy road film directed by Chris Wedge and co-directed by Carlos Saldanha from a story by Michael J. Wilson.  Produced by Blue Sky Studios as its first feature film, it was released by 20th Century Fox on March 15, 2002.  The film features the voices of Ray Romano, John Leguizamo, Denis Leary and Chris Wedge.",
+      "Ice trade: The ice trade, also known as the frozen water trade, was a 19th-century industry, centering on the east coast of the United States and Norway, involving the large-scale harvesting, transport and sale of natural ice for domestic consumption and commercial purposes.  Ice was cut from the surface of ponds and streams, then stored in ice houses, before being sent on by ship, barge or railroad to its final destination around the world.  Networks of ice wagons were typically used to distribute the product to the final domestic and smaller commercial customers.  The ice trade revolutionized the U.S. meat, vegetable and fruit industries, enabled significant growth in the fishing industry, and encouraged the introduction of a range of new drinks and foods."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 435,
+    "generation_tokens": 8,
+    "generation_speed": 252.6129653604471,
+    "prompt_eval_speed": 41499.713795077274,
+    "generation_latency_s": 0.1578130000270903,
+    "latency": 0.586645400035195,
+    "total_prompt_tokens": 585,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2325332,
+    "stage_route_s": 0.11141339992173016,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2810083000222221,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0362522000214085,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.449998959898949e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1578461000462994,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5866549001075327,
+    "unaccounted_latency_s": 9.089999366551638e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The year of the event that occurred first, Making Today a Perfect Day was produced, or Frozen was produced."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

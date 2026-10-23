@@ -1,0 +1,48 @@
+{
+  "question_id": "Q296",
+  "query": "What army did the namesake of the ship launched as the M\u00fcnchen in 1930 fight in during the American Revolutionary War?",
+  "ground_truth": "Continental Army",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The name \"M\u00fcnchen\" is associated with the Kriegsmarine, which was the German naval arm during World War I. The Scharnhorst-class battleship was built for Nazi Germany's Kriegsmarine after World War I and marked the beginning of German naval rearmament following the Treaty of Versailles.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "SS General von Steuben: SS \"General von Steuben was a German passenger liner and later an armed transport in the Kriegsmarine of Nazi Germany that was sunk during World War II.  She was launched as M\u00fcnchen (sometimes spelled Muenchen), renamed in 1930 as General von Steuben (after the famous German officer of the American Revolutionary War), and renamed again in 1938 as Steuben\".",
+      "Scharnhorst-class battleship: The \"Scharnhorst\" class were the first capital ships, alternatively referred to as battleships or battlecruisers, built for Nazi Germany's \"Kriegsmarine\" after World War I.  The class comprised two vessels: the lead ship \"Scharnhorst\" and \"Gneisenau\" .  \"Scharnhorst\" was launched first, and so she is considered to be the lead ship by some sources; however, they are also referred to as the \"Gneisenau\" class in some other sources, as \"Gneisenau\" was the first to be laid down and commissioned.  They marked the beginning of German naval rearmament after the Treaty of Versailles.  The ships were armed with nine 28\u00a0cm (11\u00a0in) SK C/34 guns in three triple turrets, though there were plans to replace these weapons with six 38\u00a0cm (15\u00a0in) SK C/34 guns in twin turrets.",
+      "USS New Jersey (BB-62): USS \"New Jersey\" (BB-62) (\"Big J\" or \"Black Dragon\") is an \"Iowa\"-class battleship , and was the second ship of the United States Navy to be named after the US state of New Jersey.  \"New Jersey\" earned more battle stars for combat actions than the other three completed \"Iowa\"-class battleships, and was the only US battleship providing gunfire support during the Vietnam War."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 500,
+    "generation_tokens": 66,
+    "generation_speed": 213.17760601548443,
+    "prompt_eval_speed": 12806.392951361318,
+    "generation_latency_s": 0.4602689000312239,
+    "latency": 0.822950900066644,
+    "total_prompt_tokens": 658,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22115200000000002,
+    "stage_route_s": 0.10598180000670254,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21591090003494173,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.040608199895359576,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.579999949783087e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.46031029999721795,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8229612000286579,
+    "unaccounted_latency_s": 0.00010490010026842356,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "M\u00fcnchen* was a German warship that launched as the *M\u00fcnchen* in 1930."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q600",
+  "query": "When was the American actor, film director which  Dana Brunetti is the president of his company born ",
+  "ground_truth": "July 26, 1959",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer to this question is: \"2016.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dana Brunetti: Dana Brunetti (born June 11, 1973) is an American film producer and social networking entrepreneur.  He is the president of Kevin Spacey's production company, Trigger Street Productions.  In 2016, he became the president of Relativity Media with Kevin Spacey taking on a chairman position.",
+      "Leonardo DiCaprio: Leonardo Wilhelm DiCaprio ( ; born November 11, 1974) is an American actor, film producer, and environmental activist.  DiCaprio began his career by appearing in television commercials in the late 1980s, after which he had recurring roles in various television series such as the soap opera \"Santa Barbara\" and the sitcom \"Growing Pains\".  He began his film career by starring as Josh in \"Critters 3\" (1991).  He starred in the film adaptation of the memoir \"This Boy's Life\" (1993), and was praised for his supporting role in \"What's Eating Gilbert Grape\" (1993).  He gained public recognition with leading roles in \"The Basketball Diaries\" (1995) and the romantic drama \"Romeo + Juliet\" (1996), before achieving international fame with James Cameron's epic romance \"Titanic\" (1997), which became the highest-grossing film of all time until Cameron's science fiction film \"Avatar\" (2009) overtook it.",
+      "Matt Damon: Matthew Paige Damon ( ; born October 8, 1970) is an American actor, film producer, philanthropist and screenwriter.  He is ranked among \"Forbes\" magazine's most bankable stars and is one of the highest-grossing actors of all time.  Damon has received various accolades, including an Academy Award from five nominations, two Golden Globe Awards from eight nominations, and has been nominated for two British Academy Film Awards and six Emmy Awards."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 513,
+    "generation_tokens": 14,
+    "generation_speed": 352.96490520371117,
+    "prompt_eval_speed": 24901.703800786367,
+    "generation_latency_s": 0.1517622999381274,
+    "latency": 0.574161000084132,
+    "total_prompt_tokens": 594,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1569775,
+    "stage_rewrite_s": 0.15855950000695884,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08159139996860176,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1821011999854818,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15182159992400557,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5741749000735581,
+    "unaccounted_latency_s": 0.00010190019384026527,
+    "rewritten_query": "When was the American actor, film director Dana Brunetti born?",
+    "query_was_rewritten": true
+  }
+}

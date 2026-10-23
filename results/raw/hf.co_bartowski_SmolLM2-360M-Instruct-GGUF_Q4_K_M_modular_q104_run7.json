@@ -1,0 +1,49 @@
+{
+  "question_id": "Q104",
+  "query": "Where is the stadium at which 1964 Georgia Tech Yellow Jackets football team played their home game located? ",
+  "ground_truth": "North Avenue at Techwood Drive",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The stadium where the 1964 Georgia Tech Yellow Jackets football team played their home game is Bobby Dodd Stadium.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1964 Georgia Tech Yellow Jackets football team: The 1964 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology during the 1964 college football season.  The Yellow Jackets were led by 20th-year head coach Bobby Dodd, and played their home games at Grant Field in Atlanta, Georgia.  They competed as independents for the first time since 1920, after dropping from the Southeastern Conference in 1963.",
+      "Georgia Tech Yellow Jackets football: The Georgia Tech Yellow Jackets football team represents the Georgia Institute of Technology in the sport of American football.  The Yellow Jackets team competes in the Football Bowl Subdivision (FBS) of the National Collegiate Athletic Association (NCAA) and the Coastal Division of the Atlantic Coast Conference (ACC).  Georgia Tech has fielded a football team since 1892 and has an all-time record of 700\u2013471\u201343 (a .594 winning percentage).  The Yellow Jackets play in Bobby Dodd Stadium at Historic Grant Field in Atlanta, Georgia, which has a capacity of 55,000.  The Yellow Jackets have won four Division I-A college football national championships and fifteen conference titles.",
+      "1988 Georgia Tech Yellow Jackets football team: The 1988 Georgia Tech Yellow Jackets football team represented the Georgia Institute of Technology during the 1988 NCAA Division I-A football season.  The Yellow Jackets were led by second-year head coach Bobby Ross, and played their home games at Bobby Dodd Stadium in Atlanta, Georgia, the first season under that name after it was renamed in honor of the legendary Georgia Tech head coach.  The team competed as members of the Atlantic Coast Conference, finishing in last and failing to a win a conference game for the second consecutive season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 488,
+    "generation_tokens": 28,
+    "generation_speed": 229.4630564479119,
+    "prompt_eval_speed": 60825.12775769662,
+    "generation_latency_s": 0.24269089999143034,
+    "latency": 0.5877898000180721,
+    "total_prompt_tokens": 638,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2182747,
+    "stage_route_s": 0.09149750007782131,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19717419997323304,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05625650007277727,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.719996988773346e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24272310000378639,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5877994999755174,
+    "unaccounted_latency_s": 9.179988410323858e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Where is the stadium located?\"",
+      "Query 2: \"1964 Georgia Tech Yellow Jackets football team\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

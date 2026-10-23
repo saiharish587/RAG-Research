@@ -1,0 +1,48 @@
+{
+  "question_id": "Q82",
+  "query": "The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?",
+  "ground_truth": "Bob Seger",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Rock Singer Robert C Seger was known as Bob Seger.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Against the Wind (album): Against the Wind is the eleventh album by American rock singer Bob Seger and his fourth with the Silver Bullet Band.  It was released in February 1980.  It is Seger's only number-one album to date, spending six weeks at the top of the \"Billboard\" Top LPs chart, knocking Pink Floyd's \"The Wall\" from the top spot.",
+      "Bob Seger: Robert Clark Seger ( , born May 6, 1945) is an American singer-songwriter, guitarist and pianist.  As a locally successful Detroit-area artist, he performed and recorded as Bob Seger and the Last Heard and Bob Seger System throughout the 1960s.  By the early 1970s, he had dropped the 'System' from his recordings and continued to strive for broader success with various other bands.  In 1973, he put together the Silver Bullet Band, with a group of Detroit-area musicians, with whom he became most successful on the national level with the album \"Live Bullet\" (1976), recorded live with the Silver Bullet Band in 1975 at Cobo Hall in Detroit, Michigan.  In 1976, he achieved a national breakout with the studio album \"Night Moves\".  On his studio albums, he also worked extensively with the Alabama-based Muscle Shoals Rhythm Section, which appeared on several of Seger's best-selling singles and albums.",
+      "Stranger in Town (album): Stranger in Town is the tenth studio album by American rock singer Bob Seger and his second with the Silver Bullet Band, released by Capitol Records in May 1978 (see 1978 in music).  Like its predecessor, the Silver Bullet Band backed Seger on about half of the songs and the Muscle Shoals Rhythm Section backed Seger on the other half."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 508,
+    "generation_tokens": 15,
+    "generation_speed": 317.7023764137756,
+    "prompt_eval_speed": 67062.70627062707,
+    "generation_latency_s": 0.1646800999296829,
+    "latency": 0.565969799994491,
+    "total_prompt_tokens": 688,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2333092,
+    "stage_route_s": 0.18877429992426187,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17343730002176017,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03890799998771399,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.5199994929134846e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1647143999580294,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5659797999542207,
+    "unaccounted_latency_s": 0.00010120007209479809,
+    "route": "rag",
+    "router_raw": "The album \"Album Against the Wind\" is the 11th album by Robert C Seger, born on May 6, 1945.",
+    "sub_queries": [
+      "The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born on May 6, 1945."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

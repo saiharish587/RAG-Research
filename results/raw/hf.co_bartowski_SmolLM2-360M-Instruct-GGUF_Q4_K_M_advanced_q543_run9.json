@@ -1,0 +1,42 @@
+{
+  "question_id": "Q543",
+  "query": "The Dogwoman telemovies were created by an actress born in what year?",
+  "ground_truth": "1961",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Dogwoman telemovies were created by Magda Szubanski as Margaret O'Halloran. The context provided states that she was born in 1975, so the answer is 1975.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dogwoman: Dogwoman is a series of Australian television telemovies screened on the Nine Network in 2000.  The telemovies were created by and starred Magda Szubanski as Margaret O'Halloran.  Margaret, a professional dog trainer, is drawn into a world of mystery, intrigue, and murder, which lies beneath the surface of dog-owners.  Tara Morice played her sister Pauline O'Halloran and Raj Ryan played her boyfriend Brian Jayasinghe.",
+      "Angelina Jolie: Angelina Jolie Pitt ( ; n\u00e9e Voight; born June 4, 1975) is an American actress, filmmaker, and humanitarian.  She has received an Academy Award, two Screen Actors Guild Awards, and three Golden Globe Awards, and has been cited as Hollywood's highest-paid actress.  Jolie made her screen debut as a child alongside her father, Jon Voight, in \"Lookin' to Get Out\" (1982).  Her film career began in earnest a decade later with the low-budget production \"Cyborg 2\" (1993), followed by her first leading role in a major film, \"Hackers\" (1995).  She starred in the critically acclaimed biographical cable films \"George Wallace\" (1997) and \"Gia\" (1998), and won an Academy Award for Best Supporting Actress for her performance in the drama \"Girl, Interrupted\" (1999).",
+      "Nicole Kidman: Nicole Mary Kidman, AC ( , ; born 20 June 1967) is an Australian actress, producer and occasional singer.  She is the recipient of several awards, including an Academy Award, two Primetime Emmy Awards, a BAFTA Award, three Golden Globe Awards, and the Silver Bear for Best Actress."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 48,
+    "generation_speed": 234.41620597370633,
+    "prompt_eval_speed": 63146.72326877155,
+    "generation_latency_s": 1.0916545999934897,
+    "latency": 3.5138872999232262,
+    "total_prompt_tokens": 552,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1262944,
+    "stage_rewrite_s": 1.1924393000081182,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0518533999565989,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17781969998031855,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.091692000045441,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.513896099990234,
+    "unaccounted_latency_s": 9.220000356435776e-05,
+    "rewritten_query": "The Dogwoman telemovies were created by an actress born in 1985.",
+    "query_was_rewritten": true
+  }
+}

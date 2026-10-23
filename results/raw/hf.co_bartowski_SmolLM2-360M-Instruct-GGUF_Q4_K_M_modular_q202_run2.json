@@ -1,0 +1,49 @@
+{
+  "question_id": "Q202",
+  "query": "Chris Williams last played for which football club from the National League North?",
+  "ground_truth": "Salford City Football Club",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Chris Williams last played for Salford City as a forward.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Williams (English footballer): Christopher Jonathan \"Chris\" Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City as a forward.",
+      "National League North: The National League North, formerly Conference North (currently named the Vanarama National League North for sponsorship reasons), is a division of the National League in England, taking its place immediately below the top division National League.  Along with the National League South, it is at Step 2 of the National League System and the sixth overall tier of the English football league system.  It consists of teams located in Northern England, Norfolk, the English Midlands and North Wales.  From the start of the 2015\u201316 season, the league has been known as the National League North.  As part of a sponsorship deal with Vanarama, the National League North is now known as the Vanarama National League North.",
+      "Paul Williams (Northern Ireland footballer): Paul Andrew Williams (born 8 September 1965) is a retired Northern Irish footballer.  He won one cap for the Northern Ireland national football team.  He played as a forward."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 321,
+    "generation_tokens": 14,
+    "generation_speed": 212.61409346840543,
+    "prompt_eval_speed": 12564.09252808329,
+    "generation_latency_s": 0.197983100079,
+    "latency": 0.6055872000288218,
+    "total_prompt_tokens": 449,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.237963,
+    "stage_route_s": 0.106755799963139,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24400470010004938,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05666580004617572,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.640000406652689e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1980168999871239,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6055964000988752,
+    "unaccounted_latency_s": 0.00010730000212788582,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Chris Williams last played for which football club from the National League North?\"",
+      "\"Who was Chris Williams last played for in the National League North?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

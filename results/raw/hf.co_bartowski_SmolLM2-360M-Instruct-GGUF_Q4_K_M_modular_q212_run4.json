@@ -1,0 +1,49 @@
+{
+  "question_id": "Q212",
+  "query": "The Polar Bears featuring the voice of Armie Hammer, is also the same voice actor for which character in Cars 3?",
+  "ground_truth": "Jackson Storm",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Polar Bears featuring the voice of Armie Hammer is not the same voice actor for which character in Cars 3.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Cars 3: Cars 3 is a 2017 American 3D computer-animated auto racing sports comedy adventure film produced by Pixar and released by Walt Disney Pictures.  Directed by Brian Fee, the screenplay was written by Kiel Murray, Bob Peterson and Mike Rich.  The film is a sequel to \"Cars\" and a stand-alone sequel to \"Cars 2\".  The returning voices of Owen Wilson, Bonnie Hunt and Larry the Cable Guy are joined by Cristela Alonzo, Chris Cooper, Armie Hammer, Nathan Fillion, Kerry Washington and Lea DeLaria, in addition to a dozen NASCAR personalities.  In the film, Lightning McQueen sets out to prove to a new generation of high tech race cars that he is still the best race car in the world.",
+      "The Polar Bears: The Polar Bears is a 2012 3D computer animated short film presented by The Coca-Cola Company, produced by Ridley Scott, written by David Reynolds, and directed by John Stevenson.  The film features the voices of Lin-Manuel Miranda, Armie Hammer, Jonathan Adams, and Megyn Price.  The film is based on Coca-Cola's iconic polar bears and was released on the company's website and YouTube channel on December 31, 2012.",
+      "Cars (film): Cars is a 2006 American computer-animated comedy-adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures.  Directed and co-written by John Lasseter, it is Pixar's final independently-produced motion picture before its purchase by Disney in May 2006.  Set in a world populated entirely by anthropomorphic cars and other vehicles, the film stars the voices of Owen Wilson, Paul Newman (in his final acting role), Bonnie Hunt, Larry the Cable Guy, Tony Shalhoub, Cheech Marin, Michael Wallis, George Carlin, Paul Dooley, Jenifer Lewis, Guido Quaroni, Michael Keaton, Katherine Helmond and John Ratzenberger.  Race car drivers Dale Earnhardt, Jr., Mario Andretti, Michael Schumacher and car enthusiast Jay Leno (as \"Jay Limo\") voice themselves."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 565,
+    "generation_tokens": 25,
+    "generation_speed": 233.9553426042037,
+    "prompt_eval_speed": 70536.82896379525,
+    "generation_latency_s": 0.23029540001880378,
+    "latency": 0.6776425999123603,
+    "total_prompt_tokens": 715,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2223412,
+    "stage_route_s": 0.09099860000424087,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30080339999403805,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055383199942298234,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.5199994929134846e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23032690002582967,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6776519999839365,
+    "unaccounted_latency_s": 9.520002640783787e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Polar Bears\" - Armie Hammer's voice actor for the character in Cars 3.",
+      "\"The Polar Bears\" - The voice actor for the character in Cars 3, who also voices the same character in the first movie."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

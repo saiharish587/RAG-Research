@@ -1,0 +1,42 @@
+{
+  "question_id": "Q22",
+  "query": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+  "ground_truth": "Sonic",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "This singer of A Rather Blustery Day is known as the \"Demon of Screamin'\" due to his high screams and wide vocal range. He is also known for his on-stage acrobatics, which include a scarf hanging from his microphone stand.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Rather Blustery Day: \"A Rather Blustery Day\" is a whimsical song from the Walt Disney musical film featurette, \"Winnie the Pooh and the Blustery Day\".  It was written by Robert & Richard Sherman and sung by Jim Cummings as \"Pooh\".",
+      "Jim Cummings: James Jonah Cummings (born November 3, 1952) is an American voice actor and singer, who has appeared in almost 400 roles.  He is known for voicing the title character from \"Darkwing Duck\", Dr. Robotnik from \"Sonic the Hedgehog\", and Pete.  His other characters include Winnie the Pooh, Tigger, and the Tasmanian Devil.  He has performed in numerous Disney and DreamWorks animations including \"Aladdin\", \"The Lion King\", \"Balto\", \"Antz\", \"The Road to El Dorado\", \"Shrek\", and \"The Princess and the Frog\".  He has also provided voice-over work for video games, such as \"Icewind Dale\", \"Fallout\", \"\", \"Baldur's Gate\", \"Mass Effect 2\", \"\", \"\", \"\", and \"Splatterhouse\".",
+      "Steven Tyler: Steven Tyler (born Steven Victor Tallarico; March 26, 1948) is an American singer-songwriter, multi-instrumentalist, and former television music competition judge, best known as the lead singer of the Boston-based rock band Aerosmith, in which he also plays the harmonica, and occasional piano and percussion.  He is known as the \"Demon of Screamin'\" due to his high screams and his wide vocal range.  He is also known for his on-stage acrobatics.  During his high-energy performances, Tyler usually dresses in bright, colorful outfits with his trademark scarves hanging from his microphone stand."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 473,
+    "generation_tokens": 56,
+    "generation_speed": 398.9030167040638,
+    "prompt_eval_speed": 73016.36307502315,
+    "generation_latency_s": 0.22567810001783073,
+    "latency": 0.677568499930203,
+    "total_prompt_tokens": 548,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13339020000000001,
+    "stage_rewrite_s": 0.12706369999796152,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06787930009886622,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.256827799952589,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.22571859997697175,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6775774999987334,
+    "unaccounted_latency_s": 8.849997539073229e-05,
+    "rewritten_query": "This singer of A Rather Blustery Day has voiced a hedgehog.",
+    "query_was_rewritten": true
+  }
+}

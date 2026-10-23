@@ -1,0 +1,49 @@
+{
+  "question_id": "Q210",
+  "query": "Which post DC Extended Universe actress will also play a role in what is intended to be the fifth installment of the DC Extended Universe?",
+  "ground_truth": "Gal Gadot",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Gal Gadot will play a role in \"Justice League\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wonder Woman (2017 film): Wonder Woman is a 2017 American superhero film based on the DC Comics character of the same name, distributed by Warner Bros.  Pictures.  It is the fourth installment in the DC Extended Universe (DCEU).  The film is directed by Patty Jenkins, with a screenplay by Allan Heinberg, from a story by Heinberg, Zack Snyder, and Jason Fuchs, and stars Gal Gadot, Chris Pine, Robin Wright, Danny Huston, David Thewlis, Connie Nielsen, and Elena Anaya.  \"Wonder Woman\" is the second live action theatrical film featuring the titular character, following her debut in 2016's \"\".  Jenkins's role as director makes her the first female director of a studio superhero comic book live-action theatrical release film.  The film tells the story of Princess Diana, who grows up on the Amazon island of Themyscira.  After American pilot Steve Trevor crashes offshore of the island and is rescued by her, he tells the Amazons about the ongoing World War.  Diana then leaves her home in order to end the conflict, becoming Wonder Woman in the process.",
+      "Justice League (film): Justice League is an upcoming American superhero film based on the DC Comics superhero team of the same name, distributed by Warner Bros.  Pictures.  It is intended to be the fifth installment in the DC Extended Universe (DCEU).  The film is directed by Zack Snyder and written by Chris Terrio and Joss Whedon, from a story by Snyder and Terrio, and features an ensemble cast that includes Ben Affleck, Henry Cavill, Gal Gadot, Jason Momoa, Ezra Miller, Ray Fisher, Ciar\u00e1n Hinds, Amy Adams, Willem Dafoe, Jesse Eisenberg, Jeremy Irons, Diane Lane, Connie Nielsen, and J. K. Simmons.  In \"Justice League\", Batman and Wonder Woman assemble a team consisting of Flash, Aquaman, and Cyborg to face the catastrophic threat of Steppenwolf and his army of Parademons.",
+      "Gal Gadot: Gal Gadot-Varsano (Hebrew: \u05d2\u05dc \u05d2\u05d3\u05d5\u05ea\u200e \u200e , ] ; born April 30, 1985) is an Israeli actress and model.  Gadot is primarily known for her role as Wonder Woman in the DC Extended Universe.  She started with \"\" (2016), continued again in 2017 as the lead in \"Wonder Woman\", and will reprise the role in \"Justice League\".  She previously appeared as Gisele Yashar in several films of \"The Fast and the Furious\" franchise."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 668,
+    "generation_tokens": 14,
+    "generation_speed": 216.16948020766907,
+    "prompt_eval_speed": 75900.46585615272,
+    "generation_latency_s": 0.19071090000215918,
+    "latency": 0.6009827998932451,
+    "total_prompt_tokens": 820,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.235365,
+    "stage_route_s": 0.11175899999216199,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2402557999594137,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058088500052690506,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.6900007873773575e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19074240000918508,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6009921999648213,
+    "unaccounted_latency_s": 0.00010009994730353355,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Who will play the role of Wonder Woman in the upcoming film?\"",
+      "\"Which DC Extended Universe actress has been announced as the next main character for the fifth installment?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q492",
+  "query": "Which jazz singer has a 2003 album entitled The Boy Next Door? ",
+  "ground_truth": "Stacey Kent",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The answer to the question is Miles Davis.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Boy next door: The boy next door is an archetype of storytelling.  He is often invoked in Western contexts to indicate wholesome, unassuming, or \"average\" masculinity.  A boy next door may serve as a love interest for a female protagonist who lives near by.",
+      "Miles Davis: Miles Dewey Davis III (May 26, 1926September 28, 1991) was an American jazz trumpeter, bandleader, and composer.  He is among the most influential and acclaimed figures in the history of jazz and 20th century music.  Davis adopted a variety of musical directions in his five-decade career which kept him at the forefront of a number of major stylistic developments in jazz.",
+      "The Boy Next Door (album): The Boy Next Door is a 2003 album by jazz singer Stacey Kent.  The songs were chosen to reflect male singers that Kent admires."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 274,
+    "generation_tokens": 10,
+    "generation_speed": 266.6595557451801,
+    "prompt_eval_speed": 35845.1072736787,
+    "generation_latency_s": 0.8649455000413582,
+    "latency": 3.3341980000259355,
+    "total_prompt_tokens": 352,
+    "total_generation_tokens": 18,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1244607,
+    "stage_rewrite_s": 1.1449273000471294,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1033168999711052,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2208839999511838,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8649828000925481,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.334206800092943,
+    "unaccounted_latency_s": 9.620003402233124e-05,
+    "rewritten_query": "The Boy Next Door by Miles Davis",
+    "query_was_rewritten": true
+  }
+}

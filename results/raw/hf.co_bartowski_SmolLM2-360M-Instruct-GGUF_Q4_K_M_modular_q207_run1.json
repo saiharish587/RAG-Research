@@ -1,0 +1,49 @@
+{
+  "question_id": "Q207",
+  "query": "Are Hot Rod and The Memory of Our People both magazines?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Hot Rod is not a magazine. It's a monthly American car magazine devoted to hot rodding, drag racing, and muscle cars \u2014 modifying automobiles for performance and appearance. On the other hand, The Memory of Our People is an Argentine television series that documented the crew at Boyd Coddington's shop and their personal struggles to build hot rods and custom vehicles on location at Boyd Coddington's car shop in La Habra, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hot Rod (magazine): Hot Rod is a monthly American car magazine devoted to hot rodding, drag racing, and muscle cars \u2014 modifying automobiles for performance and appearance.",
+      "The Memory of Our People: The Memory of Our People is a magazine published in the Argentine city of Rosario, a province of Santa Fe.  The magazine was founded in 2004.  Its original title in Spanish is \"La Memoria de Nuestro Pueblo\".",
+      "American Hot Rod: American Hot Rod was a reality television series that originally aired between 2004 and 2008 on The Learning Channel and Discovery Channel.  The unique series documented the crew at Boyd Coddington's car shop and their personal struggles to build hot rods and custom vehicles.  It was made on location at Coddington's hot rod and wheel shop in La Habra, California.  Many employees went to work for \"Overhaulin'\"s Chip Foose, a former partner of Coddington."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 276,
+    "generation_tokens": 92,
+    "generation_speed": 215.58693543171285,
+    "prompt_eval_speed": 11767.7155282681,
+    "generation_latency_s": 0.557928099995479,
+    "latency": 0.9441674000117928,
+    "total_prompt_tokens": 400,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.226908,
+    "stage_route_s": 0.1069537999574095,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22301259997766465,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0560884999576956,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.549995694309473e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.5579708000877872,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9441806999966502,
+    "unaccounted_latency_s": 0.00010040006600320339,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Hot Rod and The Memory of Our People are magazines.",
+      "Query 2: No, they are not the same magazine."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

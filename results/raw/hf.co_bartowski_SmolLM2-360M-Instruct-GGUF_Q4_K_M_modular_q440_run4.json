@@ -1,0 +1,49 @@
+{
+  "question_id": "Q440",
+  "query": "What town host an annual media finance conference that has featured an Australian-born American media mogul?",
+  "ground_truth": "Sun Valley, Idaho",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The answer to the question is: Sydney.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rupert Murdoch: Keith Rupert Murdoch, {'1': \", '2': 'AC KCSG', '3': \", '4': \"} ( ; born 11 March 1931) is an Australian-born American media mogul.  His father, Sir Keith Murdoch, had been a reporter, editor, and senior executive of the \"Herald\" and \"Weekly Times\" newspaper publishing company, covering all Australian states except New South Wales.  After his father's death in 1952, Murdoch declined to join his late father's registered public company and created his own private company, News Limited.  Murdoch thus had full control as Chairman and CEO of global media holding company News Corporation, now the world's second-largest media conglomerate, and its successors, News Corp and 21st Century Fox, after the conglomerate split on 28 June 2013.",
+      "Elisabeth Murdoch (businesswoman): Elisabeth Murdoch ( ; born 22 August 1968) is an Australian-born American media executive based in the United Kingdom.  Murdoch is the second daughter of Australian-born American multi-billionaire media proprietor Rupert Murdoch.  She was a non-executive chairperson of Shine Group, the UK-based TV program production company she founded in 2001, until the company's parent, her father's 21st Century Fox on 1 January 2015 merged its Shine division with ApolloGlobal Management's Endemol and Core Media production houses, specializing in reality TV.",
+      "The Conversation (website): The Conversation is an independent, not-for-profit media outlet that uses content sourced from the academic and research community.  Since the Australian website's launch in March 2011, it has expanded into six editions, with the addition of a United Kingdom (UK) version in 2013, United States (US) in 2014, Africa in May 2015, France in September 2015, and Global in September 2016.  \"The Conversation\" publishes all content under a Creative Commons license and, as of May 2017, reports a monthly online audience of 5.2 million users onsite, and a reach of 35 million people through creative commons republication."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 596,
+    "generation_tokens": 10,
+    "generation_speed": 222.23209920440908,
+    "prompt_eval_speed": 69928.42895694006,
+    "generation_latency_s": 0.172552700038068,
+    "latency": 0.5776958999922499,
+    "total_prompt_tokens": 738,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2450346,
+    "stage_route_s": 0.11140400008298457,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23817309993319213,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05539689993020147,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.509995389729738e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17258570005651563,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5777049000607803,
+    "unaccounted_latency_s": 9.070010855793953e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Media Finance Conference in Sydney, Australia\"",
+      "\"Aussie-born American media mogul hosting the event in Sydney\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

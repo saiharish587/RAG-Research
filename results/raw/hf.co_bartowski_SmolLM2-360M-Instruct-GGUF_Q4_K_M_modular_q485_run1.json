@@ -1,0 +1,49 @@
+{
+  "question_id": "Q485",
+  "query": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to what?",
+  "ground_truth": "four months in jail",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Detroit mayoral election, 2009, took place to fill the vacancy created by Kwame Kilpatrick's resignation as mayor.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kwame Kilpatrick: Kwame Malik Kilpatrick (born June 8, 1970) is an American former politician, having served as a Democratic Michigan state representative and mayor of Detroit from 2002 to 2008.  He resigned as mayor in September 2008 after being convicted of perjury and obstruction of justice.  Kilpatrick was sentenced to four months in jail and was released on probation after serving 99 days.",
+      "Detroit mayoral election, 2009: The Detroit mayoral elections of 2009 took place on May 5, 2009, with a primary on February 24, 2009 to fill the vacancy created when Kwame Kilpatrick resigned as mayor.",
+      "President pro tempore of the United States Senate: The president pro tempore of the United States Senate ( or ), also president pro tem, is the second-highest-ranking official of the United States Senate.  of the United States Constitution provides that the Vice President of the United States is, despite not being a senator, the President of the Senate, and mandates that the Senate must choose a president \"pro tempore\" to act in the Vice President's absence.  Unlike the vice president, the president pro tempore is an elected member of the Senate, able to speak or vote on any issue.  Selected by the Senate at large, the president pro tempore has enjoyed many privileges and some limited powers.  During the vice president's absence, the president pro tempore is empowered to preside over Senate sessions.  In practice, neither the vice president nor the president pro tempore usually presides; instead, the duty of presiding officer is rotated among junior senators of the majority party to give them experience in parliamentary procedure."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 463,
+    "generation_tokens": 31,
+    "generation_speed": 220.34259719951666,
+    "prompt_eval_speed": 12507.766701785666,
+    "generation_latency_s": 0.28980210004374385,
+    "latency": 0.6991742999525741,
+    "total_prompt_tokens": 619,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24620039999999999,
+    "stage_route_s": 0.11783789994660765,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23318330000620335,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058146500028669834,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.170000415295362e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2898508000653237,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6991864999290556,
+    "unaccounted_latency_s": 0.00010689988266676664,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Detroit mayoral election, 2009\"",
+      "\"Vacation sentence for politician\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

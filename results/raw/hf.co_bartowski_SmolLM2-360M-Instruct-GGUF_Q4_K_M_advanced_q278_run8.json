@@ -1,0 +1,42 @@
+{
+  "question_id": "Q278",
+  "query": "In what city was the Italian Baroque composer who composed a set of sonatas, titled Op. 5, born?",
+  "ground_truth": "Venice",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Antonio Vivaldi was born in Venice, Italy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Six Violin Sonatas, Op. 5 (Vivaldi): Antonio Vivaldi wrote a set of sonatas, Op. 5, in 1716.",
+      "Antonio Vivaldi: Antonio Lucio Vivaldi (] ; 4 March 1678 \u2013 28 July 1741) was an Italian Baroque composer, virtuoso violinist, teacher and cleric.  Born in Venice, he is recognized as one of the greatest Baroque composers, and his influence during his lifetime was widespread across Europe.  He composed many instrumental concertos, for the violin and a variety of other instruments, as well as sacred choral works and more than forty operas. His best-known work is a series of violin concertos known as \"The Four Seasons\".",
+      "Domenico Scarlatti: Giuseppe Domenico Scarlatti (Naples, 26 October 1685 Madrid, 23 July 1757) was an Italian composer who spent much of his life in the service of the Portuguese and Spanish royal families.  He is classified primarily as a Baroque composer chronologically, although his music was influential in the development of the Classical style and he was one of the few Baroque composers to transition into the classical period.  Like his renowned father Alessandro Scarlatti, he composed in a variety of musical forms, although today he is known mainly for his 555 keyboard sonatas."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 391,
+    "generation_tokens": 14,
+    "generation_speed": 269.5469685592715,
+    "prompt_eval_speed": 56210.46578493387,
+    "generation_latency_s": 0.8757028999971226,
+    "latency": 3.328799800015986,
+    "total_prompt_tokens": 475,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1408609,
+    "stage_rewrite_s": 1.2136923000216484,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0314604999730363,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20783440000377595,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8757348000071943,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3288090000860393,
+    "unaccounted_latency_s": 8.739996701478958e-05,
+    "rewritten_query": "The Italian Baroque composer who composed a set of sonatas, titled Op. 5, was born in Rome.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q486",
+  "query": "In what year was the team that Luke Clark plays either right back or central midfielder for founded?",
+  "ground_truth": "1963",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The correct answer is: \"In 1874.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Luke Clark: Luke Stephen Clark (born 24 May 1994) is an English footballer who is plays for Curzon Ashton.  He can play either as a right back or as a central midfielder.",
+      "1985 Peach Bowl: The 1985 Peach Bowl was a post-season American college football bowl game at Fulton County Stadium in Atlanta, Georgia between the Army Cadets and the University of Illinois Fighting Illini on December 31, 1985.  The game was the final contest of the 1985 NCAA Division I-A football season for both teams, and ended in a 31\u201329 victory for Army, the second bowl victory in school history.",
+      "Aston Villa F.C.: Aston Villa Football Club ( ; nicknamed Villa, The Villa, The Villans and The Lions) is a professional football club in Aston, Birmingham, that plays in the Championship, the second level of English football.  Founded in 1874, they have played at their current home ground, Villa Park, since 1897.  Aston Villa were one of the founder members of the Football League in 1888 and of the Premier League in 1992."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 353,
+    "generation_tokens": 14,
+    "generation_speed": 331.75355450236964,
+    "prompt_eval_speed": 22448.3306836248,
+    "generation_latency_s": 0.1660737000638619,
+    "latency": 0.5707174999406561,
+    "total_prompt_tokens": 495,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2280702,
+    "stage_route_s": 0.2581015999894589,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.10908219998236746,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0372988999588415,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.049991887062788e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1661070000845939,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5707263000076637,
+    "unaccounted_latency_s": 8.680007886141539e-05,
+    "route": "rag",
+    "router_raw": "The question asks about when the team that Luke Clark played either right back or central midfielder for was founded, and it does not require retrieving information from internal files/documents. The user is asking a factual question about the formation of the team that Luke Clark plays right back or central midfielder for.",
+    "sub_queries": [
+      "1985"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q137",
+  "query": "The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?",
+  "ground_truth": "Texas Tech University",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The 1974 Texas Tech Raiders football team represented Texas Tech University.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1974 Texas Tech Red Raiders football team: The 1974 Texas Tech Red Raiders football team represented Texas Tech University in the Southwest Conference during the 1974 NCAA Division I football season.  In their fifth and final season under head coach Jim Carlen, the Red Raiders compiled a 6\u20134\u20132 record (3\u20134 against conference opponents), finished in sixth place in the conference, and outscored opponents by a combined total of 193 to 158.  The team's statistical leaders included Tommy Duniven with 552 passing yards, Larry Isaac with 671 rushing yards, and Lawrence Williams with 477 receiving yards.  The team played its home games at Clifford B. & Audrey Jones Stadium.",
+      "Texas Tech University: Texas Tech University, often referred to as Texas Tech, Tech, or TTU, is a public research university in Lubbock, Texas.  Established on  10, 1923 (1923--) , and originally known as Texas Technological College, it is the flagship institution of the four-institution Texas Tech University System.  The university's student enrollment is the sixth-largest in Texas as of the Fall 2014 semester.  The university shares its campus with Texas Tech University Health Sciences Center, making it the only campus in Texas to house an undergraduate university, law school, and medical school.",
+      "2008 Texas vs. Texas Tech football game: The 2008 Texas vs. Texas Tech football game was a Big 12 Conference game played between the Texas Longhorns and Texas Tech Red Raiders at Jones AT&T Stadium in Lubbock, Texas, United States.  The game was played on November 1 and was one of the most memorable games in the 2 teams rivalry.  Heading into the game, both teams were undefeated at 8-0.  However, a big difference between the teams was their rankings in the AP poll.  Texas came into this game as #1, lead by coach Mack Brown.  The Red Raiders, unlike their rivals, were not in the top 3.  Instead, they were #6 in the country.  In the game, the Red Raiders stunned the Longhorns 39-33 on a last second touchdown pass.  The game appeared over on the previous play, but Texas dropped an interception.  The game has gone down as one of the greatest upsets in the rivalries history and was crucial in a 3-way tie that happened in the Big 12 at the end of the season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 649,
+    "generation_tokens": 19,
+    "generation_speed": 226.7817285542068,
+    "prompt_eval_speed": 13125.16431734989,
+    "generation_latency_s": 0.24056130007375032,
+    "latency": 0.6842329999199137,
+    "total_prompt_tokens": 799,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23102720000000002,
+    "stage_route_s": 0.1067242999561131,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2803076000418514,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05644150008447468,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.779997445642948e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2406058000633493,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6842445000074804,
+    "unaccounted_latency_s": 0.00010809989180415869,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The 1974 Texas Tech Raiders football team was represented by the University of Texas at Austin.",
+      "Query 2: The University of Texas at Austin is a public research university located in Austin, Texas."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

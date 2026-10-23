@@ -1,0 +1,42 @@
+{
+  "question_id": "Q203",
+  "query": "Who designed the hotel that held the IFBB professional bodybuilding competition in September 1991?",
+  "ground_truth": "architect Michael Graves",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The hotel that held the IFBB professional bodybuilding competition in September 1991 was the Walt Disney World Dolphin Hotel. The hotel hosted the IFBB's IFBB Professional Bodybuilding Competition, which took place on September 28, 2012 at the South Hall in the Las Vegas Convention Center in Winchester, Nevada and in the Orleans Arena at The Orleans Hotel and Casino in Paradise, Nevada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1991 Mr. Olympia: The 1991 Mr. Olympia contest was an IFBB professional bodybuilding competition held in September 1991 at the Walt Disney World Dolphin Hotel in Orlando, Florida.",
+      "2012 Ms. Olympia: The 2012 Ms. Olympia contest was an IFBB professional bodybuilding competition and part of Joe Weider's Olympia Fitness & Performance Weekend 2012 was held on September 28, 2012, at the South Hall in the Las Vegas Convention Center in Winchester, Nevada and in the Orleans Arena at The Orleans Hotel and Casino in Paradise, Nevada.  It was the 33rd Ms. Olympia competition held.  Other events at the exhibition included the 212 Olympia Showdown,",
+      "Arnold Sports Festival: The IFBB Arnold Sports Festival, also known as the Arnold Schwarzenegger Sports Festival is an annual multi-sport event consisting of professional bodybuilding (\"Arnold Classic\"), strongman (\"Arnold Strongman Classic\"), fitness, figure and bikini weekend expo.  It was established in 1989 and is named after Arnold Schwarzenegger.  The main event is held annually around late February or early March in Columbus, Ohio, United States by the International Federation of BodyBuilding & Fitness (IFBB).  It is the second most prestigious event in professional men's bodybuilding, physique, figure and bikini; as well as formerly the second most prestigious event in professional female bodybuilding."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 404,
+    "generation_tokens": 88,
+    "generation_speed": 408.05349210323755,
+    "prompt_eval_speed": 21824.86089352277,
+    "generation_latency_s": 0.31153940001968294,
+    "latency": 0.6416568999411538,
+    "total_prompt_tokens": 485,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1261411,
+    "stage_rewrite_s": 0.15668699995148927,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07257509999908507,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1007294999435544,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3115797999780625,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6416676000226289,
+    "unaccounted_latency_s": 9.670015424489975e-05,
+    "rewritten_query": "The hotel that hosted the IFBB professional boxing competition in September 1991 was designed by the IFBB.",
+    "query_was_rewritten": true
+  }
+}

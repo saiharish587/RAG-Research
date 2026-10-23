@@ -1,0 +1,49 @@
+{
+  "question_id": "Q330",
+  "query": "The city that contains the Yunnan Provincial Museum is also known by what nickname?",
+  "ground_truth": "Spring city",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The city that contains the Yunnan Provincial Museum is also known as \"Spring City\" due to its weather.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kunming: Kunming ( ; ) is the capital of and largest city in Yunnan Province, Southwest China.  Known as Yunnan-Fu (\u4e91\u5357\u5e9c , \"Y\u00fann\u00e1nf\u01d4\") until the 1920s, today it is a prefecture-level city and the political, economic, communications and cultural centre of the province as well as the seat of the provincial government.  Kunming is also called the Spring city due to its weather.  The headquarters of many of Yunnan's large businesses are in Kunming.  It was important during World War II as a Chinese military center, American air base, and transport terminus for the Burma Road.  Located in the middle of the Yunnan\u2013Guizhou Plateau, Kunming is located at an altitude of 1900 m above sea level and at a latitude just north of the Tropic of Cancer.  Kunming has as of 2014 a population of 6,626,000 with an urban population of 4,575,000, and is located at the northern edge of the large Lake Dian, surrounded by temples and lake-and-limestone hill landscapes.",
+      "Yunnan Provincial Museum: Yunnan Provincial Museum () is located in Kunming, on Guangfu Road.  It houses an exhibition centered on Yunnan's ethnic minorities, as well as a collection of artifacts from tomb excavations at Jinning on the southern rim of Lake Dian.",
+      "Ruili: Ruili (; Burmese: \u101b\u103d\u103e\u1031\u101c\u102e ; Thai: \u0e40\u0e21\u0e37\u0e2d\u0e07\u0e21\u0e32\u0e27 ) is a county-level city of Dehong Prefecture, in the west of Yunnan province, People's Republic of China.  It is a major border crossing between China and Myanmar, with the town of Muse located across the border."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 489,
+    "generation_tokens": 23,
+    "generation_speed": 219.88107301963635,
+    "prompt_eval_speed": 58221.21681152518,
+    "generation_latency_s": 0.2250690000364557,
+    "latency": 0.5422913000220433,
+    "total_prompt_tokens": 621,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22002860000000002,
+    "stage_route_s": 0.1071491000475362,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.150720699923113,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05915200000163168,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.120000034570694e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22512009995989501,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5423015999840572,
+    "unaccounted_latency_s": 9.930005762726068e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Yunnan Province\"",
+      "\"Yunnan City\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

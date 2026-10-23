@@ -1,0 +1,49 @@
+{
+  "question_id": "Q466",
+  "query": "Which American Space Western animated series did Celebrity Home Entertainment released ",
+  "ground_truth": "BraveStarr",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The American Space Western animated series \"Celebrity Home Entertainment\" was released by Celebrity Home Entertainment on June 21, 2004.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "SpaceShipOne flight 15P: Flight 15P of SpaceShipOne (X0) was the first privately funded human spaceflight.  It took place on June 21, 2004.  It was the fourth powered test flight of the Tier One program, the previous three test flights having reached much lower altitudes.  The flight carried only its pilot, Mike Melvill, who thus became the first non-governmental astronaut.",
+      "Valentina Tereshkova: Valentina Vladimirovna Tereshkova (Russian: \u0412\u0430\u043b\u0435\u043d\u0442\u0438\u0301\u043d\u0430 \u0412\u043b\u0430\u0434\u0438\u0301\u043c\u0438\u0440\u043e\u0432\u043d\u0430 \u0422\u0435\u0440\u0435\u0448\u043a\u043e\u0301\u0432\u0430 ; ] ; born 6 March 1937) is a retired Russian cosmonaut, engineer, and politician.  She is the first woman to have flown in space, having been selected from more than 400 applicants and five finalists to pilot Vostok 6 on 16 June 1963.  She completed 48 orbits of the Earth in her three days in space.",
+      "Frank Borman: Frank Frederick Borman II (born March 14, 1928), (Col, USAF, Ret.) , is a retired United States Air Force pilot, aeronautical engineer, test pilot, and NASA astronaut, best remembered as the Commander of Apollo 8, the first mission to fly around the Moon, making him, along with crew mates Jim Lovell and Bill Anders, the first of only 24 humans to do so.  Before flying on Apollo, he set a fourteen-day spaceflight endurance record on Gemini 7, and also served on the NASA review board which investigated the Apollo 1 fire.  After leaving NASA, he was the Chief Executive Officer (CEO) of Eastern Air Lines from 1975 to 1986.  Borman is a recipient of the Congressional Space Medal of Honor."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 491,
+    "generation_tokens": 33,
+    "generation_speed": 343.3387088383707,
+    "prompt_eval_speed": 63733.1256490135,
+    "generation_latency_s": 0.21724629995878786,
+    "latency": 0.6089434999739751,
+    "total_prompt_tokens": 617,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2210185,
+    "stage_route_s": 0.09326999995391816,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24292180000338703,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05533790006302297,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2200048230588436e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2172778999665752,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6089521999238059,
+    "unaccounted_latency_s": 9.289989247918129e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Who was the first person to fly in space?",
+      "What is the name of the first person who flew in space?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

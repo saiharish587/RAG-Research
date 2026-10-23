@@ -1,0 +1,49 @@
+{
+  "question_id": "Q118",
+  "query": "What other political position did the person who introduced the DISCLOSE Act hold?",
+  "ground_truth": "United States Senator",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The person who introduced the DISCLOSE Act held a position in the Democratic-Republican Party, as mentioned in the context.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "DISCLOSE Act: The Democracy Is Strengthened by Casting Light On Spending in Elections Act, commonly known as the DISCLOSE Act and also known as H.R. 5175 (S.3628-Senate), was a bill introduced in the U.S. House of Representatives by Chris Van Hollen (D-Maryland) on April 29, 2010 and in the U.S. Senate by Charles Schumer (D-New York) on July 21, 2010.",
+      "Democratic-Republican Party: The Democratic-Republican Party was an American political party formed by Thomas Jefferson and James Madison in 1791\u201393 to oppose the centralizing policies of the new Federalist Party run by Alexander Hamilton (1755/57-1804), who was secretary of the treasury and chief architect of George Washington's administration.  The new party controlled the presidency and Congress, as well as most states, from 1801 to 1825, during the First Party System.  It began in 1791 as one faction in Congress, and included many politicians who had been opposed to the new constitution.  They called themselves \"Republicans\" after their ideology, Republicanism.  They distrusted the Federalist commitment to republicanism.  The party splintered in 1824 into the Jacksonian movement (which became the Democratic Party in 1828) and the short-lived National Republican Party (later succeeded by the Whig Party).",
+      "William Cohen: William Sebastian Cohen (born August 28, 1940) is an American politician and author from the U.S. state of Maine.  A Republican, Cohen served as both a member of the United States House of Representatives and Senate, and as Secretary of Defense (1997\u20132001) under Democratic President Bill Clinton."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 486,
+    "generation_tokens": 27,
+    "generation_speed": 228.96879240162824,
+    "prompt_eval_speed": 14497.94165025953,
+    "generation_latency_s": 0.25917620002292097,
+    "latency": 0.6978859999217093,
+    "total_prompt_tokens": 618,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2238562,
+    "stage_route_s": 0.10233279992826283,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2779648000141606,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0582185999955982,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2699935622513294e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25921619997825474,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.697898699901998,
+    "unaccounted_latency_s": 0.00011430005542933941,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The person who introduced the DISCLOSE Act held a position in the Democratic Party.",
+      "The person who introduced the DISCLOSE Act was a member of the Democratic National Committee."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

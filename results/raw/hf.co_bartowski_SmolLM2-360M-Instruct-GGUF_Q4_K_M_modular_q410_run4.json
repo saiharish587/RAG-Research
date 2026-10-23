@@ -1,0 +1,49 @@
+{
+  "question_id": "Q410",
+  "query": "What are the names of the members of the Detroit-based hip hop duo who has worked with Jason Gilbert?",
+  "ground_truth": "Royce da 5'9\" (Bad) and Eminem (Evil)",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Jason Gilbert's name is not mentioned in the context provided.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jason Gilbert: Jason Gilbert, known by his nickname JG, is a Caymanian record producer and songwriter.  JG has produced for artists including Eminem, Bad Meets Evil, Akon, Christina Aguilera and Taio Cruz.",
+      "Hip hop: Hip hop or hip-hop is a subculture and art movement developed in South Bronx in New York City during the late 1970s.  While people unfamiliar with hip hop culture often use the expression \"hip hop\" to refer exclusively to hip hop music (also called \"rap\"), Hip hop is characterized by nine distinct elements or expressive realms, of which hip hop music is only four elements (rapping, djaying, beatboxing and breaking).  Afrika Bambaataa of the hip hop collective Zulu Nation outlined the pillars of hip hop culture, coining the terms: \"rapping\" (also called MCing or emceeing), a rhythmic vocal rhyming style (orality); DJing (and turntablism), which is making music with record players and DJ mixers (aural/sound and music creation); b-boying/b-girling/breakdancing (movement/dance); and graffiti art, which he called \"aerosol writin'\", although many say that the graffiti that hip hop adopted had been around years earlier, and had nothing to do with hip hop culture.  (visual art).  Other elements of hip hop subculture and arts movements beyond the main four are: hip hop culture and historical knowledge of the movement (intellectual/philosophical); beatboxing, a percussive vocal style; street entrepreneurship; hip hop language; and hip hop fashion and style, among others.",
+      "Jedi Mind Tricks: Jedi Mind Tricks (JMT) is an underground hip hop duo from Philadelphia, Pennsylvania, founded by two high school friends, rapper Vinnie Paz (Vincenzo Luvineri) and producer Stoupe the Enemy of Mankind (Kevin Baldwin).  In 1999 second rapper Jus Allah joined the group to record their second studio album, \"Violent by Design\".  Allah left the group shortly after, but returned in 2008 for the sixth studio album, \"A History of Violence\".  In 2011 Stoupe left the group because \"his heart wasn't in making JMT records anymore\".  In 2013, Allah left again, and Stoupe returned in 2015."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 616,
+    "generation_tokens": 14,
+    "generation_speed": 241.2669963982284,
+    "prompt_eval_speed": 70087.60951188987,
+    "generation_latency_s": 0.1825665000360459,
+    "latency": 0.5021565000060946,
+    "total_prompt_tokens": 760,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2425232,
+    "stage_route_s": 0.11151299998164177,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15171870007179677,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05617200001142919,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.789997521787882e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18260609998833388,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5021686999825761,
+    "unaccounted_latency_s": 0.00010159995872527361,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Detroit Hip Hop\"",
+      "\"Jason Gilbert\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

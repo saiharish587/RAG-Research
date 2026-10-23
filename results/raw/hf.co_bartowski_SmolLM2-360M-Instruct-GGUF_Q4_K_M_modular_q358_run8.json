@@ -1,0 +1,49 @@
+{
+  "question_id": "Q358",
+  "query": "Which novelist, J. G. Farrell or Louis Aragon, wrote of the political and human consequences of his country's colonial rule?",
+  "ground_truth": "Farrell",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "J. G. Farrell wrote of the political and human consequences of his country's colonial rule in \"The Empire Trilogy\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "J. G. Farrell: James Gordon Farrell (25 January 1935 \u2013 11 August 1979) was a Liverpool-born novelist of Irish descent.  He gained prominence for a series of novels known as the \"Empire Trilogy\" (\"Troubles\", \"The Siege of Krishnapur\" and \"The Singapore Grip\"), which deal with the political and human consequences of British colonial rule.",
+      "Louis Aragon: Louis Aragon (] , 3 October 1897 \u2013 24 December 1982) was a French poet, who was one of the leading voices of the surrealist movement in France, who co-founded with Andr\u00e9 Breton and Philippe Soupault the surrealist review \"Litt\u00e9rature\".  He was also a novelist and editor, a long-time member of the Communist Party and a member of the Acad\u00e9mie Goncourt.",
+      "Troubles (novel): Troubles is a 1970 novel by J. G. Farrell.  The plot concerns the dilapidation of a once grand Irish hotel (the Majestic), in the midst of the political upheaval during the Irish War of Independence (1919\u20131921).  It is the first instalment in Farrell's acclaimed 'Empire Trilogy', preceding \"The Siege of Krishnapur\" and \"The Singapore Grip\".  Although there are similar themes within the three novels (most notably that of the British Empire), they do not form a sequence of storytelling."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 415,
+    "generation_tokens": 28,
+    "generation_speed": 216.72497600544907,
+    "prompt_eval_speed": 49469.54344975563,
+    "generation_latency_s": 0.25346939999144524,
+    "latency": 0.5738062000600621,
+    "total_prompt_tokens": 571,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2362178,
+    "stage_route_s": 0.10296089993789792,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1623793999897316,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05481640005018562,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.430006422102451e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25350929994601756,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5738183000357822,
+    "unaccounted_latency_s": 9.870005305856466e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"J. G. Farrell\"",
+      "\"Louis Aragon\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

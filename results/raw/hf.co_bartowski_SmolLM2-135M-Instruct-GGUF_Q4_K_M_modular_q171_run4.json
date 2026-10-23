@@ -1,0 +1,48 @@
+{
+  "question_id": "Q171",
+  "query": "What is the name of the detective novelist parent of the author of '\"Q\" Is for Quarry'?",
+  "ground_truth": "C. W. Grafton",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The detective novel \"Q & A\" by Arthur Hailey is a fictional book written in 1997 by Sir Arthur Conan Doyle, and it was the author's last book.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "&quot;Q&quot; Is for Quarry: \"Q\" Is for Quarry is the 17th novel in Sue Grafton's \"Alphabet\" series of mystery novels and features Kinsey Millhone, a private eye based in Santa Teresa, California.",
+      "Sherlock Holmes: Sherlock Holmes ( ) is a fictional private detective created by British author Sir Arthur Conan Doyle.  Known as a \"consulting detective\" in the stories, Holmes is known for his proficiency with observation, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.",
+      "Detective (novel): Detective is a novel by Arthur Hailey.  It was written in 1997 and it was the author's last book.  Hailey depicts the work of the homicide department and its background and investigation methods."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 269,
+    "generation_tokens": 40,
+    "generation_speed": 374.4862516734854,
+    "prompt_eval_speed": 40487.65803732691,
+    "generation_latency_s": 0.22212809999473393,
+    "latency": 0.5248480000300333,
+    "total_prompt_tokens": 411,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2396608,
+    "stage_route_s": 0.13307700003497303,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13152689998969436,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03794840001501143,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.670004662126303e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22216919995844364,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5248605000087991,
+    "unaccounted_latency_s": 0.00010329997166991234,
+    "route": "rag",
+    "router_raw": "The name of the detective novelist parent of the author of \"Q\" Is for Quarry.\"",
+    "sub_queries": [
+      "The detective novelist parent of the author of \"Q\" Is for Quarry?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

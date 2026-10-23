@@ -1,0 +1,49 @@
+{
+  "question_id": "Q107",
+  "query": "hree Men on a Horse is a play by a playwright born in which year ?",
+  "ground_truth": "1887",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "George Bernard Shaw was born in 1856.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George Bernard Shaw: George Bernard Shaw ( ; 26 July 1856 \u2013 2 November 1950), known at his insistence simply as Bernard Shaw, was an Irish playwright, critic and polemicist whose influence on Western theatre, culture and politics extended from the 1880s to his death and beyond.  He wrote more than sixty plays, including major works such as \"Man and Superman\" (1902), \"Pygmalion\" (1912)\" and Saint Joan\" (1923).  With a range incorporating both contemporary satire and historical allegory, Shaw became the leading dramatist of his generation, and in 1925 was awarded the Nobel Prize in Literature.",
+      "Harry Sweet: Harry Sweet (October 2, 1901 \u2013 June 18, 1933) was an American actor, director and screenwriter.  He appeared in 57 films between 1919 and 1932.  He also directed 54 films between 1920 and 1933, including one Harry Langdon short, two of the Tay Garnett- penned comedies Stan Laurel made for Joe Rock, and fifteen of the earliest entries in the Edgar Kennedy \"Average Man\" series.",
+      "The Big Broadcast of 1937: The Big Broadcast of 1937 is a 1936 Paramount Pictures production directed by Mitchell Leisen, and is the third in the series of Big Broadcast movies.  The musical comedy stars Jack Benny, George Burns, Gracie Allen, Bob Burns, Martha Raye, Shirley Ross, Ray Milland, Benny Fields, Frank Forest and the orchestra of Benny Goodman (featuring Gene Krupa).  Uncredited roles include Jack Mulhall.  The version shown in British cinemas also included clips featuring Richard Tauber and the Vienna Boys Choir, not in the original American version."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 492,
+    "generation_tokens": 13,
+    "generation_speed": 207.08221163802028,
+    "prompt_eval_speed": 14669.489251319359,
+    "generation_latency_s": 0.20396079996135086,
+    "latency": 0.5355700999498367,
+    "total_prompt_tokens": 626,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2281774,
+    "stage_route_s": 0.10351419996004552,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17434489994775504,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05356450006365776,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.65000407025218e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.203992799972184,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5355793999042362,
+    "unaccounted_latency_s": 9.709992446005344e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Harry Benson\"",
+      "\"1937\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

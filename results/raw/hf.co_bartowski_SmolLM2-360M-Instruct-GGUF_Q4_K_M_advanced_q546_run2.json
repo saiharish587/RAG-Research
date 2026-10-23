@@ -1,0 +1,42 @@
+{
+  "question_id": "Q546",
+  "query": "The first book in the Sprawl Trilogy won what three awards?",
+  "ground_truth": "Nebula Award, the Philip K. Dick Award, and the Hugo Award",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The first book in the Sprawl Trilogy won the Nebula Award for Best Novel, the Philip K. Dick Award, and the Hugo Award for Best Novel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sprawl trilogy: The Sprawl trilogy (also known as the Neuromancer, Cyberspace, or Matrix trilogy) is William Gibson's first set of novels, composed of \"Neuromancer\" (1984), \"Count Zero\" (1986), and \"Mona Lisa Overdrive\" (1988).",
+      "Neuromancer: Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson.  It is one of the best-known works in the cyberpunk genre and the first novel to win the Nebula Award, the Philip K. Dick Award, and the Hugo Award.  It was Gibson's debut novel and the beginning of the Sprawl trilogy.  The novel tells the story of a washed-up computer hacker hired by a mysterious employer to pull off the ultimate hack.",
+      "Mona Lisa Overdrive: Mona Lisa Overdrive is a science fiction novel by American-Canadian writer William Gibson, published in 1988.  It is the final novel of the cyberpunk Sprawl trilogy, following \"Neuromancer\" and \"Count Zero\", taking place eight years after the events of the latter.  The novel was nominated for the Nebula Award for Best Novel, the Hugo Award for Best Novel, and the Locus Award for Best Science Fiction Novel in 1989."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 363,
+    "generation_tokens": 35,
+    "generation_speed": 261.42228662339505,
+    "prompt_eval_speed": 45827.54702689055,
+    "generation_latency_s": 1.0207354999147356,
+    "latency": 3.4372532000998035,
+    "total_prompt_tokens": 439,
+    "total_generation_tokens": 73,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12264040000000001,
+    "stage_rewrite_s": 1.2828508999664336,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9724352000048384,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16111159999854863,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0207736999727786,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4372637000633404,
+    "unaccounted_latency_s": 9.300012607127428e-05,
+    "rewritten_query": "The first book in the Sprawl Trilogy won the Nebula Award for Best Novel and the Hugo Award for Best Short Story, as well as the Hugo Award for Best Novel.",
+    "query_was_rewritten": true
+  }
+}

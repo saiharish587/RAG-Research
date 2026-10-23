@@ -1,0 +1,42 @@
+{
+  "question_id": "Q398",
+  "query": "Which football team does Lewis Young's older brother, Ashley Young, play for?",
+  "ground_truth": "Premier League club Manchester United and the England national team",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Ashley Young (Australian footballer)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lewis Young: Lewis Jack Young (born 27 September 1989) is an English professional footballer who plays for Crawley Town.  He can play either as a striker, as a right winger or as, most recently, a right back.  He is the younger brother of Manchester United footballer Ashley Young.",
+      "Ashley Young: Ashley Simon Young (born 9 July 1985) is an English professional footballer who plays as a winger for Premier League club Manchester United and the England national team.",
+      "Lewis Young (Australian footballer): Lewis Young (born 20 December 1998) is a professional Australian rules footballer playing for the Western Bulldogs in the Australian Football League (AFL).  He was drafted by the Western Bulldogs with their third selection and forty-ninth overall in the 2016 national draft.  He made his debut in the twenty point win against Carlton at Etihad Stadium in round seventeen of the 2017 season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 292,
+    "generation_tokens": 9,
+    "generation_speed": 396.2837391572366,
+    "prompt_eval_speed": 39798.282676843395,
+    "generation_latency_s": 0.11158629995770752,
+    "latency": 0.456302999984473,
+    "total_prompt_tokens": 368,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1477305,
+    "stage_rewrite_s": 0.14417730004061013,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07948359998408705,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12089869996998459,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1116401000181213,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4563149999594316,
+    "unaccounted_latency_s": 0.00011599995195865631,
+    "rewritten_query": "Which football team does Lewis Young's older brother, Ashley Young, play for?",
+    "query_was_rewritten": false
+  }
+}

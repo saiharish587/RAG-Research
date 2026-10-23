@@ -1,0 +1,49 @@
+{
+  "question_id": "Q87",
+  "query": "In what year was the novel that Louren\u00e7o Mutarelli based \"Nina\" on based first published?",
+  "ground_truth": "1866",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The novel that Louren\u00e7o Mutarelli based \"Nina\" on was first published in 1935.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Louren\u00e7o Mutarelli: In addition to comic books, Mutarelli has also created plays, books, and all the illustration and animated sequences of the 2004 motion picture \"Nina\", which was based on the novel \"Crime and Punishment\" by Dostoyevsky.",
+      "The Signifying Monkey: The Signifying Monkey: A Theory of African-American Literary Criticism is a work of literary criticism and theory by American scholar Henry Louis Gates Jr. first published in 1988.  The book traces the folkloric origins of the African-American cultural practice of \u201csignifying\u201d and uses the concept of Signifyin(g) to analyze the interplay between texts of prominent African-American writers, specifically Richard Wright, Ralph Ellison, Zora Neale Hurston and Ishmael Reed.",
+      "The Lives of a Bengal Lancer (film): The Lives of a Bengal Lancer is a 1935 American epic-adventure-drama film loosely adapted from the 1930 autobiography of the same name by British author Francis Yeats-Brown.  The film is a Paramount picture directed by Henry Hathaway and written by Grover Jones, William Slavens McNutt, Waldemar Young, John L. Balderston and Achmed Abdullah."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 352,
+    "generation_tokens": 27,
+    "generation_speed": 218.8715953307393,
+    "prompt_eval_speed": 36243.82207578253,
+    "generation_latency_s": 0.24514080001972616,
+    "latency": 0.6036224999697879,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2231072,
+    "stage_route_s": 0.09621870005503297,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20695689995773137,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05513170000631362,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9399986639618874e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2451726000290364,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.603632100042887,
+    "unaccounted_latency_s": 9.330001194030046e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Year of the Monkey\" (1928)",
+      "\"The Year of the Tiger\" (1930)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

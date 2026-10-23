@@ -1,0 +1,36 @@
+{
+  "question_id": "Q236",
+  "query": "The Kansas City Wizards have had three home venues in Kansas City in their time.  Which was their first?",
+  "ground_truth": "Arrowhead Stadium",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Kansas City Wizards have had three home venues in Kansas City in their time.\n\n1) The Kansas City Royals of Major League Baseball (MLB), which is the first team to play at the temporary community America Ballpark in Kansas City, Missouri.\n\n2) The Kansas City Chiefs of the National Football League (NFL).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2008 Kansas City Wizards season: The 2008 Kansas City Wizards season was the first season played at the temporary home Community America Ballpark in Kansas City, Kansas.",
+      "1998 Kansas City Wizards season: The 1998 Kansas City Wizards season was the third MLS history.  Played at Arrowhead Stadium in Kansas City, Missouri.  MLS did not allow matches to end in ties in 1998 and thus Shootouts were used to decide draws, the stats that follow do not include shootout goals scored and the teams actually point total in the regular season was 32 even though it is shown below as 36.  Shootout win= 1 point, Shootout loss= 0 points.",
+      "Kauffman Stadium: Kauffman Stadium ( ), often called \"The K\", is a baseball park located in Kansas City, Missouri, that is home to the Kansas City Royals of Major League Baseball (MLB).  It is part of the Truman Sports Complex together with the adjacent Arrowhead Stadium, home of the Kansas City Chiefs of the National Football League.  The ballpark is named for Ewing Kauffman, the founder and first owner of the Royals.  It opened in 1973 as Royals Stadium and was named for Kauffman on July 2, 1993.  The ballpark's listed seating capacity since 2009 is 37,903."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 70,
+    "generation_speed": 441.4871811043486,
+    "prompt_eval_speed": 154110.89866156786,
+    "generation_latency_s": 0.2680661999620497,
+    "latency": 0.2846628000261262,
+    "total_prompt_tokens": 403,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0990653,
+    "stage_retrieve_s": 0.01652280008420348,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.26810079999268055,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.2846698999637738,
+    "unaccounted_latency_s": 4.679989069700241e-05
+  }
+}

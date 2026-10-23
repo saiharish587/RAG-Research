@@ -1,0 +1,49 @@
+{
+  "question_id": "Q572",
+  "query": "What was the release date and price for the release of Mac OS X that has the software for creating WWF files?",
+  "ground_truth": "April 29, 2005 for US$129.95",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The answer is: The release date and price for the release of Mac OS X with the software for creating WWF files were released on November 5, 2017.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ralph Breaks the Internet: Wreck-It Ralph 2: Ralph Breaks the Internet: Wreck-It Ralph 2 is an upcoming American 3D computer-animated comedy-adventure film that is being produced by Walt Disney Animation Studios.  It will be the sequel to 2012's \"Wreck-It Ralph\", and is scheduled to be released on November 21, 2018 by Walt Disney Pictures.",
+      "July 15th, but Jarren posted on social media on July 3rd, 2016 \"Due to technical difficulties, we will be releasing Slow Motion Vol.  2 on July 22nd.\"  The album will be released on his new website and will be his first album release under his label Benton Enterprises, his first album release since the Funk Volume departure, and his first album released on his new website.",
+      "Pok\u00e9mon the Movie: I Choose You!: Pok\u00e9mon the Movie: I Choose You! , known in Japan as Pocket Monsters the Movie: I Choose You!  (\u5287\u5834\u7248\u30dd\u30b1\u30c3\u30c8\u30e2\u30f3\u30b9\u30bf\u30fc \u30ad\u30df\u306b\u304d\u3081\u305f\uff01 , Gekij\u014d-ban Poketto Monsut\u0101 Kimi ni kimeta! )  is a Japanese adventure anime film produced by OLM.  Released as the twentieth \"Pok\u00e9mon\" movie and the first film in the \"Sun and Moon\" series, it acts as a loose retelling of the original \"Indigo League\" saga of the show, released to commemorate the anime's twentieth anniversary.  It premiered at Japan Expo in France on July 6, 2017 and was released in Japan on July 15, 2017.  Fathom Events will release the film as a limited theatrical run in the rest of the world on November 5, 2017."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 506,
+    "generation_tokens": 37,
+    "generation_speed": 349.1422424368241,
+    "prompt_eval_speed": 72555.20504731861,
+    "generation_latency_s": 0.2296521000098437,
+    "latency": 0.774164899950847,
+    "total_prompt_tokens": 652,
+    "total_generation_tokens": 146,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2321922,
+    "stage_route_s": 0.2073025000281632,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27603159996215254,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.061002800008282065,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.64999645575881e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22968710004352033,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7741741000209004,
+    "unaccounted_latency_s": 9.460002183914185e-05,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents, specifically the release date and price for the release of Mac OS X with the software for creating WWF files.",
+    "sub_queries": [
+      "The release dates are:",
+      "Release Date: 2013-05-09"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

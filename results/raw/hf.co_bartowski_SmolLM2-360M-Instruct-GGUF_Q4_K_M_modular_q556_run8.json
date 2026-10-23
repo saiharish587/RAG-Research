@@ -1,0 +1,49 @@
+{
+  "question_id": "Q556",
+  "query": "Name a musician that worked with Hiren Roy and Vilayat Khan.",
+  "ground_truth": "Nikhil Banerjee",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Hiren Roy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hiren Roy: Hiren Roy (1920\u20131992) was for many years considered to be the best sitar maker in India.  Many great musicians, including Nikhil Banerjee, Vilayat Khan, Annapurna Devi, and Ravi Shankar, have sworn by his creations.",
+      "Vilayat Khan: Ustad Vilayat Khan (28 August 1928 \u2013 13 March 2004) was one of India's well known sitar maestros.  Along with Ravi Shankar, Ali Akbar Khan, Nikhil Banerjee and his younger brother Imrat Khan, Vilayat Khan helped introduce Indian Classical Music to the West.",
+      "Hiren Bhattacharyya: Hiren Bhattacharyya () (28 July 1932 \u2013 4 July 2012) was one of the best known poets worked in the Assamese language.  He had innumerable works published in Assamese and achieved many prizes and accolades for his poetry.  He is known as Hiruda () among his fans.  Prem aru Rodalir Kobi (\"Poet of Love and Sunshine\") () is his other name in the Assamese literature."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 345,
+    "generation_tokens": 6,
+    "generation_speed": 265.357569324665,
+    "prompt_eval_speed": 47105.40688148553,
+    "generation_latency_s": 0.1408979999832809,
+    "latency": 0.4586581999901682,
+    "total_prompt_tokens": 477,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2272108,
+    "stage_route_s": 0.10282780008856207,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1581349999178201,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056629300001077354,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.21000474691391e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14092959999106824,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.458667500060983,
+    "unaccounted_latency_s": 9.460002183914185e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Hiren Roy\"",
+      "\"Vilayat Khan\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

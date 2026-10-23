@@ -1,0 +1,42 @@
+{
+  "question_id": "Q263",
+  "query": "What NIFL Premier Intermediate League team did Sean Connor play for?",
+  "ground_truth": "Distillery",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Sean Connor played for the Cliftonville Football Club.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sean Connor: Sean Connor (born 12 July 1967) is a former footballer and manager.  He had a brief playing career which included spells at Distillery, Port Vale, Macclesfield Town, Ards, and Cliftonville.",
+      "Northern Ireland Football League: The Northern Ireland Football League (commonly abbreviated to NIFL), also known as the Irish League, is the national football league of Northern Ireland.  It was formed in 2013 to assume independent collective management of the top three levels of the Northern Ireland football league system; namely the Premiership, Championship and NIFL Premier Intermediate League.",
+      "NIFL Premier Intermediate League: The NIFL Premier Intermediate League is the third division of the Northern Ireland Football League, the national association football league in Northern Ireland, and the highest intermediate division in Northern Ireland, occupying level three in the Northern Ireland football league system \u2013 below."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 270,
+    "generation_tokens": 15,
+    "generation_speed": 268.1684097613301,
+    "prompt_eval_speed": 38238.209885285374,
+    "generation_latency_s": 0.9324369999812916,
+    "latency": 3.360941299935803,
+    "total_prompt_tokens": 345,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1235274,
+    "stage_rewrite_s": 1.1737007000483572,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0789828000124544,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17570380005054176,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9324718000134453,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.360949599999003,
+    "unaccounted_latency_s": 9.089987725019455e-05,
+    "rewritten_query": "Sean Connor played for the NIFL Premier Intermediate League.",
+    "query_was_rewritten": true
+  }
+}

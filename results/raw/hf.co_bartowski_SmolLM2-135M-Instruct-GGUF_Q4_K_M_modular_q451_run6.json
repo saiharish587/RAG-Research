@@ -1,0 +1,48 @@
+{
+  "question_id": "Q451",
+  "query": "What is the name of the oldest child that attended the Trump campaign-Russian meeting?",
+  "ground_truth": "Donald Trump Jr.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The answer to the question \"What is the name of the oldest child that attended the Trump campaign-Russian meeting?\" is \"Donald Trump Jr.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Trump campaign\u2013Russian meeting: On June 9, 2016, a meeting was held in Trump Tower in New York City between three senior members of the presidential campaign of Donald TrumpDonald Trump Jr., Jared Kushner, and Paul Manafortand at least five other people, including Russian lawyer Natalia Veselnitskaya.  The meeting was arranged by publicist and long-time Trump acquantiance, Rob Goldstone on behalf of his client, singer-songwriter Emin Agalarov.  It was disclosed to U.S. government officials when Kushner filed a revised version of his security clearance form.",
+      "Donald Trump presidential campaign, 2016: The 2016 presidential campaign of Donald Trump, an American businessman, television personality, and author, was formally launched on June 16, 2015, at Trump Tower in New York City.  Trump was the Republican nominee for President of the United States in the 2016 election, having won the most state primaries, caucuses, and delegates at the 2016 Republican National Convention.  He chose Mike Pence, the sitting Governor of Indiana, as his vice presidential running mate.  On November 8, 2016, Trump and Pence were elected president and vice president of the United States.",
+      "Donald Trump Jr.: Donald John Trump Jr. (born December 31, 1977) is an American businessman and former reality TV personality.  He is the oldest child of the 45th President of the United States, Donald Trump, and his first wife, Ivana."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 422,
+    "generation_tokens": 30,
+    "generation_speed": 321.18194957443393,
+    "prompt_eval_speed": 55953.328029700344,
+    "generation_latency_s": 0.21146420005243272,
+    "latency": 0.5255908999824896,
+    "total_prompt_tokens": 556,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2401238,
+    "stage_route_s": 0.161338199977763,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.11482820007950068,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03778349992353469,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.4199987314641476e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.211514399969019,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5256058999802917,
+    "unaccounted_latency_s": 9.820004925131798e-05,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents, specifically those related to the Russian meeting.",
+    "sub_queries": [
+      "The answer for this question would be \"Trump Campaign.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

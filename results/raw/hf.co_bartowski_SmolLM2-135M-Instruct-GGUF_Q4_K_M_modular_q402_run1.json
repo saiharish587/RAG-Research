@@ -1,0 +1,49 @@
+{
+  "question_id": "Q402",
+  "query": "Which game was released first, Icehouse pieces or Kill Doctor Lucky?",
+  "ground_truth": "Icehouse pieces",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The game that was released first is Icehouse pieces.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kill Doctor Lucky: Kill Doctor Lucky is a humorous board game designed by James Ernest and released in 1996 by Cheapass Games.  In 1998, \"Kill Doctor Lucky\" won the Origins Award for \"Best Abstract Board Game of 1997\".",
+      "Icehouse pieces: Icehouse pieces, or Icehouse Pyramids, Treehouse pieces, Treehouse Pyramids and officially Looney Pyramids, are nestable and stackable pyramid-shaped gaming pieces and a game system.  The game system was invented by Andrew Looney and John Cooper in 1987, originally for use in the game of Icehouse.",
+      "Treehouse (game): Treehouse is a game in which players try to get their configuration of Icehouse pieces to match the central configuration, shared by all players.  The rolling of the special \"Treehouse Die\" tells the player what kind of move to make to change his own or the central configuration, and then he does so to best move towards the goal."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 289,
+    "generation_tokens": 12,
+    "generation_speed": 307.98449811359495,
+    "prompt_eval_speed": 15269.192159349079,
+    "generation_latency_s": 0.16838789999019355,
+    "latency": 1.0203984000254422,
+    "total_prompt_tokens": 419,
+    "total_generation_tokens": 225,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2443343,
+    "stage_route_s": 0.20287819998338819,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5921583999879658,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056794999982230365,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9299985878169537e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16842000000178814,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0204082001000643,
+    "unaccounted_latency_s": 9.800016414374113e-05,
+    "route": "rag",
+    "router_raw": "Icehouse pieces is the answer to the user's question. The user asked about which game was released first, so I will provide a single word 'yes' for this question.",
+    "sub_queries": [
+      "Icehouse Pieces and Kill Doctor Lucky are both popular action games that were released in 2015. The first game, Icehouse Pieces, is a puzzle-platformer with a storyline centered around the adventures of a group of players who must navigate through various levels to unlock new pieces of ice. It was released on November 30, 2014.",
+      "Kill Doctor Lucky, on the other hand, is a platform game that follows the adventures of a young detective named Dr. Emmett Brown (played by Matt Dillon) who must solve crimes and track down missing persons in a city filled with crime-ridden streets and abandoned buildings. The game was released on November 20, 2015."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

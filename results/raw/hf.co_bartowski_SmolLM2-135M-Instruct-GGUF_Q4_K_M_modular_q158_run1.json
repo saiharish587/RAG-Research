@@ -1,0 +1,48 @@
+{
+  "question_id": "Q158",
+  "query": "What retailer in ABQ Uptown is headquarted in Poole, Dorset, United Kingdom?",
+  "ground_truth": "Lush Ltd.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Lush Ltd.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lush (company): Lush Ltd. is a cosmetics retailer headquartered in Poole, Dorset, United Kingdom.  The company was founded by Mark Constantine, a trichologist and Liz Weir, a beauty therapist.  They met in a hair and beauty salon in Poole, England.  A few years later, they decided to branch out and start their own business selling natural hair and beauty products.",
+      "Shop Direct: Shop Direct is a multi - brand online retailer in the United Kingdom and Ireland.  It is based in the Speke area of the city of Liverpool, in Merseyside, England.  Established in November 2005 as a result of the merger of the former Littlewoods and Shop Direct companies, the retailer was known as Littlewoods Shop Direct Group until a corporate rebranding to Shop Direct Group in May 2008.  In 2013, the company rebranded to Shop Direct, dropping the 'group' from its name.",
+      "Tesco: Tesco PLC is a British multinational grocery and general merchandise retailer with headquarters in Welwyn Garden City, Hertfordshire, England, United Kingdom.  It is the third largest retailer in the world measured by profits and ninth-largest retailer in the world measured by revenues.  It has stores in 12 countries across Asia and Europe and is the grocery market leader in the UK (where it has a market share of around 28.4%), Ireland, Hungary and Thailand."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 392,
+    "generation_tokens": 5,
+    "generation_speed": 277.76234653630354,
+    "prompt_eval_speed": 20814.52769075559,
+    "generation_latency_s": 0.14405110001098365,
+    "latency": 0.4209510999498889,
+    "total_prompt_tokens": 536,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22339559999999997,
+    "stage_route_s": 0.09080440003890544,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14758859993889928,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038353299954906106,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.449998959898949e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1440831000218168,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.420959800016135,
+    "unaccounted_latency_s": 8.670007809996605e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Boogey! The retailer in Poole, Dorset, United Kingdom, is Boogee!"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

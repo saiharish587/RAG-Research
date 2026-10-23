@@ -1,0 +1,42 @@
+{
+  "question_id": "Q155",
+  "query": "Are Broughtonia and Laeliocattleya both orchids?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, Broughtonia and Laelioc Cattleytonia are not orchids. They are a different genus altogether.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Broughtonia: Broughtonia is a genus of orchids (family Orchidaceae) native to the Bahamas and the Greater Antilles.  The genus is abbreviated Bro in trade journals.",
+      "Laeliocattleya: Laeliocattleya is a nothogenus of intergeneric orchid hybrids descended from the parental genera \"Laelia\" and \"Cattleya\".  It is abbreviated Lc.  in the horticultural trade.",
+      "Cattleytonia: Cattleytonia (from \"Cattleya\" and \"Broughtonia\", its parental genera) is an intergeneric hybrid of orchids.  It is abbreviated Ctna in horticultural trade."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 212,
+    "generation_tokens": 26,
+    "generation_speed": 390.4079821975161,
+    "prompt_eval_speed": 19517.584238630086,
+    "generation_latency_s": 0.15097139996942133,
+    "latency": 0.6271085999906063,
+    "total_prompt_tokens": 286,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.142325,
+    "stage_rewrite_s": 0.23569530004169792,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0775413999799639,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16275310004130006,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15100479999091476,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6271165999351069,
+    "unaccounted_latency_s": 0.00012239988427609205,
+    "rewritten_query": "Broughtonia and Laelioclea are both orchids, but they have distinct differences in terms of their growth habits and flowering characteristics. Broughtonia is a tropical species that thrives in warm climates, while Laelioclea prefers subtropical regions with consistent moisture and high humidity levels.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q455",
+  "query": "Are Agee and To Shoot an Elephant both documentaries about war?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Agee (film): Agee is a 1980 American documentary film directed by Ross Spears, about the writer James Agee.  It was nominated for an Academy Award for Best Documentary Feature.",
+      "To Shoot an Elephant: To Shoot an Elephant is a 2009 documentary film about the 2008-2009 Gaza War directed by Alberto Arce and Mohammad Rujailahk.",
+      "Remote Control War: Remote Control War is a one-hour documentary produced by Zoot Pictures.  The documentary focuses on the rise of robotics in the military.  It was broadcast on CBC in Canada as part of the \"Doc Zone\" series, with first air date of February 24, 2011.  The production team shot in Europe, Israel and across North America, going from the Pentagon to production facilities and research laboratories to find the latest technology, trends and the issues that arise when robots are used to kill humans."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 276,
+    "generation_tokens": 2,
+    "generation_speed": 320.9757663296421,
+    "prompt_eval_speed": 18302.38726790451,
+    "generation_latency_s": 0.09811640006955713,
+    "latency": 0.4045670999912545,
+    "total_prompt_tokens": 350,
+    "total_generation_tokens": 18,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1311935,
+    "stage_rewrite_s": 0.14227800001390278,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.05887169996276498,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10518039995804429,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.09815550001803786,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4045788999646902,
+    "unaccounted_latency_s": 9.400001727044582e-05,
+    "rewritten_query": "Are ageee and to shootanewerboth documentariesaboutwar?",
+    "query_was_rewritten": true
+  }
+}

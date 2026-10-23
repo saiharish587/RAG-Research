@@ -1,0 +1,49 @@
+{
+  "question_id": "Q121",
+  "query": "What major truck road is located in Backford Cross?",
+  "ground_truth": "The A41",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Bow Road",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Backford Cross: Backford Cross is a village on the Wirral Peninsula, Cheshire, England.  It is a suburb of the town of Ellesmere Port and part of Cheshire West and Chester.  Backford Cross is located around the A41/A5117 junction, south of Great Sutton and about 1.5 mi north of the village of Backford, near Chester.  Backford Cross is largely made up of residential homes built from 1990 onwards and serves as a commuter village to Ellesmere Port and Chester, although inhabitants show no allegiance to either locality.  The area is split between postcode districts, with parts of the village in Great Sutton, Ellesmere Port CH66 and other areas in Backford, Chester CH1.",
+      "U.S. Route 287: U.S. Route 287 is a north\u2013south United States highway.  It is 2,882 km long.  It serves as the major truck route between Fort Worth, Texas and Amarillo, Texas, and between Fort Collins, Colorado and Laramie, Wyoming.  The highway is broken into two segments by Yellowstone National Park, where an unnumbered park road serves as a connector.",
+      "Bow Road: Bow Road is a thoroughfare in Bow, Tower Hamlets, London, England.  The road forms part of the A11, running from Aldgate to Norwich in Norfolk.  To the west the road becomes Mile End Road, and to the east is Bow Interchange on the A12."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 399,
+    "generation_tokens": 4,
+    "generation_speed": 244.27480916030532,
+    "prompt_eval_speed": 46946.69961171903,
+    "generation_latency_s": 0.135138800018467,
+    "latency": 0.5777817000634968,
+    "total_prompt_tokens": 521,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2492182,
+    "stage_route_s": 0.1066846998874098,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2813279000110924,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05444910004734993,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.700000863522291e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13518069998826832,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5777943000430241,
+    "unaccounted_latency_s": 0.00010590010788291693,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The major truck road located in Backford Cross is called \"Backford Road\".",
+      "Query 2: The major truck road located in Backford Cross is called \"Backford Road\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

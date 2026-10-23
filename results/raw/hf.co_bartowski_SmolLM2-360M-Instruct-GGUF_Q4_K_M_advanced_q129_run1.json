@@ -1,0 +1,42 @@
+{
+  "question_id": "Q129",
+  "query": "Where is the Bubblegum Alley, that is similar to Gum Wall, located in California?",
+  "ground_truth": "San Luis Obispo, California",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Bubblegum Alley is located in downtown San Luis Obispo, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bubblegum Alley: Bubblegum Alley is a tourist attraction in downtown San Luis Obispo, California, known for its accumulation of used bubble gum on the walls of an alley.  It is a 15 ft high and 70 ft long alley lined with chewed gum left by passers-by.  It covers a stretch of 20 meters in the 700 block of Higuera Street in downtown San Luis Obispo.",
+      "Gum Wall: The Market Theater Gum Wall is a brick wall covered in used chewing gum, in an alleyway in downtown Seattle.  It is located in Post Alley under Pike Place Market.  Similar to Bubblegum Alley in San Luis Obispo, California, the Market Theater Gum Wall is a local landmark.  Parts of the wall can be covered several inches thick, 15 feet high for 50 feet.",
+      "Ouch! (gum): Ouch!  is a type of sugar-free bubble gum made by the Wm. Wrigley Jr.  Company under the Hubba Bubba brand name.  By the 1990s, the gum was available in the flavors of grape, watermelon, and strawberry.  Each stick of gum was wrapped with paper made to look like a bandage and was packaged in a metallic container similar to that of a bandage box.  In October 2009, the gum was redesigned to have a new look and packaging, and is now also available in bubblegum flavor.  Each pack comes with one of a possible twenty collectable games inside."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 418,
+    "generation_tokens": 20,
+    "generation_speed": 253.9747041194697,
+    "prompt_eval_speed": 14712.611312519799,
+    "generation_latency_s": 0.9781784999649972,
+    "latency": 3.4062617999734357,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1337272,
+    "stage_rewrite_s": 1.3126702000154182,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9586870999773964,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15660109999589622,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9782215999439359,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.406273099943064,
+    "unaccounted_latency_s": 9.360001422464848e-05,
+    "rewritten_query": "Bubblegum Alley is a popular destination for its unique gum-filled treats and vibrant atmosphere. Located in California, it's an excellent place to experience the local culture and enjoy some of the most delicious gum flavors.",
+    "query_was_rewritten": true
+  }
+}

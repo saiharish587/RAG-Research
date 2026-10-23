@@ -1,0 +1,42 @@
+{
+  "question_id": "Q241",
+  "query": "What arcade game is named after the only player in major league history to have a 0.300 batting average for 7 consecutive seasons?",
+  "ground_truth": "a pinball machine",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer to this question is \"Donkey Kong.\" It was released on Nintendo's Game Boy Advance and later reissued as Donkey Kong USA, which was the first game in the series to feature a player with a 0.300 batting average for seven consecutive seasons.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Batman v Superman: Dawn of Justice: Batman v Superman: Dawn of Justice is a 2016 American superhero film featuring the DC Comics characters Batman and Superman.  Directed by Zack Snyder and distributed by Warner Bros.  Pictures, the film is the second installment in the DC Extended Universe (DCEU) following 2013's \"Man of Steel\".  It was written by Chris Terrio and David S. Goyer, and features an ensemble cast that includes Ben Affleck, Henry Cavill, Amy Adams, Jesse Eisenberg, Diane Lane, Laurence Fishburne, Jeremy Irons, Holly Hunter and Gal Gadot.  \"Batman v Superman: Dawn of Justice\" is the first live-action film to feature Batman and Superman together, as well as the first live-action cinematic portrayal of Wonder Woman, Aquaman, Flash and Cyborg.  In the film, criminal mastermind Lex Luthor manipulates Batman into a preemptive battle with Superman, whom Luthor is obsessed with defeating.",
+      "Superman (comic book): Superman is an ongoing American comic book series featuring the DC Comics superhero, Superman, as the main protagonist.  Superman began as one of several anthology features in the National Periodical Publications comic book \"Action Comics\" #1 in June 1938.  The strip proved so popular that National launched Superman into his own self-titled comic book, the first for any superhero, premiering with the cover date Summer 1939.  Between 1986 and 2006 it was retitled The Adventures of Superman while a new series used the title \"Superman\".  In May 2006, it was returned to its original title and numbering.  The title was canceled with issue #714 in 2011, and was relaunched with issue #1 the following month which ended its run in 2016.  In June 2016, a fourth series was launched with new issue #1.",
+      "Donkey Kong (video game): Donkey Kong (Japanese: \u30c9\u30f3\u30ad\u30fc\u30b3\u30f3\u30b0 , Hepburn: Donk\u012b Kongu ) is an arcade game released by Nintendo in 1981.  An early example of the platform game genre, the gameplay focuses on maneuvering the main character across a series of platforms while dodging and jumping over obstacles.  In the game, Mario (originally named Mr. Video and then Jumpman) must rescue a damsel in distress named Pauline (originally named Lady), from a giant ape named Donkey Kong.  The hero and ape later became two of Nintendo's most popular and recognizable characters.  \"Donkey Kong\" is one of the most important titles from the golden age of arcade video games, and is one of the most popular arcade games of all time."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 704,
+    "generation_tokens": 60,
+    "generation_speed": 397.1879096000318,
+    "prompt_eval_speed": 22582.921665490474,
+    "generation_latency_s": 0.2600810000440106,
+    "latency": 0.8952759000239894,
+    "total_prompt_tokens": 796,
+    "total_generation_tokens": 156,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1344152,
+    "stage_rewrite_s": 0.3281008000485599,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07721070002298802,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22975729999598116,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2601217000046745,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8952866999898106,
+    "unaccounted_latency_s": 9.689992293715477e-05,
+    "rewritten_query": "The arcade game \"Batman v Superman\" was originally called \"Superman v Batman.\"\n\nI removed the introductory text and rephrased the query in a way that is more concise and user-friendly. The original query had an introductory phrase, but it wasn't necessary to convey the main point of the question. I also replaced the word \"named after\" with \"originally called,\" which makes the sentence more direct and easier to understand.",
+    "query_was_rewritten": true
+  }
+}

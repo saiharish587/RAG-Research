@@ -1,0 +1,42 @@
+{
+  "question_id": "Q299",
+  "query": "The mass killing that took place at Oakland, California on April 2, 2012 was less deadly than the one that took place on October 1, 2015 in which state?",
+  "ground_truth": "Oregon",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The mass killing that took place at Oikos University on April 2, 2012, was less deadly than the one that took place on October 1, 2015 in Roseburg, Oregon.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oikos University shooting: The Oikos University shooting occurred on April 2, 2012, when a gunman shot at people inside Oikos University, a Korean Christian college in Oakland, California, United States.  Within a few hours, the number of reported fatalities reached seven.  43-year-old One L. Goh, a former student at the school, was taken into custody and identified as the suspect in the shootings.  Along with the California State University, Fullerton massacre, this was the fourth-deadliest university shooting in United States history, after the Virginia Tech massacre, the University of Texas Clock Tower shooting, and the Umpqua Community College shooting, and the eighth-deadliest U.S. school massacre overall.  It is also considered the deadliest mass killing in the city's history.",
+      "Umpqua Community College shooting: The Umpqua Community College shooting occurred on October 1, 2015, at the UCC campus near Roseburg, Oregon, United States.  Chris Harper-Mercer, a 26-year-old enrolled at the school, fatally shot an assistant professor and eight students in a classroom.  Seven to nine others were injured.  Roseburg police detectives responding to the incident engaged Harper-Mercer in a brief shootout.  After being wounded, he killed himself by shooting himself in the head.  The mass shooting was the deadliest in Oregon's modern history.",
+      "Oakland, California: Oakland is the largest city and the county seat of Alameda County, California, United States.  A major West Coast port city, Oakland is the largest city in the East Bay region of the San Francisco Bay Area, the third largest city overall in the San Francisco Bay Area, the eighth largest city in California, and the 45th largest city in the United States, with a population of 419,267 as of 2015 .  It serves as a trade center for the San Francisco Bay Area; its Port of Oakland is the busiest port in the San Francisco Bay, the entirety of Northern California, and the fifth busiest in the United States of America.  The city was incorporated in 1852."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 570,
+    "generation_tokens": 48,
+    "generation_speed": 253.18325192788495,
+    "prompt_eval_speed": 79620.05866741165,
+    "generation_latency_s": 1.0829400999937207,
+    "latency": 3.491920300060883,
+    "total_prompt_tokens": 673,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1372469,
+    "stage_rewrite_s": 1.3067907999502495,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9460232000565156,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1560511999996379,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.082972600008361,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.491929000010714,
+    "unaccounted_latency_s": 9.180000051856041e-05,
+    "rewritten_query": "The mass killing that took place at Oakland, California on April 2, 2012, was less deadly than the one that occurred on October 1, 2015, in which state?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q116",
+  "query": "The Argentine PGA Championship record holder has won how many tournaments worldwide?",
+  "ground_truth": "230",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Argentine PGA Championship record holder has won 16 tournaments worldwide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Argentine PGA Championship: The Argentine PGA Championship is a golf tournament played in Argentina since 1920.  It was generally supported by the leading Argentine golfers and its list of champions includes Eduardo Romero (8 times), Jos\u00e9 Jurado (7 times), Vicente Fern\u00e1ndez (5 times), Jos\u00e9 C\u00f3ceres (twice) and \u00c1ngel Cabrera.  However, the record holder is former British Open champion Roberto De Vicenzo, who recorded 16 victories between 1944 and 1985.",
+      "Buenos Aires Province: Buenos Aires (] , \"Provincia de Buenos Aires\"; English: \"good airs\") is the largest and most populous Argentinian province.  It takes the name from the city of Buenos Aires, which used to be part of the province and the provincial capital until it was federalized in 1880.  Since then, in spite of bearing the same name, the province does not include the national capital city proper, though it does include all other localities of the Greater Buenos Aires metropolitan area surrounding it.  The current capital of the province is the city of La Plata, founded in 1882.",
+      "2014 FIFA World Cup: The 2014 FIFA World Cup was the 20th FIFA World Cup, the quadrennial world championship for men's national football teams organized by FIFA.  It took place in Brazil from 12 June to 13 July 2014, after the country was awarded the hosting rights in 2007.  It was the second time that Brazil staged the competition, the first being in 1950, and the fifth time that it was held in South America."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 454,
+    "generation_tokens": 17,
+    "generation_speed": 218.96211955331728,
+    "prompt_eval_speed": 46402.289452166806,
+    "generation_latency_s": 0.20033799996599555,
+    "latency": 0.6016984999878332,
+    "total_prompt_tokens": 584,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2330163,
+    "stage_route_s": 0.10117339994758368,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24564900004770607,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05434979998972267,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.64999645575881e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20037859992589802,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6017103999620304,
+    "unaccounted_latency_s": 0.00010370009113103151,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "2009-2013 (Argentina)",
+      "2014-2017 (Argentina)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

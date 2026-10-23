@@ -1,0 +1,42 @@
+{
+  "question_id": "Q21",
+  "query": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+  "ground_truth": "Pedro Rodr\u00edguez",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The other Mexican Formula One race car driver who has held the podium besides the Force India driver born in 1990 is Pedro Rodr\u00edguez. He won the 1965 Mexican Grand Prix and was the only one to finish on the podium.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sergio P\u00e9rez: Sergio P\u00e9rez Mendoza (    ; born 26 January 1990) also known as \"Checo\" P\u00e9rez, is a Mexican racing driver, currently driving for Force India.",
+      "Formula One drivers from Mexico: There have been six Formula One drivers from Mexico who have taken part in races since the championship began in 1950.  Pedro Rodr\u00edguez is the most successful Mexican driver being the only one to have won a grand prix.  Sergio P\u00e9rez, the only other Mexican to finish on the podium, currently races with Sahara Force India F1 Team .",
+      "1965 Mexican Grand Prix: The 1965 Mexican Grand Prix was a Formula One motor race held at Ciudad Deportiva Magdalena Mixhuca in Mexico City on October 24, 1965.  It was race 10 of 10 in both the 1965 World Championship of Drivers and the 1965 International Cup for Formula One Manufacturers.  The race was won by Richie Ginther, who took his first victory and the first for the Honda team, after leading for the entire race.  The Brabham-Climax of Dan Gurney finished the race second and the Lotus-Climax of Mike Spence completed the podium."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 383,
+    "generation_tokens": 59,
+    "generation_speed": 411.1526909595189,
+    "prompt_eval_speed": 23205.090772801625,
+    "generation_latency_s": 0.23550680000334978,
+    "latency": 0.587978900060989,
+    "total_prompt_tokens": 469,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1283745,
+    "stage_rewrite_s": 0.1516411000629887,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07496999995782971,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12573269999120384,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.23555049998685718,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5879907000344247,
+    "unaccounted_latency_s": 9.700004011392593e-05,
+    "rewritten_query": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+    "query_was_rewritten": false
+  }
+}

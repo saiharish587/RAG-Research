@@ -1,0 +1,42 @@
+{
+  "question_id": "Q233",
+  "query": "One Raffles Place is one of the tallest skyscrapers in the city of Singapore and tallest in the wolrd outside North America until it was succeeded by a Building in city?",
+  "ground_truth": "Hong Kong",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The building that is currently being constructed at Raffles Place, Singapore, is the tallest building in the world. It stands at 242 meters (919 feet) tall and has been completed in 2016.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "One Raffles Place: One Raffles Place, formerly Overseas Union Bank Centre or OUB Centre is one of the tallest skyscrapers in the city of Singapore.  It was the tallest together with the UOB Plaza and Republic Plaza until the construction of Tanjong Pagar Centre in 2016.  At 280 m , it was also the tallest building in the world outside North America at the time of its completion in 1986, surpassing South Korea's 63 Building completed one year earlier, until it was succeeded by the Bank of China Tower.  The building sits at the city centre of Raffles Place.",
+      "Republic Plaza (Singapore): Republic Plaza (Chinese: \u5171\u548c\u5927\u53a6) is one of the three tallest skyscrapers in Singapore, located at the Southern end of Raffles Place in the Downtown Core, the central business district of Singapore.  It shares the title of \"tallest building\" with the OUB Centre and UOB Plaza One.  Built at 280 metres (919 feet) tall, it was completed in 1995, and incorporates earthquake proof features despite the city being relatively far from earthquake zones.",
+      "CapitaGreen: CapitaGreen, also known as Market Street Tower, is an office tower located in Raffles Place, Singapore.  The building was designed by Toyo Ito and completed in 2014.  With a height of 242 m , it is one of the tallest skyscrapers in Singapore."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 418,
+    "generation_tokens": 50,
+    "generation_speed": 402.178197115578,
+    "prompt_eval_speed": 68211.48825065275,
+    "generation_latency_s": 0.2093411999521777,
+    "latency": 0.7114938000449911,
+    "total_prompt_tokens": 514,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13008340000000002,
+    "stage_rewrite_s": 0.21134859998710454,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08036619995255023,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21030140004586428,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2093865000642836,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7115043000085279,
+    "unaccounted_latency_s": 0.0001020999625325203,
+    "rewritten_query": "One Raffles Place is one of the tallest skyscrapers in the city of Singapore, with its height reaching 180 meters. It has been surpassed by another building in the city for which it is known as \"Wolrd Outside North America.",
+    "query_was_rewritten": true
+  }
+}

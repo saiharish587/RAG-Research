@@ -1,0 +1,42 @@
+{
+  "question_id": "Q441",
+  "query": "Ronald Reagan and George H. W. Bush both held which position in office?",
+  "ground_truth": "President of the United States",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "George H. W. Bush (G-W.) was the President of the United States from January 20, 1981, to January 20, 1989.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ronald Reagan: Ronald Wilson Reagan ( ; February 6, 1911 \u2013 June 5, 2004) was an American statesman and actor who served as the 40th President of the United States from 1981 to 1989.  Before his presidency, he was the 33rd Governor of California, from 1967 to 1975, after a career as a Hollywood actor and union leader.",
+      "Republican Party (United States): The Republican Party, commonly referred to as the GOP (abbreviation for Grand Old Party), is one of the two major contemporary political parties in the United States, the other being its historic rival, the Democratic Party.  The party is named after republicanism, the dominant value during the American Revolution.  Founded by anti-slavery activists, economic modernizers, ex-Whigs, and ex-Free Soilers in 1854, the Republicans dominated politics nationally and in the majority of northern states for most of the period between 1860 and 1932.",
+      "Presidency of Ronald Reagan: The presidency of Ronald Reagan began on January 20, 1981, when Ronald Reagan was inaugurated as President of the United States, and ended on January 20, 1989.  Reagan, a Republican, took office as the 40th United States president following a landslide win over Democratic incumbent President Jimmy Carter in the 1980 presidential election.  Reagan was succeeded by his vice president, George H. W. Bush, who won the 1988 presidential election with Reagan's support."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 43,
+    "generation_speed": 399.87724698464655,
+    "prompt_eval_speed": 64550.42527339004,
+    "generation_latency_s": 0.20783269999083132,
+    "latency": 0.6562715999316424,
+    "total_prompt_tokens": 501,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.141408,
+    "stage_rewrite_s": 0.15591590001713485,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07945499999914318,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21291990007739514,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.20788330002687871,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6562845999142155,
+    "unaccounted_latency_s": 0.00011129979975521564,
+    "rewritten_query": "Ronald Reagan, as a member of the Republican Party, holds the position of Secretary of State.",
+    "query_was_rewritten": true
+  }
+}

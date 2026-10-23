@@ -1,0 +1,48 @@
+{
+  "question_id": "Q501",
+  "query": "Who was the film which was Kim Dae-woo's directing debut about ?",
+  "ground_truth": "a scholar",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The film which was Kim Dae-woo's directing debut about is \"Forbidden Quest\" (2006).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kim Dae-woo: Kim Dae-woo (born 1962) is a South Korean film director and screenwriter.  Kim started his filmmaking career by winning the 1991 Korean Film Council Screenplay Contest.  He was an accomplished screenwriter with a number of hit scripts, including \"The Girl for Love and The One for Marriage\" (1993), \"An Affair\" (1998), \"Rainbow Trout\" (1999), and \"Untold Scandal\" (2003).  Making a switch to directing, he debuted with the hit period drama film \"Forbidden Quest\" (2006), followed by \"The Servant\" (2010) and \"Obsessed\" (2014).  \"Forbidden Quest\" won the Best New Director at the 42nd Baeksang Arts Awards, and Best New Director and Best Screenplay at the 26th Korean Association of Film Critics Awards in 2006.",
+      "To Sir, with Love (2006 film): To Sir, with Love () (aka My Teacher, Teacher's Mercy and Bloody Reunion) is a 2006 South Korean horror film, and the feature film debut of director Im Dae-Woong.",
+      "Kim Dae-seung: Kim Dae-seung (born June 18, 1967) is a South Korean film director and screenwriter."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 397,
+    "generation_tokens": 27,
+    "generation_speed": 216.53006560059023,
+    "prompt_eval_speed": 46993.37121212121,
+    "generation_latency_s": 0.24572030000854284,
+    "latency": 0.5594719999935478,
+    "total_prompt_tokens": 531,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24972489999999997,
+    "stage_route_s": 0.10901420004665852,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16888410004321486,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03570070001296699,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.8400059565901756e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2457511000102386,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5594816000666469,
+    "unaccounted_latency_s": 9.359989780932665e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The film that was Kim Dae-woo's directing debut\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

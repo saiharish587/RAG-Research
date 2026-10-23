@@ -1,0 +1,49 @@
+{
+  "question_id": "Q430",
+  "query": "Season 2 of Rick and Morty began with the episode directed by whom?",
+  "ground_truth": "Wes Archer",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Season 2 of Rick and Morty began with the episode directed by Dan Guterman.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Rickle in Time: \"A Rickle in Time\" is the first episode in the second season of the American animated television sitcom \"Rick and Morty\", and the twelfth overall episode of the series.  Written by Matt Roller and directed by Wes Archer, the episode first aired on Adult Swim in the United States on July 26, 2015.",
+      "Rick and Morty (season 2): The second season of the animated television series \"Rick and Morty\" originally aired in the United States on Cartoon Network's late night programming block, Adult Swim, which premiered on July 26, 2015 with \"A Rickle in Time\", and concluded on October 4 with \"The Wedding Squanchers\".  This season aired a total of ten episodes.",
+      "The Ricks Must Be Crazy: \"The Ricks Must Be Crazy\" is the sixth episode in the second season of the American animated television sitcom \"Rick and Morty\", and the seventeenth overall episode in the series.  Written by Dan Guterman and directed by Dominic Polcino, the episode first aired on Adult Swim in the United States on August 30, 2015.  It is speculated that the title of the episode is a reference to the 1980 film \"The Gods Must Be Crazy\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 367,
+    "generation_tokens": 19,
+    "generation_speed": 233.06592085571992,
+    "prompt_eval_speed": 14239.155738340965,
+    "generation_latency_s": 0.2183837000047788,
+    "latency": 0.5659633000614122,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22869130000000001,
+    "stage_route_s": 0.1018358999863267,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19019430002663285,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05537079996429384,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.749997217208147e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21841709990985692,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5659724000142887,
+    "unaccounted_latency_s": 9.740015957504511e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Season 2 of Rick and Morty\"",
+      "\"Directed by who?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

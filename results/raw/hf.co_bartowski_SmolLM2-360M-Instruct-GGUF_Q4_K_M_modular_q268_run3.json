@@ -1,0 +1,49 @@
+{
+  "question_id": "Q268",
+  "query": "Candy Coburn has shared the stage with an American country music group with who playing guitar?",
+  "ground_truth": "Charles Kelley",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Candy Coburn has shared the stage with Lady Antebellum, an American country music group formed in Nashville, Tennessee in 2006.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Candy Coburn: Candy Coburn is an American national performing country music artist who has shared the stage with many notable artists, including Brooks and Dunn, Kellie Pickler, Montgomery Gentry, Blake Shelton, Miranda Lambert, Gary Allan, Josh Turner, Lady Antebellum and others.  Scheduled to release her third album in 2010, Candy's most notable contribution to music so far has been her song, \"Pink Warrior.\"",
+      "Lady Antebellum: Lady Antebellum is an American country music group formed in Nashville, Tennessee in 2006.  The group is composed of Hillary Scott (lead and background vocals), Charles Kelley (lead and background vocals, guitar), and Dave Haywood (background vocals, guitar, piano, mandolin).  Scott is the daughter of country music singer Linda Davis, and Kelley is the brother of pop singer Josh Kelley.",
+      "American Country Awards: The American Country Awards (ACA) is an annual country music awards show, entirely voted on by fans online.  Created in 2010 by the Fox Network, the awards honor country music artists for singles, albums, music videos and touring categories.  In 2012, \"Song of the Year\" was added with the nominations coming from the Nashville Songwriters International Association.  In addition to the CMA Awards, the ACM Awards and the CMT Music Awards, it is the fourth major-awards show completely dedicated to the country music industry.  The first two ceremonies took place at the MGM Grand Garden Arena in Las Vegas, Nevada on December 6, 2010 and December 5, 2011.  The 2012 ceremony took place at the Mandalay Bay Events Center in Las Vegas, on December 10.  Luke Bryan won nine awards, including artist and album of the year, while Miranda Lambert won three.  Carrie Underwood won female artist of the year and Lauren Alaina won new artist of the year.  The show was executive produced by Bob Bain, produced by Paul Flattery, Tisha Fein, Kelly Brock and Fletcher Foster and directed by Michael Dempsey.  The Fox Network cancelled the American Country Awards in 2014 and replaced it with the American Country Countdown Awards from dick clark productions.  The ratings for ACCA dropped dramatically compared to the 2013 American Country Awards.  According to TV By The Numbers (http://tvbythenumbers.zap2it.com) 18-49 Ratings/Share dropped from 1.4/4 to 0."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 639,
+    "generation_tokens": 32,
+    "generation_speed": 245.71722554537703,
+    "prompt_eval_speed": 86597.09987803226,
+    "generation_latency_s": 0.25364500004798174,
+    "latency": 0.5576622999506071,
+    "total_prompt_tokens": 777,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2270064,
+    "stage_route_s": 0.10026570002082735,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14723969995975494,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0563378999941051,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5299955420196056e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25368550000712276,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5576738999225199,
+    "unaccounted_latency_s": 9.039998985826969e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"American Country Music Group\"",
+      "\"Candy Coburn\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

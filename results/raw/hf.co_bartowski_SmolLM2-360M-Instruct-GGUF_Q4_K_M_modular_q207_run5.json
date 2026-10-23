@@ -1,0 +1,49 @@
+{
+  "question_id": "Q207",
+  "query": "Are Hot Rod and The Memory of Our People both magazines?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Yes, Hot Rod and The Memory of Our People are both magazines.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Memory of Our People: The Memory of Our People is a magazine published in the Argentine city of Rosario, a province of Santa Fe.  The magazine was founded in 2004.  Its original title in Spanish is \"La Memoria de Nuestro Pueblo\".",
+      "Hot Rod (magazine): Hot Rod is a monthly American car magazine devoted to hot rodding, drag racing, and muscle cars \u2014 modifying automobiles for performance and appearance.",
+      "Petersen's 4-Wheel &amp; Off-Road: Petersen's 4-Wheel & Off-Road is a magazine dedicated to 4x4 and off-road trucks and SUVs.  The first issue was published in 1977; it began as a special-interest publication from the editors of Hot Rod magazine.  \"4-Wheel & Off-Road\" covers a range of topics for the do-it-yourself light-truck enthusiast, including real-world 4x4 performance modifications, new products and product evaluations, off-road event coverage, new-vehicle evaluations, travel, and lifestyle.  In March 1978, the magazine officially became a monthly publication, and in 2013, \"4-Wheel & Off-Road\" celebrated its 35th anniversary."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 15,
+    "generation_speed": 238.84969984554388,
+    "prompt_eval_speed": 40780.35021741685,
+    "generation_latency_s": 0.18067679996602237,
+    "latency": 0.5326887000119314,
+    "total_prompt_tokens": 471,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23875659999999999,
+    "stage_route_s": 0.09884240000974387,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19900429993867874,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053984500002115965,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.609996151179075e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18071109999436885,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5327021999983117,
+    "unaccounted_latency_s": 0.00010460009798407555,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Is Hot Rod magazine still published today?",
+      "Does The Memory of Our People have any ongoing publications?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

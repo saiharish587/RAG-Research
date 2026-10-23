@@ -1,0 +1,49 @@
+{
+  "question_id": "Q92",
+  "query": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+  "ground_truth": "John Waters",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The 18th Independent Spirit Awards were hosted by John Waters in 2002.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "18th Independent Spirit Awards: The 2002 Independent Spirit Awards, honoring the best in independent filmmaking for 2002, were announced on March 22, 2003.  It was hosted by John Waters.",
+      "28th Independent Spirit Awards: The 2012 Independent Spirit Awards was the 28th annual occasion of the Film Independent Spirit Awards.  It announced its nominees on November 27, 2012.  The winners were announced on February 23, 2013 during an awards ceremony hosted by Andy Samberg.",
+      "32nd Independent Spirit Awards: The 32nd Independent Spirit Awards (2017) nominees were announced by Film Independent, the nonprofit arts organization that produces them, on November 22, 2016.  The ceremony, hosted by Nick Kroll and John Mulaney, took place on Saturday, February 25, 2017, and was broadcast live on IFC at 2:00 pm PT.  Online streaming service Sundance Now live-streamed the Spirit Awards concurrently with the telecast, with an on-demand version available on Sundance Now."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 333,
+    "generation_tokens": 21,
+    "generation_speed": 260.28110359187923,
+    "prompt_eval_speed": 47735.091743119265,
+    "generation_latency_s": 0.2001917000161484,
+    "latency": 0.5105627999873832,
+    "total_prompt_tokens": 473,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23496709999999998,
+    "stage_route_s": 0.10017959994729608,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15696660010144114,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053023000014945865,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.489995237439871e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2002517000073567,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5105736999539658,
+    "unaccounted_latency_s": 9.85999358817935e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"American Film Director\"",
+      "Query 2: \"Independent Spirit Awards\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

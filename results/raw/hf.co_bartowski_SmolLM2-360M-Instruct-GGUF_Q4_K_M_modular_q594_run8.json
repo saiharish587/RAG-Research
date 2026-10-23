@@ -1,0 +1,49 @@
+{
+  "question_id": "Q594",
+  "query": "Which band has released the most studio albums, Blonde Redhead or Rob Zombie's band White Zombie?",
+  "ground_truth": "Blonde Redhead",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Blonde Redhead has released more studio albums than Rob Zombie's band White Zombie.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Blonde Redhead: Blonde Redhead is an alternative rock band composed of Kazu Makino (vocals, rhythm guitar) and twin brothers Simone and Amedeo Pace (drums and lead guitar/vocals, respectively) that formed in New York City in 1993.  The band's earliest albums were noted for their noise rock influences, though their sound evolved by the early 2000s with the releases of \"Misery is a Butterfly\" (2004) and \"23\" (2007), which both incorporated elements of dream pop, shoegaze and other genres.  They have released nine regular studio albums and have toured internationally.",
+      "Blonde and Blonder: Blonde and Blonder is a 2008 Canadian comedy film starring Pamela Anderson, Denise Richards and Emmanuelle Vaugier.  The film was directed by Dean Hamilton, and was released on January 18, 2008.",
+      "1979 (song): \"1979\" is a song by American alternative rock band the Smashing Pumpkins.  Released in 1996 as the second single from their third studio album, \"Mellon Collie and the Infinite Sadness\", \"1979\" was written by frontman Billy Corgan, and features loops and samples that were uncharacteristic of previous Smashing Pumpkins songs.  The song was written as a coming of age story by Corgan.  In the year 1979, Corgan was 12 and this is what he considered his transition into adolescence.  The song was popular with critics and fans; Allmusic's Amy Hanson called it a \"somewhat surprising hit\".  The song was nominated for the Record of the Year and Best Rock Performance by a Duo or Group with Vocal at the 39th Annual Grammy Awards, and won an MTV Video Music Award for Best Alternative Video.  In 2012, it was voted the second-best Smashing Pumpkins song by Rolling Stone magazine readers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 525,
+    "generation_tokens": 22,
+    "generation_speed": 213.69389321133355,
+    "prompt_eval_speed": 66304.62237938873,
+    "generation_latency_s": 0.22649970010388643,
+    "latency": 0.6280822000699118,
+    "total_prompt_tokens": 675,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23576789999999997,
+    "stage_route_s": 0.11232380010187626,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23518209997564554,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05389949993696064,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.689996760338545e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22653829993214458,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6280935000395402,
+    "unaccounted_latency_s": 9.36001306399703e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Blonde Redhead\" - Released 2008",
+      "\"White Zombie\" - Released 1979"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

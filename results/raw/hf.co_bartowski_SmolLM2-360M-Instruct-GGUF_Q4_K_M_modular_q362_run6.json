@@ -1,0 +1,49 @@
+{
+  "question_id": "Q362",
+  "query": "Scott Sandelin grew up in a town in what Minnesota county?",
+  "ground_truth": "Saint Louis County",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Scott Sandelin grew up in a town in Hennepin County, Minnesota.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hennepin County, Minnesota: Hennepin County ( ) is a county in the U.S. state of Minnesota.  As of the 2010 census the population was 1,152,425.  It is the most populous county in Minnesota and the 35th-most populous county in the United States; more than one in five Minnesotans live in Hennepin County.  Its county seat is Minneapolis, the state's most populous city.  The county is named in honor of the 17th-century explorer Father Louis Hennepin.",
+      "Mankato, Minnesota: Mankato ( ) is a city in Blue Earth, Nicollet, and Le Sueur counties in the state of Minnesota.  It is the 22nd biggest city in Minnesota.  The population was 41,044 according to 2015 US census estimates, making it the fifth largest city in Minnesota outside of the Minneapolis\u2013Saint Paul metropolitan area.  The county seat of Blue Earth County, it is located along a large bend of the Minnesota River at its confluence with the Blue Earth River.  Mankato is across the Minnesota River from North Mankato.  Mankato and North Mankato have a combined population of over 53,000, according to the 2010 census.  It completely encompasses the town of Skyline.  North of Mankato Regional Airport, a tiny non-contiguous part of the city is located within Le Sueur County.  Most of the city of Mankato is located within Blue Earth County.",
+      "Minneapolis: Minneapolis ( ) is the county seat of Hennepin County, and the larger of the Twin Cities, the 16th-largest metropolitan area in the United States.  As of 2016, Minneapolis is the largest city in the state of Minnesota and 46th-largest in the United States, with an estimated population of 413,651.  The Twin Cities metropolitan area is the third largest in the Midwest with about 3.5 million people.  Minneapolis and Saint Paul anchor the second-largest economic center in the Midwest, after Chicago."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 543,
+    "generation_tokens": 18,
+    "generation_speed": 239.44130362487527,
+    "prompt_eval_speed": 59775.42932628798,
+    "generation_latency_s": 0.19865569996181875,
+    "latency": 0.6049487999407575,
+    "total_prompt_tokens": 669,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.229957,
+    "stage_route_s": 0.10229519999120384,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2420822000131011,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06173409998882562,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.240004975348711e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19869370001833886,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6049577000085264,
+    "unaccounted_latency_s": 0.00010079995263367891,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Sandel, Scott, grew up in a town in Minnesota County.",
+      "Query 2: Sandel, Scott, was born and raised in a town in Minnesota County."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

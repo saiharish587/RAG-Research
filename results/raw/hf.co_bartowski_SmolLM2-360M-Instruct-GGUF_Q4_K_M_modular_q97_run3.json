@@ -1,0 +1,49 @@
+{
+  "question_id": "Q97",
+  "query": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+  "ground_truth": "IT products and services",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Bordan Tkachuk was the CEO of a company that provided business services, specifically in the area of financial services.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bordan Tkachuk: Bordan Tkachuk ( ) is a British business executive, the former CEO of Viglen, also known from his appearances on the BBC-produced British version of \"The Apprentice,\" interviewing for his boss Lord Sugar.",
+      "Bombardier Inc.: Bombardier Inc. (] ) is a multinational aerospace and transportation company based in Montreal, Quebec, Canada.  Starting as a maker of snow machines or snowmobiles, over the years it has grown into a large manufacturer of regional airliners, business jets, mass transportation equipment, and recreational equipment, and a provider of financial services.",
+      "AB InBev brands: Anheuser-Busch InBev SA/NV (] ; abbreviated as AB InBev) is the largest beer company in the world.  It had 200 brands prior to the merger with SABMiller on October 10, 2016.  The combined ABInBev/SAB Miller entity has approximately 400 beer brands as of January 2017."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 302,
+    "generation_tokens": 26,
+    "generation_speed": 221.63876291472025,
+    "prompt_eval_speed": 33630.28953229399,
+    "generation_latency_s": 0.23589910008013248,
+    "latency": 0.6260586000280455,
+    "total_prompt_tokens": 440,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2253506,
+    "stage_route_s": 0.09215350006707013,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24272990005556494,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05510549992322922,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3999945521354675e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23593090008944273,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6260691999923438,
+    "unaccounted_latency_s": 9.599991608411074e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The type of products that Bordan Tkachuk's company provided.\"",
+      "\"The kind of services or goods that Bordan Tkachuk's company offered.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

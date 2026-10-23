@@ -1,0 +1,49 @@
+{
+  "question_id": "Q222",
+  "query": "Which television series featured an actor who also performed in \"The Young Ones\"?",
+  "ground_truth": "\"The Comic Strip Presents...\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Young Ones was the title of the British sitcom.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Young Ones (film): Young Ones (UK title Bad Land: Road to Fury) is a 2014 action science fiction film directed and written by Jake Paltrow.  The film stars Nicholas Hoult, Elle Fanning, Michael Shannon and Kodi Smit-McPhee.  The film had its world premiere at 2014 Sundance Film Festival on January 18, 2014.  The film was released on October 17, 2014 in the United States.",
+      "The Young Ones (TV series): The Young Ones is a British sitcom, broadcast in the United Kingdom from 1982 to 1984 in two six-part series.  Shown on BBC2, it featured anarchic, offbeat humour which helped bring alternative comedy to television in the 1980s and made household names of its writers and performers.  In 1985, it was shown on MTV, one of the first non-music television shows on the fledgling channel.  In a 2004 poll, it ranked at number 31 in the BBC's list of \"Britain's Best Sitcoms\".  The show's title relates to the song of the same name, written by Sid Tepper and Roy C. Bennett, and sung by Cliff Richard and The Shadows, which was a No. 1 UK hit single.",
+      "The Young Ones (video game): The Young Ones is a video game based on the British comedy television series, \"The Young Ones\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 402,
+    "generation_tokens": 13,
+    "generation_speed": 229.15161023073804,
+    "prompt_eval_speed": 49391.8232450944,
+    "generation_latency_s": 0.17580390011426061,
+    "latency": 0.5706644000019878,
+    "total_prompt_tokens": 532,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2353817,
+    "stage_route_s": 0.09907910006586462,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2415717999683693,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054028999991714954,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.949991125613451e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17584749998059124,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5706768999807537,
+    "unaccounted_latency_s": 0.0001007000682875514,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Young Ones\" (2007-2013)",
+      "\"The Young Ones\" (2008-2014)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q447",
+  "query": "What television thriller anthology did the winner of one Golden Globe, two tony Awards and six Primetime Emmy Awards appear on?",
+  "ground_truth": "Darkroom",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The winner of one Golden Globe, two Golden Globe Awards, and six Primetime Emmy Awards appears on \"The Sixth Sense\" is an American supernatural thriller film.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Al Pacino: Alfredo James Pacino ( ; born April 25, 1940) is an American actor of stage and screen, filmmaker, and screenwriter.  Pacino has had a career spanning over five decades, during which time he has received numerous accolades and honors both competitive and honorary, among them an Academy Award, two Tony Awards, two Primetime Emmy Awards, a British Academy Film Award, four Golden Globe Awards, the Lifetime Achievement Award from the American Film Institute, the Golden Globe Cecil B. DeMille Award, and the National Medal of Arts.  He is also one of few performers to have won a competitive Oscar, an Emmy and a Tony Award for acting, dubbed the \"Triple Crown of Acting\".",
+      "Matt Damon: Matthew Paige Damon ( ; born October 8, 1970) is an American actor, film producer, philanthropist and screenwriter.  He is ranked among \"Forbes\" magazine's most bankable stars and is one of the highest-grossing actors of all time.  Damon has received various accolades, including an Academy Award from five nominations, two Golden Globe Awards from eight nominations, and has been nominated for two British Academy Film Awards and six Emmy Awards.",
+      "List of accolades received by The Sixth Sense: \"The Sixth Sense\" is an American supernatural thriller film, written and directed by M. Night Shyamalan.  The film was released on August 6, 1999, grossing over $26,600,000 on its opening weekend and ranking first place at the box office.  Overall the film grossed over $293,500,000 domestically and $672,800,000 worldwide, which is approximately 16.8 times its budget of $40 million.  \"The Sixth Sense\" was well received by critics, with an approval rating of 85% from review aggregator Rotten Tomatoes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 515,
+    "generation_tokens": 35,
+    "generation_speed": 359.3023375183501,
+    "prompt_eval_speed": 21352.460715618392,
+    "generation_latency_s": 0.2311723999446258,
+    "latency": 0.6379824000177905,
+    "total_prompt_tokens": 669,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2309129,
+    "stage_route_s": 0.17413659999147058,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1958578999619931,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03665489994455129,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.840001929551363e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23120519996155053,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6379913999699056,
+    "unaccounted_latency_s": 8.890009485185146e-05,
+    "route": "rag",
+    "router_raw": "The winner of one Golden Globe, two Tony Awards, six Primetime Emmys, and three Golden Globes.",
+    "sub_queries": [
+      "The winner of one Golden Globe, two Tony Awards, six Primetime Emmys, and three Grammy awards is a classic example of a television thriller anthology."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q159",
+  "query": "What football club plays in the area between the old tool gates: Brook Bar and Trafford bar?",
+  "ground_truth": "Manchester United",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Manchester United F.C.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Manchester United F.C.: Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football.  Nicknamed \"the Red Devils\", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.",
+      "Old Trafford, Greater Manchester: Old Trafford is an area of Stretford, in the Metropolitan Borough of Trafford, Greater Manchester, England, 2 mi southwest of Manchester city centre.  The crossroads sites of two old toll gates roughly delineate the borders of the area: Brooks's Bar to the east and Trafford Bar to the west.",
+      "History of Manchester United F.C. (1945\u201369): Manchester United Football Club is an English professional football club, based in Old Trafford, Greater Manchester, that plays in the Premier League.  Founded as Newton Heath LYR Football Club in 1878, and changed its name to Manchester United in 1902."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 336,
+    "generation_tokens": 9,
+    "generation_speed": 251.83982986820385,
+    "prompt_eval_speed": 42889.9668113352,
+    "generation_latency_s": 0.15347739995922893,
+    "latency": 0.6613234999822453,
+    "total_prompt_tokens": 478,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2305226,
+    "stage_route_s": 0.09975040005519986,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3535702000372112,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05434969998896122,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.830001853406429e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15351790003478527,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6613356999587268,
+    "unaccounted_latency_s": 9.989982936531305e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The club is part of the Manchester United Football Club, which has a stadium near the old tool gates at Brook Bar and Trafford Bar.",
+      "Query 2: The club plays in the Old Trafford Stadium, located between the old tool gates at Brook Bar and Trafford Bar."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

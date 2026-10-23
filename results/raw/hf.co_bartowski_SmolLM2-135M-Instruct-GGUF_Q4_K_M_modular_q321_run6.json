@@ -1,0 +1,48 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "John Lasseter is the principal creative officer of Pixar Animation Studios, Walt Disney Animation Studios, and DisneyToon Studios.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Fogerty: John Cameron Fogerty (born May 28, 1945) is an American musician, singer, and songwriter.  He was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.  The group had nine top-ten singles and eight gold albums between 1968 and 1972.  They were inducted into the Rock and Roll Hall of Fame in 1993.",
+      "John Lasseter: John Alan Lasseter (born January 12, 1957) is an American animator, film director, screenwriter, and film producer.  He currently is the chief creative officer of Pixar Animation Studios, Walt Disney Animation Studios, and DisneyToon Studios.  He is also the Principal Creative Advisor for Walt Disney Imagineering.",
+      "Humphrey Bogart: Humphrey DeForest Bogart ( ; December 25, 1899January 14, 1957) was an American screen and stage actor whose performances in 1940s films noir such as \"The Maltese Falcon\", \"Casablanca\", and \"The Big Sleep\" earned him status as a cultural icon."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 340,
+    "generation_tokens": 30,
+    "generation_speed": 337.76176536816035,
+    "prompt_eval_speed": 50829.7204365376,
+    "generation_latency_s": 0.20525320002343506,
+    "latency": 0.4846617999719456,
+    "total_prompt_tokens": 468,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2416583,
+    "stage_route_s": 0.09622209996450692,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14479689998552203,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03823010006453842,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1499966755509377e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20528459991328418,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4846703999210149,
+    "unaccounted_latency_s": 9.580003097653389e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Serri and John Fogerty were both actors who played roles in films and television shows."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

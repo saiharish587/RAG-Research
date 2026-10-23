@@ -1,0 +1,48 @@
+{
+  "question_id": "Q481",
+  "query": "Which record label released Van Morrison's \"I've Been Working\" on the album \"His Band and the Street Choir\"?",
+  "ground_truth": "Warner Bros",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The record label released Van Morrison's \"Heavy Rain\" on the album \"His Band and the Street Choir\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "His Band and the Street Choir: His Band and the Street Choir (also referred to as \"Street Choir\") is the fourth studio album by Northern Irish singer-songwriter Van Morrison.  It was released on 15 November 1970 by Warner Bros.  Records.  Originally titled \"Virgo's Fool\", \"Street Choir\" was renamed by Warner Bros. without Morrison's consent.  Recording began in early 1970 with a demo session in a small church in Woodstock, New York.  Morrison booked the A&R Studios on 46th Street in New York City in the second quarter of 1970 to produce two sessions of songs that were released on \"His Band and the Street Choir\".",
+      "I've Been Working: \"I've Been Working\" is a song written by Northern Irish singer-songwriter Van Morrison appearing on the album \"His Band and the Street Choir\", released in 1970.  The song was first an outtake from Morrison's well received album \"Astral Weeks\" of 1968.  Other versions of \"I've Been Working\" were recorded for Morrison's next album \"Moondance\", of which, three were released on the 2013 deluxe edition.",
+      "I'll Be Your Lover, Too: \"I'll Be Your Lover, Too\" is a song written by Northern Irish singer-songwriter Van Morrison.  It appears on the album \"His Band and the Street Choir\", released in 1970."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 422,
+    "generation_tokens": 25,
+    "generation_speed": 311.2433549543717,
+    "prompt_eval_speed": 35489.02531326213,
+    "generation_latency_s": 0.20497149997390807,
+    "latency": 0.49225710006430745,
+    "total_prompt_tokens": 574,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2213358,
+    "stage_route_s": 0.09161110001150519,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1563622000394389,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039126800023950636,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2100087739527225e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20502570003736764,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4922729000682011,
+    "unaccounted_latency_s": 0.00010579987429082394,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Van Morrison released \"My Band and the Street Choir\" on the album \"His Band and the Street Choir.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

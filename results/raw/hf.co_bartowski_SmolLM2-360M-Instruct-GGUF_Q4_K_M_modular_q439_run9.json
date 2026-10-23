@@ -1,0 +1,49 @@
+{
+  "question_id": "Q439",
+  "query": "Rejuvelac is kind of grain water invented and promoted by a \"holistic health\" practitioner born in which year ?",
+  "ground_truth": "1909",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Florence Nightingale",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rejuvelac: Rejuvelac is kind of grain water invented and promoted by Ann Wigmore.",
+      "Luigi Galvani: Luigi Aloisio Galvani ( ; ] ; Latin: \"Aloysius Galvanus\" ; 9 September 1737 \u2013 4 December 1798) was an Italian physician, physicist, biologist and philosopher, who discovered animal electricity.  He is recognized as the pioneer of bioelectromagnetics.  In 1780, he discovered that the muscles of dead frogs' legs twitched when struck by an electrical spark.  This was one of the first forays into the study of bioelectricity, a field that still studies the electrical patterns and signals from tissues such as the nerves and muscles.",
+      "Florence Nightingale: Florence Nightingale, ( ; 12 May 1820 \u2013 13 August 1910) was an English social reformer and statistician, and the founder of modern nursing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 297,
+    "generation_tokens": 6,
+    "generation_speed": 239.72192256981901,
+    "prompt_eval_speed": 36294.75742392766,
+    "generation_latency_s": 0.14449990005232394,
+    "latency": 0.537841200013645,
+    "total_prompt_tokens": 447,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2342643,
+    "stage_route_s": 0.11021150008309633,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23051140003371984,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05243499996140599,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.18999295309186e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14454949996434152,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5378566000144929,
+    "unaccounted_latency_s": 9.820004925131798e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "What is the name of the person who created Rejuvelac?",
+      "When was the first product released as Rejuvelac?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

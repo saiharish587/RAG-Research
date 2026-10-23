@@ -1,0 +1,42 @@
+{
+  "question_id": "Q130",
+  "query": "At what venue was the January 2, 2012 game featured the University of Louisville team?",
+  "ground_truth": "Mercedes-Benz Superdome",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The University of Louisville team played their home game at Freedom Hall.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Freedom Hall: Freedom Hall is a multipurpose arena in Louisville, Kentucky, on the grounds of the Kentucky Exposition Center, which is owned by the Commonwealth of Kentucky.  It is best known for its use as a basketball arena, serving as the home of the University of Louisville Cardinals men's team from 1956 to 2010, the Kentucky Colonels of the American Basketball Association from 1970 until the ABA-NBA merger in June 1976, and the Louisville Cardinals women's team from its inception in 1975 to 2010.  Freedom Hall's last regular tenant was the Kentucky Stickhorses of the North American Lacrosse League, who used it from 2011 until the team folded in 2013.",
+      "Louisville Bats: The Louisville Bats are an American minor league professional baseball franchise based in Louisville, Kentucky.  The Bats are the Triple-A affiliate of the Cincinnati Reds.  The team, formerly known as the Louisville RiverBats, plays in the International League.  The Bats play their home games at Louisville Slugger Field; the naming rights for the stadium were purchased by Hillerich & Bradsby, makers of the famous Louisville Slugger baseball bat.",
+      "U.S. Bank Stadium: U.S. Bank Stadium is a fixed-roof stadium in the north central United States, located in the Downtown East neighborhood of Minneapolis, Minnesota.  Built on the former site of the Hubert H. Humphrey Metrodome, the indoor stadium opened in 2016 and is the home of the Minnesota Vikings of the National Football League (NFL); it also hosts early season college baseball games of the University of Minnesota Golden Gophers (NCAA)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 460,
+    "generation_tokens": 14,
+    "generation_speed": 244.85798237022527,
+    "prompt_eval_speed": 14895.408328476135,
+    "generation_latency_s": 0.9882993999635801,
+    "latency": 3.3762722000246868,
+    "total_prompt_tokens": 542,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1276497,
+    "stage_rewrite_s": 1.1936951000243425,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0645602999720722,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12957660004030913,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9883509000064805,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.376283899997361,
+    "unaccounted_latency_s": 0.00010179996024817228,
+    "rewritten_query": "University of Louisville (UL) game at the University of Louisville (UL) stadium.",
+    "query_was_rewritten": true
+  }
+}

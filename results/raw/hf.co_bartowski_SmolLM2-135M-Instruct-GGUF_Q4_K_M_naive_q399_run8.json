@@ -1,0 +1,36 @@
+{
+  "question_id": "Q399",
+  "query": "Snowdrop is a proprietary game engine first revealed with an online-only action role-playing video game developed by who?",
+  "ground_truth": "Massive Entertainment",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Context:\nSnowdrop (game engine): Snowdrop is a proprietary game engine created by Ubisoft for use on Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One. It was first revealed at E3 2013 with \"Tom Clancy's The Division\", the first game using the engine.\n\nContext:\nFamily Guy Online (FGG): Family Guy Online is a massively multiplayer online role-playing video game based on the animated television series \"Family Guy\". It was developed by Roadhouse Interactive and released in 2012 as a free-to-play game with no additional subscription fees.\n\nQuestion: Who created Snowdrop?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Snowdrop (game engine): Snowdrop is a proprietary game engine created by Ubisoft for use on Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One.  It was first revealed at E3 2013 with \"Tom Clancy's The Division\", the first game using the engine.",
+      "Family Guy Online: Family Guy Online was a massively multiplayer online role-playing game (MMORPG) based on the animated television series \"Family Guy\", developed in a partnership between Roadhouse Interactive and 20th Century Fox.  \"Family Guy Online\" was free-to-play using the Unity game engine.  The game launched into public beta in April 2012, but on December 21, 2012, the developers announced that the game would not be developed beyond beta status and would be permanently shut down on January 18, 2013.  The shutdown took place as announced, and the game is now closed.",
+      "The Secret World: The Secret World is a massively multiplayer online role-playing video game set in a modern-day real world under attack from occult forces.  Ragnar T\u00f8rnquist led development of the initial game for Funcom.  \"The Secret World\" uses a subscription-optional, buy-to-play business model, requiring players only to buy the game with no additional subscription fees, with additional benefits to those members still paying a subscription."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 384,
+    "generation_tokens": 143,
+    "generation_speed": 420.7689184179089,
+    "prompt_eval_speed": 58447.488584474886,
+    "generation_latency_s": 0.4511857000179589,
+    "latency": 0.46815329999662936,
+    "total_prompt_tokens": 384,
+    "total_generation_tokens": 143,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0959186,
+    "stage_retrieve_s": 0.01689050009008497,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.45122289995197207,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4681605000514537,
+    "unaccounted_latency_s": 4.740001168102026e-05
+  }
+}

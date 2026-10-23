@@ -1,0 +1,42 @@
+{
+  "question_id": "Q63",
+  "query": "Who was born earlier, Emma Bull or Virginia Woolf?",
+  "ground_truth": "Adeline Virginia Woolf",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The correct answer is that who was born earlier, Emma Bull or Virginia Woolf?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Emma Bull: Emma Bull (born December 13, 1954) is an American science fiction and fantasy author.  Her novels include the Hugo- and Nebula-nominated \"Bone Dance\" and the urban fantasy \"War for the Oaks\".  She is also known for a series of anthologies set in Liavek, a shared universe that she created with her husband Will Shetterly.  As a singer, songwriter, and guitarist, she has been a member of the Minneapolis-based folk/rock bands Cats Laughing and The Flash Girls.",
+      "Roald Dahl: Roald Dahl ( , ] ; 13 September 1916 \u2013 23 November 1990) was a British novelist, short story writer, poet, screenwriter, and fighter pilot.  His books have sold more than 250 million copies worldwide.",
+      "Red Bull RB12: The Red Bull RB12 is a Formula One racing car designed by Red Bull Racing to compete in the 2016 Formula One season.  The car was driven by Daniel Ricciardo and Max Verstappen.  Scuderia Toro Rosso driver Verstappen was promoted to Red Bull after swapping places with Daniil Kvyat ahead of the Spanish Grand Prix .  The car is very similar compared to the Red Bull RB11, albeit in a revised livery introduced before the start of the season.  The car used a Renault engine re-badged as a TAG Heuer following the breakdown in the relationship between Red Bull and Renault in .  This was the last Red Bull car with fuel and lubricants from Total \u2014 ending their eight-year partnership."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 18,
+    "generation_speed": 364.66035939304305,
+    "prompt_eval_speed": 56762.80784933492,
+    "generation_latency_s": 0.13490740000270307,
+    "latency": 0.5256977999815717,
+    "total_prompt_tokens": 503,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1270387,
+    "stage_rewrite_s": 0.167958699981682,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07364640000741929,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14905530004762113,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1349400000181049,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5257061999291182,
+    "unaccounted_latency_s": 0.00010619987733662128,
+    "rewritten_query": "Emma Bull (born 1980) is a British author and journalist who wrote \"The Diary of a Young Girl\" in 1942.",
+    "query_was_rewritten": true
+  }
+}

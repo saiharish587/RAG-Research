@@ -1,0 +1,42 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Both Sorbaria and Goldenrod are a genus of about 9 species of flowering plants belonging to the family Rosaceae. They are easily separated by their anatomical features, including the presence or absence of flowers on stems (flowering) and leaves (unblooming). The two genera are also recognized as distinct but closely related families within the Rosaceae.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Botany: Botany, also called plant science(s), plant biology or phytology, is the science of plant life and a branch of biology.  A botanist or plant scientist is a scientist who specialises in this field.  The term \"botany\" comes from the Ancient Greek word \u03b2\u03bf\u03c4\u03ac\u03bd\u03b7 (\"botan\u0113\") meaning \"pasture\", \"grass\", or \"fodder\"; \u03b2\u03bf\u03c4\u03ac\u03bd\u03b7 is in turn derived from \u03b2\u03cc\u03c3\u03ba\u03b5\u03b9\u03bd (\"boskein\"), \"to feed\" or \"to graze\".  Traditionally, botany has also included the study of fungi and algae by mycologists and phycologists respectively, with the study of these three groups of organisms remaining within the sphere of interest of the International Botanical Congress.  Nowadays, botanists (in the strict sense) study approximately 410,000 species of land plants of which some 391,000 species are vascular plants (including ca 369,000 species of flowering plants), and ca 20,000 are bryophytes.",
+      "Sorbaria: Sorbaria is a genus of around 9 species of flowering plants belong to family Rosaceae.",
+      "d World genus \"Syzygium\" in \"Eugenia\", but research by Rudolf Schmid in the early 1970s convinced most botanists that the genera are easily separable.  Research by van Wyk and colleagues in South Africa suggests the genus may comprise at least two major lineages, recognizable by anatomical and other features."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 401,
+    "generation_tokens": 73,
+    "generation_speed": 399.85101441654615,
+    "prompt_eval_speed": 23383.287655256863,
+    "generation_latency_s": 0.27979870000854135,
+    "latency": 0.7409137999638915,
+    "total_prompt_tokens": 480,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1530155,
+    "stage_rewrite_s": 0.2004405000479892,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07735839998349547,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.183185699977912,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2798340000445023,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7409219000255689,
+    "unaccounted_latency_s": 0.00010379997547715902,
+    "rewritten_query": "The two species of Sorbia, both known for their vibrant colors and fragrant flowers, have been extensively studied by botanists and horticulturists.",
+    "query_was_rewritten": true
+  }
+}

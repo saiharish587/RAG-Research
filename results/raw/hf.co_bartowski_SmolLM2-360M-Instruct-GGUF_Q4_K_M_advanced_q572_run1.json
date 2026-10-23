@@ -1,0 +1,42 @@
+{
+  "question_id": "Q572",
+  "query": "What was the release date and price for the release of Mac OS X that has the software for creating WWF files?",
+  "ground_truth": "April 29, 2005 for US$129.95",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The release date for Mac OS X version 10.0, code named Cheetah, is March 24, 2001. The price was US$129.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mac OS 8: Mac OS 8 is an operating system that was released by Apple Computer on July 26, 1997.  It represented the largest overhaul of the classic Mac OS since the release of System 7, some six years before.  It put more emphasis on color than prior operating systems.  Released over a series of updates, Mac OS 8 was an effort to integrate many of the technologies developed for Apple's overly-ambitious OS named Copland.  Mac OS 8 helped modernize the Mac OS while Apple developed its next generation operating system, Mac OS X.  Mac OS 8 is one of Apple's most successful software releases, selling over 1.2 million copies in the first two weeks.  Coming as it did at a difficult time in Apple's history, many pirate groups refused to traffic in the new OS, encouraging people to buy it instead.",
+      "System Information (Mac): System Information (previously known as System Profiler) is a software utility derived from field service diagnostics produced by Apple's Service Diagnostic Engineering team, at that time located in Apple satellite buildings in Campbell, California, that was bundled with the classic Mac OS since Mac OS 7.6 under the name Apple System Profiler.  In Mac OS X v10.0, the first release of macOS, it was renamed System Profiler; with the release of Mac OS X 10.7 \"Lion\" it was again was renamed to System Information.  Other new features in Lion are the ability to look up support information for the user's hardware model as well.  In OS X Mountain Lion and later versions of macOS users can also access System Information by holding down the option key and \"System Information...\" will replace \"About This Mac\" in the Apple Menu.",
+      "Mac OS X 10.0: Mac OS X version 10.0, code named Cheetah, is the first major release of Mac OS X (later named OS X and then macOS), Apple\u2019s desktop and server operating system.  Mac OS X 10.0 was released on March 24, 2001 for a price of US$129.  It was the successor of the Mac OS X Public Beta and the predecessor of Mac OS X 10.1."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 569,
+    "generation_tokens": 42,
+    "generation_speed": 249.38840462674867,
+    "prompt_eval_speed": 13255.987326437426,
+    "generation_latency_s": 1.1102670000400394,
+    "latency": 3.482530500041321,
+    "total_prompt_tokens": 652,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12325520000000001,
+    "stage_rewrite_s": 1.2582131000235677,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9850823000306264,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12883230007719249,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.110318799968809,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4825421000132337,
+    "unaccounted_latency_s": 9.629991836845875e-05,
+    "rewritten_query": "The release date for Mac OS X is July 25, 2010. The price for this software is $99.99.",
+    "query_was_rewritten": true
+  }
+}

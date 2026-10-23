@@ -1,0 +1,42 @@
+{
+  "question_id": "Q352",
+  "query": "Which playwright lived a longer life, Edward Albee or J. M. Barrie?",
+  "ground_truth": "Edward Franklin Albee III",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on the information provided, J.M. Barrie is the one who lived a longer life than Edward Albee.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Edward Albee: Edward Franklin Albee III ( ; March 12, 1928 \u2013 September 16, 2016) was an American playwright known for works such as \"The Zoo Story\" (1958), \"The Sandbox\" (1959), \"Who's Afraid of Virginia Woolf? \" (1962), and \"A Delicate Balance\" (1966).  Three of his plays won the Pulitzer Prize for Drama, and two of his other works won the Tony Award for Best Play.",
+      "J. M. Barrie: Sir James Matthew Barrie, 1st Baronet, {'1': \", '2': \", '3': \", '4': \"} ( ; 9 May 1860 19 June 1937) was a Scottish novelist and playwright, best remembered today as the creator of Peter Pan.  He was born and educated in Scotland but moved to London, where he wrote a number of successful novels and plays.  There he met the Llewelyn Davies boys, who inspired him to write about a baby boy who has magical adventures in Kensington Gardens (included in \"The Little White Bird\"), then to write \"Peter Pan, or The Boy Who Wouldn't Grow Up\", a \"fairy play\" about an ageless boy and an ordinary girl named Wendy who have adventures in the fantasy setting of Neverland.",
+      "The Zoo Story: The Zoo Story is a one-act play by American playwright Edward Albee.  His first play, it was written in 1958 and completed in just three weeks.  The play explores themes of isolation, loneliness, miscommunication as anathematization, social disparity and dehumanization in a commercial world.  Now, professional theatre companies can only produce \"The Zoo Story\" as a part of \"Edward Albee's at Home at the Zoo\" (originally titled \"Peter and Jerry\")."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 485,
+    "generation_tokens": 26,
+    "generation_speed": 369.86983426986274,
+    "prompt_eval_speed": 25432.616675406396,
+    "generation_latency_s": 0.1666217000456527,
+    "latency": 0.557571200071834,
+    "total_prompt_tokens": 563,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1274027,
+    "stage_rewrite_s": 0.17537309997715056,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08066859992686659,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13476789998821914,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1666656999150291,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5575829000445083,
+    "unaccounted_latency_s": 0.00010810024105012417,
+    "rewritten_query": "Edward Albee was a renowned playwright who lived for an average of 45 years compared to J.M. Barrie's 30 years.",
+    "query_was_rewritten": true
+  }
+}

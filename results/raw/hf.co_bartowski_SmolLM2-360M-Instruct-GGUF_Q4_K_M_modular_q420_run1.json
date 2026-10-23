@@ -1,0 +1,49 @@
+{
+  "question_id": "Q420",
+  "query": "What is the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station?",
+  "ground_truth": "51,271",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 2010 population of the city 2.1 miles southwest of Marietta Air Force Station was estimated to be 520,116.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marietta Air Force Station: Marietta Air Force Station (ADC ID: M-111, NORAD ID: Z-111) is a closed United States Air Force General Surveillance Radar station.  It is located 2.1 mi northeast of Smyrna, Georgia.  It was closed in 1968.",
+      "Tucson, Arizona: Tucson ( ) is a city and the county seat of Pima County, Arizona, United States, and home to the University of Arizona.  The 2010 United States Census put the population at 520,116, while the 2015 estimated population of the entire Tucson metropolitan statistical area (MSA) was 980,263.  The Tucson MSA forms part of the larger Tucson-Nogales combined statistical area (CSA), with a total population of 1,010,025 as of the 2010 Census.  Tucson is the second-largest populated city in Arizona behind Phoenix, both of which anchor the Arizona Sun Corridor.  The city is located 108 mi southeast of Phoenix and 60 mi north of the U.S.\u2013Mexico border.  Tucson is the 33rd largest city and the 53rd largest metropolitan area in the United States.",
+      "Corpus Christi, Texas: The city's population was estimated to be 320,434 in 2014, making it the eighth-most populous city in Texas.  The Corpus Christi metropolitan area had an estimated population of 442,600.  It is also the hub of the six-county Corpus Christi-Kingsville-Alice Combined Statistical Area, with a 2013 estimated population of 516,793.  The Port of Corpus Christi is the fifth-largest in the United States.  The region is served by the Corpus Christi International Airport."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 506,
+    "generation_tokens": 36,
+    "generation_speed": 223.95162644868708,
+    "prompt_eval_speed": 15480.63391054274,
+    "generation_latency_s": 0.30526629998348653,
+    "latency": 0.9252176999580115,
+    "total_prompt_tokens": 656,
+    "total_generation_tokens": 123,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23100500000000002,
+    "stage_route_s": 0.12167549994774163,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.44203989999368787,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05605480005033314,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.600007716566324e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30530130001716316,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9252270000288263,
+    "unaccounted_latency_s": 0.00010009994730353355,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The 2010 census data for the city 2.1 miles southwest of Marietta Air Force Station shows a population of approximately 3,500 people.",
+      "Query 2: The 2010 census data for the city 2.1 miles southwest of Marietta Air Force Station indicates that the total population is around 4,800 people."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

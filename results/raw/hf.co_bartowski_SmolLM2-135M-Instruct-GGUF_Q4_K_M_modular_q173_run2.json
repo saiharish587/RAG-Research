@@ -1,0 +1,48 @@
+{
+  "question_id": "Q173",
+  "query": "The Memphis Hustle are based in a suburb of a city with a population of what in 2010?",
+  "ground_truth": "48,982",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Memphis Hustle is based in a suburb of a city with a population of 18,754 at the time of this query. The Memphis metropolitan area was added to the Memphis-Forrest City Combined Statistical Area and had a population of 2.4 million according to census estimates.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Memphis Hustle: The Memphis Hustle are an American professional basketball team of the NBA G League announced to begin play for the 2017\u201318 season as an affiliate of the Memphis Grizzlies of the National Basketball Association (NBA).  Based in the Memphis suburb of Southaven, Mississippi, the team will play their home games at the Landers Center.",
+      "West Memphis, Arkansas: West Memphis is the largest city in Crittenden County, Arkansas, United States.  The population was 26,245 at the 2010 census, ranking it as the state's 18th largest city, behind Bella Vista.  It is part of the Memphis metropolitan area, and is located directly across the Mississippi River from Memphis.",
+      "Memphis metropolitan area: The Memphis-Forrest City Combined Statistical Area, TN-MS-AR (CSA) is the commercial and cultural hub of The Mid-South or Ark-Miss-Tenn.  The census defined combined statistical area covers ten counties in three states \u2013 Tennessee, Mississippi, and Arkansas.  As of census 2010 the MSA had a population of 1,324,108 .  The Forrest City Micropolitan area was added to the Memphis area in 2012 to form the Memphis-Forrest City Combined Statistical area and had a population of 1,369,548 according to census estimates.  The greater Mid-South area as a whole has a population of 2.4 million according to 2013 census estimates.  This area is covered by Memphis local news channels and includes the Missouri Bootheel, Northeast Arkansas, West Tennessee, and North Mississippi."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 446,
+    "generation_tokens": 63,
+    "generation_speed": 372.26122101680494,
+    "prompt_eval_speed": 63988.52223816356,
+    "generation_latency_s": 0.2880586999235675,
+    "latency": 0.6462911999551579,
+    "total_prompt_tokens": 596,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.25280559999999996,
+    "stage_route_s": 0.16914329992141575,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15184249996673316,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.037069099955260754,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9400026910007e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2881000000052154,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.646303299930878,
+    "unaccounted_latency_s": 9.980006143450737e-05,
+    "route": "rag",
+    "router_raw": "The Memphis Hustle is based in a suburb of a city with a population of 5,000.",
+    "sub_queries": [
+      "The Memphis Hustle is based in a suburb of a city with a population of 5,478."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

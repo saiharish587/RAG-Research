@@ -1,0 +1,36 @@
+{
+  "question_id": "Q41",
+  "query": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+  "ground_truth": "Scotch Collie",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Manchester Terrier's ancestors include Gordon and Irish Setters. The information provided about the Scottish Terrier, Rough Collie, and Smooth Collie is not directly relevant to determining which dog's ancestors include Gordon and Irish Setters.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scotch Collie: The Scotch Collie is a landrace breed of dog which originated from the highland regions of Scotland.  The breed consisted of both the long-haired (now known as Rough) Collie and the short-haired (now known as Smooth) Collie.  It is generally believed to have descended from a variety of ancient herding dogs, some dating back to the Roman occupation, which may have included Roman Cattle Dogs, Native Celtic Dogs and Viking Herding Spitzes.  Other ancestors include the Gordon and Irish Setters.",
+      "Scottish Terrier: The Scottish Terrier (also known as the Aberdeen Terrier), popularly called the Scottie, is a breed of dog.  Initially one of the highland breeds of terrier that were grouped under the name of \"Skye Terrier\", it is one of five breeds of terrier that originated in Scotland, the other four being the modern Skye, Cairn, Dandie Dinmont, and West Highland White Terriers.  They are an independent and rugged breed with a wiry outer coat and a soft dense undercoat.  The First Earl of Dumbarton nicknamed the breed \"the diehard\".  The modern breed is said to be able to trace its lineage back to a single female, named Splinter II.",
+      "Manchester Terrier: The Manchester Terrier is a breed of dog of the smooth-haired terrier type."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 48,
+    "generation_speed": 237.0417193426043,
+    "prompt_eval_speed": 15517.523747133966,
+    "generation_latency_s": 0.33759899996221066,
+    "latency": 0.35432040004525334,
+    "total_prompt_tokens": 379,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0957158,
+    "stage_retrieve_s": 0.016647100099362433,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.3376337999943644,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.35432739998213947,
+    "unaccounted_latency_s": 4.689989145845175e-05
+  }
+}

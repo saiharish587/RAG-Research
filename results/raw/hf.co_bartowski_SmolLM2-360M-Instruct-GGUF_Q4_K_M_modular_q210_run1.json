@@ -1,0 +1,49 @@
+{
+  "question_id": "Q210",
+  "query": "Which post DC Extended Universe actress will also play a role in what is intended to be the fifth installment of the DC Extended Universe?",
+  "ground_truth": "Gal Gadot",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Justice League (film): Justice League is an upcoming American superhero film based on the DC Comics superhero team of the same name, distributed by Warner Bros.  Pictures.  It is intended to be the fifth installment in the DC Extended Universe (DCEU).  The film is directed by Zack Snyder and written by Chris Terrio and Joss Whedon, from a story by Snyder and Terrio, and features an ensemble cast that includes Ben Affleck, Henry Cavill, Gal Gadot, Jason Momoa, Ezra Miller, Ray Fisher, Ciar\u00e1n Hinds, Amy Adams, Connie Nielsen, C.J. Sorum, J. K. Simmons, and J. A. Bayart.  In \"Justice League\", Batman and Wonder Woman assemble a team consisting of Flash, Aquaman, and Cyborg to face the catastrophic threat of Steppenwolf and his army of Parademons.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Justice League (film): Justice League is an upcoming American superhero film based on the DC Comics superhero team of the same name, distributed by Warner Bros.  Pictures.  It is intended to be the fifth installment in the DC Extended Universe (DCEU).  The film is directed by Zack Snyder and written by Chris Terrio and Joss Whedon, from a story by Snyder and Terrio, and features an ensemble cast that includes Ben Affleck, Henry Cavill, Gal Gadot, Jason Momoa, Ezra Miller, Ray Fisher, Ciar\u00e1n Hinds, Amy Adams, Willem Dafoe, Jesse Eisenberg, Jeremy Irons, Diane Lane, Connie Nielsen, and J. K. Simmons.  In \"Justice League\", Batman and Wonder Woman assemble a team consisting of Flash, Aquaman, and Cyborg to face the catastrophic threat of Steppenwolf and his army of Parademons.",
+      "DC Extended Universe: The Justice League Universe (JLUDCEUUJLDCE), more commonly known by its unofficial name as the DC Extended Universe (DCEU), is an American media franchise and shared universe, centered on a series of superhero films distributed by Warner Bros.  Pictures, based on characters that appear in publications by DC Comics.  The shared universe, much like the original DC Universe in comic books, was established by crossing over common plot elements, settings, cast, and characters.  The films have been in production since 2011 and in that time Warner Bros. has distributed four films with more than ten in various stages of production.  The series has grossed over $3.1 billion at the global box office, currently making it the seventeenth highest-grossing film franchise.",
+      "Aquaman (film): Aquaman is an upcoming American superhero film based on the DC Comics character of the same name, distributed by Warner Bros.  Pictures.  It is intended to be the sixth installment in the DC Extended Universe (DCEU).  The film is being directed by James Wan, with a screenplay by Will Beall, from a story by Wan and Geoff Johns, and stars Jason Momoa, Amber Heard, Patrick Wilson, Willem Dafoe, Yahya Abdul-Mateen II, Temuera Morrison, Dolph Lundgren, and Nicole Kidman."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 574,
+    "generation_tokens": 194,
+    "generation_speed": 234.2870668708426,
+    "prompt_eval_speed": 13092.767044547341,
+    "generation_latency_s": 0.9838632000610232,
+    "latency": 1.425554299959913,
+    "total_prompt_tokens": 726,
+    "total_generation_tokens": 243,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2276128,
+    "stage_route_s": 0.10851359996013343,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.277025300078094,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05597510002553463,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.949991125613451e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.9839039999060333,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.42556549992878,
+    "unaccounted_latency_s": 9.890005458146334e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Who will play a role in the upcoming fifth installment of the DC Extended Universe?\"",
+      "Query 2: \"Which DC Extended Universe actress has been announced as the next main character for the forthcoming fifth installment?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q71",
+  "query": "Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the \"Teen Titans\"?",
+  "ground_truth": "Teen Titans Go!",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Tara Strong is a major voice role in the animated series \"Teen Titans.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Teen Titans: The Teen Titans, also known as the New Teen Titans and the Titans, are a fictional superhero team appearing in American comic books published by DC Comics, often in an eponymous monthly series.  As the group's name suggests, its members are teenage superheroes, many of whom have acted as sidekicks to DC's premiere superheroes in the Justice League.  First appearing in 1964 in \"The Brave and the Bold\" #54, the team was founded by Kid Flash (Wally West), Robin (Dick Grayson), and Aqualad (Garth), with the team adopting the name Teen Titans in issue 60 following the addition of Wonder Girl (Donna Troy) to its ranks.",
+      "Teen Titans (season 1): The first season of the animated television series Teen Titans, based on the DC comics series created by Bob Haney and Bruno Premiani, originally aired on Cartoon Network in the United States.  Developed by television writer David Slack, the series was produced by DC Entertainment and Warner Bros.  Animation.  It stars Scott Menville, Hynden Walch, Khary Payton, Tara Strong, and Greg Cipes as the voices of the main characters.",
+      "List of Teen Titans episodes: \"Teen Titans\" is an American animated television series based on the DC comics series of the same name by Bob Haney and Bruno Premiani.  Developed by David Slack for Cartoon Network, the series was produced by DC Entertainment and Warner Bros.  Animation with Sander Schwartz serving as executive producer and Glen Murakami, Bruce Timm, and Linda M. Steiner signing on as producers.  The series follows the adventures of a team of crime-fighting teenaged superheroes, consisting of the leader Robin (voiced by Scott Menville), foreign alien princess Starfire (voiced by Hynden Walch), the technological genius Cyborg (voiced by Khary Payton), the dark sorceress Raven (voiced by Tara Strong), and the green shapeshifter Beast Boy (voiced by Greg Cipes)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 537,
+    "generation_tokens": 19,
+    "generation_speed": 237.08214272344992,
+    "prompt_eval_speed": 68216.46341463414,
+    "generation_latency_s": 0.20271979994140565,
+    "latency": 0.49071769998408854,
+    "total_prompt_tokens": 701,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22081599999999998,
+    "stage_route_s": 0.09435989998746663,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1413342000450939,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0521416999399662,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.13000413775444e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2027507999446243,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49072649993468076,
+    "unaccounted_latency_s": 8.899997919797897e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Teen Titans\"",
+      "\"DC Comics\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q139",
+  "query": "For what type of work is the production company for The Year Without a Santa Claus best known?",
+  "ground_truth": "seasonal television specials, particularly its work in stop motion animation",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The production company for \"The Year Without a Santa Claus\" is Rankin-Bass Productions.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Year Without a Santa Claus: The Year Without a Santa Claus is a 1974 Christmas stop motion animated television special produced by Rankin/Bass Productions.  The story is based on Phyllis McGinley's 1956 book of the same name, illustrated by Kurt Werth.  It was originally broadcast on December 10, 1974 on ABC.",
+      "The Year Without a Santa Claus (2006 film): The Year Without a Santa Claus is a 90-minute 2006 live-action remake of the Rankin-Bass classic \"The Year Without a Santa Claus\" which premiered on NBC December 11, 2006.  A widescreen DVD was released on December 12, 2006 (UPC 085391115120).",
+      "A Miser Brothers' Christmas: A Miser Brothers' Christmas is a stop motion spin-off special based on some of the characters from the 1974 Rankin-Bass special \"The Year Without a Santa Claus\".  Distributed by Warner Bros.  Animation under their Warner Premiere label (the rights holders of the post-1974 Rankin-Bass library) and Toronto-based Cuppa Coffee Studios, the one-hour special premiered on ABC Family on Saturday, December 13, 2008, during the network's annual The 25 Days of Christmas programming.  Mickey Rooney and George S. Irving reprised their respective roles as Santa Claus and Heat Miser at ages 88 and 86.  Snow Miser, originally portrayed by Dick Shawn who died in 1987, was voiced by Juan Chioran, while Mrs. Claus, voiced by Shirley Booth in the original, was portrayed by Catherine Disher (because Booth had died in 1992).  The movie aimed to emulate the Rankin/Bass animation style.  This is the last Christmas special to feature Mickey Rooney as Santa Claus, as he died in 2014, as well as the last time George Irving voiced Heat Miser, as he died in 2016."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 558,
+    "generation_tokens": 22,
+    "generation_speed": 236.96682464454975,
+    "prompt_eval_speed": 73074.90832896804,
+    "generation_latency_s": 0.21381480002310127,
+    "latency": 0.601640300010331,
+    "total_prompt_tokens": 696,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2312962,
+    "stage_route_s": 0.10500290000345558,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22507970000151545,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05757409997750074,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.879990592598915e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21384610002860427,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6016493999632075,
+    "unaccounted_latency_s": 9.830005001276731e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Production Company for The Year Without a Santa Claus Best Known: Christmas Productions",
+      "Production Company for The Year Without a Santa Claus Best Known: Holiday Productions"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q256",
+  "query": "James Fieser received his B.A. from what liberal arts work college that was founded in 1855?",
+  "ground_truth": "Berea College",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "James Fieser received his B.A. from Berea College, which was founded in 1868 and predates the establishment of UC Berkeley.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "University of California, Berkeley: The University of California, Berkeley (also referred to as UC Berkeley, Berkeley, and Cal ) is a public research university located in Berkeley, California.  Founded in 1868, Berkeley is the oldest of the ten research universities affiliated with the University of California system (although UCSF was founded in 1864 and predates the establishment of the UC system) and is ranked as one of the world's leading research universities and the top public university in the United States.",
+      "James Fieser: James Fieser is professor of philosophy at the University of Tennessee at Martin.  He received his B.A. from Berea College, and his M.A. and Ph.D. in philosophy from Purdue University.  He is founder and general editor of the Internet Encyclopedia of Philosophy.  He is author, coauthor or editor of more than ten text books.",
+      "UC Berkeley School of Law: The University of California, Berkeley, School of Law, commonly referred to as Berkeley Law and Boalt Hall, is one of 14 schools and colleges at the University of California, Berkeley.  Berkeley Law is consistently ranked as one of the top law schools in the nation.  The law school has produced leaders in law, government, and society, including Chief Justice of the United States Earl Warren, Secretary of State of the United States Dean Rusk, Attorney General of the United States Edwin Meese, United States Secretary of the Treasury and Chairman of the Federal Reserve G. William Miller, Solicitor General of the United States Theodore Olson, and lead litigator of the \"Korematsu v. United States\" civil rights case, Dale Minami."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 432,
+    "generation_tokens": 34,
+    "generation_speed": 254.09732117226542,
+    "prompt_eval_speed": 15063.286725478574,
+    "generation_latency_s": 0.9940053999889642,
+    "latency": 3.4518523999722674,
+    "total_prompt_tokens": 518,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1218921,
+    "stage_rewrite_s": 1.2285511000081897,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0239766000304371,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20520180009771138,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9940395000157878,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.451861200039275,
+    "unaccounted_latency_s": 9.279989171773195e-05,
+    "rewritten_query": "James Fieser received his Bachelor of Arts degree from the University of California, Berkeley, founded in 1855.",
+    "query_was_rewritten": true
+  }
+}

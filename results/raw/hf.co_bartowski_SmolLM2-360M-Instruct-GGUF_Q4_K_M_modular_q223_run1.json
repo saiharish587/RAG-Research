@@ -1,0 +1,48 @@
+{
+  "question_id": "Q223",
+  "query": "Are both Dafeng District and Dazhou located in the same province?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, both Dafeng District and Dazhou are not located in the same province.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dafeng District: Dafeng () is a coastal district under the administration of Yancheng, Jiangsu province, China.  Located on the Jiangsu North Plain with a coastline of 112 km , Dafeng was historically one of the largest salt-making areas in China and now is famed for its well preserved eco-system and numerous national conservation parks.  The district has the largest national nature reserve for a rare deer species, P\u00e8re David's Deer or Milu (\u9e8b\u9e7f ) in Chinese.  It borders the prefecture-level city of Taizhou to the southwest.",
+      "Dazhou: Dazhou () is a prefecture-level city in the northeast corner of Sichuan province, China, bordering Shaanxi to the north and Chongqing to the east and south.  2002 population was 384,525.",
+      "Dandong: Dandong (), formerly known as Andong, is a prefecture-level city in southeastern Liaoning province, People's Republic of China."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 299,
+    "generation_tokens": 20,
+    "generation_speed": 190.49614721542258,
+    "prompt_eval_speed": 9213.039995069947,
+    "generation_latency_s": 0.24781400000210851,
+    "latency": 0.6908379000378773,
+    "total_prompt_tokens": 431,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24858760000000002,
+    "stage_route_s": 0.1068995000096038,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3009123000083491,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03506330004893243,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.77000542357564e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24784640001598746,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6908498000120744,
+    "unaccounted_latency_s": 9.159988258033991e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Are both Dafeng District and Dazhou located in the same province?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

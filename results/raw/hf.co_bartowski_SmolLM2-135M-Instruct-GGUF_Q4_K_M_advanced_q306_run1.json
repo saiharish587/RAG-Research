@@ -1,0 +1,42 @@
+{
+  "question_id": "Q306",
+  "query": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+  "ground_truth": "1901",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 1984 film \"Marlene\" is a documentary about an actress born in 1984, which was released on 20 December 2009.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marlene Dietrich: Marie Magdalene \"Marlene\" Dietrich ( , ] ; 27 December 1901 \u2013 6 May 1992) was a German actress and singer who held both German and American citizenship.  Throughout her unusually long career, which spanned from the 1910s to the 1980s, she maintained popularity by continually reinventing herself.",
+      "Marlene (1984 film): Marlene, also known in Germany as Marlene Dietrich - Portr\u00e4t eines Mythos, is a 1984 documentary film made by Maximilian Schell about the legendary film star Marlene Dietrich.  It was made by Bayerischer Rundfunk (BR) and OKO-Film and released by Futura Film, Munich and Alive Films, (USA).",
+      "tinum.  It has since gone 3\u00d7 Platinum, with sales of over 1,000,000 copies. \" 3 Words\" is both the opening and title song from her debut studio album.  It was released in the UK and Ireland on 20 December 2009 went on to become Fernandez-Versini's second consecutive UK top-five and Irish-top ten hit.  It was also a top five hit in Australia and has since been certified platinum by the Australian Recording Industry Association and gold by the British Phonographic Industry. \" Parachute\" was released on 11 March 2010 as the album's third and final single.  \"Parachute\" became Cheryl's third consecutive solo UK top five hit, and her third Irish top 10 hit.  It was nominated for a Brit Award in 2011."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 454,
+    "generation_tokens": 41,
+    "generation_speed": 407.17825469496387,
+    "prompt_eval_speed": 25515.65222278424,
+    "generation_latency_s": 0.19710999995004386,
+    "latency": 0.6787005999358371,
+    "total_prompt_tokens": 537,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.124236,
+    "stage_rewrite_s": 0.234120300039649,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07632160000503063,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17100890004076064,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19715200003702193,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6787120999069884,
+    "unaccounted_latency_s": 0.00010989978909492493,
+    "rewritten_query": "The original query was \"What year did Marlene make her debut?\"\n\nTo optimize this query, I removed the introductory text and rephrased it to focus on the optimized search-friendly version. The result is now: \"Marlene's debut in 1984.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q67",
+  "query": "Vince Phillips held a junior welterweight title by an organization recognized by what larger Hall of Fame?",
+  "ground_truth": "International Boxing Hall of Fame",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Vince Phillips held the IBF junior welterweight title by an organization recognized by the International Boxing Hall of Fame (IBO).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vince Phillips: Vincent Edwards \"Vince\" Phillips (born July 23, 1963) is an American former professional boxer who competed from 1989 to 2007.  He held the IBF junior welterweight title from 1997 to 1999, notably scoring an upset victory against then-undefeated Kostya Tszyu to become champion.",
+      "Keith Thurman: Keith Thurman Jr. (born November 23, 1988) is an American professional boxer.  He is currently a unified welterweight world champion, having held the WBA title since 2013 (promoted to Super champion in February 2017) and the WBC title since March 2017.  As of July 2017 he is ranked as the world's best welterweight by the Transnational Boxing Rankings Board and \"The Ring\" magazine, and second by BoxRec.  BoxRec also ranks him as the world's ninth best active boxer, pound for pound.  Nicknamed \"One Time,\" Thurman is known for his formidable knockout power and being one of the hardest punchers in the welterweight division.",
+      "Johny Hendricks: Johny Harvey Hendricks (born September 12, 1983) is an American mixed martial artist and an accomplished former collegiate wrestler .  He currently competes in the Ultimate Fighting Championship's (UFC) Middleweight division and is the former UFC Welterweight Champion.  He is known for his powerful punches, particularly from his left hand, as well as his extensive wrestling background."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 441,
+    "generation_tokens": 29,
+    "generation_speed": 219.64206084571325,
+    "prompt_eval_speed": 55381.13776214995,
+    "generation_latency_s": 0.25614369998220354,
+    "latency": 0.6064063999801874,
+    "total_prompt_tokens": 583,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.225209,
+    "stage_route_s": 0.1023174999281764,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19177270005457103,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05599989998154342,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.979991354048252e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2561815999215469,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.606417499948293,
+    "unaccounted_latency_s": 9.670015424489975e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Vince Phillips, Junior Welterweight Champion\"",
+      "\"Vince Phillips, Junior Welterweight Championship\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

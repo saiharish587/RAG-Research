@@ -1,0 +1,48 @@
+{
+  "question_id": "Q389",
+  "query": "The man, who the award in which \"Summer of the Monkeys\" won, was a spokesman for white sector of America?",
+  "ground_truth": "middle America",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The man, who received the Golden Globe Award for acting in \"Syrianna\", was Joseph J. Pulitzer.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Summer of the Monkeys: Summer of the Monkeys is a 1976 children's novel written by Wilson Rawls.  It was published by Doubleday (later released by Yearling Books) and was the winner of the William Allen White Book Award and the California Young Reader Medal.",
+      "George Clooney: George Timothy Clooney (born May 6, 1961) is an American actor, director, producer, screenwriter, activist, businessman, and philanthropist.  He has received three Golden Globe Awards for his work as an actor and two Academy Awards, one for acting in \"Syriana\" (2006) and the other for co-producing \"Argo\" (2012).",
+      "Joseph Pulitzer: Joseph J. Pulitzer ( ; ] ; born J\u00f3zsef Pulitzer; April 10, 1847 \u2013 October 29, 1911) was a newspaper publisher of the \"St. Louis Post Dispatch\" and the \"New York World\".  Pulitzer introduced the techniques of yellow journalism (a type of journalism that presents little or no legitimate well-researched news) to the newspapers he acquired in the 1880s.  He became a leading national figure in the Democratic Party and was elected congressman from New York.  He crusaded against big business and corruption, and helped keep the Statue of Liberty in New York."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 382,
+    "generation_tokens": 24,
+    "generation_speed": 349.5994173343044,
+    "prompt_eval_speed": 22641.062114746324,
+    "generation_latency_s": 0.19774930004496127,
+    "latency": 0.5783464000560343,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2421711,
+    "stage_route_s": 0.1729867000831291,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16893729998264462,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038509199977852404,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2899977415800095e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19778729998506606,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.578359300037846,
+    "unaccounted_latency_s": 9.650003630667925e-05,
+    "route": "rag",
+    "router_raw": "The man, who the award in which \"Summer of the Monkeys\" won, was a spokesman for white sector of America.",
+    "sub_queries": [
+      "The man, who won the award in which \"Summer of the Monkeys\" won, was a spokesman for the White Sector of America."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

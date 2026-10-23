@@ -1,0 +1,42 @@
+{
+  "question_id": "Q246",
+  "query": "Jamie Harris is best known for his role as The Hook-Handed Man in a movie directed by who ?",
+  "ground_truth": "Brad Silberling",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Context:\nJamie Harris (actor) is best known for his role as The Hook-Handed Man in a movie directed by Steven Spielberg and written by James V. Hart and Malia Scotch Marmo.\n\nHook (film): Hook is a 1991 American fantasy adventure film directed by Steven Spielberg and written by James V. Hart and Malia Scotch Marmo.\n\nQuestion: Who plays the role of The Hook-Handed Man in \"Lemony Snicket's A Series of Unfortunate Events\"?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jamie Harris (actor): Jamie Harris (born May 15, 1963) is a British actor.  He is best known for his role as The Hook-Handed Man in \"Lemony Snicket's A Series of Unfortunate Events\", Rodney in \"Rise of the Planet of the Apes\" and Gordon in Marvel's \"Agents of S.H.I.E.L.D.\".",
+      "Hook (film): Hook is a 1991 American fantasy adventure film directed by Steven Spielberg and written by James V. Hart and Malia Scotch Marmo.  It stars Robin Williams as Peter Banning / Peter Pan, Dustin Hoffman as Captain Hook, Julia Roberts as Tinker Bell, Bob Hoskins as Smee, Maggie Smith as Wendy, Caroline Goodall as Moira Banning, and Charlie Korsmo as Jack Banning.  It acts as a sequel to J. M. Barrie's 1911 novel \"Peter and Wendy\" focusing on an adult Peter Pan who has forgotten all about his childhood.  In his new life, he is known as Peter Banning, a successful but unimaginative and workaholic corporate lawyer with a wife (Wendy's granddaughter) and two children.  However, when Captain Hook, the enemy of his past, kidnaps his children, he returns to Neverland in order to save them.  Along the journey he reclaims the memories of his past.",
+      "A Single Man: A Single Man is a 2009 American drama film based on the novel of the same name by Christopher Isherwood.  It is directed by Tom Ford in his directorial debut and stars Colin Firth, who was nominated for an Academy Award for Best Actor for his portrayal of George Falconer, a depressed gay British university professor living in Southern California in 1962."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 478,
+    "generation_tokens": 118,
+    "generation_speed": 399.8549678591155,
+    "prompt_eval_speed": 25191.040843214756,
+    "generation_latency_s": 0.3991710999980569,
+    "latency": 0.7739322000415996,
+    "total_prompt_tokens": 560,
+    "total_generation_tokens": 141,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13856970000000002,
+    "stage_rewrite_s": 0.14694310002960265,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07978599995840341,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1479053000221029,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3992131999693811,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7739436000119895,
+    "unaccounted_latency_s": 9.670003782957792e-05,
+    "rewritten_query": "Jamie Harris, best known for his role as The Hook-Handed Man in a movie directed by Who?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q585",
+  "query": "Which king of Northumbria did The \"Historia\" gives the abbot central place in his election as king",
+  "ground_truth": "Guthred or Guthfrith",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Edward I of England",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ceolwulf of Northumbria: Saint Ceolwulf was King of Northumbria from 729 until 737, except for a short period in 731 or 732 when he was deposed, and quickly restored to power.  Ceolwulf finally abdicated and entered the monastery at Lindisfarne.  He was the \"most glorious king\" to whom Bede dedicated his \"Historia ecclesiastica gentis Anglorum\".",
+      "Edward I of England: Edward I (17/18 June 1239 \u2013 7 July 1307), also known as Edward Longshanks and the Hammer of the Scots (Latin: \"Malleus Scotorum\" ), was King of England from 1272 to 1307.  He spent much of his reign reforming royal administration and common law.  Through an extensive legal inquiry, Edward investigated the tenure of various feudal liberties, while the law was reformed through a series of statutes regulating criminal and property law.  Increasingly, however, Edward's attention was drawn towards military affairs.",
+      "Edward II of England: Edward II (25 April 1284 \u2013 21 September 1327), also called Edward of Caernarfon, was King of England from 1307 until he was deposed in January 1327.  The fourth son of Edward I, Edward became the heir to the throne following the death of his older brother Alphonso.  Beginning in 1300, Edward accompanied his father on campaigns to pacify Scotland, and in 1306 he was knighted in a grand ceremony at Westminster Abbey.  Edward succeeded to the throne in 1307, following his father's death.  In 1308, he married Isabella of France, the daughter of the powerful King Philip IV, as part of a long-running effort to resolve the tensions between the English and French crowns."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 504,
+    "generation_tokens": 5,
+    "generation_speed": 196.94343784465102,
+    "prompt_eval_speed": 14352.431939856475,
+    "generation_latency_s": 0.1707400999730453,
+    "latency": 0.7049246999667957,
+    "total_prompt_tokens": 650,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23076580000000002,
+    "stage_route_s": 0.10640559997409582,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3688867000164464,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05871849996037781,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2600051276385784e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17077799991238862,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.704937299946323,
+    "unaccounted_latency_s": 9.660003706812859e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: King Edwin of Northumbria, who was elected by the Abbots of Lindisfarne and other prominent clergy.",
+      "Query 2: King Edwin of Northumbria, who was elected by the Abbots of Lindisfarne and other prominent clergy."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

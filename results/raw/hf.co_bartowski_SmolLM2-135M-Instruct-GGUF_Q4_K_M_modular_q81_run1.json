@@ -1,0 +1,49 @@
+{
+  "question_id": "Q81",
+  "query": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+  "ground_truth": "Newport",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The county seat of the county where East Lempster, New Hampshire is located is Delaware County, New Hampshire.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "East Lempster, New Hampshire: East Lempster is an unincorporated community in the town of Lempster in Sullivan County, New Hampshire, United States.",
+      "Lempster, New Hampshire: Lempster is a town in Sullivan County, New Hampshire, United States.  The population was 1,154 at the 2010 census.  Settlements include the town center (Lempster village) and the village of East Lempster.",
+      "Dover, New Hampshire: Dover is a city in Strafford County, New Hampshire, United States.  The population was 29,987 at the 2010 census, the largest in the New Hampshire Seacoast region.  The population was estimated at 31,153 in 2016.  It is the county seat of Strafford County, and home to Wentworth-Douglass Hospital, the Woodman Institute Museum, and the Children's Museum of New Hampshire."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 291,
+    "generation_tokens": 24,
+    "generation_speed": 336.2663229277588,
+    "prompt_eval_speed": 18267.419962335218,
+    "generation_latency_s": 0.1934927999973297,
+    "latency": 0.7071240999503061,
+    "total_prompt_tokens": 429,
+    "total_generation_tokens": 121,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2472539,
+    "stage_route_s": 0.1542233000509441,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30185759998857975,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057357000070624053,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6999968364834785e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1935316000599414,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7071354000363499,
+    "unaccounted_latency_s": 0.00010959990322589874,
+    "route": "rag",
+    "router_raw": "The county seat of East Lempster, New Hampshire is located in Westchester County, New York.",
+    "sub_queries": [
+      "The county seat of East Lempster, New Hampshire is located in Westchester County.",
+      "Here are two search queries related to this question:"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

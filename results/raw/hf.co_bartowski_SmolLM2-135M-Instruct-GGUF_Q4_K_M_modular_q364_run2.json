@@ -1,0 +1,48 @@
+{
+  "question_id": "Q364",
+  "query": "What type of media does J. T. Petty and Outlast have in common?",
+  "ground_truth": "video game",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "J. T. Petty and Outlast have a common interest in creating and sharing customized music stations for their users.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "J. T. Petty: J. T. Petty (born February 28, 1977 in Raleigh, North Carolina) is an American filmmaker and video game writer.  Petty's film and short novels contain elements of the horror genre.  He wrote the Ubisoft video game, \"Tom Clancy's Splinter Cell\" as well as the survival horror games \"Outlast\" and \"Outlast 2\".  He currently resides in Brooklyn, New York .",
+      "Outlast: Outlast is a first-person survival horror video game developed and published by Red Barrels.  The game revolves around a freelance investigative journalist, Miles Upshur, who decides to investigate a remote psychiatric hospital named Mount Massive Asylum, located deep in the mountains of Lake County, Colorado.  The downloadable content, \"Outlast: Whistleblower\", centers on Waylon Park, the man who led Miles there in the first place.",
+      "Slacker Radio: Slacker Radio is an online music streaming service available in the US and Canada.  Listeners can access the service on the web and through mobile apps on multiple smartphones.  It allows users to create and share customized music stations.  Slacker allows users to customize one of their programmed stations (for instance, \"Today's Hits\") or start with music similar to an artist or song, and then customize that."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 363,
+    "generation_tokens": 25,
+    "generation_speed": 345.4326889862241,
+    "prompt_eval_speed": 21539.191835281552,
+    "generation_latency_s": 0.2012937000254169,
+    "latency": 0.5850577999372035,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2336433,
+    "stage_route_s": 0.1643917999463156,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18224250001367182,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03697470005135983,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.509999416768551e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2013258000370115,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5850672000087798,
+    "unaccounted_latency_s": 8.79999715834856e-05,
+    "route": "rag",
+    "router_raw": "J.T. Petty and Outlast has a variety of media, including film, television, music videos, podcasts, and video games.",
+    "sub_queries": [
+      "J.T. Petty and Outlast has in common with Outlast, which is a popular music streaming service that offers various types of content including videos, podcasts, and live streams."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

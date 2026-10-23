@@ -1,0 +1,49 @@
+{
+  "question_id": "Q155",
+  "query": "Are Broughtonia and Laeliocattleya both orchids?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "No, Broughtonia and Laeliocattleya are not both orchids.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Otaara: Otaara, abbreviated Otr.  in the horticultural trade, is an intergeneric hybrid of orchids, with \"Brassavola\", \"Broughtonia\", \"Cattleya\", \"Laelia\" and \"Sophronitis\" as parent genera.",
+      "Broughtonia: Broughtonia is a genus of orchids (family Orchidaceae) native to the Bahamas and the Greater Antilles.  The genus is abbreviated Bro in trade journals.",
+      "Laeliocattleya: Laeliocattleya is a nothogenus of intergeneric orchid hybrids descended from the parental genera \"Laelia\" and \"Cattleya\".  It is abbreviated Lc.  in the horticultural trade."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 225,
+    "generation_tokens": 18,
+    "generation_speed": 255.00807525571645,
+    "prompt_eval_speed": 51903.114186851206,
+    "generation_latency_s": 0.1817055999999866,
+    "latency": 0.5667792999884114,
+    "total_prompt_tokens": 353,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2351931,
+    "stage_route_s": 0.09293409995734692,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2364473999477923,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055511899990960956,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.110003985464573e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18174499995075166,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5667913999641314,
+    "unaccounted_latency_s": 0.00010290008503943682,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Broughtonia and Laelia are orchids.",
+      "Query 2: No, neither of these two is an orchid."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

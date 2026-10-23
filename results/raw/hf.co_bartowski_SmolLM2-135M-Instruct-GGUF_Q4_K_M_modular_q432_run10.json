@@ -1,0 +1,48 @@
+{
+  "question_id": "Q432",
+  "query": "Were both the Battle of Stones River and the Battle of the Ch'ongch'on River fought in the 19th century?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, the Battle of Stones River was fought from December 31, 1862, to January 2, 1863. The Battle of the Ch'ongch'on River took place between November 25 and December 2, 1950 in North Korea's Western Sector.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Battle of Stones River: The Battle of Stones River or Second Battle of Murfreesboro, was fought from December 31, 1862, to January 2, 1863, in Middle Tennessee, as the culmination of the Stones River Campaign in the Western Theater of the American Civil War.  Of the major battles of the Civil War, Stones River had the highest percentage of casualties on both sides.  Although the battle itself was inconclusive, the Union Army's repulse of two Confederate attacks and the subsequent Confederate withdrawal were a much-needed boost to Union morale after the defeat at the Battle of Fredericksburg, and it dashed Confederate aspirations for control of Middle Tennessee.",
+      "Battle of the Ch'ongch'on River: The Battle of the Ch'ongch'on River, also known as the Battle of the Ch'ongch'on () or the Second Phase Campaign Western Sector (), was a decisive battle in the Korean War, and it took place from November 25 to December 2, 1950, along the Ch'ongch'on River Valley in the northwestern part of North Korea.  In response to the successful Chinese First Phase Campaign against the United Nations forces, General Douglas MacArthur launched the Home-by-Christmas Offensive to evict the Chinese forces from Korea and to end the war.  Anticipating this reaction, the Chinese People's Volunteer Army Commander Peng Dehuai planned a counteroffensive, dubbed the \"Second Phase Campaign\", against the advancing UN forces.",
+      "Stones River Campaign: The Stones River Campaign of the American Civil War lasted from November 1862 to January 1863.  The campaign was tactically a draw but was a strategic Union victory due to the Confederate retreat after the Battle of Stones River."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 456,
+    "generation_tokens": 68,
+    "generation_speed": 360.35845067063764,
+    "prompt_eval_speed": 57633.973710819,
+    "generation_latency_s": 0.30608370003756136,
+    "latency": 0.5836698000784963,
+    "total_prompt_tokens": 612,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2218351,
+    "stage_route_s": 0.08635270001832396,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15143249998800457,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03963170002680272,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.93999507650733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30612459999974817,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5836810000473633,
+    "unaccounted_latency_s": 0.0001007000682875514,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, were both the Battle of Stones River and the Battle of the Ch'ongch'on River fought in the 19th century."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

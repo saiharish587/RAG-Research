@@ -1,0 +1,49 @@
+{
+  "question_id": "Q209",
+  "query": "Who has written more than 300 papers, Semyon Aranovich Gershgorin or Pavel Alexandrov?",
+  "ground_truth": "Pavel Sergeyevich Alexandrov",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Pavel Alexandrov",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "William Randolph Hearst: William Randolph Hearst Sr. ( ; April 29, 1863 \u2013 August 14, 1951) was an American businessman, politician, and newspaper publisher who built the nation's largest newspaper chain and media company Hearst Communications and whose flamboyant methods of yellow journalism influenced the nation's popular media by emphasizing sensationalism and human interest stories.  Hearst entered the publishing business in 1887 after being given control of \"The San Francisco Examiner\" by his wealthy father.  Moving to New York City, he acquired \"The New York Journal\" and fought a bitter circulation war with Joseph Pulitzer's \"New York World\" that sold papers by giant headlines over lurid stories featuring crime, corruption, graphics, sex, and innuendo.  Acquiring more newspapers, Hearst created a chain that numbered nearly thirty papers in major American cities at its peak.  He later expanded to magazines, creating the largest newspaper and magazine business in the world.",
+      "Bibliography of works on Che Guevara: Ernesto \"Che\" Guevara (June 14, 1928 \u2013 October 9, 1967), was an Argentine Marxist revolutionary, politician, author, intellectual, physician, military theorist, and guerrilla leader.  His life, legacy, and ideas have attracted a great deal of interest from historians, artists, film makers, musicians, and biographers.  In reference to the abundance of material, Nobel Prize\u2013winning author Gabriel Garc\u00eda M\u00e1rquez has declared that \"it would take a thousand years and a million pages to write Che's biography.\"",
+      "William Shakespeare: William Shakespeare ( ; 26 April 1564 (baptised)\u00a0\u2013 23 April 1616) was an English poet, playwright, and actor, widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist.  He is often called England's national poet, and the \"Bard of Avon\".  His extant works, including collaborations, consist of approximately 38 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain authorship.  His plays have been translated into every major living language and are performed more often than those of any other playwright."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 573,
+    "generation_tokens": 5,
+    "generation_speed": 367.64705882352945,
+    "prompt_eval_speed": 56165.45775338169,
+    "generation_latency_s": 0.1385127000976354,
+    "latency": 0.4952387000666931,
+    "total_prompt_tokens": 729,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2419626,
+    "stage_route_s": 0.10537560004740953,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1976894000545144,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05348699993919581,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.180004518479109e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13854800001718104,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49524810002185404,
+    "unaccounted_latency_s": 9.679992217570543e-05,
+    "route": "rag",
+    "router_raw": "Pavel Alexandrov",
+    "sub_queries": [
+      "Who has written more than 300 papers?",
+      "Who wrote more than 300 papers?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

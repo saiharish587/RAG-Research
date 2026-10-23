@@ -1,0 +1,48 @@
+{
+  "question_id": "Q62",
+  "query": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+  "ground_truth": "Ronald Shusett",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Hans Zimmer",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alien (soundtrack): The iconic, avant-garde score to the film \"Alien\" was composed by Jerry Goldsmith and is considered by some to be one of his best, most visceral scores.  Rather than focusing on themes, Goldsmith creates a bleak and dissonant soundscape that fits the film's dark and intense atmosphere, with only a few \"romantic\" cues.",
+      "Legend (film score): Legend: The Music of Jerry Goldsmith is a musical film score by American composer Jerry Goldsmith, released in 1986 for the worldwide release of the film of the same name, (excluding the US).  The album was released on compact disc in 1992 through Silva Screen records and featured alternate cover art and additional songs.",
+      "Hans Zimmer: Hans Florian Zimmer (] ; born 12 September 1957) is a German film score composer and record producer.  Since the 1980s, he has composed music for over 150 films.  His works include \"The Lion King\", for which he won the Academy Award for Best Original Score in 1995, the \"Pirates of the Caribbean\" series, \"The Thin Red Line\", \"Gladiator\", \"The Last Samurai\", \"The Dark Knight Trilogy\", \"Inception\", \"Interstellar\" and \"Dunkirk\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 369,
+    "generation_tokens": 4,
+    "generation_speed": 280.8397107350979,
+    "prompt_eval_speed": 48361.730013106164,
+    "generation_latency_s": 0.1320374000351876,
+    "latency": 0.44157470006030053,
+    "total_prompt_tokens": 511,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2294096,
+    "stage_route_s": 0.09599180007353425,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17560620000585914,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03778479993343353,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.779993858188391e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13206989993341267,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4415846000192687,
+    "unaccounted_latency_s": 9.490014053881168e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The name of the executive producer of the film with a score composed by Jerry Goldsmith is...?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

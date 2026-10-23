@@ -1,0 +1,42 @@
+{
+  "question_id": "Q88",
+  "query": "Where are Teide National Park and Garajonay National Park located?",
+  "ground_truth": "Canary Islands, Spain",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Teide National Park and Garajonay National Park are located in Tenerife, Spain.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Teide National Park: Teide National Park (Spanish: \"Parque nacional del Teide\" , ] ) is a national park located in Tenerife (Canary Islands, Spain).",
+      "Garajonay National Park: Garajonay National Park (Spanish: \"Parque nacional de Garajonay\" , ] ) is located in the center and north of the island of La Gomera, one of the Canary Islands (Spain).  It was declared a national park in 1981 and a World Heritage Site by UNESCO in 1986.  It occupies 40 km (15 sq mi) and it extends into each of the six municipalities on the island.",
+      "Andalusia: Andalusia ( ; Spanish: \"Andaluc\u00eda\" ] ) is an autonomous community in southern Spain.  It is the most populated and the second largest in area of the autonomous communities in the country.  The Andalusian autonomous community is officially recognised as \"historical nationality\".  The territory is divided into eight provinces: Almer\u00eda, C\u00e1diz, C\u00f3rdoba, Granada, Huelva, Ja\u00e9n, M\u00e1laga and Seville.  Its capital is the city of Seville (Spanish: \"Sevilla\")."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 341,
+    "generation_tokens": 21,
+    "generation_speed": 237.71790808240888,
+    "prompt_eval_speed": 14201.824163924866,
+    "generation_latency_s": 0.9520098000066355,
+    "latency": 3.413605799898505,
+    "total_prompt_tokens": 416,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1298885,
+    "stage_rewrite_s": 1.234114499995485,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.029406400048174,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1979624000377953,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9520443000365049,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4136142999632284,
+    "unaccounted_latency_s": 8.729984983801842e-05,
+    "rewritten_query": "Teide National Park is located in the southern part of Spain, while Garajonay National Park is situated in the northern region of Andalusia.",
+    "query_was_rewritten": true
+  }
+}

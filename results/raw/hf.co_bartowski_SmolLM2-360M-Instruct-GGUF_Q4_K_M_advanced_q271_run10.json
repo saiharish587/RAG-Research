@@ -1,0 +1,42 @@
+{
+  "question_id": "Q271",
+  "query": "To which aircraft carrier was the VMF-213 Marine Fighting Squadron assigned to durning World War II?",
+  "ground_truth": "USS Essex",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The VMF-213 Marine Fighting Squadron was assigned to USS Essex (CV-9) and \"Air Group 4\" during World War II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "VMF-213: Marine Fighting Squadron 213 (VMF-213) was a reserve fighter squadron in the United States Marine Corps.  Nicknamed the \"Hell Hawks\", the squadron fought during World War II in the Philippines and at the battles of Iwo Jima and Okinawa.  With its assignment to the USS Essex (CV-9) and \"Air Group 4\", VMF-213 along with VMF-124 was one of the first two Marine squadrons to augment carrier air groups during World War II.  The squadron was credited with downing 117 enemy aircraft during the war.",
+      "VMF-221: Marine Fighting Squadron 221 (VMF-221) was a fighter squadron of the United States Marine Corps in World War II.  During the war, they flew the Brewster F2A-3, and after reconstitution in 1943, the F4U Corsair.  The squadron, also known as the \u201cFighting Falcons\u201d, is most notable for its actions on June 4, 1942, during the Battle of Midway, which resulted in 23 members of the squadron, many posthumously, being awarded the Navy Cross for their actions in combat.  VMF-221 ended WW II with 185 air-to-air victories, the second most of any Marine Fighting Squadron in the war.",
+      "VMF-222: Marine Fighting Squadron 222 (VMF-222) was a fighter squadron of the United States Marine Corps that was activated and fought during World War II.  Known as \u201cThe Flying Deuces\u201d, they fell under the command of Marine Aircraft Group 14 (MAG-14) and fought in many areas of the Pacific War, including the Philippines campaign (1944\u201345) and the Battle of Okinawa.  During the war, the squadron was credited with shooting down 53 enemy aircraft and was the sister squadron to VMF-215.  They were deactivated on December 31, 1949."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 538,
+    "generation_tokens": 33,
+    "generation_speed": 255.45750116117048,
+    "prompt_eval_speed": 71552.06809416146,
+    "generation_latency_s": 1.0048585999757051,
+    "latency": 3.4400504999794066,
+    "total_prompt_tokens": 622,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1233412,
+    "stage_rewrite_s": 1.2114844999741763,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0468572999816388,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1767272000433877,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0049028999637812,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4400614999467507,
+    "unaccounted_latency_s": 9.019998833537102e-05,
+    "rewritten_query": "VMF-213 was assigned to the USS Lexington (CV-2) during World War II.",
+    "query_was_rewritten": true
+  }
+}

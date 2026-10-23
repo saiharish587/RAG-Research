@@ -1,0 +1,49 @@
+{
+  "question_id": "Q260",
+  "query": "which is larger Asante Traditional Buildings or Gulangyu?",
+  "ground_truth": "Gulangyu",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Asante Traditional Buildings are larger than Gulampu.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Asante Traditional Buildings: Asante Traditional Buildings is a World Heritage Site in Ghana, which is a collection of 13 traditionally built buildings from the time of the Ashanti Empire in the area.",
+      "Varugad: The hill rises about 250 feet above the level of the plateau, which itself constitutes the summit of the Mahadev range at this point.  The cone with the walls on it is seen from a great distance and appears very small indeed.  But on near approach it is seen to be but the inner citadel of a place of considerable size and strength for the times in which it was built.  On the south-west the outer wall or enceinte is entered by a rude gateway of a single pointed arch about eight feet high and five feet broad.  As usual there is a curtain of solid masonry inside.  The gate lies about 150 yards east of the edge of the plateau, which there terminates in an almost unbroken vertical precipice of several hundred feet in height and receding in a north-easterly direction.  No wall was built along about three hundred yards of this part which is absolutely unscalable, but for the rest of the way the walling is continued along the edge of the cliff in a north-east direction for about another three hundred yards.  Here it turns still following the cliff to the south-east for another seven hundred yards, and then gradually rounds to the westward covering four hundred and fifty yards more till it meets the gateway.  But for the break of the inaccessible precipice this outer wall would form a nearly equilateral triangle with the corners rounded off, the side being of some six hundred and fifty yards.",
+      "Teotihuacan: Teotihuacan , also written Teotihuac\u00e1n (] ,    ), is an ancient Mesoamerican city located in a sub-valley of the Valley of Mexico, located in the State of Mexico 40 km northeast of modern-day Mexico City, known today as the site of many of the most architecturally significant Mesoamerican pyramids built in the pre-Columbian Americas."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 505,
+    "generation_tokens": 12,
+    "generation_speed": 203.05255677011067,
+    "prompt_eval_speed": 46963.63805449642,
+    "generation_latency_s": 0.18499690003227443,
+    "latency": 0.5633588000200689,
+    "total_prompt_tokens": 629,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2452993,
+    "stage_route_s": 0.10896860004868358,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2146169999614358,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05460040003526956,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.250005051493645e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18503119994420558,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5633681999752298,
+    "unaccounted_latency_s": 9.929994121193886e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Asante Traditional Buildings are larger than Gulampu.",
+      "Gulampu is smaller than Asante Traditional Buildings."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

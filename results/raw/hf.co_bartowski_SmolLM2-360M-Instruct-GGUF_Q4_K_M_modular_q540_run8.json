@@ -1,0 +1,49 @@
+{
+  "question_id": "Q540",
+  "query": "Where was the sports complex at which Will Brodie made his debut in the thirty-five point loss against Melbourne located?",
+  "ground_truth": "Alice Springs, Northern Territory",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The sports complex where Will Brodie made his debut in the thirty-five point loss against Melbourne was within walking distance of the city centre and was served by the Richmond railway station, Richmond.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Melbourne Cricket Ground: The Melbourne Cricket Ground (MCG), also known simply as \"The G\", is an Australian sports stadium located in Yarra Park, Melbourne, Victoria.  Home to the Melbourne Cricket Club, it is the 10th-largest stadium in the world, the largest in Australia, the largest in the Southern Hemisphere, the largest cricket ground by capacity, and has the tallest light towers of any sporting venue.  The MCG is within walking distance of the city centre and is served by the Richmond railway station, Richmond, and the Jolimont railway station, East Melbourne.  It is part of the Melbourne Sports and Entertainment Precinct.",
+      "Will Brodie: Will Brodie (born 23 August 1998) is a professional Australian rules footballer playing for the Gold Coast Football Club in the Australian Football League (AFL).  He was drafted by Gold Coast with their third selection and ninth overall in the 2016 national draft.  He made his debut in the thirty-five point loss against Melbourne at TIO Traeger Park in round ten of the 2017 season.",
+      "ESPN Wide World of Sports Complex: The ESPN Wide World of Sports Complex is a 220 acre athletic complex located in the Walt Disney World Resort, in Bay Lake, Florida, near Orlando, Florida.  The complex includes 9 venues and hosts numerous amateur and professional sporting events throughout the year."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 386,
+    "generation_tokens": 39,
+    "generation_speed": 209.20277649633627,
+    "prompt_eval_speed": 46810.57482415717,
+    "generation_latency_s": 0.3121612999821082,
+    "latency": 0.6165716999676079,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21950809999999998,
+    "stage_route_s": 0.09744079993106425,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15218400000594556,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054615500033833086,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.559995770454407e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3121930999914184,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6165848999517038,
+    "unaccounted_latency_s": 9.660003706812859e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Sports Complex\"",
+      "\"Melbourne, Australia\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

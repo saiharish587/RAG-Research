@@ -1,0 +1,42 @@
+{
+  "question_id": "Q65",
+  "query": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+  "ground_truth": "more than 70 countries",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Scott Parkin has been a vocal critic of Exxonmobil and other corporations such as Bank of America, Citibank, TXU, and the Keystone XL Pipeline.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Parkin: Scott Parkin (born 1969, Garland, Texas is an anti-war, environmental and global justice organizer, former community college history instructor, and a founding member of the Houston Global Awareness Collective.  He has been a vocal critic of the American invasion of Iraq, and of corporations such as Exxonmobil and Halliburton.  Since 2006, he has worked as an campaigner for the Rainforest Action Network, organizing campaigns against Bank of America, Citibank, TXU and the Keystone XL Pipeline.  He also organizes with Rising Tide North America.",
+      "Chevron Corporation: Chevron Corporation () is an American multinational energy corporation.  One of the successor companies of Standard Oil, it is headquartered in San Ramon, California, and active in more than 180 countries.  Chevron is engaged in every aspect of the oil, natural gas, and geothermal energy industries, including hydrocarbon exploration and production; refining, marketing and transport; chemicals manufacturing and sales; and power generation.  Chevron is one of the world's largest oil companies; as of 2014 , it ranked third in the Fortune 500 list of the top US closely held and public corporations and sixteenth on the Fortune Global 500 list of the top 500 corporations worldwide.  It was also one of the Seven Sisters that dominated the global petroleum industry from the mid-1940s to the 1970s.",
+      "Exxon: Exxon was the brand name of oil and natural resources company Exxon Corporation, prior to 1972 known as Standard Oil Company of New Jersey.  In 1999, Exxon Corporation merged with Mobil to form ExxonMobil.  The \"Exxon\" brand is still used by ExxonMobil's downstream operations as a brand for certain of its gas stations, motor fuel and related products (the highest concentration of which are located in New Jersey, Pennsylvania, Texas and in the Mid-Atlantic and Southeastern states).  Standard Oil Company of New Jersey was one of the Seven Sisters that dominated the global petroleum industry from the mid-1940s to the 1970s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 549,
+    "generation_tokens": 37,
+    "generation_speed": 256.1705957697234,
+    "prompt_eval_speed": 76356.05006954103,
+    "generation_latency_s": 1.0215048999525607,
+    "latency": 3.448993399972096,
+    "total_prompt_tokens": 633,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1202544,
+    "stage_rewrite_s": 1.1876472999574617,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0599323000060394,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17979720002040267,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0215400999877602,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.449002599925734,
+    "unaccounted_latency_s": 8.629995863884687e-05,
+    "rewritten_query": "Scott Parkin has criticized ExxonMobil and other corporations operating in multiple countries.",
+    "query_was_rewritten": true
+  }
+}

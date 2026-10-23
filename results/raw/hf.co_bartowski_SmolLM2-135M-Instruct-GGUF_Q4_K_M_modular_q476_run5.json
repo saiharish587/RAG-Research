@@ -1,0 +1,49 @@
+{
+  "question_id": "Q476",
+  "query": "Which American cable news and talk radio host was the former GOP representative",
+  "ground_truth": "Charles Joseph",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Mike Conaway",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States.",
+      "Joe Scarborough: Charles Joseph Scarborough ( ; born April 9, 1963) is an American cable news and talk radio host.  He is currently the co-host of \"Morning Joe\" on MSNBC, and previously hosted \"Scarborough Country\" on the same channel.  Scarborough was previously a lawyer and a politician, and served in the United States House of Representatives from 1995 to 2001 as a Republican from the 1st district of Florida.",
+      "Mike Conaway: Kenneth Michael \"Mike\" Conaway ( ; born June 11, 1948) is the U.S. Representative for Texas 's 11th congressional district , serving since 2005.  He is a member of the Republican Party.  The district is located in West Texas and includes Midland, Odessa, San Angelo, Brownwood and Granbury.  Conaway was asked to lead the investigation into Russian interference in the 2016 United States elections (with assistance from Trey Gowdy and Tom Rooney) after the Intelligence Committee chair, Devin Nunes, recused himself."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 510,
+    "generation_tokens": 5,
+    "generation_speed": 259.94281258123215,
+    "prompt_eval_speed": 69748.35886214442,
+    "generation_latency_s": 0.13889910001307726,
+    "latency": 0.500793099985458,
+    "total_prompt_tokens": 638,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2381951,
+    "stage_route_s": 0.14197720005176961,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16245079995132983,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05728419998195022,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5999960750341415e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1389384000794962,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5008045999566093,
+    "unaccounted_latency_s": 9.869993664324284e-05,
+    "route": "rag",
+    "router_raw": "The answer to this user question is \"American Cable News Host.\"",
+    "sub_queries": [
+      "Who is the former GOP Representative from Texas?",
+      "What are some of the most popular shows on American TV today?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

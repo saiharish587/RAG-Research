@@ -1,0 +1,49 @@
+{
+  "question_id": "Q78",
+  "query": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+  "ground_truth": "Apalachees",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Alvaro Mexia had a diplomatic mission with the Ais native population, resulting in a \"Period of Friendship\" between the Spanish and the Ais native population.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alvaro Mexia: Alvaro Mexia was a 17th-century Spanish explorer and cartographer of the east coast of Florida.  Mexia was stationed in St Augustine and was given a diplomatic mission to the native populations living south of St. Augustine and in the Cape Canaveral area.  This mission resulted in a \"Period of Friendship\" between the Spanish and the Ais native population.",
+      "Dayuma: Dayuma (also Dayumae) (born ca. 1930, - March 1, 2014) was a member of the Huaorani tribe and a citizen of Ecuador.  She is a central figure in the Operation Auca saga, in that she was the first Huao convert to Christianity, as well as the missionaries' key to unlocking the Huaorani language, a language that had not been previously studied.  Later Dayuma also became an influential figure in her tribe.",
+      "contact among many of the languages of Greater Amazonia has created similarities between many neighboring languages that are not genetically related.  The small tribes can speak English but that would be used as one of their secondary languages"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 314,
+    "generation_tokens": 35,
+    "generation_speed": 215.06433495962935,
+    "prompt_eval_speed": 38489.83065577723,
+    "generation_latency_s": 0.2835115999914706,
+    "latency": 0.7287548000458628,
+    "total_prompt_tokens": 446,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2221145,
+    "stage_route_s": 0.09191509999800473,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2965356999775395,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05663170001935214,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.770001396536827e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28354219999164343,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7287636999972165,
+    "unaccounted_latency_s": 9.190000128000975e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Alvaro Mexia's diplomatic mission was with the Teku tribe.\"",
+      "\"The Teku tribe is one of the many indigenous peoples that Alvaro Mexia interacted with during his diplomatic mission.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q406",
+  "query": "Where was the person born who was recognized by MIAL and is an American soprano?",
+  "ground_truth": "Laurel, Mississippi",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The person who was recognized by MIA and is an American soprano is Andrea Carroll, who was born in Laurel, Mississippi. She rose to international acclaim in the 1950s and 1960s as a finalist for the 2015 Operalia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Florence Foster Jenkins: Florence Foster Jenkins (born Narcissa Florence Foster; July 19, 1868 \u2013 November 26, 1944) was an American socialite and amateur soprano who was known and mocked for her flamboyant performance costumes and notably poor singing ability.  The historian Stephen Pile ranked her \"the world's worst opera singer\".  \"No one, before or since,\" he wrote, \"has succeeded in liberating themselves quite so completely from the shackles of musical notation.\"",
+      "Leontyne Price: Mary Violet Leontyne Price (born February 10, 1927) is an American soprano.  Born and raised in Laurel, Mississippi, she rose to international acclaim in the 1950s and 1960s, and was one of the first African Americans to become a leading artist at the Metropolitan Opera.",
+      "Andrea Carroll (soprano): Andrea Carroll is an American soprano who has had an active international career in concerts and operas since 2012.  A finalist in the 2015 Operalia, The World Opera Competition, she is particularly known for her performances with the Houston Grand Opera and the Vienna State Opera."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 344,
+    "generation_tokens": 63,
+    "generation_speed": 385.0502704519757,
+    "prompt_eval_speed": 20355.02958579882,
+    "generation_latency_s": 0.292795000015758,
+    "latency": 1.0561895000282675,
+    "total_prompt_tokens": 482,
+    "total_generation_tokens": 261,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2157996,
+    "stage_route_s": 0.0923805000493303,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6158856999827549,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054945899988524616,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.200000643730164e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29282750003039837,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0561980999773368,
+    "unaccounted_latency_s": 9.729992598295212e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Here are two specific search queries related to the person identified as \"MIA\" in the context of American singer-songwriter SOPAN, which is recognized by MALAMI.",
+      "Query 1: Where was the person born who was recognized by MIAL and is an American soprano?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

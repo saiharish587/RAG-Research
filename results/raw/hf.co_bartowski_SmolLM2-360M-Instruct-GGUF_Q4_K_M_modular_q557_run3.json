@@ -1,0 +1,49 @@
+{
+  "question_id": "Q557",
+  "query": "Are the flowering plants Ecballium and Elatostema in the same family?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Yes, the flowering plants Elatostema and Eustoma are in the same family, which is Cucurbitaceae.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Elatostema: Elatostema is a genus of flowering plants containing approximately 350 known species in the nettle family Urticaceae, native to tropical forest clearings throughout Australasia, Asia and Africa.  There may be as many as 1,000 species of this little-known genus, which is susceptible to deforestation and other forms of human exploitation.  Some species, for instance the recently discovered \"E. fengshanense\", show unusual adaptations to growing in deep shade in caves.  DNA analysis suggests that the three genera \"Elastostema\", \"Pellionia\", and \"Pilea\" be grouped together as one.",
+      "Ecballium: Ecballium is a genus of flowering plants in the family Cucurbitaceae containing a single species, Ecballium elaterium, also called the squirting cucumber or exploding cucumber (but not to be confused with \"Cyclanthera explodens\").  It gets its unusual name from the fact that, when ripe, it squirts a stream of mucilaginous liquid containing its seeds, which can be seen with the naked eye.  It is thus considered to have rapid plant movement.",
+      "Eustoma: Eustoma, commonly known as lisianthus or prairie gentian, is a small genus in the gentian family.  They are native to warm regions of the southern United States, Mexico, Caribbean and northern South America.  This genus is typically found in grasslands and in areas of disturbed ground."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 389,
+    "generation_tokens": 27,
+    "generation_speed": 226.28226617499163,
+    "prompt_eval_speed": 45337.99533799534,
+    "generation_latency_s": 0.2423570000100881,
+    "latency": 0.7054581000702456,
+    "total_prompt_tokens": 523,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2354138,
+    "stage_route_s": 0.11034799995832145,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2925915999803692,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05995520006399602,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.240004975348711e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24239799997303635,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7054695000406355,
+    "unaccounted_latency_s": 0.00012500002048909664,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Ecballium and Elatostema are flowering plants belonging to the same family, Asteraceae.",
+      "Query 2: No, they are not related by a common ancestor or shared characteristics."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

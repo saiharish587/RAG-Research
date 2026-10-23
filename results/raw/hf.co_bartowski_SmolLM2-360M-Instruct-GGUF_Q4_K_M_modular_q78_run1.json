@@ -1,0 +1,49 @@
+{
+  "question_id": "Q78",
+  "query": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+  "ground_truth": "Apalachees",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Alvaro Mexia had a diplomatic mission with the Ais native population in St Augustine, Florida.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alvaro Mexia: Alvaro Mexia was a 17th-century Spanish explorer and cartographer of the east coast of Florida.  Mexia was stationed in St Augustine and was given a diplomatic mission to the native populations living south of St. Augustine and in the Cape Canaveral area.  This mission resulted in a \"Period of Friendship\" between the Spanish and the Ais native population.",
+      "Quechuan languages: Quechua , also known as runa simi (\"people's language\"), is an indigenous language family, with variations spoken by the Quechua peoples, primarily living in the Andes and highlands of South America.  Derived from a common ancestral language, it is the most widely spoken language family of indigenous peoples of the Americas, with a total of probably some 8\u201310 million speakers.  Approximately 13% of Peruvians speak Quechua.  It is perhaps most widely known for being the main language of the Inca Empire, and was disseminated by the colonizers throughout their reign.",
+      "contact among many of the languages of Greater Amazonia has created similarities between many neighboring languages that are not genetically related.  The small tribes can speak English but that would be used as one of their secondary languages"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 330,
+    "generation_tokens": 22,
+    "generation_speed": 210.5968506198248,
+    "prompt_eval_speed": 12206.850632536805,
+    "generation_latency_s": 0.23749269999098033,
+    "latency": 0.6948563000187278,
+    "total_prompt_tokens": 462,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22367979999999998,
+    "stage_route_s": 0.09788520005531609,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30110349995084107,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0582066000206396,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7999975979328156e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23752289998810738,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6948649999685585,
+    "unaccounted_latency_s": 8.939998224377632e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Alvaro Mexia's diplomatic mission was with the Teku tribe.\"",
+      "\"The Teku tribe is one of the indigenous peoples in the region where Alvaro Mexia traveled.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

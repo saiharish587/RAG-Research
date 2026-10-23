@@ -1,0 +1,49 @@
+{
+  "question_id": "Q280",
+  "query": "What type of magazine is Eugene Habecker the chairman of?",
+  "ground_truth": "evangelical Christian periodical",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Eugene Habecker is the chairman of the American Bible Society.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Eugene Habecker: Dr. Eugene B. Habecker is the 30th president of Taylor University and chairman of Christianity Today.  Previously, Habecker was president of the American Bible Society.  He is also the author of several books, two coauthored with his wife, Marylou Habecker.  He was inaugurated in a ceremony on Friday, April 28, 2006, in Odle Arena on the Upland campus, only two days after a tragic fatal car accident involving several students and employees.",
+      "The New Yorker: The New Yorker is an American magazine of reportage, commentary, criticism, essays, fiction, satire, cartoons, and poetry.  It is published by Cond\u00e9 Nast.  Started as a weekly in 1925, the magazine is now published 47 times annually, with five of these issues covering two-week spans.",
+      "Karl Marx: Karl Marx ( ; ] ; 5 May 1818 \u2013 14 March 1883) was a German philosopher, economist, political theorist, sociologist, journalist and revolutionary socialist."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 309,
+    "generation_tokens": 16,
+    "generation_speed": 213.90660302945224,
+    "prompt_eval_speed": 38115.21378009298,
+    "generation_latency_s": 0.19690039998386055,
+    "latency": 0.4982156999176368,
+    "total_prompt_tokens": 435,
+    "total_generation_tokens": 34,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2296801,
+    "stage_route_s": 0.09448289999272674,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15501870005391538,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05163220001850277,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.519995465874672e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19693920004647225,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49822810001205653,
+    "unaccounted_latency_s": 0.00010069995187222958,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The New York Times\"",
+      "\"The Economist\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

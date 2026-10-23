@@ -1,0 +1,49 @@
+{
+  "question_id": "Q371",
+  "query": "What type of media does Bitter Jester and Sicko have in common?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Bitter (beer) is a British style of pale ale that varies in colour from gold to dark amber, and in strength from 3% to 7%.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bitter Jester: Bitter Jester is a documentary starring Maija DiGiorgio, Kenny Simmons, Jody Del Giorno and Heather McConnell.  It's a portrait of the comedy world that includes interviews with a multitude of stars including Richard Pryor, Richard Belzer and many others.",
+      "Sick (EP): Sick is the debut extended play by American hardcore punk band Beartooth and is produced by Caleb Shomo formerly of the band Attack Attack!  who sang and recorded all the instruments used on the album.  It was released on July 26, 2013 through Red Bull Records for free download.",
+      "Bitter (beer): Bitter is a British style of pale ale that varies in colour from gold to dark amber, and in strength from 3% to 7% alcohol by volume."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 254,
+    "generation_tokens": 35,
+    "generation_speed": 378.56663854457355,
+    "prompt_eval_speed": 85464.33378196502,
+    "generation_latency_s": 0.20725279999896884,
+    "latency": 0.9622512999922037,
+    "total_prompt_tokens": 386,
+    "total_generation_tokens": 242,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2292552,
+    "stage_route_s": 0.25748759997077286,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4394947000546381,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05782679992262274,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.610000178217888e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2073015000205487,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9622652000980452,
+    "unaccounted_latency_s": 0.00010930013377219439,
+    "route": "rag",
+    "router_raw": "Bitter Jester and Sicko both have a similar genre called \"Sicko\" which is a subgenre of horror that often features supernatural elements, such as ghosts, vampires, or zombies. They share the same genre and themes but differ in their tone, style, and execution.",
+    "sub_queries": [
+      "Bitter Jester and Sicko both have a strong focus on social commentary, but they differ significantly in their tone and content. Bitter Jester is known for its satirical take on contemporary issues like racism, sexism, and classism, often using humor to highlight these problems through satire and irony. In contrast, Sicko focuses more on the emotional impact of these issues on individuals rather than just criticizing society as a whole.",
+      "Bitter Jester's tone tends to be more critical and sarcastic, while Sicko's tone is more introspective and emotive. Bitter Jester often uses humor to poke fun at societal norms and conventions, while Sicko frequently explores the darker aspects of human nature and social inequality."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

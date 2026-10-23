@@ -1,0 +1,49 @@
+{
+  "question_id": "Q47",
+  "query": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+  "ground_truth": "Phil Spector",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The writer of the song \"Highwayman\" that was inspired by words on a tombstone and was the first track on the box set \"Back to Mono\" is Jimmy Webb.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Back to Mono (1958\u20131969): Back to Mono (1958\u20131969) is a box set (4 compact discs or 5 vinyl LPs) compilation of the recorded work of record producer Phil Spector, through the 1960s, released in 1991 by ABKCO as #7118-2.  The first track, \"To Know Him Is to Love Him,\" released in 1958, features Spector performing as part of the group the Teddy Bears.  Initially a vinyl album-sized package, the box contained a booklet with photographs, complete song lyrics, discographical information, and a reproduction of the essay on Spector by Tom Wolfe, \"The First Tycoon of Teen.\"  The package also contained a small, round, red \"Back to Mono\" pin.",
+      "Marc Bolan: Marc Bolan ( ; born Mark Feld; 30 September 1947 \u2013 16 September 1977) was an English singer-songwriter, musician, guitarist, and poet.  He was best known as the lead singer of the glam rock band T. Rex.  Bolan was one of the pioneers of the glam rock movement of the 1970s.  He died at age 29 in a car accident a fortnight before his 30th birthday.",
+      "Highwayman (song): \"Highwayman\" is a song written by American singer-songwriter Jimmy Webb, about a soul with incarnations in four different places in time and history: as a highwayman, a sailor, a construction worker on the Hoover Dam, and finally as a captain of a starship.  The song was influenced by the real-life hanged highwayman Jonathan Wild.  The dam builder verse alludes to the deaths of over one hundred men during the construction of Hoover Dam near Boulder City, Nevada.  Webb first recorded the song on his album \"El Mirage\", released in May 1977.  The following year, Glen Campbell recorded his version, which was released on his 1979 album \"Highwayman\".  In 1985, the song became the inspiration for the naming of the supergroup The Highwaymen, which featured Johnny Cash, Waylon Jennings, Willie Nelson, and Kris Kristofferson.  Their first album, \"Highwayman\", became a number one platinum-selling album, and their version of the song went to number one on the Hot Country Songs \"Billboard\" chart in a twenty-week run.  Their version earned Webb a Grammy Award for Best Country Song in 1986.  The song has since been recorded by other artists.  Webb himself included a different version on his 1996 album \"Ten Easy Pieces\", a live version on his 2007 album \"Live and at Large\", and a duet version with Mark Knopfler on 2010 album \"Just Across the River\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 731,
+    "generation_tokens": 39,
+    "generation_speed": 206.81865186057243,
+    "prompt_eval_speed": 82042.64870931538,
+    "generation_latency_s": 0.3162989999400452,
+    "latency": 0.7489821000490338,
+    "total_prompt_tokens": 891,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2191609,
+    "stage_route_s": 0.093423500075005,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2833305000094697,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05572659999597818,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.949998740106821e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.316344799939543,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7489952000323683,
+    "unaccounted_latency_s": 0.00011110003106296062,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Writer\" - The song's creator, who inspired the lyrics with words from a tombstone.",
+      "\"Back to Mono\" - The title of the album that features this song as one of its tracks."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

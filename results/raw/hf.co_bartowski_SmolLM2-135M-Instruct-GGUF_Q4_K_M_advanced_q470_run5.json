@@ -1,0 +1,42 @@
+{
+  "question_id": "Q470",
+  "query": "What 2016 film stars actor Xavier Samuel and an actress who portrayed Vasilisa Dragomir in the film \"Vampire Academy\"?",
+  "ground_truth": "Mr. Church",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The answer is: Xavier Samuel and an actress who portrayed Vasilisa Dragomir in the film \"Vampire Academy\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lucy Fry: Lucy Elizabeth Fry (born 13 March 1992) is an Australian actress.  She is known for portraying Zoey in \"Lightning Point\", Lyla in \"\", and Vasilisa Dragomir in the film \"Vampire Academy\".  Fry was also cast in Hulu's eight part miniseries \"11.22.63\" as Marina Oswald, wife of Lee Harvey Oswald, and played the lead in the 2016 Australian horror television series \"Wolf Creek\".",
+      "Spin Out (2016 film): Spin Out is an Australian romantic comedy film directed by Tim Ferguson and Marc Gracie.  The film stars Xavier Samuel and Morgan Griffin.",
+      "Mr. Church: Mr. Church is a 2016 American dramedy film directed by Bruce Beresford and written by Susan McMartin.  The film stars Eddie Murphy as the title character with Britt Robertson, Xavier Samuel, Lucy Fry, Christian Madsen and Natascha McElhone also starring.  The film debuted on April 22, 2016, at the Tribeca Film Festival and was released on September 16, 2016, by Cinelou Releasing and Freestyle Releasing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 362,
+    "generation_tokens": 28,
+    "generation_speed": 394.1385960220154,
+    "prompt_eval_speed": 48800.21569156107,
+    "generation_latency_s": 0.15700279991142452,
+    "latency": 0.5642971000634134,
+    "total_prompt_tokens": 454,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.136461,
+    "stage_rewrite_s": 0.16233069996815175,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0743759999750182,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17044949997216463,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15705139993224293,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5643112000543624,
+    "unaccounted_latency_s": 0.00010430021211504936,
+    "rewritten_query": "What 2016 film stars actor Xavier Samuel and an actress portraying Vasilisa Dragomir?",
+    "query_was_rewritten": true
+  }
+}

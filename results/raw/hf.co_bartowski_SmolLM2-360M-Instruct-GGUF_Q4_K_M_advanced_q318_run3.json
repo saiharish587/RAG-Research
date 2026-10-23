@@ -1,0 +1,42 @@
+{
+  "question_id": "Q318",
+  "query": "What Kentucky county has a population of 60,316 and features the Lake Louisvilla neighborhood?",
+  "ground_truth": "Oldham County",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Oldham County has a population of 60,316 and features the Lake Louisvilla neighborhood in Louisville, Kentucky.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oldham County, Kentucky: Oldham County is a county located in the commonwealth of Kentucky.  As of the 2010 census, the population was 60,316.  Its county seat is La Grange.  The county is named for Colonel William Oldham.  Oldham County was a prohibition or completely dry county until January 2005 as the result of a 2004 'moist' vote, permitting sales of alcohol in restaurants that seat at least 100 patrons in which 70%+ of total revenue is derived from sales of food.  After a vote in late 2015; Oldham county has become a completely wet county.",
+      "Lake Louisvilla, Louisville: Lake Louisvilla is a neighborhood partially located in Louisville, Kentucky.  It is located between Westport Road in Louisville and KY 22 in Oldham County.  Lake Louisvilla was developed in the 1920s as a summer resort for people living in the city of Louisville.  The state of Kentucky drained the lake in the late 1980s due to safety concerns regarding the stability of a dam.",
+      "Lexington, Kentucky: Lexington, consolidated with Fayette County and often denoted as Lexington-Fayette, is the second-largest city in Kentucky and the 60th-largest city in the United States.  Known as the \"Horse Capital of the World,\" it is the heart of the state's Bluegrass region.  With a mayor-alderman form of government, it is one of two cities in Kentucky designated by the state as first-class; the other is the state's largest city of Louisville.  In the 2016 U.S. Census Estimate, the city's population was 318,449, anchoring a metropolitan area of 506,751 people and a combined statistical area of 723,849 people.  Due to constant increases in population, Lexington suffers the worst traffic congestion in Kentucky, because two interstates bypass the city to the north and east, resulting in a lack of freeways (besides partial freeway New Circle Road) going through the most populated areas of the city."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 555,
+    "generation_tokens": 28,
+    "generation_speed": 255.3905651428363,
+    "prompt_eval_speed": 79672.69595176572,
+    "generation_latency_s": 0.9939604999963194,
+    "latency": 3.3895507999695837,
+    "total_prompt_tokens": 638,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12509409999999999,
+    "stage_rewrite_s": 1.232313200016506,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.007177000050433,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1559770000167191,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9940059001091868,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.389561799936928,
+    "unaccounted_latency_s": 8.9499750174582e-05,
+    "rewritten_query": "Kentucky County, with a population of 60,316, boasts the Lake Louisville neighborhood as its main attraction.",
+    "query_was_rewritten": true
+  }
+}

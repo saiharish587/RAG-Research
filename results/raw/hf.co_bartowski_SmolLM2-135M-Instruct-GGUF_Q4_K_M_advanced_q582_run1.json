@@ -1,0 +1,42 @@
+{
+  "question_id": "Q582",
+  "query": "Where was the author of Thoughts of Machiavelli born?",
+  "ground_truth": "Germany",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The author of Thoughts of Machiavelli was born in France.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thoughts on Machiavelli: Thoughts on Machiavelli is a book by Leo Strauss first published in 1958.  The book is a collection of lectures he gave at the University of Chicago in which he dissects the work of Niccol\u00f2 Machiavelli.  The book contains commentary on Machiavelli's \"The Prince\" and the \"Discourses on Livy\".",
+      "Thomas More: Sir Thomas More ( ; 7 February 14786 July 1535), venerated by Roman Catholics as Saint Thomas More, was an English lawyer, social philosopher, author, statesman and noted Renaissance humanist.  He was also a councillor to Henry VIII, and Lord High Chancellor of England from October 1529 to 16 May 1532.  He wrote \"Utopia\", published in 1516, about the political system of an imaginary ideal island nation.",
+      "Georges Bataille: Georges Albert Maurice Victor Bataille (] ; 10 September 1897 \u2013 9 July 1962) was a French intellectual and literary figure working in literature, philosophy, anthropology, economics, sociology and history of art.  His writing, which included essays, novels, and poetry, explored such subjects as eroticism, mysticism, surrealism, and transgression.  His work would prove influential on subsequent schools of philosophy and social theory, including poststructuralism."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 14,
+    "generation_speed": 338.3931161171807,
+    "prompt_eval_speed": 21806.489330605087,
+    "generation_latency_s": 0.14418399997521192,
+    "latency": 0.504771800013259,
+    "total_prompt_tokens": 445,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1311873,
+    "stage_rewrite_s": 0.14864410005975515,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07617699995171279,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13562249997630715,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1442355999024585,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5047830999828875,
+    "unaccounted_latency_s": 0.00010460009798407555,
+    "rewritten_query": "The author of Thoughts of Machiavelli was born in 1502.",
+    "query_was_rewritten": true
+  }
+}

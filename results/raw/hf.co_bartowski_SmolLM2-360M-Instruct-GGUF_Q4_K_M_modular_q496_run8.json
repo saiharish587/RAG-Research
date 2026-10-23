@@ -1,0 +1,49 @@
+{
+  "question_id": "Q496",
+  "query": "How many restaurants comprise the quick service restaurant chain that Ron Joyce helped found?",
+  "ground_truth": "4,613",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Ron Joyce helped found Wendy's, which comprises approximately 6,500 locations worldwide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fast food restaurant: A fast food restaurant, also known as a quick service restaurant (QSR) within the industry, is a specific type of restaurant that serves fast food cuisine and has minimal table service.  The food served in fast food restaurants is typically part of a \"meat-sweet diet\", offered from a limited menu, cooked in bulk in advance and kept hot, finished and packaged to order, and usually available for take away, though seating may be provided.  Fast food restaurants are typically part of a restaurant chain or franchise operation that provisions standardized ingredients and/or partially prepared foods and supplies to each restaurant through controlled supply channels.  The term \"fast food\" was recognized in a dictionary by Merriam\u2013Webster in 1951.",
+      "Wendy's: Wendy's is an American international fast food restaurant chain founded by Dave Thomas on November 15, 1969, in Columbus, Ohio, United States.  The company moved its headquarters to Dublin, Ohio, on January 29, 2006.  As of 2016, Wendy's was the world's third largest hamburger fast food chain with 6,500+ locations, following Burger King and McDonald's.  On April 24, 2008, the company announced a merger with Triarc Companies Inc., a publicly traded company and the parent company of Arby's.  Despite the new ownership, Wendy's headquarters remained in Dublin.  Previously, Wendy's had rejected more than two buyout offers from Triarc.  Following the merger, Triarc became known as Wendy's/Arby's Group, and later as The Wendy's Company.",
+      "KFC: KFC, until 1991 known as Kentucky Fried Chicken, is an American fast food restaurant chain that specializes in fried chicken.  Headquartered in Louisville, Kentucky, it is the world's second-largest restaurant chain (as measured by sales) after McDonald's, with almost 20,000 locations globally in 123 countries and territories as of December 2015 .  The chain is a subsidiary of Yum!  Brands, a restaurant company that also owns the Pizza Hut and Taco Bell chains."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 538,
+    "generation_tokens": 21,
+    "generation_speed": 213.5339874930093,
+    "prompt_eval_speed": 66650.15691899863,
+    "generation_latency_s": 0.22335430001839995,
+    "latency": 0.6067205999279395,
+    "total_prompt_tokens": 668,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23185909999999998,
+    "stage_route_s": 0.09778619999997318,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2283283999422565,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05708080006297678,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.970002919435501e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22338910005055368,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6067290999926627,
+    "unaccounted_latency_s": 9.539991151541471e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Quick Service Restaurant Chain That Ron Joyce Helped Found",
+      "Query 2: How Many Restaurants Are In The Quick Service Restaurant Chain?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

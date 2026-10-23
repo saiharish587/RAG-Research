@@ -1,0 +1,42 @@
+{
+  "question_id": "Q451",
+  "query": "What is the name of the oldest child that attended the Trump campaign-Russian meeting?",
+  "ground_truth": "Donald Trump Jr.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Donald Trump Jr.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Donald Trump Jr.: Donald John Trump Jr. (born December 31, 1977) is an American businessman and former reality TV personality.  He is the oldest child of the 45th President of the United States, Donald Trump, and his first wife, Ivana.",
+      "Trump campaign\u2013Russian meeting: On June 9, 2016, a meeting was held in Trump Tower in New York City between three senior members of the presidential campaign of Donald TrumpDonald Trump Jr., Jared Kushner, and Paul Manafortand at least five other people, including Russian lawyer Natalia Veselnitskaya.  The meeting was arranged by publicist and long-time Trump acquantiance, Rob Goldstone on behalf of his client, singer-songwriter Emin Agalarov.  It was disclosed to U.S. government officials when Kushner filed a revised version of his security clearance form.",
+      "Donald Trump presidential campaign, 2016: The 2016 presidential campaign of Donald Trump, an American businessman, television personality, and author, was formally launched on June 16, 2015, at Trump Tower in New York City.  Trump was the Republican nominee for President of the United States in the 2016 election, having won the most state primaries, caucuses, and delegates at the 2016 Republican National Convention.  He chose Mike Pence, the sitting Governor of Indiana, as his vice presidential running mate.  On November 8, 2016, Trump and Pence were elected president and vice president of the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 422,
+    "generation_tokens": 5,
+    "generation_speed": 278.0094523213789,
+    "prompt_eval_speed": 57329.16723271294,
+    "generation_latency_s": 0.9087321000406519,
+    "latency": 3.3075266000814736,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1296412,
+    "stage_rewrite_s": 1.2183857000200078,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.029441999970004,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15082340000662953,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.908776400028728,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.307537200045772,
+    "unaccounted_latency_s": 0.00011040002573281527,
+    "rewritten_query": "The oldest child attending the Trump campaign-Russian meeting was none other than @TrumpCampaignMeetup.",
+    "query_was_rewritten": true
+  }
+}

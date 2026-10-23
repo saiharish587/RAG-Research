@@ -1,0 +1,42 @@
+{
+  "question_id": "Q536",
+  "query": "Who has released more studio albums, Candlelight Red or Motion City Soundtrack?",
+  "ground_truth": "Motion City Soundtrack",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "10cc",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Candlelight Red: Candlelight Red is a rock band from Williamsport, Pennsylvania.  They have produced two studio albums and an EP.  Their EP \"Demons\" and album \"Reclamation\" was produced by Morgan Rose of Sevendust.",
+      "Madonna albums discography: American singer Madonna has released thirteen studio albums, three soundtrack albums, five live albums, six compilation albums, and thirty-four other limited releases.  In 1982, Madonna signed a recording contract with Sire Records, a label owned by Warner Bros.  Records.  The first release under the label was her self-titled debut album, \"Madonna\" (1983).  It peaked at number eight on the \"Billboard\" 200 and was certified five times platinum by the Recording Industry Association of America (RIAA).  She followed the debut album with the sophomore release, \"Like a Virgin\" (1984).  The album topped the chart in several countries and was certified diamond by the RIAA. \" True Blue\" was released as her third studio album in 1986 and sold over 25\u00a0million copies worldwide, while becoming her second chart topper in US.  In 1987, she released two albums that reached platinum status in the United States: the \"Who's That Girl soundtrack\" and her first remix compilation, \"You Can Dance\".  Madonna's fourth studio album, \"Like a Prayer\" (1989), became her third number-one album on the \"Billboard\" 200, achieving quadruple platinum in US.",
+      "The Original Soundtrack: The Original Soundtrack is the third studio album by the English art rock band 10cc.  It was released in 1975 and peaked at number four on the UK Albums Chart.  \"The Original Soundtrack\" includes the singles \"Life Is a Minestrone\", and \"I'm Not in Love\", the band's most popular song."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 504,
+    "generation_tokens": 4,
+    "generation_speed": 284.9002849002849,
+    "prompt_eval_speed": 25481.57136356742,
+    "generation_latency_s": 0.11820179992355406,
+    "latency": 1.1586223999038339,
+    "total_prompt_tokens": 581,
+    "total_generation_tokens": 201,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1326011,
+    "stage_rewrite_s": 0.6372709999559447,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07819160004146397,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.32483529997989535,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.11823879997245967,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1586313999723643,
+    "unaccounted_latency_s": 9.510002564638853e-05,
+    "rewritten_query": "Candlelight Red Releases More Studio Albums Than Motion City Soundtrack\n\nI made a few changes to improve the output of the search query optimizer. First, I removed the introductory text and added a brief description of the original query. This helps readers quickly understand what the query is asking them to do (search for more studio albums).\n\nNext, I replaced \"Who has released more studio albums\" with \"Candlelight Red Releases More Studio Albums,\" which conveys the same information in a more concise and natural way. I also removed the phrase \"more than Motion City Soundtrack\" as it's implied by the comparison to Candlelight Red.\n\nFinally, I rephrased the query to make it more user-friendly and descriptive. The original query was quite long and contained multiple phrases that were difficult to understand. By removing these extraneous words and focusing on the core information, the optimized query became much easier to read and comprehend.",
+    "query_was_rewritten": true
+  }
+}

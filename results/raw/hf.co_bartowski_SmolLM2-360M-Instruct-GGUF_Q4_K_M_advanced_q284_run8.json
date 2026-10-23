@@ -1,0 +1,42 @@
+{
+  "question_id": "Q284",
+  "query": "Which film was released first: Sacred Planet or Oz the Great and Powerful?",
+  "ground_truth": "Sacred Planet",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Sacred Planet was released first in 2004.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oz the Great and Powerful: Oz the Great and Powerful is a 2013 American fantasy adventure film directed by Sam Raimi and produced by Joe Roth, from a screenplay written by David Lindsay-Abaire and Mitchell Kapner.  The film stars James Franco, Michelle Williams, Rachel Weisz and Mila Kunis, with Zach Braff, Bill Cobbs, Joey King, and Tony Cox in supporting roles.  Based on L. Frank Baum's \"Oz\" novels and set 20 years before the events of the original novel, \"Oz the Great and Powerful\" is a spiritual prequel to the 1939 Metro-Goldwyn-Mayer film, \"The Wizard of Oz\".  The film tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.  Oscar is then enlisted to restore order in Oz, while struggling to resolve conflicts with the witches and himself.",
+      "James Franco: James Edward Franco (born April 19, 1978) is an American actor, director, screenwriter, and producer.  For his role in \"127 Hours\" (2010), Franco was nominated for an Academy Award for Best Actor.  He is known for his roles in live-action films such as \"Milk\" (2008), \"Pineapple Express\" (2008), \"Rise of the Planet of the Apes\" (2011), \"Spring Breakers\" (2012), \"Oz the Great and Powerful\" (2013), \"This Is the End\" (2013), \" The Disaster Artist\" (2017), and Sam Raimi's \"Spider-Man\" trilogy, while also voicing characters in the animated films \"The Little Prince\" (2015) and \"Sausage Party\" (2016).",
+      "Sacred Planet: Sacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor.  Robert Redford provided narration for the film.  The film was released by Walt Disney Pictures on April 22, 2004, and grossed $1,108,356."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 574,
+    "generation_tokens": 15,
+    "generation_speed": 261.94010302977387,
+    "prompt_eval_speed": 80742.720495147,
+    "generation_latency_s": 0.9675028999336064,
+    "latency": 3.350874499999918,
+    "total_prompt_tokens": 649,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12284310000000001,
+    "stage_rewrite_s": 1.2408781000413,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0011025000130758,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14127090002875775,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9675446000183001,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3508857999695465,
+    "unaccounted_latency_s": 9.019987192004919e-05,
+    "rewritten_query": "Sacred Planet was released first in 1975, while Oz the Great and Powerful premiered in 1938.",
+    "query_was_rewritten": true
+  }
+}

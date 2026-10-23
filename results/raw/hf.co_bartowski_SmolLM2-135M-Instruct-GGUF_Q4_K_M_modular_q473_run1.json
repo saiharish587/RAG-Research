@@ -1,0 +1,48 @@
+{
+  "question_id": "Q473",
+  "query": "Eric Ambler and Carol Shields are both best Known for what profession?",
+  "ground_truth": "author",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Carol Shields is a best known for her novels \"The Stone Diaries\" and \"The Stone Diaries\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Eric Ambler: Eric Clifford Ambler OBE (28 June 1909 \u2013 22 October 1998) was an influential British author of thrillers, in particular spy novels, who introduced a new realism to the genre.  He also worked as a screenwriter.  Ambler used the pseudonym Eliot Reed for books co-written with Charles Rodda.",
+      "Alan Turing: Alan Mathison Turing ( ; 23 June 1912 \u2013 7 June 1954) was an English computer scientist, mathematician, logician, cryptanalyst, philosopher and theoretical biologist.",
+      "Carol Shields: Carol Ann Shields, {'1': \", '2': \", '3': \", '4': \"} (n\u00e9e Warner; June 2, 1935 \u2013 July 16, 2003) was an American-born Canadian novelist and short story writer.  She is best known for her 1993 novel \"The Stone Diaries\", which won the U.S. Pulitzer Prize for Fiction as well as the Governor General's Award in Canada."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 312,
+    "generation_tokens": 25,
+    "generation_speed": 377.83756007617205,
+    "prompt_eval_speed": 20118.64843951509,
+    "generation_latency_s": 0.19345000002067536,
+    "latency": 0.5246827000519261,
+    "total_prompt_tokens": 442,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22509099999999999,
+    "stage_route_s": 0.1018619000678882,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1925644000293687,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03664439998101443,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7600013203918934e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19348289992194623,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5246925000101328,
+    "unaccounted_latency_s": 9.200000204145908e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Answer: Eric Ambler and Carol Shields are both known as best known for their expertise in computer programming, particularly in areas such as software development, data analysis, and artificial intelligence."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

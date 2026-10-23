@@ -1,0 +1,48 @@
+{
+  "question_id": "Q149",
+  "query": "Who is Bruce Spizer an expert on, known as the most influential act of the rock era?",
+  "ground_truth": "The Beatles",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Bruce Spizer is an expert on The Beatles. He has published eight books and has been quoted as an authority on the history of the band and its recordings.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bruce Spizer: David \"Bruce\" Spizer (born July 2, 1955) is a tax attorney in New Orleans, Louisiana, who is also recognized as an expert on The Beatles.  He has published eight books, and is frequently quoted as an authority on the history of the band and its recordings.",
+      "Mick Jagger: Sir Michael Philip Jagger, MBE (born 26 July 1943) is an English singer-songwriter, multi-instrumentalist, and composer, who gained fame as the lead singer and one of the founder members of the Rolling Stones (1962-present).  Jagger's career has spanned over five decades, and he has been described as \"one of the most popular and influential frontmen in the history of rock & roll\".  His distinctive voice and performance, along with Keith Richards' guitar style, have been the trademark of the Rolling Stones throughout the career of the band.  Jagger gained press notoriety for his admitted drug use and romantic involvements, and was often portrayed as a countercultural figure.",
+      "Pete Townshend: Peter Dennis Blandford Townshend (born 19 May 1945) is an English musician, singer, songwriter, and multi-instrumentalist, best known as the lead guitarist, backing vocalist, and main songwriter for the rock band the Who.  His career with the Who spans over 50 years, during which time the band grew to be considered one of the most influential bands of the 20th century."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 412,
+    "generation_tokens": 35,
+    "generation_speed": 355.5284676723043,
+    "prompt_eval_speed": 21554.881238882495,
+    "generation_latency_s": 0.22417409997433424,
+    "latency": 0.5249567000428215,
+    "total_prompt_tokens": 552,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2258715,
+    "stage_route_s": 0.10448800004087389,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1550693999743089,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.041057299938984215,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.83999028801918e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2242136999266222,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5249679000116885,
+    "unaccounted_latency_s": 9.170023258775473e-05,
+    "route": "rag",
+    "router_raw": "Answer: Yes",
+    "sub_queries": [
+      "Bruce Spizer is an expert in the Rock Era and has been recognized for his contributions to the genre."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

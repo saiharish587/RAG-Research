@@ -1,0 +1,49 @@
+{
+  "question_id": "Q128",
+  "query": "When was the palace founded at which Columba de Dunbar died in 1435?",
+  "ground_truth": "the late 12th Century",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The palace was founded at Grid Ref NJ 230658, about 500m from the location of the first officially settled Cathedral Church of the Diocese of Moray.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Columba de Dunbar: Columba de Dunbar ( 1386 \u2013 1435) was Bishop of Moray from 1422 until his death at Spynie Palace near Elgin sometime before 7 November 1435.",
+      "Bishop Dunbar's Hospital: Bishop Dunbar's Hospital was founded in 1531 by Bishop Gavin Dunbar, the Elder.  The hospital was endowed by a mortification just before his death.  Dunbar petitioned the King, James V of Scotland, and the charter, signed on 24 February 1531 records the King\u2019s approval that \u2018[Dunbar shall] ... \"found an hospital near the cathedral church, but outside the cemetery\"...\u2019 It was also known as St Mary's Hospital.  In the mortification, Dunbar's charitable purpose is recorded.  Bedesmen were supported by a charitable foundation that emerged from the original church control until the twenty-first century.  Bedesmen drew their name from the word \"bede\" - a prayer.  The residents of Dunbar's Hospital said prayers in a cycle of Divine Office.  The Bede House, Old Aberdeen was used by the Bedesmen from the hospital from 1789 to the end of the nineteenth century.  The only remains of the 1531 building can be seen in a perimeter wall for Seaton Park in Old Aberdeen.  The last Bedesman died in 1988.  The Managers of the Hospital constituted a Charity, Bishop Dunbar Hospital Trust.  The Charity ceased active operation in 2012.",
+      "Spynie Palace: Spynie Palace, also known as Spynie Castle, was the fortified seat of the Bishops of Moray for about 500 years.  The founding of the palace dates back to the late 12th Century.  It is situated at Grid Ref NJ 230658, about 500m from the location of the first officially settled Cathedral Church of the Diocese of Moray, in present-day Spynie Churchyard.  For most of its occupied history, the castle was not described as a \"palace\" \u2014 this term first appeared in the Registry of Moray in a writ of 1524."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 566,
+    "generation_tokens": 41,
+    "generation_speed": 208.06373855015096,
+    "prompt_eval_speed": 11985.177342509263,
+    "generation_latency_s": 0.3517560000764206,
+    "latency": 0.7663893001154065,
+    "total_prompt_tokens": 706,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2291462,
+    "stage_route_s": 0.11302739998791367,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24397099995985627,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057457300019450486,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.279993638396263e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3517963000340387,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7664031001040712,
+    "unaccounted_latency_s": 9.910017251968384e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"When was the Palace Founded at Dunbar, Scotland?\"",
+      "\"Dunbar, Scotland, when did Columba de Dunbar die?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

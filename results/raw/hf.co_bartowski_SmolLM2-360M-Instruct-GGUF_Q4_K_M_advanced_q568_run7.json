@@ -1,0 +1,42 @@
+{
+  "question_id": "Q568",
+  "query": "Which company owns the hotel on whose premises the Cotal Arena is located ?",
+  "ground_truth": "Las Vegas Sands company.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The company that owns the hotel on whose premises the Cotal Arena is located is MGM Resorts International.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Venetian Las Vegas: The Venetian Resort Hotel Casino is a five-diamond luxury hotel and casino resort located on the Las Vegas Strip in Paradise, Nevada, United States, on the site of the old Sands Hotel.  Designed by KlingStubbins, the hotel tower contains 36 stories and rises 475 ft .  The Venetian is owned and operated by Las Vegas Sands.  The Venetian also serves as the seat of the corporate headquarters for its parent company.",
+      "Bellagio (resort): Bellagio is a resort, luxury hotel and casino on the Las Vegas Strip in Paradise, Nevada.  It is owned and operated by MGM Resorts International and was built on the site of the demolished Dunes hotel and casino.  Inspired by the Lake Como town of Bellagio in Italy, Bellagio is famed for its elegance.  One of its most notable features is an 8 acre lake between the building and the Strip, which houses the Fountains of Bellagio, a large dancing water fountain synchronized to music.",
+      "Amanita excelsa var. spissa: Amanita excelsa\" var.  \"spissa is a variety of basidiomycete fungus of the genus \"Amanita\".  This large, grey to brown-capped fungus has a very variable appearance but is commonly encountered in coniferous and deciduous forests in Europe and North America.  It is sometimes referred to by the common name grey spotted Amanita."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 383,
+    "generation_tokens": 24,
+    "generation_speed": 262.5217400816005,
+    "prompt_eval_speed": 48037.12529788035,
+    "generation_latency_s": 0.9931767999660224,
+    "latency": 3.3944445999804884,
+    "total_prompt_tokens": 459,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1255363,
+    "stage_rewrite_s": 1.1759577000048012,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0753375999629498,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14985549997072667,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9932110999943689,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.394453699933365,
+    "unaccounted_latency_s": 9.23000043258071e-05,
+    "rewritten_query": "The Cotal Arena is owned by a company called Hotel Amanita.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q475",
+  "query": "Where was the telefilm shot that was based on the 1977 Katherine Paterson book?",
+  "ground_truth": "Edmonton, Alberta",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The telefilm shot that was based on the 1977 Katherine Paterson book was The Great Movie Ride, which was located at Disney's Hollywood Studios in Walt Disney World Resort.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bridge to Terabithia (novel): Bridge to Terabithia is a work of children's literature about two lonely children who create a magical forest kingdom.  It was written by Katherine Paterson and was published in 1977 by Thomas Crowell.  In 1978, it won the Newbery Medal.  Paterson drew inspiration for the novel from a real event that occurred in August 1974 when a friend of her son was struck by lightning.",
+      "The Master Puppeteer: The Master Puppeteer (1975) is a historical novel for children by Katherine Paterson.  It won the 1977 U.S. National Book Award in category Children\u2019s Literature.",
+      "The Great Movie Ride: The Great Movie Ride was a dark ride attraction located at Disney's Hollywood Studios in the Walt Disney World Resort.  The attraction employed the use of Audio-Animatronic figures, practical sets, live actors, special effects, and projections to recreate iconic scenes from twelve classic films throughout motion picture history.  The attraction\u2014which debuted with the park on May 1, 1989\u2014was located inside a replica of Grauman's Chinese Theatre, one of Hollywood's most famous movie palaces."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 41,
+    "generation_speed": 231.40962325384507,
+    "prompt_eval_speed": 13584.609344326658,
+    "generation_latency_s": 0.31144059996586293,
+    "latency": 0.8753369000041857,
+    "total_prompt_tokens": 488,
+    "total_generation_tokens": 114,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2183881,
+    "stage_route_s": 0.10021970001980662,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.40939250006340444,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05409799993503839,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.140000186860561e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3114800000330433,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8753478999715298,
+    "unaccounted_latency_s": 9.699992369860411e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The film \"The Night Circus\" was shot in New York City, specifically at the New York Public Library and the Metropolitan Museum of Art.",
+      "Query 2: The film \"The Night Circus\" was based on the novel \"Katherine Paterson's The Night Circus,\" which was written by the author herself."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

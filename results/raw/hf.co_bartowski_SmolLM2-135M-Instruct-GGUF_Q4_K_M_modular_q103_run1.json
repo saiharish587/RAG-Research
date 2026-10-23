@@ -1,0 +1,49 @@
+{
+  "question_id": "Q103",
+  "query": "What year was the brother of this first round draft pick by the Washington Redskins drafted?",
+  "ground_truth": "2003",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is \"2015\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Washington Redskins: The Washington Redskins are a professional American football team based in the Washington metropolitan area.  The Redskins compete in the National Football League (NFL) as a member of the National Football Conference (NFC) East division.  The team plays its home games at FedExField in Landover, Maryland; its headquarters and training facility are at Inova Sports Performance Center at Redskins Park in Ashburn, Virginia, and the Redskins Complex in Richmond, Virginia, respectively.  The Redskins have played more than 1,000 games since 1932, and are one of only five franchises in the NFL to record over 600 regular season and postseason wins, reaching that mark in 2015.  The Redskins have won five NFL Championships (two pre-1966 merger announcement, and three Super Bowls).  The franchise has captured 14 NFL divisional titles and six NFL conference championships.  The Redskins were the first team in the NFL with an official marching band, and also the first team to have a fight song, \"Hail to the Redskins\".",
+      "Colt McCoy: Daniel \"Colt\" McCoy (born September 5, 1986) is an American football quarterback for the Washington Redskins of the National Football League (NFL).  He was drafted by the Cleveland Browns in the third round of the 2010 NFL Draft, after playing college football for the University of Texas.  He has also been a member of the San Francisco 49ers.",
+      "Colin Kaepernick: Colin Rand Kaepernick ( ; born November 3, 1987) is an American football quarterback who is currently a free agent.  Kaepernick played college football at the University of Nevada, where he was named the Western Athletic Conference (WAC) Offensive Player of the Year twice and became the only player in NCAA Division I FBS history to amass 10,000 passing yards and 4,000 rushing yards in a career.  After graduating, he was selected by the San Francisco 49ers in the second round of the 2011 NFL Draft."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 562,
+    "generation_tokens": 10,
+    "generation_speed": 298.90898221491557,
+    "prompt_eval_speed": 13473.987053464398,
+    "generation_latency_s": 0.1827819999307394,
+    "latency": 0.7107808999717236,
+    "total_prompt_tokens": 700,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24045339999999998,
+    "stage_route_s": 0.19359859998803586,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27870859997347,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055530000012367964,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.000003147870302e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1828144999453798,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7107903999276459,
+    "unaccounted_latency_s": 8.919998072087765e-05,
+    "route": "rag",
+    "router_raw": "The year is 2014, so the answer to this question requires retrieving information from internal files/documents.",
+    "sub_queries": [
+      "Who was the first round draft pick by the Washington Redskins who played in the 2014 NFL Draft?",
+      "What year was the first round draft pick by the Washington Redskins who played in the 2014 NFL Draft?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

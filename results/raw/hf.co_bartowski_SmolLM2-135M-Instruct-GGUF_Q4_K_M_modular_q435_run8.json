@@ -1,0 +1,48 @@
+{
+  "question_id": "Q435",
+  "query": "The movies The Boatniks and The Great Locomotive Chase were both made by which production company?",
+  "ground_truth": "Walt Disney Productions",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Great Locomotive Chase is a 1956 Walt Disney Productions CinemaScope adventure film, starring James Mitchum as James J. Andrews, the leader of a group of Union soldiers from various Ohio regiments who volunteered to go behind Confederate lines in civilian clothes, steal a Confederate train north of Atlanta, and drive it back to Union lines in Tennessee, tearing up railroad tracks and destroying bridges and telegraph lines along the way.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Boatniks: The Boatniks is a 1970 American comedy film starring Robert Morse, Stefanie Powers, Don Ameche and Phil Silvers.  It was made by Walt Disney Productions, released by Buena Vista Distribution and directed by Norman Tokar.",
+      "The Great Locomotive Chase: The Great Locomotive Chase is a 1956 Walt Disney Productions CinemaScope adventure film based on the real Great Locomotive Chase that occurred in 1862 during the American Civil War.  The film stars Fess Parker as James J. Andrews, the leader of a group of Union soldiers from various Ohio regiments who volunteered to go behind Confederate lines in civilian clothes, steal a Confederate train north of Atlanta, and drive it back to Union lines in Tennessee, tearing up railroad tracks and destroying bridges and telegraph lines along the way.",
+      "Moonrunners: Moonrunners is a 1975 film, starring James Mitchum, about a Southern family that runs bootleg liquor.  It was reworked four years later into the popular long-running television series \"The Dukes of Hazzard\", and as such the two productions share many similar concepts.  Mitchum had co-starred with his father, Robert Mitchum, in the similar drive-in favorite \"Thunder Road\" eighteen years earlier, which also focused upon moonshine-running bootleggers using fast cars to elude federal agents.  \"Moonrunners\", a B movie, was filmed in 1973 and awaited release for over a year.  Its soundtrack reflects the outlaw music boom of the 1970s during which the film was released."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 434,
+    "generation_tokens": 89,
+    "generation_speed": 361.30394186660175,
+    "prompt_eval_speed": 59953.03218676613,
+    "generation_latency_s": 0.3671193999471143,
+    "latency": 0.6937366001075134,
+    "total_prompt_tokens": 576,
+    "total_generation_tokens": 138,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21640099999999998,
+    "stage_route_s": 0.15464879991486669,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1348301999969408,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03697820007801056,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.760005347430706e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.36715609999373555,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6937453000573441,
+    "unaccounted_latency_s": 9.490002412348986e-05,
+    "route": "rag",
+    "router_raw": "The movie The Boatniks was made by Theaters of America, a subsidiary of the American Film Institute (AFI).",
+    "sub_queries": [
+      "The movies The Boatniks and The Great Locomotive Chase were both made by The Boatiks."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

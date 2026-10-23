@@ -1,0 +1,49 @@
+{
+  "question_id": "Q177",
+  "query": "Works by Hanna Leena Kristiina Varis are part of a collection in a museum that houses approximately 65,000 what?",
+  "ground_truth": "drawings",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The works by Hanna Leena Kristiina Varis are part of a collection in the Albertina Museum.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hanna Varis: Hanna Leena Kristiina Varis (b. 1959 in Kuusankoski) is a Finnish graphic artist and painter.  She earned a Master of Arts degree from the Aalto University School of Arts, Design and Architecture in 1990.  She participated in the NUROPE, Nomadic University for Art, Philosophy and Enterprise in Europe, in 2006-2010.  She has held over 70 solo exhibitions and participated at over 140 group exhibitions.  Her works are part of major art collections in Finland and abroad, such as the Kiasma, Amos Anderson Art Museum, and Helsinki Art Museum in Helsinki, W\u00e4in\u00f6 Aaltonen Museum of Art in Turku, and Albertina Museum in Vienna.",
+      "Egyptian Museum: The Museum of Egyptian Antiquities, known commonly as the Egyptian Museum or Museum of Cairo, in Cairo, Egypt, is home to an extensive collection of ancient Egyptian antiquities.  It has 120,000 items, with a representative amount on display, the remainder in storerooms.  The edifice is one of the largest museums in the region.  As of July 2017, the museum is open to the public.",
+      "Albertina: The Albertina is a museum in the Innere Stadt (First District) of Vienna, Austria.  It houses one of the largest and most important print rooms in the world with approximately 65,000 drawings and approximately 1 million old master prints, as well as more modern graphic works, photographs and architectural drawings.  Apart from the graphics collection the museum has recently acquired on permanent loan two significant collections of Impressionist and early 20th-century art, some of which will be on permanent display.  The museum also houses temporary exhibitions."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 481,
+    "generation_tokens": 24,
+    "generation_speed": 239.8441013341328,
+    "prompt_eval_speed": 61040.609137055835,
+    "generation_latency_s": 0.2202310999855399,
+    "latency": 0.5535519999684766,
+    "total_prompt_tokens": 643,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2303949,
+    "stage_route_s": 0.09532299998681992,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18298060004599392,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054833199945278466,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.759997293353081e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2202721000649035,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5535633999388665,
+    "unaccounted_latency_s": 9.749992750585079e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Hanna Leena Kristiina Varis\"",
+      "\"Museums and collections\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q246",
+  "query": "Jamie Harris is best known for his role as The Hook-Handed Man in a movie directed by who ?",
+  "ground_truth": "Brad Silberling",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Jamie Harris is best known for his role as The Hook-Handed Man in \"Lemony Snicket's A Series of Unfortunate Events\", which was directed by John Carpenter.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jamie Harris (actor): Jamie Harris (born May 15, 1963) is a British actor.  He is best known for his role as The Hook-Handed Man in \"Lemony Snicket's A Series of Unfortunate Events\", Rodney in \"Rise of the Planet of the Apes\" and Gordon in Marvel's \"Agents of S.H.I.E.L.D.\".",
+      "John Carpenter: John Howard Carpenter (born January 16, 1948) is an American movie director, screenwriter, producer, musician, editor and composer.  Although Carpenter has worked with various movie genres, he is associated most commonly with horror, action and science fiction movies of the 1970s and 1980s.",
+      "A Single Man: A Single Man is a 2009 American drama film based on the novel of the same name by Christopher Isherwood.  It is directed by Tom Ford in his directorial debut and stars Colin Firth, who was nominated for an Academy Award for Best Actor for his portrayal of George Falconer, a depressed gay British university professor living in Southern California in 1962."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 334,
+    "generation_tokens": 40,
+    "generation_speed": 245.80744673659888,
+    "prompt_eval_speed": 13951.5455304929,
+    "generation_latency_s": 0.9879131999332458,
+    "latency": 3.48242920008488,
+    "total_prompt_tokens": 416,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1223883,
+    "stage_rewrite_s": 1.2296346999937668,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0289051999570802,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23584470001515,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9879634999670088,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4824399000499398,
+    "unaccounted_latency_s": 9.240012150257826e-05,
+    "rewritten_query": "Jamie Harris is best known for his role as The Hook-Handed Man in a movie directed by John Carpenter.",
+    "query_was_rewritten": true
+  }
+}

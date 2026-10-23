@@ -1,0 +1,49 @@
+{
+  "question_id": "Q174",
+  "query": "Which songwriting duo composed music for \"La La Land\", and created lyrics for \"A Christmas Story: The Musical\"? ",
+  "ground_truth": "Pasek & Paul",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The songwriting duo composing music for \"La La Land\" was Pasek & Paul, while the songwriting duo creating lyrics for \"A Christmas Story: The Musical\" was Lee Hall.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Christmas Story: The Musical: A Christmas Story: The Musical is a musical version of the film \"A Christmas Story\".  The musical has music and lyrics written by Pasek & Paul and the book by Joseph Robinette.  The musical takes place in the 1940s in Indiana and focuses on a child named Ralphie, who wants a Red Ryder BB Gun for Christmas.",
+      "Billy Elliot the Musical: Billy Elliot the Musical is a musical based on the 2000 film \"Billy Elliot\".  The music is by Elton John, and the book and lyrics are by Lee Hall, who wrote the film's screenplay.  The plot revolves around Billy, a British motherless boy who trades boxing gloves for ballet shoes.  The story of his personal struggle and fulfillment are balanced against a counter-story of family and community strife caused by the 1984\u201385 UK miners' strike in County Durham, in North Eastern England.  Hall's screenplay was inspired in part by A. J. Cronin's 1935 novel about a miners' strike, \"The Stars Look Down\", to which the musical's opening song pays homage.",
+      "Come Together: \"Come Together\" is a song by the Beatles written primarily by John Lennon and credited to Lennon\u2013McCartney.  The song is the opening track on the album \"Abbey Road\" and was also released as a single coupled with \"Something\".  The song reached the top of the charts in the United States and peaked at No. 4 in the United Kingdom."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 40,
+    "generation_speed": 398.95871774668115,
+    "prompt_eval_speed": 22408.512010317587,
+    "generation_latency_s": 0.2286108999978751,
+    "latency": 1.0121344999643043,
+    "total_prompt_tokens": 567,
+    "total_generation_tokens": 275,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2401112,
+    "stage_route_s": 0.09464100003242493,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6349354999838397,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05374529992695898,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.799993570894003e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22865280008409172,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0121464999392629,
+    "unaccounted_latency_s": 0.00010469998233020306,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Musical\": \"La La Land\" by Thelonious Monk, \"Coming Home\" by The Doors, \"Boy Meets Girl\" by The Beatles, \"Santa Claus\" by The Who, \"A Christmas Story: The Musical\" by Thelonious Monk, \"Lady and the Tramp\" by The Who",
+      "\"The Musical\": \"La La Land\" by Thelonious Monk, \"Coming Home\" by The Doors, \"Boy Meets Girl\" by The Beatles, \"Santa Claus\" by The Who, \"A Christmas Story: The Musical\" by Thelonious Monk, \"Lady and the Tramp\" by The Beatles"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

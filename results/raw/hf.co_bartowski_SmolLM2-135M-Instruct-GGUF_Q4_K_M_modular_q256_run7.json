@@ -1,0 +1,48 @@
+{
+  "question_id": "Q256",
+  "query": "James Fieser received his B.A. from what liberal arts work college that was founded in 1855?",
+  "ground_truth": "Berea College",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "James Fieser received his B.A. from Berea College, which is located in Saint Paul, Minnesota, United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gustavus Adolphus College: Gustavus Adolphus College ( ) is a private, coeducational liberal arts college.  A four-year, residential institution, Gustavus Adolphus College was founded in 1862 by Swedish Americans and is affiliated with the Evangelical Lutheran Church in America.  To this day the school retains Swedish and Lutheran heritage.  The premier event on campus is the annual Nobel Conference, which features Nobel Laureates and other scholars explaining their expertise to a general audience.  In 2015, \"U.S. News & World Report\" ranked Gustavus as the 64th best liberal arts college in the United States.  The college is ranked No. 38 for liberal arts colleges on Payscale's 2016-17 list of highest-paid graduates.",
+      "James Fieser: James Fieser is professor of philosophy at the University of Tennessee at Martin.  He received his B.A. from Berea College, and his M.A. and Ph.D. in philosophy from Purdue University.  He is founder and general editor of the Internet Encyclopedia of Philosophy.  He is author, coauthor or editor of more than ten text books.",
+      "Macalester College: Macalester College ( ) is a private, coeducational liberal arts college located in Saint Paul, Minnesota, US.  It was founded in 1874 as a Presbyterian-affiliated but nonsectarian college.  Its first class entered September 15, 1885.  Macalester is exclusively an undergraduate four-year institution and enrolled 1,978 students in the fall of 2013 from 50 U.S. states and 90 countries.  In 2015, \"U.S. News & World Report\" ranked Macalester as tied for the 23rd best liberal arts college in the United States, 6th for undergraduate teaching at a national liberal arts college, and 19th for best value at a national liberal arts college."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 519,
+    "generation_tokens": 28,
+    "generation_speed": 360.78754767549736,
+    "prompt_eval_speed": 77776.11269294171,
+    "generation_latency_s": 0.19398749992251396,
+    "latency": 0.6675509999040514,
+    "total_prompt_tokens": 671,
+    "total_generation_tokens": 107,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2243517,
+    "stage_route_s": 0.2053416999988258,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23164859996177256,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036411100067198277,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.970006946474314e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19402669998817146,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.667561799986288,
+    "unaccounted_latency_s": 9.469990618526936e-05,
+    "route": "rag",
+    "router_raw": "James Fieser received his B.A. from the University of Virginia, which is a prestigious liberal arts institution founded in 1855.",
+    "sub_queries": [
+      "James Fieser received his Bachelor of Arts degree from the University of Michigan (now Michigan State University) in 1920, which is a testament to the institution's commitment to providing students with well-rounded education."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

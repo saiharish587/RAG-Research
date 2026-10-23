@@ -1,0 +1,42 @@
+{
+  "question_id": "Q35",
+  "query": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+  "ground_truth": "Letters to Cleo",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The band that had more members is Screaming Trees.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Letters to Cleo: Letters to Cleo are an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\".  The band's members are Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later, Tom Polce.",
+      "Screaming Trees: Screaming Trees was an American rock band formed in Ellensburg, Washington in 1985 by vocalist Mark Lanegan, guitarist Gary Lee Conner, bass player Van Conner and drummer Mark Pickerel.  Pickerel had been replaced by Barrett Martin by the time the band reached its most successful period.  Although widely associated with grunge, the band's sound incorporated hard rock and psychedelic elements.  During Screaming Trees' existence the band released seven studio albums, five EPs, and three compilations.",
+      "Screaming Trees discography: The discography of Screaming Trees, an Ellensburg, Washington-based rock band, consists of seven studio albums, three compilation albums, five extended plays (EP), and six singles, though this does not include any solo material recorded by the individual members of Screaming Trees."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 341,
+    "generation_tokens": 12,
+    "generation_speed": 434.5621786050554,
+    "prompt_eval_speed": 54849.605919253656,
+    "generation_latency_s": 0.10728480003308505,
+    "latency": 0.6794408999849111,
+    "total_prompt_tokens": 417,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1262383,
+    "stage_rewrite_s": 0.27918359998147935,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.071343700052239,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22150410001631826,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10732489998918027,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.679452299955301,
+    "unaccounted_latency_s": 9.649991989135742e-05,
+    "rewritten_query": "Which band had more members?\n\nThe original query was \"Which band, Letters to Cleo or Screaming Trees, had more members?\" The optimized query output is a rephrased version of the original query that includes an introductory text and optimizes it for search engines. It uses phrases like \"had more members\" instead of \"which band,\" which makes the query more concise and user-friendly.",
+    "query_was_rewritten": true
+  }
+}

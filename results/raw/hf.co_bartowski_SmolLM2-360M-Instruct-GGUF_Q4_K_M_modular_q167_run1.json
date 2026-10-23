@@ -1,0 +1,49 @@
+{
+  "question_id": "Q167",
+  "query": "Which came out first, Dinosaur or McFarland, USA",
+  "ground_truth": "Dinosaur",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The film \"Dinosaur\" came out first in 2015.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "McFarland, USA: McFarland, USA (also known as McFarland) is a 2015 American sports drama film directed by Niki Caro, produced by Mark Ciardi and Gordon Gray, written by Christopher Cleveland, Bettina Gilois and Grant Thompson with music composed by Ant\u00f4nio Pinto.  The film was co-produced by Walt Disney Pictures and Mayhem Pictures.  Based on the true story of a 1987 cross country team from a mainly Latino high school in McFarland, California, the film stars Kevin Costner as Jim White, the school's coach, who leads the team to win a state championship.  The film also stars Maria Bello and Morgan Saylor.",
+      "ially, Thomas Jefferson.  Amateur fossil collectors should be aware that they need permission from landowners to prospect legally on private property.  Brachiopods are the Kentucky state fossil.",
+      "Wichita, Kansas: is the largest city in the U.S. state of Kansas.  Located in south-central Kansas on the Arkansas River, Wichita is the county seat of Sedgwick County and the principal city of the Wichita metropolitan area whose estimated population in 2015 was 644,610.  As of 2016, the city of Wichita had an estimated population of 389,902."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 365,
+    "generation_tokens": 17,
+    "generation_speed": 234.65753802832455,
+    "prompt_eval_speed": 14185.775359502526,
+    "generation_latency_s": 0.20697780000045896,
+    "latency": 0.5486201000167057,
+    "total_prompt_tokens": 489,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2278146,
+    "stage_route_s": 0.10912689997348934,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17746010003611445,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05486380006186664,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.480002775788307e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2070195999694988,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5486329999985173,
+    "unaccounted_latency_s": 9.85999358817935e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The answer is Dinosaur.",
+      "Query 2: The answer is McFarland, USA."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

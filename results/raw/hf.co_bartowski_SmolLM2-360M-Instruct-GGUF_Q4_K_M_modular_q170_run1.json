@@ -1,0 +1,49 @@
+{
+  "question_id": "Q170",
+  "query": "This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by which empire?",
+  "ground_truth": "Roman",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Celtic ruler who was born in AD 43 ruled southeastern Britain prior to the Roman conquest of Britain. The answer is Aulus Plautius, the first governor of Roman Britain (Latin: \"Britannia\").",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Roman conquest of Britain: The Roman conquest of Britain was a gradual process, beginning effectively in AD 43 under Emperor Claudius, whose general Aulus Plautius served as first governor of Roman Britain (Latin: \"Britannia\" ).  Great Britain had already frequently been the target of invasions, planned and actual, by forces of the Roman Republic and Roman Empire.  In common with other regions on the edge of the empire, Britain had enjoyed diplomatic and trading links with the Romans in the century since Julius Caesar's expeditions in 55 and 54 BC, and Roman economic and cultural influence was a significant part of the British late pre-Roman Iron Age, especially in the south.",
+      "Tacitus: Publius (or Gaius) Cornelius Tacitus ( ; ] ; \u200956 AD \u2013 \u2009120 AD ) was a senator and a historian of the Roman Empire.  The surviving portions of his two major works\u2014the \"Annals\" and the \"Histories\"\u2014examine the reigns of the Roman emperors Tiberius, Claudius, Nero, and those who reigned in the Year of the Four Emperors (69 AD).  These two works span the history of the Roman Empire from the death of Augustus, in 14 AD, to the years of the First Jewish\u2013Roman War, in 70 AD.  There are substantial lacunae in the surviving texts, including a gap in the \"Annals\" that is four books long.",
+      "History of the Roman Empire: The history of the Roman Empire covers the history of Ancient Rome from the fall of the Roman Republic in 27 BC until the abdication of the last Western emperor in 476 AD.  Rome had begun expanding shortly after the founding of the Republic in the 6th century BC, though it did not expand outside of the Italian Peninsula until the 3rd century BC.  Civil war engulfed the Roman state in the mid 1st century BC, first between Julius Caesar and Pompey, and finally between Octavian and Mark Antony.  Antony was defeated at the Battle of Actium in 31 BC.  In 27 BC the Senate and People of Rome made Octavian \"imperator\" (\"commander\") thus beginning the Principate, the first epoch of Roman imperial history usually dated from 27 BC to 284 AD; they later awarded him the name Augustus, \"the venerated\".  The success of Augustus in establishing principles of dynastic succession was limited by his outliving a number of talented potential heirs: the Julio-Claudian dynasty lasted for four more emperors\u2014Tiberius, Caligula, Claudius, and Nero\u2014before it yielded in 69 AD to the strife-torn Year of Four Emperors, from which Vespasian emerged as victor.  Vespasian became the founder of the brief Flavian dynasty, to be followed by the Nerva\u2013Antonine dynasty which produced the \"Five Good Emperors\": Nerva, Trajan, Hadrian, Antoninus Pius and the philosophically inclined Marcus Aurelius."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 725,
+    "generation_tokens": 46,
+    "generation_speed": 204.57992181489075,
+    "prompt_eval_speed": 13464.324183783383,
+    "generation_latency_s": 0.3907272999640554,
+    "latency": 0.7089541000314057,
+    "total_prompt_tokens": 867,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2275489,
+    "stage_route_s": 0.10828350007068366,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1538426000624895,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05590559996198863,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6999968364834785e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3907743999734521,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7089665000094101,
+    "unaccounted_latency_s": 0.00010419997852295637,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Roman Emperor Claudius\"",
+      "\"The Roman Empire\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

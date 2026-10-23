@@ -1,0 +1,42 @@
+{
+  "question_id": "Q17",
+  "query": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+  "ground_truth": "the North Atlantic Conference",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Vermont Catamounts men's basketball team currently competes in a conference that was previously known as the America East Conference.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vermont Catamounts men's soccer: The Vermont Catamounts men's soccer team represents the University of Vermont in all NCAA Division I men's college soccer competitions.  The team competes in the America East Conference.",
+      "Vermont Catamounts men's basketball: The Vermont Catamounts Basketball team is the basketball team that represents the University of Vermont in Burlington, Vermont.  The school's team currently competes in the America East Conference and plays its home games at Patrick Gym.  The team has reached the NCAA Division I Men's Basketball Tournament six times, in 2003, 2004, 2005, 2010, 2012, and 2017.  UVM famously upset Syracuse University in the first round of the 2005 tournament.  The Catamounts are coached by John Becker.",
+      "2011\u201312 Vermont Catamounts men's basketball team: The 2011\u201312 Vermont Catamounts men's basketball team represented the University of Vermont during the 2011\u201312 NCAA Division I men's basketball season.  The Catamounts, led by first year head coach John Becker, played their home games at Patrick Gym and are members of the America East Conference.  They finished the season 24\u201312, 13\u20133 in America East play to finish in second place.  They were champions of the America East Basketball Tournament and earned the conference's automatic bid into the 2012 NCAA Tournament.  They defeated Lamar in the \"First Four\" round before falling to North Carolina in the second round."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 453,
+    "generation_tokens": 26,
+    "generation_speed": 340.24733363868353,
+    "prompt_eval_speed": 23813.278662671502,
+    "generation_latency_s": 0.1742703999625519,
+    "latency": 0.5633482000557706,
+    "total_prompt_tokens": 547,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1355576,
+    "stage_rewrite_s": 0.16535210004076362,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08329980005510151,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1402936999220401,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17430339998099953,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5633572000078857,
+    "unaccounted_latency_s": 0.00010870001278817654,
+    "rewritten_query": "The Vermont Catamounts men's soccer team competed in the conference that was previously known as the Vermont Catamounts.",
+    "query_was_rewritten": true
+  }
+}

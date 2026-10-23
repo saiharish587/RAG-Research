@@ -1,0 +1,42 @@
+{
+  "question_id": "Q235",
+  "query": "What is the nickname of the city where Darling's Waterfront Pavilion is located?",
+  "ground_truth": "\"Queen City\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The city where Darling's Waterfront Pavilion is located is Bangor, Maine.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Darling's Waterfront Pavilion: The Darling's Waterfront Pavilion (originally known as the Bangor Waterfront Pavilion) is an open-air amphitheater located within the Waterfront Park in Bangor, Maine.  The venue is a temporary structure built alongside the Penobscot River.  The venue typically operates from July until October.",
+      "Rochester, New York: Rochester ( or ) is a city on the southern shore of Lake Ontario in western New York State.  Rochester is the third most populous city in New York, with over 210,000 residents, and its metropolitan area has a population of nearly 1.1 million people.",
+      "Menindee Lakes: The Menindee Lakes is a chain of shallow ephemeral freshwater lakes connected to the Darling River to form a storage system.  The lakes lie in the far west region of New South Wales, Australia, near the town of Menindee."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 274,
+    "generation_tokens": 19,
+    "generation_speed": 264.81943495895297,
+    "prompt_eval_speed": 35110.19989748847,
+    "generation_latency_s": 0.9656977000413463,
+    "latency": 3.4095103999134153,
+    "total_prompt_tokens": 352,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1224725,
+    "stage_rewrite_s": 1.2458678999682888,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0428819000953808,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15495080000255257,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9657307000597939,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.409518599975854,
+    "unaccounted_latency_s": 8.77998536452651e-05,
+    "rewritten_query": "The city where Darling's Waterfront Pavilion is located has a well-known nickname - \"City of Lakes.",
+    "query_was_rewritten": true
+  }
+}

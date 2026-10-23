@@ -1,0 +1,48 @@
+{
+  "question_id": "Q68",
+  "query": "What is the name of the singer who's song was released as the lead single from the album \"Confessions\", and that had popular song stuck behind for eight consecutive weeks?",
+  "ground_truth": "Usher",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The name of the singer who's song was released as the lead single from the album \"Confessions\" and that had popular song stuck behind for eight consecutive weeks is Rihanna.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Anti (album): Anti is the eighth studio album by Barbadian singer Rihanna.  It was released on January 28, 2016, through Westbury Road and Roc Nation.  The singer began planning the record in 2014, at which time she left her previous label Def Jam and joined Roc Nation.  Work continued into 2015, during which she released three singles including \"FourFiveSeconds\", which reached the top 10 in several markets; they were ultimately removed from the final track listing.  \"Anti\" was made available for free digital download on January 28 through Tidal and was released to online music stores for paid purchase on January 29.",
+      "The Weeknd: Abel Makkonen Tesfaye (born February 16 1990), known professionally as The Weeknd (pronounced \"the weekend\"), is a Canadian singer, songwriter and record producer.",
+      "You Lie (Reba McEntire song): \"You Lie\" is a song written by Bobby Fischer, Charlie Black and Austin Roberts, and recorded by American country music artist Reba McEntire.  It was released in August 1990 as the first single from the album \"Rumor Has It\".  \"You Lie\" was Reba McEntire's fourteenth number one country hit.  The single went to number one for one week and spent a total of 20 weeks on the country chart."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 38,
+    "generation_speed": 214.0941563563428,
+    "prompt_eval_speed": 44077.436290057965,
+    "generation_latency_s": 0.30080810002982616,
+    "latency": 0.5440568999620155,
+    "total_prompt_tokens": 573,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2259244,
+    "stage_route_s": 0.09331619995646179,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.11074799997732043,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03901549999136478,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.509999416768551e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30084360006731004,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5440676999278367,
+    "unaccounted_latency_s": 0.00010029994882643223,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Weeknd\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q519",
+  "query": "Where is the academy, for which Joseph D. Stewart was appointed Superintendent, located?",
+  "ground_truth": "Kings Point, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Academy, for which Joseph D. Stewart was appointed Superintendent, is located at Rochester High School of Rochester, Illinois.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joseph D. Stewart: Joseph D. Stewart, also known affectionately by the midshipmen of the United States Merchant Marine Academy as \"Joey D,\" (born July 9, 1942) is a retired United States Marine Corps major general, who after his retirement from the Marine Corps, was appointed as Superintendent of the United States Merchant Marine Academy (USMMA) on August 1, 1998.  He retired from the U.S. Maritime Service with the rank of vice admiral on September 30, 2008.",
+      "Rochester High School (Illinois): Rochester High School of Rochester, IL is a public high school located five miles (8\u00a0km) east of Springfield, IL.  As the only high school serving District 3A, Rochester High School accommodates students from Rochester, Buckhart, portions of eastern Springfield, and other surrounding areas.  Rochester has grown rapidly over the past few years.  In 2008, the enrollment was 699 students, which was up from 589 in 2004.",
+      "Illinois Institute of Technology: Illinois Institute of Technology, commonly called Illinois Tech or IIT, is a private Ph.D.-granting research university located in Chicago, in the U.S. state of Illinois, with programs in engineering, science, psychology, architecture, business, communications, industrial technology, information technology, design and law.  It traces its history to several 19th century engineering and professional education institutions in the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 400,
+    "generation_tokens": 25,
+    "generation_speed": 405.26520555051223,
+    "prompt_eval_speed": 59506.09937518596,
+    "generation_latency_s": 0.1542089000577107,
+    "latency": 0.5470836000749841,
+    "total_prompt_tokens": 477,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13850200000000001,
+    "stage_rewrite_s": 0.15121550008188933,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07522030000109226,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16630619997158647,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1542514000320807,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5470957000507042,
+    "unaccounted_latency_s": 0.00010279996786266565,
+    "rewritten_query": "The Academy, for which Joseph D. Stewart was appointed Superintendent, is located in Springfield, Illinois.",
+    "query_was_rewritten": true
+  }
+}

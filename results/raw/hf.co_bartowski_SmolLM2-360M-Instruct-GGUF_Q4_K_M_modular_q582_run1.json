@@ -1,0 +1,49 @@
+{
+  "question_id": "Q582",
+  "query": "Where was the author of Thoughts of Machiavelli born?",
+  "ground_truth": "Germany",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Machiavelli was born in Florence, Italy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thoughts on Machiavelli: Thoughts on Machiavelli is a book by Leo Strauss first published in 1958.  The book is a collection of lectures he gave at the University of Chicago in which he dissects the work of Niccol\u00f2 Machiavelli.  The book contains commentary on Machiavelli's \"The Prince\" and the \"Discourses on Livy\".",
+      "Henry III of France: Henry III (19 September 1551 \u2013 2 August 1589; born \"Alexandre \u00c9douard de France\", Polish: \"Henryk Walezy\" , Lithuanian: \"Henrikas Valua\" ) was King of the Polish-Lithuanian Commonwealth from 1573 to 1575 and King of France from 1574 until his death.  He was the last French monarch of the House of Valois.",
+      "Albert Camus: Albert Camus (] ; 7 November 1913 \u2013 4 January 1960) was a French philosopher, author, and journalist.  His views contributed to the rise of the philosophy known as absurdism.  He wrote in his essay \"The Rebel\" that his whole life was devoted to opposing the philosophy of nihilism while still delving deeply into individual freedom.  He won the Nobel Prize in Literature in 1957."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 11,
+    "generation_speed": 206.2861000675118,
+    "prompt_eval_speed": 10298.690554303483,
+    "generation_latency_s": 0.19916089996695518,
+    "latency": 0.594535099924542,
+    "total_prompt_tokens": 485,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22631400000000002,
+    "stage_route_s": 0.1092396000167355,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22826649993658066,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057669200003147125,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.739993114024401e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19920040003489703,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5945468000136316,
+    "unaccounted_latency_s": 0.00010440009646117687,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"born in 1503\"",
+      "\"birthplace of Niccol\u00f2 Machiavelli\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

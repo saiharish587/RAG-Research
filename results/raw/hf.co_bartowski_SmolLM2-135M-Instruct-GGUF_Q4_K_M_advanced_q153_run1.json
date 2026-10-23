@@ -1,0 +1,42 @@
+{
+  "question_id": "Q153",
+  "query": "The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aim\u00e9 Argand?",
+  "ground_truth": "Argand lamp",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Yes, the lamp used in many lighthouses is similar to this type of lamp patented in 1780 by Aim\u00e9 Argand.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Argand lamp: The Argand lamp, a kind of oil lamp, was invented and patented in 1780 by Aim\u00e9 Argand.  Its output is 6 to 10 candela, brighter than that of earlier lamps.  Its more complete combustion of the candle wick and oil than in other lamps required much less frequent trimming of the wick.",
+      "Lewis lamp: The Lewis lamp is a type of light fixture used in lighthouses.  It was invented by Winslow Lewis who patented the design in 1810.  The primary marketing point of the Lewis lamp was that it used less than half the oil of the prior oil lamps which they replaced.  The lamp used a similar design to an Argand lamp, adding a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.  A similar variant using a parabolic reflector was created by the inventor of the Argand lamp, Aim\u00e9 Argand.  While the Argand variant became widely used by European lighthouses, the Lewis lamp design was selected by the United States for use in American lighthouses.",
+      "Scandinavian design: Scandinavian design is a design movement characterized by simplicity, minimalism and functionality that emerged in the 1950s in the five Nordic countries of Finland, Norway, Sweden, Iceland and Denmark.  While the term Scandinavia only refers to the three kingdoms of Denmark, Sweden and Norway, it is often used colloquially to refer to all five of these countries."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 406,
+    "generation_tokens": 31,
+    "generation_speed": 376.3186326280394,
+    "prompt_eval_speed": 21944.75974271661,
+    "generation_latency_s": 0.1850237000035122,
+    "latency": 0.607003299985081,
+    "total_prompt_tokens": 495,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1458477,
+    "stage_rewrite_s": 0.1886907999869436,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07986899989191443,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1532831999938935,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18506569997407496,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6070130999432877,
+    "unaccounted_latency_s": 0.00010480009950697422,
+    "rewritten_query": "The lamp used in many lighthouses, which was originally patented in 1780 by Aim\u00e9 Argand, has a similar design and functionality.",
+    "query_was_rewritten": true
+  }
+}

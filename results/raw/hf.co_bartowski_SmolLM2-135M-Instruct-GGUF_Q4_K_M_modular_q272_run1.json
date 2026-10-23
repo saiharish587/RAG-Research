@@ -1,0 +1,49 @@
+{
+  "question_id": "Q272",
+  "query": "Can Stenocereus and Pachypodium both include tree like plants?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Stenocereus and Pachypodium do not include tree-like plants. The genus \"Pachypodium\" is a family of flowering plant species that includes the aforementioned species. Pachypodium lealii is a species of plant belonging to the Baja California Peninsula in Mexico, Arizona, and Colombia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pachypodium: Pachypodium is a genus of succulent spine-bearing trees and shrubs, native to Madagascar and Africa.  It belongs to the dogbane family, Apocynaceae.  \"Pachypodium\" comes from a Latin form from Greek \"pachus\" (thick) and \"podion\" (foot) (or Gk podos, root form of pous, foot), hence meaning \"thick-footed\".",
+      "Stenocereus: Stenocereus (Gk.  stenos, narrow, L. cereus, candle) is a genus of columnar or tree-like cacti from the Baja California Peninsula and other parts of Mexico, Arizona in the United States, Colombia, Costa Rica, Guatemala, Venezuela and the ABC islands of the Dutch Caribbean.  The genus has been enlarged by the addition of species from several other genera.  A close relative is the peculiar chinoa or chende cactus, \"Polaskia chende\".",
+      "Pachypodium lealii: The Bottle tree (\"Pachypodium lealii\" Welw.)  is a species of plant included in the \"genus\" \"Pachypodium\".  The scientific name derives from the 19th century Portuguese geologist Fernando da Costa Leal, who described the Bottle tree during an exploration in southern Angola."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 356,
+    "generation_tokens": 68,
+    "generation_speed": 402.4859425865641,
+    "prompt_eval_speed": 22501.738196068512,
+    "generation_latency_s": 0.2955519000533968,
+    "latency": 1.0173210001084954,
+    "total_prompt_tokens": 488,
+    "total_generation_tokens": 247,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2385436,
+    "stage_route_s": 0.22433729993645102,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4426388000138104,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054606699966825545,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5600074119865894e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2955898999935016,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0173325000796467,
+    "unaccounted_latency_s": 0.00010490010026842356,
+    "route": "rag",
+    "router_raw": "Yes, Stenocereus and Pachypodium can both be considered as tree-like plants. They are both members of the family Stenaceae and belong to the genus Stenocereus.",
+    "sub_queries": [
+      "Sure, here are two specific search queries that can help you answer this question:",
+      "\"Can Stenocereus and Pachypodium both include tree-like plants?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q376",
+  "query": "For One Night Only was hosted by the man most well-known for hosting what show from 1962 until 1999?",
+  "ground_truth": "The Late Late Show",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "For One Night Only was hosted by Gay Byrne, who first hosted the show over a 37-year period spanning 1962 until 1999.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "For One Night Only (Irish TV series): For One Night Only is an Irish light entertainment show hosted by Gay Byrne.  It features music and chat with a special guest musician.  The studio-based show originally aired on Friday nights as a summer \"filler\" in 2011.  The show returned for a second series in 2012.",
+      "One Night Only (TV series): One Night Only is a British entertainment show, celebrating the best of British Music.  Myleene Klass hosted the first episode in December 2008 with the singer Tom Jones.  Ben Shephard hosted in 2009 and 2010, which saw Rod Stewart and Phil Collins take to the stage.  In November 2010, Fearne Cotton hosted a one-off special with Bon Jovi and in 2011 presented by Christine Bleakley featuring music from Duran Duran.  Another episode aired in November 2014, with Rob Brydon hosting \"Neil Diamond: One Night Only\".  Joanna Lumley presented the seventh episode with Bette Midler in December 2014.",
+      "Gay Byrne: Gabriel Mary \"Gay\" Byrne (born 5 August 1934; affectionately known as Uncle Gay, Gaybo or Uncle Gaybo) is an Irish presenter of radio and television.  His most notable role was first host of \"The Late Late Show\" over a 37-year period spanning 1962 until 1999.  \"The Late Late Show\" is the world's second longest-running chat show.  His time working in Britain with Granada Television saw him become the first person to introduce the Beatles on screen."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 39,
+    "generation_speed": 258.127713650323,
+    "prompt_eval_speed": 66286.52886671419,
+    "generation_latency_s": 1.0923280999995768,
+    "latency": 3.438722899998538,
+    "total_prompt_tokens": 555,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1213157,
+    "stage_rewrite_s": 1.2466714000329375,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9930875999853015,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10652250004932284,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0923624000279233,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.438731199945323,
+    "unaccounted_latency_s": 8.77998536452651e-05,
+    "rewritten_query": "For One Night Only was hosted by the man known as \"The Man of the Show\" from 1962 until 1999.",
+    "query_was_rewritten": true
+  }
+}

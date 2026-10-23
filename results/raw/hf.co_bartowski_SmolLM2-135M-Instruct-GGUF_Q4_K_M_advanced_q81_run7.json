@@ -1,0 +1,42 @@
+{
+  "question_id": "Q81",
+  "query": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+  "ground_truth": "Newport",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The county seat of the county where East Lempster, New Hampshire is located is Sullivan County, New Hampshire.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "East Lempster, New Hampshire: East Lempster is an unincorporated community in the town of Lempster in Sullivan County, New Hampshire, United States.",
+      "Lempster, New Hampshire: Lempster is a town in Sullivan County, New Hampshire, United States.  The population was 1,154 at the 2010 census.  Settlements include the town center (Lempster village) and the village of East Lempster.",
+      "Miner Memorial Library: Miner Memorial Library is the public library of Lempster, New Hampshire, located at 3 Second New Hampshire Turnpike.  The library occupies a single-story wood frame structure built in 1845 as a church for a Universalist congregation.  Despite significant alteration for its use as a library, the building remains a fine example of vernacular church architecture in Sullivan County.  The building was formally dedicated in 1927 to the memory of Lempster native Alonzo Ames Miner, a leading Universalist minister and president of Tufts College.  After years of declining attendance, the remaining congregants gave the building to the town in 1965.  The building was listed on the National Register of Historic Places in 2006."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 24,
+    "generation_speed": 391.37666742767686,
+    "prompt_eval_speed": 47651.838589725936,
+    "generation_latency_s": 0.14339389989618212,
+    "latency": 0.5426457000430673,
+    "total_prompt_tokens": 425,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13215159999999998,
+    "stage_rewrite_s": 0.14617520000319928,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08505800005514175,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16789389995392412,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1434340999694541,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.542655500001274,
+    "unaccounted_latency_s": 9.480002336204052e-05,
+    "rewritten_query": "The county seat of East Lempster, New Hampshire, is located in the county of Westmoreland.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q454",
+  "query": "What was position of the man who served Prince Andrew from 1990-2001? ",
+  "ground_truth": "Private Secretary and Treasurer",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The position of the person who served Prince Andrew from 1990 to 2001 is that of a Member of Parliament (MP) for Huntingdon.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Major: Sir John Major, {'1': \", '2': \", '3': \", '4': \"} (born 29 March 1943) is a British politician who was Prime Minister of the United Kingdom and Leader of the Conservative Party from 1990 to 1997.  He served as Foreign Secretary and then Chancellor of the Exchequer in the Thatcher Government from 1989 to 1990, and was the Member of Parliament (MP) for Huntingdon from 1979 until he retired in 2001.  Since Margaret Thatcher's death in 2013, he is the oldest living former Prime Minister.",
+      "Prince Andrew, Duke of York: Prince Andrew, Duke of York, {'1': \", '2': \", '3': \", '4': \"} (Andrew Albert Christian Edward, born 19 February 1960), is the second son and third child of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.  At the time of his birth, he was second in the line of succession to the British throne; as of 2017 he is sixth in line.",
+      "Prince Andrew Romanov: Prince Andrew Andreyevich Romanov (born 21 January 1923) is a Russian American artist and author.  He is a grand-nephew of Russia's last Emperor, Nicholas II.  Since December 31, 2016 he is a claimant to the headship of the Imperial House of Russia and President of the Romanov Family Association.  He is a great-great-grandson in the male-line of Emperor Nicholas I of Russia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 441,
+    "generation_tokens": 36,
+    "generation_speed": 245.01463281834887,
+    "prompt_eval_speed": 15069.195284469502,
+    "generation_latency_s": 1.0493677000049502,
+    "latency": 3.507346000056714,
+    "total_prompt_tokens": 524,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1211819,
+    "stage_rewrite_s": 1.278042700025253,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0197874999139458,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1600295000243932,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0494042999343947,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.507355200010352,
+    "unaccounted_latency_s": 9.180011693388224e-05,
+    "rewritten_query": "Position of the man serving Prince Andrew from 1990-2001 is unknown.",
+    "query_was_rewritten": true
+  }
+}

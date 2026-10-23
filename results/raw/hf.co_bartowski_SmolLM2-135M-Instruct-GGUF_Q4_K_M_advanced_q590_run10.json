@@ -1,0 +1,42 @@
+{
+  "question_id": "Q590",
+  "query": "Which piece did Ludwig van Beethoven publish in 1801 that was dedicated to Count Moritz von Fries? ",
+  "ground_truth": "Symphony No. 7",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Symphony No. 7 in A major, Op. 92, was written by Ludwig van Beethoven between 1811 and 1812.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Violin Sonata No. 5 (Beethoven): The Violin Sonata No. 5 in F major, Opus 24, is a violin sonata by Ludwig van Beethoven.  It is often known as the \"Spring Sonata\" (\"Fr\u00fchlingssonate\"), and was published in 1801.  Its dedicatee was Count Moritz von Fries, a patron to whom Beethoven also dedicated two other works of the same year\u2014the C major string quintet and the fourth violin sonata\u2014as well as his later seventh symphony.",
+      "Violin Sonata No. 4 (Beethoven): The Violin Sonata No. 4 of Ludwig van Beethoven in A minor, his Opus 23, was composed in 1801, published in October that year, and dedicated to Count Moritz von Fries.  It followed by one year the composition of his first symphony, and was originally meant to be published alongside Violin Sonata No. 5, however it was published on different sized paper, so the opus numbers had to be split.  Unlike the three first sonatas, Sonata No. 4 received a favourable reception from critics.",
+      "Symphony No. 7 (Beethoven): The Symphony No. 7 in A major, Op. 92, is a symphony in four movements composed by Ludwig van Beethoven between 1811 and 1812, while improving his health in the Bohemian spa town of Teplice.  The work is dedicated to Count Moritz von Fries."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 415,
+    "generation_tokens": 36,
+    "generation_speed": 406.0455673358899,
+    "prompt_eval_speed": 60912.96051665933,
+    "generation_latency_s": 0.17798330006189644,
+    "latency": 0.5466745999874547,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12267900000000001,
+    "stage_rewrite_s": 0.15138320007827133,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07465460000094026,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14251269993837923,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17803319997619838,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.546711300034076,
+    "unaccounted_latency_s": 0.00012830004561692476,
+    "rewritten_query": "Which piece by Ludwig van Beethoven published in 1801 that was dedicated to Count Moritz von Fries?",
+    "query_was_rewritten": true
+  }
+}

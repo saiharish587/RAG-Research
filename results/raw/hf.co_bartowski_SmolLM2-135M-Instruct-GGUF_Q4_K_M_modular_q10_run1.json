@@ -1,0 +1,49 @@
+{
+  "question_id": "Q10",
+  "query": "Are Local H and For Against both from the United States?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Local H and For Against are not from the United States. They were created by the Association of Bay Area Governments (ABAG) to address issues related to urban sprawl and land use in California's San Francisco Bay area. The ABAG is a regional planning agency that encompasses nine counties surrounding the San Francisco Bay.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "For Against: For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.  Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from its 1984 inception to the present.",
+      "Association of Bay Area Governments: The Association of Bay Area Governments (ABAG) is a regional planning agency incorporating various local governments in the San Francisco Bay Area in California.  It encompasses nine counties surrounding the San Francisco Bay.  Those counties are Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Santa Cruz, Solano, and Sonoma.  It has the ability to establish housing and transportation goals for cities to minimize urban sprawl by that requiring housing be zoned for near new workplace construction.  It deals with land use, housing, environmental quality, and economic development.  Non-profit organizations as well as governmental organizations can be members.  All nine counties and 101 cities within the Bay Area are voluntary members of ABAG.",
+      "Mendocino County GMO Ban: Mendocino County, California, was the first jurisdiction in the United States to ban the cultivation, production or distribution of genetically modified organisms (GMOs).  The ordinance, entitled Measure H, was passed by referendum on March 2, 2004.  Initiated by the group \"GMO Free Mendocino\", the campaign was a highly publicized grassroots effort by local farmers and environmental groups who contend that the potential risks of GMOs to human health and the ecosystem have not yet been fully understood.  The measure was met with opposition by several interest groups representing the biotechnology industry, The California Plant Health Association (now the Western Plant Health Association) and CropLife America, a Washington-based consortium whose clients represent some of the largest food distributors in the nation, including Monsanto, DuPont and Dow Chemical.  Since the enactment of the ordinance, Mendocino County has been added to an international list of \"GMO free zones.\"  Pre-emptive statutes banning local municipalities from such ordinances have now become widespread with adoption in sixteen states."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 508,
+    "generation_tokens": 65,
+    "generation_speed": 344.2942497563456,
+    "prompt_eval_speed": 24399.61575408261,
+    "generation_latency_s": 0.31991760001983494,
+    "latency": 0.8339036999968812,
+    "total_prompt_tokens": 632,
+    "total_generation_tokens": 160,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2442447,
+    "stage_route_s": 0.1008784999139607,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3563547000521794,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05656119994819164,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.360001862049103e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.31996009999420494,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8339154000859708,
+    "unaccounted_latency_s": 9.790004696696997e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Local H, for example, is a local government agency in the United States that provides services to residents of the state of California. It also serves as a liaison between the state and federal governments.",
+      "For Against: Local H, for example, is a local government agency in the United States that provides services to residents of the state of California. For Against is an acronym representing \"for against.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

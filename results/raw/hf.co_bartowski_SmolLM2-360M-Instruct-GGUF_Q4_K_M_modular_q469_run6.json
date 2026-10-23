@@ -1,0 +1,49 @@
+{
+  "question_id": "Q469",
+  "query": "Kam Heskin plays Paige Morgan in a 2004 film directed by who?",
+  "ground_truth": "Martha Coolidge",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Kam Heskin plays Paige Morgan in the 2004 film \"The Prince and Me\" directed by Martha Coolidge, and starring Julia Stiles, Luke Mably, and Ben Miller.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Prince and Me: The Prince and Me is a 2004 romantic comedy film directed by Martha Coolidge, and starring Julia Stiles, Luke Mably, and Ben Miller, with Miranda Richardson, James Fox, and Alberta Watson.  The film focuses on Paige Morgan, a pre-med college student in Wisconsin, who is pursued by a prince posing as a normal college student.",
+      "Kam Heskin: Kam Heskin (born Kam Erika Heskin on May 8, 1973) is an American actress.  She began her career playing Caitlin Richards Deschanel on the NBC daytime soap opera \"Sunset Beach\" (1998\u20131999), before appearing in films \"Planet of the Apes\" (2001 and \"Catch Me If You Can\" (2002).  Heskin went to play Elizabeth Bennet in the 2003 independent film \"\", and Paige Morgan in the \"The Prince and Me\" film franchise (2006\u20132010).",
+      "The Aviator (2004 film): The Aviator is a 2004 American epic biographical drama film directed by Martin Scorsese, written by John Logan.  It stars Leonardo DiCaprio as Howard Hughes, Cate Blanchett as Katharine Hepburn and Kate Beckinsale as Ava Gardner.  The supporting cast features Ian Holm, John C. Reilly, Alec Baldwin, Jude Law as Errol Flynn, Gwen Stefani as Jean Harlow, Kelli Garner as Faith Domergue, Willem Dafoe, Alan Alda, and Edward Herrmann."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 432,
+    "generation_tokens": 43,
+    "generation_speed": 238.92207251007085,
+    "prompt_eval_speed": 51532.87027709296,
+    "generation_latency_s": 0.301600500009954,
+    "latency": 0.7891850000014529,
+    "total_prompt_tokens": 570,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2368277,
+    "stage_route_s": 0.10037889995146543,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3320774999447167,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05492200003936887,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.319993942975998e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3016421999782324,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7891964999726042,
+    "unaccounted_latency_s": 0.0001235001254826784,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Paige Morgan\" - Kam Heskin's character is played by Paige Morgan in the 2004 film directed by John Hughes.",
+      "\"John Hughes\" - John Hughes is the director of the 2004 film \"Paige Morgan.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

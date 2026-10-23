@@ -1,0 +1,42 @@
+{
+  "question_id": "Q153",
+  "query": "The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aim\u00e9 Argand?",
+  "ground_truth": "Argand lamp",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Yes, the lamp used in many lighthouses was similar to this type of lamp patented in 1780 by Aim\u00e9 Argand. The lamp used a similar design and included a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Argand lamp: The Argand lamp, a kind of oil lamp, was invented and patented in 1780 by Aim\u00e9 Argand.  Its output is 6 to 10 candela, brighter than that of earlier lamps.  Its more complete combustion of the candle wick and oil than in other lamps required much less frequent trimming of the wick.",
+      "Lewis lamp: The Lewis lamp is a type of light fixture used in lighthouses.  It was invented by Winslow Lewis who patented the design in 1810.  The primary marketing point of the Lewis lamp was that it used less than half the oil of the prior oil lamps which they replaced.  The lamp used a similar design to an Argand lamp, adding a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.  A similar variant using a parabolic reflector was created by the inventor of the Argand lamp, Aim\u00e9 Argand.  While the Argand variant became widely used by European lighthouses, the Lewis lamp design was selected by the United States for use in American lighthouses.",
+      "Antoine Quinquet: Antoine Quinquet was a French pharmacist who was born in Soissons on 9 March 1745.  In 1760 he was apprenticed to an apothecary in Soissons and in 1777 he moved to Paris where he worked for Antoine Baum\u00e9.  He travelled to Geneva, where he met Aim\u00e9 Argand.  In 1779, he returned to Paris and opened his own pharmacy there."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 65,
+    "generation_speed": 422.8412328749301,
+    "prompt_eval_speed": 65551.33079847909,
+    "generation_latency_s": 0.2405383000150323,
+    "latency": 0.6254974000621587,
+    "total_prompt_tokens": 520,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1312382,
+    "stage_rewrite_s": 0.16772960009984672,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07970899995416403,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13738039997406304,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.24058649991638958,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6255115000531077,
+    "unaccounted_latency_s": 0.00010670011397451162,
+    "rewritten_query": "The lamp used in many historic lighthouses, such as Aim\u00e9 Argand's original invention, was originally designed and produced by the French inventor Aim\u00e9 Argand.",
+    "query_was_rewritten": true
+  }
+}

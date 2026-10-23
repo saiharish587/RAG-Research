@@ -1,0 +1,48 @@
+{
+  "question_id": "Q14",
+  "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, 888 7th Avenue is not a used for real estate. It was built by Hines Real Estate Inc., a Texas-based real estate investment company. The building's continuous helix design and continuous column extensions were caused by the New York City Building Code, which requires setbacks.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "888 7th Avenue: 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.  Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City.  It currently carries the Vornado Realty Trust corporate headquarters.  Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation.  The Red Eye Grill is located in the building at street level.",
+      "750 7th Avenue: 750 Seventh Avenue is a 615 ft (187m) tall Class-A office skyscraper in New York City.  It was completed in 1989 in the postmodern style and has 36 floors.  Kevin Roche John Dinkeloo & Associates designed the building, and it is owned by Hines, a Texas based real estate investment company.  The building's continuous helix design, culminating in a chimney-like extension, was caused by the New York City Building Code, which requires setbacks.  The 84 exterior column transfers exist because of the owner's requirement for a column-free space.  It is tied with the New York Life Building for the 74th tallest building in New York City.  It is also LEED certified.",
+      "8 Spruce Street: 8 Spruce Street, originally known as Beekman Tower and currently marketed as New York by Gehry, is a 76-story skyscraper designed by architect Frank Gehry in the New York City borough of Manhattan at 8 Spruce Street, between William and Nassau Streets, in Lower Manhattan, just south of City Hall Park and the Brooklyn Bridge."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 478,
+    "generation_tokens": 62,
+    "generation_speed": 373.24664379025944,
+    "prompt_eval_speed": 25758.473891253972,
+    "generation_latency_s": 0.2910009999759495,
+    "latency": 0.5808174000121653,
+    "total_prompt_tokens": 616,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2380435,
+    "stage_route_s": 0.08776050002779812,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16264390002470464,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03924299997743219,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.549999721348286e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2910344999982044,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5808264999650419,
+    "unaccounted_latency_s": 9.959994349628687e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, 888 7th Avenue is used as a residential address in New York City."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

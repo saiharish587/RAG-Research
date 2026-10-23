@@ -1,0 +1,42 @@
+{
+  "question_id": "Q126",
+  "query": "Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of which river?",
+  "ground_truth": "Richmond",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of the Bruxner Highway.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mummulgum: Mummulgum is a small rural village in the Northern Rivers region of New South Wales, Australia, 740 kilometres from the state capital, Sydney.  Mummulgum is located on Shannon Brook between Tenterfield and Casino on the Bruxner Highway (Highway 44).  It is 58 km south-west of Kyogle with the village and surrounding area being locally administered by Kyogle Council.  The nearest large town is Casino which is 27 kilometres east of Mummulgum.",
+      "Bruxner Highway: The Bruxner Highway is a 420 km state highway located in New South Wales, Australia.  The highway forms an east-west link from the Northern Rivers coast, across the Northern Tablelands in northern New South Wales, close to the border with Queensland.",
+      "Tenterfield, New South Wales: Tenterfield is a town in New South Wales, Australia.  It is located in the New England region at the intersection of the New England and Bruxner Highway's.  Tenterfield is a three-hour drive from Brisbane, Queensland, three hours from Byron Bay, New South Wales, two hours from Armidale, New South Wales and eight hours from Sydney.  The town is situated on the north-western part of the Northern Tableland plateau, nestled in a valley, astride the Great Dividing Range and beneath the imposing Mount MacKenzie (1,287m elevation).  At the 2015 census , Tenterfield had a population of 6,986."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 422,
+    "generation_tokens": 29,
+    "generation_speed": 403.56809863760975,
+    "prompt_eval_speed": 23558.309607547595,
+    "generation_latency_s": 0.1641502999700606,
+    "latency": 0.5541502999840304,
+    "total_prompt_tokens": 507,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13833659999999998,
+    "stage_rewrite_s": 0.16707740002311766,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07435690006241202,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14841519994661212,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16421439999248832,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5541610000655055,
+    "unaccounted_latency_s": 9.759992826730013e-05,
+    "rewritten_query": "Mummulgum is located at the intersection of the Bruxner Highway and the River Gorge, before reaching the town.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q123",
+  "query": "What's the name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate?",
+  "ground_truth": "The Spiderwick Chronicles",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Game of Life",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sarah Bolger: Sarah Lee Bolger (born 28 February 1991) is an Irish actress.  She is best known for her roles in the films \"In America\", \"Stormbreaker\", and \"The Spiderwick Chronicles\", as well as her award-winning role as Lady Mary Tudor in the TV series \"The Tudors\", and for guest starring as Princess Aurora in \"Once Upon a Time\".",
+      "The Game of Life: The Game of Life, also known simply as Life, is a board game originally created in 1860 by Milton Bradley, as The Checkered Game of Life.  \"The Game of Life\" was America's first popular parlour game.  The game simulates a person's travels through his or her life, from college to retirement, with jobs, marriage, and possible children along the way.  Two to six players can participate in one game.  Variations of the game accommodate eight to ten players.",
+      "Robert Holdstock bibliography: This is a bibliography of fantasy author Robert Holdstock."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 302,
+    "generation_tokens": 5,
+    "generation_speed": 243.2971631550776,
+    "prompt_eval_speed": 37768.88444222111,
+    "generation_latency_s": 0.13796730001922697,
+    "latency": 0.5118677000282332,
+    "total_prompt_tokens": 454,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2316545,
+    "stage_route_s": 0.09850159997586161,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2167642000131309,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058467400027439,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.640008021146059e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13799900002777576,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5118765000952408,
+    "unaccounted_latency_s": 8.859997615218163e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Name Of The Game\" by Chris Columbus and Martin Freeman",
+      "\"Fantasy Filmography\" by David S. Goyer"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

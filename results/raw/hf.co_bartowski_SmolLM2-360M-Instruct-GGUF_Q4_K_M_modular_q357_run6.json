@@ -1,0 +1,49 @@
+{
+  "question_id": "Q357",
+  "query": "Bartlett's Bridge was built by the engineer who worked for the county seat of which Massachusetts county?",
+  "ground_truth": "Worcester County",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The answer is Essex County.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bartlett's Bridge: Bartlett's Bridge is a historic stone arch bridge carrying Clara Barton Road over the French River in Oxford, Massachusetts.  The bridge was built in 1889 to a design by Charles A. Allen, at the time a civil engineer for the city of Worcester.  The bridge was built to replace an older wooden span at the request of Edwin Bartlett, the owner of textile mills in North Oxford, whose businesses and employees would have used the road.  The bridge is 30 ft long and 42 ft wide, with its elliptical arch reaching a height of 13 ft above the river.  The facing of the bridge is rough-cut granite that has been fixed with mortar.  In contrast, the granite stones that make up the arch have been very precisely worked.  The bridge has parapet walls made of large granite slabs 4.5 ft , 2 ft wide, and 1 ft thick.",
+      "Blackstone River and Canal Heritage State Park: The Blackstone River and Canal Heritage State Park is a part of the state park system of the Commonwealth of Massachusetts, managed by the Massachusetts Department of Conservation and Recreation (DCR).  This 1000 acre park \"recalls the role of canals in transporting raw materials and manufactured goods between emerging industrial centers.\"  The Blackstone River and Canal Heritage State Park at Uxbridge, Massachusetts, is the midpoint of the Blackstone River Valley National Heritage Corridor of the National Park System.  The Blackstone River and Valley is where the industrial revolution was born in America.  The southern entrance to this state park is the site of the historic Stanley Woolen Mill, currently being redeveloped for commercial and tourism.  The Native American Nipmuc name for the village here was \"Wacentug\", translated as \"bend in the river\".",
+      "James Fowle Baldwin: James Fowle Baldwin (April 29, 1782 \u2013 May 20, 1862) was an early American civil engineer who worked with his father and brothers on the Middlesex Canal, surveyed and designed the Boston and Lowell Railroad and the Boston and Albany Railroad, the first Boston water supply from Lake Cochituate, and many other early engineering projects.  He was the first president of the Boston Society of Civil Engineers and served one term as a Senator from Suffolk County to the Massachusetts Senate, then served as a Boston Water Commissioner."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 583,
+    "generation_tokens": 7,
+    "generation_speed": 227.3908523908524,
+    "prompt_eval_speed": 71323.71804792245,
+    "generation_latency_s": 0.1565716000040993,
+    "latency": 0.6502815999556333,
+    "total_prompt_tokens": 723,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23617169999999998,
+    "stage_route_s": 0.11321009998209774,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3260792000219226,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05424119997769594,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.6600005589425564e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1566164999967441,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6502927999245003,
+    "unaccounted_latency_s": 9.979994501918554e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bartlett's Bridge, constructed by John Bartlett, a civil engineer working for the town of Worcester in Massachusetts\"",
+      "\"John Bartlett, a civil engineer and contractor, was employed by the town of Worcester to build the bridge in 1850\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

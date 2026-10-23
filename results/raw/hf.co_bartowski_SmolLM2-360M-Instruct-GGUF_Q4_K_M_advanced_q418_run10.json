@@ -1,0 +1,42 @@
+{
+  "question_id": "Q418",
+  "query": "Which mall, Wilton Mall or Viaport Rotterdam, has had more owners?",
+  "ground_truth": "Viaport Rotterdam",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Wilton Mall has had more owners than Viaport Rotterdam.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Viaport Rotterdam: Viaport Rotterdam, formerly Rotterdam Square, is a shopping mall located in Rotterdam, New York, United States.  When it opened, the mall was originally called Rotterdam Square and owned by Wilmorite Properties (who also owned Wilton Mall in Wilton) until 2005, when Wilmorite was acquired by The Macerich Company, who then took over ownership and management of most of their properties.  The mall has an area of 900000 sqft on one level with over 80 stores, a 450-seat food court as well as restaurants and a seven-screen Sony-Loews Cineplex, now operated by Zurich Cinemas (independent company).  The mall was purchased by Kohan Retail Investment Group in January 2014, and was later sold to Via Properties in June 2015.  In 2016 Via Properties renamed the mall to Via Port Rotterdam",
+      "ViaPort Florida: ViaPort Florida (formerly known as Lake Square Mall) is an enclosed shopping mall in Leesburg, Florida.  Opened on September 24, 1980, it is managed by Lake Square Mall Realty Management and Via Properties.  Anchor stores are Belk, Sears, and Via Entertainment",
+      "Rotterdam The Hague Airport: Rotterdam The Hague Airport (formerly \"Rotterdam Airport\", \"Vliegveld Zestienhoven\" in Dutch), (IATA: RTM, ICAO: EHRD) located 3 NM north northwest of Rotterdam, is the Netherlands' third largest airport.  It serves the city of Rotterdam as well as The Hague and surroundings.  The airport handled over 1.6 million passengers in 2016 and features scheduled flights to European metropolitan and leisure destinations.  It is also used extensively by general aviation and there are several flying clubs and schools located at the airport."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 504,
+    "generation_tokens": 16,
+    "generation_speed": 244.45021618565994,
+    "prompt_eval_speed": 68721.02536133079,
+    "generation_latency_s": 0.9849132999079302,
+    "latency": 3.3742745999479666,
+    "total_prompt_tokens": 583,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12162690000000001,
+    "stage_rewrite_s": 1.1773252999410033,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0766516999574378,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13527239998802543,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9849464999279007,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3742834998993203,
+    "unaccounted_latency_s": 8.840009104460478e-05,
+    "rewritten_query": "The most recent owner for both malls is Viaport Rotterdam.",
+    "query_was_rewritten": true
+  }
+}

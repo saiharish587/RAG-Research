@@ -1,0 +1,42 @@
+{
+  "question_id": "Q184",
+  "query": "Which professional ice hockey position does the Captain of the National Hockey League All-Star Game \"Away Team\" play?",
+  "ground_truth": "Canadian professional ice hockey centre",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Captain of the National Hockey League All-Star Game plays as the \"Team Captain.\" He is responsible for leading the team and making key decisions during the game.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "60th National Hockey League All-Star Game: The 60th National Hockey League All-Star Game was an exhibition ice hockey game played on January 25, 2015.  The game was held in Columbus, Ohio, for the first time, at Nationwide Arena, home of the Columbus Blue Jackets.  The team captains were chosen by NHL Hockey Operations: Nick Foligno of the All-Star Game-hosting Blue Jackets served as captain for the home team, and Jonathan Toews of the Chicago Blackhawks served for the away team.  Team Toews won the game 17\u201312, as the teams and players broke a variety of All-Star Game scoring records.",
+      "National Hockey League All-Star Game: The National Hockey League All-Star Game (French: \"Match des \u00c9toiles de la Ligue Nationale de Hockey\" ) is an exhibition ice hockey game that is traditionally held during the regular season of the National Hockey League (NHL), with many of the League's star players playing against each other.  The Game's proceeds benefit the pension fund of the players.",
+      "63rd National Hockey League All-Star Game: The 63rd National Hockey League All-Star Game, also known as the 2018 NHL All-Star Game, will be held at Amalie Arena in Tampa, Florida, home of the Tampa Bay Lightning on January 28, 2018.  Tampa last held the NHL All Star Game in 1999.  The All-Star Game will be played in lieu of NHL participation in the 2018 Olympics, as the NHL Board of Governors ruled against interrupting the season to send players to PyeongChang from 10\u201325 February."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 34,
+    "generation_speed": 393.3045681168809,
+    "prompt_eval_speed": 68665.09155345541,
+    "generation_latency_s": 0.17063390009570867,
+    "latency": 0.6227415000321344,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1279938,
+    "stage_rewrite_s": 0.2211391000309959,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08102060004603118,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14982129994314164,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17067129991482943,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6227511999895796,
+    "unaccounted_latency_s": 9.930005762726068e-05,
+    "rewritten_query": "The Captain of the National Hockey League All-Star Game plays the All-Star Game, which is a prestigious event that showcases the best talent in the NHL. The All-Star Game is an annual competition where teams from all leagues compete to win the championship trophy.",
+    "query_was_rewritten": true
+  }
+}

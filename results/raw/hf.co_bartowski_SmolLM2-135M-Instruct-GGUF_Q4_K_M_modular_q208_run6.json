@@ -1,0 +1,49 @@
+{
+  "question_id": "Q208",
+  "query": "Who was Chamberlain and Colonel of the military staff of The Merrie Monarch?",
+  "ground_truth": "Colonel Charles Hastings Judd",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Arthur Balfour is the person who was the Prime Minister of the United Kingdom from July 1902 to December 1905, and later Foreign Secretary.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "William Ewart Gladstone: William Ewart Gladstone, ( ; 29 December 1809 \u2013 19 May 1898) was a British Liberal statesman and earlier Conservative politician.  In a career lasting over 60 years, he served as Prime Minister four separate times (1868\u201374, 1880\u201385, February\u2013July 1886 and 1892\u201394), more than any other person, and served as Chancellor of the Exchequer four times.  Gladstone was also Britain's oldest Prime Minister; he resigned for the final time when he was 84 years old.",
+      "Arthur Balfour: Arthur James Balfour, 1st Earl of Balfour, (usually , but traditionally /b\u0259\u026b\u02c8f\u0289r/ in Scottish English; 25 July 184819 March 1930) was a British Conservative politician who was the Prime Minister of the United Kingdom from July 1902 to December 1905, and later Foreign Secretary.",
+      "Conservative Party (UK): The Conservative Party, officially the Conservative and Unionist Party, is a centre-right political party in the United Kingdom.  It is currently the governing party, having been so since the 2010 general election, where a coalition government with the Liberal Democrats was formed.  In 2015, the Conservatives led by David Cameron won a surprise majority and formed the first Conservative majority government since 1992.  However, the 2017 snap election on Thursday 8 June resulted in a hung parliament, and the Conservatives lost their parliamentary majority.  They are reliant on the support of a Northern Irish political party, the Democratic Unionist Party (DUP), in order to command a majority in the House of Commons through a confidence-and-supply deal.  The party leader, Theresa May, has served as both Leader of the Conservative Party and Prime Minister since 13 July 2016.  It is the largest party in local government with 9,237 councillors.  The Conservative Party is one of the two major contemporary political parties in the United Kingdom, the other being its modern rival, the Labour Party.  The Conservative Party's platform involves support for free market capitalism, free enterprise, fiscal conservatism, a strong national defence, deregulation, and restrictions on trade unions."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 593,
+    "generation_tokens": 37,
+    "generation_speed": 363.15453697796534,
+    "prompt_eval_speed": 81210.62722541769,
+    "generation_latency_s": 0.22051600005943328,
+    "latency": 0.610674099996686,
+    "total_prompt_tokens": 723,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2264449,
+    "stage_route_s": 0.08855729992501438,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24415420007426292,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05723729997407645,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.139992572367191e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22058299998752773,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6106866999762133,
+    "unaccounted_latency_s": 0.0001042000949382782,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Who was the British Prime Minister who served as the leader of the Conservative Party from 1908 to 1922?",
+      "Who was the British Prime Minister who served as the leader of the Conservative Party from 1908 to 1937?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q436",
+  "query": "How long is the river for which Frenchmans Creek is a tributary?",
+  "ground_truth": "2844 km",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The answer to this question is \"10 Years.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Frenchmans Creek (New South Wales): Frenchmans Creek is a short tributary of the Darling River in west New South Wales, measuring 7.51 km from its source south of Pooncarie, New South Wales at an elevation of 54.4 m to its confluence into the Darling River at an elevation of 48 m .",
+      "10 Years (band): 10 Years is an American alternative metal band, formed in Knoxville, Tennessee in 1999.  The band consists of Jesse Hasek (lead vocals), Brian Vodinh (drums, guitar, backing vocals), Chad Huff (bass guitar) and Matt Wantland (guitar).  To date, they have released seven albums, the latest of which, \"From Birth to Burial\", was released in April 2015.  Their eighth studio album, \"(How to Live) As Ghosts\", is scheduled for release on October 27, 2017.",
+      "Frenchmans Creek (California): Frenchmans Creek is a 4.4 mi stream in San Mateo County, California.  Locks Creek is its largest tributary."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 318,
+    "generation_tokens": 12,
+    "generation_speed": 354.0240736370073,
+    "prompt_eval_speed": 46308.43162953255,
+    "generation_latency_s": 0.15164289996027946,
+    "latency": 0.4775764000369236,
+    "total_prompt_tokens": 446,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2533747,
+    "stage_route_s": 0.19714330008719116,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.09194730001036078,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03668859996832907,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.309997893869877e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1516768999863416,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4775851999875158,
+    "unaccounted_latency_s": 8.659996092319489e-05,
+    "route": "rag",
+    "router_raw": "The river for which Frenchmans Creek is a tributary is Frenchmen Creek, which flows through the Frenchman Creek National Forest in the state of Washington.",
+    "sub_queries": [
+      "10 years"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

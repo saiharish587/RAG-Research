@@ -1,0 +1,49 @@
+{
+  "question_id": "Q248",
+  "query": "Are  Chrysalis and Look both women's magazines?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Chrysalis and Look are not both women's magazines. They are different publications with distinct focus areas.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vogue (magazine): Vogue is an American fashion and lifestyle magazine made up of many components including fashion, beauty, culture, living, and runway.  \"Vogue\" began as a weekly newspaper in 1892 in the United States, before becoming a monthly publication years later.",
+      "Woman's Day: Woman's Day is an American women's magazine that covers such topics as homemaking, food, nutrition, physical fitness, physical attractiveness, and fashion.  The print edition is one of the Seven Sisters magazines.  The magazine was first published in 1931 by The Great Atlantic & Pacific Tea Company; the current publisher is Hearst Corporation.",
+      "Look (UK magazine): Look is a glossy high street fashion and celebrity weekly magazine for young women.  It is published by Time Inc.  UK, and edited by Ali Hall.  The magazine focuses on fashion, high street shopping advice, celebrity style and news, and real-life stories."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 269,
+    "generation_tokens": 23,
+    "generation_speed": 232.79116608131497,
+    "prompt_eval_speed": 11510.976079421456,
+    "generation_latency_s": 0.22851830010768026,
+    "latency": 0.6149954999564216,
+    "total_prompt_tokens": 391,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2213074,
+    "stage_route_s": 0.10470899997744709,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22682820004411042,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05470990005414933,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.510003004223108e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22855979995802045,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6150076000485569,
+    "unaccounted_latency_s": 0.0001362999901175499,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query1: Yes, both Chrysalis and Look are classified as women's magazines.",
+      "Query2: Yes, they are both classified as women's magazines."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

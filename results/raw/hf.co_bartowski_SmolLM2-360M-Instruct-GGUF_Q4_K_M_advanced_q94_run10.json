@@ -1,0 +1,42 @@
+{
+  "question_id": "Q94",
+  "query": "Do the drinks Gibson and Zurracapote both contain gin?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, the drinks Gibson and Zurracapote do not contain gin. The context mentions that the oldest published recipe for the Gibson is found in the 1908 book \"The World's Drinks And How To Mix Them\" by William Boothby, which was written before the invention of the gin and tonic cocktail.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gibson (cocktail): The Gibson is a mixed drink made with gin and vermouth, and often garnished with a pickled onion.  The oldest published recipe for the Gibson is found in the 1908 book, \"The World's Drinks And How To Mix Them\" by William Boothby.",
+      "Gin: Gin is a spirit which derives its predominant flavour from juniper berries (\"Juniperus communis\").  From its earliest origins in the Middle Ages, gin has evolved from use in herbal medicine to an object of commerce in the spirits industry.  Gin was developed on the basis of the older jenever, and became popular in Great Britain (particularly in London) when William of Orange, leader of the Dutch Republic, occupied the English, Scottish, and Irish thrones with his wife Mary.  Gin is one of the broadest categories of spirits, represented by products of various origins, styles, and flavour profiles that all revolve around juniper as a common ingredient.",
+      "Gin and tonic: A gin and tonic is a highball cocktail made with gin and tonic water poured over ice.  It is usually garnished with a slice or wedge of lime.  The amount of gin varies according to taste.  Suggested ratios of gin to tonic are between 1:1 and 1:3."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 67,
+    "generation_speed": 253.87827484028406,
+    "prompt_eval_speed": 47941.420281845814,
+    "generation_latency_s": 1.1837276999140158,
+    "latency": 3.5602708000224084,
+    "total_prompt_tokens": 420,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1238399,
+    "stage_rewrite_s": 1.179248100030236,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0579518000595272,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13923590001650155,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1837622999446467,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5602795999730006,
+    "unaccounted_latency_s": 8.199992589652538e-05,
+    "rewritten_query": "Ginger beer is often associated with the drink Gibson, but does it also contain gin?",
+    "query_was_rewritten": true
+  }
+}

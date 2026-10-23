@@ -1,0 +1,49 @@
+{
+  "question_id": "Q431",
+  "query": "What team did the recipient of the 2007 Brownlow Medal play for?",
+  "ground_truth": "Geelong Football Club",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The recipient of the 2007 Brownlow Medal played for the Boston Celtics.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2007 Brownlow Medal: The 2007 Brownlow Medal was the 80th year the award was presented to the player adjudged the fairest and best player during the Australian Football League (AFL) home and away season.  Jimmy Bartel of the Geelong Football Club won the medal by polling twenty-nine votes during the 2007 AFL season.",
+      "Kevin Durant: Kevin Wayne Durant (born September 29, 1988) is an American professional basketball player for the Golden State Warriors of the National Basketball Association (NBA).  He has won an NBA championship, an NBA Most Valuable Player Award, the Bill Russell NBA Finals Most Valuable Player Award, the NBA All-Star Game Most Valuable Player Award, four NBA scoring titles, the NBA Rookie of the Year Award, and two Olympic gold medals.  Durant has also been selected to seven All-NBA teams and eight NBA All-Star teams.",
+      "2007\u201308 Boston Celtics season: The 2007\u20132008 Boston Celtics season was the 62nd season of the Boston Celtics in the National Basketball Association (NBA).  Powered by the acquisitions of perennial All-Stars Kevin Garnett and Ray Allen in the offseason, the Celtics finished with a record of 66\u201316 and posted the best single-season turnaround in NBA history.  They finished first in both the Atlantic Division and the Eastern Conference, and achieved the league's best record.  The 66 wins were also the third-most in franchise history, behind the 1972\u201373 Celtics\u2019 68 wins and the famous 1985\u201386 Celtics\u2019 67 wins including 40 at home.  Kevin Garnett was named NBA Defensive Player of the Year, while Danny Ainge, who executed \"the most dramatic NBA turnaround ever\", was named NBA Executive of the Year.  The Celtics also sold out all 41 regular-season home games."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 540,
+    "generation_tokens": 21,
+    "generation_speed": 249.779955753265,
+    "prompt_eval_speed": 12880.757579371704,
+    "generation_latency_s": 0.23863739997614175,
+    "latency": 0.6926309000700712,
+    "total_prompt_tokens": 676,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2285409,
+    "stage_route_s": 0.10949059994891286,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2835211999481544,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060798199963755906,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.819997750222683e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23867280001286417,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6926404000259936,
+    "unaccounted_latency_s": 0.00010000017937272787,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The recipient of the 2007 Brownlow Medal played for the New York Knicks.",
+      "The recipient of the 2007 Brownlow Medal played for the Boston Celtics."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

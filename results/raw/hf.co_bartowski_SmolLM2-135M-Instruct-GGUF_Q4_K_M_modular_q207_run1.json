@@ -1,0 +1,49 @@
+{
+  "question_id": "Q207",
+  "query": "Are Hot Rod and The Memory of Our People both magazines?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, the two magazines are not exactly the same thing. The main difference between them is that \"Hot Rod\" focuses on hot rodding (racing) while \"The Memory of Our People\" explores the history and significance of our people in Argentina. They share similar themes but have different focus areas.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Memory of Our People: The Memory of Our People is a magazine published in the Argentine city of Rosario, a province of Santa Fe.  The magazine was founded in 2004.  Its original title in Spanish is \"La Memoria de Nuestro Pueblo\".",
+      "Life Could Be Verse: Reflections on Love, Loss, and What Really Matters: Life Could Be Verse: Reflections on Love, Loss, and What Really Matters",
+      "Hot Rod (magazine): Hot Rod is a monthly American car magazine devoted to hot rodding, drag racing, and muscle cars \u2014 modifying automobiles for performance and appearance."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 196,
+    "generation_tokens": 62,
+    "generation_speed": 385.08838399522983,
+    "prompt_eval_speed": 12314.651922593617,
+    "generation_latency_s": 0.2833687999518588,
+    "latency": 0.7509063000325114,
+    "total_prompt_tokens": 320,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.263015,
+    "stage_route_s": 0.12043020001146942,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2844757999991998,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06242590001784265,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.660004146397114e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2834187999833375,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7509214000310749,
+    "unaccounted_latency_s": 0.0001050999853760004,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, The Memory of Our People is indeed a magazine that focuses on the history and culture of the American Indian people. It's published by the National Association for the Advancement of Colored People (NAACP) and features stories from Native American communities around the world.",
+      "Question: Is The Memory of Our People a good book?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

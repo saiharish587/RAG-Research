@@ -1,0 +1,49 @@
+{
+  "question_id": "Q284",
+  "query": "Which film was released first: Sacred Planet or Oz the Great and Powerful?",
+  "ground_truth": "Sacred Planet",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Sacred Planet was released first: Return to Oz was not available in theaters until 2004, while Sacred Planet premiered in 2004.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oz the Great and Powerful: Oz the Great and Powerful is a 2013 American fantasy adventure film directed by Sam Raimi and produced by Joe Roth, from a screenplay written by David Lindsay-Abaire and Mitchell Kapner.  The film stars James Franco, Michelle Williams, Rachel Weisz and Mila Kunis, with Zach Braff, Bill Cobbs, Joey King, and Tony Cox in supporting roles.  Based on L. Frank Baum's \"Oz\" novels and set 20 years before the events of the original novel, \"Oz the Great and Powerful\" is a spiritual prequel to the 1939 Metro-Goldwyn-Mayer film, \"The Wizard of Oz\".  The film tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.  Oscar is then enlisted to restore order in Oz, while struggling to resolve conflicts with the witches and himself.",
+      "Sacred Planet: Sacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor.  Robert Redford provided narration for the film.  The film was released by Walt Disney Pictures on April 22, 2004, and grossed $1,108,356.",
+      "Return to Oz: Return to Oz is a 1985 fantasy adventure film directed and written by Walter Murch, an editor and sound designer, co-written by Gill Dennis and produced by Paul Maslansky.  It stars Nicol Williamson as the Nome King, Jean Marsh as Princess Mombi, Piper Laurie as Aunt Em, Matt Clark as Uncle Henry and introduces Fairuza Balk as Dorothy Gale.  It is loosely based on L. Frank Baum's \"Oz\" novels, mainly \"The Marvelous Land of Oz\" (1904) and \"Ozma of Oz\" (1907), yet is set six months after the events of the first novel, \"The Wonderful Wizard of Oz\" (1900) took place.  Although it is not a sequel and unrelated to the 1939 Metro-Goldwyn-Mayer film, \"The Wizard of Oz\", it borrows a few elements of it such as the ruby slippers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 577,
+    "generation_tokens": 37,
+    "generation_speed": 233.0253619765589,
+    "prompt_eval_speed": 71490.52162061703,
+    "generation_latency_s": 0.2852398999966681,
+    "latency": 0.6737821000861004,
+    "total_prompt_tokens": 707,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2474895,
+    "stage_route_s": 0.11048099992331117,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22072630003094673,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05714489996898919,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6399963796138763e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28529080003499985,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6737936000572518,
+    "unaccounted_latency_s": 9.510014206171036e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Sacred Planet\" (1975)",
+      "\"Oz the Great and Powerful\" (1939)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

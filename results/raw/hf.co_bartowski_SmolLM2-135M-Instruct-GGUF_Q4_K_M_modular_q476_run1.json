@@ -1,0 +1,49 @@
+{
+  "question_id": "Q476",
+  "query": "Which American cable news and talk radio host was the former GOP representative",
+  "ground_truth": "Charles Joseph",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "You are correct that the answer to the question \"Which American cable news and talk radio host was the former GOP representative?\" is provided by Dennis Mark Prager in the context of \"Morning Joe.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joe Scarborough: Charles Joseph Scarborough ( ; born April 9, 1963) is an American cable news and talk radio host.  He is currently the co-host of \"Morning Joe\" on MSNBC, and previously hosted \"Scarborough Country\" on the same channel.  Scarborough was previously a lawyer and a politician, and served in the United States House of Representatives from 1995 to 2001 as a Republican from the 1st district of Florida.",
+      "Morning Joe: Morning Joe is a weekday NBC News morning news and talk show, airing from 6:00 a.m. to 9:00 a.m. Eastern Time on the network's cable news channel MSNBC.  It features former GOP representative Joe Scarborough providing both enterprise reporting and discussion on the news of the day in a panel format with co-hosts Mika Brzezinski and Willie Geist.  It was created as the replacement for \"Imus in the Morning,\" which was cancelled in April 2007 after simulcasting on MSNBC since 1996.",
+      "Dennis Prager: Dennis Mark Prager ( ; born August 2, 1948) is an American conservative and nationally syndicated radio talk show host, columnist, author, and public speaker."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 362,
+    "generation_tokens": 42,
+    "generation_speed": 387.68276473194504,
+    "prompt_eval_speed": 22670.340681362726,
+    "generation_latency_s": 0.23567159997764975,
+    "latency": 0.6033497999887913,
+    "total_prompt_tokens": 490,
+    "total_generation_tokens": 91,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2281158,
+    "stage_route_s": 0.12630690005607903,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18413459998555481,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057064399938099086,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8399979025125504e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23570280009880662,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6033589999424294,
+    "unaccounted_latency_s": 9.259989019483328e-05,
+    "route": "rag",
+    "router_raw": "The answer to this user question is \"American Cable News Host.\"",
+    "sub_queries": [
+      "\"Which American cable news and talk radio host was the former GOP representative?\"",
+      "\"Who is the former GOP representative from the Democratic Party?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

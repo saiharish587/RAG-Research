@@ -1,0 +1,49 @@
+{
+  "question_id": "Q143",
+  "query": "Both Truth in Science and Discovery embrace what campaign?",
+  "ground_truth": "\"Teach the Controversy\" campaign",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Both Truth in Science and the Discovery Institute (DI) are involved in promoting the \"Teach the Controversy\" campaign, which aims to allow teaching of pseudoscientific intelligent design creationism alongside evolution in school science lessons.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Truth in Science: Truth in Science is a United Kingdom-based creationist organization which promotes the Discovery Institute's \"Teach the Controversy\" campaign, which it uses to try to get pseudoscientific intelligent design creationism taught alongside evolution in school science lessons.  The organization claims that there is scientific controversy about the validity of Darwinian evolution, a view rejected by the United Kingdom's Royal Society and over 50 Academies of Science around the world.  The group is affiliated with the Discovery Institute, the hub of the intelligent design movement, following its strategy and circulating the Institute's promotional materials.",
+      "Intelligent design and science: The relationship between intelligent design and science has been a contentious one.  Intelligent design (ID) is presented by its proponents as science and claims to offer an alternative to evolution.  The Discovery Institute, a politically conservative think tank and the leading proponents of intelligent design, launched a campaign entitled \"Teach the Controversy\" which claims that a controversy exists within the scientific community over evolution.  The scientific community, however, states that there is no controversy and rejects intelligent design as creationism due to ID proponents' lack of peer-reviewed research and the scientifically undefined quality of observable intelligence.",
+      "Discovery Institute: The Discovery Institute (DI) is a politically conservative non-profit think tank based in Seattle, Washington, best known for its advocacy of the pseudoscientific principle of intelligent design (ID).  Its \"Teach the Controversy\" campaign aims to permit teaching of anti-evolution, intelligent-design beliefs in United States public high school science courses alongside accepted scientific theories, positing that a scientific controversy exists over these subjects."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 46,
+    "generation_speed": 237.44386517317915,
+    "prompt_eval_speed": 49140.34873795878,
+    "generation_latency_s": 0.3120806000661105,
+    "latency": 0.7036891999887303,
+    "total_prompt_tokens": 523,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22503109999999998,
+    "stage_route_s": 0.10307760001160204,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23170380003284663,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056658599991351366,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.870002157986164e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.31211729999631643,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7037003999575973,
+    "unaccounted_latency_s": 9.499990846961737e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Both Truth in Science and Discovery embrace the \"Truth in Science\" campaign.",
+      "Query 2: Both Truth in Science and Discovery embrace the \"Discovery\" campaign."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

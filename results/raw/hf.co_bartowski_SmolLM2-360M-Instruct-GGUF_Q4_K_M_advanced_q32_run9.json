@@ -1,0 +1,42 @@
+{
+  "question_id": "Q32",
+  "query": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+  "ground_truth": "Fujioka, Gunma",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Buck-Tick hails from Canada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Canada: Canada ( ; ] ) is a country in the northern part of North America.  Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 e6km2 , making it the world's second-largest country by total area and the fourth-largest country by land area.  Canada's southern border with the United States is the world's longest bi-national land border.  The majority of the country has a cold or severely cold winter climate, but southerly areas are warm in summer.  Canada is sparsely populated, the majority of its land territory being dominated by forest and tundra and the Rocky Mountains.  It is highly urbanized with 82 per cent of the 35.15\u00a0million people concentrated in large and medium-sized cities, many near the southern border.  Its capital is Ottawa, and its largest metropolitan areas are Toronto, Montreal and Vancouver.",
+      "Buck-Tick: Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983.  The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985.  In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them.  They are commonly credited as one of the founders of the visual kei movement.",
+      "Atsushi Sakurai: Atsushi Sakurai (\u6afb\u4e95 \u6566\u53f8 , Sakurai Atsushi , born March 7, 1966 in Fujioka, Gunma) is a Japanese musician and singer-songwriter.  He has been the vocalist of the rock band Buck-Tick since 1985, previously being their drummer from 1983.  He released the solo album \"Ai no Wakusei\" in 2004 and was also a member of Schwein alongside Hisashi Imai (Buck-Tick), Sascha Konietzko (KMFDM) and Raymond Watts.  In 2015, he formed a solo project called The Mortal."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 602,
+    "generation_tokens": 10,
+    "generation_speed": 270.43106712099086,
+    "prompt_eval_speed": 81804.59301535535,
+    "generation_latency_s": 0.8859930000035092,
+    "latency": 3.4132934999652207,
+    "total_prompt_tokens": 682,
+    "total_generation_tokens": 19,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1283117,
+    "stage_rewrite_s": 1.2085204999893904,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1080241000745445,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21063169999979436,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8860344000859186,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.413304000045173,
+    "unaccounted_latency_s": 9.379989933222532e-05,
+    "rewritten_query": "Buck-Tick originates in Canada.",
+    "query_was_rewritten": true
+  }
+}

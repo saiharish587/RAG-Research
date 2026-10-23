@@ -1,0 +1,49 @@
+{
+  "question_id": "Q297",
+  "query": "The Church of the Guanche People was founded in the city that is on the most populated island of what larger area?",
+  "ground_truth": "Macaronesia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Church of the Guanche People was founded in Santiago del Estero, which is located on the largest and most populated island of Macaronesia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Church of the Guanche People: The Church of the Guanche People (Spanish: \"Iglesia del Pueblo Guanche\" ) is a religious organisation, founded in 2001 in the city of San Crist\u00f3bal de La Laguna (Tenerife, Canary Islands, Spain).  It aims to perpetuate and spread the pagan religion of the ancient Guanche people.",
+      "Tenerife: Tenerife ( ; ] ) is the largest and most populated island of the seven Canary Islands.  It is also the most populated island of Spain, with a land area of 2034.38 km2 and 898,680 inhabitants, 43 percent of the total population of the Canary Islands.  Tenerife is the largest and most populous island of Macaronesia.",
+      "Santiago del Estero: Santiago del Estero (] , Spanish for \"Saint-James-Upon-The-Lagoon\") is the capital of Santiago del Estero Province in northern Argentina.  It has a population of 244,733 inhabitants, (2001 census ) making it the twelfth largest city in the country, with a surface area of 2,116\u00a0km\u00b2.  It lies on the Dulce River and on National Route 9, at a distance of 1,042\u00a0km north-northwest from Buenos Aires.  Estimated to be 455 years old, Santiago del Estero was the first city founded by Spanish settlers in the territory that is now Argentina.  As such, it is nicknamed \"Madre de Ciudades\" (Mother of Cities).  Similarly, it has been officially declared the \"mother of cities and cradle of folklore.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 452,
+    "generation_tokens": 33,
+    "generation_speed": 237.12177280859964,
+    "prompt_eval_speed": 55699.32224276032,
+    "generation_latency_s": 0.2626004000194371,
+    "latency": 0.8303534000879154,
+    "total_prompt_tokens": 600,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22666200000000003,
+    "stage_route_s": 0.10221609997097403,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.40756099997088313,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05778869998175651,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.13000413775444e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26264730002731085,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8303676000796258,
+    "unaccounted_latency_s": 0.00010400009341537952,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Guanche People's Church of the Guanche People was founded in the city that is on the most populated island of the Canary Islands.\"",
+      "\"The Guanche People's Church of the Guanche People was founded in the city that is on the largest area of the Canaries, which are located on the Atlantic Ocean.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

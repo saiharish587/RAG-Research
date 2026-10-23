@@ -1,0 +1,48 @@
+{
+  "question_id": "Q27",
+  "query": "The 2011\u201312 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+  "ground_truth": "1838",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The 2011-12 VCU Rams men's basketball team played their home games at Stuart C. Siegel Center during the 2011\u201312 NCAA Division I men's basketball season, and they finished in second place after beating Drexel Michigan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2011\u201312 VCU Rams men's basketball team: The 2011\u201312 VCU Rams men's basketball team represented Virginia Commonwealth University during the 2011\u201312 NCAA Division I men's basketball season.  It was the 44th season of the University fielding a men's basketball program.  Led by third-year head coach Shaka Smart, the Rams were coming off a season marked by a run to the Final Four.  Expected to finish lower in the CAA regular season standings, the Rams finished as regular season runners-up with a 15\u20133 conference record, before winning the 2012 CAA Men's Basketball Championship against Drexel, 59\u201356, earning their 11th ever berth into the NCAA Tournament.  It was also the first season since 1984\u201385 that the Rams consecutively qualified for the NCAA Tournament.",
+      "2012\u201313 VCU Rams men's basketball team: The 2012\u201313 VCU Rams men's basketball team represented Virginia Commonwealth University during the 2012\u201313 NCAA Division I men's basketball season.  It was the 45th season of the University fielding a men's basketball program.  Led by fourth-year head coach Shaka Smart, they played their home games at the Stuart C. Siegel Center.  This was the Rams inaugural season in the Atlantic 10 Conference (A10), after spending the past 17 years in the Colonial Athletic Association (CAA).  They finished the season 27\u20139, 12\u20134 in A10 play to finish in second place.  They advanced to the championship game of the 2013 Atlantic 10 Tournament where they lost to Saint Louis.  They received an at-large bid to the 2013 NCAA Tournament, their third straight NCAA Tournament appearance, where they defeated Akron in the first round before losing in the third round to Michigan.",
+      "2009\u201310 VCU Rams men's basketball team: The 2009\u201310 VCU Rams men's basketball team represented Virginia Commonwealth University during the 2009\u201310 college basketball season.  This was head coach Shaka Smart's first season at VCU.  The Rams compete in the Colonial Athletic Association and played their home games at Stuart C. Siegel Center.  They finished the season 27\u20139, 11\u20137 in CAA play and lost in the semifinals of the 2010 CAA Men's Basketball Tournament.  They were champions of the 2010 College Basketball Invitational."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 692,
+    "generation_tokens": 60,
+    "generation_speed": 364.2677610889178,
+    "prompt_eval_speed": 106658.44636251542,
+    "generation_latency_s": 0.28405510005541146,
+    "latency": 0.6998304000589997,
+    "total_prompt_tokens": 868,
+    "total_generation_tokens": 141,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2241627,
+    "stage_route_s": 0.17965879989787936,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2000535000115633,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03588580002542585,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.029995761811733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28408969996962696,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6998394000111148,
+    "unaccounted_latency_s": 0.00011200015433132648,
+    "route": "rag",
+    "router_raw": "The 2011\u201312 VCU Rams men's basketball team, led by third year head coach Shaka Smart, played at Virginia Commonwealth University.",
+    "sub_queries": [
+      "The 2011\u201312 VCU Rams men's basketball team, led by third-year head coach Shaka Smart, played at Virginia Commonwealth University from 3 to 5 January 2012."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

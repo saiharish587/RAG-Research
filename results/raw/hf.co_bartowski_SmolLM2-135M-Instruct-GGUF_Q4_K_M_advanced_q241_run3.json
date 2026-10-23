@@ -1,0 +1,42 @@
+{
+  "question_id": "Q241",
+  "query": "What arcade game is named after the only player in major league history to have a 0.300 batting average for 7 consecutive seasons?",
+  "ground_truth": "a pinball machine",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The arcade game that is named after the only player in major league history to have a 0.300 batting average for 7 consecutive seasons is \"Batman\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Batman: Batman is a fictional superhero appearing in American comic books published by DC Comics.  The character was created by artist Bob Kane and writer Bill Finger, and first appeared in \"Detective Comics\" #27 (1939).  Originally named the \"Bat-Man\", the character is also referred to by such epithets as the Caped Crusader, the Dark Knight, and the World's Greatest Detective.",
+      "Batman v Superman: Dawn of Justice: Batman v Superman: Dawn of Justice is a 2016 American superhero film featuring the DC Comics characters Batman and Superman.  Directed by Zack Snyder and distributed by Warner Bros.  Pictures, the film is the second installment in the DC Extended Universe (DCEU) following 2013's \"Man of Steel\".  It was written by Chris Terrio and David S. Goyer, and features an ensemble cast that includes Ben Affleck, Henry Cavill, Amy Adams, Jesse Eisenberg, Diane Lane, Laurence Fishburne, Jeremy Irons, Holly Hunter and Gal Gadot.  \"Batman v Superman: Dawn of Justice\" is the first live-action film to feature Batman and Superman together, as well as the first live-action cinematic portrayal of Wonder Woman, Aquaman, Flash and Cyborg.  In the film, criminal mastermind Lex Luthor manipulates Batman into a preemptive battle with Superman, whom Luthor is obsessed with defeating.",
+      "Batman in film: The fictional superhero Batman, who appears in American comic books published by DC Comics, has appeared in various films since his inception.  Created by Bob Kane and Bill Finger, the character first starred in two serial films in the 1940s, \"Batman\" and \"Batman and Robin\".  The character also appeared in the 1966 film \"Batman\", which was a feature film adaptation of the 1960s \"Batman\" TV series starring Adam West and Burt Ward, who also starred in the film.  Toward the end of the 1980s, the Warner Bros. studio began producing a series of feature films starring Batman, beginning with the 1989 film \"Batman\", directed by Tim Burton and starring Michael Keaton.  Burton and Keaton returned for the 1992 sequel \"Batman Returns\", and in 1995, Joel Schumacher directed \"Batman Forever\" with Val Kilmer as Batman.  Schumacher also directed the 1997 sequel \"Batman & Robin\", which starred George Clooney.  \"Batman & Robin\" was poorly received by both critics and fans, leading to the cancellation of \"Batman Unchained\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 694,
+    "generation_tokens": 39,
+    "generation_speed": 390.8050584203459,
+    "prompt_eval_speed": 101864.08337002789,
+    "generation_latency_s": 0.18738259992096573,
+    "latency": 0.7376799000194296,
+    "total_prompt_tokens": 786,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12854349999999998,
+    "stage_rewrite_s": 0.22426799999084324,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07640659995377064,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24947599996812642,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18743769999127835,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7376924999989569,
+    "unaccounted_latency_s": 0.00010520010255277157,
+    "rewritten_query": "The arcade game \"Batman v Superman\" was originally called \"Superman vs. Batman.\" The player's batting average is 0.300, which is significantly lower than the league record of 1.25 for Batman.",
+    "query_was_rewritten": true
+  }
+}

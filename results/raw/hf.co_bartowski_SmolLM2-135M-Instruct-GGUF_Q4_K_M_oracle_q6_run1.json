@@ -1,0 +1,33 @@
+{
+  "question_id": "Q6",
+  "query": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+  "ground_truth": "YG Entertainment",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Context:\n2014 S/S is the debut album of South Korean boy group WINNER, released on August 12, 2014 by YG Entertainment. The band's debut album features a diverse range of songs that showcase their unique sound and style.\n\nWinner (band): WINNER was formed in 2013 by YG Entertainment and debuted in 2014 with four members: Jinwoo, Seunghoon, Mino, and Seungyoon.\n\nQuestion: Who is credited for writing the lyrics and composing the majority of the album's songs?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2014 S/S: 2014 S/S is the debut album of South Korean group WINNER.  It was released on August 12, 2014 by the group's record label, YG Entertainment.  The members were credited for writing the lyrics and composing the majority of the album's songs.",
+      "Winner (band): Winner (Hangul: \uc704\ub108), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014.  It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon.  Originally a five-piece group with Taehyun, who later departed from the group in November 2016."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 260,
+    "generation_tokens": 134,
+    "generation_speed": 365.2539878103296,
+    "prompt_eval_speed": 18711.766822598056,
+    "generation_latency_s": 0.45678769994992763,
+    "latency": 0.45684179989621043,
+    "total_prompt_tokens": 260,
+    "total_generation_tokens": 134,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0652581,
+    "stage_generate_s": 0.45682189997751266,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4568479999434203,
+    "unaccounted_latency_s": 2.6499968953430653e-05
+  }
+}

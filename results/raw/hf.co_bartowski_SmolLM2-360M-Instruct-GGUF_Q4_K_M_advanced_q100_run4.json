@@ -1,0 +1,42 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "No, Yingkou and Fuding are not the same level of city. Yingkou is a prefecture-level city located in Liaoning province, while Fuding is a county-level city located on the border with Zhejiang province.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "Roman Catholic Diocese of Yingkou: The Roman Catholic Diocese of Yingkou/Yingkow (Latin: \"Imcheuven(sis)\" , ) is a diocese located in the city of Yingkou in the Ecclesiastical province of Shenyang \u700b\u967d in China."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 225,
+    "generation_tokens": 54,
+    "generation_speed": 256.4029514828637,
+    "prompt_eval_speed": 48407.917383821,
+    "generation_latency_s": 1.1042136000469327,
+    "latency": 3.5088691000128165,
+    "total_prompt_tokens": 299,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12268019999999999,
+    "stage_rewrite_s": 1.2157619000645354,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.035191799979657,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15356750006321818,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1042540000053123,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.508879699977115,
+    "unaccounted_latency_s": 0.00010509986896067858,
+    "rewritten_query": "Yingkou and Fuding are two major cities in China, but they have different levels of development and infrastructure.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q360",
+  "query": "Who were the producers of the show for which Chris McKay made his feature film directorial debut?",
+  "ground_truth": "Dan Lin, Roy Lee, Phil Lord and Christopher Miller",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Context:\nChris McKay: Chris McKay is an American film and television director, producer, editor, animator, and visual effects artist. He was best known for directing and editing three seasons of \"Robot Chicken\" and two seasons of \"Moral Orel\".  He worked as an animation co-director on \"The Lego Movie\" (2014) with Phil Lord and Christopher Miller.\n\nDavid Fincher: David Andrew Leo Fincher is a British film director, producer, editor, animator, and visual effects artist. He was nominated for the Academy Award for Best Director for \"The Curious Case of Benjamin Button\" (2008) and \"The Social Network\" (2010).\n\nQuestion: Who directed the show for which Chris McKay made his feature film directorial debut?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris McKay: Chris McKay, also known as Chris Taylor, is an American film and television director, producer, editor, animator, and visual effects artist.  He is best known for directing and editing three seasons of \"Robot Chicken\" and two seasons of \"Moral Orel\".  He worked as an animation co-director on \"The Lego Movie\" (2014) with Phil Lord and Christopher Miller.  He made his feature film directorial debut with \"The Lego Batman Movie\" (2017)\".\"  He is attached to direct a live-action film about Nightwing.",
+      "David Fincher: David Andrew Leo Fincher (born August 28, 1962) is an American director and producer, notably for films, television series and music videos.  He was nominated for the Academy Award for Best Director for \"The Curious Case of Benjamin Button\" (2008) and \"The Social Network\" (2010).  For the latter, he won the Golden Globe Award for Best Director and the BAFTA Award for Best Direction.",
+      "The Lego Batman Movie: The Lego Batman Movie is a 2017 3D computer-animated superhero comedy film, produced by Warner Animation Group, directed by Chris McKay, and written by Seth Grahame-Smith, Chris McKenna, Erik Sommers, Jared Stern and John Whittington, and produced by Dan Lin, Roy Lee, Phil Lord and Christopher Miller.  Based on the \"Lego Batman\" toy line, the film is an international co-production of the United States, Australia and Denmark, and the first spin-off installment of \"The Lego Movie\".  The story focuses on the DC Comics character Batman as he attempts to overcome his greatest fear to stop the Joker's latest plan, with Will Arnett reprising his role as Batman for the film, along with Zach Galifianakis, Michael Cera, Rosario Dawson and Ralph Fiennes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 501,
+    "generation_tokens": 174,
+    "generation_speed": 409.0027619439384,
+    "prompt_eval_speed": 67104.2057326547,
+    "generation_latency_s": 0.5117818999569863,
+    "latency": 0.9048451000126079,
+    "total_prompt_tokens": 581,
+    "total_generation_tokens": 204,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12316740000000001,
+    "stage_rewrite_s": 0.1543390000006184,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07639039994683117,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16220670007169247,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.5118232000386342,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9048561999807134,
+    "unaccounted_latency_s": 9.749992750585079e-05,
+    "rewritten_query": "Chris McKay's directorial debut, \"The Show,\" was directed by David Fincher and stars Chris McKay as the lead actor.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q310",
+  "query": "Are Staten Island Catapult and This Is Elvis both documentaries?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, Staten Island Catapult is not a documentary film. It's an award-winning documentary about a disgruntled commuter and his proposal to build a catapult that launches individuals from Staten Island to Downtown Manhattan in 5 minutes.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "This Is Elvis: This Is Elvis is a 1981 documentary film written and directed by Andrew Solt and Malcolm Leo, based on the life of Elvis Presley.  It combined archival footage with reenactments, and voice-over narration by pop singer Ral Donner, imitating Presley's speaking voice.  It was screened out of competition at the 1981 Cannes Film Festival.  The film grossed $2 million at the box office in the U.S. and Canada, ranking #92 for 1981.",
+      "Staten Island Catapult: The Staten Island Catapult is a 2005 documentary about a disgruntled commuter and his proposal to build a catapult that launches individuals from Staten Island to Downtown Manhattan in 5 minutes.  The film was written and directed by independent filmmaker Gregorio Smith.",
+      "Brian C. Bialiy: Brian C. Bialiy worked on and appeared in the award-winning documentary The Staten Island Catapult.  Starring as the Angry White Man, Brian poignantly portrays a disgruntled and confounded commuter confronted by the 'latest' in cross-borough transportation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 333,
+    "generation_tokens": 54,
+    "generation_speed": 259.0648717628885,
+    "prompt_eval_speed": 45189.306554485,
+    "generation_latency_s": 1.122783500002697,
+    "latency": 3.5098042999161407,
+    "total_prompt_tokens": 408,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1293703,
+    "stage_rewrite_s": 1.2521502999588847,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.006775299902074,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12794429995119572,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1228317000204697,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5098156000021845,
+    "unaccounted_latency_s": 0.00011460017412900925,
+    "rewritten_query": "No, Staten Island Catapult is a documentary about the history of the Statue of Liberty, while This Is Elvis is an American rock band.",
+    "query_was_rewritten": true
+  }
+}

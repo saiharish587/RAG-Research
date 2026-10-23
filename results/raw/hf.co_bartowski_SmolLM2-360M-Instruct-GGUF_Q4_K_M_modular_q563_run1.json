@@ -1,0 +1,49 @@
+{
+  "question_id": "Q563",
+  "query": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Bendict of Nursia who is a patron saint of what continent?",
+  "ground_truth": "Europe",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Gualdo Tadino Cathedral, a Roman Catholic cathedral in Gualdo Tadino, Italy, dedicated to the Assumption of the Blessed Virgin Mary. This building plan has become less dominant in new buildings since the later 20th century.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Basilica: A basilica is a type of building, usually a Christian church, that is typically rectangular with a central nave and aisles, usually with a slightly raised platform and an apse at one or both ends.  In Europe and the Americas it is the most common architectural style for churches though this building plan has become less dominant in new buildings since the later 20th century.  Today the term \"basilica\" is often used to refer to any large, ornate church building, especially Roman Catholic and Eastern Orthodox, even if it does not strictly follow this style.",
+      "Gualdo Tadino Cathedral: Gualdo Tadino Cathedral (Italian: \"Duomo di Gualdo Tadino; Basilica Cattedrale di San Benedetto\" ) is a Roman Catholic cathedral in Gualdo Tadino in Umbria, Italy, dedicated to Saint Benedict of Nursia.  Formerly a Benedictine abbey church, it became a cathedral in 1915, and is now a co-cathedral in the diocese of Assisi-Nocera Umbra-Gualdo Tadino.",
+      "Parma Cathedral: Parma Cathedral (Italian: \"Duomo di Parma; Cattedrale di Santa Maria Assunta\" ) is a Roman Catholic cathedral in Parma, Emilia-Romagna (Italy), dedicated to the Assumption of the Blessed Virgin Mary.  It is the episcopal seat of the Diocese of Parma.  It is an important Italian Romanesque cathedral: the dome, in particular, is decorated by a highly influential illusionistic fresco by Renaissance painter Antonio da Correggio."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 433,
+    "generation_tokens": 53,
+    "generation_speed": 216.96147501054105,
+    "prompt_eval_speed": 9831.078012896194,
+    "generation_latency_s": 0.39919050002936274,
+    "latency": 0.787686700001359,
+    "total_prompt_tokens": 595,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23397790000000002,
+    "stage_route_s": 0.10674929991364479,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22461989999283105,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056933099986054,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7999975979328156e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.399225200060755,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7876959000714123,
+    "unaccounted_latency_s": 0.00011100014671683311,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Basilica of St. Mary and the Angels\"",
+      "\"The Church of San Bernardino in Rome\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q72",
+  "query": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
+  "ground_truth": "276,170 inhabitants",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The inhabitant of the city where the 122nd SS-Standarte was formed in 2014 would be Strasbourg. The context provided mentions that it was a regimental command of the Allgemeine-SS and was activated on November 12, 1940, and reached battalion strength by the end of the year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "122nd SS-Standarte: The 122nd SS-Standarte was a regimental command of the Allgemeine-SS that was formed in the city of Strasbourg during World War II.  The Standarte was activated on November 12, 1940, and reached battalion strength by the end of the year.  The command was a successor to the previously disbanded 121st SS-Standarte, also situated in Strasbourg.",
+      "122d Fighter Squadron: The 122nd Fighter Squadron (122nd FS) is a unit of the Louisiana Air National Guard 159th Fighter Wing located at Naval Air Station Joint Reserve Base New Orleans, Louisiana.  The 122nd is equipped with the F-15C/D Eagle.",
+      "Potsdam: Potsdam (] ) is the capital and largest city of the German federal state of Brandenburg.  It directly borders the German capital Berlin and is part of the Berlin/Brandenburg Metropolitan Region.  It is situated on the River Havel, 24 km southwest of Berlin's city centre."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 325,
+    "generation_tokens": 77,
+    "generation_speed": 238.90784982935156,
+    "prompt_eval_speed": 24911.85037559405,
+    "generation_latency_s": 0.4473338999086991,
+    "latency": 0.8252427999395877,
+    "total_prompt_tokens": 475,
+    "total_generation_tokens": 116,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2216536,
+    "stage_route_s": 0.09357280004769564,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22977279999759048,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054366700001992285,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6399963796138763e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4473881999729201,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8252548000309616,
+    "unaccounted_latency_s": 9.869993664324284e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The 122nd SS-Standarte was formed in 2014\"",
+      "\"The city where this occurred is Berlin, Germany\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

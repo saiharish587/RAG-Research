@@ -1,0 +1,49 @@
+{
+  "question_id": "Q153",
+  "query": "The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aim\u00e9 Argand?",
+  "ground_truth": "Argand lamp",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The lamp used in many lighthouses is similar to the Lewis lamp patented in 1810, which was designed by Winslow Lewis.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lewis lamp: The Lewis lamp is a type of light fixture used in lighthouses.  It was invented by Winslow Lewis who patented the design in 1810.  The primary marketing point of the Lewis lamp was that it used less than half the oil of the prior oil lamps which they replaced.  The lamp used a similar design to an Argand lamp, adding a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.  A similar variant using a parabolic reflector was created by the inventor of the Argand lamp, Aim\u00e9 Argand.  While the Argand variant became widely used by European lighthouses, the Lewis lamp design was selected by the United States for use in American lighthouses.",
+      "Argand lamp: The Argand lamp, a kind of oil lamp, was invented and patented in 1780 by Aim\u00e9 Argand.  Its output is 6 to 10 candela, brighter than that of earlier lamps.  Its more complete combustion of the candle wick and oil than in other lamps required much less frequent trimming of the wick.",
+      "Kerosene lamp: A kerosene lamp (usually called a paraffin lamp in some countries) is a type of lighting device that uses kerosene (paraffin) as a fuel.  Kerosene lamps have a wick or mantle as light source, protected by a glass chimney or globe; lamps may be used on a table, or hand-held lanterns may be used for portable lighting.  Like oil lamps, they are useful for lighting without electricity, such as in regions without rural electrification, in electrified areas during power outages, at campsites, and on boats.  There are three types of kerosene lamp: flat wick, central draught (tubular round wick), and mantle lamp.  Kerosene lanterns meant for portable use have a flat wick and are made in dead flame, hot blast, and cold blast variants."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 492,
+    "generation_tokens": 31,
+    "generation_speed": 209.81529485817165,
+    "prompt_eval_speed": 55915.44493692465,
+    "generation_latency_s": 0.2708048999775201,
+    "latency": 0.747487899963744,
+    "total_prompt_tokens": 650,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2226004,
+    "stage_route_s": 0.09298980003222823,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3244868000037968,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05903459992259741,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.910002462565899e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.27083649998530746,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7474982000421733,
+    "unaccounted_latency_s": 0.00010190007742494345,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, the lamp used in many lighthouses is similar to the one patented in 1780 by Aim\u00e9 Argand.",
+      "Query 2: The lamp used in many lighthouses is also known as the Argand lamp or Argand lantern."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

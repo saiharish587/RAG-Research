@@ -1,0 +1,49 @@
+{
+  "question_id": "Q215",
+  "query": "Who was born first, Arthur Conan Doyle or Penelope Lively?",
+  "ground_truth": "Arthur Ignatius Conan Doyle",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Arthur Conan Doyle was born first, as stated in the context.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Penelope Lively: Dame Penelope Margaret Lively DBE FRSL (born 17 March 1933) is a British writer of fiction for both children and adults.  She has won both the Booker Prize (\"Moon Tiger\", 1987) and the Carnegie Medal for British children's books (\"The Ghost of Thomas Kempe\", 1973).",
+      "Arthur Conan Doyle: Sir Arthur Ignatius Conan Doyle KStJ, DL (22 May 1859 \u2013 7 July 1930) was a British writer best known for his detective fiction featuring the character Sherlock Holmes.  Originally a physician, in 1887 he published \"A Study in Scarlet\", the first of four novels about Holmes and Dr. Watson.  In addition, Doyle wrote over fifty short stories featuring the famous detective.",
+      "Sherlock Holmes: Sherlock Holmes ( ) is a fictional private detective created by British author Sir Arthur Conan Doyle.  Known as a \"consulting detective\" in the stories, Holmes is known for his proficiency with observation, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 332,
+    "generation_tokens": 15,
+    "generation_speed": 240.2844968442636,
+    "prompt_eval_speed": 37124.0076037124,
+    "generation_latency_s": 0.18005129997618496,
+    "latency": 0.5619198000058532,
+    "total_prompt_tokens": 462,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2226027,
+    "stage_route_s": 0.09283590002451092,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23475969990249723,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054108699900098145,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.330005660653114e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1800836999900639,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.561928000068292,
+    "unaccounted_latency_s": 8.720019832253456e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Arthur Conan Doyle was born first in 1874.",
+      "Query 2: Penelope Lively was born first in 1903."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

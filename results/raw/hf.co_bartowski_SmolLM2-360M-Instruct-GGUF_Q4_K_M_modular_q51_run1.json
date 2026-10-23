@@ -1,0 +1,49 @@
+{
+  "question_id": "Q51",
+  "query": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+  "ground_truth": "2009 Big 12 Conference",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 1987 season for the Big Ten Conference.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Big Ten Conference: The Big Ten Conference (B1G), formerly Western Conference and Big Nine Conference, is the oldest Division I collegiate athletic conference in the United States.  Despite its name, the conference consists of 14 members (as of 2016).  They compete in the NCAA Division I; its football teams compete in the Football Bowl Subdivision (FBS), formerly known as Division I-A, the highest level of NCAA competition in that sport.  The conference includes the flagship public university in each of 11 states stretching from New Jersey to Nebraska, as well as two additional public land grant schools and a private university.",
+      "Minnesota Golden Gophers wrestling: The Minnesota Golden Gophers are a Division I college wrestling team based in Minneapolis, Minnesota.  They are a member of the Big Ten Conference and NCAA.  Wrestling began at the University of Minnesota in 1910, but the first formal dual meet was not until 1921 when coach Frank Gilman led the team to a victory over Wisconsin.  The Gophers have won the NCAA Division I Wrestling Championships team title three times, in 2001, 2002, and 2007.  WWE wrestler Brock Lesnar won the 2000 NCAA Wrestling Championship as a heavyweight after placing second in 1999.",
+      "uns of all time.  To date, they are the only men's Division I basketball team whose NCAA tournament journey ran from The First Four to the Final Four.  They are also the only team in the tournament to win five games, and not qualify for the national championship game."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 460,
+    "generation_tokens": 14,
+    "generation_speed": 236.31882785861382,
+    "prompt_eval_speed": 14593.908629441625,
+    "generation_latency_s": 0.19915430003311485,
+    "latency": 0.6871652000118047,
+    "total_prompt_tokens": 644,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2196229,
+    "stage_route_s": 0.10026409989222884,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.32306600001174957,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0645170999923721,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.240004975348711e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1991853000363335,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.687174400081858,
+    "unaccounted_latency_s": 9.000010322779417e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The 1985 NCAA Division I Men's Basketball Championship was held at the University of Minnesota.",
+      "Query 2: The 1974 NCAA Division I Men's Basketball Championship was held at the University of Minnesota."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "question_id": "Q126",
+  "query": "Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of which river?",
+  "ground_truth": "Richmond",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Mummulgum is located on the Bruxner Highway (Highway 44) between Tenterfield and Casino, and it is 58 km south-west of Kyogle. Therefore, Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of the Clarence River.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mummulgum: Mummulgum is a small rural village in the Northern Rivers region of New South Wales, Australia, 740 kilometres from the state capital, Sydney.  Mummulgum is located on Shannon Brook between Tenterfield and Casino on the Bruxner Highway (Highway 44).  It is 58 km south-west of Kyogle with the village and surrounding area being locally administered by Kyogle Council.  The nearest large town is Casino which is 27 kilometres east of Mummulgum.",
+      "Bruxner Highway: The Bruxner Highway is a 420 km state highway located in New South Wales, Australia.  The highway forms an east-west link from the Northern Rivers coast, across the Northern Tablelands in northern New South Wales, close to the border with Queensland.",
+      "Tabulam: Tabulam is a rural village in the far north-east of New South Wales, Australia, 800 kilometres from the state capital, Sydney.  Tabulam is located on the Bruxner Highway (Highway 44) between Tenterfield and Casino and on the Clarence River.  According to the 2006 Census, there were 573 people living in Tabulam.  Tabulam is locally administered by Kyogle Council."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 370,
+    "generation_tokens": 71,
+    "generation_speed": 239.57995896771408,
+    "prompt_eval_speed": 69877.24268177526,
+    "generation_latency_s": 0.40447939990554005,
+    "latency": 0.42137280001770705,
+    "total_prompt_tokens": 370,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0938425,
+    "stage_retrieve_s": 0.01681879989337176,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.4045138999354094,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4213799999561161,
+    "unaccounted_latency_s": 4.7800131142139435e-05
+  }
+}

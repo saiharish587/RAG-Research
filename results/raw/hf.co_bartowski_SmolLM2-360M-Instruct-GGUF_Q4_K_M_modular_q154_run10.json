@@ -1,0 +1,49 @@
+{
+  "question_id": "Q154",
+  "query": "The songs from the sountrack to \"When Harry Met Sally\" are performed by a singer that has had how many top 20 US albums?",
+  "ground_truth": "seven",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The songs from the soundtrack to \"When Harry Met Sally\" are performed by a singer who has had six top 20 US albums.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "When Harry Met Sally... (soundtrack): When Harry Met Sally... is the soundtrack to the movie \"When Harry Met Sally...\" starring Billy Crystal and Meg Ryan.  The songs are performed by pianist Harry Connick Jr., who won the Grammy Award for Best Jazz Male Vocal Performance.",
+      "Dusty Springfield: Mary Isobel Catherine Bernadette O'Brien, (16 April 1939 \u2013 2 March 1999), better known as Dusty Springfield, was an English pop singer and record producer whose career extended from the late 1950s to the 1990s.  With her distinctive sensual mezzo-soprano sound, she was an important blue-eyed soul singer and at her peak was one of the most successful British female performers, with six top 20 singles on the US \"Billboard\" Hot 100 and sixteen on the UK Singles Chart from 1963 to 1989.  She is a member of the US Rock and Roll and UK Music Halls of Fame.  International polls have named Springfield among the best female rock artists of all time.  Her image, supported by a peroxide blonde bouffant hairstyle, evening gowns, and heavy make-up, as well as her flamboyant performances made her an icon of the Swinging Sixties.",
+      "David Bowie: David Robert Jones (8 January 1947 \u2013 10 January 2016), known professionally as David Bowie ( ), was an English singer, songwriter and actor.  He was a leading figure in popular music for over five decades, acclaimed by critics and other musicians for his innovative work.  His career was marked by reinvention and visual presentation, his music and stagecraft significantly influencing popular music.  During his lifetime, his record sales, estimated at 140 million albums worldwide, made him one of the world's best-selling music artists.  In the UK, he was awarded nine platinum album certifications, eleven gold and eight silver, releasing eleven number-one albums.  In the US, he received five platinum and nine gold certifications.  He was inducted into the Rock and Roll Hall of Fame in 1996."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 565,
+    "generation_tokens": 30,
+    "generation_speed": 235.71378061332726,
+    "prompt_eval_speed": 69847.94164915316,
+    "generation_latency_s": 0.25476369995158166,
+    "latency": 0.7272149999625981,
+    "total_prompt_tokens": 727,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22141650000000002,
+    "stage_route_s": 0.0941079999320209,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.31672679993789643,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.061447500018402934,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.779989831149578e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25479519995860755,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7272240000311285,
+    "unaccounted_latency_s": 9.9200289696455e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Songs from the Sountrack to 'When Harry Met Sally' - Singer with Top 20 US Albums\"",
+      "\"Singer with Top 20 US Album List for Songs from the Sountrack to 'When Harry Met Sally'\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q307",
+  "query": "Which former mill town is near Rivington Hall Barn?",
+  "ground_truth": "Bolton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Rivington Hall Barn is located in Rivington, Lancashire, near Chorley and Bolton.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rivington Hall Barn: Rivington Hall Barn adjoins Rivington Hall in Rivington, Lancashire, near Chorley and Bolton.  The barn may date from between the 9th and 13th centuries, but more likely the 16th century, and was restored, altered and enlarged in 1905 by Jonathan Simpson for Lord Leverhulme.  It is a Grade II Listed building.",
+      "Rivington Hall: Rivington Hall is a Grade II* listed building in Rivington, Lancashire, England.  It was the manor house for the Lords of the Manor of Rivington.  The hall is of various builds as successor to a 15th-century timber-framed courtyard house that was built near to the present building of which no trace remains.  It is a private residence.",
+      "Converse Mill: The Converse Mill, also known as Clifton Mill #3, is a historic textile mill at 200 High Street in Spartanburg, South Carolina.  The main mill building is a four-story brick building with smaller additions, sited on 11 acre overlooking the Pacolet River to the east.  The mill was built in 1903 on the site of Clifton Mill #3, then the largest textile mill in the world, which had been destroyed by flood.  It was designed by the noted industrial architectural firm Lockwood, Green of Boston, Massachusetts.  The mill was closed sometime between 1968 and 1973, after which many of its windows were bricked over and it was converted to a warehouse.  It is the only surviving element of the Clifton Mill complex, which originally had three large buildings."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 441,
+    "generation_tokens": 23,
+    "generation_speed": 208.3201246297789,
+    "prompt_eval_speed": 11158.342189160467,
+    "generation_latency_s": 0.2608685999875888,
+    "latency": 0.6335518000414595,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2250687,
+    "stage_route_s": 0.10617190005723387,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21019280003383756,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056123899994418025,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.059999577701092e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2609194000251591,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.633568000048399,
+    "unaccounted_latency_s": 0.00010029994882643223,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Rivington Hall Barn\"",
+      "Query 2: \"near Mill Town\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q235",
+  "query": "What is the nickname of the city where Darling's Waterfront Pavilion is located?",
+  "ground_truth": "\"Queen City\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The nickname of the city where Darling's Waterfront Pavilion is located is \"Bangor.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Darling's Waterfront Pavilion: The Darling's Waterfront Pavilion (originally known as the Bangor Waterfront Pavilion) is an open-air amphitheater located within the Waterfront Park in Bangor, Maine.  The venue is a temporary structure built alongside the Penobscot River.  The venue typically operates from July until October.",
+      "Bay Lake, Florida: Bay Lake is a city in Orange County, Florida, United States.  The population was 47 at the 2010 census.  It is named after a lake located east of the Magic Kingdom.  All four of the Walt Disney World theme parks, and one of the two water parks, are located in Bay Lake.",
+      "Milwaukee: Milwaukee ( , ) is the largest city in the state of Wisconsin and the fifth-largest city in the Midwestern United States.  The county seat of Milwaukee County, it is on Lake Michigan's western shore.  Ranked by estimated 2014 population, Milwaukee was the 31st largest city in the United States.  The city's estimated population in 2015 was 600,155.  Milwaukee is the main cultural and economic center of the Milwaukee metropolitan area.  It is also part of the larger Milwaukee-Racine-Waukesha combined statistical area, which had an estimated population of 2,026,243 in the 2010 census."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 383,
+    "generation_tokens": 22,
+    "generation_speed": 243.91595986473752,
+    "prompt_eval_speed": 50229.50819672131,
+    "generation_latency_s": 0.20741730008739978,
+    "latency": 0.6826391000067815,
+    "total_prompt_tokens": 519,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2380188,
+    "stage_route_s": 0.10169689997565001,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3181046999525279,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055257300031371415,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.019991658627987e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.207450499990955,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6826478000730276,
+    "unaccounted_latency_s": 8.890021126717329e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The nickname of the city where Darling's Waterfront Pavilion is located is \"The City of Lakes.\"",
+      "Query 2: The nickname of the city where Darling's Waterfront Pavilion is located is \"The City of Lakes.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

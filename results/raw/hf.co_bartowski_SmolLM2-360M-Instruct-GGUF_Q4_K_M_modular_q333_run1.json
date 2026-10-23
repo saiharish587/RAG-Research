@@ -1,0 +1,49 @@
+{
+  "question_id": "Q333",
+  "query": "The Ingerophrynus gollum is named after a character in a book that sold how many copies?",
+  "ground_truth": "150 million copies",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Ingerophrynus gollum is named after a character in \"The Lord of the Rings\" by J. R. R. Tolkien, which sold over 150 million copies worldwide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gollum: Gollum is a fictional character from J. R. R. Tolkien's legendarium.  He was introduced in the 1937 fantasy novel \"The Hobbit\", and became an important supporting character in its sequel, \"The Lord of the Rings\".  Gollum was a Stoor Hobbit of the River-folk, who lived near the Gladden Fields.  Originally known as Sm\u00e9agol, he was corrupted by the One Ring and later named Gollum after his habit of making \"a horrible swallowing noise in his throat\".",
+      "The Lord of the Rings: The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien.  The story began as a sequel to Tolkien's 1937 fantasy novel \"The Hobbit\", but eventually developed into a much larger work.  Written in stages between 1937 and 1949, \"The Lord of the Rings\" is one of the best-selling novels ever written, with over 150 million copies sold.",
+      "Ingerophrynus gollum: Ingerophrynus gollum (Gollum's toad) is a species of true toad.  It has only been recorded from Endau-Rompin National Park, Johor, in closed-canopy lowland forests in the early evening following brief periods of afternoon precipitation.  It is called \"gollum\" with reference of the eponymous character of The Lord of the Rings by J. R. R. Tolkien."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 407,
+    "generation_tokens": 43,
+    "generation_speed": 240.42359282307618,
+    "prompt_eval_speed": 13986.734939344995,
+    "generation_latency_s": 0.32312570000067353,
+    "latency": 0.9025967000052333,
+    "total_prompt_tokens": 553,
+    "total_generation_tokens": 123,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22889890000000002,
+    "stage_route_s": 0.09982310002669692,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.42029520007781684,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05918229999952018,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1200040616095066e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.32315890002064407,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9026063000783324,
+    "unaccounted_latency_s": 9.64998034760356e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Ingerophrynus gollum, also known as the Gollum of the Ingerophrynus series, was originally published by author J.R.R. Tolkien in 1954.\"",
+      "\"The book is a fantasy novel written by J.R.R. Tolkien and first published in 1954.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q121",
+  "query": "What major truck road is located in Backford Cross?",
+  "ground_truth": "The A41",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The major truck road that is located in Backford Cross is the A41 road.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Backford Cross: Backford Cross is a village on the Wirral Peninsula, Cheshire, England.  It is a suburb of the town of Ellesmere Port and part of Cheshire West and Chester.  Backford Cross is located around the A41/A5117 junction, south of Great Sutton and about 1.5 mi north of the village of Backford, near Chester.  Backford Cross is largely made up of residential homes built from 1990 onwards and serves as a commuter village to Ellesmere Port and Chester, although inhabitants show no allegiance to either locality.  The area is split between postcode districts, with parts of the village in Great Sutton, Ellesmere Port CH66 and other areas in Backford, Chester CH1.",
+      "U.S. Route 287: U.S. Route 287 is a north\u2013south United States highway.  It is 2,882 km long.  It serves as the major truck route between Fort Worth, Texas and Amarillo, Texas, and between Fort Collins, Colorado and Laramie, Wyoming.  The highway is broken into two segments by Yellowstone National Park, where an unnumbered park road serves as a connector.",
+      "A41 road: The A41 is a major trunk road in England that links London and Birkenhead, although it has now in parts been superseded by motorways.  It passes through or near various towns and cities including Watford, Kings Langley, Hemel Hempstead, Aylesbury, Solihull, Birmingham, West Bromwich, Wolverhampton, Newport, Whitchurch, Chester and Ellesmere Port."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 424,
+    "generation_tokens": 19,
+    "generation_speed": 378.7803273459461,
+    "prompt_eval_speed": 64320.388349514564,
+    "generation_latency_s": 0.13804690004326403,
+    "latency": 0.5403619999997318,
+    "total_prompt_tokens": 495,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.138457,
+    "stage_rewrite_s": 0.17573340004310012,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07824160007294267,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14821429993025959,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13808070006780326,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5403707000659779,
+    "unaccounted_latency_s": 0.00010109995491802692,
+    "rewritten_query": "The major truck road in Backford Cross is the Backford Cross Road, which runs from the town of Backford to the city of Crossville.",
+    "query_was_rewritten": true
+  }
+}

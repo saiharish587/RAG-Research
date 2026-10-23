@@ -1,0 +1,42 @@
+{
+  "question_id": "Q33",
+  "query": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+  "ground_truth": "Charles Eug\u00e8ne",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Charles Nungesser",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "L'Oiseau Blanc: L'Oiseau Blanc (commonly known in the English-speaking world as The White Bird ) was a French Levasseur PL.8 biplane that disappeared in 1927, during an attempt to make the first non-stop transatlantic flight between Paris and New York City to compete for the Orteig Prize.  The aircraft was flown by French World War I aviation heroes, Charles Nungesser and Fran\u00e7ois Coli.  The aircraft took off from Paris on 8 May 1927 and was last seen over Ireland.  Less than two weeks later, Charles Lindbergh successfully made the New York\u2013Paris journey and claimed the prize, flying the \"Spirit of St. Louis\".",
+      "Charles Nungesser: Charles Eug\u00e8ne Jules Marie Nungesser, MC (15 March 1892 \u2013 presumably on or after 8 May 1927) was a French ace pilot and adventurer, best remembered as a rival of Charles Lindbergh.  Nungesser was a renowned ace in France, ranking third highest in the country with 43 air combat victories during World War I.",
+      "Levasseur PL.8: The Levasseur PL.8 was a single engine, two-seat long-distance record-breaking biplane aircraft modified from an existing Levasseur PL.4 carrier-based reconnaissance aircraft produced in France in the 1920s.  Levasseur built the aircraft in 1927, specifically for pilots Charles Nungesser and Fran\u00e7ois Coli for a transatlantic attempt to win the Orteig Prize.  Only two examples of the type were built, with the first PL.8-01 named \"L'Oiseau Blanc\" (The White Bird), that gained fame as Nungesser and Coli's aircraft."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 467,
+    "generation_tokens": 6,
+    "generation_speed": 332.0788133717069,
+    "prompt_eval_speed": 25499.6177787485,
+    "generation_latency_s": 0.1092749999370426,
+    "latency": 0.491286400007084,
+    "total_prompt_tokens": 542,
+    "total_generation_tokens": 22,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12499849999999998,
+    "stage_rewrite_s": 0.12945510004647076,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06996750005055219,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18242089997511357,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10934530000668019,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49129829998128116,
+    "unaccounted_latency_s": 0.00011009990703314543,
+    "rewritten_query": "Which French ace pilot and adventurer flew L'Oiseau Blanc?",
+    "query_was_rewritten": true
+  }
+}

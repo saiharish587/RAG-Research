@@ -1,0 +1,49 @@
+{
+  "question_id": "Q474",
+  "query": "Which \"Official Ireland\" group comprises about  78.3% of the population of Ireland? ",
+  "ground_truth": "The Catholic Church in Ireland",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Official Ireland is a term used by scholars such as Deborah K. King and Patricia Hill Collins to describe the way in which oppressive barriers that individuals face contribute to the level of oppression faced due to these factors culminating together to cause further and greater oppression.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Official Ireland: \"Official Ireland\" (Irish: \"\u00c9ire Oifigi\u00fail\" ) is a term widely used in the Republic of Ireland to denote The Establishment.  It refers to the most powerful figures in the media, the Catholic Church, and the political parties, who control the national debate.",
+      "Catholic Church in Ireland: The Catholic Church in Ireland (Irish: \"Eaglais Chaitliceach na h\u00c9ireann\" ) is part of the worldwide Catholic Church in communion with the Pope.  With 3.7 million members, it is the most populous Christian denomination in Ireland, comprising 78.3% of the population.  The Primate of All Ireland is the Archishop of Armagh and the Church ministers to Catholics on an All-Ireland basis; covering both the Republic of Ireland and Northern Ireland.  The Irish Catholic Bishops' Conference is a consultative body for ordinaries in Ireland.",
+      "Multiple Jeopardy: Multiple Jeopardy a term used by scholars such as Deborah K. King and Patricia Hill Collins describes the way in which oppressive barriers that individuals face contribute to the level of oppression faced due to these factors culminating together to cause further and greater oppression. \u201cThe modifier \u2018multiple\u2019 refers not only to several, simultaneous oppressions but to the multiplicative relationships among them as well.  In other words, the equivalent formulation is racism multiplied by sexism multiplied by classism.\"  - Deborah K. King Multiple Jeopardy stems off the term double jeopardy, which when used from a sociological perspective, refers to the additional obstacles individuals face when exposed to multiple disadvantages due to their unique being.  When considering double jeopardy, often times there is an emphasis on just two aspects such as race and gender.  An example of this would be the rights observed by black women.  Not only are these individuals oppressed because they are female, but also because they are black.  These women are a part of a dual oppressive system and are not only hindered by one trait, but by two.  \u201cNot only are colored women . . . handicapped on account of their sex, but they are almost everywhere baffled and mocked because of their race.  Not only because they are women, but because they are colored women."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 51,
+    "generation_speed": 357.64626680411504,
+    "prompt_eval_speed": 71055.381400209,
+    "generation_latency_s": 0.26758770004380494,
+    "latency": 0.6773148999782279,
+    "total_prompt_tokens": 686,
+    "total_generation_tokens": 118,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23420000000000002,
+    "stage_route_s": 0.10473799996543676,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2485585999675095,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05624199996236712,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5299955420196056e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2676274999976158,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6773271999554709,
+    "unaccounted_latency_s": 0.00010640011169016361,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Official Ireland - Official Ireland Group",
+      "These are two separate queries that generate exactly two search queries related to the user's question. The second query is a more specific and detailed one, while the first query is a general statement about the group of groups in Ireland."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

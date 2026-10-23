@@ -1,0 +1,42 @@
+{
+  "question_id": "Q80",
+  "query": "In which year was the King who made the 1925 Birthday Honours born?",
+  "ground_truth": "1865",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The King who made the 1925 Birthday Honours was born on 3 June 1925 in the Kingdom of the Netherlands. The coronation ceremony took place on 27 April 1926, and the coronations were published in the relevant gazette.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1925 Birthday Honours: The 1925 Birthday Honours were appointments by King George V to various orders and honours to reward and highlight good works by citizens of the British Empire.  The appointments were made to celebrate the official birthday of The King, and were published in \"The London Gazette\" on 3 June 1925.",
+      "Koningsdag: Koningsdag (] ) or King's Day is a national holiday in the Kingdom of the Netherlands.  Celebrated on 27 April (26 April if the 27th is a Sunday), the date marks the birth of King Willem-Alexander.",
+      "Birthday Honours: King's/Queen's Birthday Honours is, in some Commonwealth realms, the marking of the reigning monarch's official birthday by granting various individuals appointment into national or dynastic orders or the award of decorations and medals.  The honours are presented by the monarch or a viceregal representative.  New Year Honours and Birthday Honours are bestowed each year.  All royal honours are published in the relevant gazette, and the daily newspapers of each realm."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 311,
+    "generation_tokens": 61,
+    "generation_speed": 400.5699913975953,
+    "prompt_eval_speed": 25653.71607687866,
+    "generation_latency_s": 0.24730950000230223,
+    "latency": 0.5735228999983519,
+    "total_prompt_tokens": 390,
+    "total_generation_tokens": 91,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14090039999999998,
+    "stage_rewrite_s": 0.15710119996219873,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07479169999714941,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09420389996375889,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2473446000367403,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5735310999443755,
+    "unaccounted_latency_s": 9.019998833537102e-05,
+    "rewritten_query": "In 1925, the King who made the 1925 Birthday Honours was born in 1908.",
+    "query_was_rewritten": true
+  }
+}

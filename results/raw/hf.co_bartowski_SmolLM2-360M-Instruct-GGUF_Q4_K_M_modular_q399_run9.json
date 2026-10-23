@@ -1,0 +1,48 @@
+{
+  "question_id": "Q399",
+  "query": "Snowdrop is a proprietary game engine first revealed with an online-only action role-playing video game developed by who?",
+  "ground_truth": "Massive Entertainment",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "John Wick",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Snowdrop (game engine): Snowdrop is a proprietary game engine created by Ubisoft for use on Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One.  It was first revealed at E3 2013 with \"Tom Clancy's The Division\", the first game using the engine.",
+      "Family Guy Online: Family Guy Online was a massively multiplayer online role-playing game (MMORPG) based on the animated television series \"Family Guy\", developed in a partnership between Roadhouse Interactive and 20th Century Fox.  \"Family Guy Online\" was free-to-play using the Unity game engine.  The game launched into public beta in April 2012, but on December 21, 2012, the developers announced that the game would not be developed beyond beta status and would be permanently shut down on January 18, 2013.  The shutdown took place as announced, and the game is now closed.",
+      "John Wick (game designer): John Wick is an American role-playing game designer best known for his creative contributions to the Alderac Entertainment Group (AEG) properties \"Legend of the Five Rings\" and \"7th Sea\".  He self-published Orkworld under the Wicked Press banner, and later co-founded the Wicked Dead Brewing Company with Jared Sorensen.  His games under that company include Cat, Schauerm\u00e4rchen, Enemy Gods, and Thirty.  He has won the Origins Award for Best Role-Playing Game and Best Collectible Card Game twice (for both the \"Legend of the Five Rings\" and \"7th Sea\" role-playing games and collectible card games)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 3,
+    "generation_speed": 271.96083763938,
+    "prompt_eval_speed": 57946.370176586,
+    "generation_latency_s": 0.13458419998642057,
+    "latency": 0.42221270001027733,
+    "total_prompt_tokens": 591,
+    "total_generation_tokens": 24,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21761,
+    "stage_route_s": 0.0916765999281779,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15791489998809993,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03786210005637258,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.5800115913152695e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1346178000094369,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.42222170007880777,
+    "unaccounted_latency_s": 0.00010519998613744974,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The creator of Snowdrop, a proprietary game engine, was John Wick.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q294",
+  "query": "What was the position of Jean Baptiste Androuet du Cerceau under the man who was King of the Polish-Lithuanian Commonwealth from 1573 to 1575?",
+  "ground_truth": "supervisor of the royal works",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Jean Baptiste Androuet du Cerceau was a French architect who served as the supervisor of royal works under Henry III of France. He was also known for designing several \"h\u00f4tels particuliers\" and H\u00f4tel de Mayenne, which have been described as having \"pediments of its piano nobile windows superposed on the frieze above.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry III of France: Henry III (19 September 1551 \u2013 2 August 1589; born \"Alexandre \u00c9douard de France\", Polish: \"Henryk Walezy\" , Lithuanian: \"Henrikas Valua\" ) was King of the Polish-Lithuanian Commonwealth from 1573 to 1575 and King of France from 1574 until his death.  He was the last French monarch of the House of Valois.",
+      "Jean Androuet du Cerceau: Jean Androuet du Cerceau (c.1585\u20131650) was a French architect, the son of Jean Baptiste Androuet du Cerceau, the outstanding Parisian architect of his generation.",
+      "Jean Baptiste Androuet du Cerceau: Jean Baptiste Androuet du Cerceau (1544/47\u20131590) was a French architect who designed the Pont Neuf (1579), spanning the Seine, Paris, and became supervisor of the royal works under Henri III and Henri IV, including the Louvre.  Several \"h\u00f4tels particuliers\" are ascribed to him.  The H\u00f4tel d'Angoul\u00eame, the H\u00f4tel de Lamoignon (1584), which houses the Historical Library of the City of Paris, and the H\u00f4tel de Mayenne (rue St-Antoine in the Marais).  The H\u00f4tel de Mayenne, with rhythmically varied dormer windows set in a high slate roof, has the pediments of its piano nobile windows superposed on the frieze above."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 458,
+    "generation_tokens": 76,
+    "generation_speed": 208.61125293016462,
+    "prompt_eval_speed": 13965.117697280157,
+    "generation_latency_s": 0.5083055000286549,
+    "latency": 0.932408900000155,
+    "total_prompt_tokens": 642,
+    "total_generation_tokens": 116,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2182442,
+    "stage_route_s": 0.09646450006403029,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26370270003098994,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06374729995150119,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.18999295309186e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.5083445000927895,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9324199999682605,
+    "unaccounted_latency_s": 0.00010969990398734808,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Jean Baptiste Androuet du Cerceau\"",
+      "\"King of Poland-Lithuania, 1573-1575\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

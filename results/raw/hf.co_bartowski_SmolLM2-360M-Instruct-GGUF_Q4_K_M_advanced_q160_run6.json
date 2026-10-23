@@ -1,0 +1,42 @@
+{
+  "question_id": "Q160",
+  "query": "The song \"Chim Chim Cher-ee\" can be heard  in the \"Mary Poppins\" scene of a Disney ride that debuted in what year?",
+  "ground_truth": "1989",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The song \"Chim Chim Cher-ee\" can be heard in the \"Mary Poppins\" scene of a Disney ride that debuted in 1964.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chim Chim Cher-ee: \"Chim Chim Cher-ee\" is a song from \"Mary Poppins\", the 1964 musical motion picture.  It was originally sung by Dick Van Dyke and Julie Andrews, and also is featured in the Cameron Mackintosh/Disney \"Mary Poppins\" musical.  The song can be heard in the \"Mary Poppins\" scene of The Great Movie Ride at Disney's Hollywood Studios and during the \"Mary Poppins\" segment of \"\" at Disneyland.",
+      "My Kind of Town: \"My Kind of Town\" or \"My Kind of Town (Chicago Is)\" is a popular song composed by Jimmy Van Heusen, with lyrics by Sammy Cahn.  It was originally part of the musical score for \"Robin and the 7 Hoods\", a 1964 musical film starring several members of the Rat Pack.  It was nominated for the 1964 Academy Award for Best Original Song but lost to \"Chim Chim Cher-ee\" from \"Mary Poppins\".  Although the song predated the Grammy Award Best Original Song for a Motion Picture category, the entire score was nominated for the 1964 Grammy Award in the category Best Original Score Written for A Motion Picture, but it lost to the eponymously titled \"Mary Poppins\" score.",
+      "Mary Poppins (film): Mary Poppins is a 1964 American musical-fantasy film directed by Robert Stevenson and produced by Walt Disney, with songs written and composed by the Sherman Brothers.  The screenplay is by Bill Walsh and Don DaGradi, loosely based on P. L. Travers' book series \"Mary Poppins\".  The film, which combines live-action and animation, stars Julie Andrews in the role of Mary Poppins who visits a dysfunctional family in London and employs her unique brand of lifestyle to improve the family's dynamic.  Dick Van Dyke, David Tomlinson, and Glynis Johns are featured in supporting roles.  The film was shot entirely at the Walt Disney Studios in Burbank, California using painted London background scenes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 546,
+    "generation_tokens": 37,
+    "generation_speed": 257.2964402689791,
+    "prompt_eval_speed": 79964.85061511424,
+    "generation_latency_s": 0.9367000000784174,
+    "latency": 3.4408267999533564,
+    "total_prompt_tokens": 640,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.144241,
+    "stage_rewrite_s": 1.2504967000568286,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9935043000150472,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2600114999804646,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.936733299982734,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4408350000157952,
+    "unaccounted_latency_s": 8.969998452812433e-05,
+    "rewritten_query": "The song \"Chim Chim Cher-ee\" is featured prominently in the \"Mary Poppins\" ride, which was first introduced in 2017.",
+    "query_was_rewritten": true
+  }
+}

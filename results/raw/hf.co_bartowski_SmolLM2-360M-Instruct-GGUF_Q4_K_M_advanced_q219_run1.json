@@ -1,0 +1,42 @@
+{
+  "question_id": "Q219",
+  "query": "Which suburb is a soap opera featuring a character named Beverly Marshall set in?",
+  "ground_truth": "Erinsborough",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The suburb that features a character named Beverly Marshall is Beverly Hills, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "61st Golden Globe Awards: The 61st Golden Globe Awards, honoring the best in film and television for 2003, were held on January 25, 2004 at the Beverly Hilton Hotel in Beverly Hills, California.",
+      "51st Golden Globe Awards: The 51st Golden Globe Awards, honoring the best in film and television for 1993, were held on January 22, 1994, at the Beverly Hilton Hotel in Beverly Hills, California.",
+      "Beverly Marshall: Beverly Marshall is a fictional character from the Australian soap opera \"Neighbours\".  The character was originally played by Lisa Armytage and she made her first on-screen appearance on 6 July 1987.  Shaunna O'Grady took over from Armytage and began playing the character from 16 March 1989 until her departure on 5 September 1990.  Beverly is a doctor and was Jim Robinson's second wife.  O'Grady reprised her role of Beverly in 2005 to help celebrate \"Neighbours\"<nowiki>'</nowiki> 20th anniversary, she made a cameo in Annalise Hartman's documentary on Ramsay Street."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 354,
+    "generation_tokens": 18,
+    "generation_speed": 251.91384546485102,
+    "prompt_eval_speed": 14184.397163120568,
+    "generation_latency_s": 0.999247599975206,
+    "latency": 3.365579599980265,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1285825,
+    "stage_rewrite_s": 1.2197963000508025,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0235329000279307,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12286430003587157,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9992883000522852,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.365589900058694,
+    "unaccounted_latency_s": 0.00010849989484995604,
+    "rewritten_query": "Beverly Marshall's soap opera, \"The Beverly Hills Hotel,\" is located in Beverly Hills.",
+    "query_was_rewritten": true
+  }
+}

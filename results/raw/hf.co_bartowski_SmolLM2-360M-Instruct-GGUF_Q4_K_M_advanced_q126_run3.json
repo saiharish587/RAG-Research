@@ -1,0 +1,42 @@
+{
+  "question_id": "Q126",
+  "query": "Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of which river?",
+  "ground_truth": "Richmond",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Mummulgum is located on Shannon Brook between Tenterfield and Casino, 58 km south-west of Kyogle.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mummulgum: Mummulgum is a small rural village in the Northern Rivers region of New South Wales, Australia, 740 kilometres from the state capital, Sydney.  Mummulgum is located on Shannon Brook between Tenterfield and Casino on the Bruxner Highway (Highway 44).  It is 58 km south-west of Kyogle with the village and surrounding area being locally administered by Kyogle Council.  The nearest large town is Casino which is 27 kilometres east of Mummulgum.",
+      "Bruxner Highway: The Bruxner Highway is a 420 km state highway located in New South Wales, Australia.  The highway forms an east-west link from the Northern Rivers coast, across the Northern Tablelands in northern New South Wales, close to the border with Queensland.",
+      "Casino, New South Wales: Casino is a town in the Northern Rivers area of New South Wales, Australia, with a population of 9,629 people at the 2011 census .  It lies on the banks of the Richmond River and is situated at the junction of the Bruxner Highway and the Summerland Way."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 338,
+    "generation_tokens": 30,
+    "generation_speed": 260.68595163406644,
+    "prompt_eval_speed": 47861.795525346926,
+    "generation_latency_s": 1.016596799949184,
+    "latency": 3.4273686000378802,
+    "total_prompt_tokens": 423,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1292338,
+    "stage_rewrite_s": 1.2372418000595644,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0289580000098795,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1444606001023203,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0166317999828607,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4273771999869496,
+    "unaccounted_latency_s": 8.579983841627836e-05,
+    "rewritten_query": "Mummulgum is located near the Bruxner Highway, just before reaching the town on the banks of the River Bruxner.",
+    "query_was_rewritten": true
+  }
+}

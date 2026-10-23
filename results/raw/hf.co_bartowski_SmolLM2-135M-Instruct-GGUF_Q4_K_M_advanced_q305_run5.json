@@ -1,0 +1,42 @@
+{
+  "question_id": "Q305",
+  "query": "Are Skeptical Inquirer and The Progressive Populist both tabloid-style magazines?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, the University of Washington (U-Dub) is not a tabloid magazine. It is an academic institution with its own editorial offices in Seattle, Washington.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Progressive Populist: The Progressive Populist is a magazine in tabloid newspaper format published twice monthly.  Founded in 1995, the magazine is based in Storm Lake, Iowa, with editorial offices in Manchaca, Texas.  The editor is James M. Cullen, managing editor is Art Cullen and the publisher is John Cullen.",
+      "Closer (magazine): Closer is a British tabloid magazine published by Bauer Media Group.",
+      "University of Washington: The University of Washington (commonly referred to as UW, simply Washington, or informally \"U-Dub\") is a large, public flagship research university in Seattle, Washington, established in 1861."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 227,
+    "generation_tokens": 36,
+    "generation_speed": 370.69453740410853,
+    "prompt_eval_speed": 81013.56174161314,
+    "generation_latency_s": 0.18251050007529557,
+    "latency": 0.7663586999988183,
+    "total_prompt_tokens": 307,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1418377,
+    "stage_rewrite_s": 0.27952570002526045,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08367220009677112,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2205172999529168,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18254489998798817,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7663676000665873,
+    "unaccounted_latency_s": 0.00010790000669658184,
+    "rewritten_query": "The Progressive Populist is a tabloid-style magazine that features sensational stories, often featuring politicians and politicians' speeches as the main topics. It's also known for its satirical tone and humorous approach to politics. The Progressive Populist has been featured in numerous publications over the years, including The New York Times, The Washington Post, and The Washington Examiner.",
+    "query_was_rewritten": true
+  }
+}

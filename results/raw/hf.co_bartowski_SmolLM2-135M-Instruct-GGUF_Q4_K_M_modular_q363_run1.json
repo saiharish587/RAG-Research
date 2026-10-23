@@ -1,0 +1,48 @@
+{
+  "question_id": "Q363",
+  "query": "The 37th Disney animated feature film Tarzan features You'll be in my heart by which artist?",
+  "ground_truth": "Phil Collins",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on the context provided, the correct answer is Phil Collins. The song \"You'll Be in My Heart\" was composed and performed by Glenn Close as a soundtrack album for the 1999 Disney animated film \"Tarzan\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "You'll Be in My Heart: \"You'll Be in My Heart\" is a song by Phil Collins, from the 1999 Disney animated feature \"Tarzan\".  It appeared on \"Tarzan: An Original Walt Disney Records Soundtrack\" as well as various other Disney compilations.  A version of the single performed by Glenn Close also appears on the soundtrack.",
+      "Tarzan (1999 film soundtrack): Tarzan: An Original Walt Disney Records Soundtrack is the soundtrack for the 1999 Disney animated film, \"Tarzan\".  The songs on the soundtrack were composed by Phil Collins, and the instrumental score by Mark Mancina.  The song \"You'll Be in My Heart\" won both the Academy Award for Best Original Song and the Golden Globe Award for Best Original Song and received a Grammy Award nomination for Best Song Written for a Motion Picture, Television or Other Visual Media, while the soundtrack album won a Grammy Award for Best Soundtrack Album.  For his contribution to the soundtrack, Collins received an American Music Award for Favorite Adult Contemporary Artist.",
+      "ived on Saturday evening and remained till Monday.  We attended their meetings.  The singing was inspiring, the speaking powerful and heart-searching.  The wisdom of their instruction, the purity of their doctrine, and the Christ-like simplicity of their deportment all reminded me of the apostolic faith.  I saw that the work was of God, and my salvation depended upon it.The cross that was before me was an evidence of the spirit of the testimony.  On the one hand, the prospects of the world were flattering to my mind.  I was in the prime of life and in the vigor of health.  My reputation was fair, and my hopes not unpromising.On the other hand, religion had been my pursuit.  The revival had raised my hopes and directed my faith to a greater and more glorious work.  I subsequently made another visit and was received with kindness.  I confessed my sins to God, and with a fixed resolution accepted the cross of Christ.  I was now taught to rectify every wrong that I had committed, to forsake all sin and to take up a daily cross. \"  I also became better acquainted with Mother Ann and the Elders who were with her, and am a witness of the purity of life which they constantly maintained.  The doctrine they taught was strictly conformable to the precepts and example of Jesus Christ.  By obeying their instruction I experienced the truth of their testimony.  I was blessed with heavenly visions and felt my faith established on a sure foundation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 629,
+    "generation_tokens": 51,
+    "generation_speed": 310.0134339154697,
+    "prompt_eval_speed": 15053.248773483307,
+    "generation_latency_s": 0.31991190009284765,
+    "latency": 0.6956594000803307,
+    "total_prompt_tokens": 773,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22887229999999997,
+    "stage_route_s": 0.20208329998422414,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13751300005242229,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03597359999548644,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.4899992644786835e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.31995219993405044,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.695670000044629,
+    "unaccounted_latency_s": 0.00010360009036958218,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents, specifically the 37th Disney animated feature film Tarzan.",
+    "sub_queries": [
+      "The answer is: \"You'll be in my heart.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

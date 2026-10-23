@@ -1,0 +1,49 @@
+{
+  "question_id": "Q271",
+  "query": "To which aircraft carrier was the VMF-213 Marine Fighting Squadron assigned to durning World War II?",
+  "ground_truth": "USS Essex",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "VMF-512",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "VMF-213: Marine Fighting Squadron 213 (VMF-213) was a reserve fighter squadron in the United States Marine Corps.  Nicknamed the \"Hell Hawks\", the squadron fought during World War II in the Philippines and at the battles of Iwo Jima and Okinawa.  With its assignment to the USS Essex (CV-9) and \"Air Group 4\", VMF-213 along with VMF-124 was one of the first two Marine squadrons to augment carrier air groups during World War II.  The squadron was credited with downing 117 enemy aircraft during the war.",
+      "VMF-222: Marine Fighting Squadron 222 (VMF-222) was a fighter squadron of the United States Marine Corps that was activated and fought during World War II.  Known as \u201cThe Flying Deuces\u201d, they fell under the command of Marine Aircraft Group 14 (MAG-14) and fought in many areas of the Pacific War, including the Philippines campaign (1944\u201345) and the Battle of Okinawa.  During the war, the squadron was credited with shooting down 53 enemy aircraft and was the sister squadron to VMF-215.  They were deactivated on December 31, 1949.",
+      "VMF-512: Marine Fighting Squadron 512 (VMF-512) was a fighter squadron of the United States Marine Corps during World War II.  The squadron was aircraft carrier during the last year of the war and supported combat operations during the Okinawa and the Battle of Balikpapan (1945).  Following the end of World War II they were deactivated on 10 March 1946 and remain in an inactive status today."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 471,
+    "generation_tokens": 7,
+    "generation_speed": 395.39087211929507,
+    "prompt_eval_speed": 67372.33586039193,
+    "generation_latency_s": 0.13408579991664737,
+    "latency": 0.48206710000522435,
+    "total_prompt_tokens": 619,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2241381,
+    "stage_route_s": 0.1449614999582991,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14160930004436523,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06123739993199706,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.980002995580435e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13412589998915792,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.48207949998322874,
+    "unaccounted_latency_s": 9.620003402233124e-05,
+    "route": "rag",
+    "router_raw": "To which aircraft carrier was the VMF-213 Marine Fighting Squadron assigned to durning World War II?",
+    "sub_queries": [
+      "VMF-213 Marine Fighting Squadron",
+      "The answer is: VMF-213 Marine Fighting Squadron"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

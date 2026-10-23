@@ -1,0 +1,42 @@
+{
+  "question_id": "Q345",
+  "query": "Garden Island Naval Chapel is the oldest Chistian chapel of a naval branch of what defence force?",
+  "ground_truth": "Australian Defence Force",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Garden Island Naval Chapel is the oldest Christian chapel of the Royal Australian Navy (RAN).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Garden Island Naval Chapel: The Naval Chapel at Garden Island dockyard is the oldest Christian chapel of the Royal Australian Navy (RAN).  It was established in 1902 after conversion from the former sail loft, and has stained glass windows and plaques from that era to the present.  The building is the oldest on Garden Island, two storey, built of stuccoed brick with stone sills, arches and columns.  The original loft floor of timber remains, caulked with oakum and bitumen.",
+      "Royal Australian Navy: The Royal Australian Navy (RAN) is the naval branch of the Australian Defence Force.  Following the Federation of Australia in 1901, the ships and resources of the separate colonial navies were integrated into a national force: the Commonwealth Naval Forces.  Originally intended for local defence, the navy was granted the title of 'Royal Australian Navy' in 1911, and became increasingly responsible for defence of the region.",
+      "Royal Australian Navy Heritage Centre: The Royal Australian Navy Heritage Centre is the maritime museum of the Royal Australian Navy.  The centre opened on 4 October 2005 and is located within the Public Access Area on the northern end of the Garden Island naval base in Sydney."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 337,
+    "generation_tokens": 19,
+    "generation_speed": 264.78252992739385,
+    "prompt_eval_speed": 46637.143647938006,
+    "generation_latency_s": 0.9727230999851599,
+    "latency": 3.3736692999955267,
+    "total_prompt_tokens": 417,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1248504,
+    "stage_rewrite_s": 1.1926697999006137,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0570394000969827,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15111640002578497,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9727584000211209,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3736780000617728,
+    "unaccounted_latency_s": 9.450002107769251e-05,
+    "rewritten_query": "Garden Island Naval Chapel is the oldest Christian chapel of a naval branch of the Defence Force.",
+    "query_was_rewritten": true
+  }
+}

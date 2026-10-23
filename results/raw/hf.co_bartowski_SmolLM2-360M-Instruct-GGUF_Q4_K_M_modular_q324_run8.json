@@ -1,0 +1,49 @@
+{
+  "question_id": "Q324",
+  "query": "Folie \u00e0 Deux is a studio album by the American rock band formed in which city?",
+  "ground_truth": "Wilmette",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Folie \u00e0 Deux was recorded at The Pass Studios and The Casita studios in Hollywood, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Folie \u00e0 Deux (album): Folie \u00e0 Deux ( ; French for \"A Madness Shared by Two\") is the fourth studio album by American rock band Fall Out Boy.  Produced by Neal Avron, the album was recorded from July to September 2008 at The Pass Studios and The Casita in Hollywood, California.  As the follow-up to the band's commercially successful 2007 effort \"Infinity on High\", it was released by Island Records on December 16, 2008, after the original November 4 release was postponed to avoid conflicts with the United States presidential election.  Like the band's two previous releases, \"Folie \u00e0 Deux\" was musically composed by lead vocalist and guitarist Patrick Stump, with lyrics penned by bassist Pete Wentz.  In regard to the writing process, the band considered \"Folie \u00e0 Deux\" to be the band's most collaborative record at the time.",
+      "Manhattan Center: The Manhattan Center building, built in 1906 and located at 311 West 34th Street in Midtown Manhattan, houses Manhattan Center Studios (home to two recording studios), its Grand Ballroom, and the Hammerstein Ballroom, one of New York City's most renowned performance venues.  In 1976, the building was purchased by its current owner, the Unification Church for $3 million.",
+      "Evanescence: Evanescence is an American rock band founded in Little Rock, Arkansas in 1995 by singer/pianist Amy Lee and guitarist Ben Moody.  After recording independent albums, the band released their first full-length album, \"Fallen\", on Wind-up Records in 2003.  \"Fallen\" sold more than 17 million copies worldwide and helped the band win two Grammy Awards out of seven nominations, as well as scoring number six in CBS's \"Top Bestselling Albums of the Last 10 Years\" (2008).  A year later, Evanescence released their first live album, \"Anywhere but Home\", which sold more than one million copies worldwide.  In 2006, the band released their second studio album, \"The Open Door\", which sold more than five million copies."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 573,
+    "generation_tokens": 24,
+    "generation_speed": 234.75096834774445,
+    "prompt_eval_speed": 71268.6655806798,
+    "generation_latency_s": 0.22746820002794266,
+    "latency": 0.7351608999306336,
+    "total_prompt_tokens": 711,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2529747,
+    "stage_route_s": 0.10815950005780905,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.33857409993652254,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06076649995520711,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.510007031261921e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22751110000535846,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.735173900029622,
+    "unaccounted_latency_s": 0.00010840001050382853,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Folie \u00e0 Deux\" was released on 2008 and was composed by John Paul Jones, who also wrote the song \"The End of Everything\".",
+      "The album was recorded at the New York City studio, Columbia Records, in Manhattan."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

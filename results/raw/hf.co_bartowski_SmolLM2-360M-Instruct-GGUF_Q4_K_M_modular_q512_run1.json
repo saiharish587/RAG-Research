@@ -1,0 +1,49 @@
+{
+  "question_id": "Q512",
+  "query": "What was the nationality of the actor playing a Russian hostage taker in \"Hostage for a Day\"?",
+  "ground_truth": "Canadian",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The actor playing a Russian hostage taker in \"Hostage for a Day\" is Yevgeny Krylatov, who is a Russian composer.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hostage for a Day: Hostage for a Day is a 1994 comedic film directed by John Candy in his only directorial effort.  Though the film is also billed as \"starring\" Candy, it in fact only features him as a minor character, as a Russian hostage taker.  Produced with a mostly Canadian cast, the film was released one month after Candy's death.",
+      "Russians: Russians (Russian: \u0440\u0443\u0441\u0441\u043a\u0438\u0435 , \"russkiye\") are an East Slavic ethnic group native to Eastern Europe.  The majority of Russians inhabit the nation state of Russia, while notable minorities exist in other former Soviet states such as Ukraine, Kazakhstan, and Belarus.  A large Russian diaspora exists all over the world, with notable numbers in the United States, Germany, Israel, and Canada.  Russians are the most numerous ethnic group in Europe.",
+      "Yevgeny Krylatov: Yevgeny Pavlovich Krylatov (Russian: \u0415\u0432\u0433\u0435\u0301\u043d\u0438\u0439 \u041f\u0430\u0301\u0432\u043b\u043e\u0432\u0438\u0447 \u041a\u0440\u044b\u043b\u0430\u0301\u0442\u043e\u0432 ; born 23\u00a0February 1934 in Lysva) is a Russian composer who wrote songs for over 120 Soviet and Russian movies and animated films."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 355,
+    "generation_tokens": 33,
+    "generation_speed": 213.83028355191541,
+    "prompt_eval_speed": 13238.858847659892,
+    "generation_latency_s": 0.29341049992945045,
+    "latency": 0.6224232000531629,
+    "total_prompt_tokens": 497,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2330837,
+    "stage_route_s": 0.11034150002524257,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1614799000089988,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05701320001389831,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.250001024454832e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29344279994256794,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6224326000083238,
+    "unaccounted_latency_s": 9.330001194030046e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Russian\"",
+      "\"Kryosov\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

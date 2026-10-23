@@ -1,0 +1,48 @@
+{
+  "question_id": "Q235",
+  "query": "What is the nickname of the city where Darling's Waterfront Pavilion is located?",
+  "ground_truth": "\"Queen City\"",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The nickname of the city where Darling's Waterfront Pavilion is located is \"Sydney\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Darling's Waterfront Pavilion: The Darling's Waterfront Pavilion (originally known as the Bangor Waterfront Pavilion) is an open-air amphitheater located within the Waterfront Park in Bangor, Maine.  The venue is a temporary structure built alongside the Penobscot River.  The venue typically operates from July until October.",
+      "Hancock's Wharf: Hancock's Wharf was a dock on the waterfront of Boston, Massachusetts in the 1700s, owned by John Hancock, and previously his uncle, Thomas Hancock.  Hancock's Wharf began from near the foot of Fleet Street and the junction of Fish and Ship Streets.  Both of the latter streets are now roughly the present-day Commercial Street.  This wharf figures prominently in the early setting of \"Johnny Tremain\", a Newbery Award-winning novel by Esther Forbes.",
+      "Sydney: Sydney ( ) is the state capital of New South Wales and the most populous city in Australia and Oceania.  Located on Australia's east coast, the metropolis surrounds the world's largest natural harbour and sprawls about 70 km on its periphery towards the Blue Mountains to the west, Hawkesbury to the north and Macarthur to the south.  Sydney is made up of 658 suburbs, 40 local government areas and 15 contiguous regions.  Residents of the city are known as \"Sydneysiders\".  As at June 2016 Sydney's estimated population was 5,029,768."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 403,
+    "generation_tokens": 22,
+    "generation_speed": 410.06523765144453,
+    "prompt_eval_speed": 62860.70815785369,
+    "generation_latency_s": 0.16759550001006573,
+    "latency": 0.4867124001029879,
+    "total_prompt_tokens": 539,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2259501,
+    "stage_route_s": 0.14235169999301434,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1358949999557808,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04070600005798042,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2100087739527225e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1676352999638766,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.48672510008327663,
+    "unaccounted_latency_s": 9.560002945363522e-05,
+    "route": "rag",
+    "router_raw": "The nickname of the city where Darling's Waterfront Pavilion is located is \"Darlings.\"",
+    "sub_queries": [
+      "The nickname of the city where Darling's Waterfront Pavilion is located is \"Darling's Waterfront.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

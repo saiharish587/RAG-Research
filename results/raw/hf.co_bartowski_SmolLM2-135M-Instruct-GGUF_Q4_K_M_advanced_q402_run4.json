@@ -1,0 +1,42 @@
+{
+  "question_id": "Q402",
+  "query": "Which game was released first, Icehouse pieces or Kill Doctor Lucky?",
+  "ground_truth": "Icehouse pieces",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "1) Icehouse pieces",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Icehouse pieces: Icehouse pieces, or Icehouse Pyramids, Treehouse pieces, Treehouse Pyramids and officially Looney Pyramids, are nestable and stackable pyramid-shaped gaming pieces and a game system.  The game system was invented by Andrew Looney and John Cooper in 1987, originally for use in the game of Icehouse.",
+      "Icehouse (song): \"Icehouse\" is a song by the Australian rock band Flowers.  It was released as a single in Europe in 1982 by Chrysalis Records from the band's first album, \"Icehouse\", after the band changed its name to Icehouse.  In the United States, the song peaked at number 28 on the \"Billboard\" Top Tracks chart in 1981.",
+      "Treehouse (game): Treehouse is a game in which players try to get their configuration of Icehouse pieces to match the central configuration, shared by all players.  The rolling of the special \"Treehouse Die\" tells the player what kind of move to make to change his own or the central configuration, and then he does so to best move towards the goal."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 314,
+    "generation_tokens": 6,
+    "generation_speed": 405.0769646232784,
+    "prompt_eval_speed": 38051.381483276775,
+    "generation_latency_s": 0.10883929999545217,
+    "latency": 0.6823607999831438,
+    "total_prompt_tokens": 389,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1463954,
+    "stage_rewrite_s": 0.30319310002960265,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08419880003202707,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18598529999144375,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10888160008471459,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6823720999527723,
+    "unaccounted_latency_s": 0.00011389981955289841,
+    "rewritten_query": "Icehouse Pieces\n\nThis is a search-friendly rephrased version of the original query that optimizes the search for the desired outcome. It uses the same phrase \"Which game\" as in the original, but with an additional word to make it more concise and clear. The result is now presented in a more streamlined format, making it easier for users to quickly find relevant information when searching for specific games.",
+    "query_was_rewritten": true
+  }
+}

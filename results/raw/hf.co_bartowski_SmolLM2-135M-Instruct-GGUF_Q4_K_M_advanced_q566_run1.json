@@ -1,0 +1,42 @@
+{
+  "question_id": "Q566",
+  "query": "What are both James Hetfield and Bob Marley?",
+  "ground_truth": "musician, singer, and songwriter",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "James Hetfield is a range of electric guitars produced by ESP Guitars based on the custom models of James Hetfield.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "ESP James Hetfield: The ESP James Hetfield (or just ESP JH) are ranges of electric guitars produced by ESP Guitars based on the custom models of James Hetfield.  All models were built by James Hetfield and Matt Masciandaro.",
+      "Marley (soundtrack): Marley is a posthumous two-disc soundtrack album by Bob Marley & The Wailers.  It was released by Island Records and Tuff Gong Records.  The soundtrack features music from the whole career of Bob Marley, his first recorded song, \"Judge Not\", to the last album he released in his lifetime, \"Uprising\".  \"Marley\" was released to coincide with the release of \"Marley\", a biographical film documenting the life of Bob Marley.  The album features 24 of the 66 tracks used in the film.",
+      "Binomial pair: In linguistics, a binomial pair or binomial is a sequence of two or more words or phrases belonging to the same grammatical category, having some semantic relationship and joined by some syntactic device such as \"and\" or \"or\".  Examples in English include \"through and through\", \"(without) let or hindrance\", and \"chalk and cheese\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 331,
+    "generation_tokens": 27,
+    "generation_speed": 347.03478059689985,
+    "prompt_eval_speed": 21085.48859727354,
+    "generation_latency_s": 0.17475799995008856,
+    "latency": 0.7776444999035448,
+    "total_prompt_tokens": 403,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1329754,
+    "stage_rewrite_s": 0.27005649998318404,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07852290000300854,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25418619997799397,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17479389999061823,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7776528999675065,
+    "unaccounted_latency_s": 9.380001574754715e-05,
+    "rewritten_query": "The original query was \"What are both James Hetfield and Bob Marley?\" This is a perfect example of how to optimize a search query by using natural language processing techniques, such as stemming (stemming) or lemmatization. The optimized query uses the same words in different contexts to convey the meaning more accurately.",
+    "query_was_rewritten": true
+  }
+}

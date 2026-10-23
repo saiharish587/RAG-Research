@@ -1,0 +1,49 @@
+{
+  "question_id": "Q300",
+  "query": "When did the rock band that sang \"All Join Hands\" rise to prominence? ",
+  "ground_truth": "early 1970s",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Beatles rose to prominence when they released their first album, \"Please Please Me\", in 1963.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Beatles: The Beatles were an English rock band formed in Liverpool in 1960.  With members John Lennon, Paul McCartney, George Harrison and Ringo Starr, they became widely regarded as the foremost and most influential act of the rock era.  Rooted in skiffle, beat and 1950s rock and roll, the Beatles later experimented with several musical styles, ranging from pop ballads and Indian music to psychedelia and hard rock, often incorporating classical elements and unconventional recording techniques in innovative ways.  In 1963 their enormous popularity first emerged as \"Beatlemania\", and as the group's music grew in sophistication in subsequent years, led by primary songwriters Lennon and McCartney, they came to be perceived as an embodiment of the ideals shared by the counterculture of the 1960s.",
+      "Fleetwood Mac: Fleetwood Mac are a British-American rock band, formed in London in 1967.  The band have sold more than 100 million records worldwide, making them one of the world's best-selling bands of all time.  In 1998, selected members of Fleetwood Mac were inducted into the Rock and Roll Hall of Fame, and received the Brit Award for Outstanding Contribution to Music.",
+      "All Join Hands: \"All Join Hands\" is a song by the British rock band Slade, released in 1984 as the lead single from the band's twelfth studio album \"Rogues Gallery\".  The song was written by lead vocalist Noddy Holder and bassist Jim Lea, and produced by John Punter.  It reached No. 15 in the UK, remaining in the chart for ten weeks."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 447,
+    "generation_tokens": 26,
+    "generation_speed": 248.28350156132123,
+    "prompt_eval_speed": 50230.36296213057,
+    "generation_latency_s": 0.22790659999009222,
+    "latency": 0.7437298999866471,
+    "total_prompt_tokens": 581,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22418939999999998,
+    "stage_route_s": 0.09487340005580336,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3667717999778688,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053994899964891374,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9999991208314896e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22794489993248135,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7437415999593213,
+    "unaccounted_latency_s": 9.730004239827394e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The band was formed in 1968, during the early days of the British Invasion.",
+      "They gained popularity in the late 1960s and early 1970s, particularly after their hit single \"All Join Hands\" peaked at number one on the UK Singles Chart in 1970."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

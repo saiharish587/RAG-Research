@@ -1,0 +1,48 @@
+{
+  "question_id": "Q480",
+  "query": "Who programmed a cartridge-based development system made by a company noted for authoring Atari's BASIC?",
+  "ground_truth": "Kathleen O'Brien",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Kathleen O'Brien of Shepardson Microsystems programmed the Atari Assembler Editor.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Atari Corporation: Atari Corporation was an American manufacturer of computers and video game consoles from 1984 to 1996.  Atari Corp. was founded in July 1984 when Warner Communications sold the home computing and game console divisions of Atari, Inc. to Jack Tramiel.  Its chief products were the Atari ST, , Atari 7800, Atari Lynx, and Atari Jaguar.  The company reverse merged with JTS Inc. in 1996, becoming a small division, which itself closed when JTS liquidated the IP to Hasbro Interactive in 1998.",
+      "Atari Assembler Editor: The Atari Assembler Editor is a cartridge-based development system used to edit, assemble, and debug 6502 programs for the Atari 8-bit family of home computers.  It was programmed by Kathleen O'Brien of Shepardson Microsystems.  It was the first commercially available assembler for the Atari 8-bit computers.",
+      "Atari Games: Atari Games Corporation was an American producer of arcade games.  It was originally the coin-operated arcade game division of Atari, Inc. and was split off into its own company in 1984."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 354,
+    "generation_tokens": 22,
+    "generation_speed": 239.69058124965952,
+    "prompt_eval_speed": 45049.630949350976,
+    "generation_latency_s": 0.21402800001669675,
+    "latency": 0.5325316999806091,
+    "total_prompt_tokens": 498,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2270255,
+    "stage_route_s": 0.09904399991501123,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18459450011141598,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.034698299947194755,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.879994619637728e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2140713999979198,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5325437999563292,
+    "unaccounted_latency_s": 9.740004315972328e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Who programmed a cartridge-based development system made by a company noted for authoring Atari's BASIC?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

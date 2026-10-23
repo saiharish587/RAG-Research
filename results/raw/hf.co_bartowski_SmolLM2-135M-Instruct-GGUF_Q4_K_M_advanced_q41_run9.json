@@ -1,0 +1,42 @@
+{
+  "question_id": "Q41",
+  "query": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+  "ground_truth": "Scotch Collie",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Feist is not mentioned as being derived from the original terriers brought over to the United States by English miners and other working class immigrants, but rather from a variety of ancient herding dogs. The original terriers were likely crossed with other breeds such as the smooth-haired (Rough) Fox Terrier or the Manchester Terrier, which are not mentioned in the context provided.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scotch Collie: The Scotch Collie is a landrace breed of dog which originated from the highland regions of Scotland.  The breed consisted of both the long-haired (now known as Rough) Collie and the short-haired (now known as Smooth) Collie.  It is generally believed to have descended from a variety of ancient herding dogs, some dating back to the Roman occupation, which may have included Roman Cattle Dogs, Native Celtic Dogs and Viking Herding Spitzes.  Other ancestors include the Gordon and Irish Setters.",
+      "Manchester Terrier: The Manchester Terrier is a breed of dog of the smooth-haired terrier type.",
+      "Feist (dog): A Feist is a small hunting dog, descended from the terriers brought over to the United States by English miners and other working class immigrants.  These terriers probably included crosses between the Smooth Fox Terrier, the Manchester Terrier and the now extinct English White Terrier.  These dogs were used as ratters, and gambling on their prowess in killing rats was a favorite hobby of their owners.  Some of these dogs have been crossed with Whippets or Italian Greyhounds (for speed) and Beagles (for hunting ability) - extending the family to include a larger variety of purpose than the original ratter, or Rat Terrier."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 360,
+    "generation_tokens": 80,
+    "generation_speed": 417.8636719770175,
+    "prompt_eval_speed": 37155.53720714212,
+    "generation_latency_s": 0.2781023000134155,
+    "latency": 0.7818901999853551,
+    "total_prompt_tokens": 442,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1277358,
+    "stage_rewrite_s": 0.19228820002172142,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06963279994670302,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24173670005984604,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2781417000805959,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7819004999473691,
+    "unaccounted_latency_s": 0.00010179984383285046,
+    "rewritten_query": "The Manchester Terrier is a descendant of the Scottish Terrier, while the Scotch Collie is a descendant of the Irish Setter. The original query was rephrased to include both dogs' ancestors in the search.",
+    "query_was_rewritten": true
+  }
+}

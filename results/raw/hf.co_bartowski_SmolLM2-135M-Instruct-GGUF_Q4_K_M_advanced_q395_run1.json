@@ -1,0 +1,42 @@
+{
+  "question_id": "Q395",
+  "query": "Who wrote The Devils, and was an eninent English theater, opera and film director?",
+  "ground_truth": "Peter Hall",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Devils (film) is written by Ken Russell and directed by Ken Russell.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Devils (film): The Devils is a 1971 British historical drama horror film directed by Ken Russell and starring Oliver Reed and Vanessa Redgrave.  Russell's screenplay is based partly on the 1952 book \"The Devils of Loudun\" by Aldous Huxley, and partly on the 1960 play \"The Devils\" by John Whiting, also based on Huxley's book.",
+      "The Devils (play): The Devils is a play, commissioned by Sir Peter Hall for the Royal Shakespeare Company and written by British dramatist John Whiting, based on Aldous Huxley's book, \"The Devils of Loudun\".",
+      "The Devils of Loudun: The Devils of Loudun is a 1952 non-fiction novel by Aldous Huxley.  It is a historical narrative of supposed demonic possession, religious fanaticism, sexual repression, and mass hysteria that occurred in seventeenth-century France surrounding unexplained events that took place in the small town of Loudun.  It centers on Roman Catholic priest Urbain Grandier and an entire convent of Ursuline nuns, who allegedly became possessed by demons after Grandier made a pact with Satan.  The events led to several public exorcisms as well as executions by burning."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 18,
+    "generation_speed": 374.3526818210178,
+    "prompt_eval_speed": 21881.700088283516,
+    "generation_latency_s": 0.13885400001890957,
+    "latency": 0.4325272999703884,
+    "total_prompt_tokens": 426,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1235088,
+    "stage_rewrite_s": 0.11149179993662983,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07512479997240007,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10693190002348274,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1388908999506384,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4325359999202192,
+    "unaccounted_latency_s": 9.710004087537527e-05,
+    "rewritten_query": "Who authored The Devils?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q425",
+  "query": "What is the height of the player who won the 2015 AFL Rising Star award?",
+  "ground_truth": "1.95 m",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The player who won the 2015 AFL Rising Star award was Jesse Hogan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2015 AFL Rising Star: The NAB AFL Rising Star award is given annually to a stand out young player in the Australian Football League.  The award was won by Jesse Hogan of Melbourne who polled 49 votes, beating Carlton 's Patrick Cripps who finished on 41 votes.",
+      "AFL Rising Star: The NAB AFL Rising Star award is given annually to a standout young player in the Australian Football League (AFL).  The first award was made in 1993.  Since 2007, the winner has been presented with the Ron Evans Medal.  It was originally known as the Norwich Rising Star award due to sponsorship reasons from 1993 to 1999, Ansett sponsored the award in 2000 and 2001 and the National Australia Bank (NAB) has been the major sponsor since 2002.",
+      "Newcastle Jets FC: Newcastle United Jets Football Club, commonly known as Newcastle Jets, is an Australian professional soccer club based in Newcastle, New South Wales.  It competes in the country's premier competition, the A-League, under licence from Football Federation Australia (FFA).  The club was formed in 2000 when it joined the National Soccer League (NSL) and was one of only three former NSL clubs to join in the formation of the A-League.  Newcastle Jets have won one A-League championship, after defeating rivals Central Coast Mariners 1\u20130 in the 2008 A-League Grand Final.  In 2009, Newcastle competed in the AFC Champions League for the first time, reaching the Round of 16.  In May 2015, FFA revoked Newcastle's licence after owner Nathan Tinkler placed the club into voluntary administration.  A new A-League club will be formed for the 2015\u201316 season, under the same name and colours.  Since its establishment, the Newcastle Jets has had a reputation for signing high-profile players.  Notable players who have represented the club include Emile Heskey, Kew Jaliens, M\u00e1rio Jardel, Michael Bridges, Ned Zeli\u0107, Paul Okon, Francis Jeffers, David Carney, Joel Griffiths, and Ronald Vargas"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 587,
+    "generation_tokens": 21,
+    "generation_speed": 249.26999501460008,
+    "prompt_eval_speed": 22925.20991993751,
+    "generation_latency_s": 0.2228019000031054,
+    "latency": 0.7230247999541461,
+    "total_prompt_tokens": 729,
+    "total_generation_tokens": 91,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2248669,
+    "stage_route_s": 0.09888790000695735,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.34490040002856404,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05626880005002022,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.070003680884838e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22283330000936985,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7230340000241995,
+    "unaccounted_latency_s": 9.359989780932665e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The 2015 AFL Rising Star Award was awarded to **Johnny Manning** for his outstanding contributions to the Australian Football League.",
+      "Query 2: Johnny Manning won the 2015 AFL Rising Star award, which is a prestigious honor given by the Australian Football League."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

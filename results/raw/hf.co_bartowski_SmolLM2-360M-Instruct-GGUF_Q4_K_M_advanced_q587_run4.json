@@ -1,0 +1,42 @@
+{
+  "question_id": "Q587",
+  "query": "Fantasy Records is know for recordings of comedian Lenny Bruce, Creedence Clearwater Revival, and what American jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip?",
+  "ground_truth": "Vincent Anthony Guaraldi",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Fantasy Records is known more for its recordings of comedian Lenny Bruce.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fantasy Records: Fantasy Records is an American record company and label founded by brothers Max and Sol Weiss in 1949.  The early years of the company were dedicated to issuing recordings by jazz pianist Dave Brubeck, who was also one of its investors, but the label is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+      "Vince Guaraldi: Vincent Anthony Guaraldi (July 17, 1928 \u2013 February 6, 1976), born Vincent Anthony Dellaglio, was an American jazz pianist noted for his innovative compositions and arrangements and for composing music for animated television adaptations of the \"Peanuts\" comic strip, as well as his performances on piano as a member of Cal Tjader's late 50s ensemble and his own solo career which included the radio hit \"Cast Your Fate to the Wind\".",
+      "Creedence Clearwater Revival: Creedence Clearwater Revival, often informally abbreviated to Creedence or CCR, was an American rock band active in the late 1960s and early 1970s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 352,
+    "generation_tokens": 18,
+    "generation_speed": 261.8334157623716,
+    "prompt_eval_speed": 47261.00966702471,
+    "generation_latency_s": 1.01912720000837,
+    "latency": 3.372497500036843,
+    "total_prompt_tokens": 455,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13838250000000002,
+    "stage_rewrite_s": 1.2800161000341177,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9660933000268415,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10714630002621561,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0191606999142095,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3725071999942884,
+    "unaccounted_latency_s": 9.129999671131372e-05,
+    "rewritten_query": "Fantasy Records is known for its records by comedians like Lenny Bruce, Creedence Clearwater Revival, and American jazz pianist who composed music for the Peanuts comic strip.",
+    "query_was_rewritten": true
+  }
+}

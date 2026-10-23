@@ -1,0 +1,42 @@
+{
+  "question_id": "Q389",
+  "query": "The man, who the award in which \"Summer of the Monkeys\" won, was a spokesman for white sector of America?",
+  "ground_truth": "middle America",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The man who won the award in Summer of the Monkeys is Matt Damon.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Summer of the Monkeys: Summer of the Monkeys is a 1976 children's novel written by Wilson Rawls.  It was published by Doubleday (later released by Yearling Books) and was the winner of the William Allen White Book Award and the California Young Reader Medal.",
+      "Matt Damon: Matthew Paige Damon ( ; born October 8, 1970) is an American actor, film producer, philanthropist and screenwriter.  He is ranked among \"Forbes\" magazine's most bankable stars and is one of the highest-grossing actors of all time.  Damon has received various accolades, including an Academy Award from five nominations, two Golden Globe Awards from eight nominations, and has been nominated for two British Academy Film Awards and six Emmy Awards.",
+      "o Cuomo, losing the election by only two percentage points.  He is a senior partner at L. E. Lehrman & Co., an investment firm he established in 1981.  He is also the chairman of the Lehrman Institute, a public policy research and grant making foundation founded in 1972.  He and Richard Gilder were awarded the National Humanities Medal in an Oval Office ceremony on Thursday, November 10, 2005.  The Medal was presented by President George W. Bush.  He converted to Catholicism."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 18,
+    "generation_speed": 261.2557693982409,
+    "prompt_eval_speed": 51445.63594407493,
+    "generation_latency_s": 0.954633199959062,
+    "latency": 3.362147100036964,
+    "total_prompt_tokens": 465,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1223905,
+    "stage_rewrite_s": 1.2278450999874622,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0156789999455214,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1638776999898255,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9546671999851242,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.362156099989079,
+    "unaccounted_latency_s": 8.750008419156075e-05,
+    "rewritten_query": "The man who won the award for \"Summer of the Monkeys\" is a spokesperson from the white sector of America.",
+    "query_was_rewritten": true
+  }
+}

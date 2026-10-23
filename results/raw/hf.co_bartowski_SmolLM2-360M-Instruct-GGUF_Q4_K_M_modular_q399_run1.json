@@ -1,0 +1,49 @@
+{
+  "question_id": "Q399",
+  "query": "Snowdrop is a proprietary game engine first revealed with an online-only action role-playing video game developed by who?",
+  "ground_truth": "Massive Entertainment",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Snowdrop is a proprietary game engine first revealed with an online-only action role-playing video game developed by Ubisoft for use on Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Snowdrop (game engine): Snowdrop is a proprietary game engine created by Ubisoft for use on Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One.  It was first revealed at E3 2013 with \"Tom Clancy's The Division\", the first game using the engine.",
+      "Bombardier Inc.: Bombardier Inc. (] ) is a multinational aerospace and transportation company based in Montreal, Quebec, Canada.  Starting as a maker of snow machines or snowmobiles, over the years it has grown into a large manufacturer of regional airliners, business jets, mass transportation equipment, and recreational equipment, and a provider of financial services.",
+      "Jagex: Jagex Limited is a British video game developer and publisher based at the St John's Innovation Centre in Cambridge, England.  It is best known for \"RuneScape\", the world's largest free-to-play massively multiplayer online role-playing game.  The company's name comes from its original slogan, \"Java Gaming Experts\".  In addition to \"RuneScape\", Jagex has released multiple casual games on its FunOrb portal, as well as other titles.  By 2015, the studio held over 480 employees.  In June 2016, Jagex was acquired by Chinese company Hongtou, which in turn was acquired by another Chinese company, Zhongji Holding, in September 2016."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 395,
+    "generation_tokens": 45,
+    "generation_speed": 238.0561918415498,
+    "prompt_eval_speed": 13509.81599288597,
+    "generation_latency_s": 0.3285423999186605,
+    "latency": 0.7912697999272496,
+    "total_prompt_tokens": 543,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2310258,
+    "stage_route_s": 0.10935219994280487,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2964145999867469,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05676999990828335,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.509995389729738e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3285838000010699,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.791282199905254,
+    "unaccounted_latency_s": 0.00010710011702030897,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The original developers of Snowdrop, who are known for their innovative and highly acclaimed work in the industry.\"",
+      "\"A company that has been at the forefront of creating cutting-edge games like Snowdrop since its inception.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

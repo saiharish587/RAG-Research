@@ -1,0 +1,48 @@
+{
+  "question_id": "Q10",
+  "query": "Are Local H and For Against both from the United States?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "No, Local H and For Against are not both from the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "For Against: For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.  Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from its 1984 inception to the present.",
+      "Local H: Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987.  The members all met in high school in 1987 and founded Local H three years later.",
+      "Honolulu: Honolulu ( ; ] ) is the capital and largest city of the U.S. state of Hawaii.  It is an unincorporated part of and the county seat of the City and County of Honolulu on the island of Oahu.  The city is the main gateway to Hawaii and a major portal into the United States.  The city is also a major hub for international business, military defense, as well as famously being host to a diverse variety of east-west and Pacific culture, cuisine, and traditions."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 304,
+    "generation_tokens": 16,
+    "generation_speed": 206.40899943237525,
+    "prompt_eval_speed": 36048.8556859955,
+    "generation_latency_s": 0.2065977999009192,
+    "latency": 0.4966394999064505,
+    "total_prompt_tokens": 428,
+    "total_generation_tokens": 34,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2418376,
+    "stage_route_s": 0.08950819994788617,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16587480006273836,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.034493800019845366,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.299997817724943e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20663569995667785,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49665069999173284,
+    "unaccounted_latency_s": 9.580003097653389e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Are local h and for against both from the united states?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q597",
+  "query": "Where was the movement that August Brancart published literature from centerd?",
+  "ground_truth": "Western Europe",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "August Brancart's publications centered in France.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Auguste Brancart: August or Auguste Brancart (21 July 1851 - 1894?)  was a Belgian publisher of pornographic literature, credited with the first publication of \"My Secret Life\".  He published translations of English pornography into French and vice versa for English publishers such as Edward Avery.  He also published work of the Decadent movement such as \"Monsieur V\u00e9nus\" by Rachilde.",
+      "Fran\u00e7ois Guizot: Fran\u00e7ois Pierre Guillaume Guizot (] ; 4 October 1787 \u2013 12 September 1874) was a French historian, orator, and statesman.  Guizot was a dominant figure in French politics prior to the Revolution of 1848.  A conservative liberal who opposed the attempt by King Charles X to usurp legislative power, he worked to sustain a constitutional monarchy following the July Revolution of 1830.",
+      "Timeline of Mary Wollstonecraft: The lifetime of British writer, philosopher, and feminist Mary Wollstonecraft (1759\u20131797) encompassed most of the second half of the eighteenth century, a time of great political and social upheaval throughout Europe and America: political reform movements in Britain gained strength, the American colonists successfully rebelled, and the French revolution erupted.  Wollstonecraft experienced only the headiest of these days, not living to see the end of the democratic revolution when Napoleon crowned himself emperor.  Although Britain was still revelling in its mid-century imperial conquests and its triumph in the Seven Years' War, it was the French revolution that defined Wollstonecraft's generation.  As poet Robert Southey later wrote: \"few persons but those who have lived in it can conceive or comprehend what the memory of the French Revolution was, nor what a visionary world seemed to open upon those who were just entering it.  Old things seemed passing away, and nothing was dreamt of but the regeneration of the human race.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 496,
+    "generation_tokens": 11,
+    "generation_speed": 230.7918257731526,
+    "prompt_eval_speed": 64115.8221302999,
+    "generation_latency_s": 0.17086519999429584,
+    "latency": 0.5844429000280797,
+    "total_prompt_tokens": 626,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24396469999999998,
+    "stage_route_s": 0.11497679993044585,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24269520002417266,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055716600036248565,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.140004213899374e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17091670003719628,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5844582000281662,
+    "unaccounted_latency_s": 0.0001023999648168683,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The movement that August Brancart published literature from was the French Revolution.",
+      "Query 2: The movement that August Brancart published literature from was the French Revolution."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

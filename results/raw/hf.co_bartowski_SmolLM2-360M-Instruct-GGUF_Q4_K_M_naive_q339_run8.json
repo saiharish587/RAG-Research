@@ -1,0 +1,36 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "No, both Sorbaria and Solidago rupestris are not a genus of over 50 flowering plants. They belong to the Rosaceae family, which includes many other genera such as Rosa, Althea, and Pyracantha.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sorbaria: Sorbaria is a genus of around 9 species of flowering plants belong to family Rosaceae.",
+      "Goldenrod: Solidago, commonly called goldenrods, is a genus of about 100 to 120 species of flowering plants in the aster family, Asteraceae.  Most are herbaceous perennial species found in open areas such as meadows, prairies, and savannas.  They are mostly native to North America, including Mexico; a few species are native to South America and Eurasia.  Some American species have also been introduced into Europe and other parts of the world.",
+      "Solidago rupestris: Solidago rupestris , the rock goldenrod or riverbank goldenrod, is a North American species of flowering plants in the sunflower family.  It is found in the eastern United States, found today in the States of Maryland, Virginia, Kentucky, and Tennessee.  There are historical records of it formerly growing in Indiana and Pennsylvania as well, but these populations now appear to have been extirpated."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 293,
+    "generation_tokens": 53,
+    "generation_speed": 241.36439192112394,
+    "prompt_eval_speed": 63516.15001083894,
+    "generation_latency_s": 0.32952080003451556,
+    "latency": 0.3462240999797359,
+    "total_prompt_tokens": 293,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0959744,
+    "stage_retrieve_s": 0.016624500043690205,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.3295562999555841,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.346230800030753,
+    "unaccounted_latency_s": 5.0600036047399044e-05
+  }
+}

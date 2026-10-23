@@ -1,0 +1,42 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The MGM Grand Las Vegas (formerly Marina and MGM-Marina) is located on the Las Vegas Strip in Winchester, Nevada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "MGM Grand Las Vegas: The MGM Grand Las Vegas (formerly Marina and MGM-Marina) is a hotel and casino located on the Las Vegas Strip in Paradise, Nevada.  The MGM Grand is the largest single hotel in the United States with 5,124 rooms.  It is also the third-largest hotel complex in the world by number of rooms and second-largest hotel resort complex in the United States behind the combined The Venetian and The Palazzo.  When it opened in 1993, the MGM Grand was the largest hotel complex in the world.",
+      "Riviera (hotel and casino): Riviera (colloquially, \"the Riv\") was a hotel and casino on the Las Vegas Strip in Winchester, Nevada, which operated from April 1955 to May 2015.  It was last owned by the Las Vegas Convention and Visitors Authority, which decided to demolish it to make way for the Las Vegas Global Business District."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 30,
+    "generation_speed": 412.4164856616535,
+    "prompt_eval_speed": 46699.95950870563,
+    "generation_latency_s": 0.16867689997889102,
+    "latency": 0.5736842000624165,
+    "total_prompt_tokens": 423,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1331411,
+    "stage_rewrite_s": 0.16358059993945062,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0802429000614211,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16105599992442876,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16871769994031638,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5736959000350907,
+    "unaccounted_latency_s": 9.960017632693052e-05,
+    "rewritten_query": "The Las Vegas Festival Grounds is located at the hotel that is owned by the Las Vegas Convention and Visitors Bureau (LZB).",
+    "query_was_rewritten": true
+  }
+}

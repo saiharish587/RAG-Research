@@ -1,0 +1,48 @@
+{
+  "question_id": "Q90",
+  "query": "What occupation do Chris Menges and Aram Avakian share?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Chris Menges shares the profession of cinematography.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Menges: Chris Menges BSC, ASC (born 15 September 1940) is an English cinematographer and film director.  He is a member of both the American and British Societies of Cinematographers.",
+      "Aram Avakian: Aram A. Avakian (April 23, 1926 \u2013 January 17, 1987) was an Armenian-American film editor and director.  His work in the latter role includes \"Jazz on a Summer's Day\" (1960) and the indie film \"End of the Road\" (1970).",
+      "Nick Jennings (computer scientist): Nicholas Robert Jennings, CB, FREng, FIEEE, FIET, FBCS, CEng, CITP is the Vice-Provost for Research at Imperial College, where he also holds a Chair in Artificial Intelligence.  He was previously the Regius Professor of Computer Science at the University of Southampton and Chief Scientific Adviser to the UK Government on National Security.  He is an internationally recognised authority in the areas of artificial intelligence, autonomous systems, agent-based computing and cybersecurity.  He has been involved in founding and advising a number of start ups including Aerogility , Contact Engine , Crossword Cyber Security , Mentat and Reliance Cyber Science ."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 352,
+    "generation_tokens": 12,
+    "generation_speed": 329.561682961661,
+    "prompt_eval_speed": 20704.664431504032,
+    "generation_latency_s": 0.15778560005128384,
+    "latency": 0.5739713000366464,
+    "total_prompt_tokens": 478,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2287705,
+    "stage_route_s": 0.19946300005540252,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17682870000135154,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039713599951937795,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.4200063459575176e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15782239998225123,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5739828000077978,
+    "unaccounted_latency_s": 0.00010159995872527361,
+    "route": "rag",
+    "router_raw": "Answer: Chris Menges and Aram Avakian are both part of the team at the University of California, Berkeley (UCB) who work together on research projects related to quantum computing.",
+    "sub_queries": [
+      "Chris Menges and Aram Avakian are both professionals in the field of cybersecurity, with Menges being a cybersecurity specialist and Avakian being an AI researcher."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

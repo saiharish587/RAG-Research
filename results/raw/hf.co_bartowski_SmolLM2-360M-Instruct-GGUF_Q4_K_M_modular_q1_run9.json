@@ -1,0 +1,49 @@
+{
+  "question_id": "Q1",
+  "query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Scott Derrickson is a writer and his colleagues are primarily American writers. However, Edna O'Brien was born in Ireland and immigrated to the United States. Therefore, Edna O'Brien's nationality is not explicitly stated as being the same as Scott Derrickson's.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shop Talk: Shop Talk: A Writer and His Colleagues and Their Work is a collection of previously published interviews with important 20th-century writers by novelist Philip Roth.  Among the writers interviewed are Primo Levi, Aharon Appelfeld, Ivan Klima, Isaac Bashevis Singer, Milan Kundera, and Edna O'Brien.  In addition, the book contains a discussion with Mary McCarthy about Roth's novel \"The Counterlife\" and a \"New Yorker\" essay on Saul Bellow.  Roth's trip to Israel to interview Appelfeld inspired his novel \"Operation Shylock\".",
+      "Ed Wood: Edward Davis Wood Jr. (October 10, 1924 \u2013 December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+      "Czech Americans: Czech Americans (), known in the 19th and early 20th century as Bohemian Americans, are citizens of the United States who are of Czech descent.  Czechs originate from the Czech lands, a term which refers to the majority of the traditional lands of the Bohemian Crown, namely Bohemia, Moravia and Czech Silesia.  These lands over time have been governed by a variety of states, including the Kingdom of Bohemia, the Austrian Empire, the Czechoslovak Republic, and the Czech Republic.  Germans from the Czech lands who emigrated to the United States usually identified as German American, or, more specifically, as Americans of German Bohemian descent.  According to the 2000 US census, there are 1,262,527 Americans of full or partial Czech descent, in addition to 441,403 persons who list their ancestry as Czechoslovak."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 56,
+    "generation_speed": 239.29169657812872,
+    "prompt_eval_speed": 61493.61465852304,
+    "generation_latency_s": 0.3566468000644818,
+    "latency": 0.6813003999413922,
+    "total_prompt_tokens": 567,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23115760000000002,
+    "stage_route_s": 0.09725109999999404,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17093259992543608,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056253000046126544,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.779997445642948e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3567098000785336,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6813126999186352,
+    "unaccounted_latency_s": 0.0001091999001801014,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Are they both American?",
+      "Query 2: Did they ever meet in person?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

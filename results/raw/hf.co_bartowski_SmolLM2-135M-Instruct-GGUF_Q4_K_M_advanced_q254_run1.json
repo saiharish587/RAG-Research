@@ -1,0 +1,42 @@
+{
+  "question_id": "Q254",
+  "query": "Which director had the longest career, Alain Resnais or Scott Sidney?",
+  "ground_truth": "Scott Sidney",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Alain Resnais has a longer career than Scott Sidney.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alain Resnais: Alain Resnais (] ; 3 June 19221 March 2014) was a French film director and screenwriter whose career extended over more than six decades.  After training as a film editor in the mid-1940s, he went on to direct a number of short films which included \"Night and Fog\" (1955), an influential documentary about the Nazi concentration camps.",
+      "Muriel (film): Muriel (French: Muriel ou le Temps d'un retour , literally \"Muriel, or the Time of a Return\") is a 1963 French film directed by Alain Resnais.  It was Resnais's third feature film, following \"Hiroshima mon amour\" (1959) and \"L'Ann\u00e9e derni\u00e8re \u00e0 Marienbad\" (1961), and in common with those films it explores the challenge of integrating a remembered or imagined past with the life of the present.  It also makes oblique reference to the controversial subject of the Algerian War, which had recently been brought to an end.  \"Muriel\" was Resnais's second collaboration with Jean Cayrol, who had also written the screenplay of \"Nuit et brouillard\" (\"Night and Fog\") (1955).",
+      "Scott Sidney: Scott Sidney (1872 \u2013 20 July 1928), born Harry Wilbur Siggins, was an American film director.  He directed 117 films between 1913 and 1927."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 423,
+    "generation_tokens": 14,
+    "generation_speed": 365.62116424225013,
+    "prompt_eval_speed": 23782.75047790397,
+    "generation_latency_s": 0.1358102000085637,
+    "latency": 0.4819994999561459,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 34,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1365429,
+    "stage_rewrite_s": 0.1465555999893695,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08220210007857531,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11730360006913543,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13584400003310293,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4820079000201076,
+    "unaccounted_latency_s": 0.0001029998529702425,
+    "rewritten_query": "Alain Resnais had a longer career than Scott Sidney in 2019.",
+    "query_was_rewritten": true
+  }
+}

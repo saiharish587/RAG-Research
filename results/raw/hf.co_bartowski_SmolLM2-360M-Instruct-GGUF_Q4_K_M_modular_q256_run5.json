@@ -1,0 +1,48 @@
+{
+  "question_id": "Q256",
+  "query": "James Fieser received his B.A. from what liberal arts work college that was founded in 1855?",
+  "ground_truth": "Berea College",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "James Fieser received his B.A. from Berea College, which was founded in 1855.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Fieser: James Fieser is professor of philosophy at the University of Tennessee at Martin.  He received his B.A. from Berea College, and his M.A. and Ph.D. in philosophy from Purdue University.  He is founder and general editor of the Internet Encyclopedia of Philosophy.  He is author, coauthor or editor of more than ten text books.",
+      "Berea College: Berea College is a liberal arts work college in the city of Berea, in the U.S. state of Kentucky.  It is located in Madison County, approximately 35 miles south of Lexington.  Founded in 1855, Berea College is distinctive among post-secondary institutions for providing free education to students and for having been the first college in the Southern United States to be coeducational and racially integrated.  Berea College charges no tuition; every admitted student is provided the equivalent of a four-year, full-tuition scholarship (currently worth $97,200; $24,300 per year).",
+      "Gustavus Adolphus College: Gustavus Adolphus College ( ) is a private, coeducational liberal arts college.  A four-year, residential institution, Gustavus Adolphus College was founded in 1862 by Swedish Americans and is affiliated with the Evangelical Lutheran Church in America.  To this day the school retains Swedish and Lutheran heritage.  The premier event on campus is the annual Nobel Conference, which features Nobel Laureates and other scholars explaining their expertise to a general audience.  In 2015, \"U.S. News & World Report\" ranked Gustavus as the 64th best liberal arts college in the United States.  The college is ranked No. 38 for liberal arts colleges on Payscale's 2016-17 list of highest-paid graduates."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 480,
+    "generation_tokens": 26,
+    "generation_speed": 242.41746151622797,
+    "prompt_eval_speed": 43458.578542326846,
+    "generation_latency_s": 0.23110109998378903,
+    "latency": 0.5672878000186756,
+    "total_prompt_tokens": 632,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2250345,
+    "stage_route_s": 0.09754739992786199,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19671640009619296,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04174719995353371,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1499966755509377e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23114829999394715,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5673005999997258,
+    "unaccounted_latency_s": 0.00010050006676465273,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "James Fieser received his B.A. from the University of California, Berkeley, which was founded in 1855."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

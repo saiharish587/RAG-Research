@@ -1,0 +1,49 @@
+{
+  "question_id": "Q216",
+  "query": "The Tennessee Volunteers football team plays as a member for a conference in what city?",
+  "ground_truth": "Birmingham, Alabama",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Tennessee Volunteers football team plays as a member for the Southeastern Conference (SEC) in Knoxville, Tennessee.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1984 Tennessee Volunteers football team: The 1984 Tennessee Volunteers football team (variously \"Tennessee\", \"UT\" or the \"Vols\") represented the University of Tennessee in the 1984 NCAA Division I-A football season.  Playing as a member of the Southeastern Conference (SEC), the team was led by head coach Johnny Majors, in his eighth year, and played their home games at Neyland Stadium in Knoxville, Tennessee.  They finished the season with a record of seven wins, four losses and one tie (7\u20134\u20131 overall, 3\u20133 in the SEC) and a loss against Maryland in the Sun Bowl.  The Volunteers offense scored 327 points while the defense allowed 276 points.",
+      "Tennessee Tech Golden Eagles football: The Tennessee Tech Golden Eagles football program is the intercollegiate American football team for the Tennessee Technological University located in the U.S. state of Tennessee.  The team competes in the NCAA Division I Football Championship Subdivision (FCS) and are members of the Ohio Valley Conference.  The school's first football team was fielded in 1922.  The team plays its home games at the 16,500 seat Tucker Stadium.  They are coached by Marcus Satterfield, who took over in 2016 following the retirement of Watson Brown.",
+      "Southeastern Conference: The Southeastern Conference (SEC) is an American college athletic conference whose member institutions are located primarily in the Southern part of the United States.  Its fourteen members include the flagship public universities of ten states, three additional public land grant universities, and one private research university.  The conference is headquartered in Birmingham, Alabama.  The SEC participates in the National Collegiate Athletic Association (NCAA) Division I in sports competitions; for football, it is part of the Football Bowl Subdivision (FBS), formerly known as Division I-A."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 492,
+    "generation_tokens": 23,
+    "generation_speed": 228.50784378011582,
+    "prompt_eval_speed": 56911.50954308849,
+    "generation_latency_s": 0.2225175000494346,
+    "latency": 0.6327111999271438,
+    "total_prompt_tokens": 624,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2300468,
+    "stage_route_s": 0.09972349996678531,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25356660003308207,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05674110003747046,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.7900015488266945e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22254910005722195,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6327202999964356,
+    "unaccounted_latency_s": 9.259989019483328e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Tennessee Volunteers football team plays as a member for a conference in Nashville, Tennessee.\"",
+      "\"The Tennessee Volunteers football team plays as a member for a conference in Memphis, Tennessee.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q417",
+  "query": "The Bart the Fink episode of The Simpsons aired in February of 1996, and involves the host of which kiddie show?",
+  "ground_truth": "The Itchy & Scratchy Show",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Bart the Fink episode of The Simpsons aired in February of 1996.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bart the Fink: \"Bart the Fink\" is the fifteenth episode of \"The Simpsons\"<nowiki>'</nowiki> seventh season.  It originally aired on the Fox network in the United States on February 11, 1996.  In this episode, Bart ruins Krusty the Clown's career by accidentally exposing Krusty as one of the biggest tax cheats in American history.  Driven to despair, Krusty fakes a suicide in order to start life anew as a sailor; feeling guilty for what he did, Bart convinces Krusty to become a television clown again.",
+      "Bart Simpson: Bartholomew JoJo \"Bart\" Simpson is a fictional character in the American animated television series \"The Simpsons\" and part of the Simpson family.  He is voiced by Nancy Cartwright and first appeared on television in \"The Tracey Ullman Show\" short \"Good Night\" on April 19, 1987.  Cartoonist Matt Groening created and designed Bart while waiting in the lobby of James L. Brooks' office.  Groening had been called to pitch a series of shorts based on his comic strip, \"Life in Hell\", but instead decided to create a new set of characters.  While the rest of the characters were named after Groening's family members, Bart's name is an anagram of the word \"brat\".  After appearing on \"The Tracey Ullman Show\" for three years, the Simpson family received its own series on Fox, which debuted December 17, 1989.",
+      "Krusty the Clown: Herschel Shmoikel Pinchas Yerucham Krustofsky, better known as Krusty the Clown (sometimes spelled as Krusty the Klown), is a cartoon character in the animated television series \"The Simpsons\".  He is voiced by Dan Castellaneta.  He is the long-time clown host of Bart and Lisa's favorite TV show, a combination of kiddie variety television hijinks and cartoons including \"The Itchy & Scratchy Show\".  Krusty is often portrayed as a cynical, burnt-out, addiction-riddled smoker who is made miserable by show business but continues on anyway.  He has become one of the most common characters outside of the main Simpson family and has been the focus of several episodes, most of which also spotlight Bart."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 614,
+    "generation_tokens": 23,
+    "generation_speed": 343.878954607978,
+    "prompt_eval_speed": 75569.23076923077,
+    "generation_latency_s": 0.19099280005320907,
+    "latency": 0.5900101000443101,
+    "total_prompt_tokens": 780,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2340553,
+    "stage_route_s": 0.17642619996331632,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18316439993213862,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03927060007117689,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.8800062611699104e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1910254000686109,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5900198000017554,
+    "unaccounted_latency_s": 9.489990770816803e-05,
+    "route": "rag",
+    "router_raw": "The Bart the Fink episode of The Simpsmons' \"Simpsons\" aired in February of 1996.",
+    "sub_queries": [
+      "The Bart the Fink episode of The Simpsmons is a parody of the Simpsons. It features the host of the show, Bart Simpson, who plays the role of the narrator."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q109",
+  "query": "When was the  former Indian cricketer who made his ODI debuts during the 2000 ICC KnockOut Trophy born? ",
+  "ground_truth": "7 October 1978",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The answer is: \"Born in 1970.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2000 ICC KnockOut Trophy: The 2000 ICC KnockOut Trophy was a One Day International cricket tournament held in Kenya (which helped to booster cricket in Kenya).  New Zealand were crowned champions and cashed the winner's cheque of US$250 000.  It was their first win in a major ICC tournament.  Zaheer Khan, Yuvraj Singh and Marlon Samuels made their ODI debuts during the competition.",
+      "Post-80s: The Post-'80 (also the Post-1980, ) is a colloquial term which refers to the generation, especially in urban cities, whose members were born between 1980 and 1989 in Mainland China after the introduction of the One-child policy.  This generation, the first to grow up entirely within the reformist era, currently ranges in age from 27 to 37 , making up a major portion of China's young adult demographic.",
+      "Inzamam-ul-Haq: Inzamam-ul-Haq (\u00a0\u00a0 ;Punjabi, Urdu: \u200e ; born 3 March 1970), also known as \"Inzy\", is a former Pakistani cricketer, and former captain.  The leading run scorer for Pakistan in one-day internationals, and the third-highest run scorer for Pakistan in Test cricket, after Younis Khan and Javed Miandad, Inzamam is considered one of all time legends of world cricket.  He was the captain of the Pakistan national cricket team from 2003\u201307 and is considered to be one of the best leaders in Pakistan Cricket history.  Inzamam currently serves as the chief selector of Pakistan cricket team."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 474,
+    "generation_tokens": 14,
+    "generation_speed": 375.7783981103715,
+    "prompt_eval_speed": 55712.27080394923,
+    "generation_latency_s": 0.15593889995943755,
+    "latency": 0.5114039999898523,
+    "total_prompt_tokens": 636,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23859619999999998,
+    "stage_route_s": 0.21280810004100204,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.10334429994691163,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03914799995254725,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3599982745945454e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15597730001900345,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5114162999670953,
+    "unaccounted_latency_s": 9.560002945363522e-05,
+    "route": "rag",
+    "router_raw": "The answer to this question requires retrieval of information from internal files/documents, specifically the information about the former Indian cricketer who made his ODI debuts during the 2000 ICC KnockOut Trophy.",
+    "sub_queries": [
+      "The answer is: \"1987\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

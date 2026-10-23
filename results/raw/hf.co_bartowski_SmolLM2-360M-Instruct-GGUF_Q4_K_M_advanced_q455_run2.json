@@ -1,0 +1,42 @@
+{
+  "question_id": "Q455",
+  "query": "Are Agee and To Shoot an Elephant both documentaries about war?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, Agee and To Shoot an Elephant are not both documentaries about war. Agee is a 1980 documentary film directed by Ross Spears, while To Shoot an Elephant is a 2003 drama film edited, written and directed by Gus Van Sant.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "To Shoot an Elephant: To Shoot an Elephant is a 2009 documentary film about the 2008-2009 Gaza War directed by Alberto Arce and Mohammad Rujailahk.",
+      "Agee (film): Agee is a 1980 American documentary film directed by Ross Spears, about the writer James Agee.  It was nominated for an Academy Award for Best Documentary Feature.",
+      "Elephant (2003 film): Elephant is a 2003 drama film edited, written and directed by Gus Van Sant.  It takes place in the fictional Watt High School, in the suburbs of Portland, Oregon, and chronicles the events surrounding a school shooting, based in part on the 1999 Columbine High School massacre.  The film begins a short time before the shooting occurs, following the lives of several characters both in and out of school, who are unaware of what is about to unfold.  The film stars mostly new or non-professional actors, including John Robinson, Alex Frost, and Eric Deulen."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 300,
+    "generation_tokens": 61,
+    "generation_speed": 253.8641452269379,
+    "prompt_eval_speed": 12733.987011333249,
+    "generation_latency_s": 1.1323576000286266,
+    "latency": 3.6178051999304444,
+    "total_prompt_tokens": 374,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1250774,
+    "stage_rewrite_s": 1.1720752000110224,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1353811000008136,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.177880399976857,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1323917000554502,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.6178140999982134,
+    "unaccounted_latency_s": 8.60999571159482e-05,
+    "rewritten_query": "Are Agee and To Shoot an Elephant both documentaries about war?",
+    "query_was_rewritten": false
+  }
+}

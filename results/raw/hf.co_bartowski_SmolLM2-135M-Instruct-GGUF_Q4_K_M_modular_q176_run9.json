@@ -1,0 +1,48 @@
+{
+  "question_id": "Q176",
+  "query": "Are Bamboo Ma\u00f1alac and Danny Jones both musicians?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "No",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bamboo Ma\u00f1alac: Francisco Gaudencio Lope Belardo Ma\u00f1alac (born March 21, 1976), popularly known as Bamboo Ma\u00f1alac or simply by the mononym Bamboo, is a Filipino American musician and singer-songwriter.  He began his career as vocalist and original frontman of Rivermaya and later fronted his own band, Bamboo.  Bamboo band disbanded in 2011 and Ma\u00f1alac then pursued a solo career and released his first solo album, \"No Water, No Moon\".",
+      "Danny Jones: Danny Jones (born 12 March 1986) is a British musician who is one of the lead vocalists and guitarists for pop-rock band McFly.  Jones' fellow band members are Tom Fletcher (guitar and vocals), Dougie Poynter (bass and vocals), and Harry Judd (drums).",
+      "Bamboo (band): Bamboo was a Filipino rock band formed in 2002 and had been active from 2004 until it disbanded in 2011.  It consisted of Bamboo Ma\u00f1alac, Ira Cruz, Nathan Azarcon and Vic Mercado."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 345,
+    "generation_tokens": 2,
+    "generation_speed": 440.8199250606127,
+    "prompt_eval_speed": 45520.517218630426,
+    "generation_latency_s": 0.11753419996239245,
+    "latency": 0.5463916000444442,
+    "total_prompt_tokens": 473,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2467056,
+    "stage_route_s": 0.10296259995084256,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2877004999900237,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03800780000165105,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.029995761811733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.11758419999387115,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5464067000430077,
+    "unaccounted_latency_s": 0.00011210015509277582,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Bamboo Ma\u00f1alac and Danny Jones are both musicians, but they have different styles of music. Bamboo Ma\u00f1alac is known for its catchy melodies and lively rhythms, often featuring a mix of folk and rock influences. Danny Jones' music features a more introspective approach, with lyrics that explore themes like love, loss, and self-discovery."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

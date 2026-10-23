@@ -1,0 +1,49 @@
+{
+  "question_id": "Q49",
+  "query": "Are Ferocactus and Silene both types of plant?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, Ferocactus and Silene are not both types of plants. Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers, while Silene conoidea is a species of flowering plant in the pink family known by the common name \"weed silene\" or \"large sand catchfly.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Silene: Silene is a genus of flowering plants in the family Caryophyllaceae.  Containing approximately 700 species, it is the largest genus in the family.  Common names include campion (which is shared with the related genus \"Lychnis\") and catchfly.  Many \"Silene\" species are widely distributed, particularly in the northern hemisphere.",
+      "Ferocactus: Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers.  There are about 30 species included in the genus.  They are found in the southwestern United States and northwestern Mexico.",
+      "Silene conoidea: Silene conoidea is a species of flowering plant in the pink family known by the common names weed silene and large sand catchfly.  It is native to Eurasia, and it is known in other parts of the world, such as western North America, as a weed.  It is an annual herb growing up to a meter in height with a hairy, partially glandular stem.  The lance-shaped leaves are up to 12 centimeters long near the base of the plant and smaller farther up.  The flower is enclosed in an inflated, hairy, glandular calyx of fused sepals which is ridged with many veins.  It is open at the top, revealing five bright pink petals."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 352,
+    "generation_tokens": 70,
+    "generation_speed": 214.42465270864284,
+    "prompt_eval_speed": 42307.69230769231,
+    "generation_latency_s": 0.4487630999647081,
+    "latency": 0.8499584000092,
+    "total_prompt_tokens": 476,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2410142,
+    "stage_route_s": 0.09823659993708134,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24630909995175898,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056476500001735985,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1200040616095066e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4488013000227511,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8499708999879658,
+    "unaccounted_latency_s": 9.69000393524766e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Ferocactus and Silene are types of plants.",
+      "Query 2: No, they are not types of plants."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

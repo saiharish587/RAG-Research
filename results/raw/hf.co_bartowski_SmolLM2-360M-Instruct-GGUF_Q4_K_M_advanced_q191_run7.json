@@ -1,0 +1,42 @@
+{
+  "question_id": "Q191",
+  "query": "Joe Walker played for which team that ends their regular season with the Civil War rivalry game?",
+  "ground_truth": "Oregon Ducks football",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Joe Walker played for the Philadelphia Eagles, a unit of the Army National Guard and the New York Army National Guard.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joe Walker (American football): Joe Walker (born December 11, 1992) is an American football linebacker for the Philadelphia Eagles of the National Football League (NFL).  He played college football at Oregon.",
+      "28th Infantry Division (United States): The 28th Infantry Division (\"Keystone\") is a unit of the Army National Guard and is the oldest division-sized unit in the armed forces of the United States.  Some of the units of the division can trace their lineage to Benjamin Franklin's battalion, \"The Pennsylvania Associators\" (1747-1777).  The division was officially established in 1879 and was later redesignated as the 28th Division in 1917, after the entry of America into the First World War.  It is today part of the Pennsylvania Army National Guard, Maryland Army National Guard, Ohio Army National Guard, and New Jersey Army National Guard.",
+      "New York Army National Guard: The New York Army National Guard is a component of the New York National Guard and the Army National Guard.  Nationwide, the Army National Guard comprises approximately one half of the US Army's available combat forces and approximately one third of its support organization.  National coordination of various state National Guard units are maintained through the National Guard Bureau."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 352,
+    "generation_tokens": 26,
+    "generation_speed": 263.44587200583635,
+    "prompt_eval_speed": 45857.21730067744,
+    "generation_latency_s": 0.9906604000134394,
+    "latency": 3.375525400042534,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1199645,
+    "stage_rewrite_s": 1.248802600079216,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9939974000444636,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1419463000493124,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9907006999710575,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.375536200008355,
+    "unaccounted_latency_s": 8.979986887425184e-05,
+    "rewritten_query": "Joe Walker played for the 10th Army National Guard Division, a team known for its rivalry against the 13th Army National Guard Division.",
+    "query_was_rewritten": true
+  }
+}

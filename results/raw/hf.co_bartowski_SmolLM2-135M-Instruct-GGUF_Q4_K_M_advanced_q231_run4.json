@@ -1,0 +1,42 @@
+{
+  "question_id": "Q231",
+  "query": "What building is opposite the ceremonial meeting place of the Accession Council in the United Kingdom?",
+  "ground_truth": "Mark Masons' Hall",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The building that stands opposite the ceremonial meeting place of the Accession Council in the United Kingdom is Buckingham Palace.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "St James's Palace: St James's Palace is the most senior royal palace in the United Kingdom.  Located in the City of Westminster, although no longer the principal residence of the monarch, it is the ceremonial meeting place of the Accession Council and the London residence of several members of the royal family.",
+      "Accession Council: In the United Kingdom, the Accession Council is a ceremonial body which assembles in St James's Palace upon the death of a monarch (Demise of the Crown), to formally proclaim the accession of his or her successor to the throne.  Under the terms of the Act of Settlement 1701, a new monarch succeeds automatically.  The proclamation confirms by name the identity of the heir who has succeeded.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 294,
+    "generation_tokens": 23,
+    "generation_speed": 388.8090609415941,
+    "prompt_eval_speed": 34289.713086074174,
+    "generation_latency_s": 0.15028139995411038,
+    "latency": 0.610555800027214,
+    "total_prompt_tokens": 372,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1529204,
+    "stage_rewrite_s": 0.15715400001499802,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08122210006695241,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2217592999804765,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1503169999923557,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6105682000052184,
+    "unaccounted_latency_s": 0.00011659995652735233,
+    "rewritten_query": "The ceremonial meeting place of the Accession Council is located opposite the ceremonial meeting place of the British monarch.",
+    "query_was_rewritten": true
+  }
+}

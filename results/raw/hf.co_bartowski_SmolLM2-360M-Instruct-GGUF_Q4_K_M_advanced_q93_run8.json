@@ -1,0 +1,42 @@
+{
+  "question_id": "Q93",
+  "query": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+  "ground_truth": "Las Vegas Strip in Paradise",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The MGM Grand Las Vegas is located on the Las Vegas Strip in Paradise, Nevada. For Adults Only was also recorded at the Westgate Las Vegas Resort & Casino, then known as the International Hotel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Why Is There Air?: Why Is There Air?  (1965) is Bill Cosby's third album.  It was recorded at the Flamingo Hotel in Las Vegas, Nevada.  It won the 1966 Grammy Award for Best Comedy Album.",
+      "MGM Grand Las Vegas: The MGM Grand Las Vegas (formerly Marina and MGM-Marina) is a hotel and casino located on the Las Vegas Strip in Paradise, Nevada.  The MGM Grand is the largest single hotel in the United States with 5,124 rooms.  It is also the third-largest hotel complex in the world by number of rooms and second-largest hotel resort complex in the United States behind the combined The Venetian and The Palazzo.  When it opened in 1993, the MGM Grand was the largest hotel complex in the world.",
+      "For Adults Only: For Adults Only (1971) is the 13th comedy album by Bill Cosby.  It was recorded at the Westgate Las Vegas Resort & Casino, then known as the International Hotel.  The title \"For Adults Only\" was also used for a 1959 Pearl Bailey LP (Roulette R-25016)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 343,
+    "generation_tokens": 44,
+    "generation_speed": 257.8301251062084,
+    "prompt_eval_speed": 47951.90829022788,
+    "generation_latency_s": 1.0826779999770224,
+    "latency": 3.4589064000174403,
+    "total_prompt_tokens": 421,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12574,
+    "stage_rewrite_s": 1.2001930000260472,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0488428000826389,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12707229994703084,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0827126000076532,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.458915500086732,
+    "unaccounted_latency_s": 9.520002640783787e-05,
+    "rewritten_query": "The hotel and casino is located in the city where Bill Cosby's third album was recorded.",
+    "query_was_rewritten": true
+  }
+}

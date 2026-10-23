@@ -1,0 +1,42 @@
+{
+  "question_id": "Q582",
+  "query": "Where was the author of Thoughts of Machiavelli born?",
+  "ground_truth": "Germany",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Machiavelli was born in 1469 in Pisa, Italy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thoughts on Machiavelli: Thoughts on Machiavelli is a book by Leo Strauss first published in 1958.  The book is a collection of lectures he gave at the University of Chicago in which he dissects the work of Niccol\u00f2 Machiavelli.  The book contains commentary on Machiavelli's \"The Prince\" and the \"Discourses on Livy\".",
+      "Milan Kundera: Milan Kundera (] ; born 1 April 1929) is a Czech-born French writer who went into exile in France in 1975, and became a naturalised French citizen in 1981.  He \"sees himself as a French writer and insists his work should be studied as French literature and classified as such in book stores\".",
+      "Anthony Parel: Anthony Parel (born 1926) is a Canadian historian, author and academic.  He has authored and edited a number of books, on subjects including Thomas Aquinas, Niccol\u00f2 Machiavelli, Mohandas Karamchand Gandhi and South Asian history."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 298,
+    "generation_tokens": 18,
+    "generation_speed": 249.9409861560465,
+    "prompt_eval_speed": 12499.475693133676,
+    "generation_latency_s": 0.9314497000304982,
+    "latency": 3.3598198000108823,
+    "total_prompt_tokens": 370,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.121422,
+    "stage_rewrite_s": 1.1988043000455946,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.046527799917385,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18292179994750768,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9314840000588447,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.359828499960713,
+    "unaccounted_latency_s": 9.129999671131372e-05,
+    "rewritten_query": "The author of \"The Prince\" by Niccol\u00f2 Machiavelli was born in Florence, Italy.",
+    "query_was_rewritten": true
+  }
+}

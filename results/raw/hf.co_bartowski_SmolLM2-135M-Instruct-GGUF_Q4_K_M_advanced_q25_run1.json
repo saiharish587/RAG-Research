@@ -1,0 +1,42 @@
+{
+  "question_id": "Q25",
+  "query": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+  "ground_truth": "World's Best Goalkeeper",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The father of Kasper Schmeichel who was voted to be by the International Football Association Board (IFAB) in 1992 is Nelson Mandela.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kasper Schmeichel: Kasper Peter Schmeichel (] ; born 5 November 1986) is a Danish professional footballer who plays as a goalkeeper for Premier League club Leicester City and the Denmark national team.  He is the son of former Manchester United and Danish international goalkeeper Peter Schmeichel.",
+      "Peter Schmeichel: Peter Boles\u0142aw Schmeichel MBE (] ; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993.  He is best remembered for his most successful years at English club Manchester United, whom he captained to the 1999 UEFA Champions League to complete the Treble, and for winning UEFA Euro 1992 with Denmark.",
+      "Nelson Mandela: Nelson Rolihlahla Mandela ( ; 18 July 1918 \u2013 5 December 2013) was a South African anti-apartheid revolutionary, politician, and philanthropist, who served as President of South Africa from 1994 to 1999.  He was the country's first black head of state and the first elected in a fully representative democratic election.  His government focused on dismantling the legacy of apartheid by tackling institutionalised racism and fostering racial reconciliation.  Ideologically an African nationalist and socialist, he served as President of the African National Congress (ANC) party from 1991 to 1997."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 426,
+    "generation_tokens": 36,
+    "generation_speed": 398.8389355431965,
+    "prompt_eval_speed": 23192.508710801394,
+    "generation_latency_s": 0.1827978000510484,
+    "latency": 0.6813981999875978,
+    "total_prompt_tokens": 512,
+    "total_generation_tokens": 83,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1280946,
+    "stage_rewrite_s": 0.20138910005334765,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07675240002572536,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22033369995187968,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18283860001247376,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6814094999572262,
+    "unaccounted_latency_s": 9.629991836845875e-05,
+    "rewritten_query": "The father of Kasper Schmeichel, who was elected as the first president of the International Federation of American Ophthalmologists (IFAO) in 1992, was John M. Schmoeck.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q399",
+  "query": "Snowdrop is a proprietary game engine first revealed with an online-only action role-playing video game developed by who?",
+  "ground_truth": "Massive Entertainment",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Context:\nSnowdrop (game engine): Snowdrop is a proprietary game engine created by Ubisoft for use on Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One. It was first revealed at E3 2013 with \"Tom Clancy's The Division\", the first game using the engine.\n\nCall of Duty 4: Modern Warfare: Call of Duty 4 is a first-person shooter video game developed by Infinity Ward and published by Activision. It was released in 2007 for the PlayStation 3, Xbox 360, and Microsoft Windows.\n\nRockstar Advanced Game Engine: The Rockstar Advanced Game Engine (RAGE) is a proprietary game engine developed by RAGED Technologies at Rockstar San Diego, with contributions from other Rockstar Games subsidiaries. It was originally developed by Angel Studios for \"Midtown Madness\" and later the sixth generation console era versions of the \"Midnight Club\" series and other Angel Studios games.\n\nQuestion: Who is Snowdrop?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Snowdrop (game engine): Snowdrop is a proprietary game engine created by Ubisoft for use on Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One.  It was first revealed at E3 2013 with \"Tom Clancy's The Division\", the first game using the engine.",
+      "Call of Duty 4: Modern Warfare: Call of Duty 4: Modern Warfare is a first-person shooter video game developed by Infinity Ward and published by Activision.  The fourth installment in the \"Call of Duty\" series, it was released in 2007 for the PlayStation 3, Xbox 360, and Microsoft Windows.  The game breaks away from the World War II setting of previous entries in the series and is instead set in modern times.  Developed for over two years, the game uses a proprietary game engine.",
+      "Rockstar Advanced Game Engine: The Rockstar Advanced Game Engine (RAGE) is a proprietary game engine developed by the RAGE Technology Group at Rockstar San Diego, with contributions by other Rockstar Games subsidiaries.  The engine has been used on several different platforms such as Microsoft Windows, PlayStation 3, PlayStation 4, Wii, Xbox 360 and Xbox One.  The Angel Game Engine was originally developed by Angel Studios for \"Midtown Madness\" and later the sixth generation console era versions of the \"Midnight Club\" series and other Angel Studios games."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 226,
+    "generation_speed": 414.4553213495839,
+    "prompt_eval_speed": 57720.480515675365,
+    "generation_latency_s": 0.6362917999504134,
+    "latency": 1.0433924000244588,
+    "total_prompt_tokens": 478,
+    "total_generation_tokens": 251,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1281506,
+    "stage_rewrite_s": 0.14415970002301037,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07786029996350408,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1849570000777021,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6363360999384895,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0434039999963716,
+    "unaccounted_latency_s": 9.139999747276306e-05,
+    "rewritten_query": "Snowdrop, a proprietary game engine originally released as an online-only action role-playing video game developed by who?",
+    "query_was_rewritten": true
+  }
+}

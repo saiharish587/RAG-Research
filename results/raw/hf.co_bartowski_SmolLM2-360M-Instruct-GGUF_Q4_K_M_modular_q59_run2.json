@@ -1,0 +1,49 @@
+{
+  "question_id": "Q59",
+  "query": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+  "ground_truth": "35,124",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "According to the 2001 census, the population of the city in which Kirton End is located was 1,146.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kirton, Nottinghamshire: Kirton is a village in Nottinghamshire, England.  It is located 3 mi east of Ollerton.  According to the United Kingdom Census 2001 it had a population of 273, reducing to 261 at the 2011 census.",
+      "Kirton, Suffolk: Kirton is a village and a civil parish in the shire county of Suffolk, England, situated off the A14 road, about 4.5 km from Felixstowe and around 10 km from Ipswich.  The closest train station to Kirton is Trimley.  According to the 2011 census, Kirton had a population of 1,146.  It is located between the River Debben and the River Orwell.  The village of Kirton covers a total area of 8.3 km2 .  As the county of Suffolk lacks quarries, many of the buildings are made from flint, clay and timber.",
+      "Kirton End: Kirton End is a hamlet in the civil parish of Kirton in the Boston district of Lincolnshire, England.  It lies on the B1391 road, 4 mi south-west from Boston, and 1.5 mi north-east from Kirton."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 360,
+    "generation_tokens": 31,
+    "generation_speed": 252.38750437607365,
+    "prompt_eval_speed": 18995.356690586745,
+    "generation_latency_s": 0.2521180999465287,
+    "latency": 0.8217855000402778,
+    "total_prompt_tokens": 510,
+    "total_generation_tokens": 117,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22842849999999998,
+    "stage_route_s": 0.09981679997872561,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.41436830000020564,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055307600065134466,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.470006726682186e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2521500999573618,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.821795399999246,
+    "unaccounted_latency_s": 9.839993435889482e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The 2001 census reported that Kirton End had a population of approximately 35,497 people.",
+      "Query 2: The 2001 census also provided information on the city's population demographics, stating that Kirton End was one of the largest cities in the county with a population density of around 6,800 people per square mile."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

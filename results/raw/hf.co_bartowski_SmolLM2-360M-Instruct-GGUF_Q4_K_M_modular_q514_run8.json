@@ -1,0 +1,49 @@
+{
+  "question_id": "Q514",
+  "query": "What professions did S. Sylvan Simon and Danny Cannon have in common?",
+  "ground_truth": "director and producer",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "S. Sylvan Simon and Tommy Cannon both had professions that involved writing, directing, or producing content. They were both stage/film directors and producers who worked on various projects throughout their careers. Additionally, they were also comedians and singers, known for their roles in the comedy double act \"Cannon and Ball\" and \"The Cannon and Ball Show\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "S. Sylvan Simon: S. Sylvan Simon (March 9, 1910 \u2013 May 17, 1951) was an American stage/film director and producer.",
+      "Danny Cannon: John Danny Cannon (born 1968 in Luton, England) is a British film and television writer, director and producer.",
+      "Tommy Cannon: Thomas Derbyshire, known professionally as Tommy Cannon (born 27 June 1938), is an English comedian and singer.  He is best knows as the straight man of comedy double act Cannon and Ball, along with Bobby Ball.  He is most well known for the show \"The Cannon and Ball Show\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 233,
+    "generation_tokens": 75,
+    "generation_speed": 238.6794344252122,
+    "prompt_eval_speed": 52894.438138479,
+    "generation_latency_s": 0.43148799997288734,
+    "latency": 1.046427799970843,
+    "total_prompt_tokens": 367,
+    "total_generation_tokens": 158,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.238014,
+    "stage_route_s": 0.10400210006628186,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4540357000660151,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05672630004119128,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.40000619366765e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4315255000256002,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.04643969994504,
+    "unaccounted_latency_s": 9.689969010651112e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "S. Sylvan Simon had a career as an actor, while Danny Cannon was an actor as well.",
+      "Both S. Sylvan Simon and Danny Cannon were known for their roles in movies, with S. Sylvan Simon being particularly famous for his portrayal of the character \"Dick\" in the 1970s film \"The Big Sleep.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

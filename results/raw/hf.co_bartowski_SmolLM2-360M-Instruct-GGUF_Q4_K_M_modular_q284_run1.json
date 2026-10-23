@@ -1,0 +1,49 @@
+{
+  "question_id": "Q284",
+  "query": "Which film was released first: Sacred Planet or Oz the Great and Powerful?",
+  "ground_truth": "Sacred Planet",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Sacred Planet was released first in April 2004.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sacred Planet: Sacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor.  Robert Redford provided narration for the film.  The film was released by Walt Disney Pictures on April 22, 2004, and grossed $1,108,356.",
+      "Oz the Great and Powerful: Oz the Great and Powerful is a 2013 American fantasy adventure film directed by Sam Raimi and produced by Joe Roth, from a screenplay written by David Lindsay-Abaire and Mitchell Kapner.  The film stars James Franco, Michelle Williams, Rachel Weisz and Mila Kunis, with Zach Braff, Bill Cobbs, Joey King, and Tony Cox in supporting roles.  Based on L. Frank Baum's \"Oz\" novels and set 20 years before the events of the original novel, \"Oz the Great and Powerful\" is a spiritual prequel to the 1939 Metro-Goldwyn-Mayer film, \"The Wizard of Oz\".  The film tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.  Oscar is then enlisted to restore order in Oz, while struggling to resolve conflicts with the witches and himself.",
+      "here.  Will rides to the fief, where he is greeted by a feast made by his childhood friend, Jenny.  He greets Pauline, and Crowley, then Halt arrives.  Crowley assigns Will, Halt, and Horace (Will's current best friend, and a knight) to investigate Clonmel.  Halt tells them he knows the king, and when they ask how, he tells them he is the King's brother.  They go around, investigating the Outsiders (the group who are stealing gold).  When Halt's brother tells them he made a deal with the Outsiders, he is knocked out by Horace, and Halt takes the king's place (they are twins).  The Outsiders' leader, Tennyson, is angry, and challenges Horace to duel his two giant bodyguards.  Horace accepts.  Will meanwhile, is investigating a camp, and he sees that Tennyson has recruited three Genovesans (foreigners; assassins).  He tells Horace and Halt this, and Halt is expecting treachery from Tennyson.  The duel proceeds, with Horace barely winning against the chain and mace used by the first giant.  Horace is then drugged by the assassins, causing his eyes to waver a lot, and he is unable to see clearly.  Will shoots the second giant in the arm, after which he manages to accuse Tennyson.  Tennyson escapes, though not before killing Halt's brother.  Halt abdicates the throne to his nephew, Sean, a warrior and worthy king.  They begin to follow Tennyson's trail to Picta, thus ending the book."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 712,
+    "generation_tokens": 16,
+    "generation_speed": 229.11147705305365,
+    "prompt_eval_speed": 13820.412283085523,
+    "generation_latency_s": 0.23494729993399233,
+    "latency": 0.589633799972944,
+    "total_prompt_tokens": 842,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2323535,
+    "stage_route_s": 0.10626609995961189,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1943815000122413,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05384720000438392,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.43999082967639e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23498730000574142,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5896453999448568,
+    "unaccounted_latency_s": 9.96000599116087e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Sacred Planet\"",
+      "Query 2: \"Oz the Great and Powerful\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

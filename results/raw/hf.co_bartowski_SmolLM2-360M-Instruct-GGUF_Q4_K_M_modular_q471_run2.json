@@ -1,0 +1,49 @@
+{
+  "question_id": "Q471",
+  "query": "What type of profession does Ithu Engal Neethi and Shoba Chandrasekhar have in common?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Ithu Engal Neethi and Shoba Chandrasekhar share the profession of playback singer, director, writer, and producer.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ithu Engal Neethi: Ithu Engal Neethi is a 1988 Indian Tamil film, directed by S. A. Chandrasekhar and produced by S. S. Neelakandan and Shoba Chandrasekhar.  The film stars Ramki, Radhika, Ramki and Vani Viswanath in lead roles.  The film had musical score by Ilayaraja.",
+      "Shoba Chandrasekhar: Shoba Chandrasekhar is an Indian film playback singer, director, writer and producer.  She is best known as the mother of Tamil Leading Star Vijay.",
+      "Nandita Chandra: Nandita Chandra is a multiple award-winning actor and model."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 234,
+    "generation_tokens": 30,
+    "generation_speed": 212.5488862438361,
+    "prompt_eval_speed": 20080.6659229383,
+    "generation_latency_s": 0.2626145000103861,
+    "latency": 0.6526666999561712,
+    "total_prompt_tokens": 380,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2216206,
+    "stage_route_s": 0.09501389996148646,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2395642000483349,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05529970000497997,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.710008554160595e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26264790003187954,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6526756000239402,
+    "unaccounted_latency_s": 9.339977987110615e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Ithu Engal Neethi is a professional who works as an accountant\"",
+      "\"Shoba Chandrasekhar is a professional who works as a lawyer\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q99",
+  "query": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
+  "ground_truth": "Beijing",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Moroccan Ambassador to China is based in Rabat, not Sal\u00e9 or K\u00e9nitra. The information provided does not specify the location of the Moroccan Embassy to China.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Moroccan Ambassador to China: The Moroccan ambassador in Beijing is the official representative of the Government in Rabat to the Government of the People's Republic of China.",
+      "United States Ambassador to Mongolia: This is a list of United States Ambassadors to Mongolia.  The United States established diplomatic relations with then-People's Republic of Mongolia on January 27, 1987.  The Embassy in Ulaanbaatar was opened Apr 17, 1988, with Steven Mann as Charg\u00e9 d'Affaires ad interim.  Richard Llewellyn Williams was the first ambassador to the Republic, and resided in the District of Columbia.  The current Mongolian ambassador to the United States is Altangerel Bulgaa, who succeeded Khasbazaryn Bekhbat when he was appointed on December 7, 2012.  The U.S. maintains its embassy in Ulan Bator.",
+      "Embassy of China, London: The Embassy of China in London is the diplomatic mission of China in the United Kingdom.  The Embassy in London is China's only embassy in the UK, alongside two Consulates-General in Edinburgh and Manchester.  Established in 1877 as the Chinese Legation, the London mission was China's first permanent overseas diplomatic mission.  It has served as the diplomatic mission of the Qing Empire, Republic of China and (since 1950) the People's Republic of China.  It was the location of the Qing Empire's detention of Sun Yat-sen, an important episode in the Chinese revolution of 1911.  It remains today the focal point for events relating to China held in the United Kingdom, including celebrations in 2012 to commemorate 40 years of diplomatic relations between the UK and the People's Republic of China."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 463,
+    "generation_tokens": 36,
+    "generation_speed": 237.79013699354005,
+    "prompt_eval_speed": 58385.876418663305,
+    "generation_latency_s": 0.2714714000467211,
+    "latency": 0.6877289999974892,
+    "total_prompt_tokens": 611,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2449427,
+    "stage_route_s": 0.1017096999567002,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25793419999536127,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056426199967972934,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.139992572367191e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2715119000058621,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6877399999648333,
+    "unaccounted_latency_s": 0.000107700121589005,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Ambassador of Rabat-Sal\u00e9-K\u00e9nitra to China\"",
+      "\"Ambassador of Rabat-Sal\u00e9-K\u00e9nitra in China\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

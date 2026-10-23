@@ -1,0 +1,49 @@
+{
+  "question_id": "Q129",
+  "query": "Where is the Bubblegum Alley, that is similar to Gum Wall, located in California?",
+  "ground_truth": "San Luis Obispo, California",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Bubblegum Alley is located in San Luis Obispo, California, which is a tourist attraction known for its accumulation of used bubble gum on walls.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bubblegum Alley: Bubblegum Alley is a tourist attraction in downtown San Luis Obispo, California, known for its accumulation of used bubble gum on the walls of an alley.  It is a 15 ft high and 70 ft long alley lined with chewed gum left by passers-by.  It covers a stretch of 20 meters in the 700 block of Higuera Street in downtown San Luis Obispo.",
+      "Gum Wall: The Market Theater Gum Wall is a brick wall covered in used chewing gum, in an alleyway in downtown Seattle.  It is located in Post Alley under Pike Place Market.  Similar to Bubblegum Alley in San Luis Obispo, California, the Market Theater Gum Wall is a local landmark.  Parts of the wall can be covered several inches thick, 15 feet high for 50 feet.",
+      "Hollywood Star Lanes: Hollywood Star Lanes was a 32-lane bowling alley located on Santa Monica Boulevard in Los Angeles, California.  Open from 1960 to 2002, the alley was featured in the movies \"The Big Lebowski\" and \"The Big Empty\", which was filmed on location over three weeks of the eleven-week filming schedule.  In 2002, the alley was closed after the Los Angeles Unified School District seized the land by eminent domain, with the goal of building an elementary school at the site."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 35,
+    "generation_speed": 373.16615489593994,
+    "prompt_eval_speed": 50120.84976466098,
+    "generation_latency_s": 0.2137951001059264,
+    "latency": 0.7609304999932647,
+    "total_prompt_tokens": 536,
+    "total_generation_tokens": 161,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2257841,
+    "stage_route_s": 0.13852969999425113,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.35285709996242076,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05557039997074753,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.309993866831064e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21383569994941354,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7609423000831157,
+    "unaccounted_latency_s": 9.700027294456959e-05,
+    "route": "rag",
+    "router_raw": "The Bubblegum Alley, which is similar to Gum Wall, is located in California.",
+    "sub_queries": [
+      "Here are two search queries related to the location of the Bubblegum Alley:",
+      "\"Bubblegum Alley, California\" - This query searches for the Bubblegum Alley in California and returns a list of locations that match this description."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

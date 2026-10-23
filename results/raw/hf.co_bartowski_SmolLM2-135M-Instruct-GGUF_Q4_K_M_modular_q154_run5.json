@@ -1,0 +1,48 @@
+{
+  "question_id": "Q154",
+  "query": "The songs from the sountrack to \"When Harry Met Sally\" are performed by a singer that has had how many top 20 US albums?",
+  "ground_truth": "seven",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The songs from the soundtrack to the movie \"When Harry Met Sally\" have been recorded and released on over one billion records, tapes, compact discs, digital downloads, and thousands of streaming platforms.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "David Bowie: David Robert Jones (8 January 1947 \u2013 10 January 2016), known professionally as David Bowie ( ), was an English singer, songwriter and actor.  He was a leading figure in popular music for over five decades, acclaimed by critics and other musicians for his innovative work.  His career was marked by reinvention and visual presentation, his music and stagecraft significantly influencing popular music.  During his lifetime, his record sales, estimated at 140 million albums worldwide, made him one of the world's best-selling music artists.  In the UK, he was awarded nine platinum album certifications, eleven gold and eight silver, releasing eleven number-one albums.  In the US, he received five platinum and nine gold certifications.  He was inducted into the Rock and Roll Hall of Fame in 1996.",
+      "When Harry Met Sally... (soundtrack): When Harry Met Sally... is the soundtrack to the movie \"When Harry Met Sally...\" starring Billy Crystal and Meg Ryan.  The songs are performed by pianist Harry Connick Jr., who won the Grammy Award for Best Jazz Male Vocal Performance.",
+      "Bing Crosby: Harry Lillis \"Bing\" Crosby Jr. ( ; May 3, 1903 \u2013 October 14, 1977) was an American singer and actor.  Crosby's trademark warm bass-baritone voice made him the best-selling recording artist of the 20th century, having sold over one billion records, tapes, compact discs and digital downloads around the world."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 429,
+    "generation_tokens": 41,
+    "generation_speed": 309.33824250609246,
+    "prompt_eval_speed": 60465.11627906977,
+    "generation_latency_s": 0.2537205999251455,
+    "latency": 0.6129857000196353,
+    "total_prompt_tokens": 591,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23013509999999998,
+    "stage_route_s": 0.13745749997906387,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1817714999197051,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03986729995813221,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.93999507650733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25375199993140996,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6129948999732733,
+    "unaccounted_latency_s": 0.00010760023724287748,
+    "route": "rag",
+    "router_raw": "The user is asking if answering the question requires retrieving information from internal files/documents.",
+    "sub_queries": [
+      "The songs from the Searchers album to \"When Harry Met Sally\" were played by a singer who had 19 Top 20 albums."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q343",
+  "query": "Who was the president of the Sinn Fein political party during the Hume-Adams Dialogue?",
+  "ground_truth": "Gerard \"Gerry\" Adams",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The president of the Sinn F\u00e9in political party during the Hume-Adams Dialogue was \u00c9amon de Valera, who served as the head of government and head of state. He also led the introduction of the Constitution of Ireland.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hume\u2013Adams dialogue: The Hume\u2013Adams dialogue was a series of talks between then Social Democratic and Labour Party leader John Hume and Sinn F\u00e9in leader Gerry Adams during the Northern Ireland peace process.",
+      "Leader of Sinn F\u00e9in: The leader of Sinn F\u00e9in (alternatively known as the \"Uachtar\u00e1n Shinn F\u00e9in\" or \"President of Sinn F\u00e9in\") is the most senior politician within the Sinn F\u00e9in political party in Ireland.  Since 13 November 1983, the office has been held by Gerry Adams, following the resignation of Ruair\u00ed \u00d3 Br\u00e1daigh as leader of the party.",
+      "\u00c9amon de Valera: \u00c9amon de Valera ( ; ] ; first registered as George de Valero; changed some time before 1901 to Edward de Valera; 14 October 1882 \u2013 29 August 1975) was a prominent politician and statesman in 20th-century Ireland.  His political career spanned over half a century, from 1917 to 1973; he served several terms as head of government and head of state.  He also led the introduction of the Constitution of Ireland."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 345,
+    "generation_tokens": 48,
+    "generation_speed": 395.79468150896724,
+    "prompt_eval_speed": 49320.94353109364,
+    "generation_latency_s": 0.23689719999674708,
+    "latency": 0.5365165000548586,
+    "total_prompt_tokens": 483,
+    "total_generation_tokens": 91,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2240616,
+    "stage_route_s": 0.13834259996656328,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12436829996295273,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03675379999913275,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.77000542357564e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2369360999437049,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5365400000009686,
+    "unaccounted_latency_s": 0.00010240008123219013,
+    "route": "rag",
+    "router_raw": "The president of the Sinn Fein political party during the Hume-Adams Dialogue was Sean Regan.",
+    "sub_queries": [
+      "The president of the Sinn Fein political party during the Hume-Adams Dialogue was John Hume."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

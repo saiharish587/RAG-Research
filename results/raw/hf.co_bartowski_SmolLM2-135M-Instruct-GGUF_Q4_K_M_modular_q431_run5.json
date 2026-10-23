@@ -1,0 +1,49 @@
+{
+  "question_id": "Q431",
+  "query": "What team did the recipient of the 2007 Brownlow Medal play for?",
+  "ground_truth": "Geelong Football Club",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The recipient of the 2007 Brownlow Medal played for the Sydney Swans.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2006 Brownlow Medal: The 2006 Brownlow Medal was the 79th year the award was presented to the player adjudged the fairest and best player during the Australian Football League (AFL) home and away season.  Adam Goodes of the Sydney Swans won the medal by polling twenty-six votes during the 2006 AFL season.  It was Goodes' second Brownlow Medal win, after his victory in 2003.",
+      "2014 Brownlow Medal: The 2014 Brownlow Medal was the 87th year the award was presented to the player adjudged the fairest and best player during the Australian Football League (AFL) home and away season.  Matt Priddis of the West Coast Eagles won the medal by polling twenty-six votes during the 2014 AFL season.  Defending Brownlow Medallist Gary Ablett of the Gold Coast Football Club was the short-priced favourite for the medal until he suffered a season-ending shoulder injury in round 16.  Betting on the medal was suspended while the extent of the injury to Ablett was determined.  Geelong captain Joel Selwood, Collingwood captain Scott Pendlebury and Sydney 's Josh Kennedy were considered to be among the new favourites in the wake of Ablett's injury, but at the end of the season Ablett was still second favourite to have polled enough votes before his injury to win the award.  He ended up polling the equal-third most number of votes, tying with Sydney 's Lance Franklin on 22 votes.",
+      "2015 Brownlow Medal: The 2015 Brownlow Medal was the 88th year the award was presented to the player adjudged the fairest and best player during the Australian Football League (AFL) home and away season.  Nat Fyfe of the Fremantle Football Club won the medal by polling thirty-one votes during the 2015 AFL season.  He became the first Fremantle player to win the Brownlow Medal."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 529,
+    "generation_tokens": 20,
+    "generation_speed": 352.54715318173805,
+    "prompt_eval_speed": 76235.76884277274,
+    "generation_latency_s": 0.17413169995415956,
+    "latency": 0.5589126999257132,
+    "total_prompt_tokens": 665,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2316523,
+    "stage_route_s": 0.14329569996334612,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18619240005500615,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05510529992170632,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.650000482797623e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17418980004731566,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.558924299897626,
+    "unaccounted_latency_s": 9.529991075396538e-05,
+    "route": "rag",
+    "router_raw": "The recipient of the 2007 Brownlow Medal played for the United States.",
+    "sub_queries": [
+      "Who played for the Brownlow Medal in 2007?",
+      "What team did the recipient of the Brownlow Medal play for?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

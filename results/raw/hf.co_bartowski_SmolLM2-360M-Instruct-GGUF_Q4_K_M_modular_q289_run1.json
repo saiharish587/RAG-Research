@@ -1,0 +1,49 @@
+{
+  "question_id": "Q289",
+  "query": "In what 1997 American mystery crime film did Johnny Galecki start in?",
+  "ground_truth": "Suicide Kings",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Johnny Galecki started in \"Unbreakable\" (2000) as a security guard named David Dunn.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Johnny Galecki: John Mark Galecki (born April 30, 1975) is an American actor.  He is known for playing David Healy in the ABC sitcom \"Roseanne\" from 1992 to 1997 and Dr. Leonard Hofstadter in the CBS sitcom \"The Big Bang Theory\" since 2007.  Galecki also appeared in the films \"National Lampoon's Christmas Vacation\" (1989), \"Prancer\" (1989), \"Suicide Kings\" (1997), \"I Know What You Did Last Summer\" (1997), \"Bookies\" (2003), and \"In Time\" (2011).",
+      "Unbreakable (film): Unbreakable is a 2000 American superhero thriller film written, produced, and directed by M. Night Shyamalan, and starring Bruce Willis and Samuel L. Jackson, alongside Robin Wright and Spencer Treat Clark.  The movie is the first installment in a trilogy.  In \"Unbreakable\", a security guard named David Dunn survives a horrific train crash.  After the incident, with the help of a manipulative disabled comic book shop owner named Elijah Price, he learns that he possesses superhuman powers.  As Dunn explores and reluctantly confronts his powers while trying to navigate a difficult family life, he begins to fight crime and learns the true nature of Elijah Price.",
+      "The Usual Suspects: The Usual Suspects is a 1995 American neo-noir mystery film directed by Bryan Singer and written by Christopher McQuarrie.  It stars Stephen Baldwin, Gabriel Byrne, Benicio del Toro, Kevin Pollak, Chazz Palminteri, Pete Postlethwaite, and Kevin Spacey."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 469,
+    "generation_tokens": 27,
+    "generation_speed": 236.11924896588513,
+    "prompt_eval_speed": 14706.34348248722,
+    "generation_latency_s": 0.2593075999757275,
+    "latency": 0.7531535000307485,
+    "total_prompt_tokens": 607,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2288729,
+    "stage_route_s": 0.10592720005661249,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3270500999642536,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060669399914331734,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.0399994254112244e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25935239996761084,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7531763999722898,
+    "unaccounted_latency_s": 0.00011740007903426886,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Johnny Galecki started in 'The Untouchables' in 1985.\"",
+      "Query 2: \"In the 1997 American mystery film 'The Untouchables', Johnny Galecki began as a lead detective.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q202",
+  "query": "Chris Williams last played for which football club from the National League North?",
+  "ground_truth": "Salford City Football Club",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The question asks about Chris Williams' participation in the National League North division of English football. The context provides information on Chris Williams playing for Salford City as a forward, and it mentions that he was part of a sponsorship deal with Vanarama. Therefore, the correct answer is that Chris Williams played for Salford City in the National League North division of English football.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Williams (English footballer): Christopher Jonathan \"Chris\" Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City as a forward.",
+      "National League (English football): The National League is an association football league in England consisting of three divisions, the National League, National League North and National League South.  It was called the Alliance Premier League from 1979 until 1986.  Between 1986 and 2015, the league was known as the Football Conference.  As part of a sponsorship deal with car leasing company Vanarama, the league is known as the Vanarama National League.",
+      "National League (division): The National League, currently named the Vanarama National League for sponsorship reasons, is the top division of the National League in English football.  It is the highest level of the National League System and fifth-highest of the overall English football league system.  While all of the clubs in the top four divisions of English football are full-time professional, the National League has a mixture of full-time and semi-professional clubs.  The National League is the lowest division in the English football pyramid organised on a nationwide basis.  Formerly the Conference National, the league was renamed the National League from the 2015\u201316 season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 77,
+    "generation_speed": 417.31703087062084,
+    "prompt_eval_speed": 46977.231091337344,
+    "generation_latency_s": 0.2713324000360444,
+    "latency": 0.6764487000182271,
+    "total_prompt_tokens": 433,
+    "total_generation_tokens": 112,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1302125,
+    "stage_rewrite_s": 0.16766269993968308,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0769970000255853,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16033720003906637,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2713649000506848,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6764574000844732,
+    "unaccounted_latency_s": 9.640003554522991e-05,
+    "rewritten_query": "Chris Williams has been playing for the National League North since 2014, and he is currently leading the league in scoring with 35 goals per season.",
+    "query_was_rewritten": true
+  }
+}

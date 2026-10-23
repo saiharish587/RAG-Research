@@ -1,0 +1,48 @@
+{
+  "question_id": "Q191",
+  "query": "Joe Walker played for which team that ends their regular season with the Civil War rivalry game?",
+  "ground_truth": "Oregon Ducks football",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Joe Walker played for the Philadelphia Eagles of the National Football League (NFL).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joe Walker (American football): Joe Walker (born December 11, 1992) is an American football linebacker for the Philadelphia Eagles of the National Football League (NFL).  He played college football at Oregon.",
+      "Civil War (college football game): The Civil War is the colloquial name for an American college football rivalry game played annually in Oregon, between the Ducks of the University of Oregon in Eugene and the Beavers of Oregon State University in Corvallis.  First played in 1894, it is the fifth most played college football rivalry game in NCAA Division I Football Bowl Subdivision.  Both universities are members of the North Division of the Pac-12 Conference.",
+      "2007 New York Giants season: The 2007 New York Giants season was the 83rd season for the New York Giants in the National Football League.  The Giants finished the regular season 10\u20136 and in second place in the NFC East, improving upon their 8\u20138 record in 2006 in which they finished third in their division.  They qualified for the playoffs as a wild-card team as the #5 seed, and beat the #4 seed Tampa Bay Buccaneers (9\u20137), the top-seeded Dallas Cowboys (13\u20133), and the #2 seed Green Bay Packers (13\u20133) to become the National Football Conference representative in Super Bowl XLII.  There, they defeated the heavily favored and previously undefeated 18\u20130 New England Patriots and spoiled their perfect season.  The 2007 New York Giants became the 9th wild card team in NFL history to reach the Super Bowl and the 5th wild card team to win the Super Bowl, and the very first NFC wild card to accomplish the feat.  They were the third team in history to win three road playoff games en route to a Super Bowl and set a league record for most consecutive road wins in a single season (11), though the Super Bowl is played on a neutral field rather than an opponent's stadium.  It was the 7th league championship season for the New York Giants and their first since they won Super Bowl XXV in 1991."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 562,
+    "generation_tokens": 19,
+    "generation_speed": 233.36649594065122,
+    "prompt_eval_speed": 72208.65989978157,
+    "generation_latency_s": 0.2020823999773711,
+    "latency": 0.46346490003634244,
+    "total_prompt_tokens": 698,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2229155,
+    "stage_route_s": 0.09753810008987784,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12362610001582652,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04004769993480295,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.819990135729313e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20212089992128313,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.463476000004448,
+    "unaccounted_latency_s": 9.590014815330505e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Joe Walker played for the New York Giants."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

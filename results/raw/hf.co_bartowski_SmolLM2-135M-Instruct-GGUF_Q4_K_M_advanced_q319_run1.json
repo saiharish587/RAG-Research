@@ -1,0 +1,42 @@
+{
+  "question_id": "Q319",
+  "query": "Are both Duke Energy and Affiliated Managers Group based in Massachusetts?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Sean Healey is not based in Massachusetts. He holds the position of chairman and chief executive officer of Affiliated Managers Group, Inc., which is headquartered in Charlotte, North Carolina.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Affiliated Managers Group: Affiliated Managers Group Inc. is an American international investment management company headquartered in Massachusetts that owns stakes in a number of boutique asset management, hedge fund, and specialized private equity firms.",
+      "Duke Energy: Duke Energy, headquartered in Charlotte, North Carolina, is an electric power holding company in the United States, with assets also in Canada and Latin America.",
+      "Sean Healey: Sean Michael Healey (born 1961) is the chairman and chief executive officer of Affiliated Managers Group, Inc. (NYSE: AMG), a global asset management firm whose affiliates in aggregate managed approximately $638 billion as of March 31, 2015."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 221,
+    "generation_tokens": 41,
+    "generation_speed": 367.9440007179395,
+    "prompt_eval_speed": 16861.219195849546,
+    "generation_latency_s": 0.20388209994416684,
+    "latency": 0.6032466000178829,
+    "total_prompt_tokens": 294,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1340876,
+    "stage_rewrite_s": 0.1361535000614822,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08010729996021837,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1829828000627458,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2039212000090629,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6032581999897957,
+    "unaccounted_latency_s": 9.389990009367466e-05,
+    "rewritten_query": "Are both Duke Energy and Affiliated Managers Group based in Massachusetts?",
+    "query_was_rewritten": false
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q191",
+  "query": "Joe Walker played for which team that ends their regular season with the Civil War rivalry game?",
+  "ground_truth": "Oregon Ducks football",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The question asks about Joe Walker playing for the University of Oregon in Eugene, Oregon, and then asking if he won a Heisman Trophy. The answer is that Joe Walker did not win a Heisman Trophy at the University of Oregon.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alabama Crimson Tide football: The Alabama Crimson Tide football program represents the University of Alabama (variously Alabama, UA, or 'Bama) in the sport of American football.  The team competes in the Football Bowl Subdivision (FBS) of the National Collegiate Athletic Association (NCAA) and the Western Division of the Southeastern Conference (SEC).  The team is currently coached by Nick Saban.  The Crimson Tide is among the most storied and decorated football programs in NCAA history.  Since beginning play in 1892, the program claims 16 national championships, including 11 wire-service (AP or Coaches) national titles in the poll-era, and five other titles before the poll-era.  From 1958 to 1982, the team was led by Hall of Fame coach Paul \"Bear\" Bryant, who won six national championships with the program.  Despite numerous national and conference championships, it was not until 2009 that an Alabama player received a Heisman Trophy, when running back Mark Ingram became the university's first winner.  In 2015, Derrick Henry became the university's second Heisman winner.",
+      "Civil War (college football game): The Civil War is the colloquial name for an American college football rivalry game played annually in Oregon, between the Ducks of the University of Oregon in Eugene and the Beavers of Oregon State University in Corvallis.  First played in 1894, it is the fifth most played college football rivalry game in NCAA Division I Football Bowl Subdivision.  Both universities are members of the North Division of the Pac-12 Conference.",
+      "Joe Walker (American football): Joe Walker (born December 11, 1992) is an American football linebacker for the Philadelphia Eagles of the National Football League (NFL).  He played college football at Oregon."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 497,
+    "generation_tokens": 52,
+    "generation_speed": 402.28373381194785,
+    "prompt_eval_speed": 62578.695542684465,
+    "generation_latency_s": 0.21810900000855327,
+    "latency": 0.6932793000014499,
+    "total_prompt_tokens": 575,
+    "total_generation_tokens": 108,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.130976,
+    "stage_rewrite_s": 0.21619559999089688,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07572459999937564,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18311979994177818,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.21815029997378588,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6933024999452755,
+    "unaccounted_latency_s": 0.00011270004324615002,
+    "rewritten_query": "Joe Walker, who played for the University of Alabama from 1967 to 1980 and then for the University of Alabama from 1982 to 1984, was a key figure in the Civil War rivalry game.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q119",
+  "query": "Were the bands Skin Yard and Ostava from the U.S.?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "No, the bands Skin Yard and Ostava are not from the United States. They were born in Bulgaria and were active for only a short period of time before being disbanded by the band's members.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Skin Yard: Skin Yard was an American grunge band from Seattle, Washington, who were active from 1985 to 1993.  The group never gained a mainstream audience, but were an influence on several of their grunge contemporaries, including Soundgarden, Screaming Trees, The Melvins, and Green River.",
+      "Ostava: Ostava are an alternative rock band from Bulgaria.  They formed in 1991, but it was not until 2000 that they released a long-playing record (and subsequently received critical acclaim.",
+      "Skin Yard (album): Skin Yard was the first album released by the band Skin Yard in January, 1987.  1400 vinyl copies were released on translucent skin-tone vinyl."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 237,
+    "generation_tokens": 42,
+    "generation_speed": 387.43957787535516,
+    "prompt_eval_speed": 87389.38053097345,
+    "generation_latency_s": 0.21987280005123466,
+    "latency": 0.5237018000334501,
+    "total_prompt_tokens": 365,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2341109,
+    "stage_route_s": 0.08727619994897395,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1600239999825135,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056366899982094765,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2899977415800095e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2199096999829635,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5237118001095951,
+    "unaccounted_latency_s": 9.260023944079876e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Were the bands Skin Yard and Ostava from the United States?",
+      "Did the bands Skin Yard and Ostava from the United States?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

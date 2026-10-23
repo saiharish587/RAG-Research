@@ -1,0 +1,42 @@
+{
+  "question_id": "Q494",
+  "query": "After he was contracted by the team that is headquartered in Affalterbach, Baden-W\u00fcrttemberg, Germany, Dario Franchitti competed in what series?",
+  "ground_truth": "DTM",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "After being contracted by the team that is headquartered in Affalterbach, Baden-W\u00fcrttemberg, Germany, Dario Franchitti competed in the 24 Hours of Daytona.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dario Franchitti: George Dario Marino Franchitti, MBE (born 19 May 1973), known professionally as Dario Franchitti, is a retired Scottish racing driver.  He is a four time IndyCar Series champion (2007, 2009, 2010, 2011), a three-time winner of the Indianapolis 500 (2007, 2010, 2012) as well as a winner of the 24 Hours of Daytona (2008).  Franchitti started his career in his native United Kingdom in the early 1990s, competing in Formula Vauxhall and Formula Three and was also the winner of the McLaren Autosport BRDC Award in 1992.  After Franchitti did not secure a single-seater drive in 1995, he was contracted by the AMG team to compete in touring cars in the DTM and its successor \u2014 the International Touring Car Championship.  Despite 2 seasons with relative success, the series folded at the end of the 1996 season, again leaving Franchitti without a drive.  Mercedes placed Franchitti in CART in 1997 with the Hogan Racing team.",
+      "Robin Dutt: Robin Dutt (] ; born 24 January 1965) is a retired German football player, manager and currently board representative for sport of VfB Stuttgart.  He was also the manager of Bundesliga side Werder Bremen and Bayer Leverkusen.  Previously he coached SC Freiburg after taking over from the long-serving Volker Finke in July 2007.  He had previously been manager of Stuttgarter Kickers for four years.  Starting from the 2011\u201312 season, he signed a two-year managerial contract with Bayer Leverkusen after the previous manager Jupp Heynckes confirmed on 21 March 2011 that he would not be extending his stay at the BayArena.",
+      "VfB Stuttgart: Verein f\u00fcr Bewegungsspiele Stuttgart 1893 e. V., commonly known as VfB Stuttgart (] ), is a German sports club based in Stuttgart, Baden-W\u00fcrttemberg.  The club is best known for its football team which is part of Germany's first division 1.  Bundesliga.  VfB Stuttgart has won the national championship five times, most recently in 2006\u201307; the DFB-Pokal three times; and the UEFA Intertoto Cup a record three times."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 712,
+    "generation_tokens": 44,
+    "generation_speed": 377.9386880373816,
+    "prompt_eval_speed": 22091.220046268074,
+    "generation_latency_s": 0.2303281999193132,
+    "latency": 0.6734318999806419,
+    "total_prompt_tokens": 810,
+    "total_generation_tokens": 83,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1299101,
+    "stage_rewrite_s": 0.20029810001142323,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07630279997829348,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1663770000450313,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.23036059993319213,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6734400999266654,
+    "unaccounted_latency_s": 0.00010199996177107096,
+    "rewritten_query": "After he was contracted by the team that is headquartered in Affalterbach, Germany, Dario Franchitti competed in the series \"Baden-W\u00fcrttemberg.",
+    "query_was_rewritten": true
+  }
+}

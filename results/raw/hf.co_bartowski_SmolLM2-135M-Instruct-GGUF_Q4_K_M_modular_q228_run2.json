@@ -1,0 +1,48 @@
+{
+  "question_id": "Q228",
+  "query": "How long is the bridge in the \u00d6resund Region that connect Copenhagen, Denmark and Malmo, Sweden?",
+  "ground_truth": "8 km",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The bridge connecting Copenhagen, Denmark to Malm\u00f6, Sweden is approximately 10 years old.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "\u00d8resund Region: The \u00d8resund or \u00d6resund Region (Danish: \"\u00d8resundsregionen\" ; Swedish: \"\u00d6resundsregionen\" ] ) is a transnational metropolitan area in northern Europe, centred around the \u00d8resund strait and the two cities which lie on either side, Copenhagen, Denmark and Malm\u00f6, Sweden.  The region is connected by the \u00d8resund Bridge, which spans the strait at its southern end, and the HH Ferry route between Elsinore, Denmark (Danish: \"Helsing\u00f8r\") and Helsingborg, Sweden at the narrowest point of the strait.",
+      "10 Years (band): 10 Years is an American alternative metal band, formed in Knoxville, Tennessee in 1999.  The band consists of Jesse Hasek (lead vocals), Brian Vodinh (drums, guitar, backing vocals), Chad Huff (bass guitar) and Matt Wantland (guitar).  To date, they have released seven albums, the latest of which, \"From Birth to Burial\", was released in April 2015.  Their eighth studio album, \"(How to Live) As Ghosts\", is scheduled for release on October 27, 2017.",
+      "Copenhagen Malm\u00f6 Port: Copenhagen Malm\u00f6 Port AB (CMP) operates the ports in Denmark's capital Copenhagen and in Sweden's third largest city, Malm\u00f6.  The ports are located either side of \u00d8resund, a strait between the two countries.  The combined \u00d8resund Region is the Nordic countries' largest metropolitan area in terms of population.  The region is connected by the \u00d8resund Bridge, which spans the strait at its southern end, and the HH Ferry route between Helsing\u00f8r, Denmark and Helsingborg, Sweden."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 484,
+    "generation_tokens": 21,
+    "generation_speed": 320.82620386213637,
+    "prompt_eval_speed": 53777.77777777778,
+    "generation_latency_s": 0.18327299994416535,
+    "latency": 0.491878499975428,
+    "total_prompt_tokens": 628,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2298832,
+    "stage_route_s": 0.18553070002235472,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.08801419998053461,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03489610005635768,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2500090785324574e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18330400006379932,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49188699992373586,
+    "unaccounted_latency_s": 0.00010049971751868725,
+    "route": "rag",
+    "router_raw": "The bridge connecting Copenhagen, Denmark and Malmo, Sweden is approximately 120 km (75 miles) long.",
+    "sub_queries": [
+      "10 years"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

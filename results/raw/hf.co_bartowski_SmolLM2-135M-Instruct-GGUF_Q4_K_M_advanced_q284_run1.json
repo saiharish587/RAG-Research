@@ -1,0 +1,42 @@
+{
+  "question_id": "Q284",
+  "query": "Which film was released first: Sacred Planet or Oz the Great and Powerful?",
+  "ground_truth": "Sacred Planet",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "1) Sacred Planet was released first:\nSacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor, produced by Joe Roth. It tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.\n\nQuestion: Which film was released first: Sacred Planet or Oz the Great and Powerful?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oz the Great and Powerful: Oz the Great and Powerful is a 2013 American fantasy adventure film directed by Sam Raimi and produced by Joe Roth, from a screenplay written by David Lindsay-Abaire and Mitchell Kapner.  The film stars James Franco, Michelle Williams, Rachel Weisz and Mila Kunis, with Zach Braff, Bill Cobbs, Joey King, and Tony Cox in supporting roles.  Based on L. Frank Baum's \"Oz\" novels and set 20 years before the events of the original novel, \"Oz the Great and Powerful\" is a spiritual prequel to the 1939 Metro-Goldwyn-Mayer film, \"The Wizard of Oz\".  The film tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.  Oscar is then enlisted to restore order in Oz, while struggling to resolve conflicts with the witches and himself.",
+      "Sacred Planet: Sacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor.  Robert Redford provided narration for the film.  The film was released by Walt Disney Pictures on April 22, 2004, and grossed $1,108,356.",
+      "Grant Curtis: Grant Curtis is a film producer, who has worked with director Sam Raimi on \"The Gift\", \"Drag Me To Hell\", the \"Spider-Man\" films and \"Oz the Great and Powerful\".  He grew up in the rural Missouri town of Warrensburg.  Curtis received a master's degree in Mass Communication in 1997 from the University of Central Missouri (UCM), formerly CMSU (located in the town of Warrensburg).  He wrote a thesis/screenplay entitled: \"And God Stepped Aside\".  The screenplay examines the relationship between a young man who reluctantly fulfills the dying wishes of his estranged grandmother by taking her to Paris, France.  The story was inspired by Curtis' own personal experiences with death within his family.  Not long after he completed his thesis/screenplay while he lived in Los Angeles, CA., Curtis' neighbor informed him that director Sam Raimi was looking for an assistant.  Curtis interviewed for the position, not entirely confident afterwards that his Missouri accent and demeanor, not to mention his limited practical experience, garnered Raimi's consideration.  After waiting many months, Curtis discovered that he got the job, and his journey towards success began."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 622,
+    "generation_tokens": 95,
+    "generation_speed": 388.0829925692319,
+    "prompt_eval_speed": 19960.848496518083,
+    "generation_latency_s": 0.3562821999657899,
+    "latency": 0.9138908999739215,
+    "total_prompt_tokens": 697,
+    "total_generation_tokens": 158,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13397989999999999,
+    "stage_rewrite_s": 0.26352750009391457,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07962140010204166,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21432969998568296,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.35632020002231,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.913899700040929,
+    "unaccounted_latency_s": 0.00010129984002560377,
+    "rewritten_query": "Which film was released first, Sacred Planet or Oz the Great and Powerful?\n\nThe original query is \"Which film was released first: Sacred Planet or Oz the Great and Powerful?\" The optimized query output includes a brief introduction to the movie titles. It also uses more concise language while maintaining clarity and readability.",
+    "query_was_rewritten": true
+  }
+}

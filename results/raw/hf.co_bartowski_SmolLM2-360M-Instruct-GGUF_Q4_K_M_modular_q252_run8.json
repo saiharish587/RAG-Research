@@ -1,0 +1,49 @@
+{
+  "question_id": "Q252",
+  "query": "What is Opry Mills in Nashville, Tennessee?",
+  "ground_truth": "super-regional shopping mall",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Opry Mills is a super-regional shopping mall owned by Simon Property Group, formerly by its initial owners Mills Corporation and Gaylord Entertainment.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Opry Mills: Opry Mills is a super-regional shopping mall owned by Simon Property Group, formerly by its initial owners Mills Corporation and Gaylord Entertainment.  It opened in Nashville, Tennessee in 2000 on the former site of the Opryland USA theme park.",
+      "Grand Ole Opry: The Grand Ole Opry is a weekly country-music stage concert in Nashville, Tennessee, which was founded on November 28, 1925, by George D. Hay as a one-hour radio \"barn dance\" on WSM.  Currently owned and operated by Opry Entertainment (a division of Ryman Hospitality Properties, Inc.), it is the longest-running radio broadcast in US history, albeit not the longest-running one on a radio network.  Dedicated to honoring country music and its history, the Opry showcases a mix of famous singers and contemporary chart-toppers performing country, bluegrass, Americana, folk, gospel, and comedic performances and skits.  It attracts hundreds of thousands of visitors from around the world and millions of radio and Internet listeners.",
+      "Keith Bilbrey: Keith Bilbrey (born August 14, 1952) is an American country music disc jockey and television host in Nashville, Tennessee.  He served as a disc jockey at Nashville's WSM, as an announcer on the Grand Ole Opry, and as the host of TNN\u2019s Grand Ole Opry Live."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 378,
+    "generation_tokens": 29,
+    "generation_speed": 214.49862794843156,
+    "prompt_eval_speed": 26921.15946157681,
+    "generation_latency_s": 0.2610498000867665,
+    "latency": 0.7889914000406861,
+    "total_prompt_tokens": 498,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2164705,
+    "stage_route_s": 0.09154369996394962,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.38013890001457185,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05609359999652952,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.47999918833375e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26108120009303093,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7890006001107395,
+    "unaccounted_latency_s": 9.919994045048952e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Opry Mills is a historic music venue located in Nashville, Tennessee. It hosts various musical events and performances throughout the year.",
+      "Query 2: Opry Mills is a former country music venue that was once known for hosting famous acts like Johnny Cash, Waylon Jennings, and Willie Nelson."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

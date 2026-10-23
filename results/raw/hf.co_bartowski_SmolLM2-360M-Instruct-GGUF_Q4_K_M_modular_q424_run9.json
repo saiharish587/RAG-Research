@@ -1,0 +1,49 @@
+{
+  "question_id": "Q424",
+  "query": "One of the coaches of Southern Methodist University also played what role at the Arizona State Sun Devils?",
+  "ground_truth": "defensive coordinator",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The coach of the Southern Methodist University's football team under Mike Cavan is Tim Esmay.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Arizona State Sun Devils football: The Arizona State Sun Devils football team represents Arizona State University in the sport of American football.  The Sun Devils team competes in the Football Bowl Subdivision (FBS) of the National Collegiate Athletic Association (NCAA) and the South Division of the Pac-12 Conference (Pac-12).  Arizona State University has fielded a football team since 1897 and has an all-time record of 600-382-24 (a .608 winning percentage).  The Sun Devils are currently led by head coach Todd Graham and play their home games at Sun Devil Stadium in Tempe, Arizona.  The Sun Devils have won seventeen conference titles, including three Pac-12 titles.",
+      "Tim Esmay: Tim Esmay is an American baseball coach.  He is the former head coach of the Arizona State Sun Devils baseball team.  He was the head coach of the Arizona State Sun Devils baseball team from prior to the 2010 season until the end of the 2014 season, when he announced his resignation.  Esmay is an Arizona State alumnus, and he played baseball there from 1986\u20131987.  After graduating from Arizona State in 1987, Esmay served as an assistant at Arizona State, Grand Canyon, and Utah.  He was Utah's head coach from 1997\u20132004, before he was hired as an assistant at Arizona State prior to the 2005 season.",
+      "SMU Mustangs football under Mike Cavan: Mike Cavan was the coach of the Southern Methodist University's football team from 1997 to 2001.  He compiled a 22\u201334\u20130 record, and was succeeded by Phil Bennett."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 479,
+    "generation_tokens": 21,
+    "generation_speed": 236.5424255736154,
+    "prompt_eval_speed": 65072.680342344785,
+    "generation_latency_s": 0.2140415000030771,
+    "latency": 0.5660026000114158,
+    "total_prompt_tokens": 619,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.229983,
+    "stage_route_s": 0.09762780007440597,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19963479996658862,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05450359999667853,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.180004518479109e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21409330004826188,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.566018300014548,
+    "unaccounted_latency_s": 0.00010789989028126001,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Southern Methodist University's coach\"",
+      "Query 2: \"Arizona State Sun Devils' coach\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

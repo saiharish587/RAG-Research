@@ -1,0 +1,42 @@
+{
+  "question_id": "Q587",
+  "query": "Fantasy Records is know for recordings of comedian Lenny Bruce, Creedence Clearwater Revival, and what American jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip?",
+  "ground_truth": "Vincent Anthony Guaraldi",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Creedence Clearwater Revival",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fantasy Records: Fantasy Records is an American record company and label founded by brothers Max and Sol Weiss in 1949.  The early years of the company were dedicated to issuing recordings by jazz pianist Dave Brubeck, who was also one of its investors, but the label is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+      "Creedence Clearwater Revival: Creedence Clearwater Revival, often informally abbreviated to Creedence or CCR, was an American rock band active in the late 1960s and early 1970s.",
+      "The Long Road Home: The Long Road Home: The Ultimate John Fogerty/Creedence Collection is a compilation album by American roots rock singer-songwriter John Fogerty, released on November 1, 2005, by Fantasy Records.  It compiles songs from Fogerty's solo career and his band Creedence Clearwater Revival.  The title refers to Fogerty's return to Fantasy Records, after a lengthy stint with Warner Bros.  Records and a brief stint with DreamWorks Records."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 351,
+    "generation_tokens": 7,
+    "generation_speed": 425.84258582811697,
+    "prompt_eval_speed": 54133.25107958051,
+    "generation_latency_s": 0.10711679991800338,
+    "latency": 0.4637707000365481,
+    "total_prompt_tokens": 454,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1322543,
+    "stage_rewrite_s": 0.17610450007487088,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07517249998636544,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10525609995238483,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10715089994482696,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.46377879998181015,
+    "unaccounted_latency_s": 9.53000271692872e-05,
+    "rewritten_query": "Fantasy Records is known for its iconic comedy acts, including Lenny Bruce, Creedence Clearwater Revival, and the timeless Peanut Violet.",
+    "query_was_rewritten": true
+  }
+}

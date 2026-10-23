@@ -1,0 +1,42 @@
+{
+  "question_id": "Q514",
+  "query": "What professions did S. Sylvan Simon and Danny Cannon have in common?",
+  "ground_truth": "director and producer",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "S. Sylvan Simon and Danny Cannon both had professions that involved directing or producing films, which are related to the field of filmmaking.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "S. Sylvan Simon: S. Sylvan Simon (March 9, 1910 \u2013 May 17, 1951) was an American stage/film director and producer.",
+      "Danny Cannon: John Danny Cannon (born 1968 in Luton, England) is a British film and television writer, director and producer.",
+      "Tish (film): Tish is a 1942 comedy-drama film directed by S. Sylvan Simon and starring Marjorie Main and ZaSu Pitts."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 194,
+    "generation_tokens": 31,
+    "generation_speed": 271.5558397645348,
+    "prompt_eval_speed": 48127.02756810408,
+    "generation_latency_s": 0.9560618000105023,
+    "latency": 3.4115272000199184,
+    "total_prompt_tokens": 271,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.122265,
+    "stage_rewrite_s": 1.2135447000619024,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0474038999527693,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19440440007019788,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9560942000243813,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4115357999689877,
+    "unaccounted_latency_s": 8.909986354410648e-05,
+    "rewritten_query": "Sylvan Simon had a career as an actor, while Danny Cannon was a professional musician.",
+    "query_was_rewritten": true
+  }
+}

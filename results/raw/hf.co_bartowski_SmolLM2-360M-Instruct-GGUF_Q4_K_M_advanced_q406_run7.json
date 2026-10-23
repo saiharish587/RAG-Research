@@ -1,0 +1,42 @@
+{
+  "question_id": "Q406",
+  "query": "Where was the person born who was recognized by MIAL and is an American soprano?",
+  "ground_truth": "Laurel, Mississippi",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Florence Foster Jenkins",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Florence Foster Jenkins: Florence Foster Jenkins (born Narcissa Florence Foster; July 19, 1868 \u2013 November 26, 1944) was an American socialite and amateur soprano who was known and mocked for her flamboyant performance costumes and notably poor singing ability.  The historian Stephen Pile ranked her \"the world's worst opera singer\".  \"No one, before or since,\" he wrote, \"has succeeded in liberating themselves quite so completely from the shackles of musical notation.\"",
+      "Leontyne Price: Mary Violet Leontyne Price (born February 10, 1927) is an American soprano.  Born and raised in Laurel, Mississippi, she rose to international acclaim in the 1950s and 1960s, and was one of the first African Americans to become a leading artist at the Metropolitan Opera.",
+      "Sarah Coburn: Sarah Coburn is an American operatic soprano (born August 4, 1977) who was born in Petersburg, Virginia and is the daughter of former United States Senator from Oklahoma, Tom Coburn."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 6,
+    "generation_speed": 281.3203300825206,
+    "prompt_eval_speed": 43181.818181818184,
+    "generation_latency_s": 0.8213364999974146,
+    "latency": 3.3831484999973327,
+    "total_prompt_tokens": 402,
+    "total_generation_tokens": 31,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1292962,
+    "stage_rewrite_s": 1.301250100019388,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0170972000341862,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2433406999334693,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8213769000722095,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3831589999608696,
+    "unaccounted_latency_s": 9.459990542382002e-05,
+    "rewritten_query": "The person born in the United States who received recognition for their work with Miale is an American soprano.",
+    "query_was_rewritten": true
+  }
+}

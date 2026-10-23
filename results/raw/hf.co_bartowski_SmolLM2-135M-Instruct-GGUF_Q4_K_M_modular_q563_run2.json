@@ -1,0 +1,48 @@
+{
+  "question_id": "Q563",
+  "query": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Bendict of Nursia who is a patron saint of what continent?",
+  "ground_truth": "Europe",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Benedict of Nursia who is a patron saint of the continent.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gualdo Tadino Cathedral: Gualdo Tadino Cathedral (Italian: \"Duomo di Gualdo Tadino; Basilica Cattedrale di San Benedetto\" ) is a Roman Catholic cathedral in Gualdo Tadino in Umbria, Italy, dedicated to Saint Benedict of Nursia.  Formerly a Benedictine abbey church, it became a cathedral in 1915, and is now a co-cathedral in the diocese of Assisi-Nocera Umbra-Gualdo Tadino.",
+      "Roman Catholic Diocese of Gualdo Tadino: The Diocese of Gualdo Tadino (Latin: \"Dioecesis Tadinensis\") was a Roman Catholic diocese located in the town of Gualdo Tadino in the province of Perugia in northeastern Umbria, on the lower flanks of Mt. Penna, a mountain of the Apennines.  In 1915, it was united with the Diocese of Nocera Umbra to form the Diocese of Nocera Umbra-Gualdo Tadino.  Other sources indicate that it was suppressed to the Diocese of Nocera Umbra in 1066.",
+      "San Francesco, Gualdo Tadino: San Francesco is a Gothic-style, Roman Catholic church located in Piazza Martiri della Libert\u00e0 of Gualdo Tadino, region of Umbria, Italy.  It is located opposite to the Cathedral of Gualdo Tadino."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 415,
+    "generation_tokens": 31,
+    "generation_speed": 358.2241327509302,
+    "prompt_eval_speed": 23114.6262671271,
+    "generation_latency_s": 0.22037930006626993,
+    "latency": 0.5226375999627635,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2453819,
+    "stage_route_s": 0.09776210004929453,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16505850001703948,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03924750001169741,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.719996988773346e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22042879997752607,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5226525999605656,
+    "unaccounted_latency_s": 9.929994121193886e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Gualdio Tadini, a 16th-century Roman Catholic cathedral in Italy."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

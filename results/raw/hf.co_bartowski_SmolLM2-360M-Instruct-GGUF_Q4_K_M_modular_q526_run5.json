@@ -1,0 +1,49 @@
+{
+  "question_id": "Q526",
+  "query": "Are Chlidanthus and Maianthemum both flowering plants?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Yes, both Chlidanthus and Maianthemum are flowering plants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Maianthemum: Maianthemum (Latin \"M\u0101ia \" \"May\" and Greek \"\u00e1nthemon \" \"flower\"; including former \"Smilacina\") is a genus of rhizomatous, herbaceous, perennial flowering plants, native to the understory of woodlands.  It is widespread across much of North America, Europe and Asia.",
+      "Chlidanthus: Chlidanthus is a genus that consists of 10 species of tender bulbs from tropical South America, mostly natives to the Andes.  The botanical name comes from the Greek, meaning \"delicate flower\".  The plants have large spherical bulbs with gray-green, strap-shaped leaves 30cm long arising from the base.  In late spring to early summer, clusters of 3-4 large, strong citrus-scented fragrant, funnel-shaped flowers 10-13cm long held terminally on stalks 25cm high, colored in yellow, pink or red.",
+      "Chloranthaceae: Chloranthaceae is a family of flowering plants (angiosperms), the only family in the order Chloranthales.  It is not closely related to any other family of flowering plants, and is among the early-diverging lineages in the angiosperms.  They are woody or weakly woody plants occurring in Southeast Asia, the Pacific, Madagascar, Central and South America, and the West Indies.  The family consists of four extant genera, totalling about 77 known species according to Christenhusz and Byng in 2016.  Some species are used in traditional medicine.  The type genus is \"Chloranthus\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 414,
+    "generation_tokens": 16,
+    "generation_speed": 220.73836984713867,
+    "prompt_eval_speed": 50853.703476231414,
+    "generation_latency_s": 0.19539450004231185,
+    "latency": 0.5713300000643358,
+    "total_prompt_tokens": 540,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2186669,
+    "stage_route_s": 0.09388959989883006,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22807459998875856,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053793199942447245,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1299924962222576e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19543319998774678,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5713461000705138,
+    "unaccounted_latency_s": 0.0001054003369063139,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Chlidanthus and Maianthemum are flowering plants.",
+      "Query 2: No, they are not flowering plants."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

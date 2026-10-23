@@ -1,0 +1,42 @@
+{
+  "question_id": "Q403",
+  "query": "American Blues included the drummer from which American rock band?",
+  "ground_truth": "ZZ Top",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "American Blues included the drummer from the American rock band \"The Rolling Stones.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "American Blues: American Blues were an American 1960s Texas-based garage rock band, who played a psychedelic style of blues rock music influenced by the 13th Floor Elevators.  They are most notable for including two future members of the band ZZ Top in their ranks, Dusty Hill and Frank Beard.  From 1966 to 1968, they played the Dallas-Fort Worth-Houston circuit and headlined in three clubs all called \"The Cellar\", in Dallas at clubs such as \"The Walrus\" on Mockingbird Lane, and in Houston at \"Love Street Light Circus Feel Good Machine\" on Allen's Landing, as late as 1968.",
+      "Mick Jagger: Sir Michael Philip Jagger, MBE (born 26 July 1943) is an English singer-songwriter, multi-instrumentalist, and composer, who gained fame as the lead singer and one of the founder members of the Rolling Stones (1962-present).  Jagger's career has spanned over five decades, and he has been described as \"one of the most popular and influential frontmen in the history of rock & roll\".  His distinctive voice and performance, along with Keith Richards' guitar style, have been the trademark of the Rolling Stones throughout the career of the band.  Jagger gained press notoriety for his admitted drug use and romantic involvements, and was often portrayed as a countercultural figure.",
+      "Bo Diddley: Ellas McDaniel (born Ellas Otha Bates, December 30, 1928 \u2013 June 2, 2008), known as Bo Diddley, was an American R&B singer, guitarist, songwriter and music producer who played a key role in the transition from the blues to rock and roll, and influenced artists including Elvis Presley, Buddy Holly, the Beatles, the Rolling Stones, the Yardbirds, Eric Clapton, the Who, Jimi Hendrix, George Thorogood, Parliament-Funkadelic, and The Clash."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 518,
+    "generation_tokens": 17,
+    "generation_speed": 257.7905869708179,
+    "prompt_eval_speed": 71606.30356649157,
+    "generation_latency_s": 0.9581212000921369,
+    "latency": 3.3798020998947322,
+    "total_prompt_tokens": 590,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1232885,
+    "stage_rewrite_s": 1.1897253999486566,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0874954001046717,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14433719997759908,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9581625000573695,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.379816999891773,
+    "unaccounted_latency_s": 9.699980728328228e-05,
+    "rewritten_query": "American Blues featured the drummer who played with American rock band, The Rolling Stones.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q434",
+  "query": "Which band has more members, Test Icicles or X Ambassadors?",
+  "ground_truth": "X Ambassadors",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "X Ambassadors",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Test Icicles: Test Icicles were a short-lived dance-punk band that formed in England, primarily influenced by indie rock but containing musical elements from a variety of genres (notably hip hop, crossover thrash and punk).  The band was formed in 2004 by Rory Attwell and Sam Mehran, who were later joined by Devonte Hynes.  Hynes and Mehran were both 18 years old at the time of the band's inception.  The group has since become notable due to the later success of its members.",
+      "X Ambassadors: X Ambassadors (also stylized XA) is an American rock band from Ithaca, New York.  It currently consists of lead vocalist Sam Harris, keyboardist Casey Harris, lead guitarist Noah Feldshuh, and drummer Adam Levin.  Their most notable songs include \"Jungle\", \"Renegades\", and \"Unsteady\".  The band's debut full-length album, \"VHS\", was released on June 30, 2015.",
+      "For Screening Purposes Only: For Screening Purposes Only is the debut album by UK dance-punk trio Test Icicles.  After being released in 2005, the album was critically praised for being unique and compelling in an increasingly homogenous indie music scene.  Following the group's split in February 2006, the album remains Test Icicles' only LP."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 381,
+    "generation_tokens": 4,
+    "generation_speed": 317.7124702144559,
+    "prompt_eval_speed": 23285.663322678363,
+    "generation_latency_s": 0.10596000007353723,
+    "latency": 0.7013081000186503,
+    "total_prompt_tokens": 456,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1291255,
+    "stage_rewrite_s": 0.33974680001847446,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07499480003025383,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1804827000014484,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10599930002354085,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7013194999890402,
+    "unaccounted_latency_s": 9.649991989135742e-05,
+    "rewritten_query": "Test Icicles have more members than X Ambassadors.\n\nI made a few changes to improve the output:\n\n- Removed \"which\" before \"band\", as it's not necessary in this context.\n- Changed \"has more members\" to \"have more members\", which is a more concise and natural way to express the idea.\n- Simplified the phrase \"Band has more members, X Ambassadors\" by removing unnecessary words and rephrasing for better clarity.",
+    "query_was_rewritten": true
+  }
+}

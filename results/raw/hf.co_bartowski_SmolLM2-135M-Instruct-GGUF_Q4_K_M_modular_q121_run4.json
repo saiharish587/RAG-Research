@@ -1,0 +1,48 @@
+{
+  "question_id": "Q121",
+  "query": "What major truck road is located in Backford Cross?",
+  "ground_truth": "The A41",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The major truck road that is located in Backford Cross is the A41.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Backford Cross: Backford Cross is a village on the Wirral Peninsula, Cheshire, England.  It is a suburb of the town of Ellesmere Port and part of Cheshire West and Chester.  Backford Cross is located around the A41/A5117 junction, south of Great Sutton and about 1.5 mi north of the village of Backford, near Chester.  Backford Cross is largely made up of residential homes built from 1990 onwards and serves as a commuter village to Ellesmere Port and Chester, although inhabitants show no allegiance to either locality.  The area is split between postcode districts, with parts of the village in Great Sutton, Ellesmere Port CH66 and other areas in Backford, Chester CH1.",
+      "Bow Road: Bow Road is a thoroughfare in Bow, Tower Hamlets, London, England.  The road forms part of the A11, running from Aldgate to Norwich in Norfolk.  To the west the road becomes Mile End Road, and to the east is Bow Interchange on the A12.",
+      "A41 road: The A41 is a major trunk road in England that links London and Birkenhead, although it has now in parts been superseded by motorways.  It passes through or near various towns and cities including Watford, Kings Langley, Hemel Hempstead, Aylesbury, Solihull, Birmingham, West Bromwich, Wolverhampton, Newport, Whitchurch, Chester and Ellesmere Port."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 395,
+    "generation_tokens": 18,
+    "generation_speed": 389.09664728388924,
+    "prompt_eval_speed": 46366.94447705129,
+    "generation_latency_s": 0.16319810005370528,
+    "latency": 0.41886089998297393,
+    "total_prompt_tokens": 517,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2325834,
+    "stage_route_s": 0.13151630002539605,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.08523550000973046,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0387273000087589,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.109996370971203e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1632431000471115,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.41887249995488673,
+    "unaccounted_latency_s": 0.00010989990551024675,
+    "route": "rag",
+    "router_raw": "The major truck road located in Backford Cross is the Backford Cross.",
+    "sub_queries": [
+      "Answer: Backford Cross Road"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

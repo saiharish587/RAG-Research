@@ -1,0 +1,42 @@
+{
+  "question_id": "Q379",
+  "query": "Which of the movie which has Rich Lee 3-D previsualizations was directed by Francis Lawrence?",
+  "ground_truth": "Constantine",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "1) The movie which has Rich Lee 3-D previsualizations is \"The Shawshank Redemption\" (2008).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Red Sparrow: Red Sparrow is an upcoming American spy thriller film directed by Francis Lawrence, based on the book of the same name, written by Jason Matthews.  The film stars Jennifer Lawrence, Joel Edgerton, Matthias Schoenaerts, Charlotte Rampling, and Jeremy Irons.  It is scheduled to be released on March 2, 2018.",
+      "Stanley Kubrick: Stanley Kubrick ( ; July 26, 1928 \u2013 March 7, 1999) was an American film director, screenwriter, producer, cinematographer, editor, and photographer.  He is frequently cited as one of the greatest and most influential directors in cinematic history.  His films, which are mostly adaptations of novels or short stories, cover a wide range of genres, and are noted for their realism, dark humor, unique cinematography, extensive set designs, and evocative use of music.",
+      "Francis Ford Coppola: Francis Ford Coppola ( ; born April 7, 1939), also credited as Francis Coppola, is a semi-retired American film director, producer, screenwriter and film composer.  He was a central figure in the New Hollywood wave of filmmaking."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 344,
+    "generation_tokens": 31,
+    "generation_speed": 366.56458040180206,
+    "prompt_eval_speed": 21161.417322834644,
+    "generation_latency_s": 0.18869249999988824,
+    "latency": 0.5310501999920234,
+    "total_prompt_tokens": 425,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.141557,
+    "stage_rewrite_s": 0.14313209999818355,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08309410000219941,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11599560000468045,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18872850004117936,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.531058800057508,
+    "unaccounted_latency_s": 0.00010900001507252455,
+    "rewritten_query": "Which of Francis Lawrence's three-dimensional previsualizations is directed by Francis Lawrence?",
+    "query_was_rewritten": true
+  }
+}

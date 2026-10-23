@@ -1,0 +1,42 @@
+{
+  "question_id": "Q286",
+  "query": "Who is older, Ferdi Taygan or Mahesh Bhupathi?",
+  "ground_truth": "Ferdi Taygan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Mahesh Bhupathi is older than Ferdi Taygan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ferdi Taygan: Ferdi Taygan (born December 5, 1956), is a former professional tennis player from the United States.  He is of Turkish descent.",
+      "Mahesh Bhupathi: Mahesh Shrinivas Bhupathi (born 7 June 1974) is a retired Indian professional tennis player.  In 1997, he became the first Indian to win a Grand Slam tournament (with Rika Hiraki).  With his win at the Australian Open mixed doubles in 2006, he joined the elite group of eight tennis players who have achieved a career Grand Slam in mixed doubles.  He is also the founder of International Premier Tennis League.  In December 2016, Bhupathi was appointed as India's next non-playing Davis Cup captain and took over the reins from Anand Amritraj in February 2017.",
+      "1982 French Open \u2013 Men's Doubles: The Men's Doubles tournament at the 1982 French Open was held from 24 May until 6 June 1982 on the outdoor clay courts at the Stade Roland Garros in Paris, France.  Sherwood Stewart and Ferdi Taygan won the title, defeating Hans Gildemeister and Belus Prajoux in the final."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 362,
+    "generation_tokens": 15,
+    "generation_speed": 247.03557312252963,
+    "prompt_eval_speed": 13579.41330932553,
+    "generation_latency_s": 1.0320219999412075,
+    "latency": 3.4010235999012366,
+    "total_prompt_tokens": 438,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1203878,
+    "stage_rewrite_s": 1.1915895999409258,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.079880499979481,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09741379995830357,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0320593999931589,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.40103209996596,
+    "unaccounted_latency_s": 8.950009942054749e-05,
+    "rewritten_query": "Ferdi Taygan is older than Mahesh Bhupathi.",
+    "query_was_rewritten": true
+  }
+}

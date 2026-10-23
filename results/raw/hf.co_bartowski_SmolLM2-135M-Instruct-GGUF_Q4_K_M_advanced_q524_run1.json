@@ -1,0 +1,42 @@
+{
+  "question_id": "Q524",
+  "query": "Conrad Anker located the body of a mountaineer who took part it the first three British expeditions to which mountain?",
+  "ground_truth": "Mount Everest",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The question is about Conrad Anker locating the body of a mountaineer who took part in the first three British expeditions to Mount Everest, including Tenzing Norgay.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Edmund Hillary: Sir Edmund Percival \"Ed\" Hillary {'1': \", '2': \", '3': \", '4': \"} (20 July 1919 \u2013 11 January 2008) was a New Zealand mountaineer, explorer, and philanthropist.  On 29 May 1953, Hillary and Nepalese Sherpa mountaineer Tenzing Norgay became the first climbers confirmed to have reached the summit of Mount Everest.  They were part of the ninth British expedition to Everest, led by John Hunt. \" TIME magazine\" named Hillary one of the people of the 20th century.",
+      "Conrad Anker: Conrad Anker (born November 27, 1962) is an American rock climber, mountaineer, and author.  He is famous for his challenging ascents in the high Himalaya and Antarctica.  He is the team leader of The North Face climbing team.  In 1999 he located George Mallory's body on Everest as a member of a search team looking for the remains of the legendary British climber.  He lives in Bozeman, Montana.",
+      "Beyond the Edge: Beyond the Edge is a 2013 New Zealand 3D docudrama about Tenzing Norgay and Sir Edmund Hillary's historical ascent of Mount Everest in 1953.  As well as featuring dramatised recreations shot on location on Everest and in New Zealand, the film includes original footage and photographs from what was then the ninth British expedition to the mountain.  It also includes audio from interviews with Hillary and recorded narration by expedition leader John Hunt."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 428,
+    "generation_tokens": 35,
+    "generation_speed": 394.69974626444883,
+    "prompt_eval_speed": 24028.744666516952,
+    "generation_latency_s": 0.19115830003283918,
+    "latency": 0.6143269999884069,
+    "total_prompt_tokens": 511,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12980999999999998,
+    "stage_rewrite_s": 0.1792081999592483,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07971220009494573,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16412359999958426,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1911963999737054,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6143363999435678,
+    "unaccounted_latency_s": 9.639991912990808e-05,
+    "rewritten_query": "Conrad Anker, the first British expedition to climb Mount Everest in 1953, was discovered by a team of climbers led by John Hunt.",
+    "query_was_rewritten": true
+  }
+}

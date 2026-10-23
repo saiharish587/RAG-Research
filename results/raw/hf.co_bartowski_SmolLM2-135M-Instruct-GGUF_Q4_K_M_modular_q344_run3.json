@@ -1,0 +1,49 @@
+{
+  "question_id": "Q344",
+  "query": "Which of these battles occurred earlier--the Battle of Peleliu or the Battle of Belleau Wood?",
+  "ground_truth": "The Battle of Belleau Wood",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Battle of Peleliu occurred earlier, during the Northwest Indian War (also known as the Northwest Rebellion).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Battle of Belleau Wood: The Battle of Belleau Wood (1\u201326 June 1918) occurred during the German Spring Offensive in World War I, near the Marne River in France.  The battle was fought between the U.S. 2nd (under the command of Major General Omar Bundy) and 3rd Divisions along with French and British forces against an assortment of German units including elements from the 237th, 10th, 197th, 87th, and 28th Divisions.  The battle has become a key component of the lore of the United States Marine Corps.",
+      "Battle of Peleliu: The Battle of Peleliu, codenamed Operation Stalemate II by the United States military, was fought between the U.S. and the Empire of Japan during the Mariana & Palau Campaign of World War II, from September to November 1944, on the island of Peleliu.",
+      "Battle of Fallen Timbers: The Battle of Fallen Timbers (August 20, 1794) was the final battle of the Northwest Indian War, a struggle between Native American tribes affiliated with the Western Confederacy, including support from the British led by Captain Alexander McKillop, against the United States for control of the Northwest Territory (an area north of the Ohio River, east of the Mississippi River, and southwest of the Great Lakes).  This land had been ceded to the United States in accordance with the Treaty of Paris (1783), but the Native Americans (who had not been party to the treaty) refused to comply with the treaty and relinquish control.  British army bases were maintained there to support their Native allies.  This ultimately led to the American offensive and subsequent British-Indian withdrawal from the territory altogether following the Treaty of Greenville.  The battle, which was a decisive victory for the United States, ended major hostilities in the region until Tecumseh's War and the Battle of Tippecanoe in 1811."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 518,
+    "generation_tokens": 24,
+    "generation_speed": 287.6938936971063,
+    "prompt_eval_speed": 56760.902914749066,
+    "generation_latency_s": 0.20192279992625117,
+    "latency": 0.6837827999843284,
+    "total_prompt_tokens": 662,
+    "total_generation_tokens": 109,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.226501,
+    "stage_route_s": 0.17148060002364218,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2512450000504032,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058958099922165275,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3200055845081806e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20195949997287244,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6837941000703722,
+    "unaccounted_latency_s": 9.840005077421665e-05,
+    "route": "rag",
+    "router_raw": "The Battle of Peleliu is considered to be a later battle, occurring after the Battle of Belleau Wood in 1815.",
+    "sub_queries": [
+      "The Battle of Peleliu (209 BC)",
+      "The Battle of Belleau Wood (1873)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

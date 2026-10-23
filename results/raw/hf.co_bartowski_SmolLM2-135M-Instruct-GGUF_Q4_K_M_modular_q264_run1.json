@@ -1,0 +1,49 @@
+{
+  "question_id": "Q264",
+  "query": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+  "ground_truth": "Tybalt",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The protagonist of William Shakespeare's tragedy \"Hamlet\" is Prince Hamlet. He is the main character in the play and is portrayed by William Shakespeare as a tragic hero who seeks revenge against his uncle, King Claudius for murdering his father and usurping the throne.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Prince Hamlet: Prince Hamlet is the title character and protagonist of William Shakespeare's tragedy \"Hamlet\".  He is the Prince of Denmark, nephew to the usurping Claudius, and son of King Hamlet, the previous King of Denmark.  At the beginning of the play, he struggles with whether, and how, to avenge the murder of his father, and struggles with his own sanity along the way.  By the end of the tragedy, Hamlet has caused the deaths of Polonius, Laertes, Claudius, and two acquaintances of his from the University of Wittenberg Rosencrantz and Guildenstern.  He is also indirectly involved in the deaths of his love Ophelia (drowning) and of his mother Gertrude (poisoned by Claudius by mistake).",
+      "Hamlet: The Tragedy of Hamlet, Prince of Denmark, often shortened to Hamlet ( ), is a tragedy written by William Shakespeare at an uncertain date between 1599 and 1602.  Set in Denmark, the play dramatises the revenge Prince Hamlet is called to wreak upon his uncle, Claudius, by the ghost of Hamlet's father, King Hamlet.  Claudius had murdered his own brother and seized the throne, also marrying his deceased brother's widow.",
+      "Polonius: Polonius is a character in William Shakespeare's \"Hamlet\".  He is chief counsellor of the king, and the father of Laertes and Ophelia.  Generally regarded as wrong in every judgment he makes over the course of the play, Polonius is described by William Hazlitt as a \"sincere\" father, but also \"a busy-body, [who] is accordingly officious, garrulous, and impertinent\".  In Act II Hamlet refers to Polonius as a \"tedious old fool\" and taunts him as a latter day \"Jeptha\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 485,
+    "generation_tokens": 54,
+    "generation_speed": 368.63087761454864,
+    "prompt_eval_speed": 22737.927801218942,
+    "generation_latency_s": 0.27418220008257776,
+    "latency": 0.6920623000478372,
+    "total_prompt_tokens": 655,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2196267,
+    "stage_route_s": 0.10816699999850243,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2522503000218421,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057264700066298246,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.080003757029772e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.27423440001439303,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6920749000273645,
+    "unaccounted_latency_s": 0.0001083998940885067,
+    "route": "rag",
+    "router_raw": "This character is Benvolio.",
+    "sub_queries": [
+      "Who is the antagonist of the play \"Hamlet\"?",
+      "What is the name of the person who is killed by Hamlet in the play?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q15",
+  "query": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+  "ground_truth": "from 1986 to 2013",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "David Beckham was a former professional footballer for Manchester United from 1986 to 2013. He played for the club until his retirement in May 2013, and he is considered one of the greatest and most successful managers of all time by many players, managers and analysts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "David Beckham: David Robert Joseph Beckham, {'1': \", '2': \", '3': \", '4': \"} ( ; born 2 May 1975) is an English former professional footballer.  He played for Manchester United, Preston North End, Real Madrid, Milan, LA Galaxy, Paris Saint-Germain, and the England national team for which he held the appearance record for an outfield player until 2016 when Wayne Rooney surpassed his total.  He is the first English player to win league titles in four countries: England, Spain, the United States and France.  He announced his retirement in May 2013 after a 20-year career, during which he won 19 major trophies.",
+      "Alex Ferguson: Sir Alexander Chapman Ferguson, CBE (born 31 December 1941) is a Scottish former football manager and player who managed Manchester United from 1986 to 2013.  He is regarded by many players, managers and analysts to be one of the greatest and most successful managers of all time.",
+      "Manchester United F.C.: Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football.  Nicknamed \"the Red Devils\", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 411,
+    "generation_tokens": 65,
+    "generation_speed": 249.6399423907825,
+    "prompt_eval_speed": 57554.96429071559,
+    "generation_latency_s": 1.167448200052604,
+    "latency": 3.563739000004716,
+    "total_prompt_tokens": 486,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12426019999999999,
+    "stage_rewrite_s": 1.2243485000217333,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.03051479998976,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14129920001141727,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1674885000102222,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5637730999151245,
+    "unaccounted_latency_s": 0.0001230998896062374,
+    "rewritten_query": "Manchester United's football manager, David Beckham, was recruited by the club during the 1980s.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q71",
+  "query": "Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the \"Teen Titans\"?",
+  "ground_truth": "Teen Titans Go!",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Tara Strong's major voice role in animated series is a character named \"Rugrats\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tara Strong: Tara Strong (born Tara Lyn Charendoff; February 12, 1973) is a Canadian\u2013American actress who has done voice work for numerous animations and video games and performed in various live-action productions.  Many of her major voice roles include animated series such as \"Rugrats\", \"The Powerpuff Girls\", \"The Fairly OddParents\", \"Drawn Together\", \"Teen Titans\" and the spin-off series \"Teen Titans Go! \", and \"\", as well as video games such as \"Mortal Kombat X\", \"Final Fantasy X-2\", and the \"\" series.  Her portrayals have garnered nominations in the Annie Awards and Daytime Emmys, and an award from the Academy of Interactive Arts & Sciences.",
+      "Tara Strong filmography: Tara Strong (born Tara Lyn Charendoff; February 12, 1973) is a Canadian\u2013American actress who has done voice work for numerous animations and video games and performed in various live-action productions.  Many of her major voice roles include animated series such as \"Rugrats\", \"The Powerpuff Girls\", \"The Fairly OddParents\", \"Drawn Together\", \"Teen Titans\" and the spin-off series \"Teen Titans Go! \", and \"\", as well as video games such as \"Mortal Kombat X\", \"Final Fantasy X-2\", and the \"\" series.  Her portrayals have garnered nominations in the Annie Awards and Daytime Emmys, and an award from the Academy of Interactive Arts & Sciences.",
+      "Teen Titans (season 4): The fourth season of the animated television series \"Teen Titans\", based on the DC comics series of the same time by Bob Haney and Bruno Premiani, originally aired on Cartoon Network in the United States.  Developed by television writer David Slack, the series was produced by DC Entertainment and Warner Bros.  Animation.  It stars Scott Menville, Hynden Walch, Khary Payton, Tara Strong, and Greg Cipes as the main characters."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 540,
+    "generation_tokens": 21,
+    "generation_speed": 340.6491800087596,
+    "prompt_eval_speed": 17994.601619514146,
+    "generation_latency_s": 0.19846019998658448,
+    "latency": 0.5089010000228882,
+    "total_prompt_tokens": 704,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2186899,
+    "stage_route_s": 0.10090739990118891,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15312290005385876,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056230499991215765,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.079992115497589e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19850220007356256,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5089133000001311,
+    "unaccounted_latency_s": 0.00010020006448030472,
+    "route": "rag",
+    "router_raw": "Answer: \"The Teen Titans\"",
+    "sub_queries": [
+      "Which of Tara Strong major voice roles are American?",
+      "Which of Tara Strong major voice roles is a DC Comics fictional superhero team?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

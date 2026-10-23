@@ -1,0 +1,49 @@
+{
+  "question_id": "Q40",
+  "query": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+  "ground_truth": "New York City",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Ralph Hefferline was a psychology professor at the University of Kansas, which is located in Lawrence, one of the largest college towns in Kansas.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ralph Hefferline: Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana \u2013 16 March 1974) was a psychology professor at Columbia University.",
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities.",
+      "David C. Funder: David C. Funder (Ph.D., Stanford University, 1979) is a psychology professor who has written a number of important textbooks and research articles pertaining to the field of personality psychology.  Funder resides as the chair of the Psychology department at the University of California, Riverside.  He used to be a past editor of the \"Journal of Research and Personality\", as well as being a former secondary editor of the \"Journal of Personality and Social Psychology\".  Funder has been praised for his studies on personality judgment.  He had also published research over the attribution theory and the \"delay of gratification\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 406,
+    "generation_tokens": 31,
+    "generation_speed": 217.8557373362568,
+    "prompt_eval_speed": 50503.794004229385,
+    "generation_latency_s": 0.26808859989978373,
+    "latency": 0.6574298000195995,
+    "total_prompt_tokens": 542,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2324435,
+    "stage_route_s": 0.09439139999449253,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23792260000482202,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056849699933081865,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.989999044686556e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26812099991366267,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6574389999732375,
+    "unaccounted_latency_s": 9.490014053881168e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Ralph Hefferline, Psychology Professor, University of [City]\"",
+      "\"University of [City], Ralph Hefferline\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

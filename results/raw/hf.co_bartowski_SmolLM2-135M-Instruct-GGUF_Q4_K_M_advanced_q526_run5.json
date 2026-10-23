@@ -1,0 +1,42 @@
+{
+  "question_id": "Q526",
+  "query": "Are Chlidanthus and Maianthemum both flowering plants?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, Chilanthus and Maianthemum are not flowering plants. They belong to the Caryophyllales order of flowering plants that includes cacti, carnations, amaranths, ice plants, beets, and many carnivorous plants. They do have a specialized non-lignified tissue (the phloem) for photosynthesis but are not true flowers or seeds.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Maianthemum: Maianthemum (Latin \"M\u0101ia \" \"May\" and Greek \"\u00e1nthemon \" \"flower\"; including former \"Smilacina\") is a genus of rhizomatous, herbaceous, perennial flowering plants, native to the understory of woodlands.  It is widespread across much of North America, Europe and Asia.",
+      "Caryophyllales: Caryophyllales ( ) is an order of flowering plants that includes the cacti, carnations, amaranths, ice plants, beets, and many carnivorous plants.  Many members are succulent, having fleshy stems or leaves.",
+      "Vascular plant: Vascular plants (from Latin \"vasculum\": duct), also known as tracheophytes (from the equivalent Greek term \"trachea\") and also higher plants, form a large group of plants (c. 308,312 accepted known species ) that are defined as those land plants that have lignified tissues (the xylem) for conducting water and minerals throughout the plant.  They also have a specialized non-lignified tissue (the phloem) to conduct products of photosynthesis.  Vascular plants include the clubmosses, horsetails, ferns, gymnosperms (including conifers) and angiosperms (flowering plants).  Scientific names for the group include Tracheophyta and Tracheobionta."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 77,
+    "generation_speed": 396.1781669813796,
+    "prompt_eval_speed": 46149.890731456486,
+    "generation_latency_s": 0.2891498999670148,
+    "latency": 0.6463133000070229,
+    "total_prompt_tokens": 432,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12519160000000001,
+    "stage_rewrite_s": 0.14517629996407777,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07377919997088611,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1380848000990227,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2891885000281036,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.646322900080122,
+    "unaccounted_latency_s": 9.479990694671869e-05,
+    "rewritten_query": "Are Chilastan and Maianthemums both flowering plants?",
+    "query_was_rewritten": true
+  }
+}

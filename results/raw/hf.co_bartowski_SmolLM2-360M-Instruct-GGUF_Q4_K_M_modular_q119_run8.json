@@ -1,0 +1,49 @@
+{
+  "question_id": "Q119",
+  "query": "Were the bands Skin Yard and Ostava from the U.S.?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "No, the bands Skin Yard and Ostava are not from the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ostava: Ostava are an alternative rock band from Bulgaria.  They formed in 1991, but it was not until 2000 that they released a long-playing record (and subsequently received critical acclaim.",
+      "Neva Dinova: Neva Dinova is an indie band from Omaha, Nebraska.  Neva Dinova is named after the grandmother of lead singer Jake Bellows.  They have been on crank!  a record company (though their second release was licensed to Sidecho Records), and have recorded a split-release with Bright Eyes entitled \"One Jug of Wine, Two Vessels\" that was also released on crank!  a record company.  In April 2008, Neva Dinova released their first album from Saddle Creek Records entitled, \"You May Already Be Dreaming\".  Drummer Roger Lewis is also the drummer for fellow Saddle Creek band, The Good Life, with whom Jake Bellows completed a solo tour in the fall of 2016.  Jake Bellows remained a key associate with Bright Eyes in 2006 and 2007 and contributed to the album \"Cassadaga\".",
+      "Y&amp;T: Y&T (originally known as Yesterday & Today) is an American hard rock/heavy metal band formed in 1974 in Oakland, California.  The band released two studio albums on London Records as Yesterday & Today in the 1970s, before shortening their name to Y&T and releasing several albums on A&M Records beginning in 1981, as well as albums on Geffen Records, Avex Records, and others.  The band was originally co-managed by Herbie Herbert (who also managed Journey) and Louis \"Lou\" Bramy.  The band has sold over 4 million albums worldwide to date."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 470,
+    "generation_tokens": 17,
+    "generation_speed": 222.20769884321285,
+    "prompt_eval_speed": 54663.87531984183,
+    "generation_latency_s": 0.1988631000276655,
+    "latency": 0.5850361000047997,
+    "total_prompt_tokens": 598,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2273645,
+    "stage_route_s": 0.10194169997703284,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22217089997138828,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06187320000026375,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2999937906861305e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19890690001193434,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5850477999774739,
+    "unaccounted_latency_s": 0.00010280008427798748,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Did the band Ostava originate in the U.S.\"",
+      "\"Are there any American bands that share similarities with Ostava?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

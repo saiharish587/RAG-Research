@@ -1,0 +1,49 @@
+{
+  "question_id": "Q141",
+  "query": "The author of Sexual Politics attended which British University?",
+  "ground_truth": "Oxford",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The author of Sexual Politics attended the University of Leeds.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "University of Leeds: The University of Leeds is a  Russell Group university in Leeds, West Yorkshire, England, established in 1831.  Originally named the Yorkshire College of Science and later simply the Yorkshire College, it incorporated the Leeds School of Medicine and became part of the federal Victoria University alongside Owens College (which became the University of Manchester) and University College Liverpool (which became the University of Liverpool).  In 1904, a royal charter, created in 1903, was granted to the University of Leeds by King Edward VII.",
+      "Professor of Greek (University College London): The Professorship in Greek was one of the original professorships of University College London (UCL) in 1828.  The position was established at the same time as the Professorship in Latin.  The inaugural lecture of the first incumbent was delivered on November 1, 1830.  The teaching of classical Greek (and Latin) at the new University of London \"challenged both the monopoly and the style of Oxbridge classics\".  Since the Second World War the chair has been occupied by a series of renowned scholars including T. B. L. Webster (who founded the Institute of Classical Studies), Eric Handley, P. E. Easterling, Richard Janko, and Chris Carey.",
+      "Sexual Politics: Sexual Politics is a 1970 book by Kate Millett, based on her PhD dissertation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 368,
+    "generation_tokens": 12,
+    "generation_speed": 211.9018188239449,
+    "prompt_eval_speed": 39261.70916462179,
+    "generation_latency_s": 0.17631100001744926,
+    "latency": 0.47711960005108267,
+    "total_prompt_tokens": 488,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2250124,
+    "stage_route_s": 0.09526580001693219,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15050810005050153,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05485229997429997,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6699966080486774e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17634959996212274,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4771310000214726,
+    "unaccounted_latency_s": 9.930005762726068e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"University of Oxford\"",
+      "\"University College London\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

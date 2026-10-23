@@ -1,0 +1,49 @@
+{
+  "question_id": "Q312",
+  "query": "Which magazine is published more often, Shonen Jump or Rolling Stone?",
+  "ground_truth": "Rolling Stone",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The magazine published more frequently on Rolling Stone than Shonen Jump.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shonen Jump (magazine): Shonen Jump, officially stylized SHONEN JUMP and abbreviated SJ, is a \"sh\u014dnen\" manga anthology published in North America by Viz Media.  It debuted in November 2002 with the first issue having a January 2003 cover date.  Based on Shueisha's popular Japanese magazine \"Weekly Sh\u014dnen Jump\", \"Shonen Jump\" is retooled for English readers and the American audience, including changing it from a weekly publication to a monthly one.  It features serialized chapters from four manga series, and articles on Japanese language and culture, as well as manga, anime, video games, and figurines.  Prior to the magazine's launch, Viz launched an extensive marketing campaign to promote it and help it succeed where previous manga anthologies published in North America had failed.  Shueisha purchased an equity interest in Viz to help fund the venture, and Cartoon Network, Suncoast, and Diamond Distributors became promotional partners in the magazine.",
+      "Weekly Shonen Jump (American magazine): Weekly Shonen Jump is a digital \"sh\u014dnen\" manga anthology published in North America by Viz Media, and the successor to their monthly print anthology \"Shonen Jump\".  It began serialization on January 30, 2012 as Weekly Shonen Jump Alpha (officially stylized as \"Weekly SHONEN JUMP \u03b1lpha\" or \"Weekly SHONEN JUMP Alpha\"), with two free preview issues released in the buildup to its launch.  Based on Shueisha's popular Japanese magazine \"Weekly Sh\u014dnen Jump\", \"Weekly Shonen Jump\" is an attempt to provide English readers with easily accessible, affordable, and officially licensed editions of the latest installments of popular \"Sh\u014dnen Jump\" manga soon after their release in Japan, as an alternative to popular bootleg scanlation services.",
+      "Rolling Stone: Rolling Stone is an American biweekly magazine that focuses on popular culture.  It was founded in San Francisco in 1967 by Jann Wenner, who is still the magazine's publisher, and the music critic Ralph J. Gleason.  It was first known for its musical coverage and for political reporting by Hunter S. Thompson.  In the 1990s, the magazine shifted focus to a younger readership interested in youth-oriented television shows, film actors, and popular music.  In recent years, it has resumed its traditional mix of content."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 611,
+    "generation_tokens": 15,
+    "generation_speed": 365.764447695684,
+    "prompt_eval_speed": 67357.51295336788,
+    "generation_latency_s": 0.16280090005602688,
+    "latency": 0.7504781999159604,
+    "total_prompt_tokens": 741,
+    "total_generation_tokens": 147,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24160310000000002,
+    "stage_route_s": 0.36558989994227886,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16573470004368573,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0561819999711588,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9299909733235836e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16283540008589625,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.750486999982968,
+    "unaccounted_latency_s": 9.630003478378057e-05,
+    "route": "rag",
+    "router_raw": "To determine which magazine is published more frequently, we need to examine its internal files/documents. The answer depends on the specific information provided in the user's question and how it relates to the magazine's publication frequency.\n\nIf the user asks about Shonen Jump, they can search for the magazine within the Shonen Jump website or within the Shonen Jump app (which is available through the App Store). The answer would be that Shonen Jump publishes more frequently than Rolling Stone.",
+    "sub_queries": [
+      "Shonen Jump - Rolling Stone",
+      "Rolling Stone - Shonen Jump"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q35",
+  "query": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+  "ground_truth": "Letters to Cleo",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Screaming Trees had more members than Letters to Cleo.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Screaming Trees: Screaming Trees was an American rock band formed in Ellensburg, Washington in 1985 by vocalist Mark Lanegan, guitarist Gary Lee Conner, bass player Van Conner and drummer Mark Pickerel.  Pickerel had been replaced by Barrett Martin by the time the band reached its most successful period.  Although widely associated with grunge, the band's sound incorporated hard rock and psychedelic elements.  During Screaming Trees' existence the band released seven studio albums, five EPs, and three compilations.",
+      "Screaming Trees discography: The discography of Screaming Trees, an Ellensburg, Washington-based rock band, consists of seven studio albums, three compilation albums, five extended plays (EP), and six singles, though this does not include any solo material recorded by the individual members of Screaming Trees.",
+      "Letters to Cleo: Letters to Cleo are an alternative rock band from Boston, Massachusetts, best known for the 1994 single, \"Here & Now\", from their full-length debut album, \"Aurora Gory Alice\".  The band's members are Kay Hanley, Greg McKenna, Michael Eisenstein, Stacy Jones, Scott Riebling, and later, Tom Polce."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 341,
+    "generation_tokens": 13,
+    "generation_speed": 230.5168897951946,
+    "prompt_eval_speed": 13693.129341846363,
+    "generation_latency_s": 0.18870619998779148,
+    "latency": 0.6312899000477046,
+    "total_prompt_tokens": 473,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2555545,
+    "stage_route_s": 0.11084410001058131,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27715750003699213,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05440420005470514,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9200025387108326e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18873890000395477,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.631299200002104,
+    "unaccounted_latency_s": 0.00010579987429082394,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Who are the main members of the band 'Screaming Trees'?\"",
+      "\"Which band has more members: 'Letters to Cleo' or 'Screaming Trees'?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q521",
+  "query": "Which movie directed by James Gunn portrayed the fictional character, Ego the Living Planet?",
+  "ground_truth": "Guardians of the Galaxy Vol. 2",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "James Gunn's \"Guardians of the Galaxy Vol. 2\" portrayed the fictional character, Ego the Living Planet.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ego the Living Planet: Ego the Living Planet is a fictional character appearing in American comic books published by Marvel Comics.  The character first appeared in \"Thor\" #132 (September 1966) and was created by writer Stan Lee and artist Jack Kirby.  Ego is portrayed by Kurt Russell in \"Guardians of the Galaxy Vol.  2\".",
+      "James Gunn: James Gunn (born August 5) is an American screenwriter, director, producer, novelist, actor, and musician.  He started his career as a screenwriter in the mid-1990s, writing the scripts for \"Tromeo and Juliet\" (1996), \"Scooby-Doo\" (2002) and its sequel \"\" (2004), and the 2004 version of \"Dawn of the Dead\".  He then started working also as a director, starting with \"Slither\" (2006).  He subsequently wrote and directed the web series \"James Gunn's PG Porn\", and the superhero films \"Super\" (2010), \"Guardians of the Galaxy\" (2014) and \"Guardians of the Galaxy Vol.  2\" (2017).",
+      "Guardians of the Galaxy Vol. 2: Guardians of the Galaxy Vol.  2 is a 2017 American superhero film based on the Marvel Comics superhero team Guardians of the Galaxy, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.  It is the sequel to 2014's \"Guardians of the Galaxy\" and the fifteenth film in the Marvel Cinematic Universe.  The film is written and directed by James Gunn and stars an ensemble cast featuring Chris Pratt, Zoe Saldana, Dave Bautista, Vin Diesel, Bradley Cooper, Michael Rooker, Karen Gillan, Pom Klementieff, Elizabeth Debicki, Chris Sullivan, Sean Gunn, Sylvester Stallone, and Kurt Russell.  In \"Guardians of the Galaxy Vol.  2\", the Guardians travel throughout the cosmos as they help Peter Quill learn more about his mysterious parentage."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 27,
+    "generation_speed": 255.19848771266538,
+    "prompt_eval_speed": 73335.1307630089,
+    "generation_latency_s": 0.9960480999434367,
+    "latency": 3.410320399911143,
+    "total_prompt_tokens": 622,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1249293,
+    "stage_rewrite_s": 1.1641998999984935,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0795056000351906,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17043029994238168,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9960987999802455,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.410331799997948,
+    "unaccounted_latency_s": 9.780004620552063e-05,
+    "rewritten_query": "Ego the Living Planet was directed by James Gunn.",
+    "query_was_rewritten": true
+  }
+}

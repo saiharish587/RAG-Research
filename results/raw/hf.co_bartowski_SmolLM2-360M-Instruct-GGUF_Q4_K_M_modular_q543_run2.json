@@ -1,0 +1,49 @@
+{
+  "question_id": "Q543",
+  "query": "The Dogwoman telemovies were created by an actress born in what year?",
+  "ground_truth": "1961",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Dogwoman telemovies were created by Magda Szubanski as Margaret O'Halloran, which was 2000.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dogwoman: Dogwoman is a series of Australian television telemovies screened on the Nine Network in 2000.  The telemovies were created by and starred Magda Szubanski as Margaret O'Halloran.  Margaret, a professional dog trainer, is drawn into a world of mystery, intrigue, and murder, which lies beneath the surface of dog-owners.  Tara Morice played her sister Pauline O'Halloran and Raj Ryan played her boyfriend Brian Jayasinghe.",
+      "Dogville: Dogville is a 2003 internationally co-produced avant-garde crime drama film written and directed by Lars von Trier, and starring an ensemble cast led by Nicole Kidman, Lauren Bacall, Paul Bettany, Chlo\u00eb Sevigny, Stellan Skarsg\u00e5rd, Udo Kier, Ben Gazzara, and James Caan.  It is a parable that uses an extremely minimal, stage-like set to tell the story of Grace Mulligan (Kidman), a woman hiding from mobsters, who arrives in the small mountain town of Dogville, Colorado, and is provided refuge in return for physical labor.  Because she has to win and retain the acceptance of every single one of the inhabitants of the town to be allowed to stay, any attempt by her to have her own way or to put a limit on her service risks driving her back out into the arms of the criminals.  Although she has no power in herself, her stay there ultimately changes the lives of the local people and the town in many ways.",
+      "Miguel (singer): Miguel Jontel Pimentel (born October 23, 1985), better known as Miguel, is an American singer, songwriter, actor and record producer.  Raised in Los Angeles, he began creating music at age thirteen.  After signing to Jive Records in 2007, Miguel released his debut studio album, \"All I Want Is You\", in November 2010.  Although it was underpromoted upon its release, the album became a sleeper hit and helped Miguel garner commercial standing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 524,
+    "generation_tokens": 31,
+    "generation_speed": 229.5072257758825,
+    "prompt_eval_speed": 12257.309941520467,
+    "generation_latency_s": 0.2889805000741035,
+    "latency": 0.6131993000162765,
+    "total_prompt_tokens": 656,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2184721,
+    "stage_route_s": 0.09726249997038394,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17313739995006472,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053640399943105876,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.509995389729738e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2890257000690326,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6132185000460595,
+    "unaccounted_latency_s": 9.800016414374113e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Dogwoman's Telemovies\"",
+      "\"Born in 1985\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

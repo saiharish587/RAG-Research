@@ -1,0 +1,48 @@
+{
+  "question_id": "Q128",
+  "query": "When was the palace founded at which Columba de Dunbar died in 1435?",
+  "ground_truth": "the late 12th Century",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The palace was founded at Columba de Dunbar's death in 1435, as mentioned in the context provided.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Columba de Dunbar: Columba de Dunbar ( 1386 \u2013 1435) was Bishop of Moray from 1422 until his death at Spynie Palace near Elgin sometime before 7 November 1435.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning.",
+      "Tower of London: The Tower of London, officially Her Majesty's Royal Palace and Fortress of the Tower of London, is a historic castle located on the north bank of the River Thames in central London.  It lies within the London Borough of Tower Hamlets, separated from the eastern edge of the square mile of the City of London by the open space known as Tower Hill.  It was founded towards the end of 1066 as part of the Norman Conquest of England.  The White Tower, which gives the entire castle its name, was built by William the Conqueror in 1078 and was a resented symbol of oppression, inflicted upon London by the new ruling elite.  The castle was used as a prison from 1100 (Ranulf Flambard) until 1952 (Kray twins), although that was not its primary purpose.  A grand palace early in its history, it served as a royal residence.  As a whole, the Tower is a complex of several buildings set within two concentric rings of defensive walls and a moat.  There were several phases of expansion, mainly under Kings Richard the Lionheart, Henry III, and Edward I in the 12th and 13th centuries.  The general layout established by the late 13th century remains despite later activity on the site."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 486,
+    "generation_tokens": 27,
+    "generation_speed": 367.1421383989883,
+    "prompt_eval_speed": 75547.95585263484,
+    "generation_latency_s": 0.19271639990620315,
+    "latency": 0.7308604000136256,
+    "total_prompt_tokens": 626,
+    "total_generation_tokens": 135,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2370535,
+    "stage_route_s": 0.1949852000689134,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30435689992737025,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03862420003861189,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.300009459257126e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19276070001069456,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7308696999680251,
+    "unaccounted_latency_s": 0.0001002998324111104,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents, specifically the Palace of the Kings of Scotland (PCS) and the Palace of the Kings of England (PCO).",
+    "sub_queries": [
+      "The Palace of the Kings at Columba de Dunbar, also known as the Palace of the Kings of the North, was built by the King of the North, King Columba de Dunbar. The palace is located on the outskirts of the city of Dunbartenshire and was constructed in the 14th century."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q173",
+  "query": "The Memphis Hustle are based in a suburb of a city with a population of what in 2010?",
+  "ground_truth": "48,982",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Memphis Hustle is based in a suburb of a city with a population of 347,586 according to the 2010 census.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Memphis Hustle: The Memphis Hustle are an American professional basketball team of the NBA G League announced to begin play for the 2017\u201318 season as an affiliate of the Memphis Grizzlies of the National Basketball Association (NBA).  Based in the Memphis suburb of Southaven, Mississippi, the team will play their home games at the Landers Center.",
+      "West Memphis, Arkansas: West Memphis is the largest city in Crittenden County, Arkansas, United States.  The population was 26,245 at the 2010 census, ranking it as the state's 18th largest city, behind Bella Vista.  It is part of the Memphis metropolitan area, and is located directly across the Mississippi River from Memphis.",
+      "Memphis metropolitan area: The Memphis-Forrest City Combined Statistical Area, TN-MS-AR (CSA) is the commercial and cultural hub of The Mid-South or Ark-Miss-Tenn.  The census defined combined statistical area covers ten counties in three states \u2013 Tennessee, Mississippi, and Arkansas.  As of census 2010 the MSA had a population of 1,324,108 .  The Forrest City Micropolitan area was added to the Memphis area in 2012 to form the Memphis-Forrest City Combined Statistical area and had a population of 1,369,548 according to census estimates.  The greater Mid-South area as a whole has a population of 2.4 million according to 2013 census estimates.  This area is covered by Memphis local news channels and includes the Missouri Bootheel, Northeast Arkansas, West Tennessee, and North Mississippi."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 446,
+    "generation_tokens": 36,
+    "generation_speed": 355.7241951740084,
+    "prompt_eval_speed": 24333.024169349115,
+    "generation_latency_s": 0.22696430003270507,
+    "latency": 0.5726577000459656,
+    "total_prompt_tokens": 596,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.234304,
+    "stage_route_s": 0.1573775999713689,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15199509996455163,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03615289996378124,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.600000102072954e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22700559999793768,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5726705000270158,
+    "unaccounted_latency_s": 9.390013292431831e-05,
+    "route": "rag",
+    "router_raw": "The Memphis Hustle is based in a suburb of a city with a population of 5,000.",
+    "sub_queries": [
+      "The Memphis Hustle is based in a suburb of a city with a population of 5,478."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

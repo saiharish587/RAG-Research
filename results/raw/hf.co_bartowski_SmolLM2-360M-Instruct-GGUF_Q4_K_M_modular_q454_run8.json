@@ -1,0 +1,49 @@
+{
+  "question_id": "Q454",
+  "query": "What was position of the man who served Prince Andrew from 1990-2001? ",
+  "ground_truth": "Private Secretary and Treasurer",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The position of the man who served Prince Andrew from 1990-2001 is that he was a British naval officer and statesman, an uncle of Elizabeth II, and second cousin once removed of Princess Elizabeth.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Prince Andrew, Duke of York: Prince Andrew, Duke of York, {'1': \", '2': \", '3': \", '4': \"} (Andrew Albert Christian Edward, born 19 February 1960), is the second son and third child of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.  At the time of his birth, he was second in the line of succession to the British throne; as of 2017 he is sixth in line.",
+      "having exceeded his powers.  He was cashiered and arrested, and finally sentenced to death.  For some time it was feared that he would lose his head.  The foreign Ministers did all in their power to effect his release, but in vain.  At length Queen Victoria interposed on his behalf; and in response to her letter he was pardoned, upon which he retired into private life.  He died in 1893, of creeping paralysis; and in 1894 his rank was restored, less two grades.  He was extremely courteous to foreigners, and was much liked by all foreign officials with whom he was thrown into contact.",
+      "Louis Mountbatten, 1st Earl Mountbatten of Burma: Admiral of the Fleet Louis Francis Albert Victor Nicholas Mountbatten, 1st Earl Mountbatten of Burma, (born Prince Louis of Battenberg; 25 June 1900 \u2013 27 August 1979) was a British naval officer and statesman, an uncle of Prince Philip, Duke of Edinburgh, and second cousin once removed of Elizabeth II.  During the Second World War, he was Supreme Allied Commander, South East Asia Command (1943\u201346).  He was the last Viceroy of India (1947) and the first Governor-General of independent India (1947\u201348)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 47,
+    "generation_speed": 233.0054731498374,
+    "prompt_eval_speed": 57012.81590609653,
+    "generation_latency_s": 0.3247346000280231,
+    "latency": 0.8222594999242574,
+    "total_prompt_tokens": 622,
+    "total_generation_tokens": 109,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23486999999999997,
+    "stage_route_s": 0.10810810001567006,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3302092000376433,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05903470003977418,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9600028432905674e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3247673000441864,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8222682999912649,
+    "unaccounted_latency_s": 9.999983012676239e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The position of the man who served Prince Andrew from 1990-2001 is unknown.",
+      "Query 2: The position of the man who served Prince Andrew from 1990-2001 is not specified or documented."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

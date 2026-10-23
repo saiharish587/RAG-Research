@@ -1,0 +1,49 @@
+{
+  "question_id": "Q447",
+  "query": "What television thriller anthology did the winner of one Golden Globe, two tony Awards and six Primetime Emmy Awards appear on?",
+  "ground_truth": "Darkroom",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Betrayal at House on the Hill",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Michael Douglas: Michael Kirk Douglas (born September 25, 1944) is an American actor and producer.  Douglas's career includes a diverse range of films in independent and blockbuster genres, for which he has received a number of accolades, both competitive and honorary.  These awards include the Golden Globe Cecil B. DeMille Award for \"outstanding contributions to the world of entertainment\" and the AFI Life Achievement Award, which \"honor[s] an individual whose career in motion pictures or television has greatly contributed to the enrichment of American culture\".",
+      "Betrayal at House on the Hill: Betrayal at House on the Hill is a board game published by Avalon Hill in 2004, designed by Bruce Glassco and developed by Rob Daviau, Bill McQuillan, Mike Selinker, and Teeuwynn Woodruff.  Players all begin as allies exploring a haunted house filled with dangers, traps, items and omens.  As players explore the mansion, new room tiles are chosen at random; accordingly, the game board is different each session.  Eventually the \"haunt\" begins, with the nature and plot of this session's ghost story revealed; one player usually \"betrays\" the others and takes the side of the ghosts, monsters, or other enemies, while the remaining players collaborate to defeat them.",
+      "The Sopranos: The Sopranos is an American crime drama television series created by David Chase.  The story revolves around the fictional character, New Jersey-based Italian American mobster Tony Soprano (James Gandolfini).  The series portrays the difficulties he faces as he tries to balance the conflicting requirements of his home life and his criminal organization.  These are often highlighted during his therapy sessions with psychiatrist Jennifer Melfi (Lorraine Bracco).  The series features Tony's family members, mafia colleagues and rivals, in prominent roles and story arcs, most notably his wife Carmela (Edie Falco) and prot\u00e9g\u00e9 Christopher Moltisanti (Michael Imperioli)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 521,
+    "generation_tokens": 9,
+    "generation_speed": 235.15886287625418,
+    "prompt_eval_speed": 12834.092868579875,
+    "generation_latency_s": 0.1915295000653714,
+    "latency": 0.5662954000290483,
+    "total_prompt_tokens": 675,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2341902,
+    "stage_route_s": 0.10392020002473146,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21008890005759895,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06055160006508231,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.46000262349844e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1915815999964252,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5663084000116214,
+    "unaccounted_latency_s": 0.0001021998468786478,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Haunting of Hill House\" (TV series)",
+      "\"The Sopranos\" (TV show)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

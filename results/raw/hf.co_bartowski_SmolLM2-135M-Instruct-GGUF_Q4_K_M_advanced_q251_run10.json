@@ -1,0 +1,42 @@
+{
+  "question_id": "Q251",
+  "query": "In what city can a person find both the Nusretiye Clock Tower and the Eski Imaret Mosque be found?",
+  "ground_truth": "Istanbul, Turkey",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The answer is Istanbul, Turkey.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Nusretiye Clock Tower: Nusretiye Clock Tower, aka Tophane Clock Tower, is a clock tower situated in Tophane, a neighborhood in Beyo\u011flu district of Istanbul, Turkey next to Nusretiye Mosque and Tophane Kiosk at the European waterfront of Bosphorus.  It was ordered by the Ottoman sultan Abd\u00fclmecid I (1823-1861), designed by architect Garabet Amira Balyan and completed in 1848.",
+      "Eski Imaret Mosque: Eski Imaret Mosque (Turkish: \"Eski Imaret Camii\" ) is a former Eastern Orthodox church converted into a mosque by the Ottomans.  The church has traditionally been identified with that belonging to the Monastery of Christ Pantepoptes (Greek: \u039c\u03bf\u03bd\u03ae \u03c4\u03bf\u03c5 \u03a7\u03c1\u03b9\u03c3\u03c4\u03bf\u03cd \u03a0\u03b1\u03bd\u03c4\u03b5\u03c0\u03cc\u03c0\u03c4\u03b7 ), meaning \"Christ the all-seeing\".  It is the only documented 11th-century church in Istanbul which survives intact, and represents a key monument of middle Byzantine architecture.  Despite that, the building remains one among the least studied of the city.",
+      "Nusretiye Mosque: Nusretiye Mosque is an ornate mosque located in Tophane district of Beyo\u011flu, Istanbul, Turkey.  While its architecture is influenced by Islamic elements, it retains a Baroque style, making it unique to the city.  It was built in 1823-1826 by Sultan Mahmut II."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 413,
+    "generation_tokens": 8,
+    "generation_speed": 432.9238595162076,
+    "prompt_eval_speed": 29546.43010444985,
+    "generation_latency_s": 0.11097669997252524,
+    "latency": 0.6061025999952108,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1389871,
+    "stage_rewrite_s": 0.24126309994608164,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07213760004378855,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18159860000014305,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.11101450002752244,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6061108999419957,
+    "unaccounted_latency_s": 9.749992750585079e-05,
+    "rewritten_query": "The user's original query was \"In what city can a person find both the Nusretiye Clock Tower and the Eski Imaret Mosque be found?\" The optimized query output is:\n\n\"Find both the Nusretiye Clock Tower and the Eski Imaret Mosque in Istanbul.",
+    "query_was_rewritten": true
+  }
+}

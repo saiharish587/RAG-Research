@@ -1,0 +1,42 @@
+{
+  "question_id": "Q591",
+  "query": "The American restaurant chain, the Original House of Pies, is also responsible for an American chain of fruit drink beverage stores with an eponymous beverage consisting of what?",
+  "ground_truth": "orange juice",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The American restaurant chain, the Original House of Pies, is also responsible for an American chain of fruit drink beverage stores with an eponymous beverage consisting of orange juice.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "House of Pies: The Original House of Pies is an American restaurant chain, started c. 1965 by Al Lapin Jr., an early franchise system designer also responsible for International House of Pancakes, Copper Penny Coffee Shops, Orange Julius, and others.",
+      "Orange Julius: Orange Julius is an American chain of fruit drink beverage stores.  It has been in business since the late 1920s.  The eponymous beverage is a mixture of ice, orange juice, sweetener, milk, powdered egg whites and vanilla flavoring, similar to a morir so\u00f1ando or orange Creamsicle.",
+      "Juice: Juice is a beverage made from the extraction or pressing out of the natural liquid contained in fruit and vegetables.  It can also refer to liquids that are flavored with these or other biological food sources such as meat and seafood (e.g., clam juice).  Juice is commonly consumed as a beverage or used as an ingredient or flavoring in foods or other beverages, such as smoothies. Juice emerged as a popular beverage choice after the development of pasteurization methods allowed for its preservation without using fermentation (the approach used with wine production).  The Food and Agriculture Organization of the United Nations (FAO) estimated the total world production of citrus fruit juices to be 12,840,318 tonnes in 2012.  The largest fruit juice consumers are New Zealand (nearly a cup, or 8 ounces, each day) and Colombia (more than three quarters of a cup each day).  Fruit juice consumption on average increased with country income level.  To the American food industry, fruit juice is more profitable than only fruit."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 35,
+    "generation_speed": 255.0834487282268,
+    "prompt_eval_speed": 14569.712256480036,
+    "generation_latency_s": 0.9982832999667153,
+    "latency": 3.4689858000492677,
+    "total_prompt_tokens": 532,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1211322,
+    "stage_rewrite_s": 1.242207400035113,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0215246999869123,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2068425000179559,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9983333999989554,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.469000600045547,
+    "unaccounted_latency_s": 9.34000127017498e-05,
+    "rewritten_query": "The Original House of Pies is a well-known American chain that owns and operates Fruit Drink Beverage Stores.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q361",
+  "query": "The Waterloo Vase has been used as a garden ornament at whose residence and administrative headquarters?",
+  "ground_truth": "reigning monarch of the United Kingdom",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Waterloo Vase has been used as a garden ornament in the garden of Buckingham Palace, London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waterloo Vase: The Waterloo Vase is a great urn, 15ft (5m) high and weighing 20 tons, fashioned from a single piece of Carrara marble.  Since 1906, it has been used as a garden ornament in the garden of Buckingham Palace, London.",
+      "Prime Minister's Official Spokesperson: The Prime Minister's Official Spokesperson or alternatively Prime Minister's Official Spokesman/Spokeswoman is a position in the United Kingdom's Civil Service, located in the Prime Minister's Office in 10 Downing Street and used by the British Prime Minister to convey information to the public.  The Prime Minister's Official Spokesperson usually addresses a small group of press and media correspondents, known as lobby correspondents, each morning to deliver statements on current events on behalf of the Prime Minister.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 321,
+    "generation_tokens": 21,
+    "generation_speed": 252.98766383962993,
+    "prompt_eval_speed": 13413.003509944845,
+    "generation_latency_s": 0.9273794000037014,
+    "latency": 3.377965099993162,
+    "total_prompt_tokens": 399,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1266029,
+    "stage_rewrite_s": 1.2432126000057906,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9975557000143453,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20970030000898987,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9274204999674112,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3779757999582216,
+    "unaccounted_latency_s": 8.749996777623892e-05,
+    "rewritten_query": "The Waterloo Vase is often featured in gardens at the residences of prominent officials, such as the British Prime Minister or the U.S. President.",
+    "query_was_rewritten": true
+  }
+}

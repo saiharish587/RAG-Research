@@ -1,0 +1,49 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "John Lasseter is a film director, screenwriter, and film producer who currently serves as the chief creative officer at Pixar Animation Studios, Walt Disney Animation Studios, and DisneyToon Studios. He is also the Principal Creative Advisor for Walt Disney Imagineering. John Fogerty was an American musician, singer, and songwriter who played lead guitar on Creedence Clearwater Revival's first album.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Serendipity (film): Serendipity is a 2001 American romantic comedy film directed by Peter Chelsom, written by Marc Klein, and starring John Cusack and Kate Beckinsale.  The music score was composed by Alan Silvestri.",
+      "John Lasseter: John Alan Lasseter (born January 12, 1957) is an American animator, film director, screenwriter, and film producer.  He currently is the chief creative officer of Pixar Animation Studios, Walt Disney Animation Studios, and DisneyToon Studios.  He is also the Principal Creative Advisor for Walt Disney Imagineering.",
+      "John Fogerty: John Cameron Fogerty (born May 28, 1945) is an American musician, singer, and songwriter.  He was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.  The group had nine top-ten singles and eight gold albums between 1968 and 1972.  They were inducted into the Rock and Roll Hall of Fame in 1993."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 319,
+    "generation_tokens": 85,
+    "generation_speed": 212.65470629883242,
+    "prompt_eval_speed": 12225.969645868465,
+    "generation_latency_s": 0.536013700067997,
+    "latency": 0.9174015000462532,
+    "total_prompt_tokens": 447,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23125690000000002,
+    "stage_route_s": 0.10641510004643351,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21773959998972714,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057040799991227686,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.079999729990959e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.5360546000301838,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9174147000303492,
+    "unaccounted_latency_s": 0.00010449998080730438,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Serri (actor) - John Fogerty",
+      "John Fogerty (actor) - Serri"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

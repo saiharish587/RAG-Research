@@ -1,0 +1,42 @@
+{
+  "question_id": "Q529",
+  "query": "Which band was formed first, Wavves or Social Code?",
+  "ground_truth": "Social Code",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "You are correct that the correct answer is Social Code. The context mentions that Wavves was a Canadian alternative rock group and that it was formed in St. Albert in 1999. Therefore, Social Code would be the band first to form.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Social Code: Social Code (formerly known as Fifth Season) was a Canadian alternative rock group formed in 1999 in St. Albert.",
+      "Wavves: Wavves is an American rock band based in San Diego, California.  Formed in 2008 by singer-songwriter Nathan Williams (born June 12, 1986), the band also features Alex Gates (guitar, backing vocals), Stephen Pope (bass guitar, backing vocals) and Brian Hill (drums and backing vocals).",
+      "Rock 'n' Roll (Social Code album): Rock 'N' Roll is the third album by the Canadian alternative rock band Social Code.  It was released on September 1, 2009, with the first single \"Satisfied\" released on iTunes on July 28, 2009."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 256,
+    "generation_tokens": 53,
+    "generation_speed": 404.5183941382995,
+    "prompt_eval_speed": 92252.25225225225,
+    "generation_latency_s": 0.22225360001903027,
+    "latency": 0.600432200008072,
+    "total_prompt_tokens": 329,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1387002,
+    "stage_rewrite_s": 0.11817549995612353,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07700629997998476,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18287610006518662,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.22228670003823936,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6004404000705108,
+    "unaccounted_latency_s": 9.680003859102726e-05,
+    "rewritten_query": "Wavves Formed First - Social Code",
+    "query_was_rewritten": true
+  }
+}

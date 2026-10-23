@@ -1,0 +1,42 @@
+{
+  "question_id": "Q508",
+  "query": "Which constituent college of the University of Oxford endows four professorial fellowships for sciences including chemistry and pure mathematics?",
+  "ground_truth": "Magdalen College",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Waynflete Professorship of Pure Mathematics is a professorship in pure mathematics at the University of Oxford, which was established by a benefaction from William of Waynflete.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waynflete Professorship: The Waynflete Professorships are four professorial fellowships at the University of Oxford endowed by Magdalen College and named in honour of the college founder William of Waynflete, who had a great interest in science.  These professorships are statutory professorships of the University, that is, they are professorships established in the university's regulations, and which are by those regulations attached to Magdalen College in particular.  The oldest professorship is the Waynflete Professor of Metaphysical Philosophy.  The three science professorships were created following the recommendation of the University Commission in 1857, in recognition of William of Waynflete's lifetime support of science.  The professorships are the Waynflete Professor of Chemistry, the Waynflete Professor of Physiology, and the Waynflete Professor of Pure Mathematics.",
+      "John Lennox: John Carson Lennox (born 7 November 1943) is a Northern Irish mathematician and scientist specialising in group theory, philosopher of science, Christian apologist, and Emeritus Professor of Mathematics at the University of Oxford.  He is a Fellow in Mathematics and Philosophy of Science at Green Templeton College, Oxford University.  He is also Pastoral Advisor of Green Templeton College, Oxford, a Fellow of Wycliffe Hall, Oxford and Associate Fellow of the Sa\u00efd Business School.",
+      "Herchel Smith Professor of Pure Mathematics: The Herchel Smith Professorship of Pure Mathematics is a professorship in pure mathematics at the University of Cambridge.  It was established in 2004 by a benefaction from Herchel Smith \"of \u00a314.315m, to be divided into five equal parts, to support the full endowment of five Professorships in the fields of Pure Mathematics, Physics, Biochemistry, Molecular Biology, and Molecular Genetics.\"  When the position was advertised in 2004, the salary offered was \u00a352,936 (or greater), being the minimum professorial stipend, and the first holder was expected to focus on mathematical analysis."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 512,
+    "generation_tokens": 38,
+    "generation_speed": 342.58616492819215,
+    "prompt_eval_speed": 70204.30549842314,
+    "generation_latency_s": 0.20720419997815043,
+    "latency": 0.7054010999854654,
+    "total_prompt_tokens": 595,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1280991,
+    "stage_rewrite_s": 0.16679150005802512,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0786583999870345,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.25262419995851815,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.20723719999659806,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7054101000539958,
+    "unaccounted_latency_s": 9.940005838871002e-05,
+    "rewritten_query": "Which four professors at the University of Oxford have earned four fellowship-eligible undergraduate positions in science, including chemistry and pure mathematics?",
+    "query_was_rewritten": true
+  }
+}

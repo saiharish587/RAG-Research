@@ -1,0 +1,42 @@
+{
+  "question_id": "Q438",
+  "query": "Ambrose Mendy has managed and/or advised a British professional boxer that as of July 2017 is ranked the world's seventh best super middleweight by who?",
+  "ground_truth": "\"The Ring\" magazine",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Context:\nAmbrose Mendy (born August 1954) is a British boxing manager, advisor and sports agent. He has managed and/or advised Nigel Benn; James DeGale; Chris Eubank Junior; Lloyd Honeyghan & Errol Christie among others during a career in boxing that started in the late 1970s.\n\nChris Eubank Jr.: Christopher Livingstone \"Chris\" Eubank Jr., better known as Chris Eubank Jr., is a British professional boxer who has held the IBO super-middleweight title since February 2017, having previously held the WBA interim and British middleweight titles between 2015 and 2016.\n\nNatascha Ragosina: Natalia Yurievna Ragozina (Russian: \u041d\u0430\u0442\u0430\u043b\u044c\u044f \u042e\u0440\u044c\u0435\u0432\u043d\u0430 \u0420\u0430\u0433\u043e\u0437\u0438\u043d\u0430 ), better known as Natascha Ragosina, is an undefeated retired professional boxer who spent much of her career ranked as the top female super middleweight in the world.\n\nQuestion: What was the name of the British boxer who won the IBO super-middleweight title?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ambrose Mendy: Ambrose Mendy (born August 1954) is a British boxing manager, advisor and sports agent.  He has managed and/or advised Nigel Benn; James DeGale; Chris Eubank Junior; Lloyd Honeyghan & Errol Christie among others during a career in boxing that started in the late 1970s.",
+      "Chris Eubank Jr.: Christopher Livingstone \"Chris\" Eubank Jr. (born 18 September 1989) is a British professional boxer.  He has held the IBO super-middleweight title since February 2017, having previously held the WBA interim and British middleweight titles between 2015 and 2016.  As of July 2017, Eubank Jr. is ranked as the world's second best super middleweight by BoxRec, sixth by the Transnational Boxing Rankings Board, and seventh by \"The Ring\" magazine.  He is the son of former two-weight world boxing champion Chris Eubank.",
+      "Natascha Ragosina: Natalia Yurievna Ragozina (Russian: \u041d\u0430\u0442\u0430\u043b\u044c\u044f \u042e\u0440\u044c\u0435\u0432\u043d\u0430 \u0420\u0430\u0433\u043e\u0437\u0438\u043d\u0430 ), better known as Natascha Ragosina, is an undefeated retired professional boxer who spent much of her career ranked as the top female super middleweight in the world.  Though born in Kazakhstan (formerly a part of the Soviet Union) and currently residing in Moscow, she competed professionally for Russia and is of Russian descent.  She is the longest reigning WBA female super middleweight champion and WBC female super middleweight champion.  At the time of her retirement, she held all major female super middleweight titles and two heavyweight belts:"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 482,
+    "generation_tokens": 261,
+    "generation_speed": 409.2737351324651,
+    "prompt_eval_speed": 24940.494670392218,
+    "generation_latency_s": 0.7397954999469221,
+    "latency": 1.1415005999151617,
+    "total_prompt_tokens": 579,
+    "total_generation_tokens": 287,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1253852,
+    "stage_rewrite_s": 0.15024049999192357,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07581770000979304,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1755197000456974,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7398389000445604,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1415119998855516,
+    "unaccounted_latency_s": 9.589979890733957e-05,
+    "rewritten_query": "Ambrose Mendy, as of July 2017, ranks the world's seventh best super middleweight champion.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q164",
+  "query": "What British singer-songwriter hosted the 16th Annual Young Hollywood Awards?",
+  "ground_truth": "Kelly Lee Osbourne",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Kelly Osbourne hosted the 16th Annual Young Hollywood Awards.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2014 Young Hollywood Awards: The 16th Annual Young Hollywood Awards were held on Monday, July 28, 2014 in Los Angeles, California, previously recorded the day before.  Kelly Osbourne hosted the show, with Justin Bieber being honored for his charity work and contributions to the Make-A-Wish Foundation, and Vanessa Hudgens was honored with the Trendsetter Award.",
+      "Young Hollywood Awards: The Young Hollywood Awards was an award presented annually which honors the year's biggest achievements in pop music, movies, sports, television, fashion and more, as voted on by teenagers aged 13\u201319 and young adults.  The award ceremonies also honor rising and promising young aged performers in Hollywood.  The award ceremony usually features a high number of celebrities and musical performers such as Taylor Swift, Justin Bieber, and Nick Jonas.  New artists such as Black Cards and Brazzabelle have also performed.",
+      "List of Lady Gaga live performances: American singer Lady Gaga has embarked on five concert tours and performed live at various award ceremonies and television shows.  Gaga promoted her debut single \"Just Dance\" through performances at several award ceremonies and television shows, including Miss Universe 2008 and \"So You Think You Can Dance\".  She first served as an opening act for the boy band New Kids on the Block and the girl group The Pussycat Dolls, before beginning her own headlining tour, The Fame Ball Tour, which began in March 2009 and ended in September 2009.  Following the canceled tour with rapper Kanye West, Gaga embarked on her second worldwide concert tour The Monster Ball Tour.  Staged in support of her extended play \"The Fame Monster\" (2009), the tour was critically acclaimed and grossed $227.4 million, making it one of the highest-grossing concert tours of all time.  Gaga also performed songs from the album at award ceremonies\u2014the American Music Awards of 2009, 52nd Annual Grammy Awards and 2010 Brit Awards.  At the 2010 \"Billboard\" Touring Awards, Gaga won the Breakthrough Performer Award, as well as the Concert Marketing & Promotion Award."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 563,
+    "generation_tokens": 16,
+    "generation_speed": 233.1749686671136,
+    "prompt_eval_speed": 69096.71084928817,
+    "generation_latency_s": 0.1935307999374345,
+    "latency": 0.6528217999730259,
+    "total_prompt_tokens": 697,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2304389,
+    "stage_route_s": 0.09783850004896522,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30318379995878786,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05809100007172674,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.310005508363247e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1935689999954775,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6528342999517918,
+    "unaccounted_latency_s": 9.959982708096504e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The British singer-songwriter who hosted the 16th Annual Young Hollywood Awards is Lady Gaga.",
+      "Query 2: The British singer-songwriter who hosted the 16th Annual Young Hollywood Awards is Lady Gaga."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

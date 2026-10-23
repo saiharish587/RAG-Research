@@ -1,0 +1,49 @@
+{
+  "question_id": "Q226",
+  "query": "What is the name of the ethnic group who settled in Canada in the 17th century that participated in a conflict with Irish Catholic immigrants in the Shiners' War?",
+  "ground_truth": "French Canadians",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The name of the ethnic group who settled in Canada in the 17th century that participated in a conflict with Irish Catholic immigrants in the Shiners' War is French Canadians.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shiners' War: The Shiners' War was a conflict between Irish Catholic immigrants and French Canadians in Bytown from 1835 to 1845.  The war started when Peter Aylen, a major Irish timber operator, organized a group of Irishmen to attack other timber operations.  This group was known as the \"Shiners.\"  They attacked French Canadian timber rafts and fought against the French Canadian on the streets of Bytown.",
+      "French Canadians: French Canadians (also referred to as Franco-Canadians or Canadiens; French: \"Canadien(ne)s fran\u00e7ais(es)\" ) are an ethnic group who trace their ancestry to French colonists who settled in Canada from the 17th century onward.  Today, French Canadians constitute the main French-speaking population in Canada, accounting for about 22% of the total population.",
+      "Iroquois: The Iroquois ( or ) or Haudenosaunee ( ) are a historically powerful northeast Native American confederacy.  They were known during the colonial years to the French as the \"Iroquois League,\" and later as the \"Iroquois Confederacy,\" and to the English as the \"Five Nations\" (before 1722), and later as the \"Six Nations,\" comprising the Mohawk, Onondaga, Oneida, Cayuga, Seneca, and Tuscarora peoples."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 384,
+    "generation_tokens": 37,
+    "generation_speed": 215.55616403241498,
+    "prompt_eval_speed": 49670.159099728364,
+    "generation_latency_s": 0.29176109994295985,
+    "latency": 0.930581400054507,
+    "total_prompt_tokens": 554,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2312995,
+    "stage_route_s": 0.10211779992096126,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.47974330000579357,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056785799912177026,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0600036047399044e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29179359995760024,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.930590600008145,
+    "unaccounted_latency_s": 9.990017861127853e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The name of the ethnic group who settled in Canada in the 17th century that participated in a conflict with Irish Catholic immigrants in the Shiners' War is the Mohawk Tribe.",
+      "The Mohawk Tribe was one of the many groups that settled in Canada in the 17th century and played a significant role in conflicts such as the Shiners' War, which involved Irish Catholic immigrants from Ireland."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

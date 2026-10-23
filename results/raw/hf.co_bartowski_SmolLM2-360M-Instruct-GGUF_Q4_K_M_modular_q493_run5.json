@@ -1,0 +1,49 @@
+{
+  "question_id": "Q493",
+  "query": "The actor who appeared on Charlotte's Shorts and Weeds was born in what year?",
+  "ground_truth": "1966",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Martin Short was born in 1950.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Martin Short: Martin Hayter Short {'1': \", '2': \", '3': \", '4': \"} (born March 26, 1950) is a Canadian-American actor and comedian.  He is known for his work on the television programs \"SCTV\" and \"Saturday Night Live\".  He has starred in comedy films, such as \"Three Amigos\" (1986), \"Innerspace\" (1987), \"Three Fugitives\" (1989), \"Father of the Bride\" (1991), \"Pure Luck\" (1991), \"Captain Ron\" (1992), \"Father of the Bride Part II\" (1995), \"Mars Attacks! \" (1996) and \"Jungle 2 Jungle\" (1997), and created the characters, Jiminy Glick and Ed Grimley.  In 1999, he won a Tony Award for his lead performance in a Broadway revival of \"Little Me\".",
+      "Miguel (singer): Miguel Jontel Pimentel (born October 23, 1985), better known as Miguel, is an American singer, songwriter, actor and record producer.  Raised in Los Angeles, he began creating music at age thirteen.  After signing to Jive Records in 2007, Miguel released his debut studio album, \"All I Want Is You\", in November 2010.  Although it was underpromoted upon its release, the album became a sleeper hit and helped Miguel garner commercial standing.",
+      "1970 NBA draft: The 1970 NBA draft was the 24th annual draft of the National Basketball Association (NBA).  The draft was held on March 23, 1970, before the 1970\u201371 season.  In this draft, 17 NBA teams took turns selecting amateur U.S. college basketball players and other eligible players, including international players.  A player who had finished his four-year college eligibility was eligible for selection.  If a player left college early, he would not be eligible for selection until his college class graduated.  The first two picks in the draft belonged to the teams that finished last in each division, with the order determined by a coin flip.  The Detroit Pistons won the coin flip and were awarded the first overall pick, while the San Diego Rockets were awarded the second pick.  The remaining first-round picks and the subsequent rounds were assigned to teams in reverse order of their win\u2013loss record in the previous season.  Three expansion franchises, the Buffalo Braves, the Cleveland Cavaliers and the Portland Trail Blazers, took part in the NBA Draft for the first time and were assigned the seventh, the eighth and the ninth pick in each round.  In the first round, the Cavaliers had the seventh pick, while the Blazers and the Braves had the eighth and the ninth pick respectively.  In the subsequent rounds, the Cavaliers and the Braves exchanged their order of selection, while the Blazers had the eighth pick throughout the draft."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 759,
+    "generation_tokens": 12,
+    "generation_speed": 228.8853284504463,
+    "prompt_eval_speed": 99501.83534347142,
+    "generation_latency_s": 0.17669210000894964,
+    "latency": 0.5053504999959841,
+    "total_prompt_tokens": 895,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2298632,
+    "stage_route_s": 0.10581730003468692,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16878750000614673,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053867400041781366,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6999968364834785e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.176734899985604,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5053661999991164,
+    "unaccounted_latency_s": 0.00010279996786266565,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Born in 1985\"",
+      "\"Born in 1970\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q8",
+  "query": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+  "ground_truth": "3,677 seated",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The arena where the Lewiston Maineiacs played their home games can seat 15,552 people.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Smoothie King Center: The Smoothie King Center is a multi-purpose indoor arena in New Orleans, Louisiana.  It is located in the city's Central Business District, adjacent to the Mercedes-Benz Superdome.  The arena opened in 1999 as New Orleans Arena and has been home to the New Orleans Pelicans of the National Basketball Association (NBA) since 2002.  The New Orleans VooDoo of the Arena Football League played their home games in the arena from 2004 until the team disbanded in 2008.  The VooDoo resumed play at the arena in March 2011, until after the 2015 AFL season when the franchise folded.",
+      "\u017dalgiris Arena: \u017dalgirio Arena is a multi-purpose indoor arena in the New Town of Kaunas, Lithuania.  The arena is located on an island of the Nemunas River.  It is the largest indoor arena in the Baltics.  The arena's maximum possible seating capacity for basketball games is 15,552, and 20,000 spectators for concerts (when the stage is in the middle, and 17,000 when stage is in the side of the arena).  The \u017dalgiris Arena replaced the Kaunas Sports Hall as a major venue in the city.",
+      "CFE Arena: CFE Arena, officially the CFE Federal Credit Union Arena and formerly known as UCF Arena, is a sports and entertainment arena located in Orlando, Florida, United States on the main campus of the University of Central Florida.  It was constructed beginning in 2006 as a replacement for the original UCF arena, and as a part of Knights Plaza.  The arena is home to the UCF Knights men's and women's basketball teams.  In 2010, the Legends Football League team Orlando Fantasy played at the arena.  The Arena also hosted the annual Science Olympiad in 2012 and 2014.  For the 2014 season only, it served as the home of the Orlando Predators of the Arena Football League."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 552,
+    "generation_tokens": 25,
+    "generation_speed": 257.2386969316568,
+    "prompt_eval_speed": 73521.57698454981,
+    "generation_latency_s": 0.9697215999476612,
+    "latency": 3.3950713999802247,
+    "total_prompt_tokens": 631,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1263154,
+    "stage_rewrite_s": 1.1833791000535712,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0686890999786556,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1731641999213025,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9697613000171259,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.395083099952899,
+    "unaccounted_latency_s": 8.9899986051023e-05,
+    "rewritten_query": "The arena seats 1,200 spectators for each of its home games.",
+    "query_was_rewritten": true
+  }
+}

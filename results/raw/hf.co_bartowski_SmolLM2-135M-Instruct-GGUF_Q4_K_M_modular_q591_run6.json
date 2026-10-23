@@ -1,0 +1,48 @@
+{
+  "question_id": "Q591",
+  "query": "The American restaurant chain, the Original House of Pies, is also responsible for an American chain of fruit drink beverage stores with an eponymous beverage consisting of what?",
+  "ground_truth": "orange juice",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The original house of pies is a historic pizzeria selling tomato pies in New Jersey.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "House of Pies: The Original House of Pies is an American restaurant chain, started c. 1965 by Al Lapin Jr., an early franchise system designer also responsible for International House of Pancakes, Copper Penny Coffee Shops, Orange Julius, and others.",
+      "Orange Julius: Orange Julius is an American chain of fruit drink beverage stores.  It has been in business since the late 1920s.  The eponymous beverage is a mixture of ice, orange juice, sweetener, milk, powdered egg whites and vanilla flavoring, similar to a morir so\u00f1ando or orange Creamsicle.",
+      "Papa's Tomato Pies: Papa's Tomato Pies is a historic pizzeria selling tomato pies in New Jersey.  It was founded by Giuseppe \"Joe\" Papa in 1912 on South Clinton Avenue in Trenton, New Jersey.  Papa's is the oldest family owned and longest continuously operating pizzeria in the United States.  Papa's is the second oldest pizzeria in the United States after Lombardi's Pizza, however Lombardi's closed for a decade from 1984 to 1994 and was reopened under new management."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 354,
+    "generation_tokens": 20,
+    "generation_speed": 385.88435046016707,
+    "prompt_eval_speed": 46063.76057254391,
+    "generation_latency_s": 0.17547100002411753,
+    "latency": 0.4974541000556201,
+    "total_prompt_tokens": 520,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2257759,
+    "stage_route_s": 0.14086329995188862,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14279489999171346,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0381510000443086,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3899985030293465e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17551789991557598,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4974631000077352,
+    "unaccounted_latency_s": 9.270012378692627e-05,
+    "route": "rag",
+    "router_raw": "The original house of pies\n\nAnswer with the single word 'yes' or 'no':",
+    "sub_queries": [
+      "The original house of pies has a dessert store called pizzas and drinks that are named after the original apple pie."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

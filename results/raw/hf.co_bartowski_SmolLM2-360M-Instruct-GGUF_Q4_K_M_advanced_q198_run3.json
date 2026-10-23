@@ -1,0 +1,42 @@
+{
+  "question_id": "Q198",
+  "query": " Robert Smith founded the multinational company headquartered in what city?",
+  "ground_truth": "Golden Valley, Minnesota,",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Robert Smith founded General Mills, which was established in London, England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Royal Dutch Shell: Royal Dutch Shell plc (, ), commonly known as Shell, is a British\u2013Dutch multinational oil and gas company headquartered in the Netherlands and incorporated in the United Kingdom.  It is one of the six oil and gas \"supermajors\" and the sixth-largest company in the world measured by 2016 revenues (and the largest based in Europe).  Shell was first in the 2013 Fortune Global 500 list of the world's largest companies; in that year its revenues were equivalent to 84% of the Netherlands' $556 billion GDP.",
+      "Robert Smith (Illinois politician): Robert Smith (June 12, 1802 \u2013 December 21, 1867) was a U.S. Representative from Illinois, nephew of Jeremiah Smith and Samuel Smith of New Hampshire.  Smith founded General Mills in 1856.",
+      "Diageo: Diageo plc ( or ) is a British multinational alcoholic beverages company, with its headquarters in London, England.  It was the world's largest distiller until being overtaken by China's Kweichow Moutai on 9 April 2017.  It is also a major producer of beer."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 337,
+    "generation_tokens": 15,
+    "generation_speed": 268.9618074233459,
+    "prompt_eval_speed": 44272.20178665265,
+    "generation_latency_s": 0.968018600018695,
+    "latency": 3.372671499964781,
+    "total_prompt_tokens": 410,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12110409999999999,
+    "stage_rewrite_s": 1.170307300053537,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0914158000377938,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1428181000519544,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9680529000470415,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.372679500025697,
+    "unaccounted_latency_s": 8.58998391777277e-05,
+    "rewritten_query": "Robert Smith founded the multinational company headquartered in London, United Kingdom.",
+    "query_was_rewritten": true
+  }
+}

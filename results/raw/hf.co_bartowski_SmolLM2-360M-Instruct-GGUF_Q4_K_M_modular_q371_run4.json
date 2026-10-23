@@ -1,0 +1,49 @@
+{
+  "question_id": "Q371",
+  "query": "What type of media does Bitter Jester and Sicko have in common?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Both Bitter Jester and Sicko are documentary films about the comedy world, which includes interviews with a multitude of stars such as Richard Pryor, Richard Belzer, and many others. They both explore health care systems in the United States, focusing on their for-profit non-universal system and the pharmaceutical industry. Additionally, they compare this to the non-profit universal health care systems found in Canada, the United Kingdom, France, and Cuba.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bitter Jester: Bitter Jester is a documentary starring Maija DiGiorgio, Kenny Simmons, Jody Del Giorno and Heather McConnell.  It's a portrait of the comedy world that includes interviews with a multitude of stars including Richard Pryor, Richard Belzer and many others.",
+      "Sicko: Sicko is a 2007 American documentary film made by filmmaker Michael Moore.  The film investigates health care in the United States, focusing on its health insurance and the pharmaceutical industry.  The movie compares the for-profit, non-universal U.S. system with the non-profit universal health care systems of Canada, the United Kingdom, France and Cuba.",
+      "Hollywood Outlaw Movie: Hollywood Outlaw, The Unmaking of a Bitter Jester is the director\u2019s cut of the controversial documentary \"Bitter Jester\" which was buried in 2004 amidst much scandal, never to be seen again.  Directed by, written by, and starring Maija DiGiorgio, this film follows her through the construction and subsequent deconstruction of Bitter Jester, including all of the footage that sparked the scandal leading to blackmail and censorship."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 329,
+    "generation_tokens": 94,
+    "generation_speed": 220.7806239166483,
+    "prompt_eval_speed": 41577.15152281056,
+    "generation_latency_s": 0.5466600999934599,
+    "latency": 1.0569776999764144,
+    "total_prompt_tokens": 461,
+    "total_generation_tokens": 164,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2214256,
+    "stage_route_s": 0.09590170008596033,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.359372999984771,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05487089999951422,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.970002919435501e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.5466914999997243,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.056986999930814,
+    "unaccounted_latency_s": 0.00010079983621835709,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Bitter Jester has a similar concept to Sicko, which is an anti-capitalist film that explores the consequences of capitalism on society.",
+      "Query 2: Both Bitter Jester and Sicko are films that aim to challenge societal norms and promote social change through their messages about poverty and inequality."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

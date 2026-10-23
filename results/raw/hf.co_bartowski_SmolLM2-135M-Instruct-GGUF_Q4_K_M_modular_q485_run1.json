@@ -1,0 +1,49 @@
+{
+  "question_id": "Q485",
+  "query": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to what?",
+  "ground_truth": "four months in jail",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The question is about whether Harry S. Truman appointed four members of the Supreme Court of the United States during his two terms in office, specifically those who were convicted for perjury and obstruction of justice. The answer is yes.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kwame Kilpatrick: Kwame Malik Kilpatrick (born June 8, 1970) is an American former politician, having served as a Democratic Michigan state representative and mayor of Detroit from 2002 to 2008.  He resigned as mayor in September 2008 after being convicted of perjury and obstruction of justice.  Kilpatrick was sentenced to four months in jail and was released on probation after serving 99 days.",
+      "Detroit mayoral election, 2009: The Detroit mayoral elections of 2009 took place on May 5, 2009, with a primary on February 24, 2009 to fill the vacancy created when Kwame Kilpatrick resigned as mayor.",
+      "Harry S. Truman Supreme Court candidates: During his two terms in office, President Harry S. Truman appointed four members of the Supreme Court of the United States: Chief Justice Fred M. Vinson, Associate Justice Harold Burton, Associate Justice Tom C. Clark, and Associate Justice Sherman Minton."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 314,
+    "generation_tokens": 47,
+    "generation_speed": 388.74138772404325,
+    "prompt_eval_speed": 21273.71273712737,
+    "generation_latency_s": 0.24711400002706796,
+    "latency": 0.96366270002909,
+    "total_prompt_tokens": 470,
+    "total_generation_tokens": 228,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2377514,
+    "stage_route_s": 0.15714859997387975,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5053159999661148,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053903100080788136,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.54000323265791e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24714870005846024,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9636718000983819,
+    "unaccounted_latency_s": 9.049999061971903e-05,
+    "route": "rag",
+    "router_raw": "The question asks if answering it requires retrieving information from internal files/documents, which is not possible.",
+    "sub_queries": [
+      "The Detroit mayoral election of 2009, which saw the appointment of a new mayor, was filled with controversy. The incumbent Mayor, Michael Bloomberg, had been facing allegations of corruption and mismanagement in his administration. The election results were set to be announced on January 15, 2013, but it wasn't until March 8 that the results were released.",
+      "The candidates for the position were:"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

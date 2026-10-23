@@ -1,0 +1,49 @@
+{
+  "question_id": "Q403",
+  "query": "American Blues included the drummer from which American rock band?",
+  "ground_truth": "ZZ Top",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "American blues included the drummer from which American rock band was Bo Diddley.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Derek and the Dominos: Derek and the Dominos were a blues rock band formed in the spring of 1970 by guitarist and singer Eric Clapton, keyboardist and singer Bobby Whitlock, bassist Carl Radle and drummer Jim Gordon.  All four members had previously played together in Delaney & Bonnie and Friends, during and after Clapton's brief tenure with Blind Faith.  Dave Mason supplied additional lead guitar on early studio sessions and played at their first live gig.  Another participant at their first session as a band was George Harrison, the recording for whose album \"All Things Must Pass\" marked the formation of Derek and the Dominos.",
+      "Bo Diddley: Ellas McDaniel (born Ellas Otha Bates, December 30, 1928 \u2013 June 2, 2008), known as Bo Diddley, was an American R&B singer, guitarist, songwriter and music producer who played a key role in the transition from the blues to rock and roll, and influenced artists including Elvis Presley, Buddy Holly, the Beatles, the Rolling Stones, the Yardbirds, Eric Clapton, the Who, Jimi Hendrix, George Thorogood, Parliament-Funkadelic, and The Clash.",
+      "Ringo Starr: Richard Starkey, {'1': \", '2': \", '3': \", '4': \"} (born 7 July 1940), known professionally as Ringo Starr, is an English drummer, singer, songwriter and actor who gained worldwide fame as the drummer for the Beatles.  He occasionally sang lead vocals, usually for one song on an album, including \"With a Little Help from My Friends\", \"Yellow Submarine\", \"Good Night\", and their cover of \"Act Naturally\".  He also wrote the Beatles' songs \"Don't Pass Me By\" and \"Octopus's Garden\", and is credited as a co-writer of others, including \"What Goes On\" and \"Flying\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 505,
+    "generation_tokens": 18,
+    "generation_speed": 193.71710844929456,
+    "prompt_eval_speed": 14952.772925117699,
+    "generation_latency_s": 0.23766999994404614,
+    "latency": 0.6447554000187665,
+    "total_prompt_tokens": 629,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23120639999999998,
+    "stage_route_s": 0.10104099998716265,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24614329996984452,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05971860000863671,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8600096963346004e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23770129994954914,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6447650999762118,
+    "unaccounted_latency_s": 0.00010329997166991234,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"American Blues\" includes the drummer from The Rolling Stones.",
+      "\"American Blues\" also features the drummer from The Who."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

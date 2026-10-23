@@ -1,0 +1,49 @@
+{
+  "question_id": "Q349",
+  "query": "Wheat salad is composed typically of what red fruit?",
+  "ground_truth": "tomato",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Wheat salad is composed typically of tomato.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Apple chat fruit MLO: Apple chat fruit MLO, also known as \"apple small fruit\" and \"chat fruit of apple\", is a mycoplasma-like organism (MLO) that affects only apple trees, specifically Lord Lambourne and Tydeman's Early Worcester, though in North America, Turley, Winesap, Jonathan, and Golden Delicious can be affected.  Symptoms include delayed fruit development, smaller green apples during harvest, delayed fruit drop, and circular spots on the apples themselves.  The disease is widespread throughout Europe, especially England and Wales, but is also present in parts of North America, South Africa, and New Zealand.  There are no known insect vectors and no transmission method other than grafting is known.  The disease itself is not fully systemic and virulency is varied among individuals.",
+      "Tomato: The tomato (see pronunciation) is the edible, often red, fruit of the plant \"Solanum lycopersicum\", commonly known as a tomato plant.  The plant belongs to the nightshade family, which is called \"Solanaceae\".",
+      "Wheat salad: Wheat salad (Arabic: \u0633\u0644\u0637\u0629 \u0642\u0645\u062d\u200e \u200e ), is a salad of Arab salads, it typically of wheat, corn, tomatoes, carrots, cucumber pickles, lemon, parsley, olive oil and salt."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 345,
+    "generation_tokens": 10,
+    "generation_speed": 238.94862604540026,
+    "prompt_eval_speed": 13932.638720620305,
+    "generation_latency_s": 0.17863260000012815,
+    "latency": 0.479756599990651,
+    "total_prompt_tokens": 465,
+    "total_generation_tokens": 26,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22389209999999998,
+    "stage_route_s": 0.09624730003997684,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15137370000593364,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05332409997936338,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.059999577701092e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17866660002619028,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.47976579994428903,
+    "unaccounted_latency_s": 9.419990237802267e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Red grapes",
+      "Query 2: Strawberries"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

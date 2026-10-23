@@ -1,0 +1,42 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, both Sorbaria and Goldenrod are not a genus of over 50 flowering plants. They belong to the Asteraceae family, which includes many other genera such as Sunflower (Helianthus), Milkweed (Asclepias), and Queen Anne's Lace (Daucus).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Goldenrod: Solidago, commonly called goldenrods, is a genus of about 100 to 120 species of flowering plants in the aster family, Asteraceae.  Most are herbaceous perennial species found in open areas such as meadows, prairies, and savannas.  They are mostly native to North America, including Mexico; a few species are native to South America and Eurasia.  Some American species have also been introduced into Europe and other parts of the world.",
+      "Solidago rugosa: Solidago rugosa, the wrinkleleaf goldenrod or rough-stemmed goldenrod, is a North American species of flowering plants in the sunflower family.  It is widespread across eastern and central Canada (from Newfoundland to Ontario) and the eastern and central United States (Maine west as far as Wisconsin and Iowa, south to Florida and Texas).",
+      "Solidago rupestris: Solidago rupestris , the rock goldenrod or riverbank goldenrod, is a North American species of flowering plants in the sunflower family.  It is found in the eastern United States, found today in the States of Maryland, Virginia, Kentucky, and Tennessee.  There are historical records of it formerly growing in Indiana and Pennsylvania as well, but these populations now appear to have been extirpated."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 345,
+    "generation_tokens": 64,
+    "generation_speed": 250.81220044597546,
+    "prompt_eval_speed": 49320.94353109364,
+    "generation_latency_s": 1.2144222999922931,
+    "latency": 3.6251986999996006,
+    "total_prompt_tokens": 424,
+    "total_generation_tokens": 83,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1229292,
+    "stage_rewrite_s": 1.2485998999327421,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.066841599997133,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09522379992995411,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.214454900007695,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.6252071000635624,
+    "unaccounted_latency_s": 8.740019984543324e-05,
+    "rewritten_query": "Both Sorbia and Goldenrod are a genus of over 50 flowering plants.",
+    "query_was_rewritten": true
+  }
+}

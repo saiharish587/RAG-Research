@@ -1,0 +1,42 @@
+{
+  "question_id": "Q429",
+  "query": "What party does the House of Commons representative for Congleton belong to?",
+  "ground_truth": "British Conservative Party",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The House of Commons representative for Congleton belongs to the Conservative Party.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Congleton (UK Parliament constituency): Congleton is a constituency in Cheshire, represented in the House of Commons of the UK Parliament since 2010 by Fiona Bruce of the Conservative Party.",
+      "Conservative Party (UK): The Conservative Party, officially the Conservative and Unionist Party, is a centre-right political party in the United Kingdom.  It is currently the governing party, having been so since the 2010 general election, where a coalition government with the Liberal Democrats was formed.  In 2015, the Conservatives led by David Cameron won a surprise majority and formed the first Conservative majority government since 1992.  However, the 2017 snap election on Thursday 8 June resulted in a hung parliament, and the Conservatives lost their parliamentary majority.  They are reliant on the support of a Northern Irish political party, the Democratic Unionist Party (DUP), in order to command a majority in the House of Commons through a confidence-and-supply deal.  The party leader, Theresa May, has served as both Leader of the Conservative Party and Prime Minister since 13 July 2016.  It is the largest party in local government with 9,237 councillors.  The Conservative Party is one of the two major contemporary political parties in the United Kingdom, the other being its modern rival, the Labour Party.  The Conservative Party's platform involves support for free market capitalism, free enterprise, fiscal conservatism, a strong national defence, deregulation, and restrictions on trade unions.",
+      "Theresa May: Theresa Mary May ( , \"n\u00e9e\" Brasier ; born 1 October 1956) is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2016, the second woman to hold both positions, the first being Margaret Thatcher.  She has been the Member of Parliament (MP) for Maidenhead since 1997.  Ideologically, she identifies herself as a one-nation conservative."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 504,
+    "generation_tokens": 15,
+    "generation_speed": 323.31070158422244,
+    "prompt_eval_speed": 62191.518039427196,
+    "generation_latency_s": 0.1538486999925226,
+    "latency": 0.5574862000066787,
+    "total_prompt_tokens": 578,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1546119,
+    "stage_rewrite_s": 0.13626810000278056,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08140029991045594,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1858374000294134,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15388300002086908,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5574949000729248,
+    "unaccounted_latency_s": 0.00010680011473596096,
+    "rewritten_query": "The House of Commons representative from Congleton belongs to the Conservative Party.",
+    "query_was_rewritten": true
+  }
+}

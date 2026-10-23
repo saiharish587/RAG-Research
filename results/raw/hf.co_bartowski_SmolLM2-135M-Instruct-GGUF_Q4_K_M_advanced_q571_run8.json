@@ -1,0 +1,42 @@
+{
+  "question_id": "Q571",
+  "query": "What city and nation was the location of the 2015 Pacific Games where the Kiribati national basketball team finished with a 0-4 record?",
+  "ground_truth": "Port Moresby, Papua New Guinea",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The location of the 2015 Pacific Games where the Kiribati national basketball team finished with an 0-4 record was Port Moresby, Papua New Guinea.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kiribati national basketball team: The Kiribati national basketball team are the basketball side that represent Kiribati in international competitions.  They competed at the 2015 Pacific Games, where they finished with an 0-4 record.",
+      "Kiribati at the 2015 Pacific Games: Kiribati competed at the 2015 Pacific Games in Port Moresby, Papua New Guinea from 4 to 18 July 2015.  A total of 86 competitors for Kiribati were listed as of 4 July 2015.",
+      "2015 Pacific Games: The 2015 Pacific Games was held in Port Moresby, Papua New Guinea, from 4 to 18 July 2015.  It was the fifteenth staging of the Pacific Games."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 271,
+    "generation_tokens": 38,
+    "generation_speed": 411.82144289228705,
+    "prompt_eval_speed": 38730.88466485637,
+    "generation_latency_s": 0.18678270000964403,
+    "latency": 0.5776960001094267,
+    "total_prompt_tokens": 364,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1350277,
+    "stage_rewrite_s": 0.17077660001814365,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07510289992205799,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1449153000721708,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18681630003266037,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5777058000676334,
+    "unaccounted_latency_s": 9.520002640783787e-05,
+    "rewritten_query": "The location of the 2015 Pacific Games in Kiribati, where the Kiribati national basketball team won a 0-4 record.",
+    "query_was_rewritten": true
+  }
+}

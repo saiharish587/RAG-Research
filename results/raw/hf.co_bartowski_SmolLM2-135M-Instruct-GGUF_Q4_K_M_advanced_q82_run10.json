@@ -1,0 +1,42 @@
+{
+  "question_id": "Q82",
+  "query": "The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?",
+  "ground_truth": "Bob Seger",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Rock Singer Bob Dylan was the 11th Album of a Rock singer Robert C Seger born May 24, 1941. The album Against the Wind is the sixth and final album by Bob Dylan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bob Seger: Robert Clark Seger ( , born May 6, 1945) is an American singer-songwriter, guitarist and pianist.  As a locally successful Detroit-area artist, he performed and recorded as Bob Seger and the Last Heard and Bob Seger System throughout the 1960s.  By the early 1970s, he had dropped the 'System' from his recordings and continued to strive for broader success with various other bands.  In 1973, he put together the Silver Bullet Band, with a group of Detroit-area musicians, with whom he became most successful on the national level with the album \"Live Bullet\" (1976), recorded live with the Silver Bullet Band in 1975 at Cobo Hall in Detroit, Michigan.  In 1976, he achieved a national breakout with the studio album \"Night Moves\".  On his studio albums, he also worked extensively with the Alabama-based Muscle Shoals Rhythm Section, which appeared on several of Seger's best-selling singles and albums.",
+      "Against the Wind (album): Against the Wind is the eleventh album by American rock singer Bob Seger and his fourth with the Silver Bullet Band.  It was released in February 1980.  It is Seger's only number-one album to date, spending six weeks at the top of the \"Billboard\" Top LPs chart, knocking Pink Floyd's \"The Wall\" from the top spot.",
+      "Bob Dylan: Bob Dylan ( ; born Robert Allen Zimmerman, May 24, 1941) is an American singer, songwriter, musician, painter, and writer.  He has been influential in popular music and culture for more than five decades.  Much of his most celebrated work dates from the 1960s, when he became a reluctant \"voice of a generation\" with songs such as \"Blowin' in the Wind\" and \"The Times They Are a-Changin'\", which became anthems for the Civil Rights Movement and anti-war movement.  Leaving behind his initial base in the American folk music revival, his six-minute single \"Like a Rolling Stone\", recorded in 1965, enlarged the range of popular music."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 586,
+    "generation_tokens": 51,
+    "generation_speed": 414.48924359776663,
+    "prompt_eval_speed": 79978.16295891907,
+    "generation_latency_s": 0.21487999998498708,
+    "latency": 0.6985161999473348,
+    "total_prompt_tokens": 686,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1401021,
+    "stage_rewrite_s": 0.1716275999788195,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08755940000992268,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2243159000063315,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.21492389997001737,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6985274000326172,
+    "unaccounted_latency_s": 0.00010140007361769676,
+    "rewritten_query": "The Album Against the Wind was the 11th album by rock singer Robert C Seger, born on May 6, 1945.",
+    "query_was_rewritten": true
+  }
+}

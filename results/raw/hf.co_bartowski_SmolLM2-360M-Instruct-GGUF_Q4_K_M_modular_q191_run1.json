@@ -1,0 +1,49 @@
+{
+  "question_id": "Q191",
+  "query": "Joe Walker played for which team that ends their regular season with the Civil War rivalry game?",
+  "ground_truth": "Oregon Ducks football",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Joe Walker played for the Philadelphia Eagles of the National Football League (NFL).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joe Walker (American football): Joe Walker (born December 11, 1992) is an American football linebacker for the Philadelphia Eagles of the National Football League (NFL).  He played college football at Oregon.",
+      "es for the Buccaneers, all in 1987.  Although popular with teammates and a standout on special teams, he never worked his way into the regular lineup.  Buccaneers coach Ray Perkins at one point toyed with the idea of taking advantage of his athleticism by converting him to tight end, but dropped the idea due to lack of interest from Walker.  When Plan B free agency began in 1989, Walker was one of the players allowed to leave.  He was signed by the New York Jets in 1989 after being left unprotected by the Buccaneers, but was cut from the Jets in training camp.  He later played for the Cincinnati Rockers, Miami Hooters, and Orlando Predators of the Arena Football League.",
+      "Darius Walker: Darius A'Dunte Walker (born October 21, 1985) is a former American football running back in the National Football League (NFL) and current college football analyst for FOX.  He worked as a college football analyst and sideline reporter for MountainWest Sports Network in 2011.  He was signed by the Houston Texans in 2007.  He played college football at Notre Dame."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 398,
+    "generation_tokens": 19,
+    "generation_speed": 219.11868159749054,
+    "prompt_eval_speed": 13301.694462083487,
+    "generation_latency_s": 0.22569089999888092,
+    "latency": 0.7000611000694335,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2215624,
+    "stage_route_s": 0.10820519994013011,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30525209999177605,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060712600010447204,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.280001252889633e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22573419997934252,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7000714000314474,
+    "unaccounted_latency_s": 0.00010520010255277157,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Joe Walker played for the New York Giants in the 2019-2020 regular season.",
+      "Query 2: Joe Walker played for the Philadelphia Eagles in the 2020-2021 regular season."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

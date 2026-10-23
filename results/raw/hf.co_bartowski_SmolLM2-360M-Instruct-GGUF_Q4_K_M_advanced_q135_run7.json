@@ -1,0 +1,42 @@
+{
+  "question_id": "Q135",
+  "query": "This American crime film set in South Los Angeles was written and directed by the same director and writer of screenwriter of \"Street Kings\", \"End of Watch\", \"Sabotage\", \"Fury\" and what other film? ",
+  "ground_truth": "Suicide Squad",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Harsh Times is a 2005 American crime film set in South Los Angeles.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Harsh Times: Harsh Times is a 2005 American crime film set in South Los Angeles.  The film stars Christian Bale and Freddy Rodriguez, and was written and directed by David Ayer, who wrote the script for the Academy Award-winning 2001 film \"Training Day\".  The film was distributed by Metro-Goldwyn-Mayer and Bauer Martinez Entertainment.  Ayer says that the film's characters are largely based on the people he knew when he lived in South Central.",
+      "David Ayer: David Ayer (born January 18, 1968) is an American film director, producer, and screenwriter.  He is best known for being the writer of \"Training Day\" (2001), and the director and writer of \"Harsh Times\" (2005), \"Street Kings\" (2008), \"End of Watch\" (2012), \"Sabotage\" (2014), \"Fury\" (2014), and \"Suicide Squad\" (2016).",
+      "End of Watch: End of Watch is a 2012 American crime drama film written and directed by David Ayer.  It stars Jake Gyllenhaal and Michael Pe\u00f1a as Brian Taylor and Miguel Zavala, two Los Angeles Police Department officers who work in South Los Angeles.  The film focuses on their day-to-day police work, their dealings with a certain group of gang members, their friendship with each other, and their personal relationships."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 20,
+    "generation_speed": 264.1344972860181,
+    "prompt_eval_speed": 59348.384480194676,
+    "generation_latency_s": 0.9075561000499874,
+    "latency": 3.3554580999771133,
+    "total_prompt_tokens": 548,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13697130000000002,
+    "stage_rewrite_s": 1.2950943999458104,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9543643000070006,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19830699998419732,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9076026000548154,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.355470900074579,
+    "unaccounted_latency_s": 0.00010330008808523417,
+    "rewritten_query": "This American crime film set in South Los Angeles was written and directed by the same director and writer as the screenwriter of Street Kings, End of Watch, Sabotage, Fury, and other films.",
+    "query_was_rewritten": true
+  }
+}

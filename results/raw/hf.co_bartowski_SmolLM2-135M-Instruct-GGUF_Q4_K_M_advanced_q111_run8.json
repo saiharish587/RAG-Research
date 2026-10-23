@@ -1,0 +1,42 @@
+{
+  "question_id": "Q111",
+  "query": "Based on a True Story... is an album by which country music star, with the single My Eyes?",
+  "ground_truth": "Blake Shelton",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Based on the given context, the correct answer to the question \"Is an album by which country music star, with the single 'My Eyes'?\" is Loretta Lynn. The song was written and performed by Loretta Lynn in 1970 as a duet partner and individual artist.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "My Eyes (Blake Shelton song): \"My Eyes\" is a song recorded by American country music artist Blake Shelton featuring Gwen Sebastian.  It was released in April 2014 as the fifth single from his seventh studio album, \"Based on a True Story...\".  The song was written by Andrew Dorff, Tommy Lee James and Josh Osborne.",
+      "Eddy Arnold: Richard Edward \"Eddy\" Arnold (May 15, 1918 \u2013 May 8, 2008) was an American country music singer who performed for six decades.  He was a Nashville sound (country/popular music) innovator of the late 1950s, and scored 147 songs on the \"Billboard\" country music charts, second only to George Jones.  He sold more than 85 million records.  A member of the Grand Ole Opry (beginning 1943) and the Country Music Hall of Fame (beginning 1966), Arnold ranked 22nd on Country Music Television's 2003 list of \"The 40 Greatest Men of Country Music.\"",
+      "Loretta Lynn: Loretta Lynn (n\u00e9e Webb; born April 14, 1932) is an American country music singer-songwriter with multiple gold albums over a career of almost 60 years.  She has received numerous awards and other accolades for her groundbreaking role in country music, including awards from both the Country Music Association and Academy of Country Music as a duet partner and an individual artist.  She is the most awarded female country recording artist and the only female ACM Artist of the Decade (1970s)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 444,
+    "generation_tokens": 61,
+    "generation_speed": 420.9741756497495,
+    "prompt_eval_speed": 55327.10280373832,
+    "generation_latency_s": 0.23520250001456589,
+    "latency": 0.6339144000085071,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1377837,
+    "stage_rewrite_s": 0.12447080004494637,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07418460003100336,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19991089997347444,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.23525140003766865,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6339273999910802,
+    "unaccounted_latency_s": 0.00011039990931749344,
+    "rewritten_query": "My Eyes: An Album by Country Music Star.",
+    "query_was_rewritten": true
+  }
+}

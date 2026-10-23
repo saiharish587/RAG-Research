@@ -1,0 +1,42 @@
+{
+  "question_id": "Q86",
+  "query": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+  "ground_truth": "April 1, 1949",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Paul Manafort was born on April 1, 1949.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Paul Manafort: Paul John Manafort Jr. (born April 1, 1949) is an American lawyer, lobbyist and political consultant.  He joined Donald Trump's presidential campaign team in March 2016 and served as campaign manager from June to August 2016.  He was previously an adviser to the U.S. presidential campaigns of Republicans Gerald Ford, Ronald Reagan, George H. W. Bush, and Bob Dole.  In 1980 Manafort co-founded the Washington, D.C.-based lobbying firm Black, Manafort & Stone, along with principals Charles R. Black Jr., and Roger J. Stone.  In 1984 it was renamed Black, Manafort, Stone and Kelly (BMSK) & associates, after Peter G. Kelly was recruited.",
+      "Trump campaign\u2013Russian meeting: On June 9, 2016, a meeting was held in Trump Tower in New York City between three senior members of the presidential campaign of Donald TrumpDonald Trump Jr., Jared Kushner, and Paul Manafortand at least five other people, including Russian lawyer Natalia Veselnitskaya.  The meeting was arranged by publicist and long-time Trump acquantiance, Rob Goldstone on behalf of his client, singer-songwriter Emin Agalarov.  It was disclosed to U.S. government officials when Kushner filed a revised version of his security clearance form.",
+      "Donald Trump: Donald John Trump (born June 14, 1946) is the 45th and current President of the United States, in office since January 20, 2017.  Before entering politics, he was a businessman and television personality."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 460,
+    "generation_tokens": 18,
+    "generation_speed": 261.03223748132893,
+    "prompt_eval_speed": 64880.11283497884,
+    "generation_latency_s": 0.9632452999940142,
+    "latency": 3.3692829000065103,
+    "total_prompt_tokens": 545,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1240931,
+    "stage_rewrite_s": 1.24643009994179,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0199683000100777,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1395189999602735,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9632865000749007,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3692942999769,
+    "unaccounted_latency_s": 9.099999442696571e-05,
+    "rewritten_query": "The American lawyer, lobbyist, and political consultant who was a senior member of the presidential campaign of Donald Trump was born in 1946.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q554",
+  "query": "What was the highest ranking in the United States for a single written by an English multi-instrumentalist?",
+  "ground_truth": "25",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The highest ranking in the United States Navy is the Vice Admiral rank.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "David Bowie: David Robert Jones (8 January 1947 \u2013 10 January 2016), known professionally as David Bowie ( ), was an English singer, songwriter and actor.  He was a leading figure in popular music for over five decades, acclaimed by critics and other musicians for his innovative work.  His career was marked by reinvention and visual presentation, his music and stagecraft significantly influencing popular music.  During his lifetime, his record sales, estimated at 140 million albums worldwide, made him one of the world's best-selling music artists.  In the UK, he was awarded nine platinum album certifications, eleven gold and eight silver, releasing eleven number-one albums.  In the US, he received five platinum and nine gold certifications.  He was inducted into the Rock and Roll Hall of Fame in 1996.",
+      "John Lennon: John Winston Ono Lennon, {'1': \", '2': \", '3': \", '4': \"} (born John Winston Lennon; 9 October 19408 December 1980) was an English singer, songwriter, musician, and activist who co-founded the Beatles, the most commercially successful and musically influential band in the history of popular music.  He and fellow member Paul McCartney formed a much-celebrated songwriting partnership.",
+      "United States Navy: The United States Navy (USN) is the naval warfare service branch of the United States Armed Forces and one of the seven uniformed services of the United States.  The U.S. Navy is the largest, most capable navy in the world, with the highest combined battle fleet tonnage.  The U.S. Navy has the world's largest aircraft carrier fleet, with eleven in service, one in the reserve fleet, and two new carriers under construction.  The service has 322,421 personnel on active duty and 107,577 in the Navy Reserve.  It has 276 deployable combat vessels and more than 3,700 operational aircraft as of 2017 ."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 531,
+    "generation_tokens": 15,
+    "generation_speed": 233.4267040149393,
+    "prompt_eval_speed": 65921.7877094972,
+    "generation_latency_s": 0.18919609999284148,
+    "latency": 0.5439762000460178,
+    "total_prompt_tokens": 675,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2343689,
+    "stage_route_s": 0.10654589999467134,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1911062999861315,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05695180001202971,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5699958465993404e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18922860000748187,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5439858000027016,
+    "unaccounted_latency_s": 9.80000477284193e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"United States High Ranking\"",
+      "\"English Multi-Instrumentalist Highest Ranked\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q436",
+  "query": "How long is the river for which Frenchmans Creek is a tributary?",
+  "ground_truth": "2844 km",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Frenchmans Creek is a tributary of the Darling River and measures approximately 7.51 km from its source south of Pooncarie to its confluence into the Darling River at an elevation of 48 m. Therefore, it can be inferred that Frenchmans Creek is about 7.51 km long for which it is a tributary.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Frenchmans Creek (New South Wales): Frenchmans Creek is a short tributary of the Darling River in west New South Wales, measuring 7.51 km from its source south of Pooncarie, New South Wales at an elevation of 54.4 m to its confluence into the Darling River at an elevation of 48 m .",
+      "Frenchmans Creek (California): Frenchmans Creek is a 4.4 mi stream in San Mateo County, California.  Locks Creek is its largest tributary.",
+      "Locks Creek: Locks Creek is a 1.9 mi stream in San Mateo County, California.  It is the largest tributary of Frenchmans Creek, a larger stream."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 219,
+    "generation_tokens": 73,
+    "generation_speed": 233.588040292337,
+    "prompt_eval_speed": 11115.622779413257,
+    "generation_latency_s": 0.44140400004107505,
+    "latency": 0.7475498999701813,
+    "total_prompt_tokens": 347,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22854939999999999,
+    "stage_route_s": 0.10925149999093264,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16174730006605387,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03500000003259629,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.820005804300308e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.44143590005114675,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7475589000387117,
+    "unaccounted_latency_s": 8.639984298497438e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"How long is the River for which Frenchmans Creek is a tributary?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

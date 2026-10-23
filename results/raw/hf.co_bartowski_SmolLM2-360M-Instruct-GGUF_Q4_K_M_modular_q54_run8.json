@@ -1,0 +1,49 @@
+{
+  "question_id": "Q54",
+  "query": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+  "ground_truth": "Rome",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "In Venice, the \"Prince of Tenors\" star in a film based on an opera by Giacomo Puccini.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "La Traviata (1983 film): La Traviata is a 1983 Italian film written, designed, and directed by Franco Zeffirelli.  It is based on the opera \"La traviata\" with music by Giuseppe Verdi and libretto by Francesco Maria Piave.  Soprano Teresa Stratas, tenor Pl\u00e1cido Domingo, and baritone Cornell MacNeil starred in the movie, in addition to singing their roles.  The film premiered in Italy in 1982 and went into general release there the following year.  It opened in theatres in the U.S. on April 22, 1983.  The movie's soundtrack with James Levine conducting the Metropolitan Opera Orchestra won a Grammy Award for Best Opera Recording.",
+      "2016 Cannes Film Festival: The 69th Cannes Film Festival was held from 11 to 22 May 2016.  Australian director George Miller was the President of the Jury for the main competition.  French actor Laurent Lafitte was the host for the opening and closing ceremonies.  On 15 March it was announced that Japanese director Naomi Kawase would serve as the Cin\u00e9fondation and Short Film Jury president.  American director Woody Allen's film \"Caf\u00e9 Society\" opened the festival.",
+      "Teatro San Gallo: The Teatro San Gallo in Venice, was built during the early part of the 20th century in the original courtyard of a 13th-century palazzo just behind Piazza San Marco in Venice.  Some of the original features of the original palazzo are still visible in various parts of the theatre.  The theatre is located in Campo Rusolo o San Gallo, a small campo just behind Piazza San Marco and close to Bacino Orselo.  The theatre has 260 seats and is now equipped with sophisticated technical equipment that brings it firmly into the 21st Century.  Since 2008 the theatre has been home to a nightly performance of Venezia The Show.  Venezia the show is a show about Venice which is performed in English with translations in other languages."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 561,
+    "generation_tokens": 27,
+    "generation_speed": 210.569005884772,
+    "prompt_eval_speed": 68273.0923694779,
+    "generation_latency_s": 0.2545944000594318,
+    "latency": 0.5605675000697374,
+    "total_prompt_tokens": 715,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2218075,
+    "stage_route_s": 0.09115099988412112,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15793410001788288,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05669810005929321,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2200048230588436e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2546435999684036,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5605843000812456,
+    "unaccounted_latency_s": 0.00010599999222904444,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Cannes Film Festival\"",
+      "\"Opera House, Venice\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

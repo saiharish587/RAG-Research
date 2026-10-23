@@ -1,0 +1,49 @@
+{
+  "question_id": "Q567",
+  "query": "On what date will the comedy film directed by Kevin Tent and starring the Bulgarian-Canadian actress known for portraying the role of Mia Jones be released on video on demand services?",
+  "ground_truth": "September 25, 2017",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The comedy film, Crash Pad, is scheduled to be released on August 3, 2018.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Crash Pad: Crash Pad is an upcoming American comedy film directed by Kevin Tent, from a screenplay by Jeremy Catalino.  It stars Domhnall Gleeson, Christina Applegate, Thomas Haden Church, and Nina Dobrev.  It will be released on video on demand services on September 25, 2017 and will then be released by Vertical Entertainment in select theaters on October 27, 2017.  A hopeless romantic who thinks he's found true love with an older woman, only to learn that she's married and that his fling is merely an instrument of revenge against her neglectful husband.",
+      "Nina Dobrev: Nina Dobrev ( ; born Nikolina Konstantinova Dobreva; Bulgarian: \u041d\u0438\u043a\u043e\u043b\u0438\u043d\u0430 \u041a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0438\u043d\u043e\u0432\u0430 \u0414\u043e\u0431\u0440\u0435\u0432\u0430 ; January 9, 1989) is a Bulgarian-Canadian actress.  She is known for portraying the role of Mia Jones in the drama series \"\" and then Elena Gilbert on The CW's supernatural drama series \"The Vampire Diaries\".",
+      "Christopher Robin (film): Christopher Robin is an upcoming American comedy-drama adventure film directed by Marc Forster, with a screenplay written by Tom McCarthy, Alex Ross Perry, and Allison Schroeder.  The film is inspired by A. A. Milne's book \"Winnie-the-Pooh\" and a live-action remake of the Disney franchise of same name.  The film will star Ewan McGregor and Hayley Atwell.  It is scheduled to be released on August 3, 2018 by Walt Disney Studios Motion Pictures in the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 464,
+    "generation_tokens": 25,
+    "generation_speed": 237.74654316526238,
+    "prompt_eval_speed": 56960.471397004665,
+    "generation_latency_s": 0.22668349999003112,
+    "latency": 0.7802714999997988,
+    "total_prompt_tokens": 634,
+    "total_generation_tokens": 95,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2525832,
+    "stage_route_s": 0.10657699999865144,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3784454999258742,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06838780001271516,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1999930292367935e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22671929991338402,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7802820999640971,
+    "unaccounted_latency_s": 0.00010120018851011992,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"On what date will the comedy film directed by Kevin Tent and starring the Bulgarian-Canadian actress known for portraying the role of Mia Jones be released on video on demand services?\"",
+      "Query 2: \"When is the movie titled 'Mia Jones' going to be released on video on demand services?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

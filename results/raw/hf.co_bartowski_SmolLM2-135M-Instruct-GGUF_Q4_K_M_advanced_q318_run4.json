@@ -1,0 +1,42 @@
+{
+  "question_id": "Q318",
+  "query": "What Kentucky county has a population of 60,316 and features the Lake Louisvilla neighborhood?",
+  "ground_truth": "Oldham County",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Little Haifa or New Preston St. (a tribute to Preston St., the original Jewish Enclave and home to two Jewish cemeteries in the Germantown neighborhood in Louisville, Kentucky) is a small neighborhood located on Dutchman's Lane in Louisville, Kentucky.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lake Louisvilla, Louisville: Lake Louisvilla is a neighborhood partially located in Louisville, Kentucky.  It is located between Westport Road in Louisville and KY 22 in Oldham County.  Lake Louisvilla was developed in the 1920s as a summer resort for people living in the city of Louisville.  The state of Kentucky drained the lake in the late 1980s due to safety concerns regarding the stability of a dam.",
+      "Moorland, Kentucky: Moorland is a neighborhood of Louisville, Kentucky, United States.  It is separately incorporated as a home rule-class city.  The population was 464 at the time of the year 2000 U.S. census.",
+      "Little Haifa or New Preston St.: Little Haifa or New Preston St. (a tribute to Preston St., the original Jewish Enclave and home to two Jewish cemeteries in the Germantown neighborhood in Louisville, Kentucky) are the two nicknames for a large Jewish neighborhood on Dutchman's Lane in Louisville, Kentucky.  The small neighborhood is the center of Louisville's Jewish communities, especially the Orthodox Jewish community.  Located between the Highlands and St. Matthews neighborhoods, Little Haifa/New Preston is located on Dutchman's Lane stretching from Abigail Drive through Almara Circle, Vivian Lane, and Woodluck Avenue.  It is home to Louisville's Jewish Community Center, Shalom Towers (Assisted living residence for the elderly of Louisville's Jewish community), Jewish Family & Vocational Services, Anshei Sfard & The Chabad House (aka Chabad Kentucky [Louisville's only Orthodox synagogues with the Chabad House also serving as a community center for the Orthodox Jewish community, making up two out of six total synagogues and temples in the Louisville Metropolitan Area]).  Additionally, it is within close proximity to Adath Jeshuran and Kenneseth Israel Synagogues (Louisville's two conservative synagogues located in the Highlands, while the Temple and Temple Shalom are farther in the east end of Louisville)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 508,
+    "generation_tokens": 54,
+    "generation_speed": 388.5199548165682,
+    "prompt_eval_speed": 67009.62933649914,
+    "generation_latency_s": 0.22498980001546443,
+    "latency": 0.645476899924688,
+    "total_prompt_tokens": 591,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12377869999999999,
+    "stage_rewrite_s": 0.1312653999775648,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07301260007079691,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21606829995289445,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.22504309995565563,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6454877000069246,
+    "unaccounted_latency_s": 9.890005458146334e-05,
+    "rewritten_query": "Lake Louisville, Kentucky's most popular and picturesque community is located in the Lake Louisville neighborhood.",
+    "query_was_rewritten": true
+  }
+}

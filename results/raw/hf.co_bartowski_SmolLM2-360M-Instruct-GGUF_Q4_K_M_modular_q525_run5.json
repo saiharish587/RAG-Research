@@ -1,0 +1,49 @@
+{
+  "question_id": "Q525",
+  "query": "Jos\u00e9 Saramago and Ivo Andri\u0107 were recipients of what award in Literature?",
+  "ground_truth": "Nobel Prize in Literature",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Ivo Andri\u0107 and Jos\u00e9 Saramago were both recipients of the Nobel Prize in Literature.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jos\u00e9 Saramago: Jos\u00e9 de Sousa Saramago, (] ; 16 November 1922 \u2013 18 June 2010), was a Portuguese writer and recipient of the 1998 Nobel Prize in Literature.  His works, some of which can be seen as allegories, commonly present subversive perspectives on historic events, emphasizing the human factor.  In 2003 Harold Bloom described Saramago as \"the most gifted novelist alive in the world today\" and in 2010 said he considers Saramago to be \"a permanent part of the Western canon\", while James Wood praises \"the distinctive tone to his fiction because he narrates his novels as if he were someone both wise and ignorant.\"",
+      "Nobel Prize in Literature: Since 1901, the Nobel Prize in Literature (Swedish: \"Nobelpriset i litteratur\" ) has been awarded annually to an author from any country who has, in the words of the will of Alfred Nobel, produced \"in the field of literature the most outstanding work in an ideal direction\" (original Swedish: \"den som inom litteraturen har producerat det mest framst\u00e5ende verket i en idealisk riktning\").  Though individual works are sometimes cited as being particularly noteworthy, here \"work\" refers to an author's work as a whole.  The Swedish Academy decides who, if anyone, will receive the prize in any given year.  The academy announces the name of the chosen laureate in early October.  It is one of the five Nobel Prizes established by the will of Alfred Nobel in 1895; the others are the Nobel Prize in Chemistry, Nobel Prize in Physics, Nobel Peace Prize, and Nobel Prize in Physiology or Medicine.",
+      "Naguib Mahfouz Medal for Literature: The Naguib Mahfouz Medal for Literature is a literary award for Arabic literature.  It is given to the best contemporary novel written in Arabic, but not available in English translation.  The winning book is then translated into English, and published by American University in Cairo Press.  It was first awarded in 1996 and is presented annually on December 11, the birthday of Nobel laureate Naguib Mahfouz, by the President of the American University in Cairo."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 568,
+    "generation_tokens": 21,
+    "generation_speed": 236.1593738402888,
+    "prompt_eval_speed": 70796.46017699114,
+    "generation_latency_s": 0.21317340002860874,
+    "latency": 0.5299830998992547,
+    "total_prompt_tokens": 704,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2256605,
+    "stage_route_s": 0.10405949992127717,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15592669998295605,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05664760002400726,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2299932576715946e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21320620004553348,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5299928999738768,
+    "unaccounted_latency_s": 0.00010120007209479809,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Nobel Prize for Literature\"",
+      "\"Palestinian Literature Award\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

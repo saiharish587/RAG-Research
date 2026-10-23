@@ -1,0 +1,49 @@
+{
+  "question_id": "Q38",
+  "query": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+  "ground_truth": "World War II",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Livesey Hal War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Livesey Hall War Memorial: The Livesey Hall War Memorial commemorates the fallen of World War I and World War II who had been employed by the South Suburban Gas Company of London.  It is also a tribute to those employees who served in the wars.  The monument was designed and executed by British sculptor Sydney March, of the March family of artists.",
+      "Attack on Pearl Harbor in popular culture: The attack on Pearl Harbor has received substantial attention in popular culture in multiple media and cultural formats including film, architecture, memorial statues, non-fiction writing, historical writing, and historical fiction.  Today, the USS \"Arizona\" Memorial on the island of Oahu honors the dead.  Visitors to the memorial reach it via boats from the naval base at Pearl Harbor.  The memorial was designed by Alfred Preis, and has a sagging center but strong and vigorous ends, expressing \"initial defeat and ultimate victory\".  It commemorates all lives lost on December 7, 1941.",
+      "Rainham War Memorial: The Rainham War Memorial commemorates soldiers killed in both World Wars as well as civilian casualties of World War II."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 313,
+    "generation_tokens": 32,
+    "generation_speed": 374.94434419890797,
+    "prompt_eval_speed": 46702.47687257535,
+    "generation_latency_s": 0.2012957000406459,
+    "latency": 0.6744320999132469,
+    "total_prompt_tokens": 457,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2228918,
+    "stage_route_s": 0.12647569994442165,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.29181149997748435,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05468269996345043,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.370005965232849e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2013284000568092,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6744413999840617,
+    "unaccounted_latency_s": 9.049999061971903e-05,
+    "route": "rag",
+    "router_raw": "The livesey hal war memorial is a tribute to the fallen soldiers from World War I.",
+    "sub_queries": [
+      "The livesey hal war memorial is dedicated to the fallen soldiers from all wars and conflicts around the world.",
+      "Note: I've added a newline after each query for better readability. The question was asked in a format with multiple questions, so I'll keep this as such. If you'd like me to add more queries or provide additional information about the war, feel free to ask!"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

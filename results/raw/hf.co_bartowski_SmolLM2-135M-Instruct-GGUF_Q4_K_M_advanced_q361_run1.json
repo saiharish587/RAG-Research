@@ -1,0 +1,42 @@
+{
+  "question_id": "Q361",
+  "query": "The Waterloo Vase has been used as a garden ornament at whose residence and administrative headquarters?",
+  "ground_truth": "reigning monarch of the United Kingdom",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Waterloo Vase has been used as a garden ornament at Buckingham Palace, London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waterloo Vase: The Waterloo Vase is a great urn, 15ft (5m) high and weighing 20 tons, fashioned from a single piece of Carrara marble.  Since 1906, it has been used as a garden ornament in the garden of Buckingham Palace, London.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning.",
+      "Kensington Palace: Kensington Palace is a royal residence set in Kensington Gardens, in the Royal Borough of Kensington and Chelsea in London, England.  It has been a residence of the British Royal Family since the 17th century, and is currently the official London residence of the Duke and Duchess of Cambridge, Prince Harry, the Duke and Duchess of Gloucester, the Duke and Duchess of Kent, and Prince and Princess Michael of Kent."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 309,
+    "generation_tokens": 18,
+    "generation_speed": 386.0838230878127,
+    "prompt_eval_speed": 20087.109146460378,
+    "generation_latency_s": 0.13846469996497035,
+    "latency": 0.5620013000443578,
+    "total_prompt_tokens": 387,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1286693,
+    "stage_rewrite_s": 0.16390689997933805,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07384929992258549,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18566209997516125,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1385036000283435,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5620108000002801,
+    "unaccounted_latency_s": 8.940009865909815e-05,
+    "rewritten_query": "The Waterloo Vase, with its elegant design and intricate details, was once an integral part of the administrative headquarters of the city's royal family.",
+    "query_was_rewritten": true
+  }
+}

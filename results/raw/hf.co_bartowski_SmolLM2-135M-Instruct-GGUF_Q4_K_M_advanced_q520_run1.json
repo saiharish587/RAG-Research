@@ -1,0 +1,42 @@
+{
+  "question_id": "Q520",
+  "query": "James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?",
+  "ground_truth": "Lord Chancellor of England",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "James Spedding was primarily known as the editor of the works of Francis Bacon, a person who served both as Attorney-General and as the Chief Legal Adviser to the Crown in New South Wales.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Spedding: James Spedding (28 June 1808 \u2013 9 March 1881) was an English author, chiefly known as the editor of the works of Francis Bacon.",
+      "Attorney General for England and Wales: Her Majesty's Attorney General for England and Wales, usually known simply as the Attorney General, is one of the Law Officers of the Crown.  Along with the subordinate Solicitor General for England and Wales, the Attorney General serves as the chief legal adviser of the Crown and its government in England and Wales.  The current Attorney General is Jeremy Wright, MP.",
+      "Attorney General of New South Wales: The Attorney General of New South Wales, in formal contexts also Attorney-General or Attorney General for New South Wales and usually known simply as the Attorney General, is a minister in the Government of New South Wales who has responsibility for the administration of justice in New South Wales, Australia.  In addition, the Attorney General is one of the Law Officers of the Crown.  Along with the subordinate Solicitor General, Crown Advocate, and Crown Solicitor, the Attorney General serves as the chief legal and constitutional adviser of the Crown and Government of New South Wales."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 333,
+    "generation_tokens": 43,
+    "generation_speed": 383.3364535137689,
+    "prompt_eval_speed": 21499.12841371296,
+    "generation_latency_s": 0.20912310003768653,
+    "latency": 0.8164772000163794,
+    "total_prompt_tokens": 419,
+    "total_generation_tokens": 117,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1222363,
+    "stage_rewrite_s": 0.27412570000160486,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08255379996262491,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2505449999589473,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2091568000614643,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8164854000788182,
+    "unaccounted_latency_s": 0.00010470009874552488,
+    "rewritten_query": "The original query \"James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as a member of the House of Representatives.\" is optimized by removing unnecessary words, rephrasing for better clarity, and using more concise language. The result conveys the same information in a more efficient manner while maintaining its original meaning.",
+    "query_was_rewritten": true
+  }
+}

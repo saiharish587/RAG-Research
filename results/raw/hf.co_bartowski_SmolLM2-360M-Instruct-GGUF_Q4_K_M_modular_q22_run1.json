@@ -1,0 +1,49 @@
+{
+  "question_id": "Q22",
+  "query": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+  "ground_truth": "Sonic",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Jim Cummings",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Rather Blustery Day: \"A Rather Blustery Day\" is a whimsical song from the Walt Disney musical film featurette, \"Winnie the Pooh and the Blustery Day\".  It was written by Robert & Richard Sherman and sung by Jim Cummings as \"Pooh\".",
+      "Cliff Edwards: Clifton Avon Edwards (June 14, 1895 \u2013 July 17, 1971) \u2014 known as \"Ukulele Ike\" \u2014 was an American singer, actor and voice actor who enjoyed considerable popularity in the 1920s and early 1930s, specializing in jazzy renditions of pop standards and novelty tunes.  He had a number-one hit with \"Singin' In The Rain\" in 1929.  He also did voices for animated cartoons later in his career, and is best known as the voice of Jiminy Cricket in Walt Disney's \"Pinocchio\" (1940) and Fun and Fancy Free (1947).",
+      "Jim Cummings: James Jonah Cummings (born November 3, 1952) is an American voice actor and singer, who has appeared in almost 400 roles.  He is known for voicing the title character from \"Darkwing Duck\", Dr. Robotnik from \"Sonic the Hedgehog\", and Pete.  His other characters include Winnie the Pooh, Tigger, and the Tasmanian Devil.  He has performed in numerous Disney and DreamWorks animations including \"Aladdin\", \"The Lion King\", \"Balto\", \"Antz\", \"The Road to El Dorado\", \"Shrek\", and \"The Princess and the Frog\".  He has also provided voice-over work for video games, such as \"Icewind Dale\", \"Fallout\", \"\", \"Baldur's Gate\", \"Mass Effect 2\", \"\", \"\", \"\", and \"Splatterhouse\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 493,
+    "generation_tokens": 4,
+    "generation_speed": 209.9186565205983,
+    "prompt_eval_speed": 15008.98103327549,
+    "generation_latency_s": 0.15841320005711168,
+    "latency": 0.6207889999495819,
+    "total_prompt_tokens": 623,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2290929,
+    "stage_route_s": 0.1059294999577105,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3004333000862971,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055834900005720556,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.759997293353081e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15844440006185323,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6207975000143051,
+    "unaccounted_latency_s": 9.819993283599615e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"A rather blustery day\" - The singer of A Rather Blustery Day is a hedgehog.",
+      "\"Hedgehog\" - Hedgehogs are the hedgehog who sings A Rather Blustery Day."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

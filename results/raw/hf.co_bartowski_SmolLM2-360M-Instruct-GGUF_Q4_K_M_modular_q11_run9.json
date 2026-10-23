@@ -1,0 +1,49 @@
+{
+  "question_id": "Q11",
+  "query": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+  "ground_truth": "Kansas Song",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The University of Kansas' main campus is in Lawrence, Kansas, while its branch campuses are in the Kansas City metropolitan area. Therefore, the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area is \"Kansas Song.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kansas Song: Kansas Song (We\u2019re From Kansas) is a fight song of the University of Kansas.",
+      "M&amp;I Bank Border Showdown Series: The M&I Bank Border Showdown Series is the official name for the Border War rivalry between the University of Kansas Jayhawks and the University of Missouri Tigers.",
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 310,
+    "generation_tokens": 62,
+    "generation_speed": 235.70111577866908,
+    "prompt_eval_speed": 37911.214381802616,
+    "generation_latency_s": 0.3849474999587983,
+    "latency": 0.7437456999905407,
+    "total_prompt_tokens": 472,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.234424,
+    "stage_route_s": 0.11768080003093928,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18568239989690483,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0552523999940604,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8600020818412304e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3849871999118477,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7437560999533162,
+    "unaccounted_latency_s": 0.00010540010407567024,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Fight Song of the University of Kansas\"",
+      "\"Kansas City Metropolitan Area Fight Song\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

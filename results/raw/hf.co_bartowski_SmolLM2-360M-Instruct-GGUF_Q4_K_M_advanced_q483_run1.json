@@ -1,0 +1,42 @@
+{
+  "question_id": "Q483",
+  "query": "How did Emilie du Chatelet, Voltaire's love, contribute to the basic laws of physics?",
+  "ground_truth": "commentary on Isaac Newton's book \"Principia\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "\u00c9milie du Ch\u00e2telet contributed significantly to the development of the Laplace distribution by translating and commenting on Isaac Newton's book \"Principia\" into French. Her translation provided a standard French version of Newton's work, which was widely used in France during that time period. Additionally, her commentary included a profound contribution to Newtonian mechanics, particularly regarding the postulate of an additional conservation law for total energy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "\u00c9milie du Ch\u00e2telet: Gabrielle \u00c9milie Le Tonnelier de Breteuil, Marquise Du Ch\u00e2telet (] ; 17 December 1706  \u2013 10 September 1749) was a French natural philosopher, mathematician, physicist, and author during the early 1730s until her untimely death due to childbirth in 1749.  Her most recognized achievement is her translation of and commentary on Isaac Newton's book \"Principia\" containing basic laws of physics.  The translation, published posthumously in 1759, is still considered the standard French translation today.  Her commentary includes a profound contribution to Newtonian mechanics\u2014the postulate of an additional conservation law for total energy, of which kinetic energy of motion is one element.",
+      "Laplace distribution: In probability theory and statistics, the Laplace distribution is a continuous probability distribution named after Pierre-Simon Laplace.  It is also sometimes called the \"double exponential distribution\", because it can be thought of as two exponential distributions (with an additional location parameter) spliced together back-to-back, although the term 'double exponential distribution' is also sometimes used to refer to the Gumbel distribution.  The difference between two independent identically distributed exponential random variables is governed by a Laplace distribution, as is a Brownian motion evaluated at an exponentially distributed random time.  Increments of Laplace motion or a variance gamma process evaluated over the time scale also have a Laplace distribution.",
+      "Soil mechanics: Soil mechanics is a branch of soil physics and applied mechanics that describes the behavior of soils.  It differs from fluid mechanics and solid mechanics in the sense that soils consist of a heterogeneous mixture of fluids (usually air and water) and particles (usually clay, silt, sand, and gravel) but soil may also contain organic solids and other matter.  Along with rock mechanics, soil mechanics provides the theoretical basis for analysis in geotechnical engineering, a subdiscipline of civil engineering, and engineering geology, a subdiscipline of geology.  Soil mechanics is used to analyze the deformations of and flow of fluids within natural and man-made structures that are supported on or made of soil, or structures that are buried in soils.  Example applications are building and bridge foundations, retaining walls, dams, and buried pipeline systems.  Principles of soil mechanics are also used in related disciplines such as engineering geology, geophysical engineering, coastal engineering, agricultural engineering, hydrology and soil physics."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 603,
+    "generation_tokens": 86,
+    "generation_speed": 246.91216243375,
+    "prompt_eval_speed": 13491.743858236006,
+    "generation_latency_s": 1.2369675999507308,
+    "latency": 3.7004878000589088,
+    "total_prompt_tokens": 686,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1233764,
+    "stage_rewrite_s": 1.3211092000128701,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9447108999593183,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19756810006219894,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.2370144999586046,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.7004987000254914,
+    "unaccounted_latency_s": 9.670003782957792e-05,
+    "rewritten_query": "Emilie du Chatelet was a French mathematician and philosopher who contributed significantly to the fundamental principles of classical mechanics. Her work on the kinetic theory of gases laid the groundwork for later scientists like Newton and Laplace.",
+    "query_was_rewritten": true
+  }
+}

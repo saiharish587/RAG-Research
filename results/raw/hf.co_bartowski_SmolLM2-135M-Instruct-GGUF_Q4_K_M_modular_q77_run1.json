@@ -1,0 +1,49 @@
+{
+  "question_id": "Q77",
+  "query": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+  "ground_truth": "Ann",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The middle name of the actress who plays Bobbi Bacha in Suburban Madness is Kareena Kapoor.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bobbi Bacha: Bobbi Bacha is a Texas Private Investigator portrayed in 2004 TV Sony Pictures Movie \"Suburban Madness\" played by actress Sela Ward.  Bobbi Bacha also was involved and worked on the case of New York millionaire Robert Durst who was charged with murder in Galveston, Texas for killing his neighbor Morris Black but was found not guilty by a Galveston County Jury.",
+      "Suburban Madness: Suburban Madness is an American crime drama television film, based on a true story, starring Sela Ward as PI Bobbi Bacha of Blue Moon Investigations.  It aired on CBS on October 3, 2004.",
+      "Kareena Kapoor: Kareena Kapoor (] ; born 21 September 1980), also known by her married name Kareena Kapoor Khan, is an Indian actress who appears in Hindi films.  She is the daughter of actors Randhir Kapoor and Babita, and the younger sister of actress Karisma Kapoor.  Noted for playing a variety of characters in a range of film genres\u2014from romantic comedies to crime dramas\u2014Kapoor is the recipient of several awards, including six Filmfare Awards, and is one of Bollywood's most popular and highest-paid actresses."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 353,
+    "generation_tokens": 25,
+    "generation_speed": 349.4011264692317,
+    "prompt_eval_speed": 21741.80832717418,
+    "generation_latency_s": 0.19201620004605502,
+    "latency": 0.6182516000699252,
+    "total_prompt_tokens": 493,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2215815,
+    "stage_route_s": 0.1430600999156013,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22647220001090318,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05651469994336367,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.959998816251755e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19205589999910444,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6182642000494525,
+    "unaccounted_latency_s": 0.0001025001984089613,
+    "route": "rag",
+    "router_raw": "The middle name of the actress who plays Bobbi Bacha in Suburban Madness is Barbara Bacha.",
+    "sub_queries": [
+      "Who is the actress whose middle name is Bobbi Bacha?",
+      "Answer: Bobbi Bacha's middle name is Bobbi Bacha."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

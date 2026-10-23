@@ -1,0 +1,42 @@
+{
+  "question_id": "Q288",
+  "query": "Where did Ian Harland study prior to studying at the oldest college at the University of Cambridge?",
+  "ground_truth": "The Dragon School in Oxford",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The correct answer is that Ian Harland studied before he went to the oldest college at the University of Cambridge, Wolfson College in Cambridge, England. He attended Wolfson College and then later moved on to Cambridge University where he was a Fellow.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ian Harland: From a clerical family (Samuel Harland, general secretary of the Commonwealth and Continental Church Society, was his father), Harland was educated at The Dragon School in Oxford and Haileybury.  He then went to university at Peterhouse, Cambridge, taking a law degree.  After two years as a schoolmaster at Sunningdale School he studied for the priesthood at Wycliffe Hall, Oxford and began his ministry as a curate in Melton Mowbray in 1960.",
+      "Stephen Hawking: Stephen William Hawking, {'1': \", '2': \", '3': \", '4': \"} ( born 8 January 1942) is an English theoretical physicist, cosmologist, author and Director of Research at the Centre for Theoretical Cosmology within the University of Cambridge.  His scientific works include a collaboration with Roger Penrose on gravitational singularity theorems in the framework of general relativity and the theoretical prediction that black holes emit radiation, often called Hawking radiation.  Hawking was the first to set out a theory of cosmology explained by a union of the general theory of relativity and quantum mechanics.  He is a vigorous supporter of the many-worlds interpretation of quantum mechanics.",
+      "Wolfson College, Cambridge: Wolfson College is a constituent college of the University of Cambridge in Cambridge, England.  The majority of students at the college are postgraduates.  The college also admits \"mature\" undergraduates (aged 21 and above), with around 15% of students studying undergraduate degree courses at the university.  The college was founded in 1965 as \"University College\", and changed its name to Wolfson College in 1973 in recognition of the benefaction of the Wolfson Foundation.  Wolfson is located to the west of Cambridge city centre, near the University Library.  It was the first college of the university to admit men and women as both students and Fellows."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 478,
+    "generation_tokens": 50,
+    "generation_speed": 373.703252516542,
+    "prompt_eval_speed": 43218.806509945745,
+    "generation_latency_s": 0.2257745999377221,
+    "latency": 0.5685490999603644,
+    "total_prompt_tokens": 557,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1277674,
+    "stage_rewrite_s": 0.13720110000576824,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07034780003596097,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13509219989646226,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2258171000285074,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5685592999216169,
+    "unaccounted_latency_s": 0.00010169995948672295,
+    "rewritten_query": "Ian Harland studied at the University of Cambridge before he completed his undergraduate degree in mathematics and physics.",
+    "query_was_rewritten": true
+  }
+}

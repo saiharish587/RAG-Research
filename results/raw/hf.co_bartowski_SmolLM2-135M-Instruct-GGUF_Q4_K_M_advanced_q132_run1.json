@@ -1,0 +1,42 @@
+{
+  "question_id": "Q132",
+  "query": "Which board game was published most recently, Pirate's Cove or Catan?",
+  "ground_truth": "Pirate's Cove",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Pirate's Cove is the most recent board game released to the public. It was published in Germany as Piratenbucht (1995) and was first published by Franckh-Kosmos Verlag (Kosmos).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pirate's Cove: Pirate's Cove (in German, Piratenbucht) is a board game designed by Paul Randles and Daniel Stahl, originally published in Germany in 2002 by Amigo Spiele, illustrated by Markus Wagner and Swen Papenbrock.  In 2003, Days of Wonder republished the game with a new graphic design from Julien Delval and Cyrille Daujean.  In the game, players play pirate ship captains seeking treasure from islands and bragging rights from defeating other pirates in naval combat.",
+      "BoardGameGeek: BoardGameGeek is an online forum for board gaming hobbyists and a game database that holds reviews, images and videos for over 84,000 different tabletop games, including European-style board games, wargames, and card games.  In addition to the game database, the site allows users to rate games on a 1\u201310 scale and publishes a ranked list of board games.",
+      "Catan: The Settlers of Catan, sometimes shortened to Catan or Settlers, is a multiplayer board game designed by Klaus Teuber and first published in 1995 in Germany by Franckh-Kosmos Verlag (Kosmos) as Die Siedler von Catan.  Players assume the roles of settlers, each attempting to build and develop holdings while trading and acquiring resources.  Players are awarded points as their settlements grow; the first to reach a set number of points, typically 10, is the winner.  The game and its many expansions are also published by Mayfair Games, Filosofia, Capcom, 999 Games, \u039a\u03ac\u03b9\u03c3\u03c3\u03b1, and Devir."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 447,
+    "generation_tokens": 53,
+    "generation_speed": 400.9987168116722,
+    "prompt_eval_speed": 25432.40782885753,
+    "generation_latency_s": 0.22899910004343837,
+    "latency": 1.3095499998889863,
+    "total_prompt_tokens": 523,
+    "total_generation_tokens": 321,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1281358,
+    "stage_rewrite_s": 0.7230680999346077,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07682620000559837,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.28052079991903156,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.22904719994403422,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.3095602999674156,
+    "unaccounted_latency_s": 9.850016795098782e-05,
+    "rewritten_query": "Which board game was published most recently, Pirate's Cove or Catan?\n\nThe original query is: \"Which board game was published most recently, Pirate's Cove or Catan?\" The optimized query output includes the following information:\n- \"Most Recent\" - This part of the query indicates that the result should be a search for the most recent version.\n- \"Pirate's Cove\" - This is the name of the board game and it appears to have been published in 2018 or earlier, so this part of the query was not optimized.\n- \"Catan\" - This part of the query indicates that the result should be a search for the most recent version.\n- \"Most Recent\" - This part of the query indicates that the result should be a search for the most recent version.\n- \"Pirate's Cove\" - This is the name of the board game and it appears to have been published in 2018 or earlier, so this part of the query was not optimized.\n- \"Catan\" - This part of the query indicates that the result should be a search for the most recent version.\n- \"Most Recent\" - This part of the query indicates that the result should be a search for the most recent version.",
+    "query_was_rewritten": true
+  }
+}

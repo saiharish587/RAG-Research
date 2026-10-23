@@ -1,0 +1,42 @@
+{
+  "question_id": "Q120",
+  "query": "Are Daryl Hall and Gerry Marsden both musicians?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "No, Daryl Hall and Gerry Marsden are not both musicians. Daryl Hall is the lead vocalist of the band Hall & Oates, while Gerry Marsden was a musician who played guitar and wrote songs for the band.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gerry Marsden: Gerard Marsden MBE (born 24 September 1942) is an English musician and television personality, best known for being leader of the British Merseybeat band Gerry and the Pacemakers.",
+      "Daryl Hall: Daryl Franklin Hohl (born October 11, 1946), known professionally as Daryl Hall, is an American rock, R&B, and soul singer; keyboardist, guitarist, songwriter, and producer, best known as the co-founder and lead vocalist of Hall & Oates (with guitarist and songwriter John Oates).",
+      "Hall &amp; Oates: Daryl Hall and John Oates, often referred to as Hall & Oates, are an American musical duo from Philadelphia.  Daryl Hall is generally the lead vocalist of the pairing.  John Oates primarily plays electric guitar and provides backing vocals.  The two write most of the songs they perform, either separately or in collaboration.  They achieved their greatest fame from the late 1970s to the mid-1980s with a fusion of rock and roll and rhythm and blues."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 52,
+    "generation_speed": 255.80228451117168,
+    "prompt_eval_speed": 41731.2661498708,
+    "generation_latency_s": 1.0189143000170588,
+    "latency": 3.480053500039503,
+    "total_prompt_tokens": 396,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1263281,
+    "stage_rewrite_s": 1.1747801000019535,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.058663500007242,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22758399997837842,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.018947200034745,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.480061300098896,
+    "unaccounted_latency_s": 8.71000811457634e-05,
+    "rewritten_query": "No, Daryl Hall and Gerry Marsden are not both musicians.",
+    "query_was_rewritten": true
+  }
+}

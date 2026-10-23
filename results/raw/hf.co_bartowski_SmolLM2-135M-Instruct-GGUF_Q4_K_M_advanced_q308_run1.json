@@ -1,0 +1,42 @@
+{
+  "question_id": "Q308",
+  "query": "What prolific English engineer, who died on 15 December 1857, contributed to the advent of the hot air engine by way of their open cycle devices?",
+  "ground_truth": "George Cayley",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The author of the article is Francis Bacon. He was a philosopher, statesman, and scientist who served as Attorney General and Lord Chancellor of England from October 1529 to 16 May 1532. His works include \"Utopia\", published in 1516, which discussed the political system of an imaginary ideal island nation.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George Cayley: Sir George Cayley, 6th Baronet (27 December 1773 \u2013 15 December 1857) was a prolific English engineer and is one of the most important people in the history of aeronautics.  Many consider him to be the first true scientific aerial investigator and the first person to understand the underlying principles and forces of flight.",
+      "Thomas More: Sir Thomas More ( ; 7 February 14786 July 1535), venerated by Roman Catholics as Saint Thomas More, was an English lawyer, social philosopher, author, statesman and noted Renaissance humanist.  He was also a councillor to Henry VIII, and Lord High Chancellor of England from October 1529 to 16 May 1532.  He wrote \"Utopia\", published in 1516, about the political system of an imaginary ideal island nation.",
+      "Francis Bacon: Francis Bacon, 1st Viscount St Alban, {'1': \", '2': \", '3': \", '4': \"} ( ; 22 January 15619 April 1626) was an English philosopher, statesman, scientist, jurist, orator, and author.  He served both as Attorney General and as Lord Chancellor of England.  After his death, he remained extremely influential through his works, especially as philosophical advocate and practitioner of the scientific method during the scientific revolution."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 400,
+    "generation_tokens": 75,
+    "generation_speed": 376.46255703407735,
+    "prompt_eval_speed": 21558.69354317128,
+    "generation_latency_s": 0.29890360007993877,
+    "latency": 0.6429906999692321,
+    "total_prompt_tokens": 495,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13315549999999998,
+    "stage_rewrite_s": 0.16186949994880706,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07648779998999089,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10561209998559207,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.29893670009914786,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6429999000392854,
+    "unaccounted_latency_s": 9.460002183914185e-05,
+    "rewritten_query": "The prolific English engineer, who died on 15 December 1857, was Thomas Newcomen.",
+    "query_was_rewritten": true
+  }
+}

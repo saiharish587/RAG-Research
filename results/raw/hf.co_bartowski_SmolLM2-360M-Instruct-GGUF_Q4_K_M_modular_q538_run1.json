@@ -1,0 +1,49 @@
+{
+  "question_id": "Q538",
+  "query": "Jack Alfred Evans played with a football club team that is based in what city in Australia?",
+  "ground_truth": "Melbourne",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Jack Alfred Evans played with St Kilda, an Australian rules football team based in Victoria, Australia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jack Evans (footballer, born 1930): Jack Alfred Evans (born 11 October 1930) was an Australian rules footballer who played with St Kilda in the Victorian Football League (VFL).",
+      "Tim Evans (footballer): Tim Evans (born 13 August 1953 in Tasmania) is a former Australian rules football player who played for Port Adelaide in the South Australian National Football League (SANFL) and Geelong in the Victorian Football League (VFL).",
+      "Collingwood Football Club: The Collingwood Football Club, nicknamed the Magpies or less formally the Pies, is an Australian rules football club which plays in the Australian Football League (AFL).  Formed in 1892, the club was named after the inner-Melbourne suburb and city of Collingwood, and was originally based at Victoria Park in Abbotsford; the club is now based in the nearby Melbourne Sports and Entertainment Precinct in Melbourne, playing its home games at the Melbourne Cricket Ground and with its training and administrative base at Olympic Park Oval and the Holden Centre."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 313,
+    "generation_tokens": 21,
+    "generation_speed": 210.83067285103306,
+    "prompt_eval_speed": 12122.855261629033,
+    "generation_latency_s": 0.23574309994000942,
+    "latency": 0.6809274000115693,
+    "total_prompt_tokens": 449,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2360032,
+    "stage_route_s": 0.12113270000554621,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2637580999871716,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060124099953100085,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.970002919435501e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23577449994627386,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6809368999674916,
+    "unaccounted_latency_s": 9.830005001276731e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Jack Alfred Evans played with a football club team based in Sydney, Australia\"",
+      "\"Jack Alfred Evans played with a football club team based in Melbourne, Australia\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

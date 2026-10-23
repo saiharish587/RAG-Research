@@ -1,0 +1,49 @@
+{
+  "question_id": "Q349",
+  "query": "Wheat salad is composed typically of what red fruit?",
+  "ground_truth": "tomato",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Wheat salad is typically composed of wheat.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Apple chat fruit MLO: Apple chat fruit MLO, also known as \"apple small fruit\" and \"chat fruit of apple\", is a mycoplasma-like organism (MLO) that affects only apple trees, specifically Lord Lambourne and Tydeman's Early Worcester, though in North America, Turley, Winesap, Jonathan, and Golden Delicious can be affected.  Symptoms include delayed fruit development, smaller green apples during harvest, delayed fruit drop, and circular spots on the apples themselves.  The disease is widespread throughout Europe, especially England and Wales, but is also present in parts of North America, South Africa, and New Zealand.  There are no known insect vectors and no transmission method other than grafting is known.  The disease itself is not fully systemic and virulency is varied among individuals.",
+      "FooDB: FooDB (The Food Database) is a freely available, open-access database containing chemical (micronutrient and macronutrient) composition data on common, unprocessed foods.  It also contains extensive data on flavour and aroma constituents, food additives as well as positive and negative health effects associated with food constituents.  The database contains information on more than 28,000 chemicals found in more than 1000 raw or unprocessed food products.  The data in FooDB was collected from many sources including textbooks, scientific journals, on-line food composition or nutrient databases, flavour and aroma databases and various on-line metabolomic databases.  This literature-derived information has been combined with experimentally derived data measured on thousands of compounds from more than 40 very common food products through the Alberta Food Metabolome Project which is led by Dr. David Wishart of the University of Alberta.  Users are able to browse through the FooDB data by food source, name, descriptors or function.  Chemical structures and molecular weights for compounds in FooDB may be searched via a specialized chemical structure search utility.  Users are able to view the content of FooDB using two different \u201cViewing\u201d options: FoodView, which lists foods by their chemical compounds, or ChemView, which lists chemicals by their food sources.",
+      "Tomato: The tomato (see pronunciation) is the edible, often red, fruit of the plant \"Solanum lycopersicum\", commonly known as a tomato plant.  The plant belongs to the nightshade family, which is called \"Solanaceae\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 571,
+    "generation_tokens": 10,
+    "generation_speed": 217.2826630163179,
+    "prompt_eval_speed": 57283.30658105939,
+    "generation_latency_s": 0.17764979996718466,
+    "latency": 0.5143649999517947,
+    "total_prompt_tokens": 691,
+    "total_generation_tokens": 31,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2381607,
+    "stage_route_s": 0.10862939991056919,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17130919999908656,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05660149990580976,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3600058890879154e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1776874999050051,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5143763999221846,
+    "unaccounted_latency_s": 9.590014815330505e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Red Fruit\"",
+      "Query 2: \"Cranberry\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

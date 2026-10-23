@@ -1,0 +1,42 @@
+{
+  "question_id": "Q367",
+  "query": "What is the name of this Fortune 500 American company that operates a chain of retail home improvement stores that sponsored House Rules?",
+  "ground_truth": "Lowe's",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The name of this Fortune 500 American company that operated a chain of retail home improvement stores that sponsored House Rules was \"Lowe's\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lowe's: Lowe's Companies, Inc. is a Fortune 500 American company that operates a chain of retail home improvement and appliance stores in the United States, Canada, and Mexico.  Founded in 1946 in North Wilkesboro, North Carolina, the chain has 1,840 stores in the United States, Canada, and Mexico.",
+      "House Rules (2003 TV series): House Rules is an American television show hosted by Mark L. Walberg that aired on TBS in 2003.  It featured three couples that competed in a 13-week remodeling contest.  After doing most of the technical work, the winning team received the home they had just remodeled.  The show was sponsored by Lowe's.",
+      "Chain store: Chain store(s) or retail chain are retail outlets that share a brand and central management, and usually have standardized business methods and practices.  In retail, dining, and many service categories, chain businesses have come to dominate the market in many parts of the world.  A franchise retail establishment is one form of chain store.  In 2004, the world's largest retail chain, Wal-Mart, became the world's largest corporation based on gross sales."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 349,
+    "generation_tokens": 31,
+    "generation_speed": 427.94036443953615,
+    "prompt_eval_speed": 51665.43301258327,
+    "generation_latency_s": 0.1622747000074014,
+    "latency": 0.5350010000402108,
+    "total_prompt_tokens": 436,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1387651,
+    "stage_rewrite_s": 0.1547244000248611,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08003730000928044,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13783080002758652,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16232279990799725,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5350368999643251,
+    "unaccounted_latency_s": 0.00012250000145286322,
+    "rewritten_query": "The name of this Fortune 500 American company that runs a chain of retail home improvement stores, sponsored by House Rules.",
+    "query_was_rewritten": true
+  }
+}

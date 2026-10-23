@@ -1,0 +1,49 @@
+{
+  "question_id": "Q322",
+  "query": "What is the international football competition for women that Liu Ailing played in the 1991,1995, 1999 editions?",
+  "ground_truth": "international football competition",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The international football competition for women that Liu Ailing played in the 1991, 1995, and 1999 editions is the FIFA Women's World Cup.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "FIFA Women's World Cup: The FIFA Women's World Cup is an international football competition contested by the senior women's national teams of the members of \"F\u00e9d\u00e9ration Internationale de Football Association\" (FIFA), the sport's global governing body.  The competition has been held every four years since 1991, when the inaugural tournament, then called the Women's World Championship, was held in China.",
+      "Hong Kong national football team: The Hong Kong national football team (), represents Hong Kong in international association football competitions such as the FIFA World Cup, AFC Asian Cup and East Asian Football Championship.  The team is represented and supervised by the Hong Kong Football Association, the governing body for football in Hong Kong.",
+      "EAFF E-1 Football Championship (women): EAFF E-1 Football Championship is an international football competition in East Asia for national teams of the East Asian Football Federation (EAFF).  The competition between women's national teams is held alongside men's competition."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 305,
+    "generation_tokens": 43,
+    "generation_speed": 424.3644402336965,
+    "prompt_eval_speed": 45339.67593280809,
+    "generation_latency_s": 0.21541760000400245,
+    "latency": 0.9790854000020772,
+    "total_prompt_tokens": 471,
+    "total_generation_tokens": 269,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2203197,
+    "stage_route_s": 0.2774419999914244,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4269314999692142,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05909090000204742,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.48000680282712e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21546889992896467,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9790973999770358,
+    "unaccounted_latency_s": 0.00010990002192556858,
+    "route": "rag",
+    "router_raw": "The International Football Competition for Women (IFCW) was a prestigious international football competition held between 1991 and 2003. It was sponsored by the International Football Association Board (IFAB), which aimed to promote women's participation in professional football. The IFCW was an annual event that took place annually, with each year featuring a different edition of the competition.",
+    "sub_queries": [
+      "The International Football Confederation (FIFC) has a division of its competitions into two main divisions. The International Football Association Board (IFAB), which is the governing body for international football, and the International Football League (IFL). The IFAB organizes the 1991 edition of the FIFA World Cup, while the IFL organizes the 2014 edition.",
+      "The IFAB has a division that focuses on women's international football, with the Women's World Cup and the Women's World Cup of 2015 being two of its main divisions. The IFL is responsible for organizing the 2016 edition of the FIFA World Cup."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q306",
+  "query": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+  "ground_truth": "1901",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The 1984 film \"Marlene\" is a documentary about an actress born in 1901.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marlene (1984 film): Marlene, also known in Germany as Marlene Dietrich - Portr\u00e4t eines Mythos, is a 1984 documentary film made by Maximilian Schell about the legendary film star Marlene Dietrich.  It was made by Bayerischer Rundfunk (BR) and OKO-Film and released by Futura Film, Munich and Alive Films, (USA).",
+      "Marlene Dietrich: Marie Magdalene \"Marlene\" Dietrich ( , ] ; 27 December 1901 \u2013 6 May 1992) was a German actress and singer who held both German and American citizenship.  Throughout her unusually long career, which spanned from the 1910s to the 1980s, she maintained popularity by continually reinventing herself.",
+      "Olivia de Havilland: Dame Olivia Mary de Havilland, {'1': \", '2': \", '3': \", '4': \"} ( ; born July 1, 1916) is a retired American actress.  Her career spanned from 1935 to 1988.  She appeared in 49 feature films, and was one of the leading movie stars during the golden age of Classical Hollywood.  She is best known for her early screen performances in \"The Adventures of Robin Hood\" (1938) and \"Gone with the Wind\" (1939), and her later award-winning performances in \"To Each His Own\" (1946), \"The Snake Pit\" (1948), and \"The Heiress\" (1949)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 27,
+    "generation_speed": 213.2853046425101,
+    "prompt_eval_speed": 53179.89097516656,
+    "generation_latency_s": 0.24917950003873557,
+    "latency": 0.64123720000498,
+    "total_prompt_tokens": 585,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2322594,
+    "stage_route_s": 0.10771540005225688,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2296951999887824,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05446369992569089,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.2700011767447e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24921929999254644,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6412489999784157,
+    "unaccounted_latency_s": 9.34000127017498e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Search Query 1: Year of Birth for Marlene Dietrich",
+      "Search Query 2: Documentary Released Year for Marlene Dietrich"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

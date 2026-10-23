@@ -1,0 +1,42 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, Yingkou is not the same level as Fuding. Yingkou is a prefecture-level city in northeastern Ningbo province, while Fuding is a county-level city in northeastern Zhejiang province. The airport for Yingkou and Fuding was inaugurated on February 3, 2016, when the inaugural China Eastern Airlines flight landed from Shanghai Pudong International Airport. The total investment for the project was estimated at CNY 8.94 billion.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "Yingkou Lanqi Airport: Yingkou Lanqi Airport (IATA: YKH,\u00a0ICAO: ZYYK) is an airport serving the city of Yingkou in Liaoning province of Northeast China.  It is located in Lanqi Village in Xishi District of Yingkou, about 17 km from the city center by road.  The airport opened on 3 February 2016, when the inaugural China Eastern Airlines flight landed from Shanghai Pudong International Airport.  The total investment for the project was estimated at CNY 8.94 billion."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 288,
+    "generation_tokens": 107,
+    "generation_speed": 417.00930281500763,
+    "prompt_eval_speed": 42818.911685994644,
+    "generation_latency_s": 0.35703620000276715,
+    "latency": 0.7786373000126332,
+    "total_prompt_tokens": 362,
+    "total_generation_tokens": 130,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1492209,
+    "stage_rewrite_s": 0.14595430006738752,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07250499993097037,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20302350004203618,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.357070800033398,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7786463999655098,
+    "unaccounted_latency_s": 9.31998947635293e-05,
+    "rewritten_query": "Yingkou and Fuding are two distinct levels of city, with different characteristics and implications for tourism.",
+    "query_was_rewritten": true
+  }
+}

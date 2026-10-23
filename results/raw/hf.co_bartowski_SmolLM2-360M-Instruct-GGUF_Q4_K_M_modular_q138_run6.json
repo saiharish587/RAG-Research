@@ -1,0 +1,49 @@
+{
+  "question_id": "Q138",
+  "query": "During Siege of Bharatpur, which Commander-in-Chief of Ireland and Commander-in-Chief of India contributed to the storming of the castle?",
+  "ground_truth": "Lord Combermere",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Johnny Kerr contributed to the storming of the castle during the Siege of Bharatpur.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Siege of Bharatpur (1805): The Siege of Bharatpur took place between 2 January and 22 February 1805 in the Indian Princely state of Bharatpur (now part of Rajasthan), during the Second Anglo-Maratha War.  Forces of the British East India Company, led by General Gerard Lake, were four times repulsed in attempts to storm the fortress.  The victory by Bharatpur backed by the Maratha Empire was an embarrassing defeat for the British.",
+      "Johnny Kerr: John Graham \"Red\" Kerr (July 17, 1932 \u2013 February 26, 2009) was an American basketball player, coach, and color commentator.  He played in the NBA from 1954 to 1966, mainly as a member of the Syracuse Nationals.  He later held several coaching and administrative positions before embarking on a thirty-three year career as a television color commentator for the Chicago Bulls.",
+      "Denys Roberts: Dato Seri Paduka Sir Denys Tudor Emil Roberts, KBE, SPMB, QC (Traditional Chinese: \u7f85\u5f3c\u6642\u7235\u58eb, 19 January 1921 \u2013 20 May 2013) was a British colonial official and judge.  Joining the colonial civil service as a Crown Counsel in Nyasaland (now Malawi) in 1953, he became Attorney General of Gibraltar in 1960.  In 1962, he was posted to Hong Kong as Solicitor-General, and was successively promoted to Attorney-General in 1966, Colonial Secretary/Chief Secretary in 1973 and Chief Justice in 1979.  He was the first and only Attorney-General to become both Colonial Secretary (and Chief Secretary) in Hong Kong.  Never having been a judge before, he was appointed as Chief Justice of the Supreme Court in 1979 and was the first and only Colonial Secretary (and Chief Secretary) of Hong Kong to receive such appointment."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 545,
+    "generation_tokens": 20,
+    "generation_speed": 237.36055067647757,
+    "prompt_eval_speed": 70413.43669250645,
+    "generation_latency_s": 0.2044743999140337,
+    "latency": 0.5104803000576794,
+    "total_prompt_tokens": 709,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2391395,
+    "stage_route_s": 0.10573120007757097,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14276940003037453,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05731439997907728,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.380006041377783e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20452060003299266,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5104918000288308,
+    "unaccounted_latency_s": 0.00010289985220879316,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Sir John Kerr\"",
+      "\"Lord Roberts\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

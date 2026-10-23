@@ -1,0 +1,49 @@
+{
+  "question_id": "Q519",
+  "query": "Where is the academy, for which Joseph D. Stewart was appointed Superintendent, located?",
+  "ground_truth": "Kings Point, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The academy, for which Joseph D. Stewart was appointed Superintendent, is located in Malone, New York.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Joseph D. Stewart: Joseph D. Stewart, also known affectionately by the midshipmen of the United States Merchant Marine Academy as \"Joey D,\" (born July 9, 1942) is a retired United States Marine Corps major general, who after his retirement from the Marine Corps, was appointed as Superintendent of the United States Merchant Marine Academy (USMMA) on August 1, 1998.  He retired from the U.S. Maritime Service with the rank of vice admiral on September 30, 2008.",
+      "Winfield W. Scott Jr.: Lieutenant General Winfield W. Scott Jr. (born December 10, 1927) was the tenth Superintendent of the United States Air Force Academy in Colorado.  Thereafter, he was appointed Superintendent of the New Mexico Military Institute, a public military high school and junior college that is supported by the State of New Mexico, located in Roswell, New Mexico.",
+      "Franklin Academy (New York): Franklin Academy High School (commonly called Franklin Academy or FA) is a public high school located in the rural village of Malone, New York that enrolls students from Malone and surrounding communities in northern Franklin County such as Bangor, Belmont, Burke, Constable, Duane and Westville.  With an enrollment of around 800 students in Grades 9-12, Franklin Academy is one of the larger high schools in the North Country region of Upstate New York and is accredited by the New York State Department of Education."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 401,
+    "generation_tokens": 23,
+    "generation_speed": 370.50162698540544,
+    "prompt_eval_speed": 22927.387078330477,
+    "generation_latency_s": 0.20591299992520362,
+    "latency": 0.7954039999749511,
+    "total_prompt_tokens": 535,
+    "total_generation_tokens": 166,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2389097,
+    "stage_route_s": 0.15148790006060153,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.37899080000352114,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058821900049224496,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.959998816251755e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20595430000685155,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7954158999491483,
+    "unaccounted_latency_s": 0.00010239984840154648,
+    "route": "rag",
+    "router_raw": "The Academy of Joseph D. Stewart was appointed Superintendent of the Academy of Joseph D. Stewart in 1924.",
+    "sub_queries": [
+      "Here are the two search queries that will help you find where Joseph D. Stewart was appointed Superintendent of the Academy:",
+      "Where is Joseph D. Stewart currently residing?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

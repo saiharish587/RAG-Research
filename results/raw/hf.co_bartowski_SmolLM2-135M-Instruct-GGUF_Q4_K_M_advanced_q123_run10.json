@@ -1,0 +1,42 @@
+{
+  "question_id": "Q123",
+  "query": "What's the name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate?",
+  "ground_truth": "The Spiderwick Chronicles",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate is \"Fantastic Beasts and Where to Find Them\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Spiderwick Chronicles (film): The Spiderwick Chronicles is a 2008 American fantasy adventure film based on the bestselling book series of the same name by Holly Black and Tony DiTerlizzi.  It was directed by Mark Waters and stars Freddie Highmore, Sarah Bolger, Mary-Louise Parker, Martin Short, Nick Nolte, and Seth Rogen.  Set in the Spiderwick Estate in New England, it follows the adventures of Jared Grace and his family as they discover a field guide to faeries, battle goblins, mole trolls and other magical creatures.",
+      "Sarah Bolger: Sarah Lee Bolger (born 28 February 1991) is an Irish actress.  She is best known for her roles in the films \"In America\", \"Stormbreaker\", and \"The Spiderwick Chronicles\", as well as her award-winning role as Lady Mary Tudor in the TV series \"The Tudors\", and for guest starring as Princess Aurora in \"Once Upon a Time\".",
+      "Fantastic Beasts and Where to Find Them (film): Fantastic Beasts and Where to Find Them is a 2016 fantasy film directed by David Yates.  It is a prequel to the \"Harry Potter\" film series, and it was produced and written by J. K. Rowling in her screenwriting debut, and inspired by her 2001 book of the same name.  The film stars Eddie Redmayne as Newt Scamander, with Katherine Waterston, Dan Fogler, Alison Sudol, Ezra Miller, Samantha Morton, Jon Voight, Carmen Ejogo, Ron Perlman and Colin Farrell in supporting roles.  It is the first installment in the \"Fantastic Beasts\" series, and the ninth overall in J. K. Rowling's Wizarding World, the franchise that began with the \"Harry Potter\" films."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 491,
+    "generation_tokens": 37,
+    "generation_speed": 375.234521575985,
+    "prompt_eval_speed": 36060.51703877791,
+    "generation_latency_s": 0.19956580002326518,
+    "latency": 0.6066826999885961,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14051750000000002,
+    "stage_rewrite_s": 0.14690920000430197,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08247939997818321,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1776079999981448,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19959929992910475,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6066913999384269,
+    "unaccounted_latency_s": 9.590003173798323e-05,
+    "rewritten_query": "The name of the fantasy film starring Sarah Bolger, featuring a New England family discovering magical creatures around their estate.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q41",
+  "query": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+  "ground_truth": "Scotch Collie",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Manchester Terrier's ancestors include Gordon and Irish Setters. The Manchester Terrier is a breed of dog that originated from the highland regions of Scotland, which are also where the Gordon and Irish Setters were originally bred.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scottish Terrier: The Scottish Terrier (also known as the Aberdeen Terrier), popularly called the Scottie, is a breed of dog.  Initially one of the highland breeds of terrier that were grouped under the name of \"Skye Terrier\", it is one of five breeds of terrier that originated in Scotland, the other four being the modern Skye, Cairn, Dandie Dinmont, and West Highland White Terriers.  They are an independent and rugged breed with a wiry outer coat and a soft dense undercoat.  The First Earl of Dumbarton nicknamed the breed \"the diehard\".  The modern breed is said to be able to trace its lineage back to a single female, named Splinter II.",
+      "Scotch Collie: The Scotch Collie is a landrace breed of dog which originated from the highland regions of Scotland.  The breed consisted of both the long-haired (now known as Rough) Collie and the short-haired (now known as Smooth) Collie.  It is generally believed to have descended from a variety of ancient herding dogs, some dating back to the Roman occupation, which may have included Roman Cattle Dogs, Native Celtic Dogs and Viking Herding Spitzes.  Other ancestors include the Gordon and Irish Setters.",
+      "Manchester Terrier: The Manchester Terrier is a breed of dog of the smooth-haired terrier type."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 47,
+    "generation_speed": 234.32397533116958,
+    "prompt_eval_speed": 47028.173101895154,
+    "generation_latency_s": 0.3200264999177307,
+    "latency": 0.7588468999601901,
+    "total_prompt_tokens": 523,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23285440000000002,
+    "stage_route_s": 0.10489620000589639,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27770720003172755,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056002700002864,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6900084018707275e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.32007110002450645,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7588595999404788,
+    "unaccounted_latency_s": 0.00012629979755729437,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Manchester Terrier is an ancestor of both the Scottish Collie and the Gordon Setter.",
+      "Query 2: The Scottish Collie is an ancestor of both the Manchester Terrier and the Gordon Setter."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

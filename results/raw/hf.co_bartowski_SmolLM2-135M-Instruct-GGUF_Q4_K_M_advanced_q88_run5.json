@@ -1,0 +1,42 @@
+{
+  "question_id": "Q88",
+  "query": "Where are Teide National Park and Garajonay National Park located?",
+  "ground_truth": "Canary Islands, Spain",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Teide National Park is located in Tenerife (Canary Islands) Spain.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Teide National Park: Teide National Park (Spanish: \"Parque nacional del Teide\" , ] ) is a national park located in Tenerife (Canary Islands, Spain).",
+      "Garajonay National Park: Garajonay National Park (Spanish: \"Parque nacional de Garajonay\" , ] ) is located in the center and north of the island of La Gomera, one of the Canary Islands (Spain).  It was declared a national park in 1981 and a World Heritage Site by UNESCO in 1986.  It occupies 40 km (15 sq mi) and it extends into each of the six municipalities on the island.",
+      "List of U.S. National Parks by elevation: This is a list of United States National Parks by elevation.  Most of America's national parks are located in mountainous areas.  Even among those located close to the ocean, not all are flat.  Those few that are low-lying preserve important natural habitats that could never exist at high altitude.  Several national parks protect deep canyons with great vertical relief.  There are also three national parks whose primary features are caves, the depths of which are still being explored."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 326,
+    "generation_tokens": 18,
+    "generation_speed": 411.55086082721726,
+    "prompt_eval_speed": 47927.080270508675,
+    "generation_latency_s": 0.1298672000411898,
+    "latency": 0.5278247999958694,
+    "total_prompt_tokens": 401,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14041900000000002,
+    "stage_rewrite_s": 0.15330519992858171,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07790610007941723,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1666103999596089,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1299160000635311,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5278357000788674,
+    "unaccounted_latency_s": 9.870005305856466e-05,
+    "rewritten_query": "The two national parks, Teide National Park and Garajonay National Park, are located in the Pacific Ocean.",
+    "query_was_rewritten": true
+  }
+}

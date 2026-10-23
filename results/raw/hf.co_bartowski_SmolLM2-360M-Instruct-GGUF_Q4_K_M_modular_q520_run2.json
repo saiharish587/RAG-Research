@@ -1,0 +1,49 @@
+{
+  "question_id": "Q520",
+  "query": "James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?",
+  "ground_truth": "Lord Chancellor of England",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "James Spedding was primarily known for his role as the editor of the works of Francis Bacon, a prominent English philosopher, statesman, scientist, jurist, orator, and author. He served as the Attorney General of New South Wales and also held the position of Lord Chancellor of England before his death in 1626.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Spedding: James Spedding (28 June 1808 \u2013 9 March 1881) was an English author, chiefly known as the editor of the works of Francis Bacon.",
+      "Attorney General of New South Wales: The Attorney General of New South Wales, in formal contexts also Attorney-General or Attorney General for New South Wales and usually known simply as the Attorney General, is a minister in the Government of New South Wales who has responsibility for the administration of justice in New South Wales, Australia.  In addition, the Attorney General is one of the Law Officers of the Crown.  Along with the subordinate Solicitor General, Crown Advocate, and Crown Solicitor, the Attorney General serves as the chief legal and constitutional adviser of the Crown and Government of New South Wales.",
+      "Francis Bacon: Francis Bacon, 1st Viscount St Alban, {'1': \", '2': \", '3': \", '4': \"} ( ; 22 January 15619 April 1626) was an English philosopher, statesman, scientist, jurist, orator, and author.  He served both as Attorney General and as Lord Chancellor of England.  After his death, he remained extremely influential through his works, especially as philosophical advocate and practitioner of the scientific method during the scientific revolution."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 362,
+    "generation_tokens": 68,
+    "generation_speed": 235.6512638531754,
+    "prompt_eval_speed": 13854.86834047765,
+    "generation_latency_s": 0.4391029999824241,
+    "latency": 0.7907296000048518,
+    "total_prompt_tokens": 514,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.25399879999999997,
+    "stage_route_s": 0.1070497001055628,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18960759998299181,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05469230003654957,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.220000796020031e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4391512000001967,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7907449000049382,
+    "unaccounted_latency_s": 0.0001827998785302043,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"James Spedding, Editor of Works by John Smith\"",
+      "\"John Smith, Attorney General\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

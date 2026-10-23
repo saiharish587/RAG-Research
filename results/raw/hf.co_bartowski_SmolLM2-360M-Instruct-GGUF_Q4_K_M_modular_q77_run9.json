@@ -1,0 +1,49 @@
+{
+  "question_id": "Q77",
+  "query": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+  "ground_truth": "Ann",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The middle name of the actress who plays Bobbi Bacha in Suburban Madness is Panabaker.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bobbi Bacha: Bobbi Bacha is a Texas Private Investigator portrayed in 2004 TV Sony Pictures Movie \"Suburban Madness\" played by actress Sela Ward.  Bobbi Bacha also was involved and worked on the case of New York millionaire Robert Durst who was charged with murder in Galveston, Texas for killing his neighbor Morris Black but was found not guilty by a Galveston County Jury.",
+      "Suburban Madness: Suburban Madness is an American crime drama television film, based on a true story, starring Sela Ward as PI Bobbi Bacha of Blue Moon Investigations.  It aired on CBS on October 3, 2004.",
+      "Danielle Panabaker: Danielle Nicole Panabaker (born September 19, 1987) is an American actress.  She began acting as a teenager and first came to prominence for her roles in the Disney films \"Stuck in the Suburbs\" (2004), \"Sky High\" (2005) and \"Read It and Weep\" (2006), the latter alongside her younger sister Kay Panabaker, and in the HBO miniseries \"Empire Falls\" (2005)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 339,
+    "generation_tokens": 23,
+    "generation_speed": 243.4377646062659,
+    "prompt_eval_speed": 47352.98226009219,
+    "generation_latency_s": 0.21198380005080253,
+    "latency": 0.5036318000638857,
+    "total_prompt_tokens": 479,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21926299999999999,
+    "stage_route_s": 0.09128109994344413,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14835120004136115,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05183629994280636,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.130000110715628e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21202119998633862,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5036432000342757,
+    "unaccounted_latency_s": 9.28001245483756e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bobbi Bacha\"",
+      "\"Suburban Madness actress\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

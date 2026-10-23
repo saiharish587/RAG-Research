@@ -1,0 +1,49 @@
+{
+  "question_id": "Q407",
+  "query": "Which magazine is older, Gallery or Dime Magazine?",
+  "ground_truth": "arose on the \"Playboy\" magazine pattern in the 1970s.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Dime Magazine is older than Gallery.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dime Magazine: Dime Magazine is an American basketball magazine that began circulation in 2001.  The magazine publishes six issues a year for its worldwide readership, as well as a handful of editions of \"Dime China\", a Chinese-language version consisting of regular \"Dime\" content translated from English and original content from editorial staff in China.  It makes an appearance as an endorsement in \"NBA 2K12\", and \"NBA 2K13\".  It is owned by Uproxx itself a brand of Woven Digital.",
+      "Dime novel: The dime novel is a form of late 19th-century and early 20th-century U.S. popular fiction issued in series of inexpensive paperbound editions.  The term \"dime novel\" has been used as a catchall term for several different but related forms, referring to dime novels, story papers, five- and ten-cent weeklies, \"thick book\" reprints, and sometimes early pulp magazines.  The term was used as a title as late as 1940, in the short-lived pulp magazine \"Western Dime Novels\".  Dime novels are the antecedent of today's mass-market paperbacks, comic books, television shows and movies based on dime-novel genres.  In the modern age, the term \"dime novel\" has been used to refer to quickly written, lurid potboilers, usually as a pejorative to describe a sensationalized but superficial literary work.",
+      "Paper (magazine): Paper, stylized as PAPER, is a New York City-based independent magazine focusing on fashion, popular culture, nightlife, music, art and film.  Past cover models include Kim Kardashian, Demi Lovato, Katy Perry, Miley Cyrus, Prince, CL, and Jennifer Lopez."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 462,
+    "generation_tokens": 9,
+    "generation_speed": 235.18958894086288,
+    "prompt_eval_speed": 59844.55958549223,
+    "generation_latency_s": 0.15904119994957,
+    "latency": 0.47349969996139407,
+    "total_prompt_tokens": 584,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23122340000000002,
+    "stage_route_s": 0.10597059992142022,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15089380007702857,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0574239999987185,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.580007564276457e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1590742999687791,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4735088999150321,
+    "unaccounted_latency_s": 9.089987725019455e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The New Yorker\"",
+      "\"Dime Magazines\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

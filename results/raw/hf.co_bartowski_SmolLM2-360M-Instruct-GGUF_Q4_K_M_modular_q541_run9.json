@@ -1,0 +1,49 @@
+{
+  "question_id": "Q541",
+  "query": "Cardinal Pole Roman Catholic School was named after the last Roman Catholic to hold what position?",
+  "ground_truth": "Archbishop of Canterbury",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The last Roman Catholic to hold a position is Cardinal Pole.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "History of Tufts University: The history of Tufts University, originally Tufts College, can be traced back to 1847 when the Universalist Church set up convention for the creation of a university for the parish.  In 1852, the college was established when Boston businessman Charles Tufts donated 20 acres of land to the church to establish the college.  It is the second oldest college that was founded in the Boston area.  .  During the 19th century the college grew.  The official college seal, bearing the motto Pax et Lux (Peace and Light) was adopted in 1857.  The school colors of brown and blue were selected in 1876.  Tufts' mascot became Jumbo when P.T. Barnum gave a natural history museum to the university.",
+      "Pontifical Gregorian University: The Pontifical Gregorian University (Italian: \"Pontificia Universit\u00e0 Gregoriana\" ; also known as the Gregoriana) is a pontifical university located in Rome, Italy.  It was originally a part of the Roman College founded in 1551 by Saint Ignatius of Loyola, and included all grades of schooling.  The university division of philosophy and theology of the Roman College was given Papal approval in 1556, making it the first university founded by the Society of Jesus (Jesuits).  In 1584 the Roman College was given a grandiose new home by Pope Gregory XIII, after whom it was renamed.  It was already making its mark not only in sacred but also in natural science.",
+      "William Penn University: William Penn University is a private, liberal arts university in Oskaloosa, Iowa, United States.  It was founded by members of the Religious Society of Friends (Quakers) in 1873 as Penn College.  In 1933, the name was changed to William Penn College, and finally to William Penn University in 2000."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 501,
+    "generation_tokens": 13,
+    "generation_speed": 230.18627381542603,
+    "prompt_eval_speed": 66764.39232409382,
+    "generation_latency_s": 0.17872990004252642,
+    "latency": 0.6957283000228927,
+    "total_prompt_tokens": 635,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2443249,
+    "stage_route_s": 0.11945299990475178,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3411783999763429,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05615449999459088,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7399971410632133e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17879310005810112,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6957414000062272,
+    "unaccounted_latency_s": 0.00010570010636001825,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The name of the school is derived from the fact that it was founded by Cardinal Paul Marcellus in 1897.\"",
+      "\"The school's name is a nod to the late Cardinal Paul Marcellus, who served as its first president and later as its last.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

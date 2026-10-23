@@ -1,0 +1,42 @@
+{
+  "question_id": "Q274",
+  "query": "on 16 January 1995 \"First Knight\" was being filmed at a studio located how far from Windsor ?",
+  "ground_truth": "7 miles",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Pinewood Studios is approximately 20 miles west of central London, which means it is about 34.87 miles (or 57.6 km) away from Windsor.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pinewood Studios: Pinewood Studios is a British film and television studio located approximately 20 mi west of central London, and 7 miles from Windsor.",
+      "Filming of James Bond in the 1990s: Principal photography for the film began on 16 January 1995 and continued until 6 June.  The producers were unable to film at Pinewood Studios, the usual location for Bond films, because it had been reserved for \"First Knight\".  Instead, an old Rolls-Royce factory at the Leavesden Aerodrome in Hertfordshire was converted into a new studio.  The producers later said Pinewood would have been too small.",
+      "Lord Frederick Windsor: Lord Frederick Windsor (Frederick Michael George David Louis; born 6 April 1979), also nicknamed Freddie Windsor, is a British financial analyst, and the only son of Prince and Princess Michael of Kent."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 279,
+    "generation_tokens": 42,
+    "generation_speed": 256.6107825406911,
+    "prompt_eval_speed": 37530.266343825664,
+    "generation_latency_s": 1.0776426000520587,
+    "latency": 3.4770746999420226,
+    "total_prompt_tokens": 365,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1289602,
+    "stage_rewrite_s": 1.1829555000877008,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.083024299936369,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13333720003720373,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0776785999769345,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4770840000128374,
+    "unaccounted_latency_s": 8.87999776750803e-05,
+    "rewritten_query": "First Knight is being filmed at a studio located 20 miles away from Windsor.",
+    "query_was_rewritten": true
+  }
+}

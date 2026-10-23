@@ -1,0 +1,48 @@
+{
+  "question_id": "Q363",
+  "query": "The 37th Disney animated feature film Tarzan features You'll be in my heart by which artist?",
+  "ground_truth": "Phil Collins",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The 37th Disney animated feature film Tarzan features Tony Goldwyn, Minnie Driver, Glenn Close, and Rosie O'Donnell as the main characters. The song \"You'll Be in My Heart\" won both the Academy Award for Best Original Song and the Golden Globe Award for Best Original Song and received a Grammy Award nomination for Best Original Song and a Grammy Award nomination for Best Soundtrack Album.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tarzan (1999 film): Tarzan is a 1999 American animated drama adventure film produced by Walt Disney Feature Animation for Walt Disney Pictures.  The 37th Disney animated feature film and the last film produced during the Disney Renaissance era, it is based on the story \"Tarzan of the Apes\" by Edgar Rice Burroughs, and is the first animated major motion picture version of the \"Tarzan\" story.  Directed by Chris Buck and Kevin Lima with a screenplay by Tab Murphy, Bob Tzudiker, and Noni White, \"Tarzan\" features the voices of Tony Goldwyn, Minnie Driver, Glenn Close, and Rosie O'Donnell with Brian Blessed, Lance Henriksen, Wayne Knight, and Nigel Hawthorne.",
+      "Tarzan (1999 film soundtrack): Tarzan: An Original Walt Disney Records Soundtrack is the soundtrack for the 1999 Disney animated film, \"Tarzan\".  The songs on the soundtrack were composed by Phil Collins, and the instrumental score by Mark Mancina.  The song \"You'll Be in My Heart\" won both the Academy Award for Best Original Song and the Golden Globe Award for Best Original Song and received a Grammy Award nomination for Best Song Written for a Motion Picture, Television or Other Visual Media, while the soundtrack album won a Grammy Award for Best Soundtrack Album.  For his contribution to the soundtrack, Collins received an American Music Award for Favorite Adult Contemporary Artist.",
+      "The Jungle Book (1967 film): The Jungle Book is a 1967 American animated musical adventure film produced by Walt Disney Productions.  Inspired by Rudyard Kipling's book of the same name, it is the 19th Disney animated feature film.  Directed by Wolfgang Reitherman, it was the last film to be produced by Walt Disney, who died during its production.  The plot follows Mowgli, a feral child raised in the Indian jungle by wolves, as his friends Bagheera the panther and Baloo the bear try to convince him to leave the jungle before the evil tiger Shere Khan arrives."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 88,
+    "generation_speed": 415.0845498926912,
+    "prompt_eval_speed": 71484.88830486203,
+    "generation_latency_s": 0.32988850004039705,
+    "latency": 0.6203377000056207,
+    "total_prompt_tokens": 688,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2181034,
+    "stage_route_s": 0.1600845999782905,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.095322500099428,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03488269995432347,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1199964471161366e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.32992819999344647,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6203491999767721,
+    "unaccounted_latency_s": 9.059999138116837e-05,
+    "route": "rag",
+    "router_raw": "The answer to this user question requires retrieving information from internal files/documents, specifically the 37th Disney animated feature film Tarzan.",
+    "sub_queries": [
+      "The answer is: \"Tarzan\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q317",
+  "query": "The northern English anglian Kingdom in the Humber estuary spoke what dialect of english?",
+  "ground_truth": "Northumbrian",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The northern English anglian kingdom in the Humber estuary spoke a West Germanic dialect called Old Northumbrian.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Northumbrian dialect: Northumbrian was a dialect of Old English spoken in the Anglian Kingdom of Northumbria.  Together with Mercian, Kentish and West Saxon, it forms one of the sub-categories of Old English devised and employed by modern scholars.",
+      "Humber: The Humber is a large tidal estuary on the east coast of Northern England.  It is formed at Trent Falls, Faxfleet, by the confluence of the tidal rivers Ouse and Trent.  From there to the North Sea, it forms part of the boundary between the East Riding of Yorkshire on the north bank and Lincolnshire on the south bank.  Although the Humber is an estuary from the point at which it is formed, many maps show it as the River Humber.",
+      "English language: English is a West Germanic language that was first spoken in early medieval England and is now a global \"lingua franca\".  Named after the Angles, one of the Germanic tribes that migrated to England, it ultimately derives its name from the Anglia (Angeln) peninsula in the Baltic Sea.  It is closely related to the Frisian languages, but its vocabulary has been significantly influenced by other Germanic languages, particularly Norse (a North Germanic language), as well as by Latin and Romance languages, particularly French."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 24,
+    "generation_speed": 387.9540274477474,
+    "prompt_eval_speed": 39538.33847560279,
+    "generation_latency_s": 0.17892410000786185,
+    "latency": 0.5151639999821782,
+    "total_prompt_tokens": 482,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22790480000000002,
+    "stage_route_s": 0.12390120001509786,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17682320007588714,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.035325199947692454,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.099996294826269e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17899140005465597,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5151765999617055,
+    "unaccounted_latency_s": 9.539991151541471e-05,
+    "route": "rag",
+    "router_raw": "The southern English Anglians spoke the Lowland Scots language.",
+    "sub_queries": [
+      "The northern English Anglians in the Humber estuary spoke the Northern English dialect of English, which is a variant of the standard English language spoken by the majority of the population."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

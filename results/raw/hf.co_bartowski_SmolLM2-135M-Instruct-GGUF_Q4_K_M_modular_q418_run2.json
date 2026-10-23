@@ -1,0 +1,49 @@
+{
+  "question_id": "Q418",
+  "query": "Which mall, Wilton Mall or Viaport Rotterdam, has had more owners?",
+  "ground_truth": "Viaport Rotterdam",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The mall with more owners is Saratoga Mall. The reason for this is that Saratoga Mall was previously owned by Wilmorite Properties of Rochester, New York in 2004 and was demolished after the mall's demolition in 1999. This means that Saratoga Mall has had more owners than Wilton Mall.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wilton Mall: Wilton Mall at Saratoga (or simply The Wilton Mall) is a regional shopping center, located off Interstate 87 exit 15 in the town of Wilton, directly north of Saratoga Springs, New York.  The mall has a gross leasable area of 763270 sqft .  The mall is anchored by Bon-Ton, Dick's Sporting Goods, JCPenney, HomeGoods, and Sears; in addition, it features a food court and movie theater.  It is currently owned by Macerich, having been purchased from Wilmorite Properties of Rochester, New York in 2004.",
+      "Saratoga Mall: Saratoga Mall was an enclosed shopping mall in Wilton, New York near the city of Saratoga Springs, New York.  It was demolished in 1999.  It was previously known as Pyramid Mall Saratoga and was located on Route 50 just off Exit 15 on I-87 (the Adirondack Northway portion).  After demolition, it was replaced by a big box strip center known as Wilton Square.",
+      "Rotterdam The Hague Airport: Rotterdam The Hague Airport (formerly \"Rotterdam Airport\", \"Vliegveld Zestienhoven\" in Dutch), (IATA: RTM, ICAO: EHRD) located 3 NM north northwest of Rotterdam, is the Netherlands' third largest airport.  It serves the city of Rotterdam as well as The Hague and surroundings.  The airport handled over 1.6 million passengers in 2016 and features scheduled flights to European metropolitan and leisure destinations.  It is also used extensively by general aviation and there are several flying clubs and schools located at the airport."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 464,
+    "generation_tokens": 72,
+    "generation_speed": 395.3524127479189,
+    "prompt_eval_speed": 25006.736728644573,
+    "generation_latency_s": 0.3109477999387309,
+    "latency": 0.8039953000843525,
+    "total_prompt_tokens": 602,
+    "total_generation_tokens": 183,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2272109,
+    "stage_route_s": 0.1264436999335885,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.312558599980548,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0538626000052318,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.469991058111191e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3109816999640316,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8040045000379905,
+    "unaccounted_latency_s": 9.38002485781908e-05,
+    "route": "rag",
+    "router_raw": "The mall in Wilton Mall is more popular due to its location near the center of the city.",
+    "sub_queries": [
+      "Wilton Mall - 2023-05-08 14:07:06",
+      "Viaport Rotterdam - 2023-05-09 14:07:06"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

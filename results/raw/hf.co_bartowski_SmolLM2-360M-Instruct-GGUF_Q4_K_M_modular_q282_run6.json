@@ -1,0 +1,49 @@
+{
+  "question_id": "Q282",
+  "query": "The English actor Kris Marshall played which character in the highly rated comedy-drama television series \"Death in Paradise\"?",
+  "ground_truth": "DI Humphrey Goodman",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Kris Marshall played the role of Detective Inspector Humphrey Goodman in the highly rated comedy-drama television series \"Death in Paradise\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kris Marshall: Kristopher \"Kris\" Marshall (born 11 April 1973) is an English actor.  He has played Nick Harper in \"My Family\", Colin Frissell in the 2003 film \"Love Actually\", Adam in BT Retail adverts from 2005 until 2011, and Dave in the first series of \"Citizen Khan\" (2012).  He played DI Humphrey Goodman in \"Death in Paradise\", taking over the role April 2013 for the show's third series and leaving it in February 2017 in the sixth series.",
+      "Humphrey Goodman: Detective Inspector Humphrey Goodman is a character in the crime drama television series \"Death in Paradise\", portrayed by Kris Marshall.",
+      "Death in Paradise (TV series): Death in Paradise is a British-French crime comedy-drama television series created by Robert Thorogood, starring Ben Miller (series 1\u20133), Kris Marshall (series 3\u20136) & Ardal O'Hanlon (series 6\u2013present).  The programme is a joint UK and French production filmed on the French Caribbean island of Guadeloupe and broadcast on BBC One in the United Kingdom and France 2 in France.  \"Death in Paradise\" has enjoyed high ratings, leading to repeated renewals.  A sixth series began broadcasting on 5 January 2017 and aired its finale on 23 February, with the subsequent DVD release occurring three days later on 27 February 2017.  The show will return in 2018 for a seventh series."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 29,
+    "generation_speed": 238.65759219178196,
+    "prompt_eval_speed": 54405.45316839182,
+    "generation_latency_s": 0.24354209995362908,
+    "latency": 0.7213338000001386,
+    "total_prompt_tokens": 579,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2275679,
+    "stage_route_s": 0.09837190003599972,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.32102999999187887,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05820740002673119,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.439998883754015e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24358260002918541,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7213452999712899,
+    "unaccounted_latency_s": 0.00010969990398734808,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Kris Marshall portrayed the role of Captain Jack Harkness in the highly acclaimed TV series 'Death in Paradise'.\"",
+      "\"The English actor Kris Marshall played the character of Captain Jack Harkness in the highly acclaimed TV series 'Death in Paradise'\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

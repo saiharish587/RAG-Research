@@ -1,0 +1,49 @@
+{
+  "question_id": "Q328",
+  "query": "What studio album did Kanye West record with Roc-A-Fella Records and soul singer Dwele?",
+  "ground_truth": "My Beautiful Dark Twisted Fantasy",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Kanye West recorded My Beautiful Dark Twisted Fantasy with Roc-A-Fella Records and the song \"The College Dropout\" was produced by Jon Brion.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Late Registration: Late Registration is the second studio album by American rapper Kanye West.  It was released on August 30, 2005, through Roc-A-Fella Records.  It was recorded over the course of a year in sessions held across studios in New York City and Hollywood, with West collaborating with American record producer and composer Jon Brion.  The album features guest contributions from Adam Levine, Lupe Fiasco, Jamie Foxx, Common, Jay-Z, Brandy, and Nas, among others.  Its production was notably more lush and elaborate than West's 2004 debut album \"The College Dropout\", as he utilized intricate sampling methods and string orchestration with Brion.  West's lyrics explore both personal and political themes, including poverty, drug trafficking, racism, healthcare, and the blood diamond trade.",
+      "The College Dropout: The College Dropout is the debut studio album by American rapper Kanye West.  It was released on February 10, 2004, through Roc-A-Fella Records.  It was recorded over a period of four years, beginning in 1999.  Prior to the album's release, West had received praise for his production work for artists such as Jay-Z and Talib Kweli, but faced difficulty being accepted as a recording artist in his own right by figures in the music industry.  Nonetheless intent on pursuing a solo career, it was several years before West finally received a record deal from Roc-A-Fella Records.",
+      "My Beautiful Dark Twisted Fantasy: My Beautiful Dark Twisted Fantasy is the fifth studio album by American rapper Kanye West, released, November 22, 2010, by Roc-A-Fella Records.  Following a period of public and legal controversy, West retreated to a \"self-imposed exile\" in Hawaii in 2009.  There, he worked on the album in a communal recording environment that involved numerous contributing musicians and producers.  The album features guest appearances from Bon Iver, Jay-Z, Pusha T, Rick Ross, Kid Cudi, Nicki Minaj, John Legend and more."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 36,
+    "generation_speed": 235.99593562555313,
+    "prompt_eval_speed": 67052.87809688154,
+    "generation_latency_s": 0.27448919997550547,
+    "latency": 0.7414181999629363,
+    "total_prompt_tokens": 692,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22460410000000003,
+    "stage_route_s": 0.09970170003362,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3060115999542177,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06104489997960627,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1699928008019924e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.274522399995476,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7414273000322282,
+    "unaccounted_latency_s": 9.560014586895704e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Roc-A-Fella Records\" - The studio album by Kanye West, featuring soul singer Dwele.",
+      "\"Dwele's Soul\" - The soul singer who recorded the studio album with Kanye West."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

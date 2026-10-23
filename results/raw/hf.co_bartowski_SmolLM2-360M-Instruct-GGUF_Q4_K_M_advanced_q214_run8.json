@@ -1,0 +1,42 @@
+{
+  "question_id": "Q214",
+  "query": "Is the Pakistan fast bowler who joined the Kent County Cricket Club in June, 2011 a left-hand or right-hand batsmans?",
+  "ground_truth": "right-hand",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Pakistan fast bowler who joined the Kent County Cricket Club in June, 2011 is a right-handed batsman.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kent County Cricket Club in 2011: In 2011, Kent County Cricket Club competed in Division Two of the County Championship, Group A of the 40-over Clydesdale Bank 40 and the South Group of the Friends Life t20.  Kent also hosted a Twenty20 match at the St Lawrence Ground against the touring Indians, and a three-day first-class MCC Universities match against Loughborough MCCU, also at the St Lawrence Ground.  It was the second and final season in charge for Director of Cricket Paul Farbrace.  The club captain was former England batsman Rob Key who had been club captain since 2006.  Pakistan fast bowler Wahab Riaz joined Kent as their overseas player in June, and another fast bowler, South African Charl Langeveldt, signed as Kent's second overseas player for the Friends Life t20 competition only.",
+      "Wahab Riaz: Wahab Riaz (Punjabi, Urdu: \u200e ; born 28 June 1985) is a Pakistani cricketer.  He is a left-arm fast bowler and a right-hand batsman.  He frequently bowls at speeds of around 90 mph and has reached 96 mph .",
+      "Ryan McLaren: Ryan McLaren (born 9 February 1983, Kimberley, Cape Province, South Africa) is a South African cricketer, who plays for all formats in international level.  He is a left-handed batsman and a right-arm medium-fast bowler."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 433,
+    "generation_tokens": 30,
+    "generation_speed": 262.3340736983858,
+    "prompt_eval_speed": 57549.1759702286,
+    "generation_latency_s": 0.9734953999286518,
+    "latency": 3.4140825000358745,
+    "total_prompt_tokens": 526,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1201376,
+    "stage_rewrite_s": 1.2572657000273466,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9901948999613523,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19300500000827014,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9735376000171527,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4140979000367224,
+    "unaccounted_latency_s": 9.550002869218588e-05,
+    "rewritten_query": "Is the Pakistan fast bowler who joined the Kent County Cricket Club in June, 2011 a left-hand or right-handed batsman?",
+    "query_was_rewritten": true
+  }
+}

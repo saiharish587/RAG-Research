@@ -1,0 +1,42 @@
+{
+  "question_id": "Q179",
+  "query": "Born on 6 March 1937, this man was also a citizen of the United Kingdom.",
+  "ground_truth": "Alistair Grant",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Born on 6 March 1937, George V was also a British citizen and King of the United Kingdom and the British Dominions, and Emperor of India, from 6 May 1910 until his death in 1936.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "British people: British people, or Britons, are the citizens of the United Kingdom, British Overseas Territories, and Crown dependencies.  British nationality law governs modern British citizenship and nationality, which can be acquired, for instance, by descent from British nationals.  When used in a historical context, \"British\" or \"Britons\" can refer to the Celtic Britons, the indigenous inhabitants of Great Britain and Brittany, whose surviving members are the modern Welsh people, Cornish people and Bretons.",
+      "Neville Chamberlain: Arthur Neville Chamberlain, ( ; 18 March 1869 \u2013 9 November 1940) was a British Conservative politician who served as Prime Minister of the United Kingdom from May 1937 to May 1940.  Chamberlain is best known for his appeasement foreign policy, and in particular for his signing of the Munich Agreement in 1938, conceding the German-speaking Sudetenland region of Czechoslovakia to Germany.  However, when Adolf Hitler later invaded Poland, the UK declared war on Germany on 3 September 1939, and Chamberlain led Britain through the first eight months of World War II.",
+      "George V: George V (George Frederick Ernest Albert; 3 June 1865 \u2013 20 January 1936) was King of the United Kingdom and the British Dominions, and Emperor of India, from 6 May 1910 until his death in 1936."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 55,
+    "generation_speed": 256.93490670927116,
+    "prompt_eval_speed": 13859.575066835516,
+    "generation_latency_s": 1.112751999986358,
+    "latency": 3.521834300016053,
+    "total_prompt_tokens": 476,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12431149999999999,
+    "stage_rewrite_s": 1.2017408999381587,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0442415999714285,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16297790000680834,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1127943999599665,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.521843499969691,
+    "unaccounted_latency_s": 8.90000956133008e-05,
+    "rewritten_query": "Born on 6 March 1937, this man was also a British citizen.",
+    "query_was_rewritten": true
+  }
+}

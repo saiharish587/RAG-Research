@@ -1,0 +1,49 @@
+{
+  "question_id": "Q179",
+  "query": "Born on 6 March 1937, this man was also a citizen of the United Kingdom.",
+  "ground_truth": "Alistair Grant",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Born on 6 March 1937, George V was also a British citizen.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Neville Chamberlain: Arthur Neville Chamberlain, ( ; 18 March 1869 \u2013 9 November 1940) was a British Conservative politician who served as Prime Minister of the United Kingdom from May 1937 to May 1940.  Chamberlain is best known for his appeasement foreign policy, and in particular for his signing of the Munich Agreement in 1938, conceding the German-speaking Sudetenland region of Czechoslovakia to Germany.  However, when Adolf Hitler later invaded Poland, the UK declared war on Germany on 3 September 1939, and Chamberlain led Britain through the first eight months of World War II.",
+      "George V: George V (George Frederick Ernest Albert; 3 June 1865 \u2013 20 January 1936) was King of the United Kingdom and the British Dominions, and Emperor of India, from 6 May 1910 until his death in 1936.",
+      "British people: British people, or Britons, are the citizens of the United Kingdom, British Overseas Territories, and Crown dependencies.  British nationality law governs modern British citizenship and nationality, which can be acquired, for instance, by descent from British nationals.  When used in a historical context, \"British\" or \"Britons\" can refer to the Celtic Britons, the indigenous inhabitants of Great Britain and Brittany, whose surviving members are the modern Welsh people, Cornish people and Bretons."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 20,
+    "generation_speed": 228.4174099749883,
+    "prompt_eval_speed": 13464.101425007688,
+    "generation_latency_s": 0.22367249999660999,
+    "latency": 0.7017005999805406,
+    "total_prompt_tokens": 538,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22735640000000001,
+    "stage_route_s": 0.10615930007770658,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3109598000301048,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06071430002339184,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.529999569058418e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2237308999756351,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7017152999760583,
+    "unaccounted_latency_s": 0.00010659988038241863,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Born on 6 March 1937, this man was also a citizen of the United Kingdom.",
+      "Query 2: Born on 6 March 1937, this man was also a citizen of the United Kingdom."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

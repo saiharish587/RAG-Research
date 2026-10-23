@@ -1,0 +1,42 @@
+{
+  "question_id": "Q111",
+  "query": "Based on a True Story... is an album by which country music star, with the single My Eyes?",
+  "ground_truth": "Blake Shelton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "My Eyes",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "My Eyes (Blake Shelton song): \"My Eyes\" is a song recorded by American country music artist Blake Shelton featuring Gwen Sebastian.  It was released in April 2014 as the fifth single from his seventh studio album, \"Based on a True Story...\".  The song was written by Andrew Dorff, Tommy Lee James and Josh Osborne.",
+      "Based on a True Story...: Based on a True Story\u2026 is the eighth studio album by American country music artist Blake Shelton.  It was released on March 26, 2013 via Warner Bros.  Records and debuted at #3 with a career best for Shelton at nearly 200,000 sold.  The album became the ninth best-selling album of 2013 in the US, earning Shelton a Platinum certification by the RIAA on September 30, 2013.  In 2016, \"Based on a True Story\u2026\" was certified double-platinum by the RIAA.",
+      "Country Music Star No. 1: Country Music Star No. 1 contains recordings of a prestardom Glen Campbell, which were made around 1960\u20131961.  This album, just like the other Starday album Country Soul, was released after Campbell rose to international fame with hits including \"Gentle on My Mind\", \"By the Time I Get to Phoenix\" and \"Wichita Lineman\".  Campbell sued against these releases but eventually settled with Starday."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 407,
+    "generation_tokens": 3,
+    "generation_speed": 321.61234991423675,
+    "prompt_eval_speed": 56394.62380490508,
+    "generation_latency_s": 0.8418659999733791,
+    "latency": 3.3154814000008628,
+    "total_prompt_tokens": 488,
+    "total_generation_tokens": 22,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1239651,
+    "stage_rewrite_s": 1.20812039996963,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0434336999896914,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2219158000079915,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8419179000193253,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3154918999643996,
+    "unaccounted_latency_s": 0.0001047999830916524,
+    "rewritten_query": "Based on a true story, this country music star released a song called \"My Eyes.",
+    "query_was_rewritten": true
+  }
+}

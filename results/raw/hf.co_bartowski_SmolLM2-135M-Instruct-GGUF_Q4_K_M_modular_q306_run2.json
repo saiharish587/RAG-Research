@@ -1,0 +1,48 @@
+{
+  "question_id": "Q306",
+  "query": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+  "ground_truth": "1901",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The 1984 film \"Marlene\" is a documentary about an actress born in 1901, which is the year of the original release.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marlene (1984 film): Marlene, also known in Germany as Marlene Dietrich - Portr\u00e4t eines Mythos, is a 1984 documentary film made by Maximilian Schell about the legendary film star Marlene Dietrich.  It was made by Bayerischer Rundfunk (BR) and OKO-Film and released by Futura Film, Munich and Alive Films, (USA).",
+      "Marlene Dietrich: Marie Magdalene \"Marlene\" Dietrich ( , ] ; 27 December 1901 \u2013 6 May 1992) was a German actress and singer who held both German and American citizenship.  Throughout her unusually long career, which spanned from the 1910s to the 1980s, she maintained popularity by continually reinventing herself.",
+      "Mask (film): Mask is a 1985 American biographical drama film directed by Peter Bogdanovich, starring Cher, Sam Elliott, and Eric Stoltz with supporting roles played by Dennis Burkley, Laura Dern, Estelle Getty, and Richard Dysart.  Cher received the 1985 Cannes Film Festival award for Best Actress.  The film is based on the life and early death of Roy L. \"Rocky\" Dennis, a boy who suffered from craniodiaphyseal dysplasia, an extremely rare disorder known commonly as \"lionitis\" due to the disfiguring cranial enlargements that it causes.  \"Mask\" won the Academy Award for Best Makeup while Cher and Stoltz received Golden Globe nominations for their performances."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 424,
+    "generation_tokens": 36,
+    "generation_speed": 369.6819708156622,
+    "prompt_eval_speed": 60744.985673352436,
+    "generation_latency_s": 0.22063729993533343,
+    "latency": 0.5327356999041513,
+    "total_prompt_tokens": 570,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2202328,
+    "stage_route_s": 0.14020229992456734,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13295290002133697,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038743200013414025,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.290009383112192e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22070049995090812,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5327510999049991,
+    "unaccounted_latency_s": 0.00011019990779459476,
+    "route": "rag",
+    "router_raw": "The movie \"Marlene\" is a documentary about an actress born in 1984.",
+    "sub_queries": [
+      "The movie \"Marlene\" was released on January 2, 1985."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

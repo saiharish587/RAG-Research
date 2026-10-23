@@ -1,0 +1,49 @@
+{
+  "question_id": "Q530",
+  "query": "Iselin Solheim provided vocals in the song released on what date?",
+  "ground_truth": "3 December",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Floor Jansen",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Iselin Solheim: Iselin L\u00f8ken Solheim (born 20 June 1990) is a Norwegian singer and songwriter.  She is known for her vocals in Alan Walker's singles \"Faded\" and \"Sing Me to Sleep\".",
+      "Sing Me to Sleep: \"Sing Me to Sleep\" is a song by Norwegian record producer and DJ Alan Walker.  Incorporating uncredited vocals provided by Norwegian recording artist Iselin Solheim, it was released commercially for digital consumption on 3 June 2016.  Upon release, the recording was generally acclaimed by music critics, with several noticing similarities to the style of its predecessor, \"Faded\".",
+      "Floor Jansen: Floor Jansen (] ; born 21 February 1981 in Goirle) is a Dutch singer, songwriter, and vocal coach.  She is the lead vocalist of Finnish symphonic metal band Nightwish."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 272,
+    "generation_tokens": 5,
+    "generation_speed": 236.7984844896993,
+    "prompt_eval_speed": 32155.101075777282,
+    "generation_latency_s": 0.13999319996219128,
+    "latency": 0.5077980000060052,
+    "total_prompt_tokens": 402,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2222669,
+    "stage_route_s": 0.09365739999338984,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21706309996079654,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05691769998520613,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.870002157986164e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14002539997454733,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5078071999596432,
+    "unaccounted_latency_s": 9.560002945363522e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Iselin Solheim\" - vocals, 2019",
+      "\"Solheim\" - vocals, 2018"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

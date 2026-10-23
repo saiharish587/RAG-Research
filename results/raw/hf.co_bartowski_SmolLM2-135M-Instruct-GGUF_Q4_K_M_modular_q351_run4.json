@@ -1,0 +1,48 @@
+{
+  "question_id": "Q351",
+  "query": "when was the album that includes the song by Dustin Lynch released to country radio on February 17, 2017?",
+  "ground_truth": "September 8, 2017",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Context:\nCurrent Mood: Current Mood is a compilation of songs from American country music artist Dustin Lynch.  It was released on September 8, 2017 via Broken Bow Records.  The album includes the singles \"Seein' Red\" and \"Small Town Boy\", which have both reached number one on the Country Airplay chart.\n\nDustin Lynch (song): \"Seein' Red\" is a song recorded by American country music artist Dustin Lynch.  It was released to country radio on February 17, 2017 as the second single from his third studio album, \"Current Mood\".\n\nSmall Town Boy (drummer): \"Small Town Boy\" is a song recorded by American country music artist Dustin Lynch.  It was released to country radio on July 11, 2016 as the lead single from his third studio album, \"Current Mood\".  The song was written by Kurt Allison, Steve Bogard, Tully Kennedy and Jason Sever.\n\nQuestion: when did the album that includes the song by Dustin Lynch release to country radio on February 17, 2017?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Current Mood: Current Mood is the third studio album by American country music singer Dustin Lynch.  It was released on September 8, 2017, via Broken Bow Records.  The album includes the singles \"Seein' Red\" and \"Small Town Boy\", which have both reached number one on the Country Airplay chart.",
+      "Small Town Boy (song): \"Small Town Boy\" is a song recorded by American country music artist Dustin Lynch.  It was released to country radio on February 17, 2017 as the second single from his third studio album, \"Current Mood\".",
+      "Seein' Red (Dustin Lynch song): \"Seein' Red\" is a song recorded by American country music artist Dustin Lynch.  It was released to country radio on July 11, 2016 as the lead single from his third studio album, \"Current Mood\".  The song was written by Kurt Allison, Steve Bogard, Tully Kennedy and Jason Sever."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 297,
+    "generation_tokens": 246,
+    "generation_speed": 398.70469596335806,
+    "prompt_eval_speed": 23644.614282302366,
+    "generation_latency_s": 0.7405403000302613,
+    "latency": 1.079604099970311,
+    "total_prompt_tokens": 453,
+    "total_generation_tokens": 305,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2173851,
+    "stage_route_s": 0.1708704000338912,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.132810499984771,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03523290005978197,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.829994238913059e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.7405733000487089,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.079613900044933,
+    "unaccounted_latency_s": 8.949998300522566e-05,
+    "route": "rag",
+    "router_raw": "The answer is no. The question asks about when the album \"Dustin Lynch\" was released to country radio and not about when it was released as a single.",
+    "sub_queries": [
+      "The album \"Dustin Lynch\" (2017) is released on February 17th."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

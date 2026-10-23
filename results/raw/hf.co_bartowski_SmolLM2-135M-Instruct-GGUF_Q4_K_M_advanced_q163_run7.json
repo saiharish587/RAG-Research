@@ -1,0 +1,42 @@
+{
+  "question_id": "Q163",
+  "query": "What major city is the Faith Lutheran Middle School and High School located by?",
+  "ground_truth": "Las Vegas",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Faith Lutheran Middle School and High School located by is located by Springfield, Illinois.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Faith Lutheran Middle School &amp; High School: Faith Lutheran Middle School & High School is a private Christian school located in Summerlin, Clark County, Nevada serving the Las Vegas Valley.  Faith has students who come from 60 different zip codes.  The school, which began in 1979, serves grades 6\u201312 and is affiliated with the Lutheran Church\u2013Missouri Synod.  Faith Lutheran is the largest Lutheran school in the United States and the largest non-public school in the state of Nevada.  Faith Lutheran is governed by a Board of Directors representing the thirteen Lutheran churches in its association.",
+      "Faith Lutheran High School: Faith Lutheran High School, commonly referred to as Faith or FLHS, is a private high school located in Crystal Lake, Illinois.  It is affiliated with the Lutheran Church\u2013Missouri Synod and serves students of McHenry County, Illinois.",
+      "Rochester High School (Illinois): Rochester High School of Rochester, IL is a public high school located five miles (8\u00a0km) east of Springfield, IL.  As the only high school serving District 3A, Rochester High School accommodates students from Rochester, Buckhart, portions of eastern Springfield, and other surrounding areas.  Rochester has grown rapidly over the past few years.  In 2008, the enrollment was 699 students, which was up from 589 in 2004."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 371,
+    "generation_tokens": 18,
+    "generation_speed": 397.8428078861285,
+    "prompt_eval_speed": 53900.915298561675,
+    "generation_latency_s": 0.12811749998945743,
+    "latency": 0.4429837999632582,
+    "total_prompt_tokens": 446,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12687579999999998,
+    "stage_rewrite_s": 0.12734230002388358,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08223010005895048,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10515979991760105,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.128157899947837,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.44299320003483444,
+    "unaccounted_latency_s": 0.00010370009113103151,
+    "rewritten_query": "The Faith Lutheran Middle School and High School is located in the City of Springfield, Illinois.",
+    "query_was_rewritten": true
+  }
+}

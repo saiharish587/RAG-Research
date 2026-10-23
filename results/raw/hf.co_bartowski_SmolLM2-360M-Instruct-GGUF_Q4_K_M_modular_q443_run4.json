@@ -1,0 +1,49 @@
+{
+  "question_id": "Q443",
+  "query": "What book provided the foundation for Masters and Johnson's research team?",
+  "ground_truth": "Patterns of Sexual Behavior",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The book that provided the foundation for Masters and Johnson's research team was \"Human Sexuality\" by William H. Masters and Virginia E. Johnson, published in 1957.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Masters and Johnson: The Masters and Johnson research team, composed of William H. Masters and Virginia E. Johnson, pioneered research into the nature of human sexual response and the diagnosis and treatment of sexual disorders and dysfunctions from 1957 until the 1990s.",
+      "William Masters: William Howell Masters (December 27, 1915 \u2013 February 16, 2001) was an American gynecologist, best known as the senior member of the Masters and Johnson sexuality research team.  Along with his wife Virginia E. Johnson, he pioneered research into the nature of human sexual response and the diagnosis and treatment of sexual dysfunctions and disorders from 1957 until the 1990s.",
+      "Virginia E. Johnson: Virginia E. Johnson, born Mary Virginia Eshelman (February 11, 1925 \u2013 July 24, 2013), was an American sexologist, best known as a member of the Masters and Johnson sexuality research team.  Along with William H. Masters, she pioneered research into the nature of human sexual response and the diagnosis and treatment of sexual dysfunctions and disorders from 1957 until the 1990s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 332,
+    "generation_tokens": 39,
+    "generation_speed": 215.43152591806972,
+    "prompt_eval_speed": 39164.79886752389,
+    "generation_latency_s": 0.3000569000141695,
+    "latency": 0.7136111001018435,
+    "total_prompt_tokens": 458,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2175345,
+    "stage_route_s": 0.09691550000570714,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2593673999654129,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05710350000299513,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.279993638396263e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30008830002043396,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7136200000531971,
+    "unaccounted_latency_s": 9.300012607127428e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"The Foundation of Masters and Johnson's Research Team\"",
+      "Query 2: \"The Book That Provided the Foundation for Masters and Johnson's Research Team\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

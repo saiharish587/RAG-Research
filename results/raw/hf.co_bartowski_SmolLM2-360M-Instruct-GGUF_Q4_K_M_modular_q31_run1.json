@@ -1,0 +1,48 @@
+{
+  "question_id": "Q31",
+  "query": "When was Poison's album \"Shut Up, Make Love\" released?",
+  "ground_truth": "2000",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer to when was \"Shut Up, Make Love\" released is 2000.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shut Up, Make Love: \"Shut Up, Make Love\" is a song by American rock band Poison; released in 2000, it was the first single presented to radio stations from their 2000 \"Crack a Smile...and More! \" album.  The song also appears on the second promo single \"Be the One\" as a B-side.  \"Crack a Smile\" is Poison's fifth studio album, released on March 14, 2000, and charting at #131 on The Billboard 200.  The song was the first Poison single with lead guitarist Blues Saraceno.",
+      "Poison (American band): Poison is an American rock band that achieved great commercial success in the mid-1980s to the mid-1990s.  Poison has sold over 40 million records worldwide and has sold 15 million records in the United States alone.  The band has also charted ten singles to the Top 40 of the \"Billboard\" Hot 100, including six Top 10 singles and the Hot 100 number-one, \"Every Rose Has Its Thorn\".  The band's breakthrough debut album, the multi-platinum \"Look What the Cat Dragged In\", was released in 1986 and they hit their peak with the second album, \"Open Up and Say... Ahh! \", which became the band's most successful album, being certified 5x platinum in the US.  The popularity continued into the new decade with their third consecutive multi-platinum selling album, \"Flesh & Blood\".",
+      "Love and Poison (book): Love and Poison is the official biography of the English alternative rock band Suede.  The book, written by long-time band associate David Barnett, reveals the real stories behind singer Brett Anderson's battle with drugs, his relationship with Elastica's Justine Frischmann and the subsequent feud with Blur after she started stepping out with Damon Albarn."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 510,
+    "generation_tokens": 22,
+    "generation_speed": 179.75324781436393,
+    "prompt_eval_speed": 14535.712249900245,
+    "generation_latency_s": 0.26587210001889616,
+    "latency": 0.5702160000801086,
+    "total_prompt_tokens": 640,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2269041,
+    "stage_route_s": 0.10273609997238964,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1637273000087589,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03769799997098744,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.139996599406004e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2659232000587508,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5702321000862867,
+    "unaccounted_latency_s": 0.00010720011778175831,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"When was Poison's album 'Shut Up, Make Love' released?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

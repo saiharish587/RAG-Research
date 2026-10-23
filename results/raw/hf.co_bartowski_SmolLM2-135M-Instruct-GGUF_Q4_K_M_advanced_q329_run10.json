@@ -1,0 +1,42 @@
+{
+  "question_id": "Q329",
+  "query": "Were Enrique Carreras and Lionel Ngakane both filmakers during the 20th century? ",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Enrique Carreras was a screenwriter and screenplay writer who worked as a director in South Africa, while Lionel Ngakane was an actor.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lionel Ngakane: Lionel Ngakane (17 July 1928 \u2013 26 November 2003) was a South African filmmaker and actor.",
+      "Enrique Carreras: Enrique Carreras (January 6, 1925 - 29 August 1995) was a Peruvian-born Argentine film director, screenwriter and film producer, and was one of the most prolific film directors in the history of the Cinema of Argentina.",
+      "Stanley Kubrick: Stanley Kubrick ( ; July 26, 1928 \u2013 March 7, 1999) was an American film director, screenwriter, producer, cinematographer, editor, and photographer.  He is frequently cited as one of the greatest and most influential directors in cinematic history.  His films, which are mostly adaptations of novels or short stories, cover a wide range of genres, and are noted for their realism, dark humor, unique cinematography, extensive set designs, and evocative use of music."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 307,
+    "generation_tokens": 34,
+    "generation_speed": 365.52851122387546,
+    "prompt_eval_speed": 40544.10987849974,
+    "generation_latency_s": 0.17635260010138154,
+    "latency": 0.6083304000785574,
+    "total_prompt_tokens": 392,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1272799,
+    "stage_rewrite_s": 0.178604899905622,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07486440008506179,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17833749996498227,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17639339994639158,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.608340400038287,
+    "unaccounted_latency_s": 0.0001408001407980919,
+    "rewritten_query": "The two filmmakers, Enrique Carreras and Lionel Ngakane, were both prominent filmographers of the 20th century.",
+    "query_was_rewritten": true
+  }
+}

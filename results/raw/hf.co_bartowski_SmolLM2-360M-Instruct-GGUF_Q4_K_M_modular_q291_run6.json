@@ -1,0 +1,49 @@
+{
+  "question_id": "Q291",
+  "query": "What record did the Super Bowl XXXIV champions finish the regular-season with in 1999?",
+  "ground_truth": "a record of 13\u20133",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Super Bowl XXXIV champions finished the regular season with a score of 23\u201316, capturing their first Super Bowl win and first NFL championship since Super Bowl XXVII.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Super Bowl XXXI: Super Bowl XXXI was an American football game between the American Football Conference (AFC) champion New England Patriots and the National Football Conference (NFC) champion Green Bay Packers to decide the National Football League (NFL) champion for the 1996 season.  The Packers defeated the Patriots by the score of 35\u201321, earning their third overall Super Bowl victory, and their first since Super Bowl II.  The Packers also extended their league record for the most overall NFL championships to 12.  It was also the last in a run of 13 straight Super Bowl victories by the NFC over the AFC.  The game was played on January 26, 1997 at the Louisiana Superdome in New Orleans, Louisiana.",
+      "Super Bowl XXXIV: Super Bowl XXXIV was an American football game between the National Football Conference (NFC) champion St. Louis Rams (now the Los Angeles Rams) and the American Football Conference (AFC) champion Tennessee Titans to decide the National Football League (NFL) champion for the 1999 season.  The Rams defeated the Titans by the score of 23\u201316, capturing their first Super Bowl win and first NFL championship since 1951.  The game, played on January 30, 2000 at the Georgia Dome in Atlanta, was the fourth Super Bowl to be held a week after the conference championship games (the previous time this happened was Super Bowl XXVIII, and coincidentally that game was also played on January 30 at the Georgia Dome in Atlanta).",
+      "Super Bowl XXVIII: Super Bowl XXVIII was an American football game between the National Football Conference (NFC) champion Dallas Cowboys and the American Football Conference (AFC) champion Buffalo Bills to decide the National Football League (NFL) champion for the 1993 season.  The Cowboys defeated the Bills by the score of 30\u201313, winning their fourth Super Bowl in team history, tying the Pittsburgh Steelers and the San Francisco 49ers for most Super Bowl wins.  The game was played on January 30, 1994, at the Georgia Dome in Atlanta, Georgia.  Since the 1993 regular season was conducted over 18 weeks (two byes per team), the traditional bye week between the conference championship games and the Super Bowl was removed.  This was only the third Super Bowl with only one week after that conference title games; the others were Super Bowl IV and Super Bowl XVII."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 631,
+    "generation_tokens": 38,
+    "generation_speed": 210.16187995332194,
+    "prompt_eval_speed": 72528.73563218392,
+    "generation_latency_s": 0.30891000002156943,
+    "latency": 0.7845424000406638,
+    "total_prompt_tokens": 775,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22013280000000002,
+    "stage_route_s": 0.0999826000770554,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.317552899941802,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05792950000613928,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.5599997974932194e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3089446999365464,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7845563000300899,
+    "unaccounted_latency_s": 0.00010170007590204477,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Super Bowl XXXIV champions finished the regular season with a record of 24 wins.",
+      "Query 2: The Super Bowl XXXIV champions had a total of 24 wins, which was their highest mark in the league since 1987."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q449",
+  "query": "What is the name of the film starring Rose McGowan and features the character Earl McGraw's daughter?",
+  "ground_truth": "Planet Terror",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The name of the film starring Rose McGowan and features the character Earl McGraw's daughter is \"Dylan's Wake\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Pastor's Wife (film): The Pastor's Wife is a 2011 biographical television film, starring Rose McGowan as Mary Winkler and based on the true crime book of the same title by author Diane Fanning.  It premiered on Saturday, November 5, at 8 pm ET/PT on the Lifetime Network.",
+      "Dead Awake (2010 film): Dead Awake is a 2010 mystery film starring Nick Stahl, Rose McGowan, and Amy Smart.  The film was previously titled \"Dylan's Wake\".",
+      "Rose McGowan: Rose Arianna McGowan (born September 5, 1973) is an Italian-born American actress, film producer, director and singer.  She is best known to television audiences for having played Paige Matthews in The WB supernatural drama series \"Charmed\" from 2001 to 2006."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 283,
+    "generation_tokens": 26,
+    "generation_speed": 365.2403562498244,
+    "prompt_eval_speed": 30433.379933326163,
+    "generation_latency_s": 0.16060900001320988,
+    "latency": 0.5430660999845713,
+    "total_prompt_tokens": 364,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1267813,
+    "stage_rewrite_s": 0.1659407999832183,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08021399995777756,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.136181200039573,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16064860008191317,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5430770999519154,
+    "unaccounted_latency_s": 9.329989552497864e-05,
+    "rewritten_query": "The name of the film starring Rose McGowan and featuring the character Earl McGraw's daughter is \"Rose McGowen and the Family.",
+    "query_was_rewritten": true
+  }
+}

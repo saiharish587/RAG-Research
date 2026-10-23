@@ -1,0 +1,49 @@
+{
+  "question_id": "Q311",
+  "query": "What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",
+  "ground_truth": "2013",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Frozen was produced in 2013.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Making Today a Perfect Day: \"Making Today a Perfect Day\" is a song from the 2015 Walt Disney Animation Studios computer-animated short film \"Frozen Fever\", with music and lyrics by Kristen Anderson-Lopez and Robert Lopez and performed throughout most of the short.  It was released as a single in the United States on March 12, 2015.",
+      "Frozen (2013 film): Frozen is a 2013 American 3D computer-animated musical fantasy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures.  It is the 53rd Disney animated feature film.  Inspired by Hans Christian Andersen's fairy tale \"The Snow Queen\", the film tells the story of a fearless princess who sets off on a journey alongside a rugged iceman, his loyal pet reindeer, and a na\u00efve snowman to find her estranged sister, whose icy powers have inadvertently trapped the kingdom in eternal winter.",
+      "The Greatest Event in Television History: The Greatest Event in Television History is a mockumentary television series created by Adam Scott and Naomi Sablan.  The series premiered on Cartoon Network's late night programming block Adult Swim on October 12, 2012 and ended on January 23, 2014 with a total of four episodes.  Each episode originally aired independently as a special presentation, several months apart."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 388,
+    "generation_tokens": 13,
+    "generation_speed": 233.05008784195618,
+    "prompt_eval_speed": 13550.798030244823,
+    "generation_latency_s": 0.19547849998343736,
+    "latency": 0.660428800038062,
+    "total_prompt_tokens": 538,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2360071,
+    "stage_route_s": 0.10612539993599057,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.304834800073877,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053798200096935034,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.499998901039362e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19551000010687858,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6604386999970302,
+    "unaccounted_latency_s": 9.579979814589024e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The year of the event that occurred first, Making Today a Perfect Day was produced, is 2013.",
+      "The year of the event that occurred first, Frozen was produced, is 2013."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

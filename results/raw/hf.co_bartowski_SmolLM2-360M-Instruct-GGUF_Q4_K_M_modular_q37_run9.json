@@ -1,0 +1,49 @@
+{
+  "question_id": "Q37",
+  "query": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+  "ground_truth": "2000",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "7 Brief Lessons on Physics was written by Italian physicist Carlo Rovelli who has worked in France since 1926.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Seven Brief Lessons on Physics: Seven Brief Lessons on Physics (Italian: \"\" ) is a short book by the Italian physicist Carlo Rovelli.  Originally published in Italian in 2014, the book has been translated into 41 languages.  It is an Italian bestseller, with more than 300,000 copies sold in Rovelli's home country.",
+      "Aldo Pontremoli: Aldo Pontremoli (] ; 19 January 1896 \u2013 25 May 1928) was an Italian physicist who held a chair of theoretical physics at the University of Milan from 1926 and who founded and directed the Institute of Advanced Physics at the University of Milan from 1924 until his disappearance and presumed death in May 1928.  Pontremoli was one of the six men who disappeared with the airborne envelope of the airship \"Italia\" after it had crashed on the Arctic ice on 25 May 1928.",
+      "Claudio Pellegrini: Claudio Pellegrini (born in Rome on May 9, 1935) is an Italian physicist known for his pioneering work on X-ray free electron lasers and collective effects in relativistic particle beams.  He was educated at the Sapienza University of Rome where he received the Laurea in Fisica \"summa cum laude\" in 1958 and the Libera Docenza, in 1965.  From 1958 to 1978, he worked at the Laboratori Nazionali di Frascati for high energy and nuclear physics.  In the early 1960s, he was at the Nordic Institute for Theoretical Physics (NORDITA) in Copenhagen, working on an alternative formulation of the theory of general relativity using tetrad fields to obtain, among other things, a better description of the energy-momentum complex.  (See \"Teleparallelism\" for a summary of the theoretical context of this work.)  In 1978, he moved to the United States and began work at Brookhaven National Laboratory, where he was an Associate Chairman of the National Synchrotron Light Source and co-director at the Center for Accelerator Physics.  In 1989, he accepted an appointment at the University of California at Los Angeles (UCLA) as a professor of physics, and later became a Distinguished Professor."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 601,
+    "generation_tokens": 27,
+    "generation_speed": 234.40552155228545,
+    "prompt_eval_speed": 76736.4657814096,
+    "generation_latency_s": 0.2374865000601858,
+    "latency": 0.9121590999420732,
+    "total_prompt_tokens": 741,
+    "total_generation_tokens": 133,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24200690000000002,
+    "stage_route_s": 0.09996949997730553,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5193428000202402,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055162600008770823,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.779997445642948e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23754290002398193,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.91217130003497,
+    "unaccounted_latency_s": 9.640003554522991e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Seven Brief Lessons on Physics\" - Written by Italian physicist Gino Bresciaglia, this book is a collection of 70 lessons covering various topics such as mechanics, optics, and thermodynamics.",
+      "\"French physicist Gino Bresciaglia\" - Born in 1936, Gino Bresciaglia worked at the University of Paris from 1958 to 1964 before moving to France in 1970."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

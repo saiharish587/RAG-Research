@@ -1,0 +1,49 @@
+{
+  "question_id": "Q313",
+  "query": "Where is the Cocoa Krispies and former Superman sponsor located?",
+  "ground_truth": "Battle Creek, Michigan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Mars Nederland",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chocolate Shoppe Ice Cream Company: Chocolate Shoppe Ice Cream Co. is an ice cream company based in Madison, Wisconsin that manufactures and distributes super-premium ice cream, frozen yogurt, Italian ice, soy ice cream, and no sugar added ice cream.",
+      "Mars Nederland: Mars Nederland (English: Mars Netherlands ) is the Dutch division of Mars, Incorporated, a privately held multi-national company in food, pet care products, and confectionery products.  It has its headquarters and main production site in Veghel, North Brabant.  A second production site is located in Oud-Beijerland, South Holland.  The chocolate factory in Veghel is the largest production site owned by Mars, Incorporated, and is among the largest chocolate factories in the world.",
+      "Cocoa Krispies: Cocoa Krispies, Choco Krispis, Choco Krispies, Coco Pops, or Choco Pops is a breakfast cereal produced by Kellogg's, coming both as a boxed cereal and as a snack bar with a 'dried milk' covered bottom, to make the cereal with milk tradition portable.  It is a cocoa flavored version of Rice Krispies.  Containing a substance imitating milk chocolate, the cereal can turn milk \"chocolatey.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 345,
+    "generation_tokens": 5,
+    "generation_speed": 230.44660552150066,
+    "prompt_eval_speed": 13395.457192778102,
+    "generation_latency_s": 0.15674819995183498,
+    "latency": 0.7161204000003636,
+    "total_prompt_tokens": 473,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22813489999999997,
+    "stage_route_s": 0.10651090007741004,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.39630929997656494,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05635010008700192,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.580003537237644e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15678760001901537,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7161328999791294,
+    "unaccounted_latency_s": 0.00011029979214072227,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Cocoa Krispies, formerly known as the Superheroes' Sponsor, is a popular ice cream brand that originated in New York City.",
+      "The Cocoa Krispies are currently owned by the company called \"Cocoa Krispie's\" and they have their headquarters located in New York City."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q435",
+  "query": "The movies The Boatniks and The Great Locomotive Chase were both made by which production company?",
+  "ground_truth": "Walt Disney Productions",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The production companies that produced The Boatniks and The Great Locomotive Chase are Universal Pictures, the original studios founded by Carl Laemmle, Mark Dintenfass, Charles O. Baumann, Pat Powers, William Swanson, David Horsley, Jules Brulatour, and Robert H. Cochrane.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Boatniks: The Boatniks is a 1970 American comedy film starring Robert Morse, Stefanie Powers, Don Ameche and Phil Silvers.  It was made by Walt Disney Productions, released by Buena Vista Distribution and directed by Norman Tokar.",
+      "The Great Locomotive Chase: The Great Locomotive Chase is a 1956 Walt Disney Productions CinemaScope adventure film based on the real Great Locomotive Chase that occurred in 1862 during the American Civil War.  The film stars Fess Parker as James J. Andrews, the leader of a group of Union soldiers from various Ohio regiments who volunteered to go behind Confederate lines in civilian clothes, steal a Confederate train north of Atlanta, and drive it back to Union lines in Tennessee, tearing up railroad tracks and destroying bridges and telegraph lines along the way.",
+      "Universal Pictures: Universal Pictures (also referred to as Universal Studios or simply Universal) is an American film studio owned by Comcast through the Universal Filmed Entertainment Group division of its wholly owned subsidiary NBCUniversal.  The company was founded in 1912 by Carl Laemmle, Mark Dintenfass, Charles O. Baumann, Adam Kessel, Pat Powers, William Swanson, David Horsley, Robert H. Cochrane, and Jules Brulatour, and is the oldest surviving film studio in the United States, the world's fourth oldest after Gaumont, Path\u00e9 and Nordisk Film, and the oldest in terms of the overall film market .  Its studios are located in Universal City, California, and its corporate offices are located in New York City."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 423,
+    "generation_tokens": 68,
+    "generation_speed": 223.26558754966018,
+    "prompt_eval_speed": 11178.646934460889,
+    "generation_latency_s": 0.4558428000891581,
+    "latency": 0.8452170999953523,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2245238,
+    "stage_route_s": 0.11068210005760193,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22108509996905923,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05743239994626492,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6299963034689426e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4558789998991415,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.845226899953559,
+    "unaccounted_latency_s": 9.25001222640276e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The Great Locomotive Chase was produced by Universal Pictures.",
+      "The Boatniks was produced by Universal Pictures."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

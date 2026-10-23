@@ -1,0 +1,49 @@
+{
+  "question_id": "Q3",
+  "query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+  "ground_truth": "Animorphs",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "His Dark Materials: His Dark Materials is an epic trilogy of fantasy novels by Philip Pullman consisting of \"Northern Lights\" (1995, published as \"The Golden Compass\" in North America), \"The Subtle Knife\" (1997), and \"The Amber Spyglass\" (2000).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "His Dark Materials: His Dark Materials is an epic trilogy of fantasy novels by Philip Pullman consisting of \"Northern Lights\" (1995, published as \"The Golden Compass\" in North America), \"The Subtle Knife\" (1997), and \"The Amber Spyglass\" (2000).  It follows the coming of age of two children, Lyra Belacqua and Will Parry, as they wander through a series of parallel universes.  The three novels have won a number of awards, most notably the 2001 Whitbread Book of the Year prize, won by \"The Amber Spyglass\".  \"Northern Lights\" won the Carnegie Medal for children's fiction in the UK in 1995.  The trilogy took third place in the BBC's Big Read poll in 2003.",
+      "The Jade Trilogy: The Jade Trilogy is a set of three fantasy novels written by Japanese award-winning fantasy writer Noriko Ogiwara.  The trilogy consists of the original novel and its two sequels.",
+      "Animorphs: Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic.  It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.  Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 420,
+    "generation_tokens": 71,
+    "generation_speed": 237.94123856792885,
+    "prompt_eval_speed": 56255.022769890165,
+    "generation_latency_s": 0.421911200042814,
+    "latency": 0.7383004000876099,
+    "total_prompt_tokens": 578,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23204979999999997,
+    "stage_route_s": 0.10097569995559752,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16112219996284693,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05409490002784878,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.789993494749069e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4219532000133768,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7383121000602841,
+    "unaccounted_latency_s": 9.890017099678516e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Broken Earth trilogy\"",
+      "\"The Shadow's Edge trilogy\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q570",
+  "query": "The Company They Keep is a book written by Diana Pavlac Glyer, who is a professor at a university in Azusa, California, that was founded in 1899, and is under the auspices of what religion?",
+  "ground_truth": "evangelical Christian",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Diana Pavlac Glyer, a professor at a university in Azusa, California, is under the auspices of the Church of Jesus Christ of Latter-day Saints.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Company They Keep: The Company They Keep: C. S. Lewis and J. R. R. Tolkien as Writers in Community (2007) is a non-fiction book written by Diana Pavlac Glyer, an Inklings scholar and English professor at Azusa Pacific University.  \"The Company They Keep\" challenges the commonly held belief that the Inklings did not influence each other through a detailed and engaging examination of both published and unpublished works, papers, and letters written by J.R.R. Tolkien, C.S. Lewis, Charles Williams, Owen Barfield, Warren Lewis and the lesser-known writers who comprised the Inklings.",
+      "The Church of Jesus Christ of Latter-day Saints: The Church of Jesus Christ of Latter-day Saints (known as the LDS Church or, informally, the Mormon Church) is a Christian restorationist church that is considered by its members to be the restoration of the original church founded by Jesus Christ.  The church is headquartered in Salt Lake City, Utah, and has established congregations and built temples worldwide.  According to the church, it has over 70,000 missionaries and a membership of over 15 million.  It is ranked by the National Council of Churches as the fourth-largest Christian denomination in the United States.  It is the largest denomination in the Latter Day Saint movement founded by Joseph Smith during the period of religious revival known as the Second Great Awakening.",
+      "University of Pennsylvania: The University of Pennsylvania (commonly known as Penn or UPenn) is a private Ivy League research university located in Philadelphia, Pennsylvania, United States.  Incorporated as The Trustees of the University of Pennsylvania, Penn is one of 14 founding members of the Association of American Universities and one of the nine colonial colleges chartered before the American Revolution."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 483,
+    "generation_tokens": 36,
+    "generation_speed": 243.93383972191543,
+    "prompt_eval_speed": 65974.59363474936,
+    "generation_latency_s": 0.2710264000343159,
+    "latency": 0.7630525999702513,
+    "total_prompt_tokens": 679,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235046,
+    "stage_route_s": 0.10071909998077899,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.331510900054127,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05961080000270158,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5200071074068546e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.27105950005352497,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7630616000387818,
+    "unaccounted_latency_s": 0.00010669988114386797,
+    "route": "rag",
+    "router_raw": "Yes.",
+    "sub_queries": [
+      "Query 1: \"The Company They Keep\" by Diana Pavlac Glyer - The book written by Diana Pavlac Glyer, a professor at a university in Azusa, California.",
+      "Query 2: \"Under the auspices of what religion?\" - The religion under which the company is founded and operates."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q108",
+  "query": "What type of activity does Owner earnings and Warren Buffett have in common?",
+  "ground_truth": "business",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Owner earnings and Warren Buffett both involve valuing a company based on the expected net cash flows (owner earnings) over its life, minus any reinvestment of earnings.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Warren Buffett: Warren Edward Buffett ( ; born August 30, 1930) is an American business magnate, investor, and philanthropist.  Buffett serves as the Chief Executive Officer and Chairman of Berkshire Hathaway.  He is considered by some to be one of the most successful investors in the world, and as of August 2017 is the second wealthiest person in the United States, and the fourth wealthiest in the world, with a total net worth of $76.9 billion.",
+      "Owner earnings: Owner earnings is a valuation method detailed by Warren Buffett in 1986.  He stated that the value of a company is simply the total of the net cash flows (owner earnings) expected to occur over the life of the business, minus any reinvestment of earnings.",
+      "Susan Buffett: Susan Thompson Buffett (June 15, 1932 \u2013 July 29, 2004), the first wife of investor Warren Buffett, was active in civil rights, abortion rights and population control causes.  She was a director of Berkshire Hathaway, owning 2.2 percent (worth US$3 billion in 2004) of the company at the time of her death.  She was the 153rd richest person in the world.  She was president of the Buffett Foundation, which has contributed millions of dollars to educational groups, medical research, population-control groups and other charities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 36,
+    "generation_speed": 212.9005931647082,
+    "prompt_eval_speed": 48272.48223474638,
+    "generation_latency_s": 0.2917816999834031,
+    "latency": 0.600426800083369,
+    "total_prompt_tokens": 526,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2327834,
+    "stage_route_s": 0.09221779997460544,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16050360002554953,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05574430001433939,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1900045946240425e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.291822399944067,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6004375000484288,
+    "unaccounted_latency_s": 9.820004925131798e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Owner Earnings",
+      "Query 2: Warren Buffett"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

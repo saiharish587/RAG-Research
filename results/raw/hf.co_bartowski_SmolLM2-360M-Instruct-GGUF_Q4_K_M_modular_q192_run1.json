@@ -1,0 +1,49 @@
+{
+  "question_id": "Q192",
+  "query": "What station broadcast the episode \"Marry Me a Little, Marry Me a Little More\" , of the series created by Max Mutchnick and David Kohan?",
+  "ground_truth": "National Broadcasting Company",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "High Times",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "In These Times: In These Times is an American politically progressive/democratic socialist monthly magazine of news and opinion published in Chicago, Illinois.",
+      "High Times: High Times is a New York-based monthly magazine founded in 1974 by Tom For\u00e7ade.  The publication advocates the legalization of cannabis.  The magazine has been involved in the marijuana-using counterculture since its inception.",
+      "David Kohan: David Sanford Kohan (born April 16, 1964) is an American television producer and writer.  After writing for \"The Wonder Years\" and \"The Dennis Miller Show\", Kohan co-created and produced \"Will & Grace\", \"Boston Common\", \"Good Morning, Miami\", \"Twins\" and \"Four Kings\" with Max Mutchnick.  Kohan has won an Emmy and a People's Choice Award.  He has been nominated for a Golden Globe Award.  He and his business partner Max Mutchnick worked on a half-hour comedy series for CBS called \"Partners\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 309,
+    "generation_tokens": 3,
+    "generation_speed": 197.52436133789834,
+    "prompt_eval_speed": 12058.066026691642,
+    "generation_latency_s": 0.14748120005242527,
+    "latency": 0.47560390003491193,
+    "total_prompt_tokens": 477,
+    "total_generation_tokens": 23,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23191679999999998,
+    "stage_route_s": 0.10262919997330755,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1701209000311792,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05518829997163266,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8299978263676167e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14752060000319034,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.47561570000834763,
+    "unaccounted_latency_s": 9.900005534291267e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The New York Times\"",
+      "\"The Los Angeles Times\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

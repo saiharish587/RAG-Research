@@ -1,0 +1,42 @@
+{
+  "question_id": "Q150",
+  "query": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+  "ground_truth": "\"We'll Burn That Bridge\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "She's Got the Rhythm (And I Got the Blues)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Lot About Livin' (And a Little 'bout Love): A Lot About Livin' (And a Little 'bout Love) is the third studio album by American country music artist Alan Jackson.  It was released on October 6, 1992, and produced the singles \"Chattahoochee\", \"She's Got the Rhythm (And I Got the Blues)\", \"Tonight I Climbed the Wall\", \"(Who Says) You Can't Have It All\" and \"Mercury Blues\".  \"Chattahoochee\" and \"She's Got the Rhythm\" were both Number One hits on the Hot Country Songs charts, while the other three songs all reached Top Five.",
+      "She's Got the Rhythm (And I Got the Blues): \"She's Got the Rhythm (And I Got the Blues)\" is a song co-written by American country music artists Alan Jackson and Randy Travis, and performed by Jackson.  It was released in October 1992 as the first single from his album \"A Lot About Livin' (And a Little 'bout Love)\".  The song received an award in 1993 from Music City News for being one of the most performed country songs of the year.",
+      "Tonight I Climbed the Wall: \"Tonight I Climbed the Wall\" is a song written and performed by American country music artist Alan Jackson.  It was released in January 1993 as the second single from his album \"A Lot About Livin' (And a Little 'bout Love)\".  It peaked at number 4 on both the United States \"Billboard\" Hot Country Singles & Tracks chart and the Canadian \"RPM\" Country Tracks chart."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 458,
+    "generation_tokens": 13,
+    "generation_speed": 269.67597394515207,
+    "prompt_eval_speed": 62756.9197040285,
+    "generation_latency_s": 0.8584016000386328,
+    "latency": 3.3373309000162408,
+    "total_prompt_tokens": 553,
+    "total_generation_tokens": 34,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1257711,
+    "stage_rewrite_s": 1.2074588999385014,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0390862000640482,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23226369998883456,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8584411999909207,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3373410999774933,
+    "unaccounted_latency_s": 9.159999899566174e-05,
+    "rewritten_query": "The song that performed well on the country chart for two weeks is \"A Lot About Livin",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q438",
+  "query": "Ambrose Mendy has managed and/or advised a British professional boxer that as of July 2017 is ranked the world's seventh best super middleweight by who?",
+  "ground_truth": "\"The Ring\" magazine",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Context:\nAmbrose Mendy (born August 1954) is a British boxing manager, advisor, and sports agent. He has managed and/or advised Nigel Benn; James DeGale; Chris Eubank Junior; Lloyd Honeyghan & Errol Christie among others during a career in boxing that started in the late 1970s.\n\nMuhammad Ali (born Cassius Marcellus Clay Jr.) is widely regarded as one of the most significant and celebrated sports figures of the 20th century. He was known for his inspirational, controversial, and polarizing role both inside and outside the ring.\n\nDavid Haye (born 13 October 1980) is a British professional boxer who has held world titles in two weight classes. As a professional he became the first British boxer to become a unified cruiserweight world champion in 2008, winning three of the four major world titles, as well as the \"Ring\" magazine and lineal titles.\n\nQuestion: Who is the best super middleweight boxer currently ranked by who?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ambrose Mendy: Ambrose Mendy (born August 1954) is a British boxing manager, advisor and sports agent.  He has managed and/or advised Nigel Benn; James DeGale; Chris Eubank Junior; Lloyd Honeyghan & Errol Christie among others during a career in boxing that started in the late 1970s.",
+      "Muhammad Ali: Muhammad Ali ( ; born Cassius Marcellus Clay Jr.; January 17, 1942 \u2013 June 3, 2016) was an American professional boxer and activist.  He is widely regarded as one of the most significant and celebrated sports figures of the 20th century.  From early in his career, Ali was known as an inspiring, controversial, and polarizing figure both inside and outside the ring.",
+      "David Haye: David Deron Haye (born 13 October 1980) is a British professional boxer who has held world titles in two weight classes.  He is the first British boxer to reach the final of the World Amateur Boxing Championships, where he won a silver medal in 2001.  As a professional he became the first British boxer to become a unified cruiserweight world champion in 2008, winning three of the four major world titles, as well as the \"Ring\" magazine and lineal titles.  In the same year he moved up to heavyweight, and became the WBA champion in 2009 after defeating Nikolai Valuev, who had a world record 9 in height and 99 lb weight advantage on Haye."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 446,
+    "generation_tokens": 233,
+    "generation_speed": 395.890890431674,
+    "prompt_eval_speed": 25199.163794564665,
+    "generation_latency_s": 0.6858070999151096,
+    "latency": 1.125878099934198,
+    "total_prompt_tokens": 543,
+    "total_generation_tokens": 261,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12896200000000002,
+    "stage_rewrite_s": 0.17444159998558462,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08936670003458858,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17610269994474947,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.6858480999944732,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.125888800015673,
+    "unaccounted_latency_s": 0.00013020006008446217,
+    "rewritten_query": "Ambrose Mendy, the British professional boxer, has been ranked among the top five in the world's sixth-place ranking.",
+    "query_was_rewritten": true
+  }
+}

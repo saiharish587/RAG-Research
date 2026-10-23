@@ -1,0 +1,42 @@
+{
+  "question_id": "Q25",
+  "query": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+  "ground_truth": "World's Best Goalkeeper",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The father of Kasper Schmeichel was voted to be by the IFFHS in 1992 as Peter Schmeichel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kasper Schmeichel: Kasper Peter Schmeichel (] ; born 5 November 1986) is a Danish professional footballer who plays as a goalkeeper for Premier League club Leicester City and the Denmark national team.  He is the son of former Manchester United and Danish international goalkeeper Peter Schmeichel.",
+      "Peter Schmeichel: Peter Boles\u0142aw Schmeichel MBE (] ; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993.  He is best remembered for his most successful years at English club Manchester United, whom he captained to the 1999 UEFA Champions League to complete the Treble, and for winning UEFA Euro 1992 with Denmark.",
+      "Neymar: Neymar da Silva Santos J\u00fanior (] ; born 5 February 1992), commonly known as Neymar or Neymar Jr., is a Brazilian professional footballer who plays as a forward for French club Paris Saint-Germain and the Brazil national team."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 344,
+    "generation_tokens": 32,
+    "generation_speed": 263.3008047130844,
+    "prompt_eval_speed": 48246.8443197756,
+    "generation_latency_s": 0.9506826000288129,
+    "latency": 3.4002024999354035,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1254649,
+    "stage_rewrite_s": 1.2452879999764264,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0005920000839978,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20352710003498942,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9507162000518292,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4002104999963194,
+    "unaccounted_latency_s": 8.759985212236643e-05,
+    "rewritten_query": "The father of Kasper Schmeichel, voted by the International Football Federation (IFFH) in 1992, is unknown.",
+    "query_was_rewritten": true
+  }
+}

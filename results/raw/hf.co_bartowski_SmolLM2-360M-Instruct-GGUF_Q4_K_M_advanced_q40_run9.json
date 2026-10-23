@@ -1,0 +1,42 @@
+{
+  "question_id": "Q40",
+  "query": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+  "ground_truth": "New York City",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Columbia University",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ralph Hefferline: Ralph Franklin Hefferline (15 February 1910 in Muncie, Indiana \u2013 16 March 1974) was a psychology professor at Columbia University.",
+      "Fordham University: Fordham University ( ) is a private, independent research university in New York City, founded by the Catholic Diocese of New York in 1841.  It is the oldest Catholic institution of higher education in the northeastern United States, and the third-oldest university in New York.",
+      "Columbia University: Columbia University (Columbia; officially Columbia University in the City of New York), established in 1754, is a private Ivy League research university in Upper Manhattan, New York City, often cited as one of the world's most prestigious universities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 243,
+    "generation_tokens": 4,
+    "generation_speed": 352.57822829440283,
+    "prompt_eval_speed": 60704.47164626531,
+    "generation_latency_s": 0.9286136000882834,
+    "latency": 3.380698399967514,
+    "total_prompt_tokens": 321,
+    "total_generation_tokens": 23,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1272917,
+    "stage_rewrite_s": 1.2667721000034362,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0581028000451624,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12709279998671263,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9286472999956459,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3807065000291914,
+    "unaccounted_latency_s": 9.190000128000975e-05,
+    "rewritten_query": "Ralph Hefferline was a psychology professor at a university located in New York City.",
+    "query_was_rewritten": true
+  }
+}

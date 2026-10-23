@@ -1,0 +1,42 @@
+{
+  "question_id": "Q439",
+  "query": "Rejuvelac is kind of grain water invented and promoted by a \"holistic health\" practitioner born in which year ?",
+  "ground_truth": "1909",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Rejuvelac is named after Ann Wigmore who introduced the concept of grain water into India around 1930.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rejuvelac: Rejuvelac is kind of grain water invented and promoted by Ann Wigmore.",
+      "Viktoras Kulvinskas: Viktoras Peter Kulvinskas (born 23 February 1939) is a Lithuanian holistic health practitioner, nutritionist, raw foods advocate and author.",
+      "Mickey Mehta: Mickey Mehta (born 29 August 1962) is an Indian holistic health, well-being, wellness, and fitness guru.  He is a TV and radio presenter (94.3 Radio One Mumbai and Delhi) and a columnist in various publications and websites.  He preaches the concept of holistic health and equipment free workouts and has done so by establishing a chain of Mickey Mehta Wellness Temples across Mumbai city.  The media often refer to Mickey Mehta as 'India's Leading Holistic Health Guru'.  Mehta also aspires to build the largest social media base across as many platforms possible, to reach out to his audience."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 302,
+    "generation_tokens": 28,
+    "generation_speed": 410.76798943739453,
+    "prompt_eval_speed": 39658.56861457649,
+    "generation_latency_s": 0.1556173999560997,
+    "latency": 0.7613764000125229,
+    "total_prompt_tokens": 387,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.124055,
+    "stage_rewrite_s": 0.25928599992766976,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08096819999627769,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2653613000875339,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1556605000514537,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7613875999813899,
+    "unaccounted_latency_s": 0.00011209992226213217,
+    "rewritten_query": "The user's original query was rephrased into an optimized query using a search-friendly rephrasing technique. The revised query outputted the following:\n\nOriginal Query: Rejuvelac is kind of grain water invented and promoted by a \"holistic health\" practitioner born in which year?\nOptimized Query: 2015",
+    "query_was_rewritten": true
+  }
+}

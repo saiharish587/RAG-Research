@@ -1,0 +1,49 @@
+{
+  "question_id": "Q60",
+  "query": "Are both Cypress and Ajuga genera?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "No, I do not know if both Cypress and Ajuga are genera.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ajuga: Ajuga , also known as bugleweed, ground pine, carpet bugle, or just bugle, is a genus of 40 species annual and perennial herbaceous flowering plantsin the mint family Lamiaceae, with most species native to Europe, Asia, and Africa, but also two species in southeastern Australia.  They grow to 5\u201350 cm tall, with opposite leaves.",
+      "Cypress: Cypress is a conifer tree or shrub of northern temperate regions that belongs to the family Cupressaceae.  The word \"cypress\" is derived from Old French \"cipres\", which was imported from Latin \"cypressus\", the latinisation of the Greek \u03ba\u03c5\u03c0\u03ac\u03c1\u03b9\u03c3\u03c3\u03bf\u03c2 (\"kyparissos\").",
+      "Cypress-pine: Cypress-pine is the common name used for three closely related genera of conifers in the cypress family Cupressaceae:"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 263,
+    "generation_tokens": 19,
+    "generation_speed": 242.47683708108937,
+    "prompt_eval_speed": 26130.15399900646,
+    "generation_latency_s": 0.20026760001201183,
+    "latency": 0.6299333000788465,
+    "total_prompt_tokens": 385,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2404834,
+    "stage_route_s": 0.1024731999495998,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2707664000336081,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05626319989096373,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.499999340623617e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20029830001294613,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6299422000302002,
+    "unaccounted_latency_s": 9.670015424489975e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Yes, both Cypress and Ajuga are genera in the Asteraceae family.",
+      "Query 2: Yes, both Cypress and Ajuga are genera in the Asteraceae family."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

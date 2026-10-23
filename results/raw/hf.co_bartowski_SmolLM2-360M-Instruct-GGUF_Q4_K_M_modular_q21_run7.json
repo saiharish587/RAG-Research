@@ -1,0 +1,49 @@
+{
+  "question_id": "Q21",
+  "query": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+  "ground_truth": "Pedro Rodr\u00edguez",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Sergio P\u00e9rez",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sergio P\u00e9rez: Sergio P\u00e9rez Mendoza (    ; born 26 January 1990) also known as \"Checo\" P\u00e9rez, is a Mexican racing driver, currently driving for Force India.",
+      "Formula One drivers from Mexico: There have been six Formula One drivers from Mexico who have taken part in races since the championship began in 1950.  Pedro Rodr\u00edguez is the most successful Mexican driver being the only one to have won a grand prix.  Sergio P\u00e9rez, the only other Mexican to finish on the podium, currently races with Sahara Force India F1 Team .",
+      "Michael Schumacher: Michael Schumacher (] ; born 3 January 1969) is a retired German racing driver who raced in Formula One for Benetton and Ferrari, where he spent the majority of his career, as well as for Mercedes upon his brief return to the sport.  Widely regarded as one of the greatest Formula One drivers, and regarded by some as the greatest of all time, Schumacher is the only driver in history to win seven Formula One World Championships, five of which he won consecutively.  The most successful driver in the history of the sport, Schumacher holds the records for the most World Championship titles (7), the most Grand Prix wins (91), the most fastest laps (77) and the most races won in a single season (13), and according to the official Formula One website, Schumacher is \"statistically the greatest driver the sport has ever seen\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 426,
+    "generation_tokens": 7,
+    "generation_speed": 234.50586264656616,
+    "prompt_eval_speed": 47935.186227073245,
+    "generation_latency_s": 0.15101110003888607,
+    "latency": 0.6726988999871537,
+    "total_prompt_tokens": 578,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23810779999999998,
+    "stage_route_s": 0.10195859998930246,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.36059619998559356,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05895410000812262,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9600028432905674e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1510493999812752,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6727098999544978,
+    "unaccounted_latency_s": 0.00010299996938556433,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Force India\" - The name of the driver who holds the podium, but not necessarily the first-place finish.",
+      "\"Mexico Formula One race car drivers\" - A list of other Mexican Formula One race car drivers besides the Force India driver born in 1990."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q201",
+  "query": "The 2000 British film Snatch was later adapted into a television series for what streaming service?",
+  "ground_truth": "Crackle",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The 2000 British film Snatch was later adapted into a television series for Crackle on 16 March 2017.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Snatch (TV series): Snatch is a British/American television series based on the film of the same name, which debuted on Crackle on 16 March 2017.  The show has been renewed for a second season.",
+      "Snatch (film): Snatch (stylised as snatch.)  is a 2000 British crime comedy film written and directed by Guy Ritchie, featuring an ensemble cast.  Set in the London criminal underworld, the film contains two intertwined plots: one dealing with the search for a stolen diamond, the other with a small-time boxing promoter (Jason Statham) who finds himself under the thumb of a ruthless gangster (Alan Ford) who is ready and willing to have his subordinates carry out severe and sadistic acts of violence.",
+      "Quirke (TV series): Quirke is a British-Irish crime drama television series that was first broadcast on BBC One and RT\u00c9 One in 2014.  The three-part series is based on the Quirke novels by John Banville, writing under the pseudonym Benjamin Black, and was adapted by Andrew Davies and Conor McPherson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 327,
+    "generation_tokens": 33,
+    "generation_speed": 240.04713652862742,
+    "prompt_eval_speed": 35199.13885898816,
+    "generation_latency_s": 0.2557583999587223,
+    "latency": 0.691503299982287,
+    "total_prompt_tokens": 471,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2284851,
+    "stage_route_s": 0.09179920004680753,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2862131000729278,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057552200043573976,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.5900000259280205e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2557990999193862,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6915149999549612,
+    "unaccounted_latency_s": 0.00010619987733662128,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The 2000 British film Snatch was later adapted into a television series for BBC America\"",
+      "\"The 2000 British film Snatch was later adapted into a television series for Netflix\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

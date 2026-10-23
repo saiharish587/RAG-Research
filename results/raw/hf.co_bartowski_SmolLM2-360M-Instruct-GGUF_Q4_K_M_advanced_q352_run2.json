@@ -1,0 +1,42 @@
+{
+  "question_id": "Q352",
+  "query": "Which playwright lived a longer life, Edward Albee or J. M. Barrie?",
+  "ground_truth": "Edward Franklin Albee III",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Edward Albee lived a longer life than J. M. Barrie.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Edward Albee: Edward Franklin Albee III ( ; March 12, 1928 \u2013 September 16, 2016) was an American playwright known for works such as \"The Zoo Story\" (1958), \"The Sandbox\" (1959), \"Who's Afraid of Virginia Woolf? \" (1962), and \"A Delicate Balance\" (1966).  Three of his plays won the Pulitzer Prize for Drama, and two of his other works won the Tony Award for Best Play.",
+      "J. M. Barrie: Sir James Matthew Barrie, 1st Baronet, {'1': \", '2': \", '3': \", '4': \"} ( ; 9 May 1860 19 June 1937) was a Scottish novelist and playwright, best remembered today as the creator of Peter Pan.  He was born and educated in Scotland but moved to London, where he wrote a number of successful novels and plays.  There he met the Llewelyn Davies boys, who inspired him to write about a baby boy who has magical adventures in Kensington Gardens (included in \"The Little White Bird\"), then to write \"Peter Pan, or The Boy Who Wouldn't Grow Up\", a \"fairy play\" about an ageless boy and an ordinary girl named Wendy who have adventures in the fantasy setting of Neverland.",
+      "Reed A. Albee: Reed Adalbert Albee (8 September 1885 \u2013 2 August 1961) was an American businessman.  He is most noted as the adoptive father of the American playwright Edward Albee and for being a member of a prominent East Coast family who owned several theaters."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 447,
+    "generation_tokens": 16,
+    "generation_speed": 262.3897143231985,
+    "prompt_eval_speed": 60684.224816725495,
+    "generation_latency_s": 0.9441026999847963,
+    "latency": 3.3666903000557795,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1304456,
+    "stage_rewrite_s": 1.1920585999032483,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0672604000428692,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1631573000922799,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9441351999994367,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3666993000078946,
+    "unaccounted_latency_s": 8.829997386783361e-05,
+    "rewritten_query": "The question is whether Edward Albee or J.M. Barrie lived a longer life.",
+    "query_was_rewritten": true
+  }
+}

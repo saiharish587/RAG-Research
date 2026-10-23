@@ -1,0 +1,49 @@
+{
+  "question_id": "Q221",
+  "query": "Which Netflix series \"Unbreakable\" character is Elizabeth Claire Kemper known for playing?",
+  "ground_truth": "Kimberly Couger \"Kimmy\" Schmidt",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Elizabeth Claire Kemper is known for playing the role of Kimmy Schmidt in the Netflix series \"Unbreakable\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ellie Kemper: Elizabeth Claire Kemper (born May 2, 1980) is an American actress and comedian.  She gained prominence when she starred in the NBC series \"The Office\" as receptionist Erin Hannon for the final five seasons.  After her role in \"The Office\", she was cast in a leading role as Kimmy Schmidt in the Netflix comedy series \"Unbreakable Kimmy Schmidt\", for which she has received critical acclaim.  Kemper is also known for her supporting roles in the films \"Bridesmaids\" (2011) and \"21 Jump Street\" (2012).",
+      "Unbreakable Kimmy Schmidt: Unbreakable Kimmy Schmidt is an American television sitcom created by Tina Fey and Robert Carlock, starring Ellie Kemper in the title role, that has streamed on Netflix since March 6, 2015.  Originally set for a 13-episode first season on NBC for spring 2015, the show was sold to Netflix and given a two-season order.",
+      "Kimmy Schmidt: Kimberly Couger \"Kimmy\" Schmidt is the title character on the Netflix original series \"Unbreakable Kimmy Schmidt\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 337,
+    "generation_tokens": 24,
+    "generation_speed": 237.54614828818308,
+    "prompt_eval_speed": 44400.52700922266,
+    "generation_latency_s": 0.21796539996284992,
+    "latency": 0.7450122999725863,
+    "total_prompt_tokens": 473,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2234977,
+    "stage_route_s": 0.09857929998543113,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.37172269995789975,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05657669994980097,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.579999949783087e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.217998499982059,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7450217999285087,
+    "unaccounted_latency_s": 9.970006067305803e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Elizabeth Claire Kemper\" - Known as Elizabeth Claire Kemper, she plays the role of Elizabeth Claire in the Netflix series \"Unbreakable\".",
+      "\"Elizabeth Claire Kemper\" - She is also known by her character's name, Elizabeth Claire, and plays the role of Elizabeth Claire in the Netflix series \"Unbreakable\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

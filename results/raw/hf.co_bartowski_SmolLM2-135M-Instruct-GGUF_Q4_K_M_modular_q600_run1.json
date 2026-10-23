@@ -1,0 +1,48 @@
+{
+  "question_id": "Q600",
+  "query": "When was the American actor, film director which  Dana Brunetti is the president of his company born ",
+  "ground_truth": "July 26, 1959",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The American actor, film director Francis Ford Coppola (born April 7, 1939), also known as Francis Coppola, is the president of Trigger Street Productions. He was born on April 7, 1939 in Fulton County, Georgia and died on December 26, 2015 at the age of 84.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dana Brunetti: Dana Brunetti (born June 11, 1973) is an American film producer and social networking entrepreneur.  He is the president of Kevin Spacey's production company, Trigger Street Productions.  In 2016, he became the president of Relativity Media with Kevin Spacey taking on a chairman position.",
+      "1985 Peach Bowl: The 1985 Peach Bowl was a post-season American college football bowl game at Fulton County Stadium in Atlanta, Georgia between the Army Cadets and the University of Illinois Fighting Illini on December 31, 1985.  The game was the final contest of the 1985 NCAA Division I-A football season for both teams, and ended in a 31\u201329 victory for Army, the second bowl victory in school history.",
+      "Francis Ford Coppola: Francis Ford Coppola ( ; born April 7, 1939), also credited as Francis Coppola, is a semi-retired American film director, producer, screenwriter and film composer.  He was a central figure in the New Hollywood wave of filmmaking."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 332,
+    "generation_tokens": 83,
+    "generation_speed": 365.15136183860307,
+    "prompt_eval_speed": 20308.29583486028,
+    "generation_latency_s": 0.3615546999499202,
+    "latency": 0.727408800041303,
+    "total_prompt_tokens": 474,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2426362,
+    "stage_route_s": 0.22012239997275174,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.10794400004670024,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03761530003976077,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.640000406652689e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.36159859993495047,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.727422000025399,
+    "unaccounted_latency_s": 9.61000332608819e-05,
+    "route": "rag",
+    "router_raw": "The question asks about when the American actor, film director, Dana Brunetti is the president of his company. The answer to this question requires retrieval from internal files/documents and nothing else.",
+    "sub_queries": [
+      "1985"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

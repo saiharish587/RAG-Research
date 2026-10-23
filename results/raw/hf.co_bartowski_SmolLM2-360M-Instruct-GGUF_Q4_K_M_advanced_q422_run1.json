@@ -1,0 +1,42 @@
+{
+  "question_id": "Q422",
+  "query": "\"A Summer in the Cage\" and \"American Hardcore\" are both what kind of film?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Both \"A Summer in the Cage\" and \"American Hardcore\" are social problem films, which allows them to delve deeper into a specific issue than other genre films. They also share similarities with documentary films as they aim to provide insight into a particular social problem or phenomenon.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "American Hardcore (film): American Hardcore: The History of American Punk Rock 1980-1986 is a documentary directed by Paul Rachman and written by Steven Blush.  It is based on the book \"\" also written by Blush.  It was released on September 22, 2006 on a limited basis.  The film features some early pioneers of the hardcore punk music scene including Bad Brains, Black Flag, D.O.A., Minor Threat, Minutemen, SSD, and others.  It was released on DVD by Sony Pictures Home Entertainment on February 20, 2007.",
+      "A Summer in the Cage: A Summer in the Cage is a 2007 documentary film about a man's experiences with bipolar disorder.  The film follows the filmmaker's friend Sam and features an interview with mental health scholar Kay Redfield Jamison.  It was directed by Benjamin Selkow.  The documentary debuted on the Sundance Channel in 2007.",
+      "uch more didactic than its contemporaries.  Furthermore, the social problem film allows further immersion into a certain issue than other genre films.  For instance, gangster and prison films will reflect certain features of a social issue but won't actually fully explore the problem in the way that would qualify it for this genre."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 364,
+    "generation_tokens": 57,
+    "generation_speed": 251.4036704935892,
+    "prompt_eval_speed": 14519.34583167132,
+    "generation_latency_s": 1.1170422999421135,
+    "latency": 3.5354106000158936,
+    "total_prompt_tokens": 445,
+    "total_generation_tokens": 147,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1196912,
+    "stage_rewrite_s": 1.4760483000427485,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.7776403999887407,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1645570999244228,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.117086200043559,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.535423900000751,
+    "unaccounted_latency_s": 9.26000066101551e-05,
+    "rewritten_query": "The original query is a bit unclear, but here's an example of how you could rephrase it to make it more search-friendly:\n\nOriginal Query: \"A Summer in the Cage\" and \"American Hardcore\" are both what kind of film?\"\nOptimized Query: \"Are 'A Summer in the Cage' and 'American Hardcore' two different films, or is there a third category that encompasses them?",
+    "query_was_rewritten": true
+  }
+}

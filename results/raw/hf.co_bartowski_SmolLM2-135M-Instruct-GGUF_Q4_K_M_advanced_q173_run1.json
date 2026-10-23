@@ -1,0 +1,42 @@
+{
+  "question_id": "Q173",
+  "query": "The Memphis Hustle are based in a suburb of a city with a population of what in 2010?",
+  "ground_truth": "48,982",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Memphis Hustle are based in a suburb of a city with a population of 65,388.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Memphis Hustle: The Memphis Hustle are an American professional basketball team of the NBA G League announced to begin play for the 2017\u201318 season as an affiliate of the Memphis Grizzlies of the National Basketball Association (NBA).  Based in the Memphis suburb of Southaven, Mississippi, the team will play their home games at the Landers Center.",
+      "Tennessee: Tennessee ( ; Cherokee: \u13d4\u13be\u13cf , \"Tanasi \" ) is a state located in the southeastern region of the United States.  Tennessee is the 36th largest and the 16th most populous of the 50 United States.  Tennessee is bordered by Kentucky and Virginia to the north, North Carolina to the east, Georgia, Alabama, and Mississippi to the south, and Arkansas and Missouri to the west.  The Appalachian Mountains dominate the eastern part of the state, and the Mississippi River forms the state's western border.  Nashville is the state's capital and largest city, with a population of 660,388.  Tennessee's second largest city is Memphis, which has a population of 652,717.",
+      "Hustle &amp; Flow: Hustle & Flow is a 2005 American independent drama film written and directed by Craig Brewer and produced by John Singleton and Stephanie Allain.  It was released on July 22, 2005.  Terrence Howard stars as a Memphis hustler and pimp who faces his aspiration to become a rapper.  The film is dedicated to Sun Records founder Sam Phillips."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 430,
+    "generation_tokens": 26,
+    "generation_speed": 364.4774654797785,
+    "prompt_eval_speed": 24395.77896289572,
+    "generation_latency_s": 0.17020579997915775,
+    "latency": 0.532752100029029,
+    "total_prompt_tokens": 515,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1360224,
+    "stage_rewrite_s": 0.1572938000317663,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07250770006794482,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1326268999837339,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17023980000521988,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5327639000024647,
+    "unaccounted_latency_s": 9.639991912990808e-05,
+    "rewritten_query": "The Memphis Hustle is located in a suburban area, with a population of approximately 57,000.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q156",
+  "query": "Where was the world cup hosted that Algeria qualified for the first time into the round of 16?",
+  "ground_truth": "Brazil",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The World Cup was hosted by El Djezair Stadium in Algiers, Algeria.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Algeria at the FIFA World Cup: Algeria have appeared in the finals of the FIFA World Cup on four occasions in 1982, 1986, 2010 and 2014.  They have once qualified for the knockout rounds, reaching the round of 16 in 2014 before losing to Germany.  32 years before, Algeria nearly qualified to the second round of the 1982 World Cup after beating both West Germany and Chile; however, an arrangement match between West Germany and Austria wound up eliminating the Algerians.  In 2014, Algeria qualifyed for the first time into the round of 16.",
+      "July 5, 1962 Stadium: July 5, 1962 Stadium (English: 5 July 1962 Stadium , Arabic: \u0645\u0644\u0639\u0628 5 \u062c\u0648\u064a\u0644\u064a\u0629 1962\u200e \u200e ), (the name refers to 5 July 1962, the day Algeria declared independence from France), also known as El Djezair Stadium (Arabic: \u0645\u0644\u0639\u0628 5 \u062c\u0648\u064a\u0644\u064a\u0629 \u0628\u0627\u0644\u062c\u0632\u0627\u0626\u0631\u200e \u200e ), is a football and athletics stadium located in Algiers, Algeria.  The stadium was inaugurated in 1972 with a capacity of 95,000.  It served as the main stadium of the 1975 Mediterranean Games, the 1978 All-Africa Games, the 2004 Pan Arab Games, and the 2007 All-Africa Games.  The stadium was one of two venues of the 1990 African Cup of Nations (the other venue was the Stade 19 Mai 1956 in Annaba).  It hosted 9 matches of the tournament, including the final match, which had a second record attendance of 105,302 spectators.  In the final match, the home team Algeria defeated Nigeria 1-0 to win the tournament.  The record attendance is of 110,000 spectators in the frendly match between Algeria and Serbia on 3 March 2010.  It also hosted the 2000 African Championships in Athletics.  After a formal compliance with current safety standards in 1999, the stadium was reduced to an 80,200 capacity, and following a new phase of renovation in 2003, the stadium's capacity has been reduced further to its current all-seater capacity of 64,000.  The future capacity will be 80,000 with possible further renovations.",
+      "1970 FIFA World Cup: The 1970 FIFA World Cup was the ninth FIFA World Cup, the quadrennial international football championship for men's national teams.  Held from 31 May to 21 June in Mexico, it was the first World Cup tournament staged in North America, and the first held outside Europe and South America.  Teams representing 75 nations from all six populated continents entered the competition, and its qualification rounds began in May 1968.  Fourteen teams qualified from this process to join host nation Mexico and defending champions England in the sixteen-team final tournament.  El Salvador, Israel, and Morocco made their first appearances at the final stage, and Peru their first since 1930."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 841,
+    "generation_tokens": 19,
+    "generation_speed": 226.3198017914999,
+    "prompt_eval_speed": 97326.69829880801,
+    "generation_latency_s": 0.21086110000032932,
+    "latency": 0.5441056999843568,
+    "total_prompt_tokens": 983,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.245442,
+    "stage_route_s": 0.09575480001512915,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2011615999508649,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03615879989229143,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.93999507650733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21089350001420826,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5441155999433249,
+    "unaccounted_latency_s": 0.000108000123873353,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Where was the World Cup Hosted that Algeria Qualified for the First Time into the Round of 16?*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

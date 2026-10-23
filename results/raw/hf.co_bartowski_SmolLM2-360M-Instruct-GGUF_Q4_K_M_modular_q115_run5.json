@@ -1,0 +1,49 @@
+{
+  "question_id": "Q115",
+  "query": "Which component of shellite has the formula (ON)CHOH?",
+  "ground_truth": "picric acid",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The formula for the component of shellite with the formula (ON)CHOH is Picric acid and Dinitrophenol or Picric acid and Hexanitrodiphenylamine.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shellite (explosive): Shellite (known as Tridite in US service) is an explosive mixture of Picric acid and Dinitrophenol or Picric acid and Hexanitrodiphenylamine in a ratio of 70/30.  It was typically used as a filling in Royal Navy armour-piercing shells during the early part of the 20th century.",
+      "Mountain Pass rare earth mine: The Mountain Pass Rare Earth Mine is an open-pit mine of rare-earth elements (REEs) on the south flank of the Clark Mountain Range, just north of the unincorporated community of Mountain Pass, California, United States.  The mine, owned by Molycorp Inc., once supplied most of the world's rare-earth elements.  Molycorp is in bankruptcy proceedings as of Jan 2016.",
+      "Carbonated drink: Carbonated drinks are beverages that contain dissolved carbon dioxide.  The dissolution of CO in a liquid, gives rise to \"fizz\" or \"effervescence\".  The process usually involves carbon dioxide under high pressure.  When the pressure is removed, the carbon dioxide is released from the solution as small bubbles, which causes the solution to become effervescent, or fizzy.  A common example is the dissolving of carbon dioxide in water, resulting in carbonated water.  Carbon dioxide is only weakly soluble in water, therefore it separates into a gas when the pressure is released."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 380,
+    "generation_tokens": 41,
+    "generation_speed": 215.75540704099353,
+    "prompt_eval_speed": 45634.68235859253,
+    "generation_latency_s": 0.3102707000216469,
+    "latency": 0.6441790000535548,
+    "total_prompt_tokens": 508,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2262751,
+    "stage_route_s": 0.09054630005266517,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1893619999755174,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05379829998128116,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8999983593821526e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.31031770003028214,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6441951000597328,
+    "unaccounted_latency_s": 0.00011300004553049803,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Shellite (Na2CO3\u00b7NaHCO3)",
+      "Calcium carbonate (CaCO3)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

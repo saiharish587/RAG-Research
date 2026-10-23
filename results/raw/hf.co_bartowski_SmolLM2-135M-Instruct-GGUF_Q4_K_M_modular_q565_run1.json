@@ -1,0 +1,48 @@
+{
+  "question_id": "Q565",
+  "query": "Who is the author of the 1993 production Madge Ryan participated in?",
+  "ground_truth": "Euripides",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Meg Ryan participated in the 1993 production Madge Ryan participated in.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Madge Ryan: Madge Ryan (8 January 1919 \u2013 9 January 1994) was an Australian actress, known for her stage roles in the United Kingdom, including London productions of \"Entertaining Mr Sloane\" (1964), \"Philadelphia, Here I Come\" (1967), and \"Medea\" (1993).  She also starred in the Broadway production of \"Summer of the Seventeenth Doll\" (1958).  Her film appearances included \"Summer Holiday\" (1963), \"A Clockwork Orange\" (1971), \"Frenzy\" (1972), and \"Who Is Killing the Great Chefs of Europe? \" (1978).",
+      "Naked (1993 film): Naked is a 1993 British black comedy-drama film written and directed by Mike Leigh and starring David Thewlis as Johnny, a motor-mouthed intellectual and conspiracy theorist.  Stark and brutal in tone, \"Naked\" was a departure for Leigh, whose previous works were known for their subtle comedic dissections of middle-class and working-class manners.  Leigh's \"Naked\" screenplay relied heavily on lengthy improvisation during rehearsals, but little actual ad-libbing was filmed.  Critically acclaimed, the film won a number of awards, including best director and best actor at Cannes.  \"Naked\" marked a new career high for Leigh as a director and made the then-unknown Thewlis an internationally recognized star.",
+      "Meg Ryan: Meg Ryan (born Margaret Mary Emily Anne Hyra; November 19, 1961) is an American actress, director, and producer.  Ryan began her acting career in 1981 in minor roles, before joining the cast of the CBS soap opera \"As the World Turns\" in 1982.  Subsequently, she began to appear in supporting roles in films during the mid-1980s, achieving recognition in independent movies such as \"Promised Land\" (1988) before her performance in the Rob Reiner-directed romantic comedy \"When Harry Met Sally...\" (1989) brought her widespread attention and her first Golden Globe nomination."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 567,
+    "generation_tokens": 19,
+    "generation_speed": 339.1524758130734,
+    "prompt_eval_speed": 19562.517250897046,
+    "generation_latency_s": 0.19864409998990595,
+    "latency": 0.5960052999434993,
+    "total_prompt_tokens": 703,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2311047,
+    "stage_route_s": 0.15945349994581193,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19867049995809793,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03906390001066029,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.880002234131098e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1986840000608936,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5960173000348732,
+    "unaccounted_latency_s": 9.749992750585079e-05,
+    "route": "rag",
+    "router_raw": "The author of the 1993 production Madge Ryan participated in was Madge Ryan.",
+    "sub_queries": [
+      "Madge Ryan was a British actress who starred in several films, including \"The Madman,\" \"A Nightmare on Elm Street,\" and \"Maid.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

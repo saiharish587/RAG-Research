@@ -1,0 +1,49 @@
+{
+  "question_id": "Q445",
+  "query": "Which fantasy film from 1971 featured the song \"The Age of Not Believing\"?",
+  "ground_truth": "Bedknobs and Broomsticks",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The song \"The Age of Not Believing\" is featured on the 1971 Walt Disney musical film \"Bedknobs and Broomsticks\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Age of Not Believing: \"The Age of Not Believing\" is a song written by Robert and Richard Sherman for the 1971 Walt Disney musical film production \"Bedknobs and Broomsticks\".  Angela Lansbury sings the song in the motion picture.  In the lyrics, Lansbury's character Eglantine expresses how as children grow up, they lose their belief in magic and doubt themselves.  The song works on two levels, both on a personal, human level and thematically for the whole film- a Britain grown cynical from the pressures of war must learn to borrow from its own past magic in order to overcome the tremendous challenge which lies before it, while the characters in the film must finally learn to trust in Eglantine's magic to achieve their goals and save Britain from the Nazis.",
+      "If Not for You: \"If Not for You\" is a song by Bob Dylan, recorded for his 1970 album \"New Morning\".  Dylan recorded the album version in August 1970, having first recorded the song in a session with George Harrison on May 1 of that year.  In addition to appearing on the album in October 1970, the August recording was released as a single in Europe; the May recording remained unreleased until its inclusion on \"The Bootleg Series Volumes 1\u20133 (Rare & Unreleased)\" in 1991.",
+      "Now You See Him, Now You Don't: Now You See Him, Now You Don't is a 1972 Walt Disney Productions film starring Kurt Russell as a chemistry student who accidentally discovers the secret to invisibility.  It is the sequel to the 1969 film \"The Computer Wore Tennis Shoes\" and was followed by 1975's \"The Strongest Man in the World\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 470,
+    "generation_tokens": 33,
+    "generation_speed": 214.30658830405557,
+    "prompt_eval_speed": 14088.72901678657,
+    "generation_latency_s": 0.299511699937284,
+    "latency": 0.8817527999635786,
+    "total_prompt_tokens": 610,
+    "total_generation_tokens": 105,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2291687,
+    "stage_route_s": 0.10817690007388592,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.41502610000316054,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05885570007376373,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5600074119865894e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29955200001131743,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.881764700054191,
+    "unaccounted_latency_s": 9.92997083812952e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The movie \"The Age of Not Believing\" was released in 1971 and features the song \"The Age of Not Believing\".",
+      "Query 2: The film \"The Age of Not Believing\" was released in 1971 and featured the song \"The Age of Not Believing\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

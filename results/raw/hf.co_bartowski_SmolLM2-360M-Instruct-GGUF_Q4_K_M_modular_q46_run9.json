@@ -1,0 +1,49 @@
+{
+  "question_id": "Q46",
+  "query": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+  "ground_truth": "Yellowcraig",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of the North Sea.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dirleton Castle: Dirleton Castle is a medieval fortress in the village of Dirleton, East Lothian, Scotland.  It lies around 2 mi west of North Berwick, and around 19 mi east of Edinburgh.  The oldest parts of the castle date to the 13th century, and it was abandoned by the end of the 17th century.",
+      "Douglas River: The Douglas River, formerly known as the Twain, is a river of the West Coast of New Zealand's South Island.  Its source is high in the Southern Alps, five kilometres south of Mount Sefton, and its upper reaches are fed by water from the Douglas Glacier.  It flows west for 18 kilometres, joined by runoff from the Horace Walker Glacier, before joining the waters of the Karangarua River.  The Douglas River's entire course is within Westland Tai Poutini National Park.  The river and glacier are named after Charles Edward Douglas, a 19th-century explorer and mountaineer.",
+      "North Sea: The North Sea is a marginal sea of the Atlantic Ocean located between Great Britain, Scandinavia, Germany, the Netherlands, Belgium, and France.  An epeiric (or \"shelf\") sea on the European continental shelf, it connects to the ocean through the English Channel in the south and the Norwegian Sea in the north.  It is more than 970 km long and 580 km wide, with an area of around 570000 km2 ."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 399,
+    "generation_tokens": 24,
+    "generation_speed": 215.41278474877484,
+    "prompt_eval_speed": 37057.67623293396,
+    "generation_latency_s": 0.234220499987714,
+    "latency": 0.5502934999531135,
+    "total_prompt_tokens": 545,
+    "total_generation_tokens": 42,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2345878,
+    "stage_route_s": 0.10564309998881072,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14773239998612553,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06252529995981604,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3999945521354675e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23425820004194975,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5503028000239283,
+    "unaccounted_latency_s": 9.030010551214218e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The River Tay\"",
+      "\"The North Sea\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

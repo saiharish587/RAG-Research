@@ -1,0 +1,48 @@
+{
+  "question_id": "Q229",
+  "query": "Martin Patterson \"Pat\" Hingle was a close friend of an actor who achieved success in what Western TV series? ",
+  "ground_truth": "Rawhide",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Martin Patterson \"Pat\" Hingle was a close friend of Clint Eastwood, who achieved success in the Western TV series \"Rawhide\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pat Hingle: Martin Patterson \"Pat\" Hingle (July 19, 1924 \u2013 January 3, 2009) was an American actor who appeared in hundreds of television shows and feature films.  His first film was \"On the Waterfront\" in 1954.  He often played tough authority figures.  Hingle was a close friend of Clint Eastwood and appeared in the Eastwood films \"Hang 'em High\", \"The Gauntlet\" and \"Sudden Impact\".",
+      "Final War of the Roman Republic: The Final War of the Roman Republic, also known as Antony's Civil War or The War between Antony and Octavian, was the last of the Roman civil wars of the republic, fought between Mark Antony (assisted by Cleopatra) and Octavian.  After the Roman Senate declared war on the Egyptian queen Cleopatra, Antony, her lover and ally, betrayed the Roman government and joined the war on Cleopatra\u2019s side.  After the decisive victory for Octavian at the Battle of Actium, Cleopatra and Antony withdrew to Alexandria, where Octavian besieged the city until both Antony and Cleopatra committed suicide.",
+      "Clint Eastwood: Clinton Eastwood Jr. (born May 31, 1930) is an American actor, filmmaker, musician, and political figure.  After achieving success in the Western TV series \"Rawhide\", he rose to international fame with his role as the Man with No Name in Sergio Leone's \"Dollars\" Trilogy of Spaghetti Westerns during the 1960s, and as antihero cop Harry Callahan in the five \"Dirty Harry\" films throughout the 1970s and 1980s.  These roles, among others, have made Eastwood an enduring cultural icon of masculinity."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 464,
+    "generation_tokens": 30,
+    "generation_speed": 234.11345137853803,
+    "prompt_eval_speed": 14991.438079545087,
+    "generation_latency_s": 0.2696583999786526,
+    "latency": 0.6067280999850482,
+    "total_prompt_tokens": 612,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2347786,
+    "stage_route_s": 0.09969239996280521,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20024739997461438,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036950500099919736,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.650000482797623e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26969430001918226,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6067386999493465,
+    "unaccounted_latency_s": 0.00010809989180415869,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Last Days of the Roman Empire\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

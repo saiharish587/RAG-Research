@@ -1,0 +1,49 @@
+{
+  "question_id": "Q444",
+  "query": "What star of \"Attack of the Gryphon\" was also a voice artist in Johnny Bravo?  ",
+  "ground_truth": "Larry Richard Drake",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Larry Drake",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gryphon (film): Gryphon also known as \"Attack of the Gryphon\" is a 2007 television film directed by Andrew Prowse, starring Amber Benson, Jonathan LaPaglia, and Larry Drake.  It premiered on the Sci-Fi Channel on January 27, 2007.",
+      "Larry Drake: Larry Richard Drake (February 21, 1950 \u2013 March 17, 2016) was an American actor, voice artist, and comedian best known as Benny Stulwicz in \"L.A. Law\", Robert G. Durant in both \"Darkman\" and \"\" and the voice of Pops in \"Johnny Bravo\".",
+      "Jeff Bennett: Jeff Bennett (born October 2, 1962) is an American voice actor and singer.  His voice roles include Johnny Bravo in the television series of the same name, Petrie in the \"Land Before Time\" films and television series, Mr. Smee and Bones in \"Jake and the Never Land Pirates\", The Man With the Yellow Hat in \"Curious George\", Raj in \"Camp Lazlo\", Kowalski in \"The Penguins of Madagascar\" series and various other characters in films, television shows and video games."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 360,
+    "generation_tokens": 4,
+    "generation_speed": 232.1262766945218,
+    "prompt_eval_speed": 13887.81729804799,
+    "generation_latency_s": 0.1514136999612674,
+    "latency": 0.5681179999373853,
+    "total_prompt_tokens": 506,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2258947,
+    "stage_route_s": 0.10523969994392246,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2530182000482455,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05825550004374236,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.010006811469793e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15144879999570549,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5681268000043929,
+    "unaccounted_latency_s": 9.50999092310667e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Johnny Bravo\" - Voice actor",
+      "\"Star of 'Attack of the Gryphon'\" - Star of \"Attack of the Gryphon\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

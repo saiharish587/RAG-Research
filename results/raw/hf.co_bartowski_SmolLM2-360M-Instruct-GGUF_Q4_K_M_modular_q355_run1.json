@@ -1,0 +1,49 @@
+{
+  "question_id": "Q355",
+  "query": "Were Thomas H. Ince and Joseph McGrath of the same nationality?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Thomas H. Ince and Joseph McGrath were not of the same nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thomas H. Ince: Thomas Harper Ince (November 16, 1880 \u2013 November 19, 1924) was an American silent film producer, director, screenwriter, and actor.",
+      "Czech Americans: Czech Americans (), known in the 19th and early 20th century as Bohemian Americans, are citizens of the United States who are of Czech descent.  Czechs originate from the Czech lands, a term which refers to the majority of the traditional lands of the Bohemian Crown, namely Bohemia, Moravia and Czech Silesia.  These lands over time have been governed by a variety of states, including the Kingdom of Bohemia, the Austrian Empire, the Czechoslovak Republic, and the Czech Republic.  Germans from the Czech lands who emigrated to the United States usually identified as German American, or, more specifically, as Americans of German Bohemian descent.  According to the 2000 US census, there are 1,262,527 Americans of full or partial Czech descent, in addition to 441,403 persons who list their ancestry as Czechoslovak.",
+      "Colt clan incest case: The Colt family incest case, dubbed by media as the Colt incest clan, is an Australian family discovered in 2012 to have been engaging in four generations of incest beginning with \"Tim and June Colt,\" a brother and sister who emigrated from New Zealand in the 1970s.  The family grew to nearly 40 members ranging from grandparents to mothers, fathers, sons, daughters, aunts, uncles, nephews, brothers and sisters all engaging in various forms of incest.  Many of the children suffered from deformities and medical problems.  The case has been described by lead investigator Peter Yeomans as, \"like nothing I\u2019ve ever seen,\" and was considered by many to be so shocking that in a rare move the Australian family court allowed full details to be made public, albeit with all names changed to pseudonyms for the children's protection, including the family name of \"Colt.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 519,
+    "generation_tokens": 19,
+    "generation_speed": 208.43846677052022,
+    "prompt_eval_speed": 12032.55048338859,
+    "generation_latency_s": 0.24720440001692623,
+    "latency": 0.5944448999362066,
+    "total_prompt_tokens": 649,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2354543,
+    "stage_route_s": 0.10316609998699278,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18933309998828918,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05456060008145869,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.650008097290993e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2472453999798745,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5944569000275806,
+    "unaccounted_latency_s": 9.619991760700941e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Are they both from the United States?",
+      "Did they have any siblings?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

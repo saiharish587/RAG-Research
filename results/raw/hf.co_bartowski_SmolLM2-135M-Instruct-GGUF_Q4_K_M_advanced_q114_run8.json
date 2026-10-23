@@ -1,0 +1,42 @@
+{
+  "question_id": "Q114",
+  "query": "Who died first, George Archainbaud or Ralph Murphy?",
+  "ground_truth": "George Archainbaud",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The question asks who died first, George Archainbaud (May 7, 1890 \u2013 February 20, 1959) and Ralph Murphy (February 10, 1934).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ralph Murphy: Ralph Murphy (May 1, 1895 \u2013 February 10, 1967) was an American film director.  Born in Rockville, Connecticut, Murphy was active in films from 1931 through 1962, with some work in television.  From 1941\u201344 he was married to Gloria Dickson, whom he directed in \"I Want a Divorce\".",
+      "George Archainbaud: George Archainbaud (May 7, 1890 \u2013 February 20, 1959) was a French-born American film and television director.",
+      "Die Hard with a Vengeance: Die Hard with a Vengeance is a 1995 American action film and the third in the \"Die Hard\" film series.  It was co-produced and directed by John McTiernan (who directed \"Die Hard\"), written by Jonathan Hensleigh, and stars Bruce Willis as New York City Police Department Lieutenant John McClane, Samuel L. Jackson as McClane's reluctant partner Zeus Carver, and Jeremy Irons as Simon Gruber.  It was released on May 19, 1995, five years after \"Die Hard 2\", becoming the highest-grossing film at the worldwide box-office that year, but received mixed reviews.  It was followed by \"Live Free or Die Hard\" and \"A Good Day to Die Hard\" in 2007 and 2013, respectively."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 400,
+    "generation_tokens": 50,
+    "generation_speed": 425.0544069640914,
+    "prompt_eval_speed": 61312.07847946045,
+    "generation_latency_s": 0.19944240001495928,
+    "latency": 0.560766400070861,
+    "total_prompt_tokens": 473,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1388896,
+    "stage_rewrite_s": 0.17119329993147403,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07170029997359961,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1183012000983581,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19947849994059652,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5607751000206918,
+    "unaccounted_latency_s": 0.0001023000804707408,
+    "rewritten_query": "George Archainbaud was the first to die in 1925 and Ralph Murphy was the second to die in 1930.",
+    "query_was_rewritten": true
+  }
+}

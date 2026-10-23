@@ -1,0 +1,42 @@
+{
+  "question_id": "Q455",
+  "query": "Are Agee and To Shoot an Elephant both documentaries about war?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Agee and To Shoot an Elephant are not documentaries about war. Agee is a 1980 documentary film directed by Ross Spears, while To Shoot an Elephant is a 2013 novel by Michael Ondaatje.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Agee (film): Agee is a 1980 American documentary film directed by Ross Spears, about the writer James Agee.  It was nominated for an Academy Award for Best Documentary Feature.",
+      "World War I: World War I (WWI or WW1), also known as the First World War, the Great War, or the War to End All Wars, was a global war originating in Europe that lasted from 28 July 1914 to 11 November 1918.  More than 70 million military personnel, including 60 million Europeans, were mobilised in one of the largest wars in history.  Over nine million combatants and seven million civilians died as a result of the war (including the victims of a number of genocides), a casualty rate exacerbated by the belligerents' technological and industrial sophistication, and the tactical stalemate caused by gruelling trench warfare.  It was one of the deadliest conflicts in history, and paved the way for major political changes, including revolutions in many of the nations involved.  Unresolved rivalries still extant at the end of the conflict contributed to the start of the Second World War only twenty-one years later.",
+      "World war: A world war, as it is commonly understood, is a large-scale war involving many of the countries of the world or many of the most powerful and populous ones.  World wars span multiple countries on multiple continents, with battles fought in many theaters.  While a variety of global conflicts have been subjectively deemed \"world wars\", such as the Cold War and the War on Terror, the term is widely and generally accepted only as it is retrospectively applied to two major international conflicts that occurred during the 20th century: World War I (1914\u20131918) and World War II (1939\u20131945)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 466,
+    "generation_tokens": 55,
+    "generation_speed": 249.5111849059343,
+    "prompt_eval_speed": 15080.418109446295,
+    "generation_latency_s": 1.133135600015521,
+    "latency": 3.5437355000758544,
+    "total_prompt_tokens": 540,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1289577,
+    "stage_rewrite_s": 1.284282200038433,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9696948999771848,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15646920003928244,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.13319840002805,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.543746200040914,
+    "unaccounted_latency_s": 0.00010219996329396963,
+    "rewritten_query": "Are Agee's \"The Last Days of the Burmese Army\" a documentary about war, or does it focus on the life of a British soldier during World War I?",
+    "query_was_rewritten": true
+  }
+}

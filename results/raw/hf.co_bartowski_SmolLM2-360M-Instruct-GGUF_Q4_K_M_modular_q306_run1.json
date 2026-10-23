@@ -1,0 +1,49 @@
+{
+  "question_id": "Q306",
+  "query": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+  "ground_truth": "1901",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 1984 film \"Marlene\" is a documentary about an actress born in 1901, not 1902.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marlene Dietrich: Marie Magdalene \"Marlene\" Dietrich ( , ] ; 27 December 1901 \u2013 6 May 1992) was a German actress and singer who held both German and American citizenship.  Throughout her unusually long career, which spanned from the 1910s to the 1980s, she maintained popularity by continually reinventing herself.",
+      "Marlene (1984 film): Marlene, also known in Germany as Marlene Dietrich - Portr\u00e4t eines Mythos, is a 1984 documentary film made by Maximilian Schell about the legendary film star Marlene Dietrich.  It was made by Bayerischer Rundfunk (BR) and OKO-Film and released by Futura Film, Munich and Alive Films, (USA).",
+      "Joan Crawford: Joan Crawford (born Lucille Fay LeSueur; (March 23, 190?  \u2013 May 10, 1977) was an American film and television actress who began her career as a dancer and stage showgirl.  In 1999, the American Film Institute ranked Crawford tenth on its list of the greatest female stars of Classic Hollywood Cinema."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 350,
+    "generation_tokens": 34,
+    "generation_speed": 255.41441179875153,
+    "prompt_eval_speed": 13886.133703630232,
+    "generation_latency_s": 0.2690027999924496,
+    "latency": 0.7628056000685319,
+    "total_prompt_tokens": 496,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2309051,
+    "stage_route_s": 0.10739210003521293,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3287678000051528,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05747860006522387,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.950002767145634e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26903419999871403,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.762815700029023,
+    "unaccounted_latency_s": 9.3999900855124e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Search Query 1: The year of birth for Marlene Dietrich, a famous actress from the 1920s.",
+      "Search Query 2: The year of birth for Marlene Dietrich, a famous actress from the 1920s."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

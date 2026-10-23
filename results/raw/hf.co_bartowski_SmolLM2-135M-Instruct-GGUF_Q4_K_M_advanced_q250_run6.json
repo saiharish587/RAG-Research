@@ -1,0 +1,42 @@
+{
+  "question_id": "Q250",
+  "query": "Yoann Lemoine, a French video director, has created music videos for Lana Del Rey, Katy Perry, and an orchestral country pop ballad by which top pop artist?",
+  "ground_truth": "Taylor Swift",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Based on the context provided, it appears that Yoann Lemoine is a helpful research assistant who assists in answering questions about the role of Yoann Lemoine in creating music videos for Lana Del Rey, Katy Perry, and an orchestral country pop ballad by which top pop artist?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yoann Lemoine: Yoann Lemoine (born 16 March 1983) is a French music video director, graphic designer and singer-songwriter.  His most notable works include his music video direction for Katy Perry's \"Teenage Dream\", Taylor Swift's single \"Back to December\", Lana Del Rey's \"Born to Die\" and Mystery Jets' \"Dreaming of Another World\".",
+      "Blue Jeans (Lana Del Rey song): \"Blue Jeans\" is a song by American singer-songwriter Lana Del Rey for her second studio album \"Born to Die\" (2012).  It was released on April 8, 2012, by Interscope Records as the third single from the record.  Produced by Emile Haynie, the song was written by Del Rey, Haynie, and Dan Heath.  It is a downtempo ballad with hip hop influences.  A controversial performance of the song on \"SNL\" placed Del Rey under scrutiny and polarized opinion.  Charting across Europe and Asia, \"Blue Jeans\" reached the top 10 in Belgium, Poland, and Israel.  Two music videos were created for the song.  The first was self-produced.  The second was shot and directed by Yoann Lemoine, featuring film noir elements and crocodiles.",
+      "Katy Perry: Katheryn Elizabeth Hudson (born October 25, 1984), known professionally as Katy Perry, is an American singer and songwriter.  After singing in church during her childhood, she pursued a career in gospel music as a teenager.  Perry signed with Red Hill Records and released her debut studio album \"Katy Hudson\" under her birth name in 2001, which was commercially unsuccessful.  She moved to Los Angeles the following year to venture into secular music after Red Hill ceased operations and she subsequently began working with producers Glen Ballard, Dr. Luke, and Max Martin.  After adopting the stage name Katy Perry and being dropped by The Island Def Jam Music Group and Columbia Records, she signed a recording contract with Capitol Records in April 2007."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 557,
+    "generation_tokens": 62,
+    "generation_speed": 414.6214238902189,
+    "prompt_eval_speed": 61330.103501431404,
+    "generation_latency_s": 0.24230069993063807,
+    "latency": 0.6812882999656722,
+    "total_prompt_tokens": 656,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1269714,
+    "stage_rewrite_s": 0.17430119996424764,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07485229999292642,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1897224000422284,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.24233289994299412,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6813041999703273,
+    "unaccounted_latency_s": 9.580003097653389e-05,
+    "rewritten_query": "Yoann Lemoine's music videos have been featured in the music videos of Lana Del Rey, Katy Perry, and an orchestral country pop ballad by Katy Perry.",
+    "query_was_rewritten": true
+  }
+}

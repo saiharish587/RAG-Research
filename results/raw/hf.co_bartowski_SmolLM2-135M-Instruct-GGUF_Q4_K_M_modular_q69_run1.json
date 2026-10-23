@@ -1,0 +1,48 @@
+{
+  "question_id": "Q69",
+  "query": "who is the younger brother of The episode guest stars of The Hard Easy ",
+  "ground_truth": "Bill Murray",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The younger brother of The Hard Easy (film) is Ethan \"Ted\" McGuire.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Hard Easy (Adventure Time): \"The Hard Easy\" is the twenty-third episode of the fourth season of the American animated television series \"Adventure Time\".  The episode was written and storyboarded by Tom Herpich and Skyler Page, from a story by Patrick McHale, Kent Osborne, and Pendleton Ward.  It originally aired on Cartoon Network on October 1, 2012.  The episode guest stars Brian Doyle-Murray as Prince Huge and Jonathan Katz as the Mudscamp elder.",
+      "Hard Ball: \"Hard Ball\" (also known as \"Negotiation\") is the fifteenth episode of NBC's first season of \"30 Rock\".  It was written by one of the season's co-producers, Matt Hubbard, and directed by one of the season's supervising producers, Don Scardino.  It aired on February 22, 2007 in the United States.  Guest stars who appeared in the episode were David Alan Basche, Gregg Bello, Katrina Bowden, Kevin Brown, Grizz Chapman, Rachel Dratch, Keith Powell, Lonny Ross and Gregory Wooddell.  Tucker Carlson and Chris Matthews also appear as themselves in the episode.",
+      "The Hard Easy (film): The Hard Easy is a 2006 American action crime drama film directed by Ari Ryan, and written by Jon Lindstrom and Tom Schanley.  The film stars Henry Thomas, Vera Farmiga, David Boreanaz, Bruce Dern, Peter Weller, Gary Busey, and Nick Lachey.  The film was released straight-to-DVD in the United States on May 22, 2007."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 440,
+    "generation_tokens": 21,
+    "generation_speed": 344.76531332600024,
+    "prompt_eval_speed": 17942.339844227867,
+    "generation_latency_s": 0.192434300086461,
+    "latency": 0.4870517000090331,
+    "total_prompt_tokens": 570,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2341507,
+    "stage_route_s": 0.138804400106892,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12065119994804263,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.035006900085136294,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.630000330507755e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1924662000965327,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4870610000798479,
+    "unaccounted_latency_s": 8.659984450787306e-05,
+    "route": "rag",
+    "router_raw": "The younger brother of The episode guest stars of The Hard Easy is Ethan.",
+    "sub_queries": [
+      "Who is the younger brother of The Hard Easy?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

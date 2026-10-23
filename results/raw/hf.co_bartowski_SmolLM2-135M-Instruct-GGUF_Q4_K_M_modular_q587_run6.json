@@ -1,0 +1,49 @@
+{
+  "question_id": "Q587",
+  "query": "Fantasy Records is know for recordings of comedian Lenny Bruce, Creedence Clearwater Revival, and what American jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip?",
+  "ground_truth": "Vincent Anthony Guaraldi",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Detroit Grand Pubahs",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fantasy Records: Fantasy Records is an American record company and label founded by brothers Max and Sol Weiss in 1949.  The early years of the company were dedicated to issuing recordings by jazz pianist Dave Brubeck, who was also one of its investors, but the label is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+      "Detroit Grand Pubahs: The Detroit Grand Pubahs are an American musical group from Detroit, Michigan, comprising Paris the Black Fu (real name Mack Goudy, Jr.) and The Mysterious Mr O. (real name Oliver Way).  One of the founding members, Dr. Toefinger (real name Andy Toth), left in 2004.  They are best known for their 2000 single \"Sandwiches\", which reached number 29 in the Hot Dance Club Songs chart.",
+      "Creedence Clearwater Revival: Creedence Clearwater Revival, often informally abbreviated to Creedence or CCR, was an American rock band active in the late 1960s and early 1970s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 348,
+    "generation_tokens": 6,
+    "generation_speed": 411.49441053425693,
+    "prompt_eval_speed": 46362.90967226219,
+    "generation_latency_s": 0.134351099957712,
+    "latency": 0.571285100071691,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2379737,
+    "stage_route_s": 0.11010859999805689,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2679529000306502,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058682499919086695,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3999945521354675e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13439579994883388,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5712977000512183,
+    "unaccounted_latency_s": 0.00010460021439939737,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Lenny Bruce - Peanut Butter",
+      "Creedence Clearwater Revival - Peanut Butter"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

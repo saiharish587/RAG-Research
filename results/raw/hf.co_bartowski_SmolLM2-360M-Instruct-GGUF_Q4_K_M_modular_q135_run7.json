@@ -1,0 +1,49 @@
+{
+  "question_id": "Q135",
+  "query": "This American crime film set in South Los Angeles was written and directed by the same director and writer of screenwriter of \"Street Kings\", \"End of Watch\", \"Sabotage\", \"Fury\" and what other film? ",
+  "ground_truth": "Suicide Squad",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The American crime film set in South Los Angeles that David Ayer wrote and directed is \"End of Watch\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "End of Watch: End of Watch is a 2012 American crime drama film written and directed by David Ayer.  It stars Jake Gyllenhaal and Michael Pe\u00f1a as Brian Taylor and Miguel Zavala, two Los Angeles Police Department officers who work in South Los Angeles.  The film focuses on their day-to-day police work, their dealings with a certain group of gang members, their friendship with each other, and their personal relationships.",
+      "The Godfather Part III: The Godfather Part III is a 1990 American crime film written by Mario Puzo and Francis Ford Coppola, and directed by Coppola.  A sequel to \"The Godfather\" (1972) and \"The Godfather Part II\" (1974), it completes the story of Michael Corleone, a Mafia kingpin who attempts to legitimize his criminal empire.  The film also includes fictionalized accounts of two real-life events: the 1978 death of Pope John Paul I and the Papal banking scandal of 1981\u201382, both linked to Michael Corleone's business affairs.  The film stars Al Pacino, Diane Keaton, Talia Shire, and Andy Garc\u00eda, and features Eli Wallach, Joe Mantegna, George Hamilton, Bridget Fonda, and Sofia Coppola.",
+      "The Untouchables of Elliot Mouse: The Untouchables of Elliot Mouse is a 26 half-hour television animated series loosely inspired by the real life Eliot Ness, and his group of agents colloquially known as The Untouchables, and their investigation into the real life gangster Al Capone, although (as with past adaptations) it does take some liberties with history.  The series also parodies the violent atmosphere of Chicago during the Dry Law, as well as the old American films, their heroes and villains.  The main characters in this series are four friendly mice: Elliot \"Mouse\", Gordon, Mr. Wilson, and Jack the Irishman, although there are also some cats and dogs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 547,
+    "generation_tokens": 23,
+    "generation_speed": 237.9179079774909,
+    "prompt_eval_speed": 69495.61682124254,
+    "generation_latency_s": 0.2184511999366805,
+    "latency": 0.5305384000530466,
+    "total_prompt_tokens": 745,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22652080000000002,
+    "stage_route_s": 0.10040810005739331,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15436729998327792,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05712799995671958,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6299963034689426e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2184895999962464,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5305515000363812,
+    "unaccounted_latency_s": 0.00010300008580088615,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Godfather Part III\"",
+      "\"The Untouchables\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

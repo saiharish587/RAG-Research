@@ -1,0 +1,48 @@
+{
+  "question_id": "Q441",
+  "query": "Ronald Reagan and George H. W. Bush both held which position in office?",
+  "ground_truth": "President of the United States",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "George H. W. Bush did not hold any positions of government during his presidency. He served as the 41st President of the United States from January 20, 1989, to January 20, 1993 and was succeeded by George H. W. Bush.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Presidency of Ronald Reagan: The presidency of Ronald Reagan began on January 20, 1981, when Ronald Reagan was inaugurated as President of the United States, and ended on January 20, 1989.  Reagan, a Republican, took office as the 40th United States president following a landslide win over Democratic incumbent President Jimmy Carter in the 1980 presidential election.  Reagan was succeeded by his vice president, George H. W. Bush, who won the 1988 presidential election with Reagan's support.",
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States.",
+      "Presidency of George H. W. Bush: The presidency of George H. W. Bush began at noon EST on January 20, 1989, when George H. W. Bush was inaugurated as 41st President of the United States, and ended on January 20, 1993.  Bush, a Republican, took office after a landslide victory over Democrat nominee Michael Dukakis in the 1988 presidential election.  He was the first sitting vice president to be elected president since Martin Van Buren in 1836.  Later, Bush, the 41st president, and his oldest son, George W. Bush, the country's 43rd (2001\u20132009), would become only the second father and son pair to become president.  (John Adams and John Quincy Adams were the first.)  Bush was denied a second term in the 1992 presidential election, which was won by Democrat Bill Clinton."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 593,
+    "generation_tokens": 65,
+    "generation_speed": 393.8200545289306,
+    "prompt_eval_speed": 76093.93045040421,
+    "generation_latency_s": 0.28635829989798367,
+    "latency": 0.6634850000264123,
+    "total_prompt_tokens": 725,
+    "total_generation_tokens": 138,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2214117,
+    "stage_route_s": 0.09277790004853159,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2474293999839574,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03673799999523908,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.8400059565901756e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2864077999256551,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6634994000196457,
+    "unaccounted_latency_s": 0.00010870001278817654,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Ronald Reagan and George H.W. Bush both held positions in office, but they were different roles. Ronald Reagan was a Republican President who served from 1981 to 2001, while George H.W. Bush was a Democrat President who served from 1985 to 2001."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

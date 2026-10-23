@@ -1,0 +1,48 @@
+{
+  "question_id": "Q225",
+  "query": "What film was written and directed by Joby Harold with music written by Samuel Sim?",
+  "ground_truth": "Awake",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "You are correct that the correct answer is: \"Awake\" for the film \"Dunkirk.\" The film was written and directed by Joby Harold with music written by Samuel Sim.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mary Poppins (film): Mary Poppins is a 1964 American musical-fantasy film directed by Robert Stevenson and produced by Walt Disney, with songs written and composed by the Sherman Brothers.  The screenplay is by Bill Walsh and Don DaGradi, loosely based on P. L. Travers' book series \"Mary Poppins\".  The film, which combines live-action and animation, stars Julie Andrews in the role of Mary Poppins who visits a dysfunctional family in London and employs her unique brand of lifestyle to improve the family's dynamic.  Dick Van Dyke, David Tomlinson, and Glynis Johns are featured in supporting roles.  The film was shot entirely at the Walt Disney Studios in Burbank, California using painted London background scenes.",
+      "Samuel Sim: Samuel Sim is a film and television composer.  He first gained recognition with his award winning score for the BBC drama series \"Dunkirk\".  Since then he has written the music for a wide variety of film and television productions, most recently scoring the film \"Awake\" for The Weinstein Company and the BBC/HBO drama series \"House of Saddam\".  His most recent acclaimed music is the soundtrack for Home Fires.  Home Fires (Music from the Television Series) released May 6, 2016 by Sony Classical Records.",
+      "Charmian Carr: Charmian Carr (born Charmian Anne Farnon; December 27, 1942 \u2013 September 17, 2016) was an American actress and singer best known for her role as Liesl, the eldest Von Trapp daughter in the 1965 film version of \"The Sound of Music\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 441,
+    "generation_tokens": 39,
+    "generation_speed": 384.6191777039221,
+    "prompt_eval_speed": 55695.882798686536,
+    "generation_latency_s": 0.21937639999669045,
+    "latency": 0.5120554999448359,
+    "total_prompt_tokens": 575,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22935909999999998,
+    "stage_route_s": 0.09073910000734031,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16417000000365078,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03758970007766038,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.40000619366765e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21941699995659292,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5120681000407785,
+    "unaccounted_latency_s": 9.899993892759085e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Joby Harold wrote and directed \"The Sound of Music\" (1964) and \"Song for a Young Girl\" (1970)."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

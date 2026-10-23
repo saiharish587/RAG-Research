@@ -1,0 +1,49 @@
+{
+  "question_id": "Q136",
+  "query": "SuperMansion starred the actress who had a recurring role as whom on Workaholics?",
+  "ground_truth": "Jillian Belk",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Jillian Bell",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jillian Bell: Jillian Leigh Bell (born April 25, 1984) is an American comedian, actress, and screenwriter.  She is best known for her recurring roles as Jillian Belk on \"Workaholics\" and Dixie on the final season of \"Eastbound & Down\", as well as appearing in \"22 Jump Street\" and \"Fist Fight\" (2017).",
+      "Yeardley Smith: Martha Maria Yeardley Smith ( ; born July 3, 1964) is a French-American actress, voice actress, writer, author, comedian, and painter.  She is best known for her long-running role as Lisa Simpson on the animated television series \"The Simpsons\".",
+      "SuperMansion: SuperMansion is an American stop-motion animated comedy television series created by Matthew Senreich and Zeb Wells.  The series stars Bryan Cranston, Heidi Gardner, Tucker Gilmore, Keegan-Michael Key, Tom Root, Yvette Nicole Brown, Zeb Wells, and Jillian Bell.  The series premiered on Crackle on October 8, 2015."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 330,
+    "generation_tokens": 5,
+    "generation_speed": 228.7596650958503,
+    "prompt_eval_speed": 13450.721447786746,
+    "generation_latency_s": 0.15175850002560765,
+    "latency": 0.5742808999493718,
+    "total_prompt_tokens": 468,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23969259999999998,
+    "stage_route_s": 0.1085993000306189,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2581574999494478,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05557789991144091,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.140000186860561e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1517907000379637,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5742901000194252,
+    "unaccounted_latency_s": 0.00010390009265393019,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The actress who had a recurring role as whom on Workaholics?\"",
+      "\"Who played the character of [character] in the show 'Workaholics'?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

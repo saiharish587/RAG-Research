@@ -1,0 +1,49 @@
+{
+  "question_id": "Q88",
+  "query": "Where are Teide National Park and Garajonay National Park located?",
+  "ground_truth": "Canary Islands, Spain",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Teide National Park is located in Tenerife, Canary Islands, while Garajonay National Park is located in La Gomera, one of the Canary Islands.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Timanfaya National Park: Timanfaya National Park (Spanish: \"Parque Nacional de Timanfaya\" ) is a Spanish national park in the southwestern part of the island of Lanzarote, Canary Islands.  It covers parts of the municipalities Tinajo and Yaiza.  The area is 51.07 km2 .  The parkland is entirely made up of volcanic soil.",
+      "Teide National Park: Teide National Park (Spanish: \"Parque nacional del Teide\" , ] ) is a national park located in Tenerife (Canary Islands, Spain).",
+      "Garajonay National Park: Garajonay National Park (Spanish: \"Parque nacional de Garajonay\" , ] ) is located in the center and north of the island of La Gomera, one of the Canary Islands (Spain).  It was declared a national park in 1981 and a World Heritage Site by UNESCO in 1986.  It occupies 40 km (15 sq mi) and it extends into each of the six municipalities on the island."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 307,
+    "generation_tokens": 35,
+    "generation_speed": 211.47397359596386,
+    "prompt_eval_speed": 12172.396019190357,
+    "generation_latency_s": 0.2947500000009313,
+    "latency": 0.6445835999911651,
+    "total_prompt_tokens": 437,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2329153,
+    "stage_route_s": 0.10557469993364066,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18613370007369667,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057931300019845366,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.800009239464998e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29478989995550364,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6445953999646008,
+    "unaccounted_latency_s": 0.00010849989484995604,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Teide National Park, Argentina",
+      "Garajonaya National Park, Spain"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q14",
+  "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Yes, both Random House Tower and 888 7th Avenue are used for real estate purposes.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Random House Tower: The Random House Tower, also known as the Park Imperial Apartments, is a 52-story mixed-use tower in New York City, United States, that is used as the headquarters of book publisher Random House and a luxury apartment complex.  The book publisher entrance is on Broadway and goes up to 27 floors, while the apartment complex entrance is on West 56th Street.",
+      "888 7th Avenue: 888 7th Avenue is a 628 ft (191m) tall modern-style office skyscraper in Midtown Manhattan which was completed in 1969 and has 46 floors.  Emery Roth & Sons designed the building, which is tied with Central Park Place for the 65th tallest building in New York City.  It currently carries the Vornado Realty Trust corporate headquarters.  Previously known as the Arlen Building, its namesake being the company responsible for its construction, Arlen Realty & Development Corporation.  The Red Eye Grill is located in the building at street level.",
+      "One57: One57, formerly known as Carnegie 57 and nicknamed \"The Billionaire Building\", is a 75-story (marketed as 90-story) supertall skyscraper at 157 West 57th Street between Sixth and Seventh Avenues in the Midtown neighborhood of Manhattan, New York City.  Upon completion in 2014, it stood at 1,005 ft tall, making it the tallest residential building in the city for a few months until the completion of 432 Park Avenue.  The building has 92 condominium units on top of a new Park Hyatt Hotel with 210 rooms, which is set to become the flagship Hyatt property."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 23,
+    "generation_speed": 235.85873087493334,
+    "prompt_eval_speed": 14272.121788772598,
+    "generation_latency_s": 0.23896119999699295,
+    "latency": 0.7479970999993384,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2312971,
+    "stage_route_s": 0.1053773999447003,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.340082100010477,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06339409993961453,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.810001701116562e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2390043999766931,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7480109001044184,
+    "unaccounted_latency_s": 0.00010560010559856892,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Are there any properties listed in both Random House Tower and 888 7th Avenue?\"",
+      "\"Do either of these locations have a listing for 'Random House Tower' or '888 7th Avenue'?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

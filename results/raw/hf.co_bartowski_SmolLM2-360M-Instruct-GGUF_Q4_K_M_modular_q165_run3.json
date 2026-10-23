@@ -1,0 +1,49 @@
+{
+  "question_id": "Q165",
+  "query": "Who did the Star and Dagger bass player marry?",
+  "ground_truth": "Sean Yseult.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Star & Dagger bass player married Connie Stevens.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Eddie Fisher (singer): Edwin John \"Eddie\" Fisher (August 10, 1928 \u2013 September 22, 2010) was an American singer and actor.  He was the most successful pop singles artist during the first half of the 1950s, selling millions of records and hosting his own TV show.  Fisher divorced his first wife, actress Debbie Reynolds, to marry Reynolds' best friend, actress Elizabeth Taylor, after Taylor's husband, film producer Mike Todd, was killed in a plane crash.  The scandalous affair was widely reported, bringing unfavorable publicity to Fisher.  He later married Connie Stevens.  Fisher fathered Carrie Fisher and Todd Fisher with Reynolds, and Joely Fisher and Tricia Leigh Fisher with Stevens.",
+      "Sean Yseult: Sean Yseult (born June 6, 1966) is an American rock musician.  She currently plays bass in the band Star & Dagger.  She has played various instruments with different bands over the years, most notably her bass work with the band White Zombie.",
+      "Brian Newman: Brian Newman (born June 10, 1981) is an American jazz musician, singer, and trumpet player.  He is most known for his numerous performances with Lady Gaga and her surprise appearances at his performances in New York City.  Newman currently holds a residency at the Rose Bar at the Gramercy Park Hotel in New York City and is married to American burlesque performer Angie Pontani."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 399,
+    "generation_tokens": 13,
+    "generation_speed": 245.40803805712343,
+    "prompt_eval_speed": 49825.18104710053,
+    "generation_latency_s": 0.17295200005173683,
+    "latency": 0.5587289000395685,
+    "total_prompt_tokens": 521,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2222528,
+    "stage_route_s": 0.09371599997393787,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23120749997906387,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06068630004301667,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.970002919435501e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17298430006485432,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5587384999962524,
+    "unaccounted_latency_s": 9.519990999251604e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Star and Dagger bass player married a woman named Sarah.",
+      "Query 2: The Star and Dagger bass player married a woman named Sarah."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

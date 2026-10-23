@@ -1,0 +1,42 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "John Fogerty.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Serri (singer): Park Mi-yeon (born September 16, 1990), better known by the stage name Serri, is a South Korean singer, songwriter and actress.  She is best known as a member and leader of the South Korean girl group Dal Shabet.",
+      "John Fogerty: John Cameron Fogerty (born May 28, 1945) is an American musician, singer, and songwriter.  He was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.  The group had nine top-ten singles and eight gold albums between 1968 and 1972.  They were inducted into the Rock and Roll Hall of Fame in 1993.",
+      "Angelina Jolie: Angelina Jolie Pitt ( ; n\u00e9e Voight; born June 4, 1975) is an American actress, filmmaker, and humanitarian.  She has received an Academy Award, two Screen Actors Guild Awards, and three Golden Globe Awards, and has been cited as Hollywood's highest-paid actress.  Jolie made her screen debut as a child alongside her father, Jon Voight, in \"Lookin' to Get Out\" (1982).  Her film career began in earnest a decade later with the low-budget production \"Cyborg 2\" (1993), followed by her first leading role in a major film, \"Hackers\" (1995).  She starred in the critically acclaimed biographical cable films \"George Wallace\" (1997) and \"Gia\" (1998), and won an Academy Award for Best Supporting Actress for her performance in the drama \"Girl, Interrupted\" (1999)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 461,
+    "generation_tokens": 6,
+    "generation_speed": 423.2804232804233,
+    "prompt_eval_speed": 55649.44471269918,
+    "generation_latency_s": 0.10565259994473308,
+    "latency": 0.5002299000043422,
+    "total_prompt_tokens": 535,
+    "total_generation_tokens": 20,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1350624,
+    "stage_rewrite_s": 0.12220959994010627,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07413289998658001,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19810579996556044,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10569210001267493,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5002403999678791,
+    "unaccounted_latency_s": 0.00010060006752610207,
+    "rewritten_query": "Who played Serri in John Fogerty's film?",
+    "query_was_rewritten": true
+  }
+}

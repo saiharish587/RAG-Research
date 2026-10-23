@@ -1,0 +1,49 @@
+{
+  "question_id": "Q327",
+  "query": "The voice of Homer Simpson also voices what alien character in the television series \"The Simpsons\"?",
+  "ground_truth": "Kodos",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Homer Simpson also voids the role of Kang and Kodos, as he is not a recurring character in the show.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dan Castellaneta: Daniel Louis Castellaneta ( ; born October 29, 1957) is an American actor, voice actor, comedian and screenwriter.  Noted for his long-running role as Homer Simpson on the animated television series \"The Simpsons\", he also voices many other characters for the show, including Abraham \"Grampa\" Simpson, Barney Gumble, Krusty the Clown, Sideshow Mel, Groundskeeper Willie, Mayor Quimby and Hans Moleman.",
+      "Waylon Smithers: Waylon J. Smithers Jr., usually referred to as Mr. Smithers or simply Smithers, is a recurring fictional character in the American animated sitcom \"The Simpsons\", who is voiced by Harry Shearer.  Smithers first appeared in the episode \"Homer's Odyssey\", although his voice could be heard in the series premiere \"Simpsons Roasting on an Open Fire\".  He is the consummate executive and personal assistant of Springfield Nuclear Power Plant's owner Mr. Burns.",
+      "Kang and Kodos: Kang and Kodos are a duo of fictional recurring characters in the animated television series \"The Simpsons\".  Kang is voiced by Harry Shearer and Kodos by Dan Castellaneta.  They are aliens from the fictional planet Rigel VII and appear almost exclusively in the \"Treehouse of Horror\" episodes.  The duo has appeared in at least one segment of all twenty-seven Treehouse of Horror episodes.  Sometimes their appearance is the focus of a plot, other times a brief cameo.  Kang and Kodos are often bent on the conquest of Earth and are usually seen working on sinister plans to invade and subjugate humanity."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 445,
+    "generation_tokens": 26,
+    "generation_speed": 233.79612977483634,
+    "prompt_eval_speed": 14901.881990489586,
+    "generation_latency_s": 0.25381239992566407,
+    "latency": 0.5827826000750065,
+    "total_prompt_tokens": 585,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2243801,
+    "stage_route_s": 0.10442949994467199,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16801730007864535,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05635119997896254,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6399963796138763e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2538431999273598,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.582791700027883,
+    "unaccounted_latency_s": 9.490014053881168e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Homer's Voice\"",
+      "\"Simpson's Alien Character\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

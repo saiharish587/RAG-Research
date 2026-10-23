@@ -1,0 +1,49 @@
+{
+  "question_id": "Q429",
+  "query": "What party does the House of Commons representative for Congleton belong to?",
+  "ground_truth": "British Conservative Party",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The House of Commons representative for Congleton belongs to the Conservative Party.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Theresa May: Theresa Mary May ( , \"n\u00e9e\" Brasier ; born 1 October 1956) is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2016, the second woman to hold both positions, the first being Margaret Thatcher.  She has been the Member of Parliament (MP) for Maidenhead since 1997.  Ideologically, she identifies herself as a one-nation conservative.",
+      "Congleton (UK Parliament constituency): Congleton is a constituency in Cheshire, represented in the House of Commons of the UK Parliament since 2010 by Fiona Bruce of the Conservative Party.",
+      "Fiona Bruce (politician): Fiona Claire Bruce (born 26 March 1957) is a British Conservative Party politician who is the Member of Parliament for Congleton, elected at the 2010 general election, and then again in 2015."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 282,
+    "generation_tokens": 15,
+    "generation_speed": 244.1287046530931,
+    "prompt_eval_speed": 34533.43130051433,
+    "generation_latency_s": 0.18022019998170435,
+    "latency": 0.5297909999499097,
+    "total_prompt_tokens": 410,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2608021,
+    "stage_route_s": 0.11313449998851866,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18026309995912015,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05598639999516308,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9200025387108326e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18026210006792098,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5298025999218225,
+    "unaccounted_latency_s": 0.00010829989332705736,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"House of Commons Representative for Congleton\"",
+      "\"Labour Party\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

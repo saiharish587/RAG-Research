@@ -1,0 +1,49 @@
+{
+  "question_id": "Q271",
+  "query": "To which aircraft carrier was the VMF-213 Marine Fighting Squadron assigned to durning World War II?",
+  "ground_truth": "USS Essex",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "VMF-215",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "VMF-213: Marine Fighting Squadron 213 (VMF-213) was a reserve fighter squadron in the United States Marine Corps.  Nicknamed the \"Hell Hawks\", the squadron fought during World War II in the Philippines and at the battles of Iwo Jima and Okinawa.  With its assignment to the USS Essex (CV-9) and \"Air Group 4\", VMF-213 along with VMF-124 was one of the first two Marine squadrons to augment carrier air groups during World War II.  The squadron was credited with downing 117 enemy aircraft during the war.",
+      "VMF-222: Marine Fighting Squadron 222 (VMF-222) was a fighter squadron of the United States Marine Corps that was activated and fought during World War II.  Known as \u201cThe Flying Deuces\u201d, they fell under the command of Marine Aircraft Group 14 (MAG-14) and fought in many areas of the Pacific War, including the Philippines campaign (1944\u201345) and the Battle of Okinawa.  During the war, the squadron was credited with shooting down 53 enemy aircraft and was the sister squadron to VMF-215.  They were deactivated on December 31, 1949.",
+      "VMF-215: Marine Fighting Squadron 215 (VMF-215) was a fighter squadron of the United States Marine Corps that was activated and fought during World War II.  Known as \"The Fighting Corsairs\", they fought in many areas of the Pacific War, including the Battle of Bougainville.  During their four-and-a-half month tour, the squadron was credited with shooting down 137 enemy aircraft, fourth most in Marine Corps aviation history."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 473,
+    "generation_tokens": 7,
+    "generation_speed": 323.6096343211132,
+    "prompt_eval_speed": 25371.45309231347,
+    "generation_latency_s": 0.14461350010242313,
+    "latency": 0.5994105000281706,
+    "total_prompt_tokens": 621,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.244004,
+    "stage_route_s": 0.14979389996733516,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24568779999390244,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.059141599922440946,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.539995618164539e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1446516999276355,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5994197999825701,
+    "unaccounted_latency_s": 9.020022116601467e-05,
+    "route": "rag",
+    "router_raw": "To which aircraft carrier was the VMF-213 Marine Fighting Squadron assigned to durning World War II?",
+    "sub_queries": [
+      "VMF-213 Marine Fighting Squadron (WWII)",
+      "The VMF-213 Marine Fighting Squadron was a 7th Air Force (HF) Marine Fighter Group, which participated in the Battle of Britain and the subsequent D-Day invasion of Normandy."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

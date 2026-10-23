@@ -1,0 +1,49 @@
+{
+  "question_id": "Q354",
+  "query": "Vanessa Bley is what person who organizes and often finances concerts, plays, or operas, performing a role?",
+  "ground_truth": "impresario",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Vanessa Bley is an impresario.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vanessa Bley: Vanessa Bley is a New York City and Los Angeles\u2013based singer, composer, producer, and musician.  She is daughter of jazz pianist Paul Bley and pioneer video artist Carol Goss.",
+      "Impresario: An impresario (from the Italian \"impresa\", \"an enterprise or undertaking\") is a person who organizes and often finances concerts, plays, or operas, performing a role similar to that of an artist manager or a film or television producer.  The term originated in the social and economic world of Italian opera, in which from the mid-18th century to the 1830s, the impresario was the key figure in the organization of a lyric season.  The owners of the theatre, usually noble amateurs, charged the impresario with hiring a composer (until the 1850s operas were expected to be new) and the orchestra, singers, costumes and sets, all while assuming considerable financial risk.  In 1786 Mozart satirized the stress and emotional mayhem in a single-act farce \"Der Schauspieldirektor\" (\"The Impresario\").  Antonio Vivaldi was unusual in acting as both impresario and composer; in 1714 he managed seasons at Teatro San Angelo in Venice, where his opera \"Orlando finto pazzo\" was followed by numerous others.",
+      "The Music Hall Guild of Great Britain and America: The Music Hall Guild of Great Britain and America and the Theatre and Film Guild of Great Britain and America is a registered theatre charity and non-profit making theatre organisation based in London.  The Guild's patrons include Brian Croucher, Anita Dobson, Fenella Fielding, Sheila Ferguson, Jessica Martin, Lorraine Chase, Gillian Gregory, Mark Lester, Jessie Wallace, Barbara Windsor and Shani Wallis."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 475,
+    "generation_tokens": 11,
+    "generation_speed": 217.21958925750397,
+    "prompt_eval_speed": 15031.16989968672,
+    "generation_latency_s": 0.19349109998438507,
+    "latency": 0.6708113999338821,
+    "total_prompt_tokens": 621,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2245781,
+    "stage_route_s": 0.1061902999645099,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3142307000234723,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056723900022916496,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.300005432218313e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19352500000968575,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6708210000069812,
+    "unaccounted_latency_s": 9.869993664324284e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Vanessa Bley\" - The organizer of and often funds concerts, plays, or operas.",
+      "\"Vanessa Bley\" - The performer who performs the role of Vanessa Bley in various musical productions."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q207",
+  "query": "Are Hot Rod and The Memory of Our People both magazines?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, the two articles are not related to each other. They are separate publications that focus on different topics such as hot rodding, drag racing, and muscle cars. They do not overlap in terms of content or purpose.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hot Rod (magazine): Hot Rod is a monthly American car magazine devoted to hot rodding, drag racing, and muscle cars \u2014 modifying automobiles for performance and appearance.",
+      "The Memory of Our People: The Memory of Our People is a magazine published in the Argentine city of Rosario, a province of Santa Fe.  The magazine was founded in 2004.  Its original title in Spanish is \"La Memoria de Nuestro Pueblo\".",
+      "Rolling Stone: Rolling Stone is an American biweekly magazine that focuses on popular culture.  It was founded in San Francisco in 1967 by Jann Wenner, who is still the magazine's publisher, and the music critic Ralph J. Gleason.  It was first known for its musical coverage and for political reporting by Hunter S. Thompson.  In the 1990s, the magazine shifted focus to a younger readership interested in youth-oriented television shows, film actors, and popular music.  In recent years, it has resumed its traditional mix of content."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 288,
+    "generation_tokens": 47,
+    "generation_speed": 384.53671507465737,
+    "prompt_eval_speed": 19446.320054017557,
+    "generation_latency_s": 0.24066249991301447,
+    "latency": 0.5405651999171823,
+    "total_prompt_tokens": 412,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2450174,
+    "stage_route_s": 0.10084500000812113,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1521677999990061,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04671449994202703,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.780001472681761e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24070229998324066,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5405765000032261,
+    "unaccounted_latency_s": 9.980006143450737e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, both Hot Rod and The Memory of Our People are indeed magazines. They cover topics related to sports, entertainment, and lifestyle."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

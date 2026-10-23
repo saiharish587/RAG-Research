@@ -1,0 +1,42 @@
+{
+  "question_id": "Q359",
+  "query": "What city did the characters from Gargoyles the Movie: The Heroes Awaken wake up in after being in an enchantedly petrified state for a thousand years?",
+  "ground_truth": "modern-day New York City",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The characters from Gargoyles the Movie: The Heroes Awaken woke up in New York City.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gargoyles (TV series): Gargoyles is an American animated series produced by Walt Disney Television and Buena Vista Television, and originally aired from October 24, 1994 to February 15, 1997.  The series features a species of nocturnal creatures known as gargoyles that turn to stone during the day.  After spending a thousand years in an enchantedly petrified state, the gargoyles (who have been transported from medieval Scotland) are reawakened in modern-day New York City, and take on roles as the city's secret night-time protectors.",
+      "Gargoyles the Movie: The Heroes Awaken: Gargoyles the Movie: The Heroes Awaken is a direct-to-video animated film from The Walt Disney Company.  The film is actually the five-episode pilot (\"Awakening\") of the animated television series \"Gargoyles\" edited into one long feature film, approximately 100 minutes in length.  As a result, numerous scenes from the original broadcast episodes were cut due to time constraints.  In addition, a number of scenes were also moved around and some dialogues were changed.  The episodes were produced and aired in 1994, and the film was released to laserdisc and VHS in February 1995 and featured an interactive VHS/LD board game.  As the pilot episodes have been released to DVD as part of \"Gargoyles\": Season 1, this feature is unlikely to be released independently again.",
+      "Escalante Petrified Forest State Park: Escalante Petrified Forest State Park (also known as Escalante State Park) is a state park of Utah, USA, located a half-mile (0.8\u00a0km) north of the town of Escalante.  A visitor center was built in 1991, and features displays of plant and marine fossils, petrified wood and fossilized dinosaur bones over 150 million years old (Upper Jurassic Period).  The Petrified Forest Trail is a one-mile (1.6\u00a0km) loop, winding up the side of a mesa to the top where most of the fossil wood occurs.  Logs two feet or more in diameter are seen at several places along the trail where it is eroding from the conglomerate capping the mesa.  This conglomerate lies near the top of the Brushy Basin Member of the Morrison Formation.  The wood is multicolored (mostly red, yellow, white, and black) and was prized by hobbyists before the Park was established.  The logs are believed to be of conifers that were transported by a river before being buried and later fossilized as agate.  A 50 foot (15m) log is displayed near the trail head and is one of the most complete fossil logs known from the Morrison Formation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 706,
+    "generation_tokens": 22,
+    "generation_speed": 388.38379380351313,
+    "prompt_eval_speed": 92870.29729018679,
+    "generation_latency_s": 0.14430579997133464,
+    "latency": 0.6916261999867857,
+    "total_prompt_tokens": 802,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1268667,
+    "stage_rewrite_s": 0.21263969992287457,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08124949992634356,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2533042000140995,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1443433000240475,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6916390000842512,
+    "unaccounted_latency_s": 0.00010300020221620798,
+    "rewritten_query": "Giving the user's original query, I would output: \"What city did the characters from Gargoyles' Movie: The Heroes Awaken wake up in after being in an enchantedly petrified state for a thousand years?",
+    "query_was_rewritten": true
+  }
+}

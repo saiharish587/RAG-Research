@@ -1,0 +1,42 @@
+{
+  "question_id": "Q377",
+  "query": "What company did Roscoe Channing form with the owner of a leading stable of thoroughbred racehorses?",
+  "ground_truth": "Hudson Bay Mining and Smelting Company",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Roscoe H. Channing formed with the owner of a leading thoroughbred racing stable and breeding farm, the Whitney family of New York City.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Cornelius Vanderbilt Whitney: Cornelius Vanderbilt \"C.V.\" (\"Sonny\") Whitney (February 20, 1899 \u2013 December 13, 1992) was an American businessman, film producer, writer, philanthropist, polo player, and government official, as well as the owner of a leading stable of thoroughbred racehorses.",
+      "Roscoe Channing: Roscoe H. Channing, Jr. (January 7, 1868 \u2013 April 1, 1961) was an All-American football player, member of the Rough Riders and mining executive.  Channing was an All-American halfback for Princeton University.  He was one of eleven players selected by Caspar Whitney for the first ever College Football All-America Team in 1889.  When the Spanish\u2013American War commenced in 1898, Channing enlisted in Theodore Roosevelt's Rough Riders.  Roosevelt took pride in how many Ivy League football players enlisted in the Rough Riders.  Channing later went into the mining business and managed the mining operations of the Whitney family.  In the 1920s, he formed a partnership with his friend Cornelius Vanderbilt Whitney.  The two formed the Hudson Bay Mining and Smelting Company in Flin Flon, Saskatchewan, Canada, and Channing served as the company's President.  Channing died in 1961.",
+      "Greentree Stable: Greentree Stable, in Red Bank, New Jersey, was a major American thoroughbred horse racing stable and breeding farm established in 1914 by Payne Whitney of the Whitney family of New York City.  Payne Whitney operated a horse farm and stable at Saratoga Springs, New York with his brother Harry Payne Whitney, who also had a large stable of horses.  Greentree Stable had a training base at Aiken, South Carolina, while Greentree Farm in Lexington, Kentucky was established in 1925 as its breeding arm."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 506,
+    "generation_tokens": 30,
+    "generation_speed": 347.1981112422749,
+    "prompt_eval_speed": 72162.00798630918,
+    "generation_latency_s": 0.17300650000106543,
+    "latency": 0.5729751999024302,
+    "total_prompt_tokens": 588,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1254513,
+    "stage_rewrite_s": 0.16635419998783618,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0711774000665173,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.162297899951227,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17305820004548877,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5729857999831438,
+    "unaccounted_latency_s": 9.899993892759085e-05,
+    "rewritten_query": "The search for Roscoe Channing's birthplace was narrowed to the owner of a leading thoroughbred stable, which provided the most relevant information.",
+    "query_was_rewritten": true
+  }
+}

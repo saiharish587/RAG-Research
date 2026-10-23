@@ -1,0 +1,49 @@
+{
+  "question_id": "Q437",
+  "query": "Where is the school that Tyler Kalinoski went to located?",
+  "ground_truth": "located in Olathe, Kansas",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Tyler Kalinoski attended Notre Dame High School in Kansas and completed his college career for the Davidson Wildcats.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tyler Kalinoski: Tyler Kalinoski (born December 19, 1992) is an American basketball player for Antwerp Giants in the Belgian League.  Kalinoski was a McDonald\u2019s All-American nominee as a senior at Olathe East High School in Kansas and completed his college career for the Davidson Wildcats.  He was named Atlantic 10 Conference Men's Basketball Player of the Year in 2015.",
+      "Tyler Asemota: Asemota currently attends Notre Dame High School and has been a student there for all four years.  Living in Reseda, California most of his life, Asemota looked up to many high profile athletes from Notre Dame High School, such as Koa Farmer, Khalfani Muhammed, and notable alumni Giancarlo Stanton.  Asemota found late interest in football during his sophomore year when a football coach approached him during a track meet because of his outstanding blend of height and speed.  The same coach, Calvin Taylor, then had Asemota playing wide receiver and free safety for him that season in 2014.",
+      "Calvin Tyler Scott: Calvin Tyler Scott is a Canadian basketball player for the UPEI Panthers.  Tyler Scott was born and raised in Halifax, Nova Scotia.  Tyler Scott attended Halifax West High School and was the top scorer for the Halifax West Warriors.  After graduating from Halifax West, Tyler Scott attended Lee Academy, a prep school in Maine.  After Lee Academy, Tyler Scott went to Acadia University in New Minas, where he averaged 11.7 points per game, after realizing Acadia wasn't where he felt 100% comfortable he committed to UPEI with Tim Kendrick.  At UPEI Tyler Scott went on to average 23 points per game in his first year and became a first team all Canadian and during his second and third year at UPEI, Tyler Scott was named second team all star and was 2nd in scoring in the AUS and 1st in scoring in his 5th year.  On February 26, 2017, Tyler Scott made it into top 5 AUS scoring of all time.  During his 5th year Tyler Scott also passed 1700 career points. *"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 566,
+    "generation_tokens": 25,
+    "generation_speed": 313.7747097583935,
+    "prompt_eval_speed": 29539.168101873594,
+    "generation_latency_s": 0.21134909999091178,
+    "latency": 0.629036600003019,
+    "total_prompt_tokens": 694,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2533059,
+    "stage_route_s": 0.1469834999879822,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21475310006644577,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05575249996036291,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.83999028801918e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21140370005741715,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6290519000031054,
+    "unaccounted_latency_s": 0.00011180003639310598,
+    "route": "rag",
+    "router_raw": "The school that Tyler Kalinoski went to was the school where he attended.",
+    "sub_queries": [
+      "Here are the two search queries for Tyler Kalinoski's location:",
+      "\"Where is the school Tyler Kalinoski attended?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

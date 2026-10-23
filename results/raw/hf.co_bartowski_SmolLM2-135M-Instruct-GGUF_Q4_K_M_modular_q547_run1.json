@@ -1,0 +1,49 @@
+{
+  "question_id": "Q547",
+  "query": "What drug is among the list of illegal drugs in the Philippines and can be taken by mouth or by injection?",
+  "ground_truth": "Ephedrine",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Methamphetamine hydrochloride (shabu)",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Illicit drug use in Australia: Illicit drug use in Australia is the recreational use of prohibited drugs in Australia.  Illicit drugs include illegal drugs (such as cannabis, opiates, and certain types of stimulants), pharmaceutical drugs (such as pain-killers and tranquillisers) when used for non-medical purposes, and other substances used inappropriately (such as inhalants).  According to government and community organisations, the use and abuse, and the illegality, of illicit drugs is a social, health and legal issue that creates an annual illegal market estimated to be worth A$ 6.7 billion.",
+      "Politics of drug abuse: Most countries have legislation designed to criminalise some drug use.  Usually however the legislative process is self-referential, defining abuse in terms of what is made illegal.  The legislation concerns lists of drugs specified by the legislation.  These drugs are often called \"illegal drugs\" but, generally, what is illegal is their unlicensed production, supply and possession.  The drugs are also called \"controlled drugs\" or \"controlled substances\".",
+      "Illegal drug trade in the Philippines: The prevalence of drug use in the Philippines is lower than the global average, according to the United Nations Office on Drugs and Crime (UNODC).  Two of the most used and valuable illegal drugs in the country are methamphetamine hydrochloride (shabu) and marijuana.  Ephedrine and methylenedioxy methamphetamine are also among the list of illegal drugs that are of great concern to the authorities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 398,
+    "generation_tokens": 11,
+    "generation_speed": 316.4101826549691,
+    "prompt_eval_speed": 22333.20240166096,
+    "generation_latency_s": 0.16425719996914268,
+    "latency": 0.7746993000619113,
+    "total_prompt_tokens": 542,
+    "total_generation_tokens": 143,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23125459999999998,
+    "stage_route_s": 0.1695163999684155,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.38477950007654727,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05595459998585284,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.170004442334175e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1643043999793008,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7747112000361085,
+    "unaccounted_latency_s": 0.00010519998613744974,
+    "route": "rag",
+    "router_raw": "The user's question requires retrieving information from internal files/documents, specifically the list of illegal drugs in the Philippines.",
+    "sub_queries": [
+      "Drugs that are among the list of illegal drugs in the Philippines include:",
+      "**Marijuana**: This is a controlled substance under federal law, which means it's not considered an illicit drug. It's also known as \"marihuana.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

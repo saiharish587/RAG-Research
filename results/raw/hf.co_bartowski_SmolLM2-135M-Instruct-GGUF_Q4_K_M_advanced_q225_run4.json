@@ -1,0 +1,42 @@
+{
+  "question_id": "Q225",
+  "query": "What film was written and directed by Joby Harold with music written by Samuel Sim?",
+  "ground_truth": "Awake",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "1) Awake (film): A Wake Up Call is a 2007 American conspiracy thriller film written and directed by Joby Harold, starring Hayden Christensen, Jessica Alba, Tim Minchin, Bj\u00f6rn Bengtsson, and Paul Anderson. The film was released in the United States on November 30, 2007.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Samuel Sim: Samuel Sim is a film and television composer.  He first gained recognition with his award winning score for the BBC drama series \"Dunkirk\".  Since then he has written the music for a wide variety of film and television productions, most recently scoring the film \"Awake\" for The Weinstein Company and the BBC/HBO drama series \"House of Saddam\".  His most recent acclaimed music is the soundtrack for Home Fires.  Home Fires (Music from the Television Series) released May 6, 2016 by Sony Classical Records.",
+      "Robin Hood (2018 film): Robin Hood is an upcoming American action-adventure film directed by Otto Bathurst and written by Joby Harold, Peter Craig, and David James Kelly based on the tale of Robin Hood.  The film stars Taron Egerton, Jamie Foxx, Eve Hewson, Ben Mendelsohn, Jamie Dornan, Tim Minchin, Bj\u00f6rn Bengtsson, and Paul Anderson.  It will be released by Lionsgate's Summit Entertainment in all IMAX theatres on September 21, 2018.",
+      "Awake (film): Awake is a 2007 American conspiracy thriller film written and directed by Joby Harold.  It stars Hayden Christensen, Jessica Alba, Terrence Howard and Lena Olin.  The film was released in the United States and Canada on November 30, 2007."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 385,
+    "generation_tokens": 77,
+    "generation_speed": 424.1068969695635,
+    "prompt_eval_speed": 58386.4118895966,
+    "generation_latency_s": 0.2635176000185311,
+    "latency": 0.634876299998723,
+    "total_prompt_tokens": 462,
+    "total_generation_tokens": 110,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1302024,
+    "stage_rewrite_s": 0.16921929991804063,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08282929996494204,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11918839998543262,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.26355090003926307,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6348849999485537,
+    "unaccounted_latency_s": 9.750004392117262e-05,
+    "rewritten_query": "Joby Harold, with music written by Samuel Sim, wrote and directed a film called \"What Film Was Written and Directed by Joby Harold with Music.",
+    "query_was_rewritten": true
+  }
+}

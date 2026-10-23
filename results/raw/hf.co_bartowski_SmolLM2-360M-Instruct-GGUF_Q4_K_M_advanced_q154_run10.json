@@ -1,0 +1,42 @@
+{
+  "question_id": "Q154",
+  "query": "The songs from the sountrack to \"When Harry Met Sally\" are performed by a singer that has had how many top 20 US albums?",
+  "ground_truth": "seven",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "David Bowie",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "When Harry Met Sally... (soundtrack): When Harry Met Sally... is the soundtrack to the movie \"When Harry Met Sally...\" starring Billy Crystal and Meg Ryan.  The songs are performed by pianist Harry Connick Jr., who won the Grammy Award for Best Jazz Male Vocal Performance.",
+      "David Bowie: David Robert Jones (8 January 1947 \u2013 10 January 2016), known professionally as David Bowie ( ), was an English singer, songwriter and actor.  He was a leading figure in popular music for over five decades, acclaimed by critics and other musicians for his innovative work.  His career was marked by reinvention and visual presentation, his music and stagecraft significantly influencing popular music.  During his lifetime, his record sales, estimated at 140 million albums worldwide, made him one of the world's best-selling music artists.  In the UK, he was awarded nine platinum album certifications, eleven gold and eight silver, releasing eleven number-one albums.  In the US, he received five platinum and nine gold certifications.  He was inducted into the Rock and Roll Hall of Fame in 1996.",
+      "When Harry Met Sally...: When Harry Met Sally\u2026 is a 1989 American romantic comedy film written by Nora Ephron and directed by Rob Reiner.  It stars Billy Crystal as Harry and Meg Ryan as Sally.  The story follows the title characters from the time they meet just before sharing a cross-country drive, through twelve years or so of chance encounters in New York City.  The film raises the question \"Can men and women ever just be friends?\"  and advances many ideas about relationships that became household concepts, such as \"high-maintenance\" and the \"transitional person\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 458,
+    "generation_tokens": 4,
+    "generation_speed": 302.3203083667145,
+    "prompt_eval_speed": 63259.668508287294,
+    "generation_latency_s": 0.7838225000305101,
+    "latency": 3.4097012999700382,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1309783,
+    "stage_rewrite_s": 1.3563741999678314,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9863512999145314,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2830178999574855,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7838724000612274,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4097176999785006,
+    "unaccounted_latency_s": 0.00010270008351653814,
+    "rewritten_query": "The songs from the Sountrack to \"When Harry Met Sally\" have been performed by a singer with a total of 13 top-20 US albums.",
+    "query_was_rewritten": true
+  }
+}

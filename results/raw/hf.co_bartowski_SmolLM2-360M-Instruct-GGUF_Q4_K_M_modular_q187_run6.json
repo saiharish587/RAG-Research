@@ -1,0 +1,48 @@
+{
+  "question_id": "Q187",
+  "query": "Who were the directors of the 2009 American science fiction film starring the actor who played Dexter Morgan in the Showtime TV Network series \"Dexter\"?",
+  "ground_truth": "Mark Neveldine and Brian Taylor",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The director of the 2009 American science fiction film starring Michael Fassbender was Ridley Scott.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Michael C. Hall: Michael Carlyle Hall (born February 1, 1971) is an American actor, known for his roles as Dexter Morgan, a serial killer and blood spatter analyst, in the Showtime TV Network series \"Dexter\", and as David Fisher in the HBO drama series \"Six Feet Under\".  In 2010, Hall won a Golden Globe Award and a Screen Actors Guild Award for his role in \"Dexter\".",
+      "Alien: Covenant: Alien: Covenant is a 2017 science fiction horror film directed by Ridley Scott, and written by John Logan and Dante Harper, with a story by Michael Green and Jack Paglen.  The film is a sequel to \"Prometheus\" (2012), the second installment in the \"Alien\" prequel series and the sixth installment overall in the \"Alien\" film series, as well as the third directed by Scott.  The film stars Michael Fassbender, Katherine Waterston, Billy Crudup, Danny McBride and Demi\u00e1n Bichir, and follows the crew of a colony ship that lands on an uncharted planet and makes a terrifying discovery.",
+      "Timothy Busfield: Timothy Busfield (born June 12, 1957) is an American actor and director.  He has played Elliot Weston on the television series \"thirtysomething\"; Mark, Kevin Costner's brother-in-law in \"Field of Dreams\"; and Danny Concannon on the television series \"The West Wing\".  In 1991 he received a Primetime Emmy Award for Outstanding Supporting Actor in a Drama Series for \"thirtysomething\".  He is also the founder of the 501(c)(3) non-profit children's theatre Fantasy Theatre for Children and B Street Theatre."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 490,
+    "generation_tokens": 25,
+    "generation_speed": 227.0663033605813,
+    "prompt_eval_speed": 60426.68639782957,
+    "generation_latency_s": 0.23452020005788654,
+    "latency": 0.6058487000409514,
+    "total_prompt_tokens": 662,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2288815,
+    "stage_route_s": 0.09611290006432682,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2380931000225246,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0369449999416247,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.749997217208147e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23455920000560582,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6058619000250474,
+    "unaccounted_latency_s": 9.580003097653389e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The directors of the 2009 American science fiction film starring the actor who played Dexter Morgan in the Showtime TV Network series 'Dexter'\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

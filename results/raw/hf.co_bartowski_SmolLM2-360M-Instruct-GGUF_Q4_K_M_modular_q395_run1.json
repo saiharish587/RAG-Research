@@ -1,0 +1,49 @@
+{
+  "question_id": "Q395",
+  "query": "Who wrote The Devils, and was an eninent English theater, opera and film director?",
+  "ground_truth": "Peter Hall",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "John Whiting.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Devils (play): The Devils is a play, commissioned by Sir Peter Hall for the Royal Shakespeare Company and written by British dramatist John Whiting, based on Aldous Huxley's book, \"The Devils of Loudun\".",
+      "The Devils (film): The Devils is a 1971 British historical drama horror film directed by Ken Russell and starring Oliver Reed and Vanessa Redgrave.  Russell's screenplay is based partly on the 1952 book \"The Devils of Loudun\" by Aldous Huxley, and partly on the 1960 play \"The Devils\" by John Whiting, also based on Huxley's book.",
+      "Peter Hall (director): Sir Peter Reginald Frederick Hall CBE (22 November 1930 11 September 2017) was an eminent English theatre, opera and film director whose obituary in \"The Times\" declared him \"the most important figure in British theatre for half a century\" and on his death a Royal National Theatre statement declared that Hall\u2019s \"influence on the artistic life of Britain in the 20th century was unparalleled\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 319,
+    "generation_tokens": 5,
+    "generation_speed": 233.57937027001773,
+    "prompt_eval_speed": 12928.06484295846,
+    "generation_latency_s": 0.15474749996792525,
+    "latency": 0.5520590000087395,
+    "total_prompt_tokens": 457,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2298792,
+    "stage_route_s": 0.10564890003297478,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23406679998151958,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05739259999245405,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.230000872164965e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.154796399991028,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5520734000019729,
+    "unaccounted_latency_s": 0.00010730000212788582,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Devils\" - John Gielgud",
+      "\"John Gielgud\" - An English theater, opera, and film director"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

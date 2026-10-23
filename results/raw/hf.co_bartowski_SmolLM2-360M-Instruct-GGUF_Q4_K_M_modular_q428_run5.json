@@ -1,0 +1,49 @@
+{
+  "question_id": "Q428",
+  "query": "Which river system in Chilhowie, Virginia was the starting place for most Longhunters?",
+  "ground_truth": "Holston River",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The starting point for most long hunters was the Thornton River in Shenandoah National Park and the adjacent Clinch River valley. The Thornton River is a 27.9 mi river that rises at Thornton Gap in Shenandoah National Park, flows east through Rappahannock County, and eventually joins the Hazel River to form the Rappahannock River.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Longhunter: A longhunter (or long hunter) was an 18th-century explorer and hunter who made expeditions into the American frontier wilderness for as much as six months at a time.  Historian Emory Hamilton asserts that \"The Long Hunter was peculiar to Southwest Virginia only, and nowhere else on any frontier did such hunts ever originate\" although the term has been used loosely to describe any unofficial American explorer of the period.  Most long hunts started in the Holston River Valley near Chilhowie, Virginia.  The hunters came from there and the adjacent valley of the Clinch River, where they were land owners or residents.  The parties of two or three men (and rarely more) usually started their hunts in October and ended toward the end of March or early in April.",
+      "Thornton River: The Thornton River is a 27.9 mi river in the U.S. state of Virginia.  It rises at Thornton Gap in Shenandoah National Park and flows east through Rappahannock County, running parallel to U.S. Route 211 until it reaches the town of Sperryville.  Continuing east into Culpeper County, the Thornton River joins the Hazel River, a tributary of the Rappahannock River, and thus part of the Chesapeake Bay watershed.",
+      "Covington River: The Covington River is a 7.4 mi river in the U.S. state of Virginia.  The river rises at the eastern foot of the Blue Ridge Mountains in Rappahannock County and flows southeast to the Rush River just north of that river's confluence with the Thornton River.  The river system flows via the Hazel River to the Rappahannock River, a tributary of Chesapeake Bay."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 448,
+    "generation_tokens": 78,
+    "generation_speed": 231.96129220282936,
+    "prompt_eval_speed": 47487.810048759806,
+    "generation_latency_s": 0.45896139997057617,
+    "latency": 0.796481299912557,
+    "total_prompt_tokens": 590,
+    "total_generation_tokens": 107,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21790110000000001,
+    "stage_route_s": 0.09169999998994172,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1887914000544697,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05685550009366125,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.659996531903744e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.45899249997455627,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7964904999826103,
+    "unaccounted_latency_s": 9.519990999251604e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The River System of Chilhowie County, Virginia\"",
+      "\"Longhunter River System\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

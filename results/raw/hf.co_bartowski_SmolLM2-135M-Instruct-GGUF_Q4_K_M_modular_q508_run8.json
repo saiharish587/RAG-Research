@@ -1,0 +1,49 @@
+{
+  "question_id": "Q508",
+  "query": "Which constituent college of the University of Oxford endows four professorial fellowships for sciences including chemistry and pure mathematics?",
+  "ground_truth": "Magdalen College",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The waynflete professor of metallurgy is a science professorship at Magdalen College, Oxford.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waynflete Professorship: The Waynflete Professorships are four professorial fellowships at the University of Oxford endowed by Magdalen College and named in honour of the college founder William of Waynflete, who had a great interest in science.  These professorships are statutory professorships of the University, that is, they are professorships established in the university's regulations, and which are by those regulations attached to Magdalen College in particular.  The oldest professorship is the Waynflete Professor of Metaphysical Philosophy.  The three science professorships were created following the recommendation of the University Commission in 1857, in recognition of William of Waynflete's lifetime support of science.  The professorships are the Waynflete Professor of Chemistry, the Waynflete Professor of Physiology, and the Waynflete Professor of Pure Mathematics.",
+      "Magdalen College, Oxford: Magdalen College ( ) is one of the constituent colleges of the University of Oxford.  s of 2014 , the college had an estimated financial endowment of \u00a3180.8 million.",
+      "St Hugh's College, Oxford: St Hugh's College is one of the constituent colleges of the University of Oxford.  It is located on a 14.5 acre site on St Margaret's Road, to the north of the city centre.  It was founded in 1886 by Elizabeth Wordsworth as a women's college, and accepted its first male students in its centenary year in 1986."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 395,
+    "generation_tokens": 21,
+    "generation_speed": 371.64852667905495,
+    "prompt_eval_speed": 53530.28865699959,
+    "generation_latency_s": 0.17733289999887347,
+    "latency": 0.7674163000192493,
+    "total_prompt_tokens": 541,
+    "total_generation_tokens": 161,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2190801,
+    "stage_route_s": 0.09607480000704527,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4399292999878526,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053883800050243735,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.279993638396263e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17737290007062256,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7674277999904007,
+    "unaccounted_latency_s": 0.0001148999435827136,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Here are two search queries related to the question:",
+      "\"Which constituent college of the University of Oxford endows four professorial fellowships for sciences including chemistry and pure mathematics?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

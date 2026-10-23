@@ -1,0 +1,49 @@
+{
+  "question_id": "Q25",
+  "query": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+  "ground_truth": "World's Best Goalkeeper",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The father of Kasper Schmeichel, Ronald Koeman, was voted by the IFFHS in 1992 and 1993.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Peter Schmeichel: Peter Boles\u0142aw Schmeichel MBE (] ; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 1992 and 1993.  He is best remembered for his most successful years at English club Manchester United, whom he captained to the 1999 UEFA Champions League to complete the Treble, and for winning UEFA Euro 1992 with Denmark.",
+      "Kasper Schmeichel: Kasper Peter Schmeichel (] ; born 5 November 1986) is a Danish professional footballer who plays as a goalkeeper for Premier League club Leicester City and the Denmark national team.  He is the son of former Manchester United and Danish international goalkeeper Peter Schmeichel.",
+      "Ronald Koeman: Ronald Koeman (] ; born 21 March 1963) is a former Dutch footballer and the current manager of English club Everton.  He is the younger brother of former Feyenoord coach Erwin Koeman and the son of former Dutch international Martin Koeman.  A composed player on the ball, Koeman was capable of being deployed both as a defender and as a midfielder, and he frequently played as a sweeper, due to his vision and his ability on the ball.  Regarded as one of the best and most prolific attacking central defenders of all time, Koeman was renowned for his long-range passing, as well as his shooting accuracy and power from distance, especially on free kicks, and is the top scoring defender in world football; he was also an accurate penalty kick taker."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 458,
+    "generation_tokens": 35,
+    "generation_speed": 201.87105630472146,
+    "prompt_eval_speed": 55067.933148971984,
+    "generation_latency_s": 0.2971934999804944,
+    "latency": 0.6856929999776185,
+    "total_prompt_tokens": 610,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22864099999999998,
+    "stage_route_s": 0.10121850005816668,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23178250005003065,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055328199989162385,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.850002005696297e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29723160003777593,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6857020000461489,
+    "unaccounted_latency_s": 9.31998947635293e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Father of Kasper Schmeichel: Peter Schmeichel",
+      "Vote for Kasper Schmeichel: Peter Schmeichel"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

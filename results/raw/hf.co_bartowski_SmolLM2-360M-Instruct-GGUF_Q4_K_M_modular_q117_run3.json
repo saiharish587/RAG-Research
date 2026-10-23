@@ -1,0 +1,49 @@
+{
+  "question_id": "Q117",
+  "query": "Suicide's 1977 released album features a song based on what brand's comic character?",
+  "ground_truth": "Marvel",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Suicide's 1977 release album features a song based on the Marvel Comics character Ghost Rider.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Suicide (1977 album): Suicide is the debut album from the American rock band Suicide.  It was released in 1977 on Red Star Records and produced by Craig Leon and Marty Thau.  The album was recorded in four days at Ultima Sound Studios in New York and featured Martin Rev's minimalist electronics and harsh, repetitive rhythms paired with Alan Vega's rock and roll-inspired vocals and depictions of urban life.",
+      "Comic book: A comic book or comicbook, also called comic magazine or simply comic, is a publication that consists of comic art in the form of sequential juxtaposed panels that represent individual scenes.  Panels are often accompanied by brief descriptive prose and written narrative, usually dialog contained in word balloons emblematic of the comics art form.  Although comics has some origins in 18th century Japan and 1830s Europe, comic books were first popularized in the United States during the 1930s.  The first modern comic book, \"Famous Funnies\", was released in the United States in 1933 and was a reprinting of earlier newspaper humor comic strips, which had established many of the story-telling devices used in comics.  The term \"comic book\" derives from American comic books once being a compilation of comic strips of a humorous tone; however, this practice was replaced by featuring stories of all genres, usually not humorous in tone.",
+      "Ghost Rider (Suicide song): Ghost Rider is a song by the protopunk band Suicide appearing on their debut album.  The song is based on the Marvel Comics character."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 24,
+    "generation_speed": 217.89261525611462,
+    "prompt_eval_speed": 50357.10572050668,
+    "generation_latency_s": 0.23045329994056374,
+    "latency": 0.6343979999655858,
+    "total_prompt_tokens": 556,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2406027,
+    "stage_route_s": 0.10913529992103577,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23887210001703352,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055766900070011616,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.680008325725794e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23048669996205717,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6344074999215081,
+    "unaccounted_latency_s": 9.019987192004919e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Suicide's 1977 released album\"",
+      "Query 2: \"A comic character from the 1970s\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

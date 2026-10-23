@@ -1,0 +1,49 @@
+{
+  "question_id": "Q329",
+  "query": "Were Enrique Carreras and Lionel Ngakane both filmakers during the 20th century? ",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, they were not both filmakers during the 20th century.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lionel Ngakane: Lionel Ngakane (17 July 1928 \u2013 26 November 2003) was a South African filmmaker and actor.",
+      "Enrique Carreras: Enrique Carreras (January 6, 1925 - 29 August 1995) was a Peruvian-born Argentine film director, screenwriter and film producer, and was one of the most prolific film directors in the history of the Cinema of Argentina.",
+      "Stanley Kubrick: Stanley Kubrick ( ; July 26, 1928 \u2013 March 7, 1999) was an American film director, screenwriter, producer, cinematographer, editor, and photographer.  He is frequently cited as one of the greatest and most influential directors in cinematic history.  His films, which are mostly adaptations of novels or short stories, cover a wide range of genres, and are noted for their realism, dark humor, unique cinematography, extensive set designs, and evocative use of music."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 307,
+    "generation_tokens": 17,
+    "generation_speed": 244.1441312059284,
+    "prompt_eval_speed": 40015.641293013556,
+    "generation_latency_s": 0.1907188999466598,
+    "latency": 0.6687103000003844,
+    "total_prompt_tokens": 457,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2309287,
+    "stage_route_s": 0.10218130005523562,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3178154999623075,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057815999956801534,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.279997665435076e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.190758700016886,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6687221999745816,
+    "unaccounted_latency_s": 0.00010830000974237919,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Did Enrique Carreras and Lionel Ngakane collaborate on any films during the 20th century?\"",
+      "\"Did Lionel Ngakane and Enrique Carreras work together as filmakers in the 20th century?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

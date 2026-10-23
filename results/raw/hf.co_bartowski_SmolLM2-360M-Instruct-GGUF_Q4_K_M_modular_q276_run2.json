@@ -1,0 +1,49 @@
+{
+  "question_id": "Q276",
+  "query": "Marion Greene was a health policy analyst for St. Judt Medical company, which had how many principal operations worldwide?",
+  "ground_truth": "20",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Marion Greene was a health policy analyst for St. Jude Medical Company, which had more than 20 principal operations and manufacturing facilities worldwide with products sold in over 100 countries.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marion Greene: Marion C. Greene (born July 16, 1970) is a Hennepin County commissioner (District 3) and a former member of the Minnesota House of Representatives who represented District 60A, which included portions of the city of Minneapolis in Hennepin County, which is in the Twin Cities metropolitan area.  A Democrat, she was a health policy analyst for St. Jude Medical in Little Canada.",
+      "St. Jude Medical: St. Jude Medical, Inc. was an American global medical device company headquartered in Little Canada, Minnesota, U.S., a suburb of Saint Paul.  The company had more than 20 principal operations and manufacturing facilities worldwide with products sold in more than 100 countries.  Its major markets include the United States, Europe, Latin America and Asia-Pacific.  The company was named after Jude the Apostle, the patron saint of lost causes.",
+      "Gro Harlem Brundtland: Gro Harlem Brundtland (] ; born Gro Harlem, 20 April 1939) is a Norwegian politician, who served three terms as Prime Minister of Norway (1981, 1986\u201389, and 1990\u201396) and as Director-General of the World Health Organization from 1998 to 2003.  She is also known for having chaired the Brundtland Commission which presented the Brundtland Report on sustainable development."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 398,
+    "generation_tokens": 41,
+    "generation_speed": 241.64127468719244,
+    "prompt_eval_speed": 47934.481512706254,
+    "generation_latency_s": 0.29069880000315607,
+    "latency": 0.7482020000461489,
+    "total_prompt_tokens": 544,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22528589999999998,
+    "stage_route_s": 0.09165980003308505,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3052886000368744,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06036950007546693,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.000003147870302e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29073659994173795,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7482131000142545,
+    "unaccounted_latency_s": 0.0001091999001801014,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Marion Greene was a health policy analyst for St. Judt Medical Company, which had 20 principal operations worldwide.\"",
+      "\"Marion Greene was a health policy analyst for St. Judt Medical Company, which had 30 principal operations worldwide.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

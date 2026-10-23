@@ -1,0 +1,36 @@
+{
+  "question_id": "Q306",
+  "query": "The 1984 film \"Marlene\" is a documentary about an actress born in what year?",
+  "ground_truth": "1901",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The 1984 film \"Marlene\" is a documentary about an actress born in 1901.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marlene (1984 film): Marlene, also known in Germany as Marlene Dietrich - Portr\u00e4t eines Mythos, is a 1984 documentary film made by Maximilian Schell about the legendary film star Marlene Dietrich.  It was made by Bayerischer Rundfunk (BR) and OKO-Film and released by Futura Film, Munich and Alive Films, (USA).",
+      "Marlene Dietrich: Marie Magdalene \"Marlene\" Dietrich ( , ] ; 27 December 1901 \u2013 6 May 1992) was a German actress and singer who held both German and American citizenship.  Throughout her unusually long career, which spanned from the 1910s to the 1980s, she maintained popularity by continually reinventing herself.",
+      "Olivia de Havilland: Dame Olivia Mary de Havilland, {'1': \", '2': \", '3': \", '4': \"} ( ; born July 1, 1916) is a retired American actress.  Her career spanned from 1935 to 1988.  She appeared in 49 feature films, and was one of the leading movie stars during the golden age of Classical Hollywood.  She is best known for her early screen performances in \"The Adventures of Robin Hood\" (1938) and \"Gone with the Wind\" (1939), and her later award-winning performances in \"To Each His Own\" (1946), \"The Snake Pit\" (1948), and \"The Heiress\" (1949)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 27,
+    "generation_speed": 241.00902444902658,
+    "prompt_eval_speed": 95872.46123607775,
+    "generation_latency_s": 0.23097659996710718,
+    "latency": 0.24867779994383454,
+    "total_prompt_tokens": 439,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1054941,
+    "stage_retrieve_s": 0.01762410008814186,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.23101290001068264,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.2486845999956131,
+    "unaccounted_latency_s": 4.789989907294512e-05
+  }
+}

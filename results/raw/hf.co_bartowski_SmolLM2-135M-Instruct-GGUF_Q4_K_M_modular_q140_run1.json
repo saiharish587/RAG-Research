@@ -1,0 +1,48 @@
+{
+  "question_id": "Q140",
+  "query": "What year was the film that starred the composer for \"The Naked Brothers Band\"?",
+  "ground_truth": "2014",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "2016",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lin-Manuel Miranda: Lin-Manuel Miranda ( ; born January 16, 1980) is an American composer, lyricist, playwright, and actor best known for creating and starring in the Broadway musicals \"Hamilton\" and \"In the Heights\".  He co-wrote the songs for Disney's \"Moana\" soundtrack (2016) and is set to star in their upcoming film \"Mary Poppins Returns\".  Miranda's awards include a Pulitzer Prize, two Grammy Awards, an Emmy Award, a MacArthur Fellowship, and three Tony Awards.",
+      "1965 Birthday Honours: The Queen's Birthday Honours 1965 were appointments in many of the Commonwealth realms of Queen Elizabeth II to various orders and honours to reward and highlight good works by citizens of those countries.  The appointments were made to celebrate the official birthday of The Queen.  The announcement date varies from year to year.  The 1965 Queen's Birthday Honours were announced on 12 June for the United Kingdom, Australia, New Zealand, Sierra Leone, Jamaica, Trinidad and Tobago, Malawi, and the Gambia.",
+      "Hans Zimmer: Hans Florian Zimmer (] ; born 12 September 1957) is a German film score composer and record producer.  Since the 1980s, he has composed music for over 150 films.  His works include \"The Lion King\", for which he won the Academy Award for Best Original Score in 1995, the \"Pirates of the Caribbean\" series, \"The Thin Red Line\", \"Gladiator\", \"The Last Samurai\", \"The Dark Knight Trilogy\", \"Inception\", \"Interstellar\" and \"Dunkirk\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 452,
+    "generation_tokens": 5,
+    "generation_speed": 294.10034703840955,
+    "prompt_eval_speed": 21024.233685287687,
+    "generation_latency_s": 0.14612200006376952,
+    "latency": 0.41124620009213686,
+    "total_prompt_tokens": 588,
+    "total_generation_tokens": 17,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2389011,
+    "stage_route_s": 0.11940190009772778,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.11098869994748384,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03454380005132407,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.240004975348711e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14617309998720884,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.41126060008537024,
+    "unaccounted_latency_s": 0.00010149995796382427,
+    "route": "rag",
+    "router_raw": "\"1980.\"",
+    "sub_queries": [
+      "1965"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

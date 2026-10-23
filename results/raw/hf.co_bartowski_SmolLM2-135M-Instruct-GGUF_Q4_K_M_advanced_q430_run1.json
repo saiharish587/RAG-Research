@@ -1,0 +1,42 @@
+{
+  "question_id": "Q430",
+  "query": "Season 2 of Rick and Morty began with the episode directed by whom?",
+  "ground_truth": "Wes Archer",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The episode directed by Ryan Ridley, which premiered on Adult Swim on December 9, 2013.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rick and Morty (season 2): The second season of the animated television series \"Rick and Morty\" originally aired in the United States on Cartoon Network's late night programming block, Adult Swim, which premiered on July 26, 2015 with \"A Rickle in Time\", and concluded on October 4 with \"The Wedding Squanchers\".  This season aired a total of ten episodes.",
+      "Lawnmower Dog: \"Lawnmower Dog\" is the second episode of \"Rick and Morty\".  It premiered on Adult Swim on December 9, 2013, was written by Ryan Ridley, and directed by John Rice.  In the episode, Rick gives Jerry a device to enhance the dog's intelligence, whilst Rick and Morty get lost in the dreams of Morty's math teacher.  The episode was well received, with approximately 1.5 million viewers when airing.",
+      "Pilot (Rick and Morty): \"Pilot\" is the first episode of \"Rick and Morty\".  It premiered on Adult Swim on December 2, 2013.  It is written by series creators Dan Harmon and Justin Roiland, and directed by Roiland.  The series introduces protagonists, alcoholic scientist Rick Sanchez and his innocent teenage grandson Morty Smith, as they embark on a dangerous interdimensional adventure to fetch Mega tree seeds.  The pilot had a mixed to positive reception and was seen by about 1.1 million viewers when airing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 28,
+    "generation_speed": 339.4927009069305,
+    "prompt_eval_speed": 22780.4388994096,
+    "generation_latency_s": 0.1874563000164926,
+    "latency": 0.6251752000534907,
+    "total_prompt_tokens": 485,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1467293,
+    "stage_rewrite_s": 0.21606259990949184,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0881322999484837,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13337279995903373,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1875052999239415,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6251877000322565,
+    "unaccounted_latency_s": 0.00011510029435157776,
+    "rewritten_query": "The original query was \"Season 2 of Rick and Morty begins with the episode directed by...\" The optimized query output is \"Season 2 of Rick and Morty begins with the episode directed by...\".",
+    "query_was_rewritten": true
+  }
+}

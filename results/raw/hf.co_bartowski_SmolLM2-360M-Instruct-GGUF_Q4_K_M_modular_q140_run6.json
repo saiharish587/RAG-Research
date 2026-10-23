@@ -1,0 +1,49 @@
+{
+  "question_id": "Q140",
+  "query": "What year was the film that starred the composer for \"The Naked Brothers Band\"?",
+  "ground_truth": "2014",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The film that starred the composer for \"The Naked Brothers Band\" is 2007.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alex Wolff: Alexander \"Alex\" Draper Wolff (born November 1, 1997) is an American actor, musician, and composer.  He first gained recognition for starring alongside his older brother Nat in the Nickelodeon musical comedy television series \"The Naked Brothers Band\" (2007\u201309), which was created by the boys' mother Polly Draper.  Wolff and his brother released two soundtrack albums for the series, \"The Naked Brothers Band\" and \"I Don't Want to Go to School\", which were co-produced by their father Michael Wolff.",
+      "Nat Wolff: Nathaniel Marvin \"Nat\" Wolff (born December 17, 1994) is an American actor, singer-songwriter, and musician.  Wolff gained recognition for composing the music for \"The Naked Brothers Band\" (2007\u201309), a Nickelodeon television series he starred in with his younger brother Alex that was created by their actress mother Polly Draper.  Wolff's jazz pianist father Michael Wolff co-produced the series' soundtrack albums, \"The Naked Brothers Band\" (2007) and \"I Don't Want to Go to School\" (2008); the former of which ranked the 23rd spot on the \"Billboard\" 200 charts.",
+      "Hans Zimmer: Hans Florian Zimmer (] ; born 12 September 1957) is a German film score composer and record producer.  Since the 1980s, he has composed music for over 150 films.  His works include \"The Lion King\", for which he won the Academy Award for Best Original Score in 1995, the \"Pirates of the Caribbean\" series, \"The Thin Red Line\", \"Gladiator\", \"The Last Samurai\", \"The Dark Knight Trilogy\", \"Inception\", \"Interstellar\" and \"Dunkirk\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 505,
+    "generation_tokens": 23,
+    "generation_speed": 227.6236095166462,
+    "prompt_eval_speed": 58435.54732700763,
+    "generation_latency_s": 0.22499290003906935,
+    "latency": 0.6823424999602139,
+    "total_prompt_tokens": 641,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2189889,
+    "stage_route_s": 0.09098700003232807,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.31071350001730025,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055471899919211864,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2299932576715946e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2250253000529483,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6823518000310287,
+    "unaccounted_latency_s": 0.0001023000804707408,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The film that starred the composer for \"The Naked Brothers Band\" is \"The Naked Brothers Band\".",
+      "Query 2: The film that starred the composer for \"The Naked Brothers Band\" was released in 1973."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

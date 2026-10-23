@@ -1,0 +1,48 @@
+{
+  "question_id": "Q327",
+  "query": "The voice of Homer Simpson also voices what alien character in the television series \"The Simpsons\"?",
+  "ground_truth": "Kodos",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Hank Azaria",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dan Castellaneta: Daniel Louis Castellaneta ( ; born October 29, 1957) is an American actor, voice actor, comedian and screenwriter.  Noted for his long-running role as Homer Simpson on the animated television series \"The Simpsons\", he also voices many other characters for the show, including Abraham \"Grampa\" Simpson, Barney Gumble, Krusty the Clown, Sideshow Mel, Groundskeeper Willie, Mayor Quimby and Hans Moleman.",
+      "Waylon Smithers: Waylon J. Smithers Jr., usually referred to as Mr. Smithers or simply Smithers, is a recurring fictional character in the American animated sitcom \"The Simpsons\", who is voiced by Harry Shearer.  Smithers first appeared in the episode \"Homer's Odyssey\", although his voice could be heard in the series premiere \"Simpsons Roasting on an Open Fire\".  He is the consummate executive and personal assistant of Springfield Nuclear Power Plant's owner Mr. Burns.",
+      "Hank Azaria: Henry Albert \"Hank\" Azaria ( ; born April 25, 1964) is an American actor, voice actor, comedian and producer.  He is known for starring in the animated television sitcom \"The Simpsons\" (1989\u2013present), voicing Moe Szyslak, Apu Nahasapeemapetilon, Chief Wiggum, Comic Book Guy, Carl Carlson and numerous others.  After attending Tufts University, Azaria joined the series with little voice acting experience, but became a part of the crew in its second season, with many of his performances on the show being based on famous actors and characters."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 453,
+    "generation_tokens": 5,
+    "generation_speed": 366.48830902294213,
+    "prompt_eval_speed": 53244.00564174894,
+    "generation_latency_s": 0.132316300063394,
+    "latency": 0.43443730007857084,
+    "total_prompt_tokens": 593,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2312729,
+    "stage_route_s": 0.10604340001009405,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1594766000052914,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036413899972103536,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.329998046159744e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13235590001568198,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4344484000466764,
+    "unaccounted_latency_s": 0.0001159000676125288,
+    "route": "rag",
+    "router_raw": "\"Alien Character\"",
+    "sub_queries": [
+      "Answer: The voice of Homer Simpson also voices the alien character \"Zorvath\" from the television series \"The Simpsons.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

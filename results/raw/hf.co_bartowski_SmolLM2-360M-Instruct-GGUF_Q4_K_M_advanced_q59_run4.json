@@ -1,0 +1,42 @@
+{
+  "question_id": "Q59",
+  "query": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+  "ground_truth": "35,124",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "According to the 2001 census, the population of the city in which Kirton End is located was 261.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kirton, Nottinghamshire: Kirton is a village in Nottinghamshire, England.  It is located 3 mi east of Ollerton.  According to the United Kingdom Census 2001 it had a population of 273, reducing to 261 at the 2011 census.",
+      "Kirton End: Kirton End is a hamlet in the civil parish of Kirton in the Boston district of Lincolnshire, England.  It lies on the B1391 road, 4 mi south-west from Boston, and 1.5 mi north-east from Kirton.",
+      "Elizabeth, New Jersey: Elizabeth is both the largest city and the county seat of Union County, in New Jersey, United States.  As of the 2010 United States Census, the city had a total population of 124,969, retaining its ranking as New Jersey's fourth largest city (by population).  The population increased by 4,401 (3.7%) from the 120,568 counted in the 2000 Census, which had in turn increased by 10,566 (+9.6%) from the 110,002 counted in the 1990 Census.  For 2015, the Census Bureau's Population Estimates Program calculated a population of 129,007, an increase of 3.2% from the 2010 enumeration, ranking the city the 210th largest in the nation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 418,
+    "generation_tokens": 29,
+    "generation_speed": 265.10892320068746,
+    "prompt_eval_speed": 60005.74217628481,
+    "generation_latency_s": 1.0668790999334306,
+    "latency": 3.417183000012301,
+    "total_prompt_tokens": 503,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.126837,
+    "stage_rewrite_s": 1.2004152999725193,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0498716000001878,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09990000003017485,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0669135999633,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.41719089995604,
+    "unaccounted_latency_s": 9.119999594986439e-05,
+    "rewritten_query": "Kirton End's population can be found at the 2001 census website.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q371",
+  "query": "What type of media does Bitter Jester and Sicko have in common?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Both Bitter Jester and Sicko are documentaries that explore the comedy world, featuring interviews with various stars such as Richard Pryor, Richard Belzer, and others. They both examine health care systems in the United States, focusing on its for-profit nature versus non-profit universal healthcare systems like Canada, the UK, France, and Cuba.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bitter Jester: Bitter Jester is a documentary starring Maija DiGiorgio, Kenny Simmons, Jody Del Giorno and Heather McConnell.  It's a portrait of the comedy world that includes interviews with a multitude of stars including Richard Pryor, Richard Belzer and many others.",
+      "Sicko: Sicko is a 2007 American documentary film made by filmmaker Michael Moore.  The film investigates health care in the United States, focusing on its health insurance and the pharmaceutical industry.  The movie compares the for-profit, non-universal U.S. system with the non-profit universal health care systems of Canada, the United Kingdom, France and Cuba.",
+      "Sick (EP): Sick is the debut extended play by American hardcore punk band Beartooth and is produced by Caleb Shomo formerly of the band Attack Attack!  who sang and recorded all the instruments used on the album.  It was released on July 26, 2013 through Red Bull Records for free download."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 295,
+    "generation_tokens": 72,
+    "generation_speed": 224.2725160261402,
+    "prompt_eval_speed": 38025.26424336169,
+    "generation_latency_s": 0.4406582999508828,
+    "latency": 0.9595776000060141,
+    "total_prompt_tokens": 427,
+    "total_generation_tokens": 141,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21830259999999999,
+    "stage_route_s": 0.09551209991332144,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.36736730008851737,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055858399951830506,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.710008554160595e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.44069680001121014,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9595894000958651,
+    "unaccounted_latency_s": 9.840005077421665e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Bitter Jester has a similar concept to Sicko, which is an American television series that explores the struggles of people living with HIV/AIDS.",
+      "Query 2: Both Bitter Jester and Sicko are both fictional shows created by Jonathan Nolan, who also wrote The Big Bang Theory."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

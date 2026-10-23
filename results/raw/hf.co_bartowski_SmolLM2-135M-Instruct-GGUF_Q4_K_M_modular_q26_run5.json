@@ -1,0 +1,49 @@
+{
+  "question_id": "Q26",
+  "query": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+  "ground_truth": "Barton Lee Hazlewood",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Context:\nBoots (EP): Boots is an EP by KMFDM, featuring a cover of the Nancy Sinatra song \"These Boots Are Made for Walkin'\" which became a #1 hit for Sinatra. The album was produced by Lee Hazlewood and was released on September 20, 1967.\n\nBoots (album): Boots is a 1966 debut studio album by Nancy Sinatra. It was the first release by the band after their three-year hiatus.\n\nThese Boots Are Made for Walkin': \"These Boots Are Made for Walkin'\" is a song written and recorded by Lee Hazlewood, Lee Hazlewood's arranger and conductor. It was the first single from the album \"These Boots Are Made for Walkin'\", which became a #1 hit for Sinatra. The song charted January 22, 1967 and reached No. 1 in the United States \"Billboard\" Hot 100 and in the UK Singles Chart.\n\nQuestion: Who wrote this song?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Boots (EP): Boots is an EP by KMFDM, featuring a cover of the Nancy Sinatra song \"These Boots Are Made for Walkin'\".  It was the first release by the band after their three-year hiatus.",
+      "Boots (album): Boots is a 1966 debut studio album by Nancy Sinatra.  The album was produced by Lee Hazlewood.  Billy Strange was the arranger and conductor.  The album is titled after the song on the album \"These Boots Are Made for Walkin'\", which became a #1 hit for Sinatra.  Most of the other songs on the album are covers of then-recent hits.",
+      "These Boots Are Made for Walkin': \"These Boots Are Made for Walkin' is a hit song written by Lee Hazlewood and recorded by Nancy Sinatra.  It charted January 22, 1966 and reached No. 1 in the United States \"Billboard\" Hot 100 and in the UK Singles Chart."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 305,
+    "generation_tokens": 234,
+    "generation_speed": 404.5866991258161,
+    "prompt_eval_speed": 38592.93939010502,
+    "generation_latency_s": 0.6995072000427172,
+    "latency": 1.1447732999222353,
+    "total_prompt_tokens": 453,
+    "total_generation_tokens": 322,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24054240000000002,
+    "stage_route_s": 0.14328279998153448,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24471120000816882,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05709449993446469,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.710000939667225e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.6995505000231788,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1447861000197008,
+    "unaccounted_latency_s": 0.00010090006981045008,
+    "route": "rag",
+    "router_raw": "The writer of These Boots Is Made For Walkin' is a fictional character from the movie \"These Shoes.\"",
+    "sub_queries": [
+      "Here are two search queries related to the question \"Who was the writer of These Boots Are Made for Walkin'\" with separate numbers or markdown.",
+      "Query 1: Who wrote these boots, and what year were they written in?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

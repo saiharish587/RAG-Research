@@ -1,0 +1,49 @@
+{
+  "question_id": "Q140",
+  "query": "What year was the film that starred the composer for \"The Naked Brothers Band\"?",
+  "ground_truth": "2014",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "\"In the Heights\" is a musical about the life of a young girl named Hannah who lives in a small town and has to fight against her father's plans to build a new house. The story follows Hannah as she navigates her family's struggles with their past, including her father's decision to move away from his hometown for work.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lin-Manuel Miranda: Lin-Manuel Miranda ( ; born January 16, 1980) is an American composer, lyricist, playwright, and actor best known for creating and starring in the Broadway musicals \"Hamilton\" and \"In the Heights\".  He co-wrote the songs for Disney's \"Moana\" soundtrack (2016) and is set to star in their upcoming film \"Mary Poppins Returns\".  Miranda's awards include a Pulitzer Prize, two Grammy Awards, an Emmy Award, a MacArthur Fellowship, and three Tony Awards.",
+      "United States presidential election, 1960: The United States presidential election of 1960 was the 44th quadrennial presidential election, held on Tuesday, November 8, 1960.  The Republican Party nominated incumbent Vice President Richard Nixon, while the Democratic Party nominated John F. Kennedy, U.S. Senator from Massachusetts.  The incumbent President, Republican Dwight D. Eisenhower, was not eligible for re-election after being elected the maximum two times allowed by the Twenty-second Amendment; he was the first President denied the choice to run for a third term by that amendment.  This was the first presidential election in which residents in Alaska and Hawaii were able to participate, as both had become states in 1959.",
+      "2017\u201318 NBA season: The 2017\u201318 NBA season will be the 72nd season of the National Basketball Association (NBA).  The regular season will begin on October 17, 2017, earlier than previous seasons to reduce the number of \"back-to-back\" games teams are scheduled to play, with the 2017 runners-up Cleveland Cavaliers hosting a game against the Boston Celtics at Quicken Loans Arena in Cleveland, Ohio.  Christmas games will be played on December 25.  The 2018 NBA All-Star Game will be played on February 18, 2018, at the Staples Center in Los Angeles, California.  The regular season will end on April 11, 2018 and the playoffs will begin on April 14, 2018."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 564,
+    "generation_tokens": 69,
+    "generation_speed": 350.26803118908384,
+    "prompt_eval_speed": 69672.63743051267,
+    "generation_latency_s": 0.31638530001509935,
+    "latency": 0.5890268000075594,
+    "total_prompt_tokens": 700,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.223638,
+    "stage_route_s": 0.10753589996602386,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.10601330001372844,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0589070999994874,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9200101532042027e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.31641709990799427,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5890413000015542,
+    "unaccounted_latency_s": 0.0001094000181183219,
+    "route": "rag",
+    "router_raw": "\"1980.\"",
+    "sub_queries": [
+      "1960s",
+      "2018"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

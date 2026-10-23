@@ -1,0 +1,42 @@
+{
+  "question_id": "Q94",
+  "query": "Do the drinks Gibson and Zurracapote both contain gin?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, the drinks Zurracapote and Gibson do not contain gin. The first drink, Zurracapote, is made with red wine mixed with fruit such as peaches and lemons, sugar, and cinnamon, which are all ingredients that are commonly used in gin production. The second drink, Gibson (cocktail), does not contain any gin at all due to the absence of juniper berries or other traditional ingredients.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Zurracapote: Zurracapote (sometimes abbreviated as zurra) is a popular Spanish alcoholic mixed drink, similar to sangr\u00eda.  It consists of red wine mixed with fruit such as peaches and lemons, sugar, and cinnamon.  The concoction is then traditionally left to steep for several days, though some recipes call for the addition of other alcoholic beverages, juices, and fruit extracts.  The result is a mild-to-medium alcoholic drink, similar to sangr\u00eda.",
+      "Gibson (cocktail): The Gibson is a mixed drink made with gin and vermouth, and often garnished with a pickled onion.  The oldest published recipe for the Gibson is found in the 1908 book, \"The World's Drinks And How To Mix Them\" by William Boothby.",
+      "Gin: Gin is a spirit which derives its predominant flavour from juniper berries (\"Juniperus communis\").  From its earliest origins in the Middle Ages, gin has evolved from use in herbal medicine to an object of commerce in the spirits industry.  Gin was developed on the basis of the older jenever, and became popular in Great Britain (particularly in London) when William of Orange, leader of the Dutch Republic, occupied the English, Scottish, and Irish thrones with his wife Mary.  Gin is one of the broadest categories of spirits, represented by products of various origins, styles, and flavour profiles that all revolve around juniper as a common ingredient."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 382,
+    "generation_tokens": 87,
+    "generation_speed": 423.75564398681,
+    "prompt_eval_speed": 57185.62874251497,
+    "generation_latency_s": 0.28914390003774315,
+    "latency": 0.7700726999901235,
+    "total_prompt_tokens": 455,
+    "total_generation_tokens": 156,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1243744,
+    "stage_rewrite_s": 0.24093149998225272,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07208179996814579,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16778580006211996,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.28918189997784793,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7700812999391928,
+    "unaccounted_latency_s": 0.00010079995263367891,
+    "rewritten_query": "Gibson & Zurrapecapetocuprano (2018)\n\nThis search was improved by optimizing the user's query with a more concise phrase, \"Do the drinks Gibson and Zurracapote both contain gin?\" This revised query conveys the same information as the original query but in a more streamlined format.",
+    "query_was_rewritten": true
+  }
+}

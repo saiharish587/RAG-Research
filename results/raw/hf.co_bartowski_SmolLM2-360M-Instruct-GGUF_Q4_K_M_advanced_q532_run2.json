@@ -1,0 +1,42 @@
+{
+  "question_id": "Q532",
+  "query": "Are Mauritz Stiller and Johannes Grenzfurthner both of the same nationality?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, Mauritz Stiller and Johannes Grenzfurthner are not both of the same nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Johannes Grenzfurthner: Johannes Grenzfurthner (] ; born 1975 in Vienna) is an award-winning Austrian artist, filmmaker, writer, actor, curator, theatre director and lecturer.  He is known as the founder, conceptualist and artistic director of monochrom, an international art and theory group.  Most of his artworks are labelled \"monochrom\".",
+      "Mauritz Stiller: Mauritz Stiller (17 July 1883 \u2013 18 November 1928) was a Finnish-Swedish film director, best known for discovering Greta Garbo and bringing her to America.",
+      "The Saga of Gosta Berling: The Saga of Gosta Berling (Swedish: G\u00f6sta Berlings saga ) is a 1924 Swedish romantic drama film directed by Mauritz Stiller and released by AB Svensk Filmindustri, starring Lars Hanson, Gerda Lundequist and Greta Garbo in her native break-out role on film.  The film is based on the 1891 debut novel of the same name by the Swedish author and Nobel Prize winner Selma Lagerl\u00f6f.  It is also known as Gosta Berling's Saga, The Story of Gosta Berling and The Atonement of Gosta Berling."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 365,
+    "generation_tokens": 22,
+    "generation_speed": 253.56722989327122,
+    "prompt_eval_speed": 20280.031114568286,
+    "generation_latency_s": 1.040798999951221,
+    "latency": 3.4181933999061584,
+    "total_prompt_tokens": 443,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1240084,
+    "stage_rewrite_s": 1.2261042000027373,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0204173000529408,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13075979996938258,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.040833399980329,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.418202599976212,
+    "unaccounted_latency_s": 8.829997386783361e-05,
+    "rewritten_query": "Mauritz Stiller and Johannes Grenzfurthner are both German-born, but their nationalities differ.",
+    "query_was_rewritten": true
+  }
+}

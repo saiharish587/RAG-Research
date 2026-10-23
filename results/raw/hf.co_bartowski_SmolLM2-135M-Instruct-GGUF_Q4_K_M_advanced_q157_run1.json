@@ -1,0 +1,42 @@
+{
+  "question_id": "Q157",
+  "query": "Which was fought earlier in our nation's history, the Seven Days Battles or the Battle of Manila?",
+  "ground_truth": "The Seven Days Battles",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Battle of Manila (1945) was a major battle of the Philippine campaign of 1944-45 during the Second World War. It was fought by American and Filipino forces against Japanese troops in Manila, the capital city of the Philippines. The month-long battle resulted in the death of over 100,000 civilians and the complete devastation of the city.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Battle of Manila (1945): The Battle of Manila (February 3, 1945 \u2013 March 3, 1945) was a major battle of the Philippine campaign of 1944-45, during the Second World War.  It was fought by American and Filipino forces against Japanese troops in Manila, the capital city of the Philippines.  The month-long battle, which resulted in the death of over 100,000 civilians and the complete devastation of the city, was the scene of the worst urban fighting in the Pacific theater.  Japanese forces committed mass murder against Filipino civilians during the battle.  Along with massive loss of life, the battle also destroyed architectural and cultural heritage dating back to the city's foundation.  The battle ended the almost three years of Japanese military occupation in the Philippines (1942\u20131945).  The city's capture was marked as General Douglas MacArthur's key to victory in the campaign of reconquest.",
+      "Seven Days Battles: The Seven Days Battles were a series of six major battles over the seven days from June 25 to July 1, 1862, near Richmond, Virginia, during the American Civil War.  Confederate General Robert E. Lee drove the invading Union Army of the Potomac, commanded by Maj. Gen. George B. McClellan, away from Richmond and into a retreat down the Virginia Peninsula.  The series of battles is sometimes known erroneously as the Seven Days Campaign, but it was actually the culmination of the Peninsula Campaign, not a separate campaign in its own right.",
+      "Seven Days Union order of battle: The following Union Army units and commanders fought in the Seven Days Battles (from June 25 to July 1, 1862) of the American Civil War.  Order of battle compiled from the army organization-return of casualties during the battle and the reports.  The Confederate order of battle is listed separately."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 484,
+    "generation_tokens": 83,
+    "generation_speed": 393.8932312058353,
+    "prompt_eval_speed": 26218.851570964245,
+    "generation_latency_s": 0.3026944000739604,
+    "latency": 0.9310529000358656,
+    "total_prompt_tokens": 564,
+    "total_generation_tokens": 188,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13212639999999998,
+    "stage_rewrite_s": 0.34604999993462116,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07335050008259714,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20883569994475693,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3027271000901237,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9310617001028731,
+    "unaccounted_latency_s": 9.8800053820014e-05,
+    "rewritten_query": "Which battles were fought during our nation's history, the Seven Days Battles or the Battle of Manila?\n\nThis revised query uses a more concise and natural phrasing to convey the same information as the original query. The phrase \"which battles\" is removed from the original query, making it easier for the search engine to understand that the question asks about two separate events in our nation's history. Additionally, using \"was fought earlier\" instead of \"were fought earlier\" makes the sentence more concise and natural-sounding.",
+    "query_was_rewritten": true
+  }
+}

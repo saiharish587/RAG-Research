@@ -1,0 +1,42 @@
+{
+  "question_id": "Q130",
+  "query": "At what venue was the January 2, 2012 game featured the University of Louisville team?",
+  "ground_truth": "Mercedes-Benz Superdome",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The University of Louisville team played their home games at Papa John's Cardinal Stadium.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2012 Louisville Cardinals football team: The 2012 Louisville Cardinals football team represented the University of Louisville in the 2012 NCAA Division I FBS football season.  The Cardinals were led by third-year head coach Charlie Strong and played their home games at Papa John's Cardinal Stadium.  They were a member of the Big East Conference.  They finished the season 11\u20132, 5\u20132 in Big East play to finish in a four-way tie for the Big East championship.  As the highest rated of the four Big East champions in the final BCS poll, the Cardinals received the conference's automatic bid into a BCS game.  They were invited to the Sugar Bowl where they defeated Florida.",
+      "Little Haifa or New Preston St.: Little Haifa or New Preston St. (a tribute to Preston St., the original Jewish Enclave and home to two Jewish cemeteries in the Germantown neighborhood in Louisville, Kentucky) are the two nicknames for a large Jewish neighborhood on Dutchman's Lane in Louisville, Kentucky.  The small neighborhood is the center of Louisville's Jewish communities, especially the Orthodox Jewish community.  Located between the Highlands and St. Matthews neighborhoods, Little Haifa/New Preston is located on Dutchman's Lane stretching from Abigail Drive through Almara Circle, Vivian Lane, and Woodluck Avenue.  It is home to Louisville's Jewish Community Center, Shalom Towers (Assisted living residence for the elderly of Louisville's Jewish community), Jewish Family & Vocational Services, Anshei Sfard & The Chabad House (aka Chabad Kentucky [Louisville's only Orthodox synagogues with the Chabad House also serving as a community center for the Orthodox Jewish community, making up two out of six total synagogues and temples in the Louisville Metropolitan Area]).  Additionally, it is within close proximity to Adath Jeshuran and Kenneseth Israel Synagogues (Louisville's two conservative synagogues located in the Highlands, while the Temple and Temple Shalom are farther in the east end of Louisville).",
+      "Louisville Bats: The Louisville Bats are an American minor league professional baseball franchise based in Louisville, Kentucky.  The Bats are the Triple-A affiliate of the Cincinnati Reds.  The team, formerly known as the Louisville RiverBats, plays in the International League.  The Bats play their home games at Louisville Slugger Field; the naming rights for the stadium were purchased by Hillerich & Bradsby, makers of the famous Louisville Slugger baseball bat."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 613,
+    "generation_tokens": 19,
+    "generation_speed": 245.54465681903358,
+    "prompt_eval_speed": 13550.25531068326,
+    "generation_latency_s": 0.9468172999331728,
+    "latency": 3.414145899936557,
+    "total_prompt_tokens": 695,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12858740000000002,
+    "stage_rewrite_s": 1.244736999971792,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0025706000160426,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2199009999167174,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9468597000231966,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4141565999016166,
+    "unaccounted_latency_s": 8.889997843652964e-05,
+    "rewritten_query": "University of Louisville (UofL) at the University of Louisville (UofK) hosted the January 2, 2012 game.",
+    "query_was_rewritten": true
+  }
+}

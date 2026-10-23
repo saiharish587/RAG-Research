@@ -1,0 +1,42 @@
+{
+  "question_id": "Q36",
+  "query": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+  "ground_truth": "October 1922",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Civil War between the Bolsheviks and the Reds ended when the Bolsheviks were overthrown by Joseph Stalin's forces.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alexander Kerensky: Alexander Fyodorovich Kerensky (Russian: \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440 \u0424\u0451\u0434\u043e\u0440\u043e\u0432\u0438\u0447 \u041a\u0435\u0301\u0440\u0435\u043d\u0441\u043a\u0438\u0439 , ] ; 4 May 1881 \u2013 11 June 1970) was a Russian lawyer and key political figure in the Russian Revolution of 1917.  After the February Revolution of 1917 he joined the newly formed Russian Provisional Government, first as Minister of Justice, then as Minister of War, and after July 1917 as the government's second Minister-Chairman.  A leader of the moderate-socialist Trudoviks faction of the Socialist Revolutionary Party, he was also vice-chairman of the powerful Petrograd Soviet.  On 7 November, his government was overthrown by the Lenin-led Bolsheviks in the October Revolution.  He spent the remainder of his life in exile, in Paris and New York City, and worked for the Hoover Institution.",
+      "Russian Revolution: The Russian Revolution was a pair of revolutions in Russia in 1917 which dismantled the Tsarist autocracy and led to the rise of the Soviet Union.  The Russian Empire collapsed with the abdication of Emperor Nicholas II and the old regime was replaced by a provisional government during the first revolution of February 1917 (March in the Gregorian calendar; the older Julian calendar was in use in Russia at the time).  Alongside it arose grassroots community assemblies (called 'soviets') which contended for authority.  In the second revolution that October, the Provisional Government was toppled and all power was given to the soviets.",
+      "Communism in Russia: Communism in Russia began after Tsar Nicholas II lost his power during the February Revolution.  The Provisional Government was established under Prince Lvov, however, the Bolsheviks refused to accept the government and revolted in October 1917, taking control of Russia.  Vladmir Lenin, their leader, rose to power and governed between 1917 and 1924.  The Bolsheviks formed the Russian Soviet Federative Socialist Republic, marking the beginning of the Russian Civil War between the revolutionary Reds and the counter-revolutionary Whites.  In 1922 the Communist Reds were victorious, and formed the Soviet Union.  Lenin died in 1924, starting a power struggle which ended with Joseph Stalin seizing power.  He was the leader of the Communist Party until 1953.  He encouraged political paranoia and conducted the Great Purge to remove opponents of his dominance."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 639,
+    "generation_tokens": 24,
+    "generation_speed": 258.5649644473174,
+    "prompt_eval_speed": 88565.48856548856,
+    "generation_latency_s": 0.906107599963434,
+    "latency": 3.3873149999417365,
+    "total_prompt_tokens": 722,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1267789,
+    "stage_rewrite_s": 1.2380363000556827,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.002386000007391,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.24066620005760342,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.906146900029853,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.387325800023973,
+    "unaccounted_latency_s": 9.109987877309322e-05,
+    "rewritten_query": "Alexander Kerensky was defeated and destroyed by the Bolsheviks during the civil war, which ended with the abdication of Tsar Nicholas II.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q443",
+  "query": "What book provided the foundation for Masters and Johnson's research team?",
+  "ground_truth": "Patterns of Sexual Behavior",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The book \"Sexuality in America\" by William H. Masters and Virginia E. Johnson was a foundational work that provided the foundation for Masters and Johnson's research team.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Masters and Johnson: The Masters and Johnson research team, composed of William H. Masters and Virginia E. Johnson, pioneered research into the nature of human sexual response and the diagnosis and treatment of sexual disorders and dysfunctions from 1957 until the 1990s.",
+      "William Masters: William Howell Masters (December 27, 1915 \u2013 February 16, 2001) was an American gynecologist, best known as the senior member of the Masters and Johnson sexuality research team.  Along with his wife Virginia E. Johnson, he pioneered research into the nature of human sexual response and the diagnosis and treatment of sexual dysfunctions and disorders from 1957 until the 1990s.",
+      "Virginia E. Johnson: Virginia E. Johnson, born Mary Virginia Eshelman (February 11, 1925 \u2013 July 24, 2013), was an American sexologist, best known as a member of the Masters and Johnson sexuality research team.  Along with William H. Masters, she pioneered research into the nature of human sexual response and the diagnosis and treatment of sexual dysfunctions and disorders from 1957 until the 1990s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 332,
+    "generation_tokens": 35,
+    "generation_speed": 382.20455587830605,
+    "prompt_eval_speed": 21301.167714615684,
+    "generation_latency_s": 0.21663029992487282,
+    "latency": 0.5606019999831915,
+    "total_prompt_tokens": 458,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2429971,
+    "stage_route_s": 0.10319980001077056,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18474269995931536,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05584220006130636,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.980006583034992e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21666429995093495,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5606106999330223,
+    "unaccounted_latency_s": 9.23998886719346e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Masters and Johnson's Research Team (M&JT)",
+      "Masters and Johnson's Foundation for Research (MRFR)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

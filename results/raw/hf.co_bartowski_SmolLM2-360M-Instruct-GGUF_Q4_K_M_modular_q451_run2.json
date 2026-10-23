@@ -1,0 +1,49 @@
+{
+  "question_id": "Q451",
+  "query": "What is the name of the oldest child that attended the Trump campaign-Russian meeting?",
+  "ground_truth": "Donald Trump Jr.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The name of the oldest child who attended the Trump campaign-Russian meeting is Donald Trump Jr.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Trump campaign\u2013Russian meeting: On June 9, 2016, a meeting was held in Trump Tower in New York City between three senior members of the presidential campaign of Donald TrumpDonald Trump Jr., Jared Kushner, and Paul Manafortand at least five other people, including Russian lawyer Natalia Veselnitskaya.  The meeting was arranged by publicist and long-time Trump acquantiance, Rob Goldstone on behalf of his client, singer-songwriter Emin Agalarov.  It was disclosed to U.S. government officials when Kushner filed a revised version of his security clearance form.",
+      "Paul Manafort: Paul John Manafort Jr. (born April 1, 1949) is an American lawyer, lobbyist and political consultant.  He joined Donald Trump's presidential campaign team in March 2016 and served as campaign manager from June to August 2016.  He was previously an adviser to the U.S. presidential campaigns of Republicans Gerald Ford, Ronald Reagan, George H. W. Bush, and Bob Dole.  In 1980 Manafort co-founded the Washington, D.C.-based lobbying firm Black, Manafort & Stone, along with principals Charles R. Black Jr., and Roger J. Stone.  In 1984 it was renamed Black, Manafort, Stone and Kelly (BMSK) & associates, after Peter G. Kelly was recruited.",
+      "Donald Trump Jr.: Donald John Trump Jr. (born December 31, 1977) is an American businessman and former reality TV personality.  He is the oldest child of the 45th President of the United States, Donald Trump, and his first wife, Ivana."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 453,
+    "generation_tokens": 20,
+    "generation_speed": 230.31391787005688,
+    "prompt_eval_speed": 19333.36178566856,
+    "generation_latency_s": 0.22773149993736297,
+    "latency": 0.5530323999701068,
+    "total_prompt_tokens": 587,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2186368,
+    "stage_route_s": 0.0969566999701783,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17255790007766336,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055607100017368793,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.900002386420965e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22777580004185438,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5530454999534413,
+    "unaccounted_latency_s": 9.979982860386372e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Trump Campaign Russian Meeting\"",
+      "\"Oldest Child Attended Trump Campaign Russia Meeting\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q588",
+  "query": "When was the date of birth of one of the founder of Congo Reform Association?",
+  "ground_truth": "1 September 1864",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The date of birth of one of the founder of the Congolese Reform Association is 14 October 1930, which is the year of his birth.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Congo Reform Association: The Congo Reform Association was a movement formed with the declared intention to aid the exploited and impoverished workforce of the Congo by drawing attention to their plight.  The association was founded in March, 1904, by Dr. Henry Grattan Guinness (1861\u20131915), Edmund Dene Morel, and Roger Casement.",
+      "Lists of protests against the Vietnam War: Protests against the Vietnam War took place in the 1960s and 1970s.  The protests were part of a movement in opposition to the Vietnam War and took place mainly in the United States.",
+      "Mobutu Sese Seko: Mobutu Sese Seko Kuku Ngbendu Wa Za Banga ( ; born Joseph-D\u00e9sir\u00e9 Mobutu; 14 October 1930 \u2013 7 September 1997) was the military dictator and President of the Democratic Republic of the Congo (which Mobutu renamed Zaire in 1971) from 1965 to 1997.  He also served as Chairperson of the Organisation of African Unity in 1967\u20131968."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 336,
+    "generation_tokens": 36,
+    "generation_speed": 364.8895195621326,
+    "prompt_eval_speed": 51376.14678899083,
+    "generation_latency_s": 0.220841099973768,
+    "latency": 0.524670600076206,
+    "total_prompt_tokens": 468,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2360081,
+    "stage_route_s": 0.1495510000968352,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1170120999449864,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.037109000026248395,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.239997360855341e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22087479999754578,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5246790000237525,
+    "unaccounted_latency_s": 9.029998909682035e-05,
+    "route": "rag",
+    "router_raw": "The date of birth of one of the founder of Congo Reform Association is 1920.",
+    "sub_queries": [
+      "1960s-70s"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

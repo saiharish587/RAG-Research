@@ -1,0 +1,42 @@
+{
+  "question_id": "Q172",
+  "query": "What is the birthplace of the Senator who represents the first of 62 districts in the State Senate?",
+  "ground_truth": "Brooklyn, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The birthplace of the Senator who represents the first of 62 districts in the State Senate is New York's 1st State Senate district.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "New York's 1st State Senate district: New York's 1st State Senate district is one of 62 districts of the New York State Senate.  It is currently represented by Senator Kenneth LaValle (R).",
+      "New York's 2nd State Senate district: New York's 2nd State Senate district is one of 62 districts of the New York State Senate.  It is currently represented by John J. Flanagan (R).  Senator Flanagan is New York State Senate's majority leader and temporary president.",
+      "New York's 4th State Senate district: New York's 4th State Senate district is one of 62 districts of the New York State Senate.  It is currently represented by Philip M. Boyle (R)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 239,
+    "generation_tokens": 30,
+    "generation_speed": 360.8111033603541,
+    "prompt_eval_speed": 81653.57020840452,
+    "generation_latency_s": 0.163187799975276,
+    "latency": 0.5708996000466868,
+    "total_prompt_tokens": 320,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1361209,
+    "stage_rewrite_s": 0.16305209998972714,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07316919998265803,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1713655999628827,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16322899993974715,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5709102000109851,
+    "unaccounted_latency_s": 9.480013977736235e-05,
+    "rewritten_query": "The birthplace of the Senator who represents the first of 62 districts in the State Senate is located in the District of Columbia.",
+    "query_was_rewritten": true
+  }
+}

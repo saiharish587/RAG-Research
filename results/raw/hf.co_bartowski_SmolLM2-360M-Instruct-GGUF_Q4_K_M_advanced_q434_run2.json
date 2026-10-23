@@ -1,0 +1,42 @@
+{
+  "question_id": "Q434",
+  "query": "Which band has more members, Test Icicles or X Ambassadors?",
+  "ground_truth": "X Ambassadors",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Test Icicles has more members than X Ambassadors.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Test Icicles: Test Icicles were a short-lived dance-punk band that formed in England, primarily influenced by indie rock but containing musical elements from a variety of genres (notably hip hop, crossover thrash and punk).  The band was formed in 2004 by Rory Attwell and Sam Mehran, who were later joined by Devonte Hynes.  Hynes and Mehran were both 18 years old at the time of the band's inception.  The group has since become notable due to the later success of its members.",
+      "X Ambassadors: X Ambassadors (also stylized XA) is an American rock band from Ithaca, New York.  It currently consists of lead vocalist Sam Harris, keyboardist Casey Harris, lead guitarist Noah Feldshuh, and drummer Adam Levin.  Their most notable songs include \"Jungle\", \"Renegades\", and \"Unsteady\".  The band's debut full-length album, \"VHS\", was released on June 30, 2015.",
+      "Rory Attwell: Rory Attwell is an English musician, best known for his part in UK punk trio Test Icicles, who formed in 2004 and played a handful of concerts before disbanding on 22 April 2006, after their sold out final show at the Astoria in London.  During their time together they released the album \"For Screening Purposes Only\", and had UK Top 40 singles with \"What's Your Damage\" and \"Circle.  Square.  Triangle\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 411,
+    "generation_tokens": 13,
+    "generation_speed": 268.7727423089646,
+    "prompt_eval_speed": 55145.578961492014,
+    "generation_latency_s": 0.9000783999217674,
+    "latency": 3.3884210999822244,
+    "total_prompt_tokens": 486,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1294536,
+    "stage_rewrite_s": 1.23995219997596,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0491971001029015,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19906919996719807,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9001210000133142,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.388431999948807,
+    "unaccounted_latency_s": 9.31998947635293e-05,
+    "rewritten_query": "Test Icicles has 10 members compared to X Ambassadors' 8.",
+    "query_was_rewritten": true
+  }
+}

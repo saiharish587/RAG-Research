@@ -1,0 +1,42 @@
+{
+  "question_id": "Q230",
+  "query": "Is the Marsilea or the Brabejum the genus of more individual species of plants?",
+  "ground_truth": "Marsilea",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The genus \"Marsilea\" is a single species of large evergreen tree, known as the \"pepperwort family.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Brabejum: Brabejum is a genus of a single species of large evergreen tree, Brabejum stellatifolium in the Proteaceae, commonly called wild almond, bitter almond or ghoeboontjie.  It is restricted in the wild to South Africa's Western Cape Province, where it grows in thickets along the banks of streams.  The plant is of botanical interest as being Africa's only member of the large grevilleoid subfamily.  It is a bushy small tree with branches widely at ground level and numerous erect vigorous stems.  Leaves to 6 in (15 cm) long, narrow and bluntly toothed, appear at intervals along the branches, mostly in whorls of 6.  In summer, the plant bears white flowers densely crowded on spikes arising from rusty buds at the leaf axils.  The fruits to 2 in (5 cm) long, magenta to reddish brown, similar to an almond, appear in autumn.  The nut is too bitter to eat; however, in earlier times it was boiled, roasted, and ground to make a \"coffee\" drink.",
+      "Lavatera: Lavatera is a genus of about 25 species of flowering plants in the family Malvaceae, native to the Mediterranean region, central and eastern Asia, North America (California and Mexico) and Australia.  A number of species are naturalized in North America.",
+      "Marsileaceae: The Marsileaceae are a small family of heterosporous aquatic and semi-aquatic ferns, though at first sight they do not physically resemble other ferns.  The group is commonly known as the \"pepperwort family\" or as the \"water-clover family\" because the leaves of the genus \"Marsilea\" superficially resemble the leaves of a four-leaf clover (a flowering plant).  Leaves of this fern have sometimes been used to substitute for clover leaves on Saint Patrick's Day.  In all, the family contains 3 genera and 50 to 80 species with most of those belonging to \"Marsilea\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 518,
+    "generation_tokens": 26,
+    "generation_speed": 408.2978689991991,
+    "prompt_eval_speed": 66572.41999742964,
+    "generation_latency_s": 0.15719699999317527,
+    "latency": 0.5747746000997722,
+    "total_prompt_tokens": 598,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12966830000000001,
+    "stage_rewrite_s": 0.15787270001601428,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07848709996324033,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1811041000764817,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1572302000131458,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5747832000488415,
+    "unaccounted_latency_s": 8.9599983766675e-05,
+    "rewritten_query": "The genus Brabejum is a member of the genus Marsilea, which includes 14 species of flowering plants in the family Malvaceae.",
+    "query_was_rewritten": true
+  }
+}

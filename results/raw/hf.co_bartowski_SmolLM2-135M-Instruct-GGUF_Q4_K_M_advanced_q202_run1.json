@@ -1,0 +1,42 @@
+{
+  "question_id": "Q202",
+  "query": "Chris Williams last played for which football club from the National League North?",
+  "ground_truth": "Salford City Football Club",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Chris Williams has not been affiliated with the National League North since 2014.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Williams (English footballer): Christopher Jonathan \"Chris\" Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City as a forward.",
+      "National League (English football): The National League is an association football league in England consisting of three divisions, the National League, National League North and National League South.  It was called the Alliance Premier League from 1979 until 1986.  Between 1986 and 2015, the league was known as the Football Conference.  As part of a sponsorship deal with car leasing company Vanarama, the league is known as the Vanarama National League.",
+      "National League (division): The National League, currently named the Vanarama National League for sponsorship reasons, is the top division of the National League in English football.  It is the highest level of the National League System and fifth-highest of the overall English football league system.  While all of the clubs in the top four divisions of English football are full-time professional, the National League has a mixture of full-time and semi-professional clubs.  The National League is the lowest division in the English football pyramid organised on a nationwide basis.  Formerly the Conference National, the league was renamed the National League from the 2015\u201316 season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 19,
+    "generation_speed": 382.9487050287212,
+    "prompt_eval_speed": 19805.803817720403,
+    "generation_latency_s": 0.14353370002936572,
+    "latency": 0.5730857000453398,
+    "total_prompt_tokens": 433,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14046419999999998,
+    "stage_rewrite_s": 0.18891609995625913,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07850080006755888,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16198879992589355,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.143579600029625,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5730964000103995,
+    "unaccounted_latency_s": 0.00011180003639310598,
+    "rewritten_query": "Chris Williams has been playing for the National League North since 2014, and he is currently ranked as one of the top-ten players in the league.",
+    "query_was_rewritten": true
+  }
+}

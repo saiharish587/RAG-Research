@@ -1,0 +1,49 @@
+{
+  "question_id": "Q106",
+  "query": "Which American film actor and dancer starred in the 1945 film Johnny Angel?",
+  "ground_truth": "George Raft",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Johnny Angel was a 1945 film noir directed by Edwin L. Marin and written by Frank Gruber and Steve Fisher from the novel \"Mr. Angel Comes Aboard\" by Charles Gordon Booth. The movie stars George Raft, Claire Trevor, and Signe Hasso, and features Hoagy Carmichael.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Johnny Angel: Johnny Angel is a 1945 film noir directed by Edwin L. Marin and written by Frank Gruber and Steve Fisher from the novel \"Mr. Angel Comes Aboard\" by Charles Gordon Booth.  The movie stars George Raft, Claire Trevor and Signe Hasso, and features Hoagy Carmichael.",
+      "Johnny Angel Wendell: Johnny Angel Wendell is an American writer, musician, and radio talk show host.  He is married and lives in Los Angeles with his two sons.  Once a resident of Massachusetts, he is now a Los Angeles Weekly columnist, Wendell is the host of KTLK-AM 1150's \"Southern California Live with Johnny Wendell\".  Wendell is also a regular on KFI-AM640.",
+      "Frank Sinatra's Greatest Hits: Frank Sinatra's Greatest Hits!  is Frank Sinatra's first compilation released on his own Reprise Records.  It concentrates on mostly single releases from the mid to late 60's, which fluctuates between adult contemporary pop and jazzy swing.  The album opens up with Sinatra's recent number one hit \"Strangers in the Night\" and continues through the varied styles of music Sinatra recorded in the 60's, from easy listening ballads like \"It Was a Very Good Year\" and \"Softly, as I Leave You\" to contemporary pop like \"When Somebody Loves You\" and \"That's Life\".  \"Greatest Hits\" was a modest hit, peaking at #55 on the album charts in late 1968.  A second volume was issued in 1972, \"Frank Sinatra's Greatest Hits, Vol.  2\".  Both albums have since been supplanted with newer and more cohesive compilations."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 467,
+    "generation_tokens": 71,
+    "generation_speed": 219.52946487373964,
+    "prompt_eval_speed": 56082.62279332293,
+    "generation_latency_s": 0.4447770999977365,
+    "latency": 0.7806525999912992,
+    "total_prompt_tokens": 605,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23438740000000002,
+    "stage_route_s": 0.10012409999035299,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17786709999199957,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05768589989747852,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.100003909319639e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.44483209995087236,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7806657999753952,
+    "unaccounted_latency_s": 0.00010630011092871428,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Johnny Angel\"",
+      "Query 2: \"Frank Sinatra\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

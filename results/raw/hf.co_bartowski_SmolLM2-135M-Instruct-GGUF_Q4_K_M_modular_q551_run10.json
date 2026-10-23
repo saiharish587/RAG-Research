@@ -1,0 +1,48 @@
+{
+  "question_id": "Q551",
+  "query": "The Azad Hind Dal was created by an Indian nationalist whose defiant patriotism made him a hero in India, but whose attempt to rid India of British rule during what war left a troubled legacy?",
+  "ground_truth": "World War II",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The Azad Hind Dal (Azadi Hind) was created by Netaji Subhash Chandra Bose.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Azad Hind Dal: The Azad Hind Dal was a branch of the Indian Independence League that was formed during World War II to take administrative control of the Indian territories to fall to the Indian National Army starting with the latter's Imphal campaign.  The branch was created by Subhas Chandra Bose to replace the Indian Civil Service in areas of British India, and is also thought to have been the nascent concept of a one-party political, bureaucractic and civil administrative system similar to that of the Soviet Union or the Fascist states of the time.  During the brief period that Azad Hind was in possession of small Indian territories around Imphal and Kohima during the U Go offensive between April and May 1944, parties of the Azad Hind Dal were sent along with the INA contingents to take administrative charge and rehabilitation of these areas.",
+      "Azad Hind Radio: Azad Hind Radio was a propaganda radio service that was started under the leadership of Netaji Subhas Chandra Bose in Germany in 1942 to encourage Indians to fight for freedom.  Though initially based in Germany, its headquarters was shifted to Singapore and later to Rangoon following the course of the war in South East Asia.  Following Netaji's departure to South East Asia, the German operations were continued by A.C.N. Nambiar, the head of the Indian Legion in Germany and later Ambassador of the Arzi Hukumate Azad Hind in Germany.",
+      "The Indian Struggle: The Indian Struggle, 1920\u20131942 is a two-part book by the Indian nationalist leader Netaji Subhash Chandra Bose that covers the 1920\u20131942 history of the Indian independence movement to end British imperial rule over India.  Banned in India by the British colonial government, \"The Indian Struggle\" was published in the country only in 1948 after India became independent.  The book analyses a period of the Indian independence struggle from the Non-Cooperation and Khilafat Movements of the early 1920s to the Quit India and Azad Hind movements of the early 1940s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 548,
+    "generation_tokens": 22,
+    "generation_speed": 363.0722513780242,
+    "prompt_eval_speed": 68766.47007152716,
+    "generation_latency_s": 0.18889350001700222,
+    "latency": 0.5861619000788778,
+    "total_prompt_tokens": 726,
+    "total_generation_tokens": 91,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22552149999999999,
+    "stage_route_s": 0.09465290000662208,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.26593450002837926,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03650239994749427,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.099996294826269e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18893539998680353,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5861734000500292,
+    "unaccounted_latency_s": 0.00010820012539625168,
+    "route": "rag",
+    "router_raw": "yes",
+    "sub_queries": [
+      "Azad Hind Dal (1857-1946) and the Azad Hind Dal were both Indian nationalists who fought against British rule. The Azad Hind Dal was created by Indian nationalist who defied British rule in India during what war, and their efforts to rid India of British rule left a troubled legacy."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q391",
+  "query": "What type of movie are Wishing Stairs and Voice?",
+  "ground_truth": "South Korean horror film",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Wishing Stairs and Voice are both horror films from South Korea.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wishing Stairs: Wishing Stairs ( also known as Whispering Corridors 3: Wishing Stairs) is a 2003 South Korean horror film.  It is the third installment of the \"Whispering Corridors\" film series set in girls high schools, but, as with all films in the series, is unrelated to the others; apart from a song being sung in one scene that is a pivotal plot in \"Voice\".",
+      "Paddington 2: Paddington 2 is an upcoming British-French family-comedy film directed by Paul King, co written by King and Simon Farnaby, and produced by David Heyman.  It is the sequel to 2014's \"Paddington\".  The film stars Hugh Grant, Brendan Gleeson, Hugh Bonneville, Sally Hawkins, Julie Walters, Jim Broadbent, Peter Capaldi, Madeleine Harris, Samuel Joslin, and the voices of Ben Whishaw and Imelda Staunton.  Production began in October 2016, and ended in June 2017.  The film is set to release on 10 November 2017.",
+      "Voice (film): Voice ( also known as Whispering Corridors 4: Voice and Voice Letter) is a 2005 South Korean horror film, and the fourth installment of the \"Whispering Corridors\" film series.  This film was the debut film for its three young actresses, as well as director Choi Ik-Hwan, who had served as an assistant director on the first film of the series."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 15,
+    "generation_speed": 215.63187326596037,
+    "prompt_eval_speed": 13655.934708566287,
+    "generation_latency_s": 0.21275780000723898,
+    "latency": 0.695326599990949,
+    "total_prompt_tokens": 549,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2278196,
+    "stage_route_s": 0.09939520002808422,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.32612360001076013,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056848400039598346,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.779997445642948e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21282130002509803,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6953384999651462,
+    "unaccounted_latency_s": 9.309989400207996e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Wishing Stairs is a horror film from 2013 directed by John Hughes.",
+      "Query 2: Voice is a horror film starring Michael Caine, directed by John Hughes, and released in 2013."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

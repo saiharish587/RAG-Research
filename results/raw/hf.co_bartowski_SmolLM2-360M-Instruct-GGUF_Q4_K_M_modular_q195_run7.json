@@ -1,0 +1,49 @@
+{
+  "question_id": "Q195",
+  "query": "What is the full name of the viral respiratory disease in which Yi Guan's research helped to prevent the outbreak of?",
+  "ground_truth": "severe acute respiratory syndrome",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The viral respiratory disease in which Yi Guan's research helped to prevent the outbreak of was SARS (Severe Acute Respiratory Syndrome).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Influenza: Influenza, commonly known as \"the flu\", is an infectious disease caused by an influenza virus.  Symptoms can be mild to severe.  The most common symptoms include: a high fever, runny nose, sore throat, muscle pains, headache, coughing, and feeling tired.  These symptoms typically begin two days after exposure to the virus and most last less than a week.  The cough, however, may last for more than two weeks.  In children, there may be nausea and vomiting, but these are not common in adults.  Nausea and vomiting occur more commonly in the unrelated infection gastroenteritis, which is sometimes inaccurately referred to as \"stomach flu\" or \"24-hour flu\".  Complications of influenza may include viral pneumonia, secondary bacterial pneumonia, sinus infections, and worsening of previous health problems such as asthma or heart failure.",
+      "Yi Guan: Yi Guan is a Chinese virologist who, in 2014, was ranked as 11th in the world by Thomson Reuters (now known as Clarivate Analytics) among global researchers in the field of microbiology.  His research on the viral respiratory disease SARS allowed the Chinese government to successfully avert the 2004 outbreak of this disease.  He is the current Director (China affairs) of the State Key Laboratory for Emerging Infectious Diseases University of Hong Kong.  In early 2017, Guan warned that the H7N9 influenza virus \"poses the greatest threat to humanity than any other in the past 100 years.\"",
+      "Chronic Respiratory Disease: Chronic Respiratory Disease is a quarterly peer-reviewed medical journal that covers research in the field of respiratory disease, including chronic obstructive pulmonary disease, respiratory failure, and obstructive sleep apnea.  The editors-in-chief are Mike Morgan (Glenfield Hospital), Carolyn Rochester (Yale University), and Sally Singh (Glenfield Hospital).  It was established in 2004 and is published by SAGE Publications."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 494,
+    "generation_tokens": 26,
+    "generation_speed": 228.67998874190823,
+    "prompt_eval_speed": 63816.044438703015,
+    "generation_latency_s": 0.23637330008205026,
+    "latency": 0.6612629001028836,
+    "total_prompt_tokens": 642,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2539071,
+    "stage_route_s": 0.10943949990905821,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25837140006478876,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05689690005965531,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.230004899203777e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2364116000244394,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6612729000626132,
+    "unaccounted_latency_s": 0.00010169995948672295,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Yi Guan's Research and Prevention of the Viral Respiratory Disease\"",
+      "\"The Viral Respiratory Disease and Its Impact on Public Health\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

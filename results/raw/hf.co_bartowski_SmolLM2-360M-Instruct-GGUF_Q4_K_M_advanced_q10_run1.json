@@ -1,0 +1,42 @@
+{
+  "question_id": "Q10",
+  "query": "Are Local H and For Against both from the United States?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Local H is a Chicago-based rock band that formed in 1987, but they are not exclusively from the United States. They have released an album titled \"Hallelujah!\" I'm A Bum\" which was completed in September 2012 and made frequent use of the sounds of El Train in Chicago to transition songs.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Local H: Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987.  The members all met in high school in 1987 and founded Local H three years later.",
+      "Hallelujah! I'm a Bum (album): Hallelujah!  I'm A Bum is the seventh studio album by Chicago-based rock band Local H.  Interviews with the band have revealed that it is a concept album based on politics in the United States.  Although the album was completed in spring of 2012, the band chose to release it in September as to be closer to the 2012 presidential election.  The album makes frequent use of the sounds of the El Train in Chicago to transition songs.",
+      "United States: The United States of America (USA), commonly known as the United States (U.S.) or America ( ), is a federal republic composed of 50 states, a federal district, five major self-governing territories, and various possessions.  Forty-eight states and the federal district are contiguous and located in North America between Canada and Mexico.  The state of Alaska is in the northwest corner of North America, bordered by Canada to the east and across the Bering Strait from Russia to the west.  The state of Hawaii is an archipelago in the mid-Pacific Ocean.  The U.S. territories are scattered about the Pacific Ocean and the Caribbean Sea, stretching across nine official time zones.  The extremely diverse geography, climate and wildlife of the United States make it one of the world's 17 megadiverse countries."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 434,
+    "generation_tokens": 73,
+    "generation_speed": 238.99399895890284,
+    "prompt_eval_speed": 14475.834695307027,
+    "generation_latency_s": 1.1919973000185564,
+    "latency": 3.6196212000213563,
+    "total_prompt_tokens": 506,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1414561,
+    "stage_rewrite_s": 1.1678621000610292,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0803005000343546,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17934569995850325,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1920315999304876,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.619629199965857,
+    "unaccounted_latency_s": 8.969998452812433e-05,
+    "rewritten_query": "No, Local H and For are not from the United States.",
+    "query_was_rewritten": true
+  }
+}

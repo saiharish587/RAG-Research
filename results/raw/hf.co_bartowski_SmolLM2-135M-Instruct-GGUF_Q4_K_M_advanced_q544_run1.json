@@ -1,0 +1,42 @@
+{
+  "question_id": "Q544",
+  "query": "Southeastern Illinois College offers an undergraduate academic degree considered to be greater level of education than what?",
+  "ground_truth": "high school diploma or GED",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is \"Bachelor's Degree\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "University of Southern California: The University of Southern California (USC or SC) is a private research university located in Los Angeles, California.  Founded in 1880, it is the oldest private research university in California.  USC has historically educated a large number of the region's business leaders and professionals.  In recent decades, the university has also leveraged its location in Los Angeles to establish relationships with research and cultural institutions throughout Asia and the Pacific Rim.  An engine for economic activity, USC contributes $8 billion annually to the economy of the Los Angeles metropolitan area and California.",
+      "Bachelor of Information Technology: A Bachelor of Information Technology (abbreviations BIT, BInfTech, B.Tech(IT) or BE(IT)) is an undergraduate academic degree that generally requires three to five years of study.  While the degree has a major focus on computers and technology, it differs from a Computer Science degree in that students are also expected to study management and information science, and there are reduced requirements for mathematics.  A degree in computer science can be expected to concentrate on the scientific aspects of computing, while a degree in information technology can be expected to concentrate on the business and communication applications of computing.  There is more emphasis on these two areas in the e-commerce, e-business and business information technology undergraduate courses.  Specific names for the degrees vary across countries, and even universities within countries.",
+      "Bachelor's degree: A bachelor's degree (from Middle Latin \"baccalaureus\") or baccalaureate (from Modern Latin \"baccalaureatus\") is an undergraduate academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years (depending on institution and academic discipline).  In some institutions and educational systems, some bachelor's degrees can only be taken as graduate or postgraduate degrees after a first degree has been completed.  In countries with qualifications frameworks, bachelor's degrees are normally one of the major levels in the framework (sometimes two levels where non-honours and honours bachelor's degrees are considered separately), although some qualifications titled bachelor's degrees may be at other levels (e.g. MBBS) and some qualifications with non-bachelor's titles may be classified as bachelor's degrees (e.g. the Scottish MA and Canadian MD)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 547,
+    "generation_tokens": 10,
+    "generation_speed": 335.2891869237217,
+    "prompt_eval_speed": 18056.97685934044,
+    "generation_latency_s": 0.15177009999752045,
+    "latency": 0.6547129999380559,
+    "total_prompt_tokens": 625,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1407979,
+    "stage_rewrite_s": 0.20558860001619905,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0763625999679789,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22087030007969588,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15180410002358258,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6547214000020176,
+    "unaccounted_latency_s": 9.659992065280676e-05,
+    "rewritten_query": "The University of Southern California (USC) offers a Bachelor's Degree in Business Administration, which is considered to be a higher-level educational credential compared to the Bachelor's Degree in Computer Science.",
+    "query_was_rewritten": true
+  }
+}

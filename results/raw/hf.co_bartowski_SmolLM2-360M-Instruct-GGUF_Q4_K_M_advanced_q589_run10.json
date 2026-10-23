@@ -1,0 +1,42 @@
+{
+  "question_id": "Q589",
+  "query": "Which country borders the Central African Republic and is south of Libya and east of Niger?",
+  "ground_truth": "Republic of Chad",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Chad",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chad: Chad ( ; Arabic: \u062a\u0634\u0627\u062f\u200e \u200e \"Tsh\u0101d \"; French: \"Tchad\" ] ), officially the Republic of Chad (Arabic: \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u062a\u0634\u0627\u062f\u200e \u200e \"Jumh\u016br\u012byat Tsh\u0101d \"; French: \"R\u00e9publique du Tchad\" \"Republic of the Chad\"), is a landlocked country in Central Africa.  It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon and Nigeria to the southwest and Niger to the west.  It is the fifth largest country in Africa in terms of area.",
+      "West Africa: West Africa, also called Western Africa and the West of Africa, is the westernmost subregion of Africa.  West Africa has been defined as including 18 countries: Benin, Burkina Faso, the island nation of Cape Verde, Gambia, Ghana, Guinea, Guinea-Bissau, Ivory Coast, Liberia, Mali, Mauritania, Niger, Nigeria, the island of Saint Helena, Senegal, Sierra Leone, S\u00e3o Tom\u00e9 and Pr\u00edncipe and Togo.  The population of West Africa is estimated at about /1e6 round 0 million people as of .  Islam is the predominant religion of 70% of the population, with smaller amounts practicing Christianity and Traditional African religions.",
+      "Tourism in Benin: Tourism in Benin is a small industry.  In 1996, Benin had approximately 150,000 tourists.  A small country with a high concentration of tourist attractions, Benin's national parks and culture are among its main tourist attractions.  Abomey is one of Benin's main tourist attractions, with palaces that became a World Heritage Site in 1982.  The capital city Porto Novo's attractions include its museums and architecture."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 481,
+    "generation_tokens": 3,
+    "generation_speed": 317.89763696089864,
+    "prompt_eval_speed": 60878.36982660423,
+    "generation_latency_s": 0.9076121000107378,
+    "latency": 3.3716034999815747,
+    "total_prompt_tokens": 558,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1288801,
+    "stage_rewrite_s": 1.4379497999325395,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.8710029000649229,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15489120001439005,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9076656000688672,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3716185999801382,
+    "unaccounted_latency_s": 0.00010969990398734808,
+    "rewritten_query": "Country: Chad\nNeighboring Countries: Cameroon, Nigeria, Benin, Burkina Faso, and Togo\nNeighboring Countries by Distance: 120 km (Chad) to 350 km (Benin)",
+    "query_was_rewritten": true
+  }
+}

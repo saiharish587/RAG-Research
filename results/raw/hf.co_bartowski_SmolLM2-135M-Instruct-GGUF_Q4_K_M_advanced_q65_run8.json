@@ -1,0 +1,42 @@
+{
+  "question_id": "Q65",
+  "query": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+  "ground_truth": "more than 70 countries",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The correct answer is \"1.\"\n\nScott Parkin has been a vocal critic of the American invasion of Iraq, and has organized campaigns against Bank of America, Citibank, TXU, and the Keystone XL Pipeline. He also organizes with Rising Tide North America to organize campaigns against Bank of America, Citibank, and other oil companies that have operations in countries such as the Netherlands and the United Kingdom.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Parkin: Scott Parkin (born 1969, Garland, Texas is an anti-war, environmental and global justice organizer, former community college history instructor, and a founding member of the Houston Global Awareness Collective.  He has been a vocal critic of the American invasion of Iraq, and of corporations such as Exxonmobil and Halliburton.  Since 2006, he has worked as an campaigner for the Rainforest Action Network, organizing campaigns against Bank of America, Citibank, TXU and the Keystone XL Pipeline.  He also organizes with Rising Tide North America.",
+      "Royal Dutch Shell: Royal Dutch Shell plc (, ), commonly known as Shell, is a British\u2013Dutch multinational oil and gas company headquartered in the Netherlands and incorporated in the United Kingdom.  It is one of the six oil and gas \"supermajors\" and the sixth-largest company in the world measured by 2016 revenues (and the largest based in Europe).  Shell was first in the 2013 Fortune Global 500 list of the world's largest companies; in that year its revenues were equivalent to 84% of the Netherlands' $556 billion GDP.",
+      "Halliburton: The Halliburton Company, an American multinational corporation.  One of the world's largest oil field service companies, it has operations in more than 70 countries.  It owns hundreds of subsidiaries, affiliates, branches, brands, and divisions worldwide and employs approximately 50,000 people."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 411,
+    "generation_tokens": 87,
+    "generation_speed": 418.4341904019854,
+    "prompt_eval_speed": 63337.95654184004,
+    "generation_latency_s": 0.29107789997942746,
+    "latency": 0.6310612999368459,
+    "total_prompt_tokens": 495,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12342059999999999,
+    "stage_rewrite_s": 0.14752060000319034,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06712710007559508,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12521879991982132,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.29111400002148,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6310693999985233,
+    "unaccounted_latency_s": 8.939998224377632e-05,
+    "rewritten_query": "Scott Parkin has consistently criticized ExxonMobil for its role as a global oil company, with both companies having significant operations worldwide.",
+    "query_was_rewritten": true
+  }
+}

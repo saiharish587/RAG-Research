@@ -1,0 +1,42 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Serri",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Serri (singer): Park Mi-yeon (born September 16, 1990), better known by the stage name Serri, is a South Korean singer, songwriter and actress.  She is best known as a member and leader of the South Korean girl group Dal Shabet.",
+      "John Fogerty: John Cameron Fogerty (born May 28, 1945) is an American musician, singer, and songwriter.  He was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.  The group had nine top-ten singles and eight gold albums between 1968 and 1972.  They were inducted into the Rock and Roll Hall of Fame in 1993.",
+      "John Fogerty (engineer): John Fogerty was an Irish millwright, architect, builder, and civil engineer, active in early to mid-19th-century Limerick. He was the brother of Joseph Fogerty, Sr. and the father of engineer and novelist Joseph Fogerty of London, architect William Fogerty of Dublin, and grandfather of architect John Frederick Fogerty.  He retired as an architect sometime between 1870 and 1879."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 3,
+    "generation_speed": 321.6813210379584,
+    "prompt_eval_speed": 50224.345057171806,
+    "generation_latency_s": 0.7815558000002056,
+    "latency": 3.351537400041707,
+    "total_prompt_tokens": 421,
+    "total_generation_tokens": 15,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1219363,
+    "stage_rewrite_s": 1.236651699990034,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0633713999995962,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2698310000123456,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.7815960999578238,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.351549100014381,
+    "unaccounted_latency_s": 9.950005915015936e-05,
+    "rewritten_query": "Serri and John Fogerty were both actors.",
+    "query_was_rewritten": true
+  }
+}

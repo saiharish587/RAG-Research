@@ -1,0 +1,42 @@
+{
+  "question_id": "Q304",
+  "query": "Which film starring Patrick Tatten is based on a book written by Steve Lopez?",
+  "ground_truth": "The Soloist",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on the context provided, it appears that the film \"The Locked Room Mystery\" is based on a book written by Steve Lopez. The passage states:\n\nContext:\nPen name: A pen name (\"nom de plume\", or \"literary double\") is a pseudonym (or, in some cases, a variant form of a real name) adopted by an author and printed on the title page or by-line of his or her works in place of their \"real\" name.  A pen name may be used to make the author's name more distinctive, to disguise an author's gender, to distance an author from some or all of his or her previous works, to combine more than one author into a single author, or for any of a number of reasons related to the marketing or aesthetic presentation of the work.  The author's name may be known only to the publisher, or may come to be common knowledge.\n\nComputer user satisfaction: Computer user satisfaction (and closely related concepts such as \"System Satisfaction\", \"User Satisfaction\", \"Computer System Satisfaction\", \"End User Computing Satisfaction\") is the attitude of a user to the computer system (s)he employs in the context of his or her work environments.  Doll and Torkzadeh's (1988) definition of user satisfaction is, \"the opinion of the user about a specific computer application, which they use\".  In a broader sense, the definition of user satisfaction can be extended to user satisfaction with any computer-based electronic appliance.  However, scholars distinguish between user satisfaction and usability as part of Human-Computer Interaction.  Successful organisations have systems in place which they believe help maximise profits and minimise overheads.  It is therefore desirable that all their systems succeed and remain successful; and this includes their computer-based systems.\n\nQuestion: Which film starring Patrick Tatten is based on a book written by Steve Lopez?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pen name: A pen name (\"nom de plume\", or \"literary double\") is a pseudonym (or, in some cases, a variant form of a real name) adopted by an author and printed on the title page or by-line of his or her works in place of their \"real\" name.  A pen name may be used to make the author's name more distinctive, to disguise his or her gender, to distance an author from some or all of his or her previous works, to protect the author from retribution for his or her writings, to combine more than one author into a single author, or for any of a number of reasons related to the marketing or aesthetic presentation of the work.  The author's name may be known only to the publisher, or may come to be common knowledge.",
+      "Computer user satisfaction: Computer user satisfaction (and closely related concepts such as \"System Satisfaction\", \"User Satisfaction\", \"Computer System Satisfaction\", \"End User Computing Satisfaction\") is the attitude of a user to the computer system (s)he employs in the context of his/her work environments.  Doll and Torkzadeh's (1988) definition of user satisfaction is, \"the opinion of the user about a specific computer application, which they use\".  In a broader sense, the definition of user satisfaction can be extended to user satisfaction with any computer-based electronic appliance.  However, scholars distinguish between user satisfaction and usability as part of Human-Computer Interaction.  Successful organisations have systems in place which they believe help maximise profits and minimise overheads.  It is therefore desirable that all their systems succeed and remain successful; and this includes their computer-based systems.  According to key scholars such as DeLone and McLean (2002), user satisfaction is a key measure of computer system success, if not synonymous with it.  However, the development of techniques for defining and measuring user satisfaction have been ad hoc and open to question.  The term \"Computer User Satisfaction\" is abbreviated to \"user satisfaction\" in this article.",
+      "Locked-room mystery: The locked-room mystery is a subgenre of detective fiction in which a crime\u2014almost always murder\u2014is committed under circumstances which it was seemingly impossible for the perpetrator to commit the crime and/or evade detection in the course of getting in and out of the crime scene.  The crime in question typically involves a crime scene with no indication as to how the intruder could have entered or left, i.e., a locked room.  Following other conventions of classic detective fiction, the reader is normally presented with the puzzle and all of the clues, and is encouraged to solve the mystery before the solution is revealed in a dramatic climax."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 640,
+    "generation_tokens": 400,
+    "generation_speed": 245.56841106187466,
+    "prompt_eval_speed": 14007.748035632208,
+    "generation_latency_s": 2.5092129999538884,
+    "latency": 5.024396300083026,
+    "total_prompt_tokens": 716,
+    "total_generation_tokens": 422,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1207143,
+    "stage_rewrite_s": 1.273013399913907,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.036561300046742,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2054541000397876,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 2.5092767999740317,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 5.024408100056462,
+    "unaccounted_latency_s": 0.00010300008580088615,
+    "rewritten_query": "Based on the title, \"The Book Thief\" is the most likely choice for this user query.",
+    "query_was_rewritten": true
+  }
+}

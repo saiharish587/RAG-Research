@@ -1,0 +1,49 @@
+{
+  "question_id": "Q500",
+  "query": "What type of film are both \"500 Years Later\" and \"Manson\"?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Both \"500 Years Later\" and \"Manson\" are documentaries, as they focus on Charles Manson's followers and their actions during the 1970s. They do not contain any elements of fiction or other genres that might be considered a hybrid subgenre.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Manson (film): Manson is a documentary film made in 1973 about Charles Manson and his followers.  It was directed by Robert Hendrickson and Laurence Merrick.",
+      "500 Years Later: 500 Years Later (\u136d\u137b \u12d3\u1218\u1273\u1275 \u1260\u128b\u120b \"500 \u02bfam\u00e4tat\u0259 b\u00e4hwala \") is an independent documentary film directed by Owen 'Alik Shahadah, written by M. K. Asante, Jr. and released in 2005.  It has won five international film festival awards in the category of Best Documentary (including) UNESCO \"Breaking the Chains Award\").  Other awards it has won include \"Best Documentary at the Pan African (Los Angeles) and Bridgetown (Barbados) Film Festivals; Best Film at the International Black Cinema (Berlin) Film Festival; and Best International Documentary at the Harlem (New York) International Film Festival\".",
+      "Film genre: A film genre is a motion picture category based on similarities in either the narrative elements or the emotional response to the film (namely, serious, comic, etc.).  Most theories of film genre are borrowed from literary genre criticism.  The basic genres include fiction and documentary, from which subgenres have emerged, such as docufiction and docudrama.  Other subgenres include the courtroom and trial-focused drama known as the legal drama.  Types of fiction which may seem unrelated can also be combined to form hybrid subgenres, such as the melding of horror and comedy in the \"Evil Dead\" films.  Other popular combinations are the romantic comedy and the action comedy film."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 57,
+    "generation_speed": 213.8178871791794,
+    "prompt_eval_speed": 14214.940258394585,
+    "generation_latency_s": 0.4094718999695033,
+    "latency": 0.9928738999878988,
+    "total_prompt_tokens": 575,
+    "total_generation_tokens": 131,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2317699,
+    "stage_route_s": 0.10230510006658733,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.42330210004001856,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05760159995406866,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.91999851167202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4095132000511512,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9928856999613345,
+    "unaccounted_latency_s": 0.00010519986972212791,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"500 Years Later\" is a film that was released in 2007, while \"Manson\" is a movie made in 2006.",
+      "Query 2: Both films are part of the same genre and have similar themes, making them both classified under the category of \"horror.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q497",
+  "query": "Anthony Avent played basketball fo a High School that is located in a city approcimately 8 mi west of where?",
+  "ground_truth": "lower Manhattan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Anthony Avent played basketball at Seton Hall University, which is approximately 8 miles west of Rocky Mount, North Carolina.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Anthony Avent: Anthony Avent (born October 18, 1969) is a retired American professional basketball player who was selected by the Atlanta Hawks in the first round (15th pick overall) of the 1991 NBA Draft.  Born in Rocky Mount, North Carolina, Avent played for the Milwaukee Bucks, Orlando Magic, Vancouver Grizzlies, Utah Jazz and Los Angeles Clippers in six NBA seasons.  He played collegiately at Seton Hall University where he played in the 1989 NCAA championship game.  Prior to Seton Hall, Avent played at Malcolm X Shabazz High School in Newark, New Jersey.",
+      "Southern Ohio Conference: The Southern Ohio Conference (S.O.C.) is an athletic conference in Ohio.  The conference is also a member of the Ohio High School Athletic Association, the governing body of Ohio athletics.  There are currently sixteen member schools in the conference.  The S.O.C. includes teams from four different Ohio counties - Jackson County (Oak Hill High School), Lawrence County (Symmes Valley High School), Pike County (Waverly High School, Eastern High School, and Western High School), and Scioto County (Clay High School, Green High School, Glenwood High School, Sciotoville Community School, Valley High School, Northwest High School, Minford High School, Portsmouth West High School, Notre Dame High School, South Webster High School, and Wheelersburg High School).  The conference recognizes: baseball, boys' and girls' basketball, boys' and girls' cross country, football, boys' soccer, fast pitch softball, boys' and girls' swimming, boys' and girls' tennis, boys' and girls' track and field athletics, and girls' volleyball.",
+      "Suburban East Conference (Minnesota): The Suburban East Conference is a Minnesota State High School League conference in the Twin Cities, Minnesota.  Its members are Cretin-Derham Hall High School, East Ridge High School, Forest Lake Area High School, Hastings High School (Minnesota), Mounds View High School, Park High School, Roseville Area High School, Stillwater Area High School, White Bear Lake Area High School and Woodbury High School.  Member schools field a full complement of 30 interscholastic sports and 14 Fine Arts activities.  Cretin-Derham Hall High School is the newest and single private school in the conference."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 604,
+    "generation_tokens": 27,
+    "generation_speed": 255.36744537974084,
+    "prompt_eval_speed": 86273.38951578346,
+    "generation_latency_s": 0.9367536000208929,
+    "latency": 3.469556299969554,
+    "total_prompt_tokens": 689,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12246889999999999,
+    "stage_rewrite_s": 1.2591415999922901,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0624790000729263,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21106829994823784,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9367870000423864,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.469565200037323,
+    "unaccounted_latency_s": 8.9899986051023e-05,
+    "rewritten_query": "Anthony Avent played basketball at a high school approximately 8 miles west of his hometown.",
+    "query_was_rewritten": true
+  }
+}

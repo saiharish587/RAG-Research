@@ -1,0 +1,42 @@
+{
+  "question_id": "Q145",
+  "query": "The movies Queen of Blood and Battle Beyond the Sun both contained scenes from what 1959 Soviet feature?",
+  "ground_truth": "Nebo Zovyot",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The movie \"Queen of Blood\" contains scenes from the 1966 color science fiction-horror film \"Mechte Navstrechu\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mikhail Gorbachev: Mikhail Sergeyevich Gorbachev, ( ; Russian: \u041c\u0438\u0445\u0430\u0438\u0301\u043b \u0421\u0435\u0440\u0433\u0435\u0301\u0435\u0432\u0438\u0447 \u0413\u043e\u0440\u0431\u0430\u0447\u0451\u0432 ; ] ; born 2 March 1931) is a former Soviet statesman.  He was the eighth and last leader of the Soviet Union, having been General Secretary of the Communist Party of the Soviet Union from 1985 until 1991.  He was the country's head of state from 1988 until 1991 (titled as Chairman of the Presidium of the Supreme Soviet from 1988 to 1989, as Chairman of the from 1989 to 1990, and as Soviet Union]] from 1990 to 1991).",
+      "Battle Beyond the Sun: Battle Beyond the Sun is the English-dubbed and re-edited U.S. version of \"Nebo Zovyot\", a 1959 Soviet science fiction film directed by Mikhail Karyukov and Aleksandr Kozyr.  It tells of the \"space race\" of two future nations competing to become the first to land a spacecraft on the planet Mars.",
+      "Queen of Blood: Queen of Blood is a 1966 color science fiction-horror film based on the screenplay for the earlier, Soviet film called \"Mechte Navstrechu\".  The film was produced by George Edwards and Samuel Z. Arkoff, directed by Curtis Harrington, and stars John Saxon, Basil Rathbone, Dennis Hopper, and Judi Meredith.  \"Queen of Blood\" was released by American International Pictures on a double bill with \"Blood Bath\".  Director Harrington reused special effects footage from the Soviet features \"Mechte Navstrechu\" and \"Nebo Zovyot\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 491,
+    "generation_tokens": 32,
+    "generation_speed": 334.231580706482,
+    "prompt_eval_speed": 32336.670179135934,
+    "generation_latency_s": 0.192210300010629,
+    "latency": 0.5951768000377342,
+    "total_prompt_tokens": 574,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1348265,
+    "stage_rewrite_s": 0.1874511999776587,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07978620007634163,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1356118000112474,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1922464999370277,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5951858999906108,
+    "unaccounted_latency_s": 9.079999290406704e-05,
+    "rewritten_query": "The movie Queen of Blood was a feature film released in 1959 by the Soviet Union, while Battle Beyond the Sun was directed by Mikhail Gorbachev.",
+    "query_was_rewritten": true
+  }
+}

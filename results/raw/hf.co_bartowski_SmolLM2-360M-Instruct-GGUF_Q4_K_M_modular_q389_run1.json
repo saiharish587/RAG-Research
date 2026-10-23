@@ -1,0 +1,49 @@
+{
+  "question_id": "Q389",
+  "query": "The man, who the award in which \"Summer of the Monkeys\" won, was a spokesman for white sector of America?",
+  "ground_truth": "middle America",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The man who won the Summer of the Monkeys Award is Matt Damon.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Summer of the Monkeys: Summer of the Monkeys is a 1976 children's novel written by Wilson Rawls.  It was published by Doubleday (later released by Yearling Books) and was the winner of the William Allen White Book Award and the California Young Reader Medal.",
+      "Matt Damon: Matthew Paige Damon ( ; born October 8, 1970) is an American actor, film producer, philanthropist and screenwriter.  He is ranked among \"Forbes\" magazine's most bankable stars and is one of the highest-grossing actors of all time.  Damon has received various accolades, including an Academy Award from five nominations, two Golden Globe Awards from eight nominations, and has been nominated for two British Academy Film Awards and six Emmy Awards.",
+      "Citizen of the World: The Sergio Vieira de Mello Citizen of the World award is given out by the United Nations Correspondents Association to those deemed to have made a significant contribution.  It was initiated in 2003, in honour of Brazilian diplomat Sergio Vieira de Mello, the UN High Commissioner for Human Rights, who was killed in the 2003 bombing of the UN headquarters in Iraq.  Recipients of this award include Oscar winning Actress Nicole Kidman, actress and UNHCR Goodwill Ambassador Angelina Jolie, and former UN weapons inspector Hans Blix."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 387,
+    "generation_tokens": 17,
+    "generation_speed": 228.5253394273424,
+    "prompt_eval_speed": 14462.964347111145,
+    "generation_latency_s": 0.2128391999285668,
+    "latency": 0.6642708999570459,
+    "total_prompt_tokens": 539,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2297185,
+    "stage_route_s": 0.10679630003869534,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28803099994547665,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05640940007288009,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5600074119865894e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21288869995623827,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6642894999822602,
+    "unaccounted_latency_s": 0.00010999990627169609,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The name of the person who won the award for 'Summer of the Monkeys' is unknown.\"",
+      "\"Who is the man who won the award in which 'Summer of the Monkeys' won?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

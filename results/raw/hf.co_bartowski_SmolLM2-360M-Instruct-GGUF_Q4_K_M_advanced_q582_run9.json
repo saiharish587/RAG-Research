@@ -1,0 +1,42 @@
+{
+  "question_id": "Q582",
+  "query": "Where was the author of Thoughts of Machiavelli born?",
+  "ground_truth": "Germany",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Milan Kundera was born in Prague, Czech Republic.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Milan Kundera: Milan Kundera (] ; born 1 April 1929) is a Czech-born French writer who went into exile in France in 1975, and became a naturalised French citizen in 1981.  He \"sees himself as a French writer and insists his work should be studied as French literature and classified as such in book stores\".",
+      "Cosimo de' Medici: Cosimo di Giovanni de' Medici (called 'the Elder' (Italian \"il Vecchio\") and posthumously \"Father of the Nation\" (Latin \"pater patriae\"); 27 September 1389 \u2013 1 August 1464) was an Italian banker and politician, the first of the Medici political dynasty, \"de facto\" rulers of Florence during much of the Italian Renaissance.  Despite his influence, his power was not absolute; Florence's legislative councils at times resisted his proposals, something which would not have been tolerated by the Visconti of Milan, for instance; throughout his life he was always \"primus inter pares\" (\"first among equals\").  His power derived from his wealth as a banker, and he was a great patron of learning, the arts and architecture.",
+      "Florence Welch: Florence Leontine Mary Welch (born 28 August 1986) is an English musician, singer and songwriter, best known as the vocalist of indie rock band Florence and the Machine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 384,
+    "generation_tokens": 14,
+    "generation_speed": 265.2720933757769,
+    "prompt_eval_speed": 54483.54143019296,
+    "generation_latency_s": 0.9434643000131473,
+    "latency": 3.352731200051494,
+    "total_prompt_tokens": 456,
+    "total_generation_tokens": 29,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1247483,
+    "stage_rewrite_s": 1.1677338000154123,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0730087999254465,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.168394900043495,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9435048999730498,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3527419000165537,
+    "unaccounted_latency_s": 0.00010010006371885538,
+    "rewritten_query": "The author of \"The Prince\" was born in Florence, Italy.",
+    "query_was_rewritten": true
+  }
+}

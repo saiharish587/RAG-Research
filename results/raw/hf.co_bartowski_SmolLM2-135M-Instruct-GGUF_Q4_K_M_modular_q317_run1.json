@@ -1,0 +1,48 @@
+{
+  "question_id": "Q317",
+  "query": "The northern English anglian Kingdom in the Humber estuary spoke what dialect of english?",
+  "ground_truth": "Northumbrian",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The northern English anglian kingdom in the Humber estuary spoke Old English.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Northumbrian dialect: Northumbrian was a dialect of Old English spoken in the Anglian Kingdom of Northumbria.  Together with Mercian, Kentish and West Saxon, it forms one of the sub-categories of Old English devised and employed by modern scholars.",
+      "Humber: The Humber is a large tidal estuary on the east coast of Northern England.  It is formed at Trent Falls, Faxfleet, by the confluence of the tidal rivers Ouse and Trent.  From there to the North Sea, it forms part of the boundary between the East Riding of Yorkshire on the north bank and Lincolnshire on the south bank.  Although the Humber is an estuary from the point at which it is formed, many maps show it as the River Humber.",
+      "Kingdom of Northumbria: The Kingdom of Northumbria ( ; Old English: \"Nor\u00fehymbra r\u012bce\" , \"kingdom of the Northumbrians\") was a medieval Anglian kingdom in what is now northern England and south-east Scotland, which subsequently became an earldom in a unified English kingdom.  The name reflects the approximate southern limit to the kingdom's territory, the Humber estuary."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 327,
+    "generation_tokens": 17,
+    "generation_speed": 325.5520021448132,
+    "prompt_eval_speed": 16417.31097499749,
+    "generation_latency_s": 0.18156449997331947,
+    "latency": 0.6220226999139413,
+    "total_prompt_tokens": 463,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23938130000000002,
+    "stage_route_s": 0.2028273999458179,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19690520002041012,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04055119992699474,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.809994086623192e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18160410004202276,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6220353000098839,
+    "unaccounted_latency_s": 0.00010990013834089041,
+    "route": "rag",
+    "router_raw": "The southern English Anglia Kingdom in the Humber estuary spoke a dialect of English called \"Humber\" (also known as \"Brythonic\").",
+    "sub_queries": [
+      "The northern English Anglians in the Humber estuary spoke the Northern English dialect, also known as the North-East English or North-West English."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

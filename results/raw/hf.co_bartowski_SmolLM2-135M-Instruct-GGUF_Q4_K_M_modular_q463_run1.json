@@ -1,0 +1,48 @@
+{
+  "question_id": "Q463",
+  "query": "When did the game which held three times in  in East Asia first held ",
+  "ground_truth": "in 1896",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Asian Games, also known as Asiad, was a Pancontinental multi-sport event held every four years among athletes from all over Asia. It took place on 7 to 24 August 2008 and was the third time that the Asian Games were held in East Asia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Laos at the 2010 Asian Beach Games: Laos The 2010 Asian Games, also known as the XVI Asiad, was a multi-sport event celebrated in Guangzhou, China from November 12 to 27, 2010.  Guangzhou was the second Chinese city to host the Games, after Beijing in 1990.  A total of 9,704 athletes from 45 National Olympic Committees (NOCs) competed in 476 events from 42 sports and disciplines (28 Olympic sports and 14 non-Olympic sports), making it the largest event in the history of the Games.  It was also the last edition of the Games to have featured such a large amount of events, as the Olympic Council of Asia (OCA) have enforced new hosting rules for future Games, beginning with the 2014 Games, scheduled to take place in Incheon, South Korea with 36 sports and disciplines set to feature.",
+      "2008 Summer Olympics: The 2008 Summer Olympic Games, officially known as the Games of the XXIX Olympiad () and commonly known as Beijing 2008, was a major international multi-sport event that took place in Beijing, China, from 7 to 24 August 2008.  A total of 10,942 athletes from 204 National Olympic Committees (NOCs) competed in 28 sports and 302 events (a total of one event more than the schedule of the 2004 Games).  China became the 22nd nation to host the Olympic Games and the 18th to hold a Summer Olympic Games.  It was the third time that the Summer Olympic Games were held in East Asia and Asia, after Tokyo, Japan, in 1964 and Seoul, South Korea, in 1988.",
+      "Asian Games: The Asian Games, also known as Asiad, is a Pancontinental multi-sport event held every four years among athletes from all over Asia.  The Games were regulated by the Asian Games Federation (AGF) from the first Games in New Delhi, India, until the 1978 Games.  Since the 1982 Games they have been organized by the Olympic Council of Asia (OCA), after the breakup of the Asian Games Federation.  The Games are recognized by the International Olympic Committee (IOC) and are described as the second largest multi-sport event after the Olympic Games."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 620,
+    "generation_tokens": 62,
+    "generation_speed": 387.47093967952407,
+    "prompt_eval_speed": 21153.9117677164,
+    "generation_latency_s": 0.30138800002168864,
+    "latency": 0.6352484000381082,
+    "total_prompt_tokens": 752,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22091870000000002,
+    "stage_route_s": 0.12170150002930313,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17511369998101145,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03686660004314035,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.6200002543628216e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30143110000062734,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6352605000138283,
+    "unaccounted_latency_s": 0.0001020999625325203,
+    "route": "rag",
+    "router_raw": "The answer to this user question is \"In 1985.\"",
+    "sub_queries": [
+      "The game that held three times in East Asia was played between 1985 and 2003, with a total of 47 games played."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

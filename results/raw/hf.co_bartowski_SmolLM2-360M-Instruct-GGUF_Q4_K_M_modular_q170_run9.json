@@ -1,0 +1,49 @@
+{
+  "question_id": "Q170",
+  "query": "This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by which empire?",
+  "ground_truth": "Roman",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by the Roman Empire.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Constantine II of Scotland: Constantine, son of \u00c1ed (Medieval Gaelic: \"Constant\u00edn mac \u00c1eda\"; Modern Gaelic: \"C\u00f2iseam mac Aoidh\", known in most modern regnal lists as Constantine II; died 952) was an early King of Scotland, known then by the Gaelic name \"Alba\".  The Kingdom of Alba, a name which first appears in Constantine's lifetime, was in northern Great Britain.  The core of the kingdom was formed by the lands around the River Tay.  Its southern limit was the River Forth, northwards it extended towards the Moray Firth and perhaps to Caithness, while its western limits are uncertain.  Constantine's grandfather Kenneth I of Scotland (Cin\u00e1ed mac Ailp\u00edn, died 858) was the first of the family recorded as a king, but as king of the Picts.  This change of title, from king of the Picts to king of Alba, is part of a broader transformation of Pictland and the origins of the Kingdom of Alba are traced to Constantine's lifetime.",
+      "Roman conquest of Britain: The Roman conquest of Britain was a gradual process, beginning effectively in AD 43 under Emperor Claudius, whose general Aulus Plautius served as first governor of Roman Britain (Latin: \"Britannia\" ).  Great Britain had already frequently been the target of invasions, planned and actual, by forces of the Roman Republic and Roman Empire.  In common with other regions on the edge of the empire, Britain had enjoyed diplomatic and trading links with the Romans in the century since Julius Caesar's expeditions in 55 and 54 BC, and Roman economic and cultural influence was a significant part of the British late pre-Roman Iron Age, especially in the south.",
+      "Tacitus: Publius (or Gaius) Cornelius Tacitus ( ; ] ; \u200956 AD \u2013 \u2009120 AD ) was a senator and a historian of the Roman Empire.  The surviving portions of his two major works\u2014the \"Annals\" and the \"Histories\"\u2014examine the reigns of the Roman emperors Tiberius, Claudius, Nero, and those who reigned in the Year of the Four Emperors (69 AD).  These two works span the history of the Roman Empire from the death of Augustus, in 14 AD, to the years of the First Jewish\u2013Roman War, in 70 AD.  There are substantial lacunae in the surviving texts, including a gap in the \"Annals\" that is four books long."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 618,
+    "generation_tokens": 23,
+    "generation_speed": 234.93360572012259,
+    "prompt_eval_speed": 73422.83473921826,
+    "generation_latency_s": 0.2218727000290528,
+    "latency": 0.5598283000290394,
+    "total_prompt_tokens": 760,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2384019,
+    "stage_route_s": 0.10244679998140782,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17538189992774278,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.059942000079900026,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.670004222542048e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22190660005435348,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5598376000998542,
+    "unaccounted_latency_s": 9.439990390092134e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Roman Emperor Claudius\"",
+      "\"The Kingdom of Strathclyde\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

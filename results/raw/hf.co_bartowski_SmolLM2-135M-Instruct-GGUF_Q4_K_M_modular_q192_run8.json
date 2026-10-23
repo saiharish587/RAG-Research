@@ -1,0 +1,49 @@
+{
+  "question_id": "Q192",
+  "query": "What station broadcast the episode \"Marry Me a Little, Marry Me a Little More\" , of the series created by Max Mutchnick and David Kohan?",
+  "ground_truth": "National Broadcasting Company",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The episode \"Marry Me a Little, Marry Me a Little More\" was broadcast on the National Broadcasting Company (NBC) in the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marry Me a Little, Marry Me a Little More: \"Marry Me a Little, Marry Me a Little More\" is a double-length episode of the American television series \"Will & Grace\"' s fifth season.  It was written by Jeff Greenstein and Bill Wrubel and directed by series producer James Burrows.  The episode originally aired on the National Broadcasting Company (NBC) in the United States on November 21, 2002.  Guest stars in \"Marry Me a Little, Marry Me a Little More\" include Harry Connick Jr., Katie Couric, Judith Ivey, and Debbie Reynolds.",
+      "Your Family or Mine: Your Family or Mine is an American sitcom series based on the Israeli series \"Sabri Maranan\" (Hebrew: \u05e1\u05d1\u05e8\u05d9 \u05de\u05e8\u05e0\u05df\u200e \u200e ).  The series is centered on a young married couple, Oliver (Kyle Howard) and Kelli (Kat Foster), and alternates between their two families.  \"Your Family or Mine\" was announced by TBS in mid 2014 with a ten-episode order.  It premiered on April 7, 2015.  On October 23, 2015, TBS quietly cancelled the series after one season.",
+      "Great News: Great News is an American sitcom television series created and written by Tracey Wigfield (her first series as a creator and producer), and co-executive produced with Tina Fey, Robert Carlock, and David Miner for 3 Arts Entertainment, Little Stranger and Universal Television.  The series premiered April 25, 2017 on NBC."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 460,
+    "generation_tokens": 33,
+    "generation_speed": 356.5447571714116,
+    "prompt_eval_speed": 63005.067798931654,
+    "generation_latency_s": 0.2145879000891,
+    "latency": 0.5947690999601036,
+    "total_prompt_tokens": 628,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2339639,
+    "stage_route_s": 0.09457359998486936,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22710680007003248,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05831719993147999,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.770001396536827e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21462860004976392,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.594780300045386,
+    "unaccounted_latency_s": 0.00010710000060498714,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "What station broadcast the episode \"Marry Me a Little, Marry Me a Little More\"?",
+      "What station broadcast the episode \"Marry Me a Little, Marry Me a Little More\" ?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q167",
+  "query": "Which came out first, Dinosaur or McFarland, USA",
+  "ground_truth": "Dinosaur",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "\"Dinosaur\" came out before \"McFarland, USA\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dinosaur (film): Dinosaur is a 2000 American CGI animated adventure film produced by Walt Disney Feature Animation and The Secret Lab and released by Walt Disney Pictures.  It is the 39th Disney animated feature film and Disney's The Secret Lab computer animated feature, though it is not officially labeled as one of the animated classics in the United Kingdom, where \"The Wild\" (2006) is included in the canon instead.",
+      "McFarland, USA: McFarland, USA (also known as McFarland) is a 2015 American sports drama film directed by Niki Caro, produced by Mark Ciardi and Gordon Gray, written by Christopher Cleveland, Bettina Gilois and Grant Thompson with music composed by Ant\u00f4nio Pinto.  The film was co-produced by Walt Disney Pictures and Mayhem Pictures.  Based on the true story of a 1987 cross country team from a mainly Latino high school in McFarland, California, the film stars Kevin Costner as Jim White, the school's coach, who leads the team to win a state championship.  The film also stars Maria Bello and Morgan Saylor.",
+      "Jurassic World: Jurassic World is a 2015 American science-fiction adventure film, the first film in the sequel trilogy and the fourth installment of the \"Jurassic Park\" series.  The film was directed and co-written by Colin Trevorrow, produced by Frank Marshall and Patrick Crowley, and stars Chris Pratt and Bryce Dallas Howard.  The production companies were Steven Spielberg's Amblin Entertainment, also responsible for the rest of the \"Jurassic Park\" franchise, and Thomas Tull's Legendary Pictures.  Set 22 years after the events of \"Jurassic Park\", \"Jurassic World\" takes place on the same fictional Central American island of Isla Nublar, off the Pacific coast of Costa Rica, where a theme park populated with cloned dinosaurs has operated for ten years.  The park plunges into chaos when a genetically created dinosaur breaks loose and goes on a rampage across the island."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 516,
+    "generation_tokens": 15,
+    "generation_speed": 360.0489666594657,
+    "prompt_eval_speed": 25481.48148148148,
+    "generation_latency_s": 0.13588780001737177,
+    "latency": 0.48326929996255785,
+    "total_prompt_tokens": 588,
+    "total_generation_tokens": 31,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.140098,
+    "stage_rewrite_s": 0.1392093999311328,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07057280000299215,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13747129996772856,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13593160000164062,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4832785999169573,
+    "unaccounted_latency_s": 9.390001650899649e-05,
+    "rewritten_query": "Dinosaur and McFarland were both featured in the movie Jurassic Park.",
+    "query_was_rewritten": true
+  }
+}

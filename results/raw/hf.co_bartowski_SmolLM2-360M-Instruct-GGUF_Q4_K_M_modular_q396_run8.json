@@ -1,0 +1,49 @@
+{
+  "question_id": "Q396",
+  "query": "Which Grand Slam singles tournament have Francesca Schiavone and Olga Morozova both been finalists in?",
+  "ground_truth": "French Open",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Francesca Schiavone and Olga Morozova were both finalists in the 2017 Australian Open Men's Singles final.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Grand Slam (tennis): The Grand Slam tournaments, also called majors, are the four most important annual tennis events.  They offer the most ranking points, prize money, public and media attention, the greatest strength and size of field, and greater number of \"best of\" sets for men.  The Grand Slam itinerary consists of the Australian Open in mid January, the French Open in May and June, Wimbledon in July, and the US Open in August and September.  Each tournament is played over a period of two weeks.  The Australian and United States tournaments are played on hard courts, the French on clay, and Wimbledon on grass.  Wimbledon is the oldest, founded in 1877, followed by the US in 1881, the French in 1891, and the Australian in 1905.  However, of these four, only Wimbledon was a major before 1924\u201325, when all four became designated Grand Slam tournaments.  Skipping Grand Slam tournaments\u2014especially the Australian Open because of the remoteness, the inconvenient dates (around Christmas and New Year's Day) and the low prize money\u2014was not unusual before 1982, which was the start of the norm of counting Grand Slam titles.",
+      "2017 US Open (tennis): The 2017 US Open was the 137th edition of tennis' US Open and the fourth and final Grand Slam event of the year.  It was held on outdoor hard courts at the USTA Billie Jean King National Tennis Center in New York City.  Experimental rules featured in qualifying for the main draw as well as in the junior, wheelchair and exhibition events.",
+      "2017 Australian Open \u2013 Men's singles final: The 2017 Australian Open Men's Singles final was the championship tennis match of the Men's Singles tournament at the 2017 Australian Open.  It was contested between Roger Federer and Rafael Nadal, ranked 17th and 9th in the world respectively.  It was their record ninth meeting in a Grand Slam final in their rivalry, and their 1st meeting in a Grand Slam final since the 2011 French Open.  In a rematch of the 2009 Australian Open final, which Nadal won in 5 sets, Roger Federer won the duel in 5 sets, beating Nadal for the first time in a Grand Slam since the 2007 Wimbledon final.  He also trailed Nadal 3\u20131 in the final set but won 5 games in a row to win the title.  This ended a 6-match losing streak against Nadal in Grand Slam events.  Having lost all of their previous three encounters, this was the first time Federer defeated Nadal at the Australian Open and also marked Federer's first Grand Slam victory over Nadal outside the grass courts of Wimbledon.  Federer extended his record of Grand Slam men's singles titles to 18, marking the third time he broke his own all-time record, after breaking the previous record of 14, held by Pete Sampras."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 777,
+    "generation_tokens": 32,
+    "generation_speed": 206.34378163669308,
+    "prompt_eval_speed": 91985.32023203504,
+    "generation_latency_s": 0.2851140000857413,
+    "latency": 0.7298627001000568,
+    "total_prompt_tokens": 927,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2226482,
+    "stage_route_s": 0.10248769994359463,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2878442000364885,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054242399986833334,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.039991810917854e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28515609994065017,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7298745000734925,
+    "unaccounted_latency_s": 9.430025238543749e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The 2019-2023 Grand Slam Singles Tournament\"",
+      "\"The 2018-2023 Grand Slam Singles Tournament\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

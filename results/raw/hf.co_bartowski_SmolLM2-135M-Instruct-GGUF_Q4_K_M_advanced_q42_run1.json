@@ -1,0 +1,42 @@
+{
+  "question_id": "Q42",
+  "query": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+  "ground_truth": "Mumbai",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The company that Sachin Warrier worked for as a software engineer headquartered was Volkswagen Group, Germany.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sachin Warrier: Sachin Warrier is a playback singer and composer in the Malayalam cinema industry from Kerala.  He became notable with the song \"Muthuchippi Poloru\" from the film Thattathin Marayathu.  He made his debut with the movie Malarvaadi Arts Club.  He was working as a software engineer in Tata Consultancy Services in Kochi.  Later he resigned from the job to concentrate more on music.  His latest work is as a composer for the movie Aanandam.",
+      "Volkswagen Group: Volkswagen AG (] ), known internationally as Volkswagen Group, is a German multinational automotive manufacturing company headquartered in Wolfsburg, Lower Saxony, Germany.  It designs, manufactures and distributes passenger and commercial vehicles, motorcycles, engines, and turbomachinery and offers related services including financing, leasing and fleet management.  In 2016, it was the world's largest automaker by sales, overtaking Toyota.  It has maintained the largest market share in Europe for over two decades.  It ranked seventh in the 2016 Fortune Global 500 list of the world's largest companies.",
+      "Wang Jianlin: Wang Jianlin (; born October 24, 1954) is a Chinese business magnate, investor, and philanthropist.  He is the founder of the conglomerate company Dalian Wanda Group, China's largest real estate development company, as well as the world's largest movie theater operator.  He owns 20% of the Spanish football club Atl\u00e9tico Madrid.  In 2016, Wang agreed a deal with FIFA to launch the China Cup, in which national football teams compete in Asia each year."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 456,
+    "generation_tokens": 25,
+    "generation_speed": 374.46451574248823,
+    "prompt_eval_speed": 24819.02792140641,
+    "generation_latency_s": 0.16154170001391321,
+    "latency": 0.5165964999468997,
+    "total_prompt_tokens": 535,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1318685,
+    "stage_rewrite_s": 0.18209759995806962,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07364799990318716,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09915990009903908,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.16160300001502037,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5166073000291362,
+    "unaccounted_latency_s": 9.940005838871002e-05,
+    "rewritten_query": "The company that Sachin Warrier worked for was the company that he founded in 2015 and operated from 2016 to 2018.",
+    "query_was_rewritten": true
+  }
+}

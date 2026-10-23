@@ -1,0 +1,49 @@
+{
+  "question_id": "Q295",
+  "query": "Which American music star appeared as a guest in a Will & Grace episode called \"Back Up, Dancer\"?",
+  "ground_truth": "Janet Damita Jo Jackson",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The American music star who appeared as a guest in a Will & Grace episode called \"Back Up, Dancer\" was Donna Summer.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Me Ol' Bamboo: \"Me Ol' Bamboo\" is a song written by the Sherman Brothers for the motion picture \"Chitty Chitty Bang Bang\".  It was originally written to be choreographed as a morris dance (although the dance has much more in common with the C\u0103lu\u015fari (reference required)) for the film by Marc Breaux and Dee Dee Wood (\"Mary Poppins\", \"The Happiest Millionaire\", \"The Sound of Music\") and adapted for the stage by choreographer Gillian Lynne who also created the choreography for \"Cats\" and \"The Phantom of the Opera\".",
+      "Thank God It's Friday (film): Thank God It's Friday is a 1978 American musical comedy film directed by Robert Klane and produced by Motown Productions and Casablanca FilmWorks for Columbia Pictures (whose torch-holding mascot, in a specially produced animation, dances to disco music before the opening credits).  Produced at the height of the disco craze, the film features The Commodores performing \"Too Hot ta Trot\", and Donna Summer performing \"Last Dance\", which won the Academy Award for Best Song in 1978.  The film features an early performance by Jeff Goldblum and the first major screen appearance by Debra Winger.  The film also features Terri Nunn who would go on to fame in the 1980s new wave group Berlin.",
+      "Dancing with the Stars (Greece season 1): Dancing with the Stars is a Greek reality show airing on ANT1 and filmed live in Athens.  The show is based on the United Kingdom BBC Television series \"Strictly Come Dancing\" and is part of BBC Worldwide's \"Dancing with the Stars\" franchise.  The theme song is \"It's personal\" performed by Swedish indie pop band The Radio Dept.  The first season of the show was in spring 2010."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 493,
+    "generation_tokens": 29,
+    "generation_speed": 212.62711802271443,
+    "prompt_eval_speed": 12531.137207056072,
+    "generation_latency_s": 0.28455819992814213,
+    "latency": 0.8653908999403939,
+    "total_prompt_tokens": 637,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22426269999999998,
+    "stage_route_s": 0.10115230001974851,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.42144399997778237,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0580275000538677,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.370001938194036e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2845972999930382,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.865403400035575,
+    "unaccounted_latency_s": 0.00011939997784793377,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Dance with me\" - The song is from the 2007 film and was performed by the character of Willie Scott on the show.",
+      "\"The Dance\" - This is a song from the 2009 film and was also performed by the character of Willie Scott on the show."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

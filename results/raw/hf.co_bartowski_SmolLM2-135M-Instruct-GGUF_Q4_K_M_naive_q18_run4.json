@@ -1,0 +1,36 @@
+{
+  "question_id": "Q18",
+  "query": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "No, the context does not provide any information about either Giuseppe Verdi or Ambroise Thomas being Opera Composers. The passage only mentions that they were French composers who worked at the Conservatoire de Paris from 1871 until their death.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ambroise Thomas: Charles Louis Ambroise Thomas (5 August 1811 \u2013 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+      "Giuseppe Verdi: Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 \u2013 27 January 1901) was an Italian opera composer.",
+      "Hamlet (opera): Hamlet is a grand opera in five acts of 1868 by the French composer Ambroise Thomas, with a libretto by Michel Carr\u00e9 and Jules Barbier based on a French adaptation by Alexandre Dumas, p\u00e8re, and Paul Meurice of William Shakespeare's play \"Hamlet\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 276,
+    "generation_tokens": 55,
+    "generation_speed": 381.9126183929117,
+    "prompt_eval_speed": 88603.53130016051,
+    "generation_latency_s": 0.2923527000239119,
+    "latency": 0.3153891999972984,
+    "total_prompt_tokens": 276,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1350968,
+    "stage_retrieve_s": 0.02293390000704676,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.29240440006833524,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.31540069996844977,
+    "unaccounted_latency_s": 6.299989763647318e-05
+  }
+}

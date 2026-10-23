@@ -1,0 +1,49 @@
+{
+  "question_id": "Q528",
+  "query": "What drum machine was introduced in 1989 and allowed 32 notes to be played simultaneously?",
+  "ground_truth": "The R-8 Human Rhythm Composer",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Roland TR-808, also known as the TR-808 Drum Machine.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Roland R-8: The R-8 Human Rhythm Composer is an electronic drum machine introduced in 1989 by Roland Corporation, using PCM voices.  The R-8 features velocity- and pressure-sensitive trigger pads, and the ability to create loops of beats.  The device has eight individual outputs, 32-voice polyphony, and four-part multitimbral MIDI.",
+      "Roland TR-909: The Roland TR-909 Rhythm Composer is a drum machine introduced by the Roland Corporation in 1983.  It was the first Roland drum machine to use samples (for its cymbal and hi-hat sounds) alongside analog sounds.  Designed by Tadao Kikumoto, who also designed the Roland TB-303 synthesizer, the 909 features a 16-step step sequencer and drum sounds that aimed for realism and cost-effectiveness.  It is fully programmable, and like its predecessor, the TR-808, it can store entire songs with multiple sections, as opposed to simply storing patterns.  It was the first MIDI-equipped drum machine.  Around 10,000 units were produced.",
+      "Drum beat: A drum beat or drum pattern is a rhythmic pattern, or repeated rhythm establishing the meter and groove through the pulse and subdivision, played on drum kits and other percussion instruments.  As such a \"beat\" consists of multiple drum strokes occurring over multiple musical beats while the term \"drum beat\" may also refer to a single drum stroke which may occupy more or less time than the current pulse.  Many drum beats define or are characteristic of specific music genres."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 435,
+    "generation_tokens": 21,
+    "generation_speed": 397.3885892705081,
+    "prompt_eval_speed": 24277.263087398147,
+    "generation_latency_s": 0.18282390001695603,
+    "latency": 1.0415342999622226,
+    "total_prompt_tokens": 579,
+    "total_generation_tokens": 266,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22147509999999998,
+    "stage_route_s": 0.17969670007005334,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6229829000076279,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055860299966298044,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.030003376305103e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18286090006586164,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0415438000345603,
+    "unaccounted_latency_s": 9.31998947635293e-05,
+    "route": "rag",
+    "router_raw": "The drum machine \"Drum Machine\" (DM) was introduced in 1989 by the drummer/producer, John Lennon.",
+    "sub_queries": [
+      "The drum machine introduced in 1989, also known as the \"Drum Machine,\" was a popular electronic music instrument that featured a drum kit with three-note percussion instruments. It was released by the Japanese drum manufacturer, Yamaha, and was designed to allow for more complex drum patterns and syncopated rhythms.",
+      "The drum machine allowed 32 notes to be played simultaneously, which made it suitable for creating intricate drum patterns and syncopations. The drum kit featured three-note percussion instruments such as the \"Drum Drum,\" \"Tap Drum,\" and \"Bass Drum.\" These instruments were used to create a wide range of sounds and rhythms that could be played in various styles and genres, including jazz, rock, pop, and electronic dance music (EDM)."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q254",
+  "query": "Which director had the longest career, Alain Resnais or Scott Sidney?",
+  "ground_truth": "Scott Sidney",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Alain Resnais had the longest career, spanning over six decades.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alain Resnais: Alain Resnais (] ; 3 June 19221 March 2014) was a French film director and screenwriter whose career extended over more than six decades.  After training as a film editor in the mid-1940s, he went on to direct a number of short films which included \"Night and Fog\" (1955), an influential documentary about the Nazi concentration camps.",
+      "Scott Sidney: Scott Sidney (1872 \u2013 20 July 1928), born Harry Wilbur Siggins, was an American film director.  He directed 117 films between 1913 and 1927.",
+      "Providence (1977 film): Providence is a 1977 French/Swiss film directed by Alain Resnais from a screenplay by David Mercer.  It explores the processes of creativity through a portrayal of an ageing novelist, played by John Gielgud, who imagines scenes for his latest novel which draw upon his past history and his relationships with members of his family.  The film won the 1978 C\u00e9sar Award for Best Film."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 331,
+    "generation_tokens": 16,
+    "generation_speed": 253.34093356134017,
+    "prompt_eval_speed": 13755.558326060756,
+    "generation_latency_s": 0.9897037000628188,
+    "latency": 3.422162000089884,
+    "total_prompt_tokens": 407,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1235098,
+    "stage_rewrite_s": 1.291857699980028,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0154891000129282,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12499180005397648,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9897430000128224,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4221725000534207,
+    "unaccounted_latency_s": 9.169999975711107e-05,
+    "rewritten_query": "Alain Resnais' longest career is 50 years, while Scott Sidney's was 42 years.",
+    "query_was_rewritten": true
+  }
+}

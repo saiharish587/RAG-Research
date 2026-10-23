@@ -1,0 +1,42 @@
+{
+  "question_id": "Q560",
+  "query": "Who is the psychologist who wrote about the disciple of the person known as the \"Wild Woman of Buttle\"?",
+  "ground_truth": "James G. Kiernan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The psychologist who wrote about the \"Wild Woman of Buttle\" was Mary MacLane.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "William James: William James (January 11, 1842 \u2013 August 26, 1910) was an American philosopher and psychologist who was also trained as a physician.  The first educator to offer a psychology course in the United States, James was one of the leading thinkers of the late nineteenth century and is believed by many to be one of the most influential philosophers the United States has ever produced, while others have labeled him the \"Father of American psychology\".",
+      "Mary MacLane: Mary MacLane (May 1, 1881 \u2013 \"c\".  August 6, 1929) was a controversial Canadian-born American writer whose frank memoirs helped usher in the confessional style of autobiographical writing.  MacLane was known as the \"Wild Woman of Butte\".",
+      "Henry Murray: Henry Alexander Murray (May 13, 1893 \u2013 June 23, 1988) was an American psychologist at Harvard University.  He was Director of the Harvard Psychological Clinic in the School of Arts and Sciences after 1930.  Murray developed a theory of personality called personology, based on \"need\" and \"press\".  Murray was also a co-developer, with Christiana Morgan, of the Thematic Apperception Test (TAT), which he referred to as \"the second best-seller that Harvard ever published, second only to the Harvard Handbook of Music.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 386,
+    "generation_tokens": 20,
+    "generation_speed": 254.50797246223738,
+    "prompt_eval_speed": 14469.935522567102,
+    "generation_latency_s": 0.9988946999656036,
+    "latency": 3.387441899976693,
+    "total_prompt_tokens": 468,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1254394,
+    "stage_rewrite_s": 1.2102457999717444,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0380081000039354,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1401719000423327,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9989370000548661,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.387453499948606,
+    "unaccounted_latency_s": 9.119987953454256e-05,
+    "rewritten_query": "The psychologist who wrote about the Wild Woman of Buttle was Dr. Laura E. Buttle.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q563",
+  "query": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Bendict of Nursia who is a patron saint of what continent?",
+  "ground_truth": "Europe",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Benedict of Nursia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gualdo Tadino Cathedral: Gualdo Tadino Cathedral (Italian: \"Duomo di Gualdo Tadino; Basilica Cattedrale di San Benedetto\" ) is a Roman Catholic cathedral in Gualdo Tadino in Umbria, Italy, dedicated to Saint Benedict of Nursia.  Formerly a Benedictine abbey church, it became a cathedral in 1915, and is now a co-cathedral in the diocese of Assisi-Nocera Umbra-Gualdo Tadino.",
+      "Benedict of Nursia: Benedict of Nursia (Latin: \"Benedictus de Nursia\" ; Italian: \"Benedetto da Norcia\" ; Vulgar Latin: \"*Benedecto\"; Gothic: \"\ud800\udf31\ud800\udf34\ud800\udf3d\ud800\udf34\ud800\udf33\ud800\udf39\ud800\udf3a\ud800\udf44, Benedikt\" ; 2 March 480 \u2013 543 or 547 AD) is a Christian saint, who is venerated in the <a href=\"Eastern%20Orthodox%20Church\">Eastern Orthodox Church</a>es, the <a href=\"Catholic%20Church\">Catholic Church</a>, the <a href=\"Oriental%20Orthodoxy\">Oriental Orthodox Churchese <a href=\"Anglican%20Communion\">Anglican Communion</a> and <a href=\"Old%20Catholic%20Church\">Old Catholic Church</a>es.  He is a patron saint of Europe.",
+      "San Francesco, Gualdo Tadino: San Francesco is a Gothic-style, Roman Catholic church located in Piazza Martiri della Libert\u00e0 of Gualdo Tadino, region of Umbria, Italy.  It is located opposite to the Cathedral of Gualdo Tadino."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 496,
+    "generation_tokens": 23,
+    "generation_speed": 249.9347996174911,
+    "prompt_eval_speed": 65374.983524449715,
+    "generation_latency_s": 1.008843700052239,
+    "latency": 3.3775490999687463,
+    "total_prompt_tokens": 587,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1301358,
+    "stage_rewrite_s": 1.2265490000136197,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0027597000589594,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13928100001066923,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0088776000775397,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3775581000372767,
+    "unaccounted_latency_s": 9.119987953454256e-05,
+    "rewritten_query": "Gualdo Tadino Cathedral, a Roman Catholic cathedral dedicated to Saint Benedict of Nursia, patron saint of the Mediterranean.",
+    "query_was_rewritten": true
+  }
+}

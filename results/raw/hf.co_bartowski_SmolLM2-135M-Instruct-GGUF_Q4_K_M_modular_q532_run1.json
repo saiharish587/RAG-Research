@@ -1,0 +1,49 @@
+{
+  "question_id": "Q532",
+  "query": "Are Mauritz Stiller and Johannes Grenzfurthner both of the same nationality?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, they are not both of the same nationality.\n\nMauritz Stiller (born 17 July 1883) is a Finnish-Swedish film director who discovered Greta Garbo and brought her to America in 1920. He was also known as the founder, conceptualist and artistic director of monochrom, an international art and theory group.\n\nJohannes Grenzfurthner (born 17 July 1856) is a Swedish-American film director who discovered Greta Garbo in 1920. He was also known as the founder, conceptualist and artistic director of monochrom, an international art and theory group.\n\nSo, they are not both from the same nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mauritz Stiller: Mauritz Stiller (17 July 1883 \u2013 18 November 1928) was a Finnish-Swedish film director, best known for discovering Greta Garbo and bringing her to America.",
+      "Johannes Grenzfurthner: Johannes Grenzfurthner (] ; born 1975 in Vienna) is an award-winning Austrian artist, filmmaker, writer, actor, curator, theatre director and lecturer.  He is known as the founder, conceptualist and artistic director of monochrom, an international art and theory group.  Most of his artworks are labelled \"monochrom\".",
+      "Christoph Willibald Gluck: Christoph Willibald (Ritter von) Gluck (] ; 2 July 1714 \u2013 15 November 1787) was a composer of Italian and French opera in the early classical period.  Born in the Upper Palatinate (now part of Germany) and raised in Bohemia, he gained prominence at the Habsburg court at Vienna, where he brought about the practical reform of opera's dramaturgical practices that many intellectuals had been campaigning for over the years.  With a series of radical new works in the 1760s, among them \"Orfeo ed Euridice\" and \"Alceste\", he broke the stranglehold that Metastasian \"opera seria\" had enjoyed for much of the century."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 380,
+    "generation_tokens": 160,
+    "generation_speed": 378.930515984947,
+    "prompt_eval_speed": 22646.00715137068,
+    "generation_latency_s": 0.5476442000363022,
+    "latency": 0.916830699890852,
+    "total_prompt_tokens": 516,
+    "total_generation_tokens": 202,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2281091,
+    "stage_route_s": 0.10258870001416653,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20878880005329847,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057605599984526634,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8200017772614956e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.5476888000266626,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9168423999799415,
+    "unaccounted_latency_s": 0.00012289988808333874,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Is Mauritz Stiller and Johannes Grenzfurst both of the same nationality?",
+      "Are Mauritz Stiller and Johannes Grenzfurst both of the same nationality?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

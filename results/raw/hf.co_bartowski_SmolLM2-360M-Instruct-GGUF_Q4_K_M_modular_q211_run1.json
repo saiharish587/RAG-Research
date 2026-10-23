@@ -1,0 +1,49 @@
+{
+  "question_id": "Q211",
+  "query": "Who was the captain of the only battleship to provide gunfire support during the Vietnam War?",
+  "ground_truth": "Rear Adm. J. Edward Snyder",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The USS Missouri (BB-63) was the captain of the only battleship to provide gunfire support during the Vietnam War, and it is best remembered as the site of the surrender of the Empire of Japan which ended World War II.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "USS New Jersey (BB-62): USS \"New Jersey\" (BB-62) (\"Big J\" or \"Black Dragon\") is an \"Iowa\"-class battleship , and was the second ship of the United States Navy to be named after the US state of New Jersey.  \"New Jersey\" earned more battle stars for combat actions than the other three completed \"Iowa\"-class battleships, and was the only US battleship providing gunfire support during the Vietnam War.",
+      "The Narrative of John Smith: The Narrative of John Smith (2011) is a novel written in 1883 by Arthur Conan Doyle, published posthumously by The British Library.  In a work of narrative fiction, Doyle writes from the perspective of a middle-aged bachelor named John Smith recovering from rheumatic gout.  Unlike his later work in detective fiction, fantasy, and science fiction, this novel unfolds through a series of tangential, essay-like thoughts stemming from observations on everyday life.  The subjects are of a \u201cpersonal-social-political complexion\u201d.",
+      "USS Missouri (BB-63): USS \"Missouri\" (BB-63) (\"Mighty Mo\" or \"Big Mo\") is a United States Navy \"Iowa\"-class battleship and was the third ship of the U.S. Navy to be named after the U.S. state of Missouri.  \"Missouri\" was the last battleship commissioned by the United States and is best remembered as the site of the surrender of the Empire of Japan which ended World War II."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 407,
+    "generation_tokens": 50,
+    "generation_speed": 236.36526943277062,
+    "prompt_eval_speed": 13610.674514262784,
+    "generation_latency_s": 0.3495886999880895,
+    "latency": 0.6859590000240132,
+    "total_prompt_tokens": 545,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22667759999999998,
+    "stage_route_s": 0.1075638000620529,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1674334000563249,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06118740001693368,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.310001481324434e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.34962069999892265,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6859674999723211,
+    "unaccounted_latency_s": 9.969982784241438e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Captain John Smith\"",
+      "\"USS Iowa\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

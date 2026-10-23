@@ -1,0 +1,48 @@
+{
+  "question_id": "Q568",
+  "query": "Which company owns the hotel on whose premises the Cotal Arena is located ?",
+  "ground_truth": "Las Vegas Sands company.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The hotel on whose premises the Coral Arena is located is Melco Crown Entertainment.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Cotai Arena: The Cotai Arena is an indoor arena, located on the premises of The Venetian Macao, on the Cotai Strip, in Macau, China.  It opened in 2007 with a seating capacity of 15,000.  The arena was known as Venetian Arena from 2007 to 2010, when it was renamed as \"CotaiArena\".  It hosts sporting events such as basketball, tennis and boxing, as well as concerts and international televised awards shows.",
+      "Arena Birmingham: Arena Birmingham (previously known as The Barclaycard Arena and the National Indoor Arena) is an indoor sporting and entertainment venue in Birmingham, United Kingdom.  The Arena, which is owned by parent company, the NEC Group, is situated in central Birmingham.  When it was opened in 1991, it was the largest indoor arena in the UK.",
+      "City of Dreams (casino): City of Dreams () is a resort and casino in Cotai, Macau, China.  It is built, owned and managed by Melco Crown Entertainment, formerly known as Melco PBL Entertainment.  City of Dreams is Melco's second mega-sized property in Macau.  It is located directly opposite The Venetian Macao, the first property in Cotai, opened by Las Vegas Sands Corp."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 369,
+    "generation_tokens": 19,
+    "generation_speed": 384.14104041568106,
+    "prompt_eval_speed": 40376.40879746143,
+    "generation_latency_s": 0.17402209993451834,
+    "latency": 0.5287581000011414,
+    "total_prompt_tokens": 501,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2202437,
+    "stage_route_s": 0.13165770005434752,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17954859999008477,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0433756000129506,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.9100064896047115e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17405549995601177,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5287674999563023,
+    "unaccounted_latency_s": 9.149988181889057e-05,
+    "route": "rag",
+    "router_raw": "The hotel owned by the company is called CUPHOLONG.",
+    "sub_queries": [
+      "Which company owns the hotel on whose premises the Cotal Arena is located?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

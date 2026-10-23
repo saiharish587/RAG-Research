@@ -1,0 +1,48 @@
+{
+  "question_id": "Q382",
+  "query": "Who did the Doncaster Belles play in the 1994 FA Women's Cup Final held at Glanford Park? ",
+  "ground_truth": "Knowsley United Women",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Doncaster Belles played in the 1994 FA Women's Cup Final at Glanford Park.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1994 FA Women's Cup Final: The 1994 FA Women's Cup Final was the 24th final of the FA Women's Cup, England's primary cup competition for women's football teams.  The showpiece event was played between Doncaster Belles and Knowsley United Women at Glanford Park in Scunthorpe on 24 April 1994.  Knowsley United made its first final appearance, after losing the previous season's FA Women's Premier League Cup final at Wembley.  Doncaster Belles entered their 11th final in 12 seasons, having won the trophy on five of those occasions.",
+      "Glanford Park: Glanford Park is a football stadium in Scunthorpe, North Lincolnshire, England, and is the current home of Scunthorpe United.",
+      "1997 FA Women's Cup Final: The 1997 FA Women's Cup Final was the 27th final of the FA Women's Cup, England's primary cup competition for women's football teams.  The showpiece event was the fourth to be played directly under the auspices of the Football Association (FA) and was known as the UK Living FA Women's Cup Final for sponsorship reasons.  Millwall Lionesses and Wembley contested the match at West Ham United's Upton Park in London on 4 May 1997.  Millwall Lionesses made their second final appearance, after winning the trophy in 1991 with a 1\u20130 win over Doncaster Belles at Prenton Park.  Wembley appeared in the final for the first time, having won the previous season's FA Women's Premier League Cup competition."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 451,
+    "generation_tokens": 25,
+    "generation_speed": 238.6384246045761,
+    "prompt_eval_speed": 54959.79222030127,
+    "generation_latency_s": 0.22767599998041987,
+    "latency": 0.5317281000316143,
+    "total_prompt_tokens": 607,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2256516,
+    "stage_route_s": 0.09554720006417483,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1724726000102237,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03584469994530082,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3599982745945454e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22772800002712756,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5317466000560671,
+    "unaccounted_latency_s": 0.00011140003334730864,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Who played in the 1994 FA Women's Cup Final held at Glanford Park?*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

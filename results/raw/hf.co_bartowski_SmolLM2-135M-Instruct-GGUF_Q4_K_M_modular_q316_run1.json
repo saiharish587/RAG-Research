@@ -1,0 +1,48 @@
+{
+  "question_id": "Q316",
+  "query": "\"Ew!\" is a song by a television host born where?",
+  "ground_truth": "Bay Ridge, Brooklyn",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Context:\nThe song \"Ew!\": \"Ew!\" was written and recorded by American television host Jimmy Fallon, featuring American rapper Willie Nelson as the lead singer. The song is based on a sketch from \"The Tonight Show Starring Jimmy Fallon\", in which Fallon and guests play teenage girls constantly disgusted by things around them.\n\nGlen Campbell: Glen Travis Campbell (April 22, 1936 \u2013 August 8, 2017) was an American singer-songwriter, comedian, television host, and actor. He is best known for a series of hits in the 1960s and 1970s, including \"The Tonight Show Starring Jimmy Fallon\", which debuted on CBS in January 2016.\n\nChelsea Handler: Chelsea Joy Handler (born February 25, 1975) is an American comedian, actress, writer, television host, and producer. She was best known for a series of hits on Netflix from 2013 to 2016.\n\nQuestion: Who wrote \"Ew!\"?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ew!: \"Ew!\"  is a song by American television host and comedian Jimmy Fallon, featuring American rapper will.i.am.  The song is based on a sketch from \"The Tonight Show Starring Jimmy Fallon\", in which Fallon and guests play teenage girls constantly disgusted by things around them.",
+      "Glen Campbell: Glen Travis Campbell (April 22, 1936 \u2013 August 8, 2017) was an American singer, songwriter, guitarist, television host, and actor.  He was best known for a series of hits in the 1960s and 1970s, and for hosting a music and comedy variety show called \"The Glen Campbell Goodtime Hour\" on CBS television, from January 1969 through June 1972.",
+      "Chelsea Handler: Chelsea Joy Handler (born February 25, 1975) is an American comedian, actress, writer, television host, and producer.  She hosted the late-night talk show \"Chelsea Lately\" on the E! network from 2007 to 2014, and released a documentary series, \"Chelsea Does\", on Netflix in January 2016.  In 2012, \"Time\" named Handler one of the 100 most influential people in the world on their annual \"Time\" 100 list."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 389,
+    "generation_tokens": 251,
+    "generation_speed": 359.12910476697385,
+    "prompt_eval_speed": 22351.18363594576,
+    "generation_latency_s": 0.8251182000385597,
+    "latency": 1.1898218999849632,
+    "total_prompt_tokens": 517,
+    "total_generation_tokens": 302,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24394939999999998,
+    "stage_route_s": 0.15027189999818802,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17771359998732805,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03655369998887181,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.700000863522291e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.8251512000570074,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1898317999439314,
+    "unaccounted_latency_s": 9.499990846961737e-05,
+    "route": "rag",
+    "router_raw": "\"Yes, Ew! is a song by a television host born in 1980.\"",
+    "sub_queries": [
+      "\"Where?\" is a song written by a television host named Ewen MacLeod, who was born in 1965."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

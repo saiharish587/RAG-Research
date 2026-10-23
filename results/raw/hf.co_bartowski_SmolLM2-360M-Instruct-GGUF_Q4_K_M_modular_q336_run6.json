@@ -1,0 +1,49 @@
+{
+  "question_id": "Q336",
+  "query": "Mamie Gummer played the role of Nancy Crozier on the TV series airing on what network?",
+  "ground_truth": "CBS",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Mamie Gummer was an American actress who starred as Nancy Crozier in the TV series \"The Good Wife\" (2010\u201315).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Brooklyn Nine-Nine: Brooklyn Nine-Nine is an American police sitcom that premiered on Fox on September 17, 2013, garnering 6.17 million viewers.  Created by Dan Goor and Michael Schur, the series revolves around Jake Peralta (Andy Samberg), an immature but talented NYPD detective in Brooklyn's 99th Precinct, who comes into immediate conflict with his new commanding officer, the serious and stern Captain Raymond Holt (Andre Braugher).  The ensemble and supporting cast feature Stephanie Beatriz as Rosa Diaz, Terry Crews as Terrence \"Terry\" Jeffords, Melissa Fumero as Amy Santiago, Joe Lo Truglio as Charles Boyle, Chelsea Peretti as Regina \"Gina\" Linetti, Dirk Blocker as Michael Hitchcock and Joel McKinnon Miller as Norman \"Norm\" Scully.",
+      "Charmed: Charmed is an American television series created by Constance M. Burge and produced by Aaron Spelling and his production company Spelling Television, with Brad Kern serving as showrunner.  The series was originally broadcast by The WB for eight seasons from October 7, 1998, until May 21, 2006.  The series narrative follows a trio of sisters, known as The Charmed Ones, the most powerful good witches of all time, who use their combined \"Power of Three\" to protect innocent lives from evil beings such as demons and warlocks.  Each sister possesses unique magical powers that grow and evolve, while they attempt to maintain normal lives in modern-day San Francisco.  Keeping their supernatural identities separate and secret from their ordinary lives often becomes a challenge for them, with the exposure of magic having far-reaching consequences on their various relationships and resulting in a number of police and FBI investigations throughout the series.  The series initially focuses on the three Halliwell sisters, Prue (Shannen Doherty), Piper (Holly Marie Combs) and Phoebe (Alyssa Milano).  However, following Prue's death in the third-season finale, their long-lost half sister Paige Matthews (Rose McGowan) assumes her place within the \"Power of Three\" from season four onwards.",
+      "Mamie Gummer: Mary Willa \"Mamie\" Gummer (born August 3, 1983) is an American actress.  She starred in the title role of The CW series \"Emily Owens, M.D.\" (2012\u201313), and played the recurring role of Nancy Crozier on \"The Good Wife\" (2010\u201315).  She has also appeared in the films \"Evening\" (2007), \"Side Effects\" (2013), \"Cake\" (2014), and \"Ricki and the Flash\" (2015).  She was nominated for the 2016 Drama Desk Award for Outstanding Actress in a Play for the original production of \"Ugly Lies the Bone\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 739,
+    "generation_tokens": 36,
+    "generation_speed": 205.74367766823832,
+    "prompt_eval_speed": 84815.79249397451,
+    "generation_latency_s": 0.30510230001527816,
+    "latency": 0.6860392999369651,
+    "total_prompt_tokens": 881,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2398577,
+    "stage_route_s": 0.10006930003874004,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22650219989009202,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05417289992328733,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.249993409961462e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3051548999501392,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6860545999370515,
+    "unaccounted_latency_s": 0.00010350020602345467,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Nancy Crozier\" - Series Network: ABC",
+      "\"Nancy Crozier\" - Series Network: CBS"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

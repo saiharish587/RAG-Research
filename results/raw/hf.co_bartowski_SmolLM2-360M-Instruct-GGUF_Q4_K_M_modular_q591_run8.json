@@ -1,0 +1,49 @@
+{
+  "question_id": "Q591",
+  "query": "The American restaurant chain, the Original House of Pies, is also responsible for an American chain of fruit drink beverage stores with an eponymous beverage consisting of what?",
+  "ground_truth": "orange juice",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The original house of pies is also responsible for the American chain of fruit drink beverage stores with an eponymous beverage consisting of a mixture of ice, orange juice, sweetener, milk, powdered egg whites and vanilla flavoring.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "House of Pies: The Original House of Pies is an American restaurant chain, started c. 1965 by Al Lapin Jr., an early franchise system designer also responsible for International House of Pancakes, Copper Penny Coffee Shops, Orange Julius, and others.",
+      "Orange Julius: Orange Julius is an American chain of fruit drink beverage stores.  It has been in business since the late 1920s.  The eponymous beverage is a mixture of ice, orange juice, sweetener, milk, powdered egg whites and vanilla flavoring, similar to a morir so\u00f1ando or orange Creamsicle.",
+      "Monarch Beverage Company: The Monarch Beverage Company Inc is a diversified, international beverage company based in Atlanta, Georgia.  The company's CEO is Jacques Bombal.  The company was founded in 1965 by Frank Armstrong.  Monarch Beverage Company aimed to establish itself by offering lesser-known soft drink brands that had strong regional sales and appeal.  Monarch Beverage Company purchased Dad's from IC Industries of Chicago in 1986.  Around that time, it was the second largest volume (12 million cases) root beer brand and was distributed by the Coca-Cola bottler network.  In 2007, The Dad's Root Beer Company, LLC of Jasper, Indiana, acquired the Dad's Root Beer brand as well as the rights to Bubble Up, Dr. Wells and Sun Crest in the U.S. and some other countries from The Monarch Beverage Co. of Atlanta."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 414,
+    "generation_tokens": 45,
+    "generation_speed": 239.35406316819675,
+    "prompt_eval_speed": 53199.69159599075,
+    "generation_latency_s": 0.3094517000718042,
+    "latency": 0.9149203000124544,
+    "total_prompt_tokens": 580,
+    "total_generation_tokens": 141,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22365390000000002,
+    "stage_route_s": 0.09321469999849796,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.45581870002206415,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05624209996312857,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6399963796138763e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3094836000818759,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9149301000870764,
+    "unaccounted_latency_s": 0.00011520006228238344,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Original House of Pies\" - A classic American fast food chain that has been around since 1950 and still offers a variety of delicious burgers, sandwiches, and other menu items.",
+      "\"Fruit drink beverage stores with an eponymous beverage\" - The original fruit drink beverage store was created by the Original House of Pies in 1963, which is now owned by the same company that owns the chain."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q438",
+  "query": "Ambrose Mendy has managed and/or advised a British professional boxer that as of July 2017 is ranked the world's seventh best super middleweight by who?",
+  "ground_truth": "\"The Ring\" magazine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "David Haye",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Boxing career of Manny Pacquiao: In 2016, Manny Pacquiao was ranked number 2 on ESPN's list of top pound-for-pound boxers of the past 25 years.  He is the only eight-division world champion in the history of the sport, having won eleven major world titles, as well as being the first boxer to win the lineal championship in five different weight classes.  Pacquiao is also the first boxer in history to win major world titles in four of the original eight weight classes of boxing, also known as the \"glamour divisions\": flyweight, featherweight, lightweight, and welterweight.",
+      "Chris Eubank Jr.: Christopher Livingstone \"Chris\" Eubank Jr. (born 18 September 1989) is a British professional boxer.  He has held the IBO super-middleweight title since February 2017, having previously held the WBA interim and British middleweight titles between 2015 and 2016.  As of July 2017, Eubank Jr. is ranked as the world's second best super middleweight by BoxRec, sixth by the Transnational Boxing Rankings Board, and seventh by \"The Ring\" magazine.  He is the son of former two-weight world boxing champion Chris Eubank.",
+      "David Haye: David Deron Haye (born 13 October 1980) is a British professional boxer who has held world titles in two weight classes.  He is the first British boxer to reach the final of the World Amateur Boxing Championships, where he won a silver medal in 2001.  As a professional he became the first British boxer to become a unified cruiserweight world champion in 2008, winning three of the four major world titles, as well as the \"Ring\" magazine and lineal titles.  In the same year he moved up to heavyweight, and became the WBA champion in 2009 after defeating Nikolai Valuev, who had a world record 9 in height and 99 lb weight advantage on Haye."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 563,
+    "generation_tokens": 4,
+    "generation_speed": 270.1789935832489,
+    "prompt_eval_speed": 71847.88157223073,
+    "generation_latency_s": 0.13723869994282722,
+    "latency": 0.48421429994050413,
+    "total_prompt_tokens": 737,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2321479,
+    "stage_route_s": 0.11352420004550368,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1773406999418512,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055931400042027235,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5200071074068546e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13727920001838356,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.48422649991698563,
+    "unaccounted_latency_s": 9.64998034760356e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"British Boxing Association\"",
+      "Query 2: \"Super Middleweight World Rankings\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

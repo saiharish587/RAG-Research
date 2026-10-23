@@ -1,0 +1,49 @@
+{
+  "question_id": "Q393",
+  "query": "What kind of movie directed by F. Javier gutierrez did an Italian model and actress star in?",
+  "ground_truth": "American supernatural psychological horror film",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Claudia Albertario Rodr\u00edguez was a notable Italian model, vedette and actress who starred in \"Time to Kill\" (1989 film).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Claudia Albertario: Claudia Albertario Rodr\u00edguez (] ; born May 16, 1977) is an Argentine model, vedette and actress of theatre, television and film.  Her notable credits include \"Amigovios\" (1995), \"Como pan caliente\" (1996), \"Monta\u00f1a rusa, otra vuelta\" (1997), \"Chiquititas\" (1997\u20131999), \"Gasoleros\" (1998 and 1999), and \"Verano del '98\" (1998\u20132001).  She also appeared on \"Dancing on Ice\" around the world.",
+      "Francis Ford Coppola: Francis Ford Coppola ( ; born April 7, 1939), also credited as Francis Coppola, is a semi-retired American film director, producer, screenwriter and film composer.  He was a central figure in the New Hollywood wave of filmmaking.",
+      "Time to Kill (1989 film): Time to Kill (Italian: Tempo di uccidere ) is a 1989 Italian drama film starring Nicolas Cage and Italian actors Ricky Tognazzi and Giancarlo Giannini .  It is directed by Giuliano Montaldo.  The film is set in 1936, when Ethiopia was an Italian colony, and was filmed in Zimbabwe.  It is based on the novel with the same name written by Ennio Flaiano."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 429,
+    "generation_tokens": 38,
+    "generation_speed": 212.0654054355712,
+    "prompt_eval_speed": 13609.974302845721,
+    "generation_latency_s": 0.3234658999135718,
+    "latency": 0.7356001998996362,
+    "total_prompt_tokens": 573,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2530248,
+    "stage_route_s": 0.11793619999662042,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23488639993593097,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.059091800008900464,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8699981309473515e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3235169999534264,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7356148998951539,
+    "unaccounted_latency_s": 0.000125700025819242,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Godfather\" directed by Francis Ford Coppola",
+      "\"Gattaca\" directed by Andrew Niccol"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

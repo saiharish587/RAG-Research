@@ -1,0 +1,42 @@
+{
+  "question_id": "Q299",
+  "query": "The mass killing that took place at Oakland, California on April 2, 2012 was less deadly than the one that took place on October 1, 2015 in which state?",
+  "ground_truth": "Oregon",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The mass killing that took place at Oakland, California on April 2, 2012, was less deadly than the one that took place on October 1, 2015, in which a shooting occurred at a school.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oikos University shooting: The Oikos University shooting occurred on April 2, 2012, when a gunman shot at people inside Oikos University, a Korean Christian college in Oakland, California, United States.  Within a few hours, the number of reported fatalities reached seven.  43-year-old One L. Goh, a former student at the school, was taken into custody and identified as the suspect in the shootings.  Along with the California State University, Fullerton massacre, this was the fourth-deadliest university shooting in United States history, after the Virginia Tech massacre, the University of Texas Clock Tower shooting, and the Umpqua Community College shooting, and the eighth-deadliest U.S. school massacre overall.  It is also considered the deadliest mass killing in the city's history.",
+      "Oakland, California: Oakland is the largest city and the county seat of Alameda County, California, United States.  A major West Coast port city, Oakland is the largest city in the East Bay region of the San Francisco Bay Area, the third largest city overall in the San Francisco Bay Area, the eighth largest city in California, and the 45th largest city in the United States, with a population of 419,267 as of 2015 .  It serves as a trade center for the San Francisco Bay Area; its Port of Oakland is the busiest port in the San Francisco Bay, the entirety of Northern California, and the fifth busiest in the United States of America.  The city was incorporated in 1852.",
+      "Mass shooting: A mass shooting is an incident involving multiple victims of firearms-related violence.  The United States' Congressional Research Service acknowledges that there is not a broadly accepted definition, and defines a \"public mass shooting\" as one in which four or more people selected indiscriminately, not including the perpetrator, are killed, echoing the FBI definition of the term \"mass murder\".  Another unofficial definition of a mass shooting is an event involving the shooting (not necessarily resulting in death) of four or more people with no cooling-off period.  Related terms include school shooting and massacre.  The lack of a single definition can lead to alarmism in the news media, with some reports conflating categories of crimes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 583,
+    "generation_tokens": 51,
+    "generation_speed": 252.4265117130851,
+    "prompt_eval_speed": 13388.756200624655,
+    "generation_latency_s": 1.0727265999885276,
+    "latency": 3.518366700038314,
+    "total_prompt_tokens": 686,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1311628,
+    "stage_rewrite_s": 1.3054570000385866,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9312387000536546,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20883300004061311,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0727607000153512,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5183746999828145,
+    "unaccounted_latency_s": 8.569983765482903e-05,
+    "rewritten_query": "The mass killing that took place at Oakland, California on April 2, 2012, was less deadly than the one that occurred on October 1, 2015, in which state.",
+    "query_was_rewritten": true
+  }
+}

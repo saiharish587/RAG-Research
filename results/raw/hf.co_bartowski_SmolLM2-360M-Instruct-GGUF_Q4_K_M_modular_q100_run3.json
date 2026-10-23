@@ -1,0 +1,49 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, Yingkou and Fuding are not the same level of city.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "Fuding Railway Station: Fuding Railway Station () is a railway station located in Fuding City, Ningde, Fujian Province, China, on the Wenzhou-Fuzhou Railway operated by the Nanchang Railway Bureau, China Railway Corporation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 212,
+    "generation_tokens": 18,
+    "generation_speed": 254.5176889793841,
+    "prompt_eval_speed": 47205.52215542195,
+    "generation_latency_s": 0.18230200000107288,
+    "latency": 0.5856446999823675,
+    "total_prompt_tokens": 340,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2356887,
+    "stage_route_s": 0.090878100018017,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.254012200050056,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05825580004602671,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.130000110715628e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18233950005378574,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5856565999565646,
+    "unaccounted_latency_s": 0.00011049979366362095,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Are there any differences in population density between Yingkou and Fuding?",
+      "What are the main industries present in both cities, and how do they contribute to their economies?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

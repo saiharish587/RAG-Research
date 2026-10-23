@@ -1,0 +1,42 @@
+{
+  "question_id": "Q123",
+  "query": "What's the name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate?",
+  "ground_truth": "The Spiderwick Chronicles",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The name of the fantasy film is \"King Arthur: Legend of the Sword.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "King Arthur: Legend of the Sword: King Arthur: Legend of the Sword is a 2017 epic fantasy film directed by Guy Ritchie and written by Ritchie, Joby Harold and Lionel Wigram, inspired by Arthurian legends.  The film stars Charlie Hunnam as the eponymous character, with Jude Law, \u00c0strid Berg\u00e8s-Frisbey, Djimon Hounsou, Aidan Gillen and Eric Bana in supporting roles.",
+      "Comic fantasy: Comic fantasy is a subgenre of fantasy that is primarily humorous in intent and tone.  Usually set in imaginary worlds, comic fantasy often includes puns on and parodies of other works of fantasy.  It is sometimes known as low fantasy in contrast to high fantasy, which is primarily serious in intent and tone.  The term \"low fantasy\" is used to represent other types of fantasy, however, so while comic fantasies may also correctly be classified as low fantasy, many examples of low fantasy are not comic in nature.",
+      "Fantasy (fragrance): Fantasy is a women's fragrance and fragrance line by Britney Spears and Elizabeth Arden.  Fantasy, the perfume, is the second perfume to be endorsed by Britney Spears.  It was released in the US on September 15, 2005, following the successful previous perfume from Spears, \"Curious\", which made over $30 million in sales in the first three months of its launch.  The Fantasy fragrance line has currently fourteen perfumes: Fantasy, Midnight Fantasy, Hidden Fantasy, Circus Fantasy, Fantasy Twist, Island Fantasy, Fantasy Anniversary Edition, Fantasy The Nice Remix, Fantasy The Naughty Remix, Fantasy Stage Edition, Rocker Femme Fantasy, Fantasy Renner Edition, Fantasy Intimate Edition, and Maui Fantasy."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 459,
+    "generation_tokens": 17,
+    "generation_speed": 253.05527024814302,
+    "prompt_eval_speed": 14980.906687555078,
+    "generation_latency_s": 1.0273814999964088,
+    "latency": 3.3871656000846997,
+    "total_prompt_tokens": 545,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1278984,
+    "stage_rewrite_s": 1.1690340000204742,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0754939999897033,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11514150002039969,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0274160000262782,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.387177500058897,
+    "unaccounted_latency_s": 9.240000508725643e-05,
+    "rewritten_query": "The name of the fantasy film is \"The Last Kingdom.",
+    "query_was_rewritten": true
+  }
+}

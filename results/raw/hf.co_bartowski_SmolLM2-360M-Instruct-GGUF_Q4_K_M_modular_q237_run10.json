@@ -1,0 +1,49 @@
+{
+  "question_id": "Q237",
+  "query": "Henry Hall is known for fighting in the Revolutionary War, and for being the first to successfully cultivate this food found in what type of bogs?",
+  "ground_truth": "acidic",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Henry Hall was known for his bravery during the Revolutionary War and his pioneering efforts in cultivating cranberries. He is considered one of the \"fathers\" of American viticulture, which includes grape-growing practices. Additionally, he served as a military officer and close friend to George Washington, Alexander Hamilton, and Thomas Jefferson.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry Hall (American revolution): Captain Henry Hall was an American from Dennis, Massachusetts who fought in the American Revolutionary War, who later was the first to successfully cultivate cranberries.",
+      "John Adlum: John Adlum (April 29, 1759 \u2013 March 14, 1836) was a pioneering American viticulturalist who was the first to cultivate the Catawba grape.  He is known as \"the father of American viticulture\" (grape-growing).  He also served in the American Revolutionary War; was a well-known surveyor; was one of the first associate judges in Lycoming County, Pennsylvania; and served in the United States Army in the War of 1812.",
+      "Gilbert du Motier, Marquis de Lafayette: Marie-Joseph Paul Yves Roch Gilbert du Motier, Marquis de Lafayette (] ; 6 September 1757 \u2013 20 May 1834), in the United States often known simply as Lafayette, was a French aristocrat and military officer who fought in the American Revolutionary War.  A close friend of George Washington, Alexander Hamilton, and Thomas Jefferson, Lafayette was a key figure in the French Revolution of 1789 and the July Revolution of 1830."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 64,
+    "generation_speed": 257.18097503737164,
+    "prompt_eval_speed": 48359.00870730074,
+    "generation_latency_s": 0.36804580001626164,
+    "latency": 0.825747299939394,
+    "total_prompt_tokens": 519,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2155891,
+    "stage_route_s": 0.08994400000665337,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3121619999874383,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05539160000625998,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.170000415295362e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.36810109997168183,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.825758200022392,
+    "unaccounted_latency_s": 9.829993359744549e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Henry Hall was a renowned figure during the American Revolutionary War who fought in battles and cultivated this unique plant.\"",
+      "\"Henry Hall is credited with pioneering the cultivation of this specific type of bog-grown vegetable, which has since become a staple ingredient in many cuisines around the world.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

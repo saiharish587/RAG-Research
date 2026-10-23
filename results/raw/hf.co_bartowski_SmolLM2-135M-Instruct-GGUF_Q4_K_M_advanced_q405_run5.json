@@ -1,0 +1,42 @@
+{
+  "question_id": "Q405",
+  "query": "The Jeep Cherokee was originally sold as a variant of a Jeep model produced during what years?",
+  "ground_truth": "1963 to 1991",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Jeep Cherokee was originally sold as a variant of a Jeep model produced during 1983 to 2001, not the Jeep model itself. The Jeep Cherokee is a mid-size crossover SUV that was introduced in 2014 and has since become one of the most successful sports utility vehicles on the market.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jeep Cherokee: The Jeep Cherokee is a line of vehicles sold by Jeep under various vehicle classes.  Originally sold as a variant of the popular Jeep Wagoneer, the Cherokee has evolved from a full-size SUV to one of the first compact SUVs and eventually into its current incarnation as a crossover SUV.  The nameplate has been in continuous use in some form since 1974 and also spawned Jeep's most successful vehicle, the Jeep Grand Cherokee, which was originally slated to be part of the Cherokee's lineup.  The vehicle is named after the Cherokee tribe of Native Americans.",
+      "Jeep Cherokee (KL): The Jeep Cherokee (KL) is a mid-size crossover SUV produced by Jeep.  It was introduced for the 2014 model year at the 2013 New York International Auto Show and the sales started in November 2013.  The Cherokee is the first Jeep vehicle to be built on the Fiat Compact/Compact U.S. Wide platform, co-developed by Chrysler and Fiat.  The Jeep Cherokee is built at Belvidere Assembly Plant in Belvidere, Illinois.",
+      "Jeep Cherokee (XJ): The Jeep Cherokee (XJ) is a sport utility vehicle that was manufactured and marketed by Jeep from 1983 to 2001.  Sharing the name of the original full-size SJ model, but without a traditional body-on-frame chassis, the XJ instead featured a light-weight unibody design, The models were originally marketed as Sportwagons and became the precursor to the modern sport utility vehicle (SUV) as that term was not yet in use."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 446,
+    "generation_tokens": 74,
+    "generation_speed": 408.46516454522373,
+    "prompt_eval_speed": 40597.123611869654,
+    "generation_latency_s": 0.2719848999986425,
+    "latency": 0.6503757999744266,
+    "total_prompt_tokens": 526,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.124947,
+    "stage_rewrite_s": 0.15918050007894635,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07987460005097091,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13921229995321482,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.27202620008029044,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6503855999326333,
+    "unaccounted_latency_s": 9.249977301806211e-05,
+    "rewritten_query": "The Jeep Cherokee was originally sold as a variant of a Jeep model produced during 1970s and 1980s.",
+    "query_was_rewritten": true
+  }
+}

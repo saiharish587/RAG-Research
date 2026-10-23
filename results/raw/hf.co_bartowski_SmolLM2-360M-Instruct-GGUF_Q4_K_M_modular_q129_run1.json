@@ -1,0 +1,49 @@
+{
+  "question_id": "Q129",
+  "query": "Where is the Bubblegum Alley, that is similar to Gum Wall, located in California?",
+  "ground_truth": "San Luis Obispo, California",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "San Luis Obispo, California",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bubblegum Alley: Bubblegum Alley is a tourist attraction in downtown San Luis Obispo, California, known for its accumulation of used bubble gum on the walls of an alley.  It is a 15 ft high and 70 ft long alley lined with chewed gum left by passers-by.  It covers a stretch of 20 meters in the 700 block of Higuera Street in downtown San Luis Obispo.",
+      "Gum Wall: The Market Theater Gum Wall is a brick wall covered in used chewing gum, in an alleyway in downtown Seattle.  It is located in Post Alley under Pike Place Market.  Similar to Bubblegum Alley in San Luis Obispo, California, the Market Theater Gum Wall is a local landmark.  Parts of the wall can be covered several inches thick, 15 feet high for 50 feet.",
+      "Sue Bierman Park: Sue Bierman Park, also known as Ferry Park, is a park in San Francisco, California in the Financial District.  Sue Bierman Park replaced off-ramps just north of the Embarcadero Center, and next to the park Ferry Plaza was constructed in front of the San Francisco Ferry Building, which itself was remodeled into an upscale gourmet marketplace in 2003.  The park is named after Sue Bierman, a San Francisco civic activist and Supervisor."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 8,
+    "generation_speed": 239.2129964181741,
+    "prompt_eval_speed": 14449.654962064891,
+    "generation_latency_s": 0.1668113999767229,
+    "latency": 0.6875864000758156,
+    "total_prompt_tokens": 521,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.232289,
+    "stage_route_s": 0.10889979999046773,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.35096109996084124,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06073989998549223,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7399971410632133e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1668420999776572,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6875953000271693,
+    "unaccounted_latency_s": 9.570014663040638e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bubblegum Alley\" - Located in San Francisco, California, this iconic landmark offers a unique experience for visitors looking for an immersive adventure.",
+      "\"Gum Wall\" - Found in Los Angeles, California, Gum Wall is another popular attraction that combines art and architecture with the thrill of bubbles."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

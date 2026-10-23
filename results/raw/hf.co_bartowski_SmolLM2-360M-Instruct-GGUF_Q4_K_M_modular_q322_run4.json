@@ -1,0 +1,48 @@
+{
+  "question_id": "Q322",
+  "query": "What is the international football competition for women that Liu Ailing played in the 1991,1995, 1999 editions?",
+  "ground_truth": "international football competition",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The international football competition for women that Liu Ailing played in the 1991, 1995, and 1999 editions is the EAFF E-1 Football Championship.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "FIFA Women's World Cup: The FIFA Women's World Cup is an international football competition contested by the senior women's national teams of the members of \"F\u00e9d\u00e9ration Internationale de Football Association\" (FIFA), the sport's global governing body.  The competition has been held every four years since 1991, when the inaugural tournament, then called the Women's World Championship, was held in China.",
+      "EAFF E-1 Football Championship (women): EAFF E-1 Football Championship is an international football competition in East Asia for national teams of the East Asian Football Federation (EAFF).  The competition between women's national teams is held alongside men's competition.",
+      "Liu Ailing: Liu Ailing (; born June 2, 1967) is a Chinese former footballer who played for the China national team at the 1991, 1995 and 1999 editions of the FIFA Women's World Cup.  She won a silver medal at the 1996 Atlanta Olympics and participated at the 2000 Sydney Olympics.  A playmaking midfielder, she played professional club football in Japan and the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 350,
+    "generation_tokens": 44,
+    "generation_speed": 242.30809474246504,
+    "prompt_eval_speed": 38622.820569410724,
+    "generation_latency_s": 0.30393409996759146,
+    "latency": 0.768121900036931,
+    "total_prompt_tokens": 516,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2346932,
+    "stage_route_s": 0.10838089999742806,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.31759339990094304,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03805390000343323,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2599975131452084e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3039733999175951,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7681334000080824,
+    "unaccounted_latency_s": 9.010022040456533e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "International Football Competition for Women (IFCW)*: The IFCW is an international women's football competition held annually. It was founded by the International Federations of Women in Sport (IFWS) and is organized by the World Federation of Women's Soccer Associations (FWA)."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

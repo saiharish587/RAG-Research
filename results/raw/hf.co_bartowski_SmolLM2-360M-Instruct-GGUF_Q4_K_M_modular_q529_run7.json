@@ -1,0 +1,49 @@
+{
+  "question_id": "Q529",
+  "query": "Which band was formed first, Wavves or Social Code?",
+  "ground_truth": "Social Code",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Wavves",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Norwegian Non-Fiction Writers and Translators Association: Norwegian Non-Fiction Writers and Translators Association",
+      "Let Freedom Ring: Winning the War of Liberty over Liberalism: Let Freedom Ring: Winning the War of Liberty over Liberalism",
+      "digital civilization : according to Kunze, maybe nothing of the 21st century will last in the future, since most of our interactions are now virtual.  The \"accuracy versus bullshit\" is one of the main themes of the MOM project, worried about loss of information, the project can only aim to save a fragment of the information produced until today, but this fragment has to be representative."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 205,
+    "generation_tokens": 4,
+    "generation_speed": 315.13432600646024,
+    "prompt_eval_speed": 46921.4923323415,
+    "generation_latency_s": 0.1305473999818787,
+    "latency": 0.4690122000174597,
+    "total_prompt_tokens": 331,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2356648,
+    "stage_route_s": 0.08847179997246712,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19631680008023977,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05350329994689673,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.500006955116987e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13058220001403242,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.46902229997795075,
+    "unaccounted_latency_s": 9.409990161657333e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Wavves and Social Code\"",
+      "\"Formed First: Wavves vs. Social Code\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

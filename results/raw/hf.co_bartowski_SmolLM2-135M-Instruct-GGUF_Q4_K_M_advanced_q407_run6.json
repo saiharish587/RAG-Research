@@ -1,0 +1,42 @@
+{
+  "question_id": "Q407",
+  "query": "Which magazine is older, Gallery or Dime Magazine?",
+  "ground_truth": "arose on the \"Playboy\" magazine pattern in the 1970s.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Dime Magazine",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dime Magazine: Dime Magazine is an American basketball magazine that began circulation in 2001.  The magazine publishes six issues a year for its worldwide readership, as well as a handful of editions of \"Dime China\", a Chinese-language version consisting of regular \"Dime\" content translated from English and original content from editorial staff in China.  It makes an appearance as an endorsement in \"NBA 2K12\", and \"NBA 2K13\".  It is owned by Uproxx itself a brand of Woven Digital.",
+      "Gallery (magazine): Gallery is a men's magazine published by Magna Publishing Group.  It is one of the more popular \"skin\" magazines that arose on the \"Playboy\" magazine pattern in the 1970s.",
+      "Magazine: A magazine is a publication, usually a periodical publication, which is printed or electronically published (sometimes referred to as an online magazine).  Magazines are generally published on a regular schedule and contain a variety of content.  They are generally financed by advertising, by a purchase price, by prepaid subscriptions, or a combination of the three.  At its root, the word \"magazine\" refers to a collection or storage location.  In the case of written publication, it is a collection of written articles.  This explains why magazine publications share the word root with gunpowder magazines, artillery magazines, firearms magazines, and, in French, retail stores such as department stores."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 376,
+    "generation_tokens": 4,
+    "generation_speed": 396.98292973402147,
+    "prompt_eval_speed": 41643.59286742718,
+    "generation_latency_s": 0.10763060010503978,
+    "latency": 0.5734180000144988,
+    "total_prompt_tokens": 447,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.145455,
+    "stage_rewrite_s": 0.24199470004532486,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07841820002067834,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1452481000451371,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10766409989446402,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5734266000799835,
+    "unaccounted_latency_s": 0.00010189996100962162,
+    "rewritten_query": "The original query was \"Which magazine is older, Gallery or Dime Magazine?\" The optimized query output would be:\n\"Gallery Magazine.\"\nThis rephrased query uses the same information as the original query but with a slight modification to make it more concise and user-friendly.",
+    "query_was_rewritten": true
+  }
+}

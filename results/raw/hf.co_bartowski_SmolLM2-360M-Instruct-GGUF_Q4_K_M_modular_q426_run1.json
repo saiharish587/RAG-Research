@@ -1,0 +1,49 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Las Vegas Festival Grounds is located north of the MGM-owned Circus Circus Hotel and Casino.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "Las Vegas Strip: The Las Vegas Strip is a stretch of South Las Vegas Boulevard in Clark County, Nevada, known for its concentration of resort hotels and casinos.  The Strip is approximately 4.2 mi in length, located immediately south of the Las Vegas city limits in the unincorporated towns of Paradise and Winchester.  However, the Strip is often referred to as being in Las Vegas.  Most of the Strip has been designated an All-American Road, and is considered a scenic route at night.",
+      "Sierra Nevada Corporation: Sierra Nevada Corporation (SNC) is an American privately held electronic systems provider and systems integrator specializing in microsatellites, telemedicine, and commercial orbital transportation services.  Sierra Nevada Corporation operates under the leadership of Chief Executive Officer, Fatih Ozmen and President, Eren Ozmen.  The company contracts with the United States Armed Forces, NASA and private spaceflight companies.  It is headquartered in Sparks, Nevada."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 333,
+    "generation_tokens": 25,
+    "generation_speed": 236.95784046102517,
+    "prompt_eval_speed": 13191.253367136746,
+    "generation_latency_s": 0.24383579997811466,
+    "latency": 0.5840338999405503,
+    "total_prompt_tokens": 467,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2260995,
+    "stage_route_s": 0.10976420005317777,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17319419991690665,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05705820000730455,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9699988923966885e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2438757000491023,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5840456000296399,
+    "unaccounted_latency_s": 9.439990390092134e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Las Vegas Convention and Visitors Bureau\"",
+      "\"The Nevada Corporation\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

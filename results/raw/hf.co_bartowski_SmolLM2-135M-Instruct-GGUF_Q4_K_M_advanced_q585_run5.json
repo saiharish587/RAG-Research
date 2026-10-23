@@ -1,0 +1,42 @@
+{
+  "question_id": "Q585",
+  "query": "Which king of Northumbria did The \"Historia\" gives the abbot central place in his election as king",
+  "ground_truth": "Guthred or Guthfrith",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The \"Historia de Sancto Cuthberto\" provides information about the position of the abbot of Carlisle, which is a part of the election of King Eadred Lulisc. The passage states that the \"historian\" was Eadred Lulisc, and he was appointed by Eadred Lulisc as the abbot of Carlisle in 987. Therefore, the position of the abbot of Carlisle is held by Eadred Lulisc.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Eadred Lulisc: Eadred Lulisc or Eadred of Carlisle (fl.  late 9th century) is the abbot of Carlisle recorded by the \"Historia de Sancto Cuthberto\".  The \"Historia\" gives the abbot central place in the election of Guthred as king of Northumbria by the Viking army based in Yorkshire, and that subsequently Eadred purchased land from him, using it to endow the bishopric of St Cuthbert.  The \"Historia\" also related that he and Eardwulf, Bishop of Lindisfarne, moved the body of St Cuthbert away from its previous base at Lindisfarne, tried to take it to Ireland, but failed and took it back to the east, first to Crayke and then to Chester-le-Street.",
+      "St Edmund, King and Martyr: St Edmund, King and Martyr, is an Anglican church in Lombard Street, in the City of London, dedicated to St Edmund the Martyr.",
+      "Edmund \u00c6theling: Edmund \u00c6theling ( ; \u20091015\u201317 \u2013 possibly 1046, certainly by 1054) was a member of the royal House of Wessex as the son of Edmund Ironside, who briefly ruled as King of England between April and November 1016.  He fought the Danish Vikings under Cnut the Great, but following the Danish victory at the Battle of Assandun in October, it was agreed that Ironside would rule Wessex, while Cnut took Mercia and probably Northumbria.  In November 1016, Ironside died and Cnut became King of all England."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 451,
+    "generation_tokens": 104,
+    "generation_speed": 411.0785673911926,
+    "prompt_eval_speed": 52754.708153000356,
+    "generation_latency_s": 0.34832500002812594,
+    "latency": 0.8593585999915376,
+    "total_prompt_tokens": 534,
+    "total_generation_tokens": 176,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1277815,
+    "stage_rewrite_s": 0.26054119993932545,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08089450001716614,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16947810002602637,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3483589000534266,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8593681000638753,
+    "unaccounted_latency_s": 9.590003173798323e-05,
+    "rewritten_query": "The \"Historia\" provides a detailed account of the coronation of King Edwin, which was held at the monastery of St. Edmund's in Northumbria. The coronation took place on December 15th, 641 AD and was attended by the abbot of St. Edmund's, who was chosen as the new king.",
+    "query_was_rewritten": true
+  }
+}

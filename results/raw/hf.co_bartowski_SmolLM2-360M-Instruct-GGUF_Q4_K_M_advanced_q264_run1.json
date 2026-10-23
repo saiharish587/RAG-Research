@@ -1,0 +1,42 @@
+{
+  "question_id": "Q264",
+  "query": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+  "ground_truth": "Tybalt",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Benvolio in Romeo and Juliet is the protagonist who secretly loves and marries a member of the rival house.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Benvolio: Benvolio is a fictional character in Shakespeare's drama \"Romeo and Juliet\".  He is Montague's nephew and Romeo's cousin.  Benvolio serves as an unsuccessful peacemaker in the play, attempting to prevent violence between the Capulet and Montague families.",
+      "Romeo and Juliet (1954 film): Romeo and Juliet is a 1954 film adaptation of William Shakespeare's play of the same name.  It was directed by Renato Castellani and stars Laurence Harvey as Romeo, Susan Shentall as Juliet, Flora Robson as the Nurse, Mervyn Johns as Friar Laurence, Bill Travers as Benvolio, Sebastian Cabot as Lord Capulet, Ubaldo Zollo as Mercutio, Enzo Fiermonte as Tybalt and John Gielgud as the Chorus.",
+      "Viola (Twelfth Night): Viola (pronounced \\\u02c8va\u026ao\u028al\u0259 \\) is the heroine and protagonist of the play \"Twelfth Night\", written by William Shakespeare."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 315,
+    "generation_tokens": 24,
+    "generation_speed": 254.65812147192395,
+    "prompt_eval_speed": 13195.375335120643,
+    "generation_latency_s": 0.9650682000210509,
+    "latency": 3.4067308999365196,
+    "total_prompt_tokens": 410,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1224812,
+    "stage_rewrite_s": 1.1400469000218436,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0993576999753714,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2021338000195101,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9651127000106499,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4067422000225633,
+    "unaccounted_latency_s": 9.180000051856041e-05,
+    "rewritten_query": "Benvolio slays the protagonist.",
+    "query_was_rewritten": true
+  }
+}

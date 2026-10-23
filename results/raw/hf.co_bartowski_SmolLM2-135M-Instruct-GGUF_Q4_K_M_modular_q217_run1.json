@@ -1,0 +1,49 @@
+{
+  "question_id": "Q217",
+  "query": "Ernest Foot was the best friend of the fighter pilot who had how many victories?",
+  "ground_truth": "44",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Ernest Foot was the best friend of the fighter pilot who had five aerial victories.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernest Foot: Major Ernest Leslie Foot {'1': \", '2': \", '3': \", '4': \"} (19 May 1895 \u2013 23 June 1923) was an English World War I flying ace credited with five aerial victories.  He was the best friend of Albert Ball.",
+      "Gervais Raoul Lufbery: Gervais Raoul Victor Lufbery (March 14, 1885 \u2013 May 19, 1918) was a French and American fighter pilot and flying ace in World War I. Because he served in both the French Air Force, and later the United States Army Air Service in World War I, he is sometimes listed alternately as a French ace or as an American ace.  Officially, all but one of his 17 combat victories came while flying in French units.",
+      "Ernest Charles Hoy: Captain Ernest Charles Hoy DFC (6 May 1895\u00a0\u201322 April 1982) was a Canadian First World War flying ace, officially credited with 13 victories.  He later pioneered airmail flight over the Canadian Rockies."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 321,
+    "generation_tokens": 18,
+    "generation_speed": 360.5697001261994,
+    "prompt_eval_speed": 15829.182898565019,
+    "generation_latency_s": 0.1766891999868676,
+    "latency": 0.52400720003061,
+    "total_prompt_tokens": 453,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2300491,
+    "stage_route_s": 0.10067199997138232,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1884169999975711,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05805849994067103,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.880002234131098e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17672690004110336,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5240180999971926,
+    "unaccounted_latency_s": 9.560002945363522e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Ernest Foot won 25 victories in his career as a fighter pilot.",
+      "Ernest Foot won 30 victories in his career as a fighter pilot."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

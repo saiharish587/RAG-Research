@@ -1,0 +1,49 @@
+{
+  "question_id": "Q173",
+  "query": "The Memphis Hustle are based in a suburb of a city with a population of what in 2010?",
+  "ground_truth": "48,982",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Memphis Hustle are based in a suburb of Lakeland, Tennessee, which has a population of 12,430 at the 2010 census.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "West Memphis, Arkansas: West Memphis is the largest city in Crittenden County, Arkansas, United States.  The population was 26,245 at the 2010 census, ranking it as the state's 18th largest city, behind Bella Vista.  It is part of the Memphis metropolitan area, and is located directly across the Mississippi River from Memphis.",
+      "Memphis metropolitan area: The Memphis-Forrest City Combined Statistical Area, TN-MS-AR (CSA) is the commercial and cultural hub of The Mid-South or Ark-Miss-Tenn.  The census defined combined statistical area covers ten counties in three states \u2013 Tennessee, Mississippi, and Arkansas.  As of census 2010 the MSA had a population of 1,324,108 .  The Forrest City Micropolitan area was added to the Memphis area in 2012 to form the Memphis-Forrest City Combined Statistical area and had a population of 1,369,548 according to census estimates.  The greater Mid-South area as a whole has a population of 2.4 million according to 2013 census estimates.  This area is covered by Memphis local news channels and includes the Missouri Bootheel, Northeast Arkansas, West Tennessee, and North Mississippi.",
+      "Lakeland, Tennessee: Lakeland is a city in Shelby County, Tennessee, and a suburb of Memphis.  The population was 12,430 at the 2010 census."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 39,
+    "generation_speed": 240.95492289442467,
+    "prompt_eval_speed": 43552.33734426578,
+    "generation_latency_s": 0.2816047000233084,
+    "latency": 0.7817474000621587,
+    "total_prompt_tokens": 559,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22145209999999999,
+    "stage_route_s": 0.09848120005335659,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3444466000655666,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057043900014832616,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.059991963207722e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28163779992610216,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7817564000142738,
+    "unaccounted_latency_s": 9.710004087537527e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The population of Memphis, Tennessee, was approximately 635,498 people in 2010.",
+      "Query 2: The population of the city of Memphis is 635,498 people in 2010."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

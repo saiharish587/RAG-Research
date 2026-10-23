@@ -1,0 +1,49 @@
+{
+  "question_id": "Q122",
+  "query": "In which role did Caroline Carver played in a 1999 Hallmark Entertainment made-for-TV fantasy movie?",
+  "ground_truth": "Princess Jessica",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Caroline Carver played the role of Princess Jessica in \"The Magical Legend of the Leprechauns\" (1999).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Caroline Carver (actress): Caroline Carver (born 1976) is an English actress, screenwriter, and producer best known for roles such as Princess Jessica in the TV film \"The Magical Legend of the Leprechauns\" (1999), Ingrid in \"The Aryan Couple\" (2004), and Sandy in \"My First Wedding\" (2006).",
+      "The Magical Legend of the Leprechauns: The Magical Legend of the Leprechauns is a 1999 Hallmark Entertainment made-for-TV fantasy movie.  It stars Randy Quaid, Colm Meaney, Kieran Culkin, Roger Daltrey, Caroline Carver and Whoopi Goldberg.  The film contains two main stories that eventually intertwine: the first being the story of an American businessman who visits Ireland and encounters magical leprechauns and the second, a story of a pair of star-crossed lovers who happen to be a fairy and a leprechaun, belonging to opposing sides of a magical war.  It contains many references to Romeo and Juliet such as two lovers taking poison and feuding clans.",
+      "Beginners (short story collection): Beginners is the title given to the manuscript version of Raymond Carver's 1981 short story collection \"What We Talk About When We Talk About Love\", published by Carver's widow Tess Gallagher in 2009."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 391,
+    "generation_tokens": 29,
+    "generation_speed": 218.4540982742126,
+    "prompt_eval_speed": 42106.39672625457,
+    "generation_latency_s": 0.2568817000137642,
+    "latency": 0.6932764999801293,
+    "total_prompt_tokens": 543,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23355160000000003,
+    "stage_route_s": 0.10210250003729016,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2768561999546364,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05726280005183071,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1600043661892414e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2569247999927029,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6932871999451891,
+    "unaccounted_latency_s": 8.989986963570118e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Caroline Carver\"",
+      "Query 2: \"In which role did Caroline Carver play in a 1999 Hallmark Entertainment made-for-TV fantasy movie?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

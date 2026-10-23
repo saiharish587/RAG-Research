@@ -1,0 +1,49 @@
+{
+  "question_id": "Q423",
+  "query": "How many novels are there in the series of novels of which Shadows in Flight is the tenth novel ?",
+  "ground_truth": "fifteen",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "There are 10 novels in the series of novels of which Shadows in Flight is the tenth novel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "volumes of the light novels and a few side stories from Volume 8.  The second season continues with the third and fourth volumes of the light novels.  It is split between two arcs: The Excalibur of the Moonlit Schoolyard (\u6708\u5149\u6821\u5ead\u306e\u30a8\u30af\u30b9\u30ab\u30ea\u30d0\u30fc , Gekk\u014d K\u014dtei no Ekusukarib\u0101 ) and The Vampire of the Empty Classroom (\u505c\u6b62\u6559\u5ba4\u306e\u30f4\u30a1\u30f3\u30d1\u30a4\u30a2 , Teishi Ky\u014dshitsu no Vanpaia ) .  The first ten episodes of the third season adapts material from the fifth to the seventh volumes of the light novels, while the last two episodes form an original self-contained story arc.",
+      "Shadows in Flight: Shadows in Flight is a science fiction novel by Orson Scott Card.  When released in 2012, it became the tenth novel published in the \"Ender's Game\" series.  The story follows on from where the original four \"Shadow series\" books left off.  It is about Bean and his children discovering an ancient Formic \"ark\" during their journey in space.  A sample chapter was released on November 28, 2011.  The hardcover version was released on January 17, 2012, and the paperback was released on January 29, 2013.  It was nominated for the Goodreads Choice Award for science fiction.",
+      "age.  Specifically, there have been two separate translations into each of: Mandarin Chinese, Portuguese, Romanian, Russian and Turkish (5 languages).  English is often included in the list of translations even though technically it should not be (indeed, it is why our list here counts up to 74).  Thus: 79 \u2212 English \u2212 5 double-translations = 73.  It is also worthwhile to emphasize that not all seven books are have been translated into these 73 languages."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 515,
+    "generation_tokens": 23,
+    "generation_speed": 224.39900093662192,
+    "prompt_eval_speed": 14850.485884829435,
+    "generation_latency_s": 0.25026920007076114,
+    "latency": 0.8190821000607684,
+    "total_prompt_tokens": 657,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22649229999999998,
+    "stage_route_s": 0.11317850009072572,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3993485999526456,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056095900014042854,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.749997217208147e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2503082000184804,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8190931000281125,
+    "unaccounted_latency_s": 0.0001050999853760004,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The number of novels in the series of novels of which Shadows in Flight is the tenth novel can be found by dividing the total number of books in the series by the number of novels.",
+      "Query 2: To find out how many novels are there in the series, divide the total number of books in the series by the number of novels."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

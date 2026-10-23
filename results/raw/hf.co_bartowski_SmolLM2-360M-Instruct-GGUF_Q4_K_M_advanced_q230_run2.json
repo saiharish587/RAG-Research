@@ -1,0 +1,42 @@
+{
+  "question_id": "Q230",
+  "query": "Is the Marsilea or the Brabejum the genus of more individual species of plants?",
+  "ground_truth": "Marsilea",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Marsilea is the genus of more individual species of plants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "List of Berberis and Mahonia species: Berberis and Mahonia are two widespread and common members of the Berberidaceae, found in many countries.  Botanists have for many years had no consensus on the classification, some preferring to treat the group as a single genus (\"Berberis\"), while others opt to separate the two groups into distinct genera.  Therefore, many species have two scientific name, one in \"Berberis\", the other in \"Mahonia\", each used by botanists on one side the debate.",
+      "d World genus \"Syzygium\" in \"Eugenia\", but research by Rudolf Schmid in the early 1970s convinced most botanists that the genera are easily separable.  Research by van Wyk and colleagues in South Africa suggests the genus may comprise at least two major lineages, recognizable by anatomical and other features.",
+      "Dactylis: The genus has been treated as containing only a single species \"D. glomerata\" by many authors, treating variation in the genus at only subspecific rank within \"Dactylis glomerata\", but more recently, there has been a trend to accept two species, while some authors accept even more species in the genus, particularly island endemic species in Macaronesia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 339,
+    "generation_tokens": 15,
+    "generation_speed": 238.1708478882185,
+    "prompt_eval_speed": 13767.056530214424,
+    "generation_latency_s": 0.9217310000676662,
+    "latency": 3.3897188999690115,
+    "total_prompt_tokens": 419,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1214881,
+    "stage_rewrite_s": 1.1713856999995187,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0798517999937758,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2166399999987334,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9217653000960127,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3897280000383034,
+    "unaccounted_latency_s": 8.559995330870152e-05,
+    "rewritten_query": "The question is about the genus of more distinct plant species.",
+    "query_was_rewritten": true
+  }
+}

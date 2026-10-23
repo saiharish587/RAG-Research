@@ -1,0 +1,42 @@
+{
+  "question_id": "Q308",
+  "query": "What prolific English engineer, who died on 15 December 1857, contributed to the advent of the hot air engine by way of their open cycle devices?",
+  "ground_truth": "George Cayley",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "George Cayley contributed to the advent of the hot air engine by way of his open cycle devices.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George Cayley: Sir George Cayley, 6th Baronet (27 December 1773 \u2013 15 December 1857) was a prolific English engineer and is one of the most important people in the history of aeronautics.  Many consider him to be the first true scientific aerial investigator and the first person to understand the underlying principles and forces of flight.",
+      "Hot air engine: A hot air engine (historically called an air engine or caloric engine) is any heat engine that uses the expansion and contraction of air under the influence of a temperature change to convert thermal energy into mechanical work.  These engines may be based on a number of thermodynamic cycles encompassing both open cycle devices such as those of Sir George Cayley and John Ericsson and the closed cycle engine of Robert Stirling.  Hot air engines are distinct from the better known internal combustion based engine and steam engine.",
+      "Ada Lovelace: Augusta Ada King-Noel, Countess of Lovelace (\"n\u00e9e\" Byron; 10 December 1815 \u2013 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.  She was the first to recognise that the machine had applications beyond pure calculation, and created the first algorithm intended to be carried out by such a machine.  As a result, she is often regarded as the first to recognise the full potential of a \"computing machine\" and the first computer programmer."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 412,
+    "generation_tokens": 21,
+    "generation_speed": 265.66137030664913,
+    "prompt_eval_speed": 55743.47179001488,
+    "generation_latency_s": 1.0022244999418035,
+    "latency": 3.3756004999158904,
+    "total_prompt_tokens": 507,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1237396,
+    "stage_rewrite_s": 1.2777248999336734,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9677067999728024,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12782140006311238,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.002265900024213,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3756117000011727,
+    "unaccounted_latency_s": 9.359989780932665e-05,
+    "rewritten_query": "The prolific English engineer who died on 15 December 1857 is credited with contributing to the development of the hot air engine through his open-cycle devices.",
+    "query_was_rewritten": true
+  }
+}

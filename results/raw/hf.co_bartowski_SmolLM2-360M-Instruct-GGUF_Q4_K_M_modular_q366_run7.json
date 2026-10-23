@@ -1,0 +1,49 @@
+{
+  "question_id": "Q366",
+  "query": " What is the latest album of Tim Hecker, the Canadian electronic music maker?",
+  "ground_truth": "Love Streams",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Tim Hecker's latest album is \"Love Streams\" released on his new label 4AD on 8 April 2016.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tim Hecker: Tim Hecker is an electronic musician and sound artist based in Los Angeles, United States and Montreal, Canada.  Hecker previously recorded under the moniker Jetone, but has become known internationally for ambient recordings released under his own name, such as \"Harmony in Ultraviolet\" (2006) and \"Ravedeath, 1972\" (2011).  He has released eight albums and a number of EPs in addition to collaborations with artists such as Ben Frost, Daniel Lopatin, and Aidan Baker.  His latest album \"Love Streams\" was released on his new label 4AD on 8 April 2016.",
+      "Haunt Me, Haunt Me Do It Again: Haunt Me, Haunt Me Do It Again is the debut studio album by Canadian electronic musician Tim Hecker, released on November 20, 2001, on Substractif, a sub-label of Alien8 Recordings.  The album mixes the digital signal processing of glitch with post-rock structures and melodies.  The sounds used for this album, as well as most of Tim Hecker\u2019s other works, originate from a guitar, piano, and laptop.  The title of the song \u201cThe Work of Art in the Age of Cultural Overproduction\u201d is a reference to Walter Benjamin's essay, \"The Work of Art in the Age of Mechanical Reproduction\".",
+      "Mirages (album): Mirages is the third studio album by Canadian electronic music musician Tim Hecker, released on September 21, 2004 on Alien8 Recordings.  It is described on the Alien8 website as \u201can ambient-death-metal classic in waiting.\u201d  The album is composed primarily of heavily distorted and processed guitar.  Relatively free of beats, this album moves rhythmically along in a glitch fashion, acquiring rhythm through pulsating or droning bass and some sounds resembling digital malfunction.  In addition to sharing similar moods and tones, the tracks bleed into each other, making this a nearly seamless composition.  The distortion guitar and feedback elements with delicate underlying melodies may call to mind the textural rock compositions of shoegaze."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 537,
+    "generation_tokens": 31,
+    "generation_speed": 218.21611842799925,
+    "prompt_eval_speed": 71314.74103585657,
+    "generation_latency_s": 0.2650607000105083,
+    "latency": 0.6392140000825748,
+    "total_prompt_tokens": 671,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.259371,
+    "stage_route_s": 0.11123279994353652,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19809449999593198,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06464139989111573,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.47999918833375e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2651023999787867,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6392243000445887,
+    "unaccounted_latency_s": 0.00010960025247186422,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Tim Hecker's latest album\"",
+      "\"Tim Hecker's most recent release\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

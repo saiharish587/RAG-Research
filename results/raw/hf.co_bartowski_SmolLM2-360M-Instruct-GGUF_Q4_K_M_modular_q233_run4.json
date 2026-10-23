@@ -1,0 +1,49 @@
+{
+  "question_id": "Q233",
+  "query": "One Raffles Place is one of the tallest skyscrapers in the city of Singapore and tallest in the wolrd outside North America until it was succeeded by a Building in city?",
+  "ground_truth": "Hong Kong",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "One Raffles Place is one of the tallest skyscrapers in the city of Singapore, and it holds the title as the tallest building in the world outside North America.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "One Raffles Place: One Raffles Place, formerly Overseas Union Bank Centre or OUB Centre is one of the tallest skyscrapers in the city of Singapore.  It was the tallest together with the UOB Plaza and Republic Plaza until the construction of Tanjong Pagar Centre in 2016.  At 280 m , it was also the tallest building in the world outside North America at the time of its completion in 1986, surpassing South Korea's 63 Building completed one year earlier, until it was succeeded by the Bank of China Tower.  The building sits at the city centre of Raffles Place.",
+      "List of tallest buildings in Singapore: The city-state of Singapore has over 4,300\u00a0completed high-rises, the majority of which are located in the Downtown Core.  In the city, there are 78\u00a0skyscrapers that rise higher than 140 m .  Tanjong Pagar Centre currently holds the title of tallest building in Singapore.  It stands at 290m (951 ft), exempted from the height restriction of 280m in the Central Business District.",
+      "Republic Plaza (Singapore): Republic Plaza (Chinese: \u5171\u548c\u5927\u53a6) is one of the three tallest skyscrapers in Singapore, located at the Southern end of Raffles Place in the Downtown Core, the central business district of Singapore.  It shares the title of \"tallest building\" with the OUB Centre and UOB Plaza One.  Built at 280 metres (919 feet) tall, it was completed in 1995, and incorporates earthquake proof features despite the city being relatively far from earthquake zones."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 34,
+    "generation_speed": 261.19890296460756,
+    "prompt_eval_speed": 62626.26262626262,
+    "generation_latency_s": 0.25054629996884614,
+    "latency": 0.762327800039202,
+    "total_prompt_tokens": 637,
+    "total_generation_tokens": 98,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2497927,
+    "stage_route_s": 0.1032137000001967,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3502337000099942,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0581444000126794,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.910002462565899e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2505941999843344,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7623382000019774,
+    "unaccounted_latency_s": 0.00010359997395426035,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"One Raffles Place\" - The tallest building in Singapore, surpassing the previous record set by another building in 2019.",
+      "\"One of the Tallest Skyscrapers in the City of Singapore and Outside North America until it was succeeded by a Building\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

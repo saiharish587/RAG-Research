@@ -1,0 +1,49 @@
+{
+  "question_id": "Q130",
+  "query": "At what venue was the January 2, 2012 game featured the University of Louisville team?",
+  "ground_truth": "Mercedes-Benz Superdome",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The University of Louisville team played their home games at Gaylord Family Oklahoma Memorial Stadium in Norman, Oklahoma.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2012 Louisville Cardinals football team: The 2012 Louisville Cardinals football team represented the University of Louisville in the 2012 NCAA Division I FBS football season.  The Cardinals were led by third-year head coach Charlie Strong and played their home games at Papa John's Cardinal Stadium.  They were a member of the Big East Conference.  They finished the season 11\u20132, 5\u20132 in Big East play to finish in a four-way tie for the Big East championship.  As the highest rated of the four Big East champions in the final BCS poll, the Cardinals received the conference's automatic bid into a BCS game.  They were invited to the Sugar Bowl where they defeated Florida.",
+      "2012 Washington Huskies football team: The 2012 Washington Huskies football team represented the University of Washington in the 2012 NCAA Division I FBS football season.  The team, coached by fourth-year head coach Steve Sarkisian, was a member of the North Division of the Pac-12 Conference.  The Huskies played their home games at CenturyLink Field in Seattle due to renovations at their normal on-campus home of Husky Stadium, also in Seattle.  They finished the season 7\u20136, 5\u20134 in Pac-12 play to finish in fourth place in the North Division.  They were invited to the Maaco Bowl Las Vegas where they were defeated by Boise State.",
+      "Gaylord Family Oklahoma Memorial Stadium: Gaylord Family - Oklahoma Memorial Stadium, also known as Owen Field or The Palace on the Prairie, is the on-campus football facility on the campus of the University of Oklahoma in Norman, Oklahoma, United States, that serves as the home of the Oklahoma Sooners football team.  The official seating capacity of the stadium, following renovations in 2015, is 86,112, making it the 23rd largest stadium in the world, the 15th largest college stadium in the United States and the second largest in the Big 12 Conference, behind Darrell K Royal\u2013Texas Memorial Stadium at the University of Texas at Austin."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 553,
+    "generation_tokens": 23,
+    "generation_speed": 213.01818990108546,
+    "prompt_eval_speed": 68567.89442875319,
+    "generation_latency_s": 0.232295099995099,
+    "latency": 0.7801999000366777,
+    "total_prompt_tokens": 697,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2466433,
+    "stage_route_s": 0.11066290002781898,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.38427559996489435,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05280139995738864,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.600000102072954e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23232990002725273,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7802098999964073,
+    "unaccounted_latency_s": 9.480002336204052e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The University of Louisville (UL) hosted the January 2, 2012 game at the Louisville Stadium.",
+      "Query 2: The University of Louisville (UL) played their home game against Louisville on January 2, 2012, at the Louisville Stadium."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

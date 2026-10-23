@@ -1,0 +1,49 @@
+{
+  "question_id": "Q508",
+  "query": "Which constituent college of the University of Oxford endows four professorial fellowships for sciences including chemistry and pure mathematics?",
+  "ground_truth": "Magdalen College",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The constituent college of the University of Oxford that endows four professorial fellowships for sciences including chemistry and pure mathematics is Magdalen College.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waynflete Professorship: The Waynflete Professorships are four professorial fellowships at the University of Oxford endowed by Magdalen College and named in honour of the college founder William of Waynflete, who had a great interest in science.  These professorships are statutory professorships of the University, that is, they are professorships established in the university's regulations, and which are by those regulations attached to Magdalen College in particular.  The oldest professorship is the Waynflete Professor of Metaphysical Philosophy.  The three science professorships were created following the recommendation of the University Commission in 1857, in recognition of William of Waynflete's lifetime support of science.  The professorships are the Waynflete Professor of Chemistry, the Waynflete Professor of Physiology, and the Waynflete Professor of Pure Mathematics.",
+      "Magdalen College, Oxford: Magdalen College ( ) is one of the constituent colleges of the University of Oxford.  s of 2014 , the college had an estimated financial endowment of \u00a3180.8 million.",
+      "Doctor of Philosophy: A Doctor of Philosophy (PhD, Ph.D., or DPhil; Latin \"Philosophiae Doctor \") is the highest academic degree awarded by universities in most countries.  Ph.D.s are awarded for programs across the whole breadth of academic fields.  The completion of a Ph.D. is often a requirement for employment as a university professor, researcher, or scientist in many fields.  Individuals who have earned a Doctor of Philosophy degree may, in most jurisdictions, use the title of \"Doctor\" (often abbreviated \"Dr\") or, in non-English speaking countries, variants such as \"Dr. phil.\"  with their name, and may use post-nominal letters such as \"Ph.D.\", \"PhD\" or \"DPhil\" (depending on the awarding institute)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 474,
+    "generation_tokens": 29,
+    "generation_speed": 233.1433349144203,
+    "prompt_eval_speed": 15110.941086457537,
+    "generation_latency_s": 0.26867810008116066,
+    "latency": 0.6077796999597922,
+    "total_prompt_tokens": 620,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2310677,
+    "stage_route_s": 0.11428820004221052,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17076070001348853,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053879100014455616,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7399971410632133e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2687102999771014,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6077891000313684,
+    "unaccounted_latency_s": 9.390001650899649e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"University of Oxford\"",
+      "\"Professor's Fellowships\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q75",
+  "query": "Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?",
+  "ground_truth": "William Jefferson Clinton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Robert Suetter was the national intelligence officer under which former Governor of Arkansas Bill Clinton.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Robert Suettinger: Robert Suettinger was United States President Bill Clinton's national intelligence officer for East Asia at the National Intelligence Council (NIC) from 1997-1998.  While there, Suettinger oversaw the preparation of national intelligence estimates for the director of the Central Intelligence Agency.  His areas of specialty included the People's Republic of China and the North Korean nuclear weapons program.  After working in the Clinton administration, Suettinger has been a senior analyst for the Brookings Institution where he wrote the book \"Beyond Tiananmen \u2013 The Politics of U.S.-China Relations, 1989-2000\".  He also is a senior advisor at The Stimson Center.",
+      "Bill Clinton: William Jefferson Clinton (born William Jefferson Blythe III; August 19, 1946) is an American politician who served as the 42nd President of the United States from 1993 to 2001.  Prior to the presidency, he was the Governor of Arkansas during two separate terms, from 1979 to 1981, and again from 1983 to 1992.  Before that, he served as Arkansas attorney general, from 1977 to 1979.  A member of the Democratic Party, Clinton was ideologically a New Democrat and many of his policies reflected a centrist \"Third Way\" political philosophy.",
+      "Mike Huckabee: Michael Dale Huckabee (born August 24, 1955) is an American politician, Christian minister, author, and commentator who served as the 44th governor of Arkansas from 1996 to 2007.  He was a candidate in the United States Republican presidential primaries in both 2008 and 2016.  He won the 2008 Iowa Republican caucuses and finished second in delegate count and third in both popular vote and number of states won, behind John McCain and Mitt Romney."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 514,
+    "generation_tokens": 19,
+    "generation_speed": 203.86484833528255,
+    "prompt_eval_speed": 14394.130331289032,
+    "generation_latency_s": 0.23684270004741848,
+    "latency": 0.5645228000357747,
+    "total_prompt_tokens": 646,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2251804,
+    "stage_route_s": 0.10278279997874051,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17080080008599907,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05390920001082122,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.089999806135893e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2368824000004679,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5645352000137791,
+    "unaccounted_latency_s": 0.00011209992226213217,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Robert Suetter\"",
+      "\"Governor of Arkansas\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

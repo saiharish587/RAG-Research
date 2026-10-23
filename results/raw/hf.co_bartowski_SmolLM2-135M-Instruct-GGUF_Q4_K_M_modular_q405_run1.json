@@ -1,0 +1,48 @@
+{
+  "question_id": "Q405",
+  "query": "The Jeep Cherokee was originally sold as a variant of a Jeep model produced during what years?",
+  "ground_truth": "1963 to 1991",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Jeep Cherokee was originally sold as a variant of a Jeep model produced during 1974 through 1983 by Jeep.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jeep Cherokee: The Jeep Cherokee is a line of vehicles sold by Jeep under various vehicle classes.  Originally sold as a variant of the popular Jeep Wagoneer, the Cherokee has evolved from a full-size SUV to one of the first compact SUVs and eventually into its current incarnation as a crossover SUV.  The nameplate has been in continuous use in some form since 1974 and also spawned Jeep's most successful vehicle, the Jeep Grand Cherokee, which was originally slated to be part of the Cherokee's lineup.  The vehicle is named after the Cherokee tribe of Native Americans.",
+      "Jeep Cherokee (SJ): The SJ series Jeep Cherokee is a full-size SUV that was produced from 1974 through 1983 by Jeep.  It was based on the Wagoneer that was originally designed by Brooks Stevens in 1963.",
+      "Jeep Cherokee (XJ): The Jeep Cherokee (XJ) is a sport utility vehicle that was manufactured and marketed by Jeep from 1983 to 2001.  Sharing the name of the original full-size SJ model, but without a traditional body-on-frame chassis, the XJ instead featured a light-weight unibody design, The models were originally marketed as Sportwagons and became the precursor to the modern sport utility vehicle (SUV) as that term was not yet in use."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 384,
+    "generation_tokens": 33,
+    "generation_speed": 370.5408773958836,
+    "prompt_eval_speed": 23715.415019762844,
+    "generation_latency_s": 0.2156724000815302,
+    "latency": 0.6043589001055807,
+    "total_prompt_tokens": 524,
+    "total_generation_tokens": 101,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2259719,
+    "stage_route_s": 0.15957969997543842,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19332439999561757,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.035624300013296306,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.9199949242174625e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21571270003914833,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6043696000706404,
+    "unaccounted_latency_s": 9.010010398924351e-05,
+    "route": "rag",
+    "router_raw": "The Jeep Cherokee is currently owned by several companies, including Ford Motor Company, Chevrolet Corporation, and General Motors.",
+    "sub_queries": [
+      "The Jeep Cherokee was originally sold as a variant of a Jeep model produced during 1970s and 80s, which is why the queries are separated by a newline."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

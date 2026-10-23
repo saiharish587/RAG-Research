@@ -1,0 +1,48 @@
+{
+  "question_id": "Q475",
+  "query": "Where was the telefilm shot that was based on the 1977 Katherine Paterson book?",
+  "ground_truth": "Edmonton, Alberta",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The telefilm shot that was based on the 1977 Katherine Paterson book is a documentary film directed by Chantal Akerman, which was filmed in New York City. The film consists of long takes of locations in New York City, set to Akerman's voice-over as she reads letters her mother sent her between 1971 and 1973, when the director lived in the city.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bridge to Terabithia (novel): Bridge to Terabithia is a work of children's literature about two lonely children who create a magical forest kingdom.  It was written by Katherine Paterson and was published in 1977 by Thomas Crowell.  In 1978, it won the Newbery Medal.  Paterson drew inspiration for the novel from a real event that occurred in August 1974 when a friend of her son was struck by lightning.",
+      "The Master Puppeteer: The Master Puppeteer (1975) is a historical novel for children by Katherine Paterson.  It won the 1977 U.S. National Book Award in category Children\u2019s Literature.",
+      "News from Home: News from Home is a 1977 avant-garde documentary film directed by Chantal Akerman.  The film consists of long takes of locations in New York City, set to Akerman's voice-over as she reads letters her mother sent her between 1971 and 1973, when the director lived in the city."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 314,
+    "generation_tokens": 89,
+    "generation_speed": 364.7705429343126,
+    "prompt_eval_speed": 20319.679026726204,
+    "generation_latency_s": 0.36857189994771034,
+    "latency": 0.8990056999027729,
+    "total_prompt_tokens": 456,
+    "total_generation_tokens": 213,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23874829999999997,
+    "stage_route_s": 0.23462479992303997,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25604270002804697,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03959749999921769,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.10999234393239e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.36860589997377247,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.899015299975872,
+    "unaccounted_latency_s": 9.400013368576765e-05,
+    "route": "rag",
+    "router_raw": "The user is asking about whether the telefilm shot filmed in 1977 by Katherine Paterson's 1977 Katherine Paterson book. The requested information requires retrieval from internal files/documents, which are stored on a computer system or other digital storage device.",
+    "sub_queries": [
+      "The telefilm shot for the 1977 Katherine Paterson book is located at the Library of Congress, which houses a vast collection of rare and valuable books. The film was shot in the 1960s and 1970s, with the original script being written by Katherine Paterson herself."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

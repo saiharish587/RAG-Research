@@ -1,0 +1,48 @@
+{
+  "question_id": "Q542",
+  "query": "What job did J\u00f6rgen Smit work, where he was working in the world center for the anthroposophical movement?",
+  "ground_truth": "member of the Executive Council of the General Anthroposophical Society",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "J\u00f6rgen Smit worked as a general secretary of the Norwegian Anthroposophical Society (SAO) and co-founder of the Rudolf Steiner Seminar in J\u00e4rna. He also participated in the Waldorfschool Movement, which was an educational initiative aimed at promoting understanding of the human condition through education and research.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "J\u00f6rgen Smit: J\u00f6rgen Smit (July 21, 1916 in Bergen \u2013 May 10, 1991 in Arlesheim) was a Norwegian teacher, teachers teacher, speaker and writer, mainly in the context of the Anthroposophical Society and the Waldorfschool Movement.  He was the general secretary of the Norwegian Anthroposophical Society, co-founder of the Rudolf Steiner Seminar in J\u00e4rna, Sweden and member of the Executive Council of the General Anthroposophical Society at the Goetheanum in Dornach, Switzerland.",
+      "Goetheanum: The Goetheanum, located in Dornach (near Basel), Switzerland, is the world center for the anthroposophical movement.  The building was designed by Rudolf Steiner and named after Johann Wolfgang von Goethe.  It includes two performance halls (1500 seats), gallery and lecture spaces, a library, a bookstore, and administrative spaces for the Anthroposophical Society; neighboring buildings house the Society's research and educational facilities.  Conferences focusing on themes of general interest or directed toward teachers, farmers, doctors, therapists, and other professionals are held at the center throughout the year.",
+      "World Transformation Movement: The World Transformation Movement is a non-profit organisation based in Sydney dedicated to developing and promoting understanding of the human condition.  The organisation was founded in 1983 by the Australian biologist Jeremy Griffith, known for his long search for the Tasmanian Tiger or thylacine in the late 1960s and early 1970s and his many books on the subject of the human condition."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 428,
+    "generation_tokens": 67,
+    "generation_speed": 275.7973424662045,
+    "prompt_eval_speed": 50093.6329588015,
+    "generation_latency_s": 0.3680357000557706,
+    "latency": 0.7651768999639899,
+    "total_prompt_tokens": 580,
+    "total_generation_tokens": 130,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23029539999999998,
+    "stage_route_s": 0.1754551000194624,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18396669998764992,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03753760003019124,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.199997056275606e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3680758998962119,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7651884999359027,
+    "unaccounted_latency_s": 0.00011190003715455532,
+    "route": "rag",
+    "router_raw": "J\u00f6rgen Smit worked as a member of the World Center for the Anthroposophical Movement (WCMM) and was employed by the organization.",
+    "sub_queries": [
+      "J\u00f6rgen Smit worked as an assistant to the World Center for the Anthroposophical Movement (WCMM) in Stockholm Sweden."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

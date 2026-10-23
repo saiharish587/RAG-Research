@@ -1,0 +1,49 @@
+{
+  "question_id": "Q565",
+  "query": "Who is the author of the 1993 production Madge Ryan participated in?",
+  "ground_truth": "Euripides",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The author of the 1993 production \"Madge Ryan\" was Nora Ephron, who directed and co-written the film with Jeff Arch.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Madge Ryan: Madge Ryan (8 January 1919 \u2013 9 January 1994) was an Australian actress, known for her stage roles in the United Kingdom, including London productions of \"Entertaining Mr Sloane\" (1964), \"Philadelphia, Here I Come\" (1967), and \"Medea\" (1993).  She also starred in the Broadway production of \"Summer of the Seventeenth Doll\" (1958).  Her film appearances included \"Summer Holiday\" (1963), \"A Clockwork Orange\" (1971), \"Frenzy\" (1972), and \"Who Is Killing the Great Chefs of Europe? \" (1978).",
+      "Sleepless in Seattle: Sleepless in Seattle is a 1993 American romantic comedy-drama film directed and co-written by Nora Ephron, based on a story by Jeff Arch.  It stars Tom Hanks and Meg Ryan, alongside a supporting cast featuring Bill Pullman, Ross Malinger, Rob Reiner, Rosie O'Donnell, Gaby Hoffmann, Victor Garber, and Rita Wilson.  The film was a critical and commercial success, grossing over $220 million worldwide.",
+      "Naked (1993 film): Naked is a 1993 British black comedy-drama film written and directed by Mike Leigh and starring David Thewlis as Johnny, a motor-mouthed intellectual and conspiracy theorist.  Stark and brutal in tone, \"Naked\" was a departure for Leigh, whose previous works were known for their subtle comedic dissections of middle-class and working-class manners.  Leigh's \"Naked\" screenplay relied heavily on lengthy improvisation during rehearsals, but little actual ad-libbing was filmed.  Critically acclaimed, the film won a number of awards, including best director and best actor at Cannes.  \"Naked\" marked a new career high for Leigh as a director and made the then-unknown Thewlis an internationally recognized star."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 530,
+    "generation_tokens": 34,
+    "generation_speed": 232.05815104255535,
+    "prompt_eval_speed": 24683.3084947839,
+    "generation_latency_s": 0.2874079999746755,
+    "latency": 0.7421831999672577,
+    "total_prompt_tokens": 666,
+    "total_generation_tokens": 88,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.236807,
+    "stage_route_s": 0.10777000000234693,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.29210930003318936,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05471749999560416,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.279993638396263e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2874397000996396,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7421925999224186,
+    "unaccounted_latency_s": 0.00010399986058473587,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The author of the 1993 production Madge Ryan participated in was John Huston.",
+      "Query 2: Madge Ryan's first starring role was in the 1993 film \"Madge Ryan.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q269",
+  "query": "What is the population according to the 2007 population census of the city in which the National Archives and Library of Ethiopia is located?",
+  "ground_truth": "3,384,569",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The population according to the 2007 population census of the city in which the National Archives and Library of Ethiopia is located is approximately 3,384,569.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Addis Ababa: Addis Ababa (Amharic: \u12a0\u12f2\u1235 \u12a0\u1260\u1263 \"Addis Ab\u00e4ba \" ] , \"new flower\"; Oromo: \"Finfinne\" , ] \"Natural Spring(s)\") or Addis Abeba (the spelling used by the official Ethiopian Mapping Authority), is the capital and largest city of Ethiopia.  It has a population of 3,384,569 according to the 2007 population census, with annual growth rate of 3.8%.  This number has been increased from the originally published 2,738,248 figure and appears to be still largely underestimated.",
+      "National Archives and Library of Ethiopia: The National Archives and Library of Ethiopia, located in Addis Ababa, is the national library and archives of the country.  The library was inaugurated in 1944 by Emperor Haile Selassie and began service with books donated by the emperor.",
+      "Outline of Ethiopia: Ethiopia is a landlocked sovereign country located in the Horn of Africa.  Ethiopia is bordered by Eritrea to the north, Sudan to the west, South Sudan to the south-west, Kenya to the south, Somalia to the east and Djibouti to the north-east.  Ethiopia is one of the oldest countries in the world and Africa's second-most populous nation.  Ethiopia has yielded some of humanity's oldest traces, making the area important in the history of human evolution.  Recent studies claim that the vicinity of present-day Addis Ababa was the point from which human beings migrated around the world.  Ethiopian dynastic history traditionally began with the reign of Emperor Menelik I in 1000 BC.  The roots of the Ethiopian state are similarly deep, dating with unbroken continuity to at least the Aksumite Empire (which adopted the name \"Ethiopia\" in the 4th century) and its predecessor state, D`mt (with early 1st millennium BC roots).  After a period of decentralized power in the 18th and early 19th centuries known as the Zemene Mesafint (\"Era of the Judges/Princes\"), the country was reunited in 1855 by Kassa Hailu, who became Emperor Tewodros II, beginning Ethiopia's modern history."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 590,
+    "generation_tokens": 40,
+    "generation_speed": 363.7190270516026,
+    "prompt_eval_speed": 72374.88620889182,
+    "generation_latency_s": 0.23027039994485676,
+    "latency": 0.6756434000562876,
+    "total_prompt_tokens": 748,
+    "total_generation_tokens": 124,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2280877,
+    "stage_route_s": 0.16756420000456274,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22272960003465414,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05488269997294992,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0600036047399044e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23031540005467832,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6756527000106871,
+    "unaccounted_latency_s": 0.00011079991236329079,
+    "route": "rag",
+    "router_raw": "The population according to the 2007 population census of the city in which the National Archives and Library of Ethiopia is located.",
+    "sub_queries": [
+      "The population according to the 2007 population census of the city in which the National Archives and Library of Ethiopia is located.",
+      "Question: What are the top three most popular tourist attractions in the city of Addis Ababa, Ethiopia?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

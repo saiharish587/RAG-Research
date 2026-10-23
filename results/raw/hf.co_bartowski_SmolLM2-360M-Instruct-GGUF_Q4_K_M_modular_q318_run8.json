@@ -1,0 +1,49 @@
+{
+  "question_id": "Q318",
+  "query": "What Kentucky county has a population of 60,316 and features the Lake Louisvilla neighborhood?",
+  "ground_truth": "Oldham County",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Lexington-Fayette County",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lexington, Kentucky: Lexington, consolidated with Fayette County and often denoted as Lexington-Fayette, is the second-largest city in Kentucky and the 60th-largest city in the United States.  Known as the \"Horse Capital of the World,\" it is the heart of the state's Bluegrass region.  With a mayor-alderman form of government, it is one of two cities in Kentucky designated by the state as first-class; the other is the state's largest city of Louisville.  In the 2016 U.S. Census Estimate, the city's population was 318,449, anchoring a metropolitan area of 506,751 people and a combined statistical area of 723,849 people.  Due to constant increases in population, Lexington suffers the worst traffic congestion in Kentucky, because two interstates bypass the city to the north and east, resulting in a lack of freeways (besides partial freeway New Circle Road) going through the most populated areas of the city.",
+      "Poplar Hills, Kentucky: Poplar Hills is a home rule-class city in Jefferson County, Kentucky, United States.  A part of the Louisville Metro government, it is Kentucky's only city with a majority African-American population.  The population was 396 at the 2000 census.  It currently has the highest population density for any city in Kentucky, and is the only Kentucky city that is on the highest population densities of American cities list.  It currently ranks 19th on the list, and has the second-lowest population for any city on that list.  It is tied with Mobile City, Texas as the smallest city by total area on the list.",
+      "Bowman Field (airport): Bowman Field (IATA: LOU,\u00a0ICAO: KLOU,\u00a0FAA LID: LOU) is a public airport five miles (8\u00a0km) southeast of downtown Louisville, in Jefferson County, Kentucky, United States.  The airport covers 426\u00a0acres\u00a0(1.7\u00a0km\u00b2) and has two runways.  The FAA calls it a reliever airport for nearby Louisville International Airport."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 553,
+    "generation_tokens": 7,
+    "generation_speed": 227.5386815758679,
+    "prompt_eval_speed": 63091.84255561894,
+    "generation_latency_s": 0.15777159994468093,
+    "latency": 0.48433489992748946,
+    "total_prompt_tokens": 699,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23705700000000002,
+    "stage_route_s": 0.1114453999325633,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16032310004811734,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05461960006505251,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.170004442334175e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15781240002252162,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4843477999093011,
+    "unaccounted_latency_s": 9.609980043023825e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Louisville, Kentucky",
+      "Query 2: Lexington-Fayette, Kentucky"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

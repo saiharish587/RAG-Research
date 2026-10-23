@@ -1,0 +1,42 @@
+{
+  "question_id": "Q397",
+  "query": "\"Kapit\u00e4n zur See\" Ernst Lindemann was the commander of which one of two battleships built for Nazi Germany's \"Kriegsmarine\"?",
+  "ground_truth": "Bismarck",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The answer is \"Bismarck\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernst Lindemann: Otto Ernst Lindemann (28 March 1894 \u2013 27 May 1941) was a German \"Kapit\u00e4n zur See\" (naval captain).  He was the only commander of the battleship \"Bismarck\" during its eight months of service in World War II.",
+      "Ernst Heinrich Lindemann: Ernst Heinrich Lindemann (25 January 1833 in Kirchlengern \u2013 8 May 1900 in D\u00fcsseldorf) was German politician and mayor of Essen, Dortmund and D\u00fcsseldorf.  His grandson \"Kapit\u00e4n zur See\" Ernst Lindemann was the commander of the battleship \"Bismarck\".",
+      "German battleship Bismarck: Bismarck was the first of two \"Bismarck\"-class battleship s built for Nazi Germany's \"Kriegsmarine\".  Named after Chancellor Otto von Bismarck, the primary force behind the unification of Germany in 1871, the ship was laid down at the Blohm & Voss shipyard in Hamburg in July 1936 and launched in February 1939.  Work was completed in August 1940, when she was commissioned into the German fleet.  \"Bismarck\" and her sister ship \"Tirpitz\" were the largest battleships ever built by Germany, and two of the largest built by any European power."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 406,
+    "generation_tokens": 9,
+    "generation_speed": 440.9171075837743,
+    "prompt_eval_speed": 54162.21985058698,
+    "generation_latency_s": 0.10543380002491176,
+    "latency": 0.6937772000674158,
+    "total_prompt_tokens": 501,
+    "total_generation_tokens": 96,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1376789,
+    "stage_rewrite_s": 0.30155370000284165,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08741790009662509,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19924190000165254,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10547309997491539,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6937873000279069,
+    "unaccounted_latency_s": 0.00010119995567947626,
+    "rewritten_query": "The Kriegsmarine, a German military vessel that participated in World War II.\n\nI removed the introductory text to make the query more concise and focused on the optimized search-friendly rephrased version of the original query. The result is now \"Kapit\u00e4n zur See\" Ernst Lindemann was the commander of which one of two battleships built for Nazi Germany's Krieghimarine?",
+    "query_was_rewritten": true
+  }
+}

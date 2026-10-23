@@ -1,0 +1,48 @@
+{
+  "question_id": "Q386",
+  "query": "Curt Menefee is the host of the Fox network's NFL show with co-host Michael Anthony Strahan who spent his entire 15-year career with what team?",
+  "ground_truth": "New York Giants",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Curt Menefee is the host of the Fox network's NFL show \"Fox NFL Sunday\" with co-host Jimmy Johnson, Terry Bradshaw, Howie Long, and Michael Strahan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Curt Menefee: Curt Menefee (born July 22, 1965) is an American sportscaster who is the host of the Fox network's NFL show \"Fox NFL Sunday\".  His co-hosts are Jimmy Johnson, Terry Bradshaw, Howie Long, and Michael Strahan.",
+      "Michael Strahan: Michael Anthony Strahan ( ; born November 21, 1971) is a media personality and former American football defensive end who spent his entire 15-year career with the New York Giants of the National Football League (NFL).  Strahan set a record for the most sacks in a season in 2001, and helped the Giants win Super Bowl XLII over the New England Patriots in his final season in 2007.  After retiring from the NFL, Strahan became a media personality.  He is currently a football analyst on \"Fox NFL Sunday\", and has also served as co-host on the syndicated morning talk show \"Live!  with Kelly and Michael\" with co-host Kelly Ripa from 2012 to 2016, where he was a two-time Daytime Emmy Award winner.  In 2014, he became a regular contributor on the ABC morning television show \"Good Morning America\", and in 2016 the network announced that Strahan would be leaving \"Live!\"  to join \"GMA\" on a full-time basis.  He starred in and produced the short-lived Fox sitcom \"Brothers\" and appeared as host for \"Pros vs. Joes\" alongside fellow Fox football analyst Jay Glazer.  On February 1, 2014, he was elected to the Pro Football Hall of Fame.  As of 2016, he is the host of the ABC game show \"The $100,000 Pyramid\".",
+      "Kurt Warner: Kurtis Eugene Warner (born June 22, 1971) is a former American football quarterback, a current part-time TV football analyst, and a philanthropist.  He played for three National Football League (NFL) teams: the St. Louis Rams, the New York Giants, and the Arizona Cardinals.  He was originally signed by the Green Bay Packers as an undrafted free agent in 1994 after playing college football at Northern Iowa.  Warner went on to be considered the best undrafted NFL player of all time, following a 12-year career regarded as one of the greatest stories in NFL history.  Warner was inducted into the Pro Football Hall of Fame in 2017, and is the only person inducted into both the Pro Football Hall of Fame and the Arena Football Hall of Fame."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 693,
+    "generation_tokens": 43,
+    "generation_speed": 233.11539754307213,
+    "prompt_eval_speed": 90163.9344262295,
+    "generation_latency_s": 0.30841360008344054,
+    "latency": 0.6164961999747902,
+    "total_prompt_tokens": 865,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22423939999999998,
+    "stage_route_s": 0.10386490006931126,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1678464999422431,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036191599909216166,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9299909733235836e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3084456999786198,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6165053000440821,
+    "unaccounted_latency_s": 0.00010780023876577616,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Curt Menefee hosts the Fox network's NFL show with co-host Michael Anthony Strahan.*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

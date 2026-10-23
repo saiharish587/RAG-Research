@@ -1,0 +1,42 @@
+{
+  "question_id": "Q499",
+  "query": "Walt Zeboski photographed which 40th President during his campaign in 1980?",
+  "ground_truth": "Ronald Wilson Reagan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Walt Zeboski photographed Ronald Reagan during his 1980 presidential campaign.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Walt Zeboski: Walt Zeboski (died 12 November 2012), was an American photographer and photojournalist for the Associated Press for more than thirty years.  Zeboski extensively photographed Ronald Reagan during his 1980 presidential campaign, snapping some of the most iconic pictures of Reagan's campaign.  Zeboski, who often focused on California politics, covered the political terms of four consecutive Governors of California from the 1960s to the 1980s - Pat Brown, Ronald Reagan, Jerry Brown and George Deukmejian.",
+      "Ronald Reagan: Ronald Wilson Reagan ( ; February 6, 1911 \u2013 June 5, 2004) was an American statesman and actor who served as the 40th President of the United States from 1981 to 1989.  Before his presidency, he was the 33rd Governor of California, from 1967 to 1975, after a career as a Hollywood actor and union leader.",
+      "Presidency of Ronald Reagan: The presidency of Ronald Reagan began on January 20, 1981, when Ronald Reagan was inaugurated as President of the United States, and ended on January 20, 1989.  Reagan, a Republican, took office as the 40th United States president following a landslide win over Democratic incumbent President Jimmy Carter in the 1980 presidential election.  Reagan was succeeded by his vice president, George H. W. Bush, who won the 1988 presidential election with Reagan's support."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 20,
+    "generation_speed": 265.8690594882021,
+    "prompt_eval_speed": 57937.89487834386,
+    "generation_latency_s": 0.9600144000723958,
+    "latency": 3.3645436000078917,
+    "total_prompt_tokens": 513,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1248956,
+    "stage_rewrite_s": 1.2006267999531701,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.049253800068982,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1545382000040263,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9600468000862747,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.364552400074899,
+    "unaccounted_latency_s": 8.729996625334024e-05,
+    "rewritten_query": "Walt Zeboski's campaign photograph from 1980 was of Ronald Reagan.",
+    "query_was_rewritten": true
+  }
+}

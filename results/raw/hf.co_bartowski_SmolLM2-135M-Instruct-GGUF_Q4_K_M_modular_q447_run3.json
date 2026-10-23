@@ -1,0 +1,48 @@
+{
+  "question_id": "Q447",
+  "query": "What television thriller anthology did the winner of one Golden Globe, two tony Awards and six Primetime Emmy Awards appear on?",
+  "ground_truth": "Darkroom",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The winner of one Golden Globe, two Golden Globe Awards, and six Primetime Emmy Awards appears on the \"Forbes\" magazine's most bankable stars.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Al Pacino: Alfredo James Pacino ( ; born April 25, 1940) is an American actor of stage and screen, filmmaker, and screenwriter.  Pacino has had a career spanning over five decades, during which time he has received numerous accolades and honors both competitive and honorary, among them an Academy Award, two Tony Awards, two Primetime Emmy Awards, a British Academy Film Award, four Golden Globe Awards, the Lifetime Achievement Award from the American Film Institute, the Golden Globe Cecil B. DeMille Award, and the National Medal of Arts.  He is also one of few performers to have won a competitive Oscar, an Emmy and a Tony Award for acting, dubbed the \"Triple Crown of Acting\".",
+      "Matt Damon: Matthew Paige Damon ( ; born October 8, 1970) is an American actor, film producer, philanthropist and screenwriter.  He is ranked among \"Forbes\" magazine's most bankable stars and is one of the highest-grossing actors of all time.  Damon has received various accolades, including an Academy Award from five nominations, two Golden Globe Awards from eight nominations, and has been nominated for two British Academy Film Awards and six Emmy Awards.",
+      "Michael Douglas: Michael Kirk Douglas (born September 25, 1944) is an American actor and producer.  Douglas's career includes a diverse range of films in independent and blockbuster genres, for which he has received a number of accolades, both competitive and honorary.  These awards include the Golden Globe Cecil B. DeMille Award for \"outstanding contributions to the world of entertainment\" and the AFI Life Achievement Award, which \"honor[s] an individual whose career in motion pictures or television has greatly contributed to the enrichment of American culture\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 475,
+    "generation_tokens": 34,
+    "generation_speed": 372.35382374522237,
+    "prompt_eval_speed": 74056.75085749921,
+    "generation_latency_s": 0.2110246999654919,
+    "latency": 0.573219999903813,
+    "total_prompt_tokens": 629,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2420643,
+    "stage_route_s": 0.16223470005206764,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16365339991170913,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03614570002537221,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2899977415800095e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21106340002734214,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5732305999845266,
+    "unaccounted_latency_s": 9.109999518841505e-05,
+    "route": "rag",
+    "router_raw": "The winner of one Golden Globe, two Tony Awards, six Primetime Empyrty Emmys, and three Golden Globes.",
+    "sub_queries": [
+      "The winner of one Golden Globe, two Tony Awards, six Primetime Emmys, and three Grammy awards is a TV thriller anthology."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

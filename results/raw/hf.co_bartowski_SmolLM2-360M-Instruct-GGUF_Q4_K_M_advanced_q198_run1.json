@@ -1,0 +1,42 @@
+{
+  "question_id": "Q198",
+  "query": " Robert Smith founded the multinational company headquartered in what city?",
+  "ground_truth": "Golden Valley, Minnesota,",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Robert Smith founded General Mills in 1856.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marks &amp; Spencer: Marks and Spencer plc (also known as M&S) is a major British multinational retailer headquartered in the City of Westminster, London.  It is listed on the London Stock Exchange and is a constituent of the FTSE 100 Index.",
+      "Robert Smith (Illinois politician): Robert Smith (June 12, 1802 \u2013 December 21, 1867) was a U.S. Representative from Illinois, nephew of Jeremiah Smith and Samuel Smith of New Hampshire.  Smith founded General Mills in 1856.",
+      "The London Taxi Company: London Electric Vehicle Company Ltd., formerly The London Taxi Corporation Ltd trading as The London Taxi Company; formerly part of Manganese Bronze Holdings plc is an automotive engineering company headquartered in Coventry, United Kingdom, and a wholly owned subsidiary of Chinese automaker Geely.  It was founded in 1899 and its principal activity is the design, development and production of taxicabs. With the launch of the new TX electric taxi in 2017, the company changed its name to London Electric Vehicle Company Ltd. and announced its intentions to begin production of electric commercial vehicles in addition to the taxi cabs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 334,
+    "generation_tokens": 13,
+    "generation_speed": 247.67565919829295,
+    "prompt_eval_speed": 13702.564102564102,
+    "generation_latency_s": 0.9425522000528872,
+    "latency": 3.4184822000097483,
+    "total_prompt_tokens": 407,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1226749,
+    "stage_rewrite_s": 1.1744441000046209,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1422945000231266,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15907239995431155,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9425867999671027,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4184911000775173,
+    "unaccounted_latency_s": 9.370013140141964e-05,
+    "rewritten_query": "The company was founded by Robert Smith in London, United Kingdom.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q105",
+  "query": "Since 2 June 2017, The Leader of Fine Gael had been held by which Irish Fine Gael politician who has served as Taoiseach and Minister for Defence?",
+  "ground_truth": "Leo Varadkar",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Since 2 June 2017, the leader of Fine Gael had been held by Leo Varadkar.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Leader of Fine Gael: The Leader of Fine Gael is the most senior politician within the Fine Gael political party in Ireland.  Since 2 June 2017, the office had been held by Leo Varadkar following the resignation of Enda Kenny.",
+      "Enda Kenny: Enda Patrick Kenny (born 24 April 1951) is an Irish Fine Gael politician who served as Taoiseach from 2011 to 2017, Leader of Fine Gael from 2002 to 2017, Minister for Defence from May 2014 to July 2014 and 2016 to 2017, Leader of the Opposition from 2002 to 2011, Minister for Tourism and Trade from 1994 to 1997 and Minister of State for Youth Affairs from 1986 to 1987.  He has been a Teachta D\u00e1la (TD) since 1975, currently for the Mayo constituency.",
+      "James Reilly (Irish politician): James Reilly (born 16 August 1955) is an Irish Fine Gael politician and medical doctor.  Between the February 2016 general election and the 6 May 2016 formation of a new government, he was the Acting Minister for Children and Youth Affairs, having held that ministry since July 2014 in the previous government, and was also deputy leader of Fine Gael from 2010 to 2017.  He was the Minister for Health from March 2011 to July 2014.  Reilly was a Teachta D\u00e1la (TD) for the Dublin North constituency since the 2007 general election until he lost his seat in the 2016 general election.  Reilly was nominated by Taoiseach Enda Kenny to Seanad \u00c9ireann in May 2016.  James Reilly was re-appointed as deputy leader of Fine Gael on 4 July 2016."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 551,
+    "generation_tokens": 25,
+    "generation_speed": 259.3683861061543,
+    "prompt_eval_speed": 75531.18574366004,
+    "generation_latency_s": 1.031926600029692,
+    "latency": 3.379947300069034,
+    "total_prompt_tokens": 647,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1265714,
+    "stage_rewrite_s": 1.2174971998902038,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0159761999966577,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1144203000003472,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0319680999964476,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3799575000302866,
+    "unaccounted_latency_s": 9.640015196055174e-05,
+    "rewritten_query": "The leader of Fine Gael was held by Fionn\u00e1in \u00d3 h\u00cdr\u00faa.",
+    "query_was_rewritten": true
+  }
+}

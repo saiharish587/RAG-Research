@@ -1,0 +1,42 @@
+{
+  "question_id": "Q10",
+  "query": "Are Local H and For Against both from the United States?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, Local H is an American rock band originally formed by Scott Lucas, Matt Garcia, Joe Daniels, and John Sparkman in Zion, Illinois in 1987. The members all met in high school in 1987 and founded Local H three years later.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Local H: Local H is an American rock band originally formed by guitarist and vocalist Scott Lucas, bassist Matt Garcia, drummer Joe Daniels, and lead guitarist John Sparkman in Zion, Illinois in 1987.  The members all met in high school in 1987 and founded Local H three years later.",
+      "Hallelujah! I'm a Bum (album): Hallelujah!  I'm A Bum is the seventh studio album by Chicago-based rock band Local H.  Interviews with the band have revealed that it is a concept album based on politics in the United States.  Although the album was completed in spring of 2012, the band chose to release it in September as to be closer to the 2012 presidential election.  The album makes frequent use of the sounds of the El Train in Chicago to transition songs.",
+      "For Against: For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.  Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from its 1984 inception to the present."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 313,
+    "generation_tokens": 59,
+    "generation_speed": 240.23290376432743,
+    "prompt_eval_speed": 42211.73297370195,
+    "generation_latency_s": 1.1862917999969795,
+    "latency": 3.551490499987267,
+    "total_prompt_tokens": 385,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1344145,
+    "stage_rewrite_s": 1.1790364000480622,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0925958999432623,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09344309999141842,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.1863327999599278,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.5515019999584183,
+    "unaccounted_latency_s": 9.440002031624317e-05,
+    "rewritten_query": "Are local h and for against both from the united states?",
+    "query_was_rewritten": true
+  }
+}

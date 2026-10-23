@@ -1,0 +1,42 @@
+{
+  "question_id": "Q88",
+  "query": "Where are Teide National Park and Garajonay National Park located?",
+  "ground_truth": "Canary Islands, Spain",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Teide National Park is located in the center and north of La Gomera, one of the Canary Islands (Spain).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Teide National Park: Teide National Park (Spanish: \"Parque nacional del Teide\" , ] ) is a national park located in Tenerife (Canary Islands, Spain).",
+      "Tenerife: Tenerife ( ; ] ) is the largest and most populated island of the seven Canary Islands.  It is also the most populated island of Spain, with a land area of 2034.38 km2 and 898,680 inhabitants, 43 percent of the total population of the Canary Islands.  Tenerife is the largest and most populous island of Macaronesia.",
+      "Garajonay National Park: Garajonay National Park (Spanish: \"Parque nacional de Garajonay\" , ] ) is located in the center and north of the island of La Gomera, one of the Canary Islands (Spain).  It was declared a national park in 1981 and a World Heritage Site by UNESCO in 1986.  It occupies 40 km (15 sq mi) and it extends into each of the six municipalities on the island."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 312,
+    "generation_tokens": 25,
+    "generation_speed": 363.8586481923502,
+    "prompt_eval_speed": 20752.959957429826,
+    "generation_latency_s": 0.1551331999944523,
+    "latency": 0.5462960000149906,
+    "total_prompt_tokens": 387,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1476826,
+    "stage_rewrite_s": 0.20002920005936176,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08061900001484901,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11037370003759861,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15518660005182028,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.546310200006701,
+    "unaccounted_latency_s": 0.00010239984840154648,
+    "rewritten_query": "The location of Teide National Park is in the Pacific Ocean, while Garajonay National Park is located on the island of Tenerife in the Canary Islands.",
+    "query_was_rewritten": true
+  }
+}

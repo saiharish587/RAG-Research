@@ -1,0 +1,48 @@
+{
+  "question_id": "Q355",
+  "query": "Were Thomas H. Ince and Joseph McGrath of the same nationality?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, John Ince is not from Scotland but was born in Glasgow, Scotland.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thomas H. Ince: Thomas Harper Ince (November 16, 1880 \u2013 November 19, 1924) was an American silent film producer, director, screenwriter, and actor.",
+      "Joseph McGrath (film director): Joseph McGrath (born 1930, Glasgow) is a Scottish film and television director and screenwriter.  He studied at Glasgow School of Art in the late 1940s/early 1950s where his energy and talent was much admired by his contemporaries.",
+      "John Ince (actor): John Ince, also known as John E. Ince, (August 29, 1878 \u2013 April 10, 1947) was an American stage and motion pictures actor, a film director, and the eldest brother of Thomas H. Ince and Ralph Ince."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 261,
+    "generation_tokens": 18,
+    "generation_speed": 340.34828974984396,
+    "prompt_eval_speed": 16895.390989124808,
+    "generation_latency_s": 0.17708400008268654,
+    "latency": 0.45554799993988127,
+    "total_prompt_tokens": 391,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235308,
+    "stage_route_s": 0.1026868000626564,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13666189997456968,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03894409991335124,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.2499974370002747e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17712980008218437,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4555586000205949,
+    "unaccounted_latency_s": 9.439990390092134e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Thomas H. Ince and Joseph McGrath were both from England, but they had different nationalities."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q377",
+  "query": "What company did Roscoe Channing form with the owner of a leading stable of thoroughbred racehorses?",
+  "ground_truth": "Hudson Bay Mining and Smelting Company",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Roscoe Channing formed the Hudson Bay Mining and Smelting Company (HBM&S) with Cornelius Vanderbilt Whitney, as mentioned in the context.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Cornelius Vanderbilt Whitney: Cornelius Vanderbilt \"C.V.\" (\"Sonny\") Whitney (February 20, 1899 \u2013 December 13, 1992) was an American businessman, film producer, writer, philanthropist, polo player, and government official, as well as the owner of a leading stable of thoroughbred racehorses.",
+      "Roscoe Channing: Roscoe H. Channing, Jr. (January 7, 1868 \u2013 April 1, 1961) was an All-American football player, member of the Rough Riders and mining executive.  Channing was an All-American halfback for Princeton University.  He was one of eleven players selected by Caspar Whitney for the first ever College Football All-America Team in 1889.  When the Spanish\u2013American War commenced in 1898, Channing enlisted in Theodore Roosevelt's Rough Riders.  Roosevelt took pride in how many Ivy League football players enlisted in the Rough Riders.  Channing later went into the mining business and managed the mining operations of the Whitney family.  In the 1920s, he formed a partnership with his friend Cornelius Vanderbilt Whitney.  The two formed the Hudson Bay Mining and Smelting Company in Flin Flon, Saskatchewan, Canada, and Channing served as the company's President.  Channing died in 1961.",
+      "Palm Meadows Thoroughbred Training Center: Palm Meadows Thoroughbred Training Center is an American stable and training facility for Thoroughbred racehorses located near Boynton Beach, Florida, just north of the Gulfstream Park racetrack.  It is owned by Stronach Group.  It was built by MI Developments (MID) at a cost of $90 million.  The 304 acre center opened in November 2002 and is regarded as one of horse racing's largest and most modern training centers in the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 500,
+    "generation_tokens": 32,
+    "generation_speed": 244.16670481771428,
+    "prompt_eval_speed": 67999.45600435196,
+    "generation_latency_s": 1.0248062000609934,
+    "latency": 3.443385799997486,
+    "total_prompt_tokens": 582,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1298444,
+    "stage_rewrite_s": 1.2505401000380516,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0132542999926955,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15466739994008094,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0248461000155658,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4433960999595,
+    "unaccounted_latency_s": 8.869997691363096e-05,
+    "rewritten_query": "The company formed by Roscoe Channing with the owner of a leading stable of thoroughbred racehorses is The Channing Racing Company.",
+    "query_was_rewritten": true
+  }
+}

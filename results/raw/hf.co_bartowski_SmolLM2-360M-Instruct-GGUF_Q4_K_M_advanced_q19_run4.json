@@ -1,0 +1,42 @@
+{
+  "question_id": "Q19",
+  "query": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+  "ground_truth": "1969 until 1974",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of President Ronald Reagan, who served from 1981 to 1989.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Roger O. Egeberg: Roger Olaf Egeberg, M.D. (13 November 1902 \u2013 13 September 1997 Washington, D.C.) was an American medical educator, administrator and advocate of public health.  He was General Douglas MacArthur's personal physician during World War II in the Pacific theater.  His other roles included Assistant Secretary for Health and Scientific Affairs in the Department of Health, Education, and Welfare (now the United States Department of Health and Human Services) during the Nixon administration and Dean of the University of Southern California's medical school.",
+      "Ronald Reagan: Ronald Wilson Reagan ( ; February 6, 1911 \u2013 June 5, 2004) was an American statesman and actor who served as the 40th President of the United States from 1981 to 1989.  Before his presidency, he was the 33rd Governor of California, from 1967 to 1975, after a career as a Hollywood actor and union leader.",
+      "Presidency of Ronald Reagan: The presidency of Ronald Reagan began on January 20, 1981, when Ronald Reagan was inaugurated as President of the United States, and ended on January 20, 1989.  Reagan, a Republican, took office as the 40th United States president following a landslide win over Democratic incumbent President Jimmy Carter in the 1980 presidential election.  Reagan was succeeded by his vice president, George H. W. Bush, who won the 1988 presidential election with Reagan's support."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 431,
+    "generation_tokens": 39,
+    "generation_speed": 251.08319867119047,
+    "prompt_eval_speed": 60313.462076686264,
+    "generation_latency_s": 1.0726582000497729,
+    "latency": 3.455455300048925,
+    "total_prompt_tokens": 517,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1254249,
+    "stage_rewrite_s": 1.2734338999725878,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9870312999701127,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1221895000198856,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0727140000090003,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4554704000474885,
+    "unaccounted_latency_s": 0.00010250008199363947,
+    "rewritten_query": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of President Ronald Reagan, serving from 1981 to 1985.",
+    "query_was_rewritten": true
+  }
+}

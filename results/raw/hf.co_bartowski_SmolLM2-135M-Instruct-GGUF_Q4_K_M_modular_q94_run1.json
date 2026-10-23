@@ -1,0 +1,49 @@
+{
+  "question_id": "Q94",
+  "query": "Do the drinks Gibson and Zurracapote both contain gin?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, the drinks Gibson (cocktail) and Zurracapote do not contain gin. They are made from different spirits sources that have evolved over time into distinct beverages with their own unique characteristics.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gibson (cocktail): The Gibson is a mixed drink made with gin and vermouth, and often garnished with a pickled onion.  The oldest published recipe for the Gibson is found in the 1908 book, \"The World's Drinks And How To Mix Them\" by William Boothby.",
+      "Gin: Gin is a spirit which derives its predominant flavour from juniper berries (\"Juniperus communis\").  From its earliest origins in the Middle Ages, gin has evolved from use in herbal medicine to an object of commerce in the spirits industry.  Gin was developed on the basis of the older jenever, and became popular in Great Britain (particularly in London) when William of Orange, leader of the Dutch Republic, occupied the English, Scottish, and Irish thrones with his wife Mary.  Gin is one of the broadest categories of spirits, represented by products of various origins, styles, and flavour profiles that all revolve around juniper as a common ingredient.",
+      "Zurracapote: Zurracapote (sometimes abbreviated as zurra) is a popular Spanish alcoholic mixed drink, similar to sangr\u00eda.  It consists of red wine mixed with fruit such as peaches and lemons, sugar, and cinnamon.  The concoction is then traditionally left to steep for several days, though some recipes call for the addition of other alcoholic beverages, juices, and fruit extracts.  The result is a mild-to-medium alcoholic drink, similar to sangr\u00eda."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 382,
+    "generation_tokens": 41,
+    "generation_speed": 372.1487505786459,
+    "prompt_eval_speed": 20928.06661918589,
+    "generation_latency_s": 0.23443280009087175,
+    "latency": 0.5901696999790147,
+    "total_prompt_tokens": 508,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2168074,
+    "stage_route_s": 0.08938520005904138,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2055216000881046,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06066170008853078,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.569999873638153e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2344652001047507,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5901791999349371,
+    "unaccounted_latency_s": 0.00010029959958046675,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Gibson & Zurrapto are two popular beers that have been praised for their unique flavors, particularly in terms of their gin content.",
+      "Answer: Yes, Gibson and Zurrapto both contain gin."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

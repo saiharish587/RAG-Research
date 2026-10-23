@@ -1,0 +1,49 @@
+{
+  "question_id": "Q324",
+  "query": "Folie \u00e0 Deux is a studio album by the American rock band formed in which city?",
+  "ground_truth": "Wilmette",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The correct answer to the question \"What was the name of the studio album produced by the American rock band formed in which city?\" is \"Folie \u00e0 Deux\". The answer is \"American rock band\" because it refers to the group as a whole, and the album was produced by the same band.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Couplet: A couplet is a pair of successive lines of metre in poetry.  A couplet usually consists of two successive lines that rhyme and have the same metre.  A couplet may be formal (closed) or run-on (open).  In a formal (or closed) couplet, each of the two lines is end-stopped, implying that there is a grammatical pause at the end of a line of verse.  In a run-on (or open) couplet, the meaning of the first line continues to the second.",
+      "Folie \u00e0 Deux (album): Folie \u00e0 Deux ( ; French for \"A Madness Shared by Two\") is the fourth studio album by American rock band Fall Out Boy.  Produced by Neal Avron, the album was recorded from July to September 2008 at The Pass Studios and The Casita in Hollywood, California.  As the follow-up to the band's commercially successful 2007 effort \"Infinity on High\", it was released by Island Records on December 16, 2008, after the original November 4 release was postponed to avoid conflicts with the United States presidential election.  Like the band's two previous releases, \"Folie \u00e0 Deux\" was musically composed by lead vocalist and guitarist Patrick Stump, with lyrics penned by bassist Pete Wentz.  In regard to the writing process, the band considered \"Folie \u00e0 Deux\" to be the band's most collaborative record at the time.",
+      "Napkin folding problem: The napkin folding problem is a problem in geometry and the mathematics of paper folding that explores whether folding a square or a rectangular napkin can increase its perimeter.  The problem is known under several names, including the Margulis napkin problem, suggesting it is due to Grigory Margulis, and the Arnold's rouble problem referring to Vladimir Arnold and the folding of a Russian ruble bank note.  Some versions of the problem were solved by Robert J. Lang, Svetlana Krat, Alexey S. Tarasov, and Ivan Yaschenko.  One form of the problem remains open."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 540,
+    "generation_tokens": 64,
+    "generation_speed": 327.51482772208317,
+    "prompt_eval_speed": 16338.880978483541,
+    "generation_latency_s": 0.3440979999722913,
+    "latency": 0.8272185999667272,
+    "total_prompt_tokens": 678,
+    "total_generation_tokens": 151,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2316219,
+    "stage_route_s": 0.1049175999360159,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.32090839999727905,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05709519993979484,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.399990525096655e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.34413659991696477,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8272317999508232,
+    "unaccounted_latency_s": 0.00011110026389360428,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Answer: Folio \u00e0 Deuxi\u00e8me (FoLDA)",
+      "Explanation: The query \"foliade \u00e0 deux\" translates to \"follies at two\", and it is a common phrase used when referring to the second half of a song. In this case, it's a way of saying that the second part of the song ends with another song or a repeat of something else."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

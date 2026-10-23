@@ -1,0 +1,49 @@
+{
+  "question_id": "Q552",
+  "query": "What English stand-up comedian has a style of comedy full of \"stream-of-conscious banter\"?",
+  "ground_truth": "Eddie Izzard",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Huckabee",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Who Made Huckabee?: Who Made Huckabee? , also known as the Colbert/O'Brien/Stewart feud, refers to a mock rivalry that occurred among late night talk show hosts Stephen Colbert, Conan O'Brien and Jon Stewart in early 2008, reportedly over who was responsible for then-presidential candidate Mike Huckabee's success in the presidential primaries.",
+      "Stand-up comedy: Stand-up comedy is a comic style in which a comedian performs in front of a live audience, usually speaking directly to them.  The performer is commonly known as a comic, stand-up comic, stand-up comedian, or simply a stand-up.  In stand-up comedy, the comedian usually recites a grouping of humorous stories, jokes and one-liners typically called a monologue, routine, or act.  Some stand-up comedians use props, music, or magic tricks to \"enhance\" their acts.  Stand-up comedy is often performed in comedy clubs, bars and pubs, nightclubs, neo-burlesques, colleges and theatres. Outside of live performance, stand-up is often distributed commercially via television, DVD, CD and the internet.",
+      "The Late Late Show (U.S. TV series): The Late Late Show is an American late-night television talk and variety show on CBS.  It first aired in January 1995, with host Tom Snyder, followed by Craig Kilborn and Craig Ferguson.  It is currently hosted by James Corden.  The show originates from CBS Television City in Los Angeles."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 419,
+    "generation_tokens": 5,
+    "generation_speed": 268.6005909213,
+    "prompt_eval_speed": 53179.33747937555,
+    "generation_latency_s": 0.14085810002870858,
+    "latency": 0.528901300043799,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.248823,
+    "stage_route_s": 0.11137669999152422,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2212687999708578,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05521789996419102,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.339994095265865e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14089720009360462,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5289119000080973,
+    "unaccounted_latency_s": 9.8800053820014e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Late Show with Conan O'Brien\" by Stephen Colbert",
+      "\"The Daily Show with Jon Stewart\" by Jon Stewart"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

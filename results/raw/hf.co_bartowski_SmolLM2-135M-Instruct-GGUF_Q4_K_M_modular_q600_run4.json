@@ -1,0 +1,49 @@
+{
+  "question_id": "Q600",
+  "query": "When was the American actor, film director which  Dana Brunetti is the president of his company born ",
+  "ground_truth": "July 26, 1959",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The American actor, film director, and social networking entrepreneur who is the president of Kevin Spacey's production company, Trigger Street Productions, is Dana Brunetti. He was born on June 14, 1946 in Mainland China.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dana Brunetti: Dana Brunetti (born June 11, 1973) is an American film producer and social networking entrepreneur.  He is the president of Kevin Spacey's production company, Trigger Street Productions.  In 2016, he became the president of Relativity Media with Kevin Spacey taking on a chairman position.",
+      "Post-80s: The Post-'80 (also the Post-1980, ) is a colloquial term which refers to the generation, especially in urban cities, whose members were born between 1980 and 1989 in Mainland China after the introduction of the One-child policy.  This generation, the first to grow up entirely within the reformist era, currently ranges in age from 27 to 37 , making up a major portion of China's young adult demographic.",
+      "Donald Trump: Donald John Trump (born June 14, 1946) is the 45th and current President of the United States, in office since January 20, 2017.  Before entering politics, he was a businessman and television personality."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 324,
+    "generation_tokens": 54,
+    "generation_speed": 371.85985015425297,
+    "prompt_eval_speed": 43159.717596909555,
+    "generation_latency_s": 0.26802580000367016,
+    "latency": 0.6618122000945732,
+    "total_prompt_tokens": 466,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24061090000000002,
+    "stage_route_s": 0.18317109998315573,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15435359999537468,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05608879995997995,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.479995161294937e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2680600000312552,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6618220000527799,
+    "unaccounted_latency_s": 9.420013520866632e-05,
+    "route": "rag",
+    "router_raw": "The question asks about when the American actor, film director, Dana Brunetti is the president of her company. The answer to this question requires retrieval from internal files/documents.",
+    "sub_queries": [
+      "1980s",
+      "2017"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

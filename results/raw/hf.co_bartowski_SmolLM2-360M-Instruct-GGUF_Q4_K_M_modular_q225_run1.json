@@ -1,0 +1,49 @@
+{
+  "question_id": "Q225",
+  "query": "What film was written and directed by Joby Harold with music written by Samuel Sim?",
+  "ground_truth": "Awake",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Bohemian Rhapsody",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Samuel Sim: Samuel Sim is a film and television composer.  He first gained recognition with his award winning score for the BBC drama series \"Dunkirk\".  Since then he has written the music for a wide variety of film and television productions, most recently scoring the film \"Awake\" for The Weinstein Company and the BBC/HBO drama series \"House of Saddam\".  His most recent acclaimed music is the soundtrack for Home Fires.  Home Fires (Music from the Television Series) released May 6, 2016 by Sony Classical Records.",
+      "The Last Days of Pompeii (1959 film): The Last Days of Pompeii (Italian: \"Gli ultimi giorni di Pompei\" ) is a 1959 Italian sword and sandal action film starring Steve Reeves, Christine Kaufmann, and Fernando Rey and directed by Sergio Leone.  Mario Bonnard, the original director, fell ill on the first day of shooting, so Leone and the scriptwriters finished the film.",
+      "Bohemian Rhapsody (film): Bohemian Rhapsody is an upcoming American-British biographical drama film directed by Bryan Singer and written by Justin Haythe.  It focuses on a 15 year period from the formation of Queen and lead singer Freddie Mercury up to their performance at Live Aid in 1985, six years before Mercury's death.  The film stars Rami Malek, Ben Hardy, Gwilym Lee, Joseph Mazzello, Allen Leech, and Lucy Boynton.  Queen guitarist Brian May and drummer Roger Taylor are serving as the film's music producers.  The film is scheduled for release in the United States on December 25, 2018 by 20th Century Fox."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 447,
+    "generation_tokens": 7,
+    "generation_speed": 208.0485050228853,
+    "prompt_eval_speed": 14103.170847136771,
+    "generation_latency_s": 0.1751759999897331,
+    "latency": 0.5959679000079632,
+    "total_prompt_tokens": 581,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2162117,
+    "stage_route_s": 0.10240680002607405,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2624687000643462,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05573190003633499,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9999991208314896e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17521490005310625,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5959797999821603,
+    "unaccounted_latency_s": 9.799981489777565e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The film is called 'The Last Days of Pompeii' and it's directed by Joby Harold.\"",
+      "\"The film features a score composed by Samuel Sim.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q576",
+  "query": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+  "ground_truth": "IK Start",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 2011 La Manga Cup was won by Viking, who beat Icelandic football club Skien.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2011 La Manga Cup: The 2011 La Manga Cup was an exhibition international club football (soccer) competition featuring football club teams from Europe, which was held in February 2011.  All matches were played in La Manga Stadium in La Manga, Spain.  This was the fourteenth La Manga Cup.  The tournament was won by Viking, who beat Start on goal differential after both clubs finished with identical records of two wins and one draw.",
+      "IK Start: IK Start is a Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012.  The club was founded on 19 September 1905.  The coach is Steinar Pedersen.  The team plays in yellow jerseys, black shorts and yellow socks at home, and blue jerseys, white shorts and blue socks away.",
+      "Odds BK: Odds Ballklubb, commonly known as Odd, is a Norwegian football club from Skien.  Originally the football section of a multi-sports club, founded in 1894 nine years after the club's founding.  All other sports than football were discontinued and the club became dedicated to football only.  Odd plays in the Norwegian top division, Tippeligaen, and holds the record winning the Norwegian Football Cup the most times, the last coming in 2000.  The club was known as Odd Grenland between 1994 and 2012.  Founded in 1894, Odd is the oldest football club in Norway.  As of May 13, 2017 the club was granted a membership in Club of Pioneers.  It then became the first nordic football club to be granted this membership."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 508,
+    "generation_tokens": 24,
+    "generation_speed": 332.38695381206287,
+    "prompt_eval_speed": 25637.143578097402,
+    "generation_latency_s": 0.17298600007779896,
+    "latency": 0.544145500054583,
+    "total_prompt_tokens": 621,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1248354,
+    "stage_rewrite_s": 0.17869059997610748,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07637430005706847,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11597289994824678,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1730261999182403,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5441544000059366,
+    "unaccounted_latency_s": 9.110011160373688e-05,
+    "rewritten_query": "The 2011 La Manga Cup was won by Viking, who beat Norwegian football club Kristiansand, currently playing in Tippeligaen.",
+    "query_was_rewritten": true
+  }
+}

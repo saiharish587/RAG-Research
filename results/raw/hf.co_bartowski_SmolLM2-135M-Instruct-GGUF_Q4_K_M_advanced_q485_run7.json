@@ -1,0 +1,42 @@
+{
+  "question_id": "Q485",
+  "query": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to what?",
+  "ground_truth": "four months in jail",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The primary for the 2011 San Francisco mayoral election was on November 8, 2011.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Detroit mayoral election, 2009: The Detroit mayoral elections of 2009 took place on May 5, 2009, with a primary on February 24, 2009 to fill the vacancy created when Kwame Kilpatrick resigned as mayor.",
+      "Kwame Kilpatrick: Kwame Malik Kilpatrick (born June 8, 1970) is an American former politician, having served as a Democratic Michigan state representative and mayor of Detroit from 2002 to 2008.  He resigned as mayor in September 2008 after being convicted of perjury and obstruction of justice.  Kilpatrick was sentenced to four months in jail and was released on probation after serving 99 days.",
+      "San Francisco mayoral election, 2011: The 2011 San Francisco mayoral election was held on Tuesday, November 8, 2011, to elect the mayor of San Francisco.  The incumbent, Ed Lee, succeeded in his bid to become the first elected Asian-American mayor of a major American city."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 326,
+    "generation_tokens": 27,
+    "generation_speed": 371.01672323526583,
+    "prompt_eval_speed": 46241.134751773054,
+    "generation_latency_s": 0.1635309000266716,
+    "latency": 0.5406093000201508,
+    "total_prompt_tokens": 414,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1294979,
+    "stage_rewrite_s": 0.20474750001449138,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07730090001132339,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09488190000411123,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1635727999964729,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5406194999814034,
+    "unaccounted_latency_s": 0.00011699995957314968,
+    "rewritten_query": "The Detroit mayoral election of 2009, which saw the appointment of a new mayor after a lengthy and contentious process, ultimately resulted in the appointment of a new mayoral candidate.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q151",
+  "query": "What occupation was shared by David Yates and Pietro Germi?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "David Yates and Pietro Germi both had occupations as actors.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pietro Germi: Pietro Germi (] ; 14 September 1914 \u2013 5 December 1974) was an Italian actor, screenwriter, and director.  Germi was born in Genoa, Liguria, to a lower-middle-class family.  He was a messenger and briefly attended nautical school before deciding on a career in acting.",
+      "David Yates: David Yates (born (1963--)08 1963 ) is an English filmmaker who has directed feature films, short films, and television productions.",
+      "Peter Yates (architect): Peter Yates (19 July 1920 \u2013 16 November 1982) was a British born artist and architect.  Yates was best known for his partnership with Gordon Ryder in the North of England architectural firm, Ryder and Yates."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 262,
+    "generation_tokens": 15,
+    "generation_speed": 221.8245811212493,
+    "prompt_eval_speed": 11510.41209032598,
+    "generation_latency_s": 0.1946323000593111,
+    "latency": 0.5946678000036627,
+    "total_prompt_tokens": 390,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23933680000000002,
+    "stage_route_s": 0.10867569991387427,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2358140000142157,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05537509999703616,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.579999949783087e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1946736000245437,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5946807999862358,
+    "unaccounted_latency_s": 9.720004163682461e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Occupation of David Yates and Pietro Germi\"",
+      "\"Occupations of David Yates and Pietro Germi\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

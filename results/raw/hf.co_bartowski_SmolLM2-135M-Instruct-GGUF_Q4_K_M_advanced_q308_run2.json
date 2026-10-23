@@ -1,0 +1,42 @@
+{
+  "question_id": "Q308",
+  "query": "What prolific English engineer, who died on 15 December 1857, contributed to the advent of the hot air engine by way of their open cycle devices?",
+  "ground_truth": "George Cayley",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The writer is a helpful research assistant and provides context for the piece of information provided. The correct answer would be George Cayley, who died on 15 December 1857.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hot air engine: A hot air engine (historically called an air engine or caloric engine) is any heat engine that uses the expansion and contraction of air under the influence of a temperature change to convert thermal energy into mechanical work.  These engines may be based on a number of thermodynamic cycles encompassing both open cycle devices such as those of Sir George Cayley and John Ericsson and the closed cycle engine of Robert Stirling.  Hot air engines are distinct from the better known internal combustion based engine and steam engine.",
+      "George Cayley: Sir George Cayley, 6th Baronet (27 December 1773 \u2013 15 December 1857) was a prolific English engineer and is one of the most important people in the history of aeronautics.  Many consider him to be the first true scientific aerial investigator and the first person to understand the underlying principles and forces of flight.",
+      "Stoddard engine: Elliott J. Stoddard invented and patented two versions of the Stoddard engine, the first in 1919 and the second in 1933.  The general engine classification is an external combustion engine with valves and single-phase gaseous working fluid (i.e. a \"hot air engine\").  The internal working fluid was originally air, although in modern versions, other gases such as helium or hydrogen may be used."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 375,
+    "generation_tokens": 40,
+    "generation_speed": 381.8579297572338,
+    "prompt_eval_speed": 22881.200805418266,
+    "generation_latency_s": 0.19959660002496094,
+    "latency": 0.5723102999618277,
+    "total_prompt_tokens": 470,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12913819999999998,
+    "stage_rewrite_s": 0.1485419999808073,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07667050010059029,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14737249992322177,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.199637999990955,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5723216999322176,
+    "unaccounted_latency_s": 9.919994045048952e-05,
+    "rewritten_query": "The prolific English engineer and inventor, William Shakespear, played a pivotal role in the development of the hot air engine.",
+    "query_was_rewritten": true
+  }
+}

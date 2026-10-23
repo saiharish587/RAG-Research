@@ -1,0 +1,49 @@
+{
+  "question_id": "Q494",
+  "query": "After he was contracted by the team that is headquartered in Affalterbach, Baden-W\u00fcrttemberg, Germany, Dario Franchitti competed in what series?",
+  "ground_truth": "DTM",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "After being contracted by Inter Milan, Dario Franchitti competed in Formula Vauxhall.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dario Franchitti: George Dario Marino Franchitti, MBE (born 19 May 1973), known professionally as Dario Franchitti, is a retired Scottish racing driver.  He is a four time IndyCar Series champion (2007, 2009, 2010, 2011), a three-time winner of the Indianapolis 500 (2007, 2010, 2012) as well as a winner of the 24 Hours of Daytona (2008).  Franchitti started his career in his native United Kingdom in the early 1990s, competing in Formula Vauxhall and Formula Three and was also the winner of the McLaren Autosport BRDC Award in 1992.  After Franchitti did not secure a single-seater drive in 1995, he was contracted by the AMG team to compete in touring cars in the DTM and its successor \u2014 the International Touring Car Championship.  Despite 2 seasons with relative success, the series folded at the end of the 1996 season, again leaving Franchitti without a drive.  Mercedes placed Franchitti in CART in 1997 with the Hogan Racing team.",
+      "Marino Franchitti: Marino Alessandro Cesare Franchitti (born 7 July 1978) is a British racing driver, and the younger brother of Dario Franchitti.  He has spent the majority of his career racing in sports cars and grand tourers, with a career highlight of winning the 2014 12 Hours of Sebring.",
+      "Inter Milan: F.C. Internazionale Milano, commonly referred to as Internazionale (] ) or simply Inter and colloquially known as Inter Milan outside Italy, is a professional Italian football club based in Milan, Lombardy.  The club has played continuously in the top tier of the Italian football league system since its debut in 1909."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 558,
+    "generation_tokens": 21,
+    "generation_speed": 227.5386815758679,
+    "prompt_eval_speed": 12754.285714285716,
+    "generation_latency_s": 0.24795800005085766,
+    "latency": 0.6437011000234634,
+    "total_prompt_tokens": 734,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2279033,
+    "stage_route_s": 0.10410220001358539,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2329782999586314,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05847559997346252,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.619996227324009e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24799930001609027,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.643713099998422,
+    "unaccounted_latency_s": 0.00010250008199363947,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Dario Franchitti's career highlights\"",
+      "\"Franchitti's performance in the German Grand Prix Series\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

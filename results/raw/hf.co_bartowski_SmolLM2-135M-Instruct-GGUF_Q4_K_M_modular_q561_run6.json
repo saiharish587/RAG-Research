@@ -1,0 +1,48 @@
+{
+  "question_id": "Q561",
+  "query": "The Adoption and Safe Families Act and the Adoption 2002 Initiative were both instituted under which administration?",
+  "ground_truth": "Clinton",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Adoption and Safe Families Act was instituted by President Bill Clinton in 1997, while the Adoption and Safe Families Act of 1997 was signed into law on November 19, 1997.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Adoption 2002: The Adoption 2002 Initiative was a program instituted in the United States during the late 1990s by the Clinton Administration.  Based on the Adoption and Safe Families Act of 1997, the aim of the program was to lower barriers to adoption and double the rate of adoption of children in foster care by 2002 from a 1996 figure of 27,000 to a 2002 figure of 54,000.",
+      "Adoption and Safe Families Act: The Adoption and Safe Families Act (ASFA, Public Law 105-89) was signed into law by President Bill Clinton on November 19, 1997, after having been approved by the United States Congress earlier in the month.",
+      "Congressional Coalition on Adoption Institute: The Congressional Coalition on Adoption Institute (CCAI) is an American non-partisan, non-profit organization \"dedicated to raising awareness about the tens of thousands of orphans and foster children in the United States and the millions of orphans around the world in need of permanent, safe, and loving homes through adoption; and to eliminating the barriers that hinder these children from realizing their basic right of a family.\"  CCAI seeks to educate and inform Members of Congress in adoption, foster care, and child welfare issues that affect their constituents.  This is done through congressional briefings, leadership training programs, educational trips, and other notable programs.  The Institute's work is entirely funded by donations and gifts from organizations and individuals like the Dave Thomas Foundation for Adoption and the W.K. Kellogg Foundation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 427,
+    "generation_tokens": 49,
+    "generation_speed": 372.36872102743365,
+    "prompt_eval_speed": 48506.191071225716,
+    "generation_latency_s": 0.2591637000441551,
+    "latency": 0.7551291000563651,
+    "total_prompt_tokens": 571,
+    "total_generation_tokens": 142,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2242108,
+    "stage_route_s": 0.2205487999599427,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23863759997766465,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03661339997779578,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.379998426884413e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2591998999705538,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.755138700013049,
+    "unaccounted_latency_s": 9.570014663040638e-05,
+    "route": "rag",
+    "router_raw": "The Adoption and Safe Families Act was initiated by President George W. Bush in 2001, while the Adoption 2002 Initiative was established by President Barack Obama in 2009.",
+    "sub_queries": [
+      "The Adoption and Safe Families Act (ADFPA) was enacted by President George W. Bush in 2001, while the Adoption 2002 Initiative was initiated by President Barack Obama in 2008."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

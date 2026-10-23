@@ -1,0 +1,49 @@
+{
+  "question_id": "Q500",
+  "query": "What type of film are both \"500 Years Later\" and \"Manson\"?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The two films in this context are both documentaries about Charles Manson and his followers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "500 Years Later: 500 Years Later (\u136d\u137b \u12d3\u1218\u1273\u1275 \u1260\u128b\u120b \"500 \u02bfam\u00e4tat\u0259 b\u00e4hwala \") is an independent documentary film directed by Owen 'Alik Shahadah, written by M. K. Asante, Jr. and released in 2005.  It has won five international film festival awards in the category of Best Documentary (including) UNESCO \"Breaking the Chains Award\").  Other awards it has won include \"Best Documentary at the Pan African (Los Angeles) and Bridgetown (Barbados) Film Festivals; Best Film at the International Black Cinema (Berlin) Film Festival; and Best International Documentary at the Harlem (New York) International Film Festival\".",
+      "Manson (film): Manson is a documentary film made in 1973 about Charles Manson and his followers.  It was directed by Robert Hendrickson and Laurence Merrick.",
+      "Common Era: Common Era or Current Era (CE) is a year-numbering system (calendar era) for the Julian and Gregorian calendars that refers to the years since the start of this era, that is, the years beginning with AD 1.  The preceding era is referred to as before the Common or Current Era (BCE).  The Current Era notation system can be used as an alternative to the Dionysian era system, which distinguishes eras as AD (\"anno Domini \", \"[the] year of [the] Lord\") and BC (\"before Christ\").  The two notation systems are numerically equivalent; thus \"2017 CE\" corresponds to \"AD 2017 \" and \"400 BCE\" corresponds to \"400 BC\".  The year-numbering system for the Gregorian calendar is the most widespread civil calendar system used in the world today.  For decades, it has been the global standard, recognized by international institutions such as the United Nations and the Universal Postal Union."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 504,
+    "generation_tokens": 18,
+    "generation_speed": 371.4710252600297,
+    "prompt_eval_speed": 63356.379635449404,
+    "generation_latency_s": 0.1724716000026092,
+    "latency": 0.5423193000024185,
+    "total_prompt_tokens": 640,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21704099999999998,
+    "stage_route_s": 0.09518199996091425,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21782430005259812,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05666979996021837,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.049991887062788e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17250939994119108,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5423302999697626,
+    "unaccounted_latency_s": 9.480013977736235e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "500 Years Later - Manson (2013)",
+      "500 Years Later - 500 Years Later (2014)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

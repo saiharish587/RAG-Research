@@ -1,0 +1,48 @@
+{
+  "question_id": "Q187",
+  "query": "Who were the directors of the 2009 American science fiction film starring the actor who played Dexter Morgan in the Showtime TV Network series \"Dexter\"?",
+  "ground_truth": "Mark Neveldine and Brian Taylor",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The director of the 2009 American science fiction film starring Michael Fassbender as Dexter Morgan was Ridley Scott.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Michael C. Hall: Michael Carlyle Hall (born February 1, 1971) is an American actor, known for his roles as Dexter Morgan, a serial killer and blood spatter analyst, in the Showtime TV Network series \"Dexter\", and as David Fisher in the HBO drama series \"Six Feet Under\".  In 2010, Hall won a Golden Globe Award and a Screen Actors Guild Award for his role in \"Dexter\".",
+      "Alien: Covenant: Alien: Covenant is a 2017 science fiction horror film directed by Ridley Scott, and written by John Logan and Dante Harper, with a story by Michael Green and Jack Paglen.  The film is a sequel to \"Prometheus\" (2012), the second installment in the \"Alien\" prequel series and the sixth installment overall in the \"Alien\" film series, as well as the third directed by Scott.  The film stars Michael Fassbender, Katherine Waterston, Billy Crudup, Danny McBride and Demi\u00e1n Bichir, and follows the crew of a colony ship that lands on an uncharted planet and makes a terrifying discovery.",
+      "Scott Patterson: Scott Gordon Patterson (born September 11, 1958) is an American actor and musician.  He is known for his role as Luke Danes in \"Gilmore Girls\" and Agent Strahm in \"Saw IV\", \"Saw V\" and \"Saw VI\".  He also starred as Michael Buchanan in the NBC drama series \"The Event\" and as a Tenctonese alien commander in the TV film \"\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 445,
+    "generation_tokens": 30,
+    "generation_speed": 249.337178666711,
+    "prompt_eval_speed": 14972.074557566786,
+    "generation_latency_s": 0.257403300027363,
+    "latency": 0.8894200000213459,
+    "total_prompt_tokens": 617,
+    "total_generation_tokens": 126,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2363653,
+    "stage_route_s": 0.10988120001275092,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.48121880006510764,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04072739998809993,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.549999721348286e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.257454999955371,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8894354000221938,
+    "unaccounted_latency_s": 0.0001086000120267272,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The directors of the 2009 American science fiction film starring the actor who played Dexter Morgan in the Showtime TV Network series \"Dexter\" were David Koepp and Scott Hicks."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

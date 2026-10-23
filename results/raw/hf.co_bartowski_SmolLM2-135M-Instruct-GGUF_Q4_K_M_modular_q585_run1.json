@@ -1,0 +1,49 @@
+{
+  "question_id": "Q585",
+  "query": "Which king of Northumbria did The \"Historia\" gives the abbot central place in his election as king",
+  "ground_truth": "Guthred or Guthfrith",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The \"Historia Ecclesiastica Gentis Anglorum\" (History of the English Church) is a collection of historical accounts written by the monks of Lindisfarne, who were part of the Kingdom of Northumbria. The account of King Cenerentwald II of Northumbria was published in 729 and was largely based on oral traditions that had been passed down through generations of monks.\n\nThe \"Historia Ecclesiastica Gentis Anglorum\" is a collection of historical accounts written by the monks of Lindisfarne, who were part of the Kingdom of Northumbria. The account of King Cenerentwald II of Northumbria was published in 729 and was largely based on oral traditions that had been passed down through generations of monks.\n\nSo, the answer is:\n\nThe \"Historia Ecclesiastica Gentis Anglorum\" (History of the English Church) is a collection of historical accounts written by the monks of Lindisfarne, who were part of the Kingdom of Northumbria. The account of King Cenerentwald II of Northumbria was published in 729 and was largely based on oral traditions that had been passed down through generations of monks.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "\u00c6thelred I of Northumbria: \u00c6thelred ( ; c. 762  \u2013 18 April 796), was the king of Northumbria from 774 to 779 and again from 790 until he was murdered in 796.  He was the son of \u00c6thelwald Moll and \u00c6thelthryth and possibly became king while still a child after Alhred was deposed.",
+      "Ceolwulf of Northumbria: Saint Ceolwulf was King of Northumbria from 729 until 737, except for a short period in 731 or 732 when he was deposed, and quickly restored to power.  Ceolwulf finally abdicated and entered the monastery at Lindisfarne.  He was the \"most glorious king\" to whom Bede dedicated his \"Historia ecclesiastica gentis Anglorum\".",
+      "Kingdom of Northumbria: The Kingdom of Northumbria ( ; Old English: \"Nor\u00fehymbra r\u012bce\" , \"kingdom of the Northumbrians\") was a medieval Anglian kingdom in what is now northern England and south-east Scotland, which subsequently became an earldom in a unified English kingdom.  The name reflects the approximate southern limit to the kingdom's territory, the Humber estuary."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 376,
+    "generation_tokens": 261,
+    "generation_speed": 411.22243352297886,
+    "prompt_eval_speed": 23780.912023274937,
+    "generation_latency_s": 0.7632333999499679,
+    "latency": 1.247256699949503,
+    "total_prompt_tokens": 522,
+    "total_generation_tokens": 348,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2299778,
+    "stage_route_s": 0.15825249999761581,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2691874000011012,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056395300081931055,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.630007945001125e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.7632672999752685,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.2472658000187948,
+    "unaccounted_latency_s": 0.00010739988647401333,
+    "route": "rag",
+    "router_raw": "The user's question asks about whether answering the following user query requires retrieving information from internal files/documents.",
+    "sub_queries": [
+      "Who was the last king of Northumbria?",
+      "What is the name of the king who was crowned in 950 AD?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

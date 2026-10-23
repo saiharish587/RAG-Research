@@ -1,0 +1,49 @@
+{
+  "question_id": "Q283",
+  "query": "In what month was the relief first officer of the flight that crashed on its way to Cairo with a stop in New York Born?",
+  "ground_truth": "February",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The relief first officer of the flight that crashed on its way to Cairo with a stop in New York was born in June, not March.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "June: June is the sixth month of the year in the Julian and Gregorian calendars and the second month to have the length of 30 days. June contains the summer solstice in the Northern Hemisphere, the day with the most daylight hours, and the winter solstice in the Southern Hemisphere, the day with the fewest daylight hours (excluding polar regions in both cases).  June in the Northern Hemisphere is the seasonal equivalent to December in the Southern Hemisphere and vice versa.  In the Northern hemisphere, the beginning of the traditional astronomical summer is 21 June (meteorological summer begins on 1 June).  In the Southern hemisphere, meteorological winter begins on 1 June.",
+      "Summer vacation: Summer vacation (also called summer holiday or summer break) is a school holiday in summer between school years and the longest break in the school year.  Students and instructors are off school typically between 6 and 14 weeks, depending on the country and district.  In the United States, summer break is approximately 2.5 months, with students typically getting out of school between late May and mid-June and starting the new school year between mid-August and early September.  In Republic of Ireland, Italy, Greece, Lithuania, Latvia, Lebanon, Romania and Russia, the summer break is normally three months, compared to six to eight weeks in Australia, Britain, Canada, India, and Germany.",
+      "March: March is the third month of the year in both the Julian and Gregorian calendars.  It is the second month to have a length of 31 days.  In the Northern Hemisphere, the meteorological beginning of spring occurs on the first day of March.  The March equinox on the 20th or 21st marks the astronomical beginning of spring in the Northern Hemisphere and the beginning of autumn in the Southern Hemisphere, where September is the seasonal equivalent of the Northern Hemisphere's March."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 469,
+    "generation_tokens": 29,
+    "generation_speed": 240.29498280647968,
+    "prompt_eval_speed": 58661.66353971232,
+    "generation_latency_s": 0.24312020000070333,
+    "latency": 0.5768001000396907,
+    "total_prompt_tokens": 621,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23925410000000003,
+    "stage_route_s": 0.11418529995717108,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1634740000590682,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05584409995935857,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.359994247555733e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24315549992024899,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5768093999940902,
+    "unaccounted_latency_s": 9.750016033649445e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The month is July.",
+      "Query 2: The month is August."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

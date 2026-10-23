@@ -1,0 +1,49 @@
+{
+  "question_id": "Q376",
+  "query": "For One Night Only was hosted by the man most well-known for hosting what show from 1962 until 1999?",
+  "ground_truth": "The Late Late Show",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "For One Night Only was hosted by Gay Byrne, who first hosted the show on Friday nights as a summer \"filler\" in 2011.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "David Letterman: David Michael Letterman (born April 12, 1947) is an American television host, comedian, writer, and producer.  He hosted a late night television talk show for 33 years, beginning with the February 1, 1982 debut of \"Late Night with David Letterman\" on NBC, and ending with the May 20, 2015 broadcast of \"Late Show with David Letterman\" on CBS.  In total, Letterman hosted 6,028 episodes of \"Late Night\" and \"Late Show\", surpassing friend and mentor Johnny Carson as the longest-serving late night talk show host in American television history.  In 1996 Letterman was ranked 45th on \"TV Guide\"' s 50 Greatest TV Stars of All Time.",
+      "Gay Byrne: Gabriel Mary \"Gay\" Byrne (born 5 August 1934; affectionately known as Uncle Gay, Gaybo or Uncle Gaybo) is an Irish presenter of radio and television.  His most notable role was first host of \"The Late Late Show\" over a 37-year period spanning 1962 until 1999.  \"The Late Late Show\" is the world's second longest-running chat show.  His time working in Britain with Granada Television saw him become the first person to introduce the Beatles on screen.",
+      "For One Night Only (Irish TV series): For One Night Only is an Irish light entertainment show hosted by Gay Byrne.  It features music and chat with a special guest musician.  The studio-based show originally aired on Friday nights as a summer \"filler\" in 2011.  The show returned for a second series in 2012."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 35,
+    "generation_speed": 240.6292110111927,
+    "prompt_eval_speed": 59359.022321985285,
+    "generation_latency_s": 0.26572630007285625,
+    "latency": 0.7601246000267565,
+    "total_prompt_tokens": 636,
+    "total_generation_tokens": 107,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22152650000000002,
+    "stage_route_s": 0.09558240009937435,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.34188199997879565,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056762199965305626,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.209993105381727e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2657595000928268,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7601366000017151,
+    "unaccounted_latency_s": 9.919994045048952e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: For One Night Only was hosted by the man most well-known for hosting What Show from 1962 until 1999.",
+      "Query 2: The man most well-known for hosting What Show from 1962 until 1999 is known as John Wayne Gacy."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

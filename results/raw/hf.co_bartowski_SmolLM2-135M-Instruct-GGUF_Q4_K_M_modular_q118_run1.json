@@ -1,0 +1,49 @@
+{
+  "question_id": "Q118",
+  "query": "What other political position did the person who introduced the DISCLOSE Act hold?",
+  "ground_truth": "United States Senator",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The person who introduced the DISCLOSE Act held a position of \"Senator\" in the House of Representatives, as stated by the context provided.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "DISCLOSE Act: The Democracy Is Strengthened by Casting Light On Spending in Elections Act, commonly known as the DISCLOSE Act and also known as H.R. 5175 (S.3628-Senate), was a bill introduced in the U.S. House of Representatives by Chris Van Hollen (D-Maryland) on April 29, 2010 and in the U.S. Senate by Charles Schumer (D-New York) on July 21, 2010.",
+      "Bill Clinton: William Jefferson Clinton (born William Jefferson Blythe III; August 19, 1946) is an American politician who served as the 42nd President of the United States from 1993 to 2001.  Prior to the presidency, he was the Governor of Arkansas during two separate terms, from 1979 to 1981, and again from 1983 to 1992.  Before that, he served as Arkansas attorney general, from 1977 to 1979.  A member of the Democratic Party, Clinton was ideologically a New Democrat and many of his policies reflected a centrist \"Third Way\" political philosophy.",
+      "Political positions of Harry Reid: Former United States Senator Harry Reid has declared his position on many political issues through his public comments and his senatorial voting record."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 381,
+    "generation_tokens": 31,
+    "generation_speed": 315.8591879362168,
+    "prompt_eval_speed": 18876.337693222355,
+    "generation_latency_s": 0.22514670004602522,
+    "latency": 0.7523683999897912,
+    "total_prompt_tokens": 513,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2274818,
+    "stage_route_s": 0.16896119993180037,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30098719999659806,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057095699943602085,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.579995922744274e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2251787999412045,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.752377999946475,
+    "unaccounted_latency_s": 0.00010000017937272787,
+    "route": "rag",
+    "router_raw": "The person who introduced the Disclose Act held a position of power in the Democratic Party, known as the \"Democratic Party of the People.\"",
+    "sub_queries": [
+      "QUERY 1: What is the political position of the person who introduced the Disclose Act?",
+      "QUERY 2: What was the political position of the person who introduced the Disclose Act?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

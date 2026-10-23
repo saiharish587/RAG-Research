@@ -1,0 +1,49 @@
+{
+  "question_id": "Q471",
+  "query": "What type of profession does Ithu Engal Neethi and Shoba Chandrasekhar have in common?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Ithu Engal Neethi and Shoba Chandrasekhar share a common profession as playback singers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ithu Engal Neethi: Ithu Engal Neethi is a 1988 Indian Tamil film, directed by S. A. Chandrasekhar and produced by S. S. Neelakandan and Shoba Chandrasekhar.  The film stars Ramki, Radhika, Ramki and Vani Viswanath in lead roles.  The film had musical score by Ilayaraja.",
+      "Shoba Chandrasekhar: Shoba Chandrasekhar is an Indian film playback singer, director, writer and producer.  She is best known as the mother of Tamil Leading Star Vijay.",
+      "F. C. Kohli: Faqir Chand Kohli (born 28 February 1924) popularly known as F. C. Kohli is an Indian industrialist.  He is frequently referred to as the \"Father of the Indian Software Industry\" due to his significant contribution in Indian IT industry.  He was the founder and first CEO of Tata Consultancy Services, India's largest software consultancy company.  He has also worked as the deputy general manager of the Tata Power Company.  He is also on the board of governors of College of Engineering, Pune."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 338,
+    "generation_tokens": 24,
+    "generation_speed": 233.52891379863968,
+    "prompt_eval_speed": 13549.809581078373,
+    "generation_latency_s": 0.23786059999838471,
+    "latency": 0.7176377000287175,
+    "total_prompt_tokens": 484,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23122150000000002,
+    "stage_route_s": 0.11002859997097403,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.31350609997753054,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05607480008620769,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.580007564276457e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2378945000236854,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7176483001094311,
+    "unaccounted_latency_s": 8.899997919797897e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Ithu Engal Neethi is a professional in the field of [industry/field].\"",
+      "\"Shoba Chandrasekhar is a professional in the field of [industry/field].\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

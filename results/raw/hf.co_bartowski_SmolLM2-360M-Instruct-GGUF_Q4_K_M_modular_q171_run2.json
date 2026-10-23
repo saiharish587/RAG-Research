@@ -1,0 +1,49 @@
+{
+  "question_id": "Q171",
+  "query": "What is the name of the detective novelist parent of the author of '\"Q\" Is for Quarry'?",
+  "ground_truth": "C. W. Grafton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Sue Grafton",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "&quot;Q&quot; Is for Quarry: \"Q\" Is for Quarry is the 17th novel in Sue Grafton's \"Alphabet\" series of mystery novels and features Kinsey Millhone, a private eye based in Santa Teresa, California.",
+      "Detective (novel): Detective is a novel by Arthur Hailey.  It was written in 1997 and it was the author's last book.  Hailey depicts the work of the homicide department and its background and investigation methods.",
+      "Sherlock Holmes: Sherlock Holmes ( ) is a fictional private detective created by British author Sir Arthur Conan Doyle.  Known as a \"consulting detective\" in the stories, Holmes is known for his proficiency with observation, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 269,
+    "generation_tokens": 6,
+    "generation_speed": 254.74461851993377,
+    "prompt_eval_speed": 36044.486131582475,
+    "generation_latency_s": 0.14402690005954355,
+    "latency": 0.4813820000272244,
+    "total_prompt_tokens": 411,
+    "total_generation_tokens": 29,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2389416,
+    "stage_route_s": 0.10265850007999688,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1756937000900507,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058786400011740625,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 9.159999899566174e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14406560000497848,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.48139369999989867,
+    "unaccounted_latency_s": 9.909982327371836e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Detective novelist\"",
+      "Query 2: \"Author of 'Q'\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q307",
+  "query": "Which former mill town is near Rivington Hall Barn?",
+  "ground_truth": "Bolton",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The former mill town of Rivington Hall Barn is located near Rivington Hall, Lancashire, England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rivington Hall Barn: Rivington Hall Barn adjoins Rivington Hall in Rivington, Lancashire, near Chorley and Bolton.  The barn may date from between the 9th and 13th centuries, but more likely the 16th century, and was restored, altered and enlarged in 1905 by Jonathan Simpson for Lord Leverhulme.  It is a Grade II Listed building.",
+      "Bolton: Bolton ( or locally ] ) is a town in Greater Manchester in North West England.  A former mill town, Bolton has been a production centre for textiles since Flemish weavers settled in the area in the 14th century, introducing a wool and cotton-weaving tradition.  The urbanisation and development of the town largely coincided with the introduction of textile manufacture during the Industrial Revolution.  Bolton was a 19th-century boomtown, and at its zenith in 1929 its 216 cotton mills and 26 bleaching and dyeing works made it one of the largest and most productive centres of cotton spinning in the world.  The British cotton industry declined sharply after the First World War, and by the 1980s cotton manufacture had virtually ceased in Bolton.",
+      "Rivington Hall: Rivington Hall is a Grade II* listed building in Rivington, Lancashire, England.  It was the manor house for the Lords of the Manor of Rivington.  The hall is of various builds as successor to a 15th-century timber-framed courtyard house that was built near to the present building of which no trace remains.  It is a private residence."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 23,
+    "generation_speed": 388.45445793713793,
+    "prompt_eval_speed": 22259.466820300637,
+    "generation_latency_s": 0.15548020007554442,
+    "latency": 0.5318061999278143,
+    "total_prompt_tokens": 497,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1251506,
+    "stage_rewrite_s": 0.120569400023669,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07240190007723868,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18322509992867708,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15552200004458427,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5318178000161424,
+    "unaccounted_latency_s": 9.999994654208422e-05,
+    "rewritten_query": "Which former mill town is near Rivington Hall Barn?",
+    "query_was_rewritten": false
+  }
+}

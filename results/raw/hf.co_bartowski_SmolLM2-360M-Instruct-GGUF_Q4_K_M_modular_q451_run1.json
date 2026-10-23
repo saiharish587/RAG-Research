@@ -1,0 +1,49 @@
+{
+  "question_id": "Q451",
+  "query": "What is the name of the oldest child that attended the Trump campaign-Russian meeting?",
+  "ground_truth": "Donald Trump Jr.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Melania Trump",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Trump campaign\u2013Russian meeting: On June 9, 2016, a meeting was held in Trump Tower in New York City between three senior members of the presidential campaign of Donald TrumpDonald Trump Jr., Jared Kushner, and Paul Manafortand at least five other people, including Russian lawyer Natalia Veselnitskaya.  The meeting was arranged by publicist and long-time Trump acquantiance, Rob Goldstone on behalf of his client, singer-songwriter Emin Agalarov.  It was disclosed to U.S. government officials when Kushner filed a revised version of his security clearance form.",
+      "Donald Trump Jr.: Donald John Trump Jr. (born December 31, 1977) is an American businessman and former reality TV personality.  He is the oldest child of the 45th President of the United States, Donald Trump, and his first wife, Ivana.",
+      "Melania Trump: Melania Trump ( ; born Melanija Knavs; ] , Germanized to Melania Knauss; April 26, 1970) is the current First Lady of the United States.  Before marrying future President Donald Trump in 2005, she worked as a fashion model; by 2016 she considered herself a \"full-time mom.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 357,
+    "generation_tokens": 4,
+    "generation_speed": 201.02522866619762,
+    "prompt_eval_speed": 13374.292885775296,
+    "generation_latency_s": 0.15744249999988824,
+    "latency": 0.52782760001719,
+    "total_prompt_tokens": 491,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2286496,
+    "stage_route_s": 0.11659829993732274,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19641780003439635,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05719269998371601,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3600058890879154e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1574735000031069,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5278368000872433,
+    "unaccounted_latency_s": 0.00010160007514059544,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Trump Campaign Russian Meeting Name\"",
+      "\"Oldest Child Attended Trump Meeting Russia\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

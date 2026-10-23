@@ -1,0 +1,42 @@
+{
+  "question_id": "Q295",
+  "query": "Which American music star appeared as a guest in a Will & Grace episode called \"Back Up, Dancer\"?",
+  "ground_truth": "Janet Damita Jo Jackson",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Elvis Presley.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Back Up, Dancer: \"Back Up, Dancer\" is the second episode of the seventh season of the American television series \"Will & Grace\".  It was written by Tracy Poust and Jon Kinnally and directed by series producer James Burrows.  The episode originally aired on the National Broadcasting Company (NBC) in the United States on September 23, 2004.  Guest stars in \"Back Up, Dancer\" include Will Arnett, Bobby Cannavale, and Janet Jackson.",
+      "Elvis Presley: Elvis Aaron Presley (January 8, 1935 \u2013 August 16, 1977) was an American singer, dancer and actor.  Regarded as one of the most significant cultural icons of the 20th century, he is often referred to as the \"King of Rock and Roll\" or simply \"the King\".",
+      "Britney Spears: Britney Jean Spears (born December 2, 1981) is an American singer, dancer, and actress.  Born in McComb, Mississippi, and raised in Kentwood, Louisiana, she performed acting roles in stage productions and television shows as a child before signing with Jive Records in 1997.  Spears's first and second studio albums, \"...Baby One More Time\" (1999) and \"Oops! ... I Did It Again\" (2000), became international successes, with the former becoming the best-selling album by a teenage solo artist.  Title tracks \"...Baby One More Time\" and \"Oops! ... I Did It Again\" broke international sales records.  In 2001, Spears released her self-titled third studio album, \"Britney\", and played the starring role in the film \"Crossroads\" (2002).  She assumed creative control of her fourth studio album, \"In the Zone\" (2003), which yielded the worldwide success of the single \"Toxic\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 507,
+    "generation_tokens": 6,
+    "generation_speed": 309.6614368290669,
+    "prompt_eval_speed": 32429.320711270313,
+    "generation_latency_s": 0.11188740003854036,
+    "latency": 0.45860969997011125,
+    "total_prompt_tokens": 589,
+    "total_generation_tokens": 23,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12380820000000001,
+    "stage_rewrite_s": 0.12466940004378557,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07678579993080348,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.145143200061284,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.11191990005318075,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4586177000310272,
+    "unaccounted_latency_s": 9.989994578063488e-05,
+    "rewritten_query": "Which American music star appeared as a guest on Back Up, Dancer?",
+    "query_was_rewritten": true
+  }
+}

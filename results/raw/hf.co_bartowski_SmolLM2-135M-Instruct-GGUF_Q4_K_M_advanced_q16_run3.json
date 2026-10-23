@@ -1,0 +1,42 @@
+{
+  "question_id": "Q16",
+  "query": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+  "ground_truth": "9,984",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The correct answer would be 80 residents or more. The information provided gives us an idea of the total number of people living in the area, which is approximately 9,984.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Brown State Fishing Lake: Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States.  The lake is 62 acres (0.25 km\u00b2) in area and up to 13 feet (4 m) deep.  The area was formerly known as Brown County State Park, and is 8 miles (13 km) east of Hiawatha, Kansas.",
+      "Fishing Lake: Fishing Lake is a lake in the Canadian province of Saskatchewan.  The lake is located between highway 5 and highway 16, 22\u00a0km north of the town of Foam Lake, Saskatchewan, and 24\u00a0km east of the town of Wadena, Saskatchewan.  The lake does not have an effective outlet channel, and so is prone to flooding.  Record floods in 2007 resulted in a plan by the Government of Saskatchewan to lower the level of the lake by digging a drainage channel.  The Fishing Lake First Nation opposed this plan, and instead flood control berms were constructed.",
+      "Brown County, Kansas: Brown County (county code BR) is a county located in the northeast portion of the U.S. state of Kansas.  As of the 2010 census, the county population was 9,984.  Its county seat and most populous city is Hiawatha.  Brown County is the location of the Kickapoo Indian Reservation of Kansas, the majority of the Sac and Fox Reservation and the majority of the Iowa Reservation of Kansas and Nebraska."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 41,
+    "generation_speed": 400.6801790356312,
+    "prompt_eval_speed": 69700.06816632583,
+    "generation_latency_s": 0.18396590009797364,
+    "latency": 0.6033416000427678,
+    "total_prompt_tokens": 486,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1283155,
+    "stage_rewrite_s": 0.15638180007226765,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0747809000313282,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18807090003974736,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18402039993088692,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6033568000420928,
+    "unaccounted_latency_s": 0.00010349997319281101,
+    "rewritten_query": "The number of people who live in the state of Brown State Fishing Lake is approximately 1,052,734.",
+    "query_was_rewritten": true
+  }
+}

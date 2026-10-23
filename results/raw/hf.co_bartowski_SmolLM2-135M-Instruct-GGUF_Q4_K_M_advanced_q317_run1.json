@@ -1,0 +1,42 @@
+{
+  "question_id": "Q317",
+  "query": "The northern English anglian Kingdom in the Humber estuary spoke what dialect of english?",
+  "ground_truth": "Northumbrian",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The northern English Anglian Kingdom in the Humber estuary spoke Old English.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kingdom of Northumbria: The Kingdom of Northumbria ( ; Old English: \"Nor\u00fehymbra r\u012bce\" , \"kingdom of the Northumbrians\") was a medieval Anglian kingdom in what is now northern England and south-east Scotland, which subsequently became an earldom in a unified English kingdom.  The name reflects the approximate southern limit to the kingdom's territory, the Humber estuary.",
+      "Humber: The Humber is a large tidal estuary on the east coast of Northern England.  It is formed at Trent Falls, Faxfleet, by the confluence of the tidal rivers Ouse and Trent.  From there to the North Sea, it forms part of the boundary between the East Riding of Yorkshire on the north bank and Lincolnshire on the south bank.  Although the Humber is an estuary from the point at which it is formed, many maps show it as the River Humber.",
+      "Humber Forts: The Humber Forts are two large fortifications in the mouth of the Humber estuary in northern England: Haile Sand Fort ( ) and Bull Sand Fort ( )."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 309,
+    "generation_tokens": 17,
+    "generation_speed": 320.57930566293913,
+    "prompt_eval_speed": 19011.874730818927,
+    "generation_latency_s": 0.1455751999747008,
+    "latency": 0.5237675999524072,
+    "total_prompt_tokens": 387,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1324243,
+    "stage_rewrite_s": 0.15735230001155287,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07882410008460283,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14189319999422878,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.14561140001751482,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5237766000209376,
+    "unaccounted_latency_s": 9.599991608411074e-05,
+    "rewritten_query": "The northern English Anglian Kingdom in the Humber estuary spoke a dialect of English called \"Humber Gothic.",
+    "query_was_rewritten": true
+  }
+}

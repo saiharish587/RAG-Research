@@ -1,0 +1,33 @@
+{
+  "question_id": "Q6",
+  "query": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+  "ground_truth": "YG Entertainment",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "oracle",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Context:\n2014 S/S (South Korean boy group) is a South Korean boy group formed in 2013 by YG Entertainment. It debuted on August 12, 2014 as the debut album of the group.\nWinner (band): Winner (Hangul: \uc704\ub108), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted on August 12, 2014.\nQuestion: 2014 S/S was the debut album of a South Korean boy group that was formed by who?",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2014 S/S: 2014 S/S is the debut album of South Korean group WINNER.  It was released on August 12, 2014 by the group's record label, YG Entertainment.  The members were credited for writing the lyrics and composing the majority of the album's songs.",
+      "Winner (band): Winner (Hangul: \uc704\ub108), often stylized as WINNER, is a South Korean boy group formed in 2013 by YG Entertainment and debuted in 2014.  It currently consists of four members, Jinwoo, Seunghoon, Mino and Seungyoon.  Originally a five-piece group with Taehyun, who later departed from the group in November 2016."
+    ],
+    "n_retrieved": 2,
+    "prompt_tokens": 260,
+    "generation_tokens": 143,
+    "generation_speed": 436.0021952558083,
+    "prompt_eval_speed": 97487.81402324709,
+    "generation_latency_s": 0.3946152999997139,
+    "latency": 0.39466869994066656,
+    "total_prompt_tokens": 260,
+    "total_generation_tokens": 143,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.0576848,
+    "stage_generate_s": 0.3946514999261126,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.3946746999863535,
+    "unaccounted_latency_s": 2.3700064048171043e-05
+  }
+}

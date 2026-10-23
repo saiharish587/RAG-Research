@@ -1,0 +1,42 @@
+{
+  "question_id": "Q54",
+  "query": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+  "ground_truth": "Rome",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The answer is: \"Tuscany.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jacopo Puccini: Jacopo (Giacomo) Puccini (] ; 26 January 1712 16 May 1781) was an 18th-century Italian composer who lived and worked primarily in Lucca, Tuscany.  He was the first of five generations of composers, the most famous of whom was his great-great-grandson, the opera composer Giacomo Puccini.",
+      "La boh\u00e8me: La boh\u00e8me (] , ] ) is an opera in four acts, composed by Giacomo Puccini to an Italian libretto by Luigi Illica and Giuseppe Giacosa, based on \"Sc\u00e8nes de la vie de boh\u00e8me\" by Henri Murger.  The world premiere performance of \"La boh\u00e8me\" was in Turin on 1 February 1896 at the Teatro Regio, conducted by the young Arturo Toscanini; its U.S. premiere took place the following year, 1897, in Los Angeles.  Since then, \"La boh\u00e8me\" has become part of the standard Italian opera repertory and is one of the most frequently performed operas worldwide.",
+      "Lilian Sukis: Lilian Sukis (born 29 June 1939, Kaunas) is a Canadian operatic soprano of Lithuanian birth.  After earning diplomas from the University of Toronto and McMaster University, she made her professional opera debut in 1964 as Kate Pinkerton in Giacomo Puccini's \"Madama Butterfly\" with the Canadian Opera Company.  In 1965 she sang the role of Countess Almaviva in Wolfgang Amadeus Mozart's \"The Marriage of Figaro\" at the Stratford Festival.  That same year she became a pupil at the Metropolitan Opera Studio and School.  She made her debut at the Met in 1967 as Helen Niles in the world premiere of Marvin David Levy's \"Mourning Becomes Electra\".  In 1969 she became a member of the Bavarian State Opera where she remained for more than 20 years.  She has also appeared as a guest artist with several major opera houses and opera festivals internationally, including the Bayreuth Festival, the Frankfurt Opera, Graz, the Hamburg State Opera, the Salzburg Festival, and the Vienna State Opera among others."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 615,
+    "generation_tokens": 10,
+    "generation_speed": 411.5395695296103,
+    "prompt_eval_speed": 91695.24377516027,
+    "generation_latency_s": 0.10798259999137372,
+    "latency": 0.5252869999967515,
+    "total_prompt_tokens": 702,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.128083,
+    "stage_rewrite_s": 0.1326208000537008,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0723788000177592,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2121731999795884,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.10802310006693006,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5253069000318646,
+    "unaccounted_latency_s": 0.00011169991921633482,
+    "rewritten_query": "In what city did the famous opera singer, Giacomo Puccini, hail from?",
+    "query_was_rewritten": true
+  }
+}

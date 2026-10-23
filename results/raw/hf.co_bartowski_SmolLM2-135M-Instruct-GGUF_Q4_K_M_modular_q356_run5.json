@@ -1,0 +1,49 @@
+{
+  "question_id": "Q356",
+  "query": "Are Phlebodium and Pieris both species of ferns?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, Phlebodium is a genus of two to four species of ferns, while Pieris (plant) is a single species of butterfly. The genus \"Pieris\" contains five species of butterflies that feed on cabbage and other members of the Brassicaceae family.\n\nThe question asks about whether Phlebodium and Pieris are both species of ferns or if they belong to different genera.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Phlebodium: Phlebodium is a small genus of two to four species of ferns, native to tropical and subtropical regions of the Americas.  The genus is closely related to \"Polypodium\", and the species were formerly included in that genus.",
+      "Pieris (plant): Pieris ( or ) is a genus of seven species of shrubs in the family Ericaceae, native to mountain regions of eastern and southern Asia, eastern North America and Cuba.  Known commonly in North America as andromedas or fetterbushes, they are broad-leaved evergreen shrubs growing to 1 - tall and 3 - wide.  The leaves are spirally arranged, often appearing to be in whorls at the end of each shoot with bare stretches of shoot below; they are lanceolate-ovate, 2 - long and 1.0 - broad, leathery textured, and with an entire or serrated margin.  The young leaves in spring are typically brightly coloured.  The flowers are bell-shaped, 5 - long, white or pink, and arranged in racemes 5 - long.  The fruit is a woody capsule which splits into five sections to release the numerous small seeds.",
+      "Pieris (butterfly): Pieris, the whites or garden whites, is a widespread now almost cosmopolitan genus of butterflies of the family Pieridae.  The highest species diversity is in the Palearctic.  Many species of this genus have caterpillars which feed on cabbage and other members of the Brassicaceae.  The chemical basis of this association with a certain plant group has been studied for over 100 years, and is now known to occur via a number of biochemical adaptations to chemicals called glucosinolates in these plants.  In contrast to most other insects, \"Pieris\" caterpillars are able to detoxify these chemicals, and have become so specialised that they will not eat any food without glucosinolates.  The \"Pieris\" females, in turn, check for the presence of glucosinolates before laying eggs on a plant.  The crop-damaging species have spread from Eurasia to most of the rest of the world (most recently to South America and Africa) and are considered pest insects almost everywhere.  There are species of \"Pieris\" that are not pests, such as the North American species \"Pieris oleracea\" and \"Pieris virginiensis\".  These butterflies feed successfully only on specific native vegetation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 586,
+    "generation_tokens": 84,
+    "generation_speed": 410.9568935572722,
+    "prompt_eval_speed": 68306.32940902203,
+    "generation_latency_s": 0.32677170005626976,
+    "latency": 0.7395759000210091,
+    "total_prompt_tokens": 712,
+    "total_generation_tokens": 160,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2253344,
+    "stage_route_s": 0.09067519998643547,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2665501000592485,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05541479995008558,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.569999873638153e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3268055999651551,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7395852999761701,
+    "unaccounted_latency_s": 9.430001955479383e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Phlebodium (Pilea pellucida) and Pieris (Piperia spp.) are two closely related but distinct plant families within the family Asplodontiidae.",
+      "Answer: Yes, Phlebodium and Pieris are both species of ferns. They belong to the genus Pilea and Pirenia, respectively."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

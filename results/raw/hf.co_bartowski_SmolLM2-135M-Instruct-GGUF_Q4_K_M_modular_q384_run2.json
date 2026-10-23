@@ -1,0 +1,49 @@
+{
+  "question_id": "Q384",
+  "query": "What national historic district is located near a village in the town of Philipstown, New York?",
+  "ground_truth": "Valhalla Highlands Historic District",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The National Historic District located near a village in the town of Philipstown, New York is the Cold Spring Historic District.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Old Homer Village Historic District: Old Homer Village Historic District is a national historic district located at Homer in Cortland County, New York.  The district includes the historic core of the village of Homer centered on the village green.  It includes a mix of residential, commercial, civic, and religious structures.  Residences are primarily 2-story frame structures and commercial structures are 2- and 3-story structures constructed of brick.  Included within the district is the Homer Town Hall (1908), the 3\u00a0\u2044 -story Jebediah Barber building (1863), 3-story Brockway Block (1887\u20131888), and residences dating to the 1810s.  Also located within the district boundaries is the U.S. Post Office (Homer, New York).",
+      "Phillipsdale Historic District: The Phillipsdale Historic District encompasses a historic mill village along the Seekonk River in East Providence, Rhode Island.  The village grew up around the Richmond Paper Company Mill Complex, built 1883-1887, which is separately listed on the National Register.  It also includes 75 units of worker housing, as well as five houses (the oldest of which dates to c. 1750) that predate the mill complex's construction.  The Phillipsdale area was the largest source of employment in East Providence between 1893 and 1910.  The district is centered on Roger Williams Avenue and Bourne Avenue, and includes properties on Ruth Avenue and the grid of roads between Ruth and Roger Williams.  It also includes Omega Pond (the historic mill pond).",
+      "Cold Spring, New York: Cold Spring is a village in the town of Philipstown in Putnam County, New York, United States.  The population was 1,983 at the 2010 census.  It borders the smaller village of Nelsonville and Garrison.  The central area of the village is on the National Register of Historic Places as the Cold Spring Historic District due to its many well-preserved 19th-century buildings, constructed to accommodate workers at the nearby West Point Foundry (itself a Registered Historic Place today).  The town is the birthplace of General Gouverneur K. Warren, who was an important figure in the Union Army during the Civil War.  The village, located in the Hudson Highlands, sits at the deepest point of the Hudson River, directly across from West Point.  Cold Spring serves as a weekend getaway for many residents of New York City."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 618,
+    "generation_tokens": 25,
+    "generation_speed": 361.6218014551661,
+    "prompt_eval_speed": 48266.16682286785,
+    "generation_latency_s": 0.194739899947308,
+    "latency": 0.6364949999842793,
+    "total_prompt_tokens": 756,
+    "total_generation_tokens": 117,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22159099999999998,
+    "stage_route_s": 0.15538530005142093,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23172029992565513,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054442299995571375,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.530003156512976e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19478260003961623,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6365070999599993,
+    "unaccounted_latency_s": 0.0001118999207392335,
+    "route": "rag",
+    "router_raw": "The national historic district located near a village in the town of Philipstown, New York is known as the \"Philipstown Historic District.\"",
+    "sub_queries": [
+      "National Historic District: Philipstown",
+      "Note that I've added two separate questions to this list for easy reference and quick identification. The first query asks about the National Historic District located near a village in Philipstown, while the second query is asking about the national historic district located near a village in Philipstown."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

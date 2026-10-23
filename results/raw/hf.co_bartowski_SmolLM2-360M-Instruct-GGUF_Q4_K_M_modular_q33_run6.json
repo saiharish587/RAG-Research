@@ -1,0 +1,49 @@
+{
+  "question_id": "Q33",
+  "query": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+  "ground_truth": "Charles Eug\u00e8ne",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Pierre Dumont",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "L'Oiseau Blanc: L'Oiseau Blanc (commonly known in the English-speaking world as The White Bird ) was a French Levasseur PL.8 biplane that disappeared in 1927, during an attempt to make the first non-stop transatlantic flight between Paris and New York City to compete for the Orteig Prize.  The aircraft was flown by French World War I aviation heroes, Charles Nungesser and Fran\u00e7ois Coli.  The aircraft took off from Paris on 8 May 1927 and was last seen over Ireland.  Less than two weeks later, Charles Lindbergh successfully made the New York\u2013Paris journey and claimed the prize, flying the \"Spirit of St. Louis\".",
+      "Pierre Dumont (painter): Pierre Jean Baptiste Louis Dumont (29 March 1884, 5th arrondissement, Paris \u2013 8 April 1936, Paris) more commonly known as Pierre Dumont, was a French painter of the Rouen School.  He was schooled at the Lyc\u00e9e Pierre-Corneille and subsequently studied painting with Joseph Delattre.  Dumont founded the \"Groupe des XXX\" (1907), and along with Robert Antoine Pinchon, Yvonne Barbier, and Eug\u00e8ne Tirvert founded the Soci\u00e9t\u00e9 Normande de Peinture Moderne (1909).  From 1910 to 1916 Dumont lived at the Le Bateau-Lavoir becoming friends with Juan Gris, Max Jacob and Guillaume Apollinaire.  He turned towards Cubism during this period and played a crucial role in the organization of the \"Salon de la Section d'Or\" at the Galerie La Bo\u00e9tie in Paris, October 1912.",
+      "Gervais Raoul Lufbery: Gervais Raoul Victor Lufbery (March 14, 1885 \u2013 May 19, 1918) was a French and American fighter pilot and flying ace in World War I. Because he served in both the French Air Force, and later the United States Army Air Service in World War I, he is sometimes listed alternately as a French ace or as an American ace.  Officially, all but one of his 17 combat victories came while flying in French units."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 584,
+    "generation_tokens": 5,
+    "generation_speed": 246.0751021211674,
+    "prompt_eval_speed": 72304.07329454004,
+    "generation_latency_s": 0.15179150004405528,
+    "latency": 0.5065814999397844,
+    "total_prompt_tokens": 714,
+    "total_generation_tokens": 28,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.26958119999999997,
+    "stage_route_s": 0.11791510006878525,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1803682999452576,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05631900008302182,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.349994171410799e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15183149999938905,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5065933999139816,
+    "unaccounted_latency_s": 0.00010669988114386797,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Jean-Michel Dumont\"",
+      "\"L'Oiseau Blanc\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

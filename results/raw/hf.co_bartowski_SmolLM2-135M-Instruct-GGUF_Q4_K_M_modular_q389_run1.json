@@ -1,0 +1,49 @@
+{
+  "question_id": "Q389",
+  "query": "The man, who the award in which \"Summer of the Monkeys\" won, was a spokesman for white sector of America?",
+  "ground_truth": "middle America",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The man who received the award in which \"Summer of the Monkeys\" won is George Clooney.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Summer of the Monkeys: Summer of the Monkeys is a 1976 children's novel written by Wilson Rawls.  It was published by Doubleday (later released by Yearling Books) and was the winner of the William Allen White Book Award and the California Young Reader Medal.",
+      "Matt Damon: Matthew Paige Damon ( ; born October 8, 1970) is an American actor, film producer, philanthropist and screenwriter.  He is ranked among \"Forbes\" magazine's most bankable stars and is one of the highest-grossing actors of all time.  Damon has received various accolades, including an Academy Award from five nominations, two Golden Globe Awards from eight nominations, and has been nominated for two British Academy Film Awards and six Emmy Awards.",
+      "George Clooney: George Timothy Clooney (born May 6, 1961) is an American actor, director, producer, screenwriter, activist, businessman, and philanthropist.  He has received three Golden Globe Awards for his work as an actor and two Academy Awards, one for acting in \"Syriana\" (2006) and the other for co-producing \"Argo\" (2012)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 350,
+    "generation_tokens": 23,
+    "generation_speed": 346.1353290713841,
+    "prompt_eval_speed": 20753.038837829823,
+    "generation_latency_s": 0.19376550009474158,
+    "latency": 0.7094073999905959,
+    "total_prompt_tokens": 502,
+    "total_generation_tokens": 111,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2233831,
+    "stage_route_s": 0.1755591999972239,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28454210003837943,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0553532000631094,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.350005812942982e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1937986999982968,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7094166999449953,
+    "unaccounted_latency_s": 0.00011059979442507029,
+    "route": "rag",
+    "router_raw": "The man, who the award in which \"Summer of the Monkeys\" won, was a spokesman for white sector of America.",
+    "sub_queries": [
+      "The man, who won the award in which \"Summer of the Monkeys\" won, was a spokesman for the White Sector of America.",
+      "Question: The man who won the award in which \"Summer of the Monkeys\" won is from the White Sector of America?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

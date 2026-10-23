@@ -1,0 +1,49 @@
+{
+  "question_id": "Q257",
+  "query": "What year did Roy Rogers and his third wife star in a film directed by Frank McDonald?",
+  "ground_truth": "1945",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Frank McDonald (director) was active from 1935 to 1966. Therefore, the year that Frank McDonald directed more than 100 films is 1935-1966. The answer is 1935.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Frank McDonald (director): Frank McDonald (November 9, 1899 Baltimore, Maryland \u2013 March 8, 1980 Oxnard, California) was an American film and television director, active from 1935 to 1966.  He directed more than 100 films, including many Westerns starring Gene Autry and Roy Rogers, and numerous TV show episodes.  He is interred at Conejo Mountain Memorial Park in Camarillo, California.",
+      "2005 SANFL Grand Final: The 2005 South Australian National Football League (SANFL) Grand Final saw the Central District Bulldogs defeat Woodville-West Torrens by 28 points to claim the clubs fifth premiership victory.",
+      "Football at the 2006 Asian Games: Football at the 2006 Asian Games was held in Doha, Qatar from November 18 to December 15, 2006.  The opening match was played 14 days prior to the opening ceremony.  In this tournament, some 30 teams played in the men's competition, and 8 teams participated in women's competition."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 328,
+    "generation_tokens": 57,
+    "generation_speed": 214.86083049365217,
+    "prompt_eval_speed": 13293.884002756049,
+    "generation_latency_s": 0.3956435000291094,
+    "latency": 0.7041706999298185,
+    "total_prompt_tokens": 464,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23824620000000002,
+    "stage_route_s": 0.09820350003428757,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1524603000143543,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05767399992328137,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6699966080486774e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.39568770001642406,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.704186899936758,
+    "unaccounted_latency_s": 0.00010549998842179775,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "2005",
+      "2006"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

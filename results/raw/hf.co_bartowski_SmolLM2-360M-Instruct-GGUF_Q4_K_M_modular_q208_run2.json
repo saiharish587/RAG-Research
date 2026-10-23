@@ -1,0 +1,49 @@
+{
+  "question_id": "Q208",
+  "query": "Who was Chamberlain and Colonel of the military staff of The Merrie Monarch?",
+  "ground_truth": "Colonel Charles Hastings Judd",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Arthur Balfour",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oliver Cromwell: Oliver Cromwell (25 April 15993 September 1658) was an English military and political leader and later Lord Protector of the Commonwealth of England, Scotland, and Ireland.",
+      "Arthur Balfour: Arthur James Balfour, 1st Earl of Balfour, (usually , but traditionally /b\u0259\u026b\u02c8f\u0289r/ in Scottish English; 25 July 184819 March 1930) was a British Conservative politician who was the Prime Minister of the United Kingdom from July 1902 to December 1905, and later Foreign Secretary.",
+      "Oliver Cromwell in popular culture: Oliver Cromwell (25 April 1599\u00a0\u2013 3 September 1658) was an English military and political leader and later Lord Protector of the Commonwealth of England, Scotland and Ireland."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 264,
+    "generation_tokens": 5,
+    "generation_speed": 229.51572182694517,
+    "prompt_eval_speed": 11320.2692851936,
+    "generation_latency_s": 0.154686399968341,
+    "latency": 0.7838932999875396,
+    "total_prompt_tokens": 394,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2218503,
+    "stage_route_s": 0.09542100003454834,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.479073999915272,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054529900080524385,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.880002234131098e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15472660004161298,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.78391370002646,
+    "unaccounted_latency_s": 0.00011409993749111891,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Chamberlain, Sir Reginald Pembroke (1857-1923), was a British army officer who served as the First Viscount of the Royal Household. He was also a member of Parliament and a Member of the Board of Trade.",
+      "Query 2: Colonel John Charles Stuart Chamberlain (1860-1940) was a British Army officer, serving in various roles including the First Viscount of the Royal Household and as a member of Parliament."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

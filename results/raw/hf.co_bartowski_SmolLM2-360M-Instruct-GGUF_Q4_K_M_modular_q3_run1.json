@@ -1,0 +1,49 @@
+{
+  "question_id": "Q3",
+  "query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+  "ground_truth": "Animorphs",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Broken Empire Trilogy.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Final Blackout: Final Blackout is a dystopic science fiction novel by author L. Ron Hubbard.  The novel is set in the future and follows a man known as \"the Lieutenant\" as he restores order to England after a world war.  First published in serialized format in 1940 in the science fiction magazine \"Astounding Science Fiction\", \"Final Blackout\" was published in book form in 1948 by The Hadley Publishing Co..  Author Services Inc. published a hardcover edition of the book in 1988, and in 1989 the Church of Scientology-affiliated organization Bridge Publications said that a film director named Christopher Cain had signed a contract to write and direct a movie version based on the book.",
+      "Animorphs: Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic.  It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.  Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+      "The Broken Empire Trilogy: The Broken Empire Trilogy is a trilogy of fantasy novels by American-British author Mark Lawrence consisting of \"Prince of Thorns\", \"King of Thorns\" and \"Emperor of Thorns\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 399,
+    "generation_tokens": 8,
+    "generation_speed": 232.84920103617895,
+    "prompt_eval_speed": 13954.952434247341,
+    "generation_latency_s": 0.1705490000313148,
+    "latency": 0.5408309000777081,
+    "total_prompt_tokens": 557,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.237601,
+    "stage_route_s": 0.09838129999116063,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21484299993608147,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05687659990508109,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.180000491440296e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17058759997598827,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5408420000458136,
+    "unaccounted_latency_s": 9.220023639500141e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Broken Earth Trilogy\" by Kim Stanley Robinson",
+      "\"The Last Colony\" by Kim Stanley Robinson"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

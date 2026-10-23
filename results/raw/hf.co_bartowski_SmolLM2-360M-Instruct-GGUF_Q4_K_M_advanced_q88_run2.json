@@ -1,0 +1,42 @@
+{
+  "question_id": "Q88",
+  "query": "Where are Teide National Park and Garajonay National Park located?",
+  "ground_truth": "Canary Islands, Spain",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Teide National Park and Garajonay National Park are located on the island of Tenerife (Canary Islands, Spain) in the central and northern parts of La Gomera.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Teide National Park: Teide National Park (Spanish: \"Parque nacional del Teide\" , ] ) is a national park located in Tenerife (Canary Islands, Spain).",
+      "Garajonay National Park: Garajonay National Park (Spanish: \"Parque nacional de Garajonay\" , ] ) is located in the center and north of the island of La Gomera, one of the Canary Islands (Spain).  It was declared a national park in 1981 and a World Heritage Site by UNESCO in 1986.  It occupies 40 km (15 sq mi) and it extends into each of the six municipalities on the island.",
+      "Roque Cinchado: The Roque Cinchado is a rock formation, regarded as emblematic of the island of Tenerife (Canary Islands, Spain).  It lies within the Teide National Park (a World Heritage Site) in the municipality of La Orotava, near the volcano of the same name, in the heart of the island.  The Roque Cinchado is one of the largest in the world by altitude, for the entire park totals more than 2000 metres."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 327,
+    "generation_tokens": 39,
+    "generation_speed": 239.58864472689964,
+    "prompt_eval_speed": 20228.889576244976,
+    "generation_latency_s": 1.0129546000389382,
+    "latency": 3.45613140007481,
+    "total_prompt_tokens": 402,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.123554,
+    "stage_rewrite_s": 1.2292013999540359,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0058771000476554,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20795720000751317,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0130082999821752,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4561476000817493,
+    "unaccounted_latency_s": 0.00010430009569972754,
+    "rewritten_query": "Teide National Park is located in the southern part of Spain, while Garajonay National Park is situated in the northern region of Chile.",
+    "query_was_rewritten": true
+  }
+}

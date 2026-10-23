@@ -1,0 +1,49 @@
+{
+  "question_id": "Q125",
+  "query": "The youngest daughter of Lady Mary-Gaye Curzon stars with Douglas Smith and Lucien Laviscount  in what 2017 film?",
+  "ground_truth": "The Bye Bye Man",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Richard Smith",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Cressida Bonas: Cressida Curzon Bonas (born 18 February 1989) is an English actress, dancer and model.  She is the youngest daughter of Lady Mary-Gaye Curzon and entrepreneur Jeffrey Bonas, and a granddaughter of Edward Curzon, 6th Earl Howe.",
+      "by Matthew Vaughn and co-written by Jane Goldman, was released in February 2015.  The film stars Colin Firth, Taron Egerton, Michael Caine, Samuel L. Jackson, Mark Strong, Sophie Cookson, Sofia Boutella, Jack Davenport, and Mark Hamill.  A sequel to this film, subtitled \"\", was released in September 2017.",
+      "Richard Smith (silent film director): Richard Smith (September 17, 1886\u00a0\u2013 1937), also known as Dick Smith, was a screenwriter, actor, and film director.  Smith was born in Cleveland, Ohio, and became a comedian active in the vaudeville era.  He met his wife Alice Howell in 1910 and the two performed together as Howell and Howell.  After working under direction of Mack Sennett at the American Mutoscope and Biograph Company in New York City, Smith moved to Los Angeles, California.  Smith and his wife starred in reels together produced by L-KO Kompany."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 396,
+    "generation_tokens": 3,
+    "generation_speed": 218.91418563922943,
+    "prompt_eval_speed": 13956.438993444703,
+    "generation_latency_s": 0.14790990005712956,
+    "latency": 0.5137573999818414,
+    "total_prompt_tokens": 562,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21962510000000002,
+    "stage_route_s": 0.10291340004187077,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.20636059995740652,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05639110004995018,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.450002547353506e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1479425000725314,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5137669999385253,
+    "unaccounted_latency_s": 9.539979510009289e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The Youngest Daughter of Lady Mary-Gaye Curzon*",
+      "Douglas Smith and Lucien Laviscount*"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

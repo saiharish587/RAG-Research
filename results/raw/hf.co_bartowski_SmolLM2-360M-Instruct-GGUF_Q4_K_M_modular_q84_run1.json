@@ -1,0 +1,49 @@
+{
+  "question_id": "Q84",
+  "query": "Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",
+  "ground_truth": "Mondelez International, Inc.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Handi-Snacks are a snack food product line sold by Mondelez International, which is based in Illinois.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Handi-Snacks: Handi-Snacks are a snack food product line sold by Mondelez International.  The common two-compartment Handi-Snack has a small spread compartment and a larger compartment for crackers; a red plastic spreader is included with crackers.",
+      "Mondelez International: Mondelez International, Inc., styled Mondel\u0113z ( ), is an American multinational confectionery, food, and beverage company based in Illinois which employs about 107,000 people around the world.  It consists of the global snack and food brands of the former Kraft Foods Inc after the October 2012 spin-off of its North American grocery operations.  The Mondelez name, adopted in 2012, was suggested by Kraft Foods employees and is derived from the words \"mundus\" (Latin for \u201cworld\u201d) and \"delez\" (a proxy for the word \"delicious\").",
+      "General Mills: General Mills, Inc., is an American multinational manufacturer and marketer of branded consumer foods sold through retail stores.  It is headquartered in Golden Valley, Minnesota, a suburb of Minneapolis.  The company markets many well-known North American brands, including Annie's Homegrown, Betty Crocker, Yoplait, Colombo, Totino's, Pillsbury, Old El Paso, H\u00e4agen-Dazs, Cheerios, Trix, Cocoa Puffs, and Lucky Charms.  Its brand portfolio includes more than 89 other leading U.S. brands and numerous category leaders around the world."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 25,
+    "generation_speed": 234.89176187612748,
+    "prompt_eval_speed": 14361.504409826648,
+    "generation_latency_s": 0.24729149998165667,
+    "latency": 0.7575493999756873,
+    "total_prompt_tokens": 587,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2401255,
+    "stage_route_s": 0.10314230003859848,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3518893000436947,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05503599997609854,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.650008097290993e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2473307999316603,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7575647999765351,
+    "unaccounted_latency_s": 0.00011099991388618946,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Handi-Snacks\" - Based on the user's question, this query would be related to the Handi-Snacks brand of snack foods.",
+      "\"Illinois\" - This query would be related to the company that produces Handi-Snacks, which is based in Illinois."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q158",
+  "query": "What retailer in ABQ Uptown is headquarted in Poole, Dorset, United Kingdom?",
+  "ground_truth": "Lush Ltd.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Lush.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lush (company): Lush Ltd. is a cosmetics retailer headquartered in Poole, Dorset, United Kingdom.  The company was founded by Mark Constantine, a trichologist and Liz Weir, a beauty therapist.  They met in a hair and beauty salon in Poole, England.  A few years later, they decided to branch out and start their own business selling natural hair and beauty products.",
+      "Canford Cliffs: Canford Cliffs is an affluent suburb of Poole in Dorset, England.  The neighbourhood lies on the English Channel coast midway between Poole and Bournemouth.  To the southwest is Sandbanks which has some of the highest property values in the world, and together Canford Cliffs and Sandbanks form a parish, which has the fourth highest property prices in the world and second highest in the United Kingdom after London.",
+      "Poole Methodist Church: Poole Methodist Church (also known as Poole High Street Methodist Church or The Spire) is a nineteenth-century Methodist church on Poole High Street in Dorset, England.  An extension to the church was nominated for the 2016 Carbuncle Cup for \"the ugliest building in the United Kingdom completed in the last 12 months\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 344,
+    "generation_tokens": 4,
+    "generation_speed": 254.79329893623796,
+    "prompt_eval_speed": 25331.36966126657,
+    "generation_latency_s": 0.13957539992406964,
+    "latency": 0.5137342000380158,
+    "total_prompt_tokens": 488,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2368056,
+    "stage_route_s": 0.09791790007147938,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2190754999173805,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056987600051797926,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5999960750341415e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13960759993642569,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5137430999893695,
+    "unaccounted_latency_s": 9.910005610436201e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Poole, Dorset, United Kingdom\"",
+      "\"Headquarters Poole, Dorset, United Kingdom\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

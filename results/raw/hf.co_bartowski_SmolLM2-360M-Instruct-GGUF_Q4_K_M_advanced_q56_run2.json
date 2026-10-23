@@ -1,0 +1,42 @@
+{
+  "question_id": "Q56",
+  "query": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+  "ground_truth": "Marion, South Australia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Sydney, which was founded in 1838 as Sydney School House.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sydney: Sydney ( ) is the state capital of New South Wales and the most populous city in Australia and Oceania.  Located on Australia's east coast, the metropolis surrounds the world's largest natural harbour and sprawls about 70 km on its periphery towards the Blue Mountains to the west, Hawkesbury to the north and Macarthur to the south.  Sydney is made up of 658 suburbs, 40 local government areas and 15 contiguous regions.  Residents of the city are known as \"Sydneysiders\".  As at June 2016 Sydney's estimated population was 5,029,768.",
+      "Westminster School, Adelaide: Westminster School is an independent, Uniting Church, Early Learning to Year 12, coeducational, day and boarding school located at Marion, South Australia, 12 km south of Adelaide.  Founded as a Methodist day and boarding school for boys, the school was opened by the Prime Minister Robert Menzies in 1961 and is named after Westminster School in London.  The school became co-educational in 1978, and has a current enrolment of around 1150 students.",
+      "Sydney Opera House: The Sydney Opera House is a multi-venue performing arts centre in Sydney, New South Wales, Australia.  It is one of the 20th century's most famous and distinctive buildings."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 392,
+    "generation_tokens": 19,
+    "generation_speed": 245.99608995688595,
+    "prompt_eval_speed": 12982.281834740852,
+    "generation_latency_s": 1.039593999972567,
+    "latency": 3.4332298999652267,
+    "total_prompt_tokens": 485,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12240680000000001,
+    "stage_rewrite_s": 1.298010200029239,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9954073999542743,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10010939999483526,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0396269999910146,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4332385999150574,
+    "unaccounted_latency_s": 8.519995026290417e-05,
+    "rewritten_query": "The Australian city founded in 1838, which was named after a school in London, is located in Sydney.",
+    "query_was_rewritten": true
+  }
+}

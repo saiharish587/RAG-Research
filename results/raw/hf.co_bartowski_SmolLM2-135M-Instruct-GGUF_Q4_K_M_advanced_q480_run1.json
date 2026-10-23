@@ -1,0 +1,42 @@
+{
+  "question_id": "Q480",
+  "query": "Who programmed a cartridge-based development system made by a company noted for authoring Atari's BASIC?",
+  "ground_truth": "Kathleen O'Brien",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Atari Games Corporation",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Atari Corporation: Atari Corporation was an American manufacturer of computers and video game consoles from 1984 to 1996.  Atari Corp. was founded in July 1984 when Warner Communications sold the home computing and game console divisions of Atari, Inc. to Jack Tramiel.  Its chief products were the Atari ST, , Atari 7800, Atari Lynx, and Atari Jaguar.  The company reverse merged with JTS Inc. in 1996, becoming a small division, which itself closed when JTS liquidated the IP to Hasbro Interactive in 1998.",
+      "Atari Games: Atari Games Corporation was an American producer of arcade games.  It was originally the coin-operated arcade game division of Atari, Inc. and was split off into its own company in 1984.",
+      "Atari ST: The Atari ST is a line of home computers from Atari Corporation and the successor to the Atari 8-bit family.  The initial ST model, the 520ST, saw limited release in April-June 1985 and was widely available in July.  The Atari ST is the first personal computer to come with a bitmapped color GUI, using a version of Digital Research's GEM released in February 1985.  The 1040ST, released in 1986, is the first personal computer to ship with a megabyte of RAM in the base configuration and also the first with a cost-per-kilobyte of less than US$1."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 428,
+    "generation_tokens": 5,
+    "generation_speed": 324.5278120334913,
+    "prompt_eval_speed": 23960.141073727817,
+    "generation_latency_s": 0.11547190009150654,
+    "latency": 0.6136813999619335,
+    "total_prompt_tokens": 510,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1229207,
+    "stage_rewrite_s": 0.23463840002659708,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07431960001122206,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18913399998564273,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.11550629988778383,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.613690699916333,
+    "unaccounted_latency_s": 9.310001041740179e-05,
+    "rewritten_query": "A user query was generated with an original query that is now optimized and more concise. The revised query uses the keyword \"Atari\" to provide a clear and direct answer, while also using more descriptive language (\"Developer of Atari's BASIC\") to convey the company's expertise in programming.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q361",
+  "query": "The Waterloo Vase has been used as a garden ornament at whose residence and administrative headquarters?",
+  "ground_truth": "reigning monarch of the United Kingdom",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Waterloo Vase has been used as a garden ornament in the garden of Buckingham Palace, London.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Waterloo Vase: The Waterloo Vase is a great urn, 15ft (5m) high and weighing 20 tons, fashioned from a single piece of Carrara marble.  Since 1906, it has been used as a garden ornament in the garden of Buckingham Palace, London.",
+      "Medici Vase: The Medici Vase is a monumental marble bell-shaped krater sculpted in Athens in the second half of the 1st century AD as a garden ornament for the Roman market.  It is now in the Uffizi Gallery in Florence.",
+      "Buckingham Palace: Buckingham Palace ( ) is the London residence and administrative headquarters of the reigning monarch of the United Kingdom.  Located in the City of Westminster, the palace is often at the centre of state occasions and royal hospitality.  It has been a focal point for the British people at times of national rejoicing and mourning."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 268,
+    "generation_tokens": 21,
+    "generation_speed": 217.08118836444828,
+    "prompt_eval_speed": 32386.706948640487,
+    "generation_latency_s": 0.2165046000154689,
+    "latency": 0.8053606000030413,
+    "total_prompt_tokens": 404,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2251158,
+    "stage_route_s": 0.09154000005219132,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4335694999899715,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06354929995723069,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5299955420196056e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21654190006665885,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8053731999825686,
+    "unaccounted_latency_s": 0.00011789996642619371,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Waterloo Vase was used as a garden ornament at the residence of the Duke of Wellington, who served as the British Prime Minister during the Napoleonic Wars.",
+      "Query 2: The Waterloo Vase was used as a garden ornament at the administrative headquarters of the Ministry of Works in London, England, where it was displayed and admired by the public."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q205",
+  "query": "Which actor does American Beauty and American Beauty have in common?",
+  "ground_truth": "Kevin Spacey",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "American Beauty has Kevin Spacey in common with the soundtrack album, as both films feature his character Lester Burnham.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "American Beauty (1999 film): American Beauty is a 1999 American drama film directed by Sam Mendes and written by Alan Ball.  Kevin Spacey stars as Lester Burnham, a 42-year-old advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, Angela (Mena Suvari).  Annette Bening co-stars as Lester's materialistic wife, Carolyn, and Thora Birch plays their insecure daughter, Jane.  Wes Bentley, Chris Cooper, and Allison Janney also feature.  The film is described by academics as a satire of American middle-class notions of beauty and personal satisfaction; analysis has focused on the film's explorations of romantic, and paternal love, sexuality, beauty, materialism, self-liberation, and redemption.",
+      "American Beauty (soundtrack): American Beauty: Music from the Original Motion Picture Soundtrack is the soundtrack album to the 1999 film starring Kevin Spacey and Annette Bening.",
+      "American Beauty (1927 film): American Beauty is a lost 1927 American silent film romantic drama produced and distributed by First National Pictures.  This film was directed by Richard Wallace and starred Billie Dove.  It was based on a short story \"American Beauty\" by Wallace Irwin.  She is supported by Walter McGrail and Margaret Livingston."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 369,
+    "generation_tokens": 26,
+    "generation_speed": 214.8795847865254,
+    "prompt_eval_speed": 25777.15682850157,
+    "generation_latency_s": 0.24698469997383654,
+    "latency": 0.6576512000756338,
+    "total_prompt_tokens": 493,
+    "total_generation_tokens": 73,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2185269,
+    "stage_route_s": 0.09445179998874664,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2611816000426188,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0548592999111861,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.529999569058418e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2470214000204578,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6576601000269875,
+    "unaccounted_latency_s": 0.0001015000743791461,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"American Beauty\" - American Beauty is an actor who has appeared in various films, including American Beauty.",
+      "\"American Beauty\" - American Beauty is a film starring American Beauty as the main character."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

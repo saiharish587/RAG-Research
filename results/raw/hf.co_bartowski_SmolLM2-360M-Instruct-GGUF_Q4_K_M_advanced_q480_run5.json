@@ -1,0 +1,42 @@
+{
+  "question_id": "Q480",
+  "query": "Who programmed a cartridge-based development system made by a company noted for authoring Atari's BASIC?",
+  "ground_truth": "Kathleen O'Brien",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Kathleen O'Brien of Shepardson Microsystems.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Atari Assembler Editor: The Atari Assembler Editor is a cartridge-based development system used to edit, assemble, and debug 6502 programs for the Atari 8-bit family of home computers.  It was programmed by Kathleen O'Brien of Shepardson Microsystems.  It was the first commercially available assembler for the Atari 8-bit computers.",
+      "Shepardson Microsystems: Shepardson Microsystems, Inc. (SMI) was a small company producing operating systems and programming languages for the Atari 8-bit and Apple II computer families.  SMI is most noted for authoring Atari's BASIC and Disk Operating System (DOS) products.",
+      "Activision: Activision Publishing, Inc., also known as Activision, is an American video game publisher.  It was founded on October 1, 1979 and was the world's first independent developer and distributor of video games for gaming consoles.  Its first products were cartridges for the Atari 2600 video console system published from July 1980 for the US market and from August 1981 for the international market (UK)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 334,
+    "generation_tokens": 15,
+    "generation_speed": 263.36581511719777,
+    "prompt_eval_speed": 44826.19782579519,
+    "generation_latency_s": 0.9755167999537662,
+    "latency": 3.3314689999679103,
+    "total_prompt_tokens": 416,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1304203,
+    "stage_rewrite_s": 1.200666100019589,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0415735999122262,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11358279990963638,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9755675999913365,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3315059000160545,
+    "unaccounted_latency_s": 0.00011650018859654665,
+    "rewritten_query": "The cartridge-based development system was programmed by a company known for authoring Atari's BASIC.",
+    "query_was_rewritten": true
+  }
+}

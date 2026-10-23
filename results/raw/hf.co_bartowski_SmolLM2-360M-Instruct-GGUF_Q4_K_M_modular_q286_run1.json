@@ -1,0 +1,49 @@
+{
+  "question_id": "Q286",
+  "query": "Who is older, Ferdi Taygan or Mahesh Bhupathi?",
+  "ground_truth": "Ferdi Taygan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Mahesh Bhupathi is older than Ferdi Taygan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ferdi Taygan: Ferdi Taygan (born December 5, 1956), is a former professional tennis player from the United States.  He is of Turkish descent.",
+      "Mahesh Bhupathi: Mahesh Shrinivas Bhupathi (born 7 June 1974) is a retired Indian professional tennis player.  In 1997, he became the first Indian to win a Grand Slam tournament (with Rika Hiraki).  With his win at the Australian Open mixed doubles in 2006, he joined the elite group of eight tennis players who have achieved a career Grand Slam in mixed doubles.  He is also the founder of International Premier Tennis League.  In December 2016, Bhupathi was appointed as India's next non-playing Davis Cup captain and took over the reins from Anand Amritraj in February 2017.",
+      "1982 US Open \u2013 Mixed Doubles: Anne Smith and Kevin Curren were the defending champions and won in the final 6\u20137, 7\u20136 (7\u20134), 7\u20136 (7\u20135) against Barbara Potter and Ferdi Taygan."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 331,
+    "generation_tokens": 15,
+    "generation_speed": 230.16019149327934,
+    "prompt_eval_speed": 13264.938083597162,
+    "generation_latency_s": 0.2003129000077024,
+    "latency": 0.6222403000574559,
+    "total_prompt_tokens": 463,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2315529,
+    "stage_route_s": 0.10649220005143434,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2541047999402508,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06116200005635619,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.4999953135848045e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20034410001244396,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6222487000050023,
+    "unaccounted_latency_s": 9.139999747276306e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Ferdi Taygan is older than Mahesh Bhupathi.",
+      "Query 2: Mahesh Bhupathi is older than Ferdi Taygan."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

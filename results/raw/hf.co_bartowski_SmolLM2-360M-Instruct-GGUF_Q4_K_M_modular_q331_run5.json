@@ -1,0 +1,49 @@
+{
+  "question_id": "Q331",
+  "query": "Where is the singer of \"B Boy\" raised?",
+  "ground_truth": "Philadelphia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The singer of \"Boy Baby\" is Amy Winehouse.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Backstreet Boys: The Backstreet Boys (often abbreviated as BSB) are an American vocal group, formed in Orlando, Florida in 1993.  The group consists of AJ McLean, Howie D., Nick Carter, Kevin Richardson, and Brian Littrell.",
+      "B Boy Baby: \"B Boy Baby\" is a song written by Phil Spector, Ellie Greenwich, Jeff Barry Craig Klepto Tucker, Peter Celik and Angela Hunte.  It features uncredited vocals by singer Amy Winehouse and was produced by Salaam Remi for Mutya Buena's debut album, \"Real Girl\", being released as the fourth and final single from the album.",
+      "Trace Cyrus: Trace Dempsey Cyrus (born Neil Timothy Helson; February 24, 1989) is an American musician.  The son of country singer Billy Ray Cyrus and brother of recording artist Miley Cyrus, he is the backing vocalist and bassist of the band Metro Station.  He left the band in 2010 but returned in 2014.  In 2010, he began providing vocals and guitar in the pop rock band Ashland HIGH.  He also owns the clothing company From Backseats to Bedrooms."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 337,
+    "generation_tokens": 14,
+    "generation_speed": 221.23893805309734,
+    "prompt_eval_speed": 39117.817759721416,
+    "generation_latency_s": 0.1854753999505192,
+    "latency": 0.5459064999595284,
+    "total_prompt_tokens": 459,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2244484,
+    "stage_route_s": 0.09533629997167736,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2068632000591606,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058052800013683736,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.7699973694980145e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18551410001236945,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5459180999314412,
+    "unaccounted_latency_s": 9.469990618526936e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Where was the singer of 'Boy' born?\"",
+      "\"What is the singer's background in music?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

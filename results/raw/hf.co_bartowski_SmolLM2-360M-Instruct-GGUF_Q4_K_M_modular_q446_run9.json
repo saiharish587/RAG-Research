@@ -1,0 +1,49 @@
+{
+  "question_id": "Q446",
+  "query": "Mick Carter is the landlord of a public house located at what address?",
+  "ground_truth": "46 Albert Square, Walford, London E20",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Mick Carter is the landlord of a public house located at Jackson Place NW in Washington D.C.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mick Carter: Michael \"Mick\" Carter is a fictional character from the BBC soap opera \"EastEnders\" played by Danny Dyer, making his first appearance in the show in the episode originally broadcast in the United Kingdom on 25 December 2013.  Dyer's casting was announced on 1 October 2013 with that of his on-screen partner, Linda Carter, played by Kellie Bright.  He is the son of established character Shirley Carter (Linda Henry) and a member of the Carter family.  Mick immediately becomes the new landlord of The Queen Victoria public house (referred to as \"The Vic\"), bringing Linda, their son Johnny Carter (Sam Strike/Ted Reilly) and pet dog Lady Di with him.  They are later joined by daughter Nancy Carter (Maddy Hill), son Lee Carter (Danny-Boy Hatchard) and other members of the extended family.",
+      "Peter Parker House: The Peter Parker House, also known as the former headquarters of the Carnegie Endowment for International Peace, is a historic row house at 700 Jackson Place NW in Washington D.C. Built in 1860, it is historically significant for its association with the Carnegie Endowment, whose headquarters it was from its founding in 1910 until 1948.  The building was declared a National Historic Landmark in 1974.  It has since been incorporated into the Blair House complex serving high-profile official visitors to the capital.",
+      "Fred Carter House: The Fred Carter House is a historic house located on School Avenue, north of 4th Street, in Hardy, Arkansas."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 422,
+    "generation_tokens": 22,
+    "generation_speed": 231.9671871869761,
+    "prompt_eval_speed": 48388.94622176356,
+    "generation_latency_s": 0.21700009994674474,
+    "latency": 0.5520840000826865,
+    "total_prompt_tokens": 552,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2202966,
+    "stage_route_s": 0.09695470007136464,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1817147999536246,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05624790000729263,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.049991887062788e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21703199995681643,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.552093300037086,
+    "unaccounted_latency_s": 9.410013444721699e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Mick Carter's Public House\"",
+      "\"Public House, Mick Carter\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

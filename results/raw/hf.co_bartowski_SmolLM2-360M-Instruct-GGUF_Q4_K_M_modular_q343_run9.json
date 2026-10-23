@@ -1,0 +1,49 @@
+{
+  "question_id": "Q343",
+  "query": "Who was the president of the Sinn Fein political party during the Hume-Adams Dialogue?",
+  "ground_truth": "Gerard \"Gerry\" Adams",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The President of the Sinn F\u00e9in political party during the Hume-Adams dialogue was Gerry Adams.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hume\u2013Adams dialogue: The Hume\u2013Adams dialogue was a series of talks between then Social Democratic and Labour Party leader John Hume and Sinn F\u00e9in leader Gerry Adams during the Northern Ireland peace process.",
+      "\u00c9amon de Valera: \u00c9amon de Valera ( ; ] ; first registered as George de Valero; changed some time before 1901 to Edward de Valera; 14 October 1882 \u2013 29 August 1975) was a prominent politician and statesman in 20th-century Ireland.  His political career spanned over half a century, from 1917 to 1973; he served several terms as head of government and head of state.  He also led the introduction of the Constitution of Ireland.",
+      "Hatchet man (politics): In the context of the Watergate scandal, the term hatchet man was used to refer to a trusted and particularly orthodox subordinate tasked by his employer with destroying a political opponent by any means necessary.  Charles Colson was known as a hatchet man for President Richard Nixon, as was H.R. Haldeman, who proudly described himself as \"Richard Nixon's 'son of a bitch'\".  This use of the term has since become commonplace for anyone who is tasked with conducting distasteful, illegal, or unfair \"dirty work\" to protect the reputation or power of their employer."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 23,
+    "generation_speed": 216.588820250113,
+    "prompt_eval_speed": 41444.444444444445,
+    "generation_latency_s": 0.23084440000820905,
+    "latency": 0.6293872999958694,
+    "total_prompt_tokens": 511,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2224902,
+    "stage_route_s": 0.09801299998071045,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24158269993495196,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058775900048203766,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1200040616095066e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23087840003427118,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6293968000682071,
+    "unaccounted_latency_s": 9.620003402233124e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The President of the Sinn Fian Party during the Hume-Adams Dialogue\"",
+      "\"Sinn Fian Party President during the Hume-Adams Dialogue\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

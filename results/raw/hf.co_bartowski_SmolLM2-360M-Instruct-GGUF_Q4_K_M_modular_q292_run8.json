@@ -1,0 +1,49 @@
+{
+  "question_id": "Q292",
+  "query": "What is the population of the town at the intersection of Interstate Highways 77 and  the longest Interstate highway within the borders of Virginia?",
+  "ground_truth": "8,211 at the 2010 census",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The population of the town at the intersection of Interstate Highways 77 and the longest Interstate Highway within the borders of Virginia is approximately 10,500.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Interstate 81 in Virginia: Interstate 81 (I-81) is an 855 mi highway.  In the U.S. state of Virginia, I-81 runs for 324.92 mi , making the portion in Virginia longer than any other state's portion.  It is also the longest Interstate highway within the borders of Virginia.  It stretches from the Tennessee state line near Bristol to the West Virginia state line near Winchester.",
+      "Interstate 85 in Virginia: Interstate 85 (I-85) is a part of the Interstate Highway System that runs from Montgomery, Alabama to Petersburg, Virginia.  In Virginia, the Interstate Highway runs 68.64 mi from the North Carolina state line near Bracey north to I-95 in Petersburg.  I-85 passes through the eastern part of Southside Virginia, where it parallels U.S. Route 1 (US 1) from Petersburg, where the highway runs concurrently with US 460, to south of South Hill, where the highway intersects Southside's major east\u2013west highway, US 58.  The Interstate Highway is the primary connection between the Richmond\u2013Petersburg metropolitan area and the Research Triangle and other major metropolitan areas of North Carolina.  Like all mainline Interstate Highways, I-85 is a part of the National Highway System for its entire length in Virginia.",
+      "Veterans Bridge (Chesapeake, Virginia): The Veterans Bridge is a fixed span concrete bridge that spans the Southern Branch of the Elizabeth River in the Deep Creek neighborhood of Chesapeake in southeastern Virginia, USA.  The bridge, which partially opened in 2014, currently carries two lanes of U.S. Route\u00a017 (US\u00a017; Dominion Blvd) across its northbound span.  When the southbound span is completed in late 2017, the entire bridge will be four lanes.  The corridor frequently acts as a bypass route for congested I-64 High Rise Bridge traffic.  It replaces the much shorter and smaller Dominon Boulevard Steel Bridge, which because of its 11-foot underwater clearance opened on average of 16 times per day."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 553,
+    "generation_tokens": 36,
+    "generation_speed": 231.3386798272671,
+    "prompt_eval_speed": 55656.19967793881,
+    "generation_latency_s": 0.2825418000575155,
+    "latency": 0.8243499000091106,
+    "total_prompt_tokens": 711,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2267999,
+    "stage_route_s": 0.1043957999208942,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3733788999961689,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06385999999474734,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3899985030293465e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2825828999048099,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8243623999878764,
+    "unaccounted_latency_s": 0.00010180019307881594,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Population of the town at the intersection of Interstate Highways 77 and the longest Interstate Highway within the borders of Virginia\"",
+      "\"Interstate Highway 77 population in the town at the intersection of Interstate Highways 77 and the longest Interstate Highway within the borders of Virginia\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

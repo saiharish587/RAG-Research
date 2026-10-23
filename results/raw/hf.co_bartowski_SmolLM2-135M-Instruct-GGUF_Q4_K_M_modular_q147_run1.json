@@ -1,0 +1,49 @@
+{
+  "question_id": "Q147",
+  "query": "When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change names?",
+  "ground_truth": "2009",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The English local newspaper, featuring the sculpture and war memorial in the Forbury Gardens, changed its name from \"Forbury\" to \"Reading\" when it was first published. The name change occurred on 1 January 1884, after the Forbury War had ended.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Forbury Gardens: Forbury Gardens is a public park in the town of Reading in the English county of Berkshire.  The park is on the site of the outer court of Reading Abbey, which was in front of the Abbey Church.  The site was formerly known as the Forbury, and one of the roads flanking the current gardens is still known as The Forbury.  Fairs were held on the site three times a year until the 19th century.",
+      "The Times: The Times is a British daily (Monday to Saturday) national newspaper based in London, England.  It began in 1785 under the title The Daily Universal Register , adopting its current name on 1 January 1788.  \"The Times\" and its sister paper \"The Sunday Times\" (founded in 1821) are published by Times Newspapers, since 1981 a subsidiary of News UK, itself wholly owned by News Corp.  \"The Times\" and \"The Sunday Times\" do not share editorial staff, were founded independently and have only had common ownership since 1967.",
+      "Maiwand Lion: The Maiwand Lion is a sculpture and war memorial in the Forbury Gardens, a public park in the town of Reading, in the English county of Berkshire.  The statue was named after the Battle of Maiwand and was erected in 1884 to commemorate the deaths of 329 men from the 66th (Berkshire) Regiment of Foot during the campaign in the Second Anglo-Afghan War in Afghanistan between 1878 and 1880.  It is sometimes known locally as the Forbury Lion."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 58,
+    "generation_speed": 409.2086046692113,
+    "prompt_eval_speed": 21273.502616786198,
+    "generation_latency_s": 0.2695994999958202,
+    "latency": 0.7793577000265941,
+    "total_prompt_tokens": 583,
+    "total_generation_tokens": 171,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2217276,
+    "stage_route_s": 0.20831679995171726,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24248260003514588,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05879289994481951,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3599982745945454e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2696399000706151,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7793691999977455,
+    "unaccounted_latency_s": 9.410001803189516e-05,
+    "route": "rag",
+    "router_raw": "The user's question requires retrieving information from internal files/documents to determine when the English local newspaper changed their name. The requested information is \"when did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change names?\"",
+    "sub_queries": [
+      "When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change their name?",
+      "When did the English local newspaper, featuring the sculpture and war memorial in the Forbury gardens, change their name to something else entirely?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

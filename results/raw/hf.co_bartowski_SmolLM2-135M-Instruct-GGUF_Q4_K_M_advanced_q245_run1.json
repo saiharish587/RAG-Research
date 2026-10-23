@@ -1,0 +1,42 @@
+{
+  "question_id": "Q245",
+  "query": "What class of instrument does Apatim Majumdar play?",
+  "ground_truth": "strings",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Apatim Majumdar plays a Sarod.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Apratim Majumdar: Apratim Majumdar (born 1978), is an Indian classical musician from Kolkata, India.  He plays the Sarod.  His \"Dhrupadee Veenkar\" style of Ustad Alauddin Khan's Seni Veenkar Gharana: analytically imaginative prosodic progression with metrical waves of melodic phrases interwoven with highest order of technical brilliance and maturity reminds the great legends of the Gharana.  He is an internationally recognized instructor of classical Indian music.",
+      "String quintet: A string quintet is a musical composition for five string players.  As an extension to the string quartet (two violins, a viola, and a cello), a string quintet includes a fifth string instrument, usually a second viola (a so-called \"viola quintet\") or a second cello (a \"cello quintet\"), or occasionally a double bass.",
+      "Piano Quartet No. 3 (Brahms): The Piano Quartet No. 3 in C minor, Op.  60, completed by Johannes Brahms in 1875, is scored for piano, violin, viola and cello.  It is sometimes called the \"Werther Quartet\" after Goethe's \"The Sorrows of Young Werther\".)"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 356,
+    "generation_tokens": 12,
+    "generation_speed": 363.8568939920222,
+    "prompt_eval_speed": 21811.05256708737,
+    "generation_latency_s": 0.12441940000280738,
+    "latency": 0.48719610006082803,
+    "total_prompt_tokens": 429,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1378125,
+    "stage_rewrite_s": 0.169877800042741,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07772730011492968,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11502759996801615,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.12446049996651709,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4872074000304565,
+    "unaccounted_latency_s": 0.00011479994282126427,
+    "rewritten_query": "Apatim Majumdar plays the violin, a genre that encompasses various types of instruments including the viola and cello.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q349",
+  "query": "Wheat salad is composed typically of what red fruit?",
+  "ground_truth": "tomato",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The answer to this question is \"Quince.\" Quinces are a type of fruit that grows in the genus Cydonia, which includes apples, pears, and plums. Quinces are commonly used as food due to their sweet taste and edible appearance. They are also grown for ornamental purposes like flowers and other plant parts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wheat salad: Wheat salad (Arabic: \u0633\u0644\u0637\u0629 \u0642\u0645\u062d\u200e \u200e ), is a salad of Arab salads, it typically of wheat, corn, tomatoes, carrots, cucumber pickles, lemon, parsley, olive oil and salt.",
+      "Fruit salad: Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either in their own juices or a syrup.  When served as an appetizer or as a dessert, a fruit salad is sometimes known as a fruit cocktail or fruit cup.  In different forms fruit salad can be served as an appetizer, a side-salad, or a dessert.",
+      "Quince: The quince ( ; \"Cydonia oblonga\") is the sole member of the genus Cydonia in the family Rosaceae (which also contains apples and pears, among other fruits).  It is a small deciduous tree that bears a pome fruit, similar in appearance to a pear, and bright golden-yellow when mature.  Throughout history the cooked fruit has been used as food, but the tree is also grown for its attractive pale pink blossoms and other ornamental qualities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 304,
+    "generation_tokens": 67,
+    "generation_speed": 390.28595727825063,
+    "prompt_eval_speed": 24482.56422646372,
+    "generation_latency_s": 0.2626500999322161,
+    "latency": 0.6337038000347093,
+    "total_prompt_tokens": 374,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1393544,
+    "stage_rewrite_s": 0.13920660002622753,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.06658410001546144,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1651418999535963,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2626843999605626,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6337128999875858,
+    "unaccounted_latency_s": 9.650003630667925e-05,
+    "rewritten_query": "The wheat salad contains a variety of fruits such as grapes, apples, and pears.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q545",
+  "query": "The American Sweetgum is the hostplant of what kind of bug?",
+  "ground_truth": "moth",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The American sweetgum is the hostplant of a type of insect known as the \"sweetgum leafcutter bee,\" specifically the species Melissodes melitodes, which feeds on the nectar and pollen of the tree.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Liquidambar: Liquidambar, commonly called sweetgum (sweet gum in the UK), gum, redgum, satin-walnut, or American storax, is the only genus in the flowering plant family Altingiaceae with 15 species.  They were formerly often treated in Hamamelidaceae.",
+      "Liquidambar styraciflua: American sweetgum (\"Liquidambar styraciflua\"), also known as American storax, hazel pine, bilsted, redgum, satin-walnut, star-leaved gum, alligatorwood, or simply sweetgum, is a deciduous tree in the genus \"Liquidambar\" native to warm temperate areas of eastern North America and tropical montane regions of Mexico and Central America.  Sweet gum is one of the main valuable forest trees in the southeastern United States, and is a popular ornamental tree in temperate climates.  It is recognizable by the combination of its five-pointed star-shaped leaves and its hard, spiked fruits.  It is currently classified in the plant family Altingiaceae, but was formerly considered a member of the Hamamelidaceae.",
+      "Datronia scutellata: Datronia scutellata is a plant pathogen that causes wood rot on \"Liquidambar\" (sweetgum) and \"Platanus occidentalis\" (American sycamore) trees."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 371,
+    "generation_tokens": 48,
+    "generation_speed": 217.22012544462245,
+    "prompt_eval_speed": 43054.42729488221,
+    "generation_latency_s": 0.3428332000039518,
+    "latency": 0.804931899998337,
+    "total_prompt_tokens": 501,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2325324,
+    "stage_route_s": 0.1037149999756366,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.32041970000136644,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03779420000500977,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.030007403343916e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.342870399937965,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8049454999854788,
+    "unaccounted_latency_s": 0.00010649999603629112,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "American Sweetgum (Liquidambrae) - Hostplant for the Eastern Tiger Swallowtail butterfly."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

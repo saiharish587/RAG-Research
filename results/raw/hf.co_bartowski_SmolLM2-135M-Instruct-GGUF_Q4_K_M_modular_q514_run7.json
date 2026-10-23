@@ -1,0 +1,49 @@
+{
+  "question_id": "Q514",
+  "query": "What professions did S. Sylvan Simon and Danny Cannon have in common?",
+  "ground_truth": "director and producer",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Sylvan Simon and Danny Cannon both had roles as stage/film directors and producers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Danny Cannon: John Danny Cannon (born 1968 in Luton, England) is a British film and television writer, director and producer.",
+      "S. Sylvan Simon: S. Sylvan Simon (March 9, 1910 \u2013 May 17, 1951) was an American stage/film director and producer.",
+      "Leslie Skinner: Colonel Leslie Alfred Skinner LOM (April 21, 1900 \u2013 November 2, 1978) was an American rocket engineer.  He played a leading role in the development of several rocket propelled weapons during World War II, notably the first shoulder-fired missile system, the Bazooka."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 228,
+    "generation_tokens": 21,
+    "generation_speed": 412.3063632615397,
+    "prompt_eval_speed": 73834.1968911917,
+    "generation_latency_s": 0.16465639998205006,
+    "latency": 0.8532725000986829,
+    "total_prompt_tokens": 362,
+    "total_generation_tokens": 211,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2260274,
+    "stage_route_s": 0.09486820001620799,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.537020199932158,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056543500046245754,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.800009239464998e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1646989999571815,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8532840000698343,
+    "unaccounted_latency_s": 9.600003249943256e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Sylvan Simon and Danny Cannon were both professionals who worked as engineers, but they had different backgrounds and experiences. Sylvan was a British engineer with a background in mechanical engineering, while Danny was an American engineer with a background in electrical engineering. Both men worked on various projects throughout their careers, including designing and building bridges, aircraft, and spacecraft systems.",
+      "Sylvan Simon's work involved working as a bridge builder, while Danny Cannon designed and built aircraft engines for the British Royal Air Force. Both men were also involved in research and development of new technologies, such as electric motors and radar systems. They both worked on projects that required collaboration between engineers from different countries, which helped to drive innovation and progress across their respective fields."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

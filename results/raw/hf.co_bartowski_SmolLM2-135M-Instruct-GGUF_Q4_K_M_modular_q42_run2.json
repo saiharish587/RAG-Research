@@ -1,0 +1,49 @@
+{
+  "question_id": "Q42",
+  "query": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+  "ground_truth": "Mumbai",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The company that Sachin Warrier worked for as a software engineer headquartered was Intel Corporation.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sachin Warrier: Sachin Warrier is a playback singer and composer in the Malayalam cinema industry from Kerala.  He became notable with the song \"Muthuchippi Poloru\" from the film Thattathin Marayathu.  He made his debut with the movie Malarvaadi Arts Club.  He was working as a software engineer in Tata Consultancy Services in Kochi.  Later he resigned from the job to concentrate more on music.  His latest work is as a composer for the movie Aanandam.",
+      "Sachin Bansal: Sachin Bansal (born 5 August 1981) is an Indian Software engineer and Internet entrepreneur known for co-founding India's e-commerce platform Flipkart.  Sachin is from Chandigarh and is an engineering graduate from Indian Institute of Technology Delhi.",
+      "Intel: Intel Corporation (also known as Intel, stylized as intel) is an American multinational corporation and technology company headquartered in Santa Clara, California (colloquially referred to as \"Silicon Valley\") that was founded by Gordon Moore (of Moore's law fame) and Robert Noyce.  It is the world's second largest and second highest valued semiconductor chip makers based on revenue after being overtaken by Samsung, and is the inventor of the x86 series of microprocessors, the processors found in most personal computers (PCs).  Intel supplies processors for computer system manufacturers such as Apple, Lenovo, HP, and Dell.  Intel also manufactures motherboard chipsets, network interface controllers and integrated circuits, flash memory, graphics chips, embedded processors and other devices related to communications and computing."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 427,
+    "generation_tokens": 20,
+    "generation_speed": 339.6393030601501,
+    "prompt_eval_speed": 31249.999999999996,
+    "generation_latency_s": 0.18116699997335672,
+    "latency": 0.78456840000581,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 168,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2274902,
+    "stage_route_s": 0.15605330001562834,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3921122000319883,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05505490000359714,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.789997521787882e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1812055999180302,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7845785999670625,
+    "unaccounted_latency_s": 9.53000271692872e-05,
+    "route": "rag",
+    "router_raw": "The company that Sachin Warrier worked for was the IT department of the company that he founded in 1985.",
+    "sub_queries": [
+      "Here are two specific search queries related to the question:",
+      "\"Where was Sachin Warrier's work hosted at?\" - This query will return the IP address of the company where Sachin Warrier worked, which is the IP address of the company that Sachin Warrier worked for as a software engineer headquartered."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

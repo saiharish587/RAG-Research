@@ -1,0 +1,49 @@
+{
+  "question_id": "Q315",
+  "query": "How many days did it take the Best New Artist of 2009 to sell 2 million copies of an album in the UK and break a twenty year old record?",
+  "ground_truth": "29",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "It takes approximately 42 days for Robson & Jerome's debut studio album \"Robson & Jerome\" to reach number one on the UK Albums Chart, which holds the record for selling 2 million copies in the UK in the fastest time.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "David Bowie: David Robert Jones (8 January 1947 \u2013 10 January 2016), known professionally as David Bowie ( ), was an English singer, songwriter and actor.  He was a leading figure in popular music for over five decades, acclaimed by critics and other musicians for his innovative work.  His career was marked by reinvention and visual presentation, his music and stagecraft significantly influencing popular music.  During his lifetime, his record sales, estimated at 140 million albums worldwide, made him one of the world's best-selling music artists.  In the UK, he was awarded nine platinum album certifications, eleven gold and eight silver, releasing eleven number-one albums.  In the US, he received five platinum and nine gold certifications.  He was inducted into the Rock and Roll Hall of Fame in 1996.",
+      "List of Billboard 200 number-one albums of 2002: The highest-selling albums and EPs in the United States are ranked in the \"Billboard\" 200, published by \"Billboard\" magazine.  The data are compiled by Nielsen Soundscan based on each album's weekly physical and digital sales.  25 acts achieved number one albums during this year with artist such as Nelly and Shania Twain who had their albums debut at number one on the chart.  Rapper Eminem's \"The Eminem Show\" is the best selling album of 2002 selling over approximately 7.6 million copies by the end of the year.  It is also the longest running album of 2002 spending six non-consecutive weeks the chart and was known for its first full week of sales debut of 1.322 million copies which Nielsen SoundScan scanned as the sixth largest sales of all time in its first week.  Its debut of 1.322 million copies has still not been matched by any album today since except for Taylor Swift's album \"1989\", which opened with first week sales of 1.279 million copies.  The band Creed continued its eight week long run on the chart but is credited as the longest running album 2001.  Jennifer Lopez earned her second number one album on the charts with \"\", which became the highest first week sales of a remix album at the time.  R&B artist Ashanti earned her first number one album with her self-titled debut album \"Ashanti\", which opened up with first week sales of 503,000 copies in its first week alone.",
+      "Robson &amp; Jerome (album): Robson & Jerome is the debut studio album by British singing duo Robson & Jerome.  It was released in the UK in 1995 by RCA Records, and reached number one on the UK Albums Chart.  It was the Christmas number one album of 1995, and was the biggest-selling album of the year, with sales of 2,040,000.  For almost 20 years, it held the record for selling 2 million copies in the UK in the fastest time, doing so in 42 days; in 2015, Adele surpassed the record when her album \"25\" took just 29 days to reach the landmark."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 803,
+    "generation_tokens": 52,
+    "generation_speed": 246.92999534631932,
+    "prompt_eval_speed": 100525.78868302453,
+    "generation_latency_s": 0.3387364000082016,
+    "latency": 0.8339235000312328,
+    "total_prompt_tokens": 975,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2303521,
+    "stage_route_s": 0.09980570001062006,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3375131000066176,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057680899975821376,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.339994095265865e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.338775199954398,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8339328999863937,
+    "unaccounted_latency_s": 0.00010560010559856892,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"How many days did it take the Best New Artist of 2009 to sell 2 million copies of an album in the UK?\"",
+      "\"How many days did it take the Best New Artist of 2009 to break a twenty year old record?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

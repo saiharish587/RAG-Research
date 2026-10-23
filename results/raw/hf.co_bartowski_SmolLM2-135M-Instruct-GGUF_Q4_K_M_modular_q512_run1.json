@@ -1,0 +1,49 @@
+{
+  "question_id": "Q512",
+  "query": "What was the nationality of the actor playing a Russian hostage taker in \"Hostage for a Day\"?",
+  "ground_truth": "Canadian",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The actor playing a Russian hostage taker in \"Hostage for a Day\" is Liam Neeson.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ransom (1996 film): Ransom is a 1996 American crime thriller film directed by Ron Howard and written by Richard Price and Alexander Ignon.  The film stars Mel Gibson, Rene Russo, Gary Sinise, Brawley Nolte, Delroy Lindo, Liev Schreiber, Evan Handler, Donnie Wahlberg, and Lili Taylor.  Gibson was nominated for a Golden Globe Award for Best Actor.",
+      "Hostage for a Day: Hostage for a Day is a 1994 comedic film directed by John Candy in his only directorial effort.  Though the film is also billed as \"starring\" Candy, it in fact only features him as a minor character, as a Russian hostage taker.  Produced with a mostly Canadian cast, the film was released one month after Candy's death.",
+      "Taken (film): Taken is a 2008 English-language French action thriller film directed by Pierre Morel, written by Luc Besson and Robert Mark Kamen, and starring Liam Neeson, Maggie Grace, Leland Orser, Jon Gries, David Warshofsky, Holly Valance, Katie Cassidy, Xander Berkeley, Olivier Rabourdin, G\u00e9rard Watkins, and Famke Janssen."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 367,
+    "generation_tokens": 24,
+    "generation_speed": 326.3263807684986,
+    "prompt_eval_speed": 17169.590643274852,
+    "generation_latency_s": 0.20544269995298237,
+    "latency": 0.6253177000908181,
+    "total_prompt_tokens": 509,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22742859999999998,
+    "stage_route_s": 0.16698839992750436,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19603630003985018,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05666720005683601,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.110003985464573e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20549209997989237,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.625330000068061,
+    "unaccounted_latency_s": 9.560002945363522e-05,
+    "route": "rag",
+    "router_raw": "The actor playing a Russian hostage taker in \"Hostage for a Day\" is from Russia.",
+    "sub_queries": [
+      "\"What was the nationality of the actor playing a Russian hostage taker in \"Hostage for a Day?\"",
+      "Answer: The actor played a Russian hostage taker."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

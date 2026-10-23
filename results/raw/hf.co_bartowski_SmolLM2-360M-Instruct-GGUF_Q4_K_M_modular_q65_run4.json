@@ -1,0 +1,49 @@
+{
+  "question_id": "Q65",
+  "query": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+  "ground_truth": "more than 70 countries",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Exxon Parkin has been a vocal critic of ExxonMobil and other corporations that have operations in the United States, Canada, Mexico, Brazil, Russia, India, China, South Africa, Australia, and New Zealand.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Exxon: Exxon was the brand name of oil and natural resources company Exxon Corporation, prior to 1972 known as Standard Oil Company of New Jersey.  In 1999, Exxon Corporation merged with Mobil to form ExxonMobil.  The \"Exxon\" brand is still used by ExxonMobil's downstream operations as a brand for certain of its gas stations, motor fuel and related products (the highest concentration of which are located in New Jersey, Pennsylvania, Texas and in the Mid-Atlantic and Southeastern states).  Standard Oil Company of New Jersey was one of the Seven Sisters that dominated the global petroleum industry from the mid-1940s to the 1970s.",
+      "Big Oil: Big Oil is a name used to describe the world's seven or eight largest publicly owned oil and gas companies, also known as supermajors.  The supermajors are considered to be BP plc, Chevron Corporation, ExxonMobil Corporation, Royal Dutch Shell plc, Total SA and Eni SpA, with Phillips 66 Company also sometimes described in the past as forming part of the group.",
+      "Chevron Corporation: Chevron Corporation () is an American multinational energy corporation.  One of the successor companies of Standard Oil, it is headquartered in San Ramon, California, and active in more than 180 countries.  Chevron is engaged in every aspect of the oil, natural gas, and geothermal energy industries, including hydrocarbon exploration and production; refining, marketing and transport; chemicals manufacturing and sales; and power generation.  Chevron is one of the world's largest oil companies; as of 2014 , it ranked third in the Fortune 500 list of the top US closely held and public corporations and sixteenth on the Fortune Global 500 list of the top 500 corporations worldwide.  It was also one of the Seven Sisters that dominated the global petroleum industry from the mid-1940s to the 1970s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 510,
+    "generation_tokens": 47,
+    "generation_speed": 205.55523969053004,
+    "prompt_eval_speed": 56341.14007954044,
+    "generation_latency_s": 0.35643879999406636,
+    "latency": 0.7509683000389487,
+    "total_prompt_tokens": 658,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2147822,
+    "stage_route_s": 0.09349070000462234,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2418634999776259,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.059007200063206255,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.950002767145634e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.356471800012514,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7509780999971554,
+    "unaccounted_latency_s": 9.609991684556007e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"ExxonMobil's operations are widespread across 20 countries.\"",
+      "\"The ExxonMobil Corporation operates in over 20 countries worldwide.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

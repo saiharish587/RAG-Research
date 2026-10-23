@@ -1,0 +1,49 @@
+{
+  "question_id": "Q420",
+  "query": "What is the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station?",
+  "ground_truth": "51,271",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The 2010 United States Census reported that the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station was 520,116.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Marietta Air Force Station: Marietta Air Force Station (ADC ID: M-111, NORAD ID: Z-111) is a closed United States Air Force General Surveillance Radar station.  It is located 2.1 mi northeast of Smyrna, Georgia.  It was closed in 1968.",
+      "Tucson, Arizona: Tucson ( ) is a city and the county seat of Pima County, Arizona, United States, and home to the University of Arizona.  The 2010 United States Census put the population at 520,116, while the 2015 estimated population of the entire Tucson metropolitan statistical area (MSA) was 980,263.  The Tucson MSA forms part of the larger Tucson-Nogales combined statistical area (CSA), with a total population of 1,010,025 as of the 2010 Census.  Tucson is the second-largest populated city in Arizona behind Phoenix, both of which anchor the Arizona Sun Corridor.  The city is located 108 mi southeast of Phoenix and 60 mi north of the U.S.\u2013Mexico border.  Tucson is the 33rd largest city and the 53rd largest metropolitan area in the United States.",
+      "Tempe, Arizona: Tempe ( ; \"Oidba\u1e0d\" in Pima), also known as Hayden's Ferry during the territorial times of Arizona, is a city in Maricopa County, Arizona, United States, with the Census Bureau reporting a 2010 population of 161,719.  The city is named after the Vale of Tempe in Greece.  Tempe is located in the East Valley section of metropolitan Phoenix; it is bordered by Phoenix and Guadalupe on the west, Scottsdale on the north, Chandler on the south, and Mesa on the east.  Tempe is also the location of the main campus of Arizona State University."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 519,
+    "generation_tokens": 44,
+    "generation_speed": 326.51849653074095,
+    "prompt_eval_speed": 72567.11409395972,
+    "generation_latency_s": 0.25240489991847426,
+    "latency": 0.7287176999961957,
+    "total_prompt_tokens": 669,
+    "total_generation_tokens": 134,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2294288,
+    "stage_route_s": 0.1423774000722915,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27436859998852015,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05939609999768436,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2600051276385784e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25243659992702305,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7287269999505952,
+    "unaccounted_latency_s": 9.609991684556007e-05,
+    "route": "rag",
+    "router_raw": "The 2010 population of the city is 2,134.",
+    "sub_queries": [
+      "Here are two search queries related to the given question:",
+      "\"What is the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

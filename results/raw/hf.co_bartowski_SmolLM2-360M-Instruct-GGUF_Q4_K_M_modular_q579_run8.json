@@ -1,0 +1,49 @@
+{
+  "question_id": "Q579",
+  "query": "Chicagoland Sports Hall of Fame was founded by the company located in what Washington town, near the state capital?",
+  "ground_truth": "Tumwater, Washington",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The Chicago Park District took over the exhibits in Mike Ditka's restaurant until the restaurant closed in 1991.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chicagoland Sports Hall of Fame: The Chicagoland Sports Hall of Fame, located in the Hawthorne Race Course, in Stickney/Cicero, near Chicago, Illinois, honors sports greats associated with the Chicago metropolitan area.  It was founded in 1979 as a trailer owned by the Olympia Brewing Company parked at Soldier Field in Chicago.  The Chicago Park District took over the exhibits in 1983.  From 1988 the exhibits were displayed in Mike Ditka's restaurant until the restaurant closed in 1991.  The Hall of Fame moved to the Maryville Academy in Des Plaines in 1996 and has operated under the guidance of Father John P. Smyth since that time.  As of 2008, it was operating at Hawthorne.",
+      "Windy City Bulls: The Windy City Bulls are an American professional basketball team of the NBA G League and an affiliate of the Chicago Bulls of the National Basketball Association.  Based in northwest-suburban Hoffman Estates, Illinois, the team plays their home games at the Sears Centre, 25 miles from Chicago.  The team became the thirteenth D-League team to be owned by an NBA team.  The team is coached by Nate Loenser, former video coordinator with the Chicago Bulls.",
+      "New Mexico Sports Hall of Fame: The New Mexico Sports Hall of Fame is a sports hall of fame in the U.S. state of New Mexico.  The hall's mission statement states its purpose is \"To induct into the Hall of Fame those athletes, coaches, teams or any other individuals who have had significant careers, achieving high standards of athletic success and/or made contributions to sports, thereby bestowing fame and honor to the state of New Mexico.  It was first founded in 1973 as the Albuquerque Sports Hall of Fame, and honored those from the Albuquerque region until expanding in 2005 to include other areas of the state.  In 2014 the hall assumed its current name."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 525,
+    "generation_tokens": 27,
+    "generation_speed": 212.0024812142246,
+    "prompt_eval_speed": 67882.07913110938,
+    "generation_latency_s": 0.25337809999473393,
+    "latency": 0.7176642999984324,
+    "total_prompt_tokens": 673,
+    "total_generation_tokens": 84,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21947,
+    "stage_route_s": 0.09691590000875294,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3098174000624567,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057381800026632845,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3200055845081806e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25341090001165867,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7176733000669628,
+    "unaccounted_latency_s": 9.499990846961737e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Chicagoland Sports Hall of Fame was founded by the company located in the city of Chicago, Illinois.",
+      "The Chicago sports hall of fame is a non-profit organization that celebrates and preserves the history of professional sports teams from the United States."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

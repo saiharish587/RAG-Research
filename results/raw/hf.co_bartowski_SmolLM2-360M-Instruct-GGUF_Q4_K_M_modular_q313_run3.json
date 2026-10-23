@@ -1,0 +1,49 @@
+{
+  "question_id": "Q313",
+  "query": "Where is the Cocoa Krispies and former Superman sponsor located?",
+  "ground_truth": "Battle Creek, Michigan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Cocoa Krispies and former Superman sponsor are located in Madison, Wisconsin.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mars, Incorporated: Mars is an American global manufacturer of confectionery, pet food, and other food products and a provider of animal care services, with US$33 billion in annual sales in 2015, and is ranked as the 6th largest privately held company in the United States by Forbes.  Headquartered in McLean, unincorporated Fairfax County, Virginia, US, the company is entirely owned by the Mars family.  Mars operates in six business segments around the world: Wm. Wrigley Jr.  Company (Chicago, Illinois), Chocolate (Hackettstown, New Jersey; to be integrated with Wm. Wrigley Jr.  Company and based in Chicago, Illinois from 2017), Petcare (Brussels, Belgium, Poncitl\u00e1n and Jalisco, Mexico), Food (Rancho Dominguez, California), Drinks (West Chester, Pennsylvania), and Symbioscience (Germantown, Maryland), the company's life sciences division.",
+      "Cocoa Krispies: Cocoa Krispies, Choco Krispis, Choco Krispies, Coco Pops, or Choco Pops is a breakfast cereal produced by Kellogg's, coming both as a boxed cereal and as a snack bar with a 'dried milk' covered bottom, to make the cereal with milk tradition portable.  It is a cocoa flavored version of Rice Krispies.  Containing a substance imitating milk chocolate, the cereal can turn milk \"chocolatey.\"",
+      "Chocolate Shoppe Ice Cream Company: Chocolate Shoppe Ice Cream Co. is an ice cream company based in Madison, Wisconsin that manufactures and distributes super-premium ice cream, frozen yogurt, Italian ice, soy ice cream, and no sugar added ice cream."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 447,
+    "generation_tokens": 18,
+    "generation_speed": 243.40441643791158,
+    "prompt_eval_speed": 54412.65976871576,
+    "generation_latency_s": 0.19526579999364913,
+    "latency": 0.7622776000062004,
+    "total_prompt_tokens": 575,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2584119,
+    "stage_route_s": 0.1151443999260664,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.396102000027895,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055580100044608116,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6900084018707275e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1953057999489829,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7622922000009567,
+    "unaccounted_latency_s": 0.00010399986058473587,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Cocoa Krispies - The Cocoa Krispies are currently owned by Hershey's, a company that also sponsors the former Superman Sponsor, DC Comics' Superman.",
+      "Former Superman Sponsor - The former Superman Sponsor is now owned by Hershey's and is part of the Hershey Hersafe brand."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

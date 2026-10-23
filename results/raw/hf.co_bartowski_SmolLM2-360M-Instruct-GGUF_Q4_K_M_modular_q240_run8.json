@@ -1,0 +1,49 @@
+{
+  "question_id": "Q240",
+  "query": "Which genus has more species, Xanthoceras or Ehretia?",
+  "ground_truth": "Ehretia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Xanthoceras has more species than Ehretia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ehretia: Ehretia is a genus of flowering plants in the borage family, Boraginaceae.  It contains about 50 species.  The generic name honors German botanical illustrator Georg Dionysius Ehret (1708\u20131770).",
+      "Xanthoceras: Xanthoceras sorbifolium (yellowhorn, shiny leaf yellowhorn, goldenhorn, Chinese flowering chestnut) is a woody perennial in the soapberry family, Sapindaceae, and the only species in the genus Xanthoceras.  It is native to northern China in the provinces of Gansu, Hebei, Henan, Liaoning, Nei Monggol, Ningxia, Shaanxi, and Shandong.  It is also cultivated in Russia, having been imported there since the 19th Century.",
+      "Xanthosoma: Xanthosoma is a genus of flowering plants in the arum family, Araceae.  The genus is native to tropical America but widely cultivated and naturalized in other tropical regions.  Several are grown for their starchy corms, an important food staple of tropical regions, known variously as \"malanga\", \"otoy\", \"otoe\", cocoyam (or new cocoyam), \"tannia\", \"tannier\", \"yaut\u00eda\", \"macabo\", \"ocumo\", \"macal\", \"taioba\", \"dasheen\", \"quequisque\", \"\u02bb ape\" and (in Papua New Guinea) as Singapore taro (\"taro kongkong\").  Many other species (including especially \"X. roseum\") are used as ornamental plants, and in popular horticultural literature are known as \u2018ape or elephant ear (from the purported resemblance of the leaf to an elephant's ear), although the latter name is sometimes also applied to members with similar appearance and uses in the closely related genera \"Caladium\", \"Colocasia\" (i.e., taro), and \"Alocasia\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 497,
+    "generation_tokens": 13,
+    "generation_speed": 213.23010809126248,
+    "prompt_eval_speed": 62047.44069912609,
+    "generation_latency_s": 0.18047320004552603,
+    "latency": 0.4984014999354258,
+    "total_prompt_tokens": 627,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23173880000000002,
+    "stage_route_s": 0.10469229996670038,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15635110007133335,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05671679996885359,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.18999295309186e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18050620006397367,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4984114000108093,
+    "unaccounted_latency_s": 9.370001498609781e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Xanthoceras",
+      "Query 2: Ehretia"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

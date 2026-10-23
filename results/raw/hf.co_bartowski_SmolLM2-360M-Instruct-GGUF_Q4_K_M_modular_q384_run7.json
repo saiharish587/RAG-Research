@@ -1,0 +1,49 @@
+{
+  "question_id": "Q384",
+  "query": "What national historic district is located near a village in the town of Philipstown, New York?",
+  "ground_truth": "Valhalla Highlands Historic District",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Old Homer Village Historic District",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Old Homer Village Historic District: Old Homer Village Historic District is a national historic district located at Homer in Cortland County, New York.  The district includes the historic core of the village of Homer centered on the village green.  It includes a mix of residential, commercial, civic, and religious structures.  Residences are primarily 2-story frame structures and commercial structures are 2- and 3-story structures constructed of brick.  Included within the district is the Homer Town Hall (1908), the 3\u00a0\u2044 -story Jebediah Barber building (1863), 3-story Brockway Block (1887\u20131888), and residences dating to the 1810s.  Also located within the district boundaries is the U.S. Post Office (Homer, New York).",
+      "Phillipsdale Historic District: The Phillipsdale Historic District encompasses a historic mill village along the Seekonk River in East Providence, Rhode Island.  The village grew up around the Richmond Paper Company Mill Complex, built 1883-1887, which is separately listed on the National Register.  It also includes 75 units of worker housing, as well as five houses (the oldest of which dates to c. 1750) that predate the mill complex's construction.  The Phillipsdale area was the largest source of employment in East Providence between 1893 and 1910.  The district is centered on Roger Williams Avenue and Bourne Avenue, and includes properties on Ruth Avenue and the grid of roads between Ruth and Roger Williams.  It also includes Omega Pond (the historic mill pond).",
+      "Garrison, New York: Garrison is a hamlet in Putnam County, New York, United States.  It is part of the town of Philipstown, on the east side of the Hudson River, across from the United States Military Academy at West Point.  The Garrison Metro-North Railroad station serves the town.  Garrison (a.k.a. Garrison's Landing) was named after 2nd Lieutenant Isaac Garrison who held a property lot on the Hudson River across from West Point and conducted a ferry service across the Hudson River between the two hamlets.  Isaac and his son Beverly Garrison fought in the Battle of Fort Montgomery in 1777, were captured by the British and later set free."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 582,
+    "generation_tokens": 6,
+    "generation_speed": 226.73166307674867,
+    "prompt_eval_speed": 75029.00605904344,
+    "generation_latency_s": 0.15126579999923706,
+    "latency": 0.6776355999754742,
+    "total_prompt_tokens": 720,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2314358,
+    "stage_route_s": 0.10879259998910129,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.35201160004362464,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06537009996827692,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.630000330507755e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15131909993942827,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.677647199947387,
+    "unaccounted_latency_s": 0.00010830000974237919,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The National Historic District of Philipstown, New York is located near a village in the town of Philipstown, New York.",
+      "Query 2: The National Historic District of Philipstown, New York is located near a village in the town of Philipstown, New York."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

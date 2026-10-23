@@ -1,0 +1,49 @@
+{
+  "question_id": "Q477",
+  "query": "What Division was the college footbal team that fired their head coach on November 24, 2006?",
+  "ground_truth": "NCAA Division I FBS football",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The College Football Team that fired their head coach on November 24, 2006, was the University of Alabama Crimson Tide.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2006 Alabama Crimson Tide football team: The 2006 Alabama Crimson Tide football team represented the University of Alabama for the 2006 NCAA Division I FBS football season trying to improve from a 10\u20132 record in the 2005 season.  The Tide was led by head coach Mike Shula entering his fourth year at Alabama.  Despite a strong 5\u20132 start, they finished out the season by losing four of their final five games.  The team closed the regular season at 6\u20136 (4\u20134, SEC) and lost for a fifth-straight time to rival Auburn.  Following the loss Shula was fired as head coach and defensive coordinator Joe Kines served as interim head coach for the bowl game.",
+      "2006 Miami Hurricanes football team: The 2006 Miami Hurricanes football team represented the University of Miami during the 2006 NCAA Division I FBS football season.  The team's head coach was Larry Coker.",
+      "Jack Bicknell Jr.: Jack Bicknell Jr. (born February 7, 1963) is an American football coach.  He currently serves as the offensive line coach The University of Mississippi.  He also was the head football coach at Louisiana Tech University from 1999 to 2006, compiling a record of 43\u201352 in eight seasons.  He then served as assistant head coach and offensive line coach for Boston College for two seasons, before becoming the assistant offensive line coach for the New York Giants of the National Football League (NFL) in January 2008.  Bicknell spent the 2013 season as offensive line coach for the NFL's Pittsburgh Steelers before being fired on January 3, 2014.  He worked as an assistant coach with the Miami Dolphins in 2014 and 2015.  Bicknell is the son of former Boston College head coach Jack Bicknell and the older brother of Bob Bicknell, the wide receivers coach for the San Francisco 49ers.  Bicknell was hired in August 2017 as offensive line coach at Ole Miss."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 560,
+    "generation_tokens": 32,
+    "generation_speed": 234.58518741157238,
+    "prompt_eval_speed": 67041.78139590567,
+    "generation_latency_s": 0.25816139997914433,
+    "latency": 0.6409349000314251,
+    "total_prompt_tokens": 710,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23013240000000001,
+    "stage_route_s": 0.10741820000112057,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22200109995901585,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05318390007596463,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.910002462565899e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25819620001129806,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6409447999903932,
+    "unaccounted_latency_s": 9.689992293715477e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"College Football Team Head Coach Fired\"",
+      "\"Football Team Head Coach Fired on November 24, 2006\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

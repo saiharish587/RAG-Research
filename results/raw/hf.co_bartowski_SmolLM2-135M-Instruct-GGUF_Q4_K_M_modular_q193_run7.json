@@ -1,0 +1,49 @@
+{
+  "question_id": "Q193",
+  "query": "Georges-Henri Bousquet translated the work of a historian who is of what heritage?",
+  "ground_truth": "North African Arab",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The person with whom Georges-Henri Bousquet translated the work of a historian who was of African origin, namely Al-Ghazali (1092\u20131138), is Fran\u00e7ois Guizot.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Georges-Henri Bousquet: Georges-Henri Bousquet (21 June 1900, Meudon \u2013 23 January 1978, Latresne) was a 20th-century French jurist, economist and Islamologist.  He was Professor of law at the Faculty of Law of the University of Algiers where he was a specialist in the sociology of North Africa (Berbers, Islam).  He is also known for his translation work of the great Muslim authors, Al-Ghazali, a theologian who died in 1111 and Tunisian historian Ibn Khaldun (1332-1406).  He was known as a polyglot, spoke several European languages (Dutch, his second mother tongue, English, German, Italian, but also Spanish, Danish, Norwegian ...) and Eastern ones (Arab, Malay ...).",
+      "The Age of Louis XIV: The Age of Louis XIV (\"\"Le Si\u00e8cle de Louis XIV\"\", also translated The Century of Louis XIV) is a historical work by the French historian, philosopher, and writer Voltaire, first published in 1751.  Through it, the French 17th century became identified with Louis XIV of France, who reigned from 1643 to 1715.",
+      "Fran\u00e7ois Guizot: Fran\u00e7ois Pierre Guillaume Guizot (] ; 4 October 1787 \u2013 12 September 1874) was a French historian, orator, and statesman.  Guizot was a dominant figure in French politics prior to the Revolution of 1848.  A conservative liberal who opposed the attempt by King Charles X to usurp legislative power, he worked to sustain a constitutional monarchy following the July Revolution of 1830."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 48,
+    "generation_speed": 373.69207772795215,
+    "prompt_eval_speed": 46827.79456193354,
+    "generation_latency_s": 0.2529823000077158,
+    "latency": 0.6715986999915913,
+    "total_prompt_tokens": 603,
+    "total_generation_tokens": 124,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22391709999999998,
+    "stage_route_s": 0.09098889993038028,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27189189998898655,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05549049994442612,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.860001642256975e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25302059995010495,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6716103999642655,
+    "unaccounted_latency_s": 0.00014070014003664255,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Bousquet, Georges Henri (1842\u20131903) was a French historian and linguist who lived during the late 19th century. He wrote extensively on the history of France from the 16th to the 19th centuries.",
+      "Question: Who translated Georges-Henri Bousquet's work?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

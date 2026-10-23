@@ -1,0 +1,49 @@
+{
+  "question_id": "Q533",
+  "query": "Luke Null is an actor who was on the program that premiered its 43rd season on which date?",
+  "ground_truth": "September 30, 2017",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Luke Null is an American actor who was on the show that premiered its 43rd season on September 13, 2017.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Saturday Night Live (season 43): The forty-third season of the NBC comedy series \"Saturday Night Live\" premiered on September 30, 2017 with host Ryan Gosling and musical guest Jay-Z during the 2017\u20132018 television season.  Like the final four episodes of season 42, season 43 will be broadcast live in all four time zones within the contiguous United States.",
+      "Luke Null: Luke Null (born July 7, 1990 in Cincinnati, Ohio) is an American actor, comedian, and singer, who currently works as a cast member on \"Saturday Night Live\", having joined the show at the start of its forty-third season.  Prior to joining the show, Null was known for performing at the iO Theater in Chicago specializing in musical comedy.  Luke Null is now the second \"SNL\" cast member born in the 1990s after Pete Davidson (though Null is older than Davidson by three years).",
+      "South Park (season 21): The twenty-first season of the American animated sitcom \"South Park\" premiered on Comedy Central on September 13, 2017, and will contain ten episodes."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 351,
+    "generation_tokens": 35,
+    "generation_speed": 216.62705486234898,
+    "prompt_eval_speed": 39252.96354283158,
+    "generation_latency_s": 0.2829185000155121,
+    "latency": 0.6941433000611141,
+    "total_prompt_tokens": 501,
+    "total_generation_tokens": 74,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2350795,
+    "stage_route_s": 0.10195579996798187,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2540443999459967,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05504320003092289,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3299940191209316e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2829586999723688,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.694154700031504,
+    "unaccounted_latency_s": 9.990017861127853e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Luke Null's 43rd Season Premiere Date\"",
+      "\"The Program That Premiered Its 43rd Season On Which Date?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

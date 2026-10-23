@@ -1,0 +1,49 @@
+{
+  "question_id": "Q483",
+  "query": "How did Emilie du Chatelet, Voltaire's love, contribute to the basic laws of physics?",
+  "ground_truth": "commentary on Isaac Newton's book \"Principia\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "\u00c9milie du Ch\u00e2telet contributed significantly to the basic laws of physics by translating and commenting on Isaac Newton's book \"Principia\" in 1759. Her translation included a profound contribution to Newtonian mechanics, specifically the postulate of an additional conservation law for total energy, which is one element of the conservation principle.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "\u00c9milie du Ch\u00e2telet: Gabrielle \u00c9milie Le Tonnelier de Breteuil, Marquise Du Ch\u00e2telet (] ; 17 December 1706  \u2013 10 September 1749) was a French natural philosopher, mathematician, physicist, and author during the early 1730s until her untimely death due to childbirth in 1749.  Her most recognized achievement is her translation of and commentary on Isaac Newton's book \"Principia\" containing basic laws of physics.  The translation, published posthumously in 1759, is still considered the standard French translation today.  Her commentary includes a profound contribution to Newtonian mechanics\u2014the postulate of an additional conservation law for total energy, of which kinetic energy of motion is one element.",
+      "\u00c9mile Verdet: Marcel \u00c9mile Verdet (13 March 1824 \u2013 3 June 1866) was a French physicist.  He worked in magnetism and optics, editing the works of Augustin-Jean Fresnel.  Verdet did much to champion the early theory of the conservation of energy in France through his editorial supervision of the \"Annales de chimie et de physique\".",
+      "Voltaire in Love: Voltaire in Love is a popular history of the sixteen-year relationship between Voltaire and the \u00c9milie, the Marquise du Ch\u00e2telet.  Written by Nancy Mitford and first published in 1957, the book also explores the French Enlightenment."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 411,
+    "generation_tokens": 71,
+    "generation_speed": 215.69926054647863,
+    "prompt_eval_speed": 53683.385579937305,
+    "generation_latency_s": 0.4521948000183329,
+    "latency": 0.8614471999462694,
+    "total_prompt_tokens": 557,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2176815,
+    "stage_route_s": 0.09448540001176298,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2575050999876112,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057084200088866055,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.100003909319639e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.45222760003525764,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8614570000208914,
+    "unaccounted_latency_s": 0.00010419986210763454,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Emilie du Chatelet and Voltaire's Love\"",
+      "\"Contributions to Basic Laws of Physics by Emilie du Chatelet and Voltaire\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q433",
+  "query": "Who has more scope of profession, Phil Rosen or  Delmer Daves?",
+  "ground_truth": "Delmer Lawrence Daves",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Delmer Daves has more scope of profession than Phil Rosen.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Delmer Daves: Delmer Lawrence Daves (July 24, 1904 \u2013 August 17, 1977) was an American screenwriter, director and producer.",
+      "Phil Rosen: Phil Rosen (May 8, 1888 \u2013 October 22, 1951) was an American film director and cinematographer.  He directed 142 films between 1915 and 1949.",
+      "Daniel Rosen: Daniel Rosen is an American comedian, juggler and game show announcer.  He began his career with unicycle, juggling and magic acts in high school.  Johnny Carson discovered Rosen when he was a teen and made him a regular guest on The Tonight Show Starring Johnny Carson.  The Tonight Show exposure and Carson's endorsement led him be the announcer and writer on \"The Late Show\", a talk show that was on Fox."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 275,
+    "generation_tokens": 14,
+    "generation_speed": 191.95173784876945,
+    "prompt_eval_speed": 29774.7942832395,
+    "generation_latency_s": 0.19163210003171116,
+    "latency": 0.5062280999263749,
+    "total_prompt_tokens": 407,
+    "total_generation_tokens": 30,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2241021,
+    "stage_route_s": 0.09352350002154708,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16284270002506673,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05804469995200634,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.48000680282712e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19166360003873706,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5062371999956667,
+    "unaccounted_latency_s": 0.0001083998940885067,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query1: Phil Rosen",
+      "Query2: Delmer Daves"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q388",
+  "query": "Dead but Rising was a song by the Danish band fomed in what city in 2001?",
+  "ground_truth": "Copenhagen",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Dead but Rising was a song by the Danish band Volbeat, released as the seventh single from their fifth studio album \"Outlaw Gentlemen & Shady Ladies\" in 2001.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Foo Fighters: Foo Fighters is an American rock band, formed in Seattle, Washington in 1994.  It was founded by Nirvana drummer Dave Grohl as a one-man project following the dissolution of Nirvana after the death of Kurt Cobain.  The group got its name from the UFOs and various aerial phenomena that were reported by Allied aircraft pilots in World War II, which were known collectively as \"foo fighters\".",
+      "Dead but Rising: \"Dead but Rising\" is a song by Danish heavy metal band Volbeat.  The song was released as the seventh single from the band's fifth studio album \"Outlaw Gentlemen & Shady Ladies\".",
+      "Refused: Refused is a Swedish punk rock band originating from Ume\u00e5 and formed in 1991.  Refused is composed of vocalist Dennis Lyxz\u00e9n, guitarist Kristofer Steen, drummer David Sandstr\u00f6m, and bassist Magnus Flagge.  Guitarist Jon Br\u00e4nnstr\u00f6m was a member from 1994, through reunions, until he was fired in late-2014.  Their lyrics are often of a non-conformist and politically far-left nature."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 337,
+    "generation_tokens": 41,
+    "generation_speed": 211.84360774830913,
+    "prompt_eval_speed": 12815.150017112217,
+    "generation_latency_s": 0.33254329999908805,
+    "latency": 0.7438634999562055,
+    "total_prompt_tokens": 481,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2281881,
+    "stage_route_s": 0.11165839992463589,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24326880008447915,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05621499998960644,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.049999501556158e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.33257600001525134,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7438723999075592,
+    "unaccounted_latency_s": 9.429990313947201e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Search Query 1: \"Dead but Rising\" by the Danish band Fomor",
+      "Search Query 2: \"Danish band Fomor\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

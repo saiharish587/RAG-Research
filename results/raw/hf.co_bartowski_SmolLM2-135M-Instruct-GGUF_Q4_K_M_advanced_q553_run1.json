@@ -1,0 +1,42 @@
+{
+  "question_id": "Q553",
+  "query": "Are both Jim McBride and Neil Jordan American?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, neither Jim McBride nor Neil Jordan are American. They were born in Ireland and have never been to the United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Neil Jordan: Neil Patrick Jordan (born 25 February 1950) is an Irish film director, screenwriter, novelist and short-story writer.  His first book, \"Night in Tunisia\", won a Somerset Maugham Award and the Guardian Fiction Prize in 1979.  He won an Academy Award (Best Original Screenplay) for \"The Crying Game\" (1992).  He also won the Silver Bear for Best Director at the Berlin International Film Festival for \"The Butcher Boy\" (1997).",
+      "Jim McBride: Jim McBride (born September 16, 1941) is an American television and film director, film producer and screenwriter.",
+      "Glen and Randa: Glen and Randa is a 1971 X rated post-apocalypse movie directed by Jim McBride.  It was co-written by McBride, Lorenzo Mans and Rudy Wurlitzer.  McBride made the film for $480,000 with an obscure cast including Steven Curry, Shelley Plimpton, Woodrow Chambliss and Gary Goodrow."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 314,
+    "generation_tokens": 28,
+    "generation_speed": 393.52925468370086,
+    "prompt_eval_speed": 20564.54253716681,
+    "generation_latency_s": 0.17069180007092655,
+    "latency": 0.6108939000405371,
+    "total_prompt_tokens": 385,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1401896,
+    "stage_rewrite_s": 0.14354329998604953,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0698880999116227,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22664160002022982,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1707323999144137,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6109056000132114,
+    "unaccounted_latency_s": 0.00010070018470287323,
+    "rewritten_query": "Are both Jim McBride and Neil Jordan Americans?",
+    "query_was_rewritten": true
+  }
+}

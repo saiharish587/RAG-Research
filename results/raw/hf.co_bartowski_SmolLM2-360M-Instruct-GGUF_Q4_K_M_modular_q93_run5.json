@@ -1,0 +1,49 @@
+{
+  "question_id": "Q93",
+  "query": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+  "ground_truth": "Las Vegas Strip in Paradise",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The MGM Grand Las Vegas (formerly Marina and MGM-Marina) is the hotel and casino that the MGM Grand is located on the Las Vegas Strip.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "For Adults Only: For Adults Only (1971) is the 13th comedy album by Bill Cosby.  It was recorded at the Westgate Las Vegas Resort & Casino, then known as the International Hotel.  The title \"For Adults Only\" was also used for a 1959 Pearl Bailey LP (Roulette R-25016).",
+      "MGM Grand Las Vegas: The MGM Grand Las Vegas (formerly Marina and MGM-Marina) is a hotel and casino located on the Las Vegas Strip in Paradise, Nevada.  The MGM Grand is the largest single hotel in the United States with 5,124 rooms.  It is also the third-largest hotel complex in the world by number of rooms and second-largest hotel resort complex in the United States behind the combined The Venetian and The Palazzo.  When it opened in 1993, the MGM Grand was the largest hotel complex in the world.",
+      "Cosmopolitan of Las Vegas: The Cosmopolitan of Las Vegas (commonly referred to simply as The Cosmopolitan or The Cosmo) is a luxury resort casino and hotel on the Las Vegas Strip in Paradise, Nevada.  The resort opened on December 15, 2010, and is located just south of the Bellagio on the west side of Las Vegas Boulevard."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 365,
+    "generation_tokens": 36,
+    "generation_speed": 260.38087936409204,
+    "prompt_eval_speed": 47347.25645349592,
+    "generation_latency_s": 0.26081130001693964,
+    "latency": 0.580978799960576,
+    "total_prompt_tokens": 501,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2268214,
+    "stage_route_s": 0.08876720000989735,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17472320003435016,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05649970006197691,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.91999851167202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26084360003005713,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5809876000275835,
+    "unaccounted_latency_s": 9.519990999251604e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bill Cosby's Hotel and Casino\"",
+      "\"Cosby's Hotel and Casino\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q354",
+  "query": "Vanessa Bley is what person who organizes and often finances concerts, plays, or operas, performing a role?",
+  "ground_truth": "impresario",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Vanessa Bley is a New York City and Los Angeles-based singer, composer, producer, and musician who organizes and often finances concerts, plays, or operas.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vanessa Bley: Vanessa Bley is a New York City and Los Angeles\u2013based singer, composer, producer, and musician.  She is daughter of jazz pianist Paul Bley and pioneer video artist Carol Goss.",
+      "Madonna (entertainer): Madonna Louise Ciccone ( ; born August 16, 1958) is an American singer, songwriter, actress, and businesswoman.  A leading presence during the emergence of MTV in the 1980s, Madonna is known for pushing the boundaries of lyrical content in mainstream popular music, as well as visual imagery in music videos and on stage.  She has also frequently reinvented both her music and image while maintaining autonomy within the recording industry.  Besides sparking controversy, her works have been acclaimed by music critics.  Referred to as the \"Queen of Pop\", Madonna is widely cited as an influence by other artists.",
+      "The Music Hall Guild of Great Britain and America: The Music Hall Guild of Great Britain and America and the Theatre and Film Guild of Great Britain and America is a registered theatre charity and non-profit making theatre organisation based in London.  The Guild's patrons include Brian Croucher, Anita Dobson, Fenella Fielding, Sheila Ferguson, Jessica Martin, Lorraine Chase, Gillian Gregory, Mark Lester, Jessie Wallace, Barbara Windsor and Shani Wallis."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 372,
+    "generation_tokens": 35,
+    "generation_speed": 212.72845516595856,
+    "prompt_eval_speed": 43790.46497939964,
+    "generation_latency_s": 0.2850203000707552,
+    "latency": 0.7629723000572994,
+    "total_prompt_tokens": 518,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2334701,
+    "stage_route_s": 0.1054088999517262,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.31404440000187606,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05832229997031391,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.209993105381727e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2850587998982519,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7629827000200748,
+    "unaccounted_latency_s": 9.680027142167091e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Vanessa Bley\" - The organizer of various events and performances.",
+      "\"Vanessa Bley\" - A performer known for her roles in music and theater."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q85",
+  "query": "What was the name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine \" and was also a former white house intern?",
+  "ground_truth": "Monica Lewinsky",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine\" is \"Gennifer Flowers\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Their Lives: Their Lives: The Women Targeted by the Clinton Machine is a book by Candice E. Jackson.  Published by conservative publisher World Ahead Publishing on May 31, 2005, it recounts the stories of seven women who crossed paths with Bill Clinton: Monica Lewinsky, Paula Jones, Gennifer Flowers, Kathleen Willey, Elizabeth Gracen, Juanita Broaddrick, and Sally Perdue.",
+      "Hillary Clinton: Hillary Diane Rodham Clinton ( ; born October 26, 1947) is an American politician who was the First Lady of the United States from 1993 to 2001, U.S. Senator from New York from 2001 to 2009, 67th United States Secretary of State from 2009 to 2013, and the Democratic Party's nominee for President of the United States in the 2016 election.",
+      "Hillary Clinton presidential campaign, 2016: The 2016 presidential campaign of Hillary Rodham Clinton was announced in a YouTube video, on April 12, 2015.  Hillary Clinton was the 67th United States Secretary of State and served during the first term of the Obama administration from 2009 to 2013.  She was previously the United States Senator from New York from 2001 to 2009, and is the wife of former President Bill Clinton.  This campaign marked her second bid for the presidency after losing in her first attempt to Barack Obama in the 2008 Democratic primary."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 30,
+    "generation_speed": 405.03868119405405,
+    "prompt_eval_speed": 25926.142681570782,
+    "generation_latency_s": 0.1805770000210032,
+    "latency": 0.6102869999594986,
+    "total_prompt_tokens": 536,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.15191860000000001,
+    "stage_rewrite_s": 0.15677150001283735,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07286509999539703,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1999474000185728,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18061620008666068,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6102979999268427,
+    "unaccounted_latency_s": 9.8399817943573e-05,
+    "rewritten_query": "The name of a woman from the book \"Their Lives: The Women Targeted by the Clinton Machine\" is \"Ava\".",
+    "query_was_rewritten": true
+  }
+}

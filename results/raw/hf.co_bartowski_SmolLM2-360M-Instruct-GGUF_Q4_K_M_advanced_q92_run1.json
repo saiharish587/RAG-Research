@@ -1,0 +1,42 @@
+{
+  "question_id": "Q92",
+  "query": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+  "ground_truth": "John Waters",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Paul Schrader hosted the 18th Independent Spirit Awards in 2002.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "18th Independent Spirit Awards: The 2002 Independent Spirit Awards, honoring the best in independent filmmaking for 2002, were announced on March 22, 2003.  It was hosted by John Waters.",
+      "Paul Schrader: Paul Joseph Schrader (born July 22, 1946) is an American screenwriter, film director, and film critic.  Schrader wrote or co-wrote screenplays for four Martin Scorsese films: \"Taxi Driver\" (1976), \"Raging Bull\" (1980), \"The Last Temptation of Christ\" (1988), and \"Bringing Out the Dead\" (1999).  Schrader has also directed 18 feature films, including his directing debut crime drama, \"Blue Collar\" (co-written with his brother, Leonard Schrader), the crime drama \"Hardcore\" (a loosely autobiographical film also written by Schrader), his 1982 remake of the horror classic \"Cat People\", the crime drama \"American Gigolo\" (1980), the biographical drama \"\" (1985), the cult film \"Light Sleeper\" (1992), the drama \"Affliction\" (1997), the biographical film \"Auto Focus\" (2002), and the erotic dramatic thriller \"The Canyons\" (2013).",
+      "After Hours (film): After Hours is a 1985 American black comedy film directed by Martin Scorsese, written by Joseph Minion, and starring Griffin Dunne with an ensemble cast.  The film follows Paul Hackett, portrayed by Dunne, as he experiences a series of misadventures while making his way home from New York City's SoHo district during the night."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 21,
+    "generation_speed": 237.52969121140143,
+    "prompt_eval_speed": 15513.476517941532,
+    "generation_latency_s": 1.0041048999410123,
+    "latency": 3.3924474999075755,
+    "total_prompt_tokens": 556,
+    "total_generation_tokens": 48,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1256246,
+    "stage_rewrite_s": 1.2338278000243008,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0074275999795645,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1469448999268934,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.004171899985522,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.392458299989812,
+    "unaccounted_latency_s": 8.650007657706738e-05,
+    "rewritten_query": "The American film director who hosted the 18th Independent Spirit Awards in 2002 was Martin Scorsese.",
+    "query_was_rewritten": true
+  }
+}

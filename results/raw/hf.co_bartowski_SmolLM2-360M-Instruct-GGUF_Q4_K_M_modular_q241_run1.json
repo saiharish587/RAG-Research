@@ -1,0 +1,49 @@
+{
+  "question_id": "Q241",
+  "query": "What arcade game is named after the only player in major league history to have a 0.300 batting average for 7 consecutive seasons?",
+  "ground_truth": "a pinball machine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Arcade Game named after the only player in Major League History who had a 0.300 Batting Average for 7 consecutive seasons is MLB 2K7.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "No-hitter: In baseball, a no-hitter (also known as a no-hit game and colloquially as a no-no) is a game in which a team was not able to record a single hit.  Major League Baseball (MLB) officially defines a no-hitter as a completed game in which a team that batted in at least nine innings recorded no hits.  A pitcher who prevents the opposing team from achieving a hit is said to have \"thrown a no-hitter\".  This is a rare accomplishment for a pitcher or pitching staff: only 296 have been thrown in Major League Baseball history since 1876, an average of about two per year.  In most cases in MLB, no-hitters are recorded by a single pitcher who throws a complete game; one thrown by two or more pitchers is a combined no-hitter.  The most recent no-hitter by a single pitcher was thrown on June 3, 2017 by Edinson V\u00f3lquez of the Miami Marlins against the Arizona Diamondbacks at Miami's Marlins Park.  The most recent combined no-hitter was thrown by Cole Hamels, Jake Diekman, Ken Giles, and Jonathan Papelbon of the Philadelphia Phillies against the Atlanta Braves on September 1, 2014.",
+      "Major League Baseball 2K7: Major League Baseball 2K7 (or MLB 2K7) is a Major League Baseball licensed baseball simulation video game developed by Kush Games and published by 2K Sports.  Released on February 27, 2007, it is the only 2007 MLB licensed game available for the Xbox 360 and Xbox.  It is also available for the PlayStation Portable, the PlayStation 2 and, for the first time, the PlayStation 3, though its competition came in the form of \"\" from 989 Sports.  Portable versions for the Nintendo DS, PlayStation Portable, and Game Boy Advance were released.  It is the first baseball game to be released for the Nintendo DS and the last major release for the Xbox game console.",
+      "Baseball field: A baseball field, also called a ball field or a baseball diamond, is the field upon which the game of baseball is played.  The term can also be used as a metonym for a baseball park."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 604,
+    "generation_tokens": 39,
+    "generation_speed": 206.14088408010952,
+    "prompt_eval_speed": 9485.520447264276,
+    "generation_latency_s": 0.36066670005675405,
+    "latency": 0.7265837999293581,
+    "total_prompt_tokens": 768,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2507078,
+    "stage_route_s": 0.11475740000605583,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19567480008117855,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05530379991978407,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.049999501556158e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3606985000660643,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7265936998883262,
+    "unaccounted_latency_s": 9.91998240351677e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Game of Baseball\"",
+      "\"Batting Average\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

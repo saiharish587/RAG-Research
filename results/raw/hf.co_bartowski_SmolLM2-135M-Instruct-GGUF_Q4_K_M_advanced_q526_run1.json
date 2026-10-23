@@ -1,0 +1,42 @@
+{
+  "question_id": "Q526",
+  "query": "Are Chlidanthus and Maianthemum both flowering plants?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Chilanthaceae is not a family of flowering plants. It is an order of flowering plants that includes the cacti, carnations, amaranths, ice plants, beets, and many carnivorous plants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Maianthemum: Maianthemum (Latin \"M\u0101ia \" \"May\" and Greek \"\u00e1nthemon \" \"flower\"; including former \"Smilacina\") is a genus of rhizomatous, herbaceous, perennial flowering plants, native to the understory of woodlands.  It is widespread across much of North America, Europe and Asia.",
+      "Chloranthaceae: Chloranthaceae is a family of flowering plants (angiosperms), the only family in the order Chloranthales.  It is not closely related to any other family of flowering plants, and is among the early-diverging lineages in the angiosperms.  They are woody or weakly woody plants occurring in Southeast Asia, the Pacific, Madagascar, Central and South America, and the West Indies.  The family consists of four extant genera, totalling about 77 known species according to Christenhusz and Byng in 2016.  Some species are used in traditional medicine.  The type genus is \"Chloranthus\".",
+      "Caryophyllales: Caryophyllales ( ) is an order of flowering plants that includes the cacti, carnations, amaranths, ice plants, beets, and many carnivorous plants.  Many members are succulent, having fleshy stems or leaves."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 338,
+    "generation_tokens": 44,
+    "generation_speed": 388.9502762430939,
+    "prompt_eval_speed": 21598.824206019555,
+    "generation_latency_s": 0.21851489995606244,
+    "latency": 0.5768321000505239,
+    "total_prompt_tokens": 411,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14424710000000002,
+    "stage_rewrite_s": 0.14637600001879036,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07471760001499206,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1371001999359578,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.21854849997907877,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5768408000003546,
+    "unaccounted_latency_s": 9.920005686581135e-05,
+    "rewritten_query": "Are Chilastanthus and Maianthemums both flowering plants?",
+    "query_was_rewritten": true
+  }
+}

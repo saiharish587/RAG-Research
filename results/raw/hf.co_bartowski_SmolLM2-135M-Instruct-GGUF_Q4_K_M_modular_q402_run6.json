@@ -1,0 +1,49 @@
+{
+  "question_id": "Q402",
+  "query": "Which game was released first, Icehouse pieces or Kill Doctor Lucky?",
+  "ground_truth": "Icehouse pieces",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The game that was released first is Icehouse pieces.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kill Doctor Lucky: Kill Doctor Lucky is a humorous board game designed by James Ernest and released in 1996 by Cheapass Games.  In 1998, \"Kill Doctor Lucky\" won the Origins Award for \"Best Abstract Board Game of 1997\".",
+      "Torn (online game): Torn, previously known as \"Torn City\" before the change to \"TORN\", is a free, online text-based massive multiplayer online role-playing game (MMORPG) created by British online gaming entrepreneur Joe Chedburn.  The game was launched in 2003.  In 2010, over 24,000 people played daily, and over 1 million accounts existed in total.  \"Torn\" is a virtual world based around gang violence.  Like many RPGs, players start at the bottom of the ladder and make their way to the top by earning experience points.  The game focuses on crimes and player versus player combat as a way of earning XP or experience points.",
+      "Icehouse pieces: Icehouse pieces, or Icehouse Pyramids, Treehouse pieces, Treehouse Pyramids and officially Looney Pyramids, are nestable and stackable pyramid-shaped gaming pieces and a game system.  The game system was invented by Andrew Looney and John Cooper in 1987, originally for use in the game of Icehouse."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 375,
+    "generation_tokens": 12,
+    "generation_speed": 385.22037815800456,
+    "prompt_eval_speed": 51412.11955031533,
+    "generation_latency_s": 0.15402219991665334,
+    "latency": 0.854917100048624,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 189,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2321317,
+    "stage_route_s": 0.10608169995248318,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.5354889000300318,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.059138800017535686,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.950002767145634e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15406910004094243,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8549259999999776,
+    "unaccounted_latency_s": 9.839993435889482e-05,
+    "route": "rag",
+    "router_raw": "Icehouse Pieces",
+    "sub_queries": [
+      "Icehouse Pieces and Kill Doctor Lucky are both popular action games that were released in 2015. The first game, Icehouse Pieces, is a classic action-adventure game set in a dystopian future where players control a group of rogue soldiers fighting against the tyrannical government. It was released on November 3, 2014.",
+      "Kill Doctor Lucky, on the other hand, is a more recent release that follows the same premise but with some notable differences. It's an action-adventure game set in a world where players control a group of rogue soldiers fighting against a corrupt government. It was released on November 27, 2015."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

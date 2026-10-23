@@ -1,0 +1,48 @@
+{
+  "question_id": "Q512",
+  "query": "What was the nationality of the actor playing a Russian hostage taker in \"Hostage for a Day\"?",
+  "ground_truth": "Canadian",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The actor playing a Russian hostage taker in \"Hostage for a Day\" is Mel Gibson.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hostage for a Day: Hostage for a Day is a 1994 comedic film directed by John Candy in his only directorial effort.  Though the film is also billed as \"starring\" Candy, it in fact only features him as a minor character, as a Russian hostage taker.  Produced with a mostly Canadian cast, the film was released one month after Candy's death.",
+      "Russians: Russians (Russian: \u0440\u0443\u0441\u0441\u043a\u0438\u0435 , \"russkiye\") are an East Slavic ethnic group native to Eastern Europe.  The majority of Russians inhabit the nation state of Russia, while notable minorities exist in other former Soviet states such as Ukraine, Kazakhstan, and Belarus.  A large Russian diaspora exists all over the world, with notable numbers in the United States, Germany, Israel, and Canada.  Russians are the most numerous ethnic group in Europe.",
+      "Ransom (1996 film): Ransom is a 1996 American crime thriller film directed by Ron Howard and written by Richard Price and Alexander Ignon.  The film stars Mel Gibson, Rene Russo, Gary Sinise, Brawley Nolte, Delroy Lindo, Liev Schreiber, Evan Handler, Donnie Wahlberg, and Lili Taylor.  Gibson was nominated for a Golden Globe Award for Best Actor."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 368,
+    "generation_tokens": 21,
+    "generation_speed": 215.76303054588047,
+    "prompt_eval_speed": 44671.036659383346,
+    "generation_latency_s": 0.21824359998572618,
+    "latency": 0.4595398000674322,
+    "total_prompt_tokens": 510,
+    "total_generation_tokens": 29,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2264157,
+    "stage_route_s": 0.09858240000903606,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.10892999998759478,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03361929999664426,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.579999949783087e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21827559999655932,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.45954920002259314,
+    "unaccounted_latency_s": 9.680003859102726e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Russian\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

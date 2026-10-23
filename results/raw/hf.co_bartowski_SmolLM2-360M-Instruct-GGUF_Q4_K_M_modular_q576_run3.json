@@ -1,0 +1,49 @@
+{
+  "question_id": "Q576",
+  "query": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+  "ground_truth": "IK Start",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Sarpsborg 08",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sarpsborg 08 FF: Sarpsborg 08 Fotballforening, commonly known as Sarpsborg 08 or simply Sarpsborg, is a Norwegian football club based in Sarpsborg, currently playing in Tippeligaen.  Sarpsborg 08 played in Adeccoligaen from 2005 to 2010.  In 2010, the club was promoted to the Tippeligaen, the top league in Norway, but finished last and was relegated back to Adeccoligaen in 2011.  In 2012, they were promoted again.  They play their home games at Sarpsborg Stadion.",
+      "IK Start: IK Start is a Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012.  The club was founded on 19 September 1905.  The coach is Steinar Pedersen.  The team plays in yellow jerseys, black shorts and yellow socks at home, and blue jerseys, white shorts and blue socks away.",
+      "Odds BK: Odds Ballklubb, commonly known as Odd, is a Norwegian football club from Skien.  Originally the football section of a multi-sports club, founded in 1894 nine years after the club's founding.  All other sports than football were discontinued and the club became dedicated to football only.  Odd plays in the Norwegian top division, Tippeligaen, and holds the record winning the Norwegian Football Cup the most times, the last coming in 2000.  The club was known as Odd Grenland between 1994 and 2012.  Founded in 1894, Odd is the oldest football club in Norway.  As of May 13, 2017 the club was granted a membership in Club of Pioneers.  It then became the first nordic football club to be granted this membership."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 561,
+    "generation_tokens": 8,
+    "generation_speed": 250.09378516943852,
+    "prompt_eval_speed": 69654.82989818724,
+    "generation_latency_s": 0.15234829997643828,
+    "latency": 0.6183589999563992,
+    "total_prompt_tokens": 767,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21688990000000002,
+    "stage_route_s": 0.10267059993930161,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3058821000158787,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05728070007171482,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.180004518479109e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1523897999431938,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6183694999199361,
+    "unaccounted_latency_s": 9.50999092310667e-05,
+    "route": "rag",
+    "router_raw": "Yes.",
+    "sub_queries": [
+      "Query 1: Viking vs. Adeccoligaen (Tippeligaen)",
+      "Query 2: Norwegian football club from Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

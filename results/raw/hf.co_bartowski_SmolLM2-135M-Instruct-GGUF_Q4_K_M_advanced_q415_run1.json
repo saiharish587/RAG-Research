@@ -1,0 +1,42 @@
+{
+  "question_id": "Q415",
+  "query": "The actress that played the leading role in the independent film \"A Perfect Ending\" also stars with John Bregar in a 2008 film directed by who?",
+  "ground_truth": "Douglas Jackson",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The actress that played the leading role in the independent film \"A Perfect Ending\" is Barbara Niven. She was the lead actress in the film and received numerous accolades including two Academy Awards, three Golden Globe Awards, three BAFTA Awards, six AACTA Awards, and three Screen Actors Guild Awards.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Barbara Niven: Barbara Niven (born February 26, 1953) is an American actress and producer, best known for her performances in Lifetime movies and television roles in \"\", \"One Life to Live\", and \"Cedar Cove\".  Niven also had the leading role in the independent film \"A Perfect Ending\" (2012).",
+      "Dead at 17: Dead at 17 is a 2008 Canadian drama film directed by Douglas Jackson. This film has been music composed by Richard Bowers. The film stars Barbara Niven, John Bregar, Justin Bradley, Matthew Raudsepp and Kyle Switzer in the lead roles.",
+      "Cate Blanchett: Catherine Elise Blanchett, {'1': \", '2': \", '3': \", '4': \"} ( ; born 14 May 1969) is an Australian actress and theatre director.  She has received international acclaim and many accolades, including two Academy Awards, three Golden Globe Awards, three BAFTA Awards, six AACTA Awards, and three Screen Actors Guild Awards. Blanchett came to international attention for her role as Elizabeth I of England in Shekhar Kapur's 1998 film \"Elizabeth\", for which she won the BAFTA Award for Best Actress, the Golden Globe Award, and earned her first Academy Award for Best Actress nomination.  Her portrayal of Katharine Hepburn in Martin Scorsese's 2004 film \"The Aviator\" brought her critical acclaim and many accolades, including the Academy Award for Best Actress in a Supporting Role, making her the only actor to win an Oscar for portraying another Oscar-winning actor.  In 2013, she starred as Jasmine Francis in Woody Allen's \"Blue Jasmine\", for which she won numerous accolades including the Academy Award for Best Actress."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 501,
+    "generation_tokens": 66,
+    "generation_speed": 376.68007876038007,
+    "prompt_eval_speed": 25277.49747729566,
+    "generation_latency_s": 0.27221209998242557,
+    "latency": 0.6850863000145182,
+    "total_prompt_tokens": 597,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12865379999999998,
+    "stage_rewrite_s": 0.15498700004536659,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08673640002962202,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1710242999251932,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.27225249994080514,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6850971999811009,
+    "unaccounted_latency_s": 9.770004544407129e-05,
+    "rewritten_query": "The actress who plays the lead role in the independent film \"A Perfect Ending\" is John Bregar.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q96",
+  "query": "Tysons Galleria is located in what county?",
+  "ground_truth": "Fairfax County",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Tysons Galleria is located in Fairfax County, Virginia.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tysons Galleria: Tysons Galleria is a three-level super-regional mall owned by General Growth Properties located at 2001 International Drive, McLean, Virginia, in Tysons Corner.  It is the second-largest mall in McLean/Tysons Corner, and one of the largest in the Washington metropolitan area.",
+      "Tysons, Virginia: Tysons, or formerly \u201cTysons Corner\u201d is a census-designated place (CDP) and unincorporated community in Fairfax County, Virginia, United States.  Located in Northern Virginia between the community of McLean and the town of Vienna along the Capital Beltway (I-495), it lies within the Washington Metropolitan Area.  Tysons is home to two super-regional shopping malls\u2014Tysons Corner Center and Tysons Galleria\u2014and the corporate headquarters of numerous companies such as Intelsat, Gannett, Hilton Worldwide, Freddie Mac, Capital One and Booz Allen Hamilton.  Tysons is Fairfax County's central business district and a regional commercial center.  It has been characterized as a quintessential example of an edge city.  The population was 19,627 as of the 2010 census.",
+      "McLean, Virginia: McLean ( ) is a census-designated place (CDP) in Fairfax County in Northern Virginia.  McLean is home to many diplomats, businessmen, members of Congress, and high-ranking government officials partially due to its proximity to Washington, D.C. and the Central Intelligence Agency.  It is the location of Hickory Hill, the former home of Ethel Kennedy, the widow of Robert F. Kennedy.  It is also the location of Salona, the former home of Light-Horse Harry Lee, the Revolutionary War hero.  The community had an estimated total population of 53,673 in 2015, according to estimates prepared by the United States Census Bureau.  It is located between the Potomac River and the town of Vienna.  McLean is known for its luxury homes and its high-end shopping destinations: the Tysons Corner Center and the Tysons Galleria.  The two McLean zip codes - 22101 and 22102 - are among the most expensive ZIP Codes in Virginia and the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 576,
+    "generation_tokens": 15,
+    "generation_speed": 262.7016234960332,
+    "prompt_eval_speed": 86890.93377583346,
+    "generation_latency_s": 0.9325113000813872,
+    "latency": 3.3658864999888465,
+    "total_prompt_tokens": 647,
+    "total_generation_tokens": 29,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12301519999999999,
+    "stage_rewrite_s": 1.1755890001077205,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.077365699922666,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18030510004609823,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9325425000861287,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3658943000482395,
+    "unaccounted_latency_s": 9.249988943338394e-05,
+    "rewritten_query": "Tysons Galleria is located in the county of Virginia.",
+    "query_was_rewritten": true
+  }
+}

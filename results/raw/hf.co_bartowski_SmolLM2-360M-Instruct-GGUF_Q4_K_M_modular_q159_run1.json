@@ -1,0 +1,49 @@
+{
+  "question_id": "Q159",
+  "query": "What football club plays in the area between the old tool gates: Brook Bar and Trafford bar?",
+  "ground_truth": "Manchester United",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Manchester United F.C.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Manchester United F.C.: Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football.  Nicknamed \"the Red Devils\", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.",
+      "Manchester United F.C. in European football: Manchester United Football Club is an English football club based in Old Trafford, Greater Manchester.  They were the first English club to enter European competition, entering the European Cup in 1956.  Since then, the club has competed in every UEFA-organised competition, with the exception of the now-defunct Intertoto Cup.",
+      "Ipswich Town F.C.: Ipswich Town Football Club ( ; also known as Ipswich, The Blues, Town, or The Tractor Boys) is a professional association football club based in Ipswich, Suffolk, England.  They play in the Championship, the second tier of the English football league system, having last appeared in the Premier League in the 2001\u201302 season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 357,
+    "generation_tokens": 9,
+    "generation_speed": 223.142340019339,
+    "prompt_eval_speed": 13688.650306748466,
+    "generation_latency_s": 0.1729060000507161,
+    "latency": 0.6653297999873757,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2328676,
+    "stage_route_s": 0.09884319989942014,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3304986000293866,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06290180003270507,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.220000796020031e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17293840006459504,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6653416000772268,
+    "unaccounted_latency_s": 9.80000477284193e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The club is part of the Manchester United Football Club, which is located near the Old Tool Gates.",
+      "Query 2: The club is also part of the West Bromwich Albion Football Club, which is situated in the area between the old tool gates."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

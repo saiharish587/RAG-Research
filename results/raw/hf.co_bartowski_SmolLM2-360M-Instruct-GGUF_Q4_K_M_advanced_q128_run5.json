@@ -1,0 +1,42 @@
+{
+  "question_id": "Q128",
+  "query": "When was the palace founded at which Columba de Dunbar died in 1435?",
+  "ground_truth": "the late 12th Century",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The palace was founded at Dunbar Castle, where Columba de Dunbar died in 1435.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Columba de Dunbar: Columba de Dunbar ( 1386 \u2013 1435) was Bishop of Moray from 1422 until his death at Spynie Palace near Elgin sometime before 7 November 1435.",
+      "Gospatric, Earl of Northumbria: Gospatric or Cospatric (from the Cumbric \"Servant of Saint Patrick\"), (died after 1073), was Earl of Northumbria, or of Bernicia, and later lord of sizable estates around Dunbar.  While his paternal ancestry is uncertain, his descendants held the Earldom of Dunbar, later known as the Earldom of March, in south-east Scotland until 1435.",
+      "George II, Earl of March: George de Dunbar, 11th Earl of Dunbar & March Lord of Annandale and the Isle of Man, (c. 1370 \u2013 after 1457) was the last of his family to hold these titles."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 301,
+    "generation_tokens": 24,
+    "generation_speed": 265.5160969133754,
+    "prompt_eval_speed": 40802.49423885048,
+    "generation_latency_s": 0.9512888999888673,
+    "latency": 3.4018389000557363,
+    "total_prompt_tokens": 381,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1340592,
+    "stage_rewrite_s": 1.2960462000919506,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9495153999887407,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2048780000768602,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9513210000004619,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4018467999994755,
+    "unaccounted_latency_s": 8.69998475536704e-05,
+    "rewritten_query": "The Palace of Dunbairth was founded by Columba de Dunbar in 1076, and it is believed to have been built on the site where he died in 1435.",
+    "query_was_rewritten": true
+  }
+}

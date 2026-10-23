@@ -1,0 +1,48 @@
+{
+  "question_id": "Q548",
+  "query": "The telenova \"El Ardiente Secreto\" was based ona novel published under what pen name?",
+  "ground_truth": "\"Currer Bell\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The pen name of the telenovela \"El Ardiente Secreto\" is \"Ardiente\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "El Ardiente Secreto: El Ardiente Secreto (English The impassioned secret) is a telenovela made by Mexican TV network Televisa.  This telenovela was broadcast in 1978.  This soap opera was televised on weekends only.  It was based on the Charlotte Bront\u00eb's novel \"Jane Eyre\".",
+      "Ardiente secreto: Ardiente secreto is a Mexican telenovela produced by Irene Sabido for Televisa in 1978.  Is based on the Charlotte Bront\u00eb's novel \"Jane Eyre\".",
+      "PEN America: PEN America: A Journal for Writers and Readers is an annual literary journal that features fiction, poetry, conversation, criticism, and memoir.  It is published by PEN American Center in New York City.  Contributors include Yousef Al-Mohaimeed, Paul Auster, Michael Cunningham, Lydia Davis, Petina Gappah, Nikki Giovanni, Rawi Hage, Shahriar Mandanipour, Colum McCann, Michael Ondaatje, Marilynne Robinson, Salman Rushdie, Susan Sontag, John Edgar Wideman, and many others."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 26,
+    "generation_speed": 251.90381149844012,
+    "prompt_eval_speed": 13635.649166928639,
+    "generation_latency_s": 0.24381670006550848,
+    "latency": 0.597916099941358,
+    "total_prompt_tokens": 495,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23377910000000002,
+    "stage_route_s": 0.10512710001785308,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21296059992164373,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03583249996881932,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9699912779033184e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24384899996221066,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5979251000098884,
+    "unaccounted_latency_s": 0.00010680023115128279,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "El Ardiente Secreto (Author's Name)"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

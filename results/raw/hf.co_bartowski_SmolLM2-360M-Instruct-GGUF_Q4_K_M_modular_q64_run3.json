@@ -1,0 +1,48 @@
+{
+  "question_id": "Q64",
+  "query": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+  "ground_truth": "821",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Roud Folk Song Index of the nursery rhyme \"What Are Little Boys Made Of?\" inspired the Roud Folk Song Index number of \"Pretty Little Dutch Girl.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "What Are Little Boys Made Of?: \"What Are Little Boys Made Of?\"  is a popular nursery rhyme dating from the early 19th century.  It has a Roud Folk Song Index number of 821.",
+      "Pretty Little Dutch Girl: \"Pretty Little Dutch Girl\" is a children's nursery rhyme, clapping game and jump-rope rhyme.  It has a Roud Folk Song Index number of 12986.",
+      "What Are Little Girls Made Of?: \"What Are Little Girls Made Of?\"  is episode seven of the of the American science fiction television series, \"\".  It was first broadcast October 20, 1966, and repeated, two months later, on December 22, the first episode of the series to be repeated on NBC.  It was written by Robert Bloch and directed by James Goldstone.  The title of the episode is taken from the fourth line of the 19th century nursery rhyme, \"What Are Little Boys Made Of? .\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 296,
+    "generation_tokens": 36,
+    "generation_speed": 259.4762903539689,
+    "prompt_eval_speed": 36669.974810452775,
+    "generation_latency_s": 0.25641020003240556,
+    "latency": 0.5047647000756115,
+    "total_prompt_tokens": 436,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2243154,
+    "stage_route_s": 0.09037839993834496,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12090750003699213,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036916299955919385,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.409998655319214e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2564404000295326,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5047743000322953,
+    "unaccounted_latency_s": 8.810008876025677e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"What are little girls made of?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

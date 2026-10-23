@@ -1,0 +1,49 @@
+{
+  "question_id": "Q342",
+  "query": "What 2017 Christopher B. Landon directed American slasher film is Jessica Rothe starring in?",
+  "ground_truth": "Happy Death Day",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Happy Death Day",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Happy Death Day: Happy Death Day is an upcoming American slasher film directed by Christopher B. Landon and written by Scott Lobdell.  It stars Jessica Rothe and Israel Broussard.  The film was produced by Jason Blum through his Blumhouse Productions banner.",
+      "Jessica Rothe: Jessica Rothe (born Jessica Rothenberg, May 28, 1987) is an American actress.  She stars in the upcoming 2017 film \"Happy Death Day\".  She appeared in 2016's \"La La Land\", .",
+      "Christopher B. Landon: Christopher Beau Landon (born February 27, 1975) is an American film director, producer, and screenwriter best known as the writer of 2007 film \"Disturbia\", the last three \"Paranormal Activity\" films and as the son of late actor Michael Landon.  Landon wrote and made his first directorial debut on the satirical thriller \"Burning Palms\", which was released in 2010.  He wrote and directed the found footage horror film \"\", and directed and co-wrote the horror comedy film \"Scouts Guide to the Zombie Apocalypse\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 349,
+    "generation_tokens": 4,
+    "generation_speed": 281.1753128075355,
+    "prompt_eval_speed": 46583.02189001602,
+    "generation_latency_s": 0.13135919999331236,
+    "latency": 0.5346131999976933,
+    "total_prompt_tokens": 497,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24384119999999998,
+    "stage_route_s": 0.1070594999473542,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2388281999155879,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05719860002864152,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.440006498247385e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1313912000041455,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.534622099949047,
+    "unaccounted_latency_s": 9.06999921426177e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Search Query 1: Jessica Rothe (American Slasher Film)",
+      "Search Query 2: Christopher B. Landon (Director)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

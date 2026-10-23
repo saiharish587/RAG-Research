@@ -1,0 +1,49 @@
+{
+  "question_id": "Q312",
+  "query": "Which magazine is published more often, Shonen Jump or Rolling Stone?",
+  "ground_truth": "Rolling Stone",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on the information provided, Rolling Stone is published more frequently than Shonen Jump. The reason for this difference lies in the different formats and audiences that each publication caters to.\n\nShonen Jump focuses primarily on Japanese manga anthologies, featuring serialized chapters from four popular manga series. It features serialized chapters from four manga series, which are then retold by other manga authors or anime creators. This format allows for a more intimate and immersive reading experience compared to the more frequent release of Shonen Jump.\n\nRolling Stone, on the other hand, is published more frequently because it focuses primarily on American readership. It features serialized chapters from popular music artists, films actors, and TV shows that are widely watched by American viewers. Rolling Stone's content often includes news articles, interviews with celebrities, and reviews of various movies and TV shows. This format allows for a broader reach and audience appeal compared to Shonen Jump's more limited focus on Japanese manga anthologies.\n\nIn summary, while both magazines feature serialized chapters from four popular manga series, Rolling Stone is published more frequently because it caters to American readership, which includes a wider range of content and audiences.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shonen Jump (magazine): Shonen Jump, officially stylized SHONEN JUMP and abbreviated SJ, is a \"sh\u014dnen\" manga anthology published in North America by Viz Media.  It debuted in November 2002 with the first issue having a January 2003 cover date.  Based on Shueisha's popular Japanese magazine \"Weekly Sh\u014dnen Jump\", \"Shonen Jump\" is retooled for English readers and the American audience, including changing it from a weekly publication to a monthly one.  It features serialized chapters from four manga series, and articles on Japanese language and culture, as well as manga, anime, video games, and figurines.  Prior to the magazine's launch, Viz launched an extensive marketing campaign to promote it and help it succeed where previous manga anthologies published in North America had failed.  Shueisha purchased an equity interest in Viz to help fund the venture, and Cartoon Network, Suncoast, and Diamond Distributors became promotional partners in the magazine.",
+      "Weekly Shonen Jump (American magazine): Weekly Shonen Jump is a digital \"sh\u014dnen\" manga anthology published in North America by Viz Media, and the successor to their monthly print anthology \"Shonen Jump\".  It began serialization on January 30, 2012 as Weekly Shonen Jump Alpha (officially stylized as \"Weekly SHONEN JUMP \u03b1lpha\" or \"Weekly SHONEN JUMP Alpha\"), with two free preview issues released in the buildup to its launch.  Based on Shueisha's popular Japanese magazine \"Weekly Sh\u014dnen Jump\", \"Weekly Shonen Jump\" is an attempt to provide English readers with easily accessible, affordable, and officially licensed editions of the latest installments of popular \"Sh\u014dnen Jump\" manga soon after their release in Japan, as an alternative to popular bootleg scanlation services.",
+      "Rolling Stone: Rolling Stone is an American biweekly magazine that focuses on popular culture.  It was founded in San Francisco in 1967 by Jann Wenner, who is still the magazine's publisher, and the music critic Ralph J. Gleason.  It was first known for its musical coverage and for political reporting by Hunter S. Thompson.  In the 1990s, the magazine shifted focus to a younger readership interested in youth-oriented television shows, film actors, and popular music.  In recent years, it has resumed its traditional mix of content."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 611,
+    "generation_tokens": 242,
+    "generation_speed": 355.3869017898577,
+    "prompt_eval_speed": 20583.479315456138,
+    "generation_latency_s": 0.826143000042066,
+    "latency": 1.1292126999469474,
+    "total_prompt_tokens": 741,
+    "total_generation_tokens": 264,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23659599999999997,
+    "stage_route_s": 0.1016434000339359,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14872159995138645,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05250360001809895,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.509995389729738e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.8261967999860644,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.1292289999546483,
+    "unaccounted_latency_s": 0.0001094000181183219,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Shonen Jump - Rolling Stone",
+      "Rolling Stone - Shonen Jump"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

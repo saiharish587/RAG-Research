@@ -1,0 +1,49 @@
+{
+  "question_id": "Q468",
+  "query": "Which battle occurred first, the Battle of Manila or the Battle of Guam?",
+  "ground_truth": "Battle of Guam",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Battle of Bataan (7 January \u2013 9 April 1942) occurred first and was fought by the Imperial Japanese Army and Navy in Luzon during World War II. The battle took place on the island of Luzon, which controlled the Philippines from 1940 to 1945.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Battle of Bataan: The Battle of Bataan (7 January \u2013 9 April 1942) represented the most intense phase of Imperial Japan's invasion of the Philippines during World War II.  In January 1942, forces of the Imperial Japanese Army and Navy invaded Luzon along with several islands in the Philippine Archipelago after the bombing of the American naval base at Pearl Harbor.  The commander-in-chief of all Filipino and American forces in the islands, General Douglas MacArthur, consolidated all of his Luzon-based units on the Bataan Peninsula to fight against the Japanese invaders.  By this time, the Japanese controlled nearly all of Southeast Asia.  The Bataan peninsula and the island of Corregidor were the only remaining Allied strongholds in the region.  Despite a lack of supplies, Filipino and American forces managed to fight the Japanese for three months, engaging them initially in a fighting retreat southward.  As the combined Filipino and American forces made a last stand, the delay cost the Japanese valuable time and prevented immediate victory across the Pacific.  The surrender at Bataan, with 76,000 soldiers surrendering in the Philippines altogether, was the largest in American and Filipino military histories, and was the largest United States surrender since the American Civil War's Battle of Harper's Ferry.  Soon afterwards, Filipino and American prisoners of war were forced into the Bataan Death March.",
+      "Battle of Manila (1945): The Battle of Manila (February 3, 1945 \u2013 March 3, 1945) was a major battle of the Philippine campaign of 1944-45, during the Second World War.  It was fought by American and Filipino forces against Japanese troops in Manila, the capital city of the Philippines.  The month-long battle, which resulted in the death of over 100,000 civilians and the complete devastation of the city, was the scene of the worst urban fighting in the Pacific theater.  Japanese forces committed mass murder against Filipino civilians during the battle.  Along with massive loss of life, the battle also destroyed architectural and cultural heritage dating back to the city's foundation.  The battle ended the almost three years of Japanese military occupation in the Philippines (1942\u20131945).  The city's capture was marked as General Douglas MacArthur's key to victory in the campaign of reconquest.",
+      "Battle of Guam (1941): The First Battle of Guam was an engagement during the Pacific War in World War II, and took place from 8 December to 10 December 1941 on Guam in the Mariana Islands between Japan and the United States.  The American garrison was defeated by Japanese forces on 10 December, which resulted in an occupation until the Second Battle of Guam in 1944."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 670,
+    "generation_tokens": 68,
+    "generation_speed": 385.7499432720672,
+    "prompt_eval_speed": 20425.5838058655,
+    "generation_latency_s": 0.3223443999886513,
+    "latency": 0.6597626999719068,
+    "total_prompt_tokens": 800,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2226589,
+    "stage_route_s": 0.14399299991782755,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13599420001264662,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05725700000766665,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.75000124424696e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.32238339993637055,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6597715999232605,
+    "unaccounted_latency_s": 9.720004163682461e-05,
+    "route": "rag",
+    "router_raw": "The Battle of Manila (1592) occurred before the Battle of Guam (1608).",
+    "sub_queries": [
+      "Battle of Manila (2004)",
+      "Battle of Guam (2003)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

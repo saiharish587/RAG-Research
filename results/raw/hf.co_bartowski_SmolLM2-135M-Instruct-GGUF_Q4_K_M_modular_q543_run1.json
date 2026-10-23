@@ -1,0 +1,48 @@
+{
+  "question_id": "Q543",
+  "query": "The Dogwoman telemovies were created by an actress born in what year?",
+  "ground_truth": "1961",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The dogwomen telemovies were created by Magda Szubanski as a professional dog trainer and Tara Morice played her sister Pauline O'Halloran, not 2018.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dogwoman: Dogwoman is a series of Australian television telemovies screened on the Nine Network in 2000.  The telemovies were created by and starred Magda Szubanski as Margaret O'Halloran.  Margaret, a professional dog trainer, is drawn into a world of mystery, intrigue, and murder, which lies beneath the surface of dog-owners.  Tara Morice played her sister Pauline O'Halloran and Raj Ryan played her boyfriend Brian Jayasinghe.",
+      "Angelina Jolie: Angelina Jolie Pitt ( ; n\u00e9e Voight; born June 4, 1975) is an American actress, filmmaker, and humanitarian.  She has received an Academy Award, two Screen Actors Guild Awards, and three Golden Globe Awards, and has been cited as Hollywood's highest-paid actress.  Jolie made her screen debut as a child alongside her father, Jon Voight, in \"Lookin' to Get Out\" (1982).  Her film career began in earnest a decade later with the low-budget production \"Cyborg 2\" (1993), followed by her first leading role in a major film, \"Hackers\" (1995).  She starred in the critically acclaimed biographical cable films \"George Wallace\" (1997) and \"Gia\" (1998), and won an Academy Award for Best Supporting Actress for her performance in the drama \"Girl, Interrupted\" (1999).",
+      "Reese Witherspoon: Laura Jeanne Reese Witherspoon ( ; born March 22, 1976) is an American actress, producer, and entrepreneur.  Born in New Orleans and raised in Tennessee, she began her career as a child actress, making her professional screen debut in \"The Man in the Moon\" (1991), for which she was nominated for a Young Artist Award.  Following breakout roles in \"\" (1992) and \"Jack the Bear\" (1993), she starred in the comedy-drama \"Pleasantville\" (1998), for which she won the Young Hollywood Award for Breakthrough Performance.  Her leading role of Tracy Flick in \"Election\" (1999) was nominated for a Golden Globe Award."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 577,
+    "generation_tokens": 42,
+    "generation_speed": 348.54193291397655,
+    "prompt_eval_speed": 16687.875983341044,
+    "generation_latency_s": 0.26919399993494153,
+    "latency": 0.6081764000700787,
+    "total_prompt_tokens": 709,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2236946,
+    "stage_route_s": 0.15849410009104759,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13993159995879978,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04037539998535067,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.600000102072954e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26924159994814545,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6081877000397071,
+    "unaccounted_latency_s": 9.980006143450737e-05,
+    "route": "rag",
+    "router_raw": "The Dogwoman telemovies were created by an actress born in 1980s",
+    "sub_queries": [
+      "The dogwomen are created by an actress born in 1950."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

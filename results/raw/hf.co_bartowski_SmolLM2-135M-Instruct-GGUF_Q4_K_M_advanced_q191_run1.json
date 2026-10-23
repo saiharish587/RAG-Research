@@ -1,0 +1,42 @@
+{
+  "question_id": "Q191",
+  "query": "Joe Walker played for which team that ends their regular season with the Civil War rivalry game?",
+  "ground_truth": "Oregon Ducks football",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is: The University of Oregon Longhorns.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Civil War (college football game): The Civil War is the colloquial name for an American college football rivalry game played annually in Oregon, between the Ducks of the University of Oregon in Eugene and the Beavers of Oregon State University in Corvallis.  First played in 1894, it is the fifth most played college football rivalry game in NCAA Division I Football Bowl Subdivision.  Both universities are members of the North Division of the Pac-12 Conference.",
+      "Joe Walker (American football): Joe Walker (born December 11, 1992) is an American football linebacker for the Philadelphia Eagles of the National Football League (NFL).  He played college football at Oregon.",
+      "Red River Rivalry trophies: There are three Red River Rivalry trophies given to the winner of the annual Red River Rivalry (previously Red River Shootout) which is a college football rivalry game between The University of Texas Longhorns and the University of Oklahoma Sooners.  The trophies are the Golden Hat, the Red River Rivalry trophy and the Governors' trophy.  The trophies reward the annual winner of one of college football's longest and most intense rivalries.  2005 marked the 100th meeting of the two football programs.  The rivalry began in 1900 while Oklahoma was still a territory of the United States.  In the first 100 games of the rivalry, Texas won 56 times to 39 Oklahoma victories and 5 ties.  The 2007 match-up between Oklahoma and Texas was predicted to be the #3 game to watch in 2007 by SI.com's \"Top 20 Games To Watch In 2007\" list."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 454,
+    "generation_tokens": 13,
+    "generation_speed": 372.1729172630976,
+    "prompt_eval_speed": 26318.840579710144,
+    "generation_latency_s": 0.12680500000715256,
+    "latency": 0.5889882000628859,
+    "total_prompt_tokens": 532,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1249649,
+    "stage_rewrite_s": 0.1854776000836864,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07746569998562336,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19911600009072572,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.12684359995182604,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5889998000347987,
+    "unaccounted_latency_s": 9.749992750585079e-05,
+    "rewritten_query": "Joe Walker, who played for the University of Virginia from 1985 to 2003, was a key figure in the Civil War rivalry game.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q436",
+  "query": "How long is the river for which Frenchmans Creek is a tributary?",
+  "ground_truth": "2844 km",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The river for which Frenchmans Creek is a tributary is approximately 7.51 km from its source south of Pooncarie, New South Wales at an elevation of 54.4 m to its confluence into the Darling River at an elevation of 48 m .",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Frenchmans Creek (California): Frenchmans Creek is a 4.4 mi stream in San Mateo County, California.  Locks Creek is its largest tributary.",
+      "Frenchmans Creek (New South Wales): Frenchmans Creek is a short tributary of the Darling River in west New South Wales, measuring 7.51 km from its source south of Pooncarie, New South Wales at an elevation of 54.4 m to its confluence into the Darling River at an elevation of 48 m .",
+      "Schoolcraft River: The Schoolcraft River is a tributary of the Mississippi River, approximately 30\u00a0mi (48\u00a0km) long, in northern Minnesota in the United States.  Although short, it is considered as the first major tributary of the Mississippi, since it is the first river that joins the Mississippi below its source that is nearly the same size as the Mississippi itself.  The river is named after Henry Schoolcraft, who mapped the region and discovered nearby Lake Itasca as the source of the Mississippi in 1831.  Its name in the Ojibwe language is \"Ozaawindibe-ziibi\" (Yellow-head River), named after Ozaawindib who guided Schoolcraft to the nearby \"Omashkoozo-zaaga'igan\" (Elk Lake), which Schoolcraft then named Lake Itasca.  Prior to being named for these early explorers it had been called the \"Naiwa River\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 379,
+    "generation_tokens": 59,
+    "generation_speed": 423.19693002904995,
+    "prompt_eval_speed": 56821.5892053973,
+    "generation_latency_s": 0.23284870001953095,
+    "latency": 0.7570522999158129,
+    "total_prompt_tokens": 453,
+    "total_generation_tokens": 109,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13962839999999999,
+    "stage_rewrite_s": 0.2163704999256879,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07560910005122423,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23209479998331517,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.23288799996953458,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7570638000033796,
+    "unaccounted_latency_s": 0.00010249996557831764,
+    "rewritten_query": "Frenchman Creek is a tributary of the Mississippi River, and its length varies depending on the source location. The river's length can vary from 10 to 25 miles (16 to 34 km) in some areas.",
+    "query_was_rewritten": true
+  }
+}

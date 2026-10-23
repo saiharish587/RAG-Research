@@ -1,0 +1,42 @@
+{
+  "question_id": "Q387",
+  "query": "Francisco Jose Hernandez was a participant in an invasion that took place in what year?",
+  "ground_truth": "1961",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The correct answer is 1811",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Francisco Jose Hernandez: Francisco Jos\u00e9 Hern\u00e1ndez, known as \"Pepe\", (Havana, 1 September 1936) is a Cuban exile of the 1960s, anti-Castro, and Bay of Pigs Invasion participant who is co-founder and president of the Cuban American National Foundation that claims to be taking a less overt position against the Cuban form of government.",
+      "2003 invasion of Iraq: The 2003 invasion of Iraq lasted from 20 March to 1 May 2003 and signalled the start of the Iraq War, which was dubbed Operation Iraqi Freedom by the United States (prior to 19 March, the mission in Iraq was called Operation Enduring Freedom, a carryover from the War in Afghanistan).  The invasion consisted of 21 days of major combat operations, in which a combined force of troops from the United States, the United Kingdom, Australia and Poland invaded Iraq and deposed the Ba'athist government of Saddam Hussein.  The invasion phase consisted primarily of a conventionally fought war which included the capture of the Iraqi capital of Baghdad by American forces with the implicit assistance of the United Kingdom, alongside Australia and Poland.",
+      "Invasion of Java (1811): The invasion of Java in 1811 was a successful British amphibious operation against the Dutch East Indian island of Java that took place between August and September 1811 during the Napoleonic Wars.  Originally established as a colony of the Dutch Republic, Java remained in Dutch hands throughout the French Revolutionary and Napoleonic Wars, during which time the French invaded the Republic and established the Batavian Republic in 1795, and the Kingdom of Holland in 1806.  The Kingdom of Holland was annexed to the First French Empire in 1810, and Java became a titular French colony, though it continued to be administered and defended primarily by Dutch personnel."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 477,
+    "generation_tokens": 10,
+    "generation_speed": 389.7723729342064,
+    "prompt_eval_speed": 52521.47104162079,
+    "generation_latency_s": 0.11157439998351038,
+    "latency": 0.6266862000338733,
+    "total_prompt_tokens": 554,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1292253,
+    "stage_rewrite_s": 0.2274321001023054,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07818630000110716,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20935349992942065,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.11162089998833835,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6266964999958873,
+    "unaccounted_latency_s": 0.00010419997852295637,
+    "rewritten_query": "The original query \"Francisco Jose Hernandez was a participant in an invasion that took place in 2013.\" is not optimized because it includes the year of the invasion. The optimized query should include the year of the invasion, as requested by the user.",
+    "query_was_rewritten": true
+  }
+}

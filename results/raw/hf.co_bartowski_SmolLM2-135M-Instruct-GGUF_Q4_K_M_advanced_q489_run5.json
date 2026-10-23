@@ -1,0 +1,42 @@
+{
+  "question_id": "Q489",
+  "query": "What produces the hormone that promotes sodium retention in the distal nephron?",
+  "ground_truth": "zona glomerulosa",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The hormone that promotes sodium retention in the distal nephron is aldosterone, specifically its receptor protein subunit, ADH/Vasopressin (ADPA).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Angiotensin: Angiotensin is a peptide hormone that causes vasoconstriction and a subsequent increase in blood pressure.  It is part of the renin-angiotensin system, which is a major target for drugs that raises blood pressure.  Angiotensin also stimulates the release of aldosterone, another hormone, from the adrenal cortex.  Aldosterone promotes sodium retention in the distal nephron, in the kidney, which also drives blood pressure up.",
+      "Aldosterone: Aldosterone, the main mineralocorticoid hormone, is a steroid hormone produced by the zona glomerulosa of the adrenal cortex in the adrenal gland.  It is essential for sodium conservation in the kidney, salivary glands, sweat glands and colon.  It plays a central role in the regulation of the plasma sodium (Na), the extracellular potassium (K) and arterial blood pressure.  It does so mainly by acting on the mineralocorticoid receptors in the distal tubules and collecting ducts of the nephron.  It influences the reabsorption of sodium and excretion of potassium (from and into the tubular fluids, respectively) of the kidney, thereby indirectly influencing water retention or loss, blood pressure and blood volume.  When dysregulated, aldosterone is pathogenic and contributes to the development and progression of cardiovascular and renal disease.  Aldosterone has exactly the opposite function of the atrial natriuretic hormone secreted by the heart.",
+      "Low pressure receptors: Low pressure receptors are baroreceptors located in the venae cavae and the pulmonary arteries, and in the atria.  They are also called volume receptors.  These receptors respond to changes in the wall tension, which is proportional to the filling state of the low pressure side of circulation (below 60mmHg).  Their impulses regulate the secretion of antidiuretic hormone (ADH/Vasopressin), renin and aldosterone.  An elevated atrial pressure produces a decrease in ADH and aldosterone secretion.  The decrease in vasopressin secretion results in an increase in the volume of urine excreted, serving to lower blood pressure.  In addition, stretching of atrial receptors increases secretion of atrial natriuretic peptide (ANP), which promotes increased water and sodium excretion through the urine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 536,
+    "generation_tokens": 35,
+    "generation_speed": 398.22052314799015,
+    "prompt_eval_speed": 86647.26802457162,
+    "generation_latency_s": 0.18274369998835027,
+    "latency": 0.669550699996762,
+    "total_prompt_tokens": 610,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1359079,
+    "stage_rewrite_s": 0.21431599999777973,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07731199997942895,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1950632999651134,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1827767000067979,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6695590000599623,
+    "unaccounted_latency_s": 9.150011464953423e-05,
+    "rewritten_query": "The hormone responsible for promoting sodium retention is called aldosterone, which stimulates the reabsorption of water and electrolytes from the collecting duct into the interstitial space. This process helps to maintain proper electrolyte balance within the body's cells.",
+    "query_was_rewritten": true
+  }
+}

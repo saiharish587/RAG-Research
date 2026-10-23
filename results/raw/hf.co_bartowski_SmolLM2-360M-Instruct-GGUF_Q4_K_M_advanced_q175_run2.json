@@ -1,0 +1,42 @@
+{
+  "question_id": "Q175",
+  "query": "Which of the city at the south of Shelly Beach, New South Wales is a local government area in the Hunter region of New South Wales, Australia?",
+  "ground_truth": "City of Newcastle",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Shelley Beach (Manly) is part of the City of Newcastle, which is located in the Hunter region of New South Wales.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shelly Beach, New South Wales: Shelly Beach is a coastal suburb of the Central Coast region of New South Wales, Australia, located east of Tuggerah Lake and bordering the Pacific Ocean south of The Entrance.  It is part of the Central Coast Council local government area.  It is 66 km south of Newcastle & 93 km north of Sydney.  Shelly Beach is considered one of the most popular surfing beaches on the Central Coast.",
+      "City of Newcastle: The City of Newcastle is a local government area in the Hunter region of New South Wales, Australia.  The City of Newcastle incorporates much of the area of the Newcastle metropolitan area.",
+      "Shelly Beach (Manly): Shelly Beach (also known as Shelley Beach ) is a beach located in Manly, a suburb of Sydney, New South Wales, Australia.  It is adjacent to North Head and Fairy Bower.  Shelly Beach is a western facing beach on the eastern coast of Australia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 292,
+    "generation_tokens": 29,
+    "generation_speed": 259.18544271554845,
+    "prompt_eval_speed": 40437.612519041686,
+    "generation_latency_s": 1.0636119999689981,
+    "latency": 3.406574200023897,
+    "total_prompt_tokens": 383,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12413859999999999,
+    "stage_rewrite_s": 1.1933549999957904,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.050713500007987,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09877139993477613,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0636525999289006,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.406583799980581,
+    "unaccounted_latency_s": 9.200011845678091e-05,
+    "rewritten_query": "Shelley Beach, New South Wales, is a local government area in the Hunter region.",
+    "query_was_rewritten": true
+  }
+}

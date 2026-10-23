@@ -1,0 +1,49 @@
+{
+  "question_id": "Q89",
+  "query": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
+  "ground_truth": "250 million",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "There are 25 copies of \"The Best of Roald Dahl\" collection of short stories, which includes all the stories published chronologically in book form and later collected as \"More Tales of the Unexpected.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Best of Roald Dahl: The Best of Roald Dahl is a collection of 25 of Roald Dahl's short stories.  The first edition was published in 1978.",
+      "Roald Dahl: Collected Stories: Roald Dahl: Collected Stories is a hardcover edition of short-stories by Roald Dahl for adults.  It was published in the US in October 2006 by Random House as part of the Everyman Library.  The present volume includes for the first time all the stories in chronological order as established by Dahl's biographer, Jeremy Treglown, in consultation with the Dahl estate.  A few of the short stories were not published chronologically in book form, but appeared later, collected in \"More Tales of the Unexpected\" (1980).  The collection contains all of the short stories published in the following collections:",
+      "Roald Dahl short stories bibliography: Roald Dahl short stories bibliography is a comprehensive annotated list of short stories written by Roald Dahl."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 286,
+    "generation_tokens": 43,
+    "generation_speed": 237.05435160121945,
+    "prompt_eval_speed": 38695.7109998647,
+    "generation_latency_s": 0.2968805000418797,
+    "latency": 0.6826093000127003,
+    "total_prompt_tokens": 418,
+    "total_generation_tokens": 81,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2352053,
+    "stage_route_s": 0.10392379993572831,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22573479998391122,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05590719997417182,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.4199987314641476e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2969188999850303,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.682621099986136,
+    "unaccounted_latency_s": 0.00011470017489045858,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Roald Dahl's Variation on a Popular Anecdote Sold\"",
+      "Query 2: \"Anecdotes Sold by Roald Dahl\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

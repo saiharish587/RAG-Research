@@ -1,0 +1,49 @@
+{
+  "question_id": "Q32",
+  "query": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+  "ground_truth": "Fujioka, Gunma",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Buck-Tick hails from Japan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Buck-Tick: Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983.  The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar), Yutaka Higuchi (bass) and Toll Yagami (drums) since 1985.  In their three decade career, the band has released 20 studio albums, nearly all reaching the top ten on the charts, of which three in the late eighties and early nineties topped them.  They are commonly credited as one of the founders of the visual kei movement.",
+      "Toronto Maple Leafs: The Toronto Maple Leafs (officially the Toronto Maple Leaf Hockey Club) are a professional ice hockey team based in Toronto, Ontario.  They are members of the Atlantic Division of the Eastern Conference of the National Hockey League (NHL).  The club is owned by Maple Leaf Sports & Entertainment, Ltd. and are represented by Chairman Larry Tanenbaum.  With an estimated worth of US $1.1 billion in 2016 according to \"Forbes\", the Leafs are the third most valuable franchise in the NHL, after the Montreal Canadiens and the New York Rangers.  The team's broadcasting rights are split between BCE Inc. and Rogers Communication.  For their first 14 seasons, the club played their home games at the Mutual Street Arena, before moving to Maple Leaf Gardens in 1931.  The club moved to their present home, the Air Canada Centre in February 1999.",
+      "Toronto Maple Leafs (semi-pro baseball): The Toronto Maple Leafs are an independent, minor league baseball team of the semi-pro Intercounty Baseball League, based in Toronto.  They play their home games on \"Dominico Field\" at Christie Pits.  They are also known colloquially as the Intercounty Maple Leafs or the Intercounty Leafs to disambiguate themselves from the Toronto Maple Leafs hockey team."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 538,
+    "generation_tokens": 10,
+    "generation_speed": 242.1483400731288,
+    "prompt_eval_speed": 65204.225573169984,
+    "generation_latency_s": 0.1605142999906093,
+    "latency": 0.5036646999651566,
+    "total_prompt_tokens": 678,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22779850000000001,
+    "stage_route_s": 0.09714670001994818,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19215210003312677,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05366179998964071,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.870005745440722e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16054710000753403,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5036742000374943,
+    "unaccounted_latency_s": 9.849993512034416e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Buck-Tick's hometown is Toronto\"",
+      "\"Buck-Tick's roots are in Toronto\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

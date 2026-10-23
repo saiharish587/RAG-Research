@@ -1,0 +1,42 @@
+{
+  "question_id": "Q264",
+  "query": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+  "ground_truth": "Tybalt",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Romeo",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Romeo: Romeo Montague (Italian: \"Romeo Montecchi\" ) is the protagonist of William Shakespeare's tragedy \"Romeo and Juliet\".  The son of Montague and his wife, he secretly loves and marries Juliet, a member of the rival House of Capulet.  Forced into exile after slaying Juliet's cousin, Tybalt, in a duel, Romeo commits suicide upon hearing falsely of Juliet's death.",
+      "Prince Hamlet: Prince Hamlet is the title character and protagonist of William Shakespeare's tragedy \"Hamlet\".  He is the Prince of Denmark, nephew to the usurping Claudius, and son of King Hamlet, the previous King of Denmark.  At the beginning of the play, he struggles with whether, and how, to avenge the murder of his father, and struggles with his own sanity along the way.  By the end of the tragedy, Hamlet has caused the deaths of Polonius, Laertes, Claudius, and two acquaintances of his from the University of Wittenberg Rosencrantz and Guildenstern.  He is also indirectly involved in the deaths of his love Ophelia (drowning) and of his mother Gertrude (poisoned by Claudius by mistake).",
+      "Benvolio: Benvolio is a fictional character in Shakespeare's drama \"Romeo and Juliet\".  He is Montague's nephew and Romeo's cousin.  Benvolio serves as an unsuccessful peacemaker in the play, attempting to prevent violence between the Capulet and Montague families."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 407,
+    "generation_tokens": 3,
+    "generation_speed": 327.4036887482266,
+    "prompt_eval_speed": 59633.69963369963,
+    "generation_latency_s": 0.8742278999416158,
+    "latency": 3.368140400038101,
+    "total_prompt_tokens": 502,
+    "total_generation_tokens": 18,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1214394,
+    "stage_rewrite_s": 1.2225456999149173,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.079695999971591,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19154229993000627,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8742689000209793,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3681513000046834,
+    "unaccounted_latency_s": 9.910017251968384e-05,
+    "rewritten_query": "Benvolio slays the protagonist of William Shakespeare's tragic play.",
+    "query_was_rewritten": true
+  }
+}

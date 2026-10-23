@@ -1,0 +1,48 @@
+{
+  "question_id": "Q548",
+  "query": "The telenova \"El Ardiente Secreto\" was based ona novel published under what pen name?",
+  "ground_truth": "\"Currer Bell\"",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The telenovela \"El Ardiente Secreto\" is a fictionalized account of the last days of Sim\u00f3n Bol\u00edvar, which was produced by Gabriel Garc\u00eda M\u00e1rquez for Televisa in 1989.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "El Ardiente Secreto: El Ardiente Secreto (English The impassioned secret) is a telenovela made by Mexican TV network Televisa.  This telenovela was broadcast in 1978.  This soap opera was televised on weekends only.  It was based on the Charlotte Bront\u00eb's novel \"Jane Eyre\".",
+      "Ardiente secreto: Ardiente secreto is a Mexican telenovela produced by Irene Sabido for Televisa in 1978.  Is based on the Charlotte Bront\u00eb's novel \"Jane Eyre\".",
+      "The General in His Labyrinth: The General in His Labyrinth (original Spanish title: \"El general en su laberinto\" ) is a novel by the Colombian writer and Nobel laureate Gabriel Garc\u00eda M\u00e1rquez.  It is a fictionalized account of the last days of Sim\u00f3n Bol\u00edvar, liberator and leader of Gran Colombia.  First published in 1989, the book traces Bol\u00edvar's final journey from Bogot\u00e1 to the Caribbean coastline of Colombia in his attempt to leave South America for exile in Europe.  In this dictator novel about a continental hero, \"despair, sickness, and death inevitably win out over love, health, and life\".  Breaking with the traditional heroic portrayal of Bol\u00edvar \"El Libertador\" , Garc\u00eda M\u00e1rquez depicts a pathetic protagonist, a prematurely aged man who is physically ill and mentally exhausted.  The story explores the labyrinth of Bol\u00edvar's life through the narrative of his memories."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 416,
+    "generation_tokens": 51,
+    "generation_speed": 375.416823090343,
+    "prompt_eval_speed": 57268.72246696035,
+    "generation_latency_s": 0.25946540001314133,
+    "latency": 0.5819911999860778,
+    "total_prompt_tokens": 564,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22701179999999999,
+    "stage_route_s": 0.11031939997337759,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17293280002195388,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0390858999453485,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.969995304942131e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2595208000857383,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5820034999633208,
+    "unaccounted_latency_s": 0.00010549998842179775,
+    "route": "rag",
+    "router_raw": "The answer is no.",
+    "sub_queries": [
+      "The telenovelassecreto, also known as El Ardinte Secreto, is a fictional novel written by Gabriel Garc\u00eda M\u00e1rquez."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

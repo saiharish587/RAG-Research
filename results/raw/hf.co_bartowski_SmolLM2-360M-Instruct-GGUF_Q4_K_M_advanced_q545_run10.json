@@ -1,0 +1,42 @@
+{
+  "question_id": "Q545",
+  "query": "The American Sweetgum is the hostplant of what kind of bug?",
+  "ground_truth": "moth",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The American Sweetgum is the hostplant of the wood-rotting insect, Datronia scutellata.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Liquidambar styraciflua: American sweetgum (\"Liquidambar styraciflua\"), also known as American storax, hazel pine, bilsted, redgum, satin-walnut, star-leaved gum, alligatorwood, or simply sweetgum, is a deciduous tree in the genus \"Liquidambar\" native to warm temperate areas of eastern North America and tropical montane regions of Mexico and Central America.  Sweet gum is one of the main valuable forest trees in the southeastern United States, and is a popular ornamental tree in temperate climates.  It is recognizable by the combination of its five-pointed star-shaped leaves and its hard, spiked fruits.  It is currently classified in the plant family Altingiaceae, but was formerly considered a member of the Hamamelidaceae.",
+      "Liquidambar: Liquidambar, commonly called sweetgum (sweet gum in the UK), gum, redgum, satin-walnut, or American storax, is the only genus in the flowering plant family Altingiaceae with 15 species.  They were formerly often treated in Hamamelidaceae.",
+      "Datronia scutellata: Datronia scutellata is a plant pathogen that causes wood rot on \"Liquidambar\" (sweetgum) and \"Platanus occidentalis\" (American sycamore) trees."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 371,
+    "generation_tokens": 26,
+    "generation_speed": 261.7142281946751,
+    "prompt_eval_speed": 49486.46125116713,
+    "generation_latency_s": 0.9721852999646217,
+    "latency": 3.4018230999354273,
+    "total_prompt_tokens": 446,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1218035,
+    "stage_rewrite_s": 1.2264706999994814,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0292024000082165,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17384589998982847,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9722248000325635,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4018347999081016,
+    "unaccounted_latency_s": 9.159988258033991e-05,
+    "rewritten_query": "The American sweetgum is a hostplant for several types of sap-sucking insects, including aphids and whiteflies.",
+    "query_was_rewritten": true
+  }
+}

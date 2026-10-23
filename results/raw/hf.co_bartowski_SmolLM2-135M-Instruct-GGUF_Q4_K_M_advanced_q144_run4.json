@@ -1,0 +1,42 @@
+{
+  "question_id": "Q144",
+  "query": "Josey Scott and Ian Watkins were both promising musicians. Which of these talented men was incarcerated, impacting his career with a rock band?",
+  "ground_truth": "Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Josey Scott and Ian Watkins were both promising musicians who impacted their careers with the Beatles.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ian Watkins (Lostprophets): Ian David Karslake Watkins (born 30 July 1977) is a Welsh singer, musician, and convicted sex offender.  He achieved prominence as a founding member, lead vocalist, and lyricist of the rock band Lostprophets.  Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.  In November 2013, he pleaded guilty to 13 charges, including the attempted rape and sexual assault of a child under 13; these offences were committed against the infant children of two women who were also convicted.  He was subsequently jailed for 29 years and ordered to serve a further six years on extended licence.",
+      "Josey Scott: Josey Scott (born Joseph Scott Sappington; May 3, 1972) is the former lead vocalist of the rock band Saliva.  In addition to Saliva, Scott co-wrote and performed \"Hero\" (which was used as one of the theme songs to the 2002 film \"Spider-Man\") with Chad Kroeger of Nickelback.",
+      "Cultural impact of the Beatles: The Beatles were an English rock band, formed in Liverpool in 1960.  With members John Lennon, Paul McCartney, George Harrison and Ringo Starr, they became widely regarded as the foremost and most influential act of the rock era.  In the early 1960s, their enormous popularity first emerged as \"Beatlemania\", but as the group's music grew in sophistication, led by primary songwriters Lennon and McCartney, they came to be perceived as an embodiment of the ideals shared by the counterculture of the 1960s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 481,
+    "generation_tokens": 22,
+    "generation_speed": 398.39915973995403,
+    "prompt_eval_speed": 71280.37937166568,
+    "generation_latency_s": 0.1392481999937445,
+    "latency": 0.5141174000455067,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1420423,
+    "stage_rewrite_s": 0.15680749993771315,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07011500000953674,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1478329999372363,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13928049989044666,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.514125500107184,
+    "unaccounted_latency_s": 9.000033605843782e-05,
+    "rewritten_query": "Josey Scott and Ian Watkins were both promising musicians who impacted their careers through the rock band.",
+    "query_was_rewritten": true
+  }
+}

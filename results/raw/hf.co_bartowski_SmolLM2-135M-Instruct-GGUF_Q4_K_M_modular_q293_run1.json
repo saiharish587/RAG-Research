@@ -1,0 +1,48 @@
+{
+  "question_id": "Q293",
+  "query": "What was the nickname of the hitman hired by an Italian American Criminal Organization?",
+  "ground_truth": "The Crowned Prince of the Philadelphia Mob",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The nickname of the hitman hired by an Italian American criminal organization is \"Gambino Family boss John Gotti.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Angelo Bruno: Angelo \"The Gentle Don\" Bruno (born Angelo Annaloro; May 21, 1910 \u2013 March 21, 1980) was a Sicilian-American mobster, notable for being boss of the Philadelphia crime family for two decades until his assassination.  Bruno gained his nickname and reputation as \"the Gentle Don\" or \"the Docile Don\" due to his preference for conciliation over violence, especially in comparison to his violent successors.",
+      "Lucky Luciano: Charles \"Lucky\" Luciano ( ; born Salvatore Lucania November 24, 1897 \u2013 January 26, 1962) was an Italian-American mobster and crime boss.  Luciano is considered the father of modern organized crime in the United States for the establishment of the first Commission.  He was also the first official boss of the modern Genovese crime family.  He was, along with his associates, instrumental in the development of the National Crime Syndicate.",
+      "1990 in organized crime: December 11, 1990, the FBI arrests Gambino Family boss John Gotti, underboss Salvatore \"Sammy the Bull\" Gravano and consigliere Frankie Locasio on racketeering charges."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 358,
+    "generation_tokens": 25,
+    "generation_speed": 381.7143555134822,
+    "prompt_eval_speed": 23328.55467222729,
+    "generation_latency_s": 0.18811300001107156,
+    "latency": 0.5185691999504343,
+    "total_prompt_tokens": 490,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2411536,
+    "stage_route_s": 0.14192119997460395,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15002259996253997,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03833789995405823,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.850002005696297e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18814670003484935,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.518578700022772,
+    "unaccounted_latency_s": 0.00010250008199363947,
+    "route": "rag",
+    "router_raw": "The nickname of the hitman hired by an Italian American criminal organization is \"Bull.\"",
+    "sub_queries": [
+      "The nickname of the hitman hired by an Italian American criminal organization is \"Bull.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

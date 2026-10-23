@@ -1,0 +1,48 @@
+{
+  "question_id": "Q501",
+  "query": "Who was the film which was Kim Dae-woo's directing debut about ?",
+  "ground_truth": "a scholar",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "To Sir, with Love (2006 film): To Sir, with Love () is a South Korean horror film, and the feature film debut of director Im Dae-Woong.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kim Dae-woo: Kim Dae-woo (born 1962) is a South Korean film director and screenwriter.  Kim started his filmmaking career by winning the 1991 Korean Film Council Screenplay Contest.  He was an accomplished screenwriter with a number of hit scripts, including \"The Girl for Love and The One for Marriage\" (1993), \"An Affair\" (1998), \"Rainbow Trout\" (1999), and \"Untold Scandal\" (2003).  Making a switch to directing, he debuted with the hit period drama film \"Forbidden Quest\" (2006), followed by \"The Servant\" (2010) and \"Obsessed\" (2014).  \"Forbidden Quest\" won the Best New Director at the 42nd Baeksang Arts Awards, and Best New Director and Best Screenplay at the 26th Korean Association of Film Critics Awards in 2006.",
+      "To Sir, with Love (2006 film): To Sir, with Love () (aka My Teacher, Teacher's Mercy and Bloody Reunion) is a 2006 South Korean horror film, and the feature film debut of director Im Dae-Woong.",
+      "Obsessed (2014 film): Obsessed (; lit.  \"Human Addiction\" or \"Human Intoxication\") is a 2014 South Korean erotic romance film written and directed by Kim Dae-woo, about a couple having a passionate affair in a military camp under tight surveillance in 1969."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 432,
+    "generation_tokens": 41,
+    "generation_speed": 306.4710235384696,
+    "prompt_eval_speed": 57963.236280692334,
+    "generation_latency_s": 0.253943599993363,
+    "latency": 0.7418957999907434,
+    "total_prompt_tokens": 566,
+    "total_generation_tokens": 135,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2474008,
+    "stage_route_s": 0.18008219997864217,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2683950000209734,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039312400040216744,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1199964471161366e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25398290005978197,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7419076999649405,
+    "unaccounted_latency_s": 9.479990694671869e-05,
+    "route": "rag",
+    "router_raw": "The film \"Kim Dae-Woo's Film\" is a 2015 Korean drama film directed by Kim Dae-woo.",
+    "sub_queries": [
+      "The film \"Who Was Kim Dae-Woo's Film\" is about the story of a young woman named Kim Dae-woo who discovers she has supernatural powers. The query for this question would be: Who was the film which was Kim Dae-woo's directing debut about?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

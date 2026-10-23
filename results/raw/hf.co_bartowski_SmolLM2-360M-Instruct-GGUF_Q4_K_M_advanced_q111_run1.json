@@ -1,0 +1,42 @@
+{
+  "question_id": "Q111",
+  "query": "Based on a True Story... is an album by which country music star, with the single My Eyes?",
+  "ground_truth": "Blake Shelton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on a True Story... is an album by Blake Shelton.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "My Eyes (Blake Shelton song): \"My Eyes\" is a song recorded by American country music artist Blake Shelton featuring Gwen Sebastian.  It was released in April 2014 as the fifth single from his seventh studio album, \"Based on a True Story...\".  The song was written by Andrew Dorff, Tommy Lee James and Josh Osborne.",
+      "Based on a True Story...: Based on a True Story\u2026 is the eighth studio album by American country music artist Blake Shelton.  It was released on March 26, 2013 via Warner Bros.  Records and debuted at #3 with a career best for Shelton at nearly 200,000 sold.  The album became the ninth best-selling album of 2013 in the US, earning Shelton a Platinum certification by the RIAA on September 30, 2013.  In 2016, \"Based on a True Story\u2026\" was certified double-platinum by the RIAA.",
+      "Loretta Lynn: Loretta Lynn (n\u00e9e Webb; born April 14, 1932) is an American country music singer-songwriter with multiple gold albums over a career of almost 60 years.  She has received numerous awards and other accolades for her groundbreaking role in country music, including awards from both the Country Music Association and Academy of Country Music as a duet partner and an individual artist.  She is the most awarded female country recording artist and the only female ACM Artist of the Decade (1970s)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 419,
+    "generation_tokens": 15,
+    "generation_speed": 254.0263171264543,
+    "prompt_eval_speed": 14576.448077926596,
+    "generation_latency_s": 0.9651770000346005,
+    "latency": 3.3813619000138715,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1256351,
+    "stage_rewrite_s": 1.2026940999785438,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.055557000101544,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15779199998360127,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9652345000067726,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3813764000078663,
+    "unaccounted_latency_s": 9.93999419733882e-05,
+    "rewritten_query": "Based on a true story, \"My Eyes\" is a country music song by the artist.",
+    "query_was_rewritten": true
+  }
+}

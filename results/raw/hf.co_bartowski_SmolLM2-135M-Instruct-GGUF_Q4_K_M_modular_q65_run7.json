@@ -1,0 +1,48 @@
+{
+  "question_id": "Q65",
+  "query": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+  "ground_truth": "more than 70 countries",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The correct answer is \"Texas.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Parkin: Scott Parkin (born 1969, Garland, Texas is an anti-war, environmental and global justice organizer, former community college history instructor, and a founding member of the Houston Global Awareness Collective.  He has been a vocal critic of the American invasion of Iraq, and of corporations such as Exxonmobil and Halliburton.  Since 2006, he has worked as an campaigner for the Rainforest Action Network, organizing campaigns against Bank of America, Citibank, TXU and the Keystone XL Pipeline.  He also organizes with Rising Tide North America.",
+      "Exxon: Exxon was the brand name of oil and natural resources company Exxon Corporation, prior to 1972 known as Standard Oil Company of New Jersey.  In 1999, Exxon Corporation merged with Mobil to form ExxonMobil.  The \"Exxon\" brand is still used by ExxonMobil's downstream operations as a brand for certain of its gas stations, motor fuel and related products (the highest concentration of which are located in New Jersey, Pennsylvania, Texas and in the Mid-Atlantic and Southeastern states).  Standard Oil Company of New Jersey was one of the Seven Sisters that dominated the global petroleum industry from the mid-1940s to the 1970s.",
+      "Citgo: Citgo Petroleum Corporation (or Citgo) is a Venezuelan-owned American refiner, transporter and marketer of transportation fuels, lubricants, petrochemicals and other industrial products.  The company has its American headquarters in the Energy Corridor area of Houston, Texas."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 425,
+    "generation_tokens": 8,
+    "generation_speed": 340.9768988151053,
+    "prompt_eval_speed": 56787.81400320684,
+    "generation_latency_s": 0.14261209999676794,
+    "latency": 0.45222480001393706,
+    "total_prompt_tokens": 573,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2579339,
+    "stage_route_s": 0.11084759992081672,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16020139993634075,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038402199978008866,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.0499959141016006e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1426520999521017,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.45223699999041855,
+    "unaccounted_latency_s": 9.420025162398815e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Scott Parkin has been a vocal critic of ExxonMobil and another corporation that has operations in how many countries."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q54",
+  "query": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+  "ground_truth": "Rome",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "La Boh\u00e8me was filmed in Lucca, Tuscany, which is where Jacopo Puccini lived and worked.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "La Boh\u00e8me (1988 film): La boh\u00e8me (also known as \"La boh\u00e8me de Puccini\") is a 1988 Italian-French film of an opera directed by Luigi Comencini.  It is based on Giacomo Puccini's \"La boh\u00e8me\".",
+      "Jacopo Puccini: Jacopo (Giacomo) Puccini (] ; 26 January 1712 16 May 1781) was an 18th-century Italian composer who lived and worked primarily in Lucca, Tuscany.  He was the first of five generations of composers, the most famous of whom was his great-great-grandson, the opera composer Giacomo Puccini.",
+      "Gianni Schicchi: Gianni Schicchi (] ) is a comic opera in one act by Giacomo Puccini to an Italian libretto by Giovacchino Forzano, composed in 1917\u201318.  The libretto is based on an incident mentioned in Dante's \"Divine Comedy\".  The work is the third and final part of Puccini's \"Il trittico\" (The Triptych)\u2014three one-act operas with contrasting themes, originally written to be presented together.  Although it continues to be performed with one or both of the other \"trittico\" operas, \"Gianni Schicchi\" is now more frequently staged either alone or with short operas by other composers.  The aria \"O mio babbino caro\" is one of Puccini's best known, and one of the most popular arias in opera."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 453,
+    "generation_tokens": 27,
+    "generation_speed": 259.6578286835348,
+    "prompt_eval_speed": 63065.57148823611,
+    "generation_latency_s": 0.9949914999306202,
+    "latency": 3.399227499961853,
+    "total_prompt_tokens": 540,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12428739999999999,
+    "stage_rewrite_s": 1.2194521999917924,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0224511000560597,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16220769996289164,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9950334000168368,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3992387999314815,
+    "unaccounted_latency_s": 9.50999092310667e-05,
+    "rewritten_query": "The \"Prince of Tenors\" star in a film based on an opera by Giacomo Puccini.",
+    "query_was_rewritten": true
+  }
+}

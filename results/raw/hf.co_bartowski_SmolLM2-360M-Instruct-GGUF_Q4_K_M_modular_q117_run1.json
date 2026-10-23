@@ -1,0 +1,49 @@
+{
+  "question_id": "Q117",
+  "query": "Suicide's 1977 released album features a song based on what brand's comic character?",
+  "ground_truth": "Marvel",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Suicide's 1977 release album, titled \"Suicide,\" features a song called \"Ghost Rider\" that is inspired by the Marvel Comics character.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Suicide (1977 album): Suicide is the debut album from the American rock band Suicide.  It was released in 1977 on Red Star Records and produced by Craig Leon and Marty Thau.  The album was recorded in four days at Ultima Sound Studios in New York and featured Martin Rev's minimalist electronics and harsh, repetitive rhythms paired with Alan Vega's rock and roll-inspired vocals and depictions of urban life.",
+      "Ghost Rider (Suicide song): Ghost Rider is a song by the protopunk band Suicide appearing on their debut album.  The song is based on the Marvel Comics character.",
+      "cdotes, humorous asides.  The liner notes are noticeably opinionated, sometimes engaging in tongue-in-cheek insults directed at other genres of music.  The booklet also includes photographs of the bands, and the front cover features a highly satirical cartoon by Mort Todd depicting revivified \"rock and roll\" zombies who, on this occasion, with the help of Batman's sidekick, Robin, have taken the 1966 TV series Batmobile out for a \"wild joyride\" and are intent on causing as much mayhem as possible and \"lassoing\" unsuspecting bystanders\u2014only on this outing, their \"victims\" are more \"randomly selected\" than as customarily portrayed on \"Back from the Grave\" sleeves."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 371,
+    "generation_tokens": 36,
+    "generation_speed": 236.12441132872456,
+    "prompt_eval_speed": 14393.792434529583,
+    "generation_latency_s": 0.28518430003896356,
+    "latency": 0.6806540000252426,
+    "total_prompt_tokens": 511,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2544426,
+    "stage_route_s": 0.11451370001304895,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22329029999673367,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05748940003104508,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.230000872164965e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28521599993109703,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.680663299979642,
+    "unaccounted_latency_s": 9.210000280290842e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Suicide's 1977 released album\"",
+      "\"A comic character from the band's past\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

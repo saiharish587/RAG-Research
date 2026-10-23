@@ -1,0 +1,49 @@
+{
+  "question_id": "Q94",
+  "query": "Do the drinks Gibson and Zurracapote both contain gin?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, the drinks Gibson and Zurracapote do not contain gin. The original recipe for the Gibson is found in the 1908 book \"The World's Drinks And How To Mix Them\" by William Boothby, which does mention that the drink contains gin but does not specify whether it is from a gin or vermouth.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gibson (cocktail): The Gibson is a mixed drink made with gin and vermouth, and often garnished with a pickled onion.  The oldest published recipe for the Gibson is found in the 1908 book, \"The World's Drinks And How To Mix Them\" by William Boothby.",
+      "Zurracapote: Zurracapote (sometimes abbreviated as zurra) is a popular Spanish alcoholic mixed drink, similar to sangr\u00eda.  It consists of red wine mixed with fruit such as peaches and lemons, sugar, and cinnamon.  The concoction is then traditionally left to steep for several days, though some recipes call for the addition of other alcoholic beverages, juices, and fruit extracts.  The result is a mild-to-medium alcoholic drink, similar to sangr\u00eda.",
+      "Gibson Plumage Index: The Gibson Plumage Index (GPI), sometimes known as the Gibson Code, is a system for describing the plumage of great albatrosses.  It is named after, and originally devised in the late 1950s by, John Douglas Gibson and other members of the New South Wales Albatross Study Group.  Gibson was an Australian amateur ornithologist who carried out fieldwork on albatrosses along the coast of New South Wales for thirty years.  The index assigns separate numerical values (from 1 to 6 with increasing proportion of white) to the degrees of colouration on four parts of the body - the back, head, inner wing and tail - of albatrosses to indicate variations in age and between different breeding populations.  For instance, a bird with a completely brown back would receive a score of 1 for the back, while a bird with an all-white back would be scored as a 6.  The index was later expanded by Pierre Jouventin and colleagues to cover the more complex patterning of the Amsterdam albatross, adding belly and tibial feather colouration.  This system for categorising the wide and complex variation in appearance of great albatrosses has been instrumental in the discovery of several genetically isolated populations and consequent description of new taxa, and has made field identification easier."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 525,
+    "generation_tokens": 71,
+    "generation_speed": 380.79709950603643,
+    "prompt_eval_speed": 67899.63786859803,
+    "generation_latency_s": 0.30630649998784065,
+    "latency": 0.7174381000222638,
+    "total_prompt_tokens": 651,
+    "total_generation_tokens": 142,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22884300000000002,
+    "stage_route_s": 0.09825589996762574,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2554453000193462,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05724799993913621,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6999968364834785e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3063397000078112,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7174474999774247,
+    "unaccounted_latency_s": 0.00010210007894784212,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Gibson & Zurrapto - 2017-04-30T15:08:06+00:00",
+      "Zurrapetto - 2017-04-30T15:09:00+00:00"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

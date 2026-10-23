@@ -1,0 +1,49 @@
+{
+  "question_id": "Q95",
+  "query": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+  "ground_truth": "March and April",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The annual documentary film festival, presented by the Fortnightly published British journal of literary essays, is held in London International Documentary Festival (LIDF) on March and April every year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "London International Documentary Festival: The London International Documentary Festival (or LIDF) is an annual documentary film festival that takes place in the months of March and April every year.  The event is presented in association with the London Review of Books.",
+      "Doc NYC: Doc NYC (stylized as DOC NYC) is an annual documentary film festival in New York City.  Co-founded by Thom Powers and his wife Raphaela Neihausen, the festival is the country's largest documentary film festival with over 300 films and events and 200 special guests.  The festival takes place over eight days in November at the West Village's IFC Center and Chelsea's Cin\u00e9polis and SVA Theater.",
+      "FreedomFilmFest: FreedomFilmFest, also known as The KOMAS Freedom Film Festival (FFF), is the first annual documentary film festival in Malaysia.  Established in 2003, it adopts the themes encompassed in the Universal Declaration of Human Rights (UDHR), pioneering a documentary film competition method in Malaysia which encourages first-time film makers to turn their winning proposals into films."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 40,
+    "generation_speed": 216.7234662751196,
+    "prompt_eval_speed": 36361.58955307891,
+    "generation_latency_s": 0.30711409996729344,
+    "latency": 0.7454850999638438,
+    "total_prompt_tokens": 479,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22575889999999998,
+    "stage_route_s": 0.09013180003967136,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2855896999826655,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06246779998764396,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.13000413775444e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30715920007787645,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7454977999441326,
+    "unaccounted_latency_s": 9.879982098937035e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The annual documentary film festival is held in the month of May.",
+      "Query 2: The fortnightly published British journal of literary essays hosts this event on the first Saturday of every month."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q225",
+  "query": "What film was written and directed by Joby Harold with music written by Samuel Sim?",
+  "ground_truth": "Awake",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Blog Wars",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Samuel Sim: Samuel Sim is a film and television composer.  He first gained recognition with his award winning score for the BBC drama series \"Dunkirk\".  Since then he has written the music for a wide variety of film and television productions, most recently scoring the film \"Awake\" for The Weinstein Company and the BBC/HBO drama series \"House of Saddam\".  His most recent acclaimed music is the soundtrack for Home Fires.  Home Fires (Music from the Television Series) released May 6, 2016 by Sony Classical Records.",
+      "Blog Wars: Blog Wars is a 2006 documentary film about the rise of political blogging and its influence on the 2006 midterm Connecticut senate election.  Original musical score is composed by Samuel Sim.",
+      "Last Days (2005 film): Last Days is a 2005 American drama film directed, produced and written by Gus Van Sant.  It is a fictionalized account of the last days of a musician, loosely based on Kurt Cobain.  It was released to theaters in the United States on July 22, 2005 and was produced by HBO.  The film stars Michael Pitt as the character Blake, based on Kurt Cobain.  Lukas Haas, Asia Argento, Scott Patrick Green and Thadeus A. Thomas also star in the film.  This is the first film from Picturehouse, a joint venture between Time Warner's New Line Cinema and HBO Films subsidiaries to release art house, independent, foreign, and documentary films.  The film received mixed reviews from critics.  Though meant to be based on Kurt Cobain, it contradicts the factual evidence of Cobain's final days."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 4,
+    "generation_speed": 302.571860816944,
+    "prompt_eval_speed": 62678.46944603084,
+    "generation_latency_s": 0.8843558999942616,
+    "latency": 3.3650558000663295,
+    "total_prompt_tokens": 516,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1237781,
+    "stage_rewrite_s": 1.2616194000001997,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0362531000282615,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18271139997523278,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.8843957999488339,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3650663000298664,
+    "unaccounted_latency_s": 8.71000811457634e-05,
+    "rewritten_query": "Joby Harold's film, \"The Last Days,\" is a musical that features music composed by Samuel Sim.",
+    "query_was_rewritten": true
+  }
+}

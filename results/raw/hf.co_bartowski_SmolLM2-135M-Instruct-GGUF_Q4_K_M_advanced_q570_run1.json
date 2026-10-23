@@ -1,0 +1,42 @@
+{
+  "question_id": "Q570",
+  "query": "The Company They Keep is a book written by Diana Pavlac Glyer, who is a professor at a university in Azusa, California, that was founded in 1899, and is under the auspices of what religion?",
+  "ground_truth": "evangelical Christian",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Company They Keep is a non-fiction book written by Diana Pavlac Glyer, who is a professor at Azusa Pacific University.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Company They Keep: The Company They Keep: C. S. Lewis and J. R. R. Tolkien as Writers in Community (2007) is a non-fiction book written by Diana Pavlac Glyer, an Inklings scholar and English professor at Azusa Pacific University.  \"The Company They Keep\" challenges the commonly held belief that the Inklings did not influence each other through a detailed and engaging examination of both published and unpublished works, papers, and letters written by J.R.R. Tolkien, C.S. Lewis, Charles Williams, Owen Barfield, Warren Lewis and the lesser-known writers who comprised the Inklings.",
+      "Diana Pavlac Glyer: Diana Pavlac Glyer (born 21 January 1956 in Aberdeen, Maryland) is a United States author, speaker, and teacher whose work centers on C. S. Lewis, J. R. R. Tolkien, and the Inklings.",
+      "The Company (Ehrlichman novel): The Company is a political fiction \"roman \u00e0 clef\" novel written by John Ehrlichman, a former close aide to President Richard Nixon and a figure in the Watergate scandal, first published in 1976 by Simon & Schuster.  The title is an insider nickname for the Central Intelligence Agency.  The plot is loosely based on events leading up to the Watergate coverup, centered on Nixon administration attempts to cover up its own illegal activity and that of the CIA dating back to the Kennedy administration.  Although all characters are fictional, most are based on real-life political figures, and journalists such as columnist Jack Anderson."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 453,
+    "generation_tokens": 30,
+    "generation_speed": 357.7774862553816,
+    "prompt_eval_speed": 20550.74173206914,
+    "generation_latency_s": 0.1977198999375105,
+    "latency": 0.5686422999715433,
+    "total_prompt_tokens": 561,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14160319999999998,
+    "stage_rewrite_s": 0.1534132999368012,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07835580001119524,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.139025800046511,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1977568999864161,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5686504999175668,
+    "unaccounted_latency_s": 9.909993968904018e-05,
+    "rewritten_query": "The company they keep is a book written by Diana Pavlac Glyer.",
+    "query_was_rewritten": true
+  }
+}

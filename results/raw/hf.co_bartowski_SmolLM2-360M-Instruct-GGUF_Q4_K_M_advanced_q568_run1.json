@@ -1,0 +1,42 @@
+{
+  "question_id": "Q568",
+  "query": "Which company owns the hotel on whose premises the Cotal Arena is located ?",
+  "ground_truth": "Las Vegas Sands company.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "MGM Resorts International owns the hotel on whose premises the Cotal Arena is located.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bellagio (resort): Bellagio is a resort, luxury hotel and casino on the Las Vegas Strip in Paradise, Nevada.  It is owned and operated by MGM Resorts International and was built on the site of the demolished Dunes hotel and casino.  Inspired by the Lake Como town of Bellagio in Italy, Bellagio is famed for its elegance.  One of its most notable features is an 8 acre lake between the building and the Strip, which houses the Fountains of Bellagio, a large dancing water fountain synchronized to music.",
+      "MGM Resorts International: MGM Resorts International is a global hospitality and entertainment company operating destination resorts in Las Vegas, Mississippi, New Jersey and Detroit, including Bellagio, MGM Grand, Mandalay Bay and The Mirage.  The company recently opened MGM National Harbor in Maryland and is developing MGM Springfield in Massachusetts.  It has a majority interest in MGM China Holdings Limited, which owns the MGM Macau resort and casino and is developing a gaming resort in Cotai.  MGM Resorts owns 50 percent of CityCenter in Las Vegas, which features ARIA Resort & Casino.  It has a majority controlling interest in MGM Growth Properties, a real estate investment trust.",
+      "The Venetian Macao: The Venetian Macao () is a luxury hotel and casino resort in Macau owned by the American Las Vegas Sands company.  The Venetian is a 39-story, casino hotel on the Cotai Strip in Macau.  The 10500000 sqft Venetian Macao is modeled on its sister casino resort The Venetian Las Vegas, and is the seventh-largest building in the world by floor area.  The Venetian Macao is also the largest casino in the world, and the largest single structure hotel building in Asia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 462,
+    "generation_tokens": 20,
+    "generation_speed": 252.27998032216152,
+    "prompt_eval_speed": 15352.91771899508,
+    "generation_latency_s": 0.9332077000290155,
+    "latency": 3.4096089999657124,
+    "total_prompt_tokens": 538,
+    "total_generation_tokens": 38,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1256852,
+    "stage_rewrite_s": 1.188753700000234,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0724244000157341,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21509079996030778,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9332476999843493,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4096184000372887,
+    "unaccounted_latency_s": 0.0001023000804707408,
+    "rewritten_query": "The Cotal Arena is owned by a company that operates hotels in the area.",
+    "query_was_rewritten": true
+  }
+}

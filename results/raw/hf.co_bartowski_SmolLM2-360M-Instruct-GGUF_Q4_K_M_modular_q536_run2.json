@@ -1,0 +1,49 @@
+{
+  "question_id": "Q536",
+  "query": "Who has released more studio albums, Candlelight Red or Motion City Soundtrack?",
+  "ground_truth": "Motion City Soundtrack",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Motion City Soundtrack has released more studio albums than Candlelight Red.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Motion City Soundtrack: Motion City Soundtrack was an American rock band that formed in Minneapolis, Minnesota in 1997.  The band's line-up consisted of vocalist and guitarist Justin Pierre, lead guitarist Joshua Cain, keyboardist Jesse Johnson, bassist Matthew Taylor, and drummer Tony Thaxton.  Over the course of their nearly twenty-year career, the group toured heavily and released six studio albums, the majority on independent label Epitaph Records.  The band's sound, at times described as pop punk or emo, made notable use of the Moog synthesizer.",
+      "Candlelight Red: Candlelight Red is a rock band from Williamsport, Pennsylvania.  They have produced two studio albums and an EP.  Their EP \"Demons\" and album \"Reclamation\" was produced by Morgan Rose of Sevendust.",
+      "Motion City Soundtrack discography: The following is the discography of Motion City Soundtrack, an American rock band that formed in Minneapolis, Minnesota in 1997.  The band's line-up consisted of vocalist and guitarist Justin Pierre, lead guitarist Joshua Cain, keyboardist Jesse Johnson, bassist Matthew Taylor, and drummer Tony Thaxton.  Over the course of their nearly twenty-year career, the group toured heavily and released six studio albums, the majority on independent label Epitaph Records.  The band's sound, at times described as pop punk or emo, made notable use of the Moog synthesizer."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 396,
+    "generation_tokens": 17,
+    "generation_speed": 237.81212841854932,
+    "prompt_eval_speed": 49174.22078728425,
+    "generation_latency_s": 0.19050859997514635,
+    "latency": 0.6265928999055177,
+    "total_prompt_tokens": 530,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2262616,
+    "stage_route_s": 0.10498649999499321,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2733523000497371,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0575681000482291,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.350005812942982e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19054640003014356,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.626605199999176,
+    "unaccounted_latency_s": 9.899982251226902e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Candlelight Red\" - Released in 2009 by Candlelight Red",
+      "\"Motion City Soundtrack\" - Released in 2013 by Motion City Soundtrack"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q18",
+  "query": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, Giuseppe Verdi and Ambroise Thomas are not both Opera composers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ambroise Thomas: Charles Louis Ambroise Thomas (5 August 1811 \u2013 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+      "Giuseppe Verdi: Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 \u2013 27 January 1901) was an Italian opera composer.",
+      "Hamlet (opera): Hamlet is a grand opera in five acts of 1868 by the French composer Ambroise Thomas, with a libretto by Michel Carr\u00e9 and Jules Barbier based on a French adaptation by Alexandre Dumas, p\u00e8re, and Paul Meurice of William Shakespeare's play \"Hamlet\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 276,
+    "generation_tokens": 19,
+    "generation_speed": 236.66575321989984,
+    "prompt_eval_speed": 34298.496334037525,
+    "generation_latency_s": 0.1949789000209421,
+    "latency": 0.5149033000925556,
+    "total_prompt_tokens": 406,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2460185,
+    "stage_route_s": 0.09576009993907064,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1730035999789834,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05097740003839135,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.4200063459575176e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1950203999876976,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5149147000629455,
+    "unaccounted_latency_s": 9.950005915015936e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Giuseppe Verdi\"",
+      "\"Ambroise Thomas\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

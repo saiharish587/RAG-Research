@@ -1,0 +1,49 @@
+{
+  "question_id": "Q307",
+  "query": "Which former mill town is near Rivington Hall Barn?",
+  "ground_truth": "Bolton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Rivington Hall Barn is located near Chorley, Bolton, in Lancashire, England.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rivington Hall Barn: Rivington Hall Barn adjoins Rivington Hall in Rivington, Lancashire, near Chorley and Bolton.  The barn may date from between the 9th and 13th centuries, but more likely the 16th century, and was restored, altered and enlarged in 1905 by Jonathan Simpson for Lord Leverhulme.  It is a Grade II Listed building.",
+      "Rivington Hall: Rivington Hall is a Grade II* listed building in Rivington, Lancashire, England.  It was the manor house for the Lords of the Manor of Rivington.  The hall is of various builds as successor to a 15th-century timber-framed courtyard house that was built near to the present building of which no trace remains.  It is a private residence.",
+      "Manor of Rivington: The Manor of Rivington was a manorial estate in Rivington, Lancashire, England that possibly predates the Domesday survey.  Before 1212 the Pilkington family owned six oxgangs of land.  Over time it became separated in moieties and by the 16th century the Pilkingtons of Rivington Hall owned a 5/8 share.  In 1605 the Lathoms of Irlam owned a quarter share and the Shaws 1/8."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 370,
+    "generation_tokens": 21,
+    "generation_speed": 237.13808211753016,
+    "prompt_eval_speed": 46611.23708742756,
+    "generation_latency_s": 0.21210240002255887,
+    "latency": 0.5557259999914095,
+    "total_prompt_tokens": 494,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2387387,
+    "stage_route_s": 0.10593479999806732,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18292859999928623,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054597700014710426,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3900061175227165e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21213410003110766,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5557351000607014,
+    "unaccounted_latency_s": 8.679996244609356e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"Rivington Hall\"",
+      "Query 2: \"nearby mill towns\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

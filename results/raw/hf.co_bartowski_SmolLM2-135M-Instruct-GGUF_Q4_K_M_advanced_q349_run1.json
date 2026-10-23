@@ -1,0 +1,42 @@
+{
+  "question_id": "Q349",
+  "query": "Wheat salad is composed typically of what red fruit?",
+  "ground_truth": "tomato",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "You are given a piece of context that describes a bread pudding and an apple pie. The question asks for information about the type of fruit used to make these dishes, which in this case would be apples.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Wheat salad: Wheat salad (Arabic: \u0633\u0644\u0637\u0629 \u0642\u0645\u062d\u200e \u200e ), is a salad of Arab salads, it typically of wheat, corn, tomatoes, carrots, cucumber pickles, lemon, parsley, olive oil and salt.",
+      "Fruit salad: Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either in their own juices or a syrup.  When served as an appetizer or as a dessert, a fruit salad is sometimes known as a fruit cocktail or fruit cup.  In different forms fruit salad can be served as an appetizer, a side-salad, or a dessert.",
+      "Jello salad: Jell-O salad (also called gelatin salad, jelly salad, congealed salad, or molded salad) is a salad made with flavored gelatin, fruit, and sometimes grated carrots or more rarely, other vegetables.  Other ingredients may include cottage cheese, cream cheese, marshmallows, nuts, or pretzels.  These salads were popular in the 1960s."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 288,
+    "generation_tokens": 42,
+    "generation_speed": 377.7420022124889,
+    "prompt_eval_speed": 19088.016967126194,
+    "generation_latency_s": 0.20746549998875707,
+    "latency": 0.6238045000936836,
+    "total_prompt_tokens": 358,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1413183,
+    "stage_rewrite_s": 0.1600085999816656,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07558400009293109,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1806150000775233,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2074983000056818,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6238126000389457,
+    "unaccounted_latency_s": 0.00010729988571256399,
+    "rewritten_query": "Wheat Salad is typically made with a variety of fresh, seasonal fruits like strawberries, blueberries, and raspberries.",
+    "query_was_rewritten": true
+  }
+}

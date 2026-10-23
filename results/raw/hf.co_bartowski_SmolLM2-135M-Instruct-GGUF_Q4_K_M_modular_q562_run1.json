@@ -1,0 +1,49 @@
+{
+  "question_id": "Q562",
+  "query": "Which band formed in England, Of Montreal or Vib Gyor?",
+  "ground_truth": "Vib Gyor was a band that was formed in Leeds, England.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The band that formed in England, Of Montreal or Vib Gyor was Thee Mighty Hotel2Tango.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Vib Gyor: Vib Gyor was a band that was formed in Leeds, England.  The name was derived from the first letters of all the colours in the rainbow, in order from the shortest to longest wavelengths.",
+      "Hotel2Tango: The Hotel2Tango (sometimes referred to as Thee Mighty Hotel2Tango and abbreviated H2T) is a 24-track analogue recording studio situated in the Mile End district of Montreal, Quebec.  The current facility is the second to bear the name, and was preceded by a similar operation in the same neighborhood until 2007 when the studio changed locations.  The majority of recording projects undertaken at the studio are helmed by one of the facility's four partner-engineers: Efrim Menuck and Thierry Amar, both members of Thee Silver Mt. Zion Memorial Orchestra & Tra-La-La Band and Godspeed You!  Black Emperor; Radwan Ghazi Moumneh, member of Jerusalem In My Heart; and Howard Bilerman.  The Hotel2Tango is often closely associated with Constellation Records, a Montreal-based record label.",
+      "Shortest common supersequence problem: In computer science, the shortest common supersequence of two sequences X and Y is the shortest sequence which has X and Y as subsequences.  This is a problem closely related to the longest common subsequence problem.  Given two sequences X = < x.. . ,x > and Y = < y.. . ,y >, a sequence U = < u.. . ,u > is a common supersequence of X and Y if items can be removed from U to produce X or Y."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 24,
+    "generation_speed": 340.69615581170854,
+    "prompt_eval_speed": 22491.909385113267,
+    "generation_latency_s": 0.2017982000252232,
+    "latency": 0.8003097999608144,
+    "total_prompt_tokens": 543,
+    "total_generation_tokens": 151,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.234217,
+    "stage_route_s": 0.10386849998030812,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.43656750000081956,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05786860000807792,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.639992352575064e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20183280005585402,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8003197000361979,
+    "unaccounted_latency_s": 0.00011690007522702217,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Of Montreal and Vib Gyor",
+      "Here are two search queries related to the user's question:"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q599",
+  "query": "What movie is the the Spinning turtle attraction in the worlds 21st largest theme park based off of?",
+  "ground_truth": "Finding Nemo",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Spinning Turtle attraction is based on the 1996 film \"Twister\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Twister...Ride it Out: Twister...Ride It Out was a special effects attraction located at Universal Studios Florida, based on the 1996 film \"Twister\".  It was announced in 1997 and replaced the Ghostbusters Spooktacular attraction in the New York area of the park.  The attraction was hosted by actors Bill Paxton and Helen Hunt, who starred in the original film.  The attraction closed on November 2, 2015 and replaced with \"Race Through New York Starring Jimmy Fallon\", which opened on April 6, 2017.",
+      "Crush's Coaster: Crush's Coaster is a spinning roller coaster at Walt Disney Studios Park in Disneyland Paris.  The attraction officially opened on June 9, 2007 as part of an expansion project in Toon Studio, an area within Walt Disney Studios Park formerly known as Animation Courtyard.  It is themed to the Disney-Pixar film \"Finding Nemo\" and named after Crush, a green sea turtle character from the film.  Most of the roller coaster is enclosed and features dark ride special effects.",
+      "The Great Movie Ride: The Great Movie Ride was a dark ride attraction located at Disney's Hollywood Studios in the Walt Disney World Resort.  The attraction employed the use of Audio-Animatronic figures, practical sets, live actors, special effects, and projections to recreate iconic scenes from twelve classic films throughout motion picture history.  The attraction\u2014which debuted with the park on May 1, 1989\u2014was located inside a replica of Grauman's Chinese Theatre, one of Hollywood's most famous movie palaces."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 20,
+    "generation_speed": 236.53243451008217,
+    "prompt_eval_speed": 14311.09675335164,
+    "generation_latency_s": 0.22963679989334196,
+    "latency": 0.5954501000232995,
+    "total_prompt_tokens": 589,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.226178,
+    "stage_route_s": 0.10312809993047267,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22639079997316003,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036115100025199354,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.880002234131098e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22968119999859482,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5954735000850633,
+    "unaccounted_latency_s": 0.00011030002497136593,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The movie that features the Spinning Turtle attraction at the Worlds 21st Largest Theme Park is \"The Incredibles\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

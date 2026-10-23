@@ -1,0 +1,48 @@
+{
+  "question_id": "Q516",
+  "query": "What city did the Freebooters F.C. soccer team lose in that is now known as Croke Park?",
+  "ground_truth": "Dublin",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Freebooters F.C. soccer team lost in the Irish Cup final at Croke Park, which was named after the GAA stadium and often called Croker by some fans and locals. The match took place on 13 May 2006 in Basel, Switzerland, and the Swiss football club FC Basel 1893 stormed the field of St. Jakob-Park after a championship-deciding match against FC Z\u00fcrich.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Freebooters F.C.: Freebooters F.C was an association football club from Sandymount, Dublin, Ireland.  Their highest achievement was reaching the Irish Cup final which was staged at the City and County Grounds, Jones Road, Dublin, now Croke Park.  They lost to Cliftonville F.C., in the first Irish Cup final to be played outside Belfast.  Freebooters had beaten Linfield F.C. 2-1 in the semi final at the Jones Road venue.",
+      "Croke Park: Croke Park (Irish: \"P\u00e1irc an Chr\u00f3caigh\" , ] ) is a GAA stadium located in Dublin, Ireland.  Named in honour of Archbishop Thomas Croke, it is often called Croker by some GAA fans and locals.  It serves both as the principal stadium and headquarters of the Gaelic Athletic Association (GAA).",
+      "2006 Basel hooligan incident: The 2006 Basel hooligan incident (often called \"Disgrace of Basel\") occurred on 13 May 2006 in Basel, Switzerland.  On that day hooligans supporting the Swiss football club FC Basel 1893 stormed the field of the St. Jakob-Park after a championship-deciding match against the FC Z\u00fcrich.  FC Z\u00fcrich scored in the dying moments of the match and won 2\u20131.  The goal ended the dream of Basel winning the Swiss Super League a third time in a row.  This resulted in property damage and riots between hooligans of both the FCB and their rival supporters after the match.  This riot is considered as one of the worst incidents involving hooliganism in Swiss sport to date."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 452,
+    "generation_tokens": 96,
+    "generation_speed": 210.6838666634479,
+    "prompt_eval_speed": 55337.9107906355,
+    "generation_latency_s": 0.57995020004455,
+    "latency": 0.874477699981071,
+    "total_prompt_tokens": 600,
+    "total_generation_tokens": 120,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2165309,
+    "stage_route_s": 0.09033399994950742,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16703169990796596,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036998099996708333,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.269997589290142e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.579989799996838,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.874490899965167,
+    "unaccounted_latency_s": 9.530014358460903e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Freebooters F.C. Soccer Team Lose in Croke Park\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

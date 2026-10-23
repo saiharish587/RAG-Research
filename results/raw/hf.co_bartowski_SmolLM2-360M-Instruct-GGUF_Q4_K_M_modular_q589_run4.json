@@ -1,0 +1,49 @@
+{
+  "question_id": "Q589",
+  "query": "Which country borders the Central African Republic and is south of Libya and east of Niger?",
+  "ground_truth": "Republic of Chad",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Chad",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chad: Chad ( ; Arabic: \u062a\u0634\u0627\u062f\u200e \u200e \"Tsh\u0101d \"; French: \"Tchad\" ] ), officially the Republic of Chad (Arabic: \u062c\u0645\u0647\u0648\u0631\u064a\u0629 \u062a\u0634\u0627\u062f\u200e \u200e \"Jumh\u016br\u012byat Tsh\u0101d \"; French: \"R\u00e9publique du Tchad\" \"Republic of the Chad\"), is a landlocked country in Central Africa.  It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon and Nigeria to the southwest and Niger to the west.  It is the fifth largest country in Africa in terms of area.",
+      "Geography of the Central African Republic: The Central African Republic is a landlocked nation within the interior of the African continent.  It is bordered by the countries of Cameroon, Chad, Sudan, South Sudan, the Democratic Republic of the Congo and the Republic of the Congo.  Much of the country consists of flat, or rolling plateau savanna, about 1640 ft above sea level.  In the northeast are the Fertit Hills, and there are scattered hills in the southwestern part of the country.  To the northwest are the Karre Mountains (also known as Yade Massif), a granite plateau with an altitude of 3750 ft .",
+      "Luxembourg: Luxembourg ( ) (Luxembourgish: \"L\u00ebtzebuerg\" ] ; French: \"Luxembourg\" , German: \"Luxemburg\" ), officially the Grand Duchy of Luxembourg, is a landlocked country in western Europe.  It is bordered by Belgium to the west and north, Germany to the east, and France to the south.  Its capital, Luxembourg City, is, together with Brussels and Strasbourg, one of the three official capitals of the European Union and the seat of the European Court of Justice, the highest juridical authority in the EU.  Its culture, people and languages are highly intertwined with its neighbours, making it essentially a mixture of French and Germanic cultures.  This is emphasised by the three official languages, Luxembourgish, French, and German.  The repeated invasions by Germany, especially in World War II, resulted in the country's strong will for mediation between France and Germany and, among other things, led to the foundation of the European Union."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 575,
+    "generation_tokens": 3,
+    "generation_speed": 278.1641168289291,
+    "prompt_eval_speed": 52387.026239067054,
+    "generation_latency_s": 0.13936339993961155,
+    "latency": 0.45879179995972663,
+    "total_prompt_tokens": 709,
+    "total_generation_tokens": 22,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2404532,
+    "stage_route_s": 0.09691890003159642,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16420769994147122,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057983600068837404,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 0.00018660002388060093,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13940320000983775,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4588041000533849,
+    "unaccounted_latency_s": 0.0001047999830916524,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Country Borders\"",
+      "\"Central African Republic Neighbors\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q445",
+  "query": "Which fantasy film from 1971 featured the song \"The Age of Not Believing\"?",
+  "ground_truth": "Bedknobs and Broomsticks",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "\"Bedknobs and Broomsticks\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Age of Not Believing: \"The Age of Not Believing\" is a song written by Robert and Richard Sherman for the 1971 Walt Disney musical film production \"Bedknobs and Broomsticks\".  Angela Lansbury sings the song in the motion picture.  In the lyrics, Lansbury's character Eglantine expresses how as children grow up, they lose their belief in magic and doubt themselves.  The song works on two levels, both on a personal, human level and thematically for the whole film- a Britain grown cynical from the pressures of war must learn to borrow from its own past magic in order to overcome the tremendous challenge which lies before it, while the characters in the film must finally learn to trust in Eglantine's magic to achieve their goals and save Britain from the Nazis.",
+      "Bedknobs and Broomsticks: Bedknobs and Broomsticks is a 1971 British-American musical fantasy film produced by Walt Disney Productions and released by Buena Vista Distribution Company in North America on December 13, 1971.  It is based upon the books \"The Magic Bedknob; or, How to Become a Witch in Ten Easy Lessons\" (1943) and \"Bonfires and Broomsticks\" (1945) by English children's author Mary Norton.  The film, which combines live action and animation, stars Angela Lansbury and David Tomlinson.",
+      "To Age or Not to Age: To Age or Not to Age is a documentary film directed by Robert Kane Pappas with Steven N. Austad, Ph.D., Rev. Nicanor Pier Giorgio Austriaco, O.P., Ph.D., Nir Barzilai, M.D., Troy Duster, Aubrey de Grey, Leonard P. Guarente, Cynthia Kenyon, Tom Kirkwood, Gordon Lithgow, Ph.D., David Sinclair and Christoph Westphal.  The screenwriter was Robert Kane Pappas.  The movie was produced by Miriam Foley and Joseph Zock.  The film opened at the Village East Cinema in New York City on July 16, 2010."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 10,
+    "generation_speed": 195.41173252042054,
+    "prompt_eval_speed": 20154.866436960467,
+    "generation_latency_s": 0.1941591000650078,
+    "latency": 0.6486423000460491,
+    "total_prompt_tokens": 684,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23324299999999998,
+    "stage_route_s": 0.10455280006863177,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2907480000285432,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058999500004574656,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.749997217208147e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19419800001196563,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6486542000202462,
+    "unaccounted_latency_s": 9.919994045048952e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The movie \"The Age of Not Believing\" was released in 1971.",
+      "Query 2: The song \"The Age of Not Believing\" is a theme from the film."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

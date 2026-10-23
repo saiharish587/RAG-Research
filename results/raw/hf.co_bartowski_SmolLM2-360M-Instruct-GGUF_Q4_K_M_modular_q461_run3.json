@@ -1,0 +1,49 @@
+{
+  "question_id": "Q461",
+  "query": " William Cammisano was part of which Mafia family?",
+  "ground_truth": "Kansas City crime family",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "William Cammisano was part of the Philadelphia crime family.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "William Cammisano: William \"Willie Rat\" Dominick Cammisano Sr. (April 26, 1914 \u2013 January 26, 1995) was a Kansas City, Missouri, mobster and enforcer for Nicholas Civella's Kansas City crime family.",
+      "Philadelphia crime family: The Philadelphia crime family, (pronounced ] ) also known as the Philadelphia Mafia, the Philly Mob/Mafia, the Bruno-Scarfo family, the South Philly Mob/Mafia, or the Philadelphia-South Jersey Mob/Mafia is an Italian American criminal organization based in Philadelphia, Pennsylvania.  Formed and based in South Philadelphia, the family primarily operates in various areas and neighborhoods throughout the Philadelphia metropolitan area and Delaware Valley, Southeastern Pennsylvania, and New Jersey, especially South Jersey.  The Philadelphia family is notorious for its violence, due in particular to its succession of violent bosses and multiple mob wars.",
+      "Nicholas Scibetta: Nicholas Scibetta, also known as \"Little Nicky\" (died 1978), was a Sicilian American mobster who was the nephew of Joseph and John Zicarelli, the brother-in-law of Sammy Gravano and uncle of mafioso Gerard Gravano, who was a Gambino crime family mob associate who was later marked as a stool pigeon by fellow crime family members."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 370,
+    "generation_tokens": 14,
+    "generation_speed": 242.85317790729948,
+    "prompt_eval_speed": 47145.76962283384,
+    "generation_latency_s": 0.17775809997692704,
+    "latency": 0.5720979999750853,
+    "total_prompt_tokens": 500,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.219577,
+    "stage_route_s": 0.09167889994569123,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24728390004020184,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05519109999295324,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.40000619366765e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17779799993149936,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5721096999477595,
+    "unaccounted_latency_s": 0.00010449998080730438,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"William Cammisano, a member of the 'Cammisano' family\"",
+      "\"The 'Cammisano' family is a Mafia organization\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

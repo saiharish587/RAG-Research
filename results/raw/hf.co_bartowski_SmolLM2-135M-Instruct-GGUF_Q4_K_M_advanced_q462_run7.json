@@ -1,0 +1,42 @@
+{
+  "question_id": "Q462",
+  "query": "1956 Night Series Cup games were played at what inner suburb of Melbourne that is 3km south of Melbourne's central business district?",
+  "ground_truth": "Albert Park",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The relevant piece of information is: \"Fitzroy, Victoria: Fitzroy is an inner-city suburb of Melbourne, Victoria, Australia, 3 km north-east of Melbourne's Central Business District in the local government area of the City of Yarra.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fitzroy, Victoria: Fitzroy is an inner-city suburb of Melbourne, Victoria, Australia, 3\u00a0km north-east of Melbourne's Central Business District in the local government area of the City of Yarra.  At the 2016 Census, Fitzroy had a population of 10,445.  Planned as Melbourne's first suburb, it was later also one of the city's first areas to gain municipal status.  It occupies Melbourne's smallest and most densely populated suburban area, just 100 ha.",
+      "Albert Park, Victoria: Albert Park is an inner suburb of Melbourne, Australia, 3 km south of Melbourne's central business district.  Its local government area is the City of Port Phillip.  At the 2011 census , Albert Park had a population of 5,955.",
+      "South Yarra, Victoria: South Yarra is an inner suburb of Melbourne, Victoria, Australia, 4 km south-east of Melbourne's Central Business District, located within the Cities of Melbourne and Stonnington local government areas. South Yarra recorded a population of 25,147 at the 2016 Census."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 343,
+    "generation_tokens": 55,
+    "generation_speed": 403.6104791957144,
+    "prompt_eval_speed": 40896.62573029689,
+    "generation_latency_s": 0.22321889991872013,
+    "latency": 0.6415654000593349,
+    "total_prompt_tokens": 433,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1264716,
+    "stage_rewrite_s": 0.1917252999264747,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08859290007967502,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13790380000136793,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2232545999577269,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.641573500004597,
+    "unaccounted_latency_s": 9.750004392117262e-05,
+    "rewritten_query": "The 2024 Melbourne Cup was held in the 3rd and 7th suburbs of Melbourne, which are located about 1.5 km north of Melbourne's central business district.",
+    "query_was_rewritten": true
+  }
+}

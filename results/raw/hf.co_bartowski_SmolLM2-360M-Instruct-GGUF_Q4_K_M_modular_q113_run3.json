@@ -1,0 +1,49 @@
+{
+  "question_id": "Q113",
+  "query": "When was the British author who wrote the novel on which \"Here We Go Round the Mulberry Bush\" was based born? ",
+  "ground_truth": "7 January 1936",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The British author who wrote the novel \"Here We Go Round the Mulberry Bush\" was Hunter Davies, not Charles Dickens.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Here We Go Round the Mulberry Bush (film): Here We Go Round the Mulberry Bush is a 1967 British film made based on the novel of the same name by Hunter Davies.  It was listed to compete at the 1968 Cannes Film Festival, but the festival was cancelled due to the events of May 1968 in France.",
+      "Oliver Twist: Oliver Twist, or The Parish Boy's Progress, is the second novel by English author Charles Dickens and was first published as a serial 1837\u201339.  The story is of the orphan Oliver Twist, who is born in a workhouse and is then sold into apprenticeship with an undertaker.  He escapes from there and travels to London, where he meets the Artful Dodger, a member of a gang of juvenile pickpockets led by the elderly criminal, Fagin.",
+      "Jane Austen: Jane Austen ( ; 16 December 1775 \u2013 18 July 1817) was an English novelist known primarily for her six major novels, which interpret, critique and comment upon the British landed gentry at the end of the 18th century.  Austen's plots often explore the dependence of women on marriage in the pursuit of favourable social standing and economic security.  Her works critique the novels of sensibility of the second half of the 18th century and are part of the transition to 19th-century literary realism."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 392,
+    "generation_tokens": 26,
+    "generation_speed": 215.97913309298733,
+    "prompt_eval_speed": 46489.56356736243,
+    "generation_latency_s": 0.2421250999905169,
+    "latency": 0.6713948999531567,
+    "total_prompt_tokens": 544,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2199595,
+    "stage_route_s": 0.0939061000244692,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2773241000249982,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057833800092339516,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0900038331747055e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24215730000287294,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.67140410002321,
+    "unaccounted_latency_s": 0.00013239984400570393,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The British author who wrote the novel on which 'Here We Go Round the Mulberry Bush' was based is Charles Dickens.\"",
+      "\"Charles Dickens was born in 1812.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

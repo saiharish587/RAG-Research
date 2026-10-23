@@ -1,0 +1,42 @@
+{
+  "question_id": "Q16",
+  "query": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+  "ground_truth": "9,984",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "There are currently 49 landlocked countries in the world.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Brown State Fishing Lake: Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States.  The lake is 62 acres (0.25 km\u00b2) in area and up to 13 feet (4 m) deep.  The area was formerly known as Brown County State Park, and is 8 miles (13 km) east of Hiawatha, Kansas.",
+      "United States: The United States of America (USA), commonly known as the United States (U.S.) or America ( ), is a federal republic composed of 50 states, a federal district, five major self-governing territories, and various possessions.  Forty-eight states and the federal district are contiguous and located in North America between Canada and Mexico.  The state of Alaska is in the northwest corner of North America, bordered by Canada to the east and across the Bering Strait from Russia to the west.  The state of Hawaii is an archipelago in the mid-Pacific Ocean.  The U.S. territories are scattered about the Pacific Ocean and the Caribbean Sea, stretching across nine official time zones.  The extremely diverse geography, climate and wildlife of the United States make it one of the world's 17 megadiverse countries.",
+      "Landlocked country: A landlocked state or landlocked country is a sovereign state entirely enclosed by land, or whose only coastlines lie on closed seas.  There are currently 49 such countries, including five partially recognised states.  Only two, Bolivia and Paraguay in South America, lie outside Afro-Eurasia (the Old World)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 14,
+    "generation_speed": 263.4897333107485,
+    "prompt_eval_speed": 61860.258121940366,
+    "generation_latency_s": 0.8934176000766456,
+    "latency": 3.3541382000548765,
+    "total_prompt_tokens": 494,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1364457,
+    "stage_rewrite_s": 1.335097000002861,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9188261000672355,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20667189999949187,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.893459300044924,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.354151100036688,
+    "unaccounted_latency_s": 9.739992674440145e-05,
+    "rewritten_query": "The user's original query was \"Brown State Fishing Lake is in a country that has a population of how many inhabitants?\" \n\nOutput: The user's original query was \"Brown State Fishing Lake is in a country that has a population of how many inhabitants?",
+    "query_was_rewritten": true
+  }
+}

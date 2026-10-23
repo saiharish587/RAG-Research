@@ -1,0 +1,48 @@
+{
+  "question_id": "Q125",
+  "query": "The youngest daughter of Lady Mary-Gaye Curzon stars with Douglas Smith and Lucien Laviscount  in what 2017 film?",
+  "ground_truth": "The Bye Bye Man",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The youngest daughter of Lady Mary-Gaye Curzon, who starred with Douglas Smith and Lucien Laviscount, is Cressida Bonas.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "by Matthew Vaughn and co-written by Jane Goldman, was released in February 2015.  The film stars Colin Firth, Taron Egerton, Michael Caine, Samuel L. Jackson, Mark Strong, Sophie Cookson, Sofia Boutella, Jack Davenport, and Mark Hamill.  A sequel to this film, subtitled \"\", was released in September 2017.",
+      "Cressida Bonas: Cressida Curzon Bonas (born 18 February 1989) is an English actress, dancer and model.  She is the youngest daughter of Lady Mary-Gaye Curzon and entrepreneur Jeffrey Bonas, and a granddaughter of Edward Curzon, 6th Earl Howe.",
+      "The Beguiled (2017 film): The Beguiled is a 2017 American drama film written and directed by Sofia Coppola, based on the novel of the same name (originally published as \"A Painted Devil\") by Thomas P. Cullinan.  It stars Colin Farrell, Nicole Kidman, Kirsten Dunst and Elle Fanning.  A film of the same name, also based on Cullinan's book, was released in 1971."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 359,
+    "generation_tokens": 35,
+    "generation_speed": 238.10495666489786,
+    "prompt_eval_speed": 46298.684549909725,
+    "generation_latency_s": 0.2642168999882415,
+    "latency": 0.6270858000498265,
+    "total_prompt_tokens": 525,
+    "total_generation_tokens": 73,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2270362,
+    "stage_route_s": 0.09431570000015199,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.22891220008023083,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039482899941504,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.77000542357564e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2642607999732718,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.627117000054568,
+    "unaccounted_latency_s": 0.00010849989484995604,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The Youngest Daughter of Lady Mary-Gaye Curzon Stars with Douglas Smith and Lucien Laviscount in what 2017 film?*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

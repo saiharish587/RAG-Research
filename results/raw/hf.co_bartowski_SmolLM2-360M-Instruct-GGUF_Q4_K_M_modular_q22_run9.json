@@ -1,0 +1,49 @@
+{
+  "question_id": "Q22",
+  "query": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+  "ground_truth": "Sonic",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Jim Cummings",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Rather Blustery Day: \"A Rather Blustery Day\" is a whimsical song from the Walt Disney musical film featurette, \"Winnie the Pooh and the Blustery Day\".  It was written by Robert & Richard Sherman and sung by Jim Cummings as \"Pooh\".",
+      "Jim Cummings: James Jonah Cummings (born November 3, 1952) is an American voice actor and singer, who has appeared in almost 400 roles.  He is known for voicing the title character from \"Darkwing Duck\", Dr. Robotnik from \"Sonic the Hedgehog\", and Pete.  His other characters include Winnie the Pooh, Tigger, and the Tasmanian Devil.  He has performed in numerous Disney and DreamWorks animations including \"Aladdin\", \"The Lion King\", \"Balto\", \"Antz\", \"The Road to El Dorado\", \"Shrek\", and \"The Princess and the Frog\".  He has also provided voice-over work for video games, such as \"Icewind Dale\", \"Fallout\", \"\", \"Baldur's Gate\", \"Mass Effect 2\", \"\", \"\", \"\", and \"Splatterhouse\".",
+      "Robby Benson: Robin David Segal (born January 21, 1956), better known by the stage name Robby Benson, is an American actor, director, singer and educator.  He is known as the voice of The Beast in the Disney animated film \"Beauty and the Beast\" and its numerous sequels and spin-offs, and for directing several episodes of the popular sitcom \"Friends\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 421,
+    "generation_tokens": 4,
+    "generation_speed": 271.84993883376376,
+    "prompt_eval_speed": 42452.354542704445,
+    "generation_latency_s": 0.1349761999445036,
+    "latency": 0.6393478999380022,
+    "total_prompt_tokens": 551,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.26967,
+    "stage_route_s": 0.11402660002931952,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.33201339992228895,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058149300049990416,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.180004518479109e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1350164000177756,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6393599000293761,
+    "unaccounted_latency_s": 0.00010309997014701366,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"A rather blustery day\" - The singer is known for their song, which was released in 2013.",
+      "\"Hedgehog\" - The singer has a background as an actor and has voiced several characters throughout their career."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

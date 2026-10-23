@@ -1,0 +1,42 @@
+{
+  "question_id": "Q283",
+  "query": "In what month was the relief first officer of the flight that crashed on its way to Cairo with a stop in New York Born?",
+  "ground_truth": "February",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The relief first officer of the flight that crashed on its way to Cairo with a stop in New York was born in January 1940.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "EgyptAir Flight 990: EgyptAir Flight 990 (MS990/MSR990) was a regularly scheduled flight from Los Angeles International Airport, United States, to Cairo International Airport, Egypt, with a stop at John F. Kennedy International Airport, New York City.  On October 31, 1999, the Boeing 767 operating the route crashed into the Atlantic Ocean about 60 mi south of Nantucket Island, Massachusetts, killing all 217 people on board.  The official probable cause of the crash was deliberate action by the relief first officer.",
+      "Gameel Al-Batouti: Gameel Al-Batouti (Arabic: \u062c\u0645\u064a\u0644 \u0627\u0644\u0628\u0637\u0648\u0637\u064a\u200e \u200e ; also rendered \"Gamil El Batouti\" or \"El Batouty\" in U.S. official reports; 2 February 1940 \u2013 31 October 1999) was a pilot for EgyptAir and a former officer for the Egyptian Air Force.  On 31 October 1999, all 217 people aboard EgyptAir Flight 990 were killed when it crashed into the Atlantic Ocean about 60 mi southeast of Nantucket Island, Massachusetts.  The US National Transportation Safety Board (NTSB) concluded that the official probable cause of the crash was a series of control inputs made by Al-Batouti, who was in the position of relief first officer in command at the time of the crash.",
+      "Cairo: Cairo ( ; Arabic: \u0627\u0644\u0642\u0627\u0647\u0631\u0629\u200e \u200e \"al-Q\u0101hirah \", , Coptic: \"Kahire \") is the capital and largest city of Egypt.  The city's metropolitan area is the largest in the Middle East and the Arab world, and the 15th-largest in the world, and is associated with ancient Egypt, as the famous Giza pyramid complex and the ancient city of Memphis are located in its geographical area.  Located near the Nile Delta, modern Cairo was founded in 969 CE by the Fatimid dynasty, but the land composing the present-day city was the site of ancient national capitals whose remnants remain visible in parts of Old Cairo.  Cairo has long been a center of the region's political and cultural life, and is titled \"the city of a thousand minarets\" for its preponderance of Islamic architecture.  Cairo is considered a World City with a \"Beta +\" classification according to GaWC."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 627,
+    "generation_tokens": 31,
+    "generation_speed": 256.2470552253734,
+    "prompt_eval_speed": 84489.96092170867,
+    "generation_latency_s": 1.0237205000594258,
+    "latency": 3.4288361000362784,
+    "total_prompt_tokens": 713,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1257297,
+    "stage_rewrite_s": 1.2397294000256807,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0219154000515118,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14334980002604425,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0237629000330344,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4288498000241816,
+    "unaccounted_latency_s": 9.299989324063063e-05,
+    "rewritten_query": "The relief first officer of the flight that crashed on its way to Cairo with a stop in New York was born in 1985.",
+    "query_was_rewritten": true
+  }
+}

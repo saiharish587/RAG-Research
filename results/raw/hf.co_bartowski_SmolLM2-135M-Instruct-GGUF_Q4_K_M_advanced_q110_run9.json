@@ -1,0 +1,42 @@
+{
+  "question_id": "Q110",
+  "query": "Which airplane was this Major test-flying after whom the base, that 514th Flight Test Squadron is stated at, is named?",
+  "ground_truth": "B-17 Flying Fortress bomber",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The airplane that was this Major test-flying after whom the base, that 514th Flight Test Squadron is stated at, is named is the Lockheed P-3 Orion.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "514th Flight Test Squadron: The 514th Flight Test Squadron (514 FLTS) is a United States Air Force squadron.  It is assigned to the Ogden Air Logistics Center (OO-ALC), Air Force Materiel Command, stationed at Hill Air Force Base, Utah.",
+      "Hill Air Force Base: Hill Air Force Base (IATA: HIF, ICAO: KHIF, FAA LID: HIF) is a major U.S. Air Force base located in northern Utah, just south of the city of Ogden, and near the towns of Clearfield, Riverdale, Roy, Sunset, and Layton.  It is about 30 mi north of Salt Lake City.  The base was named in honor of Major Ployer Peter Hill of the U.S. Army Air Corps, who died test-flying a prototype of the B-17 Flying Fortress bomber.  In this decade Hill AFB is still the sixth-largest employer in the state of Utah, and the third-largest one excluding the State Government and Higher Education employers.",
+      "Patrol Squadron 4 (United States Navy): Patrol Squadron Four (VP-4) is a U.S. Navy land-based patrol squadron based at the Marine Corps Base Hawaii, Oahu, Hawaii, which is tasked to undertake maritime patrol, anti-submarine warfare (ASW), and intelligence, surveillance and reconnaissance (ISR) missions flying the Lockheed P-3 Orion."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 400,
+    "generation_tokens": 38,
+    "generation_speed": 371.4093028256429,
+    "prompt_eval_speed": 58215.68912822005,
+    "generation_latency_s": 0.19005179998930544,
+    "latency": 0.5620985999703407,
+    "total_prompt_tokens": 489,
+    "total_generation_tokens": 67,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1305667,
+    "stage_rewrite_s": 0.16030500002671033,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0693989999126643,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1421834999928251,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19012899999506772,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5621102000586689,
+    "unaccounted_latency_s": 9.4400136731565e-05,
+    "rewritten_query": "Which airplane was this Major test-flying after which the base, that 514th Flight Test Squadron is said to be named?",
+    "query_was_rewritten": true
+  }
+}

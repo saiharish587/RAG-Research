@@ -1,0 +1,42 @@
+{
+  "question_id": "Q209",
+  "query": "Who has written more than 300 papers, Semyon Aranovich Gershgorin or Pavel Alexandrov?",
+  "ground_truth": "Pavel Sergeyevich Alexandrov",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Semyon Aranovich Gershgorin wrote more than 300 papers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pavel Alexandrov: Pavel Sergeyevich Alexandrov (Russian: \u041f\u0430\u0301\u0432\u0435\u043b \u0421\u0435\u0440\u0433\u0435\u0301\u0435\u0432\u0438\u0447 \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440\u043e\u0432 ), sometimes romanized Paul Alexandroff or Aleksandrov (7 May 1896 \u2013 16 November 1982), was a Soviet mathematician.  He wrote about three hundred papers, making important contributions to set theory and topology.",
+      "Nerve of a covering: In topology, the nerve of an open covering is a construction of an abstract simplicial complex from an open covering of a topological space \"X\" that captures many of the interesting topological properties in an algorithmic or combinatorial way.  It was introduced by Pavel Alexandrov.  and now has many variants and generalisations, among them the \u010cech nerve of a cover, which in turn is generalised by hypercoverings.",
+      "Alexandroff extension: In the mathematical field of topology, the Alexandroff extension is a way to extend a noncompact topological space by adjoining a single point in such a way that the resulting space is compact.  It is named for the Russian mathematician Pavel Alexandrov."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 339,
+    "generation_tokens": 21,
+    "generation_speed": 257.359249001201,
+    "prompt_eval_speed": 14072.229140722291,
+    "generation_latency_s": 1.0179905999684706,
+    "latency": 3.4045637999661267,
+    "total_prompt_tokens": 427,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12355730000000001,
+    "stage_rewrite_s": 1.1651902999728918,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0894401000114158,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13182659994345158,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0180301999207586,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.404573299922049,
+    "unaccounted_latency_s": 8.650007657706738e-05,
+    "rewritten_query": "Pavel Alexandrov has written more than 300 papers.",
+    "query_was_rewritten": true
+  }
+}

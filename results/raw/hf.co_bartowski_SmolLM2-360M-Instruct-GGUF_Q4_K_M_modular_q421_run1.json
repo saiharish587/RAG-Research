@@ -1,0 +1,49 @@
+{
+  "question_id": "Q421",
+  "query": "Are Buried Country and South of the Border both films turned into stage performances?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Yes, both Buried Country and South of the Border are both films that have been adapted into stage performances.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "South of the Border (2009 film): South of the Border is a 2009 American documentary film directed by Oliver Stone.  The documentary premiered at the 2009 Venice Film Festival.  Writer for the project Tariq Ali calls the documentary \"a political road movie\".  Stone stated that he hopes the film will help people better understand a leader who is wrongly ridiculed \"as a strongman, as a buffoon, as a clown.\"",
+      "Buried Country: Buried Country is a highly regarded documentary film, book and soundtrack album and now also a stageshow as well.  It is a prosopography, created by noted writer Clinton Walker, that tells the story of Australian country music in the Aboriginal community by focussing on the genre's most important stars.",
+      "Jean de Florette: Jean de Florette (] ) is a 1986 French period drama film directed by Claude Berri, based on a novel by Marcel Pagnol.  It is followed by \"Manon des Sources\".  The film takes place in rural Provence, where two local farmers plot to trick a newcomer out of his newly inherited property.  The film starred three of France's most prominent actors \u2013 G\u00e9rard Depardieu, Daniel Auteuil, who won a BAFTA award for his performance, and Yves Montand in one of his last roles before his death."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 23,
+    "generation_speed": 228.93089273094648,
+    "prompt_eval_speed": 14119.161177984706,
+    "generation_latency_s": 0.23716869996860623,
+    "latency": 0.7684285000432283,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 90,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2344043,
+    "stage_route_s": 0.10805230005644262,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.36410610005259514,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05891160003375262,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.0699996538460255e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23720869992394,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7684401000151411,
+    "unaccounted_latency_s": 0.00010139995720237494,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Buried Country\" is a film that was originally produced as a stage play, but it has since been adapted into a feature film.",
+      "\"South of the Border\" is a film that was initially intended to be a stage production, but it has since become a successful Broadway musical and movie."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

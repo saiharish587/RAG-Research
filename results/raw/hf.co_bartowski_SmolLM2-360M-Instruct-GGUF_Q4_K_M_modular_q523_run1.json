@@ -1,0 +1,49 @@
+{
+  "question_id": "Q523",
+  "query": "who had to escape nazis, Sigmund Freud or Evelyn Waugh?",
+  "ground_truth": "Sigmund Freud",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Evelyn Waugh escaped from Nazi Germany in 1939 and lived in the UK until his death in 1966.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sigmund Freud: Sigmund Freud ( ; ] ; born Sigismund Schlomo Freud; 6 May 1856 \u2013 23 September 1939) was an Austrian neurologist and the founder of psychoanalysis, a clinical method for treating psychopathology through dialogue between a patient and a psychoanalyst.  Freud was born to Galician Jewish parents in the Moravian town of Freiberg, in the Austrian Empire.  He qualified as a doctor of medicine in 1881 at the University of Vienna.  Upon completing his habilitation in 1885, he was appointed a docent in neuropathology and became an affiliated professor in 1902.  Freud lived and worked in Vienna, having set up his clinical practice there in 1886.  In 1938 Freud left Austria to escape the Nazis.  He died in exile in the United Kingdom in 1939.",
+      "Evelyn Waugh: Arthur Evelyn St. John Waugh ( ; 28 October 1903 \u2013 10 April 1966) was an English writer of novels, biographies and travel books.  He was also a prolific journalist and reviewer of books.  His most famous works include the early satires \"Decline and Fall\" (1928) and \"A Handful of Dust\" (1934), the novel \"Brideshead Revisited\" (1945) and the Second World War trilogy \"Sword of Honour\" (1952\u201361).  Waugh is recognised as one of the great prose stylists of the English language in the 20th century.",
+      "Rudolf Wolters: Rudolf Wolters (August 3, 1903\u00a0\u2013 January 7, 1983) was a German architect and government official, known for his longtime association with fellow architect and Third Reich official Albert Speer.  A friend and subordinate of Speer, Wolters received the many papers which were smuggled out of Spandau Prison for Speer while he was imprisoned there, and kept them for him until Speer was released in 1966.  After Speer's release, the friendship slowly collapsed, Wolters objecting strongly to Speer's blaming of Hitler and other Nazis for the Jewish Holocaust and World War II, and they saw nothing of each other in the decade before Speer's death in 1981."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 600,
+    "generation_tokens": 31,
+    "generation_speed": 230.32230262864616,
+    "prompt_eval_speed": 13126.804935678656,
+    "generation_latency_s": 0.2944316000211984,
+    "latency": 0.7616586999502033,
+    "total_prompt_tokens": 736,
+    "total_generation_tokens": 75,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.252054,
+    "stage_route_s": 0.12452319997828454,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2840161999920383,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05850599997211248,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.840001929551363e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29447399999480695,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7616700999205932,
+    "unaccounted_latency_s": 0.00010299996938556433,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Who had to escape Nazis, Sigmund Freud or Evelyn Waugh?",
+      "Query 2: Who had to escape Nazis, Sigmund Freud or Evelyn Waugh?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

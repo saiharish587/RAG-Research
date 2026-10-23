@@ -1,0 +1,49 @@
+{
+  "question_id": "Q278",
+  "query": "In what city was the Italian Baroque composer who composed a set of sonatas, titled Op. 5, born?",
+  "ground_truth": "Venice",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Italian Baroque composer who composed a set of sonatas, titled Op. 5, was Giovanni Battista Pergolesi (1680-1727).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rome: Rome ( ; Italian: \"Roma\" ] , Latin: \"R\u014dma\" ) is the capital of Italy and a special comune (named \"Comune di Roma Capitale\").  Rome also serves as the capital of the Lazio region.  With 2,877,215 residents in 1285 km2 , it is also the country's most populated comune.  It is the fourth-most populous city in the European Union by population within city limits.  It is the center of the Metropolitan City of Rome, which has a population of 4.3 million residents.  Rome is located in the central-western portion of the Italian Peninsula, within Lazio (Latium), along the shores of the Tiber.  The Vatican City is an independent country inside the city boundaries of Rome, the only existing example of a country within a city: for this reason Rome has been often defined as capital of two states.",
+      "Milan: Milan ( or ; Italian: \"Milano\" ] ; Lombard: Milan ] (Milanese variant)) is the city capital of the Lombardy Region in Northern Italy and is the 2nd richest city in the European Union after Paris in 2016. It is the second most populous city in Italy after Rome, with the city proper having a population of 1,369,000 (the Metropolitan City of Milan has a population of 3,219,000).  Its geographical outskirt (that stretches beyond the boundaries of the Metropolitan City of Milan), has a population estimated to be about 5,270,000 in 1,891 km2 , ranking 2nd in the European Union.  The wider Milan metropolitan area, popular for Greater Milan, is a polycentric metropolitan region that comprehends almost every province of Lombardy, the Piedmont province of Novara, and some parts of the province of Piacenza which counts an estimated total population of 8,123,020.",
+      "Vatican City: Vatican City ( ; Italian: \"Citt\u00e0 del Vaticano\" ] ; Latin: \"Civitas Vaticana\" ), officially Vatican City State or the State of Vatican City (Italian: \"Stato della Citt\u00e0 del Vaticano\" ; Latin: \"Status Civitatis Vaticanae\" ), is a country located within the city of Rome.  With an area of approximately 44 hectares (110 acres), and a population of 1,000, it is the smallest country in the world by both area and population.  However, formally it is not sovereign, with sovereignty being held by the Holy See."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 651,
+    "generation_tokens": 38,
+    "generation_speed": 235.5683396151557,
+    "prompt_eval_speed": 83248.08184143221,
+    "generation_latency_s": 0.2836152999661863,
+    "latency": 0.5759926000609994,
+    "total_prompt_tokens": 799,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2297337,
+    "stage_route_s": 0.11080359993502498,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12241379998158664,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058988600037992,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.439994856715202e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2836482999846339,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5760015000123531,
+    "unaccounted_latency_s": 9.340012911707163e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Rome\"",
+      "\"Italy\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

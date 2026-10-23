@@ -1,0 +1,48 @@
+{
+  "question_id": "Q515",
+  "query": "What number album is the first W.A.S.P. album to feature Steven Edward Duren playing guitar?",
+  "ground_truth": "third",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The first W.A.S.P. album to feature Steven Edward Duren playing guitar is \"W.A.S.P.\" itself, released in 1985.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Blackie Lawless: Blackie Lawless (born Steven Edward Duren; September 4, 1956) is an American songwriter and musician best known as the lead singer and rhythm guitarist (formerly bassist) for the heavy metal band W.A.S.P.",
+      "Karlfried Graf D\u00fcrckheim: Karl Friedrich Alfred Heinrich Ferdinand Maria Graf Eckbrecht von D\u00fcrckheim-Montmartin (24 October 1896 \u2013 28 December 1988) was a German diplomat, psychotherapist and Zen Master.  A veteran of World War I, he was introduced to Zen Buddhism early in life.  After obtaining a doctorate in psychology, he became an avid supporter of the Nazi Party.  Following World War II he was imprisoned in Japan which transformed him spiritually.  Upon returning to Germany he became a leading proponent of the Western esoteric spiritual tradition, synthesizing teachings from Christian Mysticism, Depth Psychology and Zen Buddhism.",
+      "Guns N' Roses: Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles and formed in 1985.  The lineup, when first signed to Geffen Records in 1986, consisted of vocalist Axl Rose, lead guitarist Slash, rhythm guitarist Izzy Stradlin, bassist Duff McKagan, and drummer Steven Adler.  Guns N' Roses have released six studio albums, accumulating sales of more than 100 million records worldwide, including 45 million records in the United States, making them one of the world's best-selling artists of all time."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 433,
+    "generation_tokens": 40,
+    "generation_speed": 255.7675584428871,
+    "prompt_eval_speed": 14919.202012197224,
+    "generation_latency_s": 0.2970347999362275,
+    "latency": 0.5978184000123292,
+    "total_prompt_tokens": 581,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21693079999999998,
+    "stage_route_s": 0.09609749994706362,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16944880003575236,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.035064399940893054,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.139992572367191e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.29707369999960065,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5978315999964252,
+    "unaccounted_latency_s": 9.670015424489975e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Steven Edward Duren - The First W.A.S.P.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

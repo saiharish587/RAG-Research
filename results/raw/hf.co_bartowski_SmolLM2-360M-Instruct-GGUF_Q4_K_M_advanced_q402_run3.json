@@ -1,0 +1,42 @@
+{
+  "question_id": "Q402",
+  "query": "Which game was released first, Icehouse pieces or Kill Doctor Lucky?",
+  "ground_truth": "Icehouse pieces",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Kill Doctor Lucky was released first, as it was released in 1996 and followed by Five Finger Death Punch in 1998.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kill Doctor Lucky: Kill Doctor Lucky is a humorous board game designed by James Ernest and released in 1996 by Cheapass Games.  In 1998, \"Kill Doctor Lucky\" won the Origins Award for \"Best Abstract Board Game of 1997\".",
+      "Five Finger Death Punch: Five Finger Death Punch, often shortened to Death Punch and abbreviated as 5FDP or FFDP, is an American heavy metal band from Las Vegas, Nevada.  Formed in 2005, the band's name comes from the kung fu movie \"The Five Fingers of Death\", to which Quentin Tarantino later made reference in his movie \"Kill Bill\".  The band originally consisted of vocalist Ivan Moody, guitarist Zoltan Bathory, guitarist Caleb Andrew Bingham, bassist Matt Snell, and drummer Jeremy Spencer.  Bingham was replaced by guitarist Darrell Roberts in 2006, who was then replaced by Jason Hook in 2009.  Bassist Matt Snell departed from the band in 2010, and was replaced by Chris Kael in 2011.",
+      "Lucky Stars Go Places: Lucky Stars Go Places (), also known as \"The Luckiest Stars\", is a 1986 Hong Kong action comedy film directed by Eric Tsang.  It is the fourth film in the \"Lucky Stars\" series.  It was an attempt to combine the original Lucky Stars troupe with the similar action comedy ensemble from the \"Aces Go Places\" series."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 419,
+    "generation_tokens": 35,
+    "generation_speed": 259.25349807041323,
+    "prompt_eval_speed": 48754.94531068188,
+    "generation_latency_s": 0.9515839000232518,
+    "latency": 3.4359423998976126,
+    "total_prompt_tokens": 494,
+    "total_generation_tokens": 45,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.122389,
+    "stage_rewrite_s": 1.146725400001742,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1149018000578508,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22261619998607785,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9516178000485525,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4359507999615744,
+    "unaccounted_latency_s": 8.989986963570118e-05,
+    "rewritten_query": "Kill Doctor Lucky was released first.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q218",
+  "query": "From March 631 to April 631, Farrukhzad Khosrau V was the king of an empire that succeeded which empire?",
+  "ground_truth": "the Parthian Empire",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Farrukhzad Khosrau V was the king of the Sasanian Empire from March 631 to April 631.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Farrukhzad Khosrow V: Farrukhzad Khosrau V was briefly king of the Sasanian Empire from March 631 to April 631.  He was the son of Khosrau II.",
+      "Sasanian Empire: The Sasanian Empire ( or ), also known as the Sassanian, Sasanid, Sassanid or Neo-Persian Empire, known to its inhabitants as \u0112r\u0101nshahr in Middle Persian, was the last period of the Persian Empire (Iran) before the rise of Islam, named after the House of Sasan who ruled from 224 to 651 AD.  The Sasanian Empire, which succeeded the Parthian Empire, was recognised as one of the leading world powers alongside its neighbouring arch-rival the Roman-Byzantine Empire, for a period of more than 400 years.",
+      "Khosrow IV: Khosrow IV was a Sasanian usurper who ruled briefly in 631.  Little is known about his rule, he appears to have ruled during a time of upheaval and chaos across the Sasanian Empire the 7th century has the century where Iran has plunged into its \"dark ages\".  He was the son of Mah-Adhur Gushnasp, who was the minister of the Sasanian Empire during the reign of Ardashir III, and Kahar-dukht, the daughter of Yazdandar, who was the son of Khosrau I.  His rule seems to coincide with other pretenders such as Hormizd VI so it is likely that he ruled a district or province rather than the Empire in its entirety.  He was killed after a few days of reign."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 465,
+    "generation_tokens": 33,
+    "generation_speed": 238.25166595672485,
+    "prompt_eval_speed": 62290.6898861353,
+    "generation_latency_s": 0.25857389997690916,
+    "latency": 0.7267195000313222,
+    "total_prompt_tokens": 633,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23824040000000002,
+    "stage_route_s": 0.11015020008198917,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.30124760000035167,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05657969997264445,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.400010220706463e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2586121999192983,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7267308000009507,
+    "unaccounted_latency_s": 9.769992902874947e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The empire that Farrukhzad Khosrau V succeeded is the Sassanian Empire.",
+      "Query 2: The empire that Farrukhzad Khosrau V succeeded is the Sassanian Empire."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

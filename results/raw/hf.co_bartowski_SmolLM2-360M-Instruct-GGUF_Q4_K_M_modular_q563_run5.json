@@ -1,0 +1,49 @@
+{
+  "question_id": "Q563",
+  "query": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Bendict of Nursia who is a patron saint of what continent?",
+  "ground_truth": "Europe",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Gualdo Tadino Cathedral, a Roman Catholic cathedral, was dedicated to Saint Benedict of Nursia, a patron saint of Europe.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gualdo Tadino Cathedral: Gualdo Tadino Cathedral (Italian: \"Duomo di Gualdo Tadino; Basilica Cattedrale di San Benedetto\" ) is a Roman Catholic cathedral in Gualdo Tadino in Umbria, Italy, dedicated to Saint Benedict of Nursia.  Formerly a Benedictine abbey church, it became a cathedral in 1915, and is now a co-cathedral in the diocese of Assisi-Nocera Umbra-Gualdo Tadino.",
+      "Benedict of Nursia: Benedict of Nursia (Latin: \"Benedictus de Nursia\" ; Italian: \"Benedetto da Norcia\" ; Vulgar Latin: \"*Benedecto\"; Gothic: \"\ud800\udf31\ud800\udf34\ud800\udf3d\ud800\udf34\ud800\udf33\ud800\udf39\ud800\udf3a\ud800\udf44, Benedikt\" ; 2 March 480 \u2013 543 or 547 AD) is a Christian saint, who is venerated in the <a href=\"Eastern%20Orthodox%20Church\">Eastern Orthodox Church</a>es, the <a href=\"Catholic%20Church\">Catholic Church</a>, the <a href=\"Oriental%20Orthodoxy\">Oriental Orthodox Churchese <a href=\"Anglican%20Communion\">Anglican Communion</a> and <a href=\"Old%20Catholic%20Church\">Old Catholic Church</a>es.  He is a patron saint of Europe.",
+      "Roman Catholic Diocese of Gualdo Tadino: The Diocese of Gualdo Tadino (Latin: \"Dioecesis Tadinensis\") was a Roman Catholic diocese located in the town of Gualdo Tadino in the province of Perugia in northeastern Umbria, on the lower flanks of Mt. Penna, a mountain of the Apennines.  In 1915, it was united with the Diocese of Nocera Umbra to form the Diocese of Nocera Umbra-Gualdo Tadino.  Other sources indicate that it was suppressed to the Diocese of Nocera Umbra in 1066."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 583,
+    "generation_tokens": 29,
+    "generation_speed": 221.80241229244265,
+    "prompt_eval_speed": 72539.50479034465,
+    "generation_latency_s": 0.254271800047718,
+    "latency": 0.6273609000490978,
+    "total_prompt_tokens": 745,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23527330000000002,
+    "stage_route_s": 0.09722879994660616,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21441870008129627,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06126390001736581,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.389994475990534e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2543076000874862,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6273696999996901,
+    "unaccounted_latency_s": 9.749992750585079e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Cathedral of Gualdo Tadino\"",
+      "\"Saint Bendict of Nursia, patron saint of Europe\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

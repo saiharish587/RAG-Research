@@ -1,0 +1,42 @@
+{
+  "question_id": "Q129",
+  "query": "Where is the Bubblegum Alley, that is similar to Gum Wall, located in California?",
+  "ground_truth": "San Luis Obispo, California",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Bubblegum Alley, which is similar to Gum Wall, is located in San Luis Obispo, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bubblegum Alley: Bubblegum Alley is a tourist attraction in downtown San Luis Obispo, California, known for its accumulation of used bubble gum on the walls of an alley.  It is a 15 ft high and 70 ft long alley lined with chewed gum left by passers-by.  It covers a stretch of 20 meters in the 700 block of Higuera Street in downtown San Luis Obispo.",
+      "Gum Wall: The Market Theater Gum Wall is a brick wall covered in used chewing gum, in an alleyway in downtown Seattle.  It is located in Post Alley under Pike Place Market.  Similar to Bubblegum Alley in San Luis Obispo, California, the Market Theater Gum Wall is a local landmark.  Parts of the wall can be covered several inches thick, 15 feet high for 50 feet.",
+      "Hollywood Star Lanes: Hollywood Star Lanes was a 32-lane bowling alley located on Santa Monica Boulevard in Los Angeles, California.  Open from 1960 to 2002, the alley was featured in the movies \"The Big Lebowski\" and \"The Big Empty\", which was filmed on location over three weeks of the eleven-week filming schedule.  In 2002, the alley was closed after the Los Angeles Unified School District seized the land by eminent domain, with the goal of building an elementary school at the site."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 27,
+    "generation_speed": 402.1986861509586,
+    "prompt_eval_speed": 52526.329822690306,
+    "generation_latency_s": 0.1500689999666065,
+    "latency": 0.5347731000510976,
+    "total_prompt_tokens": 475,
+    "total_generation_tokens": 58,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1330832,
+    "stage_rewrite_s": 0.16976009996142238,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07429139991290867,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1405312999850139,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.15010359999723732,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.534791799960658,
+    "unaccounted_latency_s": 0.00010600010864436626,
+    "rewritten_query": "The Bubblegum Alley is located in California, which is a popular tourist destination and a favorite spot for many people who love gum holes.",
+    "query_was_rewritten": true
+  }
+}

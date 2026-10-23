@@ -1,0 +1,42 @@
+{
+  "question_id": "Q217",
+  "query": "Ernest Foot was the best friend of the fighter pilot who had how many victories?",
+  "ground_truth": "44",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Ernest Foot was the best friend of Albert Ball. He had five aerial victories.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ernest Foot: Major Ernest Leslie Foot {'1': \", '2': \", '3': \", '4': \"} (19 May 1895 \u2013 23 June 1923) was an English World War I flying ace credited with five aerial victories.  He was the best friend of Albert Ball.",
+      "Albert Ball: Albert Ball, VC, DSO & Two Bars, MC (14 August 1896 \u2013 7 May 1917) was an English fighter pilot during the First World War.  At the time of his death he was the United Kingdom's leading flying ace, with 44 victories, and remained its fourth-highest scorer behind Edward Mannock, James McCudden, and George McElroy.",
+      "Gervais Raoul Lufbery: Gervais Raoul Victor Lufbery (March 14, 1885 \u2013 May 19, 1918) was a French and American fighter pilot and flying ace in World War I. Because he served in both the French Air Force, and later the United States Army Air Service in World War I, he is sometimes listed alternately as a French ace or as an American ace.  Officially, all but one of his 17 combat victories came while flying in French units."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 354,
+    "generation_tokens": 18,
+    "generation_speed": 266.91183012544855,
+    "prompt_eval_speed": 50477.684300584624,
+    "generation_latency_s": 0.9825718000065535,
+    "latency": 3.3425046000629663,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1252447,
+    "stage_rewrite_s": 1.2026649999897927,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0310220000101253,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12611629988532513,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9826139999786392,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.342515900032595,
+    "unaccounted_latency_s": 9.920017328113317e-05,
+    "rewritten_query": "The user's original query is \"Ernest Foot was the best friend of the fighter pilot who had how many victories?",
+    "query_was_rewritten": true
+  }
+}

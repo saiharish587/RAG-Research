@@ -1,0 +1,48 @@
+{
+  "question_id": "Q492",
+  "query": "Which jazz singer has a 2003 album entitled The Boy Next Door? ",
+  "ground_truth": "Stacey Kent",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The answer is Stacey Kent's 2003 album \"The Boy Next Door\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Boy Next Door (album): The Boy Next Door is a 2003 album by jazz singer Stacey Kent.  The songs were chosen to reflect male singers that Kent admires.",
+      "Not the Boy Next Door: Not the Boy Next Door is a studio album released in 1983 by Australian singer and songwriter Peter Allen.  This was his first release under Arista Records.",
+      "'Tis Autumn: American jazz singer Stacey Kent covered it for her 2003 album \"The Boy Next Door\".  It has also been covered by Stan Getz, Bruce Eskovitz, Carmen McRae, Lee Konitz, Spike Robinson, Eddie Higgins and Bennie Wallace."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 228,
+    "generation_tokens": 21,
+    "generation_speed": 255.72955990160503,
+    "prompt_eval_speed": 52269.60110041265,
+    "generation_latency_s": 0.19481989997439086,
+    "latency": 0.4513984000077471,
+    "total_prompt_tokens": 364,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2293954,
+    "stage_route_s": 0.09824490000028163,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.12124440004117787,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03691430005710572,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0600036047399044e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.194858800037764,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4514101999811828,
+    "unaccounted_latency_s": 9.789981413632631e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Boy Next Door\" by Miles Davis"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

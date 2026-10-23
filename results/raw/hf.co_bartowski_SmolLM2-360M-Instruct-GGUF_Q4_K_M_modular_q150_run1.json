@@ -1,0 +1,49 @@
+{
+  "question_id": "Q150",
+  "query": "Which song was behind the third single on the album  \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts?",
+  "ground_truth": "\"We'll Burn That Bridge\"",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "\"Country Boy\" is the song that was behind the third single on the album \"A Lot About Livin' (And a Little 'bout Love)\" for two weeks on the country charts.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Country Boy (Ricky Skaggs song): \"Country Boy\" is a song written by Tony Colton, Albert Lee, and Ray Smith of the British band Heads Hands & Feet, and recorded by American country music artist Ricky Skaggs.  It was released in February 1985 as the second single and title track from the album \"Country Boy\".  The song was Ricky Skaggs' ninth number-one country hit.  The single went to number one for one week and spent a total of thirteen weeks on the country chart.",
+      "The Wiggles discography: Australian children's musical group The Wiggles have released forty-eight studio albums, three live albums, eight compilation albums, one audiobook, four karaoke albums, one extended play and two singles. Thirteen of the group's albums have been certified by the Australian Recording Industry Association (ARIA) as gold, platinum and double platinum.  Two of their albums have reached the top 20 on the ARIA Albums Chart.",
+      "country chart with its second single \"Don't Worry 'bout Me Baby\" (1982).  This would start a series of number-one country singles during this period. \" It Ain't Easy\" (1982), her seventh studio record, reached number fifteen on the Top Country Albums list and spawned three number-one hits: \"It Ain't Easy Bein' Easy\", \"He's a Heartache (Looking for a Place to Happen)\", and \"Tell Me a Lie\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 419,
+    "generation_tokens": 41,
+    "generation_speed": 235.7609039418073,
+    "prompt_eval_speed": 14295.462299556466,
+    "generation_latency_s": 0.31105969997588545,
+    "latency": 0.9160471999784932,
+    "total_prompt_tokens": 589,
+    "total_generation_tokens": 127,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24011480000000002,
+    "stage_route_s": 0.10813120007514954,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4434513000305742,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.053211100050248206,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.580003537237644e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3110990000423044,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9160592999542132,
+    "unaccounted_latency_s": 0.00010169972665607929,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Dirt\" by The Wiggles - Released in 2007, this song was released as a single and peaked at number 3 on the country chart for two weeks.",
+      "\"I'm Gonna Be There\" by The Wiggles - This song was also released as a single and peaked at number 15 on the country chart for two weeks."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

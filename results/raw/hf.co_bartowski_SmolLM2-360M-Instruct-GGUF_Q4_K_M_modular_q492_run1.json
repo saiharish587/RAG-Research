@@ -1,0 +1,49 @@
+{
+  "question_id": "Q492",
+  "query": "Which jazz singer has a 2003 album entitled The Boy Next Door? ",
+  "ground_truth": "Stacey Kent",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Boy Next Door is a 2003 album by jazz singer Stacey Kent.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Boy Next Door (album): The Boy Next Door is a 2003 album by jazz singer Stacey Kent.  The songs were chosen to reflect male singers that Kent admires.",
+      "'Tis Autumn: American jazz singer Stacey Kent covered it for her 2003 album \"The Boy Next Door\".  It has also been covered by Stan Getz, Bruce Eskovitz, Carmen McRae, Lee Konitz, Spike Robinson, Eddie Higgins and Bennie Wallace.",
+      "Here, My Dear: Here, My Dear is the fifteenth studio album by music artist Marvin Gaye, released December 15, 1978, on Motown-subsidiary label Tamla Records.  Recording sessions for the album took place between 1977 and 1978 at Gaye's personal studios, Marvin Gaye Studios in Los Angeles, California.  The album was notable for its subject matter's being dedicated to the fallout of Gaye's marriage to his first wife, Anna Gordy Gaye.  Initially a commercial and critical failure upon its release, it was later hailed by music critics as one of Gaye's best produced albums in the years following Gaye's death.  \"It's taken me a while,\" Anna Gordy admitted in later years, \"but I've come to appreciate every form of Marvin's music.\""
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 372,
+    "generation_tokens": 21,
+    "generation_speed": 235.23086228913232,
+    "prompt_eval_speed": 13962.391622565026,
+    "generation_latency_s": 0.22433929995168,
+    "latency": 0.7711932000238448,
+    "total_prompt_tokens": 508,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2244503,
+    "stage_route_s": 0.10746089997701347,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.38315959996543825,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0560579999582842,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2699935622513294e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2243819999275729,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7712059000041336,
+    "unaccounted_latency_s": 9.350024629384279e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Boy Next Door\" is released in 2003 by the jazz singer, Marvin Gaye.",
+      "\"Marvin Gaye's 2003 album, 'The Boy Next Door,' was a significant release for him.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

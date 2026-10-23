@@ -1,0 +1,48 @@
+{
+  "question_id": "Q181",
+  "query": "What podcast was the cheif executive officer of Nerdist Industries a guest on?",
+  "ground_truth": "Comedy Film Nerds",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Nerdist Podcast, which was founded by Chris Hardwick and later expanded to include a network of podcasts, a premium content YouTube channel, and a news division, is a podcast created by Nerdist Industries. It features interviews with prominent pop culture figures, such as Chris Hardwick, Jessica Chobot, and Chris Hardwick himself.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Nerdist Industries: Nerdist Industries, LLC is part of the digital division of Legendary Entertainment.  Nerdist Industries was founded as a sole podcast (The Nerdist Podcast) created by Chris Hardwick but later spread to include a network of podcasts, a premium content YouTube channel, a news division (Nerdist News), and a television version of the original podcast produced by and aired on BBC America.",
+      "Nerdist News: Nerdist News is a Nerdist-branded pop culture newsletter launched in February 2012.  It was founded and operated by Nerdist Industries' CEO, Peter Levin, and its CCO, Chris Hardwick.  It is hosted by Jessica Chobot.",
+      "Chris Hardwick: Christopher Ryan Hardwick (born November 23, 1971) is an American stand-up comedian, actor, voice actor, television host, writer, producer, podcaster, and musician.  He is the chief executive officer of Nerdist Industries, the digital division of Legendary Entertainment.  He currently hosts \"Talking Dead\", an hourly aftershow on AMC, affiliated with the network's zombie drama series \"The Walking Dead\" and \"Fear the Walking Dead\" as well as \"Talking with Chris Hardwick\", a show in which Hardwick interviews prominent pop culture figures; and \"The Wall\", a plinko-inspired gameshow on NBC.  He was also the host of \"@midnight with Chris Hardwick\", a nightly comedy-game show series on Comedy Central until it ended its run on August 4th 2017."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 409,
+    "generation_tokens": 69,
+    "generation_speed": 324.82052489113806,
+    "prompt_eval_speed": 53227.4856845393,
+    "generation_latency_s": 0.3321695999475196,
+    "latency": 0.7409854000434279,
+    "total_prompt_tokens": 541,
+    "total_generation_tokens": 141,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22574499999999997,
+    "stage_route_s": 0.18236860004253685,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1893996000289917,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.036895800032652915,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.100007936358452e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.33220209996216,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7409952000016347,
+    "unaccounted_latency_s": 8.899986278265715e-05,
+    "route": "rag",
+    "router_raw": "The CEO of Nerdist Industries, who is also the chief executive officer (CEO) of Nerdist Industries, was a guest on the podcast \"NerDistronics.\"",
+    "sub_queries": [
+      "The CEO of Nerdist Industries, who is also known as the \"chef\" of Nerdist Industries, was the host of the popular podcast \"NerDistrict.\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

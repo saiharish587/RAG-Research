@@ -1,0 +1,49 @@
+{
+  "question_id": "Q132",
+  "query": "Which board game was published most recently, Pirate's Cove or Catan?",
+  "ground_truth": "Pirate's Cove",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Pirate's Cove was published more recently than Catan.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Catan: The Settlers of Catan, sometimes shortened to Catan or Settlers, is a multiplayer board game designed by Klaus Teuber and first published in 1995 in Germany by Franckh-Kosmos Verlag (Kosmos) as Die Siedler von Catan.  Players assume the roles of settlers, each attempting to build and develop holdings while trading and acquiring resources.  Players are awarded points as their settlements grow; the first to reach a set number of points, typically 10, is the winner.  The game and its many expansions are also published by Mayfair Games, Filosofia, Capcom, 999 Games, \u039a\u03ac\u03b9\u03c3\u03c3\u03b1, and Devir.",
+      "Pirate's Cove: Pirate's Cove (in German, Piratenbucht) is a board game designed by Paul Randles and Daniel Stahl, originally published in Germany in 2002 by Amigo Spiele, illustrated by Markus Wagner and Swen Papenbrock.  In 2003, Days of Wonder republished the game with a new graphic design from Julien Delval and Cyrille Daujean.  In the game, players play pirate ship captains seeking treasure from islands and bragging rights from defeating other pirates in naval combat.",
+      "Catan: Seafarers: Catan: Seafarers, or Seafarers of Catan in older editions, (German: \"Die Seefahrer von Catan\" ) is an expansion of the board game \"The Settlers of Catan\" for three to four players (five-to-six-player play is also possible with both of the respective five-to-six-player extensions).  The main feature of this expansion is the addition of ships, gold rivers, and the pirate to the game, allowing play between multiple islands.  The expansion also provides numerous scenarios, some of which have custom rules.  The \"Seafarers\" rules and scenarios are also, for the most part, compatible with \"\" and \"\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 507,
+    "generation_tokens": 14,
+    "generation_speed": 207.5088561815406,
+    "prompt_eval_speed": 56452.51085625209,
+    "generation_latency_s": 0.1881346000591293,
+    "latency": 0.5110029999632388,
+    "total_prompt_tokens": 639,
+    "total_generation_tokens": 32,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2407412,
+    "stage_route_s": 0.10817050002515316,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1526823000749573,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0618344999384135,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0699920393526554e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18817420001141727,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5110140999313444,
+    "unaccounted_latency_s": 0.00010259996633976698,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Pirate's Cove",
+      "Query 2: Catan"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

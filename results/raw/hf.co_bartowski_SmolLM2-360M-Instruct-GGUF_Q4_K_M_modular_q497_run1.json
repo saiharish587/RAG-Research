@@ -1,0 +1,49 @@
+{
+  "question_id": "Q497",
+  "query": "Anthony Avent played basketball fo a High School that is located in a city approcimately 8 mi west of where?",
+  "ground_truth": "lower Manhattan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "A locative adverb would be used to describe the location of Anthony Avent's high school, which is approximately 8 miles west of Lawrence.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Anthony Avent: Anthony Avent (born October 18, 1969) is a retired American professional basketball player who was selected by the Atlanta Hawks in the first round (15th pick overall) of the 1991 NBA Draft.  Born in Rocky Mount, North Carolina, Avent played for the Milwaukee Bucks, Orlando Magic, Vancouver Grizzlies, Utah Jazz and Los Angeles Clippers in six NBA seasons.  He played collegiately at Seton Hall University where he played in the 1989 NCAA championship game.  Prior to Seton Hall, Avent played at Malcolm X Shabazz High School in Newark, New Jersey.",
+      "Locative adverb: A locative adverb is a type of adverb that refers to a location or to a combination of a location and a relation to that location.  Generally, a locative adverb is semantically equivalent to a prepositional phrase involving a locative or directional preposition.  In English, for example, \"homeward\" is a locative adverb, specifying a location \"home\" and a relation \"toward\" (in this case a direction), and is equivalent to the phrase \"toward home\".  The relation need not be a direction, as it can be any relation that can be specified by a locational preposition such as \"to\", \"from\", \"in\", \"at\", \"near\", \"toward\", or \"away from\".  For example, the word \"home\" is itself a locative adverb in a sentence like \"I took him home today\" or \"I found him home today\"; in the former case, it is equivalent to the phrase \"to home\", and in the latter to the phrase \"at home\".",
+      "University of Kansas: The University of Kansas, often referred to as KU or Kansas, is a public research university in the U.S. state of Kansas.  The main campus in Lawrence, one of the largest college towns in Kansas, is on Mount Oread, the highest elevation in Lawrence.  Two branch campuses are in the Kansas City metropolitan area: the Edwards Campus in Overland Park, and the university's medical school and hospital in Kansas City.  There are also educational and research sites in Parsons, Topeka, Garden City, Hays, and Leavenworth, and branches of the medical school in Wichita and Salina.  The university is one of the 62 members of the Association of American Universities."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 598,
+    "generation_tokens": 30,
+    "generation_speed": 231.10878290411296,
+    "prompt_eval_speed": 13178.772919605077,
+    "generation_latency_s": 0.2876094001112506,
+    "latency": 0.6776981999864802,
+    "total_prompt_tokens": 748,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2248295,
+    "stage_route_s": 0.10732539999298751,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2284557999810204,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05407760001253337,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 8.690007962286472e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28764679993037134,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6777080999454483,
+    "unaccounted_latency_s": 0.00011639995500445366,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Anthony Avent, High School, City, Distance from location\"",
+      "\"High School, City, Distance to location\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

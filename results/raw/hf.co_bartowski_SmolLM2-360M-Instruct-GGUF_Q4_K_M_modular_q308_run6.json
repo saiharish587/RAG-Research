@@ -1,0 +1,49 @@
+{
+  "question_id": "Q308",
+  "query": "What prolific English engineer, who died on 15 December 1857, contributed to the advent of the hot air engine by way of their open cycle devices?",
+  "ground_truth": "George Cayley",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Herbert Akroyd Stuart contributed to the advent of the hot air engine by way of their open-cycle devices.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ada Lovelace: Augusta Ada King-Noel, Countess of Lovelace (\"n\u00e9e\" Byron; 10 December 1815 \u2013 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.  She was the first to recognise that the machine had applications beyond pure calculation, and created the first algorithm intended to be carried out by such a machine.  As a result, she is often regarded as the first to recognise the full potential of a \"computing machine\" and the first computer programmer.",
+      "John Ramsbottom (engineer): John Ramsbottom (11 September 1814 \u2013 20 May 1897) was an English mechanical engineer.  Born in Todmorden, then on the county border of Yorkshire and Lancashire.  Ramsbottom was the son of a steam cotton mill owner.  He learned about steam engines, rebuilding his father's and also invented the weft fork (this has also been attributed to James Bullough) that enabled looms to be run at high speed.  He also created many inventions for railways.",
+      "Herbert Akroyd Stuart: Herbert Akroyd-Stuart (28 January 1864, Halifax, Yorkshire, England \u2013 19 February 1927, Halifax) was an English inventor who is noted for his invention of the hot bulb engine, or heavy oil engine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 407,
+    "generation_tokens": 25,
+    "generation_speed": 260.67190790982835,
+    "prompt_eval_speed": 50402.48302197932,
+    "generation_latency_s": 0.21645429998170584,
+    "latency": 0.7518740000668913,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2388568,
+    "stage_route_s": 0.10926290007773787,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3714333000825718,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05452909995801747,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.310001481324434e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2164858999894932,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7518833000212908,
+    "unaccounted_latency_s": 0.00010959990322589874,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"John Roebling\" - A British inventor and engineer who designed a series of innovative electric railway systems in the United States.",
+      "\"Charles Babbage\" - An English mathematician, astronomer, and logician who developed the Difference Engine and Analytical Engine, two groundbreaking mechanical calculators that were never built during his lifetime but had significant impacts on modern computing."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

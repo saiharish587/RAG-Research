@@ -1,0 +1,49 @@
+{
+  "question_id": "Q269",
+  "query": "What is the population according to the 2007 population census of the city in which the National Archives and Library of Ethiopia is located?",
+  "ground_truth": "3,384,569",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "According to the 2007 population census, the population of Addis Ababa was approximately 3,384,569.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "National Archives and Library of Ethiopia: The National Archives and Library of Ethiopia, located in Addis Ababa, is the national library and archives of the country.  The library was inaugurated in 1944 by Emperor Haile Selassie and began service with books donated by the emperor.",
+      "Addis Ababa: Addis Ababa (Amharic: \u12a0\u12f2\u1235 \u12a0\u1260\u1263 \"Addis Ab\u00e4ba \" ] , \"new flower\"; Oromo: \"Finfinne\" , ] \"Natural Spring(s)\") or Addis Abeba (the spelling used by the official Ethiopian Mapping Authority), is the capital and largest city of Ethiopia.  It has a population of 3,384,569 according to the 2007 population census, with annual growth rate of 3.8%.  This number has been increased from the originally published 2,738,248 figure and appears to be still largely underestimated.",
+      "National Archives of Bangladesh: The National Archives of Bangladesh (NAB) are based in Dhaka and contain 225,000 volumes of documents in addition to books, microfilm rolls and newspaper clippings.  The archives were founded in 1973 by the government of Bangladesh and are administered by the Directorate of National Archives and Libraries.  Located in a rented building near the campus of Dhaka University until 1985, the collections are now housed in a purpose-built part of the National Library of Bangladesh complex in Sher-e-Bangla Nagar."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 424,
+    "generation_tokens": 32,
+    "generation_speed": 217.223074521091,
+    "prompt_eval_speed": 53461.10200479132,
+    "generation_latency_s": 0.26914540003053844,
+    "latency": 0.6549424999393523,
+    "total_prompt_tokens": 582,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2298349,
+    "stage_route_s": 0.103691800031811,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2264251000015065,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05550659995060414,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.249993409961462e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2691788000520319,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6549526000162587,
+    "unaccounted_latency_s": 9.840005077421665e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Population of the National Archives and Library of Ethiopia\"",
+      "\"National Archives and Library of Ethiopia Population Census 2007\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

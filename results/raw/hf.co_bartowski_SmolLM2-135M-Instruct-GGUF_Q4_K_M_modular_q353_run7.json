@@ -1,0 +1,49 @@
+{
+  "question_id": "Q353",
+  "query": "Are both Rutgers University and Carnegie Mellon University located in America?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "No, the two universities are located in Europe.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Carnegie Mellon University: Carnegie Mellon University (Carnegie Mellon or CMU or ) is a private research university in Pittsburgh, Pennsylvania.",
+      "Rutgers University: Rutgers, The State University of New Jersey ( ), commonly referred to as Rutgers University, Rutgers, or RU, is an American public research university and the largest institution for higher education in New Jersey.",
+      "Rutgers University\u2013Newark: Rutgers\u2013Newark is one of three regional campuses of Rutgers University, the public research university of the U.S. state of New Jersey, located in the city of Newark.  Rutgers, founded in 1766 in New Brunswick, is the eighth oldest college in the United States and a member of the Association of American Universities.  In 1945, the state legislature voted to make Rutgers University, then a private liberal arts college, into the state university and the following year merged the school with the former University of Newark (1936\u20131946), which became the Rutgers\u2013Newark campus.  Rutgers also incorporated the College of South Jersey and South Jersey Law School, in Camden, as a constituent campus of the university and renamed it Rutgers\u2013Camden in 1950."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 324,
+    "generation_tokens": 11,
+    "generation_speed": 413.68935690109066,
+    "prompt_eval_speed": 43736.50107991361,
+    "generation_latency_s": 0.14227309997659177,
+    "latency": 0.5431209000525996,
+    "total_prompt_tokens": 448,
+    "total_generation_tokens": 65,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2456531,
+    "stage_route_s": 0.10259160003624856,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2384141000220552,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0596541000995785,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.170004442334175e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14231399993877858,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5431316000176594,
+    "unaccounted_latency_s": 0.00010709988418966532,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Rutgers University is located in New Jersey, USA.",
+      "Carnegie Mellon University is located in Pittsburgh, Pennsylvania, USA."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q170",
+  "query": "This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by which empire?",
+  "ground_truth": "Roman",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The answer is Constantine II of Scotland, as he was born in AD 43 and reigned for approximately 20 years before the Roman conquest of Britain.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Roman conquest of Britain: The Roman conquest of Britain was a gradual process, beginning effectively in AD 43 under Emperor Claudius, whose general Aulus Plautius served as first governor of Roman Britain (Latin: \"Britannia\" ).  Great Britain had already frequently been the target of invasions, planned and actual, by forces of the Roman Republic and Roman Empire.  In common with other regions on the edge of the empire, Britain had enjoyed diplomatic and trading links with the Romans in the century since Julius Caesar's expeditions in 55 and 54 BC, and Roman economic and cultural influence was a significant part of the British late pre-Roman Iron Age, especially in the south.",
+      "Constantine II of Scotland: Constantine, son of \u00c1ed (Medieval Gaelic: \"Constant\u00edn mac \u00c1eda\"; Modern Gaelic: \"C\u00f2iseam mac Aoidh\", known in most modern regnal lists as Constantine II; died 952) was an early King of Scotland, known then by the Gaelic name \"Alba\".  The Kingdom of Alba, a name which first appears in Constantine's lifetime, was in northern Great Britain.  The core of the kingdom was formed by the lands around the River Tay.  Its southern limit was the River Forth, northwards it extended towards the Moray Firth and perhaps to Caithness, while its western limits are uncertain.  Constantine's grandfather Kenneth I of Scotland (Cin\u00e1ed mac Ailp\u00edn, died 858) was the first of the family recorded as a king, but as king of the Picts.  This change of title, from king of the Picts to king of Alba, is part of a broader transformation of Pictland and the origins of the Kingdom of Alba are traced to Constantine's lifetime.",
+      "George I of Great Britain: George I (George Louis; German: \"Georg Ludwig\" ; 28 May 1660 \u2013 11 June 1727) was King of Great Britain and Ireland from 1 August 1714 until his death, and ruler of the Duchy and Electorate of Brunswick-L\u00fcneburg (Hanover) in the Holy Roman Empire from 1698."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 33,
+    "generation_speed": 308.0455907474306,
+    "prompt_eval_speed": 31958.641757725298,
+    "generation_latency_s": 0.23946039995644242,
+    "latency": 0.5817609999794513,
+    "total_prompt_tokens": 686,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2223329,
+    "stage_route_s": 0.15400139999110252,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15007740003056824,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03806829999666661,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.069996066391468e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2394940999802202,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5817704999353737,
+    "unaccounted_latency_s": 8.919998072087765e-05,
+    "route": "rag",
+    "router_raw": "This Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by the Roman Empire.",
+    "sub_queries": [
+      "This Celtic ruler who was born in AD 43 ruled southeastern Britain before conquest by the Roman Empire."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

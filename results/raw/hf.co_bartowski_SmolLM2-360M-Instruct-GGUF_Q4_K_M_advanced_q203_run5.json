@@ -1,0 +1,42 @@
+{
+  "question_id": "Q203",
+  "query": "Who designed the hotel that held the IFBB professional bodybuilding competition in September 1991?",
+  "ground_truth": "architect Michael Graves",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The hotel that held the IFBB professional bodybuilding competition in September 1991 is the Walt Disney World Dolphin Hotel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1991 Mr. Olympia: The 1991 Mr. Olympia contest was an IFBB professional bodybuilding competition held in September 1991 at the Walt Disney World Dolphin Hotel in Orlando, Florida.",
+      "1981 Ms. Olympia: The 1981 Ms. Olympia contest was an IFBB professional bodybuilding competition was held on August 22, 1981, at the Sheraton Hotel in Philadelphia, Pennsylvania.  It was the 2nd Ms. Olympia competition held.",
+      "1980 Ms. Olympia: The 1980 Ms. Olympia contest was an IFBB professional bodybuilding competition was held in August 30, 1980, at the Sheraton Hotel in Philadelphia, Pennsylvania.  It was the 1st Ms. Olympia competition held."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 260,
+    "generation_tokens": 28,
+    "generation_speed": 259.19206131743624,
+    "prompt_eval_speed": 34296.266983247595,
+    "generation_latency_s": 1.015451499959454,
+    "latency": 3.4076006000395864,
+    "total_prompt_tokens": 341,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.132304,
+    "stage_rewrite_s": 1.1918016000417992,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.071915699983947,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12831369997002184,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0154902000213042,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4076102999970317,
+    "unaccounted_latency_s": 8.969998452812433e-05,
+    "rewritten_query": "The IFBB Professional Bodybuilding Competition Hotel was designed by a renowned architect named John Smith.",
+    "query_was_rewritten": true
+  }
+}

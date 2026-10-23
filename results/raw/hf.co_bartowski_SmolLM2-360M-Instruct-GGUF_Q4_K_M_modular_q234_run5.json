@@ -1,0 +1,49 @@
+{
+  "question_id": "Q234",
+  "query": "Which case came first, Craig v. Boren or United States v. Paramount Pictures, Inc.?",
+  "ground_truth": "Craig v. Boren",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Craig v. Boren came first.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "United States v. Paramount Pictures, Inc.: United States v. Paramount Pictures, Inc., 334 US 131 (1948) (also known as the Hollywood Antitrust Case of 1948, the Paramount Case, the Paramount Decision or the Paramount Decree) was a landmark United States Supreme Court antitrust case that decided the fate of movie studios owning their own theatres and holding exclusivity rights on which theatres would show their films.  It would also change the way Hollywood movies were produced, distributed, and exhibited.  The Court held in this case that the existing distribution scheme was in violation of the antitrust laws of the United States, which prohibit certain exclusive dealing arrangements.",
+      "Craig v. Boren: Craig v. Boren, 429 U.S. 190 (1976) , was the first case in which a majority of the United States Supreme Court determined that statutory or administrative sex classifications were subject to intermediate scrutiny under the Fourteenth Amendment's Equal Protection Clause.",
+      "Ethyl Gasoline Corp. v. United States: Ethyl Gasoline Corp. v. United States, 309 U.S. 436 (1940), was a decision of the United States Supreme Court that limited the doctrine of the Court's 1938 decision in \"General Talking Pictures Corp. v. Western Electric Co.\" Beginning with the 1926 decision in \"United States v. General Electric Co.\", the Supreme Court made a sharp distinction between (i) post-sale restraints that a patentee imposed on purchasers of a patented product and (ii) restrictions (limitations) that a patentee imposed on a licensee to manufacture a patented product: the former being illegal and unenforceable under the exhaustion doctrine while the latter were generally permissible under a lenient \"rule of reason.\"  Thus, under the \"General Talking Pictures\" doctrine, a patent holder may permissibly license others to \"manufacture\" and then sell patented products in only a specified field (market), such as only a particular type of product made under the patent or only a particular category of customer for the patented product.  The \"Ethyl\" decision held, however, that a patent licensing and distribution program based on both the sale of a patented product and licenses to manufacture a related product was subject to ordinary testing under the antitrust laws, and accordingly was illegal when its effect was to \"regiment\" an entire industry."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 597,
+    "generation_tokens": 10,
+    "generation_speed": 219.05325184552365,
+    "prompt_eval_speed": 70852.12437692856,
+    "generation_latency_s": 0.17042059998493642,
+    "latency": 0.5595163999823853,
+    "total_prompt_tokens": 739,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.238654,
+    "stage_route_s": 0.10870830004569143,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2190030999481678,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06120630004443228,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5999960750341415e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17045870004221797,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5595287999603897,
+    "unaccounted_latency_s": 9.719992522150278e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"United States v. Paramount Pictures, Inc.\"",
+      "Query 2: \"Craig v. Boren\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q254",
+  "query": "Which director had the longest career, Alain Resnais or Scott Sidney?",
+  "ground_truth": "Scott Sidney",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Alain Resnais had the longest career, with over 50 films to his credit.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Alain Resnais: Alain Resnais (] ; 3 June 19221 March 2014) was a French film director and screenwriter whose career extended over more than six decades.  After training as a film editor in the mid-1940s, he went on to direct a number of short films which included \"Night and Fog\" (1955), an influential documentary about the Nazi concentration camps.",
+      "Sidney Lumet: Sidney Arthur Lumet ( ; June 25, 1924 \u2013 April 9, 2011) was an American director, producer and screenwriter with over 50 films to his credit.  He was nominated for the Academy Award for Best Director for \"12 Angry Men\" (1957), \"Dog Day Afternoon\" (1975), \"Network\" (1976), and \"The Verdict\" (1982).  He did not win an individual Academy Award, but he did receive an Academy Honorary Award and 14 of his films were nominated for various Oscars, such as \"Network\", which was nominated for ten, winning four.",
+      "Scott Sidney: Scott Sidney (1872 \u2013 20 July 1928), born Harry Wilbur Siggins, was an American film director.  He directed 117 films between 1913 and 1927."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 387,
+    "generation_tokens": 21,
+    "generation_speed": 252.73191161604007,
+    "prompt_eval_speed": 20538.130870880435,
+    "generation_latency_s": 0.9910203000763431,
+    "latency": 3.3892454999731854,
+    "total_prompt_tokens": 463,
+    "total_generation_tokens": 51,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1251547,
+    "stage_rewrite_s": 1.2466862999135628,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0007308999774978,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15069340006448328,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9910528999753296,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3892533000325784,
+    "unaccounted_latency_s": 9.030010551214218e-05,
+    "rewritten_query": "Alain Resnais' 12-year career spanned over 50 films, while Scott Sidney's was 38 years.",
+    "query_was_rewritten": true
+  }
+}

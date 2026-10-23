@@ -1,0 +1,42 @@
+{
+  "question_id": "Q258",
+  "query": " The name \"Mountbatten-Windsor\" applies to male-line descendants of the Queen without royal styles and titles which is a Eurpean dynasty resulting in what family?",
+  "ground_truth": "Mountbatten family",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The name \"Mountbatten-Windsor\" applies to male-line descendants of the Queen without royal styles and titles, which is a European dynasty.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mountbatten-Windsor: Mountbatten-Windsor is the personal surname used by the male-line descendants of Queen Elizabeth II and Prince Philip, Duke of Edinburgh.  Under a declaration made in Privy Council in 1960, the name \"Mountbatten-Windsor\" applies to male-line descendants of the Queen without royal styles and titles.  Individuals with royal styles do not usually use a surname, but some descendants of the Queen with royal styles have used \"Mountbatten-Windsor\" when a surname was required.",
+      "List of members of the House of Windsor: The House of Windsor, the royal house of the Commonwealth realms, includes the male-line descendants of Queen Victoria who are subjects of the Crown (1917 Order-in-Council) and the male-line descendants of Elizabeth II (1952 Order-in-Council).  According to these two Orders-in-Council, male-line female descendants lose the name Windsor upon marriage.",
+      "Royal dukedoms in the United Kingdom: In the British peerage, a royal duke is a duke who is a member of the British Royal Family, entitled to the style of \"His Royal Highness\".  Royal dukedoms are the highest titles in the British roll of peerage.  They are titles created for legitimate sons and male line grandsons of the British monarch, usually upon reaching their majority or marriage.  The titles can be inherited but cease to be \"royal\" once they pass beyond the grandsons of a monarch.  As with any peerage, once the title becomes extinct, it may subsequently be recreated by the reigning monarch at any time."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 447,
+    "generation_tokens": 32,
+    "generation_speed": 254.75273063083145,
+    "prompt_eval_speed": 15131.512135675839,
+    "generation_latency_s": 1.0524090999970213,
+    "latency": 3.4479667999548838,
+    "total_prompt_tokens": 544,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1408239,
+    "stage_rewrite_s": 1.2271261001005769,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0238601999590173,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14443830004893243,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0524495000718161,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.447977799922228,
+    "unaccounted_latency_s": 0.00010419974569231272,
+    "rewritten_query": "The name Mountbatten-Windsor refers to male-line descendants of the Queen, who are not entitled to royal titles or styles.",
+    "query_was_rewritten": true
+  }
+}

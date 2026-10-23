@@ -1,0 +1,42 @@
+{
+  "question_id": "Q18",
+  "query": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, Giuseppe Verdi and Ambroise Thomas are not both Opera composers.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Giuseppe Verdi: Giuseppe Fortunino Francesco Verdi (] ; 9 or 10 October 1813 \u2013 27 January 1901) was an Italian opera composer.",
+      "Ambroise Thomas: Charles Louis Ambroise Thomas (5 August 1811 \u2013 12 February 1896) was a French composer, best known for his operas \"Mignon\" (1866) and \"Hamlet\" (1868, after Shakespeare) and as Director of the Conservatoire de Paris from 1871 till his death.",
+      "Claudio Monteverdi: Claudio Giovanni Antonio Monteverdi (] ; 15 May 1567 (baptized) \u2013 29 November 1643) was an Italian composer, string player and choirmaster.  A composer of both secular and sacred music, and a pioneer in the development of opera, he is considered a crucial transitional figure between the Renaissance and the Baroque periods of music history."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 296,
+    "generation_tokens": 19,
+    "generation_speed": 247.95437639474338,
+    "prompt_eval_speed": 36457.6918339697,
+    "generation_latency_s": 1.0236987000098452,
+    "latency": 3.3891097999876365,
+    "total_prompt_tokens": 371,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12444820000000001,
+    "stage_rewrite_s": 1.189304900006391,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0796965999761596,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09629429993219674,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0237390999682248,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3891196999466047,
+    "unaccounted_latency_s": 8.530006743967533e-05,
+    "rewritten_query": "Verdi is an Italian opera composer, while Thomas was a French composer.",
+    "query_was_rewritten": true
+  }
+}

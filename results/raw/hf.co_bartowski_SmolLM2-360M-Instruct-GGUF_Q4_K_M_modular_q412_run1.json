@@ -1,0 +1,49 @@
+{
+  "question_id": "Q412",
+  "query": "Jacques Mathou starred in Delicatessen, the 1991 French movie in the style of which celebrated American animator?",
+  "ground_truth": "Terry Gilliam",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Jacques Mathou starred in \"Delicatessen\" (1991) as Oswald the Lucky Rabbit.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jacques Mathou: Jacques Mathou is a French actor, best known for his appearance in \"Delicatessen\".",
+      "Delicatessen (film): Delicatessen is a 1991 French post-apocalyptic black comedy film directed by Jean-Pierre Jeunet and Marc Caro, starring Dominique Pinon and Karin Viard.  It was released in North America as \"presented by Terry Gilliam.\"  Like its successor, \"The City of Lost Children\" (1995), it was an homage to the works of Gilliam.",
+      "Ub Iwerks: Ubbe Eert \"Ub\" Iwerks, A.S.C. ( ; March 24, 1901 \u2013 July 7, 1971) was an American animator, cartoonist, character designer, inventor, and special effects technician, who created Oswald the Lucky Rabbit and Mickey Mouse with Walt Disney.  The works Iwerks produced alongside Disney went on to win numerous awards, including multiple Academy Awards."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 318,
+    "generation_tokens": 28,
+    "generation_speed": 209.70484200766052,
+    "prompt_eval_speed": 12437.908241092033,
+    "generation_latency_s": 0.26952680002432317,
+    "latency": 0.8708408999955282,
+    "total_prompt_tokens": 478,
+    "total_generation_tokens": 104,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2300991,
+    "stage_route_s": 0.10505220002960414,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4377587999915704,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05830599996261299,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.619992200285196e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26956779998727143,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8708497999468818,
+    "unaccounted_latency_s": 9.940005838871002e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Search Query 1: Jacques Mathou Starred in Delicatessen, the 1991 French Movie in the Style of Which Celebrated American Animator?",
+      "Search Query 2: Jacques Mathou Starred in Delicatessen, the 1991 French Movie in the Style of Which Celebrities?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q132",
+  "query": "Which board game was published most recently, Pirate's Cove or Catan?",
+  "ground_truth": "Pirate's Cove",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Pirate's Cove",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Catan: The Settlers of Catan, sometimes shortened to Catan or Settlers, is a multiplayer board game designed by Klaus Teuber and first published in 1995 in Germany by Franckh-Kosmos Verlag (Kosmos) as Die Siedler von Catan.  Players assume the roles of settlers, each attempting to build and develop holdings while trading and acquiring resources.  Players are awarded points as their settlements grow; the first to reach a set number of points, typically 10, is the winner.  The game and its many expansions are also published by Mayfair Games, Filosofia, Capcom, 999 Games, \u039a\u03ac\u03b9\u03c3\u03c3\u03b1, and Devir.",
+      "Pirate's Cove: Pirate's Cove (in German, Piratenbucht) is a board game designed by Paul Randles and Daniel Stahl, originally published in Germany in 2002 by Amigo Spiele, illustrated by Markus Wagner and Swen Papenbrock.  In 2003, Days of Wonder republished the game with a new graphic design from Julien Delval and Cyrille Daujean.  In the game, players play pirate ship captains seeking treasure from islands and bragging rights from defeating other pirates in naval combat.",
+      "Catan Dice Game: Catan Dice Game is a German-style board game, developed by Klaus Teuber and published in 2007 by Catan GmbH and its licensors, Kosmos in Germany and Mayfair Games in English-speaking countries.  It is a dice game re-imagining of Teuber's most notable title, \"Settlers of Catan\".  \"Catan Dice Game\" can be played by any number of players, but is ideally suited for up to four.  A variation, known as \"Catan Dice Game Plus\", is freely available from the \"Catan\" website, whose gameplay is closer to its \"Settlers\" origins."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 505,
+    "generation_tokens": 6,
+    "generation_speed": 206.98219953084035,
+    "prompt_eval_speed": 15037.817878625454,
+    "generation_latency_s": 0.16933699999935925,
+    "latency": 0.4686403999803588,
+    "total_prompt_tokens": 637,
+    "total_generation_tokens": 20,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2263806,
+    "stage_route_s": 0.10358150000683963,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1377110000466928,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05781660007778555,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.8299978263676167e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16937009990215302,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4686497999355197,
+    "unaccounted_latency_s": 0.0001129999291151762,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Pirate's Cove",
+      "Catan"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

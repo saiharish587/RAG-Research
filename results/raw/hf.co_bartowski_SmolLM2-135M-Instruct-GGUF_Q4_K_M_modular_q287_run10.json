@@ -1,0 +1,48 @@
+{
+  "question_id": "Q287",
+  "query": "Other than racing, what sport does the 1998 champion of the Toyota GRand Prix practice?",
+  "ground_truth": "paracyclist",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "The 1998 champion of the Toyota GRanPrix practiced in Formula One.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mika H\u00e4kkinen: Mika Pauli H\u00e4kkinen (   ; born 28 September 1968), nicknamed \"\"the Flying Finn\"\", is a Finnish former professional racing driver.  He was the 1998 and 1999 Formula One World Champion, driving for McLaren and has been ranked among the greatest Formula One drivers in various motorsport polls.  H\u00e4kkinen currently works in driver management and is a brand ambassador for various companies.",
+      "1998 Toyota Grand Prix of Long Beach: The 1998 Toyota Grand Prix of Long Beach was the third round of the 1998 CART FedEx Champ Car World Series season, held on April 5, 1998, on the streets of Long Beach, California.  Alex Zanardi won the race, even though he was a lap down at one point.",
+      "Michael Schumacher: Michael Schumacher (] ; born 3 January 1969) is a retired German racing driver who raced in Formula One for Benetton and Ferrari, where he spent the majority of his career, as well as for Mercedes upon his brief return to the sport.  Widely regarded as one of the greatest Formula One drivers, and regarded by some as the greatest of all time, Schumacher is the only driver in history to win seven Formula One World Championships, five of which he won consecutively.  The most successful driver in the history of the sport, Schumacher holds the records for the most World Championship titles (7), the most Grand Prix wins (91), the most fastest laps (77) and the most races won in a single season (13), and according to the official Formula One website, Schumacher is \"statistically the greatest driver the sport has ever seen\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 475,
+    "generation_tokens": 20,
+    "generation_speed": 356.95800389084224,
+    "prompt_eval_speed": 65256.21651325731,
+    "generation_latency_s": 0.17973779991734773,
+    "latency": 0.5448196000652388,
+    "total_prompt_tokens": 621,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24531609999999998,
+    "stage_route_s": 0.18107519997283816,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14598609996028244,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03786750009749085,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.0499959141016006e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17976969992741942,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5448287000181153,
+    "unaccounted_latency_s": 9.020010475069284e-05,
+    "route": "rag",
+    "router_raw": "The user's question asks about other sports that the 1998 Toyota GRanP Champion practiced in. The answer is 'other than racing'.",
+    "sub_queries": [
+      "The 1998 Toyota GRanPrix champion practiced other sports besides racing."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

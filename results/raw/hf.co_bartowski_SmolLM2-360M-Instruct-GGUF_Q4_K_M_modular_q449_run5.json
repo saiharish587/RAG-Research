@@ -1,0 +1,49 @@
+{
+  "question_id": "Q449",
+  "query": "What is the name of the film starring Rose McGowan and features the character Earl McGraw's daughter?",
+  "ground_truth": "Planet Terror",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The name of the film starring Rose McGowan and featuring the character Earl McGraw's daughter is \"Terms of Endearment.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rose McGowan: Rose Arianna McGowan (born September 5, 1973) is an Italian-born American actress, film producer, director and singer.  She is best known to television audiences for having played Paige Matthews in The WB supernatural drama series \"Charmed\" from 2001 to 2006.",
+      "The Pastor's Wife (film): The Pastor's Wife is a 2011 biographical television film, starring Rose McGowan as Mary Winkler and based on the true crime book of the same title by author Diane Fanning.  It premiered on Saturday, November 5, at 8 pm ET/PT on the Lifetime Network.",
+      "Terms of Endearment: Terms of Endearment is a 1983 American comedy-drama film adapted from Larry McMurtry's 1975 novel, directed, written, and produced by James L. Brooks and starring Shirley MacLaine, Debra Winger, Jack Nicholson, Danny DeVito, Jeff Daniels, and John Lithgow.  The film covers 30 years of the relationship between Aurora Greenway (MacLaine) and her daughter Emma (Winger)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 28,
+    "generation_speed": 218.20959031149422,
+    "prompt_eval_speed": 42453.98773006135,
+    "generation_latency_s": 0.2493096999824047,
+    "latency": 0.6594232999486849,
+    "total_prompt_tokens": 488,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2380083,
+    "stage_route_s": 0.10187520005274564,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.25265999999828637,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05539849994238466,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.350001785904169e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2493432000046596,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6594321000156924,
+    "unaccounted_latency_s": 9.23000043258071e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The film is called \"The Name of the Wind\"",
+      "Query 2: It stars Rose McGowan and features the character Earl McGraw's daughter."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

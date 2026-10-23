@@ -1,0 +1,42 @@
+{
+  "question_id": "Q594",
+  "query": "Which band has released the most studio albums, Blonde Redhead or Rob Zombie's band White Zombie?",
+  "ground_truth": "Blonde Redhead",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Blonde Redhead has released more studio albums than Rob Zombie's band White Zombie.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Rob Zombie: Rob Zombie (born Robert Bartleh Cummings; January 12, 1965) is an American musician, filmmaker and screenwriter.  Zombie rose to fame as a founding member of the heavy metal band White Zombie, releasing four studio albums with the band.  He is the older brother of Spider One, lead vocalist for American rock band Powerman 5000.",
+      "Rob Zombie discography: The discography of American musician, film director, screenwriter, and film producer Rob Zombie consists of six studio albums, three compilation albums, two remix albums, two live albums, one video album, 14 singles, and eight promotional singles.  Zombie first rose to fame as a member of the heavy metal band White Zombie, with whom he released four studio albums; the group disbanded in 1998.  Opting to continue making music as a solo artist, Zombie began working on his debut solo studio album that would come to be known as \"Hellbilly Deluxe: 13 Tales of Cadaverous Cavorting Inside the Spookshow International\" (1998).  The project became a commercial success for Zombie, entering the top five of the \"Billboard\" 200 in the United States and selling over three million copies worldwide.  The album spawned three singles, all of which were used extensively in films and video games following their release.  Zombie released remixed versions of songs from his debut studio album on \"American Made Music to Strip By\" (1999), which peaked inside the top forty in the United States.",
+      "Hellbilly Deluxe: Hellbilly Deluxe (released with the subtitle 13 Tales of Cadaverous Cavorting Inside the Spookshow International) is the solo debut studio album by American musician and filmmaker Rob Zombie.  The album serves as his first release outside of the band White Zombie, with whom he released two multi-platinum studio albums.  \"Hellbilly Deluxe\" was released on August 25, 1998 through Geffen Records.  Musically, the project portrays Zombie's love for classic horror films with heavy metal and electronic music.  The album's lyrics speak of murder, chaos, and supernatural forces.  The majority of \"Hellbilly Deluxe\" was recorded in California, and was produced by both Zombie and Scott Humphrey; Zombie is credited as the sole writer on all of the songs."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 642,
+    "generation_tokens": 22,
+    "generation_speed": 257.4906367041198,
+    "prompt_eval_speed": 83182.1715470329,
+    "generation_latency_s": 0.9850510000251234,
+    "latency": 3.4073674000101164,
+    "total_prompt_tokens": 727,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1270157,
+    "stage_rewrite_s": 1.2123077000724152,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0379641000181437,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1719270000467077,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9850928999949247,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4073779999744147,
+    "unaccounted_latency_s": 8.679984603077173e-05,
+    "rewritten_query": "Rob Zombie's band White Zombie has released more studio albums than Blonde Redhead.",
+    "query_was_rewritten": true
+  }
+}

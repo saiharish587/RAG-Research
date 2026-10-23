@@ -1,0 +1,42 @@
+{
+  "question_id": "Q441",
+  "query": "Ronald Reagan and George H. W. Bush both held which position in office?",
+  "ground_truth": "President of the United States",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Ronald Reagan served as the 40th President of the United States from 1981 to 1989, while George H. W. Bush served as the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Ronald Reagan: Ronald Wilson Reagan ( ; February 6, 1911 \u2013 June 5, 2004) was an American statesman and actor who served as the 40th President of the United States from 1981 to 1989.  Before his presidency, he was the 33rd Governor of California, from 1967 to 1975, after a career as a Hollywood actor and union leader.",
+      "Gerald Ford: Gerald Rudolph Ford Jr. (born Leslie Lynch King Jr.; July 14, 1913\u00a0\u2013 December 26, 2006) was an American politician who served as the 38th President of the United States from August 1974 to January 1977, following the resignation of Richard Nixon.  Prior to this he served eight months as the 40th Vice President of the United States, following the resignation of Spiro Agnew.  He was the first person appointed to the vice presidency under the terms of the 25th Amendment, and consequently the only person to have served as both Vice President and President of the United States without being elected to executive office.  Before his appointment to the vice presidency, Ford served 25 years as U.S. Representative from Michigan's 5th congressional district, the final nine of them as the House Minority Leader.",
+      "George H. W. Bush: George Herbert Walker Bush (born June 12, 1924) is an American politician who was the 41st President of the United States from 1989 to 1993 and the 43rd Vice President of the United States from 1981 to 1989.  A member of the Republican Party, he was previously a congressman, ambassador, and Director of Central Intelligence.  He is the oldest living former President and Vice President.  Previously known as simply \"George Bush\", since 2001, Bush has often been referred to as \"George H. W. Bush\", \"Bush 41\", \"Bush the Elder\", or \"George Bush Senior\" to distinguish him from his eldest son, George W. Bush, the 43rd President of the United States."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 561,
+    "generation_tokens": 86,
+    "generation_speed": 249.17208229632357,
+    "prompt_eval_speed": 75535.20937121315,
+    "generation_latency_s": 1.226181999896653,
+    "latency": 3.6518647000193596,
+    "total_prompt_tokens": 637,
+    "total_generation_tokens": 110,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1232115,
+    "stage_rewrite_s": 1.1999748999951407,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0604164999676868,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16516269999556243,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.226227100007236,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.651887300075032,
+    "unaccounted_latency_s": 0.00010670011397451162,
+    "rewritten_query": "The two presidents, Ronald Reagan and George H.W. Bush, served as Vice Presidents under President Gerald Ford.",
+    "query_was_rewritten": true
+  }
+}

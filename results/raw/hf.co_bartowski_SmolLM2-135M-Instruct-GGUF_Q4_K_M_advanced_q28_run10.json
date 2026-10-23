@@ -1,0 +1,42 @@
+{
+  "question_id": "Q28",
+  "query": "Are both Dictyosperma, and Huernia described as a genus?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, \"Dactylis\" is not considered to be a genus by many botanists due to its lack of distinctity among the subgenera within it. The genus is treated as containing only two species, namely \"D. glomerata\", and \"Huernia\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "d World genus \"Syzygium\" in \"Eugenia\", but research by Rudolf Schmid in the early 1970s convinced most botanists that the genera are easily separable.  Research by van Wyk and colleagues in South Africa suggests the genus may comprise at least two major lineages, recognizable by anatomical and other features.",
+      "Cryptanthus: Cryptanthus is a genus in the botanical family Bromeliaceae, subfamily Bromelioideae.  The genus name is from the Greek \u201ccryptos\u201d (hidden) and \u201canthos\u201d (flower).  This genus has two recognized subgenera: the type subgenus and \"Hoplocryptanthus\" .  All species of this genus are endemic to Brazil.  The common name for any \"Cryptanthus\" is \"Earth Star\".",
+      "Dactylis: The genus has been treated as containing only a single species \"D. glomerata\" by many authors, treating variation in the genus at only subspecific rank within \"Dactylis glomerata\", but more recently, there has been a trend to accept two species, while some authors accept even more species in the genus, particularly island endemic species in Macaronesia."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 319,
+    "generation_tokens": 57,
+    "generation_speed": 422.0971563981043,
+    "prompt_eval_speed": 50039.21568627451,
+    "generation_latency_s": 0.2171558999689296,
+    "latency": 0.5699895999860018,
+    "total_prompt_tokens": 396,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.136458,
+    "stage_rewrite_s": 0.13834549998864532,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07098279998172075,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14336809993255883,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.21720139996614307,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5700016999617219,
+    "unaccounted_latency_s": 0.00010440009646117687,
+    "rewritten_query": "The two genera of Cryptogamy are indeed classified under the genus Cryptogamidae.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q254",
+  "query": "Which director had the longest career, Alain Resnais or Scott Sidney?",
+  "ground_truth": "Scott Sidney",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Alain Resnais had the longest career, with 117 films produced between 1913 and 1927.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Sidney: Scott Sidney (1872 \u2013 20 July 1928), born Harry Wilbur Siggins, was an American film director.  He directed 117 films between 1913 and 1927.",
+      "Alain Resnais: Alain Resnais (] ; 3 June 19221 March 2014) was a French film director and screenwriter whose career extended over more than six decades.  After training as a film editor in the mid-1940s, he went on to direct a number of short films which included \"Night and Fog\" (1955), an influential documentary about the Nazi concentration camps.",
+      "Hiroshima mon amour: Hiroshima mon amour (] , \"Hiroshima My Love\"; Japanese: \u4e8c\u5341\u56db\u6642\u9593\u306e\u60c5\u4e8b \"Nij\u016byojikan'noj\u014dji\", \"Twenty-four-hour affair\") is a 1959 drama film directed by French film director Alain Resnais, with a screenplay by Marguerite Duras.  It is the documentation of an intensely personal conversation between a French-Japanese couple about memory and forgetfulness.  It was a major catalyst for the Left Bank Cinema, making highly innovative use of miniature flashbacks to create a uniquely nonlinear storyline."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 31,
+    "generation_speed": 214.2748524268355,
+    "prompt_eval_speed": 38632.832729155874,
+    "generation_latency_s": 0.2692261999472976,
+    "latency": 0.7224217000184581,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2283504,
+    "stage_route_s": 0.0972503999946639,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2945987000130117,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06113689998164773,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.740008782595396e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26927679998334497,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7224343999987468,
+    "unaccounted_latency_s": 0.00011499994434416294,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Alain Resnais - 1925-2016 (Alain Resnais)",
+      "Scott Sidney - 1934-2017 (Scott Sidney)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

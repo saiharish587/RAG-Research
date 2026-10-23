@@ -1,0 +1,42 @@
+{
+  "question_id": "Q559",
+  "query": "Which has more species, Aichryson or Polypodium?",
+  "ground_truth": "Polypodium",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The southern polypody (Polypodium cambricum) is a species of fern that has more species than the northern polypody (Dactylis glomerata). The southern polypody is known as the \"Welsh polypody\" due to its distinctive pinnate fronds, which are yellow in winter.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Polypodium: Polypodium is a genus of 75\u2013100 species of true ferns, widely distributed throughout the world, with the highest species diversity in the tropics.  The name is derived from Ancient Greek \"poly\" (\u03c0\u03bf\u03bb\u03cd) \"many\" + \"podion\" (\u03c0\u03cc\u03b4\u03b9\u03bf\u03bd) \"little foot\", on account of the foot-like appearance of the rhizome and its branches.  They are commonly called polypody or rockcap fern, but for many species unique vernacular names exist.",
+      "Dactylis: The genus has been treated as containing only a single species \"D. glomerata\" by many authors, treating variation in the genus at only subspecific rank within \"Dactylis glomerata\", but more recently, there has been a trend to accept two species, while some authors accept even more species in the genus, particularly island endemic species in Macaronesia.",
+      "Polypodium cambricum: Polypodium cambricum, the southern polypody or Welsh polypody, is a species of fern in the family Polypodiaceae, native to southern and western Europe.  It is a spreading, terrestrial, deciduous fern growing to 60 cm tall, with pinnate fronds.  The sori are yellow in winter."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 343,
+    "generation_tokens": 68,
+    "generation_speed": 411.1071478232481,
+    "prompt_eval_speed": 22029.543994861913,
+    "generation_latency_s": 0.26377389999106526,
+    "latency": 0.8877861000364646,
+    "total_prompt_tokens": 417,
+    "total_generation_tokens": 162,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1288791,
+    "stage_rewrite_s": 0.32681900006718934,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07098890002816916,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22607450000941753,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2638148000696674,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8877982000121847,
+    "unaccounted_latency_s": 0.00010159984230995178,
+    "rewritten_query": "Which have more species, Aichyso and polypodes?\n\nThe original query was \"Aichyso vs polypode\" which is a bit wordy. The optimized query uses the same phrase as the original but with some minor adjustments to make it more concise and user-friendly:\n\n```python\n# Optimized Query\nprint(f\"Which has more species, Aichyso or polypodes?\")\n```",
+    "query_was_rewritten": true
+  }
+}

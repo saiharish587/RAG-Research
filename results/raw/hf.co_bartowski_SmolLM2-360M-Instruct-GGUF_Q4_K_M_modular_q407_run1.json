@@ -1,0 +1,49 @@
+{
+  "question_id": "Q407",
+  "query": "Which magazine is older, Gallery or Dime Magazine?",
+  "ground_truth": "arose on the \"Playboy\" magazine pattern in the 1970s.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Dime Magazine is older than Gallery.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Paper (magazine): Paper, stylized as PAPER, is a New York City-based independent magazine focusing on fashion, popular culture, nightlife, music, art and film.  Past cover models include Kim Kardashian, Demi Lovato, Katy Perry, Miley Cyrus, Prince, CL, and Jennifer Lopez.",
+      "Dime Magazine: Dime Magazine is an American basketball magazine that began circulation in 2001.  The magazine publishes six issues a year for its worldwide readership, as well as a handful of editions of \"Dime China\", a Chinese-language version consisting of regular \"Dime\" content translated from English and original content from editorial staff in China.  It makes an appearance as an endorsement in \"NBA 2K12\", and \"NBA 2K13\".  It is owned by Uproxx itself a brand of Woven Digital.",
+      "Magazine: A magazine is a publication, usually a periodical publication, which is printed or electronically published (sometimes referred to as an online magazine).  Magazines are generally published on a regular schedule and contain a variety of content.  They are generally financed by advertising, by a purchase price, by prepaid subscriptions, or a combination of the three.  At its root, the word \"magazine\" refers to a collection or storage location.  In the case of written publication, it is a collection of written articles.  This explains why magazine publications share the word root with gunpowder magazines, artillery magazines, firearms magazines, and, in French, retail stores such as department stores."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 397,
+    "generation_tokens": 9,
+    "generation_speed": 214.48487881604348,
+    "prompt_eval_speed": 13587.979600917275,
+    "generation_latency_s": 0.18002500000875443,
+    "latency": 0.6962305000051856,
+    "total_prompt_tokens": 519,
+    "total_generation_tokens": 73,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2311473,
+    "stage_route_s": 0.09835169999860227,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.35925880004651845,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05842550005763769,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9900030717253685e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.18005880003329366,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.696239999961108,
+    "unaccounted_latency_s": 9.589979890733957e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The article \"Dime Magazines\" in the magazine \"Gallery\" states that they are older than \"Gallery\".",
+      "Query 2: The article \"Dime Magazines\" in the magazine \"Dime Magazine\" states that they are older than \"Dime Magazine\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

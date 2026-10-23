@@ -1,0 +1,49 @@
+{
+  "question_id": "Q346",
+  "query": "J\u00falius Satinsk\u00fd was born in a city that has a current population of what?",
+  "ground_truth": "about 450,000",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Sarajevo",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "J\u00falius Satinsk\u00fd: J\u00falius Satinsk\u00fd (20 August 1941 in Bratislava \u2013 29 December 2002 in Bratislava) was a Slovak actor, comedian, singer, showman and writer.  He is mostly remembered in Slovakia as member of the legendary comedian duo Milan Lasica - J\u00falius Satinsk\u00fd, however his scope of interest was wide.",
+      "Sarajevo: Sarajevo (Cyrillic: \u0421\u0430\u0440\u0430\u0458\u0435\u0432\u043e , ] , ) is the capital and largest city of Bosnia and Herzegovina, with a population of 275,524 in its current administrative limits.  The Sarajevo metropolitan area, including Sarajevo Canton and East Sarajevo is home to 643,016 inhabitants.  Nestled within the greater Sarajevo valley of Bosnia, it is surrounded by the Dinaric Alps and situated along the Miljacka River in the heart of Southeastern Europe and the Balkans.",
+      "Demography of Greater Manchester: The demography of Greater Manchester is analysed by the Office for National Statistics and data is produced for each of its ten metropolitan boroughs, each of the Greater Manchester electoral wards, the NUTS3 statistical sub-regions, each of the Parliamentary constituencies in Greater Manchester, the 15 civil parishes in Greater Manchester, and for all of Greater Manchester as a whole; the latter of which had a population of 2,682,500 at the 2011 UK census.  Additionally, data is produced for the Greater Manchester Urban Area.  Statistical information is produced about the size and geographical breakdown of the population, the number of people entering and leaving country and the number of people in each demographic subgroup."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 469,
+    "generation_tokens": 6,
+    "generation_speed": 233.6994624912363,
+    "prompt_eval_speed": 52466.71887235708,
+    "generation_latency_s": 0.14968370005954057,
+    "latency": 0.5301388000370935,
+    "total_prompt_tokens": 611,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2393214,
+    "stage_route_s": 0.11128820001613349,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21516940009314567,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05381080007646233,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.909998435527086e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1497207999927923,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5301542000379413,
+    "unaccounted_latency_s": 0.00010729988571256399,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"City Population: 20,000\"",
+      "\"Population: 20,000\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

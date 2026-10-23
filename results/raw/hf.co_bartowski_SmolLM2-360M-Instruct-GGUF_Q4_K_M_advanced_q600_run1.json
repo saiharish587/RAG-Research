@@ -1,0 +1,42 @@
+{
+  "question_id": "Q600",
+  "query": "When was the American actor, film director which  Dana Brunetti is the president of his company born ",
+  "ground_truth": "July 26, 1959",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Dana Brunetti was born on June 11, 1973.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dana Brunetti: Dana Brunetti (born June 11, 1973) is an American film producer and social networking entrepreneur.  He is the president of Kevin Spacey's production company, Trigger Street Productions.  In 2016, he became the president of Relativity Media with Kevin Spacey taking on a chairman position.",
+      "Trigger Street Productions: Trigger Street Productions is an American entertainment production company formed by Kevin Spacey and his producing partner Dana Brunetti in 1997.  The company's credits include \"Captain Phillips\", \"Shakespeare High\", \"Safe\", \"The Social Network\", \"21\", \"Shrink\", \"Fanboys\", the Emmy-nominated \"Bernard and Doris\", Emmy-winning \"Recount\", \"Mini's First Time\", \"Beyond the Sea\", \"The United States of Leland\", \"The Big Kahuna\" and \"House of Cards\", as well as stage productions of \"The Iceman Cometh\" and \"Cobb\".",
+      "President (corporate title): The President is a leader of an organization, company, community, club, trade union, university or other group.  In many organizations, it is the legally recognized highest \"titled\" corporate officer, ranking above the various Vice Presidents (e.g. Senior Vice President and Executive Vice President).  The president may also be the chairperson.  The relationship between the president and the Chief Executive Officer varies, depending on the structure of the specific organization.  In a similar vein to the Chief Operating Officer, the title of corporate President as a separate position (as opposed to being combined with a \"C-Suite\" designation, such as \"President and Chief Executive Officer\" or \"President and Chief Operating Officer\") is also loosely defined.  The powers of the president vary widely across organizations and such powers come from specific authorization in the bylaws (e.g. the president can make an \"executive decision\" only if the bylaws allow for it)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 501,
+    "generation_tokens": 19,
+    "generation_speed": 234.51868126442596,
+    "prompt_eval_speed": 15752.73550496793,
+    "generation_latency_s": 0.908076599938795,
+    "latency": 3.388156000059098,
+    "total_prompt_tokens": 582,
+    "total_generation_tokens": 31,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1201227,
+    "stage_rewrite_s": 1.173816499998793,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0715302999597043,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.23462010000366718,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9081094999564812,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.388165000011213,
+    "unaccounted_latency_s": 8.910009637475014e-05,
+    "rewritten_query": "Dana Brunetti is the President of his Company.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q362",
+  "query": "Scott Sandelin grew up in a town in what Minnesota county?",
+  "ground_truth": "Saint Louis County",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The correct answer is Hennepin County, Minnesota.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Sandelin: Scott Alan Sandelin (born August 8, 1964) is an American former professional ice hockey player.  He is currently the head coach of the Minnesota-Duluth Bulldogs men's ice hockey team.  In 2011, he became the first coach in Bulldog history to lead them to a national title.  It was a 3\u20132 overtime game against the University of Michigan at the Xcel Energy Center in Saint Paul, Minnesota.  He grew up in Hibbing, Minnesota where he went on to be drafted in the second round by the Montreal Canadiens (40th overall) and play collegiate hockey for the North Dakota Fighting Sioux.",
+      "Hennepin County, Minnesota: Hennepin County ( ) is a county in the U.S. state of Minnesota.  As of the 2010 census the population was 1,152,425.  It is the most populous county in Minnesota and the 35th-most populous county in the United States; more than one in five Minnesotans live in Hennepin County.  Its county seat is Minneapolis, the state's most populous city.  The county is named in honor of the 17th-century explorer Father Louis Hennepin.",
+      "Sand Lake Township, Itasca County, Minnesota: Sand Lake Township is a township in Itasca County, Minnesota, United States.  The population was 146 at the 2010 census."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 396,
+    "generation_tokens": 13,
+    "generation_speed": 387.9554746486019,
+    "prompt_eval_speed": 54681.02734051367,
+    "generation_latency_s": 0.14924089994747192,
+    "latency": 0.42083780001848936,
+    "total_prompt_tokens": 522,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2331799,
+    "stage_route_s": 0.10284529998898506,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13271699997130781,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03586039994843304,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.139996599406004e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1492727999575436,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4208470999728888,
+    "unaccounted_latency_s": 0.0001107001444324851,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Scott Sandelin grew up in a town in Minnesota County, which is located in the state of Minnesota."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

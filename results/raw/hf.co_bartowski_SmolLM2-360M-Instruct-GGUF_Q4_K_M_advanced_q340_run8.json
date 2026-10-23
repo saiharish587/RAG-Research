@@ -1,0 +1,42 @@
+{
+  "question_id": "Q340",
+  "query": "What is the capacity of the Stadium, other than Kauffman Stadium, designed by Charles Deaton ? ",
+  "ground_truth": "76,416",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Kauffman Stadium has a seating capacity of 37,903.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kauffman Stadium: Kauffman Stadium ( ), often called \"The K\", is a baseball park located in Kansas City, Missouri, that is home to the Kansas City Royals of Major League Baseball (MLB).  It is part of the Truman Sports Complex together with the adjacent Arrowhead Stadium, home of the Kansas City Chiefs of the National Football League.  The ballpark is named for Ewing Kauffman, the founder and first owner of the Royals.  It opened in 1973 as Royals Stadium and was named for Kauffman on July 2, 1993.  The ballpark's listed seating capacity since 2009 is 37,903.",
+      "Astrodome: The NRG Astrodome, also known as the Houston Astrodome or simply The Astrodome, is the world's first multi-purpose, domed sports stadium, located in Houston, Texas.  Construction on the stadium began in 1962, and it officially opened in 1965.  It served as home to the Houston Astros of Major League Baseball (MLB) from its opening in 1965 until 1999, and the home to the Houston Oilers of the National Football League (NFL) from 1968 until 1996, and also the part-time home of the Houston Rockets of the National Basketball Association (NBA) from 1971 until 1975.  Additionally, the Astrodome was the primary venue of the Houston Livestock Show and Rodeo from 1966 until 2002.  When opened, it was named the Harris County Domed Stadium and was nicknamed the \"Eighth Wonder of the World\".",
+      "Arrowhead Stadium: Arrowhead Stadium is a football stadium in Kansas City, Missouri, United States, that primarily serves as the home venue of the Kansas City Chiefs of the National Football League (NFL).  It is part of the Truman Sports Complex with adjacent Kauffman Stadium, the home of the Kansas City Royals of Major League Baseball (MLB).  Arrowhead has a seating capacity of 76,416, making it the 28th largest stadium in North America and sixth largest NFL stadium.  It is also the largest sports facility by capacity in the state of Missouri.  A $375 million renovation was completed in 2010."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 612,
+    "generation_tokens": 20,
+    "generation_speed": 246.44199371572915,
+    "prompt_eval_speed": 80452.21506507165,
+    "generation_latency_s": 0.9140706999460235,
+    "latency": 3.3673928000498563,
+    "total_prompt_tokens": 696,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13294689999999998,
+    "stage_rewrite_s": 1.2656456999247894,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9711143999593332,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21643739996943623,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9141128999181092,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3674040000187233,
+    "unaccounted_latency_s": 9.420025162398815e-05,
+    "rewritten_query": "Kauffman Stadium, a landmark stadium in Houston, Texas, with a capacity exceeding 100,000 spectators.",
+    "query_was_rewritten": true
+  }
+}

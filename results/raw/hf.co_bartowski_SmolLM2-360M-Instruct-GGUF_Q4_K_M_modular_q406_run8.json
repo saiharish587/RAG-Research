@@ -1,0 +1,49 @@
+{
+  "question_id": "Q406",
+  "query": "Where was the person born who was recognized by MIAL and is an American soprano?",
+  "ground_truth": "Laurel, Mississippi",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "Florence Foster Jenkins was born in 1868 in Florence, Mississippi. She was known and mocked for her flamboyant performance costumes and notably poor singing ability. The historian Stephen Pile ranked her \"the world's worst opera singer\" and described her as the \"world's worst opera singer.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Florence Foster Jenkins: Florence Foster Jenkins (born Narcissa Florence Foster; July 19, 1868 \u2013 November 26, 1944) was an American socialite and amateur soprano who was known and mocked for her flamboyant performance costumes and notably poor singing ability.  The historian Stephen Pile ranked her \"the world's worst opera singer\".  \"No one, before or since,\" he wrote, \"has succeeded in liberating themselves quite so completely from the shackles of musical notation.\"",
+      "Tatiana Troyanos: Tatiana Troyanos (September 12, 1938 \u2013 August 21, 1993) was an American mezzo-soprano of Greek and German descent, remembered as \"one of the defining singers of her generation\" (\"Boston Globe\").  Her voice, \"a paradoxical voice\u2014larger than life yet intensely human, brilliant yet warm, lyric yet dramatic\"\u2014\"was the kind you recognize after one bar, and never forget,\" wrote Cori Ellison in \"Opera News\".  Troyanos' performances \"covered the full range of operatic history\" (\"New York Times\") in an international career of three decades which also produced a variety of memorable operatic recordings, among them \"Carmen\" (co-starring Pl\u00e1cido Domingo and conducted by Georg Solti), cited by \"Classicalite\" almost four decades later as \"the finest of all \"Carmen\"s.\" After ten years based at the Hamburg State Opera, Troyanos became widely known for her work with the Metropolitan Opera beginning in 1976, with over 270 performances (several dozen of them broadcast or televised) spanning twenty-two major roles.  \"She was extraordinarily intense, beautiful, and stylish in roles as diverse as Eboli, Santuzza, Geschwitz, Venus, Kundry, Jocasta, Carmen, and Giulietta, in addition to her great 'trouser' roles,\" said the Met's longtime Music Director, James Levine.",
+      "Mississippi Institute of Arts and Letters: The Mississippi Institute of Arts and Letters (MIAL) is a privately funded foundation created to recognize annually the greatest accomplishments in art, music, literature, and photography among Mississippians.  The idea was conceived by, among others, former Mississippi Governor William Winter, Dr. Cora Norman, Dr. Aubrey Lucas, and Dr. Noel Polk in 1978, and the first awards were given out in 1980.  Nominations for these awards may be made only by registered members of the Institute.  The winners are chosen by a jury of prominent academics in each of the seven fields: Fiction, Non-fiction, Visual Art, Concert Musical Composition, Popular Musical Composition, Photography, and Poetry.  The ceremony is held in a different Mississippi city each year.  Past winners have included Walker Percy, Ellen Douglas, Ellen Gilchrist, Richard Ford, Larry Brown, Rick Bass, Lewis Nordan, Beverly Lowry, Donna Tartt, Clifton Taulbert, Barry Hannah, Willie Morris, Leontyne Price, Cynthia Shearer, Stephen Ambrose, Steve Yarbrough, Tom Franklin, Brad Watson, Shelby Foote, Natasha Trethewey, Birney Imes, Maude Schyler Clay, William Grant Still, Morgan Freeman, Christopher Maurer, Wyatt Waters, Logan Skelton, and many others.  Lifetime achievement awards have been presented to artists such as Gulf Coast painter and potter Walter Anderson, Jackson writer Eudora Welty, and the distinguished film actor from the Delta, Morgan Freeman."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 860,
+    "generation_tokens": 65,
+    "generation_speed": 226.83096207735284,
+    "prompt_eval_speed": 104229.80296082934,
+    "generation_latency_s": 0.4154325000708923,
+    "latency": 0.7105537999887019,
+    "total_prompt_tokens": 998,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.224964,
+    "stage_route_s": 0.10236740007530898,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13849580008536577,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05407989991363138,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.349994171410799e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4154632000718266,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7105663999682292,
+    "unaccounted_latency_s": 0.00010749988723546267,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"born\"",
+      "\"american soprano\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

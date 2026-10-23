@@ -1,0 +1,49 @@
+{
+  "question_id": "Q333",
+  "query": "The Ingerophrynus gollum is named after a character in a book that sold how many copies?",
+  "ground_truth": "150 million copies",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Ingerophrynus gollum is named after a character in a book that sold 10 copies.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gollum: Gollum is a fictional character from J. R. R. Tolkien's legendarium.  He was introduced in the 1937 fantasy novel \"The Hobbit\", and became an important supporting character in its sequel, \"The Lord of the Rings\".  Gollum was a Stoor Hobbit of the River-folk, who lived near the Gladden Fields.  Originally known as Sm\u00e9agol, he was corrupted by the One Ring and later named Gollum after his habit of making \"a horrible swallowing noise in his throat\".",
+      "Ingerophrynus gollum: Ingerophrynus gollum (Gollum's toad) is a species of true toad.  It has only been recorded from Endau-Rompin National Park, Johor, in closed-canopy lowland forests in the early evening following brief periods of afternoon precipitation.  It is called \"gollum\" with reference of the eponymous character of The Lord of the Rings by J. R. R. Tolkien.",
+      "Ingerophrynus: Ingerophrynus is a genus of true toads with 12 species.  These species distributed in southern Yunnan and Indochina; peninsular Thailand and Malaya to Sumatra, Borneo, Java, Nias Island, Sulawesi, and the Philippines.  This genus was established after a major taxonomical revision of frogs.  Ten of the species in this genus were formerly considered species of the genus \"Bufo\".  In 2007 a new species, \"Ingerophrynus gollum\", was added to this genus.  This species is named after the character Gollum created by J. R. R. Tolkien."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 443,
+    "generation_tokens": 25,
+    "generation_speed": 238.93492368418538,
+    "prompt_eval_speed": 52681.65061243906,
+    "generation_latency_s": 0.22636670002248138,
+    "latency": 0.7580313000362366,
+    "total_prompt_tokens": 589,
+    "total_generation_tokens": 100,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2232511,
+    "stage_route_s": 0.0998431999469176,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3787317000096664,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0529246999649331,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.479995161294937e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22639850003179163,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7580400999868289,
+    "unaccounted_latency_s": 8.780008647590876e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Ingerophrynus gollum, also known as the Gollum of the Hobbit, was originally named after the character in J.R.R. Tolkien's novel The Hobbit.\"",
+      "\"The book sold 500 copies in its first year and 750 copies in its second year.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

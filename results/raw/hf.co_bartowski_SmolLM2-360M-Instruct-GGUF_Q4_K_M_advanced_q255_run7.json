@@ -1,0 +1,42 @@
+{
+  "question_id": "Q255",
+  "query": "in 1999, Spirit Halloween LLC was purchased by a mall retailer that has how many stores in the United States and Canada ?",
+  "ground_truth": "over 600 stores",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "Spirit Halloween LLC was purchased by Spencer Gifts in 1999.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Spirit Halloween: Spirit Halloween LLC is a seasonal retailer that supplies Halloween decorations, costumes and accessories.  It was founded in 1983 and is based in Egg Harbor Township, New Jersey.  In 1999, the store had 60 seasonal locations and was purchased by Spencer Gifts.",
+      "Spencer Gifts: Spencer Gifts LLC, doing business as Spencer's, is a North American mall retailer with over 600 stores in the United States and Canada.  Their stores specialize in novelty and gag gifts, and also sell clothing, band merchandise, sex toys, room decor, collectible figures, fashion and body jewelry, and fantasy and horror items.  The company also owns and operates a seasonal retailer, Spirit Halloween.",
+      "Halloween Adventure: Halloween Adventure Stores (also known as Masquerade, LLC) is a retail store chain specializing in Halloween-related merchandise, they are one of the world's largest costuming companies and arguably the largest chain store specializing in Halloween in the United States.  The company was founded in 1981 by brothers Bruce and Darron Goldman in Philadelphia, Pennsylvania and has locations in Pennsylvania, New York, New Jersey, Delaware, Maryland, Florida, and California.  In 2006 there were over 120 \"seasonal stores\", using temporary locations in shopping malls that were vacated for seasonal short-term rentals.  Halloween Adventure sells a variety of costumes, masks, makeup, props, hats and other accessories for adults and children.  They also sell online as they found costumers would brouse in-store then search online for the best pricing.  Its main competition for this group is Halloween Thrills."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 438,
+    "generation_tokens": 17,
+    "generation_speed": 265.75372446028547,
+    "prompt_eval_speed": 63221.7090069284,
+    "generation_latency_s": 0.9659301000647247,
+    "latency": 3.3589189000194892,
+    "total_prompt_tokens": 526,
+    "total_generation_tokens": 44,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1264575,
+    "stage_rewrite_s": 1.2319369999459013,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0188323000911623,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14211260003503412,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9659645999781787,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.35892689996399,
+    "unaccounted_latency_s": 8.089991752058268e-05,
+    "rewritten_query": "Spirit Halloween LLC was acquired by a Canadian-based retail chain with 20 stores in the U.S. and Canada.",
+    "query_was_rewritten": true
+  }
+}

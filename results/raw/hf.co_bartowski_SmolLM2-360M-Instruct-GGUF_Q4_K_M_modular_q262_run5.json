@@ -1,0 +1,49 @@
+{
+  "question_id": "Q262",
+  "query": "Patrick Kennedy is known for his collections of Irish  folktales from a province situated in which part of Ireland ?",
+  "ground_truth": "the east of Ireland",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Patrick Kennedy is known for his collections of Irish folk tales from Co. Wexford, Ireland.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Patrick Kennedy (folklorist): Patrick Kennedy (early 1801 \u2013 29 March 1873) was a folklorist from Co.  Wexford, Ireland.  A bookseller by trade, he is known for his collections of Irish (Leinster) folktales.  The tales are told in rusticated English of the Irish peasantry who had established roots in The Pale, the anglicized part of Ireland.  He is \"widely credited with preserving irish idioms in the turn of phrase, sentence structure, Irish words\".",
+      "Irish Fairy Tales: Irish Fairy Tales is a retelling of ten Irish folktales by the Irish author James Stephens.  The English illustrator Arthur Rackham provided interior artwork, including numerous black and white illustrations and sixteen color plates.  The stories are set in a wooded, Medieval Ireland filled with larger-than-life hunters, warriors, kings, and fairies.  Many stories concern the Fianna and their captain, Fionn mac Uail, from the Fenian Cycle of Irish mythology.",
+      "Jack and His Comrades: Jack and his Comrades is a short Irish fairy tale describing the title character's story of success with the help of his animal helpers, collected by folklorist Patrick Kennedy from a resident of County Wexford, Ireland, and published in \"Legendary Fictions of the Irish Celts\" (1866).  It was later reprinted, revised but only slightly, by Joseph Jacobs in his Celtic fairy tale compilation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 22,
+    "generation_speed": 216.46512451664321,
+    "prompt_eval_speed": 48672.019765287216,
+    "generation_latency_s": 0.2260333999292925,
+    "latency": 0.7016902000177652,
+    "total_prompt_tokens": 536,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2212195,
+    "stage_route_s": 0.09286460001021624,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.32407279999461025,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.058547599939629436,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.630000330507755e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22606669995002449,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7016996999736875,
+    "unaccounted_latency_s": 0.00010250008199363947,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Patrick Kennedy's collection of Irish folktales originates from County Cork, specifically in the province of Munster.",
+      "Patrick Kennedy's collection of Irish folktales was first published in 1907 by the Dublin publisher, Thomas J. O'Connor."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

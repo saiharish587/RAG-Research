@@ -1,0 +1,49 @@
+{
+  "question_id": "Q290",
+  "query": "Which came to market first, \"Hey Pa! There's a Goat on the Roof\" or \"Poleconomy\"",
+  "ground_truth": "Hey Pa! There's a Goat on the Roof",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "\"Hey Pa!\" was released first in 1966, while \"Poleconomy\" was released in 1980.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hey Pa! There's a Goat on the Roof: Hey Pa!  There's a Goat on the Roof was a children's board game issued by Parker Brothers in 1966.",
+      "Poleconomy: Poleconomy is a board game invented by New Zealander Bruce E. Hatherley and first published in 1980.  It is similar to \"Monopoly\" but the board is divided into companies rather than properties.  Players compete to acquire properties and investments through stylized economic and political activity.  The playing time is set by agreement from all players, e.g. 2 hours, and the winner is determined by the monetary sum of all player cash, companies, insurance or other assets.  The game can also end when there are no more companies, advertisements in the bank or bonds in the treasury.  Another objective of the game is \"to teach players some of the fundamentals of economics, and the ways in which the economy and the government interact.\"  Different editions were published for several different countries.  The name \"Poleconomy\" is a portmanteau of \"politics\" and \"economy\".",
+      "Philadelphia English: Philadelphia English is a variety or dialect of American English native to Philadelphia and extending into Philadelphia's suburbs in the Delaware Valley and South Jersey, including Atlantic City.  The Philadelphia accent is one of the best-studied, as Philadelphia's University of Pennsylvania is the home institution of pioneering sociolinguist William Labov.  Philadelphia English shares some features with New York City English and Midland American English, although it is still its own distinct dialect.  However, the closest relative of the Philadelphia accent is the Baltimore accent, both of which constitute what Labov describes as a single \"Mid-Atlantic\" regional dialect."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 450,
+    "generation_tokens": 31,
+    "generation_speed": 218.7705097352877,
+    "prompt_eval_speed": 56207.84411691232,
+    "generation_latency_s": 0.2664854000322521,
+    "latency": 0.6340384000213817,
+    "total_prompt_tokens": 602,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2256853,
+    "stage_route_s": 0.10566760005895048,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2023812000406906,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05932949995622039,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.309993866831064e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2665230000857264,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6340490999864414,
+    "unaccounted_latency_s": 9.529991075396538e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Hey Pa!\" - 2019",
+      "\"Poleconomy\" - 2018"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

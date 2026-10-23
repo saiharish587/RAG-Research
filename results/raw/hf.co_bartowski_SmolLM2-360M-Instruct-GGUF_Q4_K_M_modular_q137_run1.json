@@ -1,0 +1,49 @@
+{
+  "question_id": "Q137",
+  "query": "The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?",
+  "ground_truth": "Texas Tech University",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The 1974 Texas Tech Raiders football team represented the University of Texas at Austin (UTA).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2008 Texas vs. Texas Tech football game: The 2008 Texas vs. Texas Tech football game was a Big 12 Conference game played between the Texas Longhorns and Texas Tech Red Raiders at Jones AT&T Stadium in Lubbock, Texas, United States.  The game was played on November 1 and was one of the most memorable games in the 2 teams rivalry.  Heading into the game, both teams were undefeated at 8-0.  However, a big difference between the teams was their rankings in the AP poll.  Texas came into this game as #1, lead by coach Mack Brown.  The Red Raiders, unlike their rivals, were not in the top 3.  Instead, they were #6 in the country.  In the game, the Red Raiders stunned the Longhorns 39-33 on a last second touchdown pass.  The game appeared over on the previous play, but Texas dropped an interception.  The game has gone down as one of the greatest upsets in the rivalries history and was crucial in a 3-way tie that happened in the Big 12 at the end of the season.",
+      "Texas Longhorns: The Texas Longhorns are the athletic teams that represent The University of Texas at Austin.  The teams are sometimes referred to as the 'Horns and take their name from the Longhorn cattle that were an important part of the development of Texas, and are now the official \"large animal\" of the U.S. state of Texas.  The women's teams are sometimes called the Lady Longhorns, but generally both the men's and women's teams are referred to as the Longhorns, and the mascot is a Texas Longhorn steer named Bevo.",
+      "Texas Tech University: Texas Tech University, often referred to as Texas Tech, Tech, or TTU, is a public research university in Lubbock, Texas.  Established on  10, 1923 (1923--) , and originally known as Texas Technological College, it is the flagship institution of the four-institution Texas Tech University System.  The university's student enrollment is the sixth-largest in Texas as of the Fall 2014 semester.  The university shares its campus with Texas Tech University Health Sciences Center, making it the only campus in Texas to house an undergraduate university, law school, and medical school."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 603,
+    "generation_tokens": 25,
+    "generation_speed": 230.2661877129962,
+    "prompt_eval_speed": 12434.527982843238,
+    "generation_latency_s": 0.2654842999763787,
+    "latency": 0.7906981999985874,
+    "total_prompt_tokens": 753,
+    "total_generation_tokens": 86,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2314263,
+    "stage_route_s": 0.11186559998895973,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3570076000178233,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05614750005770475,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.5699958465993404e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2655263999477029,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7907082999590784,
+    "unaccounted_latency_s": 0.00010599999222904444,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: \"The 1974 Texas Tech Raiders football team represented the University of Texas at Austin.\"",
+      "Query 2: \"The 1974 Texas Tech Raiders football team represented the University of Texas in Lubbock, Texas.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

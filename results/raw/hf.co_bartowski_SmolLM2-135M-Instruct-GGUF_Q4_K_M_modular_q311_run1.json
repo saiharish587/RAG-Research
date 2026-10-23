@@ -1,0 +1,49 @@
+{
+  "question_id": "Q311",
+  "query": "What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",
+  "ground_truth": "2013",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The year of the event that occurred first, making today a perfect day was produced in 1910s.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Making Today a Perfect Day: \"Making Today a Perfect Day\" is a song from the 2015 Walt Disney Animation Studios computer-animated short film \"Frozen Fever\", with music and lyrics by Kristen Anderson-Lopez and Robert Lopez and performed throughout most of the short.  It was released as a single in the United States on March 12, 2015.",
+      "1910s: The 1910s (pronounced \"nineteen-tens\", also abbreviated as the \"teens\") was a decade of the Gregorian calendar that began on January 1, 1910, and ended on December 31, 1919.  The 1910s represented the culmination of European militarism which had its beginnings during the second half of the 19th century.  The conservative lifestyles during the first half of the decade, as well as the legacy of military alliances, was forever changed by the assassination, on June 28, 1914, of Archduke Franz Ferdinand, the heir presumptive to the Austro-Hungarian throne.  The murder triggered a chain of events in which, within 33 days, World War I broke out in Europe on August 1, 1914.  The conflict dragged on until a truce was declared on November 11, 1918, leading to the controversial, one-sided Treaty of Versailles, which was signed on June 28, 1919.",
+      "Ice Age (2002 film): Ice Age is a 2002 American computer-animated buddy comedy road film directed by Chris Wedge and co-directed by Carlos Saldanha from a story by Michael J. Wilson.  Produced by Blue Sky Studios as its first feature film, it was released by 20th Century Fox on March 15, 2002.  The film features the voices of Ray Romano, John Leguizamo, Denis Leary and Chris Wedge."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 518,
+    "generation_tokens": 25,
+    "generation_speed": 380.63337393422654,
+    "prompt_eval_speed": 18697.66098758302,
+    "generation_latency_s": 0.20190320000983775,
+    "latency": 0.5886233999626711,
+    "total_prompt_tokens": 668,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2193907,
+    "stage_route_s": 0.14013439998961985,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1889162000734359,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05748459999449551,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.320001557469368e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20193530002143234,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5886323000304401,
+    "unaccounted_latency_s": 9.909993968904018e-05,
+    "route": "rag",
+    "router_raw": "The year of the event that occurred first, making today a perfect day was produced, or Frozen was produced.",
+    "sub_queries": [
+      "The year of the event that occurred first was 1908.",
+      "Make today a perfect day was produced in 2023."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q261",
+  "query": "Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?",
+  "ground_truth": "Slaughterhouse-Five",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "George Orwell",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Neil Gaiman: Neil Richard MacKinnon Gaiman ( ; born Neil Richard Gaiman, 10 November 1960) is an English author of short fiction, novels, comic books, graphic novels, audio theatre, and films.  His notable works include the comic book series \"The Sandman\" and novels \"Stardust\", \"American Gods\", \"Coraline\", and \"The Graveyard Book\".  He has won numerous awards, including the Hugo, Nebula, and Bram Stoker awards, as well as the Newbery and Carnegie medals.  He is the first author to win both the Newbery and the Carnegie medals for the same work, \"The Graveyard Book\" (2008).  In 2013, \"The Ocean at the End of the Lane\" was voted Book of the Year in the British National Book Awards.",
+      "Kurt Vonnegut: Kurt Vonnegut Jr. ( ; November 11, 1922April 11, 2007) was an American writer.  In a career spanning over 50 years, Vonnegut published 14 novels, three short story collections, five plays, and five works of non-fiction.  He is most famous for his darkly satirical, best-selling novel \"Slaughterhouse-Five\" (1969).",
+      "Nineteen Eighty-Four: Nineteen Eighty-Four, often published as 1984, is a dystopian novel published in 1949 by English author George Orwell."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 417,
+    "generation_tokens": 3,
+    "generation_speed": 234.94400501213875,
+    "prompt_eval_speed": 14062.65807844063,
+    "generation_latency_s": 0.15324810007587075,
+    "latency": 0.656656900071539,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 69,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2354101,
+    "stage_route_s": 0.09825179993640631,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3504811000311747,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054502799990586936,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.2999937906861305e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.15328670002054423,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.656668100040406,
+    "unaccounted_latency_s": 9.330012835562229e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Armageddon\" is the title of the 1969 satirical novel by Robert Ludlum, not the author's name.",
+      "The author of \"Armageddon\" is Robert Ludlum, a best-known for his 1969 satire novel \"The Bourne Identity\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

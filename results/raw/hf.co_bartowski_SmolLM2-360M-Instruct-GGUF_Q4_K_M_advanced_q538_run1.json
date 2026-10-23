@@ -1,0 +1,42 @@
+{
+  "question_id": "Q538",
+  "query": "Jack Alfred Evans played with a football club team that is based in what city in Australia?",
+  "ground_truth": "Melbourne",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Jack Alfred Evans played with St Kilda, an Australian rules football team based in Sydney, New South Wales.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jack Evans (footballer, born 1930): Jack Alfred Evans (born 11 October 1930) was an Australian rules footballer who played with St Kilda in the Victorian Football League (VFL).",
+      "Sydney Opera House: The Sydney Opera House is a multi-venue performing arts centre in Sydney, New South Wales, Australia.  It is one of the 20th century's most famous and distinctive buildings.",
+      "Sydney: Sydney ( ) is the state capital of New South Wales and the most populous city in Australia and Oceania.  Located on Australia's east coast, the metropolis surrounds the world's largest natural harbour and sprawls about 70 km on its periphery towards the Blue Mountains to the west, Hawkesbury to the north and Macarthur to the south.  Sydney is made up of 658 suburbs, 40 local government areas and 15 contiguous regions.  Residents of the city are known as \"Sydneysiders\".  As at June 2016 Sydney's estimated population was 5,029,768."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 313,
+    "generation_tokens": 23,
+    "generation_speed": 243.9722932334815,
+    "prompt_eval_speed": 11891.645454200068,
+    "generation_latency_s": 1.0359620999079198,
+    "latency": 3.484371800092049,
+    "total_prompt_tokens": 391,
+    "total_generation_tokens": 37,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1311871,
+    "stage_rewrite_s": 1.177220799960196,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.1436820999952033,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12737959995865822,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0360133999492973,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.484383000060916,
+    "unaccounted_latency_s": 8.770020212978125e-05,
+    "rewritten_query": "Jack Alfred Evans played for a team based in Sydney, Australia.",
+    "query_was_rewritten": true
+  }
+}

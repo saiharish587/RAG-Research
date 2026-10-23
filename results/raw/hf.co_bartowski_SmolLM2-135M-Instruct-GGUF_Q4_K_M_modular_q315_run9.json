@@ -1,0 +1,49 @@
+{
+  "question_id": "Q315",
+  "query": "How many days did it take the Best New Artist of 2009 to sell 2 million copies of an album in the UK and break a twenty year old record?",
+  "ground_truth": "29",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Based on the information provided, it is stated that David Bowie sold 140.5 million albums worldwide during his lifetime, which translates to approximately 376 days (140.5 / 2). Therefore, it would take David Bowie approximately 376 days to sell 2 million copies of an album in the UK and break a twenty-year-old record.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "David Bowie: David Robert Jones (8 January 1947 \u2013 10 January 2016), known professionally as David Bowie ( ), was an English singer, songwriter and actor.  He was a leading figure in popular music for over five decades, acclaimed by critics and other musicians for his innovative work.  His career was marked by reinvention and visual presentation, his music and stagecraft significantly influencing popular music.  During his lifetime, his record sales, estimated at 140 million albums worldwide, made him one of the world's best-selling music artists.  In the UK, he was awarded nine platinum album certifications, eleven gold and eight silver, releasing eleven number-one albums.  In the US, he received five platinum and nine gold certifications.  He was inducted into the Rock and Roll Hall of Fame in 1996.",
+      "Robson &amp; Jerome (album): Robson & Jerome is the debut studio album by British singing duo Robson & Jerome.  It was released in the UK in 1995 by RCA Records, and reached number one on the UK Albums Chart.  It was the Christmas number one album of 1995, and was the biggest-selling album of the year, with sales of 2,040,000.  For almost 20 years, it held the record for selling 2 million copies in the UK in the fastest time, doing so in 42 days; in 2015, Adele surpassed the record when her album \"25\" took just 29 days to reach the landmark.",
+      "2017 Fed Cup Europe/Africa Zone Group III \u2013 Pool C: 2017 Fed Cup Europe/Africa Zone Group III \u2013 Pool C"
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 471,
+    "generation_tokens": 83,
+    "generation_speed": 406.89465840458075,
+    "prompt_eval_speed": 60766.35272868017,
+    "generation_latency_s": 0.32541709998622537,
+    "latency": 0.8227629000321031,
+    "total_prompt_tokens": 643,
+    "total_generation_tokens": 197,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2333459,
+    "stage_route_s": 0.08931529999244958,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.35064929991494864,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05718369991518557,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.0399994254112244e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.32545810006558895,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.822774300002493,
+    "unaccounted_latency_s": 0.00010820012539625168,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
+      "Question: How many days did it take the Best New Artist of 2009 to sell 2 million copies of an album in the UK and break a twenty-year-old record?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

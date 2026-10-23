@@ -1,0 +1,48 @@
+{
+  "question_id": "Q34",
+  "query": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Freakonomics and In the Realm of the Hackers are not American documentaries. They were directed by Kevin Anderson in 2010 and were based on the book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by Steven D. Levitt and Stephen J. Dubner, which was published in 2005.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Freakonomics (film): Freakonomics: The Movie is a 2010 American documentary film based on the 2005 book \"Freakonomics: A Rogue Economist Explores the Hidden Side of Everything\" by economist Steven D. Levitt and writer Stephen J. Dubner.  The film premiered at the Tribeca Film Festival in April 2010 with a theatrical release later in the year.  The film received a lukewarm reception and a 65% fresh rating at Rottentomatoes.",
+      "In the Realm of the Hackers: In The Realm of the Hackers is a 2003 Australian documentary directed by Kevin Anderson about the prominent hacker community, centered in Melbourne, Australia in the late 1980s until early 1990.  The storyline is centered on the Australian teenagers going by the hacker names \"Electron\" and \"Phoenix\", who were members of an elite computer hacking group called 'The Realm' and hacked into some of the most secure computer networks in the world, including those of the US Naval Research Laboratory, Lawrence Livermore National Laboratory, a government lab charged with the security of the US nuclear stockpile, and NASA.  The film runs for 55 minutes and was inspired by the book \"Underground\", by Melbourne-based writer and academic Suelette Dreyfus.",
+      "digital civilization : according to Kunze, maybe nothing of the 21st century will last in the future, since most of our interactions are now virtual.  The \"accuracy versus bullshit\" is one of the main themes of the MOM project, worried about loss of information, the project can only aim to save a fragment of the information produced until today, but this fragment has to be representative."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 453,
+    "generation_tokens": 80,
+    "generation_speed": 347.6401750368281,
+    "prompt_eval_speed": 24383.679621057163,
+    "generation_latency_s": 0.3545254000928253,
+    "latency": 0.7640082000289112,
+    "total_prompt_tokens": 589,
+    "total_generation_tokens": 156,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22913299999999998,
+    "stage_route_s": 0.10388950002379715,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2694559000665322,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03596759994979948,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.21000474691391e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.35455829999409616,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7640183999901637,
+    "unaccounted_latency_s": 9.58999153226614e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, both American documentaries are American documentaries. They were produced in 2015 by the same company, which is known as \"Freakonomics.\" The two documentaries share a common theme and focus on the intersection between technology and society. Both documentaries explore how AI and cybersecurity have impacted modern life, with both focusing on the darker aspects of technological advancements."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

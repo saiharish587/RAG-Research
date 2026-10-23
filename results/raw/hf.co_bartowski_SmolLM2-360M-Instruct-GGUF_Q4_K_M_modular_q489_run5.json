@@ -1,0 +1,49 @@
+{
+  "question_id": "Q489",
+  "query": "What produces the hormone that promotes sodium retention in the distal nephron?",
+  "ground_truth": "zona glomerulosa",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The hormone that promotes sodium retention in the distal nephron is aldosterone, which is produced by the adrenal cortex and released into the bloodstream by the adrenal glands.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sodium-chloride symporter: The sodium-chloride symporter (also known as Na-Cl cotransporter, abbreviated as NCC or NCCT, or as the thiazide-sensitive Na-Cl cotransporter or TSC for short) is a cotransporter in the kidney which has the function of reabsorbing sodium and chloride ions from the tubular fluid into the cells of the distal convoluted tubule of the nephron.  It is a member of the SLC12 cotransporter family of electroneutral cation-coupled chloride cotransporters.  In humans, it is encoded by the gene \"SLC12A3\" (solute carrier family 12 member 3) located in 16q13.",
+      "Tubuloglomerular feedback: In the physiology of the kidney, tubuloglomerular feedback (TGF) is a feedback system inside the kidneys. Within each nephron, information from the renal tubules (a downstream area of the tubular fluid) is signaled to the glomerulus (an upstream area).  Tubuloglomerular feedback is one of several mechanisms the kidney uses to regulate glomerular filtration rate (GFR).  It involves the concept of purinergic signaling, in which an increased distal tubular sodium chloride concentration causes a basolateral release of adenosine from the macula densa cells.  This initiates a cascade of events that ultimately brings GFR to an appropriate level.",
+      "Loop of Henle: In the kidney, the loop of Henle ( ) (or Henle's loop, Henle loop, nephron loop or its Latin counterpart ansa nephroni) is the portion of a nephron that leads from the proximal convoluted tubule to the distal convoluted tubule.  Named after its discoverer, the German anatomist Friedrich Gustav Jakob Henle, the loop of Henle's main function is to create a concentration gradient in the medulla of the kidney."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 491,
+    "generation_tokens": 34,
+    "generation_speed": 231.78604784336716,
+    "prompt_eval_speed": 62396.74672766553,
+    "generation_latency_s": 0.26730439998209476,
+    "latency": 0.6064615999348462,
+    "total_prompt_tokens": 619,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2275499,
+    "stage_route_s": 0.10315179999452084,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18164720002096146,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054178699967451394,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.140004213899374e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2673469999572262,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.606470900005661,
+    "unaccounted_latency_s": 9.560002945363522e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Sodium-glucose transporter 2 (SGLT2)",
+      "Na+/H+ antiporter"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

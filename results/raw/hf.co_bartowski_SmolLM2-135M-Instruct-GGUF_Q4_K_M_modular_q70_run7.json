@@ -1,0 +1,48 @@
+{
+  "question_id": "Q70",
+  "query": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?",
+  "ground_truth": "Carabao Cup",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as the Carabao Cup, due to its sponsorship deal with Carabao Energy Drinks after the tournament was unsponsored the previous year.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "2017\u201318 Wigan Athletic F.C. season: The 2017\u201318 season is Wigan Athletic's 86th year in existence and their first back in League One, after being relegated the previous season.  Along with competing in the league, the club will also participate in the FA Cup, EFL Cup and EFL Trophy.  Paul Cook was appointed as manager on 31 May 2017, signing a 3 year deal, following the departure of much of the previous coaching staff the day before.",
+      "2017\u201318 EFL Cup: The 2017\u201318 EFL Cup is the 58th season of the EFL Cup.  The competition is open to all 92 English and Welsh clubs participating in the Premier League and the English Football League.  It is known as the Carabao Cup due to the start of a sponsorship deal with Carabao Energy Drinks after the tournament was unsponsored the previous year.  The final will be held at Wembley Stadium in London.  The reigning champions are Manchester United.  The winners will qualify for the second qualifying round of the 2018\u201319 UEFA Europa League.",
+      "EFL Cup: The EFL Cup (referred to historically, and colloquially, as simply the League Cup), currently known as the Carabao Cup for sponsorship reasons, is an annual knockout football competition in men's domestic English football.  Organised by the English Football League (EFL), it is open to any club within the top four levels of the English football league system \u2013 92 clubs in total \u2013 comprising the top level Premier League, and the three divisions of the English Football League's own league competition (Championship, League One and League Two)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 483,
+    "generation_tokens": 63,
+    "generation_speed": 355.8919896056943,
+    "prompt_eval_speed": 59777.22772277227,
+    "generation_latency_s": 0.2956370000028983,
+    "latency": 0.7986849000444636,
+    "total_prompt_tokens": 661,
+    "total_generation_tokens": 179,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.216858,
+    "stage_route_s": 0.2704804000677541,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19323510001413524,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039159500040113926,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.309997893869877e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2956696000183001,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7986949000041932,
+    "unaccounted_latency_s": 0.00010779988951981068,
+    "route": "rag",
+    "router_raw": "The question asks about whether answering it requires retrieving information from internal files/documents, and the answer is yes. The user's query specifically mentions that the 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as \"Wigan Athletic Cup.\"",
+    "sub_queries": [
+      "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as \"Wigan Athletic Cup\" (WC)."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

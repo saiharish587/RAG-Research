@@ -1,0 +1,42 @@
+{
+  "question_id": "Q502",
+  "query": "Which city was the man who is known for a science humor story based on the tongue-in-cheek combination of two adages born in?",
+  "ground_truth": "New York City, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The man who is known for a science humor story based on the tongue-in-cheek combination of two adages born in New York City, New York.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Buttered cat paradox: The buttered cat paradox is a common joke based on the tongue-in-cheek combination of two adages:",
+      "John Frazee: John Frazee (born 1949) is an artist from New York City, New York.  Frazee's work as a painter and sculptor is displayed around the world.  He is also known for a science humor story he wrote in OMNI magazine, the Buttered cat paradox.",
+      "A Prairie Home Companion: A Prairie Home Companion is a live weekly radio variety show hosted by musician and songwriter Chris Thile.  The program was created in 1974 by Garrison Keillor, who hosted it until 2016.  It airs on Saturdays from 5 to 7 p.m. Central Time, from the Fitzgerald Theater in Saint Paul, Minnesota; it is also frequently heard on tours to New York City and other US cities.  The show is known for its musical guests, especially folk and traditional musicians, tongue-in-cheek radio drama, and relaxed humor.  Keillor's wry storytelling segment, \"News from Lake Wobegon\", was the show's best-known feature during his long tenure."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 346,
+    "generation_tokens": 34,
+    "generation_speed": 358.6951934844073,
+    "prompt_eval_speed": 40064.844835572025,
+    "generation_latency_s": 0.18746609997469932,
+    "latency": 0.6238806000910699,
+    "total_prompt_tokens": 436,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1280928,
+    "stage_rewrite_s": 0.17427369998767972,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08041809999849647,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1815759000601247,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18751660000998527,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6238950000843033,
+    "unaccounted_latency_s": 0.00011140003334730864,
+    "rewritten_query": "Which city's scientist, whose tongue-in-cheek combination of two adages inspired a humorous story, was known for his science humor?",
+    "query_was_rewritten": true
+  }
+}

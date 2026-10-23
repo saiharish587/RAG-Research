@@ -1,0 +1,49 @@
+{
+  "question_id": "Q552",
+  "query": "What English stand-up comedian has a style of comedy full of \"stream-of-conscious banter\"?",
+  "ground_truth": "Eddie Izzard",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Eddie Izzard.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Stand-up comedy: Stand-up comedy is a comic style in which a comedian performs in front of a live audience, usually speaking directly to them.  The performer is commonly known as a comic, stand-up comic, stand-up comedian, or simply a stand-up.  In stand-up comedy, the comedian usually recites a grouping of humorous stories, jokes and one-liners typically called a monologue, routine, or act.  Some stand-up comedians use props, music, or magic tricks to \"enhance\" their acts.  Stand-up comedy is often performed in comedy clubs, bars and pubs, nightclubs, neo-burlesques, colleges and theatres. Outside of live performance, stand-up is often distributed commercially via television, DVD, CD and the internet.",
+      "Shortest common supersequence problem: In computer science, the shortest common supersequence of two sequences X and Y is the shortest sequence which has X and Y as subsequences.  This is a problem closely related to the longest common subsequence problem.  Given two sequences X = < x.. . ,x > and Y = < y.. . ,y >, a sequence U = < u.. . ,u > is a common supersequence of X and Y if items can be removed from U to produce X or Y.",
+      "Eddie Izzard: Edward John \"Eddie\" Izzard ( ; born 7 February 1962) is an English stand-up comedian, actor, writer and political activist.  His comedic style takes the form of rambling, whimsical monologue, and self-referential pantomime.  He had a starring role in the television series \"The Riches\" as Wayne Malloy and has appeared in films such as \"Ocean's Twelve\", \"Ocean's Thirteen\", \"Mystery Men\", \"Shadow of the Vampire\", \"The Cat's Meow\", \"Across the Universe\" and \"Valkyrie\".  He has also worked as a voice actor in \"The Wild\", \"Igor\", \"\", \"Cars 2\" and \"The LEGO Batman Movie\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 535,
+    "generation_tokens": 8,
+    "generation_speed": 374.0590078084818,
+    "prompt_eval_speed": 69543.7410633043,
+    "generation_latency_s": 0.1438089000293985,
+    "latency": 0.5508691999129951,
+    "total_prompt_tokens": 681,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2319092,
+    "stage_route_s": 0.10263480001594871,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24807550001423806,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056179899955168366,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.350005812942982e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14384240005165339,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.55087919998914,
+    "unaccounted_latency_s": 9.389990009367466e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Here are two search queries related to the question:",
+      "What is the style of comedy that stands up for itself? (separated by a newline)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

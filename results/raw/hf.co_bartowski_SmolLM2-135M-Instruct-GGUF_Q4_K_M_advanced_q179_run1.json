@@ -1,0 +1,42 @@
+{
+  "question_id": "Q179",
+  "query": "Born on 6 March 1937, this man was also a citizen of the United Kingdom.",
+  "ground_truth": "Alistair Grant",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Arthur Neville Chamberlain is a British politician who served as Prime Minister of the United Kingdom from May 1937 to May 1940 and was a member of the Conservative Party. He played a significant role in shaping British foreign policy during World War II, particularly in signing the Munich Agreement in 1938, which allowed Germany to occupy Czechoslovakia's Sudetenland region.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Theresa May: Theresa Mary May ( , \"n\u00e9e\" Brasier ; born 1 October 1956) is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2016, the second woman to hold both positions, the first being Margaret Thatcher.  She has been the Member of Parliament (MP) for Maidenhead since 1997.  Ideologically, she identifies herself as a one-nation conservative.",
+      "British people: British people, or Britons, are the citizens of the United Kingdom, British Overseas Territories, and Crown dependencies.  British nationality law governs modern British citizenship and nationality, which can be acquired, for instance, by descent from British nationals.  When used in a historical context, \"British\" or \"Britons\" can refer to the Celtic Britons, the indigenous inhabitants of Great Britain and Brittany, whose surviving members are the modern Welsh people, Cornish people and Bretons.",
+      "Neville Chamberlain: Arthur Neville Chamberlain, ( ; 18 March 1869 \u2013 9 November 1940) was a British Conservative politician who served as Prime Minister of the United Kingdom from May 1937 to May 1940.  Chamberlain is best known for his appeasement foreign policy, and in particular for his signing of the Munich Agreement in 1938, conceding the German-speaking Sudetenland region of Czechoslovakia to Germany.  However, when Adolf Hitler later invaded Poland, the UK declared war on Germany on 3 September 1939, and Chamberlain led Britain through the first eight months of World War II."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 432,
+    "generation_tokens": 82,
+    "generation_speed": 390.6380262299143,
+    "prompt_eval_speed": 24640.65708418891,
+    "generation_latency_s": 0.3023205000208691,
+    "latency": 0.6558546000160277,
+    "total_prompt_tokens": 514,
+    "total_generation_tokens": 103,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1384032,
+    "stage_rewrite_s": 0.15672600001562387,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07260509999468923,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12408909993246198,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.30235339992213994,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6558637999696657,
+    "unaccounted_latency_s": 9.060010779649019e-05,
+    "rewritten_query": "Born on 6 March 1937, this British citizen was born in the UK.",
+    "query_was_rewritten": true
+  }
+}

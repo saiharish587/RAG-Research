@@ -1,0 +1,42 @@
+{
+  "question_id": "Q201",
+  "query": "The 2000 British film Snatch was later adapted into a television series for what streaming service?",
+  "ground_truth": "Crackle",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The 2000 British film Snatch was later adapted into a television series for Netflix and was premiered globally (outside of Canada) on Netflix, on December 23, 2016.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Snatch (film): Snatch (stylised as snatch.)  is a 2000 British crime comedy film written and directed by Guy Ritchie, featuring an ensemble cast.  Set in the London criminal underworld, the film contains two intertwined plots: one dealing with the search for a stolen diamond, the other with a small-time boxing promoter (Jason Statham) who finds himself under the thumb of a ruthless gangster (Alan Ford) who is ready and willing to have his subordinates carry out severe and sadistic acts of violence.",
+      "Snatch (TV series): Snatch is a British/American television series based on the film of the same name, which debuted on Crackle on 16 March 2017.  The show has been renewed for a second season.",
+      "Travelers (TV series): Travelers is a science fiction television series created by Brad Wright, starring Emmy Award-winning actor Eric McCormack.  The series is a co-production between Netflix and Showcase.  The first season comprises 12 episodes and premiered on Showcase on October 17, 2016; the entire series premiered globally (outside of Canada) on Netflix, on December 23, 2016.  On February 8, 2017, Netflix and Showcase renewed the show for a second season.  Season 2 production began in March 2017, ahead of the Canadian premiere on Showcase scheduled to air on October 16, 2017, which will be followed by a Netflix release."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 421,
+    "generation_tokens": 46,
+    "generation_speed": 405.23635851084447,
+    "prompt_eval_speed": 62957.97816659189,
+    "generation_latency_s": 0.19753130001481622,
+    "latency": 0.6698658000677824,
+    "total_prompt_tokens": 503,
+    "total_generation_tokens": 80,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1417983,
+    "stage_rewrite_s": 0.17751969990786165,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08132819994352758,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21334419993218035,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1975760000059381,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.669876900035888,
+    "unaccounted_latency_s": 0.00010940025094896555,
+    "rewritten_query": "The 2000 British film Snatch, originally adapted into a television series for Netflix, has been re-released as a TV show on Netflix.",
+    "query_was_rewritten": true
+  }
+}

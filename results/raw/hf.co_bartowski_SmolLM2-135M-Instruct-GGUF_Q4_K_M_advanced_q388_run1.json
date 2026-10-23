@@ -1,0 +1,42 @@
+{
+  "question_id": "Q388",
+  "query": "Dead but Rising was a song by the Danish band fomed in what city in 2001?",
+  "ground_truth": "Copenhagen",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The correct answer to the question is that \"Home Dead\" was released after the success of \"Rocket Brothers\", a documentary film about the band. The album \"Zitilites\" was made after the band rediscovered themselves with \"Rocket Brothers\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dead but Rising: \"Dead but Rising\" is a song by Danish heavy metal band Volbeat.  The song was released as the seventh single from the band's fifth studio album \"Outlaw Gentlemen & Shady Ladies\".",
+      "Judas Priest: Judas Priest are an English heavy metal band formed in Birmingham, England, in 1969.  The band have sold close to 50 million albums to date.  They are frequently ranked as one of the greatest metal bands of all time.  Despite an innovative and pioneering body of work in the latter half of the 1970s, the band struggled with indifferent record production, repeated changes of drummer and lack of major commercial success or attention until 1980, when they adopted a more simplified sound on the album \"British Steel\", which helped shoot them to rock superstar status.  In 1989, they were named as defendants in an unsuccessful lawsuit alleging that subliminal messages on the song \"Better By You, Better Than Me\" had caused the suicide attempts of two young men.",
+      "Home Dead (album): Home Dead is a 2001 EP by Danish band Kashmir.  An in-between EP, \"Home Dead\" was made after the success of \"The Good Life\", and before the band rediscovered themselves with \"Zitilites\".  The music on this album, is a reflection of the crisis depicted in \"Rocket Brothers\", a documentary film about the band."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 387,
+    "generation_tokens": 52,
+    "generation_speed": 400.22166122775695,
+    "prompt_eval_speed": 23407.729994556343,
+    "generation_latency_s": 0.22757170000113547,
+    "latency": 0.7441083999583498,
+    "total_prompt_tokens": 469,
+    "total_generation_tokens": 113,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13582,
+    "stage_rewrite_s": 0.2455185999860987,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08297390001825988,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18791820004116744,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2276112000690773,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7441196999279782,
+    "unaccounted_latency_s": 9.8399817943573e-05,
+    "rewritten_query": "The original query \"Dead but Rising was a song by the Danish band fomed in what city in 2001?\" is an incomplete and unoptimized version. The optimized query should include the necessary information to provide accurate results, such as the location of the album or its release year.",
+    "query_was_rewritten": true
+  }
+}

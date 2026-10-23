@@ -1,0 +1,49 @@
+{
+  "question_id": "Q587",
+  "query": "Fantasy Records is know for recordings of comedian Lenny Bruce, Creedence Clearwater Revival, and what American jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip?",
+  "ground_truth": "Vincent Anthony Guaraldi",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Fantasy Records is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fantasy Records: Fantasy Records is an American record company and label founded by brothers Max and Sol Weiss in 1949.  The early years of the company were dedicated to issuing recordings by jazz pianist Dave Brubeck, who was also one of its investors, but the label is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+      "Bill Cosby Is a Very Funny Fellow...Right!: Bill Cosby is a Very Funny Fellow...Right!  is the debut album release by Bill Cosby.  It was recorded live at the nightclub The Bitter End in New York City's Greenwich Village during early 1963.  The album includes three sketches about Noah.",
+      "Vince Guaraldi: Vincent Anthony Guaraldi (July 17, 1928 \u2013 February 6, 1976), born Vincent Anthony Dellaglio, was an American jazz pianist noted for his innovative compositions and arrangements and for composing music for animated television adaptations of the \"Peanuts\" comic strip, as well as his performances on piano as a member of Cal Tjader's late 50s ensemble and his own solo career which included the radio hit \"Cast Your Fate to the Wind\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 378,
+    "generation_tokens": 37,
+    "generation_speed": 252.15868277756195,
+    "prompt_eval_speed": 14671.634839310667,
+    "generation_latency_s": 0.28389610000886023,
+    "latency": 0.6665082999970764,
+    "total_prompt_tokens": 564,
+    "total_generation_tokens": 72,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22376400000000002,
+    "stage_route_s": 0.10248160001356155,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2262911000289023,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05361499998252839,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.989999044686556e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2839739000191912,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.666526300017722,
+    "unaccounted_latency_s": 0.00010599999222904444,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Fantasy Records: A Brief History of Jazz\"",
+      "\"Lenny Bruce: The Life and Music of a Comedian\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

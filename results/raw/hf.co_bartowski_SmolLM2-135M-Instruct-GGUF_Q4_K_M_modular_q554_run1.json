@@ -1,0 +1,49 @@
+{
+  "question_id": "Q554",
+  "query": "What was the highest ranking in the United States for a single written by an English multi-instrumentalist?",
+  "ground_truth": "25",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The highest ranking in the United States for a single written by an English multi-instrumentalist is 1980 to 2002.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Lennon: John Winston Ono Lennon, {'1': \", '2': \", '3': \", '4': \"} (born John Winston Lennon; 9 October 19408 December 1980) was an English singer, songwriter, musician, and activist who co-founded the Beatles, the most commercially successful and musically influential band in the history of popular music.  He and fellow member Paul McCartney formed a much-celebrated songwriting partnership.",
+      "Anthony Burgess: John Anthony Burgess Wilson, {'1': \", '2': \", '3': 'FRSL', '4': \"} ( ; 25 February 1917\u00a0\u2013 22 November 1993)\u00a0\u2013 who published under the pen name Anthony Burgess\u00a0\u2013 was an English writer and composer.  From relatively modest beginnings in a Catholic family in Manchester, he eventually became one of the best known English literary figures of the latter half of the twentieth century.",
+      "Elton John: Sir Elton Hercules John, (born Reginald Kenneth Dwight; 25 March 1947), is an English singer, pianist, and composer.  He has worked with lyricist Bernie Taupin as his songwriting partner since 1967; they have collaborated on more than 30 albums to date.  In his five-decade career Elton John has sold more than 300million records, making him one of the best-selling music artists in the world.  He has more than fifty Top 40 hits, including seven consecutive No. 1 US albums, 58 \"Billboard\" Top 40 singles, 27 Top 10, four No. 2 and nine No. 1.  For 31 consecutive years (1970\u20132000) he had at least one song in the \"Billboard\" Hot 100.  His tribute single, re-penned in dedication to the late Princess Diana, \"Candle in the Wind 1997\" sold over 33million copies worldwide and is the best-selling single in the history of the UK and US singles charts.  He has also composed music, produced records, and has occasionally acted in films.  John owned Watford Football Club from 1976 to 1987, and 1997 to 2002.  He is an honorary Life President of the club, and in 2014 had a stand named after him at the club's home stadium."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 635,
+    "generation_tokens": 33,
+    "generation_speed": 377.190275348901,
+    "prompt_eval_speed": 21433.15219225706,
+    "generation_latency_s": 0.23101620003581047,
+    "latency": 0.7883047999348491,
+    "total_prompt_tokens": 779,
+    "total_generation_tokens": 139,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.21961920000000001,
+    "stage_route_s": 0.17382040002848953,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3278787999879569,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05541940010152757,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.509999416768551e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23105140007101,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.788313900004141,
+    "unaccounted_latency_s": 9.939982555806637e-05,
+    "route": "rag",
+    "router_raw": "The highest ranked in the United States for a single written by an English multi-instrumentalist is \"Johnny Cash.\"",
+    "sub_queries": [
+      "The highest ranked writer of a single written by an English multi-instrumentalist is John Smith, who wrote \"The Great Gatsby\" (1925).",
+      "The highest ranked writer of a single written by an English multi-instrumentalist is John Smith, who wrote \"A Man Called John\" (1930) in 1948."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

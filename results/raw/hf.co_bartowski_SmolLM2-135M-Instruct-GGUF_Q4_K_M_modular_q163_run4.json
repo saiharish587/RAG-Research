@@ -1,0 +1,48 @@
+{
+  "question_id": "Q163",
+  "query": "What major city is the Faith Lutheran Middle School and High School located by?",
+  "ground_truth": "Las Vegas",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The Faith Lutheran Middle School and High School is located in the city of Springdale, Illinois.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Faith Lutheran High School: Faith Lutheran High School, commonly referred to as Faith or FLHS, is a private high school located in Crystal Lake, Illinois.  It is affiliated with the Lutheran Church\u2013Missouri Synod and serves students of McHenry County, Illinois.",
+      "Faith Lutheran Middle School &amp; High School: Faith Lutheran Middle School & High School is a private Christian school located in Summerlin, Clark County, Nevada serving the Las Vegas Valley.  Faith has students who come from 60 different zip codes.  The school, which began in 1979, serves grades 6\u201312 and is affiliated with the Lutheran Church\u2013Missouri Synod.  Faith Lutheran is the largest Lutheran school in the United States and the largest non-public school in the state of Nevada.  Faith Lutheran is governed by a Board of Directors representing the thirteen Lutheran churches in its association.",
+      "Lincoln Lutheran Middle/High School: Lincoln Lutheran is a private middle school and high school in Lincoln, Nebraska, United States, operated by the Lincoln Lutheran School Association, which is composed of seven Lutheran congregations in the Lincoln area.  It is accredited by the Nebraska Department of Education (NDE), National Lutheran School Accreditation, and AdvancedED.  It is also affiliated with the Lutheran Church\u2013Missouri Synod (LCMS)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 347,
+    "generation_tokens": 20,
+    "generation_speed": 367.53220500946395,
+    "prompt_eval_speed": 54218.75,
+    "generation_latency_s": 0.1691496999701485,
+    "latency": 0.7180904999841005,
+    "total_prompt_tokens": 477,
+    "total_generation_tokens": 133,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.228927,
+    "stage_route_s": 0.21061380009632558,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2993553999112919,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03881190007086843,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.720005042850971e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1691829999908805,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7181007000617683,
+    "unaccounted_latency_s": 9.989994578063488e-05,
+    "route": "rag",
+    "router_raw": "The user's query asks about the location of a Faith Lutheran Middle School and High School, which requires retrieving information from internal files/documents. The answer to this question would be \"Faith Lutheran Middle School.\"",
+    "sub_queries": [
+      "The answer to this question is Faith Lutheran Middle School and High School, which are both locations of a Faith Lutheran middle school and high school in the United States."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

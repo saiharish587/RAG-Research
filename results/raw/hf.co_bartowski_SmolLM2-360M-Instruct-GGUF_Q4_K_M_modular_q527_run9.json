@@ -1,0 +1,49 @@
+{
+  "question_id": "Q527",
+  "query": "The Duke Steps Out stars an actress who was ranked tenth on a list of greatest female Hollywood stars in what year?",
+  "ground_truth": "1999",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The Duke Steps Out is a 1929 silent film starring William Haines and Joan Crawford. The Vitaphone sound discs track survive at UCLA Film and TV Archives, but the film itself has not been definitively identified or preserved. Therefore, we do not know when the film was released or who ranked it as the greatest female star of Classic Hollywood Cinema in 1929.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Duke Steps Out: The Duke Steps Out is a 1929 silent film starring William Haines and Joan Crawford.  The film is lost, but the Vitaphone sound discs track survive at UCLA Film and TV Archives.",
+      "Joan Crawford: Joan Crawford (born Lucille Fay LeSueur; (March 23, 190?  \u2013 May 10, 1977) was an American film and television actress who began her career as a dancer and stage showgirl.  In 1999, the American Film Institute ranked Crawford tenth on its list of the greatest female stars of Classic Hollywood Cinema.",
+      "Katharine Hepburn: Katharine Houghton Hepburn (May 12, 1907\u00a0\u2013 June 29, 2003) was an American actress.  Known for her fierce independence and spirited personality, Hepburn was a leading lady in Hollywood for more than 60 years.  She appeared in a range of genres, from screwball comedy to literary drama, and she received four Academy Awards\u2014a record for any performer\u2014for Best Actress.  In 1999, Hepburn was named by the American Film Institute as the greatest female star of Classic Hollywood Cinema."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 348,
+    "generation_tokens": 81,
+    "generation_speed": 217.22048952380442,
+    "prompt_eval_speed": 39867.10963455149,
+    "generation_latency_s": 0.4941112999804318,
+    "latency": 0.8756015000399202,
+    "total_prompt_tokens": 494,
+    "total_generation_tokens": 119,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2257506,
+    "stage_route_s": 0.09398180001880974,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23151439998764545,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05580780003219843,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.510007031261921e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4941517999395728,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8756140000186861,
+    "unaccounted_latency_s": 0.00010379997547715902,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Duke Steps Out\" - 2019",
+      "\"Ranked Ten on the Greatest Female Hollywood Stars\" - 2018"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q16",
+  "query": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+  "ground_truth": "9,984",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Brown State Fishing Lake is located in the United States, specifically in the state of Kansas. The total number of inhabitants living in Brown County, which includes Brown State Fishing Lake, is approximately 10,529.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Brown State Fishing Lake: Brown State Fishing Lake (sometimes also known as Brown State Fishing Lake And Wildlife Area) is a protected area in Brown County, Kansas in the United States.  The lake is 62 acres (0.25 km\u00b2) in area and up to 13 feet (4 m) deep.  The area was formerly known as Brown County State Park, and is 8 miles (13 km) east of Hiawatha, Kansas.",
+      "Shawnee State Fishing Lake: Shawnee State Fishing Lake is approximately eight miles northwest of Topeka, Kansas, and is in northern Shawnee County, Kansas.  This lake is sometimes confused with Lake Shawnee, on the east side of Topeka.  It is a 135 acre surface area lake with a maximum depth of 25 ft .  This is a manmade freshwater lake, which was constructed in the late 1960s.  The lake is widest at the dam, which is at the south end of the lake.  It can be reached by a number of roads.  The only asphalted road reaching it is on the southeast corner.  To the north is 94th Street and on the west side is Humphrey Road.",
+      "Higgins Lake: Higgins Lake is a large recreational and fishing lake in Roscommon County, in the U.S. state of Michigan.  The 9,900 acre (40\u00a0km\u00b2) lake is known for its deep, clear waters and is the 10th largest in Michigan with a shoreline of 21 mi .  It is named after Sylvester Higgins, the first chief of the topographical department of the Michigan Geological Survey.  It has a maximum width of 4 mi and a length of 7 mi with a maximum depth of 135 ft .  The mean depth is 44 ft and the lake contains almost 20 billion cubic feet (570 million m\u00b3) of water.  Its retention time is about 12.5 years.  The lake's watershed covers 19,000 acres (77\u00a0km\u00b2).  The twin-lobed lake receives half of its water from submerged springs, six percent from incoming streams, and the remainder from direct rainfall and runoff.  It drains into Marl Lake by the Cut River which runs into Houghton Lake and eventually to Lake Michigan.  A mile north of the lake, water flows into the Lake Huron watershed."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 594,
+    "generation_tokens": 46,
+    "generation_speed": 247.27327459697145,
+    "prompt_eval_speed": 68181.81818181819,
+    "generation_latency_s": 0.3079209999414161,
+    "latency": 0.7185365000041202,
+    "total_prompt_tokens": 728,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2236533,
+    "stage_route_s": 0.10041750001255423,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2403871000278741,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06961899995803833,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.610007792711258e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3079602000070736,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7185489000985399,
+    "unaccounted_latency_s": 0.0001097000204026699,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The population of Brown State Fishing Lake is approximately 25,000.\"",
+      "\"The population of Brown State Fishing Lake is 38,000.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

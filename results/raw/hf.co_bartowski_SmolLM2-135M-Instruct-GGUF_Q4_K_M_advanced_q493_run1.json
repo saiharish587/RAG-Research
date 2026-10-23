@@ -1,0 +1,42 @@
+{
+  "question_id": "Q493",
+  "query": "The actor who appeared on Charlotte's Shorts and Weeds was born in what year?",
+  "ground_truth": "1966",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The actor who appeared on Charlotte's Shorts and Weeds was born in 2013.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Charlotte's Shorts: Charlotte's Shorts is a 90 minute live performance of Charlotte Dean's short stories.  The show has traditionally been cast with current and past Groundlings, such as Tim Bagley, Jim Rash, Jillian Bell, Jordan Black, Gary Anthony Williams, Jonathan Stark, Michael Hitchcock, Andrew Friedman, Daniele Gaither, Mindy Sterling, and Laraine Newman.  In 2014, \"Charlotte's Shorts\" was performed at various theaters in Los Angeles, including two shows at The Groundlings Theater.  \"Charlotte's Shorts\" is prominently featured in SF Sketchfest and The Hollywood Fringe Festival.",
+      "Jamie Foxx: Eric Marlon Bishop (born December 13, 1967), known professionally by his stage name Jamie Foxx, is an American actor, singer, songwriter, musician, producer, and comedian.  He won an Academy Award for Best Actor, BAFTA Award for Best Actor in a Leading Role, and a Golden Globe Award for Best Actor in a Musical or Comedy, for his portrayal of Ray Charles in the 2004 biographical film \"Ray\".  The same year, he was nominated for the Academy Award for Best Supporting Actor for his role in the crime film \"Collateral\".  As of spring 2017, Foxx serves as host and executive producer of the new Fox game show \"Beat Shazam\".",
+      "Will Arnett: William Emerson Arnett ( ; born May 4, 1970) is a Canadian-American actor, voice actor and comedian.  He is best known for his role as George Oscar \"Gob\" Bluth II in the Fox/Netflix series \"Arrested Development\" (2003\u20132006, 2013, 2018); as well as his titular role as BoJack Horseman in the Netflix Original Series of the same name (2014-present).  He has appeared in films such as \"Blades of Glory\" (2007), \"Hot Rod\" (2007) and \"Teenage Mutant Ninja Turtles\" (2014)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 550,
+    "generation_tokens": 22,
+    "generation_speed": 376.132672251667,
+    "prompt_eval_speed": 18075.456816090442,
+    "generation_latency_s": 0.17100889992434531,
+    "latency": 0.6334412000142038,
+    "total_prompt_tokens": 628,
+    "total_generation_tokens": 54,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1227576,
+    "stage_rewrite_s": 0.17332010006066412,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07394719996955246,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21504380006808788,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.17104459996335208,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6334492999594659,
+    "unaccounted_latency_s": 9.3999900855124e-05,
+    "rewritten_query": "The actor who appeared on Charlotte's Shorts and Weeds, born in 2015, is a popular name among fans of the show.",
+    "query_was_rewritten": true
+  }
+}

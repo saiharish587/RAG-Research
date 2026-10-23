@@ -1,0 +1,48 @@
+{
+  "question_id": "Q202",
+  "query": "Chris Williams last played for which football club from the National League North?",
+  "ground_truth": "Salford City Football Club",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The correct answer to this question is:",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chris Williams (English footballer): Christopher Jonathan \"Chris\" Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City as a forward.",
+      "National League North: The National League North, formerly Conference North (currently named the Vanarama National League North for sponsorship reasons), is a division of the National League in England, taking its place immediately below the top division National League.  Along with the National League South, it is at Step 2 of the National League System and the sixth overall tier of the English football league system.  It consists of teams located in Northern England, Norfolk, the English Midlands and North Wales.  From the start of the 2015\u201316 season, the league has been known as the National League North.  As part of a sponsorship deal with Vanarama, the National League North is now known as the Vanarama National League North.",
+      "Paul Williams (Northern Ireland footballer): Paul Andrew Williams (born 8 September 1965) is a retired Northern Irish footballer.  He won one cap for the Northern Ireland national football team.  He played as a forward."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 321,
+    "generation_tokens": 9,
+    "generation_speed": 357.9240405647246,
+    "prompt_eval_speed": 21232.96732372007,
+    "generation_latency_s": 0.1458932999521494,
+    "latency": 0.4070293999975547,
+    "total_prompt_tokens": 449,
+    "total_generation_tokens": 29,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2242058,
+    "stage_route_s": 0.11658560007344931,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1096595999551937,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.034695500042289495,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1900045946240425e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.14594469999428838,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4070441999938339,
+    "unaccounted_latency_s": 0.000107599887996912,
+    "route": "rag",
+    "router_raw": "Chris Williams plays for the National League North.",
+    "sub_queries": [
+      "Chris Williams, from the National League North."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

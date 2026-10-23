@@ -1,0 +1,42 @@
+{
+  "question_id": "Q339",
+  "query": "Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "No, the answer is not \"both.\" The correct answer would be that both Sorbaria and Goldenrod belong to the same genus, Sorbaria. They are both members of the family Rosaceae and are native to tropical regions in Central America and South America.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sorbaria: Sorbaria is a genus of around 9 species of flowering plants belong to family Rosaceae.",
+      "Shade garden: Shade gardens are gardens planted and grown in areas with little or no direct sunlight.  Shade gardens may occur naturally or by design under trees, as well as on the side of buildings or fences.  This style of garden presents certain challenges, in part because only certain plants are able to grow in shady conditions and otherwise there is direct competition for sunlight.  Very few edible plants grow well in shady conditions, so shade gardens are usually ornamental gardens, though growing flowers may also be difficult in shade.  Light shade, also known as \"dappled sunlight\", may support growing herbs or some leaf vegetables, but in addition to lack of light, trees and other large plants which create shade gardens may negatively impact soil fertility.",
+      "Dieffenbachia: Dieffenbachia is a genus of tropical flowering plants in the family Araceae.  It is native to the New World Tropics from Mexico and the West Indies south to Argentina.  Some species are widely cultivated as ornamental plants, especially as houseplants, and have become naturalized on a few tropical islands."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 324,
+    "generation_tokens": 55,
+    "generation_speed": 406.60023065322173,
+    "prompt_eval_speed": 21646.17851416355,
+    "generation_latency_s": 0.22971850004978478,
+    "latency": 0.6854417000431567,
+    "total_prompt_tokens": 403,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1330946,
+    "stage_rewrite_s": 0.18817680003121495,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07960930000990629,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.187817299971357,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.22975339996628463,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6854502999922261,
+    "unaccounted_latency_s": 9.400001727044582e-05,
+    "rewritten_query": "The two species of Sorbia, both known as Sorbis and Sorbus, belong to the Sorbaceae family. They have distinct characteristics that make them valuable ornamental plants in gardens worldwide.",
+    "query_was_rewritten": true
+  }
+}

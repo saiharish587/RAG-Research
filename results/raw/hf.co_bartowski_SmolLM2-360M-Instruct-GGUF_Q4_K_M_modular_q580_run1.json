@@ -1,0 +1,49 @@
+{
+  "question_id": "Q580",
+  "query": "The album \"The Best of LeAnn Rimes\" contained a song used as the theme song for a film. What is the name of the film?",
+  "ground_truth": "Coyote Ugly",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer to the question is \"Coyote Ugly.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Love Is Love Is Love: \"Love Is Love Is Love\" (stylized as \"LovE Is LovE Is LovE\") is a song recorded by American singer LeAnn Rimes, and the fourth release from her sixteenth studio album, \"Remnants\".  Rimes co-produced the track with Darrell Brown, Mark Batson, and Niko Bolas, and co-wrote the song with Darrell Brown, Lindy Robbins and Toby Gad.  The single will be featured in the 2017 American film \"Lucky Logan\", in which Rimes will have a cameo.",
+      "Can't Fight the Moonlight: \"Can't Fight the Moonlight\" is a song written by Diane Warren, recorded by country pop singer LeAnn Rimes.  It was the theme song of the film \"Coyote Ugly\".  Released as a single on August 22, 2000 by Rimes, the song reached the top twenty in every country it charted in, and peaked at number eleven on the \"Billboard\" Hot 100.  Internationally, the song topped the charts in eight countries, including Australia, Ireland and the United Kingdom.  \"Can't Fight the Moonlight\" became Australia's best-selling single of 2001.",
+      "Ghostbusters (song): \"Ghostbusters\" is a song written and recorded by Ray Parker Jr. as the theme to the film of the same name starring Bill Murray, Dan Aykroyd, Harold Ramis, and Ernie Hudson.  Debuting at #68 on June 16, 1984, the song reached number one on the \"Billboard\" Hot 100 on August 11, 1984, staying there for three weeks, and at number two on the UK Singles Chart on September 16, 1984, staying there for three weeks.  The song re-entered the UK Top 75 on November 2, 2008, at No.\u00a049."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 533,
+    "generation_tokens": 14,
+    "generation_speed": 210.03360537686027,
+    "prompt_eval_speed": 11906.357503462448,
+    "generation_latency_s": 0.22095429990440607,
+    "latency": 0.6360827999887988,
+    "total_prompt_tokens": 695,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.230976,
+    "stage_route_s": 0.11190250003710389,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.24724899989087135,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05575769999995828,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.3999945521354675e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22102519997861236,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6360958999721333,
+    "unaccounted_latency_s": 0.00010850012768059969,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Best of LeAnn Rimes\" contains a song used as the theme song for a film.",
+      "The film's title is \"The Hunger Games\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

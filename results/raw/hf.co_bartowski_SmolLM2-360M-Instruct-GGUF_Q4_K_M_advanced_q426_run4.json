@@ -1,0 +1,42 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Las Vegas Festival Grounds is north of the Trump International Hotel and Casino.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "Trump International Hotel Las Vegas: The Trump International Hotel Las Vegas is a 64-story luxury hotel, condominium, and timeshare located on Fashion Show Drive near Las Vegas Boulevard, just off the Las Vegas Strip in Paradise, Nevada, named for real estate developer and the 45th and current President of the United States Donald Trump.  It is located across the street from Wynn Las Vegas, behind Alon Las Vegas on 3.46 acre , near the Fashion Show Mall, and features both non-residential hotel condominiums and residential condominiums.  The exterior glass is infused with gold.  The hotel is a member of The Leading Hotels of the World.",
+      "New York-New York Hotel and Casino: New York-New York Hotel & Casino is a hotel and casino located on the Las Vegas Strip at 3790 Las Vegas Boulevard South, in Paradise, Nevada.  It is owned and operated by MGM Resorts International."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 343,
+    "generation_tokens": 18,
+    "generation_speed": 261.62030173541467,
+    "prompt_eval_speed": 46851.523015981424,
+    "generation_latency_s": 1.0007542000385001,
+    "latency": 3.373901200015098,
+    "total_prompt_tokens": 420,
+    "total_generation_tokens": 41,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1310619,
+    "stage_rewrite_s": 1.2121021000202745,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0436776999849826,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11723990004975349,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0007979000220075,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3739124999847263,
+    "unaccounted_latency_s": 9.529991075396538e-05,
+    "rewritten_query": "Las Vegas Festival Grounds is located north of the hotel, owned by a prominent real estate development firm.",
+    "query_was_rewritten": true
+  }
+}

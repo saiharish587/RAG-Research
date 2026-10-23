@@ -1,0 +1,42 @@
+{
+  "question_id": "Q422",
+  "query": "\"A Summer in the Cage\" and \"American Hardcore\" are both what kind of film?",
+  "ground_truth": "documentary",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The movie \"A Summer in the Cage\" is a fictionalized account of Johnny Cage's life as a martial arts actor, created by Benjamin Selkow. It was directed by Benjamin Selkow and features an interview with Kay Redfield Jamison, who provides comic relief to the film.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "A Summer in the Cage: A Summer in the Cage is a 2007 documentary film about a man's experiences with bipolar disorder.  The film follows the filmmaker's friend Sam and features an interview with mental health scholar Kay Redfield Jamison.  It was directed by Benjamin Selkow.  The documentary debuted on the Sundance Channel in 2007.",
+      "2012 in Cage Warriors: The year 2012 is the 11th year in the history of Cage Warriors, a mixed martial arts promotion based in the United Kingdom.  In 2012 Cage Warriors held 12 events beginning with, \"Cage Warriors Fight Night 3\".",
+      "Johnny Cage: Johnny Cage is a fictional character from the \"Mortal Kombat\" fighting game franchise.  He debuted as one of the series' original seven characters in the first \"Mortal Kombat\", and has since become a staple of the series.  Created as a parody of martial arts actor and famous karate practitioner Jean-Claude Van Damme, Cage is a cocky and overconfident martial arts film actor who provides the comic relief of the franchise.  He became a more layered character in \"Mortal Kombat X\", which introduced his and Sonya Blade's daughter Cassie Cage."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 372,
+    "generation_tokens": 62,
+    "generation_speed": 403.7167991769387,
+    "prompt_eval_speed": 22864.16717885679,
+    "generation_latency_s": 0.2473819999722764,
+    "latency": 0.8320979001000524,
+    "total_prompt_tokens": 453,
+    "total_generation_tokens": 144,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.128424,
+    "stage_rewrite_s": 0.2879729999694973,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07865550008136779,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.21794830006547272,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2474289999809116,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8321105000795797,
+    "unaccounted_latency_s": 0.00010529998689889908,
+    "rewritten_query": "The original query was \"What is a summer in the cage?\" which is an idiomatic expression meaning to be bored or exhausted, often with reference to a movie. The optimized query would output: \"A Summer in the Cage.\" This rephrased query uses more natural language and avoids unnecessary words like \"what kind of film\" and \"is,\" making it more concise and user-friendly.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "Q264",
+  "query": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+  "ground_truth": "Tybalt",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Benvolio",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Romeo: Romeo Montague (Italian: \"Romeo Montecchi\" ) is the protagonist of William Shakespeare's tragedy \"Romeo and Juliet\".  The son of Montague and his wife, he secretly loves and marries Juliet, a member of the rival House of Capulet.  Forced into exile after slaying Juliet's cousin, Tybalt, in a duel, Romeo commits suicide upon hearing falsely of Juliet's death.",
+      "Benvolio: Benvolio is a fictional character in Shakespeare's drama \"Romeo and Juliet\".  He is Montague's nephew and Romeo's cousin.  Benvolio serves as an unsuccessful peacemaker in the play, attempting to prevent violence between the Capulet and Montague families.",
+      "Juliet: Juliet Capulet (Italian: \"Giulietta Capuleti\" ) is the female protagonist in William Shakespeare's romantic tragedy \"Romeo and Juliet\".  Juliet is the only daughter of the patriarch of the House of Capulet and falls in love with Romeo, a member of the House of Montague (with which the Capulets have a blood feud).  The story has a long history that precedes Shakespeare himself."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 335,
+    "generation_tokens": 4,
+    "generation_speed": 353.98230088495575,
+    "prompt_eval_speed": 43025.94400205497,
+    "generation_latency_s": 0.12865790002979338,
+    "latency": 0.4218586999922991,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 33,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2331003,
+    "stage_route_s": 0.10785839997697622,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1405916000949219,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0445903999498114,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.009995609521866e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.12869769998360425,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4218702999642119,
+    "unaccounted_latency_s": 9.320001117885113e-05,
+    "route": "rag",
+    "router_raw": "This character is Benvolio.",
+    "sub_queries": [
+      "Benvolio is a character in Shakespeare's play \"Romeo and Juliet\" by William Shakespeare."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q237",
+  "query": "Henry Hall is known for fighting in the Revolutionary War, and for being the first to successfully cultivate this food found in what type of bogs?",
+  "ground_truth": "acidic",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is \"Bog.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry Hall (American revolution): Captain Henry Hall was an American from Dennis, Massachusetts who fought in the American Revolutionary War, who later was the first to successfully cultivate cranberries.",
+      "Gilbert du Motier, Marquis de Lafayette: Marie-Joseph Paul Yves Roch Gilbert du Motier, Marquis de Lafayette (] ; 6 September 1757 \u2013 20 May 1834), in the United States often known simply as Lafayette, was a French aristocrat and military officer who fought in the American Revolutionary War.  A close friend of George Washington, Alexander Hamilton, and Thomas Jefferson, Lafayette was a key figure in the French Revolution of 1789 and the July Revolution of 1830.",
+      "Province of Pennsylvania: The Province of Pennsylvania, also known as the Pennsylvania Colony, was founded in English North America by William Penn on March 4, 1681 as dictated in a royal charter granted by King Charles II.  The name Pennsylvania, which translates roughly as \"Penn's Woods\", was created by combining the Penn surname (in honor of William's father, Admiral Sir William Penn) with the Latin word \"sylvania\", meaning \"forest land.\"  The Province of Pennsylvania was one of the two major Restoration colonies, the other being the Province of Carolina.  The proprietary colony's charter remained in the hands of the Penn family until the American Revolution, when the Commonwealth of Pennsylvania was created and became one of the original thirteen states."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 394,
+    "generation_tokens": 8,
+    "generation_speed": 318.5854804667277,
+    "prompt_eval_speed": 21954.75314833389,
+    "generation_latency_s": 0.11976620007771999,
+    "latency": 0.4764131000265479,
+    "total_prompt_tokens": 483,
+    "total_generation_tokens": 24,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1308449,
+    "stage_rewrite_s": 0.13336159999016672,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.080842399969697,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14230840001255274,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.11981010006275028,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.47642560000531375,
+    "unaccounted_latency_s": 0.00010379997547715902,
+    "rewritten_query": "Henry Hall was a pioneer in cultivating bogs during the Revolutionary War.",
+    "query_was_rewritten": true
+  }
+}

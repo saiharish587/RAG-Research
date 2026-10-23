@@ -1,0 +1,42 @@
+{
+  "question_id": "Q203",
+  "query": "Who designed the hotel that held the IFBB professional bodybuilding competition in September 1991?",
+  "ground_truth": "architect Michael Graves",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The IFBB Arnold Sports Festival was an annual multi-sport event consisting of professional bodybuilding (\"Arnold Classic\"), strongman (\"Arnold Strongman Classic\"), fitness, figure and bikini weekends expo.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1991 Mr. Olympia: The 1991 Mr. Olympia contest was an IFBB professional bodybuilding competition held in September 1991 at the Walt Disney World Dolphin Hotel in Orlando, Florida.",
+      "International Boxing Federation: The International Boxing Federation (IBF) is one of four major organizations recognized by the International Boxing Hall of Fame (IBHOF) which sanction world championship boxing bouts, alongside the World Boxing Association (WBA), World Boxing Council (WBC) and World Boxing Organization (WBO).",
+      "Arnold Sports Festival: The IFBB Arnold Sports Festival, also known as the Arnold Schwarzenegger Sports Festival is an annual multi-sport event consisting of professional bodybuilding (\"Arnold Classic\"), strongman (\"Arnold Strongman Classic\"), fitness, figure and bikini weekend expo.  It was established in 1989 and is named after Arnold Schwarzenegger.  The main event is held annually around late February or early March in Columbus, Ohio, United States by the International Federation of BodyBuilding & Fitness (IFBB).  It is the second most prestigious event in professional men's bodybuilding, physique, figure and bikini; as well as formerly the second most prestigious event in professional female bodybuilding."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 348,
+    "generation_tokens": 45,
+    "generation_speed": 397.05648790301234,
+    "prompt_eval_speed": 22051.834484506686,
+    "generation_latency_s": 0.20260830002371222,
+    "latency": 0.6710672999033704,
+    "total_prompt_tokens": 429,
+    "total_generation_tokens": 82,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1270249,
+    "stage_rewrite_s": 0.1715089000063017,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0753466000314802,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.22148089995607734,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.20264530007261783,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6710750999627635,
+    "unaccounted_latency_s": 9.3999900855124e-05,
+    "rewritten_query": "The hotel that hosted the IFBB professional boxing competition in September 1991 was designed by the IFB (International Boxing Federation) in 1987.",
+    "query_was_rewritten": true
+  }
+}

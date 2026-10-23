@@ -1,0 +1,42 @@
+{
+  "question_id": "Q41",
+  "query": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+  "ground_truth": "Scotch Collie",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Manchester Terrier is likely to have descended from the Scottish Rough Collie, as it shares many characteristics with this breed such as its long coat and herding instincts. The Scottish Rough Collie's ancestors are believed to be of Roman origin, which would suggest a connection to the Irish Setter's ancestry.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scotch Collie: The Scotch Collie is a landrace breed of dog which originated from the highland regions of Scotland.  The breed consisted of both the long-haired (now known as Rough) Collie and the short-haired (now known as Smooth) Collie.  It is generally believed to have descended from a variety of ancient herding dogs, some dating back to the Roman occupation, which may have included Roman Cattle Dogs, Native Celtic Dogs and Viking Herding Spitzes.  Other ancestors include the Gordon and Irish Setters.",
+      "Manchester Terrier: The Manchester Terrier is a breed of dog of the smooth-haired terrier type.",
+      "Irish Setter: The Irish Setter (Irish: \"sotar rua\" , literally \"red setter\") is a setter, a breed of gundog, and family dog.  The term \"Irish Setter\" is commonly used to encompass the show-bred dog recognised by the American Kennel Club as well as the field-bred Red Setter recognised by the Field Dog Stud Book."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 307,
+    "generation_tokens": 63,
+    "generation_speed": 248.10475534114403,
+    "prompt_eval_speed": 44268.20475847152,
+    "generation_latency_s": 1.0934263999806717,
+    "latency": 3.5603502999292687,
+    "total_prompt_tokens": 389,
+    "total_generation_tokens": 93,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1213204,
+    "stage_rewrite_s": 1.2466125999344513,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.004812499973923,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2153868000023067,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.093459299998358,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.560358599992469,
+    "unaccounted_latency_s": 8.810008876025677e-05,
+    "rewritten_query": "The Manchester Terrier is a direct ancestor of both the Gordon and Irish Setter breeds, while the Scotch Collie is another significant breed.",
+    "query_was_rewritten": true
+  }
+}

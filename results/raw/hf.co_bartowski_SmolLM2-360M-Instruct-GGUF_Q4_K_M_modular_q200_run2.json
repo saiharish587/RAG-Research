@@ -1,0 +1,49 @@
+{
+  "question_id": "Q200",
+  "query": "Considered the strongest recorded tropical cyclone, which cyclone had a film made about it in 2007?",
+  "ground_truth": "1999 Odisha cyclone",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Coming Global Superstorm is a book written by Art Bell and Whitley Strieber that warns of global warming's potential to produce sudden and catastrophic climatic effects. The book was released in 1999, and the film made about it in 2007 was titled \"The Coming Global Superstorm.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Cyclone Gonu: Super Cyclonic Storm Gonu (also simply known as Cyclone Gonu) is the strongest tropical cyclone on record in the Arabian Sea, and is also the strongest named cyclone in the northern Indian Ocean.  The second named tropical cyclone of the 2007 North Indian Ocean cyclone season, Gonu developed from a persistent area of convection in the eastern Arabian Sea on June 1, 2007.  With a favorable upper-level environment and warm sea surface temperatures, it rapidly intensified to attain peak winds of 235\u00a0km/h (145\u00a0mph) on June 4, according to the India Meteorological Department.  Gonu weakened after encountering dry air and cooler waters, and early on June 6, it made landfall on the easternmost tip of Oman, becoming the strongest tropical cyclone to hit the Arabian Peninsula.  It then turned northward into the Gulf of Oman, and dissipated on June 7 after making landfall in southern Iran, the first landfall in the country since 1898.",
+      "Hurricane Emilia (1994): Hurricane Emilia was, at the time, the strongest tropical cyclone on record in the Central Pacific Ocean, and the first of such to be classified as a Category\u00a05 hurricane\u00a0\u2013 the highest rating on the Saffir\u2013Simpson hurricane wind scale.  However, hurricanes Gilma later that year and Ioke in 2006 later reached lower barometric pressures in the Central Pacific.  The fifth named storm and the first of three Category 5\u00a0hurricanes of the 1994 hurricane season, Emilia developed from an area of low pressure southeast of Hawaii on July\u00a016.  Tracking westward, the initial tropical depression intensified into a tropical storm several hours after tropical cyclogenesis.  Subsequently, Emilia entered the Central Pacific Ocean and moved into the area of responsibility of the Central Pacific Hurricane Center\u00a0.",
+      "The Coming Global Superstorm: The Coming Global Superstorm (ISBN  ) is a 1999 book by Art Bell and Whitley Strieber, which warns that global warming might produce sudden and catastrophic climatic effects."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 529,
+    "generation_tokens": 66,
+    "generation_speed": 232.0748546894944,
+    "prompt_eval_speed": 71035.3162347254,
+    "generation_latency_s": 0.4060238000238314,
+    "latency": 0.754527400014922,
+    "total_prompt_tokens": 675,
+    "total_generation_tokens": 94,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2353184,
+    "stage_route_s": 0.10242290003225207,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.19051599991507828,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05537840002216399,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.500006955116987e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.40606489998754114,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7545374999754131,
+    "unaccounted_latency_s": 0.00010089995339512825,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Great Hurricane of 1935\"",
+      "\"The Storm that Changed the World\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q442",
+  "query": "In between The Bears and I and Oceans which was released on July 31, 1974, by Buena Vista Distribution?",
+  "ground_truth": "The Bears and I",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Bears and I was released on July 31, 1974, by Buena Vista Distribution.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Bears and I: The Bears and I is a 1974 American drama film directed by Bernard McEveety and written by John Whedon.  The film stars Patrick Wayne, Chief Dan George, Andrew Duggan, Michael Ansara and Robert Pine.  The film was released on July 31, 1974, by Buena Vista Distribution.",
+      "Marty Booker: Marty Montez Booker (born July 31, 1976) is a former American football wide receiver who played for eleven seasons in the National Football League (NFL).  After playing college football for Louisiana-Monroe, he was drafted by the Chicago Bears in the third round of the 1999 NFL Draft.  During his first tenure with the Bears, he earned a Pro Bowl selection in 2002.  He also played for the Miami Dolphins from 2004 to 2007, Bears in 2008, and Atlanta Falcons in 2009.",
+      "Eagles (band): The Eagles are an American rock band formed in Los Angeles in 1971.  The founding members were Glenn Frey (lead guitar, lead vocals), Don Henley (drums, lead vocals), Bernie Leadon (guitars, vocals) and Randy Meisner (bass guitar, vocals).  With five number-one singles, six Grammy Awards, five American Music Awards, and six number one albums, the Eagles were one of the most successful musical acts of the 1970s.  At the end of the 20th century, two of their albums, \"Their Greatest Hits (1971\u20131975)\" and \"Hotel California\", were ranked among the 20 best-selling albums in the United States according to the Recording Industry Association of America.  \"Hotel California\" is ranked 37th in \"Rolling Stone\"' s list of \"The 500 Greatest Albums of All Time\" and the band was ranked number 75 on the magazine's 2004 list of the 100 Greatest Artists of All Time."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 563,
+    "generation_tokens": 25,
+    "generation_speed": 249.8625755834291,
+    "prompt_eval_speed": 13268.288084464555,
+    "generation_latency_s": 1.0274857999756932,
+    "latency": 3.4159995999652892,
+    "total_prompt_tokens": 652,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1332645,
+    "stage_rewrite_s": 1.1893842000281438,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0419572000391781,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15705999999772757,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0275211000116542,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4160090000368655,
+    "unaccounted_latency_s": 8.699996396899223e-05,
+    "rewritten_query": "The Bears' album \"I\" was released on July 31, 1974.",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q64",
+  "query": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+  "ground_truth": "821",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Roud Folk Song Index of the nursery rhyme \"What Are Little Boys Made Of?\" is not specified in the given context, so I do not know its Roud Folk Song Index number.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Solomon Grundy: \"Solomon Grundy\" is an English nursery rhyme.  It has a Roud Folk Song Index number of 19299.",
+      "Hickory Dickory Dock: \"Hickory Dickory Dock\" or \"Hickety Dickety Dock\" is a popular English nursery rhyme.  It has a Roud Folk Song Index number of 6489.",
+      "What Are Little Boys Made Of?: \"What Are Little Boys Made Of?\"  is a popular nursery rhyme dating from the early 19th century.  It has a Roud Folk Song Index number of 821."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 212,
+    "generation_tokens": 40,
+    "generation_speed": 208.53752632786268,
+    "prompt_eval_speed": 10861.768623834409,
+    "generation_latency_s": 0.3180941001046449,
+    "latency": 0.9663770999759436,
+    "total_prompt_tokens": 352,
+    "total_generation_tokens": 128,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22658709999999999,
+    "stage_route_s": 0.10527840000577271,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.48544449999462813,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05739470000844449,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.9200025387108326e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.31812599999830127,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9663862000452355,
+    "unaccounted_latency_s": 9.390001650899649e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Roud Folk Song Index is an online database that contains a collection of folk songs, including those from various regions and cultures. It has been used to research and document many popular children's songs over the years.",
+      "Query 2: The nursery rhyme \"What Are Little Girls Made Of?\" was inspired by the Roud Folk Song Index, which provides information on traditional folk songs and their origins."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

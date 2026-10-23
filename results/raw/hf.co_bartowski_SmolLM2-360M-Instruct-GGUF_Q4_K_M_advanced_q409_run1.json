@@ -1,0 +1,42 @@
+{
+  "question_id": "Q409",
+  "query": "How large is the shopping mall where KGOT radio station has its studios ?",
+  "ground_truth": "728,000 ft\u00b2",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The shopping mall where KGOT radio station has its studios is approximately 93,000 square feet (925,000 sq ft).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "KGOT: KGOT (101.3 FM) is a commercial Top 40 (CHR) radio station in Anchorage, Alaska.  The station is owned by iHeartMedia, Inc. and broadcasts (along with its sister stations) from studios in the Dimond Center.",
+      "Mall of New Hampshire: The Mall of New Hampshire is a shopping mall located in the Lower South Willow neighborhood of Manchester, New Hampshire.  Its major anchoring stores are Macy's, Old Navy, JCPenney, Sears and Best Buy.  The mall has over 120 stores as well as a large food court and is 930000 sqft , making it the third largest mall in New Hampshire after the Mall at Rockingham Park in Salem, and the Pheasant Lane Mall in Nashua, which opened in 1991 and 1986, respectively.  This was the first large-scale shopping mall in New Hampshire; initial construction of the mall was completed in August 1977, though it has since been dramatically expanded.",
+      "The Shoppes at Bel Air: The Shoppes at Bel Air, formerly Bel Air Mall, is a super-regional shopping mall, located in Mobile, Alabama, United States.  The mall has a gross leasable area of 1,345,000 square feet (125,000 m\u00b2).  It is the oldest continuously operating enclosed super-regional mall in Alabama and serves as one of the primary retail venues for the west Mobile shopping district located at the vicinity of Airport Boulevard (Mobile County Highway 56) and Interstate 65.  Currently, Belk, Dillard's, JCPenney, and Target serve as the mall's anchor stores; the mall also features more than 130 stores and restaurants."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 466,
+    "generation_tokens": 35,
+    "generation_speed": 250.03214699032733,
+    "prompt_eval_speed": 15182.614928485322,
+    "generation_latency_s": 1.0755719000007957,
+    "latency": 3.5145254000090063,
+    "total_prompt_tokens": 542,
+    "total_generation_tokens": 66,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12787890000000002,
+    "stage_rewrite_s": 1.3643697000807151,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9386922999983653,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1357661000220105,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0756134999683127,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.514537699986249,
+    "unaccounted_latency_s": 9.66999214142561e-05,
+    "rewritten_query": "The size of the shopping mall where KGOT radio station has its studios can be found by looking at the number of rooms and floors it contains.",
+    "query_was_rewritten": true
+  }
+}

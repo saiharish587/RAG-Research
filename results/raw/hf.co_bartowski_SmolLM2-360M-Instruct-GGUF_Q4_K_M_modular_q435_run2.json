@@ -1,0 +1,49 @@
+{
+  "question_id": "Q435",
+  "query": "The movies The Boatniks and The Great Locomotive Chase were both made by which production company?",
+  "ground_truth": "Walt Disney Productions",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Great Locomotive Chase was produced by Walt Disney Productions, while The Boatniks was produced by Buena Vista Distribution.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Boatniks: The Boatniks is a 1970 American comedy film starring Robert Morse, Stefanie Powers, Don Ameche and Phil Silvers.  It was made by Walt Disney Productions, released by Buena Vista Distribution and directed by Norman Tokar.",
+      "The Great Locomotive Chase: The Great Locomotive Chase is a 1956 Walt Disney Productions CinemaScope adventure film based on the real Great Locomotive Chase that occurred in 1862 during the American Civil War.  The film stars Fess Parker as James J. Andrews, the leader of a group of Union soldiers from various Ohio regiments who volunteered to go behind Confederate lines in civilian clothes, steal a Confederate train north of Atlanta, and drive it back to Union lines in Tennessee, tearing up railroad tracks and destroying bridges and telegraph lines along the way.",
+      "The General (1926 film): The General is a 1926 American silent comedy film released by United Artists.  It was inspired by the Great Locomotive Chase, a true story of an event that occurred during the American Civil War.  The story was adapted from the memoir \"The Great Locomotive Chase\" by William Pittenger.  The film stars Buster Keaton who co-directed it with Clyde Bruckman."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 354,
+    "generation_tokens": 28,
+    "generation_speed": 244.17256023649858,
+    "prompt_eval_speed": 22136.06803401701,
+    "generation_latency_s": 0.24415409995708615,
+    "latency": 0.6178419999778271,
+    "total_prompt_tokens": 496,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2351986,
+    "stage_route_s": 0.10559869999997318,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21430570003576577,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05358930001966655,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.350005812942982e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24419570004101843,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6178539000684395,
+    "unaccounted_latency_s": 0.00011149991769343615,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The Great Locomotive Chase was produced by Universal Pictures.",
+      "The Boatniks was produced by 20th Century Fox Studios."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

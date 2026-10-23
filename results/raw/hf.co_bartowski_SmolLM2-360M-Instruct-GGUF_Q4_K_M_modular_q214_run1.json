@@ -1,0 +1,49 @@
+{
+  "question_id": "Q214",
+  "query": "Is the Pakistan fast bowler who joined the Kent County Cricket Club in June, 2011 a left-hand or right-hand batsmans?",
+  "ground_truth": "right-hand",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Pakistan fast bowler who joined the Kent County Cricket Club in June, 2011 is a right-hand batsman.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kent County Cricket Club in 2010: In 2010, Kent County Cricket Club competed in Division One of the County Championship, Group C of the 40-over Clydesdale Bank 40 and the South Group of the Friends Provident t20.  Kent also hosted three-day first-class matches at the St Lawrence Ground against Loughborough MCCU and the touring Pakistanis.  It was the first season in charge for Director of Cricket Paul Farbrace.  The club captain was former England batsman Rob Key who had been club captain since 2006.  Kent's overseas players were South African fast bowler Makhaya Ntini until late May, and Sri Lankan leg-spinner Malinga Bandara for the rest of the season.",
+      "Wahab Riaz: Wahab Riaz (Punjabi, Urdu: \u200e ; born 28 June 1985) is a Pakistani cricketer.  He is a left-arm fast bowler and a right-hand batsman.  He frequently bowls at speeds of around 90 mph and has reached 96 mph .",
+      "Kent County Cricket Club in 2011: In 2011, Kent County Cricket Club competed in Division Two of the County Championship, Group A of the 40-over Clydesdale Bank 40 and the South Group of the Friends Life t20.  Kent also hosted a Twenty20 match at the St Lawrence Ground against the touring Indians, and a three-day first-class MCC Universities match against Loughborough MCCU, also at the St Lawrence Ground.  It was the second and final season in charge for Director of Cricket Paul Farbrace.  The club captain was former England batsman Rob Key who had been club captain since 2006.  Pakistan fast bowler Wahab Riaz joined Kent as their overseas player in June, and another fast bowler, South African Charl Langeveldt, signed as Kent's second overseas player for the Friends Life t20 competition only."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 544,
+    "generation_tokens": 30,
+    "generation_speed": 221.60828519508917,
+    "prompt_eval_speed": 11540.093338990242,
+    "generation_latency_s": 0.29521999997086823,
+    "latency": 0.6687174999387935,
+    "total_prompt_tokens": 710,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2424123,
+    "stage_route_s": 0.12655009992886335,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18922250007744879,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05752649996429682,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.9399986639618874e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2952595000388101,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6687297999160364,
+    "unaccounted_latency_s": 0.00011239992454648018,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Pakistan's fast bowlers\"",
+      "\"Kent County Cricket Club cricket team\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

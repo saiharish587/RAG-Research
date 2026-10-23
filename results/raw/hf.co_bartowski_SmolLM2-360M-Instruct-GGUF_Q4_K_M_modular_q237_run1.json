@@ -1,0 +1,49 @@
+{
+  "question_id": "Q237",
+  "query": "Henry Hall is known for fighting in the Revolutionary War, and for being the first to successfully cultivate this food found in what type of bogs?",
+  "ground_truth": "acidic",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Henry Hall was known for his bravery during the Revolutionary War and his pioneering work in cultivating cranberries. He is considered the \"father of American viticulture\" and was also a key figure in the French Revolution and the July Revolution of 1830. Additionally, he served as a surveyor, associate judge, and military officer in Lycoming County, Pennsylvania.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry Hall (American revolution): Captain Henry Hall was an American from Dennis, Massachusetts who fought in the American Revolutionary War, who later was the first to successfully cultivate cranberries.",
+      "Gilbert du Motier, Marquis de Lafayette: Marie-Joseph Paul Yves Roch Gilbert du Motier, Marquis de Lafayette (] ; 6 September 1757 \u2013 20 May 1834), in the United States often known simply as Lafayette, was a French aristocrat and military officer who fought in the American Revolutionary War.  A close friend of George Washington, Alexander Hamilton, and Thomas Jefferson, Lafayette was a key figure in the French Revolution of 1789 and the July Revolution of 1830.",
+      "John Adlum: John Adlum (April 29, 1759 \u2013 March 14, 1836) was a pioneering American viticulturalist who was the first to cultivate the Catawba grape.  He is known as \"the father of American viticulture\" (grape-growing).  He also served in the American Revolutionary War; was a well-known surveyor; was one of the first associate judges in Lycoming County, Pennsylvania; and served in the United States Army in the War of 1812."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 75,
+    "generation_speed": 233.21620697160984,
+    "prompt_eval_speed": 13774.420024420026,
+    "generation_latency_s": 0.4563585000578314,
+    "latency": 0.9262757999822497,
+    "total_prompt_tokens": 519,
+    "total_generation_tokens": 130,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2266133,
+    "stage_route_s": 0.10583000001497567,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3092762000160292,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05460420006420463,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 7.609999738633633e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4563952999887988,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9262848999351263,
+    "unaccounted_latency_s": 0.00010359985753893852,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Henry Hall was a renowned figure during the American Revolutionary War who played a pivotal role in the battle of Saratoga.\"",
+      "\"Henry Hall is credited with pioneering the cultivation of bog potatoes, which were first discovered in the Appalachian Mountains.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

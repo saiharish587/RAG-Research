@@ -1,0 +1,49 @@
+{
+  "question_id": "Q407",
+  "query": "Which magazine is older, Gallery or Dime Magazine?",
+  "ground_truth": "arose on the \"Playboy\" magazine pattern in the 1970s.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Dime Magazine",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Gallery (magazine): Gallery is a men's magazine published by Magna Publishing Group.  It is one of the more popular \"skin\" magazines that arose on the \"Playboy\" magazine pattern in the 1970s.",
+      "Dime Magazine: Dime Magazine is an American basketball magazine that began circulation in 2001.  The magazine publishes six issues a year for its worldwide readership, as well as a handful of editions of \"Dime China\", a Chinese-language version consisting of regular \"Dime\" content translated from English and original content from editorial staff in China.  It makes an appearance as an endorsement in \"NBA 2K12\", and \"NBA 2K13\".  It is owned by Uproxx itself a brand of Woven Digital.",
+      "Paper (magazine): Paper, stylized as PAPER, is a New York City-based independent magazine focusing on fashion, popular culture, nightlife, music, art and film.  Past cover models include Kim Kardashian, Demi Lovato, Katy Perry, Miley Cyrus, Prince, CL, and Jennifer Lopez."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 308,
+    "generation_tokens": 4,
+    "generation_speed": 250.95677269590317,
+    "prompt_eval_speed": 30628.480509148765,
+    "generation_latency_s": 0.13656120002269745,
+    "latency": 0.4123451999621466,
+    "total_prompt_tokens": 430,
+    "total_generation_tokens": 20,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2197759,
+    "stage_route_s": 0.1215664999326691,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.10129900008905679,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05275819997768849,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.949991125613451e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13659139990340918,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4123539999127388,
+    "unaccounted_latency_s": 9.000010322779417e-05,
+    "route": "rag",
+    "router_raw": "The magazine that is older is Gallery.",
+    "sub_queries": [
+      "Gallery",
+      "Dime Magazine"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

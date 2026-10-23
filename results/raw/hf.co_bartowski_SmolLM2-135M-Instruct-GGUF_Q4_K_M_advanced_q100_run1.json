@@ -1,0 +1,42 @@
+{
+  "question_id": "Q100",
+  "query": "Are Yingkou and Fuding the same level of city?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, the two cities are not the same level of city. Yingkou (Yingkou () ) is a prefecture-level city in northeastern Ningbo province, while Fuding (Fuding () ) is a county-level city in Fujian province. The two cities are located on different sides of the Bohai Sea and have distinct geographical features that set them apart from each other.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Yingkou: Yingkou () is a prefecture-level city of Liaoning province, People's Republic of China.  It is a port city of the Bohai Sea, and is the location of the mouth of the Liao River.",
+      "Fuding:    () is a county-level city in northeastern Ningde prefecture level city, on Fujian's border with Zhejiang province.",
+      "Tongcheng Subdistrict, Fuding: Tongcheng () is a subdistrict of the city of Fuding, Fujian, People's Republic of China."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 193,
+    "generation_tokens": 84,
+    "generation_speed": 395.22344239618326,
+    "prompt_eval_speed": 14893.12446948067,
+    "generation_latency_s": 0.30365030001848936,
+    "latency": 0.7337905999738723,
+    "total_prompt_tokens": 267,
+    "total_generation_tokens": 130,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1365792,
+    "stage_rewrite_s": 0.2069252000655979,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07564399996772408,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14744509989395738,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.3036849000491202,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7337995000416413,
+    "unaccounted_latency_s": 0.0001007000682875514,
+    "rewritten_query": "Yingkou and Fuding are two distinct levels of city, with different characteristics and implications. The first is a vibrant metropolis with a rich history and cultural heritage, while the second is a more tranquil and residential area.",
+    "query_was_rewritten": true
+  }
+}

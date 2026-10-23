@@ -1,0 +1,42 @@
+{
+  "question_id": "Q235",
+  "query": "What is the nickname of the city where Darling's Waterfront Pavilion is located?",
+  "ground_truth": "\"Queen City\"",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The nickname of the city where Darling's Waterfront Pavilion is located is \"Menindee.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Darling's Waterfront Pavilion: The Darling's Waterfront Pavilion (originally known as the Bangor Waterfront Pavilion) is an open-air amphitheater located within the Waterfront Park in Bangor, Maine.  The venue is a temporary structure built alongside the Penobscot River.  The venue typically operates from July until October.",
+      "Menindee, New South Wales: Menindee, frequently but erroneously spelled \"Menindie\", is a small town in the far west of New South Wales, Australia, in Central Darling Shire, on the banks of the Darling River, with a sign-posted population of 980 and a 2011 census population of 449.",
+      "London Eye Pier: The London Eye Pier (or Waterloo Millennium Pier) is directly in front of the London Eye Ferris wheel on the South Bank of the River Thames in Central London, England."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 272,
+    "generation_tokens": 22,
+    "generation_speed": 416.9114442191438,
+    "prompt_eval_speed": 35761.241125427296,
+    "generation_latency_s": 0.1357362000271678,
+    "latency": 0.4969024999300018,
+    "total_prompt_tokens": 350,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1250509,
+    "stage_rewrite_s": 0.1390286999521777,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08079250005539507,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14122640003915876,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.13576910004485399,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49691129999700934,
+    "unaccounted_latency_s": 9.519990999251604e-05,
+    "rewritten_query": "The nickname of the city where Darling's Waterfront Pavilion is located is \"Darling's Waterfront.",
+    "query_was_rewritten": true
+  }
+}

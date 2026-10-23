@@ -1,0 +1,49 @@
+{
+  "question_id": "Q120",
+  "query": "Are Daryl Hall and Gerry Marsden both musicians?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "No, Daryl Hall and Gerry Marsden are not musicians. They are both singers and have collaborated with other artists in their respective genres.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Daryl Hall: Daryl Franklin Hohl (born October 11, 1946), known professionally as Daryl Hall, is an American rock, R&B, and soul singer; keyboardist, guitarist, songwriter, and producer, best known as the co-founder and lead vocalist of Hall & Oates (with guitarist and songwriter John Oates).",
+      "Hall &amp; Oates: Daryl Hall and John Oates, often referred to as Hall & Oates, are an American musical duo from Philadelphia.  Daryl Hall is generally the lead vocalist of the pairing.  John Oates primarily plays electric guitar and provides backing vocals.  The two write most of the songs they perform, either separately or in collaboration.  They achieved their greatest fame from the late 1970s to the mid-1980s with a fusion of rock and roll and rhythm and blues.",
+      "Gerry Marsden: Gerard Marsden MBE (born 24 September 1942) is an English musician and television personality, best known for being leader of the British Merseybeat band Gerry and the Pacemakers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 323,
+    "generation_tokens": 31,
+    "generation_speed": 404.07200302402276,
+    "prompt_eval_speed": 38265.60834024404,
+    "generation_latency_s": 0.19247819995507598,
+    "latency": 0.7833651000401005,
+    "total_prompt_tokens": 449,
+    "total_generation_tokens": 186,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22248990000000002,
+    "stage_route_s": 0.08390259998850524,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4512133999960497,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05559110001195222,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.970002919435501e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19251039996743202,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7833740999922156,
+    "unaccounted_latency_s": 0.00010750000365078449,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Daryl Hall and Gerry Marsden are both musicians, but they have different backgrounds and styles.",
+      "Daryl Hall is a singer-songwriter who has released numerous albums, including \"The Sound of Music\" and \"Song for the Wind.\" He also collaborated with artists like The Cure and The Rolling Stones on several songs."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

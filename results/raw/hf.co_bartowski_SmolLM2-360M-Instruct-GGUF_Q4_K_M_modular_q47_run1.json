@@ -1,0 +1,49 @@
+{
+  "question_id": "Q47",
+  "query": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+  "ground_truth": "Phil Spector",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The writer of the song \"Things Ain't What They Used To Be\" inspired by words on a tombstone and was the first track on the box set \"Back to Mono\" is William Patrick \"Billy\" Corgan Jr.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Back to Mono (1958\u20131969): Back to Mono (1958\u20131969) is a box set (4 compact discs or 5 vinyl LPs) compilation of the recorded work of record producer Phil Spector, through the 1960s, released in 1991 by ABKCO as #7118-2.  The first track, \"To Know Him Is to Love Him,\" released in 1958, features Spector performing as part of the group the Teddy Bears.  Initially a vinyl album-sized package, the box contained a booklet with photographs, complete song lyrics, discographical information, and a reproduction of the essay on Spector by Tom Wolfe, \"The First Tycoon of Teen.\"  The package also contained a small, round, red \"Back to Mono\" pin.",
+      "Things Ain't What They Used to Be: In 1941 there was a strike against the American Society of Composers, Authors and Publishers, of which Duke Ellington was a member.  Because of the strike he could not air his songs on the radio.  Instead, he used songs written by his son Mercer and pianist Billy Strayhorn.  Strayhorn's compositions of this time include \"Take the 'A' Train\", \"Chelsea Bridge\" and \"Day Dream\", and Mercer wrote \"Things Ain't What They Used to Be\", \"Blue Serge\" and \"Moon Mist\".",
+      "Billy Corgan: William Patrick \"Billy\" Corgan Jr. (born March 17, 1967) is an American musician, songwriter, producer, poet, and entrepreneur.  He is best known as the lead singer, primary songwriter, guitarist, and sole permanent member of The Smashing Pumpkins.  Formed by Corgan and guitarist James Iha in Chicago, Illinois, in 1988, the band quickly gained steam with the addition of bassist D'arcy Wretzky and drummer Jimmy Chamberlin.  Strong album sales and large-scale tours propelled the band's increasing fame in the 1990s until their break-up in 2000.  Corgan started a new band called Zwan, and after their quick demise, he released a solo album (\"TheFutureEmbrace\") and a collection of poetry (\"Blinking with Fists\") before setting his sights on reforming Smashing Pumpkins."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 613,
+    "generation_tokens": 50,
+    "generation_speed": 213.7254482891278,
+    "prompt_eval_speed": 11610.28826849502,
+    "generation_latency_s": 0.39594730001408607,
+    "latency": 0.9119186999741942,
+    "total_prompt_tokens": 773,
+    "total_generation_tokens": 114,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2238055,
+    "stage_route_s": 0.10311680007725954,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.35448979993816465,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05818100005853921,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6999968364834785e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.395985999959521,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.9119302000617608,
+    "unaccounted_latency_s": 0.00010030006524175406,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Writer\" - This song was inspired by the words on a tombstone, which led to its creation as the first track on the box set Back to Mono.",
+      "\"Johnny Mercer\" - Johnny Mercer is an American musician and composer who wrote this song."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

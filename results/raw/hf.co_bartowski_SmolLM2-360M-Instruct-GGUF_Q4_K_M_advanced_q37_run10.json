@@ -1,0 +1,42 @@
+{
+  "question_id": "Q37",
+  "query": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+  "ground_truth": "2000",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Seven Brief Lessons on Physics was written by Claudio Pellegrini, an Italian physicist who has worked in France since 1978.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Seven Brief Lessons on Physics: Seven Brief Lessons on Physics (Italian: \"\" ) is a short book by the Italian physicist Carlo Rovelli.  Originally published in Italian in 2014, the book has been translated into 41 languages.  It is an Italian bestseller, with more than 300,000 copies sold in Rovelli's home country.",
+      "Claudio Pellegrini: Claudio Pellegrini (born in Rome on May 9, 1935) is an Italian physicist known for his pioneering work on X-ray free electron lasers and collective effects in relativistic particle beams.  He was educated at the Sapienza University of Rome where he received the Laurea in Fisica \"summa cum laude\" in 1958 and the Libera Docenza, in 1965.  From 1958 to 1978, he worked at the Laboratori Nazionali di Frascati for high energy and nuclear physics.  In the early 1960s, he was at the Nordic Institute for Theoretical Physics (NORDITA) in Copenhagen, working on an alternative formulation of the theory of general relativity using tetrad fields to obtain, among other things, a better description of the energy-momentum complex.  (See \"Teleparallelism\" for a summary of the theoretical context of this work.)  In 1978, he moved to the United States and began work at Brookhaven National Laboratory, where he was an Associate Chairman of the National Synchrotron Light Source and co-director at the Center for Accelerator Physics.  In 1989, he accepted an appointment at the University of California at Los Angeles (UCLA) as a professor of physics, and later became a Distinguished Professor.",
+      "Albert Einstein: Albert Einstein (14 March 1879 \u2013 18 April 1955) was a German-born theoretical physicist.  Einstein developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics).  Einstein's work is also known for its influence on the philosophy of science.  Einstein is best known by the general public for his mass\u2013energy equivalence formula \"E\" = \"mc\" (which has been dubbed \"the world's most famous equation\").  He received the 1921 Nobel Prize in Physics \"for his services to theoretical physics, and especially for his discovery of the law of the photoelectric effect\", a pivotal step in the evolution of quantum theory."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 619,
+    "generation_tokens": 31,
+    "generation_speed": 253.97345567753564,
+    "prompt_eval_speed": 83344.553655581,
+    "generation_latency_s": 0.9656303999945521,
+    "latency": 3.4173662000102922,
+    "total_prompt_tokens": 699,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1281346,
+    "stage_rewrite_s": 1.2816368999192491,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9614708999870345,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20845800009556115,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9657100000185892,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.417380500002764,
+    "unaccounted_latency_s": 0.00010549998842179775,
+    "rewritten_query": "The Italian physicist who wrote \"Seven Brief Lessons on Physics\" is Alessandro Volta, a French chemist and physicist who worked from 1791 to 1845.",
+    "query_was_rewritten": true
+  }
+}

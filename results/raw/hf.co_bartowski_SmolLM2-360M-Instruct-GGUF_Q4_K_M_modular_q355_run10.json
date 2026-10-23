@@ -1,0 +1,49 @@
+{
+  "question_id": "Q355",
+  "query": "Were Thomas H. Ince and Joseph McGrath of the same nationality?",
+  "ground_truth": "no",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "No, Thomas H. Ince and Joseph McGrath were not from the same nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Thomas H. Ince: Thomas Harper Ince (November 16, 1880 \u2013 November 19, 1924) was an American silent film producer, director, screenwriter, and actor.",
+      "Hall &amp; Oates: Daryl Hall and John Oates, often referred to as Hall & Oates, are an American musical duo from Philadelphia.  Daryl Hall is generally the lead vocalist of the pairing.  John Oates primarily plays electric guitar and provides backing vocals.  The two write most of the songs they perform, either separately or in collaboration.  They achieved their greatest fame from the late 1970s to the mid-1980s with a fusion of rock and roll and rhythm and blues.",
+      "Welsh Americans: Welsh Americans are an American ethnic group whose ancestry originates wholly or partly in Wales.  In the 2008 U.S. Census community survey, an estimated 1.98 million Americans had Welsh ancestry, 0.6% of the total U.S. population.  This compares with a population of 3 million in Wales.  However, 3.8% of Americans appear to bear a Welsh surname."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 331,
+    "generation_tokens": 19,
+    "generation_speed": 237.99383721221534,
+    "prompt_eval_speed": 41629.98364985536,
+    "generation_latency_s": 0.19964070001151413,
+    "latency": 0.5089977999450639,
+    "total_prompt_tokens": 461,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2311411,
+    "stage_route_s": 0.10147360002156347,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15176079992670566,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05593779997434467,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.45999500900507e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19967930007260293,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.509009699919261,
+    "unaccounted_latency_s": 0.00010459998156875372,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Are they both American?",
+      "Did they have any common ancestry?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

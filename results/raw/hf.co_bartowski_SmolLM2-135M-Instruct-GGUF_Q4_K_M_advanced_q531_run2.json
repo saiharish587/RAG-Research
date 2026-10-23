@@ -1,0 +1,42 @@
+{
+  "question_id": "Q531",
+  "query": "What took place first, The Korean War or The Western Allied invasion of Germany?",
+  "ground_truth": "The Western Allied invasion of Germany",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The Korean War (1950-1953) was a war between North Korea and South Korea that began on 25 June 1950 when North Korea invaded South Korea. This war took place during the final months of World War II, before the Soviet Union gave assistance to the North.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Korean War: The Korean War (in South Korean Hangul: \ud55c\uad6d\uc804\uc7c1 ; Hanja: \u97d3\u570b\u6230\u722d ; RR: \"Hanguk Jeonjaeng \" , \"Korean War\"; in North Korean Chos\u014fn'g\u016dl: \uc870\uad6d\ud574\ubc29\uc804\uc7c1 ; Hancha: \u7956\u570b\u89e3\u653e\u6230\u722d ; MR: \"Choguk haebang ch\u01d2njaeng \" , \"Fatherland Liberation War\"; 25 June 1950 \u2013 27 July 1953) was a war between North Korea (with the support of China and the Soviet Union) and South Korea (with the principal support of the United States).  The war began on 25 June 1950 when North Korea invaded South Korea.  The United Nations, with the United States as the principal force, came to the aid of South Korea.  China came to the aid of North Korea, and the Soviet Union also gave some assistance to the North.",
+      "Western Allied invasion of Germany: The Western Allied invasion of Germany was coordinated by the Western Allies during the final months of hostilities in the European theatre of World War II.  The Allied invasion of Germany started with the Western Allies crossing the Rhine River in March 1945 before fanning out and overrunning all of western Germany from the Baltic in the north to Austria in the south before the Germans surrendered on 8 May 1945.  This is known as the \"Central Europe Campaign\" in United States military histories.",
+      "Dwight D. Eisenhower: Dwight David \"Ike\" Eisenhower ( ; October 14, 1890 \u2013 March 28, 1969) was an American politician and Army general who served as the 34th President of the United States from 1953 until 1961.  During World War II, he was a five-star general in the United States Army and served as Supreme Commander of the Allied Expeditionary Forces in Europe.  He was responsible for planning and supervising the invasion of North Africa in Operation Torch in 1942\u201343 and the successful invasion of France and Germany in 1944\u201345 from the Western Front."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 582,
+    "generation_tokens": 66,
+    "generation_speed": 413.4638876881731,
+    "prompt_eval_speed": 58758.20292781423,
+    "generation_latency_s": 0.26494289992842823,
+    "latency": 0.7404221000615507,
+    "total_prompt_tokens": 658,
+    "total_generation_tokens": 102,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.14803739999999999,
+    "stage_rewrite_s": 0.19280090008396655,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07698060001712292,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.20557460002601147,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.26497869996819645,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7404308000113815,
+    "unaccounted_latency_s": 9.659992065280676e-05,
+    "rewritten_query": "The Korean War (1950-1953) and the Western Allied invasion of Germany (June 4-27, 1944).",
+    "query_was_rewritten": true
+  }
+}

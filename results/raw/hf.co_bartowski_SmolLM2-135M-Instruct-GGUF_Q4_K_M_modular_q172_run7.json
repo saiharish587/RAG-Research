@@ -1,0 +1,48 @@
+{
+  "question_id": "Q172",
+  "query": "What is the birthplace of the Senator who represents the first of 62 districts in the State Senate?",
+  "ground_truth": "Brooklyn, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The birthplace of the Senator who represents the first of 62 districts in the State Senate is Charles Carroll of Carrollton, Maryland.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "New York's 1st State Senate district: New York's 1st State Senate district is one of 62 districts of the New York State Senate.  It is currently represented by Senator Kenneth LaValle (R).",
+      "Kansas's 1st congressional district: Kansas's 1st congressional district is a congressional district in the U.S. state of Kansas.  Commonly known as \"The Big First\", the district encompasses 63 counties in western and northern Kansas (more than half of the state), making it the 12th largest congressional district in the nation.  Located within the district are Manhattan, Salina, Dodge City, Emporia, Garden City, Hays and Hutchinson.  From 2011 to 2017, the district was represented by Republican Tim Huelskamp who was originally elected in 2010 to succeed fellow Republican Jerry Moran who ran successfully for the U.S. Senate seat formerly held by now Governor Sam Brownback.  Huelskamp was re-elected twice in 2012 and 2014, but lost the 2016 Republican primary for a fourth term to obstetrician Roger Marshall.",
+      "Charles Carroll of Carrollton: Charles Carroll (September 19, 1737 \u2013 November 14, 1832), known as Charles Carroll of Carrollton or Charles Carroll III to distinguish him from his similarly named relatives, was a wealthy Maryland planter and an early advocate of independence from the Kingdom of Great Britain.  He served as a delegate to the Continental Congress and Confederation Congress and later as first United States Senator for Maryland.  He was the only Catholic signatory of the Declaration of Independence."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 28,
+    "generation_speed": 399.58899417741753,
+    "prompt_eval_speed": 38137.43375901312,
+    "generation_latency_s": 0.19441819994244725,
+    "latency": 0.5510062999092042,
+    "total_prompt_tokens": 581,
+    "total_generation_tokens": 83,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2355199,
+    "stage_route_s": 0.17057509999722242,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14725739997811615,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038589200004935265,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.20999713242054e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1944571000058204,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5510183000005782,
+    "unaccounted_latency_s": 9.820004925131798e-05,
+    "route": "rag",
+    "router_raw": "The birthplace of the Senator who represents the first of 62 districts in the State Senate is in the State Senate District 1.",
+    "sub_queries": [
+      "The birthplace of the Senator who represents the first of 62 districts in the State Senate is located in the District of Columbia."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

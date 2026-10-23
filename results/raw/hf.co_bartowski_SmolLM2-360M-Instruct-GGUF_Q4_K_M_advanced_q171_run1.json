@@ -1,0 +1,42 @@
+{
+  "question_id": "Q171",
+  "query": "What is the name of the detective novelist parent of the author of '\"Q\" Is for Quarry'?",
+  "ground_truth": "C. W. Grafton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The name of the detective novelist parent of the author of \"Q\" Is for Quarry\" is Sue Grafton.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Arthur Conan Doyle: Sir Arthur Ignatius Conan Doyle KStJ, DL (22 May 1859 \u2013 7 July 1930) was a British writer best known for his detective fiction featuring the character Sherlock Holmes.  Originally a physician, in 1887 he published \"A Study in Scarlet\", the first of four novels about Holmes and Dr. Watson.  In addition, Doyle wrote over fifty short stories featuring the famous detective.",
+      "Sherlock Holmes: Sherlock Holmes ( ) is a fictional private detective created by British author Sir Arthur Conan Doyle.  Known as a \"consulting detective\" in the stories, Holmes is known for his proficiency with observation, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.",
+      "&quot;Q&quot; Is for Quarry: \"Q\" Is for Quarry is the 17th novel in Sue Grafton's \"Alphabet\" series of mystery novels and features Kinsey Millhone, a private eye based in Santa Teresa, California."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 317,
+    "generation_tokens": 26,
+    "generation_speed": 256.2560984023418,
+    "prompt_eval_speed": 13354.678350254875,
+    "generation_latency_s": 1.0564823000459,
+    "latency": 3.394634599913843,
+    "total_prompt_tokens": 398,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12425069999999999,
+    "stage_rewrite_s": 1.211668899981305,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0245640999637544,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1018031999701634,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.056517600081861,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3946426999755204,
+    "unaccounted_latency_s": 8.939998224377632e-05,
+    "rewritten_query": "The name of the detective novelist who wrote \"Q\" Is for Quarry\" is Arthur Conan Doyle.",
+    "query_was_rewritten": true
+  }
+}

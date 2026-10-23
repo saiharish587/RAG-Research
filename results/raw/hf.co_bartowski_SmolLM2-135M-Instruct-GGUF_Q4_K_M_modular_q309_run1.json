@@ -1,0 +1,49 @@
+{
+  "question_id": "Q309",
+  "query": "Which dog is considered a giant dog breed, the  Leonberger or the Basset Hound?",
+  "ground_truth": "The Leonberger is a giant dog breed.",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Basset Hound.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Basset Hound: The Basset Hound is a short-legged breed of dog of the hound family.  The Basset is a scent hound that was originally bred for the purpose of hunting hare.  Their sense of smell and ability to ground-scent is second only to that of the Bloodhound.  Basset Hounds are one of 6 recognised basset-type breeds in France.",
+      "Giant dog breed: A giant dog breed has no universal height or weight classification, although some groups define \"giant breeds\" as those heavier than 50 kg .  Giant breeds grow rapidly, but take longer to mature into their full adult sizes than smaller dogs.",
+      "English Mastiff: The English Mastiff is a breed of extremely large dog (often known simply as the Mastiff) perhaps descended from the ancient Alaunt and Pugnaces Britanniae, with a significant input from the Alpine Mastiff in the 19th century.  Distinguishable by enormous size, massive head, and a limited range of colours, but always displaying a black mask, the Mastiff is noted for its gentle and loving nature.  The lineage of modern dogs can be traced back to the early 19th century, but the modern type was stabilised in the 1880s and refined since.  Following a period of sharp decline, the Mastiff has increased its worldwide popularity.  Throughout its history, the Mastiff has contributed to the development of a number of dog breeds, some generally known as Mastiff-type dogs, or, confusingly, just as \"Mastiffs\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 410,
+    "generation_tokens": 7,
+    "generation_speed": 270.55231322227803,
+    "prompt_eval_speed": 16944.94957844272,
+    "generation_latency_s": 0.1616300999885425,
+    "latency": 0.5584907999727875,
+    "total_prompt_tokens": 550,
+    "total_generation_tokens": 56,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2402323,
+    "stage_route_s": 0.1334389999974519,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2016252001048997,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.061614800011739135,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.94001030549407e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1616611999925226,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5584995000390336,
+    "unaccounted_latency_s": 0.00010039983317255974,
+    "route": "rag",
+    "router_raw": "The Basset Hound is considered a giant dog breed.",
+    "sub_queries": [
+      "Which breeds are considered giant dogs?",
+      "Answer: The Basset Hound is considered a giant dog breed."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

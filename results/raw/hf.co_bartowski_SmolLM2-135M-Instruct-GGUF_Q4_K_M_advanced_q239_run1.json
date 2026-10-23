@@ -1,0 +1,42 @@
+{
+  "question_id": "Q239",
+  "query": "What airport serviced by American Airlines Shuttle, is also the largest airport in the New England region and 17th busiest in the U.S?",
+  "ground_truth": "Logan International Airport",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The airport that served by American Airlines Shuttle was Logan International Airport (BOS) which serves Logan International Airport in Boston, Massachusetts, United States.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Logan International Airport: Logan International Airport (IATA: BOS, ICAO: KBOS, FAA LID: BOS) , officially known as General Edward Lawrence Logan International Airport, is an international airport located in the East Boston neighborhood of Boston, Massachusetts, United States (and partly in the town of Winthrop, Massachusetts).  It covers 2384 acre , has six runways and four passenger terminals, and employs an estimated 16,000 people.  It is the largest airport in the New England region and 17th-busiest airport in the United States, with 33.5 million total passengers in 2015.  It is named after General Edward Lawrence Logan.  In 2016, Massport reported an 8.5% increase in passenger traffic comparing 2015 to 2016, giving the airport a total of about 36.3 million passengers.",
+      "American Airlines Shuttle: American Airlines Shuttle is the brand name for American Airlines' hourly air shuttle service operating in the Northeastern United States.  It serves Logan International Airport in Boston, LaGuardia Airport in New York City, and Ronald Reagan Washington National Airport in Washington, D.C.",
+      "Greater Boston: Greater Boston is the metropolitan region of New England encompassing the municipality of Boston, the capital of the US state of Massachusetts, and the most populous city in New England, as well as its surrounding areas.  The region forms the northern arc of the US northeast megalopolis and as such, Greater Boston can be described as either a metropolitan statistical area (MSA), or as a broader combined statistical area (CSA).  The MSA consists of most of the eastern third of Massachusetts, excluding the South Coast region and Cape Cod; while the CSA additionally includes the municipalities of Manchester (the largest city in the US state of New Hampshire), Providence (the capital and largest city of the US state of Rhode Island), Worcester, Massachusetts (the second largest city in New England), as well as the South Coast region and Cape Cod in Massachusetts."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 520,
+    "generation_tokens": 30,
+    "generation_speed": 368.9401579063876,
+    "prompt_eval_speed": 16176.699331155702,
+    "generation_latency_s": 0.1914543000748381,
+    "latency": 0.6212783000664786,
+    "total_prompt_tokens": 612,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1404369,
+    "stage_rewrite_s": 0.16780749999452382,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.08402519999071956,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.17786549997981638,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19149590004235506,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6212892000330612,
+    "unaccounted_latency_s": 9.570003021508455e-05,
+    "rewritten_query": "American Airlines Shuttle is the largest airport in the New England region and 17th busiest in the United States.",
+    "query_was_rewritten": true
+  }
+}

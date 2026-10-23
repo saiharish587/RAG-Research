@@ -1,0 +1,48 @@
+{
+  "question_id": "Q417",
+  "query": "The Bart the Fink episode of The Simpsons aired in February of 1996, and involves the host of which kiddie show?",
+  "ground_truth": "The Itchy & Scratchy Show",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Bart the Fink episode of The Simpsons aired in February of 1996.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bart the Fink: \"Bart the Fink\" is the fifteenth episode of \"The Simpsons\"<nowiki>'</nowiki> seventh season.  It originally aired on the Fox network in the United States on February 11, 1996.  In this episode, Bart ruins Krusty the Clown's career by accidentally exposing Krusty as one of the biggest tax cheats in American history.  Driven to despair, Krusty fakes a suicide in order to start life anew as a sailor; feeling guilty for what he did, Bart convinces Krusty to become a television clown again.",
+      "What to Expect When Bart's Expecting: \"What to Expect When Bart's Expecting\" is the nineteenth episode of the 25th season of the American animated sitcom \"The Simpsons\", and the 549th episode of the series.  It originally aired on the Fox network in the United States on April 27, 2014.  It was written by John Frink and directed by Matthew Nastuk.  In the episode, Bart makes a voodoo doll of his hippie art teacher when he gets sick of art class and cast a spell to make her sick, but when he inadvertently gets her pregnant, he becomes a savior to Springfield couples trying to conceive\u2014and is subsequently kidnapped to help conceive a thoroughbred race horse.",
+      "Krusty the Clown: Herschel Shmoikel Pinchas Yerucham Krustofsky, better known as Krusty the Clown (sometimes spelled as Krusty the Klown), is a cartoon character in the animated television series \"The Simpsons\".  He is voiced by Dan Castellaneta.  He is the long-time clown host of Bart and Lisa's favorite TV show, a combination of kiddie variety television hijinks and cartoons including \"The Itchy & Scratchy Show\".  Krusty is often portrayed as a cynical, burnt-out, addiction-riddled smoker who is made miserable by show business but continues on anyway.  He has become one of the most common characters outside of the main Simpson family and has been the focus of several episodes, most of which also spotlight Bart."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 570,
+    "generation_tokens": 23,
+    "generation_speed": 346.27602716008494,
+    "prompt_eval_speed": 18106.734434561626,
+    "generation_latency_s": 0.2105532999848947,
+    "latency": 0.5545494999969378,
+    "total_prompt_tokens": 736,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2399115,
+    "stage_route_s": 0.1466836000327021,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15969479992054403,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03743909997865558,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.8200017772614956e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21059410006273538,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5545611999696121,
+    "unaccounted_latency_s": 0.00010199996177107096,
+    "route": "rag",
+    "router_raw": "The Bart the Fink episode of The Simpsmonsaar episode.",
+    "sub_queries": [
+      "The Bart the Fink episode of The Simpsons aired in February of 1996."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q465",
+  "query": "What kind of dinosaur does Raymond Ochoa voice in the Pixar film \"The Good Dinosaur\"?",
+  "ground_truth": "Apatosaurus",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Raymond Ochoa voices a young Apatosaurus named Arlo in the Pixar film \"The Good Dinosaur.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Good Dinosaur: The Good Dinosaur is a 2015 American 3D computer-animated comedy-drama adventure film produced by Pixar Animation Studios and released by Walt Disney Pictures.  The film is directed by Peter Sohn in his directorial debut from a screenplay by Meg LeFauve from an original idea by Bob Peterson.  Set on a fictional Earth in which dinosaurs never became extinct, the film follows a young \"Apatosaurus\" named Arlo, who meets an unlikely human friend while traveling through a harsh and mysterious landscape.  The film features the voices of Raymond Ochoa, Jack Bright, Sam Elliott, Anna Paquin, A.J. Buckley, Steve Zahn, Jeffrey Wright, and Frances McDormand.",
+      "Dinosaur (film): Dinosaur is a 2000 American CGI animated adventure film produced by Walt Disney Feature Animation and The Secret Lab and released by Walt Disney Pictures.  It is the 39th Disney animated feature film and Disney's The Secret Lab computer animated feature, though it is not officially labeled as one of the animated classics in the United Kingdom, where \"The Wild\" (2006) is included in the canon instead.",
+      "Raymond Ochoa: Raymond Ochoa (born October 12, 2001) is an American child actor and voice actor.  He has appeared in various commercials, television shows and movies including roles in \"10 Items or Less\", \"Merry Christmas, Drake & Josh\", and the lead character, Arlo, in the Pixar film \"The Good Dinosaur\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 411,
+    "generation_tokens": 25,
+    "generation_speed": 218.82221132973882,
+    "prompt_eval_speed": 52651.80630284397,
+    "generation_latency_s": 0.23555069998838007,
+    "latency": 0.6449144000653177,
+    "total_prompt_tokens": 551,
+    "total_generation_tokens": 71,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.223329,
+    "stage_route_s": 0.09532540000509471,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2608143000397831,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05303740000817925,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.500002928078175e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23558820004109293,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6449237000197172,
+    "unaccounted_latency_s": 9.389990009367466e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The Good Dinosaur is voiced by Raymond Ochoa.",
+      "Query 2: The Good Dinosaur is a Pixar film about a group of dinosaurs who are captured and taken to a new world."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

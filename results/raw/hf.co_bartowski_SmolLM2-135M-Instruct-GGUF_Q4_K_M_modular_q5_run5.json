@@ -1,0 +1,48 @@
+{
+  "question_id": "Q5",
+  "query": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+  "ground_truth": "Greenwich Village, New York City",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The director of the romantic comedy \"Big Stone Gap\" is based in Brooklyn, New York City.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Big Stone Gap (film): Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.  Based on Trigiani's 2000 best-selling novel of the same name, the story is set in the actual Virginia town of Big Stone Gap circa 1970s.  The film had its world premiere at the Virginia Film Festival on November 6, 2014.",
+      "Brooklyn (film): Brooklyn is a 2015 British-Canadian-Irish romantic drama film directed by John Crowley and written by Nick Hornby, based on Colm T\u00f3ib\u00edn's 2009 novel of the same name.  The film stars Saoirse Ronan, Emory Cohen, Domhnall Gleeson, Jim Broadbent, and Julie Walters.  Set in 1951 and 1952, the film tells the story of a young Irish woman's immigration to Brooklyn, where she falls in love.  When her past catches up with her she must choose between two countries and the lives that exist within them for her.",
+      "Moonstruck: Moonstruck is a 1987 American romantic comedy film directed by Norman Jewison and written by John Patrick Shanley.  It is about a widowed 37-year-old Italian-American woman (Cher) who falls in love with her fianc\u00e9's (Danny Aiello) estranged, hot-tempered younger brother (Nicolas Cage).  Vincent Gardenia and Olympia Dukakis play supporting roles."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 440,
+    "generation_tokens": 21,
+    "generation_speed": 369.4906307732911,
+    "prompt_eval_speed": 61902.082160945414,
+    "generation_latency_s": 0.1733164000324905,
+    "latency": 0.4912379999877885,
+    "total_prompt_tokens": 578,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2368837,
+    "stage_route_s": 0.1463775000302121,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13246200000867248,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03892489999998361,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.900006413459778e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17335469997487962,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4912483999505639,
+    "unaccounted_latency_s": 9.089987725019455e-05,
+    "route": "rag",
+    "router_raw": "The director of the romantic comedy \"Big Stone Gap\" is based in New York City.",
+    "sub_queries": [
+      "The director of the romantic comedy \"Big Stone Gap\" is based in New York City."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "question_id": "Q481",
+  "query": "Which record label released Van Morrison's \"I've Been Working\" on the album \"His Band and the Street Choir\"?",
+  "ground_truth": "Warner Bros",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Northern Irish singer-songwriter Van Morrison's \"I've Been Working\" was released on RCA Records in 1970.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "I've Been Working: \"I've Been Working\" is a song written by Northern Irish singer-songwriter Van Morrison appearing on the album \"His Band and the Street Choir\", released in 1970.  The song was first an outtake from Morrison's well received album \"Astral Weeks\" of 1968.  Other versions of \"I've Been Working\" were recorded for Morrison's next album \"Moondance\", of which, three were released on the 2013 deluxe edition.",
+      "Duets: Re-working the Catalogue: Duets: Re-working the Catalogue is the 35th studio album recorded by Northern Irish singer/songwriter Van Morrison.  It was released on 13 March 2015 on RCA Records.  Produced by Van Morrison along with Don Was and Bob Rock, it consists of songs previously recorded by Morrison this time recorded as duets.  Performances include the artists Bobby Womack, Steve Winwood, Mark Knopfler, Taj Mahal, Mavis Staples, Michael Bubl\u00e9, Natalie Cole, George Benson, Gregory Porter, Clare Teal, P.J. Proby, Joss Stone, Georgie Fame, Mick Hucknall, Chris Farlowe, and Morrison\u2019s daughter Shana Morrison.",
+      "I'll Be Your Lover, Too: \"I'll Be Your Lover, Too\" is a song written by Northern Irish singer-songwriter Van Morrison.  It appears on the album \"His Band and the Street Choir\", released in 1970."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 426,
+    "generation_tokens": 30,
+    "generation_speed": 218.64933020421847,
+    "prompt_eval_speed": 51418.22570911285,
+    "generation_latency_s": 0.25706940004602075,
+    "latency": 0.6444356000283733,
+    "total_prompt_tokens": 578,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23873909999999998,
+    "stage_route_s": 0.11595979996491224,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.21450200001709163,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056719499989412725,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.630003917962313e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2571010000538081,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6444450999842957,
+    "unaccounted_latency_s": 9.709992446005344e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Recording Industry Association of America (RIAA) Records\"",
+      "\"Van Morrison's 'I've Been Working'\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

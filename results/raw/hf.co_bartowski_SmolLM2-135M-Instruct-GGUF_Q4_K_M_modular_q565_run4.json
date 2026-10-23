@@ -1,0 +1,49 @@
+{
+  "question_id": "Q565",
+  "query": "Who is the author of the 1993 production Madge Ryan participated in?",
+  "ground_truth": "Euripides",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "The author of the 1993 production Madge Ryan participated in was Patrick Ryan (Patrick Ryan).",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Madge Ryan: Madge Ryan (8 January 1919 \u2013 9 January 1994) was an Australian actress, known for her stage roles in the United Kingdom, including London productions of \"Entertaining Mr Sloane\" (1964), \"Philadelphia, Here I Come\" (1967), and \"Medea\" (1993).  She also starred in the Broadway production of \"Summer of the Seventeenth Doll\" (1958).  Her film appearances included \"Summer Holiday\" (1963), \"A Clockwork Orange\" (1971), \"Frenzy\" (1972), and \"Who Is Killing the Great Chefs of Europe? \" (1978).",
+      "Ford Madox Ford: Ford Madox Ford (born Ford Hermann Hueffer ( ); 17 December 1873 \u2013 26 June 1939) was an English novelist, poet, critic and editor whose journals, \"The English Review\" and \"The Transatlantic Review\", were instrumental in the development of early 20th-century English literature.",
+      "Patrick Ryan (author and journalist): Patrick Ryan (Isle of Wight, 1916 \u2013 1989) was an English author and journalist whose best-known work, the satirical war novel \"How I Won The War\" was made into a film in 1967, directed by Richard Lester and starring John Lennon, Michael Crawford, Roy Kinnear and others."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 408,
+    "generation_tokens": 24,
+    "generation_speed": 340.8945641520958,
+    "prompt_eval_speed": 56745.479833101526,
+    "generation_latency_s": 0.1971128999721259,
+    "latency": 0.6763487999560311,
+    "total_prompt_tokens": 544,
+    "total_generation_tokens": 106,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2464339,
+    "stage_route_s": 0.1489922000328079,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2737501000519842,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05630089994519949,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.080003757029772e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1971612999914214,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6763605000451207,
+    "unaccounted_latency_s": 0.00010609987657517195,
+    "route": "rag",
+    "router_raw": "The author of the 1993 production Madge Ryan participated in was Madge Ryan.",
+    "sub_queries": [
+      "The author of the 1993 production Madge Ryan was:",
+      "Madge Ryan (born 2014)"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

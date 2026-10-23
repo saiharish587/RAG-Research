@@ -1,0 +1,49 @@
+{
+  "question_id": "Q109",
+  "query": "When was the  former Indian cricketer who made his ODI debuts during the 2000 ICC KnockOut Trophy born? ",
+  "ground_truth": "7 October 1978",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "Inzamam-ul-Haq was born on 3rd March, 1970.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Inzamam-ul-Haq: Inzamam-ul-Haq (\u00a0\u00a0 ;Punjabi, Urdu: \u200e ; born 3 March 1970), also known as \"Inzy\", is a former Pakistani cricketer, and former captain.  The leading run scorer for Pakistan in one-day internationals, and the third-highest run scorer for Pakistan in Test cricket, after Younis Khan and Javed Miandad, Inzamam is considered one of all time legends of world cricket.  He was the captain of the Pakistan national cricket team from 2003\u201307 and is considered to be one of the best leaders in Pakistan Cricket history.  Inzamam currently serves as the chief selector of Pakistan cricket team.",
+      "Zaheer Khan: Zaheer Khan (born 7 October 1978) is a former Indian cricketer who played all forms of the game for Indian national cricket team from 2000 till 2014.  He was the second-most successful Indian pace bowler in Test cricket, behind Kapil Dev.",
+      "2000 ICC KnockOut Trophy: The 2000 ICC KnockOut Trophy was a One Day International cricket tournament held in Kenya (which helped to booster cricket in Kenya).  New Zealand were crowned champions and cashed the winner's cheque of US$250 000.  It was their first win in a major ICC tournament.  Zaheer Khan, Yuvraj Singh and Marlon Samuels made their ODI debuts during the competition."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 439,
+    "generation_tokens": 24,
+    "generation_speed": 220.2097497866718,
+    "prompt_eval_speed": 53799.01960784313,
+    "generation_latency_s": 0.2317308000056073,
+    "latency": 0.5677140000043437,
+    "total_prompt_tokens": 601,
+    "total_generation_tokens": 46,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2402222,
+    "stage_route_s": 0.09590899990871549,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18473209999501705,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05515359994024038,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.6399963796138763e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23177479999139905,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5677240000804886,
+    "unaccounted_latency_s": 9.860028512775898e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"born in 2000\"",
+      "\"Indian cricketer\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

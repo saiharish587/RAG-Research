@@ -1,0 +1,49 @@
+{
+  "question_id": "Q301",
+  "query": "Where is the company that owns thanKing Horse pub restaurant chain based ?",
+  "ground_truth": "Bury St Edmunds,",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The company that owns Hungry Horse pub-restaurant chain is Wetherspoons.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Hungry Horse: Hungry Horse is a chain of 225 pub-restaurants in England, Wales and Scotland, owned by Greene King Brewery.  It was founded in 1995, and promotes itself as offering low cost meals for families and groups.",
+      "Wetherspoons: J D Wetherspoon plc, branded as Wetherspoon's, is a pub company in the United Kingdom and the Republic of Ireland.  Founded in 1979 by Tim Martin, the company owns just under 1,000 outlets, including the chain of Lloyds No.1 bars and the chain of Wetherspoon hotels.  With its headquarters in Watford, Wetherspoons is known for converting unconventional premises into pubs.  The company is listed on the London Stock Exchange and is a constituent of the FTSE 250 Index.",
+      "KFC: KFC, until 1991 known as Kentucky Fried Chicken, is an American fast food restaurant chain that specializes in fried chicken.  Headquartered in Louisville, Kentucky, it is the world's second-largest restaurant chain (as measured by sales) after McDonald's, with almost 20,000 locations globally in 123 countries and territories as of December 2015 .  The chain is a subsidiary of Yum!  Brands, a restaurant company that also owns the Pizza Hut and Taco Bell chains."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 377,
+    "generation_tokens": 20,
+    "generation_speed": 239.1228972130226,
+    "prompt_eval_speed": 45438.1101602989,
+    "generation_latency_s": 0.2040055999532342,
+    "latency": 0.5839796999935061,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 55,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23026069999999998,
+    "stage_route_s": 0.11097779998090118,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2128080999245867,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0560102000599727,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.949998740106821e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.20403829996939749,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5839898000704125,
+    "unaccounted_latency_s": 9.640015196055174e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The company that owns ThanKing Horse is called ThanKing Horse Restaurant Chain.",
+      "The company is based in New York City, USA."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

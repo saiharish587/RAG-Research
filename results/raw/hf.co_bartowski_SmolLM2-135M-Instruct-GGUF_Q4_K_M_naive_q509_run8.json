@@ -1,0 +1,36 @@
+{
+  "question_id": "Q509",
+  "query": "In what London botanical garden can you find the fungus described by Elise Maud Wakefield as \"Lepiota\"?",
+  "ground_truth": "Kew Gardens",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The British Museum (BOM) is a museum located in London, England. It houses many different types of plants and animals from around the world. The BOM has over 10 million plant specimens, including over 750,000 books on plants, as well as more than 230,000 prints and drawings of plants.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kew Gardens: Kew Gardens is a botanical garden in southwest London that houses the \"largest and most diverse botanical and mycological collections in the world\".  Founded in 1840, from the exotic garden at Kew Park in the London Borough of Richmond upon Thames, UK, its living collections include more than 30,000 different kinds of plants, while the herbarium, which is one of the largest in the world, has over seven million preserved plant specimens.  The library contains more than 750,000 volumes, and the illustrations collection contains more than 175,000 prints and drawings of plants.  It is one of London's top tourist attractions and is a World Heritage Site.",
+      "Botanical garden: A botanical garden or botanic garden is a garden dedicated to the collection, cultivation and display of a wide range of plants labelled with their botanical names.  It may contain specialist plant collections such as cacti and other succulent plants, herb gardens, plants from particular parts of the world, and so on; there may be greenhouses, shadehouses, again with special collections such as tropical plants, alpine plants, or other exotic plants. Visitor services at a botanical garden might include tours, educational displays, art exhibitions, book rooms, open-air theatrical and musical performances, and other entertainment.",
+      "Saproamanita nauseosa: Saproamanita nauseosa is a species of agaric fungus in the family Amanitaceae.  First described by English mycologist Elsie Maud Wakefield in 1918 as a species of \"Lepiota\", it was named for its nauseating odor.  The type specimen was found growing on soil in the \"Nepenthes\" greenhouse at Kew Gardens.  Derek Reid transferred the species to \"Amanita\" in 1966, and then in 2016 the separate genus \"Saproamanita\" was created by Redhead et al. for saprophytic \"Amanitas\" and it was transferred to this new genus."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 515,
+    "generation_tokens": 76,
+    "generation_speed": 404.15857906352204,
+    "prompt_eval_speed": 179818.43575418997,
+    "generation_latency_s": 0.30252839997410774,
+    "latency": 0.3186992999399081,
+    "total_prompt_tokens": 515,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1037789,
+    "stage_retrieve_s": 0.016070200013928115,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.3025900999782607,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.31870790000539273,
+    "unaccounted_latency_s": 4.809990059584379e-05
+  }
+}

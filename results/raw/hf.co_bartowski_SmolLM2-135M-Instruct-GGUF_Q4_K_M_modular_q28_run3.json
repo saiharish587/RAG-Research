@@ -1,0 +1,49 @@
+{
+  "question_id": "Q28",
+  "query": "Are both Dictyosperma, and Huernia described as a genus?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "No, the two genera \"Dictyosperma\" and \"Huernia\" are not considered to be closely related species in the genus \"Asclepiadoideae\". The genus is named from Greek words meaning \"net\", \"seed\", and \"flower\", which refers to the structure of the flowers.\n\nThe genus \"Asclepiadoeae\" contains two genera: \"Huernia\" (as mentioned earlier) and \"Dictyosperma\". However, they are not closely related species in the genus \"Asclepiadoideae\"; they belong to different families.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Huernia: The genus Huernia (family Apocynaceae, subfamily Asclepiadoideae) consists of stem succulents from Eastern and Southern Africa, first described as a genus in 1810.  The flowers are five-lobed, usually somewhat more funnel- or bell-shaped than in the closely related genus \"Stapelia\", and often striped vividly in contrasting colours or tones, some glossy, others matt and wrinkled depending on the species concerned.  To pollinate, the flowers attract flies by emitting a scent similar to that of carrion.  The genus is considered close to the genera \"Stapelia\" and \"Hoodia\".  The name is in honour of Justin Heurnius (1587\u20131652) a Dutch missionary who is reputed to have been the first collector of South African Cape plants.  His name was actually mis-spelt by the collector.",
+      "Dictyosperma: Dictyosperma is a monotypic genus of flowering plant in the palm family found in the Mascarene Islands in the Indian Ocean (Mauritius, R\u00e9union and Rodrigues).  The sole species, Dictyosperma album, is widely cultivated in the tropics but has been farmed to near extinction in its native habitat.  It is commonly called princess palm or hurricane palm, the latter owing to its ability to withstand strong winds by easily shedding leaves.  It is closely related to, and resembles, palms in the \"Archontophoenix\" genus.  The genus is named from two Greek words meaning \"net\" and \"seed\" and the epithet is Latin for \"white\", the common color of the crownshaft at the top of the trunk.",
+      "Conophytum: Conophytum is a genus of South African and Namibian succulent plants that belong to the Aizoaceae family.  The name is derived from the Latin \u201cconus\u201d (cone) and Greek \u201cphytum\u201d (plant).  The plants are also known as knopies (buttons), waterblasies (water blisters), sphaeroids, conos, cone plants, dumplings, or button plants."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 528,
+    "generation_tokens": 126,
+    "generation_speed": 364.08608613236555,
+    "prompt_eval_speed": 75818.49511774842,
+    "generation_latency_s": 0.46797720005270094,
+    "latency": 0.8822985000442713,
+    "total_prompt_tokens": 662,
+    "total_generation_tokens": 196,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2235491,
+    "stage_route_s": 0.09305579995270818,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2638031999813393,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0572609999217093,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1999930292367935e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.4680281000910327,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8823113000253215,
+    "unaccounted_latency_s": 0.0001123001566156745,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Yes, both Dictyospermum and Huernia are genera of fungi that belong to the phylum Ascomycota. They are characterized by their characteristic hyphae structures and often exhibit symbiotic relationships with other organisms.",
+      "Question: Are both Dictyosperma and Huernia described as a genus?"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

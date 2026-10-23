@@ -1,0 +1,42 @@
+{
+  "question_id": "Q424",
+  "query": "One of the coaches of Southern Methodist University also played what role at the Arizona State Sun Devils?",
+  "ground_truth": "defensive coordinator",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Mike Cavan was the coach of the Southern Methodist University's football team from 1997 to 2001.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Arizona State Sun Devils football: The Arizona State Sun Devils football team represents Arizona State University in the sport of American football.  The Sun Devils team competes in the Football Bowl Subdivision (FBS) of the National Collegiate Athletic Association (NCAA) and the South Division of the Pac-12 Conference (Pac-12).  Arizona State University has fielded a football team since 1897 and has an all-time record of 600-382-24 (a .608 winning percentage).  The Sun Devils are currently led by head coach Todd Graham and play their home games at Sun Devil Stadium in Tempe, Arizona.  The Sun Devils have won seventeen conference titles, including three Pac-12 titles.",
+      "SMU Mustangs football under Mike Cavan: Mike Cavan was the coach of the Southern Methodist University's football team from 1997 to 2001.  He compiled a 22\u201334\u20130 record, and was succeeded by Phil Bennett.",
+      "1954 Arizona State Sun Devils football team: The 1954 Arizona State Sun Devils football team was an American football team that represented Arizona State College (later renamed Arizona State University) in the Border Intercollegiate Athletic Association (BIAA) during the 1954 college football season.  In their third and final season under head coach Clyde B. Smith, the Sun Devils compiled an 5-5 record (3\u20131 against BIAA opponents) and were outscored by their opponents 228 to 178.  Assistant Coaches were Gene Fetter, Tom Fletcher, & Bob White.  Arizona State's team captain was QB Dick Mackey.  The Sun Devils finished (3-3) at home and (2-2) on the road.  All home games were played at Goodwin Stadium in Tempe, Arizona."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 496,
+    "generation_tokens": 29,
+    "generation_speed": 248.1835531326755,
+    "prompt_eval_speed": 69711.87631763879,
+    "generation_latency_s": 1.046033599996008,
+    "latency": 3.4276322000660002,
+    "total_prompt_tokens": 576,
+    "total_generation_tokens": 57,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1207752,
+    "stage_rewrite_s": 1.2400181000120938,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0173250999068841,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.12413969996850938,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0460692000342533,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.427640700014308,
+    "unaccounted_latency_s": 8.90000956133008e-05,
+    "rewritten_query": "Southern Methodist University's coach, John Smith, played a key role in the Arizona State Sun Devils' success during their college years.",
+    "query_was_rewritten": true
+  }
+}

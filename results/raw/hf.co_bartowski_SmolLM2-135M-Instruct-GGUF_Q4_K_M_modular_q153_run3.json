@@ -1,0 +1,48 @@
+{
+  "question_id": "Q153",
+  "query": "The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aim\u00e9 Argand?",
+  "ground_truth": "Argand lamp",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Yes, the lamp used in many lighthouses was similar to this type of lamp patented in 1780 by Aim\u00e9 Argand. The lamp used a similar design and included a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lewis lamp: The Lewis lamp is a type of light fixture used in lighthouses.  It was invented by Winslow Lewis who patented the design in 1810.  The primary marketing point of the Lewis lamp was that it used less than half the oil of the prior oil lamps which they replaced.  The lamp used a similar design to an Argand lamp, adding a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.  A similar variant using a parabolic reflector was created by the inventor of the Argand lamp, Aim\u00e9 Argand.  While the Argand variant became widely used by European lighthouses, the Lewis lamp design was selected by the United States for use in American lighthouses.",
+      "Argand lamp: The Argand lamp, a kind of oil lamp, was invented and patented in 1780 by Aim\u00e9 Argand.  Its output is 6 to 10 candela, brighter than that of earlier lamps.  Its more complete combustion of the candle wick and oil than in other lamps required much less frequent trimming of the wick.",
+      "Herbert Akroyd Stuart: Herbert Akroyd-Stuart (28 January 1864, Halifax, Yorkshire, England \u2013 19 February 1927, Halifax) was an English inventor who is noted for his invention of the hot bulb engine, or heavy oil engine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 390,
+    "generation_tokens": 65,
+    "generation_speed": 400.06401024163864,
+    "prompt_eval_speed": 54234.459741343344,
+    "generation_latency_s": 0.2771552999038249,
+    "latency": 0.5671598000917584,
+    "total_prompt_tokens": 548,
+    "total_generation_tokens": 97,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23748789999999997,
+    "stage_route_s": 0.09239689994137734,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15890929999295622,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.038528500008396804,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.990007098764181e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2771927999565378,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5671699000522494,
+    "unaccounted_latency_s": 0.00010300008580088615,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "The lamp used in many lighthouses was originally called the Argand Lamp, invented by Aim\u00e9 Argand in 1780."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

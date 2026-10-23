@@ -1,0 +1,42 @@
+{
+  "question_id": "Q106",
+  "query": "Which American film actor and dancer starred in the 1945 film Johnny Angel?",
+  "ground_truth": "George Raft",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The American film actor and dancer who starred in the 1945 film \"Mr. Angel Comes Aboard\" is Gene Kelly. He played the role of Johnny Angel, a gangster portrayed by George Raft, and was known for his energetic and athletic dancing style.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Johnny Angel: Johnny Angel is a 1945 film noir directed by Edwin L. Marin and written by Frank Gruber and Steve Fisher from the novel \"Mr. Angel Comes Aboard\" by Charles Gordon Booth.  The movie stars George Raft, Claire Trevor and Signe Hasso, and features Hoagy Carmichael.",
+      "George Raft: George Raft (born George Ranft; September 26, 1901 \u2013 November 24, 1980) was an American film actor and dancer identified with portrayals of gangsters in crime melodramas of the 1930s and 1940s.  A stylish leading man in dozens of movies, today Raft is mostly known for his gangster roles in the original \"Scarface\" (1932), \"Each Dawn I Die\" (1939), and Billy Wilder's 1959 comedy \"Some Like it Hot\", as a dancer in \"Bolero\" (1934), and a truck driver in \"They Drive by Night\" (1940).",
+      "Gene Kelly: Eugene Curran Kelly (August 23, 1912 \u2013 February 2, 1996) was an American dancer, actor of film, stage and television, singer, film director, producer, and choreographer.  He was known for his energetic and athletic dancing style, his good looks, and the likeable characters that he played on screen."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 397,
+    "generation_tokens": 59,
+    "generation_speed": 427.12458282959176,
+    "prompt_eval_speed": 53004.005340453936,
+    "generation_latency_s": 0.2195244999602437,
+    "latency": 0.5308488999726251,
+    "total_prompt_tokens": 476,
+    "total_generation_tokens": 79,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1234033,
+    "stage_rewrite_s": 0.12722149991896003,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07506189995910972,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.10890980006661266,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2195661999285221,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.530860299943015,
+    "unaccounted_latency_s": 0.00010140007361769676,
+    "rewritten_query": "Which American film actor and dancer starred in the 1945 film Johnny Angel?",
+    "query_was_rewritten": false
+  }
+}

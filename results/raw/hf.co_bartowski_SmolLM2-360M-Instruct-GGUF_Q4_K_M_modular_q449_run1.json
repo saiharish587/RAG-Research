@@ -1,0 +1,49 @@
+{
+  "question_id": "Q449",
+  "query": "What is the name of the film starring Rose McGowan and features the character Earl McGraw's daughter?",
+  "ground_truth": "Planet Terror",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The film starring Rose McGowan and featuring the character Earl McGraw's daughter is \"The Pastor's Wife.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Pastor's Wife (film): The Pastor's Wife is a 2011 biographical television film, starring Rose McGowan as Mary Winkler and based on the true crime book of the same title by author Diane Fanning.  It premiered on Saturday, November 5, at 8 pm ET/PT on the Lifetime Network.",
+      "Rose McGowan: Rose Arianna McGowan (born September 5, 1973) is an Italian-born American actress, film producer, director and singer.  She is best known to television audiences for having played Paige Matthews in The WB supernatural drama series \"Charmed\" from 2001 to 2006.",
+      "In the Name of the Law (1922 film): In the Name of the Law is a 1922 American silent film featuring Pittsburgh Pirates retired Hall of Famer Honus Wagner as a hero in an early action plot.  During the climax of the film retired baseball player, and current (for the film) Pittsburgh Police Superintendent throws baseballs off the 144 foot high roof of the ten story Pittsburgh City Hall with only the film's hero Wagner to catch them and save a vulnerable public.  The film relies heavily on Wagner catching baseballs in almost every possible way."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 357,
+    "generation_tokens": 25,
+    "generation_speed": 202.38162698637566,
+    "prompt_eval_speed": 13073.570879261728,
+    "generation_latency_s": 0.26249809993896633,
+    "latency": 0.6327147999545559,
+    "total_prompt_tokens": 499,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2408944,
+    "stage_route_s": 0.11134060006588697,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2011944999685511,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.057495599961839616,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.280001252889633e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26253329997416586,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6327251000329852,
+    "unaccounted_latency_s": 9.890005458146334e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Name Of The Film\"",
+      "\"Rose McGuigan's Daughter\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

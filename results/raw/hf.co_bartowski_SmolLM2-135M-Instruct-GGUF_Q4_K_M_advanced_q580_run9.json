@@ -1,0 +1,42 @@
+{
+  "question_id": "Q580",
+  "query": "The album \"The Best of LeAnn Rimes\" contained a song used as the theme song for a film. What is the name of the film?",
+  "ground_truth": "Coyote Ugly",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "You are correct that the question asks about the song \"Leaving's Not Leaving\", which was featured on Rimes' \"Greatest Hits\". The answer to this question would be \"The Best of LeAnn Rimes\" as it features a theme song for a film.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "James Franco: James Edward Franco (born April 19, 1978) is an American actor, director, screenwriter, and producer.  For his role in \"127 Hours\" (2010), Franco was nominated for an Academy Award for Best Actor.  He is known for his roles in live-action films such as \"Milk\" (2008), \"Pineapple Express\" (2008), \"Rise of the Planet of the Apes\" (2011), \"Spring Breakers\" (2012), \"Oz the Great and Powerful\" (2013), \"This Is the End\" (2013), \" The Disaster Artist\" (2017), and Sam Raimi's \"Spider-Man\" trilogy, while also voicing characters in the animated films \"The Little Prince\" (2015) and \"Sausage Party\" (2016).",
+      "Big Deal (LeAnn Rimes song): \"Big Deal\" is a song written by Jeffrey Steele and Al Anderson, and recorded by American country music artist LeAnn Rimes.  It was released on September 28, 1999 as the first single from her album \"LeAnn Rimes\".  The song charted at number 6 on the US country charts and number 23 on the US Hot 100 chart.  The B-side track, \"Leaving's Not Leaving,\" was released on the soundtrack for the film, \"Anywhere But Here\" on November 2, 1999.",
+      "Commitment (song): \"Commitment\" is a song written by Tony Colton, Tony Marty and Bobby Wood, and recorded by American country music artist LeAnn Rimes.  It was released in April 1998 as the lead single from her album \"Sittin' on Top of the World\".  The song placed at number 4 on the US country charts, number 38 in the UK.  It was later featured on Rimes' \"Greatest Hits\" and its international version, \"The Best of LeAnn Rimes\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 553,
+    "generation_tokens": 57,
+    "generation_speed": 417.4020020650414,
+    "prompt_eval_speed": 57706.3550036523,
+    "generation_latency_s": 0.23280639993026853,
+    "latency": 0.616906899958849,
+    "total_prompt_tokens": 644,
+    "total_generation_tokens": 89,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1269228,
+    "stage_rewrite_s": 0.16847779997624457,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07642180006951094,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13908340001944453,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.2328398999525234,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6169156999094412,
+    "unaccounted_latency_s": 9.349989704787731e-05,
+    "rewritten_query": "The film, \"LeAnn Rimes and the Film,\" starring actress LeAnn Rimes was directed by James Franco and stars actress LeAnn Rimes.",
+    "query_was_rewritten": true
+  }
+}

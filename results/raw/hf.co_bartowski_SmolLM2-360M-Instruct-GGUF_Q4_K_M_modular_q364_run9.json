@@ -1,0 +1,49 @@
+{
+  "question_id": "Q364",
+  "query": "What type of media does J. T. Petty and Outlast have in common?",
+  "ground_truth": "video game",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "J. T. Petty and Outlast share a common medium, which is film.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "J. T. Petty: J. T. Petty (born February 28, 1977 in Raleigh, North Carolina) is an American filmmaker and video game writer.  Petty's film and short novels contain elements of the horror genre.  He wrote the Ubisoft video game, \"Tom Clancy's Splinter Cell\" as well as the survival horror games \"Outlast\" and \"Outlast 2\".  He currently resides in Brooklyn, New York .",
+      "Film genre: A film genre is a motion picture category based on similarities in either the narrative elements or the emotional response to the film (namely, serious, comic, etc.).  Most theories of film genre are borrowed from literary genre criticism.  The basic genres include fiction and documentary, from which subgenres have emerged, such as docufiction and docudrama.  Other subgenres include the courtroom and trial-focused drama known as the legal drama.  Types of fiction which may seem unrelated can also be combined to form hybrid subgenres, such as the melding of horror and comedy in the \"Evil Dead\" films.  Other popular combinations are the romantic comedy and the action comedy film.",
+      "Genre: Genre ( , or ; from French \"genre\" ] , \"kind\" or \"sort\", from Latin \"genus\" (stem \"gener-\"), Greek \u03b3\u03ad\u03bd\u03bf\u03c2, \"g\u00e9nos\") is any form or type of communication in any mode (written, spoken, digital, artistic, etc.) with socially-agreed upon conventions developed over time.  Genre is most popularly known as a category of literature, music, or other forms of art or entertainment, whether written or spoken, audio or visual, based on some set of stylistic criteria, yet genres can be aesthetic, rhetorical, communicative, or functional.  Genres form by conventions that change over time as new genres are invented and the use of old ones is discontinued.  Often, works fit into multiple genres by way of borrowing and recombining these conventions.  Stand alone texts, works, or pieces of communication may have individual styles, but genres are amalgams of these texts based on agreed upon or socially inferred conventions.  Some genres may be rigid with strictly adhered to guidelines while others may be very flexible."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 548,
+    "generation_tokens": 19,
+    "generation_speed": 230.00193685841566,
+    "prompt_eval_speed": 66569.49302350498,
+    "generation_latency_s": 0.21031909994781017,
+    "latency": 0.7092950999503955,
+    "total_prompt_tokens": 684,
+    "total_generation_tokens": 77,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2316753,
+    "stage_route_s": 0.10469060007017106,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.338691100012511,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05542380001861602,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.250005051493645e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21035760000813752,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7093065000372007,
+    "unaccounted_latency_s": 9.159988258033991e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Media types that share similarities with J. T. Petty's work include film, television, and video games.",
+      "Query 2: Media types that share similarities with Outlast's genre include horror films, action movies, and sci-fi series."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

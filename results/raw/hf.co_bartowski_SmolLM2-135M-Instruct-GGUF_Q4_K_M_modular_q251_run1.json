@@ -1,0 +1,49 @@
+{
+  "question_id": "Q251",
+  "query": "In what city can a person find both the Nusretiye Clock Tower and the Eski Imaret Mosque be found?",
+  "ground_truth": "Istanbul, Turkey",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Nusretiye Clock Tower and the Eski Imaret Mosque are located in Tophane, a neighborhood in Beyo\u011flu district of Istanbul.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Nusretiye Clock Tower: Nusretiye Clock Tower, aka Tophane Clock Tower, is a clock tower situated in Tophane, a neighborhood in Beyo\u011flu district of Istanbul, Turkey next to Nusretiye Mosque and Tophane Kiosk at the European waterfront of Bosphorus.  It was ordered by the Ottoman sultan Abd\u00fclmecid I (1823-1861), designed by architect Garabet Amira Balyan and completed in 1848.",
+      "Nusretiye Mosque: Nusretiye Mosque is an ornate mosque located in Tophane district of Beyo\u011flu, Istanbul, Turkey.  While its architecture is influenced by Islamic elements, it retains a Baroque style, making it unique to the city.  It was built in 1823-1826 by Sultan Mahmut II.",
+      "Mihrimah Sultan Mosque (Edirnekap\u0131): The Mihrimah Sultan Mosque (Turkish: 'Mihrimah Sultan Camii' ) is an Ottoman mosque located in the Edirnekap\u0131 neighborhood near the Byzantine land walls of Istanbul, Turkey.  Located on the peak of the Sixth Hill near the highest point of the city, the mosque is a prominent landmark in Istanbul."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 34,
+    "generation_speed": 408.18286592393395,
+    "prompt_eval_speed": 22354.325345222613,
+    "generation_latency_s": 0.21042369992937893,
+    "latency": 1.7182155000045896,
+    "total_prompt_tokens": 513,
+    "total_generation_tokens": 523,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2353894,
+    "stage_route_s": 0.10601390001829714,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 1.3458323000231758,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055768400081433356,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.610007792711258e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2104571999516338,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.7182250999612734,
+    "unaccounted_latency_s": 9.779981337487698e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "To answer this question, we need to search for two specific locations in Istanbul that are both connected by a railway line. Here's how we can do it:",
+      "First, let's find the Nusretiye Clock Tower and Eski Imaret Mosque. We'll use Google Maps to locate these places on a map of Istanbul."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

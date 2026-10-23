@@ -1,0 +1,42 @@
+{
+  "question_id": "Q350",
+  "query": "What year did the biographical-comedy-crime film directed by Steven Soderbergh about the highest-level corporate executive whistleblower come out?",
+  "ground_truth": "2009",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The biographical-comedy-crime film starring Steven Soderbergh about the highest-level corporate executive whistleblower came out in 1995.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mark Whitacre: Mark Edward Whitacre (born May 1, 1957) came to public attention in 1995 when, as president of the BioProducts Division at Archer Daniels Midland (ADM) based in Decatur, Illinois, he was the highest-level corporate executive in U.S. history to become a Federal Bureau of Investigation (FBI) whistleblower.  For three years (1992\u201395), Whitacre acted as an informant for the FBI, which was investigating ADM for price fixing.",
+      "President (corporate title): The President is a leader of an organization, company, community, club, trade union, university or other group.  In many organizations, it is the legally recognized highest \"titled\" corporate officer, ranking above the various Vice Presidents (e.g. Senior Vice President and Executive Vice President).  The president may also be the chairperson.  The relationship between the president and the Chief Executive Officer varies, depending on the structure of the specific organization.  In a similar vein to the Chief Operating Officer, the title of corporate President as a separate position (as opposed to being combined with a \"C-Suite\" designation, such as \"President and Chief Executive Officer\" or \"President and Chief Operating Officer\") is also loosely defined.  The powers of the president vary widely across organizations and such powers come from specific authorization in the bylaws (e.g. the president can make an \"executive decision\" only if the bylaws allow for it).",
+      "Chief executive officer: A chief executive officer (CEO) is the position of the most senior corporate officer, executive, leader or administrator in charge of managing an organization.  CEOs lead a range of organizations, including public and private corporations, non-profit organizations and even some government organizations (e.g., Crown corporations).  The CEO of a corporation or company typically reports to the board of directors and is charged with maximizing the value of the entity, which may include maximizing the share price, market share, revenues, or another element.  In the non-profit and government sector, CEOs typically aim at achieving outcomes related to the organization's mission, such as reducing poverty, increasing literacy, etc.  Titles also often given to the holder of CEO position include president, chief executive (CE), and managing director (MD), as well as representative director (RD) in Japan."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 592,
+    "generation_tokens": 34,
+    "generation_speed": 386.79438465563925,
+    "prompt_eval_speed": 19588.379326318576,
+    "generation_latency_s": 0.1957651999546215,
+    "latency": 0.5576297999359667,
+    "total_prompt_tokens": 683,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1261391,
+    "stage_rewrite_s": 0.14295550005044788,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.078069300041534,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14070380001794547,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.19580899993889034,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5576413000235334,
+    "unaccounted_latency_s": 0.00010459986515343189,
+    "rewritten_query": "The highest-level corporate executive whistleblower came out in 2015.",
+    "query_was_rewritten": true
+  }
+}

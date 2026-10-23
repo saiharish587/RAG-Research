@@ -1,0 +1,42 @@
+{
+  "question_id": "Q185",
+  "query": "What year did the series on CBS, starring the actor who known for his role in \"Rebel Without a Cause,\" air?",
+  "ground_truth": "1952",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The series on CBS, starring Patrick McGoohan, was broadcast between 1960 and 1962.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Danger Man: Danger Man (titled Secret Agent in the United States, and Destination Danger and John Drake in other non-UK markets) is a British television series which was broadcast between 1960 and 1962, and again between 1964 and 1968.  The series featured Patrick McGoohan as secret agent John Drake.  Ralph Smart created the programme and wrote many of the scripts.  \"Danger Man\" was financed by Lew Grade's ITC Entertainment.",
+      "Daniel Boone (1964 TV series): Daniel Boone is an American action-adventure television series starring Fess Parker as Daniel Boone that aired from September 24, 1964, to May 7, 1970, on NBC for 165 episodes, and was produced by 20th Century Fox Television, Arcola Enterprises, and Fespar Corp.  Ed Ames co-starred as Mingo, Boone's Cherokee friend, for the first four seasons of the series.  Albert Salmi portrayed Boone's companion Yadkin in season one only.  Country Western singer-actor Jimmy Dean was a featured actor as Josh Clements during the 1968\u20131970 seasons.  Actor and former NFL football player Rosey Grier made regular appearances as Gabe Cooper in the 1969 to 1970 season.  The show was broadcast \"in living color\" beginning in fall 1965, the second season, and was shot entirely in California and Kanab, Utah.",
+      "National Basketball Association on television: As one of the major sports leagues in North America, the National Basketball Association has a long history of partnership with television networks in the US.  The League signed a contract with DuMont in its 8th season (1953\u201354), marking the first year the NBA had a national television broadcaster.  Similar to NFL, the lack of television stations leads to NBC taking over the rights beginning the very next season until April 7, 1962 - NBC's first tenure with the NBA.  After the deal expired, Sports Network Incorporated (later known as the Hughes Television Network) signed up for two-year coverage in the 1962\u201363, 1963\u201364 season.  ABC gained the NBA in 1964, the network aired its first NBA game on January 3, 1965, but lost the broadcast rights to CBS after the 1972\u201373 season with the initial tenure ending on May 10, 1973.  As the national broadcaster of the NBA, CBS aired NBA games from the 1973-74 until the 1989\u201390 season, during which the early 1980s is notoriously known as the tape delay playoff era."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 720,
+    "generation_tokens": 27,
+    "generation_speed": 249.67634547808396,
+    "prompt_eval_speed": 14542.222940356689,
+    "generation_latency_s": 0.9950382999377325,
+    "latency": 3.434555000043474,
+    "total_prompt_tokens": 807,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1234253,
+    "stage_rewrite_s": 1.1733685000799596,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0639586000470445,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2020632999483496,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9950824999250472,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4345670000184327,
+    "unaccounted_latency_s": 9.470002260059118e-05,
+    "rewritten_query": "The series was broadcasted in 1964.",
+    "query_was_rewritten": true
+  }
+}

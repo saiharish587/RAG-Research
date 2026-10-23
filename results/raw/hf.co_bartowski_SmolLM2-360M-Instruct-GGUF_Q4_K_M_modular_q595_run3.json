@@ -1,0 +1,49 @@
+{
+  "question_id": "Q595",
+  "query": "What type of engine powered both the Saab 36 and the Avro Vulcan?",
+  "ground_truth": "British Bristol Olympus turbojet",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "The Saab 36 was powered by a version of the British Bristol Olympus turbojet, which was also used in the Avro Vulcan jet bomber.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Saab 36: The Saab 36 (also known as Projekt 1300) was a supersonic bomber planned by Saab during the 1950s.  The aircraft was intended to be able to carry an 800 kg free-falling nuclear weapon, but the Swedish nuclear weapons program was cancelled in the 1960s; the plans for the bomber had been cancelled in 1957.  The Saab 36 was to be fitted with delta wings, as was the Saab 35 Draken fighter.  The engine was to be a version of the British Bristol Olympus turbojet, the same engine powering the Avro Vulcan jet bomber.",
+      "Saab 38: The Saab 38 (also known as B3LA or A 38/Sk 38) was a single-engine jet trainer and attack aircraft planned by Saab during the 1970s.  The project was a collaboration between Saab and the Italian aircraft manufacturer Aermacchi.  It was to replace the older Saab 105 jet trainer in the Swedish Air Force, but the aircraft never got past the drawing board and was canceled in 1979 in favour of the more advanced Saab JAS 39 Gripen fighter.",
+      "Saab JAS 39 Gripen: The Saab JAS 39 Gripen (English: \"griffin\" ) is a light single-engine multirole fighter aircraft manufactured by the Swedish aerospace company Saab.  It was designed to replace the Saab 35 Draken and 37 Viggen in the Swedish Air Force (\"Flygvapnet\").  The Gripen has a delta wing and canard configuration with relaxed stability design and fly-by-wire flight controls.  It is powered by the Volvo RM12, and has a top speed of Mach 2.  Later aircraft are modified for NATO interoperability standards and to undertake in-flight refuelling."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 508,
+    "generation_tokens": 34,
+    "generation_speed": 243.80974235046935,
+    "prompt_eval_speed": 67589.14316125598,
+    "generation_latency_s": 0.2621219999855384,
+    "latency": 1.0906520000426099,
+    "total_prompt_tokens": 646,
+    "total_generation_tokens": 186,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23281659999999998,
+    "stage_route_s": 0.09689349995460361,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.6750065999804065,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05645069992169738,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.6200002543628216e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26216250006109476,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 1.0906637000152841,
+    "unaccounted_latency_s": 0.0001050001010298729,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Saab 36 Engine: The Saab 36 was a Swedish-made aircraft engine that was used in various military and civilian applications, including the Saab 900 and the Saab 32. It was also used in the Avro Vulcan, which was an American-built heavy bomber designed by the Vulcan Engineering Company.",
+      "Saab 36 Engine: The Saab 36 engine was a Swedish-made aircraft engine that powered several military and civilian aircraft, including the Saab 900 and the Saab 32. It was also used in the Avro Vulcan, which was an American-built heavy bomber designed by Vulcan Engineering Company."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

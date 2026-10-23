@@ -1,0 +1,48 @@
+{
+  "question_id": "Q131",
+  "query": "Which film was Oscar nominated, LaLee's Kin: The Legacy of Cotton or Gimme Shelter, the 1970 Rolling Stones documentary?",
+  "ground_truth": "LaLee's Kin: The Legacy of Cotton",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "LaLee's Kin: The Legacy of Cotton is a 2001 American documentary film directed by Deborah Dickson, Susan Fr\u00f6mke and Albert Maysles. It was nominated for Best Documentary Feature at the 74th Academy Awards.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "LaLee's Kin: The Legacy of Cotton: LaLee's Kin: The Legacy of Cotton is a 2001 American documentary film directed by Deborah Dickson, Susan Fr\u00f6mke and Albert Maysles.  It was nominated for Best Documentary Feature at the 74th Academy Awards.",
+      "Gimme Shelter (1970 film): Gimme Shelter is a 1970 documentary film directed by Albert and David Maysles and Charlotte Zwerin chronicling the last weeks of The Rolling Stones' 1969 US tour which culminated in the disastrous Altamont Free Concert.  The film is named after \"Gimme Shelter\", the lead track from the group's 1969 album \"Let It Bleed\".  The film was screened at the 1971 Cannes Film Festival, but was not entered into the main competition.",
+      "Lewis Textile Museum: The Lewis Textile Museum was bequeathed to the people of Blackburn by a local cotton industrialist, Thomas Boys Lewis (1869\u20131942).  The Lewis Textile Museum was closed in 2006 and a new gallery with its collection of looms and textile machinery was moved to Blackburn Museum and Art Gallery.  The gallery which now houses the exhibits at the main Museum & Art Gallery was named \"CottonTown\" and opened in April 2007 by Jack Straw, the local Labour MP."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 401,
+    "generation_tokens": 54,
+    "generation_speed": 235.7296268487314,
+    "prompt_eval_speed": 54174.54741961632,
+    "generation_latency_s": 0.3462645999388769,
+    "latency": 0.605427399976179,
+    "total_prompt_tokens": 565,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22699000000000003,
+    "stage_route_s": 0.09294960007537156,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.13019350008107722,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.035842300043441355,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.710000939667225e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.3463064000243321,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6054750999901444,
+    "unaccounted_latency_s": 0.00013709976337850094,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "LaLee's Kin: The Legacy of Cotton*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

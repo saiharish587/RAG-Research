@@ -1,0 +1,48 @@
+{
+  "question_id": "Q321",
+  "query": "Who was also an actor, Serri or John Fogerty?",
+  "ground_truth": "Serri",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "John Marcellus Huston",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Fogerty: John Cameron Fogerty (born May 28, 1945) is an American musician, singer, and songwriter.  He was the lead singer, lead guitarist and principal songwriter of the band Creedence Clearwater Revival.  The group had nine top-ten singles and eight gold albums between 1968 and 1972.  They were inducted into the Rock and Roll Hall of Fame in 1993.",
+      "Serendipity (film): Serendipity is a 2001 American romantic comedy film directed by Peter Chelsom, written by Marc Klein, and starring John Cusack and Kate Beckinsale.  The music score was composed by Alan Silvestri.",
+      "John Huston: John Marcellus Huston ( ; August 5, 1906\u00a0\u2013 August 28, 1987) was an American film director, screenwriter and actor.  He wrote the screenplays for most of the 37 feature films he directed, many of which are today considered classics: \"The Maltese Falcon\" (1941), \"The Treasure of the Sierra Madre\" (1948), \"The Asphalt Jungle\" (1950), \"The African Queen\" (1951), \"The Misfits\" (1961), \"Fat City\" (1972) and \"The Man Who Would Be King\" (1975).  During his 46-year career, Huston received 15 Oscar nominations, won twice, and directed both his father, Walter Huston, and daughter, Anjelica Huston, to Oscar wins in different films."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 451,
+    "generation_tokens": 8,
+    "generation_speed": 297.08853238265004,
+    "prompt_eval_speed": 25345.622119815667,
+    "generation_latency_s": 0.15268059994559735,
+    "latency": 0.42558209993876517,
+    "total_prompt_tokens": 579,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.227852,
+    "stage_route_s": 0.08994289999827743,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14091089996509254,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.04188160004559904,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.3800100684165955e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1527207000181079,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.42559389991220087,
+    "unaccounted_latency_s": 9.499979205429554e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Serri and John Fogerty were both actors who starred in movies."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

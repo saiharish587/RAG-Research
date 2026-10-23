@@ -1,0 +1,42 @@
+{
+  "question_id": "Q351",
+  "query": "when was the album that includes the song by Dustin Lynch released to country radio on February 17, 2017?",
+  "ground_truth": "September 8, 2017",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "The album that includes the song \"Small Town Boy\" was released to country radio on February 17, 2017.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Small Town Boy (song): \"Small Town Boy\" is a song recorded by American country music artist Dustin Lynch.  It was released to country radio on February 17, 2017 as the second single from his third studio album, \"Current Mood\".",
+      "Current Mood: Current Mood is the third studio album by American country music singer Dustin Lynch.  It was released on September 8, 2017, via Broken Bow Records.  The album includes the singles \"Seein' Red\" and \"Small Town Boy\", which have both reached number one on the Country Airplay chart.",
+      "Dustin Lynch (album): Dustin Lynch is the debut studio album by American country music artist Dustin Lynch.  It was released on August 21, 2012 by Broken Bow Records.  Lynch wrote or co-wrote ten of the album's thirteen tracks, including the first single, \"Cowboys and Angels\".  The album's second single, \"She Cranks My Tractor\", was released to country radio on November 19, 2012.  The album has sold 100,000 copies as of December 2012.  The album's third single, \"Wild in Your Smile\", was released to country radio on May 27, 2013."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 29,
+    "generation_speed": 260.40965132045653,
+    "prompt_eval_speed": 53461.37308298696,
+    "generation_latency_s": 1.0111080999486148,
+    "latency": 3.4090354000218213,
+    "total_prompt_tokens": 461,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.12697529999999999,
+    "stage_rewrite_s": 1.2548373999306932,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9990478000836447,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14392349997069687,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0111484000226483,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.409045899985358,
+    "unaccounted_latency_s": 8.939998224377632e-05,
+    "rewritten_query": "February 17, 2017, is the date of release for Dustin Lynch'e album \"The Last Time I Saw You.",
+    "query_was_rewritten": true
+  }
+}

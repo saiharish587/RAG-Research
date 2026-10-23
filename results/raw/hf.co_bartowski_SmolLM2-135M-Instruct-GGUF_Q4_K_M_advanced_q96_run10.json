@@ -1,0 +1,42 @@
+{
+  "question_id": "Q96",
+  "query": "Tysons Galleria is located in what county?",
+  "ground_truth": "Fairfax County",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Tyson County",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Tysons Galleria: Tysons Galleria is a three-level super-regional mall owned by General Growth Properties located at 2001 International Drive, McLean, Virginia, in Tysons Corner.  It is the second-largest mall in McLean/Tysons Corner, and one of the largest in the Washington metropolitan area.",
+      "Tysons, Virginia: Tysons, or formerly \u201cTysons Corner\u201d is a census-designated place (CDP) and unincorporated community in Fairfax County, Virginia, United States.  Located in Northern Virginia between the community of McLean and the town of Vienna along the Capital Beltway (I-495), it lies within the Washington Metropolitan Area.  Tysons is home to two super-regional shopping malls\u2014Tysons Corner Center and Tysons Galleria\u2014and the corporate headquarters of numerous companies such as Intelsat, Gannett, Hilton Worldwide, Freddie Mac, Capital One and Booz Allen Hamilton.  Tysons is Fairfax County's central business district and a regional commercial center.  It has been characterized as a quintessential example of an edge city.  The population was 19,627 as of the 2010 census.",
+      "Pecos, Texas: Pecos ( ) is the largest city in and the county seat of Reeves County, Texas, United States.  It is in the valley on the west bank of the Pecos River at the eastern edge of the Chihuahuan Desert, in the Trans-Pecos region of west Texas and just below New Mexico's border.  The population was 8,780 at the 2010 census.  On January 24, 2012, Pecos City appeared on the Forbes 400 as the second fastest-growing small town in the United States.  The city is a regional commercial center for ranching, oil and gas production and agriculture.  The city is most recognized for its association with the local cultivation of cantaloupes. Pecos claims to be the site of the world's first rodeo on July 4, 1883."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 533,
+    "generation_tokens": 4,
+    "generation_speed": 422.2527182518737,
+    "prompt_eval_speed": 77302.39303843364,
+    "generation_latency_s": 0.09446150006260723,
+    "latency": 0.49152390006929636,
+    "total_prompt_tokens": 604,
+    "total_generation_tokens": 40,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1393393,
+    "stage_rewrite_s": 0.18607860000338405,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07374379993416369,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13709189998917282,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.09451409999746829,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.49153750005643815,
+    "unaccounted_latency_s": 0.00010980013757944107,
+    "rewritten_query": "Tyson Galleria is located in the county of Tynemouth, which means that the user's original query was \"What County is Tyson Galleria located in?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q473",
+  "query": "Eric Ambler and Carol Shields are both best Known for what profession?",
+  "ground_truth": "author",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 4,
+  "pipeline_result": {
+    "response": "Eric Ambler and Carol Shields are both best known for their roles in the 1944 American film noir series \"The Mask of Dimitrios\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Carol Shields: Carol Ann Shields, {'1': \", '2': \", '3': \", '4': \"} (n\u00e9e Warner; June 2, 1935 \u2013 July 16, 2003) was an American-born Canadian novelist and short story writer.  She is best known for her 1993 novel \"The Stone Diaries\", which won the U.S. Pulitzer Prize for Fiction as well as the Governor General's Award in Canada.",
+      "Eric Ambler: Eric Clifford Ambler OBE (28 June 1909 \u2013 22 October 1998) was an influential British author of thrillers, in particular spy novels, who introduced a new realism to the genre.  He also worked as a screenwriter.  Ambler used the pseudonym Eliot Reed for books co-written with Charles Rodda.",
+      "The Mask of Dimitrios: The Mask of Dimitrios is a 1944 American film noir directed by Jean Negulesco and written by Frank Gruber, based on the 1939 novel of the same name written by Eric Ambler (in the United States, it was published as \"A Coffin for Dimitrios\").  Ambler is known as a major influence on writers and a developer of the modern thriller genre."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 361,
+    "generation_tokens": 37,
+    "generation_speed": 406.884038049156,
+    "prompt_eval_speed": 53394.46827392398,
+    "generation_latency_s": 0.18103550001978874,
+    "latency": 0.5462764999829233,
+    "total_prompt_tokens": 436,
+    "total_generation_tokens": 62,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1274192,
+    "stage_rewrite_s": 0.1497293000575155,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07550569996237755,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13988010003231466,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18107550009153783,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5462873999495059,
+    "unaccounted_latency_s": 9.739981032907963e-05,
+    "rewritten_query": "The two individuals who are best known for their expertise in the field of marketing are Eric Ambler and Carol Shields.",
+    "query_was_rewritten": true
+  }
+}

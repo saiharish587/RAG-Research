@@ -1,0 +1,49 @@
+{
+  "question_id": "Q364",
+  "query": "What type of media does J. T. Petty and Outlast have in common?",
+  "ground_truth": "video game",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "J. T. Petty and Outlast share a common medium, which is video games.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "J. T. Petty: J. T. Petty (born February 28, 1977 in Raleigh, North Carolina) is an American filmmaker and video game writer.  Petty's film and short novels contain elements of the horror genre.  He wrote the Ubisoft video game, \"Tom Clancy's Splinter Cell\" as well as the survival horror games \"Outlast\" and \"Outlast 2\".  He currently resides in Brooklyn, New York .",
+      "Outlast: Outlast is a first-person survival horror video game developed and published by Red Barrels.  The game revolves around a freelance investigative journalist, Miles Upshur, who decides to investigate a remote psychiatric hospital named Mount Massive Asylum, located deep in the mountains of Lake County, Colorado.  The downloadable content, \"Outlast: Whistleblower\", centers on Waylon Park, the man who led Miles there in the first place.",
+      "Tag: The Power of Paint: Tag: The Power of Paint is a first-person action and puzzle hybrid video game.  The game was developed in 2009 for Microsoft Windows by Tag Team, a group of students from the DigiPen Institute of Technology.  The game's core mechanics is the use of a special paint sprayed from the player's paint gun to impart physical properties to surfaces, which, in turn, affect the user's movement.  \"Tag\" won the Independent Games Festival Student Showcase award in the same year.  The project team has since been hired into the Valve Corporation, using the concepts of \"Tag\" as new puzzle elements to their game \"Portal 2\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 421,
+    "generation_tokens": 20,
+    "generation_speed": 228.52180669340373,
+    "prompt_eval_speed": 14010.44959898832,
+    "generation_latency_s": 0.22876960004214197,
+    "latency": 0.7847426000516862,
+    "total_prompt_tokens": 557,
+    "total_generation_tokens": 78,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2353135,
+    "stage_route_s": 0.11780619993805885,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3801079000113532,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05786399997305125,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.989999044686556e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22881900006905198,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7847537000197917,
+    "unaccounted_latency_s": 9.750004392117262e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Media types that share similarities with J. T. Petty's work include film, television, and video games.",
+      "Query 2: Media types that share similarities with Outlast's gameplay mechanics include game engines, programming languages, and game design principles."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

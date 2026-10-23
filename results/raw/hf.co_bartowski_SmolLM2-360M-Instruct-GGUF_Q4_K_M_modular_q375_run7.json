@@ -1,0 +1,48 @@
+{
+  "question_id": "Q375",
+  "query": "What year was the film \"Mom\" released, starring the voice of Shashaa Tirupati?",
+  "ground_truth": "2017",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The film \"Mom\" was released in 2017.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Shashaa Tirupati: Shashaa Tirupati is a playback singer, songwriter and voice over artist of Indo-Canadian origin, with family roots in Kashmir, predominantly active in the Bollywood and South Indian music industries.  She is the voice behind Bollywood hits such as: \"The Humma Song\" (OK Jaanu), \"Phir Bhi Tumko Chahunga\" (with Arijit Singh) (Half Girlfriend), \"Baarish\" (Half Girlfriend), \"Kanha\" (Shubh Mangal Saavdhan), \"O Sona Tere Liye\" (with A.R. Rahman) and \"Chal Kahin Door\", both from the Sridevi starrer MOM.",
+      "Nineteen Eighty-Four: Nineteen Eighty-Four, often published as 1984, is a dystopian novel published in 1949 by English author George Orwell.",
+      "Mom (film): Mom is a 2017 Indian thriller film directed by Ravi Udyawar.  Produced by Boney Kapoor, Sunil Manchanda, Mukesh Talreja, Naresh Agarwal and Gautam Jain, the film stars Sridevi, as a vigilante, who sets out to avenge her daughter, played by Sajal Ali.  Adnan Siddiqui.  Akshaye Khanna and Nawazuddin Siddiqui play supporting roles in the film.  Music for the film has been produced by A. R. Rahman.  The film was released on 7 July 2017, in four languages, and received positive reviews from film critics.  It was successful commercially as well.  \"Mom\" marked Sridevi's 300th film appearance."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 458,
+    "generation_tokens": 15,
+    "generation_speed": 214.86585208634742,
+    "prompt_eval_speed": 54394.299287410926,
+    "generation_latency_s": 0.19172210001852363,
+    "latency": 0.43281720008235425,
+    "total_prompt_tokens": 600,
+    "total_generation_tokens": 22,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2288473,
+    "stage_route_s": 0.09565260005183518,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.10597789997700602,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03929779992904514,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.349998198449612e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1917553999228403,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.4328271000413224,
+    "unaccounted_latency_s": 0.00010070018470287323,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "1984"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

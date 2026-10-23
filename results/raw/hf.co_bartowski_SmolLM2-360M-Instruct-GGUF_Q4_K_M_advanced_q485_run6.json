@@ -1,0 +1,42 @@
+{
+  "question_id": "Q485",
+  "query": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to what?",
+  "ground_truth": "four months in jail",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to four months in jail and was released on probation after serving 99 days.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Detroit mayoral election, 2009: The Detroit mayoral elections of 2009 took place on May 5, 2009, with a primary on February 24, 2009 to fill the vacancy created when Kwame Kilpatrick resigned as mayor.",
+      "Kwame Kilpatrick: Kwame Malik Kilpatrick (born June 8, 1970) is an American former politician, having served as a Democratic Michigan state representative and mayor of Detroit from 2002 to 2008.  He resigned as mayor in September 2008 after being convicted of perjury and obstruction of justice.  Kilpatrick was sentenced to four months in jail and was released on probation after serving 99 days.",
+      "Ed Lee (politician): Edwin Mah Lee (, born May 5, 1952) is an American politician and attorney who is the 43rd and current Mayor of San Francisco, California.  He was appointed by the Board of Supervisors on January 11, 2011 to serve out the remainder of former mayor Gavin Newsom's term, after Newsom resigned to take office as Lieutenant Governor of California.  Lee won the election on November 8, 2011 to serve a full term as Mayor.  He was re-elected in 2015."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 384,
+    "generation_tokens": 43,
+    "generation_speed": 262.4399592302575,
+    "prompt_eval_speed": 52907.13695232847,
+    "generation_latency_s": 1.0611626000609249,
+    "latency": 3.452761499909684,
+    "total_prompt_tokens": 472,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1295827,
+    "stage_rewrite_s": 1.201293999911286,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0391181000741199,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.15105440001934767,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0612064000451937,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4527736000018194,
+    "unaccounted_latency_s": 0.0001012999564409256,
+    "rewritten_query": "The Detroit mayoral election in 2009 was held to replace a politician who had been sentenced to prison.",
+    "query_was_rewritten": true
+  }
+}

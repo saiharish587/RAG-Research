@@ -1,0 +1,42 @@
+{
+  "question_id": "Q229",
+  "query": "Martin Patterson \"Pat\" Hingle was a close friend of an actor who achieved success in what Western TV series? ",
+  "ground_truth": "Rawhide",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Martin Patterson \"Pat\" Hingle was a close friend of Clint Eastwood, who appeared in the Western TV series \"Rawhide\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pat Hingle: Martin Patterson \"Pat\" Hingle (July 19, 1924 \u2013 January 3, 2009) was an American actor who appeared in hundreds of television shows and feature films.  His first film was \"On the Waterfront\" in 1954.  He often played tough authority figures.  Hingle was a close friend of Clint Eastwood and appeared in the Eastwood films \"Hang 'em High\", \"The Gauntlet\" and \"Sudden Impact\".",
+      "Clint Eastwood: Clinton Eastwood Jr. (born May 31, 1930) is an American actor, filmmaker, musician, and political figure.  After achieving success in the Western TV series \"Rawhide\", he rose to international fame with his role as the Man with No Name in Sergio Leone's \"Dollars\" Trilogy of Spaghetti Westerns during the 1960s, and as antihero cop Harry Callahan in the five \"Dirty Harry\" films throughout the 1970s and 1980s.  These roles, among others, have made Eastwood an enduring cultural icon of masculinity.",
+      "Bruce M. Fischer: Bruce M. \"Bear\" Fischer (born March 20, 1936) is an American actor, best known for playing the prisoner and rapist \"Wolf Grace\", in the 1979 film, \"Escape from Alcatraz\".  Fischer also played a rapist in Clint Eastwood's \"The Outlaw Josey Wales\" (1976), and Mr. Coogar in the film \"Something Wicked This Way Comes\" (1983).  His other film credits include \"The Journey of Natty Gann\" (1985) and \"Grim Prairie Tales\" (1990) as an undead gunman.  In addition Fischer was one of the Beauregard Brothers on TV's Dukes of Hazzard."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 516,
+    "generation_tokens": 29,
+    "generation_speed": 250.4382669671926,
+    "prompt_eval_speed": 68335.31982518871,
+    "generation_latency_s": 1.0476301999296993,
+    "latency": 3.438273600069806,
+    "total_prompt_tokens": 600,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1325832,
+    "stage_rewrite_s": 1.2598643999081105,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0155518999090418,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.11511399992741644,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0476665999740362,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.438281900016591,
+    "unaccounted_latency_s": 8.550030179321766e-05,
+    "rewritten_query": "Martin Patterson \"Pat\" Hingle was a close friend of an actor who achieved success in the Western TV series, The Outlaw Josey Wales.",
+    "query_was_rewritten": true
+  }
+}

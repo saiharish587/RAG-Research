@@ -1,0 +1,49 @@
+{
+  "question_id": "Q49",
+  "query": "Are Ferocactus and Silene both types of plant?",
+  "ground_truth": "yes",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "No, Silenaceae are not two different genera. They are a single family called Caryophyllaceae. The genus Silene contains about 700 species, while the genus Ferocactus is also part of this family.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Silene: Silene is a genus of flowering plants in the family Caryophyllaceae.  Containing approximately 700 species, it is the largest genus in the family.  Common names include campion (which is shared with the related genus \"Lychnis\") and catchfly.  Many \"Silene\" species are widely distributed, particularly in the northern hemisphere.",
+      "Ferocactus: Ferocactus is a genus of large barrel-shaped cacti, mostly with large spines and small flowers.  There are about 30 species included in the genus.  They are found in the southwestern United States and northwestern Mexico.",
+      "Silene conoidea: Silene conoidea is a species of flowering plant in the pink family known by the common names weed silene and large sand catchfly.  It is native to Eurasia, and it is known in other parts of the world, such as western North America, as a weed.  It is an annual herb growing up to a meter in height with a hairy, partially glandular stem.  The lance-shaped leaves are up to 12 centimeters long near the base of the plant and smaller farther up.  The flower is enclosed in an inflated, hairy, glandular calyx of fused sepals which is ridged with many veins.  It is open at the top, revealing five bright pink petals."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 352,
+    "generation_tokens": 48,
+    "generation_speed": 398.2377977449785,
+    "prompt_eval_speed": 20824.705673549073,
+    "generation_latency_s": 0.24452300008852035,
+    "latency": 0.8419812999200076,
+    "total_prompt_tokens": 476,
+    "total_generation_tokens": 171,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22930709999999999,
+    "stage_route_s": 0.1478288999060169,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3921735000330955,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05728429998271167,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.529999569058418e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24455619999207556,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8419903999892995,
+    "unaccounted_latency_s": 0.00010270008351653814,
+    "route": "rag",
+    "router_raw": "Yes, Ferocactus and Silene are both types of plants.",
+    "sub_queries": [
+      "Yes, both Ferocactus and Silene are plants that belong to the family Solanaceae. They are both members of the Solanaceae genus, which includes over 10,000 species of flowering plants in the Americas.",
+      "Ferocactus is a type of cactus native to the southwestern United States and Mexico, while Silene is a type of plant that belongs to the family Asteraceae. Both plants are known for their unique characteristics, including their ability to produce seeds with both male and female reproductive organs."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

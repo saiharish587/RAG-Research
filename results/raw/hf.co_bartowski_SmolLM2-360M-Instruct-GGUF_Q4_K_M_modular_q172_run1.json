@@ -1,0 +1,49 @@
+{
+  "question_id": "Q172",
+  "query": "What is the birthplace of the Senator who represents the first of 62 districts in the State Senate?",
+  "ground_truth": "Brooklyn, New York",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The Senator who represents the first of 62 districts in the New York State Senate district is Barack Obama.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Barack Obama: Barack Hussein Obama II ( ; born August 4, 1961) is an American politician who served as the 44th President of the United States from 2009 to 2017.  He is the first African American to have served as president.  He previously served in the U.S. Senate representing Illinois from 2005 to 2008 and in the Illinois State Senate from 1997 to 2004.",
+      "United States Senate elections in Illinois, 2010: The 2010 United States Senate elections in Illinois took place on November 2, 2010.  There were two ballot items for the same seat: a routine one, to fill the Class 3 seat beginning with the 112th United States Congress beginning on January 3, 2011, and a special item, to fill that seat for the final weeks of the 111th Congress, replacing the temporary appointment of Roland Burris to the vacancy created by Barack Obama's election to the presidency.",
+      "New York's 1st State Senate district: New York's 1st State Senate district is one of 62 districts of the New York State Senate.  It is currently represented by Senator Kenneth LaValle (R)."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 363,
+    "generation_tokens": 23,
+    "generation_speed": 229.84140942749502,
+    "prompt_eval_speed": 13889.420317581787,
+    "generation_latency_s": 0.23273329995572567,
+    "latency": 0.6902361999964342,
+    "total_prompt_tokens": 505,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2324778,
+    "stage_route_s": 0.10527930001262575,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2963984999805689,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05562070000451058,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.0999998822808266e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23279280005954206,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6902507999911904,
+    "unaccounted_latency_s": 9.929994121193886e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Senator John Smith's birth place is located in the state of Illinois.",
+      "Query 2: Senator John Smith was born on January 1, 1985, in Springfield, Illinois."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

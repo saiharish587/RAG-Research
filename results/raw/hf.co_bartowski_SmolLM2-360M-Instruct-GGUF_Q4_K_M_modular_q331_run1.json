@@ -1,0 +1,49 @@
+{
+  "question_id": "Q331",
+  "query": "Where is the singer of \"B Boy\" raised?",
+  "ground_truth": "Philadelphia",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The singer of \"Boy George\" (George Alan O'Dowd) is raised in Orlando, Florida.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Boy George: Boy George (born George Alan O'Dowd; 14 June 1961) is an English singer, songwriter, DJ, fashion designer and photographer.  He is the lead singer of the Grammy and Brit Award-winning pop band Culture Club.  At the height of the band's fame, during the 1980s, they recorded global hit songs such as \"Do You Really Want to Hurt Me\", \"Time (Clock of the Heart)\" and \"Karma Chameleon\" and George is known for his soulful voice and androgynous appearance.  He was part of the English New Romantic movement which emerged in the late 1970s to the early 1980s.",
+      "Trace Cyrus: Trace Dempsey Cyrus (born Neil Timothy Helson; February 24, 1989) is an American musician.  The son of country singer Billy Ray Cyrus and brother of recording artist Miley Cyrus, he is the backing vocalist and bassist of the band Metro Station.  He left the band in 2010 but returned in 2014.  In 2010, he began providing vocals and guitar in the pop rock band Ashland HIGH.  He also owns the clothing company From Backseats to Bedrooms.",
+      "Backstreet Boys: The Backstreet Boys (often abbreviated as BSB) are an American vocal group, formed in Orlando, Florida in 1993.  The group consists of AJ McLean, Howie D., Nick Carter, Kevin Richardson, and Brian Littrell."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 414,
+    "generation_tokens": 25,
+    "generation_speed": 223.90800068068032,
+    "prompt_eval_speed": 13959.604815052096,
+    "generation_latency_s": 0.2539130999939516,
+    "latency": 0.6537243999773636,
+    "total_prompt_tokens": 536,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2349846,
+    "stage_route_s": 0.10510829999111593,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.23965869995299727,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05486939998809248,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.589995998889208e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.25394470000173897,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6537334999302402,
+    "unaccounted_latency_s": 9.710004087537527e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Where was the singer of 'Boy' raised?\"",
+      "\"What's the background story on the singer of 'Boy'?\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

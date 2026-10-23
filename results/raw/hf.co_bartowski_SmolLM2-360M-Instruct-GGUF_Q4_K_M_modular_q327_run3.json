@@ -1,0 +1,49 @@
+{
+  "question_id": "Q327",
+  "query": "The voice of Homer Simpson also voices what alien character in the television series \"The Simpsons\"?",
+  "ground_truth": "Kodos",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Daniel Louis Castellaneta's voice is also used to voice the alien character, \"Sideshow Mel\" in the television series \"The Simpsons\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dan Castellaneta: Daniel Louis Castellaneta ( ; born October 29, 1957) is an American actor, voice actor, comedian and screenwriter.  Noted for his long-running role as Homer Simpson on the animated television series \"The Simpsons\", he also voices many other characters for the show, including Abraham \"Grampa\" Simpson, Barney Gumble, Krusty the Clown, Sideshow Mel, Groundskeeper Willie, Mayor Quimby and Hans Moleman.",
+      "Waylon Smithers: Waylon J. Smithers Jr., usually referred to as Mr. Smithers or simply Smithers, is a recurring fictional character in the American animated sitcom \"The Simpsons\", who is voiced by Harry Shearer.  Smithers first appeared in the episode \"Homer's Odyssey\", although his voice could be heard in the series premiere \"Simpsons Roasting on an Open Fire\".  He is the consummate executive and personal assistant of Springfield Nuclear Power Plant's owner Mr. Burns.",
+      "Commerson's dolphin: Commerson's dolphin (\"Cephalorhynchus commersonii\"), also referred to by the common names skunk dolphin, piebald dolphin or panda dolphin, is a small oceanic dolphin of the genus \"Cephalorhynchus\".  Commerson's dolphin has two geographically-isolated but locally-common subspecies.  The principal subspecies, \"C.c.commersonii\", has sharply-delineated black-and-white patterning and is found around the tip of South America.  The secondary subspecies, \"C.c.kerguelenensis\", is larger than \"C.c.commersonii\", has a less-sharply delineated dark and light grey patterning with a white ventral band, and is found around the Kerguelen Islands in the Indian Ocean."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 479,
+    "generation_tokens": 33,
+    "generation_speed": 239.8552146704171,
+    "prompt_eval_speed": 55362.92186777624,
+    "generation_latency_s": 0.26054990000557154,
+    "latency": 0.5665310000767931,
+    "total_prompt_tokens": 619,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2267616,
+    "stage_route_s": 0.09497810003813356,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1520822000456974,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05874160001985729,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.470006726682186e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.26059159997384995,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5665423000464216,
+    "unaccounted_latency_s": 9.499990846961737e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Homer's Voice\"",
+      "\"Dolphin\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

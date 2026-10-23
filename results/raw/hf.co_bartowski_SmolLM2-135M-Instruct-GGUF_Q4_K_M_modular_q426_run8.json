@@ -1,0 +1,49 @@
+{
+  "question_id": "Q426",
+  "query": "Las Vegas Festival Grounds is north of the hotel that is owned by which company?",
+  "ground_truth": "MGM Resorts International",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The D Las Vegas Casino Hotel is located on the Las Vegas Strip in Paradise, Nevada.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Las Vegas Festival Grounds: Las Vegas Festival Grounds (formerly MGM Resorts Festival Grounds) is a 33 acre open-air venue located on the Las Vegas Strip, north of the MGM-owned Circus Circus Hotel and Casino in Winchester, Nevada.",
+      "Flamingo Las Vegas: Flamingo Las Vegas (formerly The Fabulous Flamingo and Flamingo Hilton Las Vegas) is a hotel and casino located on the Las Vegas Strip in Paradise, Nevada.  It is owned and operated by Caesars Entertainment Corporation.",
+      "The D Las Vegas: The D Las Vegas Casino Hotel is a 34-story, 638-room hotel and casino in Downtown Las Vegas Nevada, owned and operated by Derek and Greg Stevens."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 240,
+    "generation_tokens": 20,
+    "generation_speed": 361.04341547071033,
+    "prompt_eval_speed": 93603.74414976599,
+    "generation_latency_s": 0.1646072999574244,
+    "latency": 0.6065550999483094,
+    "total_prompt_tokens": 374,
+    "total_generation_tokens": 99,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2348715,
+    "stage_route_s": 0.09917029994539917,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28430310008116066,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05829559999983758,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0600036047399044e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.16464560001622885,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6065660999156535,
+    "unaccounted_latency_s": 0.00010149984154850245,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Las Vegas Festival Grounds is located at 20500 El Camino Real, and it's owned by the company that owns the hotel.",
+      "The Las Vegas Festival Grounds is located at 20500 El Camino Real, and it's owned by the company that owns the hotel."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

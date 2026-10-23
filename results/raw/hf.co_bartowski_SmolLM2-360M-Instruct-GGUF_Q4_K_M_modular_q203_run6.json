@@ -1,0 +1,48 @@
+{
+  "question_id": "Q203",
+  "query": "Who designed the hotel that held the IFBB professional bodybuilding competition in September 1991?",
+  "ground_truth": "architect Michael Graves",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The hotel that held the IFBB professional bodybuilding competition in September 1991 was the Walt Disney World Dolphin Hotel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1991 Mr. Olympia: The 1991 Mr. Olympia contest was an IFBB professional bodybuilding competition held in September 1991 at the Walt Disney World Dolphin Hotel in Orlando, Florida.",
+      "1991 Ms. Olympia: The 1991 Ms. Olympia contest was an IFBB professional bodybuilding competition was held on October 12 and 13, 1991 at the Shrine Auditorium in Los Angeles, California.  It was the 12th Ms. Olympia competition held.",
+      "2017 Mr. Olympia: The 2017 Mr. Olympia contest was a weekend long IFBB professional bodybuilding competition that was held on September 14 to 17, 2017, in Las Vegas, Nevada.  This was the 53rd Mr. Olympia competition celebrated.  The weekend competition is also known as the Joe Weider's Olympia Fitness and Performance Weekend.  While the main event was the competition for the title of Mr. Olympia, several other events were held which includes the Amateur competition and sports expo."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 325,
+    "generation_tokens": 28,
+    "generation_speed": 240.96178174026042,
+    "prompt_eval_speed": 35391.48426440161,
+    "generation_latency_s": 0.23736429994460195,
+    "latency": 0.5473191000055522,
+    "total_prompt_tokens": 467,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23074830000000002,
+    "stage_route_s": 0.09743470000103116,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1736811000155285,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03868670004885644,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 3.700004890561104e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23739829997066408,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5473290999652818,
+    "unaccounted_latency_s": 9.20998863875866e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Who designed the hotel that held the IFBB professional bodybuilding competition in September 1991?*"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

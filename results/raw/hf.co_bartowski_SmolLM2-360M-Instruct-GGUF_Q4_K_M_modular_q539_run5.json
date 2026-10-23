@@ -1,0 +1,49 @@
+{
+  "question_id": "Q539",
+  "query": "What is the date of birth of the English inventor that developed the Richard Hornsby & Sons oil engine? ",
+  "ground_truth": "28 January 1864",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The date of birth of the English inventor that developed the Hornsby-Akroyd oil engine is 4 June 1790.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Richard Hornsby: Richard Hornsby Elsham in Lincolnshire 4 June 1790 - 1864. was an inventor and founder of a major agricultural machinery firm that developed steam engines.  His firm also developed early diesels and caterpillar tracks.  He lived with a farming family, the son of William Hornsby and his wife Sarah.",
+      "Richard Hornsby &amp; Sons: Richard Hornsby & Sons was an engine and machinery manufacturer in Lincolnshire, England from 1828 until 1918.  The company was a pioneer in the manufacture of the oil engine developed by Herbert Akroyd Stuart, which was marketed under the \"Hornsby-Akroyd\" name.  The company developed an early track system for vehicles, selling the patent to Holt & Co. (predecessor to Caterpillar Inc.) in America.  In 1918, Richard Hornsby & Sons became a subsidiary of the neighbouring engineering firm Rustons of Lincoln, to create \"Ruston & Hornsby\".",
+      "Hornsby-Akroyd oil engine: The Hornsby-Akroyd oil engine was the first successful design of internal combustion engine using \"heavy oil\" as a fuel.  It was the first to use a separate vapourising combustion chamber and is the forerunner of all hot-bulb engines."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 371,
+    "generation_tokens": 31,
+    "generation_speed": 258.96131452104686,
+    "prompt_eval_speed": 44452.43230289959,
+    "generation_latency_s": 0.24144120002165437,
+    "latency": 0.580545200034976,
+    "total_prompt_tokens": 517,
+    "total_generation_tokens": 59,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2329698,
+    "stage_route_s": 0.10118289990350604,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.17891199991572648,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05883200000971556,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.0600036047399044e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.24147960008122027,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5805565000046045,
+    "unaccounted_latency_s": 0.00010050006676465273,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Richard Hornsby & Sons Oil Engine\"",
+      "\"Date of Birth of the English Inventor\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

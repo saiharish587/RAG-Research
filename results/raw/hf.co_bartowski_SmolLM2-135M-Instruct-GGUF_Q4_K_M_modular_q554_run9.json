@@ -1,0 +1,49 @@
+{
+  "question_id": "Q554",
+  "query": "What was the highest ranking in the United States for a single written by an English multi-instrumentalist?",
+  "ground_truth": "25",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "The highest ranking in the United States for a single written by an English multi-instrumentalist is 1980 to 2004.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "John Lennon: John Winston Ono Lennon, {'1': \", '2': \", '3': \", '4': \"} (born John Winston Lennon; 9 October 19408 December 1980) was an English singer, songwriter, musician, and activist who co-founded the Beatles, the most commercially successful and musically influential band in the history of popular music.  He and fellow member Paul McCartney formed a much-celebrated songwriting partnership.",
+      "Mick Jagger: Sir Michael Philip Jagger, MBE (born 26 July 1943) is an English singer-songwriter, multi-instrumentalist, and composer, who gained fame as the lead singer and one of the founder members of the Rolling Stones (1962-present).  Jagger's career has spanned over five decades, and he has been described as \"one of the most popular and influential frontmen in the history of rock & roll\".  His distinctive voice and performance, along with Keith Richards' guitar style, have been the trademark of the Rolling Stones throughout the career of the band.  Jagger gained press notoriety for his admitted drug use and romantic involvements, and was often portrayed as a countercultural figure.",
+      "Elton John: Sir Elton Hercules John, (born Reginald Kenneth Dwight; 25 March 1947), is an English singer, pianist, and composer.  He has worked with lyricist Bernie Taupin as his songwriting partner since 1967; they have collaborated on more than 30 albums to date.  In his five-decade career Elton John has sold more than 300million records, making him one of the best-selling music artists in the world.  He has more than fifty Top 40 hits, including seven consecutive No. 1 US albums, 58 \"Billboard\" Top 40 singles, 27 Top 10, four No. 2 and nine No. 1.  For 31 consecutive years (1970\u20132000) he had at least one song in the \"Billboard\" Hot 100.  His tribute single, re-penned in dedication to the late Princess Diana, \"Candle in the Wind 1997\" sold over 33million copies worldwide and is the best-selling single in the history of the UK and US singles charts.  He has also composed music, produced records, and has occasionally acted in films.  John owned Watford Football Club from 1976 to 1987, and 1997 to 2002.  He is an honorary Life President of the club, and in 2014 had a stand named after him at the club's home stadium."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 689,
+    "generation_tokens": 33,
+    "generation_speed": 367.39737923202813,
+    "prompt_eval_speed": 88960.61975468043,
+    "generation_latency_s": 0.21820160001516342,
+    "latency": 0.8682776999194175,
+    "total_prompt_tokens": 833,
+    "total_generation_tokens": 169,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.233211,
+    "stage_route_s": 0.1828889000462368,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4122643999289721,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054737100028432906,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.819997750222683e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2182347000343725,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8682866999879479,
+    "unaccounted_latency_s": 0.0001039999770000577,
+    "route": "rag",
+    "router_raw": "The highest ranked in the United States for a single written by an English multi-instrumentalist is \"John Smith.\"",
+    "sub_queries": [
+      "The highest ranked writer of a single written by an English multi-instrumentalist is John Lennon, who wrote \"I Woke Up Early\" and \"The Ballad of John Lennon.\"",
+      "The highest ranking in the United States for a single written by an English multi-instrumentalist was John Lennon, who wrote \"I Woke Up Early,\" \"John Lennon,\" and \"The Ballad of John Lennon.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

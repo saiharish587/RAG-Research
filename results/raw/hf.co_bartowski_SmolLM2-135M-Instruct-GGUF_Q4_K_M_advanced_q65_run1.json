@@ -1,0 +1,42 @@
+{
+  "question_id": "Q65",
+  "query": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+  "ground_truth": "more than 70 countries",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The answer is \"1.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Parkin: Scott Parkin (born 1969, Garland, Texas is an anti-war, environmental and global justice organizer, former community college history instructor, and a founding member of the Houston Global Awareness Collective.  He has been a vocal critic of the American invasion of Iraq, and of corporations such as Exxonmobil and Halliburton.  Since 2006, he has worked as an campaigner for the Rainforest Action Network, organizing campaigns against Bank of America, Citibank, TXU and the Keystone XL Pipeline.  He also organizes with Rising Tide North America.",
+      "Halliburton: The Halliburton Company, an American multinational corporation.  One of the world's largest oil field service companies, it has operations in more than 70 countries.  It owns hundreds of subsidiaries, affiliates, branches, brands, and divisions worldwide and employs approximately 50,000 people.",
+      "Big Oil: Big Oil is a name used to describe the world's seven or eight largest publicly owned oil and gas companies, also known as supermajors.  The supermajors are considered to be BP plc, Chevron Corporation, ExxonMobil Corporation, Royal Dutch Shell plc, Total SA and Eni SpA, with Phillips 66 Company also sometimes described in the past as forming part of the group."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 7,
+    "generation_speed": 294.51363177381353,
+    "prompt_eval_speed": 22350.050931751455,
+    "generation_latency_s": 0.11807620001491159,
+    "latency": 0.5304089999990538,
+    "total_prompt_tokens": 457,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1421491,
+    "stage_rewrite_s": 0.20029890001751482,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0771523000439629,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1347352999728173,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.1181264000479132,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5304421000182629,
+    "unaccounted_latency_s": 0.00012999994214624166,
+    "rewritten_query": "Scott Parkin has consistently criticized ExxonMobil for its role as a key player in global oil production, with both companies having their own subsidiaries operating in various parts of the world.",
+    "query_was_rewritten": true
+  }
+}

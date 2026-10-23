@@ -1,0 +1,42 @@
+{
+  "question_id": "Q53",
+  "query": "What race track in the midwest hosts a 500 mile race eavery May?",
+  "ground_truth": "Indianapolis Motor Speedway",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The Carolina Dodge Dealers 400 is hosted by Darlington Raceway, which is located in South Carolina, USA.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Carolina Dodge Dealers 400: The Carolina Dodge Dealers 400 was the annual spring NASCAR Sprint Cup race held at Darlington Raceway in Darlington, South Carolina, USA.  A 100 mi race was held in May at the track in 1952, however the event did not become a regular one on the NASCAR schedule until 1957, as a 300 mi race in the Convertible Division, known as the Rebel 300.  In 1966, the race was expanded to 400 mi , and in 1973 to 500 mi .  In 1994, the race was returned to 400 miles.  In 2005, as part of the settlement of the Ferko lawsuit and as part of a schedule realignment, Darlington was forced to contract to one race date, with the 500 mile race (the famous Southern 500) moving to Mother's Day weekend.  The 400 mile race was eliminated, although Dodge's sponsorship was transferred to the 500 miler.",
+      "Indianapolis Motor Speedway: The Indianapolis Motor Speedway is an automobile racing circuit located in Speedway, Indiana, (an enclave suburb of Indianapolis) in the United States.  It is the home of the Indianapolis 500 and the Brickyard 400, and formerly the home of the United States Grand Prix.  It is located on the corner of 16th Street and Georgetown Road, approximately 6 mi west of Downtown Indianapolis.",
+      "The Amazing Race 18: The Amazing Race 18 (also known as The Amazing Race: Unfinished Business) is the eighteenth installment of the reality television show \"The Amazing Race\".  \"The Amazing Race 18\" featured eleven teams of two \u2013 each returning from a previous edition for the first time since Season 11 \u2013 in a race around the world for a $1 million prize."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 517,
+    "generation_tokens": 28,
+    "generation_speed": 258.0098228025396,
+    "prompt_eval_speed": 70235.02241543269,
+    "generation_latency_s": 0.9725652999477461,
+    "latency": 3.409735900000669,
+    "total_prompt_tokens": 597,
+    "total_generation_tokens": 43,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.11981220000000001,
+    "stage_rewrite_s": 1.1651826000306755,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.07991289999336,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.19194559997413307,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9726064000278711,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.40974599996116,
+    "unaccounted_latency_s": 9.909993968904018e-05,
+    "rewritten_query": "Midwest Race Track Hosts 500 Mile Race Every May",
+    "query_was_rewritten": true
+  }
+}

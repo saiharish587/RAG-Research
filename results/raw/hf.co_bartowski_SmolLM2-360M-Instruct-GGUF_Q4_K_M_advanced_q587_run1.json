@@ -1,0 +1,42 @@
+{
+  "question_id": "Q587",
+  "query": "Fantasy Records is know for recordings of comedian Lenny Bruce, Creedence Clearwater Revival, and what American jazz pianist who composed the music for the animated television adaptations of the \"Peanuts\" comic strip?",
+  "ground_truth": "Vincent Anthony Guaraldi",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Fantasy Records is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fantasy Records: Fantasy Records is an American record company and label founded by brothers Max and Sol Weiss in 1949.  The early years of the company were dedicated to issuing recordings by jazz pianist Dave Brubeck, who was also one of its investors, but the label is known more for its recordings of comedian Lenny Bruce, jazz musician Vince Guaraldi, and the rock band Creedence Clearwater Revival.",
+      "The Peanuts Movie: The Peanuts Movie (known in some countries as Snoopy and Charlie Brown: The Peanuts Movie) is a 2015 American 3D computer-animated comedy film produced by Blue Sky Studios and distributed by 20th Century Fox, based on Charles M. Schulz's comic strip \"Peanuts\".  The film is directed by Steve Martino and written by Craig and Bryan Schulz (Schulz's son and grandson, respectively), and Cornelius Uliano, and stars the voices of Noah Schnapp as Charlie Brown and, via archival recordings, Bill Melendez as Snoopy and Woodstock.  It is the fifth full-length \"Peanuts\" film, and the first feature film in 35 years.  It commemorates the 65th anniversary of the comic strip and the 50th anniversary of the TV special \"A Charlie Brown Christmas\", and was released on November 6, 2015.",
+      "Snoopy's Reunion: Snoopy's Reunion is the 34th prime-time animated TV special based upon the popular comic strip \"Peanuts,\" by Charles M. Schulz.  It originally aired on the CBS network on May 1, 1991 as part of the short-lived animated anthology series \"Toon Nite\".  It is the only \"Peanuts\" TV special to date (and the only animation other than \"Snoopy, Come Home\") not to have \"Charlie Brown\" in the title (though the working title was \"Those Were the Days, Charlie Brown\"), it's also one of the few \"Peanuts\" specials to feature adults on-screen."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 558,
+    "generation_tokens": 37,
+    "generation_speed": 248.70772808851305,
+    "prompt_eval_speed": 13286.34696890328,
+    "generation_latency_s": 1.0575924000004306,
+    "latency": 3.495786299929023,
+    "total_prompt_tokens": 661,
+    "total_generation_tokens": 64,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1272898,
+    "stage_rewrite_s": 1.2321220999583602,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.025943599990569,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18001540005207062,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0576273000333458,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.495795499999076,
+    "unaccounted_latency_s": 8.769996929913759e-05,
+    "rewritten_query": "Fantasy Records has a strong reputation for its live performances by comedians like Lenny Bruce and the Peanuts characters.",
+    "query_was_rewritten": true
+  }
+}

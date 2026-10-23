@@ -1,0 +1,49 @@
+{
+  "question_id": "Q129",
+  "query": "Where is the Bubblegum Alley, that is similar to Gum Wall, located in California?",
+  "ground_truth": "San Luis Obispo, California",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Bubblegum Alley is located in downtown San Luis Obispo, California.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Bubblegum Alley: Bubblegum Alley is a tourist attraction in downtown San Luis Obispo, California, known for its accumulation of used bubble gum on the walls of an alley.  It is a 15 ft high and 70 ft long alley lined with chewed gum left by passers-by.  It covers a stretch of 20 meters in the 700 block of Higuera Street in downtown San Luis Obispo.",
+      "Gum Wall: The Market Theater Gum Wall is a brick wall covered in used chewing gum, in an alleyway in downtown Seattle.  It is located in Post Alley under Pike Place Market.  Similar to Bubblegum Alley in San Luis Obispo, California, the Market Theater Gum Wall is a local landmark.  Parts of the wall can be covered several inches thick, 15 feet high for 50 feet.",
+      "Amusement park: An amusement park is a park that features various attractions, such as rides and games, as well as other events for entertainment purposes.  A theme park is a type of amusement park that bases its structures and attractions around a central theme, often featuring multiple areas with different themes.  Unlike temporary and mobile funfairs and carnivals, amusement parks are stationary and built for long-lasting operation.  They are more elaborate than city parks and playgrounds, usually providing attractions that cater to a variety of age groups.  While amusement parks often contain themed areas, theme parks place a heavier focus with more intricately-designed themes that revolve around a particular subject or group of subjects."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 413,
+    "generation_tokens": 20,
+    "generation_speed": 240.88839640594512,
+    "prompt_eval_speed": 21106.965809781774,
+    "generation_latency_s": 0.21787970000877976,
+    "latency": 0.7436714000068605,
+    "total_prompt_tokens": 555,
+    "total_generation_tokens": 92,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23423549999999999,
+    "stage_route_s": 0.0894332000752911,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.38039279996883124,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055780200054869056,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.410006269812584e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21791340003255755,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7436803000746295,
+    "unaccounted_latency_s": 0.00010729988571256399,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Bubblegum Alley\" - Located in California, this place has a lot of fun and is known for its colorful decorations and unique attractions.",
+      "\"Gum Wall\" - This is another popular attraction that offers a similar experience to Bubblegum Alley but with more vibrant colors and larger scale."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

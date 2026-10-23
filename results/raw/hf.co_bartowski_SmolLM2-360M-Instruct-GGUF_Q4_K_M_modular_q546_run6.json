@@ -1,0 +1,49 @@
+{
+  "question_id": "Q546",
+  "query": "The first book in the Sprawl Trilogy won what three awards?",
+  "ground_truth": "Nebula Award, the Philip K. Dick Award, and the Hugo Award",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The first book in the Sprawl Trilogy won the Hugo Award for Best Novel.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Sprawl trilogy: The Sprawl trilogy (also known as the Neuromancer, Cyberspace, or Matrix trilogy) is William Gibson's first set of novels, composed of \"Neuromancer\" (1984), \"Count Zero\" (1986), and \"Mona Lisa Overdrive\" (1988).",
+      "Neil Gaiman: Neil Richard MacKinnon Gaiman ( ; born Neil Richard Gaiman, 10 November 1960) is an English author of short fiction, novels, comic books, graphic novels, audio theatre, and films.  His notable works include the comic book series \"The Sandman\" and novels \"Stardust\", \"American Gods\", \"Coraline\", and \"The Graveyard Book\".  He has won numerous awards, including the Hugo, Nebula, and Bram Stoker awards, as well as the Newbery and Carnegie medals.  He is the first author to win both the Newbery and the Carnegie medals for the same work, \"The Graveyard Book\" (2008).  In 2013, \"The Ocean at the End of the Lane\" was voted Book of the Year in the British National Book Awards.",
+      "Tessier-Ashpool: Tessier-Ashpool is a fictional family appearing in William Gibson's Sprawl trilogy.  The family owns Freeside, a space station shaped like a spindle Bernal sphere constructed in high orbit.  The family resides in the Villa Straylight, which occupies one end of the spindle."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 408,
+    "generation_tokens": 20,
+    "generation_speed": 244.7171681329304,
+    "prompt_eval_speed": 52808.69790318405,
+    "generation_latency_s": 0.20095430000219494,
+    "latency": 0.5364938999991864,
+    "total_prompt_tokens": 540,
+    "total_generation_tokens": 47,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2218831,
+    "stage_route_s": 0.0925466000335291,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18174499995075166,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.06105809996370226,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.4200063459575176e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.200995699968189,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.536504799965769,
+    "unaccounted_latency_s": 0.0001058999914675951,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The First Book in the Sprawl Trilogy won\"",
+      "\"won three awards\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

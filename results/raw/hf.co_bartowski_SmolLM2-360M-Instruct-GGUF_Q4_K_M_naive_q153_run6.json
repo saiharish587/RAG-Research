@@ -1,0 +1,36 @@
+{
+  "question_id": "Q153",
+  "query": "The lamp used in many lighthouses is similiar to this type of lamp patented in 1780 by Aim\u00e9 Argand?",
+  "ground_truth": "Argand lamp",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "naive",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "The lamp used in many lighthouses is similar to the Lewis lamp patented in 1810 by Winslow Lewis.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lewis lamp: The Lewis lamp is a type of light fixture used in lighthouses.  It was invented by Winslow Lewis who patented the design in 1810.  The primary marketing point of the Lewis lamp was that it used less than half the oil of the prior oil lamps which they replaced.  The lamp used a similar design to an Argand lamp, adding a parabolic reflector behind the lamp and a magnifying lens made from 4 in green bottle glass in front of the lamp.  A similar variant using a parabolic reflector was created by the inventor of the Argand lamp, Aim\u00e9 Argand.  While the Argand variant became widely used by European lighthouses, the Lewis lamp design was selected by the United States for use in American lighthouses.",
+      "Argand lamp: The Argand lamp, a kind of oil lamp, was invented and patented in 1780 by Aim\u00e9 Argand.  Its output is 6 to 10 candela, brighter than that of earlier lamps.  Its more complete combustion of the candle wick and oil than in other lamps required much less frequent trimming of the wick.",
+      "Herbert Akroyd Stuart: Herbert Akroyd-Stuart (28 January 1864, Halifax, Yorkshire, England \u2013 19 February 1927, Halifax) was an English inventor who is noted for his invention of the hot bulb engine, or heavy oil engine."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 390,
+    "generation_tokens": 27,
+    "generation_speed": 222.49507626636782,
+    "prompt_eval_speed": 76801.89050807404,
+    "generation_latency_s": 0.2370395000325516,
+    "latency": 0.25351430010050535,
+    "total_prompt_tokens": 390,
+    "total_generation_tokens": 27,
+    "n_llm_calls": 1,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1034265,
+    "stage_retrieve_s": 0.016392200021073222,
+    "stage_retrieve_calls": 1,
+    "stage_generate_s": 0.2370820000069216,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.2535228000488132,
+    "unaccounted_latency_s": 4.930002614855766e-05
+  }
+}

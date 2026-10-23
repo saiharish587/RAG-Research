@@ -1,0 +1,42 @@
+{
+  "question_id": "Q84",
+  "query": "Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",
+  "ground_truth": "Mondelez International, Inc.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Mondelez International",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mondelez International: Mondelez International, Inc., styled Mondel\u0113z ( ), is an American multinational confectionery, food, and beverage company based in Illinois which employs about 107,000 people around the world.  It consists of the global snack and food brands of the former Kraft Foods Inc after the October 2012 spin-off of its North American grocery operations.  The Mondelez name, adopted in 2012, was suggested by Kraft Foods employees and is derived from the words \"mundus\" (Latin for \u201cworld\u201d) and \"delez\" (a proxy for the word \"delicious\").",
+      "Handi-Snacks: Handi-Snacks are a snack food product line sold by Mondelez International.  The common two-compartment Handi-Snack has a small spread compartment and a larger compartment for crackers; a red plastic spreader is included with crackers.",
+      "Mars, Incorporated: Mars is an American global manufacturer of confectionery, pet food, and other food products and a provider of animal care services, with US$33 billion in annual sales in 2015, and is ranked as the 6th largest privately held company in the United States by Forbes.  Headquartered in McLean, unincorporated Fairfax County, Virginia, US, the company is entirely owned by the Mars family.  Mars operates in six business segments around the world: Wm. Wrigley Jr.  Company (Chicago, Illinois), Chocolate (Hackettstown, New Jersey; to be integrated with Wm. Wrigley Jr.  Company and based in Chicago, Illinois from 2017), Petcare (Brussels, Belgium, Poncitl\u00e1n and Jalisco, Mexico), Food (Rancho Dominguez, California), Drinks (West Chester, Pennsylvania), and Symbioscience (Germantown, Maryland), the company's life sciences division."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 503,
+    "generation_tokens": 6,
+    "generation_speed": 285.08980328803574,
+    "prompt_eval_speed": 73280.88578088577,
+    "generation_latency_s": 0.9274377999827266,
+    "latency": 3.3315070999087766,
+    "total_prompt_tokens": 594,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1298805,
+    "stage_rewrite_s": 1.2440758999437094,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0158304000506178,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.14404949999880046,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9274693999905139,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3315159999765456,
+    "unaccounted_latency_s": 9.129999671131372e-05,
+    "rewritten_query": "Handi-Snacks is a snack food product line sold by the American multinational confectionery, food, and beverage company based in Illinois.",
+    "query_was_rewritten": true
+  }
+}

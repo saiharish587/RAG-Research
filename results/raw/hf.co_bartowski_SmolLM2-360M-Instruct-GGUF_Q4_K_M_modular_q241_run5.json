@@ -1,0 +1,49 @@
+{
+  "question_id": "Q241",
+  "query": "What arcade game is named after the only player in major league history to have a 0.300 batting average for 7 consecutive seasons?",
+  "ground_truth": "a pinball machine",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "The Arcade Game named after the only player in Major League History who had a 0.300 batting average for 7 consecutive seasons is \"Babe Ruth's Batting Machine.\"",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "No-hitter: In baseball, a no-hitter (also known as a no-hit game and colloquially as a no-no) is a game in which a team was not able to record a single hit.  Major League Baseball (MLB) officially defines a no-hitter as a completed game in which a team that batted in at least nine innings recorded no hits.  A pitcher who prevents the opposing team from achieving a hit is said to have \"thrown a no-hitter\".  This is a rare accomplishment for a pitcher or pitching staff: only 296 have been thrown in Major League Baseball history since 1876, an average of about two per year.  In most cases in MLB, no-hitters are recorded by a single pitcher who throws a complete game; one thrown by two or more pitchers is a combined no-hitter.  The most recent no-hitter by a single pitcher was thrown on June 3, 2017 by Edinson V\u00f3lquez of the Miami Marlins against the Arizona Diamondbacks at Miami's Marlins Park.  The most recent combined no-hitter was thrown by Cole Hamels, Jake Diekman, Ken Giles, and Jonathan Papelbon of the Philadelphia Phillies against the Atlanta Braves on September 1, 2014.",
+      "List of Major League Baseball batting champions: In baseball, batting average (AVG) is a measure of a batter's success rate in achieving a hit during an at bat.  In Major League Baseball (MLB), it is calculated by dividing a player's hits by his at bats (AB).  In MLB, a player in each league wins the \"batting title\" each season for having the highest batting average that year.  The American League (AL) winner is known as the \"Rod Carew American League Batting Champion\", while the National League (NL) leader is designated the \"Tony Gwynn National League Batting Champion\".  Under current rules, a player must have 3.1 plate appearances (PA) per team game (for a total of 502 over the current 162-game season) to qualify for the batting title.  However, if a player's lead in AVG is sufficiently large that enough hitless at bats can be added to reach this requirement and the player still would have the highest batting average, he wins the title.  Tony Gwynn, for example, had 159 hits in 451 ABs in 1996 (.353 average) but only 498 PAs.  Gwynn's batting average would have dropped to .349 (159 hits in 455 ABs) with four hitless ABs added to reach the 502 PA requirement, but this would still have been higher than the next-highest eligible player (.344 average), so he was awarded the 1996 NL batting title.",
+      "At bats per home run: In baseball statistics, at bats per home run (AB/HR) is a way to measure how frequently a batter hits a home run.  It is determined by dividing the number of at bats by the number of home runs hit.  Mark McGwire possesses the MLB record for this statistic with a career ratio of 10.61 at bats per home run and Babe Ruth is second, with 11.76 at bats per home run.  Giancarlo Stanton, with 14.33 at bats per home run, currently holds the record among active players."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 864,
+    "generation_tokens": 41,
+    "generation_speed": 227.06504582837206,
+    "prompt_eval_speed": 111411.99226305609,
+    "generation_latency_s": 0.30528380000032485,
+    "latency": 0.624458699952811,
+    "total_prompt_tokens": 1028,
+    "total_generation_tokens": 63,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2324642,
+    "stage_route_s": 0.09668319998309016,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.16976570000406355,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.05255700007546693,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.1900045946240425e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.30531590001191944,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6244681000243872,
+    "unaccounted_latency_s": 9.489990770816803e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Batting Average Game\"",
+      "\"Batting Average Game\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

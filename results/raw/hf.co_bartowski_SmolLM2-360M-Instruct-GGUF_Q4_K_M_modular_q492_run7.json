@@ -1,0 +1,48 @@
+{
+  "question_id": "Q492",
+  "query": "Which jazz singer has a 2003 album entitled The Boy Next Door? ",
+  "ground_truth": "Stacey Kent",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "The answer is Stacey Kent's 2003 album \"The Boy Next Door\".",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "The Boy Next Door (album): The Boy Next Door is a 2003 album by jazz singer Stacey Kent.  The songs were chosen to reflect male singers that Kent admires.",
+      "Not the Boy Next Door: Not the Boy Next Door is a studio album released in 1983 by Australian singer and songwriter Peter Allen.  This was his first release under Arista Records.",
+      "'Tis Autumn: American jazz singer Stacey Kent covered it for her 2003 album \"The Boy Next Door\".  It has also been covered by Stan Getz, Bruce Eskovitz, Carmen McRae, Lee Konitz, Spike Robinson, Eddie Higgins and Bennie Wallace."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 228,
+    "generation_tokens": 21,
+    "generation_speed": 252.17955184091073,
+    "prompt_eval_speed": 50610.432852386235,
+    "generation_latency_s": 0.1961567000253126,
+    "latency": 0.4672401000279933,
+    "total_prompt_tokens": 364,
+    "total_generation_tokens": 35,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2449549,
+    "stage_route_s": 0.09315760002937168,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14139709994196892,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0363528000889346,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.060007631778717e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.19620639993809164,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.46725480002351105,
+    "unaccounted_latency_s": 0.00010139995720237494,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"The Boy Next Door\" by Miles Davis"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

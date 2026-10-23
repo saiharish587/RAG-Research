@@ -1,0 +1,42 @@
+{
+  "question_id": "Q277",
+  "query": "Which Genus has more species Eucryphia or Lepidozamia ?",
+  "ground_truth": "Eucryphia",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Based on the information provided, the genus that has more species Eucryphia and Lepidozamia is Cunoniaceae. The reason for this is because the genus contains 600 species of flowering plants with seven species in Cunoniaceae (Eudicaria, Eubadaea, Eupetella, Eutrochium, Eurycarpus, Erythronema, and Elytris). This means that there are more species within the genus than in any other genus.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Lepidozamia: Lepidozamia is a genus of two species of cycad, both endemic to Australia.  The name, derived from the Greek word lepidos, meaning scaly, refers to the scale-like structure of the stem and leaf bases.  They are native to rainforest climates in eastern Queensland and eastern New South Wales.  They have a chromosome number of 2n = 18.",
+      "Eucryphia: Eucryphia is a small genus of trees and large shrubs native to the south temperate regions of South America and coastal eastern Australia.  Sometimes placed in a family of their own, the Eucryphiaceae, more recent classifications place them in the Cunoniaceae.  There are seven species, two in South America and five in Australia, and several named hybrids.  They are mostly evergreen though one species (\"E. glutinosa\") is usually deciduous.",
+      "Cyrtandra (plant): Cyrtandra is a genus of flowering plants containing about 600 species, with more being discovered often, and is thus the largest genus in the family Gesneriaceae.  These plants are native to Southeast Asia, Australia, and the Pacific Islands, with the centre of diversity in Southeast Asia and the Malesian region.  The genus is common, but many species within it are very rare, localized, endangered endemic plants.  The species can be difficult to identify because they are highly polymorphic and because they readily hybridize with each other.  The plants may be small herbs, vines, shrubs, epiphytes, or trees.  The genus is characterized in part by having two stamens, and most species have white flowers, with a few red-, orange-, yellow- and pink-flowered species known.  Almost all species live in rainforest habitats."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 450,
+    "generation_tokens": 111,
+    "generation_speed": 400.76108501550686,
+    "prompt_eval_speed": 23876.479015227887,
+    "generation_latency_s": 0.37025259993970394,
+    "latency": 0.8134476999985054,
+    "total_prompt_tokens": 528,
+    "total_generation_tokens": 130,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1229239,
+    "stage_rewrite_s": 0.1409296999918297,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07088459993246943,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2312510000774637,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.37029770005028695,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8134588999673724,
+    "unaccounted_latency_s": 9.639991912990808e-05,
+    "rewritten_query": "Which Genus has more species Eucyphia and Lepidozamia?",
+    "query_was_rewritten": true
+  }
+}

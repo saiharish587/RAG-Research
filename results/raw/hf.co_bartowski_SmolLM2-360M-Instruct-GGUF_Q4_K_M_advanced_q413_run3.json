@@ -1,0 +1,42 @@
+{
+  "question_id": "Q413",
+  "query": "Jacques Sernas, actor in Fugitive in Trieste, was of what nationality?",
+  "ground_truth": "Lithuanian-born French",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Jacques Sernas, an actor from the context provided, is of Italian nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Jacques Sernas: Jok\u016bbas Bernardas \u0160ernas (30 July 1925 \u2013 3 July 2015), commonly known as Jacques Sernas and sometimes credited as Jack Sernas, was a Lithuanian-born French actor with an international film career.",
+      "Fugitive in Trieste: Fugitive in Trieste (Italian: \"Clandestino a Trieste\" ) is a 1951 Italian war-drama film directed by Guido Salvini and starring Doris Duranti, Jacques Sernas and Massimo Girotti.",
+      "Balearic Caper: Balearic Caper (Spanish: \"Zarabanda bing bing\" , Italian: \"Baleari Operazione Oro\" , French: \"Barbouze ch\u00e9rie\" , also known as Operation Gold) is a 1966 Spanish-Italian-French heist-Eurospy comedy film written and directed by Jos\u00e9 Mar\u00eda Forqu\u00e9 and starring Jacques Sernas, Daniela Bianchi and Mireille Darc.  It was shot in Ibiza."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 322,
+    "generation_tokens": 19,
+    "generation_speed": 212.87322839056634,
+    "prompt_eval_speed": 34897.583179798414,
+    "generation_latency_s": 1.0683847999898717,
+    "latency": 3.4024150000186637,
+    "total_prompt_tokens": 402,
+    "total_generation_tokens": 49,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.13170199999999999,
+    "stage_rewrite_s": 1.2710264000343159,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9834855000954121,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.0793909999774769,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 1.0684273999650031,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.402426899992861,
+    "unaccounted_latency_s": 9.709992446005344e-05,
+    "rewritten_query": "Jacques Sernas, an actor known for his role in \"Fugitive\" in Trieste, was born in what country?",
+    "query_was_rewritten": true
+  }
+}

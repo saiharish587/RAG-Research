@@ -1,0 +1,49 @@
+{
+  "question_id": "Q413",
+  "query": "Jacques Sernas, actor in Fugitive in Trieste, was of what nationality?",
+  "ground_truth": "Lithuanian-born French",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 10,
+  "pipeline_result": {
+    "response": "Jacques Sernas, an Italian-born French actor with an international film career, was of Italian nationality.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Fugitive in Trieste: Fugitive in Trieste (Italian: \"Clandestino a Trieste\" ) is a 1951 Italian war-drama film directed by Guido Salvini and starring Doris Duranti, Jacques Sernas and Massimo Girotti.",
+      "Jacques Sernas: Jok\u016bbas Bernardas \u0160ernas (30 July 1925 \u2013 3 July 2015), commonly known as Jacques Sernas and sometimes credited as Jack Sernas, was a Lithuanian-born French actor with an international film career.",
+      "Loving You Is My Sin: Loving You Is My Sin (Italian: Amarti \u00e8 il mio peccato) is a 1953 Italian melodrama film directed by  Sergio Grieco and starring  Jacques Sernas, Luisa Rossi and Elisa Cegani."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 277,
+    "generation_tokens": 24,
+    "generation_speed": 256.865809020271,
+    "prompt_eval_speed": 35627.00964630225,
+    "generation_latency_s": 0.21044529997743666,
+    "latency": 0.6403982000192627,
+    "total_prompt_tokens": 417,
+    "total_generation_tokens": 76,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2225241,
+    "stage_route_s": 0.09251660003792495,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.28250069997739047,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.054763599997386336,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.970002919435501e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21047819999512285,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6404071999713778,
+    "unaccounted_latency_s": 9.899993892759085e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Jacques Sernas, actor in Fugitive in Trieste, was of Italian nationality.\"",
+      "\"Jacques Sernas, actor in Fugitive in Trieste, was of British nationality.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

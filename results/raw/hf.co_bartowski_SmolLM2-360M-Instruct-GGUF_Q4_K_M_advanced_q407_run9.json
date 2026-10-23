@@ -1,0 +1,42 @@
+{
+  "question_id": "Q407",
+  "query": "Which magazine is older, Gallery or Dime Magazine?",
+  "ground_truth": "arose on the \"Playboy\" magazine pattern in the 1970s.",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Dime Magazine is older than Gallery.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Dime Magazine: Dime Magazine is an American basketball magazine that began circulation in 2001.  The magazine publishes six issues a year for its worldwide readership, as well as a handful of editions of \"Dime China\", a Chinese-language version consisting of regular \"Dime\" content translated from English and original content from editorial staff in China.  It makes an appearance as an endorsement in \"NBA 2K12\", and \"NBA 2K13\".  It is owned by Uproxx itself a brand of Woven Digital.",
+      "Gallery (magazine): Gallery is a men's magazine published by Magna Publishing Group.  It is one of the more popular \"skin\" magazines that arose on the \"Playboy\" magazine pattern in the 1970s.",
+      "Shocked and Amazed!: In 1995, the opening year of its publication, James Taylor\u2019s Shocked and Amazed!  On & Off the Midway became the first journal to chronicle the history of sideshows, novelty and variety exhibition or \u201cthe show business\u201d as it was called in the heyday of the dime museums.  Focusing on circus and carnival sideshows and 19th Century dime museum entertainment, the journal also follows the history and characters of vaudeville and burlesque, wax museums and world\u2019s fairs, carnivals, circus spectacles, roadside attractions and everything in between.  The journal features interviews with the business\u2019 \u201cgolden age\u201d performers as well as modern talent and has included original works by the likes of Teller (magician), John Strausbaugh and Frank DeFord and unique reprinted material available previously to only a few show business historians."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 433,
+    "generation_tokens": 9,
+    "generation_speed": 268.0086953932283,
+    "prompt_eval_speed": 60138.88888888889,
+    "generation_latency_s": 0.9117335999617353,
+    "latency": 3.3266978000756353,
+    "total_prompt_tokens": 504,
+    "total_generation_tokens": 18,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1217015,
+    "stage_rewrite_s": 1.1579477000050247,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0883853000123054,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.16852000006474555,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9117680999916047,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.3267072000307962,
+    "unaccounted_latency_s": 8.649996016174555e-05,
+    "rewritten_query": "Dime Magazine is older than Gallery.",
+    "query_was_rewritten": true
+  }
+}

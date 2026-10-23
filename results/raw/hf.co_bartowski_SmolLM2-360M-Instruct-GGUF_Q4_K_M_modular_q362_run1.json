@@ -1,0 +1,49 @@
+{
+  "question_id": "Q362",
+  "query": "Scott Sandelin grew up in a town in what Minnesota county?",
+  "ground_truth": "Saint Louis County",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Scott Sandelin grew up in Hennepin County.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Scott Sandelin: Scott Alan Sandelin (born August 8, 1964) is an American former professional ice hockey player.  He is currently the head coach of the Minnesota-Duluth Bulldogs men's ice hockey team.  In 2011, he became the first coach in Bulldog history to lead them to a national title.  It was a 3\u20132 overtime game against the University of Michigan at the Xcel Energy Center in Saint Paul, Minnesota.  He grew up in Hibbing, Minnesota where he went on to be drafted in the second round by the Montreal Canadiens (40th overall) and play collegiate hockey for the North Dakota Fighting Sioux.",
+      "Hennepin County, Minnesota: Hennepin County ( ) is a county in the U.S. state of Minnesota.  As of the 2010 census the population was 1,152,425.  It is the most populous county in Minnesota and the 35th-most populous county in the United States; more than one in five Minnesotans live in Hennepin County.  Its county seat is Minneapolis, the state's most populous city.  The county is named in honor of the 17th-century explorer Father Louis Hennepin.",
+      "Minneapolis: Minneapolis ( ) is the county seat of Hennepin County, and the larger of the Twin Cities, the 16th-largest metropolitan area in the United States.  As of 2016, Minneapolis is the largest city in the state of Minnesota and 46th-largest in the United States, with an estimated population of 413,651.  The Twin Cities metropolitan area is the third largest in the Midwest with about 3.5 million people.  Minneapolis and Saint Paul anchor the second-largest economic center in the Midwest, after Chicago."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 476,
+    "generation_tokens": 13,
+    "generation_speed": 206.73971469919368,
+    "prompt_eval_speed": 11273.209549071618,
+    "generation_latency_s": 0.2160503000486642,
+    "latency": 0.5670603000326082,
+    "total_prompt_tokens": 602,
+    "total_generation_tokens": 36,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2194233,
+    "stage_route_s": 0.10004090005531907,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1944939000532031,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0563071999931708,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.380006041377783e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2160854999674484,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5670694999862462,
+    "unaccounted_latency_s": 8.879986125975847e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Sandel, Scott\"",
+      "\"Minnesota County, Minnesota\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

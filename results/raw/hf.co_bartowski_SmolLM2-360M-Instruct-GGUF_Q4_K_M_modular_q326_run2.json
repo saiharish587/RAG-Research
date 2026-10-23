@@ -1,0 +1,49 @@
+{
+  "question_id": "Q326",
+  "query": "Katherine Waterston and Chrisann Brennan has what in common?",
+  "ground_truth": "Steve Jobs",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 2,
+  "pipeline_result": {
+    "response": "Katherine Waterston and Chrisann Brennan share a common profession as American actors.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Chrisann Brennan: Chrisann Brennan (born September 29, 1954) is an American painter and writer who wrote the autobiography \"The Bite in the Apple\" about her relationship with Apple co-founder Steve Jobs.  She has one child, Lisa Brennan-Jobs.",
+      "Terri Conn: Terri Conn (born January 28, 1975), formerly known as Terri Colombino, is an American actress.  She is known for her roles as Katie Snyder on \"As the World Turns\" and as Christine \"Aubrey Wentworth\" Karr on \"One Life to Live\".  On July 1, 2011, she married her former \"As the World Turns\" co-star, Austin Peck.",
+      "Katherine Waterston: Katherine Boyer Waterston (born March 3, 1980) is an American actress.  She made her feature film debut in \"Michael Clayton\" (2007).  She then had supporting roles in films including \"Robot & Frank,\" \"Being Flynn\" (both 2012) and \"The Disappearance of Eleanor Rigby: Her\" (2013) before her supporting role as Shasta Fay Hepworth in Paul Thomas Anderson's \"Inherent Vice\" (2014).  In 2015, she portrayed Chrisann Brennan in \"Steve Jobs\".  She had starring roles in the Harry Potter prequel, \"Fantastic Beasts and Where to Find Them\" (2016), and \"\" (2017), a prequel to Ridley Scott's 1979 film \"Alien\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 433,
+    "generation_tokens": 18,
+    "generation_speed": 235.95107947618862,
+    "prompt_eval_speed": 14367.244010883269,
+    "generation_latency_s": 0.2163739000679925,
+    "latency": 0.7531629999866709,
+    "total_prompt_tokens": 559,
+    "total_generation_tokens": 85,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2370736,
+    "stage_route_s": 0.10969739989377558,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3710871000075713,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.055786299984902143,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.879998207092285e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.21642569999676198,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7531744999578223,
+    "unaccounted_latency_s": 0.00011990009807050228,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Katherine Waterston and Chrisann Brennan have been married for over 20 years, which is a significant amount of time in the world of celebrity couples.",
+      "Query 2: They both have children from previous marriages, making them two examples of long-standing families within the entertainment industry."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

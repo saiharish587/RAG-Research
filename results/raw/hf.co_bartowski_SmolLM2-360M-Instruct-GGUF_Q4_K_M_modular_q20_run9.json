@@ -1,0 +1,49 @@
+{
+  "question_id": "Q20",
+  "query": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+  "ground_truth": "Robert Erskine Childers DSC",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "Henry Roth",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Henry Roth: Henry Roth (February 8, 1906 \u2013 October 13, 1995) was an American novelist and short story writer.",
+      "Robert Erskine Childers: Robert Erskine Childers DSC (25 June 1870 \u2013 24 November 1922), universally known as Erskine Childers, was a British writer, whose works included the influential novel \"The Riddle of the Sands\", and a Fenian revolutionary who smuggled guns to Ireland in his sailing yacht \"Asgard\".  He was executed by the authorities of the nascent Irish Free State during the Irish Civil War.  He was the son of British Orientalist scholar Robert Caesar Childers; the cousin of Hugh Childers and Robert Barton; and the father of the fourth President of Ireland, Erskine Hamilton Childers.",
+      "Robert Caesar Childers: Robert Caesar Childers (1838 \u2013 25 July 1876) was a British Orientalist scholar, compiler of the first P\u0101li-English dictionary.  Childers was the husband of Anna Barton of Ireland.  He was the father of Irish nationalist Robert Erskine Childers and grandfather to the fourth President of Ireland, Erskine Hamilton Childers."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 348,
+    "generation_tokens": 3,
+    "generation_speed": 280.2428771602055,
+    "prompt_eval_speed": 41463.12403193137,
+    "generation_latency_s": 0.12844989995937794,
+    "latency": 0.4255772000178695,
+    "total_prompt_tokens": 482,
+    "total_generation_tokens": 24,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2203235,
+    "stage_route_s": 0.08857809996698052,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.15188090002629906,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.056495700031518936,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.250005051493645e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.12848529999610037,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.42558810010086745,
+    "unaccounted_latency_s": 9.620003402233124e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Henry Roth",
+      "Query 2: Robert Erskine Childers"
+    ],
+    "n_sub_queries_used": 2
+  }
+}

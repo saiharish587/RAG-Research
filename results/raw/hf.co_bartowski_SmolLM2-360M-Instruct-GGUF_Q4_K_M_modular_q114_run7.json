@@ -1,0 +1,49 @@
+{
+  "question_id": "Q114",
+  "query": "Who died first, George Archainbaud or Ralph Murphy?",
+  "ground_truth": "George Archainbaud",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 7,
+  "pipeline_result": {
+    "response": "George Archainbaud died first.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "George Archainbaud: George Archainbaud (May 7, 1890 \u2013 February 20, 1959) was a French-born American film and television director.",
+      "Ralph Murphy: Ralph Murphy (May 1, 1895 \u2013 February 10, 1967) was an American film director.  Born in Rockville, Connecticut, Murphy was active in films from 1931 through 1962, with some work in television.  From 1941\u201344 he was married to Gloria Dickson, whom he directed in \"I Want a Divorce\".",
+      "having exceeded his powers.  He was cashiered and arrested, and finally sentenced to death.  For some time it was feared that he would lose his head.  The foreign Ministers did all in their power to effect his release, but in vain.  At length Queen Victoria interposed on his behalf; and in response to her letter he was pardoned, upon which he retired into private life.  He died in 1893, of creeping paralysis; and in 1894 his rank was restored, less two grades.  He was extremely courteous to foreigners, and was much liked by all foreign officials with whom he was thrown into contact."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 353,
+    "generation_tokens": 9,
+    "generation_speed": 229.90854748888776,
+    "prompt_eval_speed": 40329.03004684108,
+    "generation_latency_s": 0.1585951999295503,
+    "latency": 0.6003257998963818,
+    "total_prompt_tokens": 479,
+    "total_generation_tokens": 53,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.24183909999999997,
+    "stage_route_s": 0.10572340001817793,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.27519329998176545,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0606152000837028,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.540007259696722e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1586441999534145,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6003412998979911,
+    "unaccounted_latency_s": 0.00011079979594796896,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: George Archainbaud died on January 20, 1956.",
+      "Query 2: Ralph Murphy died on October 3, 1974."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

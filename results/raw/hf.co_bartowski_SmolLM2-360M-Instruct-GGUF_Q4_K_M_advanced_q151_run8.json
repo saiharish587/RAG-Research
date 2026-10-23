@@ -1,0 +1,42 @@
+{
+  "question_id": "Q151",
+  "query": "What occupation was shared by David Yates and Pietro Germi?",
+  "ground_truth": "director",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "David Yates and Pietro Germi both had occupations that involved acting, as they were both born in Genoa, Liguria, to a lower-middle-class family.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Pietro Germi: Pietro Germi (] ; 14 September 1914 \u2013 5 December 1974) was an Italian actor, screenwriter, and director.  Germi was born in Genoa, Liguria, to a lower-middle-class family.  He was a messenger and briefly attended nautical school before deciding on a career in acting.",
+      "David Yates: David Yates (born (1963--)08 1963 ) is an English filmmaker who has directed feature films, short films, and television productions.",
+      "Christopher Wren: Sir Christopher Wren PRS ( ; 30 October 1632 [O.S. 20 October] \u2013 8 March 1723 [O.S. 25 February] ) is one of the most highly acclaimed English architects in history."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 259,
+    "generation_tokens": 37,
+    "generation_speed": 259.07824162897197,
+    "prompt_eval_speed": 37196.6106563263,
+    "generation_latency_s": 0.9945211000740528,
+    "latency": 3.42859679996036,
+    "total_prompt_tokens": 333,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1234075,
+    "stage_rewrite_s": 1.2072560000233352,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.040771899977699,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.18591110000852495,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9945585000095889,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.4286063000326976,
+    "unaccounted_latency_s": 0.00010939990170300007,
+    "rewritten_query": "Pietro Germi was a renowned Italian architect, while David Yates worked as an architect in London.",
+    "query_was_rewritten": true
+  }
+}

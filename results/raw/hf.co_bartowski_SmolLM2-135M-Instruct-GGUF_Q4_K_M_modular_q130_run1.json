@@ -1,0 +1,48 @@
+{
+  "question_id": "Q130",
+  "query": "At what venue was the January 2, 2012 game featured the University of Louisville team?",
+  "ground_truth": "Mercedes-Benz Superdome",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The University of Louisville Fire played their home games at the Brown-Forman Field in Freedom Hall in Louisville, Kentucky.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Freedom Hall: Freedom Hall is a multipurpose arena in Louisville, Kentucky, on the grounds of the Kentucky Exposition Center, which is owned by the Commonwealth of Kentucky.  It is best known for its use as a basketball arena, serving as the home of the University of Louisville Cardinals men's team from 1956 to 2010, the Kentucky Colonels of the American Basketball Association from 1970 until the ABA-NBA merger in June 1976, and the Louisville Cardinals women's team from its inception in 1975 to 2010.  Freedom Hall's last regular tenant was the Kentucky Stickhorses of the North American Lacrosse League, who used it from 2011 until the team folded in 2013.",
+      "2012 Washington Huskies football team: The 2012 Washington Huskies football team represented the University of Washington in the 2012 NCAA Division I FBS football season.  The team, coached by fourth-year head coach Steve Sarkisian, was a member of the North Division of the Pac-12 Conference.  The Huskies played their home games at CenturyLink Field in Seattle due to renovations at their normal on-campus home of Husky Stadium, also in Seattle.  They finished the season 7\u20136, 5\u20134 in Pac-12 play to finish in fourth place in the North Division.  They were invited to the Maaco Bowl Las Vegas where they were defeated by Boise State.",
+      "Louisville Fire: The Louisville Fire was an arena football team that played its home games at the Brown-Forman Field in Freedom Hall in Louisville, Kentucky.  They were a 2001 expansion team of the af2.  Their owner/operator was former Pro Bowl lineman and Louisville native Will Wolford.  The team was somewhat successful.  After a rocky first few seasons they finally found success in 2004 and then made it all the way to the Arena Cup in the 2005 season."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 525,
+    "generation_tokens": 25,
+    "generation_speed": 283.52386136817273,
+    "prompt_eval_speed": 12356.139236037563,
+    "generation_latency_s": 0.23828370007686317,
+    "latency": 0.6205767999636009,
+    "total_prompt_tokens": 669,
+    "total_generation_tokens": 70,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2462978,
+    "stage_route_s": 0.16017619997728616,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.18628830008674413,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03564589994493872,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.1599967516958714e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.23832800006493926,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6205898999469355,
+    "unaccounted_latency_s": 0.00011069991160184145,
+    "route": "rag",
+    "router_raw": "The question asks about whether answering it requires retrieving information from internal files/documents.",
+    "sub_queries": [
+      "At what venue was the January 2, 2012 game featured the University of Louisville team at the University of Louisville?"
+    ],
+    "n_sub_queries_used": 1
+  }
+}

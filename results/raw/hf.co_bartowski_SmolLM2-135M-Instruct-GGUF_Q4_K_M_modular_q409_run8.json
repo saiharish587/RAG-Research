@@ -1,0 +1,48 @@
+{
+  "question_id": "Q409",
+  "query": "How large is the shopping mall where KGOT radio station has its studios ?",
+  "ground_truth": "728,000 ft\u00b2",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The shopping mall where KGOT radio station has its studios is located in Whalley/City Centre, Surrey, British Columbia, Canada. It is roughly five minutes away from the Sault Ste. Marie International Bridge to the United States and is near Surrey Central and King George SkyTrain stations.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "KGOT: KGOT (101.3 FM) is a commercial Top 40 (CHR) radio station in Anchorage, Alaska.  The station is owned by iHeartMedia, Inc. and broadcasts (along with its sister stations) from studios in the Dimond Center.",
+      "Station Mall: The Station Mall in Sault Ste. Marie, Ontario, Canada, is the second largest shopping mall in Northern Ontario, trailing just behind the New Sudbury Centre in Greater Sudbury in area, while also lagging behind the Intercity Shopping Centre in Thunder Bay in number of stores.  Station Mall has 97 stores and 555000 sqft of retail space on one level .  Built in 1973, the mall has since undergone two major expansions.  Its major tenants include Sears, Walmart and the 52000 sqft Galaxy Cinemas movie theatre complex.  The mall is located on the waterfront in downtown Sault Ste. Marie, and is roughly five minutes away from the Sault Ste. Marie International Bridge to the United States.  The Sault Ste. Marie railway station is located in the mall parking lot.",
+      "Central City Shopping Centre: Central City Shopping Centre (formerly known as Surrey Place Mall) is a shopping mall and office tower complex in Whalley/City Centre, Surrey, British Columbia, Canada, which is owned by Blackwood Partners Management Corporation.  It is near Surrey Central and King George SkyTrain stations.  It was designed by Bing Thom Architects.  It is the second largest mall in Surrey, smaller than Guildford Town Centre (mall).  A major portion of the upper shopping centre floors also host one of the three Simon Fraser University campuses."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 437,
+    "generation_tokens": 61,
+    "generation_speed": 374.3916136278548,
+    "prompt_eval_speed": 40462.96296296296,
+    "generation_latency_s": 0.289070799946785,
+    "latency": 0.6320630999980494,
+    "total_prompt_tokens": 569,
+    "total_generation_tokens": 109,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.23875079999999999,
+    "stage_route_s": 0.15620720002334565,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.14938179997261614,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.03723679995164275,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.329998046159744e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.28910409996751696,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.6320722999516875,
+    "unaccounted_latency_s": 9.96000599116087e-05,
+    "route": "rag",
+    "router_raw": "The shopping mall where KGOT radio station has its studios is called the \"Kogi Shopping Mall.\"",
+    "sub_queries": [
+      "The shopping mall where KGOT radio station has its studios is approximately 10,500 square feet."
+    ],
+    "n_sub_queries_used": 1
+  }
+}

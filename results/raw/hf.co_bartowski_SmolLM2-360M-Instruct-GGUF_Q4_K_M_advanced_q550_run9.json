@@ -1,0 +1,42 @@
+{
+  "question_id": "Q550",
+  "query": "WAVN is a Gospel formatted broadcast radio station tied to which city in DeSoto County, Mississippi?",
+  "ground_truth": "Southaven, Mississippi",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 9,
+  "pipeline_result": {
+    "response": "WAVN is a Gospel formatted broadcast radio station that is tied to Southaven, Mississippi.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "WAVN: WAVN is a Gospel formatted broadcast radio station licensed to Southaven, Mississippi, serving Metro Memphis.  WAVN is owned and operated by Flinn Broadcasting.",
+      "Southaven, Mississippi: Southaven is a city in DeSoto County, Mississippi, United States.  It is a suburb of Memphis, Tennessee, and a principal city in the Memphis metropolitan area.  The 2010 census reported a population of 48,982, making Southaven the third largest city in Mississippi.  Southaven is traversed from north to south by the I-55/I-69 freeway.  The city's name derives from the fact that Southaven is located south of Whitehaven, a neighborhood in Memphis.",
+      "DeSoto County, Mississippi: DeSoto County is a county located in the U.S. state of Mississippi.  As of the 2010 census, the population was 161,252, making it the third-most populous county in Mississippi.  Its county seat is Hernando.  DeSoto County is part of the Memphis, TN-MS-AR Metropolitan Statistical Area (MSA).  It is the second-most populous county in the MSA.  The county has lowland areas that were developed in the 19th century for cotton plantations, and hill country in the eastern part of the county."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 373,
+    "generation_tokens": 20,
+    "generation_speed": 264.5712622694923,
+    "prompt_eval_speed": 50521.4682378437,
+    "generation_latency_s": 0.9914160999469459,
+    "latency": 3.3805538000306115,
+    "total_prompt_tokens": 455,
+    "total_generation_tokens": 39,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1355981,
+    "stage_rewrite_s": 1.1800175999524072,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 1.0710632998961955,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.13794229994527996,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9914575000293553,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.380564899998717,
+    "unaccounted_latency_s": 8.470017928630114e-05,
+    "rewritten_query": "WAVN is a Gospel-formatted broadcast station in DeSoto County, Mississippi.",
+    "query_was_rewritten": true
+  }
+}

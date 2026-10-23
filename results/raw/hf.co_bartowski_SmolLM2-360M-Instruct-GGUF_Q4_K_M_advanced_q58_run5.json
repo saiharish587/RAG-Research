@@ -1,0 +1,42 @@
+{
+  "question_id": "Q58",
+  "query": "who is younger Keith Bostic or Jerry Glanville ?",
+  "ground_truth": "Keith Bostic",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 5,
+  "pipeline_result": {
+    "response": "Jerry Glanville is older than Keith Bostic.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Keith Bostic (American football): William Keith Bostic (born January 17, 1961) is a former professional American football player who played for seven seasons in the National Football League (NFL).  During his career he played safety for the Houston Oilers and the Cleveland Browns.  Bostic served as the Oiler defensive captain under Jerry Glanville.  He earned one Pro Bowl selection and missed another based on a tiebreaker for the last safety chosen.  In his Pro Bowl season, he led the American Football Conference in interceptions.",
+      "Jerry Glanville: Jerry Michael Glanville (born October 14, 1941) is a former American football player and coach, former NASCAR driver and owner, and sportscaster.  He served as head coach of the Houston Oilers from 1986 to 1990 and the Atlanta Falcons from 1990 to 1994, compiling a career NFL record of 63\u201373.  From 2007 to 2009, he was the Head Football Coach at Portland State University, tallying a mark of 9\u201324.  Glanville has worked as an analyst on HBO's \"Inside the NFL\", CBS's \"The NFL Today\"/\"NFL on CBS\" and Fox's coverage of the NFL.  He has also raced on the Automobile Racing Club of America circuit.  Glanville also briefly served as a consultant and liaison for the United Football League in 2011.",
+      "Keith Bostic: Keith Bostic is an American Software Engineer and one of the key people in the history of Berkeley Software Distribution UNIX and Open Source software."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 436,
+    "generation_tokens": 13,
+    "generation_speed": 267.01721234030316,
+    "prompt_eval_speed": 59652.48323984129,
+    "generation_latency_s": 0.9527271999977529,
+    "latency": 3.392301599960774,
+    "total_prompt_tokens": 508,
+    "total_generation_tokens": 50,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1238034,
+    "stage_rewrite_s": 1.3257095000008121,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.9698534000199288,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.1438757999567315,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.9527679999591783,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 3.392311899922788,
+    "unaccounted_latency_s": 0.00010569998994469643,
+    "rewritten_query": "The user's query is \"who is younger Keith Bostic or Jerry Glanville?\" The optimized query would be: Who is younger Keith Bostic or Jerry Glanville?",
+    "query_was_rewritten": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q284",
+  "query": "Which film was released first: Sacred Planet or Oz the Great and Powerful?",
+  "ground_truth": "Sacred Planet",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 8,
+  "pipeline_result": {
+    "response": "The film that was released first, \"Oz the Great and Powerful\", was released on April 22, 2004.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Oz the Great and Powerful: Oz the Great and Powerful is a 2013 American fantasy adventure film directed by Sam Raimi and produced by Joe Roth, from a screenplay written by David Lindsay-Abaire and Mitchell Kapner.  The film stars James Franco, Michelle Williams, Rachel Weisz and Mila Kunis, with Zach Braff, Bill Cobbs, Joey King, and Tony Cox in supporting roles.  Based on L. Frank Baum's \"Oz\" novels and set 20 years before the events of the original novel, \"Oz the Great and Powerful\" is a spiritual prequel to the 1939 Metro-Goldwyn-Mayer film, \"The Wizard of Oz\".  The film tells the story of Oscar Diggs, a deceptive magician who arrives in the Land of Oz and encounters three witches: Theodora, Evanora, and Glinda.  Oscar is then enlisted to restore order in Oz, while struggling to resolve conflicts with the witches and himself.",
+      "Sacred Planet: Sacred Planet is a 2004 documentary directed by Jon Long and Hairul Salleh Askor.  Robert Redford provided narration for the film.  The film was released by Walt Disney Pictures on April 22, 2004, and grossed $1,108,356.",
+      "Sam Raimi: Samuel M \"Sam\" Raimi ( ; born October 23, 1959) is an American film director, producer, screenwriter and actor, famous for creating the cult horror \"Evil Dead\" series, as well as directing the original \"Spider-Man\" trilogy (2002\u201307), the 1990 superhero film \"Darkman\" and the \"I Will Rip Your Soul Out\" scene from the 2013 remake of \"Evil Dead\".  His most recent film is the 2013 Disney fantasy film \"Oz the Great and Powerful\"."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 502,
+    "generation_tokens": 30,
+    "generation_speed": 388.15857571679953,
+    "prompt_eval_speed": 70863.91869000565,
+    "generation_latency_s": 0.16959170007612556,
+    "latency": 0.7483513000188395,
+    "total_prompt_tokens": 577,
+    "total_generation_tokens": 115,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1304485,
+    "stage_rewrite_s": 0.28721489990130067,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.07769089995417744,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.2137282999465242,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.169627399998717,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.74836030008737,
+    "unaccounted_latency_s": 9.930029045790434e-05,
+    "rewritten_query": "Which film was released first, Sacred Planet or Oz the Great and Powerful?\n\nThe original query is \"Which film was released first: Sacred Planet or Oz the Great and Powerful?\" The optimized query output is \"Which film was released first, Sacred Planet or Oz the Great and Powerful?\". This rephrased query uses a more concise and natural-sounding phrase to convey the same information as the original query.",
+    "query_was_rewritten": true
+  }
+}

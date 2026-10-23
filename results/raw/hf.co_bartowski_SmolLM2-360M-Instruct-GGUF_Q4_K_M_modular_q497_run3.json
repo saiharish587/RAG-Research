@@ -1,0 +1,49 @@
+{
+  "question_id": "Q497",
+  "query": "Anthony Avent played basketball fo a High School that is located in a city approcimately 8 mi west of where?",
+  "ground_truth": "lower Manhattan",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 3,
+  "pipeline_result": {
+    "response": "Portland Trail Blazers",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Anthony Avent: Anthony Avent (born October 18, 1969) is a retired American professional basketball player who was selected by the Atlanta Hawks in the first round (15th pick overall) of the 1991 NBA Draft.  Born in Rocky Mount, North Carolina, Avent played for the Milwaukee Bucks, Orlando Magic, Vancouver Grizzlies, Utah Jazz and Los Angeles Clippers in six NBA seasons.  He played collegiately at Seton Hall University where he played in the 1989 NCAA championship game.  Prior to Seton Hall, Avent played at Malcolm X Shabazz High School in Newark, New Jersey.",
+      "Portland Trail Blazers: The Portland Trail Blazers, commonly known as the Blazers, are an American professional basketball team based in Portland, Oregon.  The Trail Blazers compete in the National Basketball Association (NBA) as a member club of the league's Western Conference Northwest Division.  The team played its home games in the Memorial Coliseum before moving to Moda Center in 1995 (called the Rose Garden until 2013).  The franchise entered the league as an expansion team in 1970, and has enjoyed a strong following: from 1977 through 1995, the team sold out 814 consecutive home games, the longest such streak in American major professional sports at the time, and only since surpassed by the Boston Red Sox.  The Trail Blazers have been the only NBA team based in the bi-national Pacific Northwest, after the Vancouver Grizzlies relocated to Memphis and became the Memphis Grizzlies in 2001, and the Seattle SuperSonics relocated to Oklahoma City and became the Oklahoma City Thunder in 2008.",
+      "Bob Hurley: Robert Emmet Hurley, Sr. (born July 31, 1947) is a basketball coach at St. Anthony High School in Jersey City, New Jersey.  Hurley has amassed 28 state championships and more than 1000 wins in 39 years as a coach.  On February 2, 2011, Hurley became the tenth coach in high school history to win 1000 games.  He is featured in the documentary \"The Street Stops Here\".  Five of his teams have gone undefeated.  On April 5, 2010, he was announced as the only coach to be inducted into the Naismith Memorial Basketball Hall of Fame that year and only the third high school coach in history to be so honored; he was formally inducted on August 13 of that year.  Hurley is the father of Bobby Hurley, a former All-American point guard at Duke and the head basketball coach at Arizona State, and Dan Hurley, who was hired in February 2012 to coach the University of Rhode Island after two years of coaching at Wagner College and nine years coaching at Newark's Saint Benedict's Preparatory School, also one of the top high school programs in the nation."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 748,
+    "generation_tokens": 6,
+    "generation_speed": 254.85282249500912,
+    "prompt_eval_speed": 82324.45520581113,
+    "generation_latency_s": 0.1558523999992758,
+    "latency": 0.6631836999440566,
+    "total_prompt_tokens": 898,
+    "total_generation_tokens": 60,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2475736,
+    "stage_route_s": 0.11480300000403076,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.3321039999136701,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.060251499991863966,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.319993942975998e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.1558861000230536,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.663192099891603,
+    "unaccounted_latency_s": 9.480002336204052e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "\"Anthony Avent played basketball at a high school located approximately 8 miles west of downtown.\"",
+      "\"Anthony Avent played basketball for a high school in a city that is roughly 8 miles away from the downtown area.\""
+    ],
+    "n_sub_queries_used": 2
+  }
+}

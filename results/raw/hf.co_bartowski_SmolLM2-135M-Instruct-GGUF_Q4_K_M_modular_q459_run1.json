@@ -1,0 +1,48 @@
+{
+  "question_id": "Q459",
+  "query": "What competition held in Kathmandu, Nepal did Julian Bolling compete in 1984?",
+  "ground_truth": "1984 South Asian Games",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The first Asian Beach Games had been held in Bali Island between 1966 and 1992.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Mr. Nepal: The Mr Nepal competition is a male beauty pageant sponsored by the Expose Nepal.  It was founded in 2002.  The entrants compete in various activities including swimming, mountain climbing, and marathon running.  The current Mr Nepal is Sandeep Pokharel of Morang who was crowned on 5 April 2015 in Kathmandu, Nepal.  Traditionally, Mr Nepal lives in Kathmandu during his reign.",
+      "Asian Beach Games: The Asian Beach Games, also known as ABG,is a multi-sport event held every four years among athletes from all over Asia.  The Games have been organized by the Olympic Council of Asia (OCA).  The Games are described as the second largest multi-sport event after the Asian Games and the popularity is increasing well, due to low cost of temporary venues, and sand & sea are already available in its place, while the spectators/tourists are also already available in sand & sea tourist areas.  Which the first Asian Beach Games has been held in Bali Island.",
+      "Julian Bolling: Julian Bolling (June 19, 1966) is a Sri Lankan medal winning swimmer who has represented his country at numerous international competitions.  He has won 15 gold medals for Sri Lanka at South Asian Games between 1984 to 1991.  He also represented Sri Lanka at the three Olympic games, firstly at Los Angeles (USA) in 1984, then at Seoul (South Korea) in 1988, and finally at Barcelona (Spain) in 1992.  He is the son of Tara Bolling and cousin of Dipika Chanmugam, both of whom have represented Sri Lanka internationally.  Bolling's best performance at an international meet was at the Colombo South Asian Games where he won six Gold medals.  His record was unbeaten until 2016 when Mathew Abeysinghe broke the record by winning 7 Golds in India."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 510,
+    "generation_tokens": 25,
+    "generation_speed": 307.71881885208575,
+    "prompt_eval_speed": 20152.526968822855,
+    "generation_latency_s": 0.22003620001487434,
+    "latency": 0.5629965000553057,
+    "total_prompt_tokens": 652,
+    "total_generation_tokens": 61,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.231055,
+    "stage_route_s": 0.12681650009471923,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.1760856999317184,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.039890200016088784,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.379998426884413e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.22007729997858405,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5630086000310257,
+    "unaccounted_latency_s": 9.600003249943256e-05,
+    "route": "rag",
+    "router_raw": "Answer: \"Kathmandu, Nepal\"",
+    "sub_queries": [
+      "Answer: \"What Competition held in Kathmandu, Nepal did Julian Bolling compete in 1984?\""
+    ],
+    "n_sub_queries_used": 1
+  }
+}

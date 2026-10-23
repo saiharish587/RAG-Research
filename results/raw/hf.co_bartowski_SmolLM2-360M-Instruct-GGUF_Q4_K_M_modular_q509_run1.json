@@ -1,0 +1,49 @@
+{
+  "question_id": "Q509",
+  "query": "In what London botanical garden can you find the fungus described by Elise Maud Wakefield as \"Lepiota\"?",
+  "ground_truth": "Kew Gardens",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "Kew Gardens",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Kew Gardens: Kew Gardens is a botanical garden in southwest London that houses the \"largest and most diverse botanical and mycological collections in the world\".  Founded in 1840, from the exotic garden at Kew Park in the London Borough of Richmond upon Thames, UK, its living collections include more than 30,000 different kinds of plants, while the herbarium, which is one of the largest in the world, has over seven million preserved plant specimens.  The library contains more than 750,000 volumes, and the illustrations collection contains more than 175,000 prints and drawings of plants.  It is one of London's top tourist attractions and is a World Heritage Site.",
+      "Botanical garden: A botanical garden or botanic garden is a garden dedicated to the collection, cultivation and display of a wide range of plants labelled with their botanical names.  It may contain specialist plant collections such as cacti and other succulent plants, herb gardens, plants from particular parts of the world, and so on; there may be greenhouses, shadehouses, again with special collections such as tropical plants, alpine plants, or other exotic plants. Visitor services at a botanical garden might include tours, educational displays, art exhibitions, book rooms, open-air theatrical and musical performances, and other entertainment.",
+      "Mycologia: Mycologia is a peer-reviewed scientific journal that publishes papers on all aspects of the fungi, including lichens.  It first appeared as a bimonthly journal in January 1909, published by the New York Botanical Garden under the editorship of William Murrill.  It became the official journal of the Mycological Society of America, which still publishes it today.  It was formed as a merger of the \"Journal of Mycology\" (14 volumes; 1885\u20131908) and the \"Mycological Bulletin\" (7 volumes; 1903-1908).  The \"Mycological Bulletin\" was known as the \"Ohio Mycological Bulletin\" in its first volume."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 519,
+    "generation_tokens": 4,
+    "generation_speed": 239.880059970015,
+    "prompt_eval_speed": 13194.020744356314,
+    "generation_latency_s": 0.16998549993149936,
+    "latency": 0.7369020000332966,
+    "total_prompt_tokens": 667,
+    "total_generation_tokens": 87,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.22677819999999999,
+    "stage_route_s": 0.10188430000562221,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4105239000637084,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0543252999195829,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 6.079999729990959e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.17002099996898323,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.7369112999876961,
+    "unaccounted_latency_s": 9.650003630667925e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The London Botanical Garden is home to several notable gardens, including the Royal Botanic Gardens, Kew, and the Royal Horticultural Society's Hyde Park.",
+      "Query 2: The fungus described by Elise Maud Wakefield as \"Lepiota\" can be found in the British Museum's Natural History Museum, specifically in the British Museum of Natural History's collection."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

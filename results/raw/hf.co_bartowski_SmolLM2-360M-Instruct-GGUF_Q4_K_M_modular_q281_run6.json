@@ -1,0 +1,49 @@
+{
+  "question_id": "Q281",
+  "query": "Flyboys stars which actor who was nominated for an Academy Award for \"127 Hours\"?",
+  "ground_truth": "James Franco",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 6,
+  "pipeline_result": {
+    "response": "James Franco",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "Flyboys (film): Flyboys is a 2006 war drama film set during World War I, starring James Franco, Martin Henderson, Jean Reno, Jennifer Decker, David Ellison, Abdul Salis, Philip Winchester, and Tyler Labine.  It was directed by Tony Bill, a pilot and aviation enthusiast.  The screenplay about men in aerial combat was written by Phil Sears, Blake T. Evans and David S. Ward with the story by Blake T. Evans.  Themes of friendship, racial prejudice, revenge and love are also explored in the film.",
+      "James Franco: James Edward Franco (born April 19, 1978) is an American actor, director, screenwriter, and producer.  For his role in \"127 Hours\" (2010), Franco was nominated for an Academy Award for Best Actor.  He is known for his roles in live-action films such as \"Milk\" (2008), \"Pineapple Express\" (2008), \"Rise of the Planet of the Apes\" (2011), \"Spring Breakers\" (2012), \"Oz the Great and Powerful\" (2013), \"This Is the End\" (2013), \" The Disaster Artist\" (2017), and Sam Raimi's \"Spider-Man\" trilogy, while also voicing characters in the animated films \"The Little Prince\" (2015) and \"Sausage Party\" (2016).",
+      "127 Hours: 127 Hours is a 2010 biographical survival found footage drama film directed, co-written, and produced by Danny Boyle.  The film stars James Franco as Aron Ralston, a canyoneer who becomes trapped by a boulder in an isolated slot canyon in Blue John Canyon, southeastern Utah, in April 2003.  It is a British and American venture produced by Everest Entertainment, Film4 Productions, HandMade Films and Cloud Eight Films."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 516,
+    "generation_tokens": 3,
+    "generation_speed": 297.2651605231867,
+    "prompt_eval_speed": 67415.73033707865,
+    "generation_latency_s": 0.13092820008751005,
+    "latency": 0.5706081999232993,
+    "total_prompt_tokens": 654,
+    "total_generation_tokens": 52,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.234201,
+    "stage_route_s": 0.1112361999694258,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.2732409999007359,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.0550336999585852,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 4.780001472681761e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.13096059998497367,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5706175999948755,
+    "unaccounted_latency_s": 9.880017023533583e-05,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: Flyboys stars which actor who was nominated for an Academy Award for \"127 Hours\".",
+      "Query 2: Flyboys stars which actor who was nominated for an Academy Award for \"The Lost Boys\"."
+    ],
+    "n_sub_queries_used": 2
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "Q80",
+  "query": "In which year was the King who made the 1925 Birthday Honours born?",
+  "ground_truth": "1865",
+  "model_name": "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "advanced",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The King who made the 1925 Birthday Honours (Koningsdag) was born in 1937, not 1925.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "1925 Birthday Honours: The 1925 Birthday Honours were appointments by King George V to various orders and honours to reward and highlight good works by citizens of the British Empire.  The appointments were made to celebrate the official birthday of The King, and were published in \"The London Gazette\" on 3 June 1925.",
+      "Koningsdag: Koningsdag (] ) or King's Day is a national holiday in the Kingdom of the Netherlands.  Celebrated on 27 April (26 April if the 27th is a Sunday), the date marks the birth of King Willem-Alexander.",
+      "Harald V of Norway: Harald V (] ; born 21 February 1937) is the King of Norway, having ascended the throne following the death of his father on 17 January 1991."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 263,
+    "generation_tokens": 36,
+    "generation_speed": 377.91704720813783,
+    "prompt_eval_speed": 18648.514500460897,
+    "generation_latency_s": 0.18571029999293387,
+    "latency": 0.5266697999322787,
+    "total_prompt_tokens": 342,
+    "total_generation_tokens": 68,
+    "n_llm_calls": 2,
+    "failed_llm_calls": 0,
+    "load_duration": 0.1320851,
+    "stage_rewrite_s": 0.1701759999850765,
+    "stage_rewrite_calls": 1,
+    "stage_retrieve_s": 0.0741422000573948,
+    "stage_retrieve_calls": 1,
+    "stage_rerank_s": 0.09651349997147918,
+    "stage_rerank_calls": 1,
+    "stage_generate_s": 0.18575290008448064,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.5266802998958156,
+    "unaccounted_latency_s": 9.629980195313692e-05,
+    "rewritten_query": "In which year did the King who made the 1925 Birthday Honours, born in 1924, make his birthday celebration?",
+    "query_was_rewritten": true
+  }
+}

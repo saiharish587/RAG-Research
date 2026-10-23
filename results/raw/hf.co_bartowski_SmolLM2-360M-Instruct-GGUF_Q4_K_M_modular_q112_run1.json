@@ -1,0 +1,49 @@
+{
+  "question_id": "Q112",
+  "query": "Over how many centuries were the \"dwelling place of the dead\" built?",
+  "ground_truth": "three centuries",
+  "model_name": "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M",
+  "rag_type": "modular",
+  "run_id": 1,
+  "pipeline_result": {
+    "response": "The dwelling place of the dead was built over approximately 15,000 years ago in Poland.",
+    "error": false,
+    "error_message": null,
+    "retrieved_context": [
+      "History of England: England became inhabited more than 800,000 years ago, as the discovery of flint tools and footprints at Happisburgh in Norfolk has revealed.  The earliest evidence for early modern humans in North West Europe, a jawbone discovered in Devon at Kents Cavern in 1927, was re-dated in 2011 to between 41,000 and 44,000 years old.  Continuous human habitation in England dates to around 13,000 years ago (see Creswellian), at the end of the last glacial period.  The region has numerous remains from the Mesolithic, Neolithic, and Bronze Age, such as Stonehenge and Avebury.  In the Iron Age, England, like all of Britain south of the Firth of Forth, was inhabited by the Celtic people known as the Britons, including some Belgic tribes (e.g. the Atrebates, the Catuvellauni, the Trinovantes, etc.) in the south east.  In AD 43 the Roman conquest of Britain began; the Romans maintained control of their province of Britannia until the early 5th century.",
+      "Bronze- and Iron-Age Poland: The Bronze and Iron Age cultures in Poland are known mainly from archeological research.  Early Bronze Age cultures in Poland begun around 2300\u20132400 BCE, while the Iron Age commenced in approximately 700\u2013750 BCE.  The Iron Age archeological cultures no longer existed by the start of the Common Era.  The subject of the ethnicity and linguistic affiliation of the groups living in central and eastern Europe at that time is, given the absence of written records, speculative, and accordingly there is considerable disagreement.  In Poland the Lusatian culture, spanning both the Bronze and Iron Ages, became particularly prominent.  The most famous archeological finding from that period is the Biskupin fortified settlement (gord) on the lake from which it takes its name, representing the Lusatian culture of the early Iron Age.",
+      "History of Korea: The Lower Paleolithic era in the Korean Peninsula began roughly half a million years ago.  The earliest known Korean pottery dates to around 8000 BC, and the Neolithic period began after 6000 BC, followed by the Bronze Age by 800 BC, and the Iron Age around 400 BC."
+    ],
+    "n_retrieved": 3,
+    "prompt_tokens": 582,
+    "generation_tokens": 23,
+    "generation_speed": 226.91844748317843,
+    "prompt_eval_speed": 12986.433416636915,
+    "generation_latency_s": 0.2557684000348672,
+    "latency": 0.8524290999630466,
+    "total_prompt_tokens": 712,
+    "total_generation_tokens": 107,
+    "n_llm_calls": 3,
+    "failed_llm_calls": 0,
+    "load_duration": 0.2261196,
+    "stage_route_s": 0.10549360001459718,
+    "stage_route_calls": 1,
+    "stage_subquery_s": 0.4287095000036061,
+    "stage_subquery_calls": 1,
+    "stage_retrieve_s": 0.062272600014694035,
+    "stage_retrieve_calls": 1,
+    "stage_fuse_s": 5.959998816251755e-05,
+    "stage_fuse_calls": 1,
+    "stage_generate_s": 0.2558017000555992,
+    "stage_generate_calls": 1,
+    "pipeline_latency_s": 0.8524384000338614,
+    "unaccounted_latency_s": 0.0001020999625325203,
+    "route": "rag",
+    "router_raw": "Yes",
+    "sub_queries": [
+      "Query 1: The dwelling place of the dead was likely constructed during the Late Bronze Age, specifically around 1200-1100 BCE in various parts of the ancient world.",
+      "Query 2: The dwelling place of the dead was built during the Iron Age, specifically between 800 and 500 BCE, in many regions across Europe and Asia Minor."
+    ],
+    "n_sub_queries_used": 2
+  }
+}
