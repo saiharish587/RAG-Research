@@ -144,6 +144,10 @@ def wins_and_permutation(q: pd.DataFrame, ev: Evidence, arm: str) -> None:
         signs = rng.choice([-1.0, 1.0], size=(min(10_000, N_PERM - start), len(d)))
         exceed += int((np.abs((signs * d).mean(axis=1)) >= abs(d.mean())).sum())
     ev.add("wins", "permutation_p", (exceed + 1) / (N_PERM + 1), arm=arm)
+    # Wilcoxon statistic (zero differences excluded) and standardised paired effect.
+    ev.add("wins", "wilcoxon_W", stats.wilcoxon(d[d != 0]).statistic, arm=arm)
+    ev.add("wins", "d_z_large_minus_small", -d.mean() / d.std(ddof=1), arm=arm)
+    ev.add("wins", "median_question_difference", float(np.median(d)), arm=arm)
     ra, rb = series(q, SMALL, arm, "token_recall"), series(q, LARGE, arm, "token_recall")
     ev.add("wins", "share_full_recall_small", (ra >= 1.0).mean(), arm=arm)
     ev.add("wins", "share_full_recall_large", (rb >= 1.0).mean(), arm=arm)
@@ -181,6 +185,9 @@ def arm_comparisons(df: pd.DataFrame, q: pd.DataFrame, ev: Evidence) -> None:
     for model in (SMALL, LARGE):
         ev.add_test("advanced_minus_naive_f1",
                     paired(series(q, model, "advanced", "token_f1"), series(q, model, "naive", "token_f1")), model)
+        for metric in ("token_recall", "exact_match"):
+            ev.add_test(f"advanced_minus_naive_{metric}",
+                        paired(series(q, model, "advanced", metric), series(q, model, "naive", metric)), model)
         ev.add_test("oracle_minus_naive_f1",
                     paired(series(q, model, "oracle", "token_f1"), series(q, model, "naive", "token_f1")), model)
         ev.add_test("naive_minus_no_rag_f1",
