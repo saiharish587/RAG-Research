@@ -266,7 +266,7 @@ LFM2-700M & Routed Modular, active only ($n=17$) & $0.9412$ & $0.8824$ & $1.0000
 
 \begin{table}[t]
 \centering
-\caption{Retrieval-level ablation of the Advanced RAG arm, replayed on the rewritten queries logged in the original runs (no new generation). Each configuration switches stages on or off: rewrite (the query the evaluated model wrote), hybrid (dense plus TF-IDF fusion over 12 candidates), and rerank (cross-encoder to the top 3). The full configuration reproduces the logged Advanced top-3 passages for all 600 questions. Gold documents are matched by each chunk's source title, so values differ slightly from Table \ref{tab:ir_metrics}. ``Lost / gained'' counts questions whose gold document leaves or enters the top 3 relative to Naive RAG. Configurations without the rewrite do not depend on the model. Produced by \texttt{evaluation/retrieval\_ablation.py}; results in \texttt{results/csv/retrieval\_ablation\_summary.csv}.}
+\caption{Retrieval-level ablation of the Advanced RAG arm, replayed on the rewritten queries logged in the original runs (no new generation). Each configuration switches stages on or off: rewrite (the query the evaluated model wrote), hybrid (dense plus TF-IDF fusion over 12 candidates), and rerank (cross-encoder to the top 3). Rewrites are taken from the run-1 logs, because SmolLM2 rewrites vary across repetitions. The full configuration reproduces the logged Advanced top-3 passages for all 600 questions for all four models. Gold documents are matched by each chunk's source title, so values differ slightly from Table \ref{tab:ir_metrics}. ``Lost / gained'' counts questions whose gold document leaves or enters the top 3 relative to Naive RAG. Configurations without the rewrite do not depend on the model. Produced by \texttt{evaluation/retrieval\_ablation.py} (\texttt{--family smollm2} for SmolLM2); results in \texttt{results/csv/retrieval\_ablation\_summary.csv} and \texttt{results/csv/retrieval\_ablation\_summary\_smollm2.csv}.}
 \label{tab:retrieval_ablation}
 \footnotesize
 \setlength{\tabcolsep}{4pt}
@@ -274,8 +274,8 @@ LFM2-700M & Routed Modular, active only ($n=17$) & $0.9412$ & $0.8824$ & $1.0000
 \toprule
 \textbf{Model} & \textbf{Configuration} & \textbf{Stages} & \textbf{Hit@3} & \textbf{MRR@3} & \textbf{Recall@3} & \textbf{Lost / gained} \\
 \midrule
-Both & Naive RAG & dense & $0.948$ & $0.891$ & $0.726$ & -- \\
-Both & No rewrite & hybrid + rerank & $\mathbf{0.975}$ & $\mathbf{0.956}$ & $\mathbf{0.816}$ & 5 / 21 \\
+All four & Naive RAG & dense & $0.948$ & $0.891$ & $0.726$ & -- \\
+All four & No rewrite & hybrid + rerank & $\mathbf{0.975}$ & $\mathbf{0.956}$ & $\mathbf{0.816}$ & 5 / 21 \\
 \midrule
 LFM2-350M & Rewrite only & rewrite + dense & $0.703$ & $0.628$ & $0.458$ & 151 / 4 \\
 LFM2-350M & No rerank & rewrite + hybrid & $0.758$ & $0.674$ & $0.504$ & 120 / 6 \\
@@ -284,6 +284,14 @@ LFM2-350M & Full (Advanced) & rewrite + hybrid + rerank & $0.902$ & $0.848$ & $0
 LFM2-700M & Rewrite only & rewrite + dense & $0.872$ & $0.798$ & $0.619$ & 52 / 6 \\
 LFM2-700M & No rerank & rewrite + hybrid & $0.875$ & $0.812$ & $0.626$ & 50 / 6 \\
 LFM2-700M & Full (Advanced) & rewrite + hybrid + rerank & $0.945$ & $0.899$ & $0.722$ & 20 / 18 \\
+\midrule
+SmolLM2-135M & Rewrite only & rewrite + dense & $0.842$ & $0.766$ & $0.563$ & 68 / 4 \\
+SmolLM2-135M & No rerank & rewrite + hybrid & $0.855$ & $0.786$ & $0.581$ & 61 / 5 \\
+SmolLM2-135M & Full (Advanced) & rewrite + hybrid + rerank & $0.912$ & $0.868$ & $0.658$ & 35 / 13 \\
+\midrule
+SmolLM2-360M & Rewrite only & rewrite + dense & $0.857$ & $0.794$ & $0.580$ & 59 / 4 \\
+SmolLM2-360M & No rerank & rewrite + hybrid & $0.868$ & $0.808$ & $0.600$ & 55 / 7 \\
+SmolLM2-360M & Full (Advanced) & rewrite + hybrid + rerank & $0.912$ & $0.866$ & $0.672$ & 38 / 16 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -393,7 +401,7 @@ SmolLM2-360M & Routed Modular & $0.1449$ & $0.0333$ & $0.3964$ & $0.1113$ & $0.6
     \label{fig:precision_recall}
 \end{figure}
 
-\textbf{Naive RAG remains the best retrieval-based arm.} At both scales, Naive RAG has the highest Token F1 of the retrieval-based arms and the lowest median latency. Advanced RAG gives no significant gain (Advanced minus Naive $\bar{d}=-0.009$, $p=0.15$ on 135M; $\bar{d}=-0.015$, $p=0.09$ on 360M) and again retrieves gold documents less often than Naive RAG (document Hit@3 $0.912$ versus $0.948$ at both scales), consistent with the rewrite effect in Table \ref{tab:retrieval_ablation}.
+\textbf{Naive RAG remains the best retrieval-based arm.} At both scales, Naive RAG has the highest Token F1 of the retrieval-based arms and the lowest median latency. Advanced RAG gives no significant gain (Advanced minus Naive $\bar{d}=-0.009$, $p=0.15$ on 135M; $\bar{d}=-0.015$, $p=0.09$ on 360M) and again retrieves gold documents less often than Naive RAG (document Hit@3 $0.912$ versus $0.948$ at both scales; the gold document leaves the top 3 on 35 questions and enters it on 13 for SmolLM2-135M, exact McNemar $p=0.002$, and on 38 and 16 for SmolLM2-360M, $p=0.004$). The retrieval-level ablation (Table \ref{tab:retrieval_ablation}) shows the same cause as in LFM2: searching with the rewrite alone lowers Hit@3 from $0.948$ to $0.842$ on SmolLM2-135M and $0.857$ on SmolLM2-360M, reranking recovers part of this loss, and the full configuration reproduces the logged Advanced top-3 passages for all 600 questions for both models. SmolLM2 rewrites vary across repetitions (identical in all 10 runs for 163 questions on SmolLM2-135M and 276 on SmolLM2-360M), so the replay uses the run-1 rewrites. Rewrite length does not explain the loss on its own: in run 1, SmolLM2-135M rewrites average $28.1$ words (median 19) and $7.0\%$ contain line breaks, whereas SmolLM2-360M rewrites average $16.1$ words (median 16), about as long as the original questions ($16.3$ words), and $1.5\%$ contain line breaks, yet they lower Hit@3 by a similar amount. The SmolLM2-360M Advanced RAG latency (median $3.414$s, Table \ref{tab:smollm2}) includes time that the pipeline stages do not explain: hybrid retrieval, which does not involve the language model, took $1.034$s on average against $0.078$s on SmolLM2-135M, and answer generation took $0.995$s against $0.235$s in the same model's Naive RAG runs, at a similar decoding speed (median 257 versus 242 tokens/s) and answer length (median 26 versus 25 tokens); the rewrite took $1.228$s, while reranking took the same time as on SmolLM2-135M ($0.173$s). On SmolLM2-135M, Advanced RAG takes 2.6 times the Naive RAG latency (mean $0.639$s versus $0.247$s; rewrite $0.182$s, hybrid retrieval $0.078$s versus $0.017$s, reranking $0.173$s, answer generation $0.207$s versus $0.231$s), close to the ratio of 2.5 on LFM2-350M.
 
 \textbf{The scale inversion does not transfer.} Unlike LFM2, in every arm that gives the model context (Oracle, Naive, Advanced, and Routed Modular RAG) the larger SmolLM2 model scores higher on Token F1, token precision, token recall, exact match, cosine similarity, and groundedness, significantly so (paired $p<0.05$) on all of them except exact match under Advanced RAG ($p=0.20$). Without retrieval, the 135M model has higher token recall ($0.205$ vs $0.125$). Under Naive RAG, Token F1 is $0.151$ for 360M versus $0.085$ for 135M ($\bar{d}=0.066$, 95\% CI $[0.047, 0.085]$, paired $p<0.001$, Wilcoxon $p<0.001$), the larger model wins on 252 questions against 124 (sign test $p<0.001$), and it is also higher on token recall ($0.423$ vs $0.321$), exact match ($0.038$ vs $0.020$, $p=0.03$), and the share of questions with full recall ($31.8\%$ vs $20.5\%$). The rank-based tests agree with the $t$-tests here, unlike in LFM2. The larger SmolLM2 model also gives shorter answers ($28.3$ vs $44.0$ generated tokens), so in both families the model with shorter answers has the higher Token F1. In LFM2 this advantage disappears at matched response length (Section \ref{sec:scale_inversion}); in SmolLM2 it does not (Figure \ref{fig:precision_recall}): within deciles of response length the larger model still scores higher ($0.040$, 95\% CI $[0.021, 0.057]$; regression at equal length $0.043$, CI $[0.025, 0.061]$; Oracle RAG $0.052$ and $0.041$). The LFM2 scale inversion therefore does not carry over to SmolLM2 and is not a general property of sub-1B models.
 
