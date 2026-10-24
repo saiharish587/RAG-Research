@@ -36,7 +36,7 @@ MODELS = [  # (label, csv, model_tag, colour, hatch)
     ("SmolLM2-135M", "benchmark_results_smollm2.csv", "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M", "#1baf7a", "//"),
     ("SmolLM2-360M", "benchmark_results_smollm2.csv", "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M", "#eda100", "//"),
 ]
-ARMS = [("no_rag", "No-RAG"), ("oracle", "Oracle"), ("naive", "Naive"), ("advanced", "Advanced"), ("modular", "Modular")]
+ARMS = [("no_rag", "No-RAG"), ("oracle", "Oracle"), ("naive", "Naive"), ("advanced", "Advanced"), ("modular", "Routed\nModular")]
 INK, MUTED, GRID = "#1f1f1e", "#5f5e58", "#e4e3dc"
 
 plt.rcParams.update({
@@ -111,7 +111,7 @@ def fig_latency(df):
             pos = x - 0.4 + 0.4 * (i + 0.5)
             ax.bar(pos, [med.get((label, a), np.nan) for a, _ in ARMS], 0.36, color=colour, hatch=hatch,
                    edgecolor="white", linewidth=0.6, label=label)
-        ax.set_xticks(x, [a[1] for a in ARMS], rotation=45, ha="right")
+        ax.set_xticks(x, [a[1].replace("\n", " ") for a in ARMS], rotation=45, ha="right")
         ax.set_title(title, fontsize=8, color=INK)
         ax.tick_params(axis="x", length=0)
         ax.legend(fontsize=6, loc="upper left")
@@ -175,7 +175,7 @@ def fig_architecture():
         ("Oracle RAG", ["2 gold passages", "(no distractors)"]),
         ("Naive RAG", ["dense top-3"]),
         ("Advanced RAG", ["rewrite (by model)", "dense + TF-IDF fusion (12)", "cross-encoder rerank, top-3"]),
-        ("Modular RAG", ["router: yes / no", "2 related queries", "RRF fusion, top-3"]),
+        ("Routed Modular RAG", ["router: yes / no", "2 related queries", "RRF fusion, top-3"]),
     ]
     top, h, gap = 0.95, 0.155, 0.03
     for i, (name, steps) in enumerate(arms):
