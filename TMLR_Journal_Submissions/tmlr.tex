@@ -89,16 +89,33 @@ We evaluate two specific scale configurations:
 As a second family we use SmolLM2 \citep{allal2025smollm2}, a dense Transformer (Llama architecture with grouped-query attention): \textbf{SmolLM2-135M} (\texttt{hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4\_K\_M}) and \textbf{SmolLM2-360M} (\texttt{hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4\_K\_M}), both with the same 4-bit quantization.
 
 \subsection{Target Hardware and Inference Configuration Environment}
-All LFM2 benchmark runs were executed locally on a dedicated host laptop:
-\begin{itemize}
-    \item \textbf{Processor (CPU)}: AMD Ryzen 7 6800H with Radeon Graphics (8 Cores, 16 Threads, 3.20 GHz base clock)
-    \item \textbf{Dedicated Graphics (GPU)}: NVIDIA GeForce RTX 3050 Laptop GPU (4GB GDDR6 VRAM, CUDA 12.1 acceleration)
-    \item \textbf{Integrated Graphics}: AMD Radeon 680M Graphics
-    \item \textbf{Operating System}: Microsoft Windows 11 Home Single Language 64-bit (Build 26200)
-    \item \textbf{Execution Stack}: Python 3.12, PyTorch 2.5.1+cu121, Local Ollama Model Server, FAISS (CPU, exact \texttt{IndexFlatIP} over L2-normalised embeddings) \citep{johnson2019billion}
-    \item \textbf{Inference Decoding Parameters}: Greedy decoding ($\text{temperature}=0.0$) with a fixed random seed ($\text{seed}=42$), passed with every request. All other sampling options were left at the Ollama server and model defaults, and our code set no maximum generation length for the LFM2 runs (\texttt{rag/generator.py}).
-\end{itemize}
-The SmolLM2 runs used the same pipeline code, prompts, retrieval index, and decoding parameters (\texttt{configs/config\_smollm2.yaml}) and were executed on a second laptop with an NVIDIA GeForce RTX 3050 A Laptop GPU (4GB VRAM, 60W power limit), an AMD Ryzen 7 7435HS CPU (8 cores, 16 threads), and 24GB of RAM, running Microsoft Windows 11 Home Single Language 64-bit (Build 26300). Before the runs, we checked that this machine retrieves exactly the same top-3 passages as the logged LFM2 runs on the first 50 questions (\texttt{scripts/check\_retrieval.py}); Naive RAG retrieval does not depend on the model, and the SmolLM2 Naive RAG logs contain exactly the same top-3 passages as the LFM2 logs for all 600 questions. These runs additionally capped generation at 1,024 tokens per call; an answer that reaches the cap is classified as a truncated failure and scored as zero, like a runaway LFM2 answer. Latency is compared only within each model family.
+Each model family was run locally on its own laptop (Table \ref{tab:hardware}). Both machines used the same pipeline code, prompts, retrieval index, and Python package versions (\texttt{requirements-lock.txt}); the SmolLM2 environment is recorded in \texttt{results/smollm2\_environment.txt}.
+
+\begin{table}[h]
+\centering
+\caption{Hardware and software of the two machines (NVIDIA GeForce GPUs and AMD CPUs).}
+\label{tab:hardware}
+\footnotesize
+\begin{tabular}{lll}
+\toprule
+ & \textbf{LFM2 runs} & \textbf{SmolLM2 runs} \\
+\midrule
+GPU & RTX 3050 Laptop GPU & RTX 3050 A Laptop GPU \\
+GPU memory and power limit & 4GB GDDR6, 60W & 4GB, 60W \\
+NVIDIA driver & 555.85 & 591.66 \\
+CPU & Ryzen 7 6800H, 8 cores, 16 threads & Ryzen 7 7435HS, 8 cores, 16 threads \\
+RAM & 16GB & 24GB \\
+Operating system & Windows 11 Home, build 26200 & Windows 11 Home, build 26300 \\
+Python & 3.12.0 & 3.12.10 \\
+PyTorch & 2.5.1 (CUDA 12.1) & 2.5.1 (CUDA 12.1) \\
+sentence-transformers / transformers & 5.7.0 / 4.57.6 & 5.7.0 / 4.57.6 \\
+FAISS (CPU) & 1.15.0 & 1.15.0 \\
+Model server & Local Ollama server & Local Ollama server \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Retrieval and decoding.} FAISS runs on the CPU with an exact \texttt{IndexFlatIP} over L2-normalised embeddings \citep{johnson2019billion}. Decoding is greedy ($\text{temperature}=0.0$) with a fixed random seed ($\text{seed}=42$), passed with every request; all other sampling options were left at the Ollama server and model defaults (\texttt{rag/generator.py}). The LFM2 runs set no maximum generation length. The SmolLM2 runs capped generation at 1,024 tokens per call (\texttt{configs/config\_smollm2.yaml}); an answer that reaches the cap is classified as a truncated failure and scored as zero, like a runaway LFM2 answer. Before the SmolLM2 runs, we checked that the second machine retrieves exactly the same top-3 passages as the logged LFM2 runs on the first 50 questions (\texttt{scripts/check\_retrieval.py}); Naive RAG retrieval does not depend on the model, and the SmolLM2 Naive RAG logs contain exactly the same top-3 passages as the LFM2 logs for all 600 questions. Latency is compared only within each model family.
 
 \section{System Architecture and RAG Pipeline Arms}
 \label{sec:architecture}
