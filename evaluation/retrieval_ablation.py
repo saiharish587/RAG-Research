@@ -22,15 +22,19 @@ Gold documents are matched by each chunk's source title (``chunks.npy``
 metadata), not by text before the first colon.
 
 Writes ``results/csv/retrieval_ablation.csv`` (one row per model, configuration
-and question) and ``results/csv/retrieval_ablation_summary.csv``.
+and question) and ``results/csv/retrieval_ablation_summary.csv``; with
+``--family smollm2`` it reads the SmolLM2 runs and writes the same files with a
+``_smollm2`` suffix.
 
 Usage (from the repository root)::
 
     python -m evaluation.retrieval_ablation
+    python -m evaluation.retrieval_ablation --family smollm2
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -45,14 +49,19 @@ sys.path.insert(0, str(ROOT))
 from main import load_config, setup_vector_db  # noqa: E402
 from rag.advanced.retriever import AdvancedRAGPipeline  # noqa: E402
 
-RESULTS_CSV = ROOT / "results" / "csv" / "benchmark_results.csv"
+CSV_DIR = ROOT / "results" / "csv"
 EVAL_SET = ROOT / "data" / "benchmark" / "eval_set.json"
-OUT_ROWS = ROOT / "results" / "csv" / "retrieval_ablation.csv"
-OUT_SUMMARY = ROOT / "results" / "csv" / "retrieval_ablation_summary.csv"
 
-MODELS = {
-    "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M": "350M",
-    "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M": "700M",
+FAMILIES = {
+    # family: (results CSV, output suffix, model tags)
+    "lfm2": ("benchmark_results.csv", "", {
+        "hf.co/LiquidAI/LFM2-350M-GGUF:Q4_K_M": "350M",
+        "hf.co/LiquidAI/LFM2-700M-GGUF:Q4_K_M": "700M",
+    }),
+    "smollm2": ("benchmark_results_smollm2.csv", "_smollm2", {
+        "hf.co/bartowski/SmolLM2-135M-Instruct-GGUF:Q4_K_M": "135M",
+        "hf.co/bartowski/SmolLM2-360M-Instruct-GGUF:Q4_K_M": "360M",
+    }),
 }
 CONFIGS = {
     # name: (use_rewrite, sparse, rerank)
@@ -80,6 +89,12 @@ def doc_metrics(sources: list[str], gold: set[str]) -> dict:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--family", choices=sorted(FAMILIES), default="lfm2")
+    csv_name, suffix, MODELS = FAMILIES[parser.parse_args().family]
+    out_rows = CSV_DIR / f"retrieval_ablation{suffix}.csv"
+    out_summary = CSV_DIR / f"retrieval_ablation_summary{suffix}.csv"
+
     config = load_config(str(ROOT / "configs" / "config.yaml"))
     db = setup_vector_db(config)
     retrieval = config.get("retrieval", {})
@@ -93,9 +108,10 @@ def main() -> None:
     gold = {item["query"]: {sf[0] for sf in item["supporting_facts"]} for item in eval_set}
     order = {item["query"]: i + 1 for i, item in enumerate(eval_set)}
 
-    logged = pd.read_csv(RESULTS_CSV, usecols=["query", "model_tag", "rag_type", "run_id", "rewritten_query"],
+    logged = pd.read_csv(CSV_DIR / csv_name, usecols=["query", "model_tag", "rag_type", "run_id", "rewritten_query"],
                          low_memory=False)
-    logged = logged[(logged["rag_type"] == "advanced") & (logged["run_id"] == 1)]
+    logged = logged[(logged["rag_type"] == "advanced") & (logged["run_id"] == 1)
+                    & logged["model_tag"].isin(MODELS)]
 
     def retrieve(query: str, use_sparse, rerank: bool) -> list[str]:
         if use_sparse is None:
@@ -128,7 +144,7 @@ def main() -> None:
             print(f"{model}: {q_idx}/600")
 
     df = pd.DataFrame(rows).sort_values(["model", "config", "question_index"])
-    df.to_csv(OUT_ROWS, index=False)
+    df.to_csv(out_rows, index=False)
 
     summary = []
     for model, sub in df.groupby("model"):
@@ -153,7 +169,7 @@ def main() -> None:
                 row["full_matches_logged_top3"] = round(float(np.mean(agreement[model])), 4)
             summary.append(row)
     out = pd.DataFrame(summary)
-    out.to_csv(OUT_SUMMARY, index=False)
+    out.to_csv(out_summary, index=False)
     with pd.option_context("display.width", 250, "display.max_columns", None):
         print(out.to_string(index=False))
 

@@ -10,7 +10,8 @@ writes:
 ``results/csv/smollm2_evidence.csv``
     One row per statistic: the scale comparison (smaller minus larger model) on
     every metric, wins, sign and permutation tests, the length-matched gap,
-    Advanced vs Naive, router behaviour, and document-level retrieval.
+    the refusal-free scale test, Advanced vs Naive, router behaviour, rewrite
+    diagnostics, per-stage latency, and document-level retrieval.
 
 Conventions match the LFM2 analyses: failed runs (degenerate or truncated)
 count as zero for Token F1 and EM, and tests compare question-level means over
@@ -35,7 +36,9 @@ from scipy import stats
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from evaluation.compute_ir_metrics import compute_document_level_ir_metrics  # noqa: E402
 from evaluation.metrics import tokenise  # noqa: E402
+from evaluation.retrieval_ablation import doc_metrics  # noqa: E402
 from evaluation.revision_analyses import (  # noqa: E402
     BOOT_SEED, N_BOOT, N_LENGTH_BINS, N_PERM, Evidence, binned_gap, length_bins,
     ols_intercept, paired,
@@ -198,26 +201,103 @@ def arm_comparisons(df: pd.DataFrame, q: pd.DataFrame, ev: Evidence) -> None:
 
 
 def document_retrieval(ev: Evidence) -> None:
-    """Document-level Hit@3 and MRR@3 from run-1 logs, matching chunks by source title."""
+    """Document-level IR metrics at rank 3 from run-1 logs.
+
+    Gold documents are matched by each chunk's source title (``chunks.npy``);
+    ``document_retrieval_colon_rule`` repeats the metrics with the title taken
+    as the text before the first colon, the rule used for the LFM2 IR table.
+    """
     chunks = np.load(CHUNKS, allow_pickle=True)
     source = {c["text"]: c["metadata"]["source"] for c in chunks}
     eval_set = json.loads(EVAL_SET.read_text(encoding="utf-8"))
+    names = ("mrr_at_3", "hit_at_1", "hit_at_3", "recall_at_3", "ndcg_at_3")
+    per_q = {}
     for tag, model in MODELS.items():
         safe = tag.replace("/", "_").replace(":", "_")
-        for arm in ("naive", "advanced", "modular"):
-            hits, mrrs, active = [], [], 0
+        for arm in ("oracle", "naive", "advanced", "modular"):
+            rows = {"source": [], "colon": []}
+            active = []
             for i, item in enumerate(eval_set, 1):
                 gold = {sf[0] for sf in item["supporting_facts"]}
                 log = ROOT / "results" / "raw" / f"{safe}_{arm}_q{i}_run1.json"
                 ctx = json.loads(log.read_text(encoding="utf-8"))["pipeline_result"]["retrieved_context"]
-                active += bool(ctx)
-                titles = list(dict.fromkeys(source.get(t, f"_{j}") for j, t in enumerate(ctx)))[:3]
-                h = [t in gold for t in titles]
-                hits.append(float(any(h)))
-                mrrs.append(next((1 / (k + 1) for k, v in enumerate(h) if v), 0.0))
-            ev.add("document_retrieval", "hit_at_3", np.mean(hits), model, arm)
-            ev.add("document_retrieval", "mrr_at_3", np.mean(mrrs), model, arm)
-            ev.add("document_retrieval", "questions_with_retrieval", active, model, arm)
+                active.append(bool(ctx))
+                m = doc_metrics([source.get(c, f"_{j}") for j, c in enumerate(ctx)], gold)
+                m["hit_at_1"] = float(bool(ctx) and source.get(ctx[0]) in gold)
+                rows["source"].append([m[n] for n in names])
+                rows["colon"].append(compute_document_level_ir_metrics(ctx, {g.strip().lower() for g in gold}, k=3))
+            active = np.array(active)
+            for rule, values in rows.items():
+                m = np.array(values, dtype=float)
+                analysis = "document_retrieval" if rule == "source" else "document_retrieval_colon_rule"
+                for k, name in enumerate(names):
+                    ev.add(analysis, name, m[:, k].mean(), model, arm)
+                if arm == "modular" and active.any():
+                    for k, name in enumerate(names):
+                        ev.add(analysis, f"{name}_active_only", m[active, k].mean(), model, arm)
+                per_q[(rule, model, arm)] = pd.DataFrame(m, columns=names)
+            ev.add("document_retrieval", "questions_with_retrieval", int(active.sum()), model, arm)
+
+    # Advanced versus Naive retrieval, and the effect of each model's rewrite,
+    # under both title-matching rules.
+    for rule, suffix in (("source", ""), ("colon", "_colon_rule")):
+        for model in (SMALL, LARGE):
+            naive, adv = per_q[(rule, model, "naive")], per_q[(rule, model, "advanced")]
+            lost = int(((naive["hit_at_3"] == 1) & (adv["hit_at_3"] == 0)).sum())
+            gained = int(((naive["hit_at_3"] == 0) & (adv["hit_at_3"] == 1)).sum())
+            name = f"advanced_vs_naive_retrieval{suffix}"
+            ev.add(name, "gold_doc_lost_by_advanced", lost, model)
+            ev.add(name, "gold_doc_gained_by_advanced", gained, model)
+            ev.add(name, "mcnemar_exact_p", stats.binomtest(lost, lost + gained, 0.5).pvalue if lost + gained else 1.0, model)
+            ev.add_test(f"advanced_vs_naive_retrieval_mrr_naive_minus_advanced{suffix}",
+                        paired(naive["mrr_at_3"], adv["mrr_at_3"]), model)
+        a, b = per_q[(rule, SMALL, "advanced")], per_q[(rule, LARGE, "advanced")]
+        only_large = int(((b["hit_at_3"] == 1) & (a["hit_at_3"] == 0)).sum())
+        only_small = int(((a["hit_at_3"] == 1) & (b["hit_at_3"] == 0)).sum())
+        name = f"advanced_rewrite_effect{suffix}"
+        ev.add(name, "gold_doc_found_with_large_rewrite_only", only_large, arm="advanced")
+        ev.add(name, "gold_doc_found_with_small_rewrite_only", only_small, arm="advanced")
+        if only_large + only_small:
+            ev.add(name, "mcnemar_exact_p", stats.binomtest(only_large, only_large + only_small, 0.5).pvalue, arm="advanced")
+        ev.add_test(f"advanced_rewrite_effect_mrr_large_minus_small{suffix}", paired(b["mrr_at_3"], a["mrr_at_3"]), arm="advanced")
+
+
+def rewrite_diagnostics(df: pd.DataFrame, ev: Evidence) -> None:
+    """Length and form of the rewritten queries (all runs, and run 1 as used in the ablation)."""
+    adv = df[df["rag_type"] == "advanced"]
+    for model, sub in adv.groupby("model"):
+        for label, part in (("all_runs", sub), ("run1", sub[sub["run_id"] == 1])):
+            rw = part["rewritten_query"].fillna("").astype(str)
+            words = rw.str.split().str.len()
+            ev.add("rewrite_diagnostics", f"mean_words_original_{label}", part["query"].str.split().str.len().mean(), model, "advanced")
+            ev.add("rewrite_diagnostics", f"mean_words_rewritten_{label}", words.mean(), model, "advanced")
+            ev.add("rewrite_diagnostics", f"median_words_rewritten_{label}", words.median(), model, "advanced")
+            ev.add("rewrite_diagnostics", f"share_with_line_break_{label}", rw.str.contains("\n", regex=False).mean(), model, "advanced")
+            ev.add("rewrite_diagnostics", f"share_unchanged_{label}", (rw.str.strip() == part["query"].str.strip()).mean(), model, "advanced")
+        same = sub.groupby("query")["rewritten_query"].nunique()
+        ev.add("rewrite_diagnostics", "questions_with_identical_rewrite_across_runs", int((same == 1).sum()), model, "advanced")
+
+
+def stage_latency(df: pd.DataFrame, ev: Evidence) -> None:
+    for (model, arm), sub in df.groupby(["model", "rag_type"]):
+        ev.add("latency", "mean_s", sub["latency"].mean(), model, arm)
+        ev.add("latency", "median_s", sub["latency"].median(), model, arm)
+        for stage in ("rewrite", "retrieve", "rerank", "generate", "route", "subquery", "fuse"):
+            values = pd.to_numeric(sub[f"stage_{stage}_s"], errors="coerce").dropna()
+            if len(values):
+                ev.add("latency_stage", f"mean_{stage}_s", values.mean(), model, arm)
+                ev.add("latency_stage", f"median_{stage}_s", values.median(), model, arm)
+
+
+def refusal_free_scale_test(q: pd.DataFrame, ev: Evidence) -> None:
+    """Naive RAG scale comparison restricted to questions neither model ever refused."""
+    ra, rb = series(q, SMALL, "naive", "is_refusal"), series(q, LARGE, "naive", "is_refusal")
+    keep = ra.index[(ra == 0) & (rb.reindex(ra.index) == 0)]
+    ev.add("scale_test_naive_f1_no_refusal", "questions_refused_by_small", int((ra > 0).sum()), arm="naive")
+    ev.add("scale_test_naive_f1_no_refusal", "questions_refused_by_large", int((rb > 0).sum()), arm="naive")
+    ev.add_test("scale_test_naive_f1_no_refusal",
+                paired(series(q, SMALL, "naive", "token_f1").loc[keep], series(q, LARGE, "naive", "token_f1").loc[keep]),
+                arm="naive")
 
 
 def main() -> None:
@@ -234,6 +314,9 @@ def main() -> None:
         wins_and_permutation(q, ev, arm)
         length_matched(q, ev, arm)
     arm_comparisons(df, q, ev)
+    refusal_free_scale_test(q, ev)
+    rewrite_diagnostics(df, ev)
+    stage_latency(df, ev)
     document_retrieval(ev)
     out = pd.DataFrame(ev.rows)
     out.to_csv(EVIDENCE_CSV, index=False)
