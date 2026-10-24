@@ -382,7 +382,7 @@ SmolLM2-360M & Routed Modular & $0.1449$ & $0.0333$ & $0.3964$ & $0.1113$ & $0.6
 
 \textbf{The routing failure appears in one of the two SmolLM2 models.} SmolLM2-135M answered ``no'' to the routing question in 2,511 of 6,000 Routed Modular RAG runs. On the 251 questions it mostly routed away from retrieval, answering without retrieval gives a Token F1 of $0.023$ against $0.084$ with Naive RAG, and retrieval helps on 107 of them and hurts on 26, the same failure as in both LFM2 models. SmolLM2-360M answered ``yes'' in 5,999 of 6,000 runs, so its Routed Modular RAG arm behaves as multi-query retrieval and scores close to Naive RAG ($0.145$ vs $0.151$ Token F1).
 
-\textbf{Repetitions are not identical.} Despite greedy decoding and a fixed seed, the 10 repetitions of a SmolLM2 question returned identical text for only 52 to 367 of the 600 questions, depending on model and arm (Table \ref{tab:smollm2}). For SmolLM2, the repetitions therefore also vary quality, and the question-level averaging over 10 runs matters.
+\textbf{Repetitions are not identical.} Despite greedy decoding and a fixed seed, the 10 repetitions returned identical text for only 52 to 218 of the 600 questions for SmolLM2-135M and 184 to 367 for SmolLM2-360M, depending on the arm (Table \ref{tab:smollm2}); the larger model is more consistent in every arm. For SmolLM2, the repetitions therefore also vary quality, and the question-level averaging over 10 runs matters.
 
 \section{Limitations and Scope}
 \label{sec:limitations}
